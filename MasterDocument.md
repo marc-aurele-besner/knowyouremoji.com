@@ -291,15 +291,42 @@ This avoids thin-content penalties.
 
 ## 6. Technical Requirements
 
-### 6.1 Stack (Suggested)
+### 6.1 Stack
 
-- Next.js (App Router)
-- Static generation for emoji pages
-- Server actions for interpreter
-- Edge caching
-- CMS or structured content store
+- **Runtime:** Bun
+- **Framework:** Next.js 16.1 (App Router)
+- **Styling:** Tailwind CSS, Radix UI
+- **Database:** Supabase (PostgreSQL + Auth + Storage) - **Phase 2**
+- **AI:** OpenAI API with Vercel AI SDK
+- **Hosting:** Vercel
 
-### 6.2 CMS Structure
+### 6.2 Phase 1 Architecture (Static-First)
+
+Phase 1 (MVP/Beta) operates without a database:
+
+- All emoji content stored as static JSON files
+- Static site generation (SSG) for all emoji pages
+- Interpreter tool uses client-side localStorage for rate limiting
+- No user authentication required
+- No subscription system
+
+This approach enables:
+- Fastest possible page loads
+- Zero database costs
+- Simplified deployment
+- Focus on content quality
+
+### 6.3 Phase 2 Architecture (Database Integration)
+
+Supabase integration adds:
+
+- User authentication (OAuth + Email)
+- Subscription management
+- Interpretation history storage
+- Server-side rate limiting
+- Content management via Supabase
+
+### 6.4 Content Structure
 
 Emoji object includes:
 
@@ -311,13 +338,25 @@ Emoji object includes:
 - Examples
 - SEO metadata
 
-Content must be editable post-publish.
+Phase 1: JSON files in `/src/data/emojis/`
+Phase 2: Supabase tables with admin UI
 
-### 6.3 Performance
+### 6.5 Performance
 
 - Emoji pages must load sub-1s
 - No heavy JS for SEO pages
 - Interpreter can be client-heavy
+
+### 6.6 Testing Requirements
+
+**Mandatory 100% test coverage** for all code:
+
+- Unit tests for all utilities, services, and hooks
+- Component tests for all UI components
+- Integration tests for all API routes
+- E2E tests for all critical user flows
+
+No code merges without passing tests and full coverage.
 
 ---
 
@@ -382,40 +421,90 @@ Short-form videos explaining emoji misunderstandings
 
 ## 10. Roadmap
 
-### Phase 1 (0–2 months)
+### Phase 1: MVP/Beta (0–2 months) - Static Architecture
 
-- Core emoji pages
-- SEO foundation
-- Basic interpreter
+**No database required.** Fully static site with:
 
-### Phase 2 (2–4 months)
+- Core emoji pages (static JSON data)
+- Full SEO foundation
+- Basic interpreter (client-side rate limiting via localStorage)
+- Combo pages (static)
+- 100% test coverage from day one
+- All content curated and version-controlled
 
-- Combo pages
-- Premium tier
-- Shareable results
+**Deliverables:**
+- 500+ emoji detail pages
+- 30+ combo pages
+- Working interpreter tool (3 free uses/day)
+- Mobile-responsive design
+- Full SEO optimization
 
-### Phase 3 (Optional)
+### Phase 2: Growth (2–4 months) - Database Integration
 
-- API
-- Localization
-- Cultural expansions
+**Supabase integration:**
+
+- User authentication (Google, GitHub, Email)
+- Premium subscription via Stripe
+- Interpretation history
+- Server-side rate limiting
+- Shareable results with unique URLs
+- Content admin interface
+
+**Deliverables:**
+- User accounts
+- Premium tier ($9/month)
+- Interpretation history
+- Share functionality
+
+### Phase 3: Scale (Optional)
+
+- Public API for developers
+- Localization (Spanish, French, etc.)
+- Cultural/regional expansions
+- B2B offerings
 
 ---
 
-## 11. Success Criteria
+## 11. Quality Assurance
+
+### 11.1 Testing Requirements (Mandatory)
+
+**100% test coverage is non-negotiable.**
+
+- All utility functions must have unit tests
+- All components must have component tests
+- All API routes must have integration tests
+- All user flows must have E2E tests
+- No code merges without 100% coverage
+- CI pipeline enforces coverage thresholds
+
+### 11.2 Code Quality
+
+- TypeScript strict mode enabled
+- ESLint with strict rules
+- Prettier for formatting
+- Pre-commit hooks block non-compliant code
+
+---
+
+## 12. Success Criteria
 
 - 100k monthly organic visits within 6–9 months
 - Interpreter conversion rate above 2–3%
 - Clear long-tail dominance for emoji queries
+- 100% test coverage maintained throughout development
 
 ---
 
-## Final Note
+## 13. Final Note
 
 This project succeeds only if:
 
 - It feels human
 - It acknowledges ambiguity
 - It avoids being a dictionary
+- It maintains rigorous test coverage
 
 **If you try to automate everything without editorial control, it will fail.**
+
+**If you ship code without tests, it will break.**
