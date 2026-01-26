@@ -95,7 +95,7 @@ detect_ai_cli() {
 
 # Step 1: Sync with main
 sync_with_main() {
-    echo -e "${BLUE}[1/10] Syncing with main branch...${NC}"
+    echo -e "${BLUE}[1/11] Syncing with main branch...${NC}"
     git checkout "$MAIN_BRANCH"
     git pull origin "$MAIN_BRANCH"
     echo -e "${GREEN}✓ Synced with main${NC}"
@@ -103,7 +103,7 @@ sync_with_main() {
 
 # Step 2: Pick the next issue to work on (by priority P0 > P1 > P2, then by issue number)
 pick_next_issue() {
-    echo -e "${BLUE}[2/10] Finding next unassigned issue...${NC}"
+    echo -e "${BLUE}[2/11] Finding next unassigned issue...${NC}"
 
     # Get open issues without assignees, sorted by priority labels and number
     # Priority order: P0 first, then P1, then P2
@@ -155,14 +155,14 @@ else:
 
 # Step 3: Assign yourself to the issue
 assign_issue() {
-    echo -e "${BLUE}[3/10] Assigning issue #$ISSUE_NUMBER to you...${NC}"
+    echo -e "${BLUE}[3/11] Assigning issue #$ISSUE_NUMBER to you...${NC}"
     gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "@me"
     echo -e "${GREEN}✓ Assigned issue #$ISSUE_NUMBER${NC}"
 }
 
 # Step 4: Create a branch for the issue
 create_branch() {
-    echo -e "${BLUE}[4/10] Creating branch for issue #$ISSUE_NUMBER...${NC}"
+    echo -e "${BLUE}[4/11] Creating branch for issue #$ISSUE_NUMBER...${NC}"
 
     # Create branch name from issue number and title
     # e.g., "123-setup-001-initialize-nextjs"
@@ -176,7 +176,7 @@ create_branch() {
 
 # Step 5: Attach the branch to the issue (link via development)
 attach_branch_to_issue() {
-    echo -e "${BLUE}[5/10] Linking branch to issue #$ISSUE_NUMBER...${NC}"
+    echo -e "${BLUE}[5/11] Linking branch to issue #$ISSUE_NUMBER...${NC}"
 
     # Push the branch first so it exists on remote
     git push -u origin "$BRANCH_NAME"
@@ -191,7 +191,7 @@ Working on this issue with automated AI assistance."
 
 # Step 6: Work on the issue using AI CLI
 work_on_issue() {
-    echo -e "${BLUE}[6/10] Working on issue #$ISSUE_NUMBER with $AI_CLI...${NC}"
+    echo -e "${BLUE}[6/11] Working on issue #$ISSUE_NUMBER with $AI_CLI...${NC}"
 
     # Get full issue details
     local issue_body
@@ -229,9 +229,132 @@ Work autonomously until the issue is fully resolved. Approve any permission requ
     echo -e "${GREEN}✓ AI work completed${NC}"
 }
 
-# Step 7: Push to branch
+# Step 7: Validate code (lint, typecheck, test)
+validate_code() {
+    echo -e "${BLUE}[7/11] Validating code quality...${NC}"
+
+    local max_attempts=5
+    local attempt=0
+
+    while [[ $attempt -lt $max_attempts ]]; do
+        ((attempt++))
+        echo -e "${CYAN}    Validation attempt $attempt of $max_attempts${NC}"
+
+        local has_errors=false
+        local error_output=""
+
+        # Check which scripts exist in package.json
+        local has_lint=false
+        local has_typecheck=false
+        local has_test=false
+
+        if [[ -f "package.json" ]]; then
+            if grep -q '"lint"' package.json 2>/dev/null; then
+                has_lint=true
+            fi
+            if grep -q '"typecheck"' package.json 2>/dev/null; then
+                has_typecheck=true
+            fi
+            if grep -q '"test"' package.json 2>/dev/null; then
+                has_test=true
+            fi
+        fi
+
+        # Run lint if available
+        if [[ "$has_lint" == true ]]; then
+            echo -e "${CYAN}    Running lint...${NC}"
+            local lint_output
+            if ! lint_output=$(bun run lint 2>&1); then
+                has_errors=true
+                error_output+="=== LINT ERRORS ===\n$lint_output\n\n"
+                echo -e "${RED}    ✗ Lint failed${NC}"
+            else
+                echo -e "${GREEN}    ✓ Lint passed${NC}"
+            fi
+        fi
+
+        # Run typecheck if available
+        if [[ "$has_typecheck" == true ]]; then
+            echo -e "${CYAN}    Running typecheck...${NC}"
+            local typecheck_output
+            if ! typecheck_output=$(bun run typecheck 2>&1); then
+                has_errors=true
+                error_output+="=== TYPECHECK ERRORS ===\n$typecheck_output\n\n"
+                echo -e "${RED}    ✗ Typecheck failed${NC}"
+            else
+                echo -e "${GREEN}    ✓ Typecheck passed${NC}"
+            fi
+        fi
+
+        # Run tests if available
+        if [[ "$has_test" == true ]]; then
+            echo -e "${CYAN}    Running tests...${NC}"
+            local test_output
+            if ! test_output=$(bun test 2>&1); then
+                has_errors=true
+                error_output+="=== TEST ERRORS ===\n$test_output\n\n"
+                echo -e "${RED}    ✗ Tests failed${NC}"
+            else
+                echo -e "${GREEN}    ✓ Tests passed${NC}"
+            fi
+        fi
+
+        # If no validation scripts exist, we're done
+        if [[ "$has_lint" == false && "$has_typecheck" == false && "$has_test" == false ]]; then
+            echo -e "${YELLOW}    No validation scripts found in package.json, skipping...${NC}"
+            return 0
+        fi
+
+        # If no errors, we're done
+        if [[ "$has_errors" == false ]]; then
+            echo -e "${GREEN}✓ All validations passed${NC}"
+            return 0
+        fi
+
+        # If we've reached max attempts, fail
+        if [[ $attempt -ge $max_attempts ]]; then
+            echo -e "${RED}✗ Validation failed after $max_attempts attempts${NC}"
+            echo -e "${RED}Please fix the errors manually and try again${NC}"
+            return 1
+        fi
+
+        # Call AI to fix the errors
+        echo -e "${YELLOW}    Errors found, calling AI to fix...${NC}"
+
+        local fix_prompt="You are fixing validation errors for GitHub issue #$ISSUE_NUMBER.
+
+ISSUE TITLE: $ISSUE_TITLE
+
+The following validation checks failed:
+
+$error_output
+
+INSTRUCTIONS:
+1. Analyze the error messages carefully
+2. Fix ALL the errors in the code
+3. Do NOT skip or ignore any errors
+4. Make sure to maintain 100% test coverage
+5. Commit your fixes with a descriptive message like 'fix: resolve lint/typecheck/test errors'
+6. Do NOT run the validation commands yourself - the script will re-run them automatically
+
+Fix all issues so the next validation run passes."
+
+        case "$AI_CLI" in
+            claude)
+                echo "$fix_prompt" | claude --dangerously-skip-permissions
+                ;;
+            codex)
+                codex --approval-mode full-auto "$fix_prompt"
+                ;;
+        esac
+
+        echo -e "${CYAN}    AI fix complete, re-validating...${NC}"
+    done
+}
+
+# Step 8: Push to branch
 push_branch() {
-    echo -e "${BLUE}[7/10] Pushing changes to branch...${NC}"
+    echo -e "${BLUE}[8/11] Pushing changes to branch...${NC}"
 
     # Check if there are any changes to push
     if git diff --quiet && git diff --staged --quiet; then
@@ -246,9 +369,9 @@ push_branch() {
     echo -e "${GREEN}✓ Pushed to $BRANCH_NAME${NC}"
 }
 
-# Step 8: Review and update CI/CD workflows
+# Step 9: Review and update CI/CD workflows
 review_cicd() {
-    echo -e "${BLUE}[8/10] Reviewing CI/CD workflows...${NC}"
+    echo -e "${BLUE}[9/11] Reviewing CI/CD workflows...${NC}"
 
     # Get list of changed files
     local changed_files
@@ -312,9 +435,9 @@ Be conservative - only add/modify workflows that are directly relevant to the ch
     fi
 }
 
-# Step 9: Create a PR
+# Step 10: Create a PR
 create_pr() {
-    echo -e "${BLUE}[9/10] Creating pull request...${NC}"
+    echo -e "${BLUE}[10/11] Creating pull request...${NC}"
 
     # Get issue labels for PR
     local labels
@@ -349,9 +472,9 @@ EOF
     gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "🚀 Pull request created: $PR_URL"
 }
 
-# Step 10: Wait for PR to be merged and issue to be closed
+# Step 11: Wait for PR to be merged and issue to be closed
 wait_for_merge_and_close() {
-    echo -e "${BLUE}[10/10] Waiting for PR to be merged and issue #$ISSUE_NUMBER to be closed...${NC}"
+    echo -e "${BLUE}[11/11] Waiting for PR to be merged and issue #$ISSUE_NUMBER to be closed...${NC}"
     echo -e "${CYAN}    Polling every ${POLL_INTERVAL}s. Press Ctrl+C to stop waiting.${NC}"
 
     local pr_number
@@ -407,6 +530,7 @@ run_cycle() {
     create_branch
     attach_branch_to_issue
     work_on_issue
+    validate_code
     push_branch
     review_cicd
     create_pr
