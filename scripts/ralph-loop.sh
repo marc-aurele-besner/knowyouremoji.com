@@ -95,7 +95,7 @@ detect_ai_cli() {
 
 # Step 1: Sync with main
 sync_with_main() {
-    echo -e "${BLUE}[1/9] Syncing with main branch...${NC}"
+    echo -e "${BLUE}[1/10] Syncing with main branch...${NC}"
     git checkout "$MAIN_BRANCH"
     git pull origin "$MAIN_BRANCH"
     echo -e "${GREEN}✓ Synced with main${NC}"
@@ -103,7 +103,7 @@ sync_with_main() {
 
 # Step 2: Pick the next issue to work on (by priority P0 > P1 > P2, then by issue number)
 pick_next_issue() {
-    echo -e "${BLUE}[2/9] Finding next unassigned issue...${NC}"
+    echo -e "${BLUE}[2/10] Finding next unassigned issue...${NC}"
 
     # Get open issues without assignees, sorted by priority labels and number
     # Priority order: P0 first, then P1, then P2
@@ -155,14 +155,14 @@ else:
 
 # Step 3: Assign yourself to the issue
 assign_issue() {
-    echo -e "${BLUE}[3/9] Assigning issue #$ISSUE_NUMBER to you...${NC}"
+    echo -e "${BLUE}[3/10] Assigning issue #$ISSUE_NUMBER to you...${NC}"
     gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "@me"
     echo -e "${GREEN}✓ Assigned issue #$ISSUE_NUMBER${NC}"
 }
 
 # Step 4: Create a branch for the issue
 create_branch() {
-    echo -e "${BLUE}[4/9] Creating branch for issue #$ISSUE_NUMBER...${NC}"
+    echo -e "${BLUE}[4/10] Creating branch for issue #$ISSUE_NUMBER...${NC}"
 
     # Create branch name from issue number and title
     # e.g., "123-setup-001-initialize-nextjs"
@@ -176,7 +176,7 @@ create_branch() {
 
 # Step 5: Attach the branch to the issue (link via development)
 attach_branch_to_issue() {
-    echo -e "${BLUE}[5/9] Linking branch to issue #$ISSUE_NUMBER...${NC}"
+    echo -e "${BLUE}[5/10] Linking branch to issue #$ISSUE_NUMBER...${NC}"
 
     # Push the branch first so it exists on remote
     git push -u origin "$BRANCH_NAME"
@@ -191,7 +191,7 @@ Working on this issue with automated AI assistance."
 
 # Step 6: Work on the issue using AI CLI
 work_on_issue() {
-    echo -e "${BLUE}[6/9] Working on issue #$ISSUE_NUMBER with $AI_CLI...${NC}"
+    echo -e "${BLUE}[6/10] Working on issue #$ISSUE_NUMBER with $AI_CLI...${NC}"
 
     # Get full issue details
     local issue_body
@@ -231,7 +231,7 @@ Work autonomously until the issue is fully resolved. Approve any permission requ
 
 # Step 7: Push to branch
 push_branch() {
-    echo -e "${BLUE}[7/9] Pushing changes to branch...${NC}"
+    echo -e "${BLUE}[7/10] Pushing changes to branch...${NC}"
 
     # Check if there are any changes to push
     if git diff --quiet && git diff --staged --quiet; then
@@ -246,9 +246,75 @@ push_branch() {
     echo -e "${GREEN}✓ Pushed to $BRANCH_NAME${NC}"
 }
 
-# Step 8: Create a PR
+# Step 8: Review and update CI/CD workflows
+review_cicd() {
+    echo -e "${BLUE}[8/10] Reviewing CI/CD workflows...${NC}"
+
+    # Get list of changed files
+    local changed_files
+    changed_files=$(git diff --name-only "$MAIN_BRANCH"...HEAD)
+
+    # Check if .github/workflows directory exists
+    local workflows_dir=".github/workflows"
+    if [[ ! -d "$workflows_dir" ]]; then
+        mkdir -p "$workflows_dir"
+        echo -e "${YELLOW}Created $workflows_dir directory${NC}"
+    fi
+
+    # Build the prompt for CI/CD review
+    local cicd_prompt="You are reviewing CI/CD workflows for GitHub issue #$ISSUE_NUMBER.
+
+ISSUE TITLE: $ISSUE_TITLE
+
+FILES CHANGED IN THIS BRANCH:
+$changed_files
+
+CURRENT WORKFLOWS:
+$(ls -la "$workflows_dir" 2>/dev/null || echo "No workflows exist yet")
+
+INSTRUCTIONS:
+1. Review the existing CI/CD workflows in .github/workflows/
+2. Analyze the changes made in this branch
+3. Determine if any CI/CD workflows need to be:
+   - Created (if none exist for the type of changes made)
+   - Modified (if existing workflows don't cover new functionality)
+   - Improved (if workflows could be more efficient or comprehensive)
+4. Focus on:
+   - Test workflows (if tests were added/modified)
+   - Lint workflows (if code style checks are needed)
+   - Build workflows (if build process changed)
+   - Deployment workflows (if deployment config changed)
+5. Ensure workflows use Bun as the runtime (not npm/yarn)
+6. Commit any workflow changes with descriptive messages
+7. If no CI/CD changes are needed, say so and do nothing
+
+Be conservative - only add/modify workflows that are directly relevant to the changes."
+
+    # Run the AI CLI for CI/CD review
+    case "$AI_CLI" in
+        claude)
+            echo "$cicd_prompt" | claude --dangerously-skip-permissions
+            ;;
+        codex)
+            codex --approval-mode full-auto "$cicd_prompt"
+            ;;
+    esac
+
+    # Check if there are any workflow changes to commit
+    if ! git diff --quiet "$workflows_dir" 2>/dev/null || [[ -n $(git ls-files --others --exclude-standard "$workflows_dir" 2>/dev/null) ]]; then
+        echo -e "${CYAN}CI/CD workflow changes detected, committing...${NC}"
+        git add "$workflows_dir"
+        git commit -m "chore: update CI/CD workflows for issue #$ISSUE_NUMBER" || true
+        git push origin "$BRANCH_NAME"
+        echo -e "${GREEN}✓ CI/CD workflows updated and pushed${NC}"
+    else
+        echo -e "${GREEN}✓ No CI/CD changes needed${NC}"
+    fi
+}
+
+# Step 9: Create a PR
 create_pr() {
-    echo -e "${BLUE}[8/9] Creating pull request...${NC}"
+    echo -e "${BLUE}[9/10] Creating pull request...${NC}"
 
     # Get issue labels for PR
     local labels
@@ -283,9 +349,9 @@ EOF
     gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "🚀 Pull request created: $PR_URL"
 }
 
-# Step 9: Wait for PR to be merged and issue to be closed
+# Step 10: Wait for PR to be merged and issue to be closed
 wait_for_merge_and_close() {
-    echo -e "${BLUE}[9/9] Waiting for PR to be merged and issue #$ISSUE_NUMBER to be closed...${NC}"
+    echo -e "${BLUE}[10/10] Waiting for PR to be merged and issue #$ISSUE_NUMBER to be closed...${NC}"
     echo -e "${CYAN}    Polling every ${POLL_INTERVAL}s. Press Ctrl+C to stop waiting.${NC}"
 
     local pr_number
@@ -342,6 +408,7 @@ run_cycle() {
     attach_branch_to_issue
     work_on_issue
     push_branch
+    review_cicd
     create_pr
     wait_for_merge_and_close
 
