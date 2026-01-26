@@ -174,18 +174,73 @@ sync_with_main() {
     echo -e "${GREEN}✓ Synced with main${NC}"
 }
 
-# Step 2: Pick the next issue to work on (by priority P0 > P1 > P2, then by issue number)
+# Step 2: Pick the next issue to work on (by milestone order, then priority P0 > P1 > P2, then by issue number)
 pick_next_issue() {
     echo -e "${BLUE}[2/11] Finding next unassigned issue...${NC}"
 
-    # Get open issues without assignees, sorted by priority labels and number
-    # Priority order: P0 first, then P1, then P2
-    local issue_json
-    issue_json=$(gh issue list --repo "$REPO" --state open --assignee "" --limit 100 --json number,title,labels)
+    # Get list of milestones sorted by title (Phase 1 before Phase 2, etc.)
+    echo -e "${CYAN}    Fetching milestones...${NC}"
+    local milestones_json
+    milestones_json=$(gh api "repos/$REPO/milestones?state=open&sort=title&direction=asc" 2>/dev/null || echo "[]")
 
-    # Parse and sort issues by priority
-    local next_issue
-    next_issue=$(echo "$issue_json" | python3 -c "
+    local milestones
+    milestones=$(echo "$milestones_json" | python3 -c "
+import json
+import sys
+data = json.load(sys.stdin)
+for m in data:
+    print(m['title'])
+" 2>/dev/null || echo "")
+
+    if [[ -z "$milestones" ]]; then
+        echo -e "${YELLOW}    No open milestones found, checking all issues...${NC}"
+        milestones="__ALL_ISSUES__"
+    fi
+
+    local next_issue=""
+    local current_milestone=""
+
+    # Iterate through milestones in order
+    while IFS= read -r milestone; do
+        [[ -z "$milestone" ]] && continue
+
+        if [[ "$milestone" == "__ALL_ISSUES__" ]]; then
+            echo -e "${CYAN}    Checking all open issues...${NC}"
+            local issue_json
+            issue_json=$(gh issue list --repo "$REPO" --state open --assignee "" --limit 100 --json number,title,labels,milestone 2>/dev/null || echo "[]")
+        else
+            echo -e "${CYAN}    Checking milestone: $milestone${NC}"
+
+            # Check milestone status
+            local milestone_info
+            milestone_info=$(echo "$milestones_json" | python3 -c "
+import json
+import sys
+data = json.load(sys.stdin)
+for m in data:
+    if m['title'] == '$milestone':
+        print(f\"{m['open_issues']}|{m['closed_issues']}\")
+        break
+" 2>/dev/null || echo "0|0")
+
+            local open_count closed_count
+            open_count=$(echo "$milestone_info" | cut -d'|' -f1)
+            closed_count=$(echo "$milestone_info" | cut -d'|' -f2)
+
+            if [[ "$open_count" == "0" ]]; then
+                echo -e "${GREEN}    ✓ Milestone '$milestone' complete ($closed_count issues closed)${NC}"
+                continue
+            fi
+
+            echo -e "${CYAN}    Milestone has $open_count open issue(s), $closed_count closed${NC}"
+
+            # Get open unassigned issues for this milestone
+            local issue_json
+            issue_json=$(gh issue list --repo "$REPO" --state open --assignee "" --milestone "$milestone" --limit 100 --json number,title,labels,milestone 2>/dev/null || echo "[]")
+        fi
+
+        # Parse and sort issues by priority
+        next_issue=$(echo "$issue_json" | python3 -c "
 import json
 import sys
 
@@ -214,15 +269,28 @@ else:
     print('')
 ")
 
+        if [[ -n "$next_issue" ]]; then
+            current_milestone="$milestone"
+            break
+        fi
+
+        echo -e "${YELLOW}    No unassigned issues available in this milestone${NC}"
+    done <<< "$milestones"
+
     if [[ -z "$next_issue" ]]; then
-        echo -e "${YELLOW}No unassigned issues found. All done!${NC}"
+        echo -e "${YELLOW}No unassigned issues found in any milestone. All done!${NC}"
         return 1
     fi
 
     ISSUE_NUMBER=$(echo "$next_issue" | cut -d'|' -f1)
     ISSUE_TITLE=$(echo "$next_issue" | cut -d'|' -f2-)
 
-    echo -e "${GREEN}✓ Selected issue #$ISSUE_NUMBER: $ISSUE_TITLE${NC}"
+    if [[ -n "$current_milestone" && "$current_milestone" != "__ALL_ISSUES__" ]]; then
+        echo -e "${GREEN}✓ Selected issue #$ISSUE_NUMBER from '$current_milestone'${NC}"
+        echo -e "${GREEN}  Title: $ISSUE_TITLE${NC}"
+    else
+        echo -e "${GREEN}✓ Selected issue #$ISSUE_NUMBER: $ISSUE_TITLE${NC}"
+    fi
     return 0
 }
 
