@@ -239,29 +239,71 @@ for m in data:
             issue_json=$(gh issue list --repo "$REPO" --state open --assignee "" --milestone "$milestone" --limit 100 --json number,title,labels,milestone 2>/dev/null || echo "[]")
         fi
 
-        # Parse and sort issues by priority
+        # Parse and sort issues by category prefix, then priority, then issue number
         next_issue=$(echo "$issue_json" | python3 -c "
 import json
 import sys
+import re
 
 data = json.load(sys.stdin)
+
+# Define category order (issues should be worked on in this sequence)
+CATEGORY_ORDER = {
+    'SETUP': 0,
+    'TYPE': 1,
+    'DATA': 2,
+    'PAGE': 3,
+    'COMBO': 4,
+    'INTERPRETER': 5,
+    'RATE': 6,
+    'SEO': 7,
+    'DEPLOY': 8,
+    'TEST': 9,
+    'AUTH': 10,
+    'SUB': 11,
+    'HISTORY': 12,
+    'SHARE': 13,
+}
+
+def get_category_order(title):
+    # Extract category prefix from title (e.g., 'SETUP-001' -> 'SETUP')
+    match = re.match(r'^([A-Z]+)-', title)
+    if match:
+        category = match.group(1)
+        return CATEGORY_ORDER.get(category, 99)
+    return 99
+
+def get_category_number(title):
+    # Extract number from title (e.g., 'SETUP-001' -> 1)
+    match = re.match(r'^[A-Z]+-(\d+)', title)
+    if match:
+        return int(match.group(1))
+    return 999
 
 def get_priority(issue):
     labels = [l['name'] for l in issue.get('labels', [])]
     if 'priority: P0' in labels:
-        return (0, issue['number'])
+        return 0
     elif 'priority: P1' in labels:
-        return (1, issue['number'])
+        return 1
     elif 'priority: P2' in labels:
-        return (2, issue['number'])
-    else:
-        return (3, issue['number'])
+        return 2
+    return 3
+
+def sort_key(issue):
+    title = issue.get('title', '')
+    return (
+        get_category_order(title),  # Category order (SETUP before COMBO)
+        get_category_number(title), # Number within category (001 before 002)
+        get_priority(issue),        # Priority (P0 before P1)
+        issue['number']             # Issue number as tiebreaker
+    )
 
 if not data:
     print('')
     sys.exit(0)
 
-sorted_issues = sorted(data, key=get_priority)
+sorted_issues = sorted(data, key=sort_key)
 if sorted_issues:
     issue = sorted_issues[0]
     print(f\"{issue['number']}|{issue['title']}\")
@@ -378,9 +420,11 @@ Work autonomously until the issue is fully resolved. Approve any permission requ
             echo "$prompt" | claude --dangerously-skip-permissions
             ;;
         codex)
-            # Codex CLI with full-auto approval mode
-            # Note: codex uses --full-auto flag, not --approval-mode
-            codex --full-auto "$prompt"
+            # Codex CLI - use auto-edit approval policy
+            # Try with --approval-policy flag, fallback to env var if needed
+            CODEX_APPROVE_MODE=auto-edit codex --approval-policy auto-edit "$prompt" 2>/dev/null \
+                || CODEX_APPROVE_MODE=auto-edit codex -a "$prompt" 2>/dev/null \
+                || codex "$prompt"
             ;;
     esac
 
@@ -502,7 +546,9 @@ Fix all issues so the next validation run passes."
                 echo "$fix_prompt" | claude --dangerously-skip-permissions
                 ;;
             codex)
-                codex --full-auto "$fix_prompt"
+                CODEX_APPROVE_MODE=auto-edit codex --approval-policy auto-edit "$fix_prompt" 2>/dev/null \
+                    || CODEX_APPROVE_MODE=auto-edit codex -a "$fix_prompt" 2>/dev/null \
+                    || codex "$fix_prompt"
                 ;;
         esac
 
@@ -577,7 +623,9 @@ Be conservative - only add/modify workflows that are directly relevant to the ch
             echo "$cicd_prompt" | claude --dangerously-skip-permissions
             ;;
         codex)
-            codex --full-auto "$cicd_prompt"
+            CODEX_APPROVE_MODE=auto-edit codex --approval-policy auto-edit "$cicd_prompt" 2>/dev/null \
+                || CODEX_APPROVE_MODE=auto-edit codex -a "$cicd_prompt" 2>/dev/null \
+                || codex "$cicd_prompt"
             ;;
     esac
 
@@ -696,6 +744,21 @@ run_cycle() {
     if detect_resume_state; then
         echo -e "${GREEN}Resuming work on issue #$ISSUE_NUMBER: $ISSUE_TITLE${NC}"
         echo ""
+
+        # Ensure we're assigned to the issue
+        echo -e "${CYAN}Ensuring issue assignment...${NC}"
+        local current_assignees
+        current_assignees=$(gh issue view "$ISSUE_NUMBER" --repo "$REPO" --json assignees -q '.assignees[].login' 2>/dev/null || echo "")
+        local my_username
+        my_username=$(gh api user --jq '.login' 2>/dev/null || echo "")
+
+        if [[ -z "$current_assignees" ]] || [[ ! "$current_assignees" =~ "$my_username" ]]; then
+            echo -e "${YELLOW}Assigning issue to you...${NC}"
+            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "@me"
+            echo -e "${GREEN}✓ Assigned${NC}"
+        else
+            echo -e "${GREEN}✓ Already assigned to you${NC}"
+        fi
 
         # Determine which step to resume from
         local step_info
