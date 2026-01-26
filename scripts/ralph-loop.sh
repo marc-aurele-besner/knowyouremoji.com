@@ -9,7 +9,7 @@
 #   ./scripts/ralph-loop.sh           # Auto-detect available CLI
 #
 # Options:
-#   --loop                            # Continuous mode: auto-start next issue after PR merge
+#   --single                          # Single issue mode: exit after one PR (default: continuous loop)
 #   --poll-interval <seconds>         # How often to check PR status (default: 60)
 
 set -e
@@ -26,13 +26,18 @@ NC='\033[0m' # No Color
 REPO="marc-aurele-besner/knowyouremoji.com"
 MAIN_BRANCH="main"
 POLL_INTERVAL=60  # seconds between PR status checks
-CONTINUOUS_MODE=false
+CONTINUOUS_MODE=true  # Default: continuous loop (use --single to disable)
 
 # Parse arguments
 parse_args() {
     while [[ $# -gt 0 ]]; do
         case "$1" in
+            --single)
+                CONTINUOUS_MODE=false
+                shift
+                ;;
             --loop)
+                # Kept for backwards compatibility (now default)
                 CONTINUOUS_MODE=true
                 shift
                 ;;
@@ -472,10 +477,11 @@ EOF
     gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "🚀 Pull request created: $PR_URL"
 }
 
-# Step 11: Wait for PR to be merged and issue to be closed
+# Step 11: Wait for PR to be merged and issue to be closed, then loop back
 wait_for_merge_and_close() {
     echo -e "${BLUE}[11/11] Waiting for PR to be merged and issue #$ISSUE_NUMBER to be closed...${NC}"
     echo -e "${CYAN}    Polling every ${POLL_INTERVAL}s. Press Ctrl+C to stop waiting.${NC}"
+    echo -e "${CYAN}    Once merged, will loop back to step 1 for next issue.${NC}"
 
     local pr_number
     pr_number=$(echo "$PR_URL" | grep -oE '[0-9]+$')
@@ -493,6 +499,7 @@ wait_for_merge_and_close() {
 
         if [[ "$pr_state" == "MERGED" ]] && [[ "$issue_state" == "CLOSED" ]]; then
             echo -e "${GREEN}✓ PR merged and issue closed!${NC}"
+            echo -e "${GREEN}→ Looping back to step 1 for next issue...${NC}"
             return 0
         elif [[ "$pr_state" == "CLOSED" ]] && [[ "$pr_state" != "MERGED" ]]; then
             echo -e "${RED}✗ PR was closed without merging${NC}"
@@ -549,8 +556,9 @@ main() {
     parse_args "$@"
 
     if [[ "$CONTINUOUS_MODE" == true ]]; then
-        echo -e "${GREEN}Starting Ralph Loop in continuous mode...${NC}"
-        echo -e "${YELLOW}Will automatically start next issue after each PR is merged.${NC}"
+        echo -e "${GREEN}Starting Ralph Loop (continuous mode)...${NC}"
+        echo -e "${YELLOW}Will automatically loop back to step 1 after each PR is merged.${NC}"
+        echo -e "${CYAN}Use --single flag to process only one issue.${NC}"
         echo ""
 
         local cycle_count=0
@@ -559,12 +567,12 @@ main() {
             echo -e "${CYAN}========== CYCLE $cycle_count ==========${NC}"
 
             if ! run_cycle; then
-                echo -e "${GREEN}No more issues to work on. Exiting continuous mode.${NC}"
+                echo -e "${GREEN}No more issues to work on. Exiting.${NC}"
                 break
             fi
 
             echo ""
-            echo -e "${YELLOW}Moving to next issue in 5 seconds...${NC}"
+            echo -e "${YELLOW}Starting next cycle in 5 seconds...${NC}"
             sleep 5
         done
 
@@ -573,14 +581,15 @@ main() {
         echo -e "${GREEN}  Ralph Loop completed $cycle_count cycles${NC}"
         echo -e "${GREEN}======================================${NC}"
     else
+        echo -e "${GREEN}Starting Ralph Loop (single issue mode)...${NC}"
+        echo -e "${CYAN}Will exit after this issue is completed.${NC}"
+        echo ""
+
         run_cycle
 
         echo ""
         echo -e "${YELLOW}Run again to work on the next issue:${NC}"
         echo -e "  ./scripts/ralph-loop.sh $AI_CLI"
-        echo ""
-        echo -e "${YELLOW}Or run in continuous mode:${NC}"
-        echo -e "  ./scripts/ralph-loop.sh $AI_CLI --loop"
     fi
 }
 
