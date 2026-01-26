@@ -11,6 +11,7 @@
 # Options:
 #   --single                          # Single issue mode: exit after one PR (default: continuous loop)
 #   --poll-interval <seconds>         # How often to check PR status (default: 60)
+#   --resume                          # Resume work on current branch (auto-detected if on issue branch)
 
 set -e
 
@@ -27,6 +28,7 @@ REPO="marc-aurele-besner/knowyouremoji.com"
 MAIN_BRANCH="main"
 POLL_INTERVAL=60  # seconds between PR status checks
 CONTINUOUS_MODE=true  # Default: continuous loop (use --single to disable)
+RESUME_MODE=false  # Resume from current branch
 
 # Parse arguments
 parse_args() {
@@ -39,6 +41,10 @@ parse_args() {
             --loop)
                 # Kept for backwards compatibility (now default)
                 CONTINUOUS_MODE=true
+                shift
+                ;;
+            --resume)
+                RESUME_MODE=true
                 shift
                 ;;
             --poll-interval)
@@ -54,6 +60,68 @@ parse_args() {
                 ;;
         esac
     done
+}
+
+# Check if we're on an issue branch and extract issue number
+detect_resume_state() {
+    local current_branch
+    current_branch=$(git branch --show-current)
+
+    # Check if we're on an issue branch (pattern: issue-NUMBER-*)
+    if [[ "$current_branch" =~ ^issue-([0-9]+)- ]]; then
+        local detected_issue="${BASH_REMATCH[1]}"
+        echo -e "${YELLOW}Detected issue branch: $current_branch${NC}"
+        echo -e "${YELLOW}Issue #$detected_issue in progress${NC}"
+
+        # Auto-enable resume mode
+        RESUME_MODE=true
+        ISSUE_NUMBER="$detected_issue"
+        BRANCH_NAME="$current_branch"
+
+        # Get issue title
+        ISSUE_TITLE=$(gh issue view "$ISSUE_NUMBER" --repo "$REPO" --json title -q '.title')
+
+        return 0
+    fi
+
+    return 1
+}
+
+# Determine which step to resume from
+determine_resume_step() {
+    echo -e "${CYAN}Determining resume point...${NC}"
+
+    # Check if PR already exists for this branch
+    local pr_exists
+    pr_exists=$(gh pr list --repo "$REPO" --head "$BRANCH_NAME" --json number -q '.[0].number' 2>/dev/null || echo "")
+
+    if [[ -n "$pr_exists" ]]; then
+        echo -e "${GREEN}PR #$pr_exists already exists for this branch${NC}"
+        PR_URL="https://github.com/$REPO/pull/$pr_exists"
+        echo "resume_step=11"  # Go to wait for merge
+        return
+    fi
+
+    # Check if there are uncommitted changes
+    if ! git diff --quiet || ! git diff --staged --quiet; then
+        echo -e "${YELLOW}Uncommitted changes detected${NC}"
+        echo "resume_step=7"  # Go to validation
+        return
+    fi
+
+    # Check if there are commits ahead of main
+    local commits_ahead
+    commits_ahead=$(git rev-list --count "$MAIN_BRANCH"..HEAD 2>/dev/null || echo "0")
+
+    if [[ "$commits_ahead" -gt 0 ]]; then
+        echo -e "${YELLOW}Branch has $commits_ahead commit(s) ahead of main${NC}"
+        echo "resume_step=7"  # Go to validation
+        return
+    fi
+
+    # No work done yet, start from AI work
+    echo -e "${YELLOW}No work detected, starting from AI implementation${NC}"
+    echo "resume_step=6"
 }
 
 # Detect or use specified AI CLI
@@ -175,21 +243,37 @@ create_branch() {
     sanitized_title=$(echo "$ISSUE_TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//' | cut -c1-50)
     BRANCH_NAME="issue-${ISSUE_NUMBER}-${sanitized_title}"
 
-    git checkout -b "$BRANCH_NAME"
-    echo -e "${GREEN}✓ Created and checked out branch: $BRANCH_NAME${NC}"
+    # Check if branch already exists locally
+    if git show-ref --verify --quiet "refs/heads/$BRANCH_NAME"; then
+        echo -e "${YELLOW}Branch already exists locally, switching to it${NC}"
+        git checkout "$BRANCH_NAME"
+    # Check if branch exists on remote
+    elif git ls-remote --exit-code --heads origin "$BRANCH_NAME" &>/dev/null; then
+        echo -e "${YELLOW}Branch exists on remote, checking out${NC}"
+        git checkout -b "$BRANCH_NAME" "origin/$BRANCH_NAME"
+    else
+        git checkout -b "$BRANCH_NAME"
+    fi
+
+    echo -e "${GREEN}✓ On branch: $BRANCH_NAME${NC}"
 }
 
 # Step 5: Attach the branch to the issue (link via development)
 attach_branch_to_issue() {
     echo -e "${BLUE}[5/11] Linking branch to issue #$ISSUE_NUMBER...${NC}"
 
-    # Push the branch first so it exists on remote
-    git push -u origin "$BRANCH_NAME"
+    # Check if branch already exists on remote
+    if git ls-remote --exit-code --heads origin "$BRANCH_NAME" &>/dev/null; then
+        echo -e "${YELLOW}Branch already exists on remote${NC}"
+    else
+        # Push the branch first so it exists on remote
+        git push -u origin "$BRANCH_NAME"
 
-    # Add a comment to the issue linking the branch
-    gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "🔗 Branch created: \`$BRANCH_NAME\`
+        # Add a comment to the issue linking the branch
+        gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "🔗 Branch created: \`$BRANCH_NAME\`
 
 Working on this issue with automated AI assistance."
+    fi
 
     echo -e "${GREEN}✓ Branch linked to issue #$ISSUE_NUMBER${NC}"
 }
@@ -226,8 +310,9 @@ Work autonomously until the issue is fully resolved. Approve any permission requ
             echo "$prompt" | claude --dangerously-skip-permissions
             ;;
         codex)
-            # Codex CLI with auto-approve
-            codex --approval-mode full-auto "$prompt"
+            # Codex CLI with full-auto approval mode
+            # Note: codex uses --full-auto flag, not --approval-mode
+            codex --full-auto "$prompt"
             ;;
     esac
 
@@ -349,7 +434,7 @@ Fix all issues so the next validation run passes."
                 echo "$fix_prompt" | claude --dangerously-skip-permissions
                 ;;
             codex)
-                codex --approval-mode full-auto "$fix_prompt"
+                codex --full-auto "$fix_prompt"
                 ;;
         esac
 
@@ -424,7 +509,7 @@ Be conservative - only add/modify workflows that are directly relevant to the ch
             echo "$cicd_prompt" | claude --dangerously-skip-permissions
             ;;
         codex)
-            codex --approval-mode full-auto "$cicd_prompt"
+            codex --full-auto "$cicd_prompt"
             ;;
     esac
 
@@ -443,6 +528,17 @@ Be conservative - only add/modify workflows that are directly relevant to the ch
 # Step 10: Create a PR
 create_pr() {
     echo -e "${BLUE}[10/11] Creating pull request...${NC}"
+
+    # Check if PR already exists for this branch
+    local existing_pr
+    existing_pr=$(gh pr list --repo "$REPO" --head "$BRANCH_NAME" --json number,url -q '.[0].url' 2>/dev/null || echo "")
+
+    if [[ -n "$existing_pr" ]]; then
+        echo -e "${YELLOW}PR already exists: $existing_pr${NC}"
+        PR_URL="$existing_pr"
+        echo -e "${GREEN}✓ Using existing pull request${NC}"
+        return 0
+    fi
 
     # Get issue labels for PR
     local labels
@@ -526,27 +622,66 @@ run_cycle() {
     fi
     echo ""
 
-    # Run the workflow
-    sync_with_main
+    local resume_step=0
 
-    if ! pick_next_issue; then
-        return 1  # No more issues
+    # Check if we should resume from current branch
+    if detect_resume_state; then
+        echo -e "${GREEN}Resuming work on issue #$ISSUE_NUMBER: $ISSUE_TITLE${NC}"
+        echo ""
+
+        # Determine which step to resume from
+        local step_info
+        step_info=$(determine_resume_step)
+        resume_step=$(echo "$step_info" | grep "resume_step=" | cut -d'=' -f2)
+
+        echo -e "${CYAN}Resuming from step $resume_step${NC}"
+        echo ""
+    else
+        # Normal flow: sync and pick new issue
+        sync_with_main
+
+        if ! pick_next_issue; then
+            return 1  # No more issues
+        fi
+
+        assign_issue
+        create_branch
+        attach_branch_to_issue
+        resume_step=6  # Start from AI work
     fi
 
-    assign_issue
-    create_branch
-    attach_branch_to_issue
-    work_on_issue
-    validate_code
-    push_branch
-    review_cicd
-    create_pr
-    wait_for_merge_and_close
+    # Execute steps based on resume point
+    if [[ $resume_step -le 6 ]]; then
+        work_on_issue
+    fi
+
+    if [[ $resume_step -le 7 ]]; then
+        validate_code
+    fi
+
+    if [[ $resume_step -le 8 ]]; then
+        push_branch
+    fi
+
+    if [[ $resume_step -le 9 ]]; then
+        review_cicd
+    fi
+
+    if [[ $resume_step -le 10 ]]; then
+        create_pr
+    fi
+
+    if [[ $resume_step -le 11 ]]; then
+        wait_for_merge_and_close
+    fi
 
     echo ""
     echo -e "${GREEN}======================================${NC}"
     echo -e "${GREEN}  Issue #$ISSUE_NUMBER completed!${NC}"
     echo -e "${GREEN}======================================${NC}"
+
+    # Reset resume mode for next cycle
+    RESUME_MODE=false
 
     return 0
 }
@@ -554,6 +689,19 @@ run_cycle() {
 # Main entry point
 main() {
     parse_args "$@"
+
+    # Check for resume state before starting
+    local current_branch
+    current_branch=$(git branch --show-current 2>/dev/null || echo "")
+
+    if [[ "$current_branch" =~ ^issue-([0-9]+)- ]] && [[ "$RESUME_MODE" != true ]]; then
+        echo -e "${YELLOW}======================================${NC}"
+        echo -e "${YELLOW}  Detected in-progress issue branch${NC}"
+        echo -e "${YELLOW}======================================${NC}"
+        echo -e "${CYAN}Current branch: $current_branch${NC}"
+        echo -e "${CYAN}Will automatically resume from where you left off.${NC}"
+        echo ""
+    fi
 
     if [[ "$CONTINUOUS_MODE" == true ]]; then
         echo -e "${GREEN}Starting Ralph Loop (continuous mode)...${NC}"
