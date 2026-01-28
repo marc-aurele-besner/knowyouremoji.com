@@ -32,7 +32,13 @@ jobs:
         run: bun run typecheck
 
       - name: Test
-        run: bun test --coverage
+        run: bun run test
 
       - name: Build
         run: bun run build
+
+      - name: Install Playwright browsers
+        run: bunx playwright install chromium
+
+      - name: Run E2E tests
+        run: bun run test:e2e
