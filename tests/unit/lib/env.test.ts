@@ -3,6 +3,11 @@ import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 // Store original env
 const originalEnv = { ...process.env };
 
+// Helper to set NODE_ENV while bypassing TypeScript's readonly constraint
+function setNodeEnv(value: string) {
+  (process.env as Record<string, string | undefined>).NODE_ENV = value;
+}
+
 describe('env configuration', () => {
   beforeEach(() => {
     // Reset process.env before each test
@@ -139,19 +144,19 @@ describe('env configuration', () => {
 
   describe('isProduction', () => {
     it('should return true when NODE_ENV is production', async () => {
-      process.env.NODE_ENV = 'production';
+      setNodeEnv('production');
       const { isProduction } = await import('../../../src/lib/env');
       expect(isProduction()).toBe(true);
     });
 
     it('should return false when NODE_ENV is development', async () => {
-      process.env.NODE_ENV = 'development';
+      setNodeEnv('development');
       const { isProduction } = await import('../../../src/lib/env');
       expect(isProduction()).toBe(false);
     });
 
     it('should return false when NODE_ENV is test', async () => {
-      process.env.NODE_ENV = 'test';
+      setNodeEnv('test');
       const { isProduction } = await import('../../../src/lib/env');
       expect(isProduction()).toBe(false);
     });
@@ -159,13 +164,13 @@ describe('env configuration', () => {
 
   describe('isDevelopment', () => {
     it('should return true when NODE_ENV is development', async () => {
-      process.env.NODE_ENV = 'development';
+      setNodeEnv('development');
       const { isDevelopment } = await import('../../../src/lib/env');
       expect(isDevelopment()).toBe(true);
     });
 
     it('should return false when NODE_ENV is production', async () => {
-      process.env.NODE_ENV = 'production';
+      setNodeEnv('production');
       const { isDevelopment } = await import('../../../src/lib/env');
       expect(isDevelopment()).toBe(false);
     });
@@ -173,19 +178,19 @@ describe('env configuration', () => {
 
   describe('isTest', () => {
     it('should return true when NODE_ENV is test', async () => {
-      process.env.NODE_ENV = 'test';
+      setNodeEnv('test');
       const { isTest } = await import('../../../src/lib/env');
       expect(isTest()).toBe(true);
     });
 
     it('should return false when NODE_ENV is production', async () => {
-      process.env.NODE_ENV = 'production';
+      setNodeEnv('production');
       const { isTest } = await import('../../../src/lib/env');
       expect(isTest()).toBe(false);
     });
 
     it('should return false when NODE_ENV is development', async () => {
-      process.env.NODE_ENV = 'development';
+      setNodeEnv('development');
       const { isTest } = await import('../../../src/lib/env');
       expect(isTest()).toBe(false);
     });
