@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import OpenAI from 'openai';
 import type { InterpretRequest, InterpretationResult, InterpretErrorResponse } from '@/types';
+import { interpretMessage } from '@/lib/interpreter';
+import { OpenAIError } from '@/lib/openai';
 
 // Regular expression to detect emoji characters
 // This pattern matches most Unicode emoji including:
@@ -165,23 +168,56 @@ export async function POST(
     // Extract emojis from the message
     const emojis = extractEmojis(validatedData.message);
 
-    // Check if OpenAI API is configured
-    const openaiKey = process.env.OPENAI_API_KEY;
+    // Check if interpreter is enabled
     const interpreterEnabled = process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false';
+    const openaiKey = process.env.OPENAI_API_KEY;
 
-    if (!openaiKey || !interpreterEnabled) {
-      // Return mock interpretation for Phase 1
-      // In Phase 2, this will call the actual interpreter service
+    if (!interpreterEnabled || !openaiKey) {
+      // Return mock interpretation when service is disabled or not configured
       const mockResult = createMockInterpretation(validatedData, emojis);
       return NextResponse.json(mockResult, { status: 200 });
     }
 
-    // TODO: Phase 2 - Call OpenAI API via interpreter service
-    // For now, return mock interpretation
-    const result = createMockInterpretation(validatedData, emojis);
+    // Call the interpreter service
+    const result = await interpretMessage(validatedData);
     return NextResponse.json(result, { status: 200 });
   } catch (error) {
     console.error('Error in /api/interpret:', error);
+
+    // Handle custom OpenAI errors
+    if (error instanceof OpenAIError) {
+      if (error.code === 'CONFIG_ERROR') {
+        return createErrorResponse('AI service is not configured', 503);
+      }
+      if (error.code === 'RATE_LIMIT') {
+        return createErrorResponse(
+          'AI service is temporarily unavailable. Please try again later.',
+          429
+        );
+      }
+      if (error.code === 'PARSE_ERROR') {
+        return createErrorResponse('Failed to process AI response', 500);
+      }
+      return createErrorResponse('AI service error', 500);
+    }
+
+    // Handle OpenAI SDK errors
+    if (error instanceof OpenAI.APIError) {
+      if (error.status === 401) {
+        return createErrorResponse('AI service authentication failed', 503);
+      }
+      if (error.status === 429) {
+        return createErrorResponse(
+          'AI service is temporarily unavailable. Please try again later.',
+          429
+        );
+      }
+      if (error.status && error.status >= 500) {
+        return createErrorResponse('AI service is temporarily unavailable', 503);
+      }
+      return createErrorResponse('AI service error', 500);
+    }
+
     return createErrorResponse('Internal server error', 500);
   }
 }
