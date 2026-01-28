@@ -122,6 +122,18 @@ export type Generation = 'GEN_Z' | 'MILLENNIAL' | 'GEN_X' | 'BOOMER';
 export type WarningSeverity = 'LOW' | 'MEDIUM' | 'HIGH';
 
 /**
+ * Relationship context for interpreter tool
+ * Helps AI provide more accurate interpretations based on relationship
+ */
+export type RelationshipContext =
+  | 'ROMANTIC_PARTNER'
+  | 'FRIEND'
+  | 'FAMILY'
+  | 'COWORKER'
+  | 'ACQUAINTANCE'
+  | 'STRANGER';
+
+/**
  * Context-specific meaning for an emoji
  */
 export interface ContextMeaning {

@@ -15,6 +15,7 @@ export type {
   Platform,
   Generation,
   WarningSeverity,
+  RelationshipContext,
   // Interface types
   ContextMeaning,
   PlatformNote,
