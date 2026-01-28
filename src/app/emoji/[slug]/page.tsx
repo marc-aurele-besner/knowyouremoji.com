@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getEmojiBySlug, getAllEmojiSlugs } from '@/lib/emoji-data';
+import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -20,6 +21,7 @@ export async function generateStaticParams() {
 
 /**
  * Generate metadata for the emoji page
+ * Includes full SEO metadata: Open Graph, Twitter Cards, canonical URLs, keywords, and robots directives
  */
 export async function generateMetadata({ params }: EmojiPageProps): Promise<Metadata> {
   const { slug } = await params;
@@ -29,12 +31,60 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
     return {};
   }
 
+  const env = getEnv();
+  const pageUrl = `${env.appUrl}/emoji/${emoji.slug}`;
+  const ogTitle = `${emoji.character} ${emoji.name} Emoji Meaning`;
+
+  // Generate keywords array
+  const keywords = [
+    `${emoji.name.toLowerCase()} emoji`,
+    emoji.character,
+    `${emoji.character} meaning`,
+    `what does ${emoji.character} mean`,
+    emoji.shortName,
+    emoji.category,
+    'emoji meaning',
+    'emoji guide',
+  ];
+
   return {
     title: emoji.seoTitle,
     description: emoji.seoDescription,
+    keywords,
+    alternates: {
+      canonical: pageUrl,
+    },
     openGraph: {
-      title: `${emoji.character} ${emoji.name} Emoji Meaning`,
+      title: ogTitle,
       description: emoji.tldr,
+      type: 'article',
+      url: pageUrl,
+      siteName: env.appName,
+      images: [
+        {
+          url: `${env.appUrl}/og/emoji/${emoji.slug}.png`,
+          width: 1200,
+          height: 630,
+          alt: `${emoji.character} ${emoji.name} emoji meaning`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: ogTitle,
+      description: emoji.tldr,
+      images: [`${env.appUrl}/og/emoji/${emoji.slug}.png`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   };
 }
