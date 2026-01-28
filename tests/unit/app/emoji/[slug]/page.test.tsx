@@ -111,6 +111,64 @@ describe('EmojiPage', () => {
 
       expect(metadata).toEqual({});
     });
+
+    test('includes full Open Graph metadata', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
+
+      // Open Graph basic fields
+      expect(metadata.openGraph?.type).toBe('article');
+      expect(metadata.openGraph?.siteName).toBe('KnowYourEmoji');
+      expect(metadata.openGraph?.url).toContain('/emoji/skull');
+
+      // Open Graph images
+      const ogImages = metadata.openGraph?.images;
+      expect(ogImages).toBeDefined();
+      expect(Array.isArray(ogImages) ? ogImages.length : 0).toBeGreaterThan(0);
+    });
+
+    test('includes Twitter Card metadata', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
+
+      expect(metadata.twitter?.card).toBe('summary_large_image');
+      expect(metadata.twitter?.title).toBe('💀 Skull Emoji Meaning');
+      expect(metadata.twitter?.description).toBe("Usually means 'that's so funny I'm dead'");
+    });
+
+    test('includes canonical URL', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
+
+      expect(metadata.alternates?.canonical).toContain('/emoji/skull');
+    });
+
+    test('includes keywords with emoji-related terms', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
+
+      expect(metadata.keywords).toBeDefined();
+      expect(metadata.keywords).toContain('skull emoji');
+      expect(metadata.keywords).toContain('💀');
+    });
+
+    test('includes proper robots directives', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
+
+      expect(metadata.robots).toBeDefined();
+      expect(metadata.robots).toEqual({
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      });
+    });
   });
 
   describe('EmojiPage component', () => {
