@@ -220,7 +220,7 @@ describe('InterpreterForm', () => {
     });
 
     it('shows loading state during submission', async () => {
-      const slowSubmit = mock(() => new Promise((resolve) => setTimeout(resolve, 100)));
+      const slowSubmit = mock(() => new Promise<void>((resolve) => setTimeout(resolve, 100)));
       render(<InterpreterForm onSubmit={slowSubmit} />);
       const textarea = screen.getByRole('textbox', { name: /message/i });
       const submitButton = screen.getByRole('button', { name: /interpret/i });
