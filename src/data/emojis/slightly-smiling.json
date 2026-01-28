@@ -1,0 +1,76 @@
+{
+  "unicode": "1F642",
+  "slug": "slightly-smiling",
+  "character": "🙂",
+  "name": "Slightly Smiling Face",
+  "shortName": "slightly_smiling_face",
+  "category": "faces",
+  "subcategory": "face-positive",
+  "unicodeVersion": "7.0",
+  "baseMeaning": "A yellow face with a slight, closed smile.",
+  "tldr": "Deceptively passive-aggressive. Can mean 'fine' or hide frustration/sarcasm.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A simple, pleasant acknowledgment.",
+      "example": "Sounds good 🙂",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Hiding frustration or annoyance behind a thin smile.",
+      "example": "Per my last email 🙂",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Masking true feelings with fake pleasantness.",
+      "example": "Sure, I'll do that too 🙂",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Professional but potentially cold - depends on context.",
+      "example": "Let me know if you have questions 🙂",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Can read as professional or subtly passive-aggressive."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Often interpreted as distant or hiding true feelings."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Frequently used in a passive-aggressive manner."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Almost always passive-aggressive - the fake smile emoji."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Aware of the passive-aggressive connotation."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use genuinely as a friendly smile."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Passive-aggressive risk",
+      "description": "Younger generations often read this as passive-aggressive or fake. Consider using more enthusiastic emojis.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["slight-smile-tension"],
+  "seoTitle": "🙂 Slightly Smiling Face Meaning - What Does 🙂 Really Mean?",
+  "seoDescription": "Learn what the slightly smiling emoji 🙂 really means in modern texting. Often seen as passive-aggressive despite the smile. Complete context guide."
+}

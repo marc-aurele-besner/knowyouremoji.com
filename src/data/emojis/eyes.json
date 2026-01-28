@@ -1,0 +1,76 @@
+{
+  "unicode": "1F440",
+  "slug": "eyes",
+  "character": "👀",
+  "name": "Eyes",
+  "shortName": "eyes",
+  "category": "people",
+  "subcategory": "person",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A pair of eyes, looking slightly to the left.",
+  "tldr": "Means 'I see that' or 'eyes on this'. Used for gossip, interest, or calling attention.",
+  "contextMeanings": [
+    {
+      "context": "SLANG",
+      "meaning": "Drawing attention to something interesting or noteworthy.",
+      "example": "Check this out 👀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Noticing something suspicious or worth discussing.",
+      "example": "They're hanging out again 👀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Showing interest in someone or their actions.",
+      "example": "Looking good 👀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Calling attention to something questionable.",
+      "example": "Interesting timing 👀",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Used to amplify gossip or breaking news - 'look at this'."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in comments calling attention to details in videos."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Popular reaction for interesting or suspicious content."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Heavily used for gossip and drawing attention to tea."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Same usage - indicates something worth paying attention to."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret more literally or be confused by context."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Gossip implications",
+      "description": "Often implies there's something noteworthy or suspicious happening. Can feel like calling someone out.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["eyes-tea"],
+  "seoTitle": "👀 Eyes Emoji Meaning - What Does 👀 Really Mean?",
+  "seoDescription": "Learn what the eyes emoji 👀 really means in modern texting. Used to draw attention, express interest, or imply gossip. Complete context guide."
+}

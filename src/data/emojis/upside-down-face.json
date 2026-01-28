@@ -1,0 +1,76 @@
+{
+  "unicode": "1F643",
+  "slug": "upside-down-face",
+  "character": "🙃",
+  "name": "Upside-Down Face",
+  "shortName": "upside_down_face",
+  "category": "faces",
+  "subcategory": "face-neutral",
+  "unicodeVersion": "8.0",
+  "baseMeaning": "A classic smiley turned upside down.",
+  "tldr": "The passive-aggressive king. Means 'I'm fine' (not fine), frustration, or sarcasm.",
+  "contextMeanings": [
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Expressing frustration while pretending to be fine.",
+      "example": "Everything is great 🙃",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sarcasm or expressing the opposite of what you're saying.",
+      "example": "Love being stuck in traffic 🙃",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Things are chaotic or going wrong.",
+      "example": "Spilled coffee on my laptop 🙃",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Playful or silly - rare genuine usage.",
+      "example": "Feeling goofy 🙃",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "The go-to for sarcastic or passive-aggressive tweets."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Often signals that the sender is frustrated but trying to be casual."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Can come across as passive-aggressive in work contexts."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Master of passive aggression - rarely used positively."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Understand the passive-aggressive undertones well."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May think it's just a silly/playful smile."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Passive-aggressive tone",
+      "description": "This emoji almost always carries a sarcastic or frustrated undertone. Using it can escalate tension.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["upside-down-fine"],
+  "seoTitle": "🙃 Upside-Down Face Emoji Meaning - What Does 🙃 Really Mean?",
+  "seoDescription": "Learn what the upside-down face emoji 🙃 really means in modern texting. Often passive-aggressive or sarcastic. Complete context guide."
+}

@@ -1,0 +1,76 @@
+{
+  "unicode": "1F913",
+  "slug": "nerd-face",
+  "character": "🤓",
+  "name": "Nerd Face",
+  "shortName": "nerd_face",
+  "category": "faces",
+  "subcategory": "face-neutral",
+  "unicodeVersion": "8.0",
+  "baseMeaning": "A yellow face with large glasses, buck teeth, and a smile.",
+  "tldr": "Embracing nerdiness, or mocking someone for being too technical/pedantic.",
+  "contextMeanings": [
+    {
+      "context": "SLANG",
+      "meaning": "Embracing being nerdy or intellectual.",
+      "example": "Finally reading the documentation 🤓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Mocking someone for being too technical or pedantic.",
+      "example": "Actually, it's 'whom' 🤓",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissing someone's correction or expertise.",
+      "example": "Thanks for the lecture 🤓",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Self-deprecating about being detail-oriented.",
+      "example": "Just spent 2 hours on documentation 🤓",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Often used to mock overly pedantic responses."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Common in tech communities - self-deprecating nerd humor."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Can be playful self-deprecation about technical work."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primarily used to mock pedantic behavior or 'well actually' types."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Mix of self-deprecating nerd pride and mocking pedantry."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not understand the mocking connotation."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Can be dismissive",
+      "description": "Using this in response to someone can imply you're mocking their knowledge or correction.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["nerd-geek"],
+  "seoTitle": "🤓 Nerd Face Emoji Meaning - What Does 🤓 Really Mean?",
+  "seoDescription": "Learn what the nerd face emoji 🤓 really means in modern texting. Nerd pride or mocking pedantry. Complete context guide."
+}

@@ -1,0 +1,76 @@
+{
+  "unicode": "1F62D",
+  "slug": "sob",
+  "character": "😭",
+  "name": "Loudly Crying Face",
+  "shortName": "sob",
+  "category": "faces",
+  "subcategory": "face-negative",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A yellow face with closed eyes and a wide open mouth, with tears streaming down.",
+  "tldr": "Gen Z's preferred 'laughing' emoji. Can mean crying from laughter OR actual sadness.",
+  "contextMeanings": [
+    {
+      "context": "SLANG",
+      "meaning": "Something is so funny you're 'crying' - the Gen Z replacement for 😂.",
+      "example": "I can't breathe 😭😭",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Actually sad, upset, or crying.",
+      "example": "My dog is sick 😭",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Expressing exaggerated or dramatic emotion for comedic effect.",
+      "example": "They're out of coffee 😭",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Can express frustration or annoyance dramatically.",
+      "example": "Another Monday 😭",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TIKTOK",
+      "note": "The default laughing/reaction emoji. Very common in comments."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for both humor and genuine distress - context is key."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Popular for expressing both hilarity and frustration."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primary meaning is laughter, not sadness. This replaced 😂 for Gen Z."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Understand both meanings but may default to interpreting as sad."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Likely to interpret as genuine sadness or distress."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Dual meaning",
+      "description": "Can mean either laughing or crying - context and generation determine interpretation.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["sob-laughing"],
+  "seoTitle": "😭 Loudly Crying Face Meaning - What Does 😭 Really Mean?",
+  "seoDescription": "Learn what the sobbing emoji 😭 really means in modern texting. Gen Z's preferred laughing emoji, but can also mean actual sadness. Complete context guide."
+}

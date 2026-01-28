@@ -1,0 +1,76 @@
+{
+  "unicode": "2764",
+  "slug": "heart",
+  "character": "❤️",
+  "name": "Red Heart",
+  "shortName": "heart",
+  "category": "faces",
+  "subcategory": "heart",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "A classic red heart symbol representing love and affection.",
+  "tldr": "The classic love emoji - used for romantic love, deep affection, or strong appreciation.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Expressing love or strong affection for someone or something.",
+      "example": "I love you ❤️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Romantic interest or love for a partner.",
+      "example": "Can't wait to see you ❤️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Strong appreciation or enthusiasm for something.",
+      "example": "This song ❤️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Can feel too personal in professional contexts.",
+      "example": "Thanks for your help ❤️",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "INSTAGRAM",
+      "note": "The default heart when double-tapping to like. Very common in comments."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Carries more weight than other platforms - implies genuine affection."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Use sparingly in work contexts - may seem unprofessional or overly familiar."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Often prefer other heart colors - red heart is seen as more serious/romantic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Use freely for both romantic and platonic love."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "The go-to heart emoji, used broadly for any positive sentiment."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Context matters",
+      "description": "Red heart implies deeper affection than other heart colors - use other colors for casual appreciation.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["heart-eyes", "double-hearts"],
+  "seoTitle": "❤️ Red Heart Emoji Meaning - What Does ❤️ Really Mean?",
+  "seoDescription": "Learn what the red heart emoji ❤️ really means in modern texting. The classic love symbol for romantic and deep affection. Complete context guide."
+}
