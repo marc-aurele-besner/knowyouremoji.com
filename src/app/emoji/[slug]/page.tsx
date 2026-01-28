@@ -1,8 +1,9 @@
 import { notFound } from 'next/navigation';
-import { getEmojiBySlug, getAllEmojiSlugs } from '@/lib/emoji-data';
+import { getEmojiBySlug, getAllEmojiSlugs, getRelatedEmojis } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
+import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -179,6 +180,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
     notFound();
   }
 
+  // Get related emojis from the same category
+  const relatedEmojis = getRelatedEmojis(slug, 8);
+
   return (
     <>
       {/* JSON-LD structured data for rich snippets */}
@@ -335,6 +339,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             </CardContent>
           </Card>
         </section>
+
+        {/* Related Emojis Section */}
+        {relatedEmojis.length > 0 && <RelatedEmojisSection emojis={relatedEmojis} />}
       </main>
     </>
   );

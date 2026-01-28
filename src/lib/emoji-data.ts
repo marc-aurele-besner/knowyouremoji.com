@@ -133,6 +133,31 @@ export function getAllEmojiSlugs(): string[] {
 }
 
 /**
+ * Get related emojis for a given emoji (same category, excluding the current emoji)
+ * @param slug - Slug of the current emoji
+ * @param limit - Maximum number of related emojis to return (default: 6)
+ * @returns Array of related emoji summaries
+ */
+export function getRelatedEmojis(slug: string, limit: number = 6): EmojiSummary[] {
+  const currentEmoji = getEmojiBySlug(slug);
+  if (!currentEmoji) {
+    return [];
+  }
+
+  const sameCategory = loadEmojis().filter(
+    (emoji) => emoji.category === currentEmoji.category && emoji.slug !== slug
+  );
+
+  return sameCategory.slice(0, limit).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+  }));
+}
+
+/**
  * Clear the emoji cache (useful for testing)
  */
 export function clearEmojiCache(): void {
