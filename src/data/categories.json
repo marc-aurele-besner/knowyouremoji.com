@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "slug": "faces",
+      "name": "Smileys & Faces",
+      "description": "Facial expressions and emoticons for expressing emotions.",
+      "subcategories": [
+        {
+          "slug": "face-positive",
+          "name": "Positive Faces"
+        },
+        {
+          "slug": "face-negative",
+          "name": "Negative Faces"
+        },
+        {
+          "slug": "face-neutral",
+          "name": "Neutral Faces"
+        },
+        {
+          "slug": "heart",
+          "name": "Hearts"
+        }
+      ]
+    },
+    {
+      "slug": "people",
+      "name": "People & Body",
+      "description": "Human figures, gestures, and body parts.",
+      "subcategories": [
+        {
+          "slug": "hand",
+          "name": "Hand Gestures"
+        },
+        {
+          "slug": "person",
+          "name": "People"
+        }
+      ]
+    },
+    {
+      "slug": "animals",
+      "name": "Animals & Nature",
+      "description": "Animals, plants, and natural phenomena.",
+      "subcategories": []
+    },
+    {
+      "slug": "food",
+      "name": "Food & Drink",
+      "description": "Food items, beverages, and dining-related emojis.",
+      "subcategories": []
+    },
+    {
+      "slug": "objects",
+      "name": "Objects",
+      "description": "Various objects and items.",
+      "subcategories": []
+    },
+    {
+      "slug": "symbols",
+      "name": "Symbols",
+      "description": "Signs, symbols, and abstract icons.",
+      "subcategories": []
+    },
+    {
+      "slug": "flags",
+      "name": "Flags",
+      "description": "Country and regional flags.",
+      "subcategories": []
+    }
+  ]
+}
