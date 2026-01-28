@@ -1,8 +1,12 @@
-import { describe, expect, test } from 'bun:test';
-import { render, screen } from '@testing-library/react';
+import { describe, expect, test, afterEach } from 'bun:test';
+import { render, screen, cleanup } from '@testing-library/react';
 import Loading from '@/app/emoji/[slug]/loading';
 
 describe('EmojiPage Loading', () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   test('renders loading skeleton', () => {
     render(<Loading />);
 
@@ -14,9 +18,9 @@ describe('EmojiPage Loading', () => {
   test('has accessible loading state', () => {
     render(<Loading />);
 
-    // Check for loading indicator role or aria-label
-    expect(screen.getByRole('status')).toBeInTheDocument();
-    expect(screen.getByLabelText(/loading/i)).toBeInTheDocument();
+    // Check for loading indicator with aria-label
+    const statusElement = screen.getByRole('status', { name: /loading/i });
+    expect(statusElement).toBeInTheDocument();
   });
 
   test('displays placeholder for emoji character', () => {

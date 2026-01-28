@@ -1,10 +1,11 @@
 import { describe, expect, test, mock, beforeEach, afterEach } from 'bun:test';
 import { render, screen } from '@testing-library/react';
 import EmojiPage, { generateStaticParams, generateMetadata } from '@/app/emoji/[slug]/page';
+import type { Emoji } from '@/types/emoji';
 
 // Mock the emoji-data module
-const mockGetEmojiBySlug = mock(() => undefined);
-const mockGetAllEmojiSlugs = mock(() => ['skull', 'heart']);
+const mockGetEmojiBySlug = mock<() => Emoji | undefined>(() => undefined);
+const mockGetAllEmojiSlugs = mock<() => string[]>(() => ['skull', 'heart']);
 
 mock.module('@/lib/emoji-data', () => ({
   getEmojiBySlug: mockGetEmojiBySlug,
@@ -20,7 +21,7 @@ mock.module('next/navigation', () => ({
   notFound: mockNotFound,
 }));
 
-const mockEmoji = {
+const mockEmoji: Emoji = {
   unicode: '1F480',
   slug: 'skull',
   character: '💀',
