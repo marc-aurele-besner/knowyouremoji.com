@@ -264,7 +264,8 @@ describe('InterpretResult', () => {
 
       await waitFor(() => {
         expect(mockWriteText).toHaveBeenCalled();
-        const calledWith = mockWriteText.mock.calls[0][0] as string;
+        const calls = mockWriteText.mock.calls as unknown[][];
+        const calledWith = calls[0]?.[0] as string | undefined;
         expect(calledWith).toContain(mockResult.interpretation);
       });
     });
