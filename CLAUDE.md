@@ -19,10 +19,10 @@ bun dev
 bun run build
 
 # Run all tests with coverage (100% required)
-bun test
+bun run test
 
 # Run tests in watch mode
-bun test --watch
+bun run test:watch
 
 # Run a single test file
 bun test tests/unit/lib/utils.test.ts
@@ -42,6 +42,7 @@ bun run typecheck
 ### Two-Phase Development
 
 **Phase 1 (MVP/Beta):** Static architecture with no database
+
 - All emoji content stored as JSON files in `/src/data/emojis/` and `/src/data/combos/`
 - Client-side rate limiting via localStorage (3 free interpretations/day)
 - SSG for all emoji pages
@@ -52,9 +53,10 @@ bun run typecheck
 
 - `src/app/` - Next.js App Router pages with route groups: `(marketing)`, `(emoji)`, `(tools)`, `(auth)`, `(dashboard)`
 - `src/components/ui/` - Reusable UI primitives (Radix UI + Tailwind)
+- `src/components/layout/` - Layout components (Header, Footer, MobileNav, Breadcrumbs)
 - `src/components/emoji/` - Emoji display components
 - `src/components/interpreter/` - AI interpreter tool components
-- `src/lib/` - Core utilities: `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `tests/unit/`, `tests/integration/`, `tests/e2e/` - Test files
@@ -72,7 +74,7 @@ bun run typecheck
 - Unit tests: `tests/unit/` - Use `bun:test` with Jest-compatible syntax
 - Component tests: Use `@testing-library/react`
 - E2E tests: `tests/e2e/` - Playwright
-- Run `bun test` before committing
+- Run `bun run test` before committing
 
 ## Tech Stack
 

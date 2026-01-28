@@ -17,7 +17,9 @@ Unlike static emoji dictionaries, KnowYourEmoji.com provides:
 ## Features
 
 ### Emoji Detail Pages
+
 Every emoji has a dedicated page with:
+
 - TLDR meaning (human-readable summary)
 - Context breakdowns (literal, slang, ironic, passive-aggressive, dating, work)
 - Platform-specific meanings
@@ -26,10 +28,13 @@ Every emoji has a dedicated page with:
 - Warnings and misuse scenarios
 
 ### Emoji Combo Pages
+
 Dedicated pages for common emoji sequences like `💀😂` or `🙂👍` with contextual explanations.
 
 ### AI Emoji Interpreter Tool
+
 Paste any message and get an AI-powered breakdown including:
+
 - Overall emotional tone
 - Intended meaning
 - Sarcasm probability
@@ -67,11 +72,30 @@ cd knowyouremoji.com
 # Install dependencies
 bun install
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your API keys
+
 # Start development server
 bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+### Environment Variables
+
+Copy `.env.example` to `.env.local` and configure:
+
+| Variable                          | Required | Description                        |
+| --------------------------------- | -------- | ---------------------------------- |
+| `NEXT_PUBLIC_APP_URL`             | No       | App URL (default: localhost:3000)  |
+| `NEXT_PUBLIC_APP_NAME`            | No       | App name (default: KnowYourEmoji)  |
+| `OPENAI_API_KEY`                  | Yes\*    | OpenAI API key for interpreter     |
+| `NEXT_PUBLIC_ENABLE_INTERPRETER`  | No       | Enable interpreter (default: true) |
+| `SENTRY_DSN`                      | No       | Sentry DSN for error monitoring    |
+| `NEXT_PUBLIC_VERCEL_ANALYTICS_ID` | No       | Vercel Analytics ID                |
+
+\*Required if interpreter feature is enabled
 
 ## Development Commands
 
@@ -86,10 +110,10 @@ bun dev
 bun run build
 
 # Run all tests with coverage (100% required)
-bun test
+bun run test
 
 # Run tests in watch mode
-bun test --watch
+bun run test:watch
 
 # Run a single test file
 bun test tests/unit/lib/utils.test.ts
@@ -139,6 +163,7 @@ scripts/
 ## Architecture
 
 ### Phase 1: MVP/Beta (Static-First)
+
 - All emoji content stored as JSON files
 - Static site generation (SSG) for all emoji pages
 - Client-side rate limiting via localStorage
@@ -146,6 +171,7 @@ scripts/
 - Focus on content quality and SEO
 
 ### Phase 2: Growth (Database Integration)
+
 - Supabase integration for auth and subscriptions
 - User accounts and interpretation history
 - Server-side rate limiting
@@ -163,7 +189,7 @@ scripts/
 
 ```bash
 # Run tests with coverage report
-bun test
+bun run test
 ```
 
 ## Automated Development
