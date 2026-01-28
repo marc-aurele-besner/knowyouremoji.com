@@ -7,6 +7,7 @@ Review and merge a pull request with comprehensive validation, ensuring code qua
 ## Prerequisites
 
 Before running this command, ensure:
+
 - **GitHub CLI** (`gh`) is installed and authenticated: `gh auth status`
 - **Repository access**: You have write/merge access to the repository
 - **Pull request exists**: A PR is open and ready for review
@@ -14,6 +15,7 @@ Before running this command, ensure:
 ## Configuration
 
 Default configuration (automatically detected or uses these defaults):
+
 - **Repository**: Detected from `git remote get-url origin` or defaults to `marc-aurele-besner/knowyouremoji.com`
 - **Main branch**: `main`
 - **Delete branch after merge**: `true` (configurable)
@@ -185,21 +187,25 @@ Default configuration (automatically detected or uses these defaults):
 ### Common Issues and Solutions
 
 **GitHub CLI not authenticated**
+
 - Run `gh auth login` and follow the prompts
 - Verify with `gh auth status`
 
 **Permission denied - cannot merge**
+
 - Ensure you have write/merge permissions to the repository
 - Check repository settings for branch protection rules
 - You may need to be an admin or have specific merge permissions
 
 **CI checks are failing**
+
 - Review which checks failed: `gh pr checks <pr-number> --repo <repo>`
 - Do NOT merge with failing checks (violates quality standards)
 - Fix issues on the PR branch and push changes
 - Wait for CI to pass before attempting merge again
 
 **Merge conflicts detected**
+
 - Conflicts must be resolved before merging
 - Checkout the PR branch: `gh pr checkout <pr-number>`
 - Merge base branch: `git merge origin/<base-branch>`
@@ -209,21 +215,25 @@ Default configuration (automatically detected or uses these defaults):
 - Wait for CI to pass, then retry merge
 
 **Required reviews are missing**
+
 - Some repositories require approval reviews before merge
 - Check PR reviews: `gh pr view <pr-number> --repo <repo> --json reviews`
 - Request reviews: `gh pr review <pr-number> --repo <repo> --request-reviewer <username>`
 - Wait for approvals before proceeding
 
 **Issue not auto-closing after merge**
+
 - Ensure PR description contains "Closes #<issue-number>" or "Resolves #<issue-number>"
 - If missing, manually close: `gh issue close <issue-number> --repo <repo>`
 - Add comment explaining resolution
 
 **Branch not deleted after merge**
+
 - Remote branch: `gh api repos/<repo>/git/refs/heads/<branch-name> -X DELETE`
 - Local branch: `git branch -D <branch-name>` (force delete if needed)
 
 **Accidental merge - need to revert**
+
 - Find merge commit: `git log --oneline -5`
 - Create revert PR:
   ```bash
@@ -274,6 +284,7 @@ Default configuration (automatically detected or uses these defaults):
 ## Integration with Build Command
 
 This command complements the `@build` command:
+
 - **@build**: Creates feature branch, implements changes, creates PR
 - **@merge**: Reviews PR, validates changes, merges to main, closes issue
 

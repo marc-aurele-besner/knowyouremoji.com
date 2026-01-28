@@ -50,15 +50,17 @@ Audit dependencies for security vulnerabilities and outdated packages, then upda
    - Review lockfile changes: `git diff bun.lockb`
    - Stage changes: `git add package.json bun.lockb`
    - Commit with descriptive message following the summary from step 6:
+
      ```bash
      git commit -m "chore: update dependencies
-     
+
      - Fixed N security vulnerabilities (severity levels)
      - Updated X packages (patch/minor/major)
      - Breaking changes: [list if any]
      - Did not update: [packages] (reason)
      "
      ```
+
    - Consider creating a PR if changes are significant or include major version updates
 
 ## Notes
