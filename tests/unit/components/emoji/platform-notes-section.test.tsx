@@ -50,10 +50,17 @@ const notesWithImageComparison: PlatformNoteExtended[] = [
 
 describe('PlatformNotesSection', () => {
   describe('rendering', () => {
-    it('renders the section heading', () => {
+    it('renders the section heading with emoji and count', () => {
       render(<PlatformNotesSection notes={mockNotes} emojiCharacter="🔫" />);
       expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(
-        'Platform-Specific Notes'
+        '🔫 Platform-Specific notes'
+      );
+    });
+
+    it('renders singular form for single note', () => {
+      render(<PlatformNotesSection notes={singleNote} emojiCharacter="🔫" />);
+      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(
+        '🔫 Platform-Specific note'
       );
     });
 
