@@ -5,6 +5,7 @@ import { getEnv } from '@/lib/env';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ComboHeader } from '@/components/combo/combo-header';
+import { ComboJsonLd } from '@/components/seo/combo-json-ld';
 import type { Metadata } from 'next';
 import type { EmojiComboSummary } from '@/types/combo';
 
@@ -119,6 +120,7 @@ function RelatedComboCard({ combo }: { combo: EmojiComboSummary }) {
 export default async function ComboPage({ params }: ComboPageProps) {
   const { slug } = await params;
   const combo = getComboBySlug(slug);
+  const env = getEnv();
 
   if (!combo) {
     notFound();
@@ -128,97 +130,106 @@ export default async function ComboPage({ params }: ComboPageProps) {
   const relatedCombos = getRelatedCombos(slug, 6);
 
   return (
-    <main className="container mx-auto px-4 py-8 max-w-4xl">
-      {/* Header Section */}
-      <ComboHeader combo={combo} className="mb-8" />
+    <>
+      {/* JSON-LD structured data for rich snippets */}
+      <ComboJsonLd combo={combo} appUrl={env.appUrl} appName={env.appName} />
 
-      {/* Meaning Section */}
-      <section className="mb-8">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Meaning</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-700 dark:text-gray-300">{combo.meaning}</p>
-          </CardContent>
-        </Card>
-      </section>
+      <main className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Header Section */}
+        <ComboHeader combo={combo} className="mb-8" />
 
-      {/* Description Section */}
-      <section className="mb-8">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Description</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-700 dark:text-gray-300">{combo.description}</p>
-          </CardContent>
-        </Card>
-      </section>
-
-      {/* Examples Section */}
-      {combo.examples.length > 0 && (
+        {/* Meaning Section */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Examples</h2>
-          <div className="space-y-3">
-            {combo.examples.map((example, index) => (
-              <Card key={index}>
-                <CardContent className="pt-4">
-                  <p className="text-gray-700 dark:text-gray-300 italic">&ldquo;{example}&rdquo;</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Meaning</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700 dark:text-gray-300">{combo.meaning}</p>
+            </CardContent>
+          </Card>
         </section>
-      )}
 
-      {/* Emojis in this Combo Section */}
-      {combo.emojis.length > 0 && (
+        {/* Description Section */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Emojis in this Combo
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {combo.emojis.map((emojiSlug) => (
-              <Link
-                key={emojiSlug}
-                href={`/emoji/${emojiSlug}`}
-                className="inline-flex items-center px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
-              >
-                {emojiSlug}
-              </Link>
-            ))}
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">Description</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700 dark:text-gray-300">{combo.description}</p>
+            </CardContent>
+          </Card>
         </section>
-      )}
 
-      {/* Tags Section */}
-      {combo.tags && combo.tags.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Tags</h2>
-          <div className="flex flex-wrap gap-2">
-            {combo.tags.map((tag) => (
-              <Badge key={tag} variant="outline">
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </section>
-      )}
+        {/* Examples Section */}
+        {combo.examples.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Examples
+            </h2>
+            <div className="space-y-3">
+              {combo.examples.map((example, index) => (
+                <Card key={index}>
+                  <CardContent className="pt-4">
+                    <p className="text-gray-700 dark:text-gray-300 italic">
+                      &ldquo;{example}&rdquo;
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
 
-      {/* Related Combos Section */}
-      {relatedCombos.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Related Combos
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {relatedCombos.map((relatedCombo) => (
-              <RelatedComboCard key={relatedCombo.slug} combo={relatedCombo} />
-            ))}
-          </div>
-        </section>
-      )}
-    </main>
+        {/* Emojis in this Combo Section */}
+        {combo.emojis.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Emojis in this Combo
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {combo.emojis.map((emojiSlug) => (
+                <Link
+                  key={emojiSlug}
+                  href={`/emoji/${emojiSlug}`}
+                  className="inline-flex items-center px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
+                >
+                  {emojiSlug}
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Tags Section */}
+        {combo.tags && combo.tags.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Tags</h2>
+            <div className="flex flex-wrap gap-2">
+              {combo.tags.map((tag) => (
+                <Badge key={tag} variant="outline">
+                  {tag}
+                </Badge>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Related Combos Section */}
+        {relatedCombos.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Related Combos
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {relatedCombos.map((relatedCombo) => (
+                <RelatedComboCard key={relatedCombo.slug} combo={relatedCombo} />
+              ))}
+            </div>
+          </section>
+        )}
+      </main>
+    </>
   );
 }
