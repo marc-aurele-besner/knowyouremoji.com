@@ -30,4 +30,11 @@ export type {
   // Utility types
   EmojiValidationResult,
   EmojiDraft,
+  // Interpreter types
+  InterpretRequest,
+  DetectedEmoji,
+  InterpretationMetrics,
+  RedFlag,
+  InterpretationResult,
+  InterpretErrorResponse,
 } from './emoji';
