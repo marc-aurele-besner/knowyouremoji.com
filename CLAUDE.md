@@ -53,6 +53,7 @@ bun run typecheck
 
 - `src/app/` - Next.js App Router pages with route groups: `(marketing)`, `(emoji)`, `(tools)`, `(auth)`, `(dashboard)`
 - `src/components/ui/` - Reusable UI primitives (Radix UI + Tailwind)
+- `src/components/layout/` - Layout components (Header, Footer, MobileNav, Breadcrumbs)
 - `src/components/emoji/` - Emoji display components
 - `src/components/interpreter/` - AI interpreter tool components
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
