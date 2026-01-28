@@ -20,7 +20,7 @@ export default function InterpreterError({ error, reset }: ErrorProps) {
         <p className="text-gray-600 dark:text-gray-400 mb-6">
           We encountered an error while loading the interpreter. Please try again.
         </p>
-        <Button onClick={reset} variant="default">
+        <Button onClick={reset} variant="primary">
           Try Again
         </Button>
       </section>
