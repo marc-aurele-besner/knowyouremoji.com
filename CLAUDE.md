@@ -55,7 +55,7 @@ bun run typecheck
 - `src/components/ui/` - Reusable UI primitives (Radix UI + Tailwind)
 - `src/components/emoji/` - Emoji display components
 - `src/components/interpreter/` - AI interpreter tool components
-- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `tests/unit/`, `tests/integration/`, `tests/e2e/` - Test files
