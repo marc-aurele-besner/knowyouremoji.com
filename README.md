@@ -72,11 +72,30 @@ cd knowyouremoji.com
 # Install dependencies
 bun install
 
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your API keys
+
 # Start development server
 bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the app.
+
+### Environment Variables
+
+Copy `.env.example` to `.env.local` and configure:
+
+| Variable                          | Required | Description                        |
+| --------------------------------- | -------- | ---------------------------------- |
+| `NEXT_PUBLIC_APP_URL`             | No       | App URL (default: localhost:3000)  |
+| `NEXT_PUBLIC_APP_NAME`            | No       | App name (default: KnowYourEmoji)  |
+| `OPENAI_API_KEY`                  | Yes\*    | OpenAI API key for interpreter     |
+| `NEXT_PUBLIC_ENABLE_INTERPRETER`  | No       | Enable interpreter (default: true) |
+| `SENTRY_DSN`                      | No       | Sentry DSN for error monitoring    |
+| `NEXT_PUBLIC_VERCEL_ANALYTICS_ID` | No       | Vercel Analytics ID                |
+
+\*Required if interpreter feature is enabled
 
 ## Development Commands
 
