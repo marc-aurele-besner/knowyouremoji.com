@@ -32,7 +32,6 @@ describe('RateLimiter', () => {
 
   beforeEach(() => {
     localStorageMock = createLocalStorageMock();
-    // @ts-expect-error - mocking localStorage
     globalThis.localStorage = localStorageMock;
   });
 
@@ -257,8 +256,8 @@ describe('RateLimiter', () => {
 
   describe('localStorage unavailable', () => {
     it('should work without localStorage (returns defaults)', () => {
-      // @ts-expect-error - testing localStorage unavailable
-      delete globalThis.localStorage;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      delete (globalThis as any).localStorage;
 
       const limiter = new RateLimiter(3);
       expect(limiter.getUsedCount()).toBe(0);
@@ -268,7 +267,6 @@ describe('RateLimiter', () => {
       expect(() => limiter.recordUse()).not.toThrow();
 
       // Reset the mock for other tests
-      // @ts-expect-error - restoring localStorage
       globalThis.localStorage = localStorageMock;
     });
   });
@@ -279,7 +277,6 @@ describe('getRateLimiter', () => {
 
   beforeEach(() => {
     localStorageMock = createLocalStorageMock();
-    // @ts-expect-error - mocking localStorage
     globalThis.localStorage = localStorageMock;
   });
 
