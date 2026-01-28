@@ -34,6 +34,9 @@ RUN_BUILD=true
 RUN_MERGE=true
 SINGLE_CYCLE=false
 MAX_CONSECUTIVE_FAILURES=3
+RATE_LIMIT_CHECK_INTERVAL=60  # Check every 60 seconds while waiting
+RATE_LIMIT_PATTERN="You've hit your limit"
+WAIT_ON_RATE_LIMIT=true  # Wait and retry when rate limited
 
 # Track if we're currently running a command (for signal handling)
 CURRENT_PID=""
@@ -42,6 +45,177 @@ CURRENT_SESSION_ID=""
 # Ensure logs directory exists
 ensure_logs_dir() {
     mkdir -p "$LOGS_DIR"
+}
+
+# Check if output contains rate limit message
+# Returns 0 if rate limited, 1 if not
+check_rate_limit() {
+    local output_file="$1"
+    if [[ -f "$output_file" ]] && grep -q "$RATE_LIMIT_PATTERN" "$output_file"; then
+        return 0  # Rate limited
+    fi
+    return 1  # Not rate limited
+}
+
+# Parse reset time from rate limit message and calculate seconds to wait
+# Input: file containing output with rate limit message
+# Output: echoes seconds to wait (minimum 60 seconds)
+parse_reset_time() {
+    local output_file="$1"
+    
+    # Extract the reset time line: "You've hit your limit · resets 1pm (America/Toronto)"
+    local reset_line
+    reset_line=$(grep "$RATE_LIMIT_PATTERN" "$output_file" | head -1)
+    
+    if [[ -z "$reset_line" ]]; then
+        echo "3600"  # Default 1 hour if can't parse
+        return
+    fi
+    
+    # Extract time and timezone: "resets 1pm (America/Toronto)"
+    # Pattern: resets <time> (<timezone>)
+    local reset_info
+    reset_info=$(echo "$reset_line" | grep -oE 'resets [0-9]{1,2}(:[0-9]{2})?(am|pm) \([^)]+\)' | head -1)
+    
+    if [[ -z "$reset_info" ]]; then
+        echo "3600"  # Default 1 hour if can't parse
+        return
+    fi
+    
+    # Parse time and timezone
+    local time_part tz_part
+    time_part=$(echo "$reset_info" | sed -E 's/resets ([0-9]{1,2}(:[0-9]{2})?(am|pm)).*/\1/')
+    tz_part=$(echo "$reset_info" | grep -oE '\([^)]+\)' | tr -d '()')
+    
+    # Convert timezone format (America/Toronto) to TZ format
+    # Most common timezones should work with TZ directly
+    local target_tz="$tz_part"
+    
+    # Get current time in target timezone
+    local current_epoch
+    current_epoch=$(date +%s)
+    
+    # Parse the reset time
+    # Handle formats: "1pm", "1:30pm", "13:00"
+    local hour minute ampm
+    if [[ "$time_part" =~ ^([0-9]{1,2}):([0-9]{2})(am|pm)$ ]]; then
+        hour="${BASH_REMATCH[1]}"
+        minute="${BASH_REMATCH[2]}"
+        ampm="${BASH_REMATCH[3]}"
+    elif [[ "$time_part" =~ ^([0-9]{1,2})(am|pm)$ ]]; then
+        hour="${BASH_REMATCH[1]}"
+        minute="00"
+        ampm="${BASH_REMATCH[2]}"
+    else
+        echo "3600"  # Default 1 hour if can't parse
+        return
+    fi
+    
+    # Convert to 24-hour format
+    if [[ "$ampm" == "pm" && "$hour" -lt 12 ]]; then
+        hour=$((hour + 12))
+    elif [[ "$ampm" == "am" && "$hour" -eq 12 ]]; then
+        hour=0
+    fi
+    
+    # Calculate target epoch time in the specified timezone
+    # Get today's date in the target timezone and construct the target time
+    local target_epoch
+    target_epoch=$(TZ="$target_tz" date -d "today ${hour}:${minute}" +%s 2>/dev/null)
+    
+    # Fallback for macOS date command
+    if [[ -z "$target_epoch" || "$target_epoch" == "" ]]; then
+        # macOS: use a different approach
+        local today_date
+        today_date=$(TZ="$target_tz" date '+%Y-%m-%d')
+        target_epoch=$(TZ="$target_tz" date -j -f '%Y-%m-%d %H:%M' "${today_date} ${hour}:${minute}" +%s 2>/dev/null)
+    fi
+    
+    if [[ -z "$target_epoch" || "$target_epoch" == "" ]]; then
+        echo "3600"  # Default 1 hour if can't parse
+        return
+    fi
+    
+    # If target time is in the past, assume it's tomorrow
+    if [[ "$target_epoch" -le "$current_epoch" ]]; then
+        target_epoch=$((target_epoch + 86400))  # Add 24 hours
+    fi
+    
+    # Calculate seconds to wait
+    local wait_seconds
+    wait_seconds=$((target_epoch - current_epoch))
+    
+    # Ensure minimum wait time and add small buffer
+    if [[ "$wait_seconds" -lt 60 ]]; then
+        wait_seconds=60
+    else
+        # Add 60 second buffer to ensure limit has reset
+        wait_seconds=$((wait_seconds + 60))
+    fi
+    
+    echo "$wait_seconds"
+}
+
+# Format seconds as human-readable duration
+format_duration() {
+    local seconds="$1"
+    local hours=$((seconds / 3600))
+    local minutes=$(((seconds % 3600) / 60))
+    local secs=$((seconds % 60))
+    
+    if [[ $hours -gt 0 ]]; then
+        printf "%dh %dm %ds" "$hours" "$minutes" "$secs"
+    elif [[ $minutes -gt 0 ]]; then
+        printf "%dm %ds" "$minutes" "$secs"
+    else
+        printf "%ds" "$secs"
+    fi
+}
+
+# Wait for rate limit reset with countdown display
+wait_for_rate_limit_reset() {
+    local wait_seconds="$1"
+    local reset_time_display="$2"
+    
+    echo ""
+    echo -e "${YELLOW}╔═══════════════════════════════════════════════════════════════╗${NC}"
+    echo -e "${YELLOW}║              RATE LIMIT REACHED - WAITING FOR RESET           ║${NC}"
+    echo -e "${YELLOW}╚═══════════════════════════════════════════════════════════════╝${NC}"
+    echo ""
+    echo -e "${CYAN}Reset time: ${reset_time_display}${NC}"
+    echo -e "${CYAN}Estimated wait: $(format_duration "$wait_seconds")${NC}"
+    echo ""
+    
+    local remaining="$wait_seconds"
+    local start_time
+    start_time=$(date +%s)
+    
+    while [[ $remaining -gt 0 ]]; do
+        local elapsed=$(($(date +%s) - start_time))
+        remaining=$((wait_seconds - elapsed))
+        
+        if [[ $remaining -lt 0 ]]; then
+            remaining=0
+        fi
+        
+        # Display countdown
+        printf "\r${YELLOW}⏳ Waiting: $(format_duration $remaining) remaining...${NC}    "
+        
+        # Sleep for check interval or remaining time, whichever is shorter
+        local sleep_time=$RATE_LIMIT_CHECK_INTERVAL
+        if [[ $remaining -lt $sleep_time ]]; then
+            sleep_time=$remaining
+        fi
+        
+        if [[ $sleep_time -gt 0 ]]; then
+            sleep "$sleep_time"
+        fi
+    done
+    
+    echo ""
+    echo ""
+    echo -e "${GREEN}✓ Wait complete. Retrying...${NC}"
+    echo ""
 }
 
 # Generate a unique session ID
@@ -70,12 +244,19 @@ print_help() {
     echo "Runs Claude Code commands in a continuous development loop."
     echo ""
     echo "Options:"
-    echo "  --build          Run only the build (issue implementation) phase"
-    echo "  --merge          Run only the merge (PR review/merge) phase"
-    echo "  --once           Run one cycle then exit (no loop)"
-    echo "  --delay N        Delay N seconds between cycles (default: 5)"
-    echo "  --max-failures N Exit after N consecutive failures (default: 3)"
-    echo "  -h, --help       Show this help message"
+    echo "  --build            Run only the build (issue implementation) phase"
+    echo "  --merge            Run only the merge (PR review/merge) phase"
+    echo "  --once             Run one cycle then exit (no loop)"
+    echo "  --delay N          Delay N seconds between cycles (default: 5)"
+    echo "  --max-failures N   Exit after N consecutive failures (default: 3)"
+    echo "  --no-wait-limit    Don't wait on rate limit, fail immediately"
+    echo "  -h, --help         Show this help message"
+    echo ""
+    echo "Rate Limit Handling:"
+    echo "  When Claude hits its usage limit, the script detects the reset time"
+    echo "  from the output (e.g., 'resets 1pm (America/Toronto)') and automatically"
+    echo "  waits until the limit resets, then retries the command."
+    echo "  Use --no-wait-limit to disable this behavior."
     echo ""
     echo "Examples:"
     echo "  $0                       # Full loop: build -> merge -> repeat"
@@ -83,6 +264,7 @@ print_help() {
     echo "  $0 --merge               # Continuous merge loop"
     echo "  $0 --delay 30            # 30 second delay between cycles"
     echo "  $0 --max-failures 5      # Allow up to 5 consecutive failures"
+    echo "  $0 --no-wait-limit       # Exit on rate limit instead of waiting"
     echo ""
 }
 
@@ -111,6 +293,10 @@ parse_args() {
             --max-failures)
                 MAX_CONSECUTIVE_FAILURES="$2"
                 shift 2
+                ;;
+            --no-wait-limit)
+                WAIT_ON_RATE_LIMIT=false
+                shift
                 ;;
             -h|--help)
                 print_help
@@ -289,43 +475,50 @@ EOF
 }
 
 # Run a Claude command with streaming output
+# Includes rate limit detection and retry logic
 run_claude_command() {
     local phase_name="$1"
     local prompt_file="$2"
+    local retry_count=0
 
-    # Generate session ID for this run
-    local phase_slug
-    phase_slug=$(echo "$phase_name" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -cd '[:alnum:]_')
-    CURRENT_SESSION_ID=$(generate_session_id "$phase_slug")
+    while true; do
+        # Generate session ID for this run (new ID for each attempt)
+        local phase_slug
+        phase_slug=$(echo "$phase_name" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -cd '[:alnum:]_')
+        CURRENT_SESSION_ID=$(generate_session_id "$phase_slug")
 
-    # Ensure logs directory exists
-    ensure_logs_dir
+        # Ensure logs directory exists
+        ensure_logs_dir
 
-    # Create temporary file for capturing output
-    local temp_output_file
-    temp_output_file=$(mktemp)
+        # Create temporary file for capturing output
+        local temp_output_file
+        temp_output_file=$(mktemp)
 
-    echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo -e "${BLUE}${BOLD}  Phase: $phase_name${NC}"
-    echo -e "${BLUE}${BOLD}  Session ID: ${CYAN}$CURRENT_SESSION_ID${NC}"
-    echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-    echo ""
+        echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+        echo -e "${BLUE}${BOLD}  Phase: $phase_name${NC}"
+        echo -e "${BLUE}${BOLD}  Session ID: ${CYAN}$CURRENT_SESSION_ID${NC}"
+        if [[ $retry_count -gt 0 ]]; then
+            echo -e "${YELLOW}${BOLD}  Retry attempt: $retry_count${NC}"
+        fi
+        echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+        echo ""
 
-    local prompt
-    prompt=$(cat "$prompt_file")
+        local prompt
+        prompt=$(cat "$prompt_file")
 
-    local start_time
-    start_time=$(date +%s)
+        local start_time
+        start_time=$(date +%s)
 
-    # Create stream parser script
-    local parser_script
-    parser_script=$(mktemp)
-    cat > "$parser_script" << 'STREAM_PARSER'
+        # Create stream parser script
+        local parser_script
+        parser_script=$(mktemp)
+        cat > "$parser_script" << 'STREAM_PARSER'
 import sys
 import json
 
 # ANSI colors
 CYAN = '\033[0;36m'
+YELLOW = '\033[1;33m'
 NC = '\033[0m'
 
 for line in sys.stdin:
@@ -343,7 +536,11 @@ for line in sys.stdin:
                 if block.get('type') == 'text':
                     text = block.get('text', '')
                     if text:
-                        print(text, flush=True)
+                        # Check for rate limit message and highlight it
+                        if "You've hit your limit" in text:
+                            print(f"{YELLOW}{text}{NC}", flush=True)
+                        else:
+                            print(text, flush=True)
 
         elif event_type == 'content_block_delta':
             # Print streaming text deltas (partial messages)
@@ -365,52 +562,95 @@ for line in sys.stdin:
 
     except json.JSONDecodeError:
         # Print non-JSON lines as-is (stderr, etc.)
-        print(line, flush=True)
+        # Check for rate limit message and highlight it
+        if "You've hit your limit" in line:
+            print(f"{YELLOW}{line}{NC}", flush=True)
+        else:
+            print(line, flush=True)
 STREAM_PARSER
 
-    # Run Claude with streaming JSON output for full capture
-    # --output-format stream-json: outputs streaming JSON events
-    # --include-partial-messages: includes partial streaming events
-    # --verbose: required when using stream-json with -p
-    # Output goes to both terminal (processed) and temp file (raw JSON)
-    # Using --dangerously-skip-permissions for fully automated operation
-    claude -p "$prompt" \
-        --output-format stream-json \
-        --include-partial-messages \
-        --verbose \
-        --dangerously-skip-permissions \
-        --allowedTools "*" \
-        2>&1 | tee "$temp_output_file" | python3 -u "$parser_script" &
+        # Run Claude with streaming JSON output for full capture
+        # --output-format stream-json: outputs streaming JSON events
+        # --include-partial-messages: includes partial streaming events
+        # --verbose: required when using stream-json with -p
+        # Output goes to both terminal (processed) and temp file (raw JSON)
+        # Using --dangerously-skip-permissions for fully automated operation
+        claude -p "$prompt" \
+            --output-format stream-json \
+            --include-partial-messages \
+            --verbose \
+            --dangerously-skip-permissions \
+            --allowedTools "*" \
+            2>&1 | tee "$temp_output_file" | python3 -u "$parser_script" &
 
-    CURRENT_PID=$!
+        CURRENT_PID=$!
 
-    # Wait for completion and capture exit code
-    local exit_code=0
-    wait "$CURRENT_PID" || exit_code=$?
-    CURRENT_PID=""
+        # Wait for completion and capture exit code
+        local exit_code=0
+        wait "$CURRENT_PID" || exit_code=$?
+        CURRENT_PID=""
 
-    local end_time
-    end_time=$(date +%s)
-    local duration=$((end_time - start_time))
+        local end_time
+        end_time=$(date +%s)
+        local duration=$((end_time - start_time))
 
-    # Write session log to JSON file
-    local log_file
-    log_file=$(write_session_log "$CURRENT_SESSION_ID" "$phase_name" "$start_time" "$end_time" "$exit_code" "$temp_output_file")
+        # Write session log to JSON file
+        local log_file
+        log_file=$(write_session_log "$CURRENT_SESSION_ID" "$phase_name" "$start_time" "$end_time" "$exit_code" "$temp_output_file")
 
-    # Clean up temp files
-    rm -f "$temp_output_file" "$parser_script"
+        echo ""
+        echo -e "${CYAN}  Log saved: $log_file${NC}"
 
-    echo ""
-    if [[ $exit_code -eq 0 ]]; then
-        echo -e "${GREEN}✓ $phase_name completed successfully (${duration}s)${NC}"
-    else
-        echo -e "${RED}✗ $phase_name failed with exit code $exit_code (${duration}s)${NC}"
-    fi
-    echo -e "${CYAN}  Log saved: $log_file${NC}"
-    echo ""
+        # Check for rate limit in the output
+        if check_rate_limit "$temp_output_file"; then
+            echo ""
+            echo -e "${YELLOW}⚠ Rate limit detected in session output${NC}"
+            
+            # Extract reset time info for display
+            local reset_line
+            reset_line=$(grep "$RATE_LIMIT_PATTERN" "$temp_output_file" | head -1)
+            
+            if [[ "$WAIT_ON_RATE_LIMIT" == true ]]; then
+                # Calculate wait time
+                local wait_seconds
+                wait_seconds=$(parse_reset_time "$temp_output_file")
+                
+                # Clean up temp files before waiting
+                rm -f "$parser_script"
+                # Keep temp_output_file briefly for the wait function display
+                
+                # Wait for rate limit reset
+                wait_for_rate_limit_reset "$wait_seconds" "$reset_line"
+                
+                # Clean up temp output file after wait
+                rm -f "$temp_output_file"
+                
+                # Increment retry count and continue loop
+                ((retry_count++))
+                echo -e "${CYAN}Starting retry attempt $retry_count...${NC}"
+                continue
+            else
+                # Don't wait - clean up and return with error
+                echo -e "${RED}Rate limit hit and --no-wait-limit is set. Failing.${NC}"
+                rm -f "$temp_output_file" "$parser_script"
+                CURRENT_SESSION_ID=""
+                return 1
+            fi
+        fi
 
-    CURRENT_SESSION_ID=""
-    return $exit_code
+        # No rate limit - clean up and return
+        rm -f "$temp_output_file" "$parser_script"
+
+        if [[ $exit_code -eq 0 ]]; then
+            echo -e "${GREEN}✓ $phase_name completed successfully (${duration}s)${NC}"
+        else
+            echo -e "${RED}✗ $phase_name failed with exit code $exit_code (${duration}s)${NC}"
+        fi
+        echo ""
+
+        CURRENT_SESSION_ID=""
+        return $exit_code
+    done
 }
 
 # Run one development cycle
@@ -470,6 +710,7 @@ main() {
     echo -e "  Mode:          $([ "$SINGLE_CYCLE" == true ] && echo "single cycle" || echo "continuous loop")"
     echo -e "  Delay:         ${DELAY_SECONDS}s between cycles"
     echo -e "  Max failures:  ${MAX_CONSECUTIVE_FAILURES} consecutive before exit"
+    echo -e "  Rate limit:    $([ "$WAIT_ON_RATE_LIMIT" == true ] && echo -e "${GREEN}wait and retry${NC}" || echo -e "${YELLOW}fail immediately${NC}")"
     echo -e "  Logs dir:      ${LOGS_DIR}"
     echo ""
 
