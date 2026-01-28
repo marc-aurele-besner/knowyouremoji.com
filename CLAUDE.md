@@ -60,7 +60,7 @@ bun run validate:emojis
 - `src/components/emoji/` - Emoji display components
 - `src/components/interpreter/` - AI interpreter tool components
 - `src/components/seo/` - SEO components (JSON-LD structured data)
-- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `scripts/` - Utility scripts including `validate-emojis.ts` for data validation
@@ -69,8 +69,9 @@ bun run validate:emojis
 ### Data Flow
 
 1. Emoji pages: JSON files → `emoji-data.ts` loader → SSG pages at `/emoji/[slug]`
-2. Interpreter: User input → `/api/interpret` → OpenAI API → streamed response via Vercel AI SDK
-3. Rate limiting (Phase 1): localStorage tracks daily usage count
+2. Combo pages: JSON files → `combo-data.ts` loader → SSG pages at `/combo/[slug]`
+3. Interpreter: User input → `/api/interpret` → OpenAI API → streamed response via Vercel AI SDK
+4. Rate limiting (Phase 1): localStorage tracks daily usage count
 
 ## Testing Requirements
 
