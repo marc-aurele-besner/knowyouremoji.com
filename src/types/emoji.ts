@@ -304,3 +304,89 @@ export type EmojiValidationResult = {
  * Requires minimum fields: character, slug, name
  */
 export type EmojiDraft = Partial<Emoji> & Pick<Emoji, 'character' | 'slug' | 'name'>;
+
+// ============================================
+// INTERPRETER TYPES
+// ============================================
+
+/**
+ * Request body for the interpret API endpoint
+ */
+export interface InterpretRequest {
+  /** Message to interpret (10-1000 chars, must contain emoji) */
+  message: string;
+  /** Platform where the message was sent */
+  platform: Platform | 'OTHER';
+  /** Relationship context */
+  context: RelationshipContext;
+}
+
+/**
+ * Detected emoji in the interpreted message
+ */
+export interface DetectedEmoji {
+  /** The emoji character */
+  character: string;
+  /** What this emoji means in context */
+  meaning: string;
+  /** Slug for linking to emoji detail page (if available) */
+  slug?: string;
+}
+
+/**
+ * Interpretation metrics
+ */
+export interface InterpretationMetrics {
+  /** Sarcasm probability (0-100) */
+  sarcasmProbability: number;
+  /** Passive-aggression probability (0-100) */
+  passiveAggressionProbability: number;
+  /** Overall tone (positive, neutral, negative) */
+  overallTone: 'positive' | 'neutral' | 'negative';
+  /** Confidence level in the interpretation (0-100) */
+  confidence: number;
+}
+
+/**
+ * Red flag indicator in the message
+ */
+export interface RedFlag {
+  /** Type of concern */
+  type: string;
+  /** Description of the concern */
+  description: string;
+  /** Severity level */
+  severity: 'low' | 'medium' | 'high';
+}
+
+/**
+ * Complete interpretation result from the API
+ */
+export interface InterpretationResult {
+  /** Unique ID for this interpretation */
+  id: string;
+  /** Original message that was interpreted */
+  message: string;
+  /** Emojis detected in the message */
+  emojis: DetectedEmoji[];
+  /** The interpretation/translation */
+  interpretation: string;
+  /** Interpretation metrics */
+  metrics: InterpretationMetrics;
+  /** Red flags detected */
+  redFlags: RedFlag[];
+  /** Timestamp of interpretation */
+  timestamp: string;
+}
+
+/**
+ * Error response from the interpret API
+ */
+export interface InterpretErrorResponse {
+  /** Error message */
+  error: string;
+  /** HTTP status code */
+  status: number;
+  /** Optional field-specific errors for validation */
+  fieldErrors?: Record<string, string[]>;
+}
