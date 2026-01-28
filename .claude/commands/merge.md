@@ -152,8 +152,8 @@ Default configuration (automatically detected or uses these defaults):
    - Confirm merge was successful
 
 10. **Verify merge**
-    - Check PR status: `gh pr view <pr-number> --repo <repo> --json state,merged`
-    - Verify PR is closed and merged
+    - Check PR status: `gh pr view <pr-number> --repo <repo> --json state,mergedAt,mergedBy,mergeCommit,number,title`
+    - Verify PR is closed and merged (check that `mergedAt` is not null and `state` is MERGED)
     - Verify commit appears on base branch: `git log origin/<base-branch> --oneline -5`
 
 ### Phase 5: Cleanup and Notifications
