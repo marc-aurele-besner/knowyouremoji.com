@@ -35,6 +35,9 @@ bun run lint
 
 # Type checking
 bun run typecheck
+
+# Validate emoji data files
+bun run validate:emojis
 ```
 
 ## Architecture
@@ -59,6 +62,7 @@ bun run typecheck
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
+- `scripts/` - Utility scripts including `validate-emojis.ts` for data validation
 - `tests/unit/`, `tests/integration/`, `tests/e2e/` - Test files
 
 ### Data Flow

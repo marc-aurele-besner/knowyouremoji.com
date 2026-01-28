@@ -14,6 +14,7 @@
     "test": "bun test tests/unit tests/integration --coverage",
     "test:watch": "bun test tests/unit tests/integration --watch",
     "test:e2e": "playwright test",
+    "validate:emojis": "bun run scripts/validate-emojis.ts",
     "prepare": "husky"
   },
   "dependencies": {
