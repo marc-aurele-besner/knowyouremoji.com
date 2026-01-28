@@ -250,6 +250,68 @@ describe('emoji-data', () => {
   });
 });
 
+describe('getRelatedEmojis', () => {
+  it('should return emojis from the same category', async () => {
+    const { getRelatedEmojis, getEmojiBySlug } = await import('../../../src/lib/emoji-data');
+    const skull = getEmojiBySlug('skull');
+    if (!skull) throw new Error('Skull emoji not found');
+
+    const related = getRelatedEmojis(skull.slug, 4);
+    expect(Array.isArray(related)).toBe(true);
+
+    // All related emojis should be in the same category as skull
+    related.forEach((emoji) => {
+      expect(emoji.category).toBe('faces');
+    });
+  });
+
+  it('should not include the current emoji in results', async () => {
+    const { getRelatedEmojis } = await import('../../../src/lib/emoji-data');
+    const related = getRelatedEmojis('skull', 10);
+
+    // Skull should not be in its own related emojis
+    expect(related.some((e) => e.slug === 'skull')).toBe(false);
+  });
+
+  it('should limit the number of results', async () => {
+    const { getRelatedEmojis } = await import('../../../src/lib/emoji-data');
+    const related = getRelatedEmojis('skull', 3);
+
+    expect(related.length).toBeLessThanOrEqual(3);
+  });
+
+  it('should return empty array for non-existent emoji', async () => {
+    const { getRelatedEmojis } = await import('../../../src/lib/emoji-data');
+    const related = getRelatedEmojis('non-existent-emoji', 4);
+
+    expect(related).toEqual([]);
+  });
+
+  it('should use default limit of 6 when not specified', async () => {
+    const { getRelatedEmojis } = await import('../../../src/lib/emoji-data');
+    const related = getRelatedEmojis('skull');
+
+    expect(related.length).toBeLessThanOrEqual(6);
+  });
+
+  it('should return EmojiSummary objects', async () => {
+    const { getRelatedEmojis } = await import('../../../src/lib/emoji-data');
+    const related = getRelatedEmojis('skull', 2);
+
+    if (related.length > 0) {
+      const emoji = related[0];
+      expect(emoji).toHaveProperty('slug');
+      expect(emoji).toHaveProperty('character');
+      expect(emoji).toHaveProperty('name');
+      expect(emoji).toHaveProperty('category');
+      expect(emoji).toHaveProperty('tldr');
+      // Should NOT have full emoji properties
+      expect(emoji).not.toHaveProperty('unicode');
+      expect(emoji).not.toHaveProperty('contextMeanings');
+    }
+  });
+});
+
 describe('emoji types', () => {
   it('should have valid context types', () => {
     const validContexts = [
