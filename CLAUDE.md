@@ -19,10 +19,10 @@ bun dev
 bun run build
 
 # Run all tests with coverage (100% required)
-bun test
+bun run test
 
 # Run tests in watch mode
-bun test --watch
+bun run test:watch
 
 # Run a single test file
 bun test tests/unit/lib/utils.test.ts
@@ -42,6 +42,7 @@ bun run typecheck
 ### Two-Phase Development
 
 **Phase 1 (MVP/Beta):** Static architecture with no database
+
 - All emoji content stored as JSON files in `/src/data/emojis/` and `/src/data/combos/`
 - Client-side rate limiting via localStorage (3 free interpretations/day)
 - SSG for all emoji pages
@@ -72,7 +73,7 @@ bun run typecheck
 - Unit tests: `tests/unit/` - Use `bun:test` with Jest-compatible syntax
 - Component tests: Use `@testing-library/react`
 - E2E tests: `tests/e2e/` - Playwright
-- Run `bun test` before committing
+- Run `bun run test` before committing
 
 ## Tech Stack
 
