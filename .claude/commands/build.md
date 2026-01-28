@@ -34,6 +34,8 @@ Default configuration (automatically detected or uses these defaults):
 @build --setup           # Phase 2: Issue setup (assign + branch)
 @build --develop         # Phase 3: Development work
 @build --validate        # Phase 4: Run validation and fixes
+@build --cicd            # Phase 4.5: Review/update CI/CD workflows
+@build --docs            # Phase 4.6: Review/update documentation
 @build --pr              # Phase 5: Create pull request
 ```
 
@@ -147,9 +149,60 @@ Default configuration (automatically detected or uses these defaults):
     - Commit final changes if needed: `git commit -m "Complete work on issue #<issue-number>"`
     - Push all commits: `git push origin <branch-name>`
 
+12. **Review and update CI/CD workflows**
+    - Check if `.github/workflows/` directory exists, create if needed
+    - Get list of changed files: `git diff --name-only main...HEAD`
+    - Review existing workflows in `.github/workflows/`
+    - Analyze the changes made in this branch
+    - Determine if any CI/CD workflows need to be:
+      - **Created** (if none exist for the type of changes made)
+      - **Modified** (if existing workflows don't cover new functionality)
+      - **Improved** (if workflows could be more efficient or comprehensive)
+    - Focus on:
+      - **Test workflows**: If tests were added/modified
+      - **Lint workflows**: If code style checks are needed
+      - **Build workflows**: If build process changed
+      - **Deployment workflows**: If deployment config changed
+      - **Type checking workflows**: For TypeScript changes
+    - Ensure workflows use Bun as the runtime (not npm/yarn)
+    - Follow GitHub Actions best practices
+    - If workflow changes are made:
+      - Stage and commit: `git add .github/workflows/ && git commit -m "chore: update CI/CD workflows for issue #<issue-number>"`
+      - Push: `git push origin <branch-name>`
+    - **Conservative approach**: Only add/modify workflows that are directly relevant to the changes
+    - If no CI/CD changes are needed, proceed without modifications
+
+13. **Review and update README and documentation**
+    - Review existing documentation files: `README.md`, `CLAUDE.md`, `AGENT.md`, etc.
+    - Get list of changed files: `git diff --name-only main...HEAD`
+    - Analyze the changes made in this branch
+    - Determine if documentation needs to be updated:
+      - **README.md**: For new features, setup changes, or usage instructions
+      - **CLAUDE.md / AGENT.md**: For architecture changes, new directories, or development workflow changes
+      - **API documentation**: For new endpoints or API changes
+      - **Component documentation**: For new components or component API changes
+      - **Configuration docs**: For new environment variables or config options
+    - Update documentation to reflect:
+      - New features and how to use them
+      - Changed commands or scripts
+      - New dependencies or setup requirements
+      - Breaking changes or migration steps
+      - New file structure or directories
+      - Updated examples or code snippets
+    - Ensure documentation is:
+      - Clear and concise
+      - Accurate and up-to-date
+      - Includes examples where helpful
+      - Follows existing documentation style
+    - If documentation changes are made:
+      - Stage and commit: `git add *.md && git commit -m "docs: update documentation for issue #<issue-number>"`
+      - Push: `git push origin <branch-name>`
+    - **Conservative approach**: Only update documentation that is directly affected by the changes
+    - If no documentation updates are needed, proceed without modifications
+
 ### Phase 5: Pull Request
 
-12. **Create pull request**
+14. **Create pull request**
     - Check if PR already exists: `gh pr list --repo <repo> --head <branch-name> --json number`
     - If exists, use existing PR
     - If not, create PR:
@@ -230,7 +283,9 @@ Default configuration (automatically detected or uses these defaults):
 - **Never skip tests**: Do not comment out, remove, or skip tests to make validation pass. Fix the underlying issues instead.
 - **Error handling**: If validation fails after 5 attempts, report the issue and ask for manual intervention rather than proceeding with errors.
 - **Branch naming**: Follow pattern `issue-<number>-<sanitized-title>` for consistency.
-- **Commit messages**: Use conventional commits format (`feat:`, `fix:`, `test:`, `chore:`, etc.).
+- **Commit messages**: Use conventional commits format (`feat:`, `fix:`, `test:`, `chore:`, `docs:`, etc.).
+- **CI/CD workflows**: Be conservative when adding or modifying workflows. Only make changes that are directly relevant to the issue. Not every issue requires workflow changes—documentation, data files, or minor updates may not need CI/CD modifications.
+- **Documentation updates**: Keep documentation in sync with code changes. Update README.md for user-facing changes, and CLAUDE.md/AGENT.md for architecture or development workflow changes. Be conservative—only update what's directly affected.
 
 ## Example Workflow
 
@@ -250,6 +305,18 @@ Default configuration (automatically detected or uses these defaults):
 # After validation passes:
 # git commit -m "fix: resolve lint errors"
 # git push origin issue-42-emoji-detail-page-route
+
+# Review CI/CD workflows (if applicable):
+# git add .github/workflows/
+# git commit -m "chore: update CI/CD workflows for issue #42"
+# git push origin issue-42-emoji-detail-page-route
+
+# Review and update documentation (if applicable):
+# git add README.md CLAUDE.md
+# git commit -m "docs: update documentation for issue #42"
+# git push origin issue-42-emoji-detail-page-route
+
+# Create PR:
 # gh pr create --title "..." --body "..." --base main --head issue-42-emoji-detail-page-route
 ```
 
