@@ -116,13 +116,19 @@ describe('EmojiPage', () => {
       mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
       const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
 
-      // Open Graph basic fields
-      expect(metadata.openGraph?.type).toBe('article');
-      expect(metadata.openGraph?.siteName).toBe('KnowYourEmoji');
-      expect(metadata.openGraph?.url).toContain('/emoji/skull');
+      // Open Graph basic fields - cast to access type-specific properties
+      const openGraph = metadata.openGraph as {
+        type?: string;
+        siteName?: string;
+        url?: string;
+        images?: Array<{ url: string; width?: number; height?: number; alt?: string }>;
+      };
+      expect(openGraph?.type).toBe('article');
+      expect(openGraph?.siteName).toBe('KnowYourEmoji');
+      expect(openGraph?.url).toContain('/emoji/skull');
 
       // Open Graph images
-      const ogImages = metadata.openGraph?.images;
+      const ogImages = openGraph?.images;
       expect(ogImages).toBeDefined();
       expect(Array.isArray(ogImages) ? ogImages.length : 0).toBeGreaterThan(0);
     });
@@ -131,9 +137,15 @@ describe('EmojiPage', () => {
       mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
       const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
 
-      expect(metadata.twitter?.card).toBe('summary_large_image');
-      expect(metadata.twitter?.title).toBe('💀 Skull Emoji Meaning');
-      expect(metadata.twitter?.description).toBe("Usually means 'that's so funny I'm dead'");
+      // Cast to access Twitter-specific properties
+      const twitter = metadata.twitter as {
+        card?: string;
+        title?: string;
+        description?: string;
+      };
+      expect(twitter?.card).toBe('summary_large_image');
+      expect(twitter?.title).toBe('💀 Skull Emoji Meaning');
+      expect(twitter?.description).toBe("Usually means 'that's so funny I'm dead'");
     });
 
     test('includes canonical URL', async () => {
