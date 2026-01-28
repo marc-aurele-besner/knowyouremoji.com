@@ -1,15 +1,29 @@
 @import 'tailwindcss';
 
 :root {
+  /* Semantic colors */
   --background: #ffffff;
-  --foreground: #171717;
-}
+  --foreground: #0a0a0a;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary color scale */
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-foreground: #ffffff;
+
+  /* Secondary color scale */
+  --secondary-50: #f8fafc;
+  --secondary-100: #f1f5f9;
+  --secondary-500: #64748b;
+  --secondary-600: #475569;
+  --secondary-foreground: #ffffff;
+
+  /* Accent color scale */
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-foreground: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +33,76 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  /* Colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Primary colors */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary: var(--primary-600);
+  --color-primary-foreground: var(--primary-foreground);
+
+  /* Secondary colors */
+  --color-secondary-50: var(--secondary-50);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-500: var(--secondary-500);
+  --color-secondary-600: var(--secondary-600);
+  --color-secondary: var(--secondary-500);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Accent colors */
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent: var(--accent-500);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Fonts */
+  --font-sans: var(--font-geist-sans), 'Inter', system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji';
+
+  /* Emoji-specific font sizes */
+  --font-size-emoji-sm: 1.5rem;
+  --font-size-emoji-md: 2rem;
+  --font-size-emoji-lg: 3rem;
+  --font-size-emoji-xl: 4rem;
+  --font-size-emoji-2xl: 6rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .emoji-display {
+    font-family: var(--font-emoji);
+    line-height: 1;
+  }
+
+  .emoji-sm {
+    font-size: var(--font-size-emoji-sm);
+  }
+
+  .emoji-md {
+    font-size: var(--font-size-emoji-md);
+  }
+
+  .emoji-lg {
+    font-size: var(--font-size-emoji-lg);
+  }
+
+  .emoji-xl {
+    font-size: var(--font-size-emoji-xl);
+  }
+
+  .emoji-2xl {
+    font-size: var(--font-size-emoji-2xl);
+  }
 }
