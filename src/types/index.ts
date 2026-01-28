@@ -38,3 +38,18 @@ export type {
   InterpretationResult,
   InterpretErrorResponse,
 } from './emoji';
+
+export type {
+  // Basic types
+  EmojiComboSlug,
+  EmojiComboCategoryName,
+  // Interface types
+  EmojiCombo,
+  EmojiComboSummary,
+  // Collection types
+  EmojiComboSearchResult,
+  EmojiComboCollection,
+  // Utility types
+  EmojiComboValidationResult,
+  EmojiComboDraft,
+} from './combo';
