@@ -1,0 +1,76 @@
+{
+  "unicode": "1F634",
+  "slug": "sleeping",
+  "character": "😴",
+  "name": "Sleeping Face",
+  "shortName": "sleeping",
+  "category": "faces",
+  "subcategory": "face-negative",
+  "unicodeVersion": "6.1",
+  "baseMeaning": "A yellow face with closed eyes and ZZZ symbols indicating sleep.",
+  "tldr": "Shows tiredness, going to sleep, or finding something boring.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Going to sleep or being tired.",
+      "example": "Goodnight 😴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Exhausted or need sleep.",
+      "example": "Long day at work 😴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Implying something is boring or putting you to sleep.",
+      "example": "That lecture 😴",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sarcastically saying something is dull.",
+      "example": "Riveting content 😴",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Used for both tiredness and calling something boring."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Common bedtime emoji or expressing exhaustion."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Can imply content is boring in comments."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Often used to call something boring or uninteresting."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Both literal tiredness and boring contexts."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Usually interprets as literally being tired."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Can imply boredom",
+      "description": "Using this in response to content can imply it's boring.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["sleep-tired"],
+  "seoTitle": "😴 Sleeping Face Emoji Meaning - What Does 😴 Really Mean?",
+  "seoDescription": "Learn what the sleeping emoji 😴 really means in modern texting. Shows tiredness or implies boredom. Complete context guide."
+}

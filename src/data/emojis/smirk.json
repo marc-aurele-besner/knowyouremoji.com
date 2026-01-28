@@ -1,0 +1,76 @@
+{
+  "unicode": "1F60F",
+  "slug": "smirk",
+  "character": "😏",
+  "name": "Smirking Face",
+  "shortName": "smirk",
+  "category": "faces",
+  "subcategory": "face-neutral",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A yellow face with a half-smile raised at one corner.",
+  "tldr": "The suggestive/flirty emoji. Implies something cheeky, knowing, or a hidden meaning.",
+  "contextMeanings": [
+    {
+      "context": "DATING",
+      "meaning": "Suggestive or flirtatious implication.",
+      "example": "Come over later 😏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Implying there's more to the story or a hidden meaning.",
+      "example": "I know something you don't 😏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Self-satisfied or smug about something.",
+      "example": "Told you so 😏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Generally inappropriate for professional contexts.",
+      "example": "Meeting went well 😏",
+      "riskLevel": "HIGH"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "IMESSAGE",
+      "note": "Often used in flirty or suggestive contexts between close friends or romantic interests."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used in comments to imply something spicy or suggestive."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Avoid in workplace - almost always reads as inappropriate."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primarily used for suggestive or flirtatious implications."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Same usage - implies something cheeky or knowing."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not realize the suggestive connotation."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Suggestive connotation",
+      "description": "This emoji often implies something flirty or suggestive. Can be misinterpreted easily.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["smirk-wink"],
+  "seoTitle": "😏 Smirking Face Emoji Meaning - What Does 😏 Really Mean?",
+  "seoDescription": "Learn what the smirk emoji 😏 really means in modern texting. The suggestive emoji implying something cheeky or flirty. Complete context guide."
+}

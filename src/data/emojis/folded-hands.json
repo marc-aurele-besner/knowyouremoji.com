@@ -1,0 +1,76 @@
+{
+  "unicode": "1F64F",
+  "slug": "folded-hands",
+  "character": "🙏",
+  "name": "Folded Hands",
+  "shortName": "pray",
+  "category": "people",
+  "subcategory": "hand",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Two hands pressed together with fingers pointing up.",
+  "tldr": "Means 'please', 'thank you', 'praying', or 'namaste' depending on context.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Expressing gratitude or saying thank you.",
+      "example": "Thanks so much 🙏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Saying please or making a request.",
+      "example": "Help me out 🙏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Praying or sending thoughts/prayers.",
+      "example": "Praying for you 🙏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Professional thank you or gratitude.",
+      "example": "Appreciate your help 🙏",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Common for expressing gratitude, hopes, or requests."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Often used in captions for gratitude or spirituality."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Acceptable for expressing thanks in professional contexts."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primarily used for 'please' or 'thank you' rather than religious prayer."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Context-dependent - can be gratitude, please, or prayer."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret primarily as prayer or religious gesture."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Multiple meanings",
+      "description": "Can be interpreted as praying, thank you, please, or high-five depending on the recipient.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["pray-thanks"],
+  "seoTitle": "🙏 Folded Hands Emoji Meaning - What Does 🙏 Really Mean?",
+  "seoDescription": "Learn what the folded hands emoji 🙏 really means in modern texting. Can mean please, thank you, or praying. Complete context guide."
+}

@@ -1,0 +1,76 @@
+{
+  "unicode": "1F975",
+  "slug": "hot-face",
+  "character": "🥵",
+  "name": "Hot Face",
+  "shortName": "hot_face",
+  "category": "faces",
+  "subcategory": "face-negative",
+  "unicodeVersion": "11.0",
+  "baseMeaning": "A yellow face with flushed cheeks, sweat drops, and tongue sticking out from heat.",
+  "tldr": "Shows being hot/overheated OR finding something/someone extremely attractive.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Being hot from weather or temperature.",
+      "example": "100 degrees outside 🥵",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Finding someone or something extremely attractive.",
+      "example": "That photo 🥵",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Expressing attraction to someone.",
+      "example": "You look so good 🥵",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Exaggerated reaction to minor heat or attraction.",
+      "example": "Turned the thermostat up to 72 🥵",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TIKTOK",
+      "note": "Common for expressing attraction to creators or content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in comments on attractive photos."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Both temperature complaints and thirst comments."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primarily means finding something/someone hot (attractive)."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Both literal heat and attraction meanings."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "More likely to use for actual temperature."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Attraction connotation",
+      "description": "When used in response to a person, almost always implies attraction.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["hot-fire"],
+  "seoTitle": "🥵 Hot Face Emoji Meaning - What Does 🥵 Really Mean?",
+  "seoDescription": "Learn what the hot face emoji 🥵 really means in modern texting. Being overheated or finding something attractive. Complete context guide."
+}

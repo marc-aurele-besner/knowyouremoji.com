@@ -1,0 +1,76 @@
+{
+  "unicode": "1F644",
+  "slug": "face-with-rolling-eyes",
+  "character": "🙄",
+  "name": "Face with Rolling Eyes",
+  "shortName": "rolling_eyes",
+  "category": "faces",
+  "subcategory": "face-negative",
+  "unicodeVersion": "8.0",
+  "baseMeaning": "A yellow face with eyes rolled upward, expressing contempt, boredom, or exasperation.",
+  "tldr": "Universal eye-roll meaning annoyance, dismissiveness, or 'here we go again'.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Expressing annoyance, frustration, or exasperation.",
+      "example": "Not this again 🙄",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissing someone's point or expressing contempt.",
+      "example": "Sure, whatever you say 🙄",
+      "riskLevel": "HIGH"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Mocking something seen as obvious or eye-roll worthy.",
+      "example": "Groundbreaking observation 🙄",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Expressing disbelief or 'can you believe this'.",
+      "example": "They really said that 🙄",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Common for expressing frustration with news, takes, or people."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Can escalate tension quickly - clearly signals displeasure."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Generally too negative for workplace communication."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Standard emoji for expressing 'ugh' or 'not this again'."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Frequently used to express frustration or dismissiveness."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May find it too overtly rude or disrespectful."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Clearly negative",
+      "description": "This emoji is unambiguously dismissive. Use with caution as it can escalate conflicts.",
+      "severity": "HIGH"
+    }
+  ],
+  "relatedCombos": ["rolling-eyes-sigh"],
+  "seoTitle": "🙄 Rolling Eyes Emoji Meaning - What Does 🙄 Really Mean?",
+  "seoDescription": "Learn what the rolling eyes emoji 🙄 really means in modern texting. Universal sign of annoyance or dismissiveness. Complete context guide."
+}
