@@ -163,3 +163,149 @@ export function getRelatedEmojis(slug: string, limit: number = 6): EmojiSummary[
 export function clearEmojiCache(): void {
   emojiCache = null;
 }
+
+// ============================================
+// CATEGORY UTILITIES
+// ============================================
+
+/**
+ * Valid emoji categories
+ */
+const VALID_CATEGORIES = [
+  'faces',
+  'people',
+  'animals',
+  'food',
+  'travel',
+  'activities',
+  'objects',
+  'symbols',
+  'flags',
+] as const;
+
+/**
+ * Category display names mapping
+ */
+const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
+  faces: 'Smileys & Faces',
+  people: 'People & Body',
+  animals: 'Animals & Nature',
+  food: 'Food & Drink',
+  travel: 'Travel & Places',
+  activities: 'Activities',
+  objects: 'Objects',
+  symbols: 'Symbols',
+  flags: 'Flags',
+};
+
+/**
+ * Category descriptions mapping
+ */
+const CATEGORY_DESCRIPTIONS: Record<string, string> = {
+  faces: 'Explore smileys, face expressions, and emotional emojis with their real-world meanings.',
+  people:
+    'Discover people, body parts, and gesture emojis and what they really mean in different contexts.',
+  animals:
+    'Learn about animal and nature emojis and their hidden meanings in modern communication.',
+  food: 'Understand food and drink emojis beyond their literal meaning.',
+  travel: 'Explore travel and places emojis and how they are used in everyday texting.',
+  activities: 'Discover activities and sports emojis and their contextual meanings.',
+  objects: 'Learn about object emojis and what they symbolize in different situations.',
+  symbols: 'Understand symbol emojis and their significance in digital communication.',
+  flags: 'Explore flag emojis and their usage in modern messaging.',
+};
+
+/**
+ * Check if a category is valid
+ * @param category - Category slug to check
+ * @returns True if the category is valid
+ */
+export function isValidCategory(category: string): boolean {
+  return VALID_CATEGORIES.includes(category as (typeof VALID_CATEGORIES)[number]);
+}
+
+/**
+ * Get the display name for a category
+ * @param category - Category slug
+ * @returns Human-readable category name
+ */
+export function getCategoryDisplayName(category: string): string {
+  return CATEGORY_DISPLAY_NAMES[category] || category.charAt(0).toUpperCase() + category.slice(1);
+}
+
+/**
+ * Get the description for a category
+ * @param category - Category slug
+ * @returns Category description
+ */
+export function getCategoryDescription(category: string): string {
+  return (
+    CATEGORY_DESCRIPTIONS[category] || `Explore ${category} emojis and their meanings in context.`
+  );
+}
+
+/**
+ * Category info for listing and display
+ */
+export interface CategoryInfo {
+  /** Category slug */
+  slug: string;
+  /** Human-readable category name */
+  displayName: string;
+  /** Category description */
+  description: string;
+  /** Number of emojis in this category */
+  emojiCount: number;
+}
+
+/**
+ * Get info for a specific category
+ * @param category - Category slug
+ * @returns Category info or null if invalid
+ */
+export function getCategoryInfo(category: string): CategoryInfo | null {
+  if (!isValidCategory(category)) {
+    return null;
+  }
+
+  const emojis = getEmojisByCategory(category);
+
+  return {
+    slug: category,
+    displayName: getCategoryDisplayName(category),
+    description: getCategoryDescription(category),
+    emojiCount: emojis.length,
+  };
+}
+
+/**
+ * Get info for all categories that have emojis
+ * @returns Array of category info, sorted by emoji count descending
+ */
+export function getAllCategoryInfo(): CategoryInfo[] {
+  const categories = getAllCategories();
+
+  return categories
+    .map((category) => ({
+      slug: category,
+      displayName: getCategoryDisplayName(category),
+      description: getCategoryDescription(category),
+      emojiCount: getEmojisByCategory(category).length,
+    }))
+    .sort((a, b) => b.emojiCount - a.emojiCount);
+}
+
+/**
+ * Get emoji summaries for a specific category
+ * @param category - Category slug
+ * @returns Array of emoji summaries in the category
+ */
+export function getEmojiSummariesByCategory(category: string): EmojiSummary[] {
+  return getEmojisByCategory(category).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+  }));
+}
