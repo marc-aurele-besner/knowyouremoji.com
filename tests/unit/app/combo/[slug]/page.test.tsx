@@ -322,5 +322,26 @@ describe('ComboPage', () => {
       );
       expect(emojiPageLinks.length).toBeGreaterThan(0);
     });
+
+    test('renders JSON-LD structured data', async () => {
+      mockGetComboBySlug.mockImplementation(() => mockCombo);
+      mockGetRelatedCombos.mockImplementation(() => []);
+
+      const page = await ComboPage({ params: Promise.resolve({ slug: 'skull-laughing' }) });
+      render(page);
+
+      // Check JSON-LD script tag is present
+      const script = document.querySelector('script[type="application/ld+json"]');
+      expect(script).not.toBeNull();
+
+      // Verify JSON-LD content
+      const jsonLd = JSON.parse(script!.textContent!);
+      expect(jsonLd['@context']).toBe('https://schema.org');
+      expect(jsonLd['@type']).toBe('Article');
+      expect(jsonLd.headline).toBe('💀😂 Dead Laughing Combo Meaning');
+      expect(jsonLd.description).toBe(
+        "Something is so funny that one skull isn't enough to express how dead you are from laughing."
+      );
+    });
   });
 });
