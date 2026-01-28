@@ -59,6 +59,7 @@ bun run validate:emojis
 - `src/components/layout/` - Layout components (Header, Footer, MobileNav, Breadcrumbs)
 - `src/components/emoji/` - Emoji display components
 - `src/components/interpreter/` - AI interpreter tool components
+- `src/components/seo/` - SEO components (JSON-LD structured data)
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (data loader), `rate-limit.ts`, `openai.ts`, `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.

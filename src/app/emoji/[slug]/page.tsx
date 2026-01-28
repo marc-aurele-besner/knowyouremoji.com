@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getEmojiBySlug, getAllEmojiSlugs } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
+import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -172,159 +173,169 @@ function getGenerationLabel(generation: string): string {
 export default async function EmojiPage({ params }: EmojiPageProps) {
   const { slug } = await params;
   const emoji = getEmojiBySlug(slug);
+  const env = getEnv();
 
   if (!emoji) {
     notFound();
   }
 
   return (
-    <main className="container mx-auto px-4 py-8 max-w-4xl">
-      {/* Header with emoji character, name, and copy button */}
-      <EmojiHeader
-        emoji={{
-          character: emoji.character,
-          name: emoji.name,
-          unicode: emoji.unicode,
-          shortcodes: [`:${emoji.shortName}:`],
-        }}
-      />
+    <>
+      {/* JSON-LD structured data for rich snippets */}
+      <EmojiJsonLd emoji={emoji} appUrl={env.appUrl} appName={env.appName} />
 
-      {/* TL;DR Section */}
-      <section className="mb-8">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">TL;DR</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-700 dark:text-gray-300">{emoji.tldr}</p>
-          </CardContent>
-        </Card>
-      </section>
+      <main className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Header with emoji character, name, and copy button */}
+        <EmojiHeader
+          emoji={{
+            character: emoji.character,
+            name: emoji.name,
+            unicode: emoji.unicode,
+            shortcodes: [`:${emoji.shortName}:`],
+          }}
+        />
 
-      {/* Context Meanings Section */}
-      {emoji.contextMeanings.length > 0 && (
+        {/* TL;DR Section */}
+        <section className="mb-8">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg">TL;DR</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700 dark:text-gray-300">{emoji.tldr}</p>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Context Meanings Section */}
+        {emoji.contextMeanings.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Context Meanings
+            </h2>
+            <div className="space-y-4">
+              {emoji.contextMeanings.map((ctx: ContextMeaning, index: number) => (
+                <Card key={index}>
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-2">
+                      <Badge variant="default">{getContextLabel(ctx.context)}</Badge>
+                      <Badge variant={getRiskBadgeVariant(ctx.riskLevel)}>
+                        {ctx.riskLevel} Risk
+                      </Badge>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300 mb-2">{ctx.meaning}</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+                      Example: &ldquo;{ctx.example}&rdquo;
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Platform Notes Section */}
+        {emoji.platformNotes.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Platform Notes
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              {emoji.platformNotes.map((note: PlatformNote, index: number) => (
+                <Card key={index}>
+                  <CardHeader className="pb-2">
+                    <Badge variant="secondary">{getPlatformLabel(note.platform)}</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Generational Notes Section */}
+        {emoji.generationalNotes.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Generational Differences
+            </h2>
+            <div className="grid gap-4 md:grid-cols-2">
+              {emoji.generationalNotes.map((note: GenerationalNote, index: number) => (
+                <Card key={index}>
+                  <CardHeader className="pb-2">
+                    <Badge variant="outline">{getGenerationLabel(note.generation)}</Badge>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Warnings Section */}
+        {emoji.warnings.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
+              Warnings
+            </h2>
+            <div className="space-y-4">
+              {emoji.warnings.map((warning: EmojiWarning, index: number) => (
+                <Card key={index} className="border-yellow-200 dark:border-yellow-800">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-yellow-500">⚠️</span>
+                      <CardTitle className="text-base">{warning.title}</CardTitle>
+                      <Badge variant={getSeverityBadgeVariant(warning.severity)}>
+                        {warning.severity}
+                      </Badge>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300">{warning.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Unicode Info Section */}
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Context Meanings
+            Technical Details
           </h2>
-          <div className="space-y-4">
-            {emoji.contextMeanings.map((ctx: ContextMeaning, index: number) => (
-              <Card key={index}>
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <Badge variant="default">{getContextLabel(ctx.context)}</Badge>
-                    <Badge variant={getRiskBadgeVariant(ctx.riskLevel)}>{ctx.riskLevel} Risk</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 dark:text-gray-300 mb-2">{ctx.meaning}</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                    Example: &ldquo;{ctx.example}&rdquo;
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Platform Notes Section */}
-      {emoji.platformNotes.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Platform Notes
-          </h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            {emoji.platformNotes.map((note: PlatformNote, index: number) => (
-              <Card key={index}>
-                <CardHeader className="pb-2">
-                  <Badge variant="secondary">{getPlatformLabel(note.platform)}</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Generational Notes Section */}
-      {emoji.generationalNotes.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Generational Differences
-          </h2>
-          <div className="grid gap-4 md:grid-cols-2">
-            {emoji.generationalNotes.map((note: GenerationalNote, index: number) => (
-              <Card key={index}>
-                <CardHeader className="pb-2">
-                  <Badge variant="outline">{getGenerationLabel(note.generation)}</Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Warnings Section */}
-      {emoji.warnings.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Warnings</h2>
-          <div className="space-y-4">
-            {emoji.warnings.map((warning: EmojiWarning, index: number) => (
-              <Card key={index} className="border-yellow-200 dark:border-yellow-800">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-yellow-500">⚠️</span>
-                    <CardTitle className="text-base">{warning.title}</CardTitle>
-                    <Badge variant={getSeverityBadgeVariant(warning.severity)}>
-                      {warning.severity}
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 dark:text-gray-300">{warning.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Unicode Info Section */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-          Technical Details
-        </h2>
-        <Card>
-          <CardContent className="pt-6">
-            <dl className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <dt className="font-medium text-gray-500 dark:text-gray-400">Unicode</dt>
-                <dd className="text-gray-900 dark:text-gray-100">U+{emoji.unicode}</dd>
-              </div>
-              <div>
-                <dt className="font-medium text-gray-500 dark:text-gray-400">Version</dt>
-                <dd className="text-gray-900 dark:text-gray-100">{emoji.unicodeVersion}</dd>
-              </div>
-              <div>
-                <dt className="font-medium text-gray-500 dark:text-gray-400">Category</dt>
-                <dd className="text-gray-900 dark:text-gray-100 capitalize">{emoji.category}</dd>
-              </div>
-              {emoji.subcategory && (
+          <Card>
+            <CardContent className="pt-6">
+              <dl className="grid grid-cols-2 gap-4 text-sm">
                 <div>
-                  <dt className="font-medium text-gray-500 dark:text-gray-400">Subcategory</dt>
-                  <dd className="text-gray-900 dark:text-gray-100">{emoji.subcategory}</dd>
+                  <dt className="font-medium text-gray-500 dark:text-gray-400">Unicode</dt>
+                  <dd className="text-gray-900 dark:text-gray-100">U+{emoji.unicode}</dd>
                 </div>
-              )}
-            </dl>
-          </CardContent>
-        </Card>
-      </section>
-    </main>
+                <div>
+                  <dt className="font-medium text-gray-500 dark:text-gray-400">Version</dt>
+                  <dd className="text-gray-900 dark:text-gray-100">{emoji.unicodeVersion}</dd>
+                </div>
+                <div>
+                  <dt className="font-medium text-gray-500 dark:text-gray-400">Category</dt>
+                  <dd className="text-gray-900 dark:text-gray-100 capitalize">{emoji.category}</dd>
+                </div>
+                {emoji.subcategory && (
+                  <div>
+                    <dt className="font-medium text-gray-500 dark:text-gray-400">Subcategory</dt>
+                    <dd className="text-gray-900 dark:text-gray-100">{emoji.subcategory}</dd>
+                  </div>
+                )}
+              </dl>
+            </CardContent>
+          </Card>
+        </section>
+      </main>
+    </>
   );
 }
