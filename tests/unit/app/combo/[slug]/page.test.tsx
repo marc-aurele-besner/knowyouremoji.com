@@ -1,5 +1,5 @@
 import { describe, expect, test, mock, beforeEach, afterEach } from 'bun:test';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import ComboPage, { generateStaticParams, generateMetadata } from '@/app/combo/[slug]/page';
 import type { EmojiCombo } from '@/types/combo';
 
@@ -65,6 +65,7 @@ describe('ComboPage', () => {
   });
 
   afterEach(() => {
+    cleanup();
     mockGetComboBySlug.mockReset();
     mockGetAllComboSlugs.mockReset();
     mockGetRelatedCombos.mockReset();
