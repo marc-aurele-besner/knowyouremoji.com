@@ -27,6 +27,7 @@ NC='\033[0m' # No Color
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 COMMANDS_DIR="$PROJECT_ROOT/.claude/commands"
+LOGS_DIR="$PROJECT_ROOT/.claude/.logs"
 DELAY_SECONDS=5
 RUN_BUILD=true
 RUN_MERGE=true
@@ -34,6 +35,22 @@ SINGLE_CYCLE=false
 
 # Track if we're currently running a command (for signal handling)
 CURRENT_PID=""
+CURRENT_SESSION_ID=""
+
+# Ensure logs directory exists
+ensure_logs_dir() {
+    mkdir -p "$LOGS_DIR"
+}
+
+# Generate a unique session ID
+generate_session_id() {
+    local phase="$1"
+    local timestamp
+    timestamp=$(date '+%Y%m%d_%H%M%S')
+    local random_suffix
+    random_suffix=$(head -c 4 /dev/urandom | xxd -p)
+    echo "${timestamp}_${phase}_${random_suffix}"
+}
 
 # Print banner
 print_banner() {
@@ -159,13 +176,130 @@ check_open_issues() {
     return 0  # Has open issues
 }
 
+# Write session log to JSON file
+write_session_log() {
+    local session_id="$1"
+    local phase_name="$2"
+    local start_time="$3"
+    local end_time="$4"
+    local exit_code="$5"
+    local output_file="$6"
+    local log_file="$LOGS_DIR/${session_id}.json"
+
+    local duration=$((end_time - start_time))
+    local start_iso
+    start_iso=$(date -r "$start_time" '+%Y-%m-%dT%H:%M:%S%z' 2>/dev/null || date -d "@$start_time" '+%Y-%m-%dT%H:%M:%S%z' 2>/dev/null || echo "$start_time")
+    local end_iso
+    end_iso=$(date -r "$end_time" '+%Y-%m-%dT%H:%M:%S%z' 2>/dev/null || date -d "@$end_time" '+%Y-%m-%dT%H:%M:%S%z' 2>/dev/null || echo "$end_time")
+
+    # Process stream-json output file to extract structured data
+    # The output file contains JSON lines (one JSON object per line)
+    if [[ -f "$output_file" ]]; then
+        python3 - "$output_file" "$log_file" "$session_id" "$phase_name" "$start_iso" "$end_iso" "$duration" "$exit_code" << 'PYTHON_SCRIPT'
+import sys
+import json
+
+output_file = sys.argv[1]
+log_file = sys.argv[2]
+session_id = sys.argv[3]
+phase_name = sys.argv[4]
+start_iso = sys.argv[5]
+end_iso = sys.argv[6]
+duration = int(sys.argv[7])
+exit_code = int(sys.argv[8])
+
+# Parse stream-json lines
+events = []
+messages = []
+final_result = None
+claude_session_id = None
+
+with open(output_file, 'r') as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            event = json.loads(line)
+            events.append(event)
+
+            event_type = event.get('type', '')
+
+            # Capture session ID from init or result
+            if event_type == 'system' and 'session_id' in event:
+                claude_session_id = event.get('session_id')
+            elif event_type == 'result':
+                final_result = event
+                if 'session_id' in event:
+                    claude_session_id = event.get('session_id')
+            elif event_type == 'assistant':
+                messages.append(event.get('message', {}))
+
+        except json.JSONDecodeError:
+            # Skip non-JSON lines
+            pass
+
+# Build final log structure
+log_data = {
+    "sessionId": session_id,
+    "claudeSessionId": claude_session_id,
+    "phase": phase_name,
+    "startTime": start_iso,
+    "endTime": end_iso,
+    "durationSeconds": duration,
+    "exitCode": exit_code,
+    "status": "success" if exit_code == 0 else "failed",
+    "result": final_result,
+    "messages": messages,
+    "streamEvents": events
+}
+
+with open(log_file, 'w') as f:
+    json.dump(log_data, f, indent=2, ensure_ascii=False)
+
+PYTHON_SCRIPT
+    else
+        # Fallback if output file doesn't exist
+        cat > "$log_file" << EOF
+{
+  "sessionId": "$session_id",
+  "claudeSessionId": null,
+  "phase": "$phase_name",
+  "startTime": "$start_iso",
+  "endTime": "$end_iso",
+  "durationSeconds": $duration,
+  "exitCode": $exit_code,
+  "status": "$([ $exit_code -eq 0 ] && echo "success" || echo "failed")",
+  "result": null,
+  "messages": [],
+  "streamEvents": []
+}
+EOF
+    fi
+
+    echo "$log_file"
+}
+
 # Run a Claude command with streaming output
 run_claude_command() {
     local phase_name="$1"
     local prompt_file="$2"
 
+    # Generate session ID for this run
+    local phase_slug
+    phase_slug=$(echo "$phase_name" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | tr -cd '[:alnum:]_')
+    CURRENT_SESSION_ID=$(generate_session_id "$phase_slug")
+
+    # Ensure logs directory exists
+    ensure_logs_dir
+
+    # Create temporary file for capturing output
+    local temp_output_file
+    temp_output_file=$(mktemp)
+
     echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo -e "${BLUE}${BOLD}  Phase: $phase_name${NC}"
+    echo -e "${BLUE}${BOLD}  Session ID: ${CYAN}$CURRENT_SESSION_ID${NC}"
     echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
     echo ""
 
@@ -175,13 +309,68 @@ run_claude_command() {
     local start_time
     start_time=$(date +%s)
 
-    # Run Claude with streaming (output goes directly to terminal)
+    # Create stream parser script
+    local parser_script
+    parser_script=$(mktemp)
+    cat > "$parser_script" << 'STREAM_PARSER'
+import sys
+import json
+
+# ANSI colors
+CYAN = '\033[0;36m'
+NC = '\033[0m'
+
+for line in sys.stdin:
+    line = line.strip()
+    if not line:
+        continue
+    try:
+        event = json.loads(line)
+        event_type = event.get('type', '')
+
+        if event_type == 'assistant':
+            # Extract and print assistant text content
+            msg = event.get('message', {})
+            for block in msg.get('content', []):
+                if block.get('type') == 'text':
+                    text = block.get('text', '')
+                    if text:
+                        print(text, flush=True)
+
+        elif event_type == 'content_block_delta':
+            # Print streaming text deltas (partial messages)
+            delta = event.get('delta', {})
+            if delta.get('type') == 'text_delta':
+                text = delta.get('text', '')
+                if text:
+                    print(text, end='', flush=True)
+
+        elif event_type == 'result':
+            # Final result
+            print(f"\n{CYAN}[Session complete]{NC}", flush=True)
+
+        elif event_type == 'system':
+            # System messages (init, session info)
+            session_id = event.get('session_id', '')
+            if session_id:
+                print(f"{CYAN}[Claude Session: {session_id}]{NC}", flush=True)
+
+    except json.JSONDecodeError:
+        # Print non-JSON lines as-is (stderr, etc.)
+        print(line, flush=True)
+STREAM_PARSER
+
+    # Run Claude with streaming JSON output for full capture
+    # --output-format stream-json: outputs streaming JSON events
+    # --include-partial-messages: includes partial streaming events
+    # Output goes to both terminal (processed) and temp file (raw JSON)
     # Using --dangerously-skip-permissions for fully automated operation
     claude -p "$prompt" \
-        --allow-dangerously-skip-permissions \
+        --output-format stream-json \
+        --include-partial-messages \
         --dangerously-skip-permissions \
         --allowedTools "*" \
-        &
+        2>&1 | tee "$temp_output_file" | python3 -u "$parser_script" &
 
     CURRENT_PID=$!
 
@@ -194,14 +383,23 @@ run_claude_command() {
     end_time=$(date +%s)
     local duration=$((end_time - start_time))
 
+    # Write session log to JSON file
+    local log_file
+    log_file=$(write_session_log "$CURRENT_SESSION_ID" "$phase_name" "$start_time" "$end_time" "$exit_code" "$temp_output_file")
+
+    # Clean up temp files
+    rm -f "$temp_output_file" "$parser_script"
+
     echo ""
     if [[ $exit_code -eq 0 ]]; then
         echo -e "${GREEN}✓ $phase_name completed successfully (${duration}s)${NC}"
     else
         echo -e "${RED}✗ $phase_name failed with exit code $exit_code (${duration}s)${NC}"
     fi
+    echo -e "${CYAN}  Log saved: $log_file${NC}"
     echo ""
 
+    CURRENT_SESSION_ID=""
     return $exit_code
 }
 
@@ -258,6 +456,7 @@ main() {
     echo -e "  Merge phase:  $([ "$RUN_MERGE" == true ] && echo -e "${GREEN}enabled${NC}" || echo -e "${YELLOW}disabled${NC}")"
     echo -e "  Mode:         $([ "$SINGLE_CYCLE" == true ] && echo "single cycle" || echo "continuous loop")"
     echo -e "  Delay:        ${DELAY_SECONDS}s between cycles"
+    echo -e "  Logs dir:     ${LOGS_DIR}"
     echo ""
 
     check_prerequisites
