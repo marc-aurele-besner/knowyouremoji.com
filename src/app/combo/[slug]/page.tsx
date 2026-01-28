@@ -4,6 +4,7 @@ import { getComboBySlug, getAllComboSlugs, getRelatedCombos } from '@/lib/combo-
 import { getEnv } from '@/lib/env';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { ComboHeader } from '@/components/combo/combo-header';
 import type { Metadata } from 'next';
 import type { EmojiComboSummary } from '@/types/combo';
 
@@ -129,15 +130,7 @@ export default async function ComboPage({ params }: ComboPageProps) {
   return (
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Header Section */}
-      <header className="text-center mb-8">
-        <div className="text-6xl mb-4" aria-label={combo.name}>
-          {combo.combo}
-        </div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">{combo.name}</h1>
-        <Badge variant="secondary" className="capitalize">
-          {combo.category}
-        </Badge>
-      </header>
+      <ComboHeader combo={combo} className="mb-8" />
 
       {/* Meaning Section */}
       <section className="mb-8">
