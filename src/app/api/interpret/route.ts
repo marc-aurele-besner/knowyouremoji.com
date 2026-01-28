@@ -42,14 +42,10 @@ const interpretRequestSchema = z.object({
       message: 'Message must contain at least one emoji',
     }),
   platform: z.enum(VALID_PLATFORMS, {
-    errorMap: () => ({
-      message: `Platform must be one of: ${VALID_PLATFORMS.join(', ')}`,
-    }),
+    error: `Platform must be one of: ${VALID_PLATFORMS.join(', ')}`,
   }),
   context: z.enum(VALID_CONTEXTS, {
-    errorMap: () => ({
-      message: `Context must be one of: ${VALID_CONTEXTS.join(', ')}`,
-    }),
+    error: `Context must be one of: ${VALID_CONTEXTS.join(', ')}`,
   }),
 });
 
