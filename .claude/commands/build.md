@@ -7,15 +7,19 @@ Implement a full junior developer workflow following the Ralph loop style. This 
 ## Prerequisites
 
 Before running this command, ensure:
+
 - **GitHub CLI** (`gh`) is installed and authenticated: `gh auth status`
-- **Git** is configured with user name and email: `git config user.name` and `git config user.email`
+- **Git** is configured with user name and email: `git config user.name` and `git config user.email` (sets commit author)
 - **Bun** is installed: `bun --version`
 - **Repository access**: You have write access to the repository
 - **Clean state**: Current working directory is clean or changes are stashed/committed
 
+**Note**: The PR author on GitHub will be the user authenticated with `gh` CLI. The commit author is determined by git config settings.
+
 ## Configuration
 
 Default configuration (automatically detected or uses these defaults):
+
 - **Repository**: Detected from `git remote get-url origin` or defaults to `marc-aurele-besner/knowyouremoji.com`
 - **Main branch**: `main`
 - **Max validation attempts**: 5
@@ -49,11 +53,15 @@ Default configuration (automatically detected or uses these defaults):
    - If detection fails, use default: `marc-aurele-besner/knowyouremoji.com`
    - Store repository variable for use in all subsequent `gh` commands
    - Verify authentication: `gh auth status`
+   - Verify git author configuration:
+     - Check: `git config user.name` and `git config user.email`
+     - If not set, configure: `git config user.name "Your Name"` and `git config user.email "your.email@example.com"`
+     - This ensures all commits have the correct author information
 
 ### Phase 1: Issue Selection (Skip if `--issue` parameter provided)
 
 2. **Query and select milestone**
-   - Use `gh api repos/<repo>/milestones?state=open&sort=title&direction=asc` to fetch open milestones
+   - Use `gh api "repos/<repo>/milestones?state=open&sort=title&direction=asc"` to fetch open milestones
    - Display milestones with their open/closed issue counts
    - Select the first milestone with open issues (sorted by title)
    - If no milestones exist, proceed with all open issues
@@ -208,25 +216,33 @@ Default configuration (automatically detected or uses these defaults):
     - If not, create PR:
       - Title: Use issue title
       - Body template:
+
         ```markdown
         ## Summary
+
         Resolves #<issue-number>
-        
+
         ## Changes
+
         This PR implements the requirements from issue #<issue-number>.
-        
+
         ## Test Plan
+
         - [x] All tests pass (`bun test`)
         - [x] 100% code coverage maintained
         - [x] Linting passes (`bun run lint`)
         - [x] Type checking passes (`bun run typecheck`)
         - [x] Build succeeds (`bun run build`)
-        
+
         ---
+
         🤖 Generated with automated AI assistance
         ```
+
       - Base: `main`
       - Head: `<branch-name>`
+      - Author: Automatically set to the authenticated `gh` CLI user
+
     - Link PR to issue: `gh issue comment <issue-number> --repo <repo> --body "🚀 Pull request created: <pr-url>"`
 
 ## Troubleshooting
@@ -234,20 +250,24 @@ Default configuration (automatically detected or uses these defaults):
 ### Common Issues and Solutions
 
 **GitHub CLI not authenticated**
+
 - Run `gh auth login` and follow the prompts
 - Verify with `gh auth status`
 
 **Permission denied on repository**
+
 - Ensure you have write access to the repository
 - Check with repository owner if you need to be added as collaborator
 
 **Validation fails repeatedly (5+ attempts)**
+
 - The command will stop and report the issue
 - Review errors manually: `bun run lint`, `bun test`, `bun run typecheck`
 - Fix issues locally and commit
 - Resume with `@build --validate` to re-run validation only
 
 **Resume interrupted workflow**
+
 - If on an issue branch (`issue-<N>-*`), the command automatically detects it
 - Check current branch: `git branch --show-current`
 - The command will resume from the appropriate phase based on:
@@ -257,19 +277,23 @@ Default configuration (automatically detected or uses these defaults):
   - No work detected → Resume at Phase 3 (Development)
 
 **Repository detection fails**
+
 - Manually set repository: Use the full `owner/repo` format in all `gh` commands
 - Example: `gh issue list --repo marc-aurele-besner/knowyouremoji.com`
 
 **Git conflicts or dirty working directory**
+
 - Stash changes: `git stash`
 - Or commit current work: `git add -A && git commit -m "WIP: <description>"`
 - Then re-run the command
 
 **For continuous automation (multiple issues)**
+
 - Use `scripts/ralph-loop.sh` instead of this command
 - The bash script handles looping, PR monitoring, and automatic resume
 
 **Python not available (for issue sorting)**
+
 - Issue sorting logic requires Python 3
 - Install Python: `brew install python3` (macOS) or use system package manager
 - Alternative: Manually pick issue and use `@build --issue <number>`
