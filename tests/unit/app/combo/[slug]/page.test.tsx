@@ -206,10 +206,11 @@ describe('ComboPage', () => {
       // Check combo name
       expect(screen.getByRole('heading', { name: 'Dead Laughing', level: 1 })).toBeInTheDocument();
 
-      // Check meaning
-      expect(
-        screen.getByText(/Something is so funny that one skull isn't enough/)
-      ).toBeInTheDocument();
+      // Check meaning (appears in both header summary and meaning card)
+      const meaningElements = screen.getAllByText(
+        /Something is so funny that one skull isn't enough/
+      );
+      expect(meaningElements.length).toBeGreaterThanOrEqual(1);
 
       // Check description
       expect(
