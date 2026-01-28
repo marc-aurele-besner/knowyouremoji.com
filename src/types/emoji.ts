@@ -5,6 +5,83 @@
  * in Phase 1 (static architecture without database).
  */
 
+// ============================================
+// BASIC TYPES
+// ============================================
+
+/**
+ * Unicode codepoint in format "XXXX" or with U+ prefix
+ * @example "1F480" or "U+1F480"
+ */
+export type EmojiCodepoint = string;
+
+/**
+ * URL-safe slug for the emoji
+ * @example "skull" or "woman-technologist"
+ */
+export type EmojiSlug = string;
+
+/**
+ * Main emoji categories
+ */
+export type EmojiCategoryName =
+  | 'faces'
+  | 'people'
+  | 'animals'
+  | 'food'
+  | 'travel'
+  | 'activities'
+  | 'objects'
+  | 'symbols'
+  | 'flags';
+
+/**
+ * Display names for categories
+ */
+export type EmojiCategoryDisplayName =
+  | 'Smileys & Faces'
+  | 'People & Body'
+  | 'Animals & Nature'
+  | 'Food & Drink'
+  | 'Travel & Places'
+  | 'Activities'
+  | 'Objects'
+  | 'Symbols'
+  | 'Flags';
+
+/**
+ * Unicode version when emoji was added
+ */
+export type UnicodeVersion =
+  | '1.0'
+  | '1.1'
+  | '3.0'
+  | '3.2'
+  | '4.0'
+  | '4.1'
+  | '5.0'
+  | '5.1'
+  | '5.2'
+  | '6.0'
+  | '6.1'
+  | '7.0'
+  | '8.0'
+  | '9.0'
+  | '10.0'
+  | '11.0'
+  | '12.0'
+  | '12.1'
+  | '13.0'
+  | '13.1'
+  | '14.0'
+  | '15.0'
+  | '15.1'
+  | '16.0';
+
+// ============================================
+// CONTEXT TYPES
+// ============================================
+
 /**
  * Context types for emoji meanings
  */
@@ -145,3 +222,73 @@ export interface EmojiSummary {
   /** Quick summary of real-world usage */
   tldr: string;
 }
+
+// ============================================
+// COLLECTION TYPES
+// ============================================
+
+/**
+ * Extended emoji summary with search relevance data
+ */
+export interface EmojiSearchResult extends EmojiSummary {
+  /** Search relevance score (0-1) */
+  score: number;
+  /** Which field matched the search query */
+  matchedField: 'name' | 'shortName' | 'category' | 'tldr' | 'character' | 'slug';
+  /** Optional highlighted match text */
+  matchHighlight?: string;
+}
+
+/**
+ * Named collection of emojis
+ */
+export interface EmojiCollection {
+  /** Collection name */
+  name: string;
+  /** Collection description */
+  description: string;
+  /** Emojis in this collection */
+  emojis: EmojiSummary[];
+  /** Total count of emojis */
+  total: number;
+}
+
+/**
+ * Category with its emojis for category pages
+ */
+export interface EmojiCategoryWithEmojis {
+  /** Category slug */
+  slug: EmojiCategoryName;
+  /** Human-readable category name */
+  displayName: EmojiCategoryDisplayName;
+  /** Category description */
+  description: string;
+  /** Subcategories within this category */
+  subcategories: string[];
+  /** Total number of emojis in category */
+  emojiCount: number;
+  /** Featured/popular emojis in this category */
+  featuredEmojis: EmojiSummary[];
+}
+
+// ============================================
+// UTILITY TYPES
+// ============================================
+
+/**
+ * Result of validating emoji data
+ */
+export type EmojiValidationResult = {
+  /** Whether the emoji data is valid */
+  valid: boolean;
+  /** Array of validation errors */
+  errors: string[];
+  /** Array of validation warnings */
+  warnings: string[];
+};
+
+/**
+ * Partial emoji for draft/creation states
+ * Requires minimum fields: character, slug, name
+ */
+export type EmojiDraft = Partial<Emoji> & Pick<Emoji, 'character' | 'slug' | 'name'>;
