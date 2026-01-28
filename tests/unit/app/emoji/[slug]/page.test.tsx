@@ -221,5 +221,23 @@ describe('EmojiPage', () => {
       );
       expect(mockNotFound).toHaveBeenCalled();
     });
+
+    test('renders JSON-LD structured data', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      // Check JSON-LD script tag is present
+      const script = document.querySelector('script[type="application/ld+json"]');
+      expect(script).not.toBeNull();
+
+      // Verify JSON-LD content
+      const jsonLd = JSON.parse(script!.textContent!);
+      expect(jsonLd['@context']).toBe('https://schema.org');
+      expect(jsonLd['@type']).toBe('Article');
+      expect(jsonLd.headline).toBe('💀 Skull Emoji Meaning');
+      expect(jsonLd.description).toBe("Usually means 'that's so funny I'm dead'");
+    });
   });
 });
