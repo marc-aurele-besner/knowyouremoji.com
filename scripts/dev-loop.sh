@@ -10,6 +10,7 @@
 #   ./scripts/dev-loop.sh --merge      # Run only merge phase
 #   ./scripts/dev-loop.sh --once       # Run one cycle then exit
 #   ./scripts/dev-loop.sh --delay 10   # Set delay between cycles (default: 5s)
+#   ./scripts/dev-loop.sh --max-failures 5  # Exit after N consecutive failures (default: 3)
 
 set -e
 
@@ -32,6 +33,7 @@ DELAY_SECONDS=5
 RUN_BUILD=true
 RUN_MERGE=true
 SINGLE_CYCLE=false
+MAX_CONSECUTIVE_FAILURES=3
 
 # Track if we're currently running a command (for signal handling)
 CURRENT_PID=""
@@ -68,17 +70,19 @@ print_help() {
     echo "Runs Claude Code commands in a continuous development loop."
     echo ""
     echo "Options:"
-    echo "  --build       Run only the build (issue implementation) phase"
-    echo "  --merge       Run only the merge (PR review/merge) phase"
-    echo "  --once        Run one cycle then exit (no loop)"
-    echo "  --delay N     Delay N seconds between cycles (default: 5)"
-    echo "  -h, --help    Show this help message"
+    echo "  --build          Run only the build (issue implementation) phase"
+    echo "  --merge          Run only the merge (PR review/merge) phase"
+    echo "  --once           Run one cycle then exit (no loop)"
+    echo "  --delay N        Delay N seconds between cycles (default: 5)"
+    echo "  --max-failures N Exit after N consecutive failures (default: 3)"
+    echo "  -h, --help       Show this help message"
     echo ""
     echo "Examples:"
-    echo "  $0                    # Full loop: build -> merge -> repeat"
-    echo "  $0 --build --once     # Single build cycle"
-    echo "  $0 --merge            # Continuous merge loop"
-    echo "  $0 --delay 30         # 30 second delay between cycles"
+    echo "  $0                       # Full loop: build -> merge -> repeat"
+    echo "  $0 --build --once        # Single build cycle"
+    echo "  $0 --merge               # Continuous merge loop"
+    echo "  $0 --delay 30            # 30 second delay between cycles"
+    echo "  $0 --max-failures 5      # Allow up to 5 consecutive failures"
     echo ""
 }
 
@@ -102,6 +106,10 @@ parse_args() {
                 ;;
             --delay)
                 DELAY_SECONDS="$2"
+                shift 2
+                ;;
+            --max-failures)
+                MAX_CONSECUTIVE_FAILURES="$2"
                 shift 2
                 ;;
             -h|--help)
@@ -363,11 +371,13 @@ STREAM_PARSER
     # Run Claude with streaming JSON output for full capture
     # --output-format stream-json: outputs streaming JSON events
     # --include-partial-messages: includes partial streaming events
+    # --verbose: required when using stream-json with -p
     # Output goes to both terminal (processed) and temp file (raw JSON)
     # Using --dangerously-skip-permissions for fully automated operation
     claude -p "$prompt" \
         --output-format stream-json \
         --include-partial-messages \
+        --verbose \
         --dangerously-skip-permissions \
         --allowedTools "*" \
         2>&1 | tee "$temp_output_file" | python3 -u "$parser_script" &
@@ -404,6 +414,7 @@ STREAM_PARSER
 }
 
 # Run one development cycle
+# Returns 0 on success, 1 on failure
 run_cycle() {
     local cycle_num="$1"
     local cycle_failed=false
@@ -435,13 +446,15 @@ run_cycle() {
     echo -e "${MAGENTA}═══════════════════════════════════════════════════════════════${NC}"
     if [[ "$cycle_failed" == true ]]; then
         echo -e "${YELLOW}Cycle $cycle_num completed with some issues${NC}"
+        echo -e "${CYAN}Finished at: $(date '+%Y-%m-%d %H:%M:%S')${NC}"
+        echo -e "${MAGENTA}═══════════════════════════════════════════════════════════════${NC}"
+        return 1
     else
         echo -e "${GREEN}${BOLD}Cycle $cycle_num completed successfully!${NC}"
+        echo -e "${CYAN}Finished at: $(date '+%Y-%m-%d %H:%M:%S')${NC}"
+        echo -e "${MAGENTA}═══════════════════════════════════════════════════════════════${NC}"
+        return 0
     fi
-    echo -e "${CYAN}Finished at: $(date '+%Y-%m-%d %H:%M:%S')${NC}"
-    echo -e "${MAGENTA}═══════════════════════════════════════════════════════════════${NC}"
-
-    return 0
 }
 
 # Main loop
@@ -452,11 +465,12 @@ main() {
 
     # Show configuration
     echo -e "${CYAN}Configuration:${NC}"
-    echo -e "  Build phase:  $([ "$RUN_BUILD" == true ] && echo -e "${GREEN}enabled${NC}" || echo -e "${YELLOW}disabled${NC}")"
-    echo -e "  Merge phase:  $([ "$RUN_MERGE" == true ] && echo -e "${GREEN}enabled${NC}" || echo -e "${YELLOW}disabled${NC}")"
-    echo -e "  Mode:         $([ "$SINGLE_CYCLE" == true ] && echo "single cycle" || echo "continuous loop")"
-    echo -e "  Delay:        ${DELAY_SECONDS}s between cycles"
-    echo -e "  Logs dir:     ${LOGS_DIR}"
+    echo -e "  Build phase:   $([ "$RUN_BUILD" == true ] && echo -e "${GREEN}enabled${NC}" || echo -e "${YELLOW}disabled${NC}")"
+    echo -e "  Merge phase:   $([ "$RUN_MERGE" == true ] && echo -e "${GREEN}enabled${NC}" || echo -e "${YELLOW}disabled${NC}")"
+    echo -e "  Mode:          $([ "$SINGLE_CYCLE" == true ] && echo "single cycle" || echo "continuous loop")"
+    echo -e "  Delay:         ${DELAY_SECONDS}s between cycles"
+    echo -e "  Max failures:  ${MAX_CONSECUTIVE_FAILURES} consecutive before exit"
+    echo -e "  Logs dir:      ${LOGS_DIR}"
     echo ""
 
     check_prerequisites
@@ -467,16 +481,24 @@ main() {
     echo ""
 
     local cycle_count=0
+    local consecutive_failures=0
 
     if [[ "$SINGLE_CYCLE" == true ]]; then
         # Single cycle mode
         cycle_count=1
         run_cycle $cycle_count
+        local exit_code=$?
         echo ""
-        echo -e "${GREEN}${BOLD}Single cycle complete. Exiting.${NC}"
+        if [[ $exit_code -eq 0 ]]; then
+            echo -e "${GREEN}${BOLD}Single cycle complete. Exiting.${NC}"
+        else
+            echo -e "${YELLOW}${BOLD}Single cycle complete with errors. Exiting.${NC}"
+            exit 1
+        fi
     else
         # Continuous loop mode
         echo -e "${YELLOW}Starting continuous loop. Press Ctrl+C to stop.${NC}"
+        echo -e "${CYAN}Will exit after ${MAX_CONSECUTIVE_FAILURES} consecutive failures.${NC}"
         echo ""
 
         while true; do
@@ -488,7 +510,21 @@ main() {
             fi
 
             ((cycle_count++))
-            run_cycle $cycle_count
+            if run_cycle $cycle_count; then
+                # Success - reset failure counter
+                consecutive_failures=0
+            else
+                # Failure - increment counter
+                ((consecutive_failures++))
+                echo -e "${YELLOW}Consecutive failures: ${consecutive_failures}/${MAX_CONSECUTIVE_FAILURES}${NC}"
+
+                if [[ $consecutive_failures -ge $MAX_CONSECUTIVE_FAILURES ]]; then
+                    echo ""
+                    echo -e "${RED}${BOLD}Reached ${MAX_CONSECUTIVE_FAILURES} consecutive failures. Exiting loop to prevent infinite loop.${NC}"
+                    echo -e "${RED}Please check the logs and fix any issues before restarting.${NC}"
+                    exit 1
+                fi
+            fi
 
             echo ""
             echo -e "${CYAN}Waiting ${DELAY_SECONDS} seconds before next cycle...${NC}"
