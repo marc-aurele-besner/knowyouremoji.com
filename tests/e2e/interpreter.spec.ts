@@ -148,7 +148,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('button[role="combobox"]').click();
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Try to submit
       const submitButton = page.locator('button[type="submit"]');
@@ -167,7 +167,7 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hello 👋 how are you doing today?');
 
       // Select context but not platform
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Try to submit
       const submitButton = page.locator('button[type="submit"]');
@@ -245,7 +245,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context (first radio option - Romantic Partner)
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -283,7 +283,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -319,7 +319,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -351,7 +351,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -383,7 +383,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -422,7 +422,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -465,7 +465,7 @@ test.describe('Interpreter Flow', () => {
       await page.locator('[role="option"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('input[type="radio"]').first().click();
+      await page.locator('button[role="radio"]').first().click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -519,25 +519,25 @@ test.describe('Interpreter Flow', () => {
     test('should allow selecting different contexts', async ({ page }) => {
       await page.goto('/interpreter');
 
-      // Context options should be visible as radio buttons
+      // Context options should be visible as radio buttons (styled as button elements)
       const contexts = [
         'Romantic Partner',
         'Friend',
-        'Family',
-        'Coworker',
+        'Family Member',
+        'Coworker/Professional',
         'Acquaintance',
-        'Stranger',
+        'Unknown/Stranger',
       ];
 
       for (const context of contexts) {
-        const radioLabel = page.locator(`label:has-text("${context}")`);
-        await expect(radioLabel).toBeVisible();
+        const radioButton = page.locator(`button[role="radio"]:has-text("${context}")`);
+        await expect(radioButton).toBeVisible();
       }
 
-      // Select a context
-      const friendRadio = page.locator('input[type="radio"][value="FRIEND"]');
+      // Select a context (Friend)
+      const friendRadio = page.locator('button[role="radio"]:has-text("Friend")').first();
       await friendRadio.click();
-      await expect(friendRadio).toBeChecked();
+      await expect(friendRadio).toHaveAttribute('aria-checked', 'true');
     });
   });
 
