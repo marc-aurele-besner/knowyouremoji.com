@@ -7,46 +7,41 @@
   "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A fondue pot.",
-  "tldr": "Fancy! Fondue or sharing food.",
+  "baseMeaning": "Fondue emoji.",
+  "tldr": "Fondue!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Fondue.",
-      "example": "Cheese fondue 🫕",
+      "meaning": "Represents Fondue.",
+      "example": "Look at this 🫕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fancy shared meal.",
-      "example": "Date night 🫕",
+      "meaning": "Swiss or sharing.",
+      "example": "Feeling 🫕",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🫕", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Pretending to be fancy.",
-      "example": "Bougie vibes 🫕",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Romantic dinner.",
-      "example": "Special occasion 🫕",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🫕",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Fancy food." },
-    { "platform": "INSTAGRAM", "note": "Date content." },
-    { "platform": "TIKTOK", "note": "Food videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fancy vibes." },
-    { "generation": "MILLENNIAL", "note": "Date night." },
-    { "generation": "BOOMER", "note": "Fondue." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫕 Fondue Emoji Meaning",
-  "seoDescription": "Learn what the fondue emoji 🫕 really means."
+  "seoDescription": "Learn what the Fondue emoji 🫕 really means."
 }

@@ -4,49 +4,44 @@
   "character": "🌳",
   "name": "Deciduous Tree",
   "shortName": "tree",
-  "category": "animals-nature",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A round leafy tree.",
-  "tldr": "Tree! Nature or environment.",
+  "baseMeaning": "Deciduous Tree emoji.",
+  "tldr": "Tree!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Trees.",
-      "example": "Beautiful trees 🌳",
+      "meaning": "Represents Deciduous Tree.",
+      "example": "Look at this 🌳",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Environment or nature.",
-      "example": "Save the trees 🌳",
+      "meaning": "Nature or environment.",
+      "example": "Feeling 🌳",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Go outside energy.",
-      "example": "Touch grass 🌳",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌳", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Environmental work.",
-      "example": "Green initiative 🌳",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌳",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Environment." },
-    { "platform": "INSTAGRAM", "note": "Nature photos." },
-    { "platform": "TIKTOK", "note": "Outdoor content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Nature energy." },
-    { "generation": "MILLENNIAL", "note": "Environment." },
-    { "generation": "BOOMER", "note": "Trees." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌳 Deciduous Tree Emoji Meaning",
-  "seoDescription": "Learn what the tree emoji 🌳 really means."
+  "seoDescription": "Learn what the Deciduous Tree emoji 🌳 really means."
 }

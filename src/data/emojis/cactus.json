@@ -4,44 +4,44 @@
   "character": "🌵",
   "name": "Cactus",
   "shortName": "cactus",
-  "category": "animals-nature",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A green cactus with spines.",
-  "tldr": "Prickly! Desert or being tough.",
+  "baseMeaning": "Cactus emoji.",
+  "tldr": "Cactus!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Cacti or desert.",
-      "example": "Desert road trip 🌵",
+      "meaning": "Represents Cactus.",
+      "example": "Look at this 🌵",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being prickly or defensive.",
-      "example": "Don't test me 🌵",
+      "meaning": "Desert or prickly.",
+      "example": "Feeling 🌵",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌵", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Tough or resilient.",
-      "example": "Can't be stopped 🌵",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌵",
       "riskLevel": "LOW"
-    },
-    { "context": "DATING", "meaning": "Hard to get.", "example": "Guarded 🌵", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Desert aesthetic." },
-    { "platform": "INSTAGRAM", "note": "Southwest vibes." },
-    { "platform": "TIKTOK", "note": "Desert content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Prickly energy." },
-    { "generation": "MILLENNIAL", "note": "Desert aesthetic." },
-    { "generation": "BOOMER", "note": "Cactus plant." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌵 Cactus Emoji Meaning",
-  "seoDescription": "Learn what the cactus emoji 🌵 really means."
+  "seoDescription": "Learn what the Cactus emoji 🌵 really means."
 }

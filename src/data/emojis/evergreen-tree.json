@@ -3,50 +3,45 @@
   "slug": "evergreen-tree",
   "character": "🌲",
   "name": "Evergreen Tree",
-  "shortName": "evergreen",
-  "category": "animals-nature",
+  "shortName": "pine",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A tall evergreen tree.",
-  "tldr": "Forest vibes! Nature or Christmas.",
+  "baseMeaning": "Evergreen Tree emoji.",
+  "tldr": "Pine Tree!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Trees or forests.",
-      "example": "Mountain hike 🌲",
+      "meaning": "Represents Evergreen Tree.",
+      "example": "Look at this 🌲",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Nature escape.",
-      "example": "Touch grass 🌲",
+      "meaning": "Christmas or nature.",
+      "example": "Feeling 🌲",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Christmas without being festive.",
-      "example": "Tree shopping 🌲",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌲", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Environmental.",
-      "example": "Eco-friendly 🌲",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌲",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Nature and outdoors." },
-    { "platform": "INSTAGRAM", "note": "Nature aesthetic." },
-    { "platform": "TIKTOK", "note": "Outdoor content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Touch grass energy." },
-    { "generation": "MILLENNIAL", "note": "Nature escape." },
-    { "generation": "BOOMER", "note": "Trees." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌲 Evergreen Tree Emoji Meaning",
-  "seoDescription": "Learn what the evergreen tree emoji 🌲 really means."
+  "seoDescription": "Learn what the Evergreen Tree emoji 🌲 really means."
 }

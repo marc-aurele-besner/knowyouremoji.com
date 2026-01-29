@@ -7,64 +7,41 @@
   "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A flaky, crescent-shaped French pastry.",
-  "tldr": "Fancy breakfast! Used for French food, pastries, or sophisticated vibes.",
+  "baseMeaning": "Croissant emoji.",
+  "tldr": "Croissant!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Croissants or French pastry.",
-      "example": "Parisian breakfast 🥐",
+      "meaning": "Represents Croissant.",
+      "example": "Look at this 🥐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fancy or sophisticated eating.",
-      "example": "Bougie brunch 🥐",
+      "meaning": "Fancy or French.",
+      "example": "Feeling 🥐",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🥐", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Pretending to be fancy or European.",
-      "example": "Main character in Paris 🥐",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Romantic breakfast or date.",
-      "example": "Breakfast in bed 🥐",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🥐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Essential for cafe and travel content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for bougie and fancy food posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in aesthetic and European vibes content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Aesthetic European vibes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Bougie brunch culture."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "French pastry."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥐 Croissant Emoji Meaning - What Does 🥐 Really Mean?",
-  "seoDescription": "Learn what the croissant emoji 🥐 really means. Used for fancy breakfast and French vibes. Complete context guide."
+  "seoTitle": "🥐 Croissant Emoji Meaning",
+  "seoDescription": "Learn what the Croissant emoji 🥐 really means."
 }

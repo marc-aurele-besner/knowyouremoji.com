@@ -5,66 +5,43 @@
   "name": "Steaming Bowl",
   "shortName": "ramen",
   "category": "food-drink",
-  "subcategory": "food-asian",
+  "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A steaming bowl of noodles, typically ramen or pho.",
-  "tldr": "Noodle time! Used for ramen, pho, or comfort food cravings.",
+  "baseMeaning": "Steaming Bowl emoji.",
+  "tldr": "Ramen!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Eating noodle soup or ramen.",
-      "example": "Ramen weather 🍜",
+      "meaning": "Represents Steaming Bowl.",
+      "example": "Look at this 🍜",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Comfort food or cozy meal.",
-      "example": "Self care = soup 🍜",
+      "meaning": "Noodles or Asian food.",
+      "example": "Feeling 🍜",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Budget food or broke meal.",
-      "example": "Payday is far 🍜",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍜", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Quick lunch or comfort during deadlines.",
-      "example": "Deadline fuel 🍜",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍜",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in food photography and cozy content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for food cravings and comfort food posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in food and cooking content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Ramen culture and instant noodle nostalgia."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Ramen as comfort food and foodie experience."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Asian noodle soup."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍜 Steaming Bowl Emoji Meaning - What Does 🍜 Really Mean?",
-  "seoDescription": "Learn what the ramen/noodle emoji 🍜 really means. Used for comfort food and noodle cravings. Complete context guide."
+  "seoTitle": "🍜 Steaming Bowl Emoji Meaning",
+  "seoDescription": "Learn what the Steaming Bowl emoji 🍜 really means."
 }

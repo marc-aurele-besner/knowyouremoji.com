@@ -4,44 +4,44 @@
   "character": "🌴",
   "name": "Palm Tree",
   "shortName": "palm",
-  "category": "animals-nature",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A tropical palm tree.",
-  "tldr": "Vacation mode! Tropical or beach vibes.",
+  "baseMeaning": "Palm Tree emoji.",
+  "tldr": "Palm Tree!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Palm trees or tropics.",
-      "example": "Beach vacation 🌴",
+      "meaning": "Represents Palm Tree.",
+      "example": "Look at this 🌴",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Vacation or relaxation.",
-      "example": "Need a break 🌴",
+      "meaning": "Vacation or tropical.",
+      "example": "Feeling 🌴",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌴", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Wanting to escape.",
-      "example": "Monday vibes 🌴",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌴",
       "riskLevel": "LOW"
-    },
-    { "context": "WORK", "meaning": "PTO or vacation.", "example": "OOO 🌴", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Vacation posts." },
-    { "platform": "INSTAGRAM", "note": "Beach content." },
-    { "platform": "SLACK", "note": "OOO messages." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Vacation energy." },
-    { "generation": "MILLENNIAL", "note": "Beach vibes." },
-    { "generation": "BOOMER", "note": "Tropical." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌴 Palm Tree Emoji Meaning",
-  "seoDescription": "Learn what the palm tree emoji 🌴 really means."
+  "seoDescription": "Learn what the Palm Tree emoji 🌴 really means."
 }

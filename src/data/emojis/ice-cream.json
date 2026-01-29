@@ -3,68 +3,45 @@
   "slug": "ice-cream",
   "character": "🍨",
   "name": "Ice Cream",
-  "shortName": "ice-cream",
+  "shortName": "ice cream",
   "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bowl of ice cream with a cherry on top.",
-  "tldr": "Sweet treat! Used for ice cream, dessert, or treating yourself.",
+  "baseMeaning": "Ice Cream emoji.",
+  "tldr": "Ice Cream!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Ice cream or frozen dessert.",
-      "example": "Ice cream date 🍨",
+      "meaning": "Represents Ice Cream.",
+      "example": "Look at this 🍨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Treating yourself or comfort food.",
-      "example": "Bad day = ice cream 🍨",
+      "meaning": "Dessert or treat.",
+      "example": "Feeling 🍨",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍨", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Sweet date or casual outing.",
-      "example": "Ice cream and chill 🍨",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Ignoring diet or emotional eating.",
-      "example": "Feelings? Never heard of them 🍨",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in food and summer content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for treat yourself posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in food and comfort content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Comfort food and self-care treats."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Ice cream dates and nostalgia."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Classic ice cream sundae."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍨 Ice Cream Emoji Meaning - What Does 🍨 Really Mean?",
-  "seoDescription": "Learn what the ice cream emoji 🍨 really means. Used for sweet treats and comfort food. Complete context guide."
+  "seoTitle": "🍨 Ice Cream Emoji Meaning",
+  "seoDescription": "Learn what the Ice Cream emoji 🍨 really means."
 }

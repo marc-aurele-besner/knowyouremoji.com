@@ -3,68 +3,45 @@
   "slug": "doughnut",
   "character": "🍩",
   "name": "Doughnut",
-  "shortName": "doughnut",
+  "shortName": "donut",
   "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A doughnut with pink frosting and sprinkles.",
-  "tldr": "Sweet treat! Used for donuts, treats, or rewarding yourself.",
+  "baseMeaning": "Doughnut emoji.",
+  "tldr": "Donut!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Eating or wanting donuts.",
-      "example": "Donut run 🍩",
+      "meaning": "Represents Doughnut.",
+      "example": "Look at this 🍩",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Treating yourself or comfort food.",
-      "example": "Rough day, deserve this 🍩",
+      "meaning": "Sweet or police joke.",
+      "example": "Feeling 🍩",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Ignoring diet or guilty pleasure.",
-      "example": "Diet starts Monday 🍩",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍩", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Office treats or morning snacks.",
-      "example": "Who brought donuts 🍩",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍩",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in food and aesthetic content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for treat yourself posts."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used for office snack announcements."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Aesthetic food and self-care treats."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Simpsons reference and treat culture."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Classic donut."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍩 Doughnut Emoji Meaning - What Does 🍩 Really Mean?",
-  "seoDescription": "Learn what the doughnut emoji 🍩 really means. Used for sweet treats and rewarding yourself. Complete context guide."
+  "seoTitle": "🍩 Doughnut Emoji Meaning",
+  "seoDescription": "Learn what the Doughnut emoji 🍩 really means."
 }

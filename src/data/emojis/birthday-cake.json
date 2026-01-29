@@ -3,50 +3,45 @@
   "slug": "birthday-cake",
   "character": "🎂",
   "name": "Birthday Cake",
-  "shortName": "birthday-cake",
-  "category": "food",
+  "shortName": "bday",
+  "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A birthday cake with candles.",
-  "tldr": "Birthday, celebration, or make a wish.",
+  "baseMeaning": "Birthday Cake emoji.",
+  "tldr": "Birthday!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Birthday cake.",
-      "example": "Happy birthday 🎂",
+      "meaning": "Represents Birthday Cake.",
+      "example": "Look at this 🎂",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "It's your day.",
-      "example": "Birthday vibes 🎂",
+      "meaning": "Celebration or cake.",
+      "example": "Feeling 🎂",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎂", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Office birthday.",
-      "example": "Team celebration 🎂",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Getting older.",
-      "example": "Another year 🎂",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Birthday posts." },
-    { "platform": "INSTAGRAM", "note": "Celebration." },
-    { "platform": "WHATSAPP", "note": "Birthday wishes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Birthday aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Party time." },
-    { "generation": "BOOMER", "note": "Birthday." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎂 Birthday Cake Emoji Meaning - What Does 🎂 Really Mean?",
-  "seoDescription": "Learn what the birthday cake emoji 🎂 really means. Birthday or celebration vibes. Complete context guide."
+  "seoTitle": "🎂 Birthday Cake Emoji Meaning",
+  "seoDescription": "Learn what the Birthday Cake emoji 🎂 really means."
 }

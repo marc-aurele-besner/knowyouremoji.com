@@ -7,41 +7,41 @@
   "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A hot dog in a bun.",
-  "tldr": "Classic American! Hot dogs or events.",
+  "baseMeaning": "Hot Dog emoji.",
+  "tldr": "Hot Dog!",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Hot dogs.", "example": "BBQ time 🌭", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents Hot Dog.",
+      "example": "Look at this 🌭",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "American events.",
-      "example": "Baseball game 🌭",
+      "meaning": "American or ballpark.",
+      "example": "Feeling 🌭",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Is it a sandwich?",
-      "example": "Hot dog debate 🌭",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌭", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Events and fairs.",
-      "example": "Company picnic 🌭",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌭",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "American food." },
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Food videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Food debates." },
-    { "generation": "MILLENNIAL", "note": "Classic American." },
-    { "generation": "BOOMER", "note": "Hot dog." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌭 Hot Dog Emoji Meaning",
-  "seoDescription": "Learn what the hot dog emoji 🌭 really means."
+  "seoDescription": "Learn what the Hot Dog emoji 🌭 really means."
 }

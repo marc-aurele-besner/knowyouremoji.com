@@ -4,49 +4,44 @@
   "character": "🍟",
   "name": "French Fries",
   "shortName": "fries",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "French fries in a red container.",
-  "tldr": "Fast food side, salty snack, or comfort eating.",
+  "baseMeaning": "French Fries emoji.",
+  "tldr": "Fries!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "French fries.",
-      "example": "Fries with that 🍟",
+      "meaning": "Represents French Fries.",
+      "example": "Look at this 🍟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Salty food cravings.",
-      "example": "Need salt 🍟",
+      "meaning": "Fast food side.",
+      "example": "Feeling 🍟",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍟", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Healthy eating fail.",
-      "example": "Salad? You mean 🍟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Sharing food.",
-      "example": "I don't share 🍟",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TWITTER", "note": "Food debates." },
-    { "platform": "TIKTOK", "note": "Mukbang content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fast food runs." },
-    { "generation": "MILLENNIAL", "note": "Comfort food." },
-    { "generation": "BOOMER", "note": "Side dish." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍟 French Fries Emoji Meaning - What Does 🍟 Really Mean?",
-  "seoDescription": "Learn what the fries emoji 🍟 really means. Salty snack or fast food vibes. Complete context guide."
+  "seoTitle": "🍟 French Fries Emoji Meaning",
+  "seoDescription": "Learn what the French Fries emoji 🍟 really means."
 }

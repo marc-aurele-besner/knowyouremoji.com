@@ -4,56 +4,44 @@
   "character": "🌿",
   "name": "Herb",
   "shortName": "herb",
-  "category": "animals-nature",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A green herb sprig.",
-  "tldr": "Natural vibes! Herbs, nature, or certain plants.",
+  "baseMeaning": "Herb emoji.",
+  "tldr": "Herb!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Herbs or plants.",
-      "example": "Fresh herbs 🌿",
+      "meaning": "Represents Herb.",
+      "example": "Look at this 🌿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cannabis or marijuana.",
-      "example": "Herb time 🌿",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Natural or organic things.",
-      "example": "All natural 🌿",
+      "meaning": "Nature or cannabis reference.",
+      "example": "Feeling 🌿",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌿", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Cooking or gardening.",
-      "example": "Garden fresh 🌿",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Nature and plant content." },
-    { "platform": "INSTAGRAM", "note": "Wellness aesthetic." },
-    { "platform": "TIKTOK", "note": "Cooking and plant content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Natural aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Wellness and plants." },
-    { "generation": "BOOMER", "note": "Cooking herbs." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
-  "warnings": [
-    {
-      "type": "MISINTERPRETATION",
-      "title": "Cannabis reference",
-      "description": "Often used to reference marijuana.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌿 Herb Emoji Meaning",
-  "seoDescription": "Learn what the herb emoji 🌿 really means."
+  "seoDescription": "Learn what the Herb emoji 🌿 really means."
 }

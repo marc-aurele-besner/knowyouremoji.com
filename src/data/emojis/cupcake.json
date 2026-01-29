@@ -7,64 +7,41 @@
   "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A cupcake with pink frosting and a cherry on top.",
-  "tldr": "Sweet celebration! Used for cupcakes, celebrations, or calling someone sweet.",
+  "baseMeaning": "Cupcake emoji.",
+  "tldr": "Cupcake!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Cupcakes or sweet treats.",
-      "example": "Birthday cupcakes 🧁",
+      "meaning": "Represents Cupcake.",
+      "example": "Look at this 🧁",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something or someone sweet and cute.",
-      "example": "You're a cupcake 🧁",
+      "meaning": "Sweet or cute.",
+      "example": "Feeling 🧁",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🧁", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Being too soft or delicate.",
-      "example": "Don't be such a 🧁",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Term of endearment or sweet gesture.",
-      "example": "My little 🧁",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🧁",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in baking and celebration content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for cute references and celebration."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Common as a term of endearment."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Cute aesthetic and endearment."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Cupcake culture and baking shows."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Sweet cupcake."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧁 Cupcake Emoji Meaning - What Does 🧁 Really Mean?",
-  "seoDescription": "Learn what the cupcake emoji 🧁 really means. Used for celebrations and calling someone sweet. Complete context guide."
+  "seoTitle": "🧁 Cupcake Emoji Meaning",
+  "seoDescription": "Learn what the Cupcake emoji 🧁 really means."
 }

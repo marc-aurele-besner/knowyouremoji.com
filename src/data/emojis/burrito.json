@@ -4,49 +4,44 @@
   "character": "🌯",
   "name": "Burrito",
   "shortName": "burrito",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A burrito.",
-  "tldr": "Mexican food, Chipotle, or wrapped up.",
+  "baseMeaning": "Burrito emoji.",
+  "tldr": "Burrito!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A burrito.",
-      "example": "Burrito bowl 🌯",
+      "meaning": "Represents Burrito.",
+      "example": "Look at this 🌯",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Wrapped up cozy.",
-      "example": "Burrito blanket 🌯",
+      "meaning": "Mexican food or wrapped.",
+      "example": "Feeling 🌯",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌯", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Quick lunch.",
-      "example": "Chipotle run 🌯",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Food baby.",
-      "example": "Post burrito 🌯",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌯",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Chipotle content." },
-    { "platform": "INSTAGRAM", "note": "Food posts." },
-    { "platform": "TIKTOK", "note": "Mukbang." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Chipotle era." },
-    { "generation": "MILLENNIAL", "note": "Fast casual." },
-    { "generation": "BOOMER", "note": "Mexican food." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌯 Burrito Emoji Meaning - What Does 🌯 Really Mean?",
-  "seoDescription": "Learn what the burrito emoji 🌯 really means. Mexican food or comfort vibes. Complete context guide."
+  "seoTitle": "🌯 Burrito Emoji Meaning",
+  "seoDescription": "Learn what the Burrito emoji 🌯 really means."
 }

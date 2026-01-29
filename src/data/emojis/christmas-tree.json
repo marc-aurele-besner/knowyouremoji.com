@@ -4,49 +4,44 @@
   "character": "🎄",
   "name": "Christmas Tree",
   "shortName": "xmas tree",
-  "category": "activities",
+  "category": "objects",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A decorated Christmas tree.",
-  "tldr": "Christmas, holidays, or festive season.",
+  "baseMeaning": "Christmas Tree emoji.",
+  "tldr": "Christmas!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Christmas.",
-      "example": "Merry Christmas 🎄",
+      "meaning": "Represents Christmas Tree.",
+      "example": "Look at this 🎄",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
       "meaning": "Holiday season.",
-      "example": "Holiday mood 🎄",
+      "example": "Feeling 🎄",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎄", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Holiday break.",
-      "example": "Office party 🎄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Too early for Christmas.",
-      "example": "November decorations 🎄",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎄",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Holiday content." },
-    { "platform": "TWITTER", "note": "Christmas posts." },
-    { "platform": "SLACK", "note": "Holiday greetings." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Holiday vibes." },
-    { "generation": "MILLENNIAL", "note": "Christmas season." },
-    { "generation": "BOOMER", "note": "Merry Christmas." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎄 Christmas Tree Emoji Meaning - What Does 🎄 Really Mean?",
-  "seoDescription": "Learn what the Christmas tree emoji 🎄 really means. Holiday or festive vibes. Complete context guide."
+  "seoTitle": "🎄 Christmas Tree Emoji Meaning",
+  "seoDescription": "Learn what the Christmas Tree emoji 🎄 really means."
 }

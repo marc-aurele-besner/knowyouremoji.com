@@ -4,49 +4,44 @@
   "character": "☘️",
   "name": "Shamrock",
   "shortName": "shamrock",
-  "category": "animals-nature",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "4.1",
-  "baseMeaning": "A three-leaf shamrock.",
-  "tldr": "Irish pride! Ireland or St Patrick's Day.",
+  "baseMeaning": "Shamrock emoji.",
+  "tldr": "Shamrock!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Shamrock or Ireland.",
-      "example": "Happy St Patrick's Day ☘️",
+      "meaning": "Represents Shamrock.",
+      "example": "Look at this ☘️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Irish heritage.",
-      "example": "Irish pride ☘️",
+      "meaning": "Irish or St Patricks.",
+      "example": "Feeling ☘️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Pretending to be Irish.",
-      "example": "Everyone's Irish today ☘️",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☘️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Irish businesses.",
-      "example": "Irish company ☘️",
+      "meaning": "Work context.",
+      "example": "Work vibes ☘️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "St Patrick's Day." },
-    { "platform": "INSTAGRAM", "note": "Irish content." },
-    { "platform": "TIKTOK", "note": "Irish culture." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Irish vibes." },
-    { "generation": "MILLENNIAL", "note": "St Paddy's." },
-    { "generation": "BOOMER", "note": "Irish heritage." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "☘️ Shamrock Emoji Meaning",
-  "seoDescription": "Learn what the shamrock emoji ☘️ really means."
+  "seoDescription": "Learn what the Shamrock emoji ☘️ really means."
 }
