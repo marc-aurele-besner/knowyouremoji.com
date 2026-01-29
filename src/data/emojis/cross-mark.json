@@ -7,41 +7,46 @@
   "category": "symbols",
   "subcategory": "other-symbol",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red X mark.",
-  "tldr": "No, wrong, rejected, or cancelled.",
+  "baseMeaning": "Cross mark indicating rejection.",
+  "tldr": "No! Wrong or rejected.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "No or wrong.",
-      "example": "That's wrong ❌",
+      "meaning": "Represents rejection or something wrong.",
+      "example": "Wrong answer ❌",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cancelled or rejected.",
-      "example": "They're cancelled ❌",
+      "meaning": "Strong disagreement or cancellation.",
+      "example": "That's a no ❌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissing someone or something.",
+      "example": "Your opinion ❌",
       "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Rejected or failed.",
-      "example": "Build failed ❌",
+      "meaning": "Incorrect or rejected.",
+      "example": "Not approved ❌",
       "riskLevel": "LOW"
-    },
-    { "context": "IRONIC", "meaning": "Hard no.", "example": "Nope ❌", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Cancel culture." },
-    { "platform": "SLACK", "note": "Rejection or failure." },
-    { "platform": "INSTAGRAM", "note": "Disagreement." }
+    { "platform": "TWITTER", "note": "Strong rejection or disagreement." },
+    { "platform": "INSTAGRAM", "note": "Comparison posts (do vs don't)." },
+    { "platform": "SLACK", "note": "Task not done or rejected." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cancel culture." },
-    { "generation": "MILLENNIAL", "note": "Hard no." },
-    { "generation": "BOOMER", "note": "Wrong or no." }
+    { "generation": "GEN_Z", "note": "Cancel culture symbol." },
+    { "generation": "MILLENNIAL", "note": "Strong no." },
+    { "generation": "BOOMER", "note": "Incorrect mark." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "❌ Cross Mark Emoji Meaning - What Does ❌ Really Mean?",
-  "seoDescription": "Learn what the cross mark emoji ❌ really means. No or cancelled vibes. Complete context guide."
+  "seoTitle": "❌ Cross Mark Emoji Meaning",
+  "seoDescription": "Learn what the Cross Mark emoji ❌ really means."
 }

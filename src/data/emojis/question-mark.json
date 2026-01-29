@@ -5,43 +5,48 @@
   "name": "Question Mark",
   "shortName": "question",
   "category": "symbols",
-  "subcategory": "punctuation",
+  "subcategory": "other-symbol",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red question mark.",
-  "tldr": "Confused, asking, or wtf.",
+  "baseMeaning": "Red question mark.",
+  "tldr": "What? Confusion or inquiry.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Question.", "example": "What ❓", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents a question or confusion.",
+      "example": "What happened ❓",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Confused or skeptical.",
-      "example": "Explain ❓",
+      "meaning": "Emphasizing confusion or disbelief.",
+      "example": "Did you really just say that ❓",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Questioning someone's actions.",
+      "example": "You did what ❓",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
       "meaning": "Need clarification.",
-      "example": "Can you clarify ❓",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "WTF moment.",
-      "example": "What is this ❓",
+      "example": "Can you explain ❓",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Questioning takes." },
-    { "platform": "SLACK", "note": "Seeking clarification." },
-    { "platform": "WHATSAPP", "note": "Confusion." }
+    { "platform": "TWITTER", "note": "Expressing confusion." },
+    { "platform": "INSTAGRAM", "note": "Question prompts." },
+    { "platform": "TIKTOK", "note": "Confused reactions." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Emphasis on confusion." },
-    { "generation": "MILLENNIAL", "note": "Questions." },
-    { "generation": "BOOMER", "note": "Question mark." }
+    { "generation": "GEN_Z", "note": "Often sarcastic." },
+    { "generation": "MILLENNIAL", "note": "Genuine question." },
+    { "generation": "BOOMER", "note": "Standard question mark." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "❓ Question Mark Emoji Meaning - What Does ❓ Really Mean?",
-  "seoDescription": "Learn what the question mark emoji ❓ really means. Confused or asking vibes. Complete context guide."
+  "seoTitle": "❓ Question Mark Emoji Meaning",
+  "seoDescription": "Learn what the Question Mark emoji ❓ really means."
 }

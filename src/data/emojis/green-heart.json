@@ -3,50 +3,50 @@
   "slug": "green-heart",
   "character": "💚",
   "name": "Green Heart",
-  "shortName": "green-heart",
-  "category": "smileys",
-  "subcategory": "heart",
+  "shortName": "green heart",
+  "category": "symbols",
+  "subcategory": "emotion",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A green heart.",
-  "tldr": "Nature love, jealousy, or Irish pride.",
+  "baseMeaning": "Green Heart emoji.",
+  "tldr": "Nature or jealousy! Context matters.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Green colored heart.",
-      "example": "Nature love 💚",
+      "meaning": "Represents nature, health, or growth.",
+      "example": "Love nature 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Jealousy.",
-      "example": "Green with envy 💚",
+      "meaning": "Can represent jealousy or envy.",
+      "example": "So jealous 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Healthy love.",
-      "example": "Growing together 💚",
-      "riskLevel": "LOW"
+      "meaning": "May signal uncertainty or mixed feelings.",
+      "example": "I guess we're okay 💚",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Fake healthy.",
-      "example": "Wellness vibes 💚",
+      "context": "WORK",
+      "meaning": "Environmental or sustainability topics.",
+      "example": "Going green 💚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Plant content." },
-    { "platform": "TWITTER", "note": "Eco content." },
-    { "platform": "TIKTOK", "note": "Green aesthetic." }
+    { "platform": "TWITTER", "note": "Used for environmental causes." },
+    { "platform": "INSTAGRAM", "note": "Popular for nature content." },
+    { "platform": "TIKTOK", "note": "Mixed usage." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Nature aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Eco friendly." },
-    { "generation": "BOOMER", "note": "Irish symbol." }
+    { "generation": "GEN_Z", "note": "May use ironically for jealousy." },
+    { "generation": "MILLENNIAL", "note": "Often for eco-friendly content." },
+    { "generation": "BOOMER", "note": "Nature and health." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💚 Green Heart Emoji Meaning - What Does 💚 Really Mean?",
-  "seoDescription": "Learn what the green heart emoji 💚 really means. Nature or jealousy vibes. Complete context guide."
+  "seoTitle": "💚 Green Heart Emoji Meaning",
+  "seoDescription": "Learn what the Green Heart emoji 💚 really means."
 }

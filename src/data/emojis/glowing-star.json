@@ -3,68 +3,50 @@
   "slug": "glowing-star",
   "character": "🌟",
   "name": "Glowing Star",
-  "shortName": "glowing-star",
-  "category": "travel-places",
-  "subcategory": "sky-weather",
+  "shortName": "glowing star",
+  "category": "symbols",
+  "subcategory": "celestial",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A star with glowing rays, representing something outstanding.",
-  "tldr": "Shine bright! Used for excellence, standing out, or being a star.",
+  "baseMeaning": "Glowing Star emoji.",
+  "tldr": "Shining! Extra special or outstanding.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A bright star or shining celestial object.",
-      "example": "The night sky is beautiful 🌟",
+      "meaning": "Represents something shining bright.",
+      "example": "You shine 🌟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Someone or something outstanding.",
-      "example": "You're a 🌟",
+      "meaning": "Highlighting something outstanding.",
+      "example": "This is 🌟",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Over-the-top praise.",
+      "example": "Wow so special 🌟",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Excellent performance or recognition.",
-      "example": "Star performer this quarter 🌟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Someone special who shines.",
-      "example": "My shining star 🌟",
+      "meaning": "Highlighting excellence.",
+      "example": "Star performer 🌟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used for exceptional content and compliments."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for highlighting standout people or things."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used for recognizing excellent work."
-    }
+    { "platform": "TWITTER", "note": "Shows something shining." },
+    { "platform": "INSTAGRAM", "note": "Highlights special content." },
+    { "platform": "TIKTOK", "note": "Star quality content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for standout content and people."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Recognition and shining moments."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Bright star or excellence."
-    }
+    { "generation": "GEN_Z", "note": "Extra special energy." },
+    { "generation": "MILLENNIAL", "note": "Shining moment." },
+    { "generation": "BOOMER", "note": "Bright star." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌟 Glowing Star Emoji Meaning - What Does 🌟 Really Mean?",
-  "seoDescription": "Learn what the glowing star emoji 🌟 really means. Used for excellence, recognition, or shining moments. Complete context guide."
+  "seoTitle": "🌟 Glowing Star Emoji Meaning",
+  "seoDescription": "Learn what the Glowing Star emoji 🌟 really means."
 }

@@ -1,0 +1,59 @@
+{
+  "unicode": "1F445",
+  "slug": "tongue",
+  "character": "👅",
+  "name": "Tongue",
+  "shortName": "tongue",
+  "category": "people",
+  "subcategory": "body-parts",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Human tongue sticking out.",
+  "tldr": "Taste! Playful or suggestive.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents tongue or taste.",
+      "example": "Looks delicious 👅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Can be playful or suggestive.",
+      "example": "Can't wait to try 👅",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Often suggestive or flirty.",
+      "example": "Thinking about you 👅",
+      "riskLevel": "HIGH"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Food tasting (use cautiously).",
+      "example": "Food review 👅",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Context-dependent, can be suggestive." },
+    { "platform": "INSTAGRAM", "note": "Food or flirty content." },
+    { "platform": "TIKTOK", "note": "Often playful or suggestive." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Often suggestive or playful." },
+    { "generation": "MILLENNIAL", "note": "Context matters." },
+    { "generation": "BOOMER", "note": "May use literally for taste." }
+  ],
+  "warnings": [
+    {
+      "type": "SUGGESTIVE",
+      "title": "Potentially Suggestive",
+      "description": "This emoji can have sexual connotations depending on context.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "👅 Tongue Emoji Meaning",
+  "seoDescription": "Learn what the Tongue emoji 👅 really means."
+}

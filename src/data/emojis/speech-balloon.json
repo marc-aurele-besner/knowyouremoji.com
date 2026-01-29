@@ -1,0 +1,52 @@
+{
+  "unicode": "1F4AC",
+  "slug": "speech-balloon",
+  "character": "💬",
+  "name": "Speech Balloon",
+  "shortName": "speech bubble",
+  "category": "symbols",
+  "subcategory": "other-symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Speech balloon or chat bubble.",
+  "tldr": "Conversation! Let's talk or comments.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents conversation or messaging.",
+      "example": "Let's chat 💬",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "We need to talk or discuss.",
+      "example": "We need to 💬",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Hinting at needed conversation.",
+      "example": "We should 💬 later",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Comments or discussion needed.",
+      "example": "See comments 💬",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Conversation and comments." },
+    { "platform": "INSTAGRAM", "note": "Comment engagement." },
+    { "platform": "SLACK", "note": "Discussion threads." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "DM me." },
+    { "generation": "MILLENNIAL", "note": "Let's talk." },
+    { "generation": "BOOMER", "note": "Chat bubble." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "💬 Speech Balloon Emoji Meaning",
+  "seoDescription": "Learn what the Speech Balloon emoji 💬 really means."
+}
