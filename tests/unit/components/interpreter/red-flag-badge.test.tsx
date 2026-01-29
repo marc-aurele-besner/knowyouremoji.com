@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { RedFlagBadge } from '@/components/interpreter/red-flag-badge';
 import type { RedFlag } from '@/types';
@@ -243,6 +243,73 @@ describe('RedFlagBadge', () => {
       expect(badge).toHaveClass('border-gray-500');
       expect(badge).toHaveClass('bg-gray-50');
       expect(screen.getByText('Unknown')).toBeInTheDocument();
+    });
+  });
+
+  describe('controlled expanded state', () => {
+    it('respects controlled isExpanded prop when true', () => {
+      render(<RedFlagBadge flag={mockFlag} expandable isExpanded={true} />);
+      const badge = screen.getByTestId('red-flag-badge');
+      expect(badge).toHaveAttribute('data-expanded', 'true');
+    });
+
+    it('respects controlled isExpanded prop when false', () => {
+      render(<RedFlagBadge flag={mockFlag} expandable isExpanded={false} />);
+      const badge = screen.getByTestId('red-flag-badge');
+      expect(badge).toHaveAttribute('data-expanded', 'false');
+    });
+
+    it('calls onExpandedChange callback when toggling', () => {
+      const mockOnExpandedChange = mock(() => {});
+      render(
+        <RedFlagBadge
+          flag={mockFlag}
+          expandable
+          isExpanded={false}
+          onExpandedChange={mockOnExpandedChange}
+        />
+      );
+
+      const expandButton = screen.getByRole('button', { name: /expand|more|details/i });
+      fireEvent.click(expandButton);
+
+      expect(mockOnExpandedChange).toHaveBeenCalledWith(true);
+    });
+
+    it('does not change internal state when controlled', () => {
+      const mockOnExpandedChange = mock(() => {});
+      render(
+        <RedFlagBadge
+          flag={mockFlag}
+          expandable
+          isExpanded={false}
+          onExpandedChange={mockOnExpandedChange}
+        />
+      );
+
+      const expandButton = screen.getByRole('button', { name: /expand|more|details/i });
+      fireEvent.click(expandButton);
+
+      // Since it's controlled, the state should stay as the prop value
+      const badge = screen.getByTestId('red-flag-badge');
+      expect(badge).toHaveAttribute('data-expanded', 'false');
+    });
+
+    it('calls onExpandedChange with false when collapsing from expanded', () => {
+      const mockOnExpandedChange = mock(() => {});
+      render(
+        <RedFlagBadge
+          flag={mockFlag}
+          expandable
+          isExpanded={true}
+          onExpandedChange={mockOnExpandedChange}
+        />
+      );
+
+      const collapseButton = screen.getByRole('button', { name: /collapse|details/i });
+      fireEvent.click(collapseButton);
+
+      expect(mockOnExpandedChange).toHaveBeenCalledWith(false);
     });
   });
 });
