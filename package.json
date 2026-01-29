@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "bun run test && next build",
+    "build": "bun run test:coverage && next build",
     "start": "next start",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
@@ -12,6 +12,7 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,json,css}\"",
     "typecheck": "tsc --noEmit",
     "test": "bun test tests/unit tests/integration --coverage",
+    "test:coverage": "bun run scripts/check-coverage.ts",
     "test:watch": "bun test tests/unit tests/integration --watch",
     "test:e2e": "playwright test",
     "validate:emojis": "bun run scripts/validate-emojis.ts",
