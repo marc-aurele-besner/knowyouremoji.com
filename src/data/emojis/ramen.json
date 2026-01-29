@@ -7,64 +7,41 @@
   "category": "food",
   "subcategory": "food-asian",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bowl of steaming noodles with chopsticks.",
-  "tldr": "Ramen, noodles, cozy comfort food. The perfect warm meal.",
+  "baseMeaning": "A steaming bowl of noodles with chopsticks.",
+  "tldr": "Ramen, pho, comfort food, or broke college student meals.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Ramen, pho, or noodle dishes.",
+      "meaning": "Noodle soup.",
       "example": "Ramen weather 🍜",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cozy, comforting, warming up.",
-      "example": "Rainy day ramen 🍜",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Casual, cozy date option.",
-      "example": "Ramen date? 🍜",
+      "meaning": "Comfort food.",
+      "example": "Need soup 🍜",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Being broke but eating well.",
-      "example": "Fancy instant ramen tonight 🍜",
+      "meaning": "Being broke.",
+      "example": "Payday is Friday 🍜",
       "riskLevel": "LOW"
-    }
+    },
+    { "context": "DATING", "meaning": "Cozy date.", "example": "Ramen date 🍜", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for food photography and cozy content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Ramen hacks and food content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Comfort food discussions."
-    }
+    { "platform": "INSTAGRAM", "note": "Foodie content." },
+    { "platform": "TIKTOK", "note": "Ramen recipes." },
+    { "platform": "TWITTER", "note": "Comfort food." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Cozy comfort food, especially in cold weather."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Ramen shop culture and foodie content."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May think of instant noodles."
-    }
+    { "generation": "GEN_Z", "note": "Anime and ramen culture." },
+    { "generation": "MILLENNIAL", "note": "College nostalgia." },
+    { "generation": "BOOMER", "note": "Asian cuisine." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍜 Ramen Emoji Meaning - What Does 🍜 Really Mean?",
-  "seoDescription": "Learn what the ramen emoji 🍜 really means in texting. Cozy noodles and comfort food. Complete context guide."
+  "seoDescription": "Learn what the ramen emoji 🍜 really means. Comfort food or cozy vibes. Complete context guide."
 }

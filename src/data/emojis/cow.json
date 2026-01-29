@@ -1,76 +1,47 @@
 {
-  "unicode": "1F42E",
+  "unicode": "1F404",
   "slug": "cow",
-  "character": "🐮",
-  "name": "Cow Face",
+  "character": "🐄",
+  "name": "Cow",
   "shortName": "cow",
   "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A friendly cow face.",
-  "tldr": "Cows, farms, or can be an insult in some contexts.",
+  "baseMeaning": "A dairy cow.",
+  "tldr": "Farm vibes, milk, or holy cow exclamation.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Cows or farm life.",
-      "example": "Farm visit! 🐮",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "A cow.", "example": "Farm fresh 🐄", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Cute or farm aesthetic.",
-      "example": "Country vibes 🐮",
+      "meaning": "Holy cow exclamation.",
+      "example": "Holy 🐄 that's amazing!",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-deprecating about eating.",
-      "example": "Ate so much 🐮",
+      "meaning": "Cash cow.",
+      "example": "This project is a 🐄",
       "riskLevel": "LOW"
     },
     {
-      "context": "RED_FLAG",
-      "meaning": "Can be used as an insult (calling someone a cow).",
-      "example": "Don't send to someone out of context",
-      "riskLevel": "HIGH"
+      "context": "WORK",
+      "meaning": "Milking something.",
+      "example": "Milking this deadline 🐄",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Farm aesthetic and cute content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Farm content and funny videos."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Farm life and animals."
-    }
+    { "platform": "INSTAGRAM", "note": "Farm and rural content." },
+    { "platform": "TWITTER", "note": "Holy cow reactions." },
+    { "platform": "SLACK", "note": "Cash cow references." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Farm aesthetic or self-deprecating."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Cute animals and farm vibes."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Farming and rural life."
-    }
+    { "generation": "GEN_Z", "note": "Farm aesthetic." },
+    { "generation": "MILLENNIAL", "note": "Holy cow memes." },
+    { "generation": "BOOMER", "note": "Farm animal." }
   ],
-  "warnings": [
-    {
-      "title": "Can Be Offensive",
-      "description": "Calling someone a 'cow' is an insult. Use carefully.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐮 Cow Face Emoji Meaning - What Does 🐮 Really Mean?",
-  "seoDescription": "Learn what the cow face emoji 🐮 really means in texting. Farm animals or be careful - can be insulting. Complete context guide."
+  "seoTitle": "🐄 Cow Emoji Meaning - What Does 🐄 Really Mean?",
+  "seoDescription": "Learn what the cow emoji 🐄 really means. Farm vibes or holy cow. Complete context guide."
 }

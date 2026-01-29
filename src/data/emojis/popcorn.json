@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A box or bucket of popcorn.",
-  "tldr": "Movies, entertainment, or watching drama unfold. The spectator snack.",
+  "baseMeaning": "A red and white striped box of popcorn.",
+  "tldr": "Watching drama unfold, movie time, or this is getting good.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Movie night or eating popcorn.",
-      "example": "Movie marathon! 🍿",
+      "meaning": "Popcorn.",
+      "example": "Movie night 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Watching drama or entertainment unfold.",
-      "example": "Reading the comments 🍿",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Movie date or Netflix night.",
-      "example": "Netflix and chill? 🍿",
+      "meaning": "Watching drama unfold.",
+      "example": "This is getting good 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Enjoying watching chaos or drama.",
-      "example": "This is getting good 🍿",
+      "meaning": "Enjoying others' drama.",
+      "example": "Reading the comments 🍿",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Watching chaos unfold.",
+      "example": "Meeting drama 🍿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Famous for watching Twitter drama unfold."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Reaction to drama and storytime content."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Movie recommendations and entertainment."
-    }
+    { "platform": "TWITTER", "note": "Drama watching." },
+    { "platform": "TIKTOK", "note": "Tea and drama." },
+    { "platform": "DISCORD", "note": "Drama in chat." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Watching drama unfold, meme culture."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Movie nights and spectating drama."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Movie theater reference."
-    }
+    { "generation": "GEN_Z", "note": "Drama watching." },
+    { "generation": "MILLENNIAL", "note": "Gets the popcorn." },
+    { "generation": "BOOMER", "note": "Movie snack." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍿 Popcorn Emoji Meaning - What Does 🍿 Really Mean?",
-  "seoDescription": "Learn what the popcorn emoji 🍿 really means in texting. Movies or watching drama unfold. Complete context guide."
+  "seoDescription": "Learn what the popcorn emoji 🍿 really means. Watching drama unfold or movie time. Complete context guide."
 }

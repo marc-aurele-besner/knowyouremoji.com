@@ -8,63 +8,45 @@
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
   "baseMeaning": "A chocolate chip cookie.",
-  "tldr": "Cookies, sweet snacks, or a reward/treat. Also web browser cookies.",
+  "tldr": "Sweet snack, tracking cookies joke, or browser cookies.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Actual cookies or baking.",
-      "example": "Fresh baked cookies! 🍪",
+      "meaning": "A cookie.",
+      "example": "Fresh baked 🍪",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "A treat or reward for good behavior.",
-      "example": "You deserve a cookie 🍪",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Tech context - browser cookies.",
-      "example": "Accept cookies? 🍪",
+      "meaning": "Small reward or treat.",
+      "example": "You get a cookie 🍪",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically offering someone credit.",
-      "example": "Want a cookie for doing the bare minimum? 🍪",
-      "riskLevel": "MEDIUM"
+      "meaning": "Website cookies.",
+      "example": "Accept all cookies 🍪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Small wins.",
+      "example": "That's how the cookie crumbles 🍪",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used in tech jokes about browser cookies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for baking content."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Can be tech-related or actual cookie discussions."
-    }
+    { "platform": "INSTAGRAM", "note": "Baking content." },
+    { "platform": "TWITTER", "note": "Cookie jokes." },
+    { "platform": "DISCORD", "note": "Cookie bot and rewards." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Tech jokes and sweet treats."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Comfort food and tech humor."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Usually means actual cookies."
-    }
+    { "generation": "GEN_Z", "note": "Browser cookie jokes." },
+    { "generation": "MILLENNIAL", "note": "Tech and baking." },
+    { "generation": "BOOMER", "note": "Homemade treats." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍪 Cookie Emoji Meaning - What Does 🍪 Really Mean?",
-  "seoDescription": "Learn what the cookie emoji 🍪 really means in texting. Sweet treats or tech cookie jokes. Complete context guide."
+  "seoDescription": "Learn what the cookie emoji 🍪 really means. Sweet treat or browser cookies. Complete context guide."
 }

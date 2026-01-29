@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A wedge of yellow cheese with holes.",
-  "tldr": "Cheese, something cheesy/corny, or 'say cheese' for photos.",
+  "baseMeaning": "A wedge of cheese with holes.",
+  "tldr": "Cheesy, corny, or saying cheese for photos.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Cheese or dairy products.",
-      "example": "Cheese board night 🧀",
+      "meaning": "Cheese.",
+      "example": "Cheese board 🧀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
       "meaning": "Something cheesy or corny.",
-      "example": "That's so cheesy 🧀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Cheesy romantic gestures.",
-      "example": "Love cheesy romance 🧀",
+      "example": "That's so 🧀",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
       "meaning": "Say cheese for photos.",
-      "example": "Say cheese! 🧀",
+      "example": "Say 🧀!",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Cheesy pickup lines.",
+      "example": "Cheesy but cute 🧀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Food content and photo captions."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Cheesy jokes and food content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Food content and cheesy moments."
-    }
+    { "platform": "INSTAGRAM", "note": "Food and photo content." },
+    { "platform": "TIKTOK", "note": "Cheesy content." },
+    { "platform": "TWITTER", "note": "Corny jokes." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Cheesy moments and food."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Cheese boards and cheesy jokes."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Cheese and photos."
-    }
+    { "generation": "GEN_Z", "note": "Cheesy content." },
+    { "generation": "MILLENNIAL", "note": "Corny and cheesy." },
+    { "generation": "BOOMER", "note": "Say cheese." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧀 Cheese Emoji Meaning - What Does 🧀 Really Mean?",
-  "seoDescription": "Learn what the cheese emoji 🧀 really means in texting. Cheese, corny jokes, or say cheese. Complete context guide."
+  "seoDescription": "Learn what the cheese emoji 🧀 really means. Cheesy or corny vibes. Complete context guide."
 }

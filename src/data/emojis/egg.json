@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A white egg.",
-  "tldr": "Eggs, breakfast, or a newbie/beginner (egg account on social media).",
+  "baseMeaning": "A chicken egg.",
+  "tldr": "Fresh start, good egg (nice person), or egghead.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Eggs or breakfast food.",
+      "meaning": "An egg.",
       "example": "Eggs for breakfast 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Newbie or default avatar user.",
-      "example": "Don't argue with an egg account 🥚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Beginning stages or potential.",
-      "example": "Project is still an egg 🥚",
+      "meaning": "A good person.",
+      "example": "They're a good egg 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Egg on your face (embarrassment).",
-      "example": "Got egg on my face 🥚",
+      "meaning": "Egghead or nerdy.",
+      "example": "Total egghead 🥚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Egg on face - embarrassed.",
+      "example": "That was awkward 🥚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "'Egg account' refers to default avatar users (often trolls)."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Food content and breakfast posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Cooking content."
-    }
+    { "platform": "INSTAGRAM", "note": "Breakfast content." },
+    { "platform": "TWITTER", "note": "World record egg meme." },
+    { "platform": "TIKTOK", "note": "Food content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Egg account trolls and breakfast."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Twitter egg accounts and food."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Eggs and breakfast."
-    }
+    { "generation": "GEN_Z", "note": "World record egg." },
+    { "generation": "MILLENNIAL", "note": "Good egg idiom." },
+    { "generation": "BOOMER", "note": "Breakfast staple." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥚 Egg Emoji Meaning - What Does 🥚 Really Mean?",
-  "seoDescription": "Learn what the egg emoji 🥚 really means in texting. Breakfast food or newbie reference. Complete context guide."
+  "seoDescription": "Learn what the egg emoji 🥚 really means. Good egg or breakfast vibes. Complete context guide."
 }

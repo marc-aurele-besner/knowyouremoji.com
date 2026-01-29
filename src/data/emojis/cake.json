@@ -8,63 +8,40 @@
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
   "baseMeaning": "A slice of strawberry shortcake.",
-  "tldr": "Birthdays, celebrations, treats, or something sweet.",
+  "tldr": "Celebration, birthday adjacent, or sweet treat.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Cake, dessert, or sweet treats.",
-      "example": "Birthday cake! 🍰",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Cake.", "example": "Cake time 🍰", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Something sweet or a reward.",
-      "example": "This project will be a piece of cake 🍰",
+      "meaning": "Celebration dessert.",
+      "example": "Celebrate good times 🍰",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Can have suggestive meaning in certain contexts.",
-      "example": "Looking like a snack 🍰",
-      "riskLevel": "MEDIUM"
+      "meaning": "Sweet gesture.",
+      "example": "Brought you cake 🍰",
+      "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Celebrations or team treats.",
-      "example": "Cake in the break room! 🍰",
+      "meaning": "Office celebrations.",
+      "example": "Happy work anniversary 🍰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for birthday and dessert content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Commonly used on birthdays and celebrations."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used for team celebrations and birthdays."
-    }
+    { "platform": "INSTAGRAM", "note": "Dessert and celebration content." },
+    { "platform": "TWITTER", "note": "Celebration posts." },
+    { "platform": "SLACK", "note": "Team celebrations." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Birthdays and 'piece of cake' expressions."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Birthday celebrations and sweet treat culture."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Straightforward cake reference."
-    }
+    { "generation": "GEN_Z", "note": "Dessert content." },
+    { "generation": "MILLENNIAL", "note": "Sweet celebrations." },
+    { "generation": "BOOMER", "note": "Classic dessert." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍰 Cake Emoji Meaning - What Does 🍰 Really Mean?",
-  "seoDescription": "Learn what the cake emoji 🍰 really means in texting. Birthdays, celebrations, or sweet treats. Complete context guide."
+  "seoDescription": "Learn what the cake emoji 🍰 really means. Celebration or sweet treat vibes. Complete context guide."
 }
