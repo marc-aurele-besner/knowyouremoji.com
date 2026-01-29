@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Travel and aviation." },
-    { "platform": "INSTAGRAM", "note": "Travel content." },
-    { "platform": "TIKTOK", "note": "Pilot content." }
+    {
+      "platform": "TWITTER",
+      "note": "Travel and aviation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Travel content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Pilot content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Travel vibes." },
-    { "generation": "MILLENNIAL", "note": "Aviation." },
-    { "generation": "BOOMER", "note": "Pilot." }
+    {
+      "generation": "GEN_Z",
+      "note": "Travel vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Aviation."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Pilot."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍✈️ Pilot Emoji Meaning",
-  "seoDescription": "Learn what the Pilot emoji 🧑‍✈️ really means."
+  "seoDescription": "Learn what the Pilot emoji 🧑‍✈️ really means.",
+  "skinToneVariations": [
+    "pilot-light",
+    "pilot-medium-light",
+    "pilot-medium",
+    "pilot-medium-dark",
+    "pilot-dark"
+  ]
 }

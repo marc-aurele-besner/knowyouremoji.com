@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Christmas content." },
-    { "platform": "INSTAGRAM", "note": "Holiday posts." },
-    { "platform": "TIKTOK", "note": "Christmas content." }
+    {
+      "platform": "TWITTER",
+      "note": "Christmas content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Holiday posts."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Christmas content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Christmas vibes." },
-    { "generation": "MILLENNIAL", "note": "Holiday nostalgia." },
-    { "generation": "BOOMER", "note": "Santa Claus." }
+    {
+      "generation": "GEN_Z",
+      "note": "Christmas vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Holiday nostalgia."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Santa Claus."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎅 Santa Claus Emoji Meaning",
-  "seoDescription": "Learn what the Santa Claus emoji 🎅 really means."
+  "seoDescription": "Learn what the Santa Claus emoji 🎅 really means.",
+  "skinToneVariations": [
+    "santa-light",
+    "santa-medium-light",
+    "santa-medium",
+    "santa-medium-dark",
+    "santa-dark"
+  ]
 }

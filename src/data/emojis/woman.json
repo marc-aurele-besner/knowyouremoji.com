@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Female representation." },
-    { "platform": "INSTAGRAM", "note": "People content." },
-    { "platform": "TIKTOK", "note": "Woman content." }
+    {
+      "platform": "TWITTER",
+      "note": "Female representation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "People content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Woman content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Queen." },
-    { "generation": "MILLENNIAL", "note": "Adult female." },
-    { "generation": "BOOMER", "note": "A woman." }
+    {
+      "generation": "GEN_Z",
+      "note": "Queen."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Adult female."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A woman."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👩 Woman Emoji Meaning",
-  "seoDescription": "Learn what the Woman emoji 👩 really means."
+  "seoDescription": "Learn what the Woman emoji 👩 really means.",
+  "skinToneVariations": [
+    "woman-light",
+    "woman-medium-light",
+    "woman-medium",
+    "woman-medium-dark",
+    "woman-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Baby announcements or newbie." },
-    { "platform": "INSTAGRAM", "note": "Family and baby content." },
-    { "platform": "TIKTOK", "note": "Baby content or being new." }
+    {
+      "platform": "TWITTER",
+      "note": "Baby announcements or newbie."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Family and baby content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Baby content or being new."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Being new at something." },
-    { "generation": "MILLENNIAL", "note": "Baby content." },
-    { "generation": "BOOMER", "note": "Actual baby." }
+    {
+      "generation": "GEN_Z",
+      "note": "Being new at something."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Baby content."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Actual baby."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👶 Baby Emoji Meaning",
-  "seoDescription": "Learn what the Baby emoji 👶 really means."
+  "seoDescription": "Learn what the Baby emoji 👶 really means.",
+  "skinToneVariations": [
+    "baby-light",
+    "baby-medium-light",
+    "baby-medium",
+    "baby-medium-dark",
+    "baby-dark"
+  ]
 }

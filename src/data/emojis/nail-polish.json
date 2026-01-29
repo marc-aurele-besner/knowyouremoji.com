@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Sassy and unbothered attitude." },
-    { "platform": "INSTAGRAM", "note": "Beauty and self-care." },
-    { "platform": "TIKTOK", "note": "Iconic sassy moments." }
+    {
+      "platform": "TWITTER",
+      "note": "Sassy and unbothered attitude."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Beauty and self-care."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Iconic sassy moments."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Unbothered queen energy." },
-    { "generation": "MILLENNIAL", "note": "Sassy and self-care." },
-    { "generation": "BOOMER", "note": "Getting nails done." }
+    {
+      "generation": "GEN_Z",
+      "note": "Unbothered queen energy."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Sassy and self-care."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Getting nails done."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💅 Nail Polish Emoji Meaning",
-  "seoDescription": "Learn what the Nail Polish emoji 💅 really means."
+  "seoDescription": "Learn what the Nail Polish emoji 💅 really means.",
+  "skinToneVariations": [
+    "nail-polish-light",
+    "nail-polish-medium-light",
+    "nail-polish-medium",
+    "nail-polish-medium-dark",
+    "nail-polish-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Agriculture or gaming farming." },
-    { "platform": "INSTAGRAM", "note": "Farm life content." },
-    { "platform": "DISCORD", "note": "Gaming farming reference." }
+    {
+      "platform": "TWITTER",
+      "note": "Agriculture or gaming farming."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Farm life content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming farming reference."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gaming farming." },
-    { "generation": "MILLENNIAL", "note": "Actual farming." },
-    { "generation": "BOOMER", "note": "Agricultural worker." }
+    {
+      "generation": "GEN_Z",
+      "note": "Gaming farming."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Actual farming."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Agricultural worker."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🌾 Farmer Emoji Meaning",
-  "seoDescription": "Learn what the Farmer emoji 🧑‍🌾 really means."
+  "seoDescription": "Learn what the Farmer emoji 🧑‍🌾 really means.",
+  "skinToneVariations": [
+    "farmer-light",
+    "farmer-medium-light",
+    "farmer-medium",
+    "farmer-medium-dark",
+    "farmer-dark"
+  ]
 }

@@ -1,0 +1,78 @@
+{
+  "unicode": "1F44C-1F3FB",
+  "slug": "ok-hand-light",
+  "character": "👌🏻",
+  "name": "OK Hand: Light Skin Tone",
+  "shortName": "ok_hand light",
+  "category": "people",
+  "subcategory": "hand",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A hand making the OK sign with thumb and index finger forming a circle.",
+  "tldr": "Usually means 'perfect' or 'okay'. Can also mean 'chef's kiss' for something excellent.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Indicating agreement or that something is okay.",
+      "example": "Got it 👌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Something is perfect or excellent.",
+      "example": "This food 👌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Chef's kiss - something is just right.",
+      "example": "That sunset 👌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Professional acknowledgment.",
+      "example": "Sounds good 👌",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Common for acknowledging messages or tasks."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used for 'perfect' or 'chef's kiss' moments."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Generally positive usage for approval."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Primarily means 'perfect' or approval."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Standard OK/perfect gesture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Traditional OK sign meaning."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Cultural context",
+      "description": "In some contexts, this gesture has been co-opted. Generally safe when clearly meaning 'OK' or 'perfect'.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["ok-perfect"],
+  "seoTitle": "👌🏻 OK Hand Light Skin Tone Emoji - What Does 👌🏻 Mean?",
+  "seoDescription": "Learn what the ok hand emoji with light skin tone 👌🏻 means in texts and social media.",
+  "skinToneBase": "ok-hand",
+  "skinToneModifier": "light"
+}

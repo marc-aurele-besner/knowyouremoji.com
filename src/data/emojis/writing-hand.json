@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Noted, taking notes meme." },
-    { "platform": "INSTAGRAM", "note": "Writing and creative content." },
-    { "platform": "SLACK", "note": "Taking action items." }
+    {
+      "platform": "TWITTER",
+      "note": "Noted, taking notes meme."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Writing and creative content."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Taking action items."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Taking notes meme." },
-    { "generation": "MILLENNIAL", "note": "Writing things down." },
-    { "generation": "BOOMER", "note": "Hand writing." }
+    {
+      "generation": "GEN_Z",
+      "note": "Taking notes meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Writing things down."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Hand writing."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✍️ Writing Hand Emoji Meaning",
-  "seoDescription": "Learn what the Writing Hand emoji ✍️ really means."
+  "seoDescription": "Learn what the Writing Hand emoji ✍️ really means.",
+  "skinToneVariations": [
+    "writing-hand-light",
+    "writing-hand-medium-light",
+    "writing-hand-medium",
+    "writing-hand-medium-dark",
+    "writing-hand-dark"
+  ]
 }

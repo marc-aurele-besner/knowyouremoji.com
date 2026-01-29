@@ -1,0 +1,72 @@
+{
+  "unicode": "1F44B-1F3FB",
+  "slug": "waving-hand-light",
+  "character": "👋🏻",
+  "name": "Waving Hand: Light Skin Tone",
+  "shortName": "wave light",
+  "category": "people",
+  "subcategory": "hand",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A hand waving, used for greeting or farewell.",
+  "tldr": "Hello or goodbye wave. Friendly greeting or casual farewell.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Greeting someone - saying hello.",
+      "example": "Hey! 👋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Saying goodbye or farewell.",
+      "example": "See you later 👋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Friendly greeting in professional contexts.",
+      "example": "Hi team 👋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissive goodbye to someone/something.",
+      "example": "Goodbye to that job 👋",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Common for greetings and introductions."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Standard hello/goodbye wave."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for introductions or saying goodbye."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Standard greeting wave."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Common for friendly hellos and goodbyes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Universal wave gesture."
+    }
+  ],
+  "warnings": [],
+  "relatedCombos": ["wave-hello"],
+  "seoTitle": "👋🏻 Waving Hand Light Skin Tone Emoji - What Does 👋🏻 Mean?",
+  "seoDescription": "Learn what the waving hand emoji with light skin tone 👋🏻 means in texts and social media.",
+  "skinToneBase": "waving-hand",
+  "skinToneModifier": "light"
+}

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Skill and stealth." },
-    { "platform": "INSTAGRAM", "note": "Expert content." },
-    { "platform": "DISCORD", "note": "Gaming ninja skills." }
+    {
+      "platform": "TWITTER",
+      "note": "Skill and stealth."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Expert content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming ninja skills."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Stealth or gaming." },
-    { "generation": "MILLENNIAL", "note": "Ninja skills." },
-    { "generation": "BOOMER", "note": "Japanese warrior." }
+    {
+      "generation": "GEN_Z",
+      "note": "Stealth or gaming."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Ninja skills."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Japanese warrior."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥷 Ninja Emoji Meaning",
-  "seoDescription": "Learn what the Ninja emoji 🥷 really means."
+  "seoDescription": "Learn what the Ninja emoji 🥷 really means.",
+  "skinToneVariations": [
+    "ninja-light",
+    "ninja-medium-light",
+    "ninja-medium",
+    "ninja-medium-dark",
+    "ninja-dark"
+  ]
 }

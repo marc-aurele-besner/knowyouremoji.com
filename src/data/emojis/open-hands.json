@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Jazz hands excitement." },
-    { "platform": "INSTAGRAM", "note": "Welcoming content." },
-    { "platform": "TIKTOK", "note": "Dramatic reveals." }
+    {
+      "platform": "TWITTER",
+      "note": "Jazz hands excitement."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Welcoming content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Dramatic reveals."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Jazz hands meme." },
-    { "generation": "MILLENNIAL", "note": "Open and receiving." },
-    { "generation": "BOOMER", "note": "Hands open." }
+    {
+      "generation": "GEN_Z",
+      "note": "Jazz hands meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Open and receiving."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Hands open."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👐 Open Hands Emoji Meaning",
-  "seoDescription": "Learn what the Open Hands emoji 👐 really means."
+  "seoDescription": "Learn what the Open Hands emoji 👐 really means.",
+  "skinToneVariations": [
+    "open-hands-light",
+    "open-hands-medium-light",
+    "open-hands-medium",
+    "open-hands-medium-dark",
+    "open-hands-dark"
+  ]
 }

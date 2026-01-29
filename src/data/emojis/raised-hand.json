@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Stop or hold on." },
-    { "platform": "INSTAGRAM", "note": "High five vibes." },
-    { "platform": "SLACK", "note": "Have a question." }
+    {
+      "platform": "TWITTER",
+      "note": "Stop or hold on."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "High five vibes."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Have a question."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Stop or slow down." },
-    { "generation": "MILLENNIAL", "note": "High five." },
-    { "generation": "BOOMER", "note": "Raised hand." }
+    {
+      "generation": "GEN_Z",
+      "note": "Stop or slow down."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "High five."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Raised hand."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✋ Raised Hand Emoji Meaning",
-  "seoDescription": "Learn what the Raised Hand emoji ✋ really means."
+  "seoDescription": "Learn what the Raised Hand emoji ✋ really means.",
+  "skinToneVariations": [
+    "raised-hand-light",
+    "raised-hand-medium-light",
+    "raised-hand-medium",
+    "raised-hand-medium-dark",
+    "raised-hand-dark"
+  ]
 }

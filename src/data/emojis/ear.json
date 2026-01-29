@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Listening and gossip." },
-    { "platform": "INSTAGRAM", "note": "Hearing content." },
-    { "platform": "TIKTOK", "note": "Listening in." }
+    {
+      "platform": "TWITTER",
+      "note": "Listening and gossip."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Hearing content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Listening in."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Listening for tea." },
-    { "generation": "MILLENNIAL", "note": "I'm listening." },
-    { "generation": "BOOMER", "note": "Ear symbol." }
+    {
+      "generation": "GEN_Z",
+      "note": "Listening for tea."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "I'm listening."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Ear symbol."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👂 Ear Emoji Meaning",
-  "seoDescription": "Learn what the Ear emoji 👂 really means."
+  "seoDescription": "Learn what the Ear emoji 👂 really means.",
+  "skinToneVariations": [
+    "ear-light",
+    "ear-medium-light",
+    "ear-medium",
+    "ear-medium-dark",
+    "ear-dark"
+  ]
 }

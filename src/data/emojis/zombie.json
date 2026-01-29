@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Exhaustion or Halloween." },
-    { "platform": "INSTAGRAM", "note": "Tired aesthetic." },
-    { "platform": "TIKTOK", "note": "Zombie or exhausted content." }
+    {
+      "platform": "TWITTER",
+      "note": "Exhaustion or Halloween."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Tired aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Zombie or exhausted content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dead inside energy." },
-    { "generation": "MILLENNIAL", "note": "Walking Dead vibes." },
-    { "generation": "BOOMER", "note": "Horror movie zombie." }
+    {
+      "generation": "GEN_Z",
+      "note": "Dead inside energy."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Walking Dead vibes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Horror movie zombie."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧟 Zombie Emoji Meaning",
-  "seoDescription": "Learn what the Zombie emoji 🧟 really means."
+  "seoDescription": "Learn what the Zombie emoji 🧟 really means.",
+  "skinToneVariations": [
+    "zombie-light",
+    "zombie-medium-light",
+    "zombie-medium",
+    "zombie-medium-dark",
+    "zombie-dark"
+  ]
 }

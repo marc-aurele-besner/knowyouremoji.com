@@ -1,0 +1,72 @@
+{
+  "unicode": "1F937-1F3FD",
+  "slug": "person-shrugging-medium",
+  "character": "🤷🏽",
+  "name": "Person Shrugging: Medium Skin Tone",
+  "shortName": "shrug medium",
+  "category": "people",
+  "subcategory": "person",
+  "unicodeVersion": "9.0",
+  "baseMeaning": "A person with raised shoulders and arms, palms facing up.",
+  "tldr": "The 'I don't know' or 'whatever' gesture. Can show confusion or indifference.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Expressing not knowing or being unsure.",
+      "example": "Where are my keys 🤷",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Indifference or 'whatever happens, happens'.",
+      "example": "Guess we'll see 🤷",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissing responsibility or avoiding accountability.",
+      "example": "Not my problem 🤷",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Feigning ignorance or indifference.",
+      "example": "Don't know what happened to the cookies 🤷",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Common for expressing uncertainty or indifference."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Acceptable for casual admissions of uncertainty."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Standard 'I don't know' gesture."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "The universal 'idk' or 'whatever' emoji."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Same usage - confusion or indifference."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not be as familiar with this gesture emoji."
+    }
+  ],
+  "warnings": [],
+  "relatedCombos": ["shrug-idk"],
+  "seoTitle": "🤷🏽 Person Shrugging Medium Skin Tone Emoji - What Does 🤷🏽 Mean?",
+  "seoDescription": "Learn what the person shrugging emoji with medium skin tone 🤷🏽 means in texts and social media.",
+  "skinToneBase": "person-shrugging",
+  "skinToneModifier": "medium"
+}

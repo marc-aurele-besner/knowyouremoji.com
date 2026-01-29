@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Geek and sci-fi content." },
-    { "platform": "INSTAGRAM", "note": "Cosplay and fan content." },
-    { "platform": "DISCORD", "note": "Gaming and geek communities." }
+    {
+      "platform": "TWITTER",
+      "note": "Geek and sci-fi content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Cosplay and fan content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming and geek communities."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "May not know the reference." },
-    { "generation": "MILLENNIAL", "note": "Star Trek fans." },
-    { "generation": "BOOMER", "note": "Classic Spock." }
+    {
+      "generation": "GEN_Z",
+      "note": "May not know the reference."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Star Trek fans."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Classic Spock."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🖖 Vulcan Salute Emoji Meaning",
-  "seoDescription": "Learn what the Vulcan Salute emoji 🖖 really means."
+  "seoDescription": "Learn what the Vulcan Salute emoji 🖖 really means.",
+  "skinToneVariations": [
+    "vulcan-salute-light",
+    "vulcan-salute-medium-light",
+    "vulcan-salute-medium",
+    "vulcan-salute-medium-dark",
+    "vulcan-salute-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Building something." },
-    { "platform": "INSTAGRAM", "note": "Work content." },
-    { "platform": "TIKTOK", "note": "Construction content." }
+    {
+      "platform": "TWITTER",
+      "note": "Building something."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Work content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Construction content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Building something." },
-    { "generation": "MILLENNIAL", "note": "Work in progress." },
-    { "generation": "BOOMER", "note": "Construction worker." }
+    {
+      "generation": "GEN_Z",
+      "note": "Building something."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Work in progress."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Construction worker."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👷 Construction Worker Emoji Meaning",
-  "seoDescription": "Learn what the Construction Worker emoji 👷 really means."
+  "seoDescription": "Learn what the Construction Worker emoji 👷 really means.",
+  "skinToneVariations": [
+    "construction-worker-light",
+    "construction-worker-medium-light",
+    "construction-worker-medium",
+    "construction-worker-medium-dark",
+    "construction-worker-dark"
+  ]
 }

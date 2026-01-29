@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Health content." },
-    { "platform": "INSTAGRAM", "note": "Healthcare professional content." },
-    { "platform": "TIKTOK", "note": "Doctor content." }
+    {
+      "platform": "TWITTER",
+      "note": "Health content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Healthcare professional content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Doctor content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Healthcare worker." },
-    { "generation": "MILLENNIAL", "note": "Doctor." },
-    { "generation": "BOOMER", "note": "Medical professional." }
+    {
+      "generation": "GEN_Z",
+      "note": "Healthcare worker."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Doctor."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Medical professional."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍⚕️ Health Worker Emoji Meaning",
-  "seoDescription": "Learn what the Health Worker emoji 🧑‍⚕️ really means."
+  "seoDescription": "Learn what the Health Worker emoji 🧑‍⚕️ really means.",
+  "skinToneVariations": [
+    "doctor-light",
+    "doctor-medium-light",
+    "doctor-medium",
+    "doctor-medium-dark",
+    "doctor-dark"
+  ]
 }
