@@ -7,7 +7,8 @@ beforeEach(() => {
   process.env = {
     ...originalEnv,
     OPENAI_API_KEY: 'test-api-key',
-    NEXT_PUBLIC_ENABLE_INTERPRETER: 'true',
+    // Disable interpreter to use mock responses (avoids real OpenAI calls in tests)
+    NEXT_PUBLIC_ENABLE_INTERPRETER: 'false',
   };
 });
 

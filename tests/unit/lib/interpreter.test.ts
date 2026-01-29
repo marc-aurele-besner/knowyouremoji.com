@@ -211,7 +211,8 @@ describe('interpreter service', () => {
         parseOpenAIResponse('invalid json');
         expect(true).toBe(false); // Should not reach here
       } catch (error) {
-        expect(error).toBeInstanceOf(OpenAIError);
+        // Use name check instead of instanceof for cross-module compatibility
+        expect((error as Error).name).toBe('OpenAIError');
         expect((error as OpenAIError).code).toBe('PARSE_ERROR');
       }
     });
@@ -221,7 +222,8 @@ describe('interpreter service', () => {
         parseOpenAIResponse(JSON.stringify({ invalid: 'response' }));
         expect(true).toBe(false); // Should not reach here
       } catch (error) {
-        expect(error).toBeInstanceOf(OpenAIError);
+        // Use name check instead of instanceof for cross-module compatibility
+        expect((error as Error).name).toBe('OpenAIError');
         expect((error as OpenAIError).code).toBe('PARSE_ERROR');
       }
     });
