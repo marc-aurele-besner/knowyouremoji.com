@@ -3,47 +3,47 @@
   "slug": "yellow-heart",
   "character": "💛",
   "name": "Yellow Heart",
-  "shortName": "yellowheart",
-  "category": "symbols",
+  "shortName": "yellow-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A yellow-colored heart.",
-  "tldr": "Friendship, happiness, or platonic love.",
+  "baseMeaning": "A yellow heart.",
+  "tldr": "Friendship, happiness, or Snapchat bestie.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Affection.",
-      "example": "Love you friend 💛",
+      "meaning": "Yellow colored heart.",
+      "example": "Sunny love 💛",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Best friends (Snapchat).",
-      "example": "Besties 💛",
+      "meaning": "Best friend on Snapchat.",
+      "example": "You're my 💛",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
       "meaning": "Friend zone.",
-      "example": "You're such a friend 💛",
+      "example": "Just friends 💛",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sunshine and happiness.",
-      "example": "Positive vibes 💛",
+      "meaning": "Fake positivity.",
+      "example": "Good vibes only 💛",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Positive energy." },
-    { "platform": "TWITTER", "note": "Friendship." },
-    { "platform": "WHATSAPP", "note": "Friendly love." }
+    { "platform": "INSTAGRAM", "note": "Happy posts." },
+    { "platform": "TWITTER", "note": "Positive content." },
+    { "platform": "TIKTOK", "note": "Sunshine energy." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Snapchat best friends." },
-    { "generation": "MILLENNIAL", "note": "Friendship love." },
-    { "generation": "BOOMER", "note": "Yellow heart." }
+    { "generation": "GEN_Z", "note": "Snapchat bestie." },
+    { "generation": "MILLENNIAL", "note": "Happy vibes." },
+    { "generation": "BOOMER", "note": "Cheerful." }
   ],
   "warnings": [],
   "relatedCombos": [],

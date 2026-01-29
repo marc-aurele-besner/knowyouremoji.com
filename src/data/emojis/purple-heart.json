@@ -3,42 +3,47 @@
   "slug": "purple-heart",
   "character": "💜",
   "name": "Purple Heart",
-  "shortName": "purpleheart",
-  "category": "symbols",
+  "shortName": "purple-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A purple-colored heart.",
-  "tldr": "BTS ARMY, compassion, or forbidden love.",
+  "baseMeaning": "A purple heart.",
+  "tldr": "BTS Army, compassion, or mystical love.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Purple love.",
-      "example": "Love purple 💜",
+      "meaning": "Purple colored heart.",
+      "example": "Purple love 💜",
       "riskLevel": "LOW"
     },
-    { "context": "SLANG", "meaning": "BTS ARMY.", "example": "Borahae 💜", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Deep affection.",
+      "context": "SLANG",
+      "meaning": "BTS fan signal.",
       "example": "I purple you 💜",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Military purple heart.",
-      "example": "Honor 💜",
+      "context": "DATING",
+      "meaning": "Deep love.",
+      "example": "Soulmate energy 💜",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Stan culture.",
+      "example": "Army forever 💜",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "BTS and K-pop." },
-    { "platform": "INSTAGRAM", "note": "Fan content." },
-    { "platform": "WHATSAPP", "note": "Affection." }
+    { "platform": "TWITTER", "note": "BTS content." },
+    { "platform": "INSTAGRAM", "note": "K-pop fandoms." },
+    { "platform": "TIKTOK", "note": "Stan content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "BTS ARMY meaning." },
+    { "generation": "GEN_Z", "note": "BTS Army." },
     { "generation": "MILLENNIAL", "note": "K-pop culture." },
-    { "generation": "BOOMER", "note": "Military medal." }
+    { "generation": "BOOMER", "note": "Military honor." }
   ],
   "warnings": [],
   "relatedCombos": [],

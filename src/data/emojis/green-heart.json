@@ -3,55 +3,49 @@
   "slug": "green-heart",
   "character": "💚",
   "name": "Green Heart",
-  "shortName": "greenheart",
-  "category": "symbols",
+  "shortName": "green-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A green-colored heart.",
-  "tldr": "Nature, jealousy, or Irish pride.",
+  "baseMeaning": "A green heart.",
+  "tldr": "Nature love, jealousy, or Irish pride.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Green love.",
-      "example": "Nature lover 💚",
+      "meaning": "Green colored heart.",
+      "example": "Nature love 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Jealousy or envy.",
+      "meaning": "Jealousy.",
       "example": "Green with envy 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Can imply jealousy.",
-      "example": "Who's that 💚",
+      "meaning": "Healthy love.",
+      "example": "Growing together 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "St. Patrick's Day.",
-      "example": "Irish pride 💚",
+      "meaning": "Fake healthy.",
+      "example": "Wellness vibes 💚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Nature and eco content." },
-    { "platform": "TWITTER", "note": "Jealousy or Irish." },
-    { "platform": "WHATSAPP", "note": "Context dependent." }
+    { "platform": "INSTAGRAM", "note": "Plant content." },
+    { "platform": "TWITTER", "note": "Eco content." },
+    { "platform": "TIKTOK", "note": "Green aesthetic." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Jealousy undertones." },
-    { "generation": "MILLENNIAL", "note": "Eco-friendly." },
-    { "generation": "BOOMER", "note": "Green heart." }
+    { "generation": "GEN_Z", "note": "Nature aesthetic." },
+    { "generation": "MILLENNIAL", "note": "Eco friendly." },
+    { "generation": "BOOMER", "note": "Irish symbol." }
   ],
-  "warnings": [
-    {
-      "title": "May Imply Jealousy",
-      "description": "Can sometimes indicate jealousy or envy.",
-      "severity": "LOW"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💚 Green Heart Emoji Meaning - What Does 💚 Really Mean?",
   "seoDescription": "Learn what the green heart emoji 💚 really means. Nature or jealousy vibes. Complete context guide."

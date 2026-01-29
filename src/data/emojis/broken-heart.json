@@ -3,37 +3,47 @@
   "slug": "broken-heart",
   "character": "💔",
   "name": "Broken Heart",
-  "shortName": "brokenheart",
-  "category": "symbols",
+  "shortName": "broken-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red heart broken in half.",
-  "tldr": "Heartbreak, sadness, or disappointment.",
+  "baseMeaning": "A broken heart.",
+  "tldr": "Heartbreak, sadness, or betrayal.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Heartbroken.", "example": "So sad 💔", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Heart broken in two.",
+      "example": "My heart 💔",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
       "meaning": "Devastated.",
-      "example": "Can't believe it 💔",
+      "example": "I can't even 💔",
       "riskLevel": "LOW"
     },
-    { "context": "DATING", "meaning": "Breakup.", "example": "It's over 💔", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Breakup.",
+      "example": "We're done 💔",
+      "riskLevel": "LOW"
+    },
     {
       "context": "IRONIC",
-      "meaning": "Minor disappointment.",
-      "example": "They're out of fries 💔",
+      "meaning": "Dramatic disappointment.",
+      "example": "No pizza left 💔",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Sad reactions." },
-    { "platform": "INSTAGRAM", "note": "Emotional posts." },
-    { "platform": "WHATSAPP", "note": "Personal sadness." }
+    { "platform": "TWITTER", "note": "Heartbreak content." },
+    { "platform": "INSTAGRAM", "note": "Sad posts." },
+    { "platform": "TIKTOK", "note": "Breakup content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dramatic sadness." },
-    { "generation": "MILLENNIAL", "note": "Heartbreak." },
-    { "generation": "BOOMER", "note": "Broken heart." }
+    { "generation": "GEN_Z", "note": "Dramatic usage." },
+    { "generation": "MILLENNIAL", "note": "Actual sadness." },
+    { "generation": "BOOMER", "note": "Heartbreak." }
   ],
   "warnings": [],
   "relatedCombos": [],

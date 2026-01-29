@@ -3,45 +3,50 @@
   "slug": "two-hearts",
   "character": "💕",
   "name": "Two Hearts",
-  "shortName": "twohearts",
-  "category": "symbols",
+  "shortName": "two-hearts",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
   "baseMeaning": "Two pink hearts.",
-  "tldr": "Love, affection, or mutual feelings.",
+  "tldr": "Mutual love, friendship, or affection.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Love between two.",
-      "example": "Us 💕",
+      "meaning": "Two hearts together.",
+      "example": "Love you 💕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Mutual affection.",
-      "example": "We're cute 💕",
+      "meaning": "BFF energy.",
+      "example": "Besties 💕",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Couple love.",
-      "example": "Together 💕",
+      "meaning": "Mutual feelings.",
+      "example": "We're vibing 💕",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Cutesy love.", "example": "Adorable 💕", "riskLevel": "LOW" }
+    {
+      "context": "IRONIC",
+      "meaning": "Cutesy.",
+      "example": "How sweet 💕",
+      "riskLevel": "LOW"
+    }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Couple content." },
-    { "platform": "TWITTER", "note": "Mutual appreciation." },
-    { "platform": "WHATSAPP", "note": "Romantic messages." }
+    { "platform": "INSTAGRAM", "note": "Cute content." },
+    { "platform": "TWITTER", "note": "Affection." },
+    { "platform": "TIKTOK", "note": "Love content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cute love." },
-    { "generation": "MILLENNIAL", "note": "Couple hearts." },
-    { "generation": "BOOMER", "note": "Two hearts." }
+    { "generation": "GEN_Z", "note": "Friend love." },
+    { "generation": "MILLENNIAL", "note": "Cute vibes." },
+    { "generation": "BOOMER", "note": "Affection." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💕 Two Hearts Emoji Meaning - What Does 💕 Really Mean?",
-  "seoDescription": "Learn what the two hearts emoji 💕 really means. Mutual love or affection vibes. Complete context guide."
+  "seoDescription": "Learn what the two hearts emoji 💕 really means. Mutual love or friendship vibes. Complete context guide."
 }
