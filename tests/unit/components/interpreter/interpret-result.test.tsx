@@ -215,7 +215,7 @@ describe('InterpretResult', () => {
 
     it('applies severity styling to red flags', () => {
       render(<InterpretResult result={mockResultWithRedFlags} />);
-      const redFlags = screen.getAllByTestId('red-flag-item');
+      const redFlags = screen.getAllByTestId('red-flag-badge');
       // First flag is medium severity
       expect(redFlags[0]).toHaveClass('border-yellow-500');
       // Second flag is low severity
@@ -409,7 +409,7 @@ describe('InterpretResult', () => {
         ],
       };
       render(<InterpretResult result={highSeverityResult} />);
-      const redFlag = screen.getByTestId('red-flag-item');
+      const redFlag = screen.getByTestId('red-flag-badge');
       expect(redFlag).toHaveClass('border-red-500');
     });
   });

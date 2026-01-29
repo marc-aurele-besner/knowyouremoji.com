@@ -18,3 +18,9 @@ export type { ProbabilityMeterProps } from './probability-meter';
 
 export { PassiveAggressionMeter } from './passive-aggression-meter';
 export type { PassiveAggressionMeterProps } from './passive-aggression-meter';
+
+export { RedFlagBadge } from './red-flag-badge';
+export type { RedFlagBadgeProps } from './red-flag-badge';
+
+export { RedFlagSection } from './red-flag-section';
+export type { RedFlagSectionProps } from './red-flag-section';

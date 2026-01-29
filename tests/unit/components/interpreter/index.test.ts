@@ -43,4 +43,14 @@ describe('interpreter component exports', () => {
     expect(InterpreterExports.PassiveAggressionMeter).toBeDefined();
     expect(typeof InterpreterExports.PassiveAggressionMeter).toBe('function');
   });
+
+  it('exports RedFlagBadge component', () => {
+    expect(InterpreterExports.RedFlagBadge).toBeDefined();
+    expect(typeof InterpreterExports.RedFlagBadge).toBe('function');
+  });
+
+  it('exports RedFlagSection component', () => {
+    expect(InterpreterExports.RedFlagSection).toBeDefined();
+    expect(typeof InterpreterExports.RedFlagSection).toBe('function');
+  });
 });
