@@ -24,6 +24,12 @@ interface EmojiPageProps {
 }
 
 /**
+ * Revalidate pages every hour (3600 seconds)
+ * This enables Incremental Static Regeneration (ISR) for emoji pages
+ */
+export const revalidate = 3600;
+
+/**
  * Generate static params for all emoji pages at build time
  */
 export async function generateStaticParams() {

@@ -12,6 +12,12 @@ interface CategoryPageProps {
 }
 
 /**
+ * Revalidate pages every hour (3600 seconds)
+ * This enables Incremental Static Regeneration (ISR) for category pages
+ */
+export const revalidate = 3600;
+
+/**
  * Generate static params for all category pages at build time
  */
 export async function generateStaticParams() {

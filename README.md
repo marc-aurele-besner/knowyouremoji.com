@@ -165,7 +165,7 @@ scripts/
 ### Phase 1: MVP/Beta (Static-First)
 
 - All emoji content stored as JSON files
-- Static site generation (SSG) for all emoji pages
+- Static site generation with ISR (Incremental Static Regeneration) for emoji, combo, and category pages (1-hour revalidation)
 - Client-side rate limiting via localStorage
 - No database required
 - Focus on content quality and SEO
