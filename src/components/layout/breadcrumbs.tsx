@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
+import { navigationEvents } from '@/lib/analytics';
 
 export interface BreadcrumbItem {
   label: string;
@@ -32,6 +33,7 @@ function Breadcrumbs({ items, className, ...props }: BreadcrumbsProps) {
                 <Link
                   href={item.href}
                   className="text-gray-600 hover:text-blue-600 transition-colors"
+                  onClick={() => navigationEvents.breadcrumbClick(item.label, item.href!, index)}
                 >
                   {item.label}
                 </Link>

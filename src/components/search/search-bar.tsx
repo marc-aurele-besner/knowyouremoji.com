@@ -4,6 +4,7 @@ import { useState, useRef, useEffect, useCallback, KeyboardEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { SearchResults } from './search-results';
+import { emojiEvents, errorEvents } from '@/lib/analytics';
 import type { EmojiSummary } from '@/types/emoji';
 
 export interface SearchBarProps {
@@ -35,9 +36,18 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
         `/api/emojis/search?q=${encodeURIComponent(searchQuery)}&limit=6`
       );
       const data = await response.json();
-      setResults(data.emojis || []);
+      const emojis = data.emojis || [];
+      setResults(emojis);
       setIsOpen(true);
       setSelectedIndex(-1);
+
+      // Track search event
+      emojiEvents.search(searchQuery, emojis.length);
+
+      // Track no results
+      if (emojis.length === 0) {
+        errorEvents.searchNoResults(searchQuery);
+      }
     } catch {
       setResults([]);
     } finally {
@@ -61,7 +71,10 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
   );
 
   const handleSelect = useCallback(
-    (emoji: EmojiSummary) => {
+    (emoji: EmojiSummary, position: number = 0) => {
+      // Track search result click
+      emojiEvents.searchResultClick(emoji.character, emoji.slug, position);
+
       setQuery('');
       setResults([]);
       setIsOpen(false);
@@ -92,7 +105,7 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
         case 'Enter':
           e.preventDefault();
           if (selectedIndex >= 0 && selectedIndex < results.length) {
-            handleSelect(results[selectedIndex]);
+            handleSelect(results[selectedIndex], selectedIndex);
           }
           break;
         case 'Escape':
