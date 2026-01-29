@@ -5,7 +5,7 @@ import { getEnv, validateEnv, isProduction, isDevelopment, isTest } from '../../
 const originalEnv = { ...process.env };
 
 // Helper to set NODE_ENV while bypassing TypeScript's readonly constraint
-function setNodeEnv(value: string) {
+function setNodeEnv(value: string | undefined) {
   (process.env as Record<string, string | undefined>).NODE_ENV = value;
 }
 
@@ -149,7 +149,7 @@ describe('env configuration', () => {
     });
 
     it('should return false when NODE_ENV is undefined', () => {
-      delete process.env.NODE_ENV;
+      setNodeEnv(undefined);
       expect(isProduction()).toBe(false);
     });
   });
@@ -171,7 +171,7 @@ describe('env configuration', () => {
     });
 
     it('should return false when NODE_ENV is undefined', () => {
-      delete process.env.NODE_ENV;
+      setNodeEnv(undefined);
       expect(isDevelopment()).toBe(false);
     });
   });
@@ -193,7 +193,7 @@ describe('env configuration', () => {
     });
 
     it('should return false when NODE_ENV is undefined', () => {
-      delete process.env.NODE_ENV;
+      setNodeEnv(undefined);
       expect(isTest()).toBe(false);
     });
   });
