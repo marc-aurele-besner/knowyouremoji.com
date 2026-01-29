@@ -5,12 +5,23 @@ import type { InterpretRequest, InterpretationResult, InterpretErrorResponse } f
 import { interpretMessage } from '@/lib/interpreter';
 import { OpenAIError } from '@/lib/openai';
 
-// Regular expression to detect emoji characters
+/**
+ * Check if a string contains at least one emoji
+ * Uses a fresh regex to avoid state issues with global flag
+ */
+function containsEmoji(message: string): boolean {
+  // Create a new regex instance for each check to avoid lastIndex state issues
+  const regex =
+    /[\p{Emoji_Presentation}\p{Extended_Pictographic}](\u200d[\p{Emoji_Presentation}\p{Extended_Pictographic}])*/u;
+  return regex.test(message);
+}
+
+// Regular expression for extracting emojis (with global flag)
 // This pattern matches most Unicode emoji including:
 // - Basic emoji (😀)
 // - Emoji with modifiers (👍🏻)
 // - Emoji sequences (👨‍👩‍👧‍👦)
-const EMOJI_REGEX =
+const EMOJI_EXTRACT_REGEX =
   /[\p{Emoji_Presentation}\p{Extended_Pictographic}](\u200d[\p{Emoji_Presentation}\p{Extended_Pictographic}])*/gu;
 
 // Valid platforms (matches Platform type + OTHER)
@@ -41,7 +52,7 @@ const interpretRequestSchema = z.object({
     .string()
     .min(10, 'Message must be at least 10 characters')
     .max(1000, 'Message must be at most 1000 characters')
-    .refine((msg) => EMOJI_REGEX.test(msg), {
+    .refine((msg) => containsEmoji(msg), {
       message: 'Message must contain at least one emoji',
     }),
   platform: z.enum(VALID_PLATFORMS, {
@@ -56,7 +67,7 @@ const interpretRequestSchema = z.object({
  * Extract emojis from a message
  */
 function extractEmojis(message: string): string[] {
-  const matches = message.match(EMOJI_REGEX);
+  const matches = message.match(EMOJI_EXTRACT_REGEX);
   return matches ? [...new Set(matches)] : [];
 }
 
