@@ -7,64 +7,41 @@
   "category": "food",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bunch of purple grapes.",
-  "tldr": "Grapes, wine, luxury, or Member Berries meme.",
+  "baseMeaning": "A bunch of grapes.",
+  "tldr": "Wine, luxury, or sour grapes.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Grapes or wine-making.",
-      "example": "Fresh grapes 🍇",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Grapes.", "example": "Snack time 🍇", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Wine culture or luxury.",
-      "example": "Wine country 🍇",
+      "meaning": "Wine reference.",
+      "example": "Wine o'clock 🍇",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Member Berries (South Park) or nostalgia.",
-      "example": "Member the 90s? 🍇",
+      "context": "WORK",
+      "meaning": "Sour grapes - jealousy.",
+      "example": "Sour grapes 🍇",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Fancy date or romantic setting.",
-      "example": "Vineyard date 🍇",
+      "meaning": "Luxury and romance.",
+      "example": "Fancy date 🍇",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Wine country and luxury content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Wine discussions and nostalgia memes."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Wine content and food."
-    }
+    { "platform": "INSTAGRAM", "note": "Wine and food content." },
+    { "platform": "TWITTER", "note": "Sour grapes idiom." },
+    { "platform": "TIKTOK", "note": "Food content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Aesthetic and wine."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Member Berries meme and wine."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Wine and grapes."
-    }
+    { "generation": "GEN_Z", "note": "Wine content." },
+    { "generation": "MILLENNIAL", "note": "Wine culture." },
+    { "generation": "BOOMER", "note": "Fruit or wine." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍇 Grapes Emoji Meaning - What Does 🍇 Really Mean?",
-  "seoDescription": "Learn what the grapes emoji 🍇 really means in texting. Grapes, wine, or Member Berries meme. Complete context guide."
+  "seoDescription": "Learn what the grapes emoji 🍇 really means. Wine or sour grapes vibes. Complete context guide."
 }

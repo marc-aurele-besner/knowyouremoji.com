@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A yellow lemon fruit.",
-  "tldr": "Lemons, sourness, or 'when life gives you lemons' optimism.",
+  "baseMeaning": "A yellow lemon.",
+  "tldr": "Sour, when life gives you lemons, or refreshing.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Lemons or citrus.",
-      "example": "Fresh lemonade 🍋",
+      "meaning": "A lemon.",
+      "example": "Lemonade time 🍋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Making the best of a bad situation.",
-      "example": "Making lemonade 🍋",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Something sour or disappointing.",
-      "example": "Life gave me lemons 🍋",
+      "meaning": "Something bad (a lemon car).",
+      "example": "Got a lemon 🍋",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Optimism about challenges.",
-      "example": "Making lemonade out of this situation 🍋",
+      "meaning": "Make lemonade.",
+      "example": "When life gives you 🍋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sour situation.",
+      "example": "That's sour 🍋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Yellow aesthetic and positivity."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "'When life gives you lemons' references."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Optimism and aesthetic content."
-    }
+    { "platform": "TWITTER", "note": "Lemons to lemonade." },
+    { "platform": "INSTAGRAM", "note": "Fresh and summer." },
+    { "platform": "TIKTOK", "note": "Recipe content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Yellow aesthetic and optimism memes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Making lemonade philosophy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Lemons and citrus."
-    }
+    { "generation": "GEN_Z", "note": "Lemonade mouth." },
+    { "generation": "MILLENNIAL", "note": "Beyoncé Lemonade." },
+    { "generation": "BOOMER", "note": "Sour fruit." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍋 Lemon Emoji Meaning - What Does 🍋 Really Mean?",
-  "seoDescription": "Learn what the lemon emoji 🍋 really means in texting. Lemons or making the best of situations. Complete context guide."
+  "seoDescription": "Learn what the lemon emoji 🍋 really means. Sour or lemonade vibes. Complete context guide."
 }

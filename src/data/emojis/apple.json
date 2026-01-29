@@ -8,63 +8,45 @@
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
   "baseMeaning": "A red apple.",
-  "tldr": "Apples, teachers, health, or Apple products/company.",
+  "tldr": "Health, Apple brand, or teacher's pet.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Apples or fruit.",
-      "example": "An apple a day 🍎",
+      "meaning": "An apple.",
+      "example": "Apple a day 🍎",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Teachers or education.",
-      "example": "Happy Teacher's Day 🍎",
+      "meaning": "Apple products.",
+      "example": "Apple fan 🍎",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Apple company or products.",
-      "example": "Love my new iPhone 🍎",
+      "meaning": "Teacher gift.",
+      "example": "For the teacher 🍎",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Health or temptation (Garden of Eden).",
-      "example": "Healthy eating 🍎",
+      "meaning": "Big Apple (NYC).",
+      "example": "NYC vibes 🍎",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Apple Inc discussions and teacher appreciation."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Health content and education."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Apple products or health discussions."
-    }
+    { "platform": "TWITTER", "note": "Apple and health content." },
+    { "platform": "INSTAGRAM", "note": "Healthy eating." },
+    { "platform": "SLACK", "note": "Apple tech." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Apple products and health."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Apple Inc and teacher appreciation."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Health and fruit."
-    }
+    { "generation": "GEN_Z", "note": "Apple tech." },
+    { "generation": "MILLENNIAL", "note": "Healthy lifestyle." },
+    { "generation": "BOOMER", "note": "Apple fruit." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍎 Red Apple Emoji Meaning - What Does 🍎 Really Mean?",
-  "seoDescription": "Learn what the red apple emoji 🍎 really means in texting. Fruit, teachers, or Apple products. Complete context guide."
+  "seoTitle": "🍎 Apple Emoji Meaning - What Does 🍎 Really Mean?",
+  "seoDescription": "Learn what the red apple emoji 🍎 really means. Health or Apple brand vibes. Complete context guide."
 }

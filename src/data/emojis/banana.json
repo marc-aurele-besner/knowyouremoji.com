@@ -8,69 +8,51 @@
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
   "baseMeaning": "A yellow banana.",
-  "tldr": "Bananas, going crazy, or phallic innuendo.",
+  "tldr": "Potassium, going bananas, or suggestive.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Bananas or healthy snack.",
-      "example": "Banana smoothie 🍌",
+      "meaning": "A banana.",
+      "example": "Healthy snack 🍌",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Going bananas (crazy) or silly.",
-      "example": "This is bananas! 🍌",
+      "meaning": "Going crazy.",
+      "example": "Going bananas 🍌",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Can have suggestive meaning due to shape.",
-      "example": "Use carefully in context",
+      "meaning": "Can be suggestive.",
+      "example": "Use carefully 🍌",
       "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Scale reference or meme.",
-      "example": "Banana for scale 🍌",
+      "context": "WORK",
+      "meaning": "Energy boost.",
+      "example": "Pre-workout 🍌",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Banana for scale meme and fruit content."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Health content and smoothies."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Food content and memes."
-    }
+    { "platform": "TWITTER", "note": "Memes and food." },
+    { "platform": "INSTAGRAM", "note": "Fitness content." },
+    { "platform": "TIKTOK", "note": "Various contexts." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Banana for scale and health."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Gwen Stefani's 'B-A-N-A-N-A-S' era."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Fruit and health."
-    }
+    { "generation": "GEN_Z", "note": "Memes." },
+    { "generation": "MILLENNIAL", "note": "Going bananas." },
+    { "generation": "BOOMER", "note": "Fruit." }
   ],
   "warnings": [
     {
-      "title": "Phallic Implications",
-      "description": "Can have suggestive meaning due to shape. Context matters.",
+      "title": "Can Be Suggestive",
+      "description": "Shape can be interpreted suggestively in some contexts.",
       "severity": "LOW"
     }
   ],
   "relatedCombos": [],
   "seoTitle": "🍌 Banana Emoji Meaning - What Does 🍌 Really Mean?",
-  "seoDescription": "Learn what the banana emoji 🍌 really means in texting. Fruit, going crazy, or meme reference. Complete context guide."
+  "seoDescription": "Learn what the banana emoji 🍌 really means. Going bananas or health vibes. Complete context guide."
 }
