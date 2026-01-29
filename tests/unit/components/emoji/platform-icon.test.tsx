@@ -89,7 +89,7 @@ describe('PlatformIcon', () => {
   });
 
   describe('Platform type values', () => {
-    const platforms = [
+    const platforms: string[] = [
       'IMESSAGE',
       'INSTAGRAM',
       'TIKTOK',
@@ -97,9 +97,9 @@ describe('PlatformIcon', () => {
       'SLACK',
       'DISCORD',
       'TWITTER',
-    ] as const;
+    ];
 
-    it.each(platforms)('renders unique icon for %s', (platform) => {
+    it.each(platforms)('renders unique icon for %s', (platform: string) => {
       const { container } = render(<PlatformIcon platform={platform} />);
       const paths = container.querySelectorAll('path');
       expect(paths.length).toBeGreaterThan(0);
