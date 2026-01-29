@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Configure dark mode to use .dark class instead of media query */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   /* Semantic colors */
   --background: #ffffff;
