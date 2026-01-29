@@ -231,4 +231,210 @@ describe('POST /api/interpret/stream', () => {
       expect(typeof routeModule.POST).toBe('function');
     });
   });
+
+  describe('validation edge cases', () => {
+    it('should accept message at exactly 10 characters with emoji', async () => {
+      const req = createRequest({
+        message: 'Hi there😀', // "Hi there" (8) + emoji (2) = 10 chars
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation (may return 503 if OpenAI not configured)
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should reject message longer than 1000 characters with emoji', async () => {
+      // emoji '😀' counts as 2 characters in string length
+      const longText = 'a'.repeat(1000) + '😀'; // 1000 + 2 = 1002 chars
+      const req = createRequest({
+        message: longText,
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(400);
+      expect(data.fieldErrors?.message).toBeDefined();
+    });
+
+    it('should accept message at maximum allowed length', async () => {
+      // emoji '😀' counts as 2 characters, so 998 + 2 = 1000
+      const longText = 'a'.repeat(998) + '😀';
+      const req = createRequest({
+        message: longText,
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation (200/503, not 400)
+      expect([200, 503].includes(res.status)).toBe(true);
+    });
+
+    it('should handle message with newlines and emoji', async () => {
+      const req = createRequest({
+        message: 'Hello\nthere\n😀 friend',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should handle message with special characters and emoji', async () => {
+      const req = createRequest({
+        message: 'Hello! @#$%^&*() 😀 ~`[]{}|;\':",./<>?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should handle message with Unicode characters and emoji', async () => {
+      const req = createRequest({
+        message: 'こんにちは 😀 Hello 你好 مرحبا',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+  });
+
+  describe('interpreter configuration states', () => {
+    it('should return 503 when interpreter disabled', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      process.env.OPENAI_API_KEY = 'sk-test-key';
+      resetClients();
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(503);
+      expect(data.error).toContain('not configured');
+    });
+
+    it('should return 503 when both interpreter disabled and no API key', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      delete process.env.OPENAI_API_KEY;
+      resetClients();
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(503);
+      expect(data.error).toContain('not configured');
+    });
+  });
+
+  describe('platform and context validation', () => {
+    it('should accept all valid platforms', async () => {
+      const platforms = [
+        'IMESSAGE',
+        'INSTAGRAM',
+        'TIKTOK',
+        'WHATSAPP',
+        'SLACK',
+        'DISCORD',
+        'TWITTER',
+        'OTHER',
+      ];
+
+      for (const platform of platforms) {
+        const req = createRequest({
+          message: 'Hello there friend 😀 how are you today?',
+          platform,
+          context: 'FRIEND',
+        });
+
+        const res = await POST(req);
+        // Should not be a validation error
+        expect(res.status).not.toBe(400);
+      }
+    });
+
+    it('should accept all valid relationship contexts', async () => {
+      const contexts = [
+        'ROMANTIC_PARTNER',
+        'FRIEND',
+        'FAMILY',
+        'COWORKER',
+        'ACQUAINTANCE',
+        'STRANGER',
+      ];
+
+      for (const context of contexts) {
+        const req = createRequest({
+          message: 'Hello there friend 😀 how are you today?',
+          platform: 'IMESSAGE',
+          context,
+        });
+
+        const res = await POST(req);
+        // Should not be a validation error
+        expect(res.status).not.toBe(400);
+      }
+    });
+  });
+
+  describe('emoji detection', () => {
+    it('should detect single emoji', async () => {
+      const req = createRequest({
+        message: 'This is a test message 😀 with an emoji',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Validation should pass (not 400)
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should detect multiple emojis', async () => {
+      const req = createRequest({
+        message: 'Hello 👋 friend 😊 how are you? 🎉',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Validation should pass
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should detect emoji sequences (combined emojis)', async () => {
+      const req = createRequest({
+        message: 'Testing combined emoji 👨‍👩‍👧‍👦 in message',
+        platform: 'IMESSAGE',
+        context: 'FAMILY',
+      });
+
+      const res = await POST(req);
+      // Validation should pass
+      expect(res.status).not.toBe(400);
+    });
+  });
 });

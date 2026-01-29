@@ -387,5 +387,235 @@ describe('POST /api/interpret', () => {
       expect(data.fieldErrors?.message).toBeDefined();
       expect(data.fieldErrors?.message[0]).toContain('10 characters');
     });
+
+    it('should accept message at exactly 10 characters with emoji', async () => {
+      // 10 chars including emoji (emoji counts as 2 chars typically)
+      const req = createRequest({
+        message: 'Hi there😀', // "Hi there" (8) + emoji (2) = 10 chars
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should reject message longer than 1000 characters with emoji', async () => {
+      // Create a message that exceeds 1000 characters
+      // emoji '😀' counts as 2 characters in string length
+      const longText = 'a'.repeat(1000) + '😀'; // 1000 + 2 = 1002 chars
+      const req = createRequest({
+        message: longText,
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(400);
+      expect(data.fieldErrors?.message).toBeDefined();
+    });
+
+    it('should accept message at maximum allowed length', async () => {
+      // Create a message that's exactly at the max 1000 characters
+      // emoji '😀' counts as 2 characters, so 998 + 2 = 1000
+      const longText = 'a'.repeat(998) + '😀';
+      const req = createRequest({
+        message: longText,
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation (200 or 503, not 400)
+      expect([200, 503].includes(res.status)).toBe(true);
+    });
+
+    it('should handle message with only whitespace and emoji', async () => {
+      const req = createRequest({
+        message: '          😀', // 10 spaces + emoji
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation (whitespace counts as characters)
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should handle message with newlines and emoji', async () => {
+      const req = createRequest({
+        message: 'Hello\nthere\n😀 friend',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should handle message with special characters and emoji', async () => {
+      const req = createRequest({
+        message: 'Hello! @#$%^&*() 😀 ~`[]{}|;\':",./<>?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+
+    it('should handle message with Unicode characters and emoji', async () => {
+      const req = createRequest({
+        message: 'こんにちは 😀 Hello 你好 مرحبا',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      // Should pass validation
+      expect(res.status).not.toBe(400);
+    });
+  });
+
+  describe('emoji deduplication', () => {
+    it('should deduplicate repeated emojis in mock response', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello 😀 there 😀 friend 😀',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      // Should only have 1 unique emoji in the list
+      expect(data.emojis.length).toBe(1);
+      expect(data.emojis[0].character).toBe('😀');
+    });
+
+    it('should handle mixed unique and duplicate emojis', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello 😀 there 🎉 and 😀 again 🎉',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      // Should have 2 unique emojis
+      expect(data.emojis.length).toBe(2);
+    });
+  });
+
+  describe('interpreter configuration states', () => {
+    it('should return mock when interpreter enabled but no API key', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
+      delete process.env.OPENAI_API_KEY;
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.interpretation).toContain('placeholder');
+    });
+
+    it('should return mock when interpreter disabled with API key', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      process.env.OPENAI_API_KEY = 'sk-test-key';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.interpretation).toContain('placeholder');
+    });
+
+    it('should return mock when both interpreter disabled and no API key', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      delete process.env.OPENAI_API_KEY;
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.interpretation).toContain('placeholder');
+    });
+  });
+
+  describe('response structure validation', () => {
+    it('should include all required fields in mock response', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      // Verify all required InterpretationResult fields
+      expect(data.id).toMatch(/^int_/);
+      expect(data.message).toBe('Hello there friend 😀 how are you today?');
+      expect(Array.isArray(data.emojis)).toBe(true);
+      expect(typeof data.interpretation).toBe('string');
+      expect(data.metrics).toBeDefined();
+      expect(typeof data.metrics.sarcasmProbability).toBe('number');
+      expect(typeof data.metrics.passiveAggressionProbability).toBe('number');
+      expect(['positive', 'neutral', 'negative']).toContain(data.metrics.overallTone);
+      expect(typeof data.metrics.confidence).toBe('number');
+      expect(Array.isArray(data.redFlags)).toBe(true);
+      expect(data.timestamp).toBeDefined();
+    });
+
+    it('should include emoji character and meaning in mock response', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.emojis.length).toBeGreaterThan(0);
+      expect(data.emojis[0].character).toBe('😀');
+      expect(typeof data.emojis[0].meaning).toBe('string');
+    });
   });
 });
