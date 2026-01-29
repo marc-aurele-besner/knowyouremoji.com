@@ -94,11 +94,12 @@ export function PlatformSelector({
             className={cn(
               'inline-flex items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
               'min-h-[44px] min-w-[44px]',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2',
+              'dark:focus-visible:ring-offset-gray-900',
               'disabled:pointer-events-none disabled:opacity-50',
               value === platform.value
-                ? 'bg-blue-600 text-white'
-                : 'border border-gray-300 bg-white hover:bg-gray-100'
+                ? 'bg-amber-500 text-white dark:bg-amber-600'
+                : 'border border-gray-300 bg-white hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700'
             )}
           >
             <span className="text-lg" aria-hidden="true">
