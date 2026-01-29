@@ -278,5 +278,43 @@ describe('ProbabilityMeter', () => {
       );
       expect(container).toBeTruthy();
     });
+
+    it('uses custom testId when provided', () => {
+      render(<ProbabilityMeter value={50} label="Test" testId="custom-meter-id" />);
+      expect(screen.getByTestId('custom-meter-id')).toBeInTheDocument();
+      expect(screen.queryByTestId('probability-meter')).not.toBeInTheDocument();
+    });
+  });
+
+  describe('background color styling', () => {
+    it('applies green background for low zone', () => {
+      render(<ProbabilityMeter value={20} label="Test" />);
+      const meter = screen.getByTestId('probability-meter');
+      expect(meter).toHaveClass('bg-green-100');
+    });
+
+    it('applies yellow background for medium zone', () => {
+      render(<ProbabilityMeter value={50} label="Test" />);
+      const meter = screen.getByTestId('probability-meter');
+      expect(meter).toHaveClass('bg-yellow-100');
+    });
+
+    it('applies red background for high zone', () => {
+      render(<ProbabilityMeter value={80} label="Test" />);
+      const meter = screen.getByTestId('probability-meter');
+      expect(meter).toHaveClass('bg-red-100');
+    });
+
+    it('applies blue background for neutral scheme', () => {
+      render(<ProbabilityMeter value={50} label="Test" colorScheme="neutral" />);
+      const meter = screen.getByTestId('probability-meter');
+      expect(meter).toHaveClass('bg-blue-100');
+    });
+
+    it('applies orange background for warning scheme', () => {
+      render(<ProbabilityMeter value={50} label="Test" colorScheme="warning" />);
+      const meter = screen.getByTestId('probability-meter');
+      expect(meter).toHaveClass('bg-orange-100');
+    });
   });
 });

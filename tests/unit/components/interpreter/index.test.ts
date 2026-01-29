@@ -33,4 +33,9 @@ describe('interpreter component exports', () => {
     expect(InterpreterExports.formatElapsedTime(30)).toBe('30s');
     expect(InterpreterExports.formatElapsedTime(90)).toBe('1m 30s');
   });
+
+  it('exports ProbabilityMeter component', () => {
+    expect(InterpreterExports.ProbabilityMeter).toBeDefined();
+    expect(typeof InterpreterExports.ProbabilityMeter).toBe('function');
+  });
 });

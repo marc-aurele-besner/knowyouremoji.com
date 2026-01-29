@@ -12,3 +12,6 @@ export type { InterpreterFormProps, InterpreterFormData } from './interpreter-fo
 
 export { InterpretLoading, formatElapsedTime } from './interpret-loading';
 export type { InterpretLoadingProps } from './interpret-loading';
+
+export { ProbabilityMeter } from './probability-meter';
+export type { ProbabilityMeterProps } from './probability-meter';

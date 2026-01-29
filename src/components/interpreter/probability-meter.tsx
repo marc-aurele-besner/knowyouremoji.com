@@ -14,6 +14,8 @@ export interface ProbabilityMeterProps {
   colorScheme?: 'danger' | 'warning' | 'neutral';
   /** Additional CSS classes */
   className?: string;
+  /** Optional test ID for the component */
+  testId?: string;
 }
 
 type ColorZone = 'low' | 'medium' | 'high';
@@ -44,6 +46,29 @@ function getFillColorClass(zone: ColorZone, colorScheme: 'danger' | 'warning' | 
   }
 }
 
+function getBackgroundColorClass(
+  zone: ColorZone,
+  colorScheme: 'danger' | 'warning' | 'neutral'
+): string {
+  if (colorScheme === 'neutral') {
+    return 'bg-blue-100';
+  }
+
+  if (colorScheme === 'warning') {
+    return 'bg-orange-100';
+  }
+
+  // danger scheme (default)
+  switch (zone) {
+    case 'low':
+      return 'bg-green-100';
+    case 'medium':
+      return 'bg-yellow-100';
+    case 'high':
+      return 'bg-red-100';
+  }
+}
+
 function getIcon(zone: ColorZone): string {
   switch (zone) {
     case 'low':
@@ -61,6 +86,7 @@ export function ProbabilityMeter({
   description,
   colorScheme = 'danger',
   className,
+  testId,
 }: ProbabilityMeterProps) {
   const labelId = useId();
   const descriptionId = useId();
@@ -70,14 +96,15 @@ export function ProbabilityMeter({
 
   const zone = getColorZone(clampedValue);
   const fillColorClass = getFillColorClass(zone, colorScheme);
+  const bgColorClass = getBackgroundColorClass(zone, colorScheme);
   const icon = getIcon(zone);
 
   return (
     <div
-      data-testid="probability-meter"
+      data-testid={testId ?? 'probability-meter'}
       data-color-zone={zone}
       data-color-scheme={colorScheme}
-      className={cn('flex flex-col gap-1', className)}
+      className={cn('flex flex-col gap-1 rounded-lg px-3 py-2', bgColorClass, className)}
     >
       <label id={labelId} className="text-sm text-gray-600">
         {label}
