@@ -48,7 +48,7 @@ bun run validate:emojis
 
 - All emoji content stored as JSON files in `/src/data/emojis/` and `/src/data/combos/`
 - Client-side rate limiting via localStorage (3 free interpretations/day)
-- SSG for all emoji pages
+- SSG with ISR (Incremental Static Regeneration) for emoji, combo, and category pages (1-hour revalidation)
 
 **Phase 2:** Supabase integration for auth, subscriptions, and history
 
@@ -71,8 +71,8 @@ bun run validate:emojis
 
 ### Data Flow
 
-1. Emoji pages: JSON files → `emoji-data.ts` loader → SSG pages at `/emoji/[slug]`
-2. Combo pages: JSON files → `combo-data.ts` loader → SSG pages at `/combo/[slug]`
+1. Emoji pages: JSON files → `emoji-data.ts` loader → SSG/ISR pages at `/emoji/[slug]`
+2. Combo pages: JSON files → `combo-data.ts` loader → SSG/ISR pages at `/combo/[slug]`
 3. Interpreter: User input → `/api/interpret` → `interpreter.ts` service → OpenAI API → `InterpretationResult`
 4. Streaming Interpreter: User input → `/api/interpret/stream` → Vercel AI SDK streamText → Progressive text stream
 5. Rate limiting (Phase 1): localStorage tracks daily usage count
