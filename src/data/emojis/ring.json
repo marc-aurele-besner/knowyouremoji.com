@@ -8,37 +8,42 @@
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
   "baseMeaning": "A diamond ring.",
-  "tldr": "Engagement, marriage, or commitment.",
+  "tldr": "Engaged, married, or commitment.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A ring.", "example": "Engaged 💍", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "A ring.",
+      "example": "Got the ring 💍",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
       "meaning": "Put a ring on it.",
-      "example": "Wife her 💍",
+      "example": "Single ladies 💍",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Commitment.",
-      "example": "Locked in 💍",
+      "meaning": "Engagement.",
+      "example": "She said yes 💍",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Asking when engaged.",
-      "example": "When's the ring 💍",
+      "meaning": "Beyonce reference.",
+      "example": "If you liked it 💍",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Engagement posts." },
-    { "platform": "TWITTER", "note": "Relationship goals." },
-    { "platform": "WHATSAPP", "note": "Engagement news." }
+    { "platform": "TWITTER", "note": "Engagement posts." },
+    { "platform": "INSTAGRAM", "note": "Wedding content." },
+    { "platform": "TIKTOK", "note": "Proposal videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beyoncé reference." },
-    { "generation": "MILLENNIAL", "note": "Put a ring on it." },
-    { "generation": "BOOMER", "note": "Engagement." }
+    { "generation": "GEN_Z", "note": "Beyonce song." },
+    { "generation": "MILLENNIAL", "note": "Engagement." },
+    { "generation": "BOOMER", "note": "Marriage." }
   ],
   "warnings": [],
   "relatedCombos": [],

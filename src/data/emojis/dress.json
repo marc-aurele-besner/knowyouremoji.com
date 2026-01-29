@@ -8,40 +8,45 @@
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
   "baseMeaning": "A dress.",
-  "tldr": "Dressed up, fancy event, or fashion.",
+  "tldr": "Formal wear, special occasion, or fashion.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A dress.", "example": "New dress 👗", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "A dress.",
+      "example": "New dress 👗",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
       "meaning": "Getting dressed up.",
-      "example": "Going out 👗",
+      "example": "Event ready 👗",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Date outfit.",
-      "example": "Date night ready 👗",
+      "meaning": "Special occasion.",
+      "example": "Date night 👗",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Formal event.",
-      "example": "Gala ready 👗",
+      "context": "IRONIC",
+      "meaning": "Over dressed.",
+      "example": "Too much 👗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     { "platform": "INSTAGRAM", "note": "Fashion content." },
-    { "platform": "TIKTOK", "note": "OOTD content." },
-    { "platform": "TWITTER", "note": "Event outfits." }
+    { "platform": "TWITTER", "note": "Event posts." },
+    { "platform": "TIKTOK", "note": "OOTD videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fashion content." },
-    { "generation": "MILLENNIAL", "note": "Dressed up." },
-    { "generation": "BOOMER", "note": "Dress." }
+    { "generation": "GEN_Z", "note": "Fashion." },
+    { "generation": "MILLENNIAL", "note": "Special occasion." },
+    { "generation": "BOOMER", "note": "Formal wear." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👗 Dress Emoji Meaning - What Does 👗 Really Mean?",
-  "seoDescription": "Learn what the dress emoji 👗 really means. Dressed up or fashion vibes. Complete context guide."
+  "seoDescription": "Learn what the dress emoji 👗 really means. Fashion or special occasion vibes. Complete context guide."
 }

@@ -3,68 +3,50 @@
   "slug": "party-popper",
   "character": "🎉",
   "name": "Party Popper",
-  "shortName": "tada",
+  "shortName": "party-popper",
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A party popper with confetti and streamers exploding out.",
-  "tldr": "Celebration and congratulations! For achievements, good news, and festive moments.",
+  "baseMeaning": "A party popper.",
+  "tldr": "Celebration, congrats, or party time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Celebrating an achievement or good news.",
-      "example": "Got the promotion! 🎉",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Celebrating team or company achievements.",
-      "example": "Product launched! 🎉",
+      "meaning": "Party popper.",
+      "example": "Party time 🎉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing excitement or congratulations.",
-      "example": "Congrats on your new home 🎉",
+      "meaning": "Celebrating.",
+      "example": "We did it 🎉",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Achievement.",
+      "example": "Shipped 🎉",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastic celebration of something underwhelming.",
-      "example": "Only three bugs left 🎉",
+      "meaning": "Sarcastic congrats.",
+      "example": "Wow great job 🎉",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "The go-to celebration emoji for work achievements."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for announcements and celebrating milestones."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in celebratory posts and comments."
-    }
+    { "platform": "SLACK", "note": "Celebrate wins." },
+    { "platform": "TWITTER", "note": "Announcements." },
+    { "platform": "DISCORD", "note": "Hype." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Standard celebration emoji."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Very common in work and personal celebrations."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Universal celebration symbol."
-    }
+    { "generation": "GEN_Z", "note": "Celebration." },
+    { "generation": "MILLENNIAL", "note": "Party time." },
+    { "generation": "BOOMER", "note": "Congratulations." }
   ],
   "warnings": [],
-  "relatedCombos": ["party-celebrate"],
+  "relatedCombos": [],
   "seoTitle": "🎉 Party Popper Emoji Meaning - What Does 🎉 Really Mean?",
-  "seoDescription": "Learn what the party popper emoji 🎉 really means in modern texting. Celebration and congratulations. Complete context guide."
+  "seoDescription": "Learn what the party popper emoji 🎉 really means. Celebration or congrats vibes. Complete context guide."
 }
