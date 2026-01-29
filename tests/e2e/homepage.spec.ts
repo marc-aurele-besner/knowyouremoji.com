@@ -62,16 +62,16 @@ test.describe('Homepage', () => {
 
     test('should display all three feature cards', async ({ page }) => {
       await page.goto('/');
-      // Context-Aware feature
-      const contextFeature = page.locator('text=Context-Aware');
+      // Context-Aware feature (use heading role to avoid matching hero description)
+      const contextFeature = page.getByRole('heading', { name: /Context-Aware/ });
       await expect(contextFeature).toBeVisible();
 
       // Generation Guide feature
-      const generationFeature = page.locator('text=Generation Guide');
+      const generationFeature = page.getByRole('heading', { name: /Generation Guide/ });
       await expect(generationFeature).toBeVisible();
 
       // AI Interpret feature
-      const aiFeature = page.locator('text=AI Interpret');
+      const aiFeature = page.getByRole('heading', { name: /AI Interpret/ });
       await expect(aiFeature).toBeVisible();
     });
   });
