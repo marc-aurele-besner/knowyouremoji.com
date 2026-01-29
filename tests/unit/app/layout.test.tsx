@@ -277,10 +277,10 @@ describe('Root Layout Component', () => {
       Geist_Mono: () => ({ variable: '--font-geist-mono' }),
     }));
 
-    // Mock Google Analytics
+    // Mock Google Analytics - use same data-testid as google-analytics.test.tsx
     mock.module('@next/third-parties/google', () => ({
       GoogleAnalytics: ({ gaId }: { gaId: string }) => (
-        <div data-testid="google-analytics-mock" data-ga-id={gaId} />
+        <div data-testid="ga-component" data-ga-id={gaId} />
       ),
     }));
   });
