@@ -2,6 +2,7 @@
 
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { SearchBar } from '@/components/search';
 
 export interface MobileNavProps {
   isOpen: boolean;
@@ -66,6 +67,9 @@ function MobileNav({ isOpen, onClose }: MobileNavProps) {
         </div>
 
         <nav aria-label="Mobile navigation" className="px-4 py-6">
+          <div className="mb-6">
+            <SearchBar placeholder="Search emojis..." />
+          </div>
           <ul className="space-y-4">
             {navLinks.map((link) => (
               <li key={link.href}>
