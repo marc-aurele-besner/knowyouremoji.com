@@ -8,11 +8,11 @@
   "subcategory": "transport-ground",
   "unicodeVersion": "6.0",
   "baseMeaning": "A bus.",
-  "tldr": "Public transit, school bus, or trip.",
+  "tldr": "Public transit, school, or group travel.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A bus.",
+      "meaning": "Bus.",
       "example": "Taking the bus 🚌",
       "riskLevel": "LOW"
     },
@@ -25,28 +25,28 @@
     {
       "context": "WORK",
       "meaning": "Commute.",
-      "example": "Bus commute 🚌",
+      "example": "Public transit 🚌",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Wheels on the bus.",
-      "example": "Here we go 🚌",
+      "meaning": "Missing the bus.",
+      "example": "Late again 🚌",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     { "platform": "TWITTER", "note": "Transit posts." },
-    { "platform": "INSTAGRAM", "note": "Travel content." },
-    { "platform": "TIKTOK", "note": "Commute content." }
+    { "platform": "WHATSAPP", "note": "Location updates." },
+    { "platform": "INSTAGRAM", "note": "Travel content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Bussin." },
-    { "generation": "MILLENNIAL", "note": "Commute." },
-    { "generation": "BOOMER", "note": "Public transit." }
+    { "generation": "GEN_Z", "note": "Bussin memes." },
+    { "generation": "MILLENNIAL", "note": "Public transit." },
+    { "generation": "BOOMER", "note": "School bus." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🚌 Bus Emoji Meaning - What Does 🚌 Really Mean?",
-  "seoDescription": "Learn what the bus emoji 🚌 really means. Transit or commute vibes. Complete context guide."
+  "seoDescription": "Learn what the bus emoji 🚌 really means. Transit or travel vibes. Complete context guide."
 }

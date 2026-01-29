@@ -7,38 +7,43 @@
   "category": "symbols",
   "subcategory": "warning",
   "unicodeVersion": "4.0",
-  "baseMeaning": "A yellow warning triangle.",
-  "tldr": "Warning, caution, or be careful.",
+  "baseMeaning": "A warning sign.",
+  "tldr": "Caution, alert, or heads up.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Warning.", "example": "Caution ⚠️", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Warning.",
+      "example": "Caution ⚠️",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Red flag alert.",
-      "example": "Warning signs ⚠️",
+      "meaning": "Heads up.",
+      "example": "Be careful ⚠️",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Potential issue.",
-      "example": "Bug warning ⚠️",
+      "meaning": "Alert.",
+      "example": "System warning ⚠️",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Red flag ahead.",
-      "example": "Major warning ⚠️",
+      "context": "IRONIC",
+      "meaning": "Red flag.",
+      "example": "Proceed with caution ⚠️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Alerts and issues." },
-    { "platform": "TWITTER", "note": "Warning others." },
-    { "platform": "DISCORD", "note": "Server warnings." }
+    { "platform": "SLACK", "note": "System alerts." },
+    { "platform": "TWITTER", "note": "PSA." },
+    { "platform": "DISCORD", "note": "Warnings." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Red flag warnings." },
-    { "generation": "MILLENNIAL", "note": "Caution signs." },
-    { "generation": "BOOMER", "note": "Warning symbol." }
+    { "generation": "GEN_Z", "note": "Trigger warning." },
+    { "generation": "MILLENNIAL", "note": "Caution." },
+    { "generation": "BOOMER", "note": "Warning sign." }
   ],
   "warnings": [],
   "relatedCombos": [],

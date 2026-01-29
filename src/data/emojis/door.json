@@ -1,0 +1,52 @@
+{
+  "unicode": "1F6AA",
+  "slug": "door",
+  "character": "🚪",
+  "name": "Door",
+  "shortName": "door",
+  "category": "objects",
+  "subcategory": "household",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A door.",
+  "tldr": "Exit, opportunity, or leaving.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Door.",
+      "example": "Front door 🚪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Exit.",
+      "example": "I'm out 🚪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Opportunity.",
+      "example": "Door opened 🚪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Showing them out.",
+      "example": "There's the door 🚪",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Exit posts." },
+    { "platform": "SLACK", "note": "Leaving status." },
+    { "platform": "DISCORD", "note": "Logging off." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Door meme." },
+    { "generation": "MILLENNIAL", "note": "Opportunity." },
+    { "generation": "BOOMER", "note": "Exit." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🚪 Door Emoji Meaning - What Does 🚪 Really Mean?",
+  "seoDescription": "Learn what the door emoji 🚪 really means. Exit or opportunity vibes. Complete context guide."
+}

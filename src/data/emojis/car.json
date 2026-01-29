@@ -2,36 +2,51 @@
   "unicode": "1F697",
   "slug": "car",
   "character": "🚗",
-  "name": "Car",
+  "name": "Automobile",
   "shortName": "car",
   "category": "travel",
   "subcategory": "transport-ground",
   "unicodeVersion": "6.0",
   "baseMeaning": "A red car.",
-  "tldr": "Driving, road trip, or on my way.",
+  "tldr": "Driving, road trip, or transportation.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A car.", "example": "New car 🚗", "riskLevel": "LOW" },
-    { "context": "SLANG", "meaning": "On my way.", "example": "OMW 🚗", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Coming to pick you up.",
-      "example": "Be there soon 🚗",
+      "context": "LITERAL",
+      "meaning": "Car.",
+      "example": "New car 🚗",
       "riskLevel": "LOW"
     },
-    { "context": "WORK", "meaning": "Commuting.", "example": "In traffic 🚗", "riskLevel": "LOW" }
+    {
+      "context": "SLANG",
+      "meaning": "On the way.",
+      "example": "OTW 🚗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Commute.",
+      "example": "Traffic 🚗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Road rage.",
+      "example": "Traffic again 🚗",
+      "riskLevel": "LOW"
+    }
   ],
   "platformNotes": [
-    { "platform": "WHATSAPP", "note": "Commuting status." },
-    { "platform": "INSTAGRAM", "note": "Road trip content." },
-    { "platform": "TWITTER", "note": "Traffic complaints." }
+    { "platform": "WHATSAPP", "note": "ETA updates." },
+    { "platform": "INSTAGRAM", "note": "Car pics." },
+    { "platform": "TWITTER", "note": "Travel posts." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Road trip vibes." },
-    { "generation": "MILLENNIAL", "note": "Commute life." },
-    { "generation": "BOOMER", "note": "Transportation." }
+    { "generation": "GEN_Z", "note": "Uber life." },
+    { "generation": "MILLENNIAL", "note": "Car ownership." },
+    { "generation": "BOOMER", "note": "Driving." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🚗 Car Emoji Meaning - What Does 🚗 Really Mean?",
-  "seoDescription": "Learn what the car emoji 🚗 really means. On my way or road trip vibes. Complete context guide."
+  "seoDescription": "Learn what the car emoji 🚗 really means. Driving or travel vibes. Complete context guide."
 }

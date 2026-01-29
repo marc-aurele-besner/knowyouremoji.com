@@ -1,0 +1,52 @@
+{
+  "unicode": "1F6D1",
+  "slug": "stop-sign",
+  "character": "🛑",
+  "name": "Stop Sign",
+  "shortName": "stop-sign",
+  "category": "symbols",
+  "subcategory": "warning",
+  "unicodeVersion": "9.0",
+  "baseMeaning": "A stop sign.",
+  "tldr": "Stop, halt, or boundary.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Stop sign.",
+      "example": "Full stop 🛑",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Stop it.",
+      "example": "That's enough 🛑",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Blocker.",
+      "example": "Project blocked 🛑",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Boundary.",
+      "example": "Stop right there 🛑",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Blockers." },
+    { "platform": "TWITTER", "note": "Boundaries." },
+    { "platform": "DISCORD", "note": "Stop sign." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Boundaries." },
+    { "generation": "MILLENNIAL", "note": "Full stop." },
+    { "generation": "BOOMER", "note": "Stop sign." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🛑 Stop Sign Emoji Meaning - What Does 🛑 Really Mean?",
+  "seoDescription": "Learn what the stop sign emoji 🛑 really means. Stop or boundary vibes. Complete context guide."
+}
