@@ -4,49 +4,49 @@
   "character": "🐼",
   "name": "Panda",
   "shortName": "panda",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A panda face with black and white markings.",
-  "tldr": "Adorable and rare! Pandas or being cuddly.",
+  "baseMeaning": "A panda face.",
+  "tldr": "Panda! Cute or clumsy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pandas.",
-      "example": "Panda at the zoo 🐼",
+      "meaning": "Represents a panda.",
+      "example": "Panda bear 🐼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being cuddly or having eye circles.",
-      "example": "No sleep, looking like a 🐼",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Cuddly term of endearment.",
-      "example": "My panda 🐼",
+      "meaning": "Cute, cuddly, or lazy.",
+      "example": "Being a panda today 🐼",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Lazy or endangered.",
-      "example": "My energy levels 🐼",
+      "meaning": "Lazy or clumsy.",
+      "example": "Panda energy 🐼",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Relaxed mode.",
+      "example": "Casual Friday panda 🐼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Cute and aesthetic content." },
-    { "platform": "TWITTER", "note": "Used for cute references." },
-    { "platform": "TIKTOK", "note": "Popular in cute videos." }
+    { "platform": "TWITTER", "note": "Cute and cuddly." },
+    { "platform": "INSTAGRAM", "note": "Cute animal content." },
+    { "platform": "TIKTOK", "note": "Panda videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cute and sleepy vibes." },
-    { "generation": "MILLENNIAL", "note": "Panda love." },
-    { "generation": "BOOMER", "note": "The animal." }
+    { "generation": "GEN_Z", "note": "Cute and cuddly." },
+    { "generation": "MILLENNIAL", "note": "WWF panda." },
+    { "generation": "BOOMER", "note": "Endangered bear." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🐼 Panda Emoji Meaning",
-  "seoDescription": "Learn what the panda emoji 🐼 really means. Cuddly and adorable."
+  "seoDescription": "Learn what the Panda emoji 🐼 really means."
 }

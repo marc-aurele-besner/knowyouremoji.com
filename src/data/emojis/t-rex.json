@@ -3,45 +3,50 @@
   "slug": "t-rex",
   "character": "🦖",
   "name": "T-Rex",
-  "shortName": "trex",
+  "shortName": "t-rex",
   "category": "animals",
   "subcategory": "animal-reptile",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A Tyrannosaurus Rex dinosaur.",
-  "tldr": "Dinosaur, extinct, or tiny arms meme.",
+  "baseMeaning": "A Tyrannosaurus Rex.",
+  "tldr": "T-Rex! Powerful or short arms joke.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A T-Rex.", "example": "Rawr 🦖", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents a T-Rex.",
+      "example": "Rawr 🦖",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Outdated or extinct.",
-      "example": "That's ancient 🦖",
+      "meaning": "Short arms or can't reach.",
+      "example": "T-Rex arms 🦖",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Tiny arms joke.",
-      "example": "Can't reach 🦖",
+      "meaning": "Can't reach something.",
+      "example": "Me trying to reach 🦖",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Rawr means I love you.",
-      "example": "Rawr XD 🦖",
+      "context": "WORK",
+      "meaning": "Powerful but limited.",
+      "example": "Big but can't reach 🦖",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Dinosaur and memes." },
-    { "platform": "INSTAGRAM", "note": "Jurassic content." },
-    { "platform": "TIKTOK", "note": "Rawr memes." }
+    { "platform": "TWITTER", "note": "Short arms jokes." },
+    { "platform": "INSTAGRAM", "note": "Dinosaur content." },
+    { "platform": "TIKTOK", "note": "Dino content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Tiny arms meme." },
-    { "generation": "MILLENNIAL", "note": "Rawr XD era." },
+    { "generation": "GEN_Z", "note": "T-Rex arms meme." },
+    { "generation": "MILLENNIAL", "note": "Jurassic Park." },
     { "generation": "BOOMER", "note": "Dinosaur." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦖 T-Rex Emoji Meaning - What Does 🦖 Really Mean?",
-  "seoDescription": "Learn what the T-Rex emoji 🦖 really means. Dinosaur or tiny arms vibes. Complete context guide."
+  "seoTitle": "🦖 T-Rex Emoji Meaning",
+  "seoDescription": "Learn what the T-Rex emoji 🦖 really means."
 }

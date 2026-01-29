@@ -7,46 +7,41 @@
   "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A tiger, the striped big cat.",
-  "tldr": "Fierceness, power, wild nature. Often used for strength or Tiger King references.",
+  "baseMeaning": "A tiger.",
+  "tldr": "Tiger! Fierce or powerful.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A tiger or big cat.",
-      "example": "Zoo day 🐅",
+      "meaning": "Represents a tiger.",
+      "example": "Tiger stripes 🐅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being fierce or powerful.",
-      "example": "She's a tiger 🐅",
+      "meaning": "Fierce, powerful, or Year of Tiger.",
+      "example": "Tiger mode 🐅",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Tiger King references.",
-      "example": "That's wild 🐅",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Acting fierce.", "example": "Rawr 🐅", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Going after goals aggressively.",
-      "example": "Tiger mode activated 🐅",
+      "meaning": "Aggressive approach.",
+      "example": "Go get it tiger 🐅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Wild and fierce content." },
-    { "platform": "TWITTER", "note": "Power and strength." },
-    { "platform": "TIKTOK", "note": "Tiger King memes." }
+    { "platform": "TWITTER", "note": "Fierce and powerful." },
+    { "platform": "INSTAGRAM", "note": "Animal aesthetic." },
+    { "platform": "TIKTOK", "note": "Tiger content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Pop culture references." },
-    { "generation": "MILLENNIAL", "note": "Fierce energy." },
-    { "generation": "BOOMER", "note": "Strength symbol." }
+    { "generation": "GEN_Z", "note": "Fierce energy." },
+    { "generation": "MILLENNIAL", "note": "Tiger King era." },
+    { "generation": "BOOMER", "note": "Wild animal." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐅 Tiger Emoji Meaning - What Does 🐅 Really Mean?",
-  "seoDescription": "Learn what the tiger emoji 🐅 really means. Fierce, powerful, or wild. Complete context guide."
+  "seoTitle": "🐅 Tiger Emoji Meaning",
+  "seoDescription": "Learn what the Tiger emoji 🐅 really means."
 }

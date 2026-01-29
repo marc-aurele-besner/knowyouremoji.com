@@ -4,67 +4,49 @@
   "character": "🦙",
   "name": "Llama",
   "shortName": "llama",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A llama, the South American camelid known for its wool and as a pack animal.",
-  "tldr": "Llama! Used for the animal, drama llama memes, or South American references.",
+  "baseMeaning": "A llama.",
+  "tldr": "Llama! Drama or no drama.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The animal llama or alpaca-related content.",
-      "example": "Visiting a llama farm 🦙",
+      "meaning": "Represents a llama.",
+      "example": "Cute llama 🦙",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Drama llama - someone who creates or loves drama.",
-      "example": "Here comes the drama 🦙",
+      "meaning": "Save the drama for your llama.",
+      "example": "No drama llama 🦙",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Random cute animal energy.",
-      "example": "No thoughts just vibes 🦙",
+      "meaning": "Avoiding drama.",
+      "example": "Not my drama 🦙",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "AI/ML references (Meta's LLaMA model).",
-      "example": "Testing the new LLaMA model 🦙",
+      "meaning": "Staying out of office drama.",
+      "example": "Drama-free zone 🦙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for AI/ML content and drama llama memes."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in cute animal and travel content."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Sometimes used in tech contexts for LLaMA AI model."
-    }
+    { "platform": "TWITTER", "note": "No drama llama." },
+    { "platform": "INSTAGRAM", "note": "Cute animal." },
+    { "platform": "TIKTOK", "note": "Llama content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Drama llama memes and random cute vibes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Known from drama llama internet culture."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Usually interpreted as the animal."
-    }
+    { "generation": "GEN_Z", "note": "No drama llama." },
+    { "generation": "MILLENNIAL", "note": "Fortnite llama." },
+    { "generation": "BOOMER", "note": "Pack animal." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦙 Llama Emoji Meaning - What Does 🦙 Really Mean?",
-  "seoDescription": "Learn what the llama emoji 🦙 really means. Used for the animal, drama llama memes, or AI references. Complete context guide."
+  "seoTitle": "🦙 Llama Emoji Meaning",
+  "seoDescription": "Learn what the Llama emoji 🦙 really means."
 }

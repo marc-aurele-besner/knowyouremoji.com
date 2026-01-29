@@ -4,67 +4,44 @@
   "character": "🦥",
   "name": "Sloth",
   "shortName": "sloth",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "12.0",
-  "baseMeaning": "A sloth, the slow-moving mammal known for hanging from trees.",
-  "tldr": "Slow and relaxed! Used for laziness, taking it easy, or slow vibes.",
+  "baseMeaning": "A sloth.",
+  "tldr": "Sloth! Lazy or slow.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The animal sloth or sloth-related content.",
-      "example": "Sloths are my spirit animal 🦥",
+      "meaning": "Represents a sloth.",
+      "example": "Sloth mode 🦥",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being lazy or moving slowly.",
-      "example": "Sunday morning energy 🦥",
+      "meaning": "Lazy or taking it slow.",
+      "example": "Weekend sloth 🦥",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-deprecating about being slow or unproductive.",
-      "example": "My productivity today 🦥",
+      "meaning": "Being lazy on purpose.",
+      "example": "My productivity 🦥",
       "riskLevel": "LOW"
     },
-    {
-      "context": "WORK",
-      "meaning": "Joking about slow progress or relaxed pace.",
-      "example": "Taking my time on this one 🦥",
-      "riskLevel": "LOW"
-    }
+    { "context": "WORK", "meaning": "Slow day.", "example": "Friday vibes 🦥", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for lazy day posts and slow productivity jokes."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for cozy and relaxation content."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used for jokes about slow work days."
-    }
+    { "platform": "TWITTER", "note": "Lazy vibes." },
+    { "platform": "INSTAGRAM", "note": "Self-care and rest." },
+    { "platform": "TIKTOK", "note": "Sloth content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Spirit animal for lazy days."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for self-deprecating laziness jokes."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Usually interpreted as the cute animal."
-    }
+    { "generation": "GEN_Z", "note": "Lazy energy." },
+    { "generation": "MILLENNIAL", "note": "Self-care sloth." },
+    { "generation": "BOOMER", "note": "Slow animal." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦥 Sloth Emoji Meaning - What Does 🦥 Really Mean?",
-  "seoDescription": "Learn what the sloth emoji 🦥 really means. Used for laziness, relaxation, or slow vibes. Complete context guide."
+  "seoTitle": "🦥 Sloth Emoji Meaning",
+  "seoDescription": "Learn what the Sloth emoji 🦥 really means."
 }

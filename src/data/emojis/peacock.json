@@ -4,67 +4,49 @@
   "character": "🦚",
   "name": "Peacock",
   "shortName": "peacock",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-bird",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A peacock displaying its colorful tail feathers.",
-  "tldr": "Show off! Used for being flashy, showing off, or beauty and elegance.",
+  "baseMeaning": "A peacock with feathers.",
+  "tldr": "Peacock! Showing off or beautiful.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The bird peacock or peacock-related content.",
-      "example": "Beautiful peacocks at the zoo 🦚",
+      "meaning": "Represents a peacock.",
+      "example": "Beautiful peacock 🦚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Showing off or being flashy.",
-      "example": "Time to flex 🦚",
+      "meaning": "Showing off or being proud.",
+      "example": "Peacocking 🦚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-aware bragging or attention-seeking.",
-      "example": "Just gonna peacock a little 🦚",
+      "meaning": "Being extra.",
+      "example": "Me with new outfit 🦚",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Dressing up to impress or showing your best self.",
-      "example": "Getting ready for the date 🦚",
+      "meaning": "Showing off to attract.",
+      "example": "Peacock mode on 🦚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used for fashion and showing off looks."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for humble brags and flexing."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Popular in fashion and transformation content."
-    }
+    { "platform": "TWITTER", "note": "Showing off." },
+    { "platform": "INSTAGRAM", "note": "Beautiful displays." },
+    { "platform": "TIKTOK", "note": "Flex content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for flexing and being unapologetically flashy."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Commonly used for showing off accomplishments."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret as the beautiful bird."
-    }
+    { "generation": "GEN_Z", "note": "Flexing." },
+    { "generation": "MILLENNIAL", "note": "Peacocking term." },
+    { "generation": "BOOMER", "note": "Beautiful bird." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦚 Peacock Emoji Meaning - What Does 🦚 Really Mean?",
-  "seoDescription": "Learn what the peacock emoji 🦚 really means. Used for showing off, being flashy, or displaying beauty. Complete context guide."
+  "seoTitle": "🦚 Peacock Emoji Meaning",
+  "seoDescription": "Learn what the Peacock emoji 🦚 really means."
 }

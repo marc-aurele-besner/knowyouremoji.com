@@ -4,49 +4,49 @@
   "character": "🦁",
   "name": "Lion",
   "shortName": "lion",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A lion face with a mane.",
-  "tldr": "King of the jungle! Lions or courage.",
+  "baseMeaning": "A lion face.",
+  "tldr": "Lion! King of the jungle or courage.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Lions.",
-      "example": "Lion at the safari 🦁",
+      "meaning": "Represents a lion.",
+      "example": "Lion King 🦁",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Courage or being fierce.",
-      "example": "Lion energy 🦁",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Leadership or bravery.",
-      "example": "Lead like a 🦁",
+      "meaning": "Brave, king, or Leo zodiac.",
+      "example": "Leo energy 🦁",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to be brave.",
-      "example": "Me facing Monday 🦁",
+      "meaning": "Feeling fierce but not.",
+      "example": "Me after one pushup 🦁",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Leadership or courage.",
+      "example": "Lead like a lion 🦁",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for courage and strength." },
-    { "platform": "INSTAGRAM", "note": "Motivation content." },
-    { "platform": "TIKTOK", "note": "Lion energy videos." }
+    { "platform": "TWITTER", "note": "Courage and zodiac." },
+    { "platform": "INSTAGRAM", "note": "Fierce aesthetic." },
+    { "platform": "TIKTOK", "note": "Lion content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fierce energy." },
-    { "generation": "MILLENNIAL", "note": "King of jungle." },
-    { "generation": "BOOMER", "note": "The lion animal." }
+    { "generation": "GEN_Z", "note": "Leo zodiac or fierce." },
+    { "generation": "MILLENNIAL", "note": "Lion King nostalgia." },
+    { "generation": "BOOMER", "note": "King of jungle." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦁 Lion Emoji Meaning",
-  "seoDescription": "Learn what the lion emoji 🦁 really means. Courage and strength."
+  "seoDescription": "Learn what the Lion emoji 🦁 really means."
 }

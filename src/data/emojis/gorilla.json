@@ -4,49 +4,49 @@
   "character": "🦍",
   "name": "Gorilla",
   "shortName": "gorilla",
-  "category": "animals-nature",
+  "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A gorilla face.",
-  "tldr": "Strong and powerful! Gorillas or strength.",
+  "baseMeaning": "A gorilla.",
+  "tldr": "Gorilla! Strong or ape together strong.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Gorillas.",
-      "example": "Gorilla at zoo 🦍",
+      "meaning": "Represents a gorilla.",
+      "example": "Strong gorilla 🦍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being strong or buff.",
-      "example": "Gym gains 🦍",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Heavy lifting.",
-      "example": "Moving day 🦍",
+      "meaning": "Apes together strong (crypto/stocks).",
+      "example": "Diamond hands 🦍",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Acting tough.",
-      "example": "Me vs bugs 🦍",
+      "meaning": "Being strong.",
+      "example": "Return to monke 🦍",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Team strength.",
+      "example": "Team strong 🦍",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Fitness and strength." },
-    { "platform": "INSTAGRAM", "note": "Gym content." },
-    { "platform": "DISCORD", "note": "Gaming strength." }
+    { "platform": "TWITTER", "note": "Crypto and stock culture." },
+    { "platform": "INSTAGRAM", "note": "Strong content." },
+    { "platform": "DISCORD", "note": "WSB ape culture." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gym bro energy." },
-    { "generation": "MILLENNIAL", "note": "Strong vibes." },
-    { "generation": "BOOMER", "note": "Gorilla animal." }
+    { "generation": "GEN_Z", "note": "Return to monke meme." },
+    { "generation": "MILLENNIAL", "note": "Apes together strong." },
+    { "generation": "BOOMER", "note": "Great ape." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦍 Gorilla Emoji Meaning",
-  "seoDescription": "Learn what the gorilla emoji 🦍 really means."
+  "seoDescription": "Learn what the Gorilla emoji 🦍 really means."
 }
