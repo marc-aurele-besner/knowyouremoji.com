@@ -2,13 +2,13 @@
 
 import { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
-import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ProbabilityMeter } from './probability-meter';
 import { PassiveAggressionMeter } from './passive-aggression-meter';
-import type { InterpretationResult, DetectedEmoji, RedFlag } from '@/types';
+import { RedFlagBadge } from './red-flag-badge';
+import type { InterpretationResult, DetectedEmoji } from '@/types';
 
 export interface InterpretResultProps {
   result: InterpretationResult;
@@ -56,54 +56,6 @@ function EmojiBreakdownCard({ emoji, index, onEmojiClick }: EmojiBreakdownCardPr
         </div>
       </CardContent>
     </Card>
-  );
-}
-
-interface RedFlagItemProps {
-  flag: RedFlag;
-}
-
-function RedFlagItem({ flag }: RedFlagItemProps) {
-  const getSeverityClass = (severity: RedFlag['severity']) => {
-    switch (severity) {
-      case 'high':
-        return 'border-red-500 bg-red-50';
-      case 'medium':
-        return 'border-yellow-500 bg-yellow-50';
-      case 'low':
-        return 'border-blue-500 bg-blue-50';
-      default:
-        return 'border-gray-500 bg-gray-50';
-    }
-  };
-
-  const getSeverityLabel = (severity: RedFlag['severity']) => {
-    return severity.charAt(0).toUpperCase() + severity.slice(1);
-  };
-
-  return (
-    <div
-      data-testid="red-flag-item"
-      className={cn('border-l-4 rounded-r-lg p-4', getSeverityClass(flag.severity))}
-    >
-      <div className="flex items-center gap-2 mb-1">
-        <span className="text-red-500">⚠️</span>
-        <span className="font-medium text-gray-900 capitalize">{flag.type.replace(/_/g, ' ')}</span>
-        <Badge
-          variant={
-            flag.severity === 'high'
-              ? 'destructive'
-              : flag.severity === 'medium'
-                ? 'warning'
-                : 'secondary'
-          }
-          className="text-xs"
-        >
-          {getSeverityLabel(flag.severity)}
-        </Badge>
-      </div>
-      <p className="text-sm text-gray-600">{flag.description}</p>
-    </div>
   );
 }
 
@@ -291,7 +243,7 @@ export function InterpretResult({
           </h3>
           <div className="space-y-3">
             {result.redFlags.map((flag, index) => (
-              <RedFlagItem key={`${flag.type}-${index}`} flag={flag} />
+              <RedFlagBadge key={`${flag.type}-${index}`} flag={flag} />
             ))}
           </div>
         </section>
