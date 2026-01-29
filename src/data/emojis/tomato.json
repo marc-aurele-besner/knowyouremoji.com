@@ -8,63 +8,45 @@
   "subcategory": "food-vegetable",
   "unicodeVersion": "6.0",
   "baseMeaning": "A red tomato.",
-  "tldr": "Tomatoes, being 'tomato-faced' (embarrassed), or throwing tomatoes at bad performances.",
+  "tldr": "Rotten Tomatoes, booing, or fresh produce.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Tomatoes or cooking.",
-      "example": "Fresh tomatoes from the garden 🍅",
+      "meaning": "A tomato.",
+      "example": "Fresh tomato 🍅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Blushing or being embarrassed.",
-      "example": "Turning tomato red 🍅",
+      "meaning": "Throwing tomatoes - booing.",
+      "example": "That was bad 🍅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Rotten Tomatoes rating.",
+      "example": "RT score 🍅",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Throwing tomatoes at bad content.",
-      "example": "That deserves tomatoes 🍅🍅🍅",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Blushing from flirting.",
-      "example": "You're making me blush 🍅",
+      "meaning": "Fruit or vegetable debate.",
+      "example": "Is it a fruit? 🍅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Food content and embarrassment."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Food and gardening content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Cooking content and reactions."
-    }
+    { "platform": "TWITTER", "note": "Movie ratings and reviews." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Cooking content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Embarrassment and food."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Throwing tomatoes at bad performances."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Gardening and cooking."
-    }
+    { "generation": "GEN_Z", "note": "Rotten Tomatoes." },
+    { "generation": "MILLENNIAL", "note": "Throwing tomatoes." },
+    { "generation": "BOOMER", "note": "Garden produce." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍅 Tomato Emoji Meaning - What Does 🍅 Really Mean?",
-  "seoDescription": "Learn what the tomato emoji 🍅 really means in texting. Food, embarrassment, or disapproval. Complete context guide."
+  "seoDescription": "Learn what the tomato emoji 🍅 really means. Rotten Tomatoes or booing vibes. Complete context guide."
 }
