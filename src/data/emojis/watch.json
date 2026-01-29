@@ -7,46 +7,64 @@
   "category": "objects",
   "subcategory": "time",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A wristwatch.",
-  "tldr": "Time, punctuality, or Apple Watch.",
+  "baseMeaning": "A wristwatch for telling time.",
+  "tldr": "Time check! Used for time, watches, or being punctual.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Wristwatch.",
-      "example": "Check the time ⌚",
+      "meaning": "A watch or time reference.",
+      "example": "New Apple Watch ⌚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Flex watch.",
-      "example": "New watch ⌚",
+      "meaning": "Checking the time or being time-conscious.",
+      "example": "Is it 5pm yet ⌚",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "On time.",
-      "example": "Punctual ⌚",
+      "meaning": "Time management or deadlines.",
+      "example": "Time's ticking ⌚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Watch out.",
-      "example": "Tick tock ⌚",
+      "meaning": "Impatience or time awareness.",
+      "example": "Watching the clock ⌚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Time posts." },
-    { "platform": "INSTAGRAM", "note": "Watch flex." },
-    { "platform": "TIKTOK", "note": "Luxury content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for time references and smartwatch content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in fashion and tech posts."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Used for time management and deadlines."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Smart watch." },
-    { "generation": "MILLENNIAL", "note": "Fitness tracker." },
-    { "generation": "BOOMER", "note": "Traditional watch." }
+    {
+      "generation": "GEN_Z",
+      "note": "Smartwatch and time references."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Watch fashion and time management."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Classic wristwatch."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⌚ Watch Emoji Meaning - What Does ⌚ Really Mean?",
-  "seoDescription": "Learn what the watch emoji ⌚ really means. Time or flex vibes. Complete context guide."
+  "seoDescription": "Learn what the watch emoji ⌚ really means. Used for time and punctuality. Complete context guide."
 }

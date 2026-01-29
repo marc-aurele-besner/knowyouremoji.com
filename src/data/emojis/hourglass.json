@@ -7,46 +7,64 @@
   "category": "objects",
   "subcategory": "time",
   "unicodeVersion": "1.1",
-  "baseMeaning": "An hourglass with sand at bottom.",
-  "tldr": "Time's up, waiting, or patience.",
+  "baseMeaning": "An hourglass with sand that has run out.",
+  "tldr": "Time's up! Used for time passing, patience, or running out of time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Hourglass.",
-      "example": "Time has passed ⌛",
+      "meaning": "Time has passed or elapsed.",
+      "example": "Time's up ⌛",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Hourglass figure.",
-      "example": "Body goals ⌛",
+      "meaning": "Waiting or patience.",
+      "example": "Still waiting ⌛",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Time expired.",
-      "example": "Deadline passed ⌛",
+      "meaning": "Deadline approaching or time running out.",
+      "example": "Deadline ⌛",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Still waiting.",
-      "example": "How long ⌛",
+      "meaning": "Dramatic time reference.",
+      "example": "My patience ⌛",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Time posts." },
-    { "platform": "INSTAGRAM", "note": "Body positivity." },
-    { "platform": "SLACK", "note": "Waiting." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for countdowns and time pressure."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Common for deadlines and waiting."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in countdown and anticipation posts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Body reference." },
-    { "generation": "MILLENNIAL", "note": "Time passing." },
-    { "generation": "BOOMER", "note": "Patience." }
+    {
+      "generation": "GEN_Z",
+      "note": "Time pressure and dramatic effect."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Deadlines and time passing."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Classic time symbol."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⌛ Hourglass Emoji Meaning - What Does ⌛ Really Mean?",
-  "seoDescription": "Learn what the hourglass emoji ⌛ really means. Time or figure vibes. Complete context guide."
+  "seoDescription": "Learn what the hourglass emoji ⌛ really means. Used for time passing and deadlines. Complete context guide."
 }
