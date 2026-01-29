@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getComboBySlug, getAllComboSlugs, getRelatedCombos } from '@/lib/combo-data';
+import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -8,8 +9,8 @@ import { ComboHeader } from '@/components/combo/combo-header';
 import { ComboJsonLd } from '@/components/seo/combo-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { RelatedCombosSection } from '@/components/combo/related-combos-section';
 import type { Metadata } from 'next';
-import type { EmojiComboSummary } from '@/types/combo';
 
 interface ComboPageProps {
   params: Promise<{ slug: string }>;
@@ -94,24 +95,23 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
 }
 
 /**
- * Related combo card component
+ * Emoji link with character display
  */
-function RelatedComboCard({ combo }: { combo: EmojiComboSummary }) {
+interface EmojiLinkInfo {
+  slug: string;
+  character: string;
+  name: string;
+}
+
+function EmojiLinkCard({ emoji }: { emoji: EmojiLinkInfo }) {
   return (
     <Link
-      href={`/combo/${combo.slug}`}
-      className="block border rounded-lg p-4 bg-card dark:bg-card hover:border-primary hover:shadow-md transition-all"
-      aria-label={`${combo.name} combo`}
+      href={`/emoji/${emoji.slug}`}
+      className="inline-flex items-center gap-2 px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
+      aria-label={`${emoji.name} emoji`}
     >
-      <div className="flex items-start gap-4">
-        <span className="text-3xl shrink-0">{combo.combo}</span>
-        <div className="min-w-0 flex-1">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">
-            {combo.name}
-          </h3>
-          <p className="text-xs text-muted-foreground line-clamp-2">{combo.meaning}</p>
-        </div>
-      </div>
+      <span className="text-xl">{emoji.character}</span>
+      <span className="text-gray-700 dark:text-gray-300">{emoji.name}</span>
     </Link>
   );
 }
@@ -130,6 +130,14 @@ export default async function ComboPage({ params }: ComboPageProps) {
 
   // Get related combos
   const relatedCombos = getRelatedCombos(slug, 6);
+
+  // Get emoji info for each emoji in the combo
+  const emojiLinks: EmojiLinkInfo[] = combo.emojis
+    .map((emojiSlug) => {
+      const emoji = getEmojiBySlug(emojiSlug);
+      return emoji ? { slug: emojiSlug, character: emoji.character, name: emoji.name } : null;
+    })
+    .filter((emoji): emoji is EmojiLinkInfo => emoji !== null);
 
   // Breadcrumb items for navigation
   const breadcrumbItems = [
@@ -203,20 +211,14 @@ export default async function ComboPage({ params }: ComboPageProps) {
         )}
 
         {/* Emojis in this Combo Section */}
-        {combo.emojis.length > 0 && (
+        {emojiLinks.length > 0 && (
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
               Emojis in this Combo
             </h2>
             <div className="flex flex-wrap gap-2">
-              {combo.emojis.map((emojiSlug) => (
-                <Link
-                  key={emojiSlug}
-                  href={`/emoji/${emojiSlug}`}
-                  className="inline-flex items-center px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
-                >
-                  {emojiSlug}
-                </Link>
+              {emojiLinks.map((emoji) => (
+                <EmojiLinkCard key={emoji.slug} emoji={emoji} />
               ))}
             </div>
           </section>
@@ -237,18 +239,7 @@ export default async function ComboPage({ params }: ComboPageProps) {
         )}
 
         {/* Related Combos Section */}
-        {relatedCombos.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Related Combos
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {relatedCombos.map((relatedCombo) => (
-                <RelatedComboCard key={relatedCombo.slug} combo={relatedCombo} />
-              ))}
-            </div>
-          </section>
-        )}
+        {relatedCombos.length > 0 && <RelatedCombosSection combos={relatedCombos} />}
       </main>
     </>
   );
