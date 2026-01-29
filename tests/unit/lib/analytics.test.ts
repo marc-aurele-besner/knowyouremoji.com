@@ -198,4 +198,66 @@ describe('analytics', () => {
       });
     });
   });
+
+  describe('error handling', () => {
+    it('silently catches errors when sendGAEvent throws', () => {
+      // Make sendGAEvent throw an error
+      mockSendGAEvent.mockImplementation(() => {
+        throw new Error('GA not loaded');
+      });
+
+      // Should not throw
+      expect(() => emojiEvents.view('🔥', 'fire', 'travel')).not.toThrow();
+    });
+
+    it('logs to console.debug in development when sendGAEvent throws', () => {
+      const originalNodeEnv = process.env.NODE_ENV;
+      const mockDebug = mock(() => {});
+      const originalDebug = console.debug;
+      console.debug = mockDebug;
+
+      // Set development environment
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'development';
+
+      // Make sendGAEvent throw an error
+      mockSendGAEvent.mockImplementation(() => {
+        throw new Error('GA not loaded');
+      });
+
+      // Trigger an event
+      emojiEvents.copy('😀', 'grinning');
+
+      // Verify console.debug was called
+      expect(mockDebug).toHaveBeenCalled();
+
+      // Restore
+      console.debug = originalDebug;
+      (process.env as Record<string, string | undefined>).NODE_ENV = originalNodeEnv;
+    });
+
+    it('does not log to console.debug in production when sendGAEvent throws', () => {
+      const originalNodeEnv = process.env.NODE_ENV;
+      const mockDebug = mock(() => {});
+      const originalDebug = console.debug;
+      console.debug = mockDebug;
+
+      // Set production environment
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+
+      // Make sendGAEvent throw an error
+      mockSendGAEvent.mockImplementation(() => {
+        throw new Error('GA not loaded');
+      });
+
+      // Trigger an event
+      emojiEvents.search('test', 5);
+
+      // Verify console.debug was NOT called
+      expect(mockDebug).not.toHaveBeenCalled();
+
+      // Restore
+      console.debug = originalDebug;
+      (process.env as Record<string, string | undefined>).NODE_ENV = originalNodeEnv;
+    });
+  });
 });

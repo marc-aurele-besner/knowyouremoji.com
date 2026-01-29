@@ -1,6 +1,14 @@
-import { describe, it, expect, afterEach } from 'bun:test';
-import { render, screen, cleanup } from '@testing-library/react';
+import { describe, it, expect, afterEach, mock } from 'bun:test';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Footer } from '@/components/layout/footer';
+
+// Mock analytics
+const mockExternalLinkClick = mock(() => {});
+mock.module('@/lib/analytics', () => ({
+  engagementEvents: {
+    externalLinkClick: mockExternalLinkClick,
+  },
+}));
 
 afterEach(() => {
   cleanup();
@@ -95,5 +103,17 @@ describe('Footer', () => {
     );
     expect(githubLink).toHaveAttribute('target', '_blank');
     expect(githubLink).toHaveAttribute('rel', 'noopener noreferrer');
+  });
+
+  it('tracks external link click on GitHub link', () => {
+    render(<Footer />);
+    const githubLink = screen.getByRole('link', { name: /open source on github/i });
+
+    fireEvent.click(githubLink);
+
+    expect(mockExternalLinkClick).toHaveBeenCalledWith(
+      'https://github.com/marc-aurele-besner/knowyouremoji.com',
+      'Open Source on GitHub'
+    );
   });
 });
