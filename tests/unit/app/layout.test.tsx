@@ -1,4 +1,5 @@
-import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
+import { describe, expect, test, beforeEach, afterEach, mock } from 'bun:test';
+import { render } from '@testing-library/react';
 
 // Store original env
 const originalEnv = { ...process.env };
@@ -303,5 +304,39 @@ describe('Root Layout Metadata', () => {
       const alternates = siteMetadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://knowyouremoji.com');
     });
+  });
+});
+
+describe('Root Layout Component', () => {
+  beforeEach(() => {
+    // Mock the fonts since they can't be loaded in tests
+    mock.module('next/font/google', () => ({
+      Geist: () => ({ variable: '--font-geist-sans' }),
+      Geist_Mono: () => ({ variable: '--font-geist-mono' }),
+    }));
+
+    // Mock Vercel Analytics
+    mock.module('@vercel/analytics/react', () => ({
+      Analytics: () => <div data-testid="vercel-analytics-mock" />,
+    }));
+  });
+
+  test('should include VercelAnalytics component', async () => {
+    // Set non-test environment to render analytics
+    (process.env as Record<string, string | undefined>).NODE_ENV = 'development';
+
+    const { VercelAnalytics } = await import('../../../src/components/analytics/vercel-analytics');
+
+    const { getByTestId } = render(<VercelAnalytics />);
+    expect(getByTestId('vercel-analytics-mock')).toBeDefined();
+  });
+
+  test('should not render VercelAnalytics in test environment', async () => {
+    (process.env as Record<string, string | undefined>).NODE_ENV = 'test';
+
+    const { VercelAnalytics } = await import('../../../src/components/analytics/vercel-analytics');
+
+    const { container } = render(<VercelAnalytics />);
+    expect(container.innerHTML).toBe('');
   });
 });
