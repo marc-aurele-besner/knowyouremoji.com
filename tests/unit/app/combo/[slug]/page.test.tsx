@@ -14,6 +14,23 @@ mock.module('@/lib/combo-data', () => ({
   getRelatedCombos: mockGetRelatedCombos,
 }));
 
+// Mock the emoji-data module for emoji lookup
+const mockEmojiData: Record<string, { character: string; name: string }> = {
+  skull: { character: '💀', name: 'Skull' },
+  'face-with-tears-of-joy': { character: '😂', name: 'Face with Tears of Joy' },
+  'grinning-face': { character: '😀', name: 'Grinning Face' },
+  'thumbs-up': { character: '👍', name: 'Thumbs Up' },
+  fire: { character: '🔥', name: 'Fire' },
+  'hundred-points': { character: '💯', name: 'Hundred Points' },
+};
+
+mock.module('@/lib/emoji-data', () => ({
+  getEmojiBySlug: (slug: string) => {
+    const data = mockEmojiData[slug];
+    return data ? { slug, character: data.character, name: data.name } : undefined;
+  },
+}));
+
 // Mock next/navigation
 const mockNotFound = mock(() => {
   throw new Error('NEXT_NOT_FOUND');
