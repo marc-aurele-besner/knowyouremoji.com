@@ -7,46 +7,41 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A red boxing glove.",
-  "tldr": "Fighting, ready to fight, or throwing punches.",
+  "baseMeaning": "Boxing Glove emoji.",
+  "tldr": "Boxing!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Boxing.",
-      "example": "Boxing workout 🥊",
+      "meaning": "Represents Boxing Glove.",
+      "example": "Look at this 🥊",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Ready to fight or argue.",
-      "example": "Let's go 🥊",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Tough negotiations.",
-      "example": "Fighting for the deal 🥊",
+      "meaning": "Fight or training.",
+      "example": "Feeling 🥊",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🥊", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Monday morning.",
-      "example": "Ready for the week 🥊",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🥊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Debates and fights." },
-    { "platform": "INSTAGRAM", "note": "Fitness content." },
-    { "platform": "TIKTOK", "note": "Workout content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fighting energy." },
-    { "generation": "MILLENNIAL", "note": "Fitness boxing." },
-    { "generation": "BOOMER", "note": "Boxing sport." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥊 Boxing Glove Emoji Meaning - What Does 🥊 Really Mean?",
-  "seoDescription": "Learn what the boxing glove emoji 🥊 really means. Ready to fight or fitness vibes. Complete context guide."
+  "seoTitle": "🥊 Boxing Glove Emoji Meaning",
+  "seoDescription": "Learn what the Boxing Glove emoji 🥊 really means."
 }

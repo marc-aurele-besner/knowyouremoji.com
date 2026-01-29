@@ -4,49 +4,39 @@
   "character": "🍕",
   "name": "Pizza",
   "shortName": "pizza",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A slice of pizza.",
-  "tldr": "Pizza, comfort food, or Friday night.",
+  "baseMeaning": "A slice of pizza with pepperoni.",
+  "tldr": "Pizza time! Universal food love.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Pizza food.",
-      "example": "Pizza time 🍕",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Pizza.", "example": "Pizza night 🍕", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Comfort food.",
-      "example": "Pizza night 🍕",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Pizza party.",
-      "example": "Team pizza 🍕",
+      "meaning": "Good time or party.",
+      "example": "Let's party 🍕",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "That's not pizza.",
-      "example": "Pineapple pizza 🍕",
+      "meaning": "Comfort food.",
+      "example": "Self care 🍕",
       "riskLevel": "LOW"
-    }
+    },
+    { "context": "WORK", "meaning": "Team food.", "example": "Free pizza 🍕", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Food content." },
-    { "platform": "INSTAGRAM", "note": "Food posts." },
-    { "platform": "TIKTOK", "note": "Recipe content." }
+    { "platform": "TWITTER", "note": "Universal food love." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "SLACK", "note": "Team celebrations." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Pizza rolls." },
-    { "generation": "MILLENNIAL", "note": "Friday pizza." },
-    { "generation": "BOOMER", "note": "Family dinner." }
+    { "generation": "GEN_Z", "note": "Comfort food." },
+    { "generation": "MILLENNIAL", "note": "Pizza love." },
+    { "generation": "BOOMER", "note": "Pizza." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍕 Pizza Emoji Meaning - What Does 🍕 Really Mean?",
-  "seoDescription": "Learn what the pizza emoji 🍕 really means. Comfort food or party vibes. Complete context guide."
+  "seoTitle": "🍕 Pizza Emoji Meaning",
+  "seoDescription": "Learn what the pizza emoji 🍕 really means."
 }

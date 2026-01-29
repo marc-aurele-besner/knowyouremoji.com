@@ -4,49 +4,49 @@
   "character": "🥚",
   "name": "Egg",
   "shortName": "egg",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
-  "baseMeaning": "An egg.",
-  "tldr": "Breakfast, fragile, or new account.",
+  "baseMeaning": "A white egg.",
+  "tldr": "Egg! Eggs or being fragile.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Egg.",
+      "meaning": "Eggs.",
       "example": "Breakfast eggs 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "New Twitter account.",
-      "example": "Egg account 🥚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "New beginning.",
-      "example": "Starting fresh 🥚",
+      "meaning": "Someone with no profile pic.",
+      "example": "Twitter egg 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Egg on face.",
-      "example": "Embarrassed 🥚",
+      "meaning": "Walking on eggshells.",
+      "example": "Careful situation 🥚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "New or default user.",
+      "example": "New account 🥚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "New account." },
+    { "platform": "TWITTER", "note": "Default profile pic." },
     { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Breakfast posts." }
+    { "platform": "TIKTOK", "note": "Food videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Twitter eggs." },
-    { "generation": "MILLENNIAL", "note": "Avocado toast." },
-    { "generation": "BOOMER", "note": "Breakfast." }
+    { "generation": "GEN_Z", "note": "Egg accounts." },
+    { "generation": "MILLENNIAL", "note": "Twitter eggs." },
+    { "generation": "BOOMER", "note": "Eggs." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥚 Egg Emoji Meaning - What Does 🥚 Really Mean?",
-  "seoDescription": "Learn what the egg emoji 🥚 really means. Breakfast or new account vibes. Complete context guide."
+  "seoTitle": "🥚 Egg Emoji Meaning",
+  "seoDescription": "Learn what the egg emoji 🥚 really means."
 }

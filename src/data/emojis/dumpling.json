@@ -4,49 +4,44 @@
   "character": "🥟",
   "name": "Dumpling",
   "shortName": "dumpling",
-  "category": "food",
-  "subcategory": "food-asian",
+  "category": "food-drink",
+  "subcategory": "food-prepared",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A dumpling, gyoza, or potsticker.",
-  "tldr": "Asian cuisine, dim sum, or calling someone dumpling (cute).",
+  "baseMeaning": "Dumpling emoji.",
+  "tldr": "Dumpling!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A dumpling.",
-      "example": "Dim sum time 🥟",
+      "meaning": "Represents Dumpling.",
+      "example": "Look at this 🥟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Term of endearment.",
-      "example": "Little dumpling 🥟",
+      "meaning": "Asian or cute.",
+      "example": "Feeling 🥟",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🥟", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Cute nickname.",
-      "example": "My dumpling 🥟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Comfort food cravings.",
-      "example": "Need dumplings 🥟",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🥟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Asian food content." },
-    { "platform": "WHATSAPP", "note": "Cute messaging." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Foodie culture." },
-    { "generation": "MILLENNIAL", "note": "Dim sum appreciation." },
-    { "generation": "BOOMER", "note": "Asian cuisine." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥟 Dumpling Emoji Meaning - What Does 🥟 Really Mean?",
-  "seoDescription": "Learn what the dumpling emoji 🥟 really means. Dim sum or cute nickname vibes. Complete context guide."
+  "seoTitle": "🥟 Dumpling Emoji Meaning",
+  "seoDescription": "Learn what the Dumpling emoji 🥟 really means."
 }

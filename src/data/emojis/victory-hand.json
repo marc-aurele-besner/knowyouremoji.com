@@ -4,67 +4,67 @@
   "character": "✌️",
   "name": "Victory Hand",
   "shortName": "peace",
-  "category": "people",
+  "category": "people-body",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A hand showing the V sign with index and middle fingers raised.",
-  "tldr": "Peace, victory, or casual coolness. The classic photo pose.",
+  "baseMeaning": "Index and middle fingers forming a V, for victory or peace.",
+  "tldr": "Peace! Used for victory, peace sign, casual goodbye, or selfie pose.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Peace, goodbye, or cool vibes.",
-      "example": "Later! ✌️",
+      "context": "LITERAL",
+      "meaning": "Victory or peace sign.",
+      "example": "Peace out ✌️",
       "riskLevel": "LOW"
     },
     {
-      "context": "LITERAL",
-      "meaning": "Victory or achievement.",
-      "example": "We won! ✌️",
+      "context": "SLANG",
+      "meaning": "Casual goodbye or chill vibes.",
+      "example": "See ya ✌️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Leaving a situation or checking out.",
+      "example": "I'm out of here ✌️",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Casual sign-off or photo pose.",
-      "example": "Selfie time ✌️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Casual sign-off or agreement.",
-      "example": "Sounds good, peace ✌️",
+      "meaning": "Cute selfie pose or casual flirting.",
+      "example": "✌️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "INSTAGRAM",
-      "note": "Classic photo pose emoji, extremely common."
+      "note": "Classic selfie pose emoji."
     },
     {
       "platform": "TWITTER",
-      "note": "Used as casual farewell or cool sign-off."
+      "note": "Common for casual goodbyes and peace."
     },
     {
-      "platform": "SLACK",
-      "note": "Acceptable casual sign-off even professionally."
+      "platform": "TIKTOK",
+      "note": "Popular in selfie and exit content."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Common photo pose and casual farewell."
+      "note": "Selfie pose and casual exit."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic peace sign, widely used."
+      "note": "Peace sign and goodbyes."
     },
     {
       "generation": "BOOMER",
-      "note": "Associated with 60s/70s peace movement or victory."
+      "note": "Victory or peace symbol."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✌️ Victory Hand Emoji Meaning - What Does ✌️ Really Mean?",
-  "seoDescription": "Learn what the victory hand emoji ✌️ really means in texting. Peace, victory, or cool vibes. Complete context guide."
+  "seoDescription": "Learn what the peace sign emoji ✌️ really means. Used for peace, victory, or casual goodbyes. Complete context guide."
 }

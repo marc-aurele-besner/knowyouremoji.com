@@ -3,50 +3,45 @@
   "slug": "wrench",
   "character": "🔧",
   "name": "Wrench",
-  "shortName": "wrench",
+  "shortName": "fix",
   "category": "objects",
   "subcategory": "tool",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A wrench.",
-  "tldr": "Fixing, settings, or maintenance.",
+  "baseMeaning": "Wrench emoji.",
+  "tldr": "Fix it!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Wrench.",
-      "example": "Fixing the car 🔧",
+      "meaning": "Represents Wrench.",
+      "example": "Look at this 🔧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Settings.",
-      "example": "Adjusting things 🔧",
+      "meaning": "Adjustable wrench.",
+      "example": "Feeling 🔧",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔧", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Maintenance.",
-      "example": "System maintenance 🔧",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Throwing a wrench.",
-      "example": "Plans ruined 🔧",
+      "meaning": "Work context.",
+      "example": "Work vibes 🔧",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Settings/config." },
-    { "platform": "TWITTER", "note": "Fix posts." },
-    { "platform": "DISCORD", "note": "Bot config." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Settings icon." },
-    { "generation": "MILLENNIAL", "note": "Fixing things." },
-    { "generation": "BOOMER", "note": "Tools." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔧 Wrench Emoji Meaning - What Does 🔧 Really Mean?",
-  "seoDescription": "Learn what the wrench emoji 🔧 really means. Fixing or settings vibes. Complete context guide."
+  "seoTitle": "🔧 Wrench Emoji Meaning",
+  "seoDescription": "Learn what the Wrench emoji 🔧 really means."
 }

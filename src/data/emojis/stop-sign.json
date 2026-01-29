@@ -3,50 +3,45 @@
   "slug": "stop-sign",
   "character": "🛑",
   "name": "Stop Sign",
-  "shortName": "stop-sign",
-  "category": "symbols",
-  "subcategory": "warning",
+  "shortName": "stop",
+  "category": "travel",
+  "subcategory": "transport-ground",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A stop sign.",
-  "tldr": "Stop, halt, or boundary.",
+  "baseMeaning": "Stop Sign emoji.",
+  "tldr": "Stop!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Stop sign.",
-      "example": "Full stop 🛑",
+      "meaning": "Represents Stop Sign.",
+      "example": "Look at this 🛑",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Stop it.",
-      "example": "That's enough 🛑",
+      "meaning": "Halt or warning.",
+      "example": "Feeling 🛑",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🛑", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Blocker.",
-      "example": "Project blocked 🛑",
+      "meaning": "Work context.",
+      "example": "Work vibes 🛑",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Boundary.",
-      "example": "Stop right there 🛑",
-      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Blockers." },
-    { "platform": "TWITTER", "note": "Boundaries." },
-    { "platform": "DISCORD", "note": "Stop sign." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Boundaries." },
-    { "generation": "MILLENNIAL", "note": "Full stop." },
-    { "generation": "BOOMER", "note": "Stop sign." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🛑 Stop Sign Emoji Meaning - What Does 🛑 Really Mean?",
-  "seoDescription": "Learn what the stop sign emoji 🛑 really means. Stop or boundary vibes. Complete context guide."
+  "seoTitle": "🛑 Stop Sign Emoji Meaning",
+  "seoDescription": "Learn what the Stop Sign emoji 🛑 really means."
 }

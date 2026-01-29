@@ -3,50 +3,45 @@
   "slug": "syringe",
   "character": "💉",
   "name": "Syringe",
-  "shortName": "syringe",
+  "shortName": "shot",
   "category": "objects",
   "subcategory": "medical",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A syringe.",
-  "tldr": "Vaccine, blood test, or injection.",
+  "baseMeaning": "Syringe emoji.",
+  "tldr": "Vaccine!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Syringe.",
-      "example": "Got vaccinated 💉",
+      "meaning": "Represents Syringe.",
+      "example": "Look at this 💉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Getting a shot.",
-      "example": "Flu shot 💉",
+      "meaning": "Medical syringe.",
+      "example": "Feeling 💉",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💉", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Medical.",
-      "example": "Blood draw 💉",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Fear of needles.",
-      "example": "Not the needle 💉",
+      "meaning": "Work context.",
+      "example": "Work vibes 💉",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Vaccine content." },
-    { "platform": "INSTAGRAM", "note": "Health content." },
-    { "platform": "TIKTOK", "note": "Medical content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Vaccine era." },
-    { "generation": "MILLENNIAL", "note": "Medical content." },
-    { "generation": "BOOMER", "note": "Injection." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💉 Syringe Emoji Meaning - What Does 💉 Really Mean?",
-  "seoDescription": "Learn what the syringe emoji 💉 really means. Vaccine or medical vibes. Complete context guide."
+  "seoTitle": "💉 Syringe Emoji Meaning",
+  "seoDescription": "Learn what the Syringe emoji 💉 really means."
 }

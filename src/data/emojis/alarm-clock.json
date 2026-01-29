@@ -3,50 +3,45 @@
   "slug": "alarm-clock",
   "character": "⏰",
   "name": "Alarm Clock",
-  "shortName": "alarm-clock",
-  "category": "objects",
+  "shortName": "alarm",
+  "category": "travel",
   "subcategory": "time",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An alarm clock.",
-  "tldr": "Time, wake up, or deadline.",
+  "baseMeaning": "Alarm Clock emoji.",
+  "tldr": "Alarm!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Alarm clock.",
-      "example": "Wake up ⏰",
+      "meaning": "Represents Alarm Clock.",
+      "example": "Look at this ⏰",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Time's up.",
-      "example": "Running out of time ⏰",
+      "meaning": "Wake up or reminder.",
+      "example": "Feeling ⏰",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⏰", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Deadline.",
-      "example": "Due soon ⏰",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Early morning.",
-      "example": "Why so early ⏰",
+      "meaning": "Work context.",
+      "example": "Work vibes ⏰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Deadlines." },
-    { "platform": "TWITTER", "note": "Time posts." },
-    { "platform": "DISCORD", "note": "Reminders." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Alarm anxiety." },
-    { "generation": "MILLENNIAL", "note": "Work deadlines." },
-    { "generation": "BOOMER", "note": "Morning routine." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⏰ Alarm Clock Emoji Meaning - What Does ⏰ Really Mean?",
-  "seoDescription": "Learn what the alarm clock emoji ⏰ really means. Time or deadline vibes. Complete context guide."
+  "seoTitle": "⏰ Alarm Clock Emoji Meaning",
+  "seoDescription": "Learn what the Alarm Clock emoji ⏰ really means."
 }

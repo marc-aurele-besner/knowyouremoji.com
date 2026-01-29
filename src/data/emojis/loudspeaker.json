@@ -3,50 +3,45 @@
   "slug": "loudspeaker",
   "character": "📢",
   "name": "Loudspeaker",
-  "shortName": "loudspeaker",
+  "shortName": "megaphone",
   "category": "objects",
   "subcategory": "sound",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A loudspeaker.",
-  "tldr": "Public announcement, alert, or broadcast.",
+  "baseMeaning": "Loudspeaker emoji.",
+  "tldr": "Announcement!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A loudspeaker.",
-      "example": "Hear this 📢",
+      "meaning": "Represents Loudspeaker.",
+      "example": "Look at this 📢",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Listen up.",
-      "example": "PSA 📢",
+      "meaning": "Loud or public.",
+      "example": "Feeling 📢",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 📢", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Company announcement.",
-      "example": "Team update 📢",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Being loud.",
-      "example": "Saying it louder 📢",
+      "meaning": "Work context.",
+      "example": "Work vibes 📢",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "PSA posts." },
-    { "platform": "SLACK", "note": "Channel announcements." },
-    { "platform": "DISCORD", "note": "Server announcements." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "PSA energy." },
-    { "generation": "MILLENNIAL", "note": "Broadcast." },
-    { "generation": "BOOMER", "note": "Public address." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "📢 Loudspeaker Emoji Meaning - What Does 📢 Really Mean?",
-  "seoDescription": "Learn what the loudspeaker emoji 📢 really means. Announcement or PSA vibes. Complete context guide."
+  "seoTitle": "📢 Loudspeaker Emoji Meaning",
+  "seoDescription": "Learn what the Loudspeaker emoji 📢 really means."
 }

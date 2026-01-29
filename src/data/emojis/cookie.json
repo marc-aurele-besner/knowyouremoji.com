@@ -4,49 +4,44 @@
   "character": "🍪",
   "name": "Cookie",
   "shortName": "cookie",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A chocolate chip cookie.",
-  "tldr": "Cookie, snack, or website cookies.",
+  "baseMeaning": "Cookie emoji.",
+  "tldr": "Cookie!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A cookie.",
-      "example": "Cookie time 🍪",
+      "meaning": "Represents Cookie.",
+      "example": "Look at this 🍪",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something sweet.",
-      "example": "Smart cookie 🍪",
+      "meaning": "Sweet or internet cookies.",
+      "example": "Feeling 🍪",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍪", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Browser cookies.",
-      "example": "Accept cookies 🍪",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "That's the way.",
-      "example": "Cookie crumbles 🍪",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍪",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Tech jokes." },
-    { "platform": "INSTAGRAM", "note": "Baking content." },
-    { "platform": "SLACK", "note": "Tech reference." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Tech cookies." },
-    { "generation": "MILLENNIAL", "note": "Cookie meme." },
-    { "generation": "BOOMER", "note": "Snack." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍪 Cookie Emoji Meaning - What Does 🍪 Really Mean?",
-  "seoDescription": "Learn what the cookie emoji 🍪 really means. Snack or tech reference vibes. Complete context guide."
+  "seoTitle": "🍪 Cookie Emoji Meaning",
+  "seoDescription": "Learn what the Cookie emoji 🍪 really means."
 }

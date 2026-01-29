@@ -3,50 +3,50 @@
   "slug": "pointing-down",
   "character": "👇",
   "name": "Backhand Index Pointing Down",
-  "shortName": "pointdown",
+  "shortName": "point down",
   "category": "people",
-  "subcategory": "hand-single-finger",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A hand pointing down.",
-  "tldr": "Read below, check this out, or downvote.",
+  "baseMeaning": "Finger pointing downward.",
+  "tldr": "Look below! Drawing attention down.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pointing down.",
-      "example": "See below 👇",
+      "meaning": "Pointing downward.",
+      "example": "Check the link below 👇",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Check this out.",
+      "meaning": "See below or thread continues.",
       "example": "Thread 👇",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Details below.",
-      "example": "More info 👇",
+      "context": "IRONIC",
+      "meaning": "Look at this mess below.",
+      "example": "The comments 👇",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Ratio or downvote.",
-      "example": "Bad take 👇",
+      "context": "WORK",
+      "meaning": "Reference below.",
+      "example": "See details 👇",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Thread introductions." },
-    { "platform": "INSTAGRAM", "note": "Comments or captions." },
-    { "platform": "SLACK", "note": "Follow-up info." }
+    { "platform": "TWITTER", "note": "Thread indicator." },
+    { "platform": "INSTAGRAM", "note": "Caption references." },
+    { "platform": "SLACK", "note": "See below." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Thread culture." },
-    { "generation": "MILLENNIAL", "note": "See below." },
-    { "generation": "BOOMER", "note": "Look down." }
+    { "generation": "GEN_Z", "note": "Thread starter." },
+    { "generation": "MILLENNIAL", "note": "Check below." },
+    { "generation": "BOOMER", "note": "Pointing down." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👇 Pointing Down Emoji Meaning - What Does 👇 Really Mean?",
-  "seoDescription": "Learn what the pointing down emoji 👇 really means. See below or thread vibes. Complete context guide."
+  "seoTitle": "👇 Backhand Index Pointing Down Emoji Meaning",
+  "seoDescription": "Learn what the Backhand Index Pointing Down emoji 👇 really means."
 }

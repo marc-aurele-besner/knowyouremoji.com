@@ -2,51 +2,46 @@
   "unicode": "1F4BF",
   "slug": "cd",
   "character": "💿",
-  "name": "Optical Disc",
+  "name": "Optical Disk",
   "shortName": "cd",
   "category": "objects",
   "subcategory": "computer",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A CD or DVD.",
-  "tldr": "Music, nostalgia, or album drop.",
+  "baseMeaning": "Optical Disk emoji.",
+  "tldr": "CD!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "CD or DVD.",
-      "example": "Burning a CD 💿",
+      "meaning": "Represents Optical Disk.",
+      "example": "Look at this 💿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Album release.",
-      "example": "New album 💿",
+      "meaning": "Music or data.",
+      "example": "Feeling 💿",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💿", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Data storage.",
-      "example": "Backup disc 💿",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Old school.",
-      "example": "Who uses CDs 💿",
+      "meaning": "Work context.",
+      "example": "Work vibes 💿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Music releases." },
-    { "platform": "INSTAGRAM", "note": "Album content." },
-    { "platform": "TIKTOK", "note": "Nostalgic content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Streaming era." },
-    { "generation": "MILLENNIAL", "note": "Burning mixtapes." },
-    { "generation": "BOOMER", "note": "CD collection." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💿 CD Emoji Meaning - What Does 💿 Really Mean?",
-  "seoDescription": "Learn what the CD emoji 💿 really means. Music or nostalgia vibes. Complete context guide."
+  "seoTitle": "💿 Optical Disk Emoji Meaning",
+  "seoDescription": "Learn what the Optical Disk emoji 💿 really means."
 }

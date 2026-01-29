@@ -7,46 +7,41 @@
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A diamond ring.",
-  "tldr": "Engaged, married, or commitment.",
+  "baseMeaning": "Ring emoji.",
+  "tldr": "Ring!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A ring.",
-      "example": "Got the ring 💍",
+      "meaning": "Represents Ring.",
+      "example": "Look at this 💍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Put a ring on it.",
-      "example": "Single ladies 💍",
+      "meaning": "Engaged or marriage.",
+      "example": "Feeling 💍",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💍", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Engagement.",
-      "example": "She said yes 💍",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Beyonce reference.",
-      "example": "If you liked it 💍",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 💍",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Engagement posts." },
-    { "platform": "INSTAGRAM", "note": "Wedding content." },
-    { "platform": "TIKTOK", "note": "Proposal videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beyonce song." },
-    { "generation": "MILLENNIAL", "note": "Engagement." },
-    { "generation": "BOOMER", "note": "Marriage." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💍 Ring Emoji Meaning - What Does 💍 Really Mean?",
-  "seoDescription": "Learn what the ring emoji 💍 really means. Engagement or commitment vibes. Complete context guide."
+  "seoTitle": "💍 Ring Emoji Meaning",
+  "seoDescription": "Learn what the Ring emoji 💍 really means."
 }

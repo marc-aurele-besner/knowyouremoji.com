@@ -4,49 +4,49 @@
   "character": "🥥",
   "name": "Coconut",
   "shortName": "coconut",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A split coconut.",
-  "tldr": "Tropical, coconut water, or island vibes.",
+  "baseMeaning": "A coconut cut in half.",
+  "tldr": "Tropical! Coconuts or vacation vibes.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A coconut.",
+      "meaning": "Coconuts.",
       "example": "Coconut water 🥥",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Island vibes.",
-      "example": "Beach mode 🥥",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Healthy drink.",
-      "example": "Hydrating 🥥",
+      "meaning": "Tropical vacation.",
+      "example": "Beach vibes 🥥",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Coconut oil craze.",
-      "example": "Oil for everything 🥥",
+      "meaning": "Going crazy (coconuts).",
+      "example": "I'm going 🥥",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Food industry.",
+      "example": "Coconut products 🥥",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Beach and wellness." },
     { "platform": "TWITTER", "note": "Tropical content." },
-    { "platform": "TIKTOK", "note": "Wellness content." }
+    { "platform": "INSTAGRAM", "note": "Beach aesthetic." },
+    { "platform": "TIKTOK", "note": "Food videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Coconut water trend." },
-    { "generation": "MILLENNIAL", "note": "Coconut oil everything." },
-    { "generation": "BOOMER", "note": "Tropical fruit." }
+    { "generation": "GEN_Z", "note": "Vacation energy." },
+    { "generation": "MILLENNIAL", "note": "Tropical vibes." },
+    { "generation": "BOOMER", "note": "Coconut." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥥 Coconut Emoji Meaning - What Does 🥥 Really Mean?",
-  "seoDescription": "Learn what the coconut emoji 🥥 really means. Tropical or island vibes. Complete context guide."
+  "seoTitle": "🥥 Coconut Emoji Meaning",
+  "seoDescription": "Learn what the coconut emoji 🥥 really means."
 }

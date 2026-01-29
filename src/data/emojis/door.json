@@ -3,50 +3,40 @@
   "slug": "door",
   "character": "🚪",
   "name": "Door",
-  "shortName": "door",
+  "shortName": "enter",
   "category": "objects",
   "subcategory": "household",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A door.",
-  "tldr": "Exit, opportunity, or leaving.",
+  "baseMeaning": "Door emoji.",
+  "tldr": "Enter!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Door.",
-      "example": "Front door 🚪",
+      "meaning": "Represents Door.",
+      "example": "Look at this 🚪",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Exit.",
-      "example": "I'm out 🚪",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Wooden door.", "example": "Feeling 🚪", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🚪", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Opportunity.",
-      "example": "Door opened 🚪",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Showing them out.",
-      "example": "There's the door 🚪",
+      "meaning": "Work context.",
+      "example": "Work vibes 🚪",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Exit posts." },
-    { "platform": "SLACK", "note": "Leaving status." },
-    { "platform": "DISCORD", "note": "Logging off." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Door meme." },
-    { "generation": "MILLENNIAL", "note": "Opportunity." },
-    { "generation": "BOOMER", "note": "Exit." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🚪 Door Emoji Meaning - What Does 🚪 Really Mean?",
-  "seoDescription": "Learn what the door emoji 🚪 really means. Exit or opportunity vibes. Complete context guide."
+  "seoTitle": "🚪 Door Emoji Meaning",
+  "seoDescription": "Learn what the Door emoji 🚪 really means."
 }

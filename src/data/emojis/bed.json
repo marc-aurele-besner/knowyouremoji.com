@@ -3,50 +3,40 @@
   "slug": "bed",
   "character": "🛏️",
   "name": "Bed",
-  "shortName": "bed",
+  "shortName": "sleep",
   "category": "objects",
   "subcategory": "household",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A bed.",
-  "tldr": "Sleep, rest, or bedroom activities.",
+  "baseMeaning": "Bed emoji.",
+  "tldr": "Sleep!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Bed.",
-      "example": "Going to bed 🛏️",
+      "meaning": "Represents Bed.",
+      "example": "Look at this 🛏️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Sleep time.",
-      "example": "Need sleep 🛏️",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Single bed.", "example": "Feeling 🛏️", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🛏️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "WFH.",
-      "example": "Working from bed 🛏️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🛏️",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Bedroom.",
-      "example": "Netflix and chill 🛏️",
-      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Lifestyle content." },
-    { "platform": "TWITTER", "note": "Sleep posts." },
-    { "platform": "WHATSAPP", "note": "Good night." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Chronic fatigue." },
-    { "generation": "MILLENNIAL", "note": "Self-care." },
-    { "generation": "BOOMER", "note": "Rest." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🛏️ Bed Emoji Meaning - What Does 🛏️ Really Mean?",
-  "seoDescription": "Learn what the bed emoji 🛏️ really means. Sleep or rest vibes. Complete context guide."
+  "seoTitle": "🛏️ Bed Emoji Meaning",
+  "seoDescription": "Learn what the Bed emoji 🛏️ really means."
 }

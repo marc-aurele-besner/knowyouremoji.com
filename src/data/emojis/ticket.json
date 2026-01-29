@@ -7,46 +7,41 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An admission ticket.",
-  "tldr": "Event, concert, or access pass.",
+  "baseMeaning": "Ticket emoji.",
+  "tldr": "Ticket!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A ticket.",
-      "example": "Got tickets 🎫",
+      "meaning": "Represents Ticket.",
+      "example": "Look at this 🎫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Concert tickets.",
-      "example": "Secured 🎫",
+      "meaning": "Entry or event.",
+      "example": "Feeling 🎫",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎫", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Support ticket.",
-      "example": "Filing a 🎫",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sold out.",
-      "example": "No 🎫 left",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Event posts." },
-    { "platform": "INSTAGRAM", "note": "Concert content." },
-    { "platform": "SLACK", "note": "Support tickets." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Concert era." },
-    { "generation": "MILLENNIAL", "note": "Festival tickets." },
-    { "generation": "BOOMER", "note": "Event admission." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎫 Ticket Emoji Meaning - What Does 🎫 Really Mean?",
-  "seoDescription": "Learn what the ticket emoji 🎫 really means. Event or concert vibes. Complete context guide."
+  "seoTitle": "🎫 Ticket Emoji Meaning",
+  "seoDescription": "Learn what the Ticket emoji 🎫 really means."
 }

@@ -4,49 +4,49 @@
   "character": "🍓",
   "name": "Strawberry",
   "shortName": "strawberry",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A strawberry.",
-  "tldr": "Sweet, cute, or strawberry girl aesthetic.",
+  "baseMeaning": "A red strawberry.",
+  "tldr": "Sweet and cute! Strawberries or sweetness.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A strawberry.",
-      "example": "Strawberry season 🍓",
+      "meaning": "Strawberries.",
+      "example": "Fresh strawberries 🍓",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Sweet and cute.",
-      "example": "So sweet 🍓",
+      "meaning": "Sweet or cute.",
+      "example": "You're a 🍓",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Cute and romantic.",
-      "example": "Strawberry sweetie 🍓",
+      "meaning": "Sweet and romantic.",
+      "example": "Strawberries and cream 🍓",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Strawberry girl aesthetic.",
-      "example": "That girl 🍓",
+      "meaning": "Aesthetic fruit.",
+      "example": "Cottage core 🍓",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
+    { "platform": "TWITTER", "note": "Cute and sweet." },
     { "platform": "INSTAGRAM", "note": "Aesthetic content." },
-    { "platform": "TIKTOK", "note": "Strawberry girl trend." },
-    { "platform": "TWITTER", "note": "Cute content." }
+    { "platform": "TIKTOK", "note": "Food content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Strawberry girl aesthetic." },
+    { "generation": "GEN_Z", "note": "Aesthetic energy." },
     { "generation": "MILLENNIAL", "note": "Sweet and cute." },
-    { "generation": "BOOMER", "note": "Fruit." }
+    { "generation": "BOOMER", "note": "Berry." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍓 Strawberry Emoji Meaning - What Does 🍓 Really Mean?",
-  "seoDescription": "Learn what the strawberry emoji 🍓 really means. Sweet or aesthetic vibes. Complete context guide."
+  "seoTitle": "🍓 Strawberry Emoji Meaning",
+  "seoDescription": "Learn what the strawberry emoji 🍓 really means."
 }

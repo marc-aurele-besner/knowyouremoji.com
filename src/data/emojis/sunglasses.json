@@ -3,50 +3,45 @@
   "slug": "sunglasses",
   "character": "🕶️",
   "name": "Sunglasses",
-  "shortName": "sunglasses",
+  "shortName": "shades",
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A pair of sunglasses.",
-  "tldr": "Cool, summer vibes, or hiding.",
+  "baseMeaning": "Sunglasses emoji.",
+  "tldr": "Sunglasses!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sunglasses.",
-      "example": "Sunny day 🕶️",
+      "meaning": "Represents Sunglasses.",
+      "example": "Look at this 🕶️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Looking cool.",
-      "example": "Cool kid 🕶️",
+      "meaning": "Cool or bright.",
+      "example": "Feeling 🕶️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🕶️", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Mysterious.",
-      "example": "Playing it cool 🕶️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Hiding tears.",
-      "example": "Crying behind these 🕶️",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🕶️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Summer content." },
-    { "platform": "TWITTER", "note": "Cool posts." },
-    { "platform": "TIKTOK", "note": "Beach vibes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beach vibes." },
-    { "generation": "MILLENNIAL", "note": "Cool." },
-    { "generation": "BOOMER", "note": "Sun protection." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🕶️ Sunglasses Emoji Meaning - What Does 🕶️ Really Mean?",
-  "seoDescription": "Learn what the sunglasses emoji 🕶️ really means. Cool or summer vibes. Complete context guide."
+  "seoTitle": "🕶️ Sunglasses Emoji Meaning",
+  "seoDescription": "Learn what the Sunglasses emoji 🕶️ really means."
 }

@@ -4,73 +4,67 @@
   "character": "🤥",
   "name": "Lying Face",
   "shortName": "lying",
-  "category": "faces",
+  "category": "smileys-emotion",
   "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A face with a long nose like Pinocchio, indicating lying.",
-  "tldr": "Lying, not telling the truth, or calling out a lie.",
+  "baseMeaning": "A face with a long Pinocchio-style nose, indicating lying.",
+  "tldr": "Caught in a lie! Used for calling out lies or joking about dishonesty.",
   "contextMeanings": [
     {
+      "context": "LITERAL",
+      "meaning": "Indicating that someone is lying or has lied.",
+      "example": "You definitely ate the last cookie 🤥",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "SLANG",
-      "meaning": "Calling someone or yourself out for lying.",
-      "example": "Sure you did 🤥",
-      "riskLevel": "MEDIUM"
+      "meaning": "Calling out exaggeration or dishonesty.",
+      "example": "'I only had one slice' 🤥",
+      "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-deprecating about telling white lies.",
-      "example": "I'm totally working 🤥",
+      "meaning": "Joking about your own lies or excuses.",
+      "example": "I'm definitely going to the gym tomorrow 🤥",
       "riskLevel": "LOW"
     },
     {
       "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Implying someone is lying.",
-      "example": "Interesting story 🤥",
-      "riskLevel": "HIGH"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Joking about exaggerating.",
-      "example": "I'm definitely over them 🤥",
-      "riskLevel": "LOW"
+      "meaning": "Suggesting someone isn't being truthful.",
+      "example": "Sure you forgot 🤥",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Calling out lies or joking about one's own."
+      "note": "Used to call out lies or for self-deprecating humor."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Self-deprecating captions."
+      "note": "Common in captions about broken promises or jokes."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Used in 'tell me you're lying' content."
+      "platform": "DISCORD",
+      "note": "Popular for playfully accusing friends of lying."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Calling cap (lies) and self-deprecation."
+      "note": "Used for calling out cap (lies) or self-deprecation."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Pinocchio reference for lying."
+      "note": "Common for joking about lies and broken resolutions."
     },
     {
       "generation": "BOOMER",
-      "note": "Clear lying reference."
+      "note": "Clear Pinocchio reference about lying."
     }
   ],
-  "warnings": [
-    {
-      "title": "Can Be Accusatory",
-      "description": "Using this to respond to someone implies they're lying.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤥 Lying Face Emoji Meaning - What Does 🤥 Really Mean?",
-  "seoDescription": "Learn what the lying face emoji 🤥 really means in texting. Lying or calling out lies. Complete context guide."
+  "seoDescription": "Learn what the lying face emoji 🤥 really means. Used for calling out lies or joking about dishonesty. Complete context guide."
 }

@@ -3,50 +3,68 @@
   "slug": "face-with-hand-over-mouth",
   "character": "🤭",
   "name": "Face with Hand Over Mouth",
-  "shortName": "oops",
-  "category": "faces",
+  "shortName": "hand-over-mouth",
+  "category": "smileys-emotion",
   "subcategory": "face-hand",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A face with hand covering mouth, giggling or shocked.",
-  "tldr": "Oops, giggling, shocked, or 'I shouldn't have said that.'",
+  "baseMeaning": "A face with a hand covering its mouth, often showing smiling eyes.",
+  "tldr": "Oops! Used for giggling, embarrassment, or reacting to something surprising or cheeky.",
   "contextMeanings": [
     {
+      "context": "LITERAL",
+      "meaning": "Reacting to a mistake or something embarrassing.",
+      "example": "Accidentally sent that to the wrong person 🤭",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "SLANG",
-      "meaning": "Oops or accidentally sharing something.",
-      "example": "Did I say that out loud? 🤭",
+      "meaning": "Laughing in a suppressed or shy way at gossip.",
+      "example": "Did you hear what happened 🤭",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to be surprised.",
-      "example": "Oh no, anyway 🤭",
+      "meaning": "Playfully reacting to your own mistake.",
+      "example": "I can't believe I said that 🤭",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Coy giggling or flirting.",
-      "example": "Stop, you're making me blush 🤭",
+      "meaning": "Expressing bashfulness or modest embarrassment at a compliment.",
+      "example": "Thanks for the compliment 🤭",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Fake surprise at gossip.",
-      "example": "Oh really? 🤭",
-      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Tea spilling and gossip reactions." },
-    { "platform": "TIKTOK", "note": "Oops moments and giggles." },
-    { "platform": "INSTAGRAM", "note": "Coy comments and reactions." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used for reacting to embarrassing or funny moments."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Common reaction to drama or surprising revelations."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used when reacting to chaos or gossip."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Oops and tea-spilling reactions." },
-    { "generation": "MILLENNIAL", "note": "Giggling and oops moments." },
-    { "generation": "BOOMER", "note": "Surprised or giggling." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for shy giggling or reacting to tea/drama."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Similar usage - embarrassment or suppressed laughter."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret as polite laughter or surprise."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤭 Face with Hand Over Mouth Emoji Meaning - What Does 🤭 Really Mean?",
-  "seoDescription": "Learn what the hand over mouth emoji 🤭 really means. Oops, giggling, or gossip. Complete context guide."
+  "seoDescription": "Learn what the hand over mouth emoji 🤭 really means. Used for giggling, oops moments, or reacting to gossip. Complete context guide."
 }

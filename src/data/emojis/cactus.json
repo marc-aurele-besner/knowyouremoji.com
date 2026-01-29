@@ -7,46 +7,41 @@
   "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A cactus.",
-  "tldr": "Desert, prickly, or low maintenance.",
+  "baseMeaning": "Cactus emoji.",
+  "tldr": "Cactus!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Cactus.",
-      "example": "Desert plant 🌵",
+      "meaning": "Represents Cactus.",
+      "example": "Look at this 🌵",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Prickly person.",
-      "example": "Don't touch 🌵",
+      "meaning": "Desert or prickly.",
+      "example": "Feeling 🌵",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌵", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Low maintenance.",
-      "example": "Easy to care for 🌵",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Plant parent fail.",
-      "example": "Only plant I can keep alive 🌵",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Desert aesthetic." },
-    { "platform": "TWITTER", "note": "Plant content." },
-    { "platform": "TIKTOK", "note": "Plant tips." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Desk plant." },
-    { "generation": "MILLENNIAL", "note": "Plant parent." },
-    { "generation": "BOOMER", "note": "Southwest." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌵 Cactus Emoji Meaning - What Does 🌵 Really Mean?",
-  "seoDescription": "Learn what the cactus emoji 🌵 really means. Desert or low maintenance vibes. Complete context guide."
+  "seoTitle": "🌵 Cactus Emoji Meaning",
+  "seoDescription": "Learn what the Cactus emoji 🌵 really means."
 }

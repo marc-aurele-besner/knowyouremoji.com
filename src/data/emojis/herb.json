@@ -7,46 +7,41 @@
   "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An herb or plant sprig.",
-  "tldr": "Nature, cooking, or wellness.",
+  "baseMeaning": "Herb emoji.",
+  "tldr": "Herb!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Herb.",
-      "example": "Fresh herbs 🌿",
+      "meaning": "Represents Herb.",
+      "example": "Look at this 🌿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Natural.",
-      "example": "All natural 🌿",
+      "meaning": "Nature or cannabis reference.",
+      "example": "Feeling 🌿",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌿", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Wellness.",
-      "example": "Healthy living 🌿",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Green vibes.",
-      "example": "Plant parent 🌿",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Plant content." },
-    { "platform": "TIKTOK", "note": "Wellness tips." },
-    { "platform": "TWITTER", "note": "Nature posts." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Plant aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Plant parent." },
-    { "generation": "BOOMER", "note": "Gardening." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌿 Herb Emoji Meaning - What Does 🌿 Really Mean?",
-  "seoDescription": "Learn what the herb emoji 🌿 really means. Nature or wellness vibes. Complete context guide."
+  "seoTitle": "🌿 Herb Emoji Meaning",
+  "seoDescription": "Learn what the Herb emoji 🌿 really means."
 }

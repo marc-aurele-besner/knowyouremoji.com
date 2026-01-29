@@ -3,50 +3,45 @@
   "slug": "scissors",
   "character": "✂️",
   "name": "Scissors",
-  "shortName": "scissors",
+  "shortName": "cut",
   "category": "objects",
   "subcategory": "office",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A pair of scissors.",
-  "tldr": "Cutting, editing, or crafts.",
+  "baseMeaning": "Scissors emoji.",
+  "tldr": "Cut!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Scissors.",
-      "example": "Cutting paper ✂️",
+      "meaning": "Represents Scissors.",
+      "example": "Look at this ✂️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cut it out.",
-      "example": "Snip snip ✂️",
+      "meaning": "Cutting scissors.",
+      "example": "Feeling ✂️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ✂️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Editing.",
-      "example": "Budget cuts ✂️",
+      "meaning": "Work context.",
+      "example": "Work vibes ✂️",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Getting cut.",
-      "example": "Laid off ✂️",
-      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Editing posts." },
-    { "platform": "INSTAGRAM", "note": "Craft content." },
-    { "platform": "SLACK", "note": "Budget talk." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cutting ties." },
-    { "generation": "MILLENNIAL", "note": "Craft era." },
-    { "generation": "BOOMER", "note": "Office supplies." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✂️ Scissors Emoji Meaning - What Does ✂️ Really Mean?",
-  "seoDescription": "Learn what the scissors emoji ✂️ really means. Cutting or editing vibes. Complete context guide."
+  "seoTitle": "✂️ Scissors Emoji Meaning",
+  "seoDescription": "Learn what the Scissors emoji ✂️ really means."
 }

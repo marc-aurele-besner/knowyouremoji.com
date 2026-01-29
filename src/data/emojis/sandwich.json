@@ -4,49 +4,44 @@
   "character": "🥪",
   "name": "Sandwich",
   "shortName": "sandwich",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A sandwich.",
-  "tldr": "Lunch, quick meal, or hoagie debate.",
+  "baseMeaning": "A sandwich with fillings.",
+  "tldr": "Lunch time! Sandwiches or being busy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A sandwich.",
-      "example": "Lunch time 🥪",
+      "meaning": "Sandwiches.",
+      "example": "Making lunch 🥪",
       "riskLevel": "LOW"
     },
+    { "context": "SLANG", "meaning": "Quick meal.", "example": "Grabbed a 🥪", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Quick meal.",
-      "example": "Grab a sandwich 🥪",
+      "context": "IRONIC",
+      "meaning": "Basic lunch.",
+      "example": "Sad desk lunch 🥪",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Desk lunch.",
-      "example": "Working lunch 🥪",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Is it a sandwich?",
-      "example": "Hot dog debate 🥪",
+      "meaning": "Working lunch.",
+      "example": "Eating at desk 🥪",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Sandwich debates." },
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Food videos." }
+    { "platform": "TWITTER", "note": "Lunch content." },
+    { "platform": "INSTAGRAM", "note": "Food photos." },
+    { "platform": "SLACK", "note": "Lunch mentions." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Food debates." },
-    { "generation": "MILLENNIAL", "note": "Quick meal." },
-    { "generation": "BOOMER", "note": "Lunch." }
+    { "generation": "GEN_Z", "note": "Quick meals." },
+    { "generation": "MILLENNIAL", "note": "Lunch vibes." },
+    { "generation": "BOOMER", "note": "Sandwich." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🥪 Sandwich Emoji Meaning - What Does 🥪 Really Mean?",
-  "seoDescription": "Learn what the sandwich emoji 🥪 really means. Lunch or quick meal vibes. Complete context guide."
+  "seoTitle": "🥪 Sandwich Emoji Meaning",
+  "seoDescription": "Learn what the sandwich emoji 🥪 really means."
 }

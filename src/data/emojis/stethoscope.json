@@ -3,50 +3,45 @@
   "slug": "stethoscope",
   "character": "🩺",
   "name": "Stethoscope",
-  "shortName": "stethoscope",
+  "shortName": "doctor",
   "category": "objects",
   "subcategory": "medical",
   "unicodeVersion": "12.0",
-  "baseMeaning": "A stethoscope.",
-  "tldr": "Doctor, health check, or medical.",
+  "baseMeaning": "Stethoscope emoji.",
+  "tldr": "Doctor!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Stethoscope.",
-      "example": "Doctor visit 🩺",
+      "meaning": "Represents Stethoscope.",
+      "example": "Look at this 🩺",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Health check.",
-      "example": "Checking vitals 🩺",
+      "meaning": "Medical stethoscope.",
+      "example": "Feeling 🩺",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🩺", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Medical profession.",
-      "example": "Healthcare worker 🩺",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Playing doctor.",
-      "example": "Let me diagnose 🩺",
+      "meaning": "Work context.",
+      "example": "Work vibes 🩺",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Medical content." },
-    { "platform": "INSTAGRAM", "note": "Healthcare posts." },
-    { "platform": "TIKTOK", "note": "Doctor content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Healthcare vibes." },
-    { "generation": "MILLENNIAL", "note": "Medical profession." },
-    { "generation": "BOOMER", "note": "Doctor." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🩺 Stethoscope Emoji Meaning - What Does 🩺 Really Mean?",
-  "seoDescription": "Learn what the stethoscope emoji 🩺 really means. Doctor or medical vibes. Complete context guide."
+  "seoTitle": "🩺 Stethoscope Emoji Meaning",
+  "seoDescription": "Learn what the Stethoscope emoji 🩺 really means."
 }

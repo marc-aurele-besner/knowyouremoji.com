@@ -3,50 +3,45 @@
   "slug": "bouquet",
   "character": "💐",
   "name": "Bouquet",
-  "shortName": "bouquet",
+  "shortName": "flowers",
   "category": "nature",
   "subcategory": "plant-flower",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bouquet of flowers.",
-  "tldr": "Celebration, appreciation, or romance.",
+  "baseMeaning": "Bouquet emoji.",
+  "tldr": "Bouquet!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Flower bouquet.",
-      "example": "Beautiful flowers 💐",
+      "meaning": "Represents Bouquet.",
+      "example": "Look at this 💐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Thank you.",
-      "example": "Appreciation 💐",
+      "meaning": "Gift or appreciation.",
+      "example": "Feeling 💐",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💐", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Congratulations.",
-      "example": "Great job 💐",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Romance.",
-      "example": "For you 💐",
+      "meaning": "Work context.",
+      "example": "Work vibes 💐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Celebration posts." },
-    { "platform": "WHATSAPP", "note": "Thank you messages." },
-    { "platform": "TWITTER", "note": "Appreciation." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Appreciation." },
-    { "generation": "MILLENNIAL", "note": "Thank you." },
-    { "generation": "BOOMER", "note": "Flowers." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💐 Bouquet Emoji Meaning - What Does 💐 Really Mean?",
-  "seoDescription": "Learn what the bouquet emoji 💐 really means. Appreciation or celebration vibes. Complete context guide."
+  "seoTitle": "💐 Bouquet Emoji Meaning",
+  "seoDescription": "Learn what the Bouquet emoji 💐 really means."
 }

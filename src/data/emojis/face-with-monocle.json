@@ -3,50 +3,68 @@
   "slug": "face-with-monocle",
   "character": "🧐",
   "name": "Face with Monocle",
-  "shortName": "face-with-monocle",
-  "category": "smileys",
+  "shortName": "monocle",
+  "category": "smileys-emotion",
   "subcategory": "face-glasses",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A face wearing a monocle.",
-  "tldr": "Investigating, skeptical, or fancy.",
+  "baseMeaning": "A face wearing a monocle with a raised eyebrow, suggesting scrutiny or skepticism.",
+  "tldr": "Looking at something closely, being skeptical, or pretending to be fancy/intellectual.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Examining closely.",
-      "example": "Let me see 🧐",
+      "meaning": "Looking at something more closely or investigating.",
+      "example": "Let me look into that 🧐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Sus or skeptical.",
-      "example": "Something's off 🧐",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Analyzing.",
-      "example": "Looking into it 🧐",
+      "meaning": "Expressing doubt or examining something critically.",
+      "example": "Hmm, interesting claim 🧐",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretentious.",
-      "example": "Very sophisticated 🧐",
+      "meaning": "Pretending to be sophisticated or intellectual in a joking way.",
+      "example": "Ah yes, quite exquisite 🧐",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Reviewing or analyzing something carefully.",
+      "example": "Reviewing your PR now 🧐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Skeptical posts." },
-    { "platform": "DISCORD", "note": "Sus investigation." },
-    { "platform": "SLACK", "note": "Analysis." }
+    {
+      "platform": "TWITTER",
+      "note": "Often used to question claims or express skepticism."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Popular in code review contexts or when investigating bugs."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used for humorous intellectual pretense or genuine analysis."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Sus detector." },
-    { "generation": "MILLENNIAL", "note": "Investigation." },
-    { "generation": "BOOMER", "note": "Examining." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used ironically for fake sophistication or genuinely for skepticism."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Similar usage - skepticism or playful intellectualism."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret as curiosity or careful examination."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧐 Face with Monocle Emoji Meaning - What Does 🧐 Really Mean?",
-  "seoDescription": "Learn what the monocle face emoji 🧐 really means. Skeptical or investigation vibes. Complete context guide."
+  "seoDescription": "Learn what the monocle face emoji 🧐 really means. Used for skepticism, curiosity, or playful intellectualism. Complete context guide."
 }

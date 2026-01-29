@@ -7,64 +7,41 @@
   "category": "travel",
   "subcategory": "transport-air",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A rocket ship launching upward.",
-  "tldr": "Symbolizes rapid growth, excitement, or 'to the moon' (especially in crypto/stocks).",
+  "baseMeaning": "Rocket emoji.",
+  "tldr": "Rocket!",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Something is launching, growing rapidly, or taking off.",
-      "example": "New product launch 🚀",
+      "context": "LITERAL",
+      "meaning": "Represents Rocket.",
+      "example": "Look at this 🚀",
       "riskLevel": "LOW"
     },
+    {
+      "context": "SLANG",
+      "meaning": "Space or to the moon.",
+      "example": "Feeling 🚀",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🚀", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Startups and growth metrics - very common in tech.",
-      "example": "Q3 numbers 🚀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Crypto/stocks 'going to the moon' - price rising.",
-      "example": "BTC 🚀🚀🚀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "LITERAL",
-      "meaning": "Actual space or rocket content.",
-      "example": "SpaceX launch today 🚀",
+      "meaning": "Work context.",
+      "example": "Work vibes 🚀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Common in crypto/finance Twitter for price movements."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Very acceptable for celebrating launches or achievements."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Associated with crypto communities and 'to the moon' culture."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Associated with crypto bros and startup culture."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common in tech and startup contexts."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret more literally or for space content."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
-  "relatedCombos": ["rocket-moon"],
-  "seoTitle": "🚀 Rocket Emoji Meaning - What Does 🚀 Really Mean?",
-  "seoDescription": "Learn what the rocket emoji 🚀 really means in modern texting. Growth, launches, and 'to the moon' in crypto. Complete context guide."
+  "relatedCombos": [],
+  "seoTitle": "🚀 Rocket Emoji Meaning",
+  "seoDescription": "Learn what the Rocket emoji 🚀 really means."
 }

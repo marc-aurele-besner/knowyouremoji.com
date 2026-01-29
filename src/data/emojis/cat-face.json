@@ -4,67 +4,49 @@
   "character": "🐱",
   "name": "Cat Face",
   "shortName": "cat",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A cute cat face, often depicted as an orange or yellow cat.",
-  "tldr": "Represents cats or cat-like behavior. Can mean being mysterious, independent, or cute.",
+  "baseMeaning": "A cute cat face with pointed ears.",
+  "tldr": "Meow! Cats, kittens, or cat-like behavior.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referring to an actual cat.",
-      "example": "My cat just knocked everything off my desk 🐱",
+      "meaning": "Cats or kittens.",
+      "example": "Cat cuddles 🐱",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being sassy, independent, or unbothered.",
-      "example": "Don't need anyone's approval 🐱",
+      "meaning": "Being sassy or independent.",
+      "example": "Unbothered 🐱",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Playing hard to get or being mysteriously aloof.",
-      "example": "Maybe I'll text back, maybe I won't 🐱",
+      "meaning": "Cute and mysterious.",
+      "example": "Curious 🐱",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Highlighting cat-like chaos or mischief.",
-      "example": "Just broke something expensive 🐱",
+      "meaning": "Cat behavior patterns.",
+      "example": "Knocking things over 🐱",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Hugely popular for cat content and cute posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used in cat memes and relatable 'cat behavior' posts."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Popular in casual chat and reaction channels."
-    }
+    { "platform": "INSTAGRAM", "note": "Cat content is huge." },
+    { "platform": "TWITTER", "note": "Used for cat posts." },
+    { "platform": "TIKTOK", "note": "Essential for cat videos." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used to represent being unbothered or mysterious."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Primarily used for actual cat content or cute reactions."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for cat-related content."
-    }
+    { "generation": "GEN_Z", "note": "Cat parent energy." },
+    { "generation": "MILLENNIAL", "note": "Internet cat culture." },
+    { "generation": "BOOMER", "note": "Pet cats." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐱 Cat Face Emoji Meaning - What Does 🐱 Really Mean?",
-  "seoDescription": "Learn what the cat face emoji 🐱 really means in texting. Represents cats, cuteness, or being mysteriously aloof. Complete context guide."
+  "seoTitle": "🐱 Cat Face Emoji Meaning",
+  "seoDescription": "Learn what the cat face emoji 🐱 really means. Cats and feline behavior."
 }

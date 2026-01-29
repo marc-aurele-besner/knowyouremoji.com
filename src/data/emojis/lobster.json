@@ -4,49 +4,39 @@
   "character": "🦞",
   "name": "Lobster",
   "shortName": "lobster",
-  "category": "food",
-  "subcategory": "food-marine",
+  "category": "animals",
+  "subcategory": "animal-marine",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A lobster.",
-  "tldr": "Fancy food, luxury, or seafood.",
+  "baseMeaning": "Lobster emoji.",
+  "tldr": "Lobster!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Lobster.",
-      "example": "Lobster dinner 🦞",
+      "meaning": "Represents Lobster.",
+      "example": "Look at this 🦞",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Bougie.",
-      "example": "Living fancy 🦞",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Fancy or red.", "example": "Feeling 🦞", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🦞", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Celebration dinner.",
-      "example": "Deal closed 🦞",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Too fancy.",
-      "example": "Expensive taste 🦞",
+      "meaning": "Work context.",
+      "example": "Work vibes 🦞",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Luxury food." },
-    { "platform": "TWITTER", "note": "Fancy posts." },
-    { "platform": "TIKTOK", "note": "Seafood content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fancy vibes." },
-    { "generation": "MILLENNIAL", "note": "Treat yourself." },
-    { "generation": "BOOMER", "note": "Special occasion." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦞 Lobster Emoji Meaning - What Does 🦞 Really Mean?",
-  "seoDescription": "Learn what the lobster emoji 🦞 really means. Luxury or fancy vibes. Complete context guide."
+  "seoTitle": "🦞 Lobster Emoji Meaning",
+  "seoDescription": "Learn what the Lobster emoji 🦞 really means."
 }

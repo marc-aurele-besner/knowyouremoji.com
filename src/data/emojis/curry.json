@@ -4,49 +4,44 @@
   "character": "🍛",
   "name": "Curry Rice",
   "shortName": "curry",
-  "category": "food",
-  "subcategory": "food-asian",
+  "category": "food-drink",
+  "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A plate of curry with rice.",
-  "tldr": "Spicy food, Indian or Japanese curry, comfort meal.",
+  "baseMeaning": "Curry Rice emoji.",
+  "tldr": "Curry!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Curry dish.",
-      "example": "Curry night 🍛",
+      "meaning": "Represents Curry Rice.",
+      "example": "Look at this 🍛",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Spicy comfort food.",
-      "example": "Need something warm 🍛",
+      "meaning": "Indian or Japanese food.",
+      "example": "Feeling 🍛",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Heat tolerance test.",
-      "example": "Extra spicy 🍛",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍛", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Lunch plans.",
-      "example": "Curry for lunch 🍛",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍛",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Foodie content." },
-    { "platform": "TIKTOK", "note": "Cooking content." },
-    { "platform": "TWITTER", "note": "Food cravings." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Spice tolerance." },
-    { "generation": "MILLENNIAL", "note": "Comfort food." },
-    { "generation": "BOOMER", "note": "Ethnic cuisine." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍛 Curry Emoji Meaning - What Does 🍛 Really Mean?",
-  "seoDescription": "Learn what the curry emoji 🍛 really means. Spicy comfort food vibes. Complete context guide."
+  "seoTitle": "🍛 Curry Rice Emoji Meaning",
+  "seoDescription": "Learn what the Curry Rice emoji 🍛 really means."
 }

@@ -4,49 +4,44 @@
   "character": "⌚",
   "name": "Watch",
   "shortName": "watch",
-  "category": "objects",
+  "category": "travel",
   "subcategory": "time",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A wristwatch.",
-  "tldr": "Time, punctuality, or Apple Watch.",
+  "baseMeaning": "Watch emoji.",
+  "tldr": "Watch!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Wristwatch.",
-      "example": "Check the time ⌚",
+      "meaning": "Represents Watch.",
+      "example": "Look at this ⌚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Flex watch.",
-      "example": "New watch ⌚",
+      "meaning": "Time or accessory.",
+      "example": "Feeling ⌚",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⌚", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "On time.",
-      "example": "Punctual ⌚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Watch out.",
-      "example": "Tick tock ⌚",
+      "meaning": "Work context.",
+      "example": "Work vibes ⌚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Time posts." },
-    { "platform": "INSTAGRAM", "note": "Watch flex." },
-    { "platform": "TIKTOK", "note": "Luxury content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Smart watch." },
-    { "generation": "MILLENNIAL", "note": "Fitness tracker." },
-    { "generation": "BOOMER", "note": "Traditional watch." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⌚ Watch Emoji Meaning - What Does ⌚ Really Mean?",
-  "seoDescription": "Learn what the watch emoji ⌚ really means. Time or flex vibes. Complete context guide."
+  "seoTitle": "⌚ Watch Emoji Meaning",
+  "seoDescription": "Learn what the Watch emoji ⌚ really means."
 }

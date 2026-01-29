@@ -3,50 +3,40 @@
   "slug": "thermometer",
   "character": "🌡️",
   "name": "Thermometer",
-  "shortName": "thermometer",
-  "category": "objects",
-  "subcategory": "science",
+  "shortName": "temp",
+  "category": "sky-weather",
+  "subcategory": "weather",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A thermometer.",
-  "tldr": "Temperature, fever, or hot takes.",
+  "baseMeaning": "Thermometer emoji.",
+  "tldr": "Temperature!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Temperature reading.",
-      "example": "Check temp 🌡️",
+      "meaning": "Represents Thermometer.",
+      "example": "Look at this 🌡️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Fever or sick.",
-      "example": "Feeling sick 🌡️",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Hot or cold.", "example": "Feeling 🌡️", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌡️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Health check.",
-      "example": "Temperature check 🌡️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Hot take incoming.",
-      "example": "Hot take 🌡️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌡️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Weather or health." },
-    { "platform": "INSTAGRAM", "note": "Wellness content." },
-    { "platform": "SLACK", "note": "Health updates." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Hot take." },
-    { "generation": "MILLENNIAL", "note": "Health check." },
-    { "generation": "BOOMER", "note": "Temperature." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌡️ Thermometer Emoji Meaning - What Does 🌡️ Really Mean?",
-  "seoDescription": "Learn what the thermometer emoji 🌡️ really means. Temperature or fever vibes. Complete context guide."
+  "seoTitle": "🌡️ Thermometer Emoji Meaning",
+  "seoDescription": "Learn what the Thermometer emoji 🌡️ really means."
 }

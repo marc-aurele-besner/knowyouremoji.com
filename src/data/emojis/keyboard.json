@@ -7,46 +7,41 @@
   "category": "objects",
   "subcategory": "computer",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A keyboard.",
-  "tldr": "Typing, coding, or keyboard warrior.",
+  "baseMeaning": "Keyboard emoji.",
+  "tldr": "Keyboard!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Keyboard.",
-      "example": "Typing away ⌨️",
+      "meaning": "Represents Keyboard.",
+      "example": "Look at this ⌨️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Keyboard warrior.",
-      "example": "Fighting online ⌨️",
+      "meaning": "Typing or gaming.",
+      "example": "Feeling ⌨️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⌨️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Writing code.",
-      "example": "Coding ⌨️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Typing furiously.",
-      "example": "Rage typing ⌨️",
+      "meaning": "Work context.",
+      "example": "Work vibes ⌨️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Keyboard warrior." },
-    { "platform": "DISCORD", "note": "Gaming." },
-    { "platform": "SLACK", "note": "Working." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Mechanical keyboards." },
-    { "generation": "MILLENNIAL", "note": "Typing." },
-    { "generation": "BOOMER", "note": "Computer use." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⌨️ Keyboard Emoji Meaning - What Does ⌨️ Really Mean?",
-  "seoDescription": "Learn what the keyboard emoji ⌨️ really means. Typing or keyboard warrior vibes. Complete context guide."
+  "seoTitle": "⌨️ Keyboard Emoji Meaning",
+  "seoDescription": "Learn what the Keyboard emoji ⌨️ really means."
 }

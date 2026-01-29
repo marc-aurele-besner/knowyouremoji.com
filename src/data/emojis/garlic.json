@@ -4,49 +4,49 @@
   "character": "🧄",
   "name": "Garlic",
   "shortName": "garlic",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-vegetable",
   "unicodeVersion": "12.0",
   "baseMeaning": "A head of garlic.",
-  "tldr": "Flavor, vampire protection, or garlic bread.",
+  "tldr": "Flavor! Garlic or warding off evil.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Garlic.",
-      "example": "Extra garlic 🧄",
+      "meaning": "Garlic in cooking.",
+      "example": "Extra garlic please 🧄",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Warding off bad energy.",
-      "example": "Keep away 🧄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Bad breath warning.",
-      "example": "Had garlic 🧄",
+      "meaning": "Warding off bad vibes.",
+      "example": "Protecting myself 🧄",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Vampire jokes.",
-      "example": "Vampire proof 🧄",
+      "meaning": "Vampire protection.",
+      "example": "Just in case 🧄",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Cooking industry.",
+      "example": "Secret ingredient 🧄",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Cooking and food." },
-    { "platform": "TWITTER", "note": "Garlic bread love." },
-    { "platform": "TIKTOK", "note": "Cooking content." }
+    { "platform": "TWITTER", "note": "Cooking and vampires." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Cooking videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Garlic bread memes." },
-    { "generation": "MILLENNIAL", "note": "Vampire jokes." },
-    { "generation": "BOOMER", "note": "Cooking ingredient." }
+    { "generation": "GEN_Z", "note": "Vampire jokes." },
+    { "generation": "MILLENNIAL", "note": "Cooking essential." },
+    { "generation": "BOOMER", "note": "Garlic." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧄 Garlic Emoji Meaning - What Does 🧄 Really Mean?",
-  "seoDescription": "Learn what the garlic emoji 🧄 really means. Flavor or vampire vibes. Complete context guide."
+  "seoTitle": "🧄 Garlic Emoji Meaning",
+  "seoDescription": "Learn what the garlic emoji 🧄 really means."
 }

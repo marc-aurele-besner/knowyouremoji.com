@@ -4,67 +4,44 @@
   "character": "🍫",
   "name": "Chocolate Bar",
   "shortName": "chocolate",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A chocolate bar with squares.",
-  "tldr": "Chocolate, comfort food, or sweet indulgence.",
+  "baseMeaning": "Chocolate Bar emoji.",
+  "tldr": "Chocolate!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Chocolate or candy.",
-      "example": "Chocolate cravings 🍫",
+      "meaning": "Represents Chocolate Bar.",
+      "example": "Look at this 🍫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Comfort food or treating yourself.",
-      "example": "Bad day = chocolate 🍫",
+      "meaning": "Sweet or indulgent.",
+      "example": "Feeling 🍫",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍫", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Sweet gift or romantic gesture.",
-      "example": "Chocolate and flowers 🍫",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Emotional eating or guilty pleasure.",
-      "example": "Self care 🍫",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Food content and comfort posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Chocolate love and cravings."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Chocolate recipes and comfort content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Comfort food and self-care."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Emotional eating and treats."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Chocolate and candy."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍫 Chocolate Emoji Meaning - What Does 🍫 Really Mean?",
-  "seoDescription": "Learn what the chocolate emoji 🍫 really means in texting. Sweet treats and comfort food. Complete context guide."
+  "seoTitle": "🍫 Chocolate Bar Emoji Meaning",
+  "seoDescription": "Learn what the Chocolate Bar emoji 🍫 really means."
 }

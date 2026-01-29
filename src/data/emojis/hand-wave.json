@@ -1,0 +1,52 @@
+{
+  "unicode": "1F44B",
+  "slug": "hand-wave",
+  "character": "👋",
+  "name": "Waving Hand",
+  "shortName": "wave",
+  "category": "people",
+  "subcategory": "hand-gesture",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Waving hand greeting or goodbye.",
+  "tldr": "Hi or bye! Friendly wave.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents waving hello or goodbye.",
+      "example": "Hey there 👋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Greeting or dismissal.",
+      "example": "See ya 👋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Dismissive goodbye.",
+      "example": "Okay bye 👋",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Friendly greeting.",
+      "example": "Welcome to the team 👋",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Greeting new followers." },
+    { "platform": "INSTAGRAM", "note": "Story greetings." },
+    { "platform": "SLACK", "note": "New member welcome." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Can be dismissive." },
+    { "generation": "MILLENNIAL", "note": "Friendly wave." },
+    { "generation": "BOOMER", "note": "Hello or goodbye." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "👋 Waving Hand Emoji Meaning",
+  "seoDescription": "Learn what the Waving Hand emoji 👋 really means."
+}

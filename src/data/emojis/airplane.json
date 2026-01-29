@@ -3,50 +3,45 @@
   "slug": "airplane",
   "character": "✈️",
   "name": "Airplane",
-  "shortName": "airplane",
+  "shortName": "plane",
   "category": "travel",
   "subcategory": "transport-air",
   "unicodeVersion": "1.1",
-  "baseMeaning": "An airplane.",
-  "tldr": "Flying, travel, or vacation mode.",
+  "baseMeaning": "Airplane emoji.",
+  "tldr": "Plane!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Flying somewhere.",
-      "example": "Jet setting ✈️",
+      "meaning": "Represents Airplane.",
+      "example": "Look at this ✈️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Taking off (leaving).",
-      "example": "I'm out ✈️",
+      "meaning": "Travel or flight.",
+      "example": "Feeling ✈️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "DATING",
-      "meaning": "Long distance relationship.",
-      "example": "Missing you ✈️",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ✈️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Business travel.",
-      "example": "Work trip ✈️",
+      "meaning": "Work context.",
+      "example": "Work vibes ✈️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Travel content." },
-    { "platform": "TWITTER", "note": "Travel updates." },
-    { "platform": "WHATSAPP", "note": "Travel status." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Travel content." },
-    { "generation": "MILLENNIAL", "note": "Wanderlust." },
-    { "generation": "BOOMER", "note": "Flying." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✈️ Airplane Emoji Meaning - What Does ✈️ Really Mean?",
-  "seoDescription": "Learn what the airplane emoji ✈️ really means. Travel or jet setting vibes. Complete context guide."
+  "seoTitle": "✈️ Airplane Emoji Meaning",
+  "seoDescription": "Learn what the Airplane emoji ✈️ really means."
 }

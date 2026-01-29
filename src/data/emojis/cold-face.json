@@ -3,50 +3,68 @@
   "slug": "cold-face",
   "character": "🥶",
   "name": "Cold Face",
-  "shortName": "freezing",
-  "category": "faces",
+  "shortName": "cold",
+  "category": "smileys-emotion",
   "subcategory": "face-unwell",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A blue face with clenched teeth, appearing frozen.",
-  "tldr": "Freezing cold, ice cold response, or being left out in the cold.",
+  "baseMeaning": "A blue face with clenched teeth and icicles, indicating extreme cold.",
+  "tldr": "Freezing! Used for cold weather, cold takes, or describing something as 'ice cold'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Feeling very cold.",
-      "example": "It's freezing outside 🥶",
+      "meaning": "Feeling very cold or being in cold weather.",
+      "example": "Winter has arrived 🥶",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cold response or being ignored.",
-      "example": "That reply was cold 🥶",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Getting the cold shoulder.",
-      "example": "They left me on read 🥶",
+      "meaning": "Something is 'ice cold' - impressively cool or savage.",
+      "example": "That comeback was 🥶",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Something is 'ice cold' impressive.",
-      "example": "That diss was 🥶",
+      "meaning": "Dramatic reaction to mild cold.",
+      "example": "It's 60 degrees 🥶",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Someone is giving cold shoulder or being distant.",
+      "example": "They left me on read 🥶",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Cold takes and savage responses." },
-    { "platform": "TIKTOK", "note": "Used for impressive or savage moments." },
-    { "platform": "INSTAGRAM", "note": "Winter content and cold reactions." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for cold takes, weather complaints, or 'cold' burns."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in winter posts or dramatic cold reactions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Popular for 'ice cold' moments or savage content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cold burns and savage moments." },
-    { "generation": "MILLENNIAL", "note": "Freezing weather and cold responses." },
-    { "generation": "BOOMER", "note": "Cold weather." }
+    {
+      "generation": "GEN_Z",
+      "note": "Frequently used for 'cold' savage moments."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Mix of literal cold and slang usage."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Usually interpreted literally as being cold."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥶 Cold Face Emoji Meaning - What Does 🥶 Really Mean?",
-  "seoDescription": "Learn what the cold face emoji 🥶 really means. Freezing cold or ice cold response. Complete context guide."
+  "seoDescription": "Learn what the cold face emoji 🥶 really means. Used for freezing weather or 'ice cold' savage moments. Complete context guide."
 }

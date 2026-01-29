@@ -3,50 +3,45 @@
   "slug": "wedding",
   "character": "💒",
   "name": "Wedding",
-  "shortName": "wedding",
+  "shortName": "chapel",
   "category": "travel",
   "subcategory": "place-building",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A wedding chapel.",
-  "tldr": "Marriage, love, or Vegas wedding.",
+  "baseMeaning": "Wedding emoji.",
+  "tldr": "Wedding!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Wedding chapel.",
-      "example": "Getting married 💒",
+      "meaning": "Represents Wedding.",
+      "example": "Look at this 💒",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Marriage vibes.",
-      "example": "Wedding goals 💒",
+      "meaning": "Marriage or church.",
+      "example": "Feeling 💒",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💒", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Serious relationship.",
-      "example": "The one 💒",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Vegas wedding.",
-      "example": "Quickie wedding 💒",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 💒",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Wedding content." },
-    { "platform": "TWITTER", "note": "Engagement posts." },
-    { "platform": "TIKTOK", "note": "Wedding videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Wedding aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Pinterest wedding." },
-    { "generation": "BOOMER", "note": "Marriage." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💒 Wedding Emoji Meaning - What Does 💒 Really Mean?",
-  "seoDescription": "Learn what the wedding emoji 💒 really means. Marriage or love vibes. Complete context guide."
+  "seoTitle": "💒 Wedding Emoji Meaning",
+  "seoDescription": "Learn what the Wedding emoji 💒 really means."
 }

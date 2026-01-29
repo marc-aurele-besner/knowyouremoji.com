@@ -2,51 +2,51 @@
   "unicode": "26A1",
   "slug": "lightning",
   "character": "⚡",
-  "name": "Lightning",
+  "name": "High Voltage",
   "shortName": "lightning",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "category": "symbols",
+  "subcategory": "warning",
   "unicodeVersion": "4.0",
-  "baseMeaning": "A lightning bolt.",
-  "tldr": "Speed, energy, or Harry Potter scar.",
+  "baseMeaning": "High voltage or lightning bolt.",
+  "tldr": "Energy! Speed, power, or danger.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Lightning storm.",
-      "example": "Thunderstorm ⚡",
+      "meaning": "Represents electricity or lightning.",
+      "example": "Lightning storm ⚡",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fast or electric.",
-      "example": "Speed run ⚡",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Quick turnaround.",
-      "example": "Done fast ⚡",
+      "meaning": "Fast, powerful, or energetic.",
+      "example": "So fast ⚡",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Harry Potter reference.",
-      "example": "The boy who lived ⚡",
+      "meaning": "Sarcastic speed reference.",
+      "example": "Replied super fast ⚡",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Quick turnaround or energy.",
+      "example": "Lightning fast delivery ⚡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Speed emphasis." },
-    { "platform": "DISCORD", "note": "Gaming fast." },
-    { "platform": "TIKTOK", "note": "Energy content." }
+    { "platform": "TWITTER", "note": "Speed and energy." },
+    { "platform": "INSTAGRAM", "note": "Power and energy content." },
+    { "platform": "TIKTOK", "note": "Fast or energetic content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Energy vibes." },
-    { "generation": "MILLENNIAL", "note": "Harry Potter." },
-    { "generation": "BOOMER", "note": "Power symbol." }
+    { "generation": "GEN_Z", "note": "Harry Potter reference or energy." },
+    { "generation": "MILLENNIAL", "note": "Speed and power." },
+    { "generation": "BOOMER", "note": "Electrical warning." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⚡ Lightning Emoji Meaning - What Does ⚡ Really Mean?",
-  "seoDescription": "Learn what the lightning emoji ⚡ really means. Speed or energy vibes. Complete context guide."
+  "seoTitle": "⚡ High Voltage Emoji Meaning",
+  "seoDescription": "Learn what the High Voltage emoji ⚡ really means."
 }

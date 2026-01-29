@@ -4,44 +4,67 @@
   "character": "🍷",
   "name": "Wine Glass",
   "shortName": "wine",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "drink",
   "unicodeVersion": "6.0",
   "baseMeaning": "A glass of red wine.",
-  "tldr": "Wine, sophisticated, or wine mom energy.",
+  "tldr": "Wine time! Used for relaxing, celebrations, fancy occasions, or 'wine mom' culture.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Wine.", "example": "Wine o'clock 🍷", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Having or wanting wine.",
+      "example": "Finally Friday 🍷",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Sophisticated relaxation.",
-      "example": "Wine down 🍷",
+      "meaning": "Marking a special occasion or toast.",
+      "example": "Cheers to us! 🍷",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Romantic dinner.",
-      "example": "Wine and dine 🍷",
+      "meaning": "Something sophisticated or upscale like a date night.",
+      "example": "Date night 🍷",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Wine mom energy.",
-      "example": "Surviving parenthood 🍷",
+      "meaning": "Wine mom culture or needing wine to cope.",
+      "example": "Kids are finally asleep 🍷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Wine content." },
-    { "platform": "TWITTER", "note": "Wine culture." },
-    { "platform": "TIKTOK", "note": "Wine mom content." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular for dinner posts, date nights, and relaxation."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Often used for end-of-day relaxation or ironic coping."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Common in wine mom culture posts and weekend celebrations."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Wine aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Wine culture." },
-    { "generation": "BOOMER", "note": "Wine with dinner." }
+    {
+      "generation": "GEN_Z",
+      "note": "May use ironically or for fancy aesthetic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Wine culture is big - used for unwinding."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Straightforward wine reference for meals or celebrations."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍷 Wine Glass Emoji Meaning - What Does 🍷 Really Mean?",
-  "seoDescription": "Learn what the wine glass emoji 🍷 really means. Wine or sophisticated vibes. Complete context guide."
+  "seoDescription": "Learn what the wine glass emoji 🍷 really means. Used for relaxation, celebrations, or wine culture moments. Complete context guide."
 }

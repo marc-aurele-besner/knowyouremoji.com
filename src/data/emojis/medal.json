@@ -7,46 +7,64 @@
   "category": "activities",
   "subcategory": "award-medal",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A gold medal with ribbon.",
-  "tldr": "Achievement, Olympics vibes, or deserving recognition.",
+  "baseMeaning": "A gold medal on a ribbon, representing achievement.",
+  "tldr": "You earned it! Used for achievements, recognition, or well-deserved success.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Winning a medal.",
-      "example": "Gold medal 🏅",
+      "meaning": "Winning a medal or sports achievement.",
+      "example": "Gold medal winner 🏅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Deserving recognition.",
-      "example": "You deserve a medal 🏅",
+      "meaning": "Recognition for doing something well.",
+      "example": "Give yourself a 🏅",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Outstanding performance.",
+      "meaning": "Employee recognition or achievement.",
       "example": "Employee of the month 🏅",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastic praise.",
-      "example": "Showed up on time 🏅",
+      "meaning": "Sarcastic recognition for basic tasks.",
+      "example": "Made it through the day 🏅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Achievement and sports." },
-    { "platform": "SLACK", "note": "Recognition." },
-    { "platform": "INSTAGRAM", "note": "Fitness and sports." }
+    {
+      "platform": "TWITTER",
+      "note": "Common for achievements and sarcastic recognition."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Used for kudos and recognition."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in fitness and achievement content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Achievement recognition." },
-    { "generation": "MILLENNIAL", "note": "Adulting achievements." },
-    { "generation": "BOOMER", "note": "Sports and awards." }
+    {
+      "generation": "GEN_Z",
+      "note": "Self-care medals and ironic achievement."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Participation medal jokes and genuine recognition."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Sports medal or award."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏅 Medal Emoji Meaning - What Does 🏅 Really Mean?",
-  "seoDescription": "Learn what the medal emoji 🏅 really means. Achievement or recognition vibes. Complete context guide."
+  "seoTitle": "🏅 Sports Medal Emoji Meaning - What Does 🏅 Really Mean?",
+  "seoDescription": "Learn what the medal emoji 🏅 really means. Used for achievements and recognition. Complete context guide."
 }

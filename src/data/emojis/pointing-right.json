@@ -3,45 +3,50 @@
   "slug": "pointing-right",
   "character": "👉",
   "name": "Backhand Index Pointing Right",
-  "shortName": "pointright",
+  "shortName": "point right",
   "category": "people",
-  "subcategory": "hand-single-finger",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A hand pointing to the right.",
-  "tldr": "Hey you, look at this, or click here.",
+  "baseMeaning": "Finger pointing to the right.",
+  "tldr": "Look right! Drawing attention.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pointing at something.",
-      "example": "Check this 👉",
+      "meaning": "Pointing to the right.",
+      "example": "Over there 👉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Hey you or gotcha.",
-      "example": "👉👉 ayy",
+      "meaning": "This person or calling out.",
+      "example": "You know who you are 👉",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Pointing fingers.",
+      "example": "It's definitely them 👉",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Draw attention.",
-      "example": "Important 👉",
+      "meaning": "Next item or action.",
+      "example": "Next step 👉",
       "riskLevel": "LOW"
-    },
-    { "context": "IRONIC", "meaning": "Finger guns.", "example": "👉😎👉", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Drawing attention to links." },
-    { "platform": "INSTAGRAM", "note": "Call to action." },
-    { "platform": "SLACK", "note": "Highlighting info." }
+    { "platform": "TWITTER", "note": "Link to something." },
+    { "platform": "INSTAGRAM", "note": "Swipe or link in bio." },
+    { "platform": "SLACK", "note": "Action item." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Finger guns meme." },
-    { "generation": "MILLENNIAL", "note": "Pointing things out." },
-    { "generation": "BOOMER", "note": "Literal pointing." }
+    { "generation": "GEN_Z", "note": "You 👉👈 meme." },
+    { "generation": "MILLENNIAL", "note": "Check this out." },
+    { "generation": "BOOMER", "note": "Look that way." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👉 Pointing Right Emoji Meaning - What Does 👉 Really Mean?",
-  "seoDescription": "Learn what the pointing right emoji 👉 really means. Hey you or look at this vibes. Complete context guide."
+  "seoTitle": "👉 Backhand Index Pointing Right Emoji Meaning",
+  "seoDescription": "Learn what the Backhand Index Pointing Right emoji 👉 really means."
 }

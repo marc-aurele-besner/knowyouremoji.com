@@ -1,0 +1,47 @@
+{
+  "unicode": "1F952",
+  "slug": "cucumber",
+  "character": "🥒",
+  "name": "Cucumber",
+  "shortName": "cucumber",
+  "category": "food-drink",
+  "subcategory": "food-vegetable",
+  "unicodeVersion": "9.0",
+  "baseMeaning": "A green cucumber.",
+  "tldr": "Cool as a cucumber! Cucumbers or staying calm.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Cucumbers.",
+      "example": "Fresh salad 🥒",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Staying cool and calm.",
+      "example": "Cool as a 🥒",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Spa day.", "example": "Self care 🥒", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Can be suggestive.",
+      "example": "Know what I mean 🥒",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Calm energy." },
+    { "platform": "INSTAGRAM", "note": "Spa content." },
+    { "platform": "TIKTOK", "note": "Food content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Calm vibes." },
+    { "generation": "MILLENNIAL", "note": "Cool cucumber." },
+    { "generation": "BOOMER", "note": "Vegetable." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🥒 Cucumber Emoji Meaning",
+  "seoDescription": "Learn what the cucumber emoji 🥒 really means."
+}

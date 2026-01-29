@@ -4,49 +4,44 @@
   "character": "☁️",
   "name": "Cloud",
   "shortName": "cloud",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
-  "unicodeVersion": "1.1",
-  "baseMeaning": "A cloud.",
-  "tldr": "Cloudy weather, daydreaming, or cloud storage.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Cloud emoji.",
+  "tldr": "Cloudy! Clouds or dreamy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A cloud.",
-      "example": "Cloudy day ☁️",
+      "meaning": "Represents Cloud.",
+      "example": "Check this out ☁️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Head in the clouds.",
-      "example": "Daydreaming ☁️",
+      "meaning": "Common slang usage.",
+      "example": "Vibes ☁️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☁️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Cloud computing.",
-      "example": "In the cloud ☁️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Overcast mood.",
-      "example": "Gloomy ☁️",
+      "meaning": "Professional context.",
+      "example": "Work stuff ☁️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Weather posts." },
-    { "platform": "SLACK", "note": "Tech context." },
-    { "platform": "INSTAGRAM", "note": "Aesthetic shots." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dreamy vibes." },
-    { "generation": "MILLENNIAL", "note": "Tech reference." },
-    { "generation": "BOOMER", "note": "Weather." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☁️ Cloud Emoji Meaning - What Does ☁️ Really Mean?",
-  "seoDescription": "Learn what the cloud emoji ☁️ really means. Weather or dreamy vibes. Complete context guide."
+  "seoTitle": "☁️ Cloud Emoji Meaning",
+  "seoDescription": "Learn what the Cloud emoji ☁️ really means."
 }

@@ -4,49 +4,44 @@
   "character": "🦐",
   "name": "Shrimp",
   "shortName": "shrimp",
-  "category": "food",
-  "subcategory": "food-marine",
+  "category": "animals",
+  "subcategory": "animal-marine",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A shrimp.",
-  "tldr": "Seafood, small, or shrimp emoji.",
+  "baseMeaning": "Shrimp emoji.",
+  "tldr": "Shrimp!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Shrimp.",
-      "example": "Shrimp dinner 🦐",
+      "meaning": "Represents Shrimp.",
+      "example": "Look at this 🦐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Small.",
-      "example": "Feeling small 🦐",
+      "meaning": "Small or seafood.",
+      "example": "Feeling 🦐",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🦐", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Small player.",
-      "example": "Small fry 🦐",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Fancy seafood.",
-      "example": "Bougie dinner 🦐",
+      "meaning": "Work context.",
+      "example": "Work vibes 🦐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TWITTER", "note": "Seafood posts." },
-    { "platform": "TIKTOK", "note": "Food videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Shrimp memes." },
-    { "generation": "MILLENNIAL", "note": "Seafood." },
-    { "generation": "BOOMER", "note": "Fancy dinner." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦐 Shrimp Emoji Meaning - What Does 🦐 Really Mean?",
-  "seoDescription": "Learn what the shrimp emoji 🦐 really means. Seafood or small vibes. Complete context guide."
+  "seoTitle": "🦐 Shrimp Emoji Meaning",
+  "seoDescription": "Learn what the Shrimp emoji 🦐 really means."
 }

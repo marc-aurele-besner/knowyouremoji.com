@@ -7,41 +7,46 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A human ear.",
-  "tldr": "Listening, hearing, or I'm all ears.",
+  "baseMeaning": "Human ear emoji.",
+  "tldr": "Listening! Hearing or paying attention.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "An ear.", "example": "I hear you 👂", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Listening closely.",
-      "example": "All ears 👂",
+      "context": "LITERAL",
+      "meaning": "Represents ear or listening.",
+      "example": "I'm all ears 👂",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Ready to listen.",
-      "example": "Go ahead 👂",
+      "context": "SLANG",
+      "meaning": "Listening carefully or gossip.",
+      "example": "Tell me everything 👂",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Eavesdropping.",
-      "example": "Spilling tea 👂",
+      "meaning": "Pretending to listen.",
+      "example": "Oh I'm listening 👂",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Active listening or feedback.",
+      "example": "Open to feedback 👂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Listening to tea." },
-    { "platform": "SLACK", "note": "Ready to listen." },
-    { "platform": "WHATSAPP", "note": "Paying attention." }
+    { "platform": "TWITTER", "note": "Listening and gossip." },
+    { "platform": "INSTAGRAM", "note": "Hearing content." },
+    { "platform": "TIKTOK", "note": "Listening in." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Listening for tea." },
-    { "generation": "MILLENNIAL", "note": "I'm all ears." },
-    { "generation": "BOOMER", "note": "Listening." }
+    { "generation": "MILLENNIAL", "note": "I'm listening." },
+    { "generation": "BOOMER", "note": "Ear symbol." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👂 Ear Emoji Meaning - What Does 👂 Really Mean?",
-  "seoDescription": "Learn what the ear emoji 👂 really means. Listening or all ears vibes. Complete context guide."
+  "seoTitle": "👂 Ear Emoji Meaning",
+  "seoDescription": "Learn what the Ear emoji 👂 really means."
 }

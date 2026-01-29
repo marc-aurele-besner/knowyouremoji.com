@@ -1,0 +1,47 @@
+{
+  "unicode": "1F3B5",
+  "slug": "musical-note",
+  "character": "🎵",
+  "name": "Musical Note",
+  "shortName": "note",
+  "category": "objects",
+  "subcategory": "music",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Musical Note emoji.",
+  "tldr": "Note!",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents Musical Note.",
+      "example": "Look at this 🎵",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Music or singing.",
+      "example": "Feeling 🎵",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎵", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎵",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🎵 Musical Note Emoji Meaning",
+  "seoDescription": "Learn what the Musical Note emoji 🎵 really means."
+}

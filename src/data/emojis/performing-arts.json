@@ -3,50 +3,45 @@
   "slug": "performing-arts",
   "character": "🎭",
   "name": "Performing Arts",
-  "shortName": "performing-arts",
+  "shortName": "theater",
   "category": "activities",
   "subcategory": "arts-crafts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Theater masks.",
-  "tldr": "Drama, theater, or two-faced.",
+  "baseMeaning": "Performing Arts emoji.",
+  "tldr": "Theater!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Theater.",
-      "example": "Broadway 🎭",
+      "meaning": "Represents Performing Arts.",
+      "example": "Look at this 🎭",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being dramatic.",
-      "example": "Drama queen 🎭",
+      "meaning": "Drama or acting.",
+      "example": "Feeling 🎭",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎭", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Two-faced.",
-      "example": "Showing fake face 🎭",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Acting.",
-      "example": "Oscar performance 🎭",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎭",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Drama content." },
-    { "platform": "INSTAGRAM", "note": "Theater posts." },
-    { "platform": "TIKTOK", "note": "Acting content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Drama indicator." },
-    { "generation": "MILLENNIAL", "note": "Theater." },
-    { "generation": "BOOMER", "note": "Performing arts." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎭 Performing Arts Emoji Meaning - What Does 🎭 Really Mean?",
-  "seoDescription": "Learn what the performing arts emoji 🎭 really means. Theater or drama vibes. Complete context guide."
+  "seoTitle": "🎭 Performing Arts Emoji Meaning",
+  "seoDescription": "Learn what the Performing Arts emoji 🎭 really means."
 }

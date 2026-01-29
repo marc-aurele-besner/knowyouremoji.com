@@ -8,40 +8,45 @@
   "subcategory": "animal-reptile",
   "unicodeVersion": "6.0",
   "baseMeaning": "A crocodile.",
-  "tldr": "Dangerous, Florida, or crocodile tears.",
+  "tldr": "Crocodile! Dangerous or fake tears.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A crocodile.", "example": "Snap 🐊", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents a crocodile.",
+      "example": "Croc attack 🐊",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Dangerous person.",
-      "example": "Watch out 🐊",
+      "meaning": "Crocodile tears or danger.",
+      "example": "Crocodile tears 🐊",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Crocodile tears.",
-      "example": "Fake crying 🐊",
+      "meaning": "Fake emotions.",
+      "example": "My crocodile tears 🐊",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Florida or Australia.",
-      "example": "Florida vibes 🐊",
+      "meaning": "Hidden danger.",
+      "example": "Watch out for crocs 🐊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Florida and danger." },
+    { "platform": "TWITTER", "note": "Fake tears or Florida." },
     { "platform": "INSTAGRAM", "note": "Wildlife content." },
-    { "platform": "TIKTOK", "note": "Florida content." }
+    { "platform": "TIKTOK", "note": "Croc content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Florida man." },
-    { "generation": "MILLENNIAL", "note": "Crocodile tears." },
-    { "generation": "BOOMER", "note": "Reptile." }
+    { "generation": "GEN_Z", "note": "Crocodile tears expression." },
+    { "generation": "MILLENNIAL", "note": "Steve Irwin vibes." },
+    { "generation": "BOOMER", "note": "Dangerous reptile." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐊 Crocodile Emoji Meaning - What Does 🐊 Really Mean?",
-  "seoDescription": "Learn what the crocodile emoji 🐊 really means. Danger or crocodile tears vibes. Complete context guide."
+  "seoTitle": "🐊 Crocodile Emoji Meaning",
+  "seoDescription": "Learn what the Crocodile emoji 🐊 really means."
 }

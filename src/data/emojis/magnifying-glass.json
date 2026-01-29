@@ -2,51 +2,69 @@
   "unicode": "1F50D",
   "slug": "magnifying-glass",
   "character": "🔍",
-  "name": "Magnifying Glass",
-  "shortName": "magnifying-glass",
+  "name": "Magnifying Glass Tilted Left",
+  "shortName": "search",
   "category": "objects",
-  "subcategory": "tool",
+  "subcategory": "light-video",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A magnifying glass tilted left.",
-  "tldr": "Search, investigate, or look closer.",
+  "baseMeaning": "A magnifying glass for examining things closely.",
+  "tldr": "Searching! Used for searching, investigating, or looking closely.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Magnifying glass.",
-      "example": "Looking closely 🔍",
+      "meaning": "Searching or looking for something.",
+      "example": "Looking for answers 🔍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Investigating.",
-      "example": "FBI mode 🔍",
+      "meaning": "Investigating or doing research.",
+      "example": "Deep diving into this 🔍",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Research.",
-      "example": "Searching for 🔍",
+      "meaning": "Research, search, or investigation.",
+      "example": "Searching for the bug 🔍",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Stalking.",
-      "example": "Deep diving 🔍",
+      "meaning": "Stalking or investigating people online.",
+      "example": "Doing my research 🔍",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Search function." },
-    { "platform": "INSTAGRAM", "note": "Explore page." },
-    { "platform": "DISCORD", "note": "Looking for." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for research and investigation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common for deep dives and stalking jokes."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Used for searching and debugging."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Stalking mode." },
-    { "generation": "MILLENNIAL", "note": "Research." },
-    { "generation": "BOOMER", "note": "Search." }
+    {
+      "generation": "GEN_Z",
+      "note": "Researching and online investigation."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Search and discovery."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Magnifying glass for looking closely."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🔍 Magnifying Glass Emoji Meaning - What Does 🔍 Really Mean?",
-  "seoDescription": "Learn what the magnifying glass emoji 🔍 really means. Search or investigate vibes. Complete context guide."
+  "seoDescription": "Learn what the magnifying glass emoji 🔍 really means. Used for searching and investigation. Complete context guide."
 }

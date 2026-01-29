@@ -7,46 +7,41 @@
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A backpack.",
-  "tldr": "School, travel, or adventure.",
+  "baseMeaning": "Backpack emoji.",
+  "tldr": "Backpack!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A backpack.",
-      "example": "Packed and ready 🎒",
+      "meaning": "Represents Backpack.",
+      "example": "Look at this 🎒",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Backpacking.",
-      "example": "Adventure time 🎒",
+      "meaning": "School or travel.",
+      "example": "Feeling 🎒",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎒", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Commuting.",
-      "example": "Work bag 🎒",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Carrying baggage.",
-      "example": "Emotional baggage 🎒",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎒",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Travel content." },
-    { "platform": "TWITTER", "note": "Back to school." },
-    { "platform": "TIKTOK", "note": "What's in my bag." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "School." },
-    { "generation": "MILLENNIAL", "note": "Backpacking." },
-    { "generation": "BOOMER", "note": "Travel." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎒 Backpack Emoji Meaning - What Does 🎒 Really Mean?",
-  "seoDescription": "Learn what the backpack emoji 🎒 really means. School or travel vibes. Complete context guide."
+  "seoTitle": "🎒 Backpack Emoji Meaning",
+  "seoDescription": "Learn what the Backpack emoji 🎒 really means."
 }

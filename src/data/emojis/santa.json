@@ -1,0 +1,52 @@
+{
+  "unicode": "1F385",
+  "slug": "santa",
+  "character": "🎅",
+  "name": "Santa Claus",
+  "shortName": "santa",
+  "category": "people",
+  "subcategory": "person-fantasy",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Santa Claus with red suit.",
+  "tldr": "Santa! Christmas or gift-giving.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents Santa Claus.",
+      "example": "Santa is coming 🎅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Gift-giver or holiday cheer.",
+      "example": "Playing Santa 🎅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Not getting gifts.",
+      "example": "Santa forgot me 🎅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Holiday theme.",
+      "example": "Office Secret Santa 🎅",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Christmas content." },
+    { "platform": "INSTAGRAM", "note": "Holiday posts." },
+    { "platform": "TIKTOK", "note": "Christmas content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Christmas vibes." },
+    { "generation": "MILLENNIAL", "note": "Holiday nostalgia." },
+    { "generation": "BOOMER", "note": "Santa Claus." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🎅 Santa Claus Emoji Meaning",
+  "seoDescription": "Learn what the Santa Claus emoji 🎅 really means."
+}

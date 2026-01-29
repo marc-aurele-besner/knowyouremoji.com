@@ -7,46 +7,41 @@
   "category": "travel",
   "subcategory": "transport-ground",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A train.",
-  "tldr": "Travel, commute, or on track.",
+  "baseMeaning": "Train emoji.",
+  "tldr": "Train!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Train.",
-      "example": "Taking the train 🚆",
+      "meaning": "Represents Train.",
+      "example": "Look at this 🚆",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "On track.",
-      "example": "Progress 🚆",
+      "meaning": "Commute or travel.",
+      "example": "Feeling 🚆",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🚆", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Commute.",
-      "example": "Delayed 🚆",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Train wreck.",
-      "example": "Disaster 🚆",
+      "meaning": "Work context.",
+      "example": "Work vibes 🚆",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Transit updates." },
-    { "platform": "WHATSAPP", "note": "ETA." },
-    { "platform": "INSTAGRAM", "note": "Travel content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Metro vibes." },
-    { "generation": "MILLENNIAL", "note": "Commute life." },
-    { "generation": "BOOMER", "note": "Rail travel." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🚆 Train Emoji Meaning - What Does 🚆 Really Mean?",
-  "seoDescription": "Learn what the train emoji 🚆 really means. Travel or commute vibes. Complete context guide."
+  "seoTitle": "🚆 Train Emoji Meaning",
+  "seoDescription": "Learn what the Train emoji 🚆 really means."
 }

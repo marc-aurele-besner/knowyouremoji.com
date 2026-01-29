@@ -4,49 +4,49 @@
   "character": "🍋",
   "name": "Lemon",
   "shortName": "lemon",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
   "baseMeaning": "A yellow lemon.",
-  "tldr": "Sour, when life gives you lemons, or refreshing.",
+  "tldr": "When life gives you lemons! Sour or making the best of things.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A lemon.",
-      "example": "Lemonade time 🍋",
+      "meaning": "Lemons.",
+      "example": "Fresh lemonade 🍋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something bad (a lemon car).",
-      "example": "Got a lemon 🍋",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Make lemonade.",
-      "example": "When life gives you 🍋",
+      "meaning": "Making the best of bad situations.",
+      "example": "Life gave me lemons 🍋",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
       "meaning": "Sour situation.",
-      "example": "That's sour 🍋",
+      "example": "Everything's going great 🍋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Defective product (lemon).",
+      "example": "This car is a 🍋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Lemons to lemonade." },
-    { "platform": "INSTAGRAM", "note": "Fresh and summer." },
-    { "platform": "TIKTOK", "note": "Recipe content." }
+    { "platform": "TWITTER", "note": "Life lemons meme." },
+    { "platform": "INSTAGRAM", "note": "Yellow aesthetic." },
+    { "platform": "TIKTOK", "note": "Life hack content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Lemonade mouth." },
-    { "generation": "MILLENNIAL", "note": "Beyoncé Lemonade." },
+    { "generation": "GEN_Z", "note": "Make lemonade energy." },
+    { "generation": "MILLENNIAL", "note": "Life gives lemons." },
     { "generation": "BOOMER", "note": "Sour fruit." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍋 Lemon Emoji Meaning - What Does 🍋 Really Mean?",
-  "seoDescription": "Learn what the lemon emoji 🍋 really means. Sour or lemonade vibes. Complete context guide."
+  "seoTitle": "🍋 Lemon Emoji Meaning",
+  "seoDescription": "Learn what the lemon emoji 🍋 really means."
 }
