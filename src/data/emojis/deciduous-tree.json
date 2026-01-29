@@ -3,50 +3,50 @@
   "slug": "deciduous-tree",
   "character": "🌳",
   "name": "Deciduous Tree",
-  "shortName": "deciduous-tree",
-  "category": "nature",
+  "shortName": "tree",
+  "category": "animals-nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A deciduous tree.",
-  "tldr": "Nature, growth, or environment.",
+  "baseMeaning": "A round leafy tree.",
+  "tldr": "Tree! Nature or environment.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Tree.",
-      "example": "Nature walk 🌳",
+      "meaning": "Trees.",
+      "example": "Beautiful trees 🌳",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Growth.",
-      "example": "Personal growth 🌳",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Sustainability.",
-      "example": "Green initiative 🌳",
+      "meaning": "Environment or nature.",
+      "example": "Save the trees 🌳",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Touch grass.",
-      "example": "Go outside 🌳",
+      "meaning": "Go outside energy.",
+      "example": "Touch grass 🌳",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Environmental work.",
+      "example": "Green initiative 🌳",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Nature content." },
-    { "platform": "INSTAGRAM", "note": "Outdoor pics." },
-    { "platform": "TIKTOK", "note": "Touching grass." }
+    { "platform": "TWITTER", "note": "Environment." },
+    { "platform": "INSTAGRAM", "note": "Nature photos." },
+    { "platform": "TIKTOK", "note": "Outdoor content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Touch grass meme." },
-    { "generation": "MILLENNIAL", "note": "Nature lover." },
-    { "generation": "BOOMER", "note": "Outdoors." }
+    { "generation": "GEN_Z", "note": "Nature energy." },
+    { "generation": "MILLENNIAL", "note": "Environment." },
+    { "generation": "BOOMER", "note": "Trees." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌳 Tree Emoji Meaning - What Does 🌳 Really Mean?",
-  "seoDescription": "Learn what the tree emoji 🌳 really means. Nature or growth vibes. Complete context guide."
+  "seoTitle": "🌳 Deciduous Tree Emoji Meaning",
+  "seoDescription": "Learn what the tree emoji 🌳 really means."
 }

@@ -4,55 +4,44 @@
   "character": "🍉",
   "name": "Watermelon",
   "shortName": "watermelon",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A watermelon slice.",
-  "tldr": "Summer, refreshing, or Palestinian solidarity.",
+  "baseMeaning": "A slice of watermelon.",
+  "tldr": "Summer essential! Watermelon or summer vibes.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Watermelon.",
-      "example": "Summer fruit 🍉",
+      "example": "Summer snack 🍉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Palestinian solidarity symbol.",
-      "example": "Free Palestine 🍉",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Sweet and refreshing.",
-      "example": "Summer date 🍉",
+      "meaning": "Summer or refreshing.",
+      "example": "Hot day 🍉",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Watermelon sugar.",
-      "example": "Harry Styles 🍉",
+      "meaning": "Basic summer activity.",
+      "example": "Peak summer 🍉",
       "riskLevel": "LOW"
-    }
+    },
+    { "context": "WORK", "meaning": "Summer events.", "example": "BBQ time 🍉", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Solidarity and summer." },
-    { "platform": "INSTAGRAM", "note": "Summer content." },
-    { "platform": "TIKTOK", "note": "Summer vibes." }
+    { "platform": "TWITTER", "note": "Summer content." },
+    { "platform": "INSTAGRAM", "note": "Summer aesthetic." },
+    { "platform": "TIKTOK", "note": "Summer videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Solidarity symbol." },
+    { "generation": "GEN_Z", "note": "Summer vibes." },
     { "generation": "MILLENNIAL", "note": "Summer fruit." },
     { "generation": "BOOMER", "note": "Watermelon." }
   ],
-  "warnings": [
-    {
-      "title": "Political Symbol",
-      "description": "Used as a symbol of Palestinian solidarity due to flag colors.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍉 Watermelon Emoji Meaning - What Does 🍉 Really Mean?",
-  "seoDescription": "Learn what the watermelon emoji 🍉 really means. Summer or solidarity vibes. Complete context guide."
+  "seoTitle": "🍉 Watermelon Emoji Meaning",
+  "seoDescription": "Learn what the watermelon emoji 🍉 really means."
 }

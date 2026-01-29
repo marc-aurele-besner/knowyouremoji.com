@@ -3,50 +3,50 @@
   "slug": "maple-leaf",
   "character": "🍁",
   "name": "Maple Leaf",
-  "shortName": "maple-leaf",
-  "category": "nature",
+  "shortName": "maple",
+  "category": "animals-nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A maple leaf.",
-  "tldr": "Canada, fall, or autumn vibes.",
+  "baseMeaning": "An orange maple leaf for autumn.",
+  "tldr": "Fall vibes! Autumn or Canada.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Maple leaf.",
-      "example": "Fall foliage 🍁",
+      "meaning": "Autumn or fall season.",
+      "example": "Fall is here 🍁",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Canada.",
-      "example": "Canadian 🍁",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Autumn event.",
-      "example": "Fall season 🍁",
+      "meaning": "Canadian or Canada.",
+      "example": "Oh Canada 🍁",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Basic fall.",
-      "example": "Pumpkin spice season 🍁",
+      "meaning": "Basic fall aesthetic.",
+      "example": "PSL season 🍁",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Q4 or fall season.",
+      "example": "Fall planning 🍁",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Canada reference." },
-    { "platform": "INSTAGRAM", "note": "Fall content." },
-    { "platform": "TIKTOK", "note": "Autumn vibes." }
+    { "platform": "TWITTER", "note": "Autumn and Canada." },
+    { "platform": "INSTAGRAM", "note": "Fall aesthetic." },
+    { "platform": "TIKTOK", "note": "Autumn content." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Fall aesthetic." },
-    { "generation": "MILLENNIAL", "note": "PSL season." },
-    { "generation": "BOOMER", "note": "Autumn." }
+    { "generation": "MILLENNIAL", "note": "Autumn vibes." },
+    { "generation": "BOOMER", "note": "Fall leaf." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍁 Maple Leaf Emoji Meaning - What Does 🍁 Really Mean?",
-  "seoDescription": "Learn what the maple leaf emoji 🍁 really means. Canada or fall vibes. Complete context guide."
+  "seoTitle": "🍁 Maple Leaf Emoji Meaning",
+  "seoDescription": "Learn what the maple leaf emoji 🍁 really means."
 }

@@ -4,49 +4,49 @@
   "character": "☘️",
   "name": "Shamrock",
   "shortName": "shamrock",
-  "category": "nature",
+  "category": "animals-nature",
   "subcategory": "plant-other",
   "unicodeVersion": "4.1",
-  "baseMeaning": "A shamrock (three-leaf clover).",
-  "tldr": "Ireland, St. Patrick's Day, or Irish.",
+  "baseMeaning": "A three-leaf shamrock.",
+  "tldr": "Irish pride! Ireland or St Patrick's Day.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Shamrock.",
-      "example": "Irish clover ☘️",
+      "meaning": "Shamrock or Ireland.",
+      "example": "Happy St Patrick's Day ☘️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Irish pride.",
-      "example": "Erin go bragh ☘️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "St. Patrick's Day.",
-      "example": "Office party ☘️",
+      "meaning": "Irish heritage.",
+      "example": "Irish pride ☘️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretend Irish.",
+      "meaning": "Pretending to be Irish.",
       "example": "Everyone's Irish today ☘️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Irish businesses.",
+      "example": "Irish company ☘️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "St. Patrick's Day." },
+    { "platform": "TWITTER", "note": "St Patrick's Day." },
     { "platform": "INSTAGRAM", "note": "Irish content." },
-    { "platform": "WHATSAPP", "note": "Holiday greetings." }
+    { "platform": "TIKTOK", "note": "Irish culture." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "St. Paddy's." },
-    { "generation": "MILLENNIAL", "note": "Irish pubs." },
+    { "generation": "GEN_Z", "note": "Irish vibes." },
+    { "generation": "MILLENNIAL", "note": "St Paddy's." },
     { "generation": "BOOMER", "note": "Irish heritage." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☘️ Shamrock Emoji Meaning - What Does ☘️ Really Mean?",
-  "seoDescription": "Learn what the shamrock emoji ☘️ really means. Irish or St. Patrick's Day vibes. Complete context guide."
+  "seoTitle": "☘️ Shamrock Emoji Meaning",
+  "seoDescription": "Learn what the shamrock emoji ☘️ really means."
 }

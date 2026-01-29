@@ -4,49 +4,49 @@
   "character": "🍅",
   "name": "Tomato",
   "shortName": "tomato",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-vegetable",
   "unicodeVersion": "6.0",
   "baseMeaning": "A red tomato.",
-  "tldr": "Rotten Tomatoes, booing, or fresh produce.",
+  "tldr": "Fruit or vegetable? Tomatoes or throwing shade.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A tomato.",
-      "example": "Fresh tomato 🍅",
+      "meaning": "Tomatoes.",
+      "example": "Fresh tomatoes 🍅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Throwing tomatoes - booing.",
-      "example": "That was bad 🍅",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Rotten Tomatoes rating.",
-      "example": "RT score 🍅",
+      "meaning": "Throwing criticism.",
+      "example": "Bad review 🍅",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Fruit or vegetable debate.",
-      "example": "Is it a fruit? 🍅",
+      "meaning": "Rotten Tomatoes score.",
+      "example": "Critics say 🍅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Food industry.",
+      "example": "Fresh produce 🍅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Movie ratings and reviews." },
+    { "platform": "TWITTER", "note": "Reviews and criticism." },
     { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Cooking content." }
+    { "platform": "TIKTOK", "note": "Cooking videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Rotten Tomatoes." },
-    { "generation": "MILLENNIAL", "note": "Throwing tomatoes." },
-    { "generation": "BOOMER", "note": "Garden produce." }
+    { "generation": "GEN_Z", "note": "Movie ratings." },
+    { "generation": "MILLENNIAL", "note": "Rotten Tomatoes." },
+    { "generation": "BOOMER", "note": "Vegetable." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍅 Tomato Emoji Meaning - What Does 🍅 Really Mean?",
-  "seoDescription": "Learn what the tomato emoji 🍅 really means. Rotten Tomatoes or booing vibes. Complete context guide."
+  "seoTitle": "🍅 Tomato Emoji Meaning",
+  "seoDescription": "Learn what the tomato emoji 🍅 really means."
 }
