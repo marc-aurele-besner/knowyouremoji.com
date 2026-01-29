@@ -21,8 +21,6 @@ export interface EnvConfig {
   sentryDsn: string | undefined;
   /** Sentry DSN for error monitoring (client-side, public) */
   sentryDsnPublic: string | undefined;
-  /** Vercel Analytics ID */
-  vercelAnalyticsId: string | undefined;
   /** Google Analytics Measurement ID (starts with G-) */
   gaMeasurementId: string | undefined;
 }
@@ -39,7 +37,6 @@ export function getEnv(): EnvConfig {
     enableInterpreter: process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false',
     sentryDsn: process.env.SENTRY_DSN,
     sentryDsnPublic: process.env.NEXT_PUBLIC_SENTRY_DSN,
-    vercelAnalyticsId: process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID,
     gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
   };
 }

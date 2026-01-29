@@ -277,28 +277,21 @@ describe('Root Layout Component', () => {
       Geist_Mono: () => ({ variable: '--font-geist-mono' }),
     }));
 
-    // Mock Vercel Analytics
-    mock.module('@vercel/analytics/react', () => ({
-      Analytics: () => <div data-testid="vercel-analytics-mock" />,
+    // Mock Google Analytics
+    mock.module('@next/third-parties/google', () => ({
+      GoogleAnalytics: ({ gaId }: { gaId: string }) => (
+        <div data-testid="google-analytics-mock" data-ga-id={gaId} />
+      ),
     }));
   });
 
-  test('should include VercelAnalytics component', async () => {
-    // Set non-test environment to render analytics
-    (process.env as Record<string, string | undefined>).NODE_ENV = 'development';
-
-    const { VercelAnalytics } = await import('../../../src/components/analytics/vercel-analytics');
-
-    const { getByTestId } = render(<VercelAnalytics />);
-    expect(getByTestId('vercel-analytics-mock')).toBeDefined();
-  });
-
-  test('should not render VercelAnalytics in test environment', async () => {
+  test('should not render GoogleAnalytics in test environment', async () => {
     (process.env as Record<string, string | undefined>).NODE_ENV = 'test';
+    process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID = 'G-TESTID123';
 
-    const { VercelAnalytics } = await import('../../../src/components/analytics/vercel-analytics');
+    const { GoogleAnalytics } = await import('../../../src/components/analytics/google-analytics');
 
-    const { container } = render(<VercelAnalytics />);
+    const { container } = render(<GoogleAnalytics />);
     expect(container.innerHTML).toBe('');
   });
 });
