@@ -110,6 +110,19 @@ describe('CategoryNotFound component', () => {
   });
 });
 
+describe('Category page ISR configuration', () => {
+  it('exports revalidate constant for ISR', async () => {
+    const { revalidate } = await import('@/app/emoji/category/[category]/page');
+    expect(revalidate).toBeDefined();
+    expect(typeof revalidate).toBe('number');
+  });
+
+  it('revalidate is set to 1 hour (3600 seconds)', async () => {
+    const { revalidate } = await import('@/app/emoji/category/[category]/page');
+    expect(revalidate).toBe(3600);
+  });
+});
+
 describe('Category page static params generation', () => {
   it('generateStaticParams returns all categories', async () => {
     const { generateStaticParams } = await import('@/app/emoji/category/[category]/page');

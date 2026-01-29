@@ -1,6 +1,10 @@
 import { describe, expect, test, mock, beforeEach, afterEach } from 'bun:test';
 import { render, screen } from '@testing-library/react';
-import EmojiPage, { generateStaticParams, generateMetadata } from '@/app/emoji/[slug]/page';
+import EmojiPage, {
+  generateStaticParams,
+  generateMetadata,
+  revalidate,
+} from '@/app/emoji/[slug]/page';
 import type { Emoji } from '@/types/emoji';
 
 // Mock the emoji-data module
@@ -76,6 +80,17 @@ describe('EmojiPage', () => {
     mockGetEmojiBySlug.mockReset();
     mockGetAllEmojiSlugs.mockReset();
     mockNotFound.mockReset();
+  });
+
+  describe('ISR configuration', () => {
+    test('exports revalidate constant for ISR', () => {
+      expect(revalidate).toBeDefined();
+      expect(typeof revalidate).toBe('number');
+    });
+
+    test('revalidate is set to 1 hour (3600 seconds)', () => {
+      expect(revalidate).toBe(3600);
+    });
   });
 
   describe('generateStaticParams', () => {

@@ -1,6 +1,10 @@
 import { describe, expect, test, mock, beforeEach, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
-import ComboPage, { generateStaticParams, generateMetadata } from '@/app/combo/[slug]/page';
+import ComboPage, {
+  generateStaticParams,
+  generateMetadata,
+  revalidate,
+} from '@/app/combo/[slug]/page';
 import type { EmojiCombo } from '@/types/combo';
 
 // Mock the combo-data module
@@ -87,6 +91,17 @@ describe('ComboPage', () => {
     mockGetAllComboSlugs.mockReset();
     mockGetRelatedCombos.mockReset();
     mockNotFound.mockReset();
+  });
+
+  describe('ISR configuration', () => {
+    test('exports revalidate constant for ISR', () => {
+      expect(revalidate).toBeDefined();
+      expect(typeof revalidate).toBe('number');
+    });
+
+    test('revalidate is set to 1 hour (3600 seconds)', () => {
+      expect(revalidate).toBe(3600);
+    });
   });
 
   describe('generateStaticParams', () => {

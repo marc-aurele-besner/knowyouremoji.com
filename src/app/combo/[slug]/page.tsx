@@ -17,6 +17,12 @@ interface ComboPageProps {
 }
 
 /**
+ * Revalidate pages every hour (3600 seconds)
+ * This enables Incremental Static Regeneration (ISR) for combo pages
+ */
+export const revalidate = 3600;
+
+/**
  * Generate static params for all combo pages at build time
  */
 export async function generateStaticParams() {
