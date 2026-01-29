@@ -1,5 +1,5 @@
-import { describe, expect, test, beforeEach } from 'bun:test';
-import { render, screen } from '@testing-library/react';
+import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
+import { render, screen, cleanup } from '@testing-library/react';
 import HomePage from '@/app/page';
 import { clearEmojiCache } from '@/lib/emoji-data';
 import { clearComboCache } from '@/lib/combo-data';
@@ -13,6 +13,11 @@ describe('HomePage', () => {
   beforeEach(() => {
     clearEmojiCache();
     clearComboCache();
+  });
+
+  // Ensure DOM is cleaned up after each test
+  afterEach(() => {
+    cleanup();
   });
 
   describe('Hero section', () => {
