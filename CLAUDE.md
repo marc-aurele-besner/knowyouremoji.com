@@ -61,7 +61,7 @@ bun run validate:emojis
 - `src/components/combo/` - Combo display components (ComboHeader)
 - `src/components/interpreter/` - AI interpreter tool components
 - `src/components/seo/` - SEO components (JSON-LD structured data)
-- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state)
+- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
@@ -73,7 +73,8 @@ bun run validate:emojis
 1. Emoji pages: JSON files → `emoji-data.ts` loader → SSG pages at `/emoji/[slug]`
 2. Combo pages: JSON files → `combo-data.ts` loader → SSG pages at `/combo/[slug]`
 3. Interpreter: User input → `/api/interpret` → `interpreter.ts` service → OpenAI API → `InterpretationResult`
-4. Rate limiting (Phase 1): localStorage tracks daily usage count
+4. Streaming Interpreter: User input → `/api/interpret/stream` → Vercel AI SDK streamText → Progressive text stream
+5. Rate limiting (Phase 1): localStorage tracks daily usage count
 
 ## Testing Requirements
 
