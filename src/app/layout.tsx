@@ -4,6 +4,8 @@ import './globals.css';
 import { siteMetadata } from '@/lib/metadata';
 import { VercelAnalytics } from '@/components/analytics/vercel-analytics';
 import { ThemeProvider } from '@/components/theme/theme-provider';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,7 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
         <VercelAnalytics />
       </body>
     </html>

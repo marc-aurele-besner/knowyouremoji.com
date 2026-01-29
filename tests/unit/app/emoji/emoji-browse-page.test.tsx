@@ -15,10 +15,11 @@ describe('EmojiBrowsePage', () => {
       ).toBeInTheDocument();
     });
 
-    test('renders header and footer', () => {
+    test('renders page content without layout components', () => {
       render(<EmojiBrowsePage />);
-      expect(screen.getByRole('banner')).toBeInTheDocument();
-      expect(screen.getByRole('contentinfo')).toBeInTheDocument();
+      // Header and Footer are now in the root layout, not individual pages
+      // Page should render its main content
+      expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
     });
 
     test('displays emoji count in description', () => {

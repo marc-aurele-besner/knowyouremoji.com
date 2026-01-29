@@ -192,20 +192,18 @@ describe('HomePage', () => {
       });
     });
 
-    test('main content is wrapped in main landmark', () => {
+    test('page content renders correctly', () => {
       render(<HomePage />);
 
-      const main = screen.getByRole('main');
-      expect(main).toBeInTheDocument();
+      // Page renders its content (main landmark is now in layout)
+      const h1 = screen.getByRole('heading', { level: 1 });
+      expect(h1).toBeInTheDocument();
     });
   });
 
   describe('SEO elements', () => {
     test('page is structured for SEO', () => {
       render(<HomePage />);
-
-      // Check that main content areas are present
-      expect(screen.getByRole('main')).toBeInTheDocument();
 
       // Check that important keywords are present in content
       const pageContent = document.body.textContent;
