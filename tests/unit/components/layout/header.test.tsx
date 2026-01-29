@@ -1,6 +1,22 @@
-import { describe, it, expect, afterEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Header } from '@/components/layout/header';
+
+// Mock next/navigation for SearchBar
+mock.module('next/navigation', () => ({
+  useRouter: () => ({
+    push: mock(() => {}),
+    replace: mock(() => {}),
+    prefetch: mock(() => {}),
+  }),
+}));
+
+// Mock fetch for SearchBar
+global.fetch = mock(() =>
+  Promise.resolve({
+    json: () => Promise.resolve({ emojis: [] }),
+  })
+) as unknown as typeof fetch;
 
 afterEach(() => {
   cleanup();
@@ -115,5 +131,11 @@ describe('Header', () => {
 
   it('has displayName set', () => {
     expect(Header.displayName).toBe('Header');
+  });
+
+  it('renders search bar in desktop navigation', () => {
+    render(<Header />);
+    // Search bar should be present - look for the combobox (search input)
+    expect(screen.getByRole('combobox')).toBeInTheDocument();
   });
 });
