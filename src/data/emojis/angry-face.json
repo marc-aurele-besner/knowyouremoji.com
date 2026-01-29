@@ -1,0 +1,76 @@
+{
+  "unicode": "1F620",
+  "slug": "angry-face",
+  "character": "😠",
+  "name": "Angry Face",
+  "shortName": "angry",
+  "category": "faces",
+  "subcategory": "face-negative",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A face with furrowed eyebrows and a frown, expressing anger.",
+  "tldr": "Shows genuine anger or frustration. Use when actually upset, not as a joke.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Expressing real anger or frustration about something.",
+      "example": "I can't believe they cancelled again 😠",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Showing displeasure while trying to seem measured.",
+      "example": "Sure, go ahead without me 😠",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Playfully expressing mild annoyance.",
+      "example": "You ate the last slice 😠",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Avoid in professional contexts - shows loss of composure.",
+      "example": "The deadline moved up again 😠",
+      "riskLevel": "HIGH"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Generally avoided in professional settings as it reads as unprofessional."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Common in complaint tweets and hot takes."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Used between friends and family to express genuine frustration."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Often used ironically for minor inconveniences."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Used both genuinely and sarcastically depending on context."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Typically used to express real anger."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Professional Risk",
+      "description": "Using angry emojis at work can seem unprofessional and damage relationships.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "😠 Angry Face Emoji Meaning - What Does 😠 Really Mean?",
+  "seoDescription": "Learn what the angry face emoji 😠 really means in texting. Shows genuine frustration or playful annoyance. Complete context guide."
+}

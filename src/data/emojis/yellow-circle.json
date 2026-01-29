@@ -1,0 +1,52 @@
+{
+  "unicode": "1F7E1",
+  "slug": "yellow-circle",
+  "character": "🟡",
+  "name": "Yellow Circle",
+  "shortName": "yellow-circle",
+  "category": "symbols",
+  "subcategory": "geometric",
+  "unicodeVersion": "12.0",
+  "baseMeaning": "A yellow circle.",
+  "tldr": "Caution, warning, or away status.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Yellow circle shape.",
+      "example": "Yellow dot 🟡",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Caution advised.",
+      "example": "Heads up 🟡",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Warning status.",
+      "example": "Needs attention 🟡",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Meh.",
+      "example": "So-so 🟡",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "DISCORD", "note": "Away status." },
+    { "platform": "SLACK", "note": "Away indicator." },
+    { "platform": "TWITTER", "note": "Caution posts." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Away status." },
+    { "generation": "MILLENNIAL", "note": "Warning." },
+    { "generation": "BOOMER", "note": "Caution light." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🟡 Yellow Circle Emoji Meaning - What Does 🟡 Really Mean?",
+  "seoDescription": "Learn what the yellow circle emoji 🟡 really means. Caution or away vibes. Complete context guide."
+}

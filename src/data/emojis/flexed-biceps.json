@@ -5,66 +5,48 @@
   "name": "Flexed Biceps",
   "shortName": "muscle",
   "category": "people",
-  "subcategory": "hand",
+  "subcategory": "body-parts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A flexed arm showing a bicep muscle.",
-  "tldr": "Shows strength, determination, or 'you've got this' encouragement.",
+  "baseMeaning": "A flexed arm showing bicep muscle.",
+  "tldr": "Strong, working out, or you got this.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Physical strength or working out.",
-      "example": "Gym time 💪",
+      "meaning": "Strength or muscles.",
+      "example": "Gym day 💪",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Showing determination or accomplishment.",
-      "example": "Finished the project 💪",
+      "meaning": "You got this.",
+      "example": "You can do it 💪",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Encouraging colleagues or celebrating wins.",
-      "example": "Great job team 💪",
+      "meaning": "Powering through.",
+      "example": "Crushing it 💪",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Celebrating minor accomplishments humorously.",
-      "example": "Got out of bed today 💪",
+      "meaning": "Flex.",
+      "example": "Weird flex but ok 💪",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Common for encouragement and celebrating achievements."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in fitness content and motivational posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for determination and encouragement."
-    }
+    { "platform": "INSTAGRAM", "note": "Fitness content." },
+    { "platform": "TWITTER", "note": "Motivation." },
+    { "platform": "SLACK", "note": "Team encouragement." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Standard strength/determination emoji."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common for encouragement and motivation."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Universally understood strength symbol."
-    }
+    { "generation": "GEN_Z", "note": "Weird flex meme." },
+    { "generation": "MILLENNIAL", "note": "Gym motivation." },
+    { "generation": "BOOMER", "note": "Strength." }
   ],
   "warnings": [],
-  "relatedCombos": ["flex-strong"],
+  "relatedCombos": [],
   "seoTitle": "💪 Flexed Biceps Emoji Meaning - What Does 💪 Really Mean?",
-  "seoDescription": "Learn what the flexed biceps emoji 💪 really means in modern texting. Shows strength and determination. Complete context guide."
+  "seoDescription": "Learn what the flexed biceps emoji 💪 really means. Strong or motivation vibes. Complete context guide."
 }

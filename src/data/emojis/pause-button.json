@@ -1,0 +1,52 @@
+{
+  "unicode": "23F8",
+  "slug": "pause-button",
+  "character": "⏸️",
+  "name": "Pause Button",
+  "shortName": "pause-button",
+  "category": "symbols",
+  "subcategory": "av-symbol",
+  "unicodeVersion": "7.0",
+  "baseMeaning": "A pause button.",
+  "tldr": "Take a break, hold on, or stop.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Pause media.",
+      "example": "Pause here ⏸️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Hold that thought.",
+      "example": "Wait ⏸️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Break time.",
+      "example": "Taking a break ⏸️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Stop right there.",
+      "example": "Excuse me ⏸️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Wait a minute." },
+    { "platform": "DISCORD", "note": "BRB content." },
+    { "platform": "SLACK", "note": "On break." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Hold up." },
+    { "generation": "MILLENNIAL", "note": "Pause moment." },
+    { "generation": "BOOMER", "note": "Stop symbol." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⏸️ Pause Button Emoji Meaning - What Does ⏸️ Really Mean?",
+  "seoDescription": "Learn what the pause button emoji ⏸️ really means. Break or hold vibes. Complete context guide."
+}

@@ -1,0 +1,52 @@
+{
+  "unicode": "1F1FA-1F1F8",
+  "slug": "flag-usa",
+  "character": "🇺🇸",
+  "name": "Flag: United States",
+  "shortName": "flag-usa",
+  "category": "flags",
+  "subcategory": "country-flag",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "The flag of the United States of America.",
+  "tldr": "American pride, patriotism, or USA reference.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "United States flag.",
+      "example": "Happy 4th 🇺🇸",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Patriotic.",
+      "example": "USA USA 🇺🇸",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "US market.",
+      "example": "Launching in 🇺🇸",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "American stereotype.",
+      "example": "Freedom 🇺🇸",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Political discourse." },
+    { "platform": "INSTAGRAM", "note": "Travel content." },
+    { "platform": "TIKTOK", "note": "American content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Ironic usage." },
+    { "generation": "MILLENNIAL", "note": "Context dependent." },
+    { "generation": "BOOMER", "note": "Patriotism." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🇺🇸 USA Flag Emoji Meaning - What Does 🇺🇸 Really Mean?",
+  "seoDescription": "Learn what the USA flag emoji 🇺🇸 really means. Patriotism or ironic usage. Complete context guide."
+}

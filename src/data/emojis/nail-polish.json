@@ -3,68 +3,50 @@
   "slug": "nail-polish",
   "character": "💅",
   "name": "Nail Polish",
-  "shortName": "nail_care",
+  "shortName": "nails",
   "category": "people",
-  "subcategory": "person",
+  "subcategory": "hand-prop",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A hand with polished nails, often shown with a nail polish brush.",
-  "tldr": "The unbothered, sassy emoji. Signals confidence, not caring, or 'that's on them'.",
+  "baseMeaning": "A hand with nail polish being applied.",
+  "tldr": "Self-care, unbothered, or fabulous confidence.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Being unbothered, confident, or dismissive.",
-      "example": "Blocked him 💅",
+      "context": "LITERAL",
+      "meaning": "Nail polish.",
+      "example": "Mani time 💅",
       "riskLevel": "LOW"
     },
     {
-      "context": "LITERAL",
-      "meaning": "Actually getting nails done or discussing manicures.",
-      "example": "Nail appointment today 💅",
+      "context": "SLANG",
+      "meaning": "Unbothered and confident.",
+      "example": "Not my problem 💅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Self-care mode.",
+      "example": "Treating myself 💅",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending not to care about something you clearly care about.",
-      "example": "Not thinking about it at all 💅",
+      "meaning": "Sassy dismissal.",
+      "example": "I said what I said 💅",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Dismissing someone or their opinion with sass.",
-      "example": "Anyway 💅",
-      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "The sassy, unbothered emoji for dismissing drama."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in confident or 'main character' content."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in captions signaling self-care or confidence."
-    }
+    { "platform": "TWITTER", "note": "Unbothered energy." },
+    { "platform": "INSTAGRAM", "note": "Self-care content." },
+    { "platform": "TIKTOK", "note": "Confident content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "The queen of unbothered energy and sass."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Same usage - confidence and not caring."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret literally as manicure-related."
-    }
+    { "generation": "GEN_Z", "note": "Unbothered queen energy." },
+    { "generation": "MILLENNIAL", "note": "Sassy confidence." },
+    { "generation": "BOOMER", "note": "Nail salon." }
   ],
   "warnings": [],
-  "relatedCombos": ["nail-unbothered"],
+  "relatedCombos": [],
   "seoTitle": "💅 Nail Polish Emoji Meaning - What Does 💅 Really Mean?",
-  "seoDescription": "Learn what the nail polish emoji 💅 really means in modern texting. The unbothered, sassy emoji for confidence. Complete context guide."
+  "seoDescription": "Learn what the nail polish emoji 💅 really means. Unbothered or confident vibes. Complete context guide."
 }

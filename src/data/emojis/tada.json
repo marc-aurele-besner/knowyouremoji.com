@@ -1,0 +1,52 @@
+{
+  "unicode": "1F38A",
+  "slug": "tada",
+  "character": "🎊",
+  "name": "Confetti Ball",
+  "shortName": "tada",
+  "category": "activities",
+  "subcategory": "event",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A confetti ball.",
+  "tldr": "Celebration, party, or big reveal.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Confetti.",
+      "example": "Celebrate 🎊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Big moment.",
+      "example": "Surprise 🎊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Milestone.",
+      "example": "We hit 1M 🎊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Over the top.",
+      "example": "Yay whatever 🎊",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Celebrations." },
+    { "platform": "TWITTER", "note": "Announcements." },
+    { "platform": "DISCORD", "note": "Party vibes." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Party." },
+    { "generation": "MILLENNIAL", "note": "Celebration." },
+    { "generation": "BOOMER", "note": "Festive." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🎊 Confetti Ball Emoji Meaning - What Does 🎊 Really Mean?",
+  "seoDescription": "Learn what the confetti ball emoji 🎊 really means. Celebration or party vibes. Complete context guide."
+}

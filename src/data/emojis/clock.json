@@ -1,0 +1,70 @@
+{
+  "unicode": "1F55B",
+  "slug": "clock",
+  "character": "🕐",
+  "name": "One O'Clock",
+  "shortName": "clock",
+  "category": "travel",
+  "subcategory": "time",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A clock showing one o'clock.",
+  "tldr": "Time, waiting, deadlines, or it's time for something.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Time or clock.",
+      "example": "What time is it? 🕐",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Time-sensitive or deadline related.",
+      "example": "Time is ticking 🕐",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "It's time to do something.",
+      "example": "It's go time 🕐",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Watching the clock or time passing slowly.",
+      "example": "Waiting for 5pm 🕐",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Time zones and meeting times."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Time announcements and countdowns."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Coordinating times to meet."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Deadlines and time pressure."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Time management and schedules."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Time and punctuality."
+    }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🕐 Clock Emoji Meaning - What Does 🕐 Really Mean?",
+  "seoDescription": "Learn what the clock emoji 🕐 really means in texting. Time, deadlines, or waiting. Complete context guide."
+}

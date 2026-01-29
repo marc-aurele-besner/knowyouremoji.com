@@ -1,0 +1,52 @@
+{
+  "unicode": "1F3A7",
+  "slug": "headphones",
+  "character": "🎧",
+  "name": "Headphones",
+  "shortName": "headphones",
+  "category": "objects",
+  "subcategory": "music",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A pair of headphones.",
+  "tldr": "Listening to music, podcast, or do not disturb.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Headphones.",
+      "example": "Listening 🎧",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "In the zone.",
+      "example": "Focus mode 🎧",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Do not disturb.",
+      "example": "Deep work 🎧",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Can't hear you.",
+      "example": "Ignoring you 🎧",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Music recommendations." },
+    { "platform": "SLACK", "note": "Focus time." },
+    { "platform": "DISCORD", "note": "Listening to." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "AirPods in." },
+    { "generation": "MILLENNIAL", "note": "Podcast time." },
+    { "generation": "BOOMER", "note": "Listening." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🎧 Headphones Emoji Meaning - What Does 🎧 Really Mean?",
+  "seoDescription": "Learn what the headphones emoji 🎧 really means. Focus or music vibes. Complete context guide."
+}

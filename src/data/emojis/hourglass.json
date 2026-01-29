@@ -1,0 +1,52 @@
+{
+  "unicode": "231B",
+  "slug": "hourglass",
+  "character": "⌛",
+  "name": "Hourglass Done",
+  "shortName": "hourglass",
+  "category": "objects",
+  "subcategory": "time",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "An hourglass with sand at bottom.",
+  "tldr": "Time's up, waiting, or patience.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Hourglass.",
+      "example": "Time has passed ⌛",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Hourglass figure.",
+      "example": "Body goals ⌛",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Time expired.",
+      "example": "Deadline passed ⌛",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Still waiting.",
+      "example": "How long ⌛",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Time posts." },
+    { "platform": "INSTAGRAM", "note": "Body positivity." },
+    { "platform": "SLACK", "note": "Waiting." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Body reference." },
+    { "generation": "MILLENNIAL", "note": "Time passing." },
+    { "generation": "BOOMER", "note": "Patience." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⌛ Hourglass Emoji Meaning - What Does ⌛ Really Mean?",
+  "seoDescription": "Learn what the hourglass emoji ⌛ really means. Time or figure vibes. Complete context guide."
+}

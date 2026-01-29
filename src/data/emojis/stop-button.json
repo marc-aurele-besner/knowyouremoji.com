@@ -1,0 +1,52 @@
+{
+  "unicode": "23F9",
+  "slug": "stop-button",
+  "character": "⏹️",
+  "name": "Stop Button",
+  "shortName": "stop-button",
+  "category": "symbols",
+  "subcategory": "av-symbol",
+  "unicodeVersion": "7.0",
+  "baseMeaning": "A stop button.",
+  "tldr": "Stop completely, end, or quit.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Stop media.",
+      "example": "Stop now ⏹️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Full stop.",
+      "example": "Done ⏹️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "End of day.",
+      "example": "Logging off ⏹️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Cancel that.",
+      "example": "Never mind ⏹️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "End thread." },
+    { "platform": "DISCORD", "note": "Stopping activity." },
+    { "platform": "SLACK", "note": "Done working." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Full stop." },
+    { "generation": "MILLENNIAL", "note": "End content." },
+    { "generation": "BOOMER", "note": "Stop symbol." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⏹️ Stop Button Emoji Meaning - What Does ⏹️ Really Mean?",
+  "seoDescription": "Learn what the stop button emoji ⏹️ really means. End or quit vibes. Complete context guide."
+}

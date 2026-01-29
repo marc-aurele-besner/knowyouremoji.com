@@ -3,68 +3,50 @@
   "slug": "broken-heart",
   "character": "💔",
   "name": "Broken Heart",
-  "shortName": "broken_heart",
-  "category": "faces",
+  "shortName": "broken-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red heart split in two, representing heartbreak.",
-  "tldr": "Heartbreak, sadness, or disappointment. Can be romantic or general devastation.",
+  "baseMeaning": "A broken heart.",
+  "tldr": "Heartbreak, sadness, or betrayal.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Romantic heartbreak or relationship ending.",
-      "example": "We broke up 💔",
+      "meaning": "Heart broken in two.",
+      "example": "My heart 💔",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Deep disappointment about anything.",
-      "example": "My favorite show got cancelled 💔",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Exaggerated heartbreak for minor letdowns.",
-      "example": "They're out of croissants 💔",
+      "meaning": "Devastated.",
+      "example": "I can't even 💔",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Expressing hurt feelings or rejection.",
-      "example": "Left on read again 💔",
+      "meaning": "Breakup.",
+      "example": "We're done 💔",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatic disappointment.",
+      "example": "No pizza left 💔",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for both genuine heartbreak and dramatic disappointment."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in breakup content and sad stories."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in emotional or nostalgic posts."
-    }
+    { "platform": "TWITTER", "note": "Heartbreak content." },
+    { "platform": "INSTAGRAM", "note": "Sad posts." },
+    { "platform": "TIKTOK", "note": "Breakup content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used broadly for any form of disappointment or sadness."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Standard heartbreak emoji - romantic or otherwise."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May reserve for serious romantic situations."
-    }
+    { "generation": "GEN_Z", "note": "Dramatic usage." },
+    { "generation": "MILLENNIAL", "note": "Actual sadness." },
+    { "generation": "BOOMER", "note": "Heartbreak." }
   ],
   "warnings": [],
-  "relatedCombos": ["heartbreak-sad"],
+  "relatedCombos": [],
   "seoTitle": "💔 Broken Heart Emoji Meaning - What Does 💔 Really Mean?",
-  "seoDescription": "Learn what the broken heart emoji 💔 really means in modern texting. Heartbreak and disappointment. Complete context guide."
+  "seoDescription": "Learn what the broken heart emoji 💔 really means. Heartbreak or sadness vibes. Complete context guide."
 }

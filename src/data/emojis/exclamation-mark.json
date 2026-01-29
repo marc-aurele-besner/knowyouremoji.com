@@ -1,0 +1,42 @@
+{
+  "unicode": "2757",
+  "slug": "exclamation-mark",
+  "character": "❗",
+  "name": "Exclamation Mark",
+  "shortName": "exclamation",
+  "category": "symbols",
+  "subcategory": "punctuation",
+  "unicodeVersion": "5.2",
+  "baseMeaning": "A red exclamation mark.",
+  "tldr": "Important, urgent, or emphasis.",
+  "contextMeanings": [
+    { "context": "LITERAL", "meaning": "Important.", "example": "Urgent ❗", "riskLevel": "LOW" },
+    { "context": "SLANG", "meaning": "Pay attention.", "example": "Look ❗", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "Priority alert.",
+      "example": "High priority ❗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatic emphasis.",
+      "example": "Breaking news ❗",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Urgent messages." },
+    { "platform": "TWITTER", "note": "Emphasis." },
+    { "platform": "WHATSAPP", "note": "Important info." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Emphasis and drama." },
+    { "generation": "MILLENNIAL", "note": "Urgency." },
+    { "generation": "BOOMER", "note": "Important." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "❗ Exclamation Mark Emoji Meaning - What Does ❗ Really Mean?",
+  "seoDescription": "Learn what the exclamation mark emoji ❗ really means. Important or urgent vibes. Complete context guide."
+}

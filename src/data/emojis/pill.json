@@ -1,0 +1,52 @@
+{
+  "unicode": "1F48A",
+  "slug": "pill",
+  "character": "💊",
+  "name": "Pill",
+  "shortName": "pill",
+  "category": "objects",
+  "subcategory": "medical",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A pill or capsule.",
+  "tldr": "Medicine, hard to swallow, or Matrix reference.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Medicine.",
+      "example": "Take your meds 💊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Hard truth.",
+      "example": "Hard pill to swallow 💊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Healthcare.",
+      "example": "Pharmaceutical 💊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Red pill Matrix.",
+      "example": "Take the red pill 💊",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Hard truths." },
+    { "platform": "INSTAGRAM", "note": "Health content." },
+    { "platform": "TIKTOK", "note": "Medical content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Mental health." },
+    { "generation": "MILLENNIAL", "note": "Matrix reference." },
+    { "generation": "BOOMER", "note": "Medication." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "💊 Pill Emoji Meaning - What Does 💊 Really Mean?",
+  "seoDescription": "Learn what the pill emoji 💊 really means. Medicine or hard truth vibes. Complete context guide."
+}

@@ -1,0 +1,52 @@
+{
+  "unicode": "2601",
+  "slug": "cloud",
+  "character": "☁️",
+  "name": "Cloud",
+  "shortName": "cloud",
+  "category": "nature",
+  "subcategory": "sky-weather",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "A cloud.",
+  "tldr": "Cloudy weather, daydreaming, or cloud storage.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A cloud.",
+      "example": "Cloudy day ☁️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Head in the clouds.",
+      "example": "Daydreaming ☁️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Cloud computing.",
+      "example": "In the cloud ☁️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Overcast mood.",
+      "example": "Gloomy ☁️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Weather posts." },
+    { "platform": "SLACK", "note": "Tech context." },
+    { "platform": "INSTAGRAM", "note": "Aesthetic shots." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Dreamy vibes." },
+    { "generation": "MILLENNIAL", "note": "Tech reference." },
+    { "generation": "BOOMER", "note": "Weather." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "☁️ Cloud Emoji Meaning - What Does ☁️ Really Mean?",
+  "seoDescription": "Learn what the cloud emoji ☁️ really means. Weather or dreamy vibes. Complete context guide."
+}

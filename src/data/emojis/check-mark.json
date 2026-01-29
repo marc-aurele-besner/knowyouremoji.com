@@ -1,0 +1,47 @@
+{
+  "unicode": "2705",
+  "slug": "check-mark",
+  "character": "✅",
+  "name": "Check Mark Button",
+  "shortName": "check",
+  "category": "symbols",
+  "subcategory": "other-symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A green check mark in a box.",
+  "tldr": "Done, approved, or task complete.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Completed or approved.",
+      "example": "Task done ✅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Facts or true.",
+      "example": "That's facts ✅",
+      "riskLevel": "LOW"
+    },
+    { "context": "WORK", "meaning": "Task complete.", "example": "Shipped ✅", "riskLevel": "LOW" },
+    {
+      "context": "IRONIC",
+      "meaning": "Checking off life goals.",
+      "example": "Adulting ✅",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Task completion." },
+    { "platform": "TWITTER", "note": "Agreement or facts." },
+    { "platform": "WHATSAPP", "note": "Confirmation." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Facts check." },
+    { "generation": "MILLENNIAL", "note": "To-do lists." },
+    { "generation": "BOOMER", "note": "Approved." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "✅ Check Mark Emoji Meaning - What Does ✅ Really Mean?",
+  "seoDescription": "Learn what the check mark emoji ✅ really means. Done or approved vibes. Complete context guide."
+}

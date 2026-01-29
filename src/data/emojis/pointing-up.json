@@ -1,0 +1,47 @@
+{
+  "unicode": "1F446",
+  "slug": "pointing-up",
+  "character": "👆",
+  "name": "Backhand Index Pointing Up",
+  "shortName": "pointup",
+  "category": "people",
+  "subcategory": "hand-single-finger",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A hand pointing up.",
+  "tldr": "This, look above, or important point.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Pointing up.",
+      "example": "Look up 👆",
+      "riskLevel": "LOW"
+    },
+    { "context": "SLANG", "meaning": "This is it.", "example": "This one 👆", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "See above.",
+      "example": "Reference above 👆",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Emphasis.",
+      "example": "Read that again 👆",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Emphasizing tweets." },
+    { "platform": "SLACK", "note": "Referencing previous." },
+    { "platform": "INSTAGRAM", "note": "Link in bio references." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Emphasis." },
+    { "generation": "MILLENNIAL", "note": "Pointing up." },
+    { "generation": "BOOMER", "note": "Look above." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "👆 Pointing Up Emoji Meaning - What Does 👆 Really Mean?",
+  "seoDescription": "Learn what the pointing up emoji 👆 really means. This or look above vibes. Complete context guide."
+}

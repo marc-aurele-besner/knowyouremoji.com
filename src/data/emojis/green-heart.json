@@ -3,68 +3,50 @@
   "slug": "green-heart",
   "character": "💚",
   "name": "Green Heart",
-  "shortName": "green_heart",
-  "category": "faces",
+  "shortName": "green-heart",
+  "category": "smileys",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A heart symbol in green color.",
-  "tldr": "Can mean jealousy, nature/eco, platonic love, or K-pop fandom support.",
+  "baseMeaning": "A green heart.",
+  "tldr": "Nature love, jealousy, or Irish pride.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Nature, environmentalism, or eco-friendly content.",
-      "example": "Save the planet 💚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Jealousy or envy (green = envious).",
-      "example": "Seeing your vacation pics 💚",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "LITERAL",
-      "meaning": "Platonic love or support without romantic implication.",
-      "example": "Love you friend 💚",
+      "meaning": "Green colored heart.",
+      "example": "Nature love 💚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "K-pop fan culture - supporting specific groups.",
-      "example": "NCT 💚",
+      "meaning": "Jealousy.",
+      "example": "Green with envy 💚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Healthy love.",
+      "example": "Growing together 💚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Fake healthy.",
+      "example": "Wellness vibes 💚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Common in K-pop fandoms and environmental discussions."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used for nature content, health, or platonic love."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Popular in fandom contexts."
-    }
+    { "platform": "INSTAGRAM", "note": "Plant content." },
+    { "platform": "TWITTER", "note": "Eco content." },
+    { "platform": "TIKTOK", "note": "Green aesthetic." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often associated with specific fandoms or eco content."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "May use for nature, jealousy, or general love."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret as just a green-colored heart."
-    }
+    { "generation": "GEN_Z", "note": "Nature aesthetic." },
+    { "generation": "MILLENNIAL", "note": "Eco friendly." },
+    { "generation": "BOOMER", "note": "Irish symbol." }
   ],
   "warnings": [],
-  "relatedCombos": ["green-heart-nature"],
+  "relatedCombos": [],
   "seoTitle": "💚 Green Heart Emoji Meaning - What Does 💚 Really Mean?",
-  "seoDescription": "Learn what the green heart emoji 💚 really means in modern texting. Jealousy, nature, or fandom support. Complete context guide."
+  "seoDescription": "Learn what the green heart emoji 💚 really means. Nature or jealousy vibes. Complete context guide."
 }

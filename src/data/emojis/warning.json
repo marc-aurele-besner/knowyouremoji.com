@@ -1,0 +1,52 @@
+{
+  "unicode": "26A0",
+  "slug": "warning",
+  "character": "⚠️",
+  "name": "Warning",
+  "shortName": "warning",
+  "category": "symbols",
+  "subcategory": "warning",
+  "unicodeVersion": "4.0",
+  "baseMeaning": "A warning sign.",
+  "tldr": "Caution, alert, or heads up.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Warning.",
+      "example": "Caution ⚠️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Heads up.",
+      "example": "Be careful ⚠️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Alert.",
+      "example": "System warning ⚠️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Red flag.",
+      "example": "Proceed with caution ⚠️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "System alerts." },
+    { "platform": "TWITTER", "note": "PSA." },
+    { "platform": "DISCORD", "note": "Warnings." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Trigger warning." },
+    { "generation": "MILLENNIAL", "note": "Caution." },
+    { "generation": "BOOMER", "note": "Warning sign." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⚠️ Warning Emoji Meaning - What Does ⚠️ Really Mean?",
+  "seoDescription": "Learn what the warning emoji ⚠️ really means. Caution or alert vibes. Complete context guide."
+}

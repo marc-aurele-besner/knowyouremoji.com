@@ -1,0 +1,52 @@
+{
+  "unicode": "1F4CE",
+  "slug": "paperclip",
+  "character": "📎",
+  "name": "Paperclip",
+  "shortName": "paperclip",
+  "category": "objects",
+  "subcategory": "office",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A paperclip.",
+  "tldr": "Attachment, office, or holding together.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Paperclip.",
+      "example": "Attached 📎",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Clippy vibes.",
+      "example": "Need help? 📎",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Attachments.",
+      "example": "See attached 📎",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Clippy nostalgia.",
+      "example": "It looks like you're... 📎",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Attachments." },
+    { "platform": "TWITTER", "note": "Clippy memes." },
+    { "platform": "DISCORD", "note": "File sharing." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "What's Clippy?" },
+    { "generation": "MILLENNIAL", "note": "Clippy trauma." },
+    { "generation": "BOOMER", "note": "Office supplies." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "📎 Paperclip Emoji Meaning - What Does 📎 Really Mean?",
+  "seoDescription": "Learn what the paperclip emoji 📎 really means. Attachments or Clippy vibes. Complete context guide."
+}
