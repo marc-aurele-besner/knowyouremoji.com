@@ -85,4 +85,15 @@ describe('Footer', () => {
     render(<Footer />);
     expect(screen.getByText(/understand what emojis really mean/i)).toBeInTheDocument();
   });
+
+  it('renders GitHub link to upstream repository', () => {
+    render(<Footer />);
+    const githubLink = screen.getByRole('link', { name: /open source on github/i });
+    expect(githubLink).toHaveAttribute(
+      'href',
+      'https://github.com/marc-aurele-besner/knowyouremoji.com'
+    );
+    expect(githubLink).toHaveAttribute('target', '_blank');
+    expect(githubLink).toHaveAttribute('rel', 'noopener noreferrer');
+  });
 });

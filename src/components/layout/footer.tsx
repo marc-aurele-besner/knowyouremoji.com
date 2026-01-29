@@ -74,10 +74,18 @@ function Footer({ className, ...props }: FooterProps) {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center gap-2">
           <p className="text-sm text-gray-500 text-center dark:text-gray-400">
             © {currentYear} KnowYourEmoji. All rights reserved.
           </p>
+          <a
+            href="https://github.com/marc-aurele-besner/knowyouremoji.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-400 hover:text-amber-600 transition-colors dark:text-gray-500 dark:hover:text-amber-400"
+          >
+            Open Source on GitHub
+          </a>
         </div>
       </div>
     </footer>
