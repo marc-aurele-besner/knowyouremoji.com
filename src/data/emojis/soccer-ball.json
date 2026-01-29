@@ -3,68 +3,50 @@
   "slug": "soccer-ball",
   "character": "⚽",
   "name": "Soccer Ball",
-  "shortName": "soccer",
+  "shortName": "soccer-ball",
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "5.2",
-  "baseMeaning": "A black and white soccer ball (football).",
-  "tldr": "Represents soccer/football, the world's most popular sport. Global sports symbol.",
+  "baseMeaning": "A soccer ball.",
+  "tldr": "Soccer/football, sports, or game time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referring to soccer or football.",
-      "example": "Match day! ⚽",
+      "meaning": "Soccer ball.",
+      "example": "Soccer game ⚽",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Scoring goals or achieving wins.",
-      "example": "GOOOAL! ⚽",
+      "meaning": "Football (global).",
+      "example": "Footy time ⚽",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Team effort or collaborative wins.",
-      "example": "Great teamwork on this project ⚽",
+      "meaning": "Team sports.",
+      "example": "Office league ⚽",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "When things go wrong despite effort.",
-      "example": "Own goal moment ⚽",
+      "meaning": "Sports obsession.",
+      "example": "It's coming home ⚽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Massive during World Cup and major football events."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for sports content and match day posts."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Common in group chats during matches."
-    }
+    { "platform": "TWITTER", "note": "Match updates." },
+    { "platform": "INSTAGRAM", "note": "Sports content." },
+    { "platform": "WHATSAPP", "note": "Game plans." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for sports discussions and achievement celebrations."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common during major tournaments and sports events."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for football/soccer content."
-    }
+    { "generation": "GEN_Z", "note": "FIFA vibes." },
+    { "generation": "MILLENNIAL", "note": "World Cup." },
+    { "generation": "BOOMER", "note": "Classic sport." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⚽ Soccer Ball Emoji Meaning - What Does ⚽ Really Mean?",
-  "seoDescription": "Learn what the soccer ball emoji ⚽ really means in texting. Global symbol for football and sports. Complete context guide."
+  "seoDescription": "Learn what the soccer ball emoji ⚽ really means. Sports or game day vibes. Complete context guide."
 }

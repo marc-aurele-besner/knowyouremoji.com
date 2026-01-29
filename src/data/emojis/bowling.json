@@ -5,10 +5,10 @@
   "name": "Bowling",
   "shortName": "bowling",
   "category": "activities",
-  "subcategory": "game",
+  "subcategory": "sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Bowling ball and pins.",
-  "tldr": "Bowling night, strike, or social activity.",
+  "baseMeaning": "A bowling ball and pins.",
+  "tldr": "Bowling, strikes, or casual fun.",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -18,35 +18,35 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Strike.",
-      "example": "Knocking it down 🎳",
+      "meaning": "Strike!",
+      "example": "Knocked it down 🎳",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Date activity.",
-      "example": "Bowling date 🎳",
+      "context": "WORK",
+      "meaning": "Team bonding.",
+      "example": "Office bowling 🎳",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
       "meaning": "Gutter ball.",
-      "example": "I tried 🎳",
+      "example": "So close 🎳",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Activity posts." },
-    { "platform": "INSTAGRAM", "note": "Social content." },
-    { "platform": "TIKTOK", "note": "Bowling clips." }
+    { "platform": "INSTAGRAM", "note": "Fun outings." },
+    { "platform": "WHATSAPP", "note": "Group plans." },
+    { "platform": "SLACK", "note": "Team events." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Date activity." },
-    { "generation": "MILLENNIAL", "note": "Group activity." },
-    { "generation": "BOOMER", "note": "League night." }
+    { "generation": "GEN_Z", "note": "Retro fun." },
+    { "generation": "MILLENNIAL", "note": "Birthday parties." },
+    { "generation": "BOOMER", "note": "Bowling league." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎳 Bowling Emoji Meaning - What Does 🎳 Really Mean?",
-  "seoDescription": "Learn what the bowling emoji 🎳 really means. Bowling or strike vibes. Complete context guide."
+  "seoDescription": "Learn what the bowling emoji 🎳 really means. Fun outings or strikes. Complete context guide."
 }

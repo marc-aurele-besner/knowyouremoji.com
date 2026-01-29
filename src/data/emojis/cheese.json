@@ -8,24 +8,24 @@
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
   "baseMeaning": "A wedge of cheese.",
-  "tldr": "Cheese, cheesy, or say cheese.",
+  "tldr": "Cheese, cheesy content, or something good.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Cheese.",
-      "example": "Cheese platter 🧀",
+      "example": "Cheese board 🧀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cheesy or corny.",
-      "example": "That's cheesy 🧀",
+      "meaning": "Cheesy.",
+      "example": "So cheesy 🧀",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Cheesy pickup line.",
-      "example": "Cheese line 🧀",
+      "context": "WORK",
+      "meaning": "Easy win.",
+      "example": "Cheese strat 🧀",
       "riskLevel": "LOW"
     },
     {
@@ -38,12 +38,12 @@
   "platformNotes": [
     { "platform": "INSTAGRAM", "note": "Food content." },
     { "platform": "TWITTER", "note": "Cheesy jokes." },
-    { "platform": "TIKTOK", "note": "Recipe videos." }
+    { "platform": "DISCORD", "note": "Gaming strats." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cheesy memes." },
-    { "generation": "MILLENNIAL", "note": "Cheese board." },
-    { "generation": "BOOMER", "note": "Cheese." }
+    { "generation": "GEN_Z", "note": "Cheese strats." },
+    { "generation": "MILLENNIAL", "note": "Charcuterie." },
+    { "generation": "BOOMER", "note": "Cheese plate." }
   ],
   "warnings": [],
   "relatedCombos": [],

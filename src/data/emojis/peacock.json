@@ -7,13 +7,13 @@
   "category": "animals",
   "subcategory": "animal-bird",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A peacock with colorful feathers.",
-  "tldr": "Showing off, beautiful, or pride display.",
+  "baseMeaning": "A peacock.",
+  "tldr": "Showing off, beauty, or pride.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A peacock.",
-      "example": "So beautiful 🦚",
+      "meaning": "Peacock.",
+      "example": "Beautiful bird 🦚",
       "riskLevel": "LOW"
     },
     {
@@ -23,27 +23,27 @@
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Trying to impress.",
-      "example": "Look at me 🦚",
+      "context": "WORK",
+      "meaning": "Presentation.",
+      "example": "Demo day 🦚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Extra presentation.",
-      "example": "So extra 🦚",
+      "meaning": "Trying too hard.",
+      "example": "Look at me 🦚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Beauty and showing off." },
-    { "platform": "TWITTER", "note": "Peacocking behavior." },
+    { "platform": "INSTAGRAM", "note": "Fashion posts." },
+    { "platform": "TWITTER", "note": "Showing off." },
     { "platform": "TIKTOK", "note": "Flex content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Flexing." },
-    { "generation": "MILLENNIAL", "note": "Showing off." },
-    { "generation": "BOOMER", "note": "Beautiful bird." }
+    { "generation": "GEN_Z", "note": "Peacocking." },
+    { "generation": "MILLENNIAL", "note": "Beauty." },
+    { "generation": "BOOMER", "note": "Pretty bird." }
   ],
   "warnings": [],
   "relatedCombos": [],

@@ -1,0 +1,52 @@
+{
+  "unicode": "1F3D3",
+  "slug": "ping-pong",
+  "character": "🏓",
+  "name": "Ping Pong",
+  "shortName": "ping-pong",
+  "category": "activities",
+  "subcategory": "sport",
+  "unicodeVersion": "8.0",
+  "baseMeaning": "A ping pong paddle and ball.",
+  "tldr": "Table tennis, office fun, or back-and-forth.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Ping pong.",
+      "example": "Table tennis 🏓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Back and forth.",
+      "example": "Going back and forth 🏓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Startup culture.",
+      "example": "Office ping pong 🏓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Tech bro culture.",
+      "example": "Startup perks 🏓",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Office culture." },
+    { "platform": "TWITTER", "note": "Startup jokes." },
+    { "platform": "INSTAGRAM", "note": "Fun content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Startup culture." },
+    { "generation": "MILLENNIAL", "note": "Office perks." },
+    { "generation": "BOOMER", "note": "Table tennis." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🏓 Ping Pong Emoji Meaning - What Does 🏓 Really Mean?",
+  "seoDescription": "Learn what the ping pong emoji 🏓 really means. Office fun or back-and-forth. Complete context guide."
+}

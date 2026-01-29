@@ -1,0 +1,52 @@
+{
+  "unicode": "1F4CC",
+  "slug": "pushpin",
+  "character": "📌",
+  "name": "Pushpin",
+  "shortName": "pushpin",
+  "category": "objects",
+  "subcategory": "office",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A pushpin.",
+  "tldr": "Pinned, location, or important note.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Pushpin.",
+      "example": "Pinned it 📌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Important.",
+      "example": "Pin this 📌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Pinned message.",
+      "example": "Important update 📌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Drop a pin.",
+      "example": "Meet me here 📌",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Pinned messages." },
+    { "platform": "DISCORD", "note": "Important pins." },
+    { "platform": "TWITTER", "note": "Key tweets." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Pinterest vibes." },
+    { "generation": "MILLENNIAL", "note": "Pin it." },
+    { "generation": "BOOMER", "note": "Bulletin board." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "📌 Pushpin Emoji Meaning - What Does 📌 Really Mean?",
+  "seoDescription": "Learn what the pushpin emoji 📌 really means. Pinned or important vibes. Complete context guide."
+}

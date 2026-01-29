@@ -8,41 +8,41 @@
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
   "baseMeaning": "An egg.",
-  "tldr": "Breakfast, Easter, or egg on face.",
+  "tldr": "Breakfast, fragile, or new account.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "An egg.",
-      "example": "Breakfast 🥚",
+      "meaning": "Egg.",
+      "example": "Breakfast eggs 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "New account.",
-      "example": "Egg profile 🥚",
+      "meaning": "New Twitter account.",
+      "example": "Egg account 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Easter event.",
-      "example": "Egg hunt 🥚",
+      "meaning": "New beginning.",
+      "example": "Starting fresh 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
       "meaning": "Egg on face.",
-      "example": "Embarrassing 🥚",
+      "example": "Embarrassed 🥚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Default avatar." },
+    { "platform": "TWITTER", "note": "New account." },
     { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Recipe videos." }
+    { "platform": "TIKTOK", "note": "Breakfast posts." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Egg account." },
-    { "generation": "MILLENNIAL", "note": "Twitter egg." },
+    { "generation": "GEN_Z", "note": "Twitter eggs." },
+    { "generation": "MILLENNIAL", "note": "Avocado toast." },
     { "generation": "BOOMER", "note": "Breakfast." }
   ],
   "warnings": [],
