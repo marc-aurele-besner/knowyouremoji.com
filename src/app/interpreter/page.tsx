@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { InterpreterClient } from '@/components/interpreter/interpreter-client';
 
 export const metadata: Metadata = {
   title: 'Emoji Interpreter - Decode Hidden Meanings | KnowYourEmoji',
@@ -31,7 +32,7 @@ export default function InterpreterPage() {
         data-testid="interpreter-form-section"
         className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800"
       >
-        <p className="text-gray-500 text-center">Interpreter form will be added here.</p>
+        <InterpreterClient />
       </section>
     </main>
   );
