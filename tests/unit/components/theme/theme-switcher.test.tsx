@@ -4,7 +4,7 @@ import { ThemeSwitcher } from '@/components/theme/theme-switcher';
 
 // Mock next-themes
 const mockSetTheme = mock(() => {});
-let mockTheme = 'light';
+let mockResolvedTheme = 'light';
 let mockMounted = true;
 
 // Capture the useSyncExternalStore callbacks for testing
@@ -14,7 +14,7 @@ let capturedGetServerSnapshot: (() => boolean) | null = null;
 
 mock.module('next-themes', () => ({
   useTheme: () => ({
-    theme: mockTheme,
+    resolvedTheme: mockResolvedTheme,
     setTheme: mockSetTheme,
   }),
 }));
@@ -46,7 +46,7 @@ afterEach(() => {
 });
 
 beforeEach(() => {
-  mockTheme = 'light';
+  mockResolvedTheme = 'light';
   mockMounted = true;
 });
 
@@ -59,7 +59,7 @@ describe('ThemeSwitcher', () => {
   });
 
   it('renders moon icon in light mode', () => {
-    mockTheme = 'light';
+    mockResolvedTheme = 'light';
     render(<ThemeSwitcher />);
     const button = screen.getByRole('button');
     expect(button.querySelector('svg')).toBeInTheDocument();
@@ -67,7 +67,7 @@ describe('ThemeSwitcher', () => {
   });
 
   it('renders sun icon in dark mode', () => {
-    mockTheme = 'dark';
+    mockResolvedTheme = 'dark';
     render(<ThemeSwitcher />);
     const button = screen.getByRole('button');
     expect(button.querySelector('svg')).toBeInTheDocument();
@@ -75,7 +75,7 @@ describe('ThemeSwitcher', () => {
   });
 
   it('calls setTheme with dark when clicking in light mode', () => {
-    mockTheme = 'light';
+    mockResolvedTheme = 'light';
     render(<ThemeSwitcher />);
     const button = screen.getByRole('button');
     fireEvent.click(button);
@@ -83,7 +83,7 @@ describe('ThemeSwitcher', () => {
   });
 
   it('calls setTheme with light when clicking in dark mode', () => {
-    mockTheme = 'dark';
+    mockResolvedTheme = 'dark';
     render(<ThemeSwitcher />);
     const button = screen.getByRole('button');
     fireEvent.click(button);
