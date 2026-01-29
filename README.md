@@ -184,6 +184,15 @@ scripts/
 
 The project is configured for deployment on Vercel with automatic builds and deployments.
 
+### Preview Deployments
+
+Every pull request automatically receives a preview deployment:
+
+- **Automatic:** Vercel creates a unique preview URL for each PR
+- **PR Comments:** A GitHub Action posts the preview URL as a comment on the PR
+- **Isolated:** Each preview is independent and shares no state with production
+- **Fast Feedback:** Test changes before merging to main
+
 ### Custom Domain Setup
 
 To configure the custom domain `knowyouremoji.com`:
