@@ -14,7 +14,7 @@ function useIsMounted() {
 
 export function ThemeSwitcher() {
   const mounted = useIsMounted();
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   if (!mounted) {
     return (
@@ -24,7 +24,7 @@ export function ThemeSwitcher() {
     );
   }
 
-  const isDark = theme === 'dark';
+  const isDark = resolvedTheme === 'dark';
 
   return (
     <Button
