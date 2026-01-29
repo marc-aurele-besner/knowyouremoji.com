@@ -2,51 +2,69 @@
   "unicode": "1F3AF",
   "slug": "dart",
   "character": "🎯",
-  "name": "Bullseye",
-  "shortName": "dart",
+  "name": "Direct Hit",
+  "shortName": "bullseye",
   "category": "activities",
   "subcategory": "game",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A dart in the bullseye.",
-  "tldr": "On target, goal achieved, or accuracy.",
+  "baseMeaning": "A dart hitting the bullseye of a target.",
+  "tldr": "On target! Used for accuracy, goals achieved, or being exactly right.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Bullseye.",
-      "example": "Direct hit 🎯",
+      "meaning": "Playing darts or hitting a target.",
+      "example": "Dart night 🎯",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Nailed it.",
-      "example": "Spot on 🎯",
+      "meaning": "Achieving a goal or being precisely right.",
+      "example": "You hit the 🎯",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Goal achieved.",
-      "example": "Hit the target 🎯",
+      "meaning": "Meeting goals or targets.",
+      "example": "Q4 targets achieved 🎯",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Focused.",
-      "example": "Laser focus 🎯",
+      "meaning": "Sarcastically congratulating an obvious observation.",
+      "example": "Wow, 🎯 genius",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Goals content." },
-    { "platform": "SLACK", "note": "Objectives." },
-    { "platform": "DISCORD", "note": "Accurate shots." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for on-point comments and goal achievement."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Common for OKRs, targets, and goals."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in goal and motivation content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Target audience." },
-    { "generation": "MILLENNIAL", "note": "Goal oriented." },
-    { "generation": "BOOMER", "note": "Bullseye." }
+    {
+      "generation": "GEN_Z",
+      "note": "Goals and being exactly right."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Target achievement and accuracy."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Darts or hitting a target."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎯 Bullseye Emoji Meaning - What Does 🎯 Really Mean?",
-  "seoDescription": "Learn what the bullseye emoji 🎯 really means. On target or goal vibes. Complete context guide."
+  "seoTitle": "🎯 Direct Hit Emoji Meaning - What Does 🎯 Really Mean?",
+  "seoDescription": "Learn what the bullseye/target emoji 🎯 really means. Used for accuracy and achieving goals. Complete context guide."
 }

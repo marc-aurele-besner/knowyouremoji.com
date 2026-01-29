@@ -7,46 +7,64 @@
   "category": "objects",
   "subcategory": "sound",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A megaphone.",
-  "tldr": "Announcement, hype, or cheering.",
+  "baseMeaning": "A megaphone or cheerleading cone for amplifying sound.",
+  "tldr": "Announcement! Used for making announcements, cheering, or getting attention.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A megaphone.",
-      "example": "Attention 📣",
+      "meaning": "Making an announcement or cheering.",
+      "example": "Big news 📣",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Announcement incoming.",
-      "example": "Breaking news 📣",
+      "meaning": "Drawing attention to something important.",
+      "example": "Listen up 📣",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Important update.",
-      "example": "Announcement 📣",
+      "meaning": "Company announcements or updates.",
+      "example": "Team update 📣",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Loud opinions.",
-      "example": "Hot take 📣",
+      "meaning": "Loudly announcing something obvious.",
+      "example": "BREAKING: water is wet 📣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Announcements." },
-    { "platform": "SLACK", "note": "Team updates." },
-    { "platform": "DISCORD", "note": "Server news." }
+    {
+      "platform": "SLACK",
+      "note": "Common for announcements and updates."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for important announcements."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular for launch announcements."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Hype energy." },
-    { "generation": "MILLENNIAL", "note": "Announcement." },
-    { "generation": "BOOMER", "note": "Cheerleading." }
+    {
+      "generation": "GEN_Z",
+      "note": "Attention-grabbing and announcements."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Cheerleading and announcements."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Megaphone for announcements."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📣 Megaphone Emoji Meaning - What Does 📣 Really Mean?",
-  "seoDescription": "Learn what the megaphone emoji 📣 really means. Announcement or hype vibes. Complete context guide."
+  "seoDescription": "Learn what the megaphone emoji 📣 really means. Used for announcements and getting attention. Complete context guide."
 }

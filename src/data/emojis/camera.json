@@ -7,46 +7,64 @@
   "category": "objects",
   "subcategory": "light-video",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A camera for taking photos.",
-  "tldr": "Taking photos, photography hobby, or pic for proof.",
+  "baseMeaning": "A camera for taking photographs.",
+  "tldr": "Say cheese! Used for photography, capturing moments, or content creation.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A camera.",
-      "example": "Photography day 📷",
+      "meaning": "Taking photos or photography.",
+      "example": "Photo shoot today 📷",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Taking pics.",
+      "meaning": "Capturing or documenting moments.",
       "example": "Pics or it didn't happen 📷",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Send photos.",
-      "example": "Send pics 📷",
+      "context": "WORK",
+      "meaning": "Content creation or media.",
+      "example": "Product shoot 📷",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Documentation.",
-      "example": "Photo evidence 📷",
+      "context": "IRONIC",
+      "meaning": "Taking mental photos or calling attention.",
+      "example": "Screenshot this 📷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Photography content." },
-    { "platform": "TWITTER", "note": "Photo sharing." },
-    { "platform": "TIKTOK", "note": "Behind the scenes." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Core emoji for the photo platform."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for photo content and documentation."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in content creation posts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Content creation." },
-    { "generation": "MILLENNIAL", "note": "Photography hobby." },
-    { "generation": "BOOMER", "note": "Taking pictures." }
+    {
+      "generation": "GEN_Z",
+      "note": "Content creation and documentation."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Photography and capturing moments."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Camera for taking pictures."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📷 Camera Emoji Meaning - What Does 📷 Really Mean?",
-  "seoDescription": "Learn what the camera emoji 📷 really means. Photography or content creation vibes. Complete context guide."
+  "seoDescription": "Learn what the camera emoji 📷 really means. Used for photography and capturing moments. Complete context guide."
 }
