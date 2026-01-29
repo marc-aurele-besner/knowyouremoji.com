@@ -3,6 +3,8 @@ import { getEmojiBySlug, getAllEmojiSlugs, getRelatedEmojis } from '@/lib/emoji-
 import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -183,12 +185,30 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   // Get related emojis from the same category
   const relatedEmojis = getRelatedEmojis(slug, 8);
 
+  // Breadcrumb items for navigation
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Emojis', href: '/emoji' },
+    { label: `${emoji.character} ${emoji.name}` },
+  ];
+
+  // Breadcrumb items for JSON-LD (with name instead of label)
+  const breadcrumbJsonLdItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Emojis', href: '/emoji' },
+    { name: `${emoji.character} ${emoji.name}` },
+  ];
+
   return (
     <>
       {/* JSON-LD structured data for rich snippets */}
       <EmojiJsonLd emoji={emoji} appUrl={env.appUrl} appName={env.appName} />
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Breadcrumb navigation */}
+        <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+
         {/* Header with emoji character, name, and copy button */}
         <EmojiHeader
           emoji={{
