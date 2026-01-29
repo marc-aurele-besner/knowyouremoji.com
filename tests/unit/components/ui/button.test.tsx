@@ -44,7 +44,7 @@ describe('Button', () => {
     it('applies primary variant classes by default', () => {
       render(<Button>Primary</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('bg-blue-600');
+      expect(button).toHaveClass('bg-amber-500');
     });
 
     it('applies secondary variant classes', () => {
@@ -130,6 +130,6 @@ describe('Button', () => {
     );
     const link = screen.getByRole('link');
     expect(link).toHaveAttribute('href', '/test');
-    expect(link).toHaveClass('bg-blue-600');
+    expect(link).toHaveClass('bg-amber-500');
   });
 });

@@ -214,7 +214,7 @@ describe('EmojiCopyButton', () => {
     it('applies primary variant by default', () => {
       render(<EmojiCopyButton emoji="😀" />);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('bg-blue-600');
+      expect(button).toHaveClass('bg-amber-500');
     });
 
     it('applies secondary variant when copied', async () => {

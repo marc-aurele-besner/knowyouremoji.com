@@ -5,12 +5,12 @@
   --background: #ffffff;
   --foreground: #0a0a0a;
 
-  /* Primary color scale */
-  --primary-50: #eff6ff;
-  --primary-100: #dbeafe;
-  --primary-500: #3b82f6;
-  --primary-600: #2563eb;
-  --primary-700: #1d4ed8;
+  /* Primary color scale - Amber/Orange */
+  --primary-50: #fffbeb;
+  --primary-100: #fef3c7;
+  --primary-500: #f59e0b;
+  --primary-600: #d97706;
+  --primary-700: #b45309;
   --primary-foreground: #ffffff;
 
   /* Secondary color scale */
@@ -24,12 +24,81 @@
   --accent-500: #f59e0b;
   --accent-600: #d97706;
   --accent-foreground: #ffffff;
+
+  /* Card colors */
+  --card-background: #ffffff;
+  --card-border: #e5e7eb;
+
+  /* Muted colors */
+  --muted-background: #f9fafb;
+  --muted-foreground: #6b7280;
+}
+
+.dark {
+  --background: #111827;
+  --foreground: #f9fafb;
+
+  /* Primary color scale - Amber/Orange (darker variants for dark mode) */
+  --primary-50: #451a03;
+  --primary-100: #78350f;
+  --primary-500: #f59e0b;
+  --primary-600: #fbbf24;
+  --primary-700: #fcd34d;
+  --primary-foreground: #111827;
+
+  /* Secondary color scale */
+  --secondary-50: #1f2937;
+  --secondary-100: #374151;
+  --secondary-500: #9ca3af;
+  --secondary-600: #d1d5db;
+  --secondary-foreground: #111827;
+
+  /* Accent color scale */
+  --accent-500: #f59e0b;
+  --accent-600: #fbbf24;
+  --accent-foreground: #111827;
+
+  /* Card colors */
+  --card-background: #1f2937;
+  --card-border: #374151;
+
+  /* Muted colors */
+  --muted-background: #1f2937;
+  --muted-foreground: #9ca3af;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not(.light) {
+    --background: #111827;
+    --foreground: #f9fafb;
+
+    /* Primary color scale - Amber/Orange (darker variants for dark mode) */
+    --primary-50: #451a03;
+    --primary-100: #78350f;
+    --primary-500: #f59e0b;
+    --primary-600: #fbbf24;
+    --primary-700: #fcd34d;
+    --primary-foreground: #111827;
+
+    /* Secondary color scale */
+    --secondary-50: #1f2937;
+    --secondary-100: #374151;
+    --secondary-500: #9ca3af;
+    --secondary-600: #d1d5db;
+    --secondary-foreground: #111827;
+
+    /* Accent color scale */
+    --accent-500: #f59e0b;
+    --accent-600: #fbbf24;
+    --accent-foreground: #111827;
+
+    /* Card colors */
+    --card-background: #1f2937;
+    --card-border: #374151;
+
+    /* Muted colors */
+    --muted-background: #1f2937;
+    --muted-foreground: #9ca3af;
   }
 }
 
@@ -60,6 +129,14 @@
   --color-accent-600: var(--accent-600);
   --color-accent: var(--accent-500);
   --color-accent-foreground: var(--accent-foreground);
+
+  /* Card colors */
+  --color-card: var(--card-background);
+  --color-card-border: var(--card-border);
+
+  /* Muted colors */
+  --color-muted: var(--muted-background);
+  --color-muted-foreground: var(--muted-foreground);
 
   /* Fonts */
   --font-sans: var(--font-geist-sans), 'Inter', system-ui, sans-serif;

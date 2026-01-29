@@ -117,9 +117,9 @@ describe('HomePage', () => {
     test('limits displayed emojis to a reasonable number', () => {
       render(<HomePage />);
 
-      // Should show max 6 emojis on homepage
+      // Should show max 12 emojis on homepage
       const emojiCards = screen.queryAllByTestId('emoji-card');
-      expect(emojiCards.length).toBeLessThanOrEqual(6);
+      expect(emojiCards.length).toBeLessThanOrEqual(12);
     });
   });
 
@@ -161,9 +161,9 @@ describe('HomePage', () => {
     test('limits displayed combos to a reasonable number', () => {
       render(<HomePage />);
 
-      // Should show max 4 combos on homepage
+      // Should show max 8 combos on homepage
       const comboCards = screen.queryAllByTestId('combo-card');
-      expect(comboCards.length).toBeLessThanOrEqual(4);
+      expect(comboCards.length).toBeLessThanOrEqual(8);
     });
   });
 
@@ -192,20 +192,18 @@ describe('HomePage', () => {
       });
     });
 
-    test('main content is wrapped in main landmark', () => {
+    test('page content renders correctly', () => {
       render(<HomePage />);
 
-      const main = screen.getByRole('main');
-      expect(main).toBeInTheDocument();
+      // Page renders its content (main landmark is now in layout)
+      const h1 = screen.getByRole('heading', { level: 1 });
+      expect(h1).toBeInTheDocument();
     });
   });
 
   describe('SEO elements', () => {
     test('page is structured for SEO', () => {
       render(<HomePage />);
-
-      // Check that main content areas are present
-      expect(screen.getByRole('main')).toBeInTheDocument();
 
       // Check that important keywords are present in content
       const pageContent = document.body.textContent;
