@@ -85,7 +85,7 @@ test.describe('Emoji Page Flow', () => {
 
     test('should display unicode code point', async ({ page }) => {
       await page.goto('/emoji/fire');
-      const unicode = page.locator('text=/U\\+1F525/i');
+      const unicode = page.locator('text=/U\\+1F525/i').first();
       await expect(unicode).toBeVisible();
     });
 
@@ -111,9 +111,11 @@ test.describe('Emoji Page Flow', () => {
 
     test('should display TL;DR content', async ({ page }) => {
       await page.goto('/emoji/fire');
-      // Fire emoji TL;DR mentions "hot", "exciting", "impressive", or "trending"
-      const tldrContent = page.locator('text=/hot|exciting|impressive|trending/i');
+      // Fire emoji TL;DR section contains the TL;DR text
+      const tldrSection = page.locator('section:has(h3:has-text("TL;DR"))');
+      const tldrContent = tldrSection.locator('p.text-gray-700');
       await expect(tldrContent).toBeVisible();
+      await expect(tldrContent).toContainText(/hot|exciting|impressive|trending/i);
     });
   });
 
@@ -220,7 +222,7 @@ test.describe('Emoji Page Flow', () => {
 
     test('should display Category label with link', async ({ page }) => {
       await page.goto('/emoji/fire');
-      const categoryLabel = page.locator('dt:has-text("Category")');
+      const categoryLabel = page.getByText('Category', { exact: true });
       await expect(categoryLabel).toBeVisible();
       const categoryLink = page.locator('dd a[href="/emoji/category/objects"]');
       await expect(categoryLink).toBeVisible();
@@ -242,17 +244,19 @@ test.describe('Emoji Page Flow', () => {
 
     test('should display related emoji cards', async ({ page }) => {
       await page.goto('/emoji/fire');
-      // Related emojis are from the same category
-      const relatedSection = page.locator('section:has(h2:has-text("Related Emojis"))');
-      const relatedCards = relatedSection.locator('[data-testid="emoji-card"]');
+      // Related emojis section with linked emoji cards
+      const relatedSection = page.locator('section[aria-labelledby="related-emojis-heading"]');
+      await expect(relatedSection).toBeVisible();
+      // Related emoji cards are anchor elements linking to /emoji/...
+      const relatedCards = relatedSection.locator('a[href^="/emoji/"]');
       const count = await relatedCards.count();
       expect(count).toBeGreaterThan(0);
     });
 
     test('should navigate to related emoji when clicked', async ({ page }) => {
       await page.goto('/emoji/fire');
-      const relatedSection = page.locator('section:has(h2:has-text("Related Emojis"))');
-      const firstRelatedCard = relatedSection.locator('[data-testid="emoji-card"]').first();
+      const relatedSection = page.locator('section[aria-labelledby="related-emojis-heading"]');
+      const firstRelatedCard = relatedSection.locator('a[href^="/emoji/"]').first();
       await firstRelatedCard.click();
       await expect(page).toHaveURL(/\/emoji\/.+/);
     });
@@ -315,7 +319,7 @@ test.describe('Emoji Page Flow', () => {
 
     test('should have accessible links in related emojis', async ({ page }) => {
       await page.goto('/emoji/fire');
-      const relatedSection = page.locator('section:has(h2:has-text("Related Emojis"))');
+      const relatedSection = page.locator('section[aria-labelledby="related-emojis-heading"]');
       const links = relatedSection.locator('a[aria-label]');
       expect(await links.count()).toBeGreaterThan(0);
     });
