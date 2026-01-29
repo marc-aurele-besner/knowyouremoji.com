@@ -1,0 +1,52 @@
+{
+  "unicode": "2B07",
+  "slug": "down-arrow",
+  "character": "⬇️",
+  "name": "Down Arrow",
+  "shortName": "down-arrow",
+  "category": "symbols",
+  "subcategory": "arrow",
+  "unicodeVersion": "4.0",
+  "baseMeaning": "An arrow pointing down.",
+  "tldr": "Going down, declining, or scroll down.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Direction downward.",
+      "example": "Look down ⬇️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Things declining.",
+      "example": "Prices going ⬇️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Metrics down.",
+      "example": "Costs are ⬇️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Downgrade.",
+      "example": "Mood ⬇️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Continue thread." },
+    { "platform": "DISCORD", "note": "Look below." },
+    { "platform": "SLACK", "note": "Reference below." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Scroll down." },
+    { "generation": "MILLENNIAL", "note": "Decline." },
+    { "generation": "BOOMER", "note": "Direction." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⬇️ Down Arrow Emoji Meaning - What Does ⬇️ Really Mean?",
+  "seoDescription": "Learn what the down arrow emoji ⬇️ really means. Direction or decline vibes. Complete context guide."
+}

@@ -1,0 +1,53 @@
+{
+  "unicode": "1F411",
+  "slug": "sheep",
+  "character": "🐑",
+  "name": "Sheep",
+  "shortName": "sheep",
+  "category": "animals",
+  "subcategory": "animal-mammal",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A sheep or ewe.",
+  "tldr": "Following the crowd, counting sheep, or being a sheeple.",
+  "contextMeanings": [
+    { "context": "LITERAL", "meaning": "A sheep.", "example": "Farm day 🐑", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Following the crowd blindly.",
+      "example": "Don't be a 🐑",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Counting sheep for sleep.",
+      "example": "Can't sleep, counting 🐑",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Going with the flow.",
+      "example": "Just following orders 🐑",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Calling out sheeple." },
+    { "platform": "INSTAGRAM", "note": "Farm and sleep content." },
+    { "platform": "TIKTOK", "note": "Commentary on trends." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Sheeple criticism." },
+    { "generation": "MILLENNIAL", "note": "Herd mentality." },
+    { "generation": "BOOMER", "note": "Farm animal or sleep." }
+  ],
+  "warnings": [
+    {
+      "title": "Can Be Insulting",
+      "description": "Calling someone a sheep implies they follow blindly.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "🐑 Sheep Emoji Meaning - What Does 🐑 Really Mean?",
+  "seoDescription": "Learn what the sheep emoji 🐑 really means. Following the crowd or counting sheep. Complete context guide."
+}

@@ -1,0 +1,52 @@
+{
+  "unicode": "1F3C1",
+  "slug": "checkered-flag",
+  "character": "🏁",
+  "name": "Checkered Flag",
+  "shortName": "checkered-flag",
+  "category": "flags",
+  "subcategory": "flag",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A racing checkered flag.",
+  "tldr": "Finish line, completion, or racing.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Racing flag.",
+      "example": "Race day 🏁",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Finished something.",
+      "example": "Done 🏁",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Project complete.",
+      "example": "Shipped 🏁",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Finally over.",
+      "example": "Thank god it's done 🏁",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Racing content." },
+    { "platform": "SLACK", "note": "Project completion." },
+    { "platform": "DISCORD", "note": "Gaming finish." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Finish energy." },
+    { "generation": "MILLENNIAL", "note": "Achievement." },
+    { "generation": "BOOMER", "note": "Racing." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🏁 Checkered Flag Emoji Meaning - What Does 🏁 Really Mean?",
+  "seoDescription": "Learn what the checkered flag emoji 🏁 really means. Finish line or completion vibes. Complete context guide."
+}

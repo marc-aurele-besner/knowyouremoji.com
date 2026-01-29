@@ -1,0 +1,47 @@
+{
+  "unicode": "1F38A",
+  "slug": "confetti-ball",
+  "character": "🎊",
+  "name": "Confetti Ball",
+  "shortName": "confetti",
+  "category": "activities",
+  "subcategory": "event",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A confetti ball exploding.",
+  "tldr": "Big celebration, success, or party time.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Celebration.",
+      "example": "We did it 🎊",
+      "riskLevel": "LOW"
+    },
+    { "context": "SLANG", "meaning": "Big win.", "example": "Victory 🎊", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "Project success.",
+      "example": "Shipped 🎊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sarcastic celebration.",
+      "example": "Made it through Monday 🎊",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Team wins." },
+    { "platform": "TWITTER", "note": "Achievements." },
+    { "platform": "INSTAGRAM", "note": "Celebrations." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Big wins." },
+    { "generation": "MILLENNIAL", "note": "Achievements." },
+    { "generation": "BOOMER", "note": "Party celebration." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🎊 Confetti Ball Emoji Meaning - What Does 🎊 Really Mean?",
+  "seoDescription": "Learn what the confetti ball emoji 🎊 really means. Celebration or success vibes. Complete context guide."
+}

@@ -1,0 +1,58 @@
+{
+  "unicode": "1F34C",
+  "slug": "banana",
+  "character": "🍌",
+  "name": "Banana",
+  "shortName": "banana",
+  "category": "food",
+  "subcategory": "food-fruit",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A yellow banana.",
+  "tldr": "Potassium, going bananas, or suggestive.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A banana.",
+      "example": "Healthy snack 🍌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Going crazy.",
+      "example": "Going bananas 🍌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Can be suggestive.",
+      "example": "Use carefully 🍌",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Energy boost.",
+      "example": "Pre-workout 🍌",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Memes and food." },
+    { "platform": "INSTAGRAM", "note": "Fitness content." },
+    { "platform": "TIKTOK", "note": "Various contexts." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Memes." },
+    { "generation": "MILLENNIAL", "note": "Going bananas." },
+    { "generation": "BOOMER", "note": "Fruit." }
+  ],
+  "warnings": [
+    {
+      "title": "Can Be Suggestive",
+      "description": "Shape can be interpreted suggestively in some contexts.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "🍌 Banana Emoji Meaning - What Does 🍌 Really Mean?",
+  "seoDescription": "Learn what the banana emoji 🍌 really means. Going bananas or health vibes. Complete context guide."
+}

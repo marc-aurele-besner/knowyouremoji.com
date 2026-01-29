@@ -1,0 +1,52 @@
+{
+  "unicode": "26D4",
+  "slug": "no-entry",
+  "character": "⛔",
+  "name": "No Entry",
+  "shortName": "stop",
+  "category": "symbols",
+  "subcategory": "warning",
+  "unicodeVersion": "5.2",
+  "baseMeaning": "A red no entry sign.",
+  "tldr": "Stop, forbidden, or do not enter.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "No entry.",
+      "example": "Do not enter ⛔",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Hard stop.",
+      "example": "Absolutely not ⛔",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Blocked or forbidden.",
+      "example": "Access denied ⛔",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Off limits.",
+      "example": "Boundaries ⛔",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Access issues." },
+    { "platform": "TWITTER", "note": "Strong rejection." },
+    { "platform": "DISCORD", "note": "Server rules." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Hard no." },
+    { "generation": "MILLENNIAL", "note": "Boundaries." },
+    { "generation": "BOOMER", "note": "Stop sign." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "⛔ No Entry Emoji Meaning - What Does ⛔ Really Mean?",
+  "seoDescription": "Learn what the no entry emoji ⛔ really means. Stop or forbidden vibes. Complete context guide."
+}

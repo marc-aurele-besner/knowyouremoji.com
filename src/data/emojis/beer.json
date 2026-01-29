@@ -1,0 +1,47 @@
+{
+  "unicode": "1F37A",
+  "slug": "beer",
+  "character": "🍺",
+  "name": "Beer Mug",
+  "shortName": "beer",
+  "category": "food",
+  "subcategory": "drink",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A mug of beer with foam.",
+  "tldr": "Beer, drinks, or cheers.",
+  "contextMeanings": [
+    { "context": "LITERAL", "meaning": "Beer.", "example": "Beer time 🍺", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Drinking or party.",
+      "example": "Friday vibes 🍺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "After work drinks.",
+      "example": "Happy hour 🍺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Cheers to that.",
+      "example": "Needed this 🍺",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Drinking and social." },
+    { "platform": "INSTAGRAM", "note": "Social content." },
+    { "platform": "SLACK", "note": "Team celebrations." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Social drinking." },
+    { "generation": "MILLENNIAL", "note": "Craft beer culture." },
+    { "generation": "BOOMER", "note": "Beer." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🍺 Beer Emoji Meaning - What Does 🍺 Really Mean?",
+  "seoDescription": "Learn what the beer emoji 🍺 really means. Drinks or cheers vibes. Complete context guide."
+}

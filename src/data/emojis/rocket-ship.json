@@ -1,0 +1,58 @@
+{
+  "unicode": "1F680",
+  "slug": "rocket-ship",
+  "character": "🚀",
+  "name": "Rocket",
+  "shortName": "rocket",
+  "category": "travel",
+  "subcategory": "transport-air",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A rocket ship.",
+  "tldr": "To the moon, rapid growth, or launching something.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A rocket.",
+      "example": "Space launch 🚀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "To the moon (stocks/crypto).",
+      "example": "Bitcoin 🚀",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Launching a product.",
+      "example": "Launch day 🚀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Rapid success.",
+      "example": "Career taking off 🚀",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Crypto and stocks." },
+    { "platform": "SLACK", "note": "Product launches." },
+    { "platform": "DISCORD", "note": "To the moon culture." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Crypto culture." },
+    { "generation": "MILLENNIAL", "note": "Startup culture." },
+    { "generation": "BOOMER", "note": "Space exploration." }
+  ],
+  "warnings": [
+    {
+      "title": "Financial Context",
+      "description": "Often used in crypto/stock discussions - can imply speculation.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "🚀 Rocket Emoji Meaning - What Does 🚀 Really Mean?",
+  "seoDescription": "Learn what the rocket emoji 🚀 really means. To the moon or launch vibes. Complete context guide."
+}

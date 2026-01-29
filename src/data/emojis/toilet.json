@@ -1,0 +1,52 @@
+{
+  "unicode": "1F6BD",
+  "slug": "toilet",
+  "character": "🚽",
+  "name": "Toilet",
+  "shortName": "toilet",
+  "category": "objects",
+  "subcategory": "household",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A toilet.",
+  "tldr": "Bathroom, crap situation, or TMI.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Toilet.",
+      "example": "Bathroom break 🚽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Crap situation.",
+      "example": "This is crap 🚽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "BRB.",
+      "example": "Quick break 🚽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Going down the drain.",
+      "example": "Flushed 🚽",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "TMI posts." },
+    { "platform": "SLACK", "note": "BRB status." },
+    { "platform": "WHATSAPP", "note": "Casual chat." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Bathroom humor." },
+    { "generation": "MILLENNIAL", "note": "TMI." },
+    { "generation": "BOOMER", "note": "Restroom." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🚽 Toilet Emoji Meaning - What Does 🚽 Really Mean?",
+  "seoDescription": "Learn what the toilet emoji 🚽 really means. Bathroom or crappy situation vibes. Complete context guide."
+}

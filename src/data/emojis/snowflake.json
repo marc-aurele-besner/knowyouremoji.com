@@ -1,0 +1,58 @@
+{
+  "unicode": "2744",
+  "slug": "snowflake",
+  "character": "❄️",
+  "name": "Snowflake",
+  "shortName": "snowflake",
+  "category": "nature",
+  "subcategory": "sky-weather",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "A snowflake.",
+  "tldr": "Winter, cold, or calling someone sensitive.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Snow or winter.",
+      "example": "Snow day ❄️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Someone overly sensitive.",
+      "example": "Such a snowflake ❄️",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Cold person.",
+      "example": "Ice queen ❄️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Freezing.",
+      "example": "It's cold ❄️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Political usage." },
+    { "platform": "INSTAGRAM", "note": "Winter aesthetic." },
+    { "platform": "TIKTOK", "note": "Winter content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Winter vibes." },
+    { "generation": "MILLENNIAL", "note": "Political debate." },
+    { "generation": "BOOMER", "note": "Sensitive insult." }
+  ],
+  "warnings": [
+    {
+      "title": "Political Usage",
+      "description": "Can be used to call someone overly sensitive in political debates.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": [],
+  "seoTitle": "❄️ Snowflake Emoji Meaning - What Does ❄️ Really Mean?",
+  "seoDescription": "Learn what the snowflake emoji ❄️ really means. Winter or sensitivity reference. Complete context guide."
+}

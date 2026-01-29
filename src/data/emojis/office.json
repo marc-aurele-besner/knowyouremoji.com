@@ -1,0 +1,52 @@
+{
+  "unicode": "1F3E2",
+  "slug": "office",
+  "character": "🏢",
+  "name": "Office Building",
+  "shortName": "office",
+  "category": "travel",
+  "subcategory": "place-building",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "An office building.",
+  "tldr": "Work, corporate life, or back to office.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "An office building.",
+      "example": "At the office 🏢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Corporate life.",
+      "example": "Corporate drone 🏢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In-office work.",
+      "example": "RTO day 🏢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "The grind.",
+      "example": "9 to 5 life 🏢",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "SLACK", "note": "Office status." },
+    { "platform": "TWITTER", "note": "Work life content." },
+    { "platform": "INSTAGRAM", "note": "Career content." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Corporate humor." },
+    { "generation": "MILLENNIAL", "note": "Office culture." },
+    { "generation": "BOOMER", "note": "Work location." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🏢 Office Emoji Meaning - What Does 🏢 Really Mean?",
+  "seoDescription": "Learn what the office emoji 🏢 really means. Work or corporate life vibes. Complete context guide."
+}

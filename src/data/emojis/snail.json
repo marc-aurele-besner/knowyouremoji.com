@@ -1,0 +1,52 @@
+{
+  "unicode": "1F40C",
+  "slug": "snail",
+  "character": "🐌",
+  "name": "Snail",
+  "shortName": "snail",
+  "category": "animals",
+  "subcategory": "animal-bug",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A snail with shell.",
+  "tldr": "Slow, snail mail, or taking your time.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A snail.",
+      "example": "Slow and steady 🐌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Going slow.",
+      "example": "Snail pace 🐌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Slow progress.",
+      "example": "Moving slow 🐌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Snail mail.",
+      "example": "Sending by post 🐌",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Slow progress." },
+    { "platform": "INSTAGRAM", "note": "Taking it slow." },
+    { "platform": "SLACK", "note": "Slow responses." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Snail pace." },
+    { "generation": "MILLENNIAL", "note": "Slow and steady." },
+    { "generation": "BOOMER", "note": "Snail mail." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🐌 Snail Emoji Meaning - What Does 🐌 Really Mean?",
+  "seoDescription": "Learn what the snail emoji 🐌 really means. Slow or snail mail vibes. Complete context guide."
+}
