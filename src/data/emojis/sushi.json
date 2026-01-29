@@ -4,44 +4,67 @@
   "character": "🍣",
   "name": "Sushi",
   "shortName": "sushi",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-asian",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A piece of sushi - rice with fish on top.",
-  "tldr": "Japanese food, fancy dinner, or treat yourself meal.",
+  "baseMeaning": "A piece of sushi, typically nigiri with salmon or tuna on rice.",
+  "tldr": "Sushi time! Used for Japanese food, fancy dining, or food appreciation.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Sushi.", "example": "Sushi night 🍣", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Eating or wanting sushi.",
+      "example": "Sushi date night 🍣",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Treating yourself.",
-      "example": "Self care 🍣",
+      "meaning": "Fancy or upscale dining.",
+      "example": "Treat yourself 🍣",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Nice dinner date.",
-      "example": "Date night 🍣",
+      "meaning": "Dinner date or romantic meal.",
+      "example": "Take me out for 🍣",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Celebrating with food.",
-      "example": "Project done, sushi time 🍣",
+      "meaning": "Team lunch or celebration.",
+      "example": "Catered lunch today 🍣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Foodie content." },
-    { "platform": "TWITTER", "note": "Food cravings." },
-    { "platform": "TIKTOK", "note": "Mukbang and food content." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in food photography and foodie content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Common in food recommendations and cravings."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used in food content and restaurant reviews."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Foodie culture." },
-    { "generation": "MILLENNIAL", "note": "Treat yourself." },
-    { "generation": "BOOMER", "note": "Japanese cuisine." }
+    {
+      "generation": "GEN_Z",
+      "note": "Sushi as a go-to dinner option."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Sushi dates and foodie culture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Japanese cuisine."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍣 Sushi Emoji Meaning - What Does 🍣 Really Mean?",
-  "seoDescription": "Learn what the sushi emoji 🍣 really means. Treat yourself or date night vibes. Complete context guide."
+  "seoDescription": "Learn what the sushi emoji 🍣 really means. Used for Japanese food, fancy dining, or date nights. Complete context guide."
 }

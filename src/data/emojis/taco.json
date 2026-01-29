@@ -4,49 +4,67 @@
   "character": "🌮",
   "name": "Taco",
   "shortName": "taco",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A taco.",
-  "tldr": "Taco Tuesday, Mexican food, or let's taco bout it.",
+  "baseMeaning": "A taco, the Mexican dish with a folded tortilla and fillings.",
+  "tldr": "Taco Tuesday! Used for Mexican food, celebration, or general food love.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A taco.",
-      "example": "Taco time 🌮",
+      "meaning": "Eating or wanting tacos.",
+      "example": "Taco Tuesday 🌮",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Taco Tuesday.",
-      "example": "It's Tuesday 🌮",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Team lunch.",
-      "example": "Taco run 🌮",
+      "meaning": "Celebration food or fun times.",
+      "example": "Let's fiesta 🌮",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Taco puns.",
-      "example": "Let's taco bout it 🌮",
+      "meaning": "Any excuse to eat tacos.",
+      "example": "It's taco any day 🌮",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Team lunch or casual celebration.",
+      "example": "Catering tacos for the win 🌮",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Taco Tuesday." },
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TIKTOK", "note": "Recipe videos." }
+    {
+      "platform": "TWITTER",
+      "note": "Taco Tuesday is a cultural phenomenon."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in food and lifestyle content."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Common for lunch announcements and celebrations."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Food culture." },
-    { "generation": "MILLENNIAL", "note": "Taco Tuesday." },
-    { "generation": "BOOMER", "note": "Mexican food." }
+    {
+      "generation": "GEN_Z",
+      "note": "Taco Tuesday culture and food appreciation."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Taco obsession and food culture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Mexican food."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌮 Taco Emoji Meaning - What Does 🌮 Really Mean?",
-  "seoDescription": "Learn what the taco emoji 🌮 really means. Taco Tuesday or food vibes. Complete context guide."
+  "seoDescription": "Learn what the taco emoji 🌮 really means. Essential for Taco Tuesday and food appreciation. Complete context guide."
 }
