@@ -4,49 +4,44 @@
   "character": "☂️",
   "name": "Umbrella",
   "shortName": "umbrella",
-  "category": "objects",
-  "subcategory": "clothing",
-  "unicodeVersion": "1.1",
-  "baseMeaning": "An umbrella.",
-  "tldr": "Rain protection, insurance, or Rihanna.",
+  "category": "travel-places",
+  "subcategory": "sky-weather",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Umbrella emoji.",
+  "tldr": "Protection! Umbrella or prepared.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "An umbrella.",
-      "example": "Bring an umbrella ☂️",
+      "meaning": "Represents Umbrella.",
+      "example": "Check this out ☂️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Protection.",
-      "example": "Under my umbrella ☂️",
+      "meaning": "Common slang usage.",
+      "example": "Vibes ☂️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☂️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Insurance coverage.",
-      "example": "Umbrella policy ☂️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Rihanna reference.",
-      "example": "Ella ella ☂️",
+      "meaning": "Professional context.",
+      "example": "Work stuff ☂️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Weather posts." },
-    { "platform": "INSTAGRAM", "note": "Rainy aesthetic." },
-    { "platform": "TIKTOK", "note": "Music reference." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Rihanna song." },
-    { "generation": "MILLENNIAL", "note": "Umbrella song era." },
-    { "generation": "BOOMER", "note": "Weather item." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☂️ Umbrella Emoji Meaning - What Does ☂️ Really Mean?",
-  "seoDescription": "Learn what the umbrella emoji ☂️ really means. Rain or protection vibes. Complete context guide."
+  "seoTitle": "☂️ Umbrella Emoji Meaning",
+  "seoDescription": "Learn what the Umbrella emoji ☂️ really means."
 }

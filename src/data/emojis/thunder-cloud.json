@@ -1,52 +1,47 @@
 {
-  "unicode": "26C8",
+  "unicode": "1F329",
   "slug": "thunder-cloud",
-  "character": "⛈️",
-  "name": "Cloud with Lightning and Rain",
-  "shortName": "storm",
-  "category": "nature",
+  "character": "🌩️",
+  "name": "Cloud with Lightning",
+  "shortName": "thunder",
+  "category": "travel-places",
   "subcategory": "sky-weather",
-  "unicodeVersion": "5.2",
-  "baseMeaning": "A cloud with lightning and rain.",
-  "tldr": "Stormy weather, chaos, or drama brewing.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Cloud with Lightning emoji.",
+  "tldr": "Storm! Thunder or drama.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Thunderstorm.",
-      "example": "Storm coming ⛈️",
+      "meaning": "Represents Cloud with Lightning.",
+      "example": "Check this out 🌩️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Drama or chaos.",
-      "example": "Things are heating up ⛈️",
+      "meaning": "Common slang usage.",
+      "example": "Vibes 🌩️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌩️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Stressful situation.",
-      "example": "All hands on deck ⛈️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Relationship storm.",
-      "example": "We need to talk ⛈️",
+      "meaning": "Professional context.",
+      "example": "Work stuff 🌩️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Drama and chaos." },
-    { "platform": "INSTAGRAM", "note": "Moody content." },
-    { "platform": "SLACK", "note": "Stressful situations." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Drama energy." },
-    { "generation": "MILLENNIAL", "note": "Chaos vibes." },
-    { "generation": "BOOMER", "note": "Storm warning." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⛈️ Thunder Cloud Emoji Meaning - What Does ⛈️ Really Mean?",
-  "seoDescription": "Learn what the thunder cloud emoji ⛈️ really means. Storm or drama brewing vibes. Complete context guide."
+  "seoTitle": "🌩️ Cloud with Lightning Emoji Meaning",
+  "seoDescription": "Learn what the Cloud with Lightning emoji 🌩️ really means."
 }

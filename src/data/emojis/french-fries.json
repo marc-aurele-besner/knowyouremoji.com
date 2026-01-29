@@ -4,67 +4,44 @@
   "character": "🍟",
   "name": "French Fries",
   "shortName": "fries",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A carton of crispy french fries.",
-  "tldr": "French fries, fast food, or the ultimate comfort food snack.",
+  "baseMeaning": "A red carton of french fries.",
+  "tldr": "Fries! The perfect side.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "French fries or fast food.",
-      "example": "Fries with that? 🍟",
+      "meaning": "French fries.",
+      "example": "Extra fries 🍟",
       "riskLevel": "LOW"
     },
+    { "context": "SLANG", "meaning": "Fast food.", "example": "Drive thru 🍟", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Fast food cravings or treating yourself.",
-      "example": "Cheat day 🍟",
+      "context": "IRONIC",
+      "meaning": "Comfort food.",
+      "example": "Stress eating 🍟",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Sharing fries is intimate.",
-      "example": "Will you share fries with me? 🍟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Giving up on healthy eating.",
-      "example": "Salad? No thanks 🍟",
+      "meaning": "Casual food date.",
+      "example": "Fries before guys 🍟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for food and comfort content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Food debates (who makes the best fries)."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Fast food reviews and mukbang."
-    }
+    { "platform": "TWITTER", "note": "Fast food love." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Food videos." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Ultimate comfort food."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Nostalgic fast food staple."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Classic side dish."
-    }
+    { "generation": "GEN_Z", "note": "Fries before guys." },
+    { "generation": "MILLENNIAL", "note": "Comfort food." },
+    { "generation": "BOOMER", "note": "French fries." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍟 French Fries Emoji Meaning - What Does 🍟 Really Mean?",
-  "seoDescription": "Learn what the french fries emoji 🍟 really means in texting. Ultimate comfort food and fast food cravings. Complete context guide."
+  "seoTitle": "🍟 French Fries Emoji Meaning",
+  "seoDescription": "Learn what the french fries emoji 🍟 really means."
 }

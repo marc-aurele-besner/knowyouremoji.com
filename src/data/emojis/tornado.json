@@ -4,49 +4,44 @@
   "character": "🌪️",
   "name": "Tornado",
   "shortName": "tornado",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
-  "unicodeVersion": "7.0",
-  "baseMeaning": "A tornado or twister.",
-  "tldr": "Chaos, destruction, or life is a whirlwind.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Tornado emoji.",
+  "tldr": "Chaos! Tornado or whirlwind.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A tornado.",
-      "example": "Storm warning 🌪️",
+      "meaning": "Represents Tornado.",
+      "example": "Check this out 🌪️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Chaotic energy.",
-      "example": "My life right now 🌪️",
+      "meaning": "Common slang usage.",
+      "example": "Vibes 🌪️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌪️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Deadline chaos.",
-      "example": "End of quarter 🌪️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Whirlwind romance.",
-      "example": "So fast 🌪️",
+      "meaning": "Professional context.",
+      "example": "Work stuff 🌪️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Chaos and drama." },
-    { "platform": "INSTAGRAM", "note": "Busy life content." },
-    { "platform": "SLACK", "note": "Deadline pressure." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Chaotic energy." },
-    { "generation": "MILLENNIAL", "note": "Life whirlwind." },
-    { "generation": "BOOMER", "note": "Storm warning." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌪️ Tornado Emoji Meaning - What Does 🌪️ Really Mean?",
-  "seoDescription": "Learn what the tornado emoji 🌪️ really means. Chaos or whirlwind vibes. Complete context guide."
+  "seoTitle": "🌪️ Tornado Emoji Meaning",
+  "seoDescription": "Learn what the Tornado emoji 🌪️ really means."
 }

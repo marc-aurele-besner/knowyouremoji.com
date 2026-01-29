@@ -3,50 +3,45 @@
   "slug": "party-popper",
   "character": "🎉",
   "name": "Party Popper",
-  "shortName": "party-popper",
+  "shortName": "party",
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A party popper.",
-  "tldr": "Celebration, congrats, or party time.",
+  "baseMeaning": "Party Popper emoji.",
+  "tldr": "Celebration! Party time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Party popper.",
-      "example": "Party time 🎉",
+      "meaning": "Represents Party Popper.",
+      "example": "Check this out 🎉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Celebrating.",
-      "example": "We did it 🎉",
+      "meaning": "Common slang usage.",
+      "example": "Vibes 🎉",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎉", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Achievement.",
-      "example": "Shipped 🎉",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastic congrats.",
-      "example": "Wow great job 🎉",
+      "meaning": "Professional context.",
+      "example": "Work stuff 🎉",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Celebrate wins." },
-    { "platform": "TWITTER", "note": "Announcements." },
-    { "platform": "DISCORD", "note": "Hype." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Celebration." },
-    { "generation": "MILLENNIAL", "note": "Party time." },
-    { "generation": "BOOMER", "note": "Congratulations." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎉 Party Popper Emoji Meaning - What Does 🎉 Really Mean?",
-  "seoDescription": "Learn what the party popper emoji 🎉 really means. Celebration or congrats vibes. Complete context guide."
+  "seoTitle": "🎉 Party Popper Emoji Meaning",
+  "seoDescription": "Learn what the Party Popper emoji 🎉 really means."
 }

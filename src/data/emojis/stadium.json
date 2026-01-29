@@ -4,49 +4,44 @@
   "character": "🏟️",
   "name": "Stadium",
   "shortName": "stadium",
-  "category": "travel",
+  "category": "travel-places",
   "subcategory": "place-building",
-  "unicodeVersion": "7.0",
-  "baseMeaning": "A stadium.",
-  "tldr": "Sports, concert, or big event.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Stadium emoji.",
+  "tldr": "Sports! Stadium or events.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Stadium venue.",
-      "example": "Game day 🏟️",
+      "meaning": "Represents Stadium.",
+      "example": "Check this out 🏟️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Big event.",
-      "example": "Stadium show 🏟️",
+      "meaning": "Common slang usage.",
+      "example": "Vibes 🏟️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🏟️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Large venue.",
-      "example": "Stadium event 🏟️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Packed crowd.",
-      "example": "Sold out 🏟️",
+      "meaning": "Professional context.",
+      "example": "Work stuff 🏟️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Sports content." },
-    { "platform": "INSTAGRAM", "note": "Concert posts." },
-    { "platform": "TIKTOK", "note": "Event content." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Concert era." },
-    { "generation": "MILLENNIAL", "note": "Sports events." },
-    { "generation": "BOOMER", "note": "Stadium." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏟️ Stadium Emoji Meaning - What Does 🏟️ Really Mean?",
-  "seoDescription": "Learn what the stadium emoji 🏟️ really means. Sports or concert vibes. Complete context guide."
+  "seoTitle": "🏟️ Stadium Emoji Meaning",
+  "seoDescription": "Learn what the Stadium emoji 🏟️ really means."
 }
