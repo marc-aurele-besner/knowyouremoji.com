@@ -160,6 +160,3 @@ export function RedFlagBadge({
     </div>
   );
 }
-
-// Export setter for controlled expansion from parent
-export type { RedFlagBadgeProps };

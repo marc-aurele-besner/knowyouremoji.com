@@ -197,5 +197,3 @@ export function RedFlagSection({
     </section>
   );
 }
-
-export type { RedFlagSectionProps };
