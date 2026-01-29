@@ -1,70 +1,47 @@
 {
-  "unicode": "261D",
+  "unicode": "1F446",
   "slug": "pointing-up",
-  "character": "☝️",
-  "name": "Index Pointing Up",
-  "shortName": "point-up",
+  "character": "👆",
+  "name": "Backhand Index Pointing Up",
+  "shortName": "pointup",
   "category": "people",
   "subcategory": "hand-single-finger",
-  "unicodeVersion": "1.1",
-  "baseMeaning": "An index finger pointing upward.",
-  "tldr": "Making a point, drawing attention, or emphasizing something important.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A hand pointing up.",
+  "tldr": "This, look above, or important point.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Emphasizing an important point.",
-      "example": "☝️ This is the key takeaway",
+      "context": "LITERAL",
+      "meaning": "Pointing up.",
+      "example": "Look up 👆",
       "riskLevel": "LOW"
     },
+    { "context": "SLANG", "meaning": "This is it.", "example": "This one 👆", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Highlighting important information.",
-      "example": "☝️ Remember to submit by Friday",
+      "meaning": "See above.",
+      "example": "Reference above 👆",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "'Actually...' energy before correcting someone.",
-      "example": "☝️ Well technically...",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "LITERAL",
-      "meaning": "Pointing up or referencing something above.",
-      "example": "See the message above ☝️",
+      "meaning": "Emphasis.",
+      "example": "Read that again 👆",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Often used for emphasis or to highlight threads."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for pointing to important messages."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in captions to highlight bio link."
-    }
+    { "platform": "TWITTER", "note": "Emphasizing tweets." },
+    { "platform": "SLACK", "note": "Referencing previous." },
+    { "platform": "INSTAGRAM", "note": "Link in bio references." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Associated with 'actually' corrections and emphasis."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used to highlight important points."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Understood as emphasis or pointing."
-    }
+    { "generation": "GEN_Z", "note": "Emphasis." },
+    { "generation": "MILLENNIAL", "note": "Pointing up." },
+    { "generation": "BOOMER", "note": "Look above." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☝️ Pointing Up Emoji Meaning - What Does ☝️ Really Mean?",
-  "seoDescription": "Learn what the pointing up emoji ☝️ really means in texting. Emphasizes important points or corrections. Complete context guide."
+  "seoTitle": "👆 Pointing Up Emoji Meaning - What Does 👆 Really Mean?",
+  "seoDescription": "Learn what the pointing up emoji 👆 really means. This or look above vibes. Complete context guide."
 }
