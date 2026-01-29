@@ -1,15 +1,6 @@
-import { describe, expect, test, afterEach, mock } from 'bun:test';
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { describe, expect, test, afterEach } from 'bun:test';
+import { render, screen, cleanup } from '@testing-library/react';
 import NotFound from '@/app/not-found';
-
-// Mock the emoji-data module
-mock.module('@/lib/emoji-data', () => ({
-  getEmojiSummaries: () => [
-    { slug: 'fire', character: '🔥', name: 'Fire', category: 'symbols', tldr: 'Hot or exciting' },
-    { slug: 'heart', character: '❤️', name: 'Red Heart', category: 'symbols', tldr: 'Love' },
-    { slug: 'smile', character: '😊', name: 'Smiling Face', category: 'faces', tldr: 'Happy' },
-  ],
-}));
 
 describe('Global NotFound (404 Page)', () => {
   afterEach(() => {
@@ -84,43 +75,25 @@ describe('Global NotFound (404 Page)', () => {
     // Should have quick links to common pages
     expect(screen.getByRole('heading', { name: /popular pages/i })).toBeInTheDocument();
   });
-});
 
-describe('Global NotFound Search Functionality', () => {
-  afterEach(() => {
-    cleanup();
-  });
-
-  test('filters emojis based on search query', () => {
+  test('includes homepage card in popular pages', () => {
     render(<NotFound />);
 
-    const searchInput = screen.getByRole('searchbox');
-    fireEvent.change(searchInput, { target: { value: 'fire' } });
-
-    // Should show fire emoji in results
-    expect(screen.getByText('Fire')).toBeInTheDocument();
+    expect(screen.getByText('Homepage')).toBeInTheDocument();
+    expect(screen.getByText('Browse all emojis')).toBeInTheDocument();
   });
 
-  test('shows no results message when search has no matches', () => {
+  test('includes interpreter card in popular pages', () => {
     render(<NotFound />);
 
-    const searchInput = screen.getByRole('searchbox');
-    fireEvent.change(searchInput, { target: { value: 'xyznonexistent' } });
-
-    expect(screen.getByText(/no emojis found/i)).toBeInTheDocument();
+    expect(screen.getByText('Interpreter')).toBeInTheDocument();
+    expect(screen.getByText('Decode emoji messages')).toBeInTheDocument();
   });
 
-  test('clears search when clear button is clicked', () => {
+  test('includes about card in popular pages', () => {
     render(<NotFound />);
 
-    const searchInput = screen.getByRole('searchbox');
-    fireEvent.change(searchInput, { target: { value: 'fire' } });
-
-    // Find and click clear button
-    const clearButton = screen.getByRole('button', { name: /clear/i });
-    fireEvent.click(clearButton);
-
-    // Search should be cleared
-    expect(searchInput).toHaveValue('');
+    expect(screen.getByText('About')).toBeInTheDocument();
+    expect(screen.getByText('Learn about us')).toBeInTheDocument();
   });
 });
