@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { ProbabilityMeter } from './probability-meter';
 import type { InterpretationResult, DetectedEmoji, RedFlag } from '@/types';
 
 export interface InterpretResultProps {
@@ -13,46 +14,6 @@ export interface InterpretResultProps {
   isLoading?: boolean;
   onEmojiClick?: (emoji: string) => void;
   className?: string;
-}
-
-interface ProbabilityMeterProps {
-  label: string;
-  value: number;
-  testId: string;
-}
-
-function ProbabilityMeter({ label, value, testId }: ProbabilityMeterProps) {
-  const getColorClass = (v: number) => {
-    if (v >= 70) return 'text-red-600 bg-red-100';
-    if (v >= 50) return 'text-yellow-600 bg-yellow-100';
-    return 'text-green-600 bg-green-100';
-  };
-
-  const colorClass = getColorClass(value);
-
-  return (
-    <div className="flex flex-col gap-1">
-      <label className="text-sm text-gray-600" id={`${testId}-label`}>
-        {label}
-      </label>
-      <div
-        data-testid={testId}
-        aria-labelledby={`${testId}-label`}
-        className={cn(
-          'flex items-center justify-between rounded-lg px-3 py-2',
-          colorClass.split(' ')[1]
-        )}
-      >
-        <div className="h-2 flex-1 overflow-hidden rounded-full bg-gray-200 mr-3">
-          <div
-            className={cn('h-full rounded-full transition-all', colorClass.split(' ')[1])}
-            style={{ width: `${value}%`, backgroundColor: 'currentColor' }}
-          />
-        </div>
-        <span className={cn('text-sm font-medium', colorClass.split(' ')[0])}>{value}%</span>
-      </div>
-    </div>
-  );
 }
 
 interface EmojiBreakdownCardProps {
@@ -314,11 +275,13 @@ export function InterpretResult({
             label="Sarcasm Probability"
             value={result.metrics.sarcasmProbability}
             testId="sarcasm-meter"
+            description="Likelihood the message contains sarcasm"
           />
           <ProbabilityMeter
             label="Passive-Aggression"
             value={result.metrics.passiveAggressionProbability}
             testId="passive-aggression-meter"
+            description="Likelihood the message contains passive-aggressive undertones"
           />
         </div>
       </section>

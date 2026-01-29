@@ -101,7 +101,8 @@ describe('InterpretResult', () => {
     it('renders all detected emojis', () => {
       render(<InterpretResult result={mockResult} />);
       expect(screen.getByText('👋')).toBeInTheDocument();
-      expect(screen.getByText('😊')).toBeInTheDocument();
+      // Note: 😊 may appear multiple times (in emoji breakdown and as meter icon)
+      expect(screen.getAllByText('😊').length).toBeGreaterThanOrEqual(1);
     });
 
     it('renders emoji meanings', () => {
@@ -177,8 +178,9 @@ describe('InterpretResult', () => {
       render(<InterpretResult result={mockResultWithRedFlags} />);
       const sarcasmMeter = screen.getByTestId('sarcasm-meter');
       const paMeter = screen.getByTestId('passive-aggression-meter');
-      // The container has the background color, the inner span has the text color
-      expect(sarcasmMeter).toHaveClass('bg-yellow-100');
+      // Both values are in the high zone (>60) so both should be red
+      // sarcasmProbability: 65, passiveAggressionProbability: 75
+      expect(sarcasmMeter).toHaveClass('bg-red-100');
       expect(paMeter).toHaveClass('bg-red-100');
     });
 
