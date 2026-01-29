@@ -4,44 +4,67 @@
   "character": "🌙",
   "name": "Crescent Moon",
   "shortName": "moon",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A crescent moon.",
-  "tldr": "Night time, goodnight, or mysterious vibes.",
+  "baseMeaning": "A crescent moon, representing nighttime or sleep.",
+  "tldr": "Night vibes! Used for nighttime, sleep, dreams, or mysterious energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The moon.",
-      "example": "Beautiful night 🌙",
+      "meaning": "Nighttime or the moon.",
+      "example": "Beautiful moon tonight 🌙",
       "riskLevel": "LOW"
     },
-    { "context": "SLANG", "meaning": "Goodnight.", "example": "Goodnight 🌙", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Night owl energy or late night vibes.",
+      "example": "Night mode activated 🌙",
+      "riskLevel": "LOW"
+    },
     {
       "context": "DATING",
-      "meaning": "Late night texts.",
-      "example": "Thinking of you 🌙",
+      "meaning": "Romantic nighttime or dreamy vibes.",
+      "example": "Late night talks 🌙",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Night owl.",
-      "example": "3am and still up 🌙",
+      "meaning": "Sleep or wishing for sleep.",
+      "example": "Goodnight world 🌙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Night and aesthetic content." },
-    { "platform": "WHATSAPP", "note": "Goodnight messages." },
-    { "platform": "TWITTER", "note": "Night content." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in nighttime aesthetic and sleep content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for late night posts and night owl culture."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Common for goodnight messages."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Night owl energy." },
-    { "generation": "MILLENNIAL", "note": "Goodnight." },
-    { "generation": "BOOMER", "note": "The moon." }
+    {
+      "generation": "GEN_Z",
+      "note": "Night owl energy and dreamy aesthetics."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Nighttime vibes and sleep."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Moon or goodnight."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌙 Crescent Moon Emoji Meaning - What Does 🌙 Really Mean?",
-  "seoDescription": "Learn what the crescent moon emoji 🌙 really means. Goodnight or night vibes. Complete context guide."
+  "seoDescription": "Learn what the crescent moon emoji 🌙 really means. Used for nighttime, dreams, and night owl vibes. Complete context guide."
 }

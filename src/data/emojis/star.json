@@ -4,49 +4,67 @@
   "character": "⭐",
   "name": "Star",
   "shortName": "star",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
   "unicodeVersion": "5.1",
-  "baseMeaning": "A yellow star.",
-  "tldr": "Rating, special, or celebrity status.",
+  "baseMeaning": "A yellow/gold star, representing excellence or ratings.",
+  "tldr": "Gold star! Used for ratings, favorites, achievements, or quality.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A star.",
-      "example": "Starry night ⭐",
+      "meaning": "Stars in the sky or celestial themes.",
+      "example": "Stargazing tonight ⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "You're a star.",
-      "example": "Gold star ⭐",
+      "meaning": "Rating or quality indicator.",
+      "example": "5 ⭐ experience",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Rating or review.",
-      "example": "5 stars ⭐",
+      "meaning": "Favorites, bookmarks, or achievements.",
+      "example": "Gold star for this work ⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastic praise.",
-      "example": "Great job ⭐",
+      "meaning": "Sarcastic gold star for obvious things.",
+      "example": "You remembered? ⭐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Emphasis." },
-    { "platform": "INSTAGRAM", "note": "Highlight content." },
-    { "platform": "SLACK", "note": "Favorites." }
+    {
+      "platform": "TWITTER",
+      "note": "Common for ratings and highlighting quality content."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Used for favorites and kudos to teammates."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in review and quality-related posts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gold star energy." },
-    { "generation": "MILLENNIAL", "note": "Rating system." },
-    { "generation": "BOOMER", "note": "Excellence." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for ratings and gold star sarcasm."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Rating systems and achievement badges."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Gold star rewards and celestial meaning."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⭐ Star Emoji Meaning - What Does ⭐ Really Mean?",
-  "seoDescription": "Learn what the star emoji ⭐ really means. Rating or special vibes. Complete context guide."
+  "seoDescription": "Learn what the star emoji ⭐ really means. Used for ratings, favorites, and achievements. Complete context guide."
 }

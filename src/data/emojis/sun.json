@@ -4,49 +4,67 @@
   "character": "☀️",
   "name": "Sun",
   "shortName": "sun",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
   "unicodeVersion": "1.1",
-  "baseMeaning": "The sun.",
-  "tldr": "Sunny day, happiness, or beach vibes.",
+  "baseMeaning": "The sun, representing daylight, warmth, and good weather.",
+  "tldr": "Sunny vibes! Used for good weather, positivity, or daytime energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The sun.",
-      "example": "Beautiful day ☀️",
+      "meaning": "Sunny weather or daytime.",
+      "example": "Perfect beach day ☀️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Good vibes.",
-      "example": "Feeling sunny ☀️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "You're my sunshine.",
-      "example": "My sunshine ☀️",
+      "meaning": "Positivity, brightness, or good vibes.",
+      "example": "Radiating good energy ☀️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Too hot.",
-      "example": "Burning up ☀️",
+      "meaning": "Forced positivity or sarcasm.",
+      "example": "Everything is great ☀️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Morning energy or bright outlook.",
+      "example": "Good morning team ☀️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Summer content." },
-    { "platform": "TWITTER", "note": "Weather updates." },
-    { "platform": "TIKTOK", "note": "Beach content." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in summer, beach, and positive content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for good morning posts and positivity."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Common for morning greetings."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beach day." },
-    { "generation": "MILLENNIAL", "note": "Positive vibes." },
-    { "generation": "BOOMER", "note": "Weather." }
+    {
+      "generation": "GEN_Z",
+      "note": "Positive energy and good vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Sunny disposition and weather."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Good weather or sunshine."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "☀️ Sun Emoji Meaning - What Does ☀️ Really Mean?",
-  "seoDescription": "Learn what the sun emoji ☀️ really means. Sunny or happy vibes. Complete context guide."
+  "seoDescription": "Learn what the sun emoji ☀️ really means. Used for good weather, positivity, and sunny vibes. Complete context guide."
 }

@@ -4,49 +4,67 @@
   "character": "☄️",
   "name": "Comet",
   "shortName": "comet",
-  "category": "nature",
+  "category": "travel-places",
   "subcategory": "sky-weather",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A comet.",
-  "tldr": "Rare event, shooting star, or disaster.",
+  "baseMeaning": "A comet with a trailing tail, streaking through space.",
+  "tldr": "Shooting through! Used for something fast, impactful, or cosmic.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A comet.",
-      "example": "Comet sighting ☄️",
+      "meaning": "An actual comet or celestial event.",
+      "example": "Watching the comet tonight ☄️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Coming in hot.",
-      "example": "Here I come ☄️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Fast impact.",
-      "example": "Launching hard ☄️",
+      "meaning": "Something fast and impactful.",
+      "example": "They came out of nowhere ☄️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Dumpster fire.",
-      "example": "Incoming disaster ☄️",
+      "meaning": "Dramatic entrance or impact.",
+      "example": "My arrival at the party ☄️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Rapid rise or impactful change.",
+      "example": "Their career trajectory ☄️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Hot takes." },
-    { "platform": "DISCORD", "note": "Gaming impact." },
-    { "platform": "TIKTOK", "note": "Dramatic content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for dramatic arrivals and impactful moments."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in space and dramatic content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common for rapid rise content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dramatic entry." },
-    { "generation": "MILLENNIAL", "note": "Shooting star." },
-    { "generation": "BOOMER", "note": "Space event." }
+    {
+      "generation": "GEN_Z",
+      "note": "Dramatic impact and fast rise."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Space themes and impactful moments."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Celestial comet interpretation."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "☄️ Comet Emoji Meaning - What Does ☄️ Really Mean?",
-  "seoDescription": "Learn what the comet emoji ☄️ really means. Fast or dramatic vibes. Complete context guide."
+  "seoDescription": "Learn what the comet emoji ☄️ really means. Used for fast impacts, dramatic arrivals, or cosmic themes. Complete context guide."
 }
