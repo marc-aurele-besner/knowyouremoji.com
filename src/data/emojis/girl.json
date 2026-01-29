@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Girls content." },
-    { "platform": "INSTAGRAM", "note": "Family content." },
-    { "platform": "TIKTOK", "note": "Girl content." }
+    {
+      "platform": "TWITTER",
+      "note": "Girls content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Family content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Girl content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "The girls." },
-    { "generation": "MILLENNIAL", "note": "Young female." },
-    { "generation": "BOOMER", "note": "A girl child." }
+    {
+      "generation": "GEN_Z",
+      "note": "The girls."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Young female."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A girl child."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👧 Girl Emoji Meaning",
-  "seoDescription": "Learn what the Girl emoji 👧 really means."
+  "seoDescription": "Learn what the Girl emoji 👧 really means.",
+  "skinToneVariations": [
+    "girl-light",
+    "girl-medium-light",
+    "girl-medium",
+    "girl-medium-dark",
+    "girl-dark"
+  ]
 }

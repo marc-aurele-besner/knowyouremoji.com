@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Social movements and solidarity." },
-    { "platform": "INSTAGRAM", "note": "Activist content." },
-    { "platform": "TIKTOK", "note": "Protest and unity content." }
+    {
+      "platform": "TWITTER",
+      "note": "Social movements and solidarity."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Activist content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Protest and unity content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Social justice symbol." },
-    { "generation": "MILLENNIAL", "note": "Solidarity and resistance." },
-    { "generation": "BOOMER", "note": "Power symbol." }
+    {
+      "generation": "GEN_Z",
+      "note": "Social justice symbol."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Solidarity and resistance."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Power symbol."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✊ Raised Fist Emoji Meaning",
-  "seoDescription": "Learn what the Raised Fist emoji ✊ really means."
+  "seoDescription": "Learn what the Raised Fist emoji ✊ really means.",
+  "skinToneVariations": [
+    "raised-fist-light",
+    "raised-fist-medium-light",
+    "raised-fist-medium",
+    "raised-fist-medium-dark",
+    "raised-fist-dark"
+  ]
 }

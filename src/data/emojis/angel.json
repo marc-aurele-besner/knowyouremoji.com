@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Innocent or good person." },
-    { "platform": "INSTAGRAM", "note": "Angel aesthetic." },
-    { "platform": "TIKTOK", "note": "Angel content." }
+    {
+      "platform": "TWITTER",
+      "note": "Innocent or good person."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Angel aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Angel content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Angel aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Sweet and innocent." },
-    { "generation": "BOOMER", "note": "Cherub angel." }
+    {
+      "generation": "GEN_Z",
+      "note": "Angel aesthetic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Sweet and innocent."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Cherub angel."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👼 Baby Angel Emoji Meaning",
-  "seoDescription": "Learn what the Baby Angel emoji 👼 really means."
+  "seoDescription": "Learn what the Baby Angel emoji 👼 really means.",
+  "skinToneVariations": [
+    "angel-light",
+    "angel-medium-light",
+    "angel-medium",
+    "angel-medium-dark",
+    "angel-dark"
+  ]
 }

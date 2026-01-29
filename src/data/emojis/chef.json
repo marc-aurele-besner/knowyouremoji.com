@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Food and cooking." },
-    { "platform": "INSTAGRAM", "note": "Cooking content." },
-    { "platform": "TIKTOK", "note": "Recipe and cooking videos." }
+    {
+      "platform": "TWITTER",
+      "note": "Food and cooking."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Cooking content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Recipe and cooking videos."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cooking fire content." },
-    { "generation": "MILLENNIAL", "note": "Home cooking." },
-    { "generation": "BOOMER", "note": "Professional chef." }
+    {
+      "generation": "GEN_Z",
+      "note": "Cooking fire content."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Home cooking."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Professional chef."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🍳 Cook Emoji Meaning",
-  "seoDescription": "Learn what the Cook emoji 🧑‍🍳 really means."
+  "seoDescription": "Learn what the Cook emoji 🧑‍🍳 really means.",
+  "skinToneVariations": [
+    "chef-light",
+    "chef-medium-light",
+    "chef-medium",
+    "chef-medium-dark",
+    "chef-dark"
+  ]
 }

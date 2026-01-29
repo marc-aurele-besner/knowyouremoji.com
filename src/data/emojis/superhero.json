@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Heroic content." },
-    { "platform": "INSTAGRAM", "note": "Appreciation posts." },
-    { "platform": "TIKTOK", "note": "Hero content." }
+    {
+      "platform": "TWITTER",
+      "note": "Heroic content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Appreciation posts."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Hero content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Main character energy." },
-    { "generation": "MILLENNIAL", "note": "Hero vibes." },
-    { "generation": "BOOMER", "note": "Superhero." }
+    {
+      "generation": "GEN_Z",
+      "note": "Main character energy."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Hero vibes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Superhero."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦸 Superhero Emoji Meaning",
-  "seoDescription": "Learn what the Superhero emoji 🦸 really means."
+  "seoDescription": "Learn what the Superhero emoji 🦸 really means.",
+  "skinToneVariations": [
+    "superhero-light",
+    "superhero-medium-light",
+    "superhero-medium",
+    "superhero-medium-dark",
+    "superhero-dark"
+  ]
 }

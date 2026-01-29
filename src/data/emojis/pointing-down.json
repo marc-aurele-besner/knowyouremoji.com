@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Thread indicator." },
-    { "platform": "INSTAGRAM", "note": "Caption references." },
-    { "platform": "SLACK", "note": "See below." }
+    {
+      "platform": "TWITTER",
+      "note": "Thread indicator."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Caption references."
+    },
+    {
+      "platform": "SLACK",
+      "note": "See below."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Thread starter." },
-    { "generation": "MILLENNIAL", "note": "Check below." },
-    { "generation": "BOOMER", "note": "Pointing down." }
+    {
+      "generation": "GEN_Z",
+      "note": "Thread starter."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Check below."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Pointing down."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👇 Backhand Index Pointing Down Emoji Meaning",
-  "seoDescription": "Learn what the Backhand Index Pointing Down emoji 👇 really means."
+  "seoDescription": "Learn what the Backhand Index Pointing Down emoji 👇 really means.",
+  "skinToneVariations": [
+    "pointing-down-light",
+    "pointing-down-medium-light",
+    "pointing-down-medium",
+    "pointing-down-medium-dark",
+    "pointing-down-dark"
+  ]
 }

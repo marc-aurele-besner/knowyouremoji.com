@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Villain arc content." },
-    { "platform": "INSTAGRAM", "note": "Bad vibes aesthetic." },
-    { "platform": "TIKTOK", "note": "Villain era content." }
+    {
+      "platform": "TWITTER",
+      "note": "Villain arc content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Bad vibes aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Villain era content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Villain era/arc." },
-    { "generation": "MILLENNIAL", "note": "Being bad." },
-    { "generation": "BOOMER", "note": "Bad guy." }
+    {
+      "generation": "GEN_Z",
+      "note": "Villain era/arc."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Being bad."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Bad guy."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦹 Supervillain Emoji Meaning",
-  "seoDescription": "Learn what the Supervillain emoji 🦹 really means."
+  "seoDescription": "Learn what the Supervillain emoji 🦹 really means.",
+  "skinToneVariations": [
+    "supervillain-light",
+    "supervillain-medium-light",
+    "supervillain-medium",
+    "supervillain-medium-dark",
+    "supervillain-dark"
+  ]
 }

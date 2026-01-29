@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Teasing about size." },
-    { "platform": "INSTAGRAM", "note": "Small things content." },
-    { "platform": "TIKTOK", "note": "Often used in roasts." }
+    {
+      "platform": "TWITTER",
+      "note": "Teasing about size."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Small things content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Often used in roasts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Often used to roast." },
-    { "generation": "MILLENNIAL", "note": "Small amount." },
-    { "generation": "BOOMER", "note": "Pinch gesture." }
+    {
+      "generation": "GEN_Z",
+      "note": "Often used to roast."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Small amount."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Pinch gesture."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤏 Pinching Hand Emoji Meaning",
-  "seoDescription": "Learn what the Pinching Hand emoji 🤏 really means."
+  "seoDescription": "Learn what the Pinching Hand emoji 🤏 really means.",
+  "skinToneVariations": [
+    "pinching-hand-light",
+    "pinching-hand-medium-light",
+    "pinching-hand-medium",
+    "pinching-hand-medium-dark",
+    "pinching-hand-dark"
+  ]
 }

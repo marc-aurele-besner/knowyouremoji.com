@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Royalty content." },
-    { "platform": "INSTAGRAM", "note": "Prince aesthetic." },
-    { "platform": "TIKTOK", "note": "Charming content." }
+    {
+      "platform": "TWITTER",
+      "note": "Royalty content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Prince aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Charming content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Prince charming or The Prince meme." },
-    { "generation": "MILLENNIAL", "note": "Disney prince." },
-    { "generation": "BOOMER", "note": "Royal prince." }
+    {
+      "generation": "GEN_Z",
+      "note": "Prince charming or The Prince meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Disney prince."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Royal prince."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤴 Prince Emoji Meaning",
-  "seoDescription": "Learn what the Prince emoji 🤴 really means."
+  "seoDescription": "Learn what the Prince emoji 🤴 really means.",
+  "skinToneVariations": [
+    "prince-light",
+    "prince-medium-light",
+    "prince-medium",
+    "prince-medium-dark",
+    "prince-dark"
+  ]
 }

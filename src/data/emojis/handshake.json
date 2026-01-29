@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Agreements and deals." },
-    { "platform": "INSTAGRAM", "note": "Business and collaboration." },
-    { "platform": "SLACK", "note": "Deal confirmed." }
+    {
+      "platform": "TWITTER",
+      "note": "Agreements and deals."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Business and collaboration."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Deal confirmed."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "We're in agreement." },
-    { "generation": "MILLENNIAL", "note": "Deal sealed." },
-    { "generation": "BOOMER", "note": "Professional handshake." }
+    {
+      "generation": "GEN_Z",
+      "note": "We're in agreement."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Deal sealed."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Professional handshake."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤝 Handshake Emoji Meaning",
-  "seoDescription": "Learn what the Handshake emoji 🤝 really means."
+  "seoDescription": "Learn what the Handshake emoji 🤝 really means.",
+  "skinToneVariations": [
+    "handshake-light",
+    "handshake-medium-light",
+    "handshake-medium",
+    "handshake-medium-dark",
+    "handshake-dark"
+  ]
 }

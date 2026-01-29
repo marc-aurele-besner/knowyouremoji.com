@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Boomer jokes." },
-    { "platform": "INSTAGRAM", "note": "Family content." },
-    { "platform": "TIKTOK", "note": "Generational humor." }
+    {
+      "platform": "TWITTER",
+      "note": "Boomer jokes."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Family content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Generational humor."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Boomer energy." },
-    { "generation": "MILLENNIAL", "note": "Grandpa or feeling old." },
-    { "generation": "BOOMER", "note": "Elderly man." }
+    {
+      "generation": "GEN_Z",
+      "note": "Boomer energy."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Grandpa or feeling old."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Elderly man."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👴 Old Man Emoji Meaning",
-  "seoDescription": "Learn what the Old Man emoji 👴 really means."
+  "seoDescription": "Learn what the Old Man emoji 👴 really means.",
+  "skinToneVariations": [
+    "older-man-light",
+    "older-man-medium-light",
+    "older-man-medium",
+    "older-man-medium-dark",
+    "older-man-dark"
+  ]
 }

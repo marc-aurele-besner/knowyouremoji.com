@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Grandma content." },
-    { "platform": "INSTAGRAM", "note": "Family content." },
-    { "platform": "TIKTOK", "note": "Generational humor." }
+    {
+      "platform": "TWITTER",
+      "note": "Grandma content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Family content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Generational humor."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Grandma energy." },
-    { "generation": "MILLENNIAL", "note": "Grandma or feeling old." },
-    { "generation": "BOOMER", "note": "Elderly woman." }
+    {
+      "generation": "GEN_Z",
+      "note": "Grandma energy."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Grandma or feeling old."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Elderly woman."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👵 Old Woman Emoji Meaning",
-  "seoDescription": "Learn what the Old Woman emoji 👵 really means."
+  "seoDescription": "Learn what the Old Woman emoji 👵 really means.",
+  "skinToneVariations": [
+    "older-woman-light",
+    "older-woman-medium-light",
+    "older-woman-medium",
+    "older-woman-medium-dark",
+    "older-woman-dark"
+  ]
 }

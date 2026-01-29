@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Boys content." },
-    { "platform": "INSTAGRAM", "note": "Family content." },
-    { "platform": "TIKTOK", "note": "Boys will be boys content." }
+    {
+      "platform": "TWITTER",
+      "note": "Boys content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Family content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Boys will be boys content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "The boys." },
-    { "generation": "MILLENNIAL", "note": "Young male." },
-    { "generation": "BOOMER", "note": "A boy child." }
+    {
+      "generation": "GEN_Z",
+      "note": "The boys."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Young male."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A boy child."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👦 Boy Emoji Meaning",
-  "seoDescription": "Learn what the Boy emoji 👦 really means."
+  "seoDescription": "Learn what the Boy emoji 👦 really means.",
+  "skinToneVariations": [
+    "boy-light",
+    "boy-medium-light",
+    "boy-medium",
+    "boy-medium-dark",
+    "boy-dark"
+  ]
 }

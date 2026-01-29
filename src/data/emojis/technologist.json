@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Tech Twitter." },
-    { "platform": "INSTAGRAM", "note": "Developer content." },
-    { "platform": "DISCORD", "note": "Coding communities." }
+    {
+      "platform": "TWITTER",
+      "note": "Tech Twitter."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Developer content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Coding communities."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Tech bro or coding." },
-    { "generation": "MILLENNIAL", "note": "Developer life." },
-    { "generation": "BOOMER", "note": "Computer person." }
+    {
+      "generation": "GEN_Z",
+      "note": "Tech bro or coding."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Developer life."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Computer person."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍💻 Technologist Emoji Meaning",
-  "seoDescription": "Learn what the Technologist emoji 🧑‍💻 really means."
+  "seoDescription": "Learn what the Technologist emoji 🧑‍💻 really means.",
+  "skinToneVariations": [
+    "technologist-light",
+    "technologist-medium-light",
+    "technologist-medium",
+    "technologist-medium-dark",
+    "technologist-dark"
+  ]
 }

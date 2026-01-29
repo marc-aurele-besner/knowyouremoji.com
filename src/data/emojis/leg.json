@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Fitness content." },
-    { "platform": "INSTAGRAM", "note": "Workout posts." },
-    { "platform": "TIKTOK", "note": "Gym content." }
+    {
+      "platform": "TWITTER",
+      "note": "Fitness content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Workout posts."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Gym content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Leg day memes." },
-    { "generation": "MILLENNIAL", "note": "Fitness talk." },
-    { "generation": "BOOMER", "note": "A leg." }
+    {
+      "generation": "GEN_Z",
+      "note": "Leg day memes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Fitness talk."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A leg."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦵 Leg Emoji Meaning",
-  "seoDescription": "Learn what the Leg emoji 🦵 really means."
+  "seoDescription": "Learn what the Leg emoji 🦵 really means.",
+  "skinToneVariations": [
+    "leg-light",
+    "leg-medium-light",
+    "leg-medium",
+    "leg-medium-dark",
+    "leg-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Sniffing out drama." },
-    { "platform": "INSTAGRAM", "note": "Smell-related content." },
-    { "platform": "TIKTOK", "note": "Being nosy content." }
+    {
+      "platform": "TWITTER",
+      "note": "Sniffing out drama."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Smell-related content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Being nosy content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Smelling drama." },
-    { "generation": "MILLENNIAL", "note": "Nosy or suspicious." },
-    { "generation": "BOOMER", "note": "Nose symbol." }
+    {
+      "generation": "GEN_Z",
+      "note": "Smelling drama."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Nosy or suspicious."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Nose symbol."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👃 Nose Emoji Meaning",
-  "seoDescription": "Learn what the Nose emoji 👃 really means."
+  "seoDescription": "Learn what the Nose emoji 👃 really means.",
+  "skinToneVariations": [
+    "nose-light",
+    "nose-medium-light",
+    "nose-medium",
+    "nose-medium-dark",
+    "nose-dark"
+  ]
 }

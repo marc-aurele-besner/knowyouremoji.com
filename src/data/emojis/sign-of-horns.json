@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Concert and music content." },
-    { "platform": "TWITTER", "note": "Excitement and metal." },
-    { "platform": "DISCORD", "note": "Gaming wins." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Concert and music content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Excitement and metal."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming wins."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Rock on excitement." },
-    { "generation": "MILLENNIAL", "note": "Metal and rock." },
-    { "generation": "BOOMER", "note": "Rock and roll." }
+    {
+      "generation": "GEN_Z",
+      "note": "Rock on excitement."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Metal and rock."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Rock and roll."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤘 Sign of the Horns Emoji Meaning - What Does 🤘 Really Mean?",
-  "seoDescription": "Learn what the sign of the horns emoji 🤘 really means. Rock on or metal vibes. Complete context guide."
+  "seoDescription": "Learn what the sign of the horns emoji 🤘 really means. Rock on or metal vibes. Complete context guide.",
+  "skinToneVariations": [
+    "sign-of-horns-light",
+    "sign-of-horns-medium-light",
+    "sign-of-horns-medium",
+    "sign-of-horns-medium-dark",
+    "sign-of-horns-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Education content." },
-    { "platform": "INSTAGRAM", "note": "Teacher life." },
-    { "platform": "TIKTOK", "note": "Teacher TikTok." }
+    {
+      "platform": "TWITTER",
+      "note": "Education content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Teacher life."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Teacher TikTok."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Teacher vibes." },
-    { "generation": "MILLENNIAL", "note": "Educator." },
-    { "generation": "BOOMER", "note": "Teacher." }
+    {
+      "generation": "GEN_Z",
+      "note": "Teacher vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Educator."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Teacher."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🏫 Teacher Emoji Meaning",
-  "seoDescription": "Learn what the Teacher emoji 🧑‍🏫 really means."
+  "seoDescription": "Learn what the Teacher emoji 🧑‍🏫 really means.",
+  "skinToneVariations": [
+    "teacher-light",
+    "teacher-medium-light",
+    "teacher-medium",
+    "teacher-medium-dark",
+    "teacher-dark"
+  ]
 }

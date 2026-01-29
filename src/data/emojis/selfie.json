@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Photo sharing." },
-    { "platform": "INSTAGRAM", "note": "The selfie platform." },
-    { "platform": "TIKTOK", "note": "Video selfie content." }
+    {
+      "platform": "TWITTER",
+      "note": "Photo sharing."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "The selfie platform."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Video selfie content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Natural behavior." },
-    { "generation": "MILLENNIAL", "note": "Selfie culture." },
-    { "generation": "BOOMER", "note": "Taking a photo of yourself." }
+    {
+      "generation": "GEN_Z",
+      "note": "Natural behavior."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Selfie culture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Taking a photo of yourself."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤳 Selfie Emoji Meaning",
-  "seoDescription": "Learn what the Selfie emoji 🤳 really means."
+  "seoDescription": "Learn what the Selfie emoji 🤳 really means.",
+  "skinToneVariations": [
+    "selfie-light",
+    "selfie-medium-light",
+    "selfie-medium",
+    "selfie-medium-dark",
+    "selfie-dark"
+  ]
 }

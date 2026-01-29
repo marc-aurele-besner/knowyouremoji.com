@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Gratitude and hope." },
-    { "platform": "INSTAGRAM", "note": "Thankful posts." },
-    { "platform": "SLACK", "note": "Thank you messages." }
+    {
+      "platform": "TWITTER",
+      "note": "Gratitude and hope."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Thankful posts."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Thank you messages."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Please or hoping." },
-    { "generation": "MILLENNIAL", "note": "Thanks or high five debate." },
-    { "generation": "BOOMER", "note": "Prayer symbol." }
+    {
+      "generation": "GEN_Z",
+      "note": "Please or hoping."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Thanks or high five debate."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Prayer symbol."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🙏 Folded Hands Emoji Meaning",
-  "seoDescription": "Learn what the Folded Hands emoji 🙏 really means."
+  "seoDescription": "Learn what the Folded Hands emoji 🙏 really means.",
+  "skinToneVariations": [
+    "folded-hands-light",
+    "folded-hands-medium-light",
+    "folded-hands-medium",
+    "folded-hands-medium-dark",
+    "folded-hands-dark"
+  ]
 }

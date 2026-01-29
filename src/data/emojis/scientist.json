@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Science content." },
-    { "platform": "INSTAGRAM", "note": "Science communication." },
-    { "platform": "TIKTOK", "note": "Science TikTok." }
+    {
+      "platform": "TWITTER",
+      "note": "Science content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Science communication."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Science TikTok."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Science vibes." },
-    { "generation": "MILLENNIAL", "note": "Researcher." },
-    { "generation": "BOOMER", "note": "Scientist." }
+    {
+      "generation": "GEN_Z",
+      "note": "Science vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Researcher."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Scientist."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🔬 Scientist Emoji Meaning",
-  "seoDescription": "Learn what the Scientist emoji 🧑‍🔬 really means."
+  "seoDescription": "Learn what the Scientist emoji 🧑‍🔬 really means.",
+  "skinToneVariations": [
+    "scientist-light",
+    "scientist-medium-light",
+    "scientist-medium",
+    "scientist-medium-dark",
+    "scientist-dark"
+  ]
 }

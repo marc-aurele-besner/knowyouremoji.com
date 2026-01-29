@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Wish fulfillment." },
-    { "platform": "INSTAGRAM", "note": "Magic content." },
-    { "platform": "TIKTOK", "note": "Wish content." }
+    {
+      "platform": "TWITTER",
+      "note": "Wish fulfillment."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Magic content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Wish content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Aladdin reference." },
-    { "generation": "MILLENNIAL", "note": "Robin Williams Genie." },
-    { "generation": "BOOMER", "note": "I Dream of Jeannie." }
+    {
+      "generation": "GEN_Z",
+      "note": "Aladdin reference."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Robin Williams Genie."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "I Dream of Jeannie."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧞 Genie Emoji Meaning",
-  "seoDescription": "Learn what the Genie emoji 🧞 really means."
+  "seoDescription": "Learn what the Genie emoji 🧞 really means.",
+  "skinToneVariations": [
+    "genie-light",
+    "genie-medium-light",
+    "genie-medium",
+    "genie-medium-dark",
+    "genie-dark"
+  ]
 }

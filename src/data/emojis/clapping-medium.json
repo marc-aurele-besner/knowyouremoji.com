@@ -1,0 +1,78 @@
+{
+  "unicode": "1F44F-1F3FD",
+  "slug": "clapping-medium",
+  "character": "👏🏽",
+  "name": "Clapping Hands: Medium Skin Tone",
+  "shortName": "clap medium",
+  "category": "people",
+  "subcategory": "hand",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Two hands clapping together in applause.",
+  "tldr": "Can mean genuine applause OR used between words for emphasis (often sarcastic).",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Showing approval, congratulations, or applause.",
+      "example": "Great job! 👏👏👏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Adding emphasis between words - each clap is a word.",
+      "example": "Read 👏 the 👏 room 👏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Sarcastic applause or condescending emphasis.",
+      "example": "Wow 👏 so 👏 brave 👏",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Mocking someone's poor take or behavior.",
+      "example": "Great 👏 idea 👏 genius 👏",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "TWITTER",
+      "note": "Very common for emphasis between words. Often signals frustration."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in comments for genuine praise or sarcastic emphasis."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Generally used positively - genuine applause for achievements."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "The between-words emphasis is standard - can be supportive or aggressive."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Familiar with both uses - context determines meaning."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Usually interpret as straightforward applause and congratulations."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Tone-dependent",
+      "description": "When placed between words, often reads as condescending or frustrated rather than supportive.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["clap-back"],
+  "seoTitle": "👏🏽 Clapping Hands Medium Skin Tone Emoji - What Does 👏🏽 Mean?",
+  "seoDescription": "Learn what the clapping hands emoji with medium skin tone 👏🏽 means in texts and social media.",
+  "skinToneBase": "clapping",
+  "skinToneModifier": "medium"
+}
