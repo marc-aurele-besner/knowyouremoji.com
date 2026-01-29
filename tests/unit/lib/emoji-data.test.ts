@@ -141,6 +141,21 @@ describe('emoji-data', () => {
       expect(results.some((e) => e.character === '💀')).toBe(true);
     });
 
+    it('should find emojis by shortName', async () => {
+      const { searchEmojis, getEmojiBySlug } = await import('../../../src/lib/emoji-data');
+      const skull = getEmojiBySlug('skull');
+      if (skull) {
+        const results = searchEmojis(skull.shortName);
+        expect(results.some((e) => e.slug === 'skull')).toBe(true);
+      }
+    });
+
+    it('should find emojis by slug', async () => {
+      const { searchEmojis } = await import('../../../src/lib/emoji-data');
+      const results = searchEmojis('skull');
+      expect(results.some((e) => e.slug === 'skull')).toBe(true);
+    });
+
     it('should be case-insensitive', async () => {
       const { searchEmojis } = await import('../../../src/lib/emoji-data');
       const resultsLower = searchEmojis('skull');
@@ -225,6 +240,45 @@ describe('emoji-data', () => {
       // Second load should work the same
       const emojis2 = getAllEmojis();
       expect(emojis2.length).toBe(emojis1.length);
+    });
+  });
+
+  describe('cache behavior', () => {
+    it('should reuse cached data on subsequent calls', async () => {
+      const { clearEmojiCache, getAllEmojis } = await import('../../../src/lib/emoji-data');
+
+      // Clear cache first
+      clearEmojiCache();
+
+      // First call loads from disk
+      const emojis1 = getAllEmojis();
+
+      // Second call should return same reference (cached)
+      const emojis2 = getAllEmojis();
+
+      // Both should have the same data
+      expect(emojis1.length).toBe(emojis2.length);
+      expect(emojis1).toBe(emojis2);
+    });
+
+    it('should load fresh data after cache clear', async () => {
+      const { clearEmojiCache, getAllEmojis, getEmojiBySlug } =
+        await import('../../../src/lib/emoji-data');
+
+      // First load
+      const emojis1 = getAllEmojis();
+      const skull1 = getEmojiBySlug('skull');
+
+      // Clear and reload
+      clearEmojiCache();
+
+      const emojis2 = getAllEmojis();
+      const skull2 = getEmojiBySlug('skull');
+
+      // Data should be equivalent but not the same reference
+      expect(emojis1.length).toBe(emojis2.length);
+      expect(emojis1).not.toBe(emojis2);
+      expect(skull1?.slug).toBe(skull2?.slug);
     });
   });
 
