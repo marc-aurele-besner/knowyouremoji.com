@@ -269,6 +269,100 @@ describe('RateLimiter', () => {
       // Reset the mock for other tests
       globalThis.localStorage = localStorageMock;
     });
+
+    it('should handle localStorage access throwing an error', () => {
+      // Create a getter that throws when accessed
+      Object.defineProperty(globalThis, 'localStorage', {
+        get: () => {
+          throw new Error('localStorage access denied');
+        },
+        configurable: true,
+      });
+
+      const limiter = new RateLimiter(3);
+      expect(limiter.getUsedCount()).toBe(0);
+      expect(limiter.canUse()).toBe(true);
+      expect(() => limiter.recordUse()).not.toThrow();
+      expect(() => limiter.reset()).not.toThrow();
+
+      // Restore localStorage mock
+      Object.defineProperty(globalThis, 'localStorage', {
+        value: localStorageMock,
+        configurable: true,
+        writable: true,
+      });
+    });
+  });
+
+  describe('localStorage errors on write', () => {
+    it('should handle setItem throwing (quota exceeded)', () => {
+      const errorMock = {
+        ...localStorageMock,
+        setItem: () => {
+          throw new Error('QuotaExceededError');
+        },
+      };
+      globalThis.localStorage = errorMock;
+
+      const limiter = new RateLimiter(3);
+      // Should not throw even when setItem fails
+      expect(() => limiter.recordUse()).not.toThrow();
+      // Since setItem failed, count should still be 0 on next read
+      expect(limiter.getUsedCount()).toBe(0);
+    });
+
+    it('should handle removeItem throwing', () => {
+      const errorMock = {
+        ...localStorageMock,
+        removeItem: () => {
+          throw new Error('Storage error');
+        },
+      };
+      globalThis.localStorage = errorMock;
+
+      const limiter = new RateLimiter(3);
+      limiter.recordUse();
+      // Should not throw even when removeItem fails
+      expect(() => limiter.reset()).not.toThrow();
+    });
+  });
+
+  describe('multiple instances sharing state', () => {
+    it('should share usage count across instances', () => {
+      const limiter1 = new RateLimiter(5);
+      const limiter2 = new RateLimiter(5);
+
+      limiter1.recordUse();
+      expect(limiter2.getUsedCount()).toBe(1);
+
+      limiter2.recordUse();
+      expect(limiter1.getUsedCount()).toBe(2);
+    });
+
+    it('should respect different max uses across instances', () => {
+      const limiter1 = new RateLimiter(2);
+      const limiter2 = new RateLimiter(5);
+
+      limiter1.recordUse();
+      limiter1.recordUse();
+
+      // limiter1 is at its limit
+      expect(limiter1.canUse()).toBe(false);
+      // limiter2 has higher limit, so it can still use
+      expect(limiter2.canUse()).toBe(true);
+      expect(limiter2.getRemainingUses()).toBe(3);
+    });
+  });
+
+  describe('recordUse at limit', () => {
+    it('should return 0 when called at limit', () => {
+      const limiter = new RateLimiter(2);
+      limiter.recordUse();
+      limiter.recordUse();
+
+      // Already at limit, calling again should return 0
+      expect(limiter.recordUse()).toBe(0);
+    });
   });
 });
 
