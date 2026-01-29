@@ -1,4 +1,5 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
+import { generateMetadata, default as AboutPage } from '../../../src/app/about/page';
 
 // Store original env
 const originalEnv = { ...process.env };
@@ -10,9 +11,6 @@ describe('About Page', () => {
     // Set test environment values
     process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
     process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
-    // Clear module cache to ensure fresh import
-    delete require.cache[require.resolve('../../../src/app/about/page')];
-    delete require.cache[require.resolve('../../../src/lib/env')];
   });
 
   afterEach(() => {
@@ -21,31 +19,27 @@ describe('About Page', () => {
   });
 
   describe('generateMetadata', () => {
-    test('generates metadata with correct title', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with correct title', () => {
       const metadata = generateMetadata();
 
       expect(metadata.title).toBe('About Us | KnowYourEmoji');
     });
 
-    test('generates metadata with correct description', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with correct description', () => {
       const metadata = generateMetadata();
 
       expect(metadata.description).toContain('emoji');
       expect(typeof metadata.description).toBe('string');
     });
 
-    test('generates metadata with canonical URL', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with canonical URL', () => {
       const metadata = generateMetadata();
 
       const alternates = metadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://knowyouremoji.com/about');
     });
 
-    test('generates metadata with correct keywords', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with correct keywords', () => {
       const metadata = generateMetadata();
 
       expect(metadata.keywords).toBeDefined();
@@ -54,8 +48,7 @@ describe('About Page', () => {
       expect(keywords.length).toBeGreaterThan(0);
     });
 
-    test('generates metadata with OpenGraph data', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with OpenGraph data', () => {
       const metadata = generateMetadata();
 
       const openGraph = metadata.openGraph as {
@@ -64,35 +57,65 @@ describe('About Page', () => {
         siteName?: string;
         title?: string;
         description?: string;
+        locale?: string;
+        images?: Array<{ url: string; width: number; height: number; alt: string }>;
       };
       expect(openGraph?.type).toBe('website');
       expect(openGraph?.url).toBe('https://knowyouremoji.com/about');
       expect(openGraph?.siteName).toBe('KnowYourEmoji');
+      expect(openGraph?.locale).toBe('en_US');
+      expect(openGraph?.title).toBe('About Us | KnowYourEmoji');
+      expect(openGraph?.images).toBeDefined();
+      expect(openGraph?.images?.length).toBeGreaterThan(0);
     });
 
-    test('generates metadata with Twitter card data', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with Twitter card data', () => {
       const metadata = generateMetadata();
 
       const twitter = metadata.twitter as {
         card?: string;
         title?: string;
         description?: string;
+        images?: string[];
       };
       expect(twitter?.card).toBe('summary_large_image');
       expect(twitter?.title).toBeDefined();
+      expect(twitter?.description).toBeDefined();
+      expect(twitter?.images).toBeDefined();
     });
 
-    test('generates metadata with robots directives', async () => {
-      const { generateMetadata } = await import('../../../src/app/about/page');
+    test('generates metadata with robots directives', () => {
       const metadata = generateMetadata();
 
       const robots = metadata.robots as {
         index?: boolean;
         follow?: boolean;
+        googleBot?: {
+          index?: boolean;
+          follow?: boolean;
+          'max-video-preview'?: number;
+          'max-image-preview'?: string;
+          'max-snippet'?: number;
+        };
       };
       expect(robots?.index).toBe(true);
       expect(robots?.follow).toBe(true);
+      expect(robots?.googleBot?.index).toBe(true);
+      expect(robots?.googleBot?.follow).toBe(true);
+      expect(robots?.googleBot?.['max-video-preview']).toBe(-1);
+      expect(robots?.googleBot?.['max-image-preview']).toBe('large');
+      expect(robots?.googleBot?.['max-snippet']).toBe(-1);
+    });
+
+    test('uses environment variables correctly', () => {
+      process.env.NEXT_PUBLIC_APP_URL = 'https://custom-url.com';
+      process.env.NEXT_PUBLIC_APP_NAME = 'CustomName';
+
+      const metadata = generateMetadata();
+
+      expect(metadata.title).toBe('About Us | CustomName');
+      const alternates = metadata.alternates as { canonical?: string };
+      expect(alternates?.canonical).toBe('https://custom-url.com/about');
     });
   });
 
@@ -119,20 +142,17 @@ describe('About Page', () => {
       return '';
     }
 
-    test('is a valid React component function', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('is a valid React component function', () => {
       expect(typeof AboutPage).toBe('function');
     });
 
-    test('returns a valid React element', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('returns a valid React element', () => {
       const result = AboutPage();
       expect(result).toBeDefined();
       expect(result.type).toBe('main');
     });
 
-    test('contains breadcrumbs navigation', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('contains breadcrumbs navigation', () => {
       const result = AboutPage();
 
       // Check that children are defined
@@ -144,8 +164,7 @@ describe('About Page', () => {
       expect(content).toContain('Breadcrumbs');
     });
 
-    test('contains mission section', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('contains mission section', () => {
       const result = AboutPage();
 
       // Check for mission-related content
@@ -153,8 +172,7 @@ describe('About Page', () => {
       expect(content).toContain('mission');
     });
 
-    test('contains how it works section', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('contains how it works section', () => {
       const result = AboutPage();
 
       // Check for how it works content
@@ -163,8 +181,7 @@ describe('About Page', () => {
       expect(content).toContain('works');
     });
 
-    test('contains trust signals section', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('contains trust signals section', () => {
       const result = AboutPage();
 
       // Check for trust-related content
@@ -179,8 +196,7 @@ describe('About Page', () => {
       expect(hasTrustSignals).toBe(true);
     });
 
-    test('has accessible heading structure', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('has accessible heading structure', () => {
       const result = AboutPage();
 
       // Check for h1 heading
@@ -188,12 +204,18 @@ describe('About Page', () => {
       expect(content).toContain('h1');
     });
 
-    test('contains CTA link to interpreter', async () => {
-      const { default: AboutPage } = await import('../../../src/app/about/page');
+    test('contains CTA link to interpreter', () => {
       const result = AboutPage();
 
       const content = extractContent(result);
       expect(content).toContain('/interpreter');
+    });
+
+    test('contains CTA link to emoji browse', () => {
+      const result = AboutPage();
+
+      const content = extractContent(result);
+      expect(content).toContain('/emoji');
     });
   });
 });

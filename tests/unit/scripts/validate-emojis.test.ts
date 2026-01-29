@@ -1,4 +1,7 @@
-import { describe, it, expect } from 'bun:test';
+import { describe, it, expect, beforeEach, afterEach, spyOn } from 'bun:test';
+import fs from 'fs';
+import path from 'path';
+import os from 'os';
 import type { Emoji } from '../../../src/types/emoji';
 import {
   validateEmoji,
@@ -9,6 +12,11 @@ import {
   checkDuplicateSlugs,
   checkComboReferences,
   validateAllEmojis,
+  loadEmojisFromDirectory,
+  loadComboSlugs,
+  main,
+  isRunningDirectly,
+  handleMainError,
 } from '../../../scripts/validate-emojis';
 
 // Valid test emoji
@@ -82,6 +90,86 @@ describe('validate-emojis', () => {
 
       expect(errors.some((e) => e.field === 'unicode' && e.message.includes('empty'))).toBe(true);
       expect(errors.some((e) => e.field === 'name' && e.message.includes('empty'))).toBe(true);
+    });
+
+    it('should validate invalid items in contextMeanings array', () => {
+      const invalidEmoji: Emoji = {
+        ...validEmoji,
+        contextMeanings: [
+          {
+            context: 'INVALID_CONTEXT' as Emoji['contextMeanings'][0]['context'],
+            meaning: '',
+            example: '',
+            riskLevel: 'INVALID' as Emoji['contextMeanings'][0]['riskLevel'],
+          },
+        ],
+      };
+      const errors = validateEmoji(invalidEmoji);
+      expect(errors.some((e) => e.field === 'contextMeanings[0]')).toBe(true);
+      expect(errors.some((e) => e.file === 'skull')).toBe(true);
+    });
+
+    it('should validate invalid items in platformNotes array', () => {
+      const invalidEmoji: Emoji = {
+        ...validEmoji,
+        platformNotes: [
+          {
+            platform: 'INVALID_PLATFORM' as Emoji['platformNotes'][0]['platform'],
+            note: '',
+          },
+        ],
+      };
+      const errors = validateEmoji(invalidEmoji);
+      expect(errors.some((e) => e.field === 'platformNotes[0]')).toBe(true);
+      expect(errors.some((e) => e.file === 'skull')).toBe(true);
+    });
+
+    it('should validate invalid items in generationalNotes array', () => {
+      const invalidEmoji: Emoji = {
+        ...validEmoji,
+        generationalNotes: [
+          {
+            generation: 'INVALID_GEN' as Emoji['generationalNotes'][0]['generation'],
+            note: '',
+          },
+        ],
+      };
+      const errors = validateEmoji(invalidEmoji);
+      expect(errors.some((e) => e.field === 'generationalNotes[0]')).toBe(true);
+      expect(errors.some((e) => e.file === 'skull')).toBe(true);
+    });
+
+    it('should validate invalid items in warnings array', () => {
+      const invalidEmoji: Emoji = {
+        ...validEmoji,
+        warnings: [
+          {
+            title: '',
+            description: '',
+            severity: 'INVALID' as Emoji['warnings'][0]['severity'],
+          },
+        ],
+      };
+      const errors = validateEmoji(invalidEmoji);
+      expect(errors.some((e) => e.field === 'warnings[0]')).toBe(true);
+      expect(errors.some((e) => e.file === 'skull')).toBe(true);
+    });
+
+    it('should use unknown as file when slug is missing', () => {
+      const invalidEmoji: Emoji = {
+        ...validEmoji,
+        slug: undefined as unknown as string,
+        contextMeanings: [
+          {
+            context: 'INVALID_CONTEXT' as Emoji['contextMeanings'][0]['context'],
+            meaning: 'test',
+            example: 'test',
+            riskLevel: 'LOW',
+          },
+        ],
+      };
+      const errors = validateEmoji(invalidEmoji);
+      expect(errors.some((e) => e.file === 'unknown')).toBe(true);
     });
 
     it('should detect invalid contextMeanings array', () => {
@@ -348,6 +436,202 @@ describe('validate-emojis', () => {
       // Should have duplicate slug error and missing combo error
       expect(result.errors.some((e) => e.includes('Duplicate'))).toBe(true);
       expect(result.errors.some((e) => e.includes('missing-combo'))).toBe(true);
+    });
+  });
+
+  describe('loadEmojisFromDirectory', () => {
+    let tempDir: string;
+
+    beforeEach(() => {
+      tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'emoji-test-'));
+    });
+
+    afterEach(() => {
+      fs.rmSync(tempDir, { recursive: true, force: true });
+    });
+
+    it('should return empty array for non-existent directory', () => {
+      const result = loadEmojisFromDirectory('/non/existent/path');
+      expect(result).toEqual([]);
+    });
+
+    it('should return empty array for directory with no JSON files', () => {
+      fs.writeFileSync(path.join(tempDir, 'readme.txt'), 'Not a JSON file');
+      const result = loadEmojisFromDirectory(tempDir);
+      expect(result).toEqual([]);
+    });
+
+    it('should load valid emoji JSON files', () => {
+      fs.writeFileSync(path.join(tempDir, 'skull.json'), JSON.stringify(validEmoji));
+      const result = loadEmojisFromDirectory(tempDir);
+      expect(result.length).toBe(1);
+      expect(result[0].slug).toBe('skull');
+    });
+
+    it('should load multiple JSON files', () => {
+      const emoji2 = { ...validEmoji, slug: 'heart', unicode: '2764' };
+      fs.writeFileSync(path.join(tempDir, 'skull.json'), JSON.stringify(validEmoji));
+      fs.writeFileSync(path.join(tempDir, 'heart.json'), JSON.stringify(emoji2));
+      const result = loadEmojisFromDirectory(tempDir);
+      expect(result.length).toBe(2);
+    });
+
+    it('should skip invalid JSON files and log error', () => {
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      fs.writeFileSync(path.join(tempDir, 'invalid.json'), 'not valid json{');
+      const result = loadEmojisFromDirectory(tempDir);
+      expect(result).toEqual([]);
+      expect(consoleSpy).toHaveBeenCalled();
+      consoleSpy.mockRestore();
+    });
+  });
+
+  describe('loadComboSlugs', () => {
+    let tempDir: string;
+
+    beforeEach(() => {
+      tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'combo-test-'));
+    });
+
+    afterEach(() => {
+      fs.rmSync(tempDir, { recursive: true, force: true });
+    });
+
+    it('should return empty set for non-existent directory', () => {
+      const result = loadComboSlugs('/non/existent/path');
+      expect(result.size).toBe(0);
+    });
+
+    it('should return empty set for directory with no JSON files', () => {
+      fs.writeFileSync(path.join(tempDir, 'readme.txt'), 'Not a JSON file');
+      const result = loadComboSlugs(tempDir);
+      expect(result.size).toBe(0);
+    });
+
+    it('should load combo slugs from JSON files', () => {
+      const combo = { slug: 'skull-laughing', name: 'Skull Laughing' };
+      fs.writeFileSync(path.join(tempDir, 'skull-laughing.json'), JSON.stringify(combo));
+      const result = loadComboSlugs(tempDir);
+      expect(result.size).toBe(1);
+      expect(result.has('skull-laughing')).toBe(true);
+    });
+
+    it('should load multiple combo slugs', () => {
+      fs.writeFileSync(
+        path.join(tempDir, 'combo1.json'),
+        JSON.stringify({ slug: 'combo-1', name: 'Combo 1' })
+      );
+      fs.writeFileSync(
+        path.join(tempDir, 'combo2.json'),
+        JSON.stringify({ slug: 'combo-2', name: 'Combo 2' })
+      );
+      const result = loadComboSlugs(tempDir);
+      expect(result.size).toBe(2);
+      expect(result.has('combo-1')).toBe(true);
+      expect(result.has('combo-2')).toBe(true);
+    });
+
+    it('should skip files without slug field', () => {
+      fs.writeFileSync(path.join(tempDir, 'no-slug.json'), JSON.stringify({ name: 'No Slug' }));
+      const result = loadComboSlugs(tempDir);
+      expect(result.size).toBe(0);
+    });
+
+    it('should skip invalid JSON files and log error', () => {
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      fs.writeFileSync(path.join(tempDir, 'invalid.json'), 'not valid json{');
+      const result = loadComboSlugs(tempDir);
+      expect(result.size).toBe(0);
+      expect(consoleSpy).toHaveBeenCalled();
+      consoleSpy.mockRestore();
+    });
+  });
+
+  describe('main', () => {
+    let tempDir: string;
+    let emojisDir: string;
+    let combosDir: string;
+    let originalCwd: () => string;
+    let consoleLogSpy: ReturnType<typeof spyOn>;
+    let processExitSpy: ReturnType<typeof spyOn>;
+
+    beforeEach(() => {
+      tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'main-test-'));
+      emojisDir = path.join(tempDir, 'src', 'data', 'emojis');
+      combosDir = path.join(tempDir, 'src', 'data', 'combos');
+      fs.mkdirSync(emojisDir, { recursive: true });
+      fs.mkdirSync(combosDir, { recursive: true });
+
+      originalCwd = process.cwd;
+      process.cwd = () => tempDir;
+
+      consoleLogSpy = spyOn(console, 'log').mockImplementation(() => {});
+      processExitSpy = spyOn(process, 'exit').mockImplementation(() => {
+        throw new Error('process.exit called');
+      });
+    });
+
+    afterEach(() => {
+      process.cwd = originalCwd;
+      consoleLogSpy.mockRestore();
+      processExitSpy.mockRestore();
+      fs.rmSync(tempDir, { recursive: true, force: true });
+    });
+
+    it('should exit with code 1 when no emoji files found', async () => {
+      await expect(main()).rejects.toThrow('process.exit called');
+      expect(processExitSpy).toHaveBeenCalledWith(1);
+    });
+
+    it('should succeed with valid emoji files', async () => {
+      fs.writeFileSync(path.join(emojisDir, 'skull.json'), JSON.stringify(validEmoji));
+      fs.writeFileSync(
+        path.join(combosDir, 'skull-laughing.json'),
+        JSON.stringify({ slug: 'skull-laughing' })
+      );
+
+      await main();
+      expect(consoleLogSpy).toHaveBeenCalledWith(expect.stringContaining('valid'));
+    });
+
+    it('should exit with code 1 when validation fails', async () => {
+      const invalidEmoji = { slug: 'test' };
+      fs.writeFileSync(path.join(emojisDir, 'invalid.json'), JSON.stringify(invalidEmoji));
+
+      await expect(main()).rejects.toThrow('process.exit called');
+      expect(processExitSpy).toHaveBeenCalledWith(1);
+    });
+  });
+
+  describe('isRunningDirectly', () => {
+    it('should return false when imported as module', () => {
+      // When running tests, this file is imported as a module, not run directly
+      const result = isRunningDirectly();
+      expect(result).toBe(false);
+    });
+  });
+
+  describe('handleMainError', () => {
+    let consoleErrorSpy: ReturnType<typeof spyOn>;
+    let processExitSpy: ReturnType<typeof spyOn>;
+
+    beforeEach(() => {
+      consoleErrorSpy = spyOn(console, 'error').mockImplementation(() => {});
+      processExitSpy = spyOn(process, 'exit').mockImplementation(() => {
+        throw new Error('process.exit called');
+      });
+    });
+
+    afterEach(() => {
+      consoleErrorSpy.mockRestore();
+      processExitSpy.mockRestore();
+    });
+
+    it('should log error and exit with code 1', () => {
+      const testError = new Error('Test error');
+      expect(() => handleMainError(testError)).toThrow('process.exit called');
+      expect(consoleErrorSpy).toHaveBeenCalledWith('Validation script failed:', testError);
+      expect(processExitSpy).toHaveBeenCalledWith(1);
     });
   });
 });

@@ -21,6 +21,9 @@ bun run build
 # Run all tests with coverage (100% required)
 bun run test
 
+# Run tests with coverage enforcement (fails if < 100%)
+bun run test:coverage
+
 # Run tests in watch mode
 bun run test:watch
 
@@ -66,7 +69,7 @@ bun run validate:emojis
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
-- `scripts/` - Utility scripts including `validate-emojis.ts` for data validation
+- `scripts/` - Utility scripts including `validate-emojis.ts` for data validation and `check-coverage.ts` for coverage enforcement
 - `tests/unit/`, `tests/integration/`, `tests/e2e/` - Test files
 
 ### Data Flow
