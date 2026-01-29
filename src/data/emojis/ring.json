@@ -7,64 +7,41 @@
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A diamond ring, typically representing engagement or marriage.",
-  "tldr": "Put a ring on it! Used for engagements, weddings, or commitment.",
+  "baseMeaning": "Ring emoji.",
+  "tldr": "Ring!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "An engagement ring or wedding ring.",
-      "example": "They got engaged! 💍",
+      "meaning": "Represents Ring.",
+      "example": "Look at this 💍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Commitment or locking something down.",
-      "example": "That job offer - you better 💍 it",
+      "meaning": "Engaged or marriage.",
+      "example": "Feeling 💍",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💍", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Marriage, proposals, or serious relationships.",
-      "example": "Waiting for this 💍",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Joking about commitment or Beyoncé reference.",
-      "example": "If you like it put a 💍 on it",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 💍",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Very common in engagement announcements and wedding posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for engagement news or commitment jokes."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Common for sharing engagement news with family."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for serious relationships and commitment memes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Beyoncé's 'Single Ladies' association strong."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Straightforward engagement/wedding meaning."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💍 Ring Emoji Meaning - What Does 💍 Really Mean?",
-  "seoDescription": "Learn what the ring emoji 💍 really means. Used for engagements, weddings, and commitment. Complete context guide."
+  "seoTitle": "💍 Ring Emoji Meaning",
+  "seoDescription": "Learn what the Ring emoji 💍 really means."
 }

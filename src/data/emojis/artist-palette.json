@@ -3,50 +3,45 @@
   "slug": "artist-palette",
   "character": "🎨",
   "name": "Artist Palette",
-  "shortName": "artist-palette",
+  "shortName": "art",
   "category": "activities",
   "subcategory": "arts-crafts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An artist's palette.",
-  "tldr": "Art, creativity, or painting.",
+  "baseMeaning": "Artist Palette emoji.",
+  "tldr": "Art!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Art palette.",
-      "example": "Painting 🎨",
+      "meaning": "Represents Artist Palette.",
+      "example": "Look at this 🎨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Creative.",
-      "example": "Artist vibes 🎨",
+      "meaning": "Painting or creative.",
+      "example": "Feeling 🎨",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎨", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Design work.",
-      "example": "Designing 🎨",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Artsy.",
-      "example": "Very artistic 🎨",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Art content." },
-    { "platform": "INSTAGRAM", "note": "Artist posts." },
-    { "platform": "TIKTOK", "note": "Art tutorials." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Digital art." },
-    { "generation": "MILLENNIAL", "note": "Creative work." },
-    { "generation": "BOOMER", "note": "Painting." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎨 Artist Palette Emoji Meaning - What Does 🎨 Really Mean?",
-  "seoDescription": "Learn what the artist palette emoji 🎨 really means. Art or creativity vibes. Complete context guide."
+  "seoTitle": "🎨 Artist Palette Emoji Meaning",
+  "seoDescription": "Learn what the Artist Palette emoji 🎨 really means."
 }

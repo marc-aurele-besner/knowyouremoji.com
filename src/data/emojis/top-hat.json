@@ -3,50 +3,45 @@
   "slug": "top-hat",
   "character": "🎩",
   "name": "Top Hat",
-  "shortName": "top-hat",
+  "shortName": "top hat",
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A top hat.",
-  "tldr": "Fancy, magician, or classy.",
+  "baseMeaning": "Top Hat emoji.",
+  "tldr": "Top Hat!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A top hat.",
-      "example": "Fancy party 🎩",
+      "meaning": "Represents Top Hat.",
+      "example": "Look at this 🎩",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Classy.",
-      "example": "Gentleman vibes 🎩",
+      "meaning": "Fancy or magic.",
+      "example": "Feeling 🎩",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎩", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Professional.",
-      "example": "Dressed up 🎩",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Magician.",
-      "example": "Ta-da 🎩",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎩",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Fancy content." },
-    { "platform": "DISCORD", "note": "Fedora jokes." },
-    { "platform": "INSTAGRAM", "note": "Event posts." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Meme usage." },
-    { "generation": "MILLENNIAL", "note": "Magician." },
-    { "generation": "BOOMER", "note": "Formal." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎩 Top Hat Emoji Meaning - What Does 🎩 Really Mean?",
-  "seoDescription": "Learn what the top hat emoji 🎩 really means. Fancy or classy vibes. Complete context guide."
+  "seoTitle": "🎩 Top Hat Emoji Meaning",
+  "seoDescription": "Learn what the Top Hat emoji 🎩 really means."
 }

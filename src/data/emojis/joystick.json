@@ -4,67 +4,44 @@
   "character": "🕹️",
   "name": "Joystick",
   "shortName": "joystick",
-  "category": "objects",
-  "subcategory": "computer",
+  "category": "activities",
+  "subcategory": "game",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A classic video game joystick controller.",
-  "tldr": "Game time! Used for gaming, retro games, or being in control.",
+  "baseMeaning": "Joystick emoji.",
+  "tldr": "Joystick!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Gaming or video games.",
-      "example": "Gaming session tonight 🕹️",
+      "meaning": "Represents Joystick.",
+      "example": "Look at this 🕹️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being in control or piloting something.",
-      "example": "I'm at the controls 🕹️",
+      "meaning": "Arcade or gaming.",
+      "example": "Feeling 🕹️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Retro or old-school vibes.",
-      "example": "Feeling nostalgic 🕹️",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🕹️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Taking charge or controlling a situation.",
-      "example": "I'll take the wheel on this 🕹️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🕹️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "DISCORD",
-      "note": "Very common in gaming communities and servers."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for gaming content and retro game discussions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Popular in gaming and nostalgic content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Gaming symbol, though may prefer controller emoji."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Nostalgic arcade and retro gaming vibes."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Recognizes as video game controller."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🕹️ Joystick Emoji Meaning - What Does 🕹️ Really Mean?",
-  "seoDescription": "Learn what the joystick emoji 🕹️ really means. Used for gaming, retro games, or being in control. Complete context guide."
+  "seoTitle": "🕹️ Joystick Emoji Meaning",
+  "seoDescription": "Learn what the Joystick emoji 🕹️ really means."
 }
