@@ -12,11 +12,13 @@ test.describe('Homepage', () => {
     await expect(heading).toBeVisible();
   });
 
-  test('should have deploy and documentation links', async ({ page }) => {
+  test('should have main CTA links', async ({ page }) => {
     await page.goto('/');
-    const deployLink = page.locator('a:has-text("Deploy Now")');
-    const docsLink = page.locator('a:has-text("Documentation")');
-    await expect(deployLink).toBeVisible();
-    await expect(docsLink).toBeVisible();
+    // Check for interpreter CTA link
+    const interpreterLink = page.locator('a:has-text("Interpret a Message")');
+    await expect(interpreterLink).toBeVisible();
+    // Check for browse emojis link
+    const browseLink = page.locator('a:has-text("Browse All Emojis")');
+    await expect(browseLink).toBeVisible();
   });
 });
