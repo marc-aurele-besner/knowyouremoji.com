@@ -8,18 +8,18 @@
   "subcategory": "music",
   "unicodeVersion": "6.0",
   "baseMeaning": "A pair of headphones.",
-  "tldr": "Listening to music, podcast mode, or do not disturb.",
+  "tldr": "Listening to music, podcast, or do not disturb.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Headphones.",
-      "example": "Headphones on 🎧",
+      "example": "Listening 🎧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
       "meaning": "In the zone.",
-      "example": "Focused mode 🎧",
+      "example": "Focus mode 🎧",
       "riskLevel": "LOW"
     },
     {
@@ -30,23 +30,23 @@
     },
     {
       "context": "IRONIC",
-      "meaning": "Ignoring everyone.",
-      "example": "Can't hear the haters 🎧",
+      "meaning": "Can't hear you.",
+      "example": "Ignoring you 🎧",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Focus mode status." },
     { "platform": "TWITTER", "note": "Music recommendations." },
-    { "platform": "INSTAGRAM", "note": "Vibe content." }
+    { "platform": "SLACK", "note": "Focus time." },
+    { "platform": "DISCORD", "note": "Listening to." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Always plugged in." },
-    { "generation": "MILLENNIAL", "note": "Podcast life." },
-    { "generation": "BOOMER", "note": "Listening to music." }
+    { "generation": "GEN_Z", "note": "AirPods in." },
+    { "generation": "MILLENNIAL", "note": "Podcast time." },
+    { "generation": "BOOMER", "note": "Listening." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎧 Headphones Emoji Meaning - What Does 🎧 Really Mean?",
-  "seoDescription": "Learn what the headphones emoji 🎧 really means. Focus mode or music vibes. Complete context guide."
+  "seoDescription": "Learn what the headphones emoji 🎧 really means. Focus or music vibes. Complete context guide."
 }
