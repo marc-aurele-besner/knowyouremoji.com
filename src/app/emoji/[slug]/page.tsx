@@ -1,11 +1,19 @@
 import { notFound } from 'next/navigation';
-import { getEmojiBySlug, getAllEmojiSlugs, getRelatedEmojis } from '@/lib/emoji-data';
+import {
+  getEmojiBySlug,
+  getAllEmojiSlugs,
+  getRelatedEmojis,
+  getCategoryDisplayName,
+} from '@/lib/emoji-data';
+import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section';
+import { EmojiCombosSection } from '@/components/emoji/emoji-combos-section';
+import { CategoryLink } from '@/components/emoji/category-link';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -185,17 +193,25 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   // Get related emojis from the same category
   const relatedEmojis = getRelatedEmojis(slug, 8);
 
-  // Breadcrumb items for navigation
+  // Get combos that contain this emoji
+  const combosWithEmoji = getComboSummariesByEmoji(slug, 6);
+
+  // Get category display name
+  const categoryDisplayName = getCategoryDisplayName(emoji.category);
+
+  // Breadcrumb items for navigation (with category link)
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Emojis', href: '/emoji' },
+    { label: categoryDisplayName, href: `/emoji/category/${emoji.category}` },
     { label: `${emoji.character} ${emoji.name}` },
   ];
 
-  // Breadcrumb items for JSON-LD (with name instead of label)
+  // Breadcrumb items for JSON-LD (with name instead of label, including category)
   const breadcrumbJsonLdItems = [
     { name: 'Home', href: '/' },
     { name: 'Emojis', href: '/emoji' },
+    { name: categoryDisplayName, href: `/emoji/category/${emoji.category}` },
     { name: `${emoji.character} ${emoji.name}` },
   ];
 
@@ -347,7 +363,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
                 </div>
                 <div>
                   <dt className="font-medium text-gray-500 dark:text-gray-400">Category</dt>
-                  <dd className="text-gray-900 dark:text-gray-100 capitalize">{emoji.category}</dd>
+                  <dd className="text-gray-900 dark:text-gray-100">
+                    <CategoryLink category={emoji.category} />
+                  </dd>
                 </div>
                 {emoji.subcategory && (
                   <div>
@@ -359,6 +377,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             </CardContent>
           </Card>
         </section>
+
+        {/* Combos with this Emoji Section */}
+        {combosWithEmoji.length > 0 && <EmojiCombosSection combos={combosWithEmoji} />}
 
         {/* Related Emojis Section */}
         {relatedEmojis.length > 0 && <RelatedEmojisSection emojis={relatedEmojis} />}
