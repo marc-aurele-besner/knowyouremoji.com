@@ -7,64 +7,41 @@
   "category": "animals",
   "subcategory": "animal-marine",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An orange or red octopus.",
-  "tldr": "Octopuses, sea life, or juggling many things at once (like an octopus's arms).",
+  "baseMeaning": "A red octopus.",
+  "tldr": "Multitasking, hugs, or alien vibes.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Octopuses or marine life.",
-      "example": "Aquarium day! 🐙",
+      "meaning": "An octopus.",
+      "example": "Cool creature 🐙",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Multitasking or being busy.",
-      "example": "Juggling so many things 🐙",
+      "meaning": "Multitasking.",
+      "example": "Doing everything 🐙",
       "riskLevel": "LOW"
     },
+    { "context": "DATING", "meaning": "Giving hugs.", "example": "Big hug 🐙", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Handling multiple tasks.",
-      "example": "Being an octopus today 🐙",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Overwhelmed with tasks.",
-      "example": "Need more arms 🐙",
+      "meaning": "Juggling many things.",
+      "example": "So many tasks 🐙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Multitasking and being overwhelmed."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Juggling many projects."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Ocean content and cute animals."
-    }
+    { "platform": "SLACK", "note": "Multitasking." },
+    { "platform": "TWITTER", "note": "Busy life." },
+    { "platform": "INSTAGRAM", "note": "Ocean content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Cute sea creature and busy vibes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Multitasking metaphor."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Marine life."
-    }
+    { "generation": "GEN_Z", "note": "Multitasking energy." },
+    { "generation": "MILLENNIAL", "note": "Juggling everything." },
+    { "generation": "BOOMER", "note": "Sea creature." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🐙 Octopus Emoji Meaning - What Does 🐙 Really Mean?",
-  "seoDescription": "Learn what the octopus emoji 🐙 really means in texting. Sea life or multitasking. Complete context guide."
+  "seoDescription": "Learn what the octopus emoji 🐙 really means. Multitasking or hug vibes. Complete context guide."
 }
