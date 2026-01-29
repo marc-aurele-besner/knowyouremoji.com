@@ -2,69 +2,51 @@
   "unicode": "1F512",
   "slug": "lock",
   "character": "🔒",
-  "name": "Locked",
+  "name": "Lock",
   "shortName": "lock",
   "category": "objects",
   "subcategory": "lock",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A closed padlock.",
-  "tldr": "Privacy, security, commitment, or something locked down.",
+  "baseMeaning": "A locked padlock.",
+  "tldr": "Security, privacy, or locked in.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Security, privacy, or encryption.",
-      "example": "Your data is secure 🔒",
+      "meaning": "A lock.",
+      "example": "Secured 🔒",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Keeping something private or secure.",
-      "example": "Locked in 🔒",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Exclusive relationship or commitment.",
-      "example": "We're official 🔒",
+      "meaning": "Locked in.",
+      "example": "We locked in 🔒",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Finalized or secured deal.",
-      "example": "Contract is locked 🔒",
+      "meaning": "Private or secure.",
+      "example": "Encrypted 🔒",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Committed.",
+      "example": "Locked down 🔒",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Privacy settings or locked accounts."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Private accounts and relationship status."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Security and confidential information."
-    }
+    { "platform": "TWITTER", "note": "Private account." },
+    { "platform": "INSTAGRAM", "note": "Close friends." },
+    { "platform": "SLACK", "note": "Security." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "'Locked in' means focused or committed."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Security and relationship commitment."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Physical security and privacy."
-    }
+    { "generation": "GEN_Z", "note": "Locked in focus." },
+    { "generation": "MILLENNIAL", "note": "Privacy." },
+    { "generation": "BOOMER", "note": "Security." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🔒 Lock Emoji Meaning - What Does 🔒 Really Mean?",
-  "seoDescription": "Learn what the lock emoji 🔒 really means in texting. Security, privacy, or commitment. Complete context guide."
+  "seoDescription": "Learn what the lock emoji 🔒 really means. Security or locked in vibes. Complete context guide."
 }

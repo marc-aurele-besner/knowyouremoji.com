@@ -1,70 +1,52 @@
 {
-  "unicode": "1F4E2",
+  "unicode": "1F4E3",
   "slug": "megaphone",
-  "character": "📢",
-  "name": "Loudspeaker",
+  "character": "📣",
+  "name": "Megaphone",
   "shortName": "megaphone",
   "category": "objects",
   "subcategory": "sound",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A loudspeaker or megaphone for announcements.",
-  "tldr": "Announcements, important news, or getting attention.",
+  "baseMeaning": "A megaphone.",
+  "tldr": "Announcement, hype, or cheering.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Announcements or broadcasting.",
-      "example": "📢 Important announcement!",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Team announcements or updates.",
-      "example": "📢 New policy update",
+      "meaning": "A megaphone.",
+      "example": "Attention 📣",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Drawing attention to something.",
-      "example": "📢 Listen up everyone",
+      "meaning": "Announcement incoming.",
+      "example": "Breaking news 📣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Important update.",
+      "example": "Announcement 📣",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically announcing something obvious.",
-      "example": "📢 Water is wet",
+      "meaning": "Loud opinions.",
+      "example": "Hot take 📣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Very common for channel announcements."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used to draw attention to important tweets."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Server announcements and important updates."
-    }
+    { "platform": "TWITTER", "note": "Announcements." },
+    { "platform": "SLACK", "note": "Team updates." },
+    { "platform": "DISCORD", "note": "Server news." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Attention-getting and announcements."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Professional announcements and updates."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Understood as announcement symbol."
-    }
+    { "generation": "GEN_Z", "note": "Hype energy." },
+    { "generation": "MILLENNIAL", "note": "Announcement." },
+    { "generation": "BOOMER", "note": "Cheerleading." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "📢 Megaphone Emoji Meaning - What Does 📢 Really Mean?",
-  "seoDescription": "Learn what the megaphone emoji 📢 really means in texting. Announcements and getting attention. Complete context guide."
+  "seoTitle": "📣 Megaphone Emoji Meaning - What Does 📣 Really Mean?",
+  "seoDescription": "Learn what the megaphone emoji 📣 really means. Announcement or hype vibes. Complete context guide."
 }

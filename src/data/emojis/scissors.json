@@ -1,0 +1,52 @@
+{
+  "unicode": "2702",
+  "slug": "scissors",
+  "character": "✂️",
+  "name": "Scissors",
+  "shortName": "scissors",
+  "category": "objects",
+  "subcategory": "tool",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "A pair of scissors.",
+  "tldr": "Cut, edit, or snip snip.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Scissors.",
+      "example": "Cut here ✂️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Cutting someone off.",
+      "example": "Snip snip ✂️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Edit or trim.",
+      "example": "Cut content ✂️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Cutting ties.",
+      "example": "We done ✂️",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Editing content." },
+    { "platform": "INSTAGRAM", "note": "Beauty content." },
+    { "platform": "TIKTOK", "note": "Cutting hair." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Cut off." },
+    { "generation": "MILLENNIAL", "note": "Editing." },
+    { "generation": "BOOMER", "note": "Cutting tool." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "✂️ Scissors Emoji Meaning - What Does ✂️ Really Mean?",
+  "seoDescription": "Learn what the scissors emoji ✂️ really means. Cut or edit vibes. Complete context guide."
+}

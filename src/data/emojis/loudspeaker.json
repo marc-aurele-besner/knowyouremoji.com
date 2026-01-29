@@ -1,0 +1,52 @@
+{
+  "unicode": "1F4E2",
+  "slug": "loudspeaker",
+  "character": "📢",
+  "name": "Loudspeaker",
+  "shortName": "loudspeaker",
+  "category": "objects",
+  "subcategory": "sound",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A loudspeaker.",
+  "tldr": "Public announcement, alert, or broadcast.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "A loudspeaker.",
+      "example": "Hear this 📢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Listen up.",
+      "example": "PSA 📢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Company announcement.",
+      "example": "Team update 📢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Being loud.",
+      "example": "Saying it louder 📢",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "PSA posts." },
+    { "platform": "SLACK", "note": "Channel announcements." },
+    { "platform": "DISCORD", "note": "Server announcements." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "PSA energy." },
+    { "generation": "MILLENNIAL", "note": "Broadcast." },
+    { "generation": "BOOMER", "note": "Public address." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "📢 Loudspeaker Emoji Meaning - What Does 📢 Really Mean?",
+  "seoDescription": "Learn what the loudspeaker emoji 📢 really means. Announcement or PSA vibes. Complete context guide."
+}

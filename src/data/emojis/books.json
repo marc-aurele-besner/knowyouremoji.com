@@ -7,64 +7,46 @@
   "category": "objects",
   "subcategory": "book-paper",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A stack of colorful books.",
-  "tldr": "Books, studying, learning, or being well-read.",
+  "baseMeaning": "A stack of books.",
+  "tldr": "Studying, reading, or knowledge.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Books, reading, or studying.",
-      "example": "Study session 📚",
+      "meaning": "Books.",
+      "example": "Library time 📚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Learning or gaining knowledge.",
+      "meaning": "Study mode.",
       "example": "Hitting the books 📚",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Research or learning new skills.",
-      "example": "Reading up on the topic 📚",
+      "meaning": "Learning.",
+      "example": "Research 📚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to be studious.",
-      "example": "Totally studying 📚 (on Netflix)",
+      "meaning": "Being a nerd.",
+      "example": "Nerd life 📚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Book recommendations and study content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "BookTok crossover and reading content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "BookTok community is huge."
-    }
+    { "platform": "TWITTER", "note": "Book content." },
+    { "platform": "INSTAGRAM", "note": "Bookstagram." },
+    { "platform": "TIKTOK", "note": "BookTok." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "BookTok and study aesthetic."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Book clubs and reading culture."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Books and education."
-    }
+    { "generation": "GEN_Z", "note": "BookTok." },
+    { "generation": "MILLENNIAL", "note": "Reading." },
+    { "generation": "BOOMER", "note": "Education." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📚 Books Emoji Meaning - What Does 📚 Really Mean?",
-  "seoDescription": "Learn what the books emoji 📚 really means in texting. Studying, reading, or BookTok culture. Complete context guide."
+  "seoDescription": "Learn what the books emoji 📚 really means. Study or knowledge vibes. Complete context guide."
 }

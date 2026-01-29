@@ -4,67 +4,49 @@
   "character": "⭐",
   "name": "Star",
   "shortName": "star",
-  "category": "travel",
+  "category": "nature",
   "subcategory": "sky-weather",
   "unicodeVersion": "5.1",
-  "baseMeaning": "A classic five-pointed yellow star.",
-  "tldr": "Represents excellence, favorites, or something special. Also ratings and achievements.",
+  "baseMeaning": "A yellow star.",
+  "tldr": "Rating, special, or celebrity status.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referring to stars or the night sky.",
-      "example": "Looking at the stars tonight ⭐",
+      "meaning": "A star.",
+      "example": "Starry night ⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Highlighting something excellent or special.",
-      "example": "You're a star ⭐",
+      "meaning": "You're a star.",
+      "example": "Gold star ⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Recognizing great performance or marking priorities.",
-      "example": "Star performer this quarter ⭐",
+      "meaning": "Rating or review.",
+      "example": "5 stars ⭐",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Calling someone special or important.",
-      "example": "My favorite person ⭐",
+      "context": "IRONIC",
+      "meaning": "Sarcastic praise.",
+      "example": "Great job ⭐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Often used to mark important messages or give kudos."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in posts about achievements or favorites."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used to highlight special content or achievements."
-    }
+    { "platform": "TWITTER", "note": "Emphasis." },
+    { "platform": "INSTAGRAM", "note": "Highlight content." },
+    { "platform": "SLACK", "note": "Favorites." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for highlighting favorites and special things."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Associated with ratings and achievements."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for stars or excellence."
-    }
+    { "generation": "GEN_Z", "note": "Gold star energy." },
+    { "generation": "MILLENNIAL", "note": "Rating system." },
+    { "generation": "BOOMER", "note": "Excellence." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⭐ Star Emoji Meaning - What Does ⭐ Really Mean?",
-  "seoDescription": "Learn what the star emoji ⭐ really means in texting. Represents excellence, favorites, or something special. Complete context guide."
+  "seoDescription": "Learn what the star emoji ⭐ really means. Rating or special vibes. Complete context guide."
 }
