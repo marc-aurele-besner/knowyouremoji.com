@@ -357,6 +357,52 @@ describe('combo-data', () => {
       expect(summaries).toEqual([]);
     });
   });
+
+  describe('getComboSummariesByEmoji', () => {
+    it('should return combo summaries containing the specified emoji', async () => {
+      const { getComboSummariesByEmoji } = await import('../../../src/lib/combo-data');
+      const summaries = getComboSummariesByEmoji('skull');
+
+      expect(Array.isArray(summaries)).toBe(true);
+
+      // Should have summary properties, not full combo properties
+      if (summaries.length > 0) {
+        const summary = summaries[0];
+        expect(summary).toHaveProperty('slug');
+        expect(summary).toHaveProperty('combo');
+        expect(summary).toHaveProperty('name');
+        expect(summary).toHaveProperty('meaning');
+        expect(summary).toHaveProperty('category');
+        expect(summary).not.toHaveProperty('description');
+        expect(summary).not.toHaveProperty('examples');
+        expect(summary).not.toHaveProperty('seoTitle');
+      }
+    });
+
+    it('should return empty array for non-existent emoji', async () => {
+      const { getComboSummariesByEmoji } = await import('../../../src/lib/combo-data');
+      const summaries = getComboSummariesByEmoji('non-existent-emoji');
+      expect(summaries).toEqual([]);
+    });
+
+    it('should return skull-laughing when searching for skull', async () => {
+      const { getComboSummariesByEmoji } = await import('../../../src/lib/combo-data');
+      const summaries = getComboSummariesByEmoji('skull');
+      expect(summaries.some((s) => s.slug === 'skull-laughing')).toBe(true);
+    });
+
+    it('should limit the number of results', async () => {
+      const { getComboSummariesByEmoji } = await import('../../../src/lib/combo-data');
+      const summaries = getComboSummariesByEmoji('skull', 2);
+      expect(summaries.length).toBeLessThanOrEqual(2);
+    });
+
+    it('should use default limit of 6 when not specified', async () => {
+      const { getComboSummariesByEmoji } = await import('../../../src/lib/combo-data');
+      const summaries = getComboSummariesByEmoji('skull');
+      expect(summaries.length).toBeLessThanOrEqual(6);
+    });
+  });
 });
 
 describe('combo types', () => {

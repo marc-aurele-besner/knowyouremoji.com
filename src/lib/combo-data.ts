@@ -184,6 +184,26 @@ export function getComboSummariesByCategory(category: EmojiComboCategoryName): E
 }
 
 /**
+ * Get combo summaries that contain a specific emoji
+ * @param emojiSlug - Slug of the emoji to search for
+ * @param limit - Maximum number of combos to return (default: 6)
+ * @returns Array of combo summaries containing the emoji
+ */
+export function getComboSummariesByEmoji(
+  emojiSlug: EmojiSlug,
+  limit: number = 6
+): EmojiComboSummary[] {
+  const combos = getCombosByEmoji(emojiSlug);
+  return combos.slice(0, limit).map((combo) => ({
+    slug: combo.slug,
+    combo: combo.combo,
+    name: combo.name,
+    meaning: combo.meaning,
+    category: combo.category,
+  }));
+}
+
+/**
  * Clear the combo cache (useful for testing)
  */
 export function clearComboCache(): void {
