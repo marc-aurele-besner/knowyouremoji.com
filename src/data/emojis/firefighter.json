@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "First responder appreciation." },
-    { "platform": "INSTAGRAM", "note": "Hero content." },
-    { "platform": "TIKTOK", "note": "Firefighter content." }
+    {
+      "platform": "TWITTER",
+      "note": "First responder appreciation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Hero content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Firefighter content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Hot or heroic." },
-    { "generation": "MILLENNIAL", "note": "First responder." },
-    { "generation": "BOOMER", "note": "Firefighter." }
+    {
+      "generation": "GEN_Z",
+      "note": "Hot or heroic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "First responder."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Firefighter."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🚒 Firefighter Emoji Meaning",
-  "seoDescription": "Learn what the Firefighter emoji 🧑‍🚒 really means."
+  "seoDescription": "Learn what the Firefighter emoji 🧑‍🚒 really means.",
+  "skinToneVariations": [
+    "firefighter-light",
+    "firefighter-medium-light",
+    "firefighter-medium",
+    "firefighter-medium-dark",
+    "firefighter-dark"
+  ]
 }

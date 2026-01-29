@@ -1,0 +1,78 @@
+{
+  "unicode": "1F44D-1F3FD",
+  "slug": "thumbs-up-medium",
+  "character": "👍🏽",
+  "name": "Thumbs Up: Medium Skin Tone",
+  "shortName": "thumbs_up medium",
+  "category": "people",
+  "subcategory": "hand",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A thumbs-up gesture indicating approval or agreement.",
+  "tldr": "Classic approval sign, but Gen Z may read it as passive-aggressive or dismissive.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Indicating approval, agreement, or acknowledgment.",
+      "example": "Got it 👍",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Professional acknowledgment or approval in workplace communication.",
+      "example": "Sounds good 👍",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Can indicate dismissiveness, annoyance, or fake agreement.",
+      "example": "Fine 👍",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Used to signal 'whatever' or forced acceptance.",
+      "example": "Sure, I guess 👍",
+      "riskLevel": "MEDIUM"
+    }
+  ],
+  "platformNotes": [
+    {
+      "platform": "SLACK",
+      "note": "Common reaction emoji - generally seen as professional and appropriate."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "May feel cold or dismissive to younger recipients, especially in personal conversations."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Commonly used as a reaction, less likely to be read as passive-aggressive."
+    }
+  ],
+  "generationalNotes": [
+    {
+      "generation": "GEN_Z",
+      "note": "Often perceive it as passive-aggressive, hostile, or dismissive. The 'OK Boomer' of emojis."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Mixed feelings - aware it can seem cold but still use it professionally."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A simple, clear signal of approval with no negative connotations."
+    }
+  ],
+  "warnings": [
+    {
+      "title": "Generational divide",
+      "description": "Younger people may interpret this as dismissive or passive-aggressive. Consider using words or other emojis with Gen Z.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["thumbs-up-ok"],
+  "seoTitle": "👍🏽 Thumbs Up Medium Skin Tone Emoji - What Does 👍🏽 Mean?",
+  "seoDescription": "Learn what the thumbs up emoji with medium skin tone 👍🏽 means in texts and social media.",
+  "skinToneBase": "thumbs-up",
+  "skinToneModifier": "medium"
+}

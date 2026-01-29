@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Magic or expertise." },
-    { "platform": "INSTAGRAM", "note": "Fantasy content." },
-    { "platform": "DISCORD", "note": "Gaming and fantasy." }
+    {
+      "platform": "TWITTER",
+      "note": "Magic or expertise."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Fantasy content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming and fantasy."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gaming wizard." },
-    { "generation": "MILLENNIAL", "note": "Harry Potter vibes." },
-    { "generation": "BOOMER", "note": "Merlin." }
+    {
+      "generation": "GEN_Z",
+      "note": "Gaming wizard."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Harry Potter vibes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Merlin."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧙 Mage Emoji Meaning",
-  "seoDescription": "Learn what the Mage emoji 🧙 really means."
+  "seoDescription": "Learn what the Mage emoji 🧙 really means.",
+  "skinToneVariations": [
+    "mage-light",
+    "mage-medium-light",
+    "mage-medium",
+    "mage-medium-dark",
+    "mage-dark"
+  ]
 }

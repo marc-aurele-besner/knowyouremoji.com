@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Fantasy or holiday content." },
-    { "platform": "INSTAGRAM", "note": "Christmas or fantasy aesthetic." },
-    { "platform": "DISCORD", "note": "Gaming and fantasy." }
+    {
+      "platform": "TWITTER",
+      "note": "Fantasy or holiday content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Christmas or fantasy aesthetic."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Gaming and fantasy."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Lord of the Rings or Christmas." },
-    { "generation": "MILLENNIAL", "note": "LOTR elf." },
-    { "generation": "BOOMER", "note": "Christmas elf." }
+    {
+      "generation": "GEN_Z",
+      "note": "Lord of the Rings or Christmas."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "LOTR elf."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Christmas elf."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧝 Elf Emoji Meaning",
-  "seoDescription": "Learn what the Elf emoji 🧝 really means."
+  "seoDescription": "Learn what the Elf emoji 🧝 really means.",
+  "skinToneVariations": [
+    "elf-light",
+    "elf-medium-light",
+    "elf-medium",
+    "elf-medium-dark",
+    "elf-dark"
+  ]
 }

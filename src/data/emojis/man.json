@@ -16,7 +16,12 @@
       "example": "My husband 👨",
       "riskLevel": "LOW"
     },
-    { "context": "SLANG", "meaning": "Dude or guy.", "example": "My man 👨", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Dude or guy.",
+      "example": "My man 👨",
+      "riskLevel": "LOW"
+    },
     {
       "context": "IRONIC",
       "meaning": "Typical man behavior.",
@@ -31,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Male representation." },
-    { "platform": "INSTAGRAM", "note": "People content." },
-    { "platform": "TIKTOK", "note": "Man content." }
+    {
+      "platform": "TWITTER",
+      "note": "Male representation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "People content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Man content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dude." },
-    { "generation": "MILLENNIAL", "note": "Adult male." },
-    { "generation": "BOOMER", "note": "A man." }
+    {
+      "generation": "GEN_Z",
+      "note": "Dude."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Adult male."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A man."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👨 Man Emoji Meaning",
-  "seoDescription": "Learn what the Man emoji 👨 really means."
+  "seoDescription": "Learn what the Man emoji 👨 really means.",
+  "skinToneVariations": [
+    "man-light",
+    "man-medium-light",
+    "man-medium",
+    "man-medium-dark",
+    "man-dark"
+  ]
 }

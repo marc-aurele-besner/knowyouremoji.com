@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Walking or feet jokes." },
-    { "platform": "INSTAGRAM", "note": "Beach and barefoot content." },
-    { "platform": "TIKTOK", "note": "Various foot content." }
+    {
+      "platform": "TWITTER",
+      "note": "Walking or feet jokes."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Beach and barefoot content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Various foot content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Meme usage." },
-    { "generation": "MILLENNIAL", "note": "Foot references." },
-    { "generation": "BOOMER", "note": "A foot." }
+    {
+      "generation": "GEN_Z",
+      "note": "Meme usage."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Foot references."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "A foot."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦶 Foot Emoji Meaning",
-  "seoDescription": "Learn what the Foot emoji 🦶 really means."
+  "seoDescription": "Learn what the Foot emoji 🦶 really means.",
+  "skinToneVariations": [
+    "foot-light",
+    "foot-medium-light",
+    "foot-medium",
+    "foot-medium-dark",
+    "foot-dark"
+  ]
 }

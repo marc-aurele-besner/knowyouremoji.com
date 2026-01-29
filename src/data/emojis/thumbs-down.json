@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for expressing disapproval and criticism." },
-    { "platform": "INSTAGRAM", "note": "Less common due to focus on positivity." },
-    { "platform": "TIKTOK", "note": "Used in rating and review content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for expressing disapproval and criticism."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Less common due to focus on positivity."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used in rating and review content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for direct disapproval." },
-    { "generation": "MILLENNIAL", "note": "Classic dislike indicator." },
-    { "generation": "BOOMER", "note": "Straightforward disapproval." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for direct disapproval."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Classic dislike indicator."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Straightforward disapproval."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👎 Thumbs Down Emoji Meaning - What Does 👎 Really Mean?",
-  "seoDescription": "Learn what the thumbs down emoji 👎 really means. From disapproval to rejection, discover all its uses."
+  "seoDescription": "Learn what the thumbs down emoji 👎 really means. From disapproval to rejection, discover all its uses.",
+  "skinToneVariations": [
+    "thumbs-down-light",
+    "thumbs-down-medium-light",
+    "thumbs-down-medium",
+    "thumbs-down-medium-dark",
+    "thumbs-down-dark"
+  ]
 }

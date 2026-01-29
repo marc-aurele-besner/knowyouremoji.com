@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for high fives and stop gestures." },
-    { "platform": "INSTAGRAM", "note": "Common in celebratory posts." },
-    { "platform": "TIKTOK", "note": "Used in 'wait' and pause moments." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for high fives and stop gestures."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in celebratory posts."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used in 'wait' and pause moments."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for high fives and dramatic pauses." },
-    { "generation": "MILLENNIAL", "note": "Classic high five emoji." },
-    { "generation": "BOOMER", "note": "May use for waving or greeting." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for high fives and dramatic pauses."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Classic high five emoji."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use for waving or greeting."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🖐️ Hand with Fingers Splayed Emoji Meaning - What Does 🖐️ Really Mean?",
-  "seoDescription": "Learn what the hand with fingers splayed emoji 🖐️ really means. From high fives to stop gestures, discover all its uses."
+  "seoDescription": "Learn what the hand with fingers splayed emoji 🖐️ really means. From high fives to stop gestures, discover all its uses.",
+  "skinToneVariations": [
+    "backhand-up-light",
+    "backhand-up-medium-light",
+    "backhand-up-medium",
+    "backhand-up-medium-dark",
+    "backhand-up-dark"
+  ]
 }

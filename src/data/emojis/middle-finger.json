@@ -36,14 +36,32 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Can get flagged." },
-    { "platform": "INSTAGRAM", "note": "May violate guidelines." },
-    { "platform": "TIKTOK", "note": "Content may be restricted." }
+    {
+      "platform": "TWITTER",
+      "note": "Can get flagged."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "May violate guidelines."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Content may be restricted."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Casual use among friends." },
-    { "generation": "MILLENNIAL", "note": "Strong emotion." },
-    { "generation": "BOOMER", "note": "Very offensive." }
+    {
+      "generation": "GEN_Z",
+      "note": "Casual use among friends."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Strong emotion."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Very offensive."
+    }
   ],
   "warnings": [
     {
@@ -55,5 +73,12 @@
   ],
   "relatedCombos": [],
   "seoTitle": "🖕 Middle Finger Emoji Meaning",
-  "seoDescription": "Learn what the Middle Finger emoji 🖕 really means."
+  "seoDescription": "Learn what the Middle Finger emoji 🖕 really means.",
+  "skinToneVariations": [
+    "middle-finger-light",
+    "middle-finger-medium-light",
+    "middle-finger-medium",
+    "middle-finger-medium-dark",
+    "middle-finger-dark"
+  ]
 }

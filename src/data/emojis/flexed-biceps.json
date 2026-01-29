@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Fitness content." },
-    { "platform": "TWITTER", "note": "Motivation." },
-    { "platform": "SLACK", "note": "Team encouragement." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Fitness content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Motivation."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Team encouragement."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Weird flex meme." },
-    { "generation": "MILLENNIAL", "note": "Gym motivation." },
-    { "generation": "BOOMER", "note": "Strength." }
+    {
+      "generation": "GEN_Z",
+      "note": "Weird flex meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Gym motivation."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Strength."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💪 Flexed Biceps Emoji Meaning - What Does 💪 Really Mean?",
-  "seoDescription": "Learn what the flexed biceps emoji 💪 really means. Strong or motivation vibes. Complete context guide."
+  "seoDescription": "Learn what the flexed biceps emoji 💪 really means. Strong or motivation vibes. Complete context guide.",
+  "skinToneVariations": [
+    "flexed-biceps-light",
+    "flexed-biceps-medium-light",
+    "flexed-biceps-medium",
+    "flexed-biceps-medium-dark",
+    "flexed-biceps-dark"
+  ]
 }

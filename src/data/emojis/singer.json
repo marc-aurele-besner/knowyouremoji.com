@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Music content." },
-    { "platform": "INSTAGRAM", "note": "Artist content." },
-    { "platform": "TIKTOK", "note": "Singing and music." }
+    {
+      "platform": "TWITTER",
+      "note": "Music content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Artist content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Singing and music."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Pop star vibes." },
-    { "generation": "MILLENNIAL", "note": "Rock star." },
-    { "generation": "BOOMER", "note": "Singer." }
+    {
+      "generation": "GEN_Z",
+      "note": "Pop star vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Rock star."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Singer."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🎤 Singer Emoji Meaning",
-  "seoDescription": "Learn what the Singer emoji 🧑‍🎤 really means."
+  "seoDescription": "Learn what the Singer emoji 🧑‍🎤 really means.",
+  "skinToneVariations": [
+    "singer-light",
+    "singer-medium-light",
+    "singer-medium",
+    "singer-medium-dark",
+    "singer-dark"
+  ]
 }

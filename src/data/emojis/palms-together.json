@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for prayers and hopeful requests." },
-    { "platform": "INSTAGRAM", "note": "Common in grateful and spiritual content." },
-    { "platform": "TIKTOK", "note": "Popular in manifestation content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for prayers and hopeful requests."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in grateful and spiritual content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Popular in manifestation content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for manifestation and hoping." },
-    { "generation": "MILLENNIAL", "note": "Associated with prayer and receiving." },
-    { "generation": "BOOMER", "note": "May interpret as prayer gesture." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for manifestation and hoping."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Associated with prayer and receiving."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret as prayer gesture."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤲 Palms Up Together Emoji Meaning - What Does 🤲 Really Mean?",
-  "seoDescription": "Learn what the palms up together emoji 🤲 really means. From prayer to manifestation, discover all its uses."
+  "seoDescription": "Learn what the palms up together emoji 🤲 really means. From prayer to manifestation, discover all its uses.",
+  "skinToneVariations": [
+    "palms-together-light",
+    "palms-together-medium-light",
+    "palms-together-medium",
+    "palms-together-medium-dark",
+    "palms-together-dark"
+  ]
 }

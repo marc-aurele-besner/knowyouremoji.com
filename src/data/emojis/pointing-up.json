@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Making a point." },
-    { "platform": "INSTAGRAM", "note": "Highlighting something above." },
-    { "platform": "SLACK", "note": "Important note." }
+    {
+      "platform": "TWITTER",
+      "note": "Making a point."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Highlighting something above."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Important note."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Actually meme." },
-    { "generation": "MILLENNIAL", "note": "Making a point." },
-    { "generation": "BOOMER", "note": "Pointing upward." }
+    {
+      "generation": "GEN_Z",
+      "note": "Actually meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Making a point."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Pointing upward."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "☝️ Index Pointing Up Emoji Meaning",
-  "seoDescription": "Learn what the Index Pointing Up emoji ☝️ really means."
+  "seoDescription": "Learn what the Index Pointing Up emoji ☝️ really means.",
+  "skinToneVariations": [
+    "pointing-up-light",
+    "pointing-up-medium-light",
+    "pointing-up-medium",
+    "pointing-up-medium-dark",
+    "pointing-up-dark"
+  ]
 }

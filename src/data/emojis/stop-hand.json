@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for volunteering and stop moments." },
-    { "platform": "INSTAGRAM", "note": "Common in engagement and participation." },
-    { "platform": "TIKTOK", "note": "Popular for 'me' and volunteering content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for volunteering and stop moments."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in engagement and participation."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Popular for 'me' and volunteering content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for volunteering and stop moments." },
-    { "generation": "MILLENNIAL", "note": "Classic raised hand emoji." },
-    { "generation": "BOOMER", "note": "Straightforward stop or greeting." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for volunteering and stop moments."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Classic raised hand emoji."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Straightforward stop or greeting."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✋ Raised Hand Emoji Meaning - What Does ✋ Really Mean?",
-  "seoDescription": "Learn what the raised hand emoji ✋ really means. From volunteering to stop signals, discover all its uses."
+  "seoDescription": "Learn what the raised hand emoji ✋ really means. From volunteering to stop signals, discover all its uses.",
+  "skinToneVariations": [
+    "stop-hand-light",
+    "stop-hand-medium-light",
+    "stop-hand-medium",
+    "stop-hand-medium-dark",
+    "stop-hand-dark"
+  ]
 }

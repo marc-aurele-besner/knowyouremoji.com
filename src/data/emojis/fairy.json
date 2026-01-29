@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Magical aesthetic." },
-    { "platform": "INSTAGRAM", "note": "Fairy aesthetic." },
-    { "platform": "TIKTOK", "note": "Cottagecore and fairy content." }
+    {
+      "platform": "TWITTER",
+      "note": "Magical aesthetic."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Fairy aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Cottagecore and fairy content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fairy aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Whimsical." },
-    { "generation": "BOOMER", "note": "Fairy tale." }
+    {
+      "generation": "GEN_Z",
+      "note": "Fairy aesthetic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Whimsical."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Fairy tale."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧚 Fairy Emoji Meaning",
-  "seoDescription": "Learn what the Fairy emoji 🧚 really means."
+  "seoDescription": "Learn what the Fairy emoji 🧚 really means.",
+  "skinToneVariations": [
+    "fairy-light",
+    "fairy-medium-light",
+    "fairy-medium",
+    "fairy-medium-dark",
+    "fairy-dark"
+  ]
 }

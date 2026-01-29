@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for stop and wait moments." },
-    { "platform": "INSTAGRAM", "note": "Common in 'hold up' content." },
-    { "platform": "TIKTOK", "note": "Popular in dramatic pause content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for stop and wait moments."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in 'hold up' content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Popular in dramatic pause content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for dramatic 'wait' moments." },
-    { "generation": "MILLENNIAL", "note": "Classic stop or hold gesture." },
-    { "generation": "BOOMER", "note": "Interpreted as stop signal." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for dramatic 'wait' moments."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Classic stop or hold gesture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Interpreted as stop signal."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤚 Raised Back of Hand Emoji Meaning - What Does 🤚 Really Mean?",
-  "seoDescription": "Learn what the raised back of hand emoji 🤚 really means. From stop signals to dramatic pauses, discover all its uses."
+  "seoDescription": "Learn what the raised back of hand emoji 🤚 really means. From stop signals to dramatic pauses, discover all its uses.",
+  "skinToneVariations": [
+    "raised-back-hand-light",
+    "raised-back-hand-medium-light",
+    "raised-back-hand-medium",
+    "raised-back-hand-medium-dark",
+    "raised-back-hand-dark"
+  ]
 }

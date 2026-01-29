@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Art content." },
-    { "platform": "INSTAGRAM", "note": "Artist community." },
-    { "platform": "TIKTOK", "note": "Art tutorials and process." }
+    {
+      "platform": "TWITTER",
+      "note": "Art content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Artist community."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Art tutorials and process."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Artist vibes." },
-    { "generation": "MILLENNIAL", "note": "Creative person." },
-    { "generation": "BOOMER", "note": "Painter." }
+    {
+      "generation": "GEN_Z",
+      "note": "Artist vibes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Creative person."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Painter."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🎨 Artist Emoji Meaning",
-  "seoDescription": "Learn what the Artist emoji 🧑‍🎨 really means."
+  "seoDescription": "Learn what the Artist emoji 🧑‍🎨 really means.",
+  "skinToneVariations": [
+    "artist-light",
+    "artist-medium-light",
+    "artist-medium",
+    "artist-medium-dark",
+    "artist-dark"
+  ]
 }

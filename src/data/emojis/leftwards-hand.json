@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used with rightwards hand for handshakes." },
-    { "platform": "INSTAGRAM", "note": "Common in receiving and accepting content." },
-    { "platform": "TIKTOK", "note": "Used in combo with other hand emojis." }
+    {
+      "platform": "TWITTER",
+      "note": "Used with rightwards hand for handshakes."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in receiving and accepting content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Used in combo with other hand emojis."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Often paired with rightwards hand." },
-    { "generation": "MILLENNIAL", "note": "Used for receiving contexts." },
-    { "generation": "BOOMER", "note": "May interpret as directional gesture." }
+    {
+      "generation": "GEN_Z",
+      "note": "Often paired with rightwards hand."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Used for receiving contexts."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret as directional gesture."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫲 Leftwards Hand Emoji Meaning - What Does 🫲 Really Mean?",
-  "seoDescription": "Learn what the leftwards hand emoji 🫲 really means. From receiving to accepting, discover all its uses."
+  "seoDescription": "Learn what the leftwards hand emoji 🫲 really means. From receiving to accepting, discover all its uses.",
+  "skinToneVariations": [
+    "leftwards-hand-light",
+    "leftwards-hand-medium-light",
+    "leftwards-hand-medium",
+    "leftwards-hand-medium-dark",
+    "leftwards-hand-dark"
+  ]
 }

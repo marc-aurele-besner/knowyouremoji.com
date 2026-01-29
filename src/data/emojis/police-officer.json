@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Authority jokes." },
-    { "platform": "INSTAGRAM", "note": "First responder content." },
-    { "platform": "TIKTOK", "note": "Cop content." }
+    {
+      "platform": "TWITTER",
+      "note": "Authority jokes."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "First responder content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Cop content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Authority figure jokes." },
-    { "generation": "MILLENNIAL", "note": "Police context." },
-    { "generation": "BOOMER", "note": "Law enforcement." }
+    {
+      "generation": "GEN_Z",
+      "note": "Authority figure jokes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Police context."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Law enforcement."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👮 Police Officer Emoji Meaning",
-  "seoDescription": "Learn what the Police Officer emoji 👮 really means."
+  "seoDescription": "Learn what the Police Officer emoji 👮 really means.",
+  "skinToneVariations": [
+    "police-officer-light",
+    "police-officer-medium-light",
+    "police-officer-medium",
+    "police-officer-medium-dark",
+    "police-officer-dark"
+  ]
 }

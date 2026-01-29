@@ -217,6 +217,12 @@ export interface Emoji {
   seoTitle: string;
   /** SEO description for the emoji page */
   seoDescription: string;
+  /** Slugs of skin tone variations (for base emojis) */
+  skinToneVariations?: string[];
+  /** Slug of the base emoji (for skin tone variations) */
+  skinToneBase?: string;
+  /** Skin tone modifier type (for variations) */
+  skinToneModifier?: 'light' | 'medium-light' | 'medium' | 'medium-dark' | 'dark';
 }
 
 /**

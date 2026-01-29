@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Gothic or draining content." },
-    { "platform": "INSTAGRAM", "note": "Dark aesthetic." },
-    { "platform": "TIKTOK", "note": "Vampire content." }
+    {
+      "platform": "TWITTER",
+      "note": "Gothic or draining content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Dark aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Vampire content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Twilight or dark aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Twilight era." },
-    { "generation": "BOOMER", "note": "Dracula." }
+    {
+      "generation": "GEN_Z",
+      "note": "Twilight or dark aesthetic."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Twilight era."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Dracula."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧛 Vampire Emoji Meaning",
-  "seoDescription": "Learn what the Vampire emoji 🧛 really means."
+  "seoDescription": "Learn what the Vampire emoji 🧛 really means.",
+  "skinToneVariations": [
+    "vampire-light",
+    "vampire-medium-light",
+    "vampire-medium",
+    "vampire-medium-dark",
+    "vampire-dark"
+  ]
 }

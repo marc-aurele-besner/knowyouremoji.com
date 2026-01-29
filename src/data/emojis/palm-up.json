@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for requesting or offering things." },
-    { "platform": "INSTAGRAM", "note": "Popular in 'give me' and offering contexts." },
-    { "platform": "TIKTOK", "note": "Common in asking or presenting content." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for requesting or offering things."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular in 'give me' and offering contexts."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in asking or presenting content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for asking 'where' something is." },
-    { "generation": "MILLENNIAL", "note": "Associated with offering or requesting." },
-    { "generation": "BOOMER", "note": "May interpret as a reaching gesture." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for asking 'where' something is."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Associated with offering or requesting."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May interpret as a reaching gesture."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫴 Palm Up Hand Emoji Meaning - What Does 🫴 Really Mean?",
-  "seoDescription": "Learn what the palm up hand emoji 🫴 really means. From offering to asking, discover all its uses."
+  "seoDescription": "Learn what the palm up hand emoji 🫴 really means. From offering to asking, discover all its uses.",
+  "skinToneVariations": [
+    "palm-up-light",
+    "palm-up-medium-light",
+    "palm-up-medium",
+    "palm-up-medium-dark",
+    "palm-up-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Crypto and space content." },
-    { "platform": "INSTAGRAM", "note": "Space aesthetic." },
-    { "platform": "TIKTOK", "note": "Space content." }
+    {
+      "platform": "TWITTER",
+      "note": "Crypto and space content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Space aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Space content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Crypto moon or space." },
-    { "generation": "MILLENNIAL", "note": "Space exploration." },
-    { "generation": "BOOMER", "note": "Astronaut." }
+    {
+      "generation": "GEN_Z",
+      "note": "Crypto moon or space."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Space exploration."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Astronaut."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🚀 Astronaut Emoji Meaning",
-  "seoDescription": "Learn what the Astronaut emoji 🧑‍🚀 really means."
+  "seoDescription": "Learn what the Astronaut emoji 🧑‍🚀 really means.",
+  "skinToneVariations": [
+    "astronaut-light",
+    "astronaut-medium-light",
+    "astronaut-medium",
+    "astronaut-medium-dark",
+    "astronaut-dark"
+  ]
 }

@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Almost always paired with right fist." },
-    { "platform": "INSTAGRAM", "note": "Used in partnership and team content." },
-    { "platform": "TIKTOK", "note": "Common in collaboration content." }
+    {
+      "platform": "TWITTER",
+      "note": "Almost always paired with right fist."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in partnership and team content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in collaboration content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used paired with right fist for bumps." },
-    { "generation": "MILLENNIAL", "note": "Part of the fist bump pair." },
-    { "generation": "BOOMER", "note": "May use standalone for solidarity." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used paired with right fist for bumps."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Part of the fist bump pair."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use standalone for solidarity."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤛 Left-Facing Fist Emoji Meaning - What Does 🤛 Really Mean?",
-  "seoDescription": "Learn what the left-facing fist emoji 🤛 really means. From fist bumps to solidarity, discover all its uses."
+  "seoDescription": "Learn what the left-facing fist emoji 🤛 really means. From fist bumps to solidarity, discover all its uses.",
+  "skinToneVariations": [
+    "fist-left-light",
+    "fist-left-medium-light",
+    "fist-left-medium",
+    "fist-left-medium-dark",
+    "fist-left-dark"
+  ]
 }

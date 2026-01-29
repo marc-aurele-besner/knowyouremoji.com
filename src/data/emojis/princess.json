@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Royalty treatment." },
-    { "platform": "INSTAGRAM", "note": "Princess aesthetic." },
-    { "platform": "TIKTOK", "note": "Disney and royalty content." }
+    {
+      "platform": "TWITTER",
+      "note": "Royalty treatment."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Princess aesthetic."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Disney and royalty content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Disney or self-love." },
-    { "generation": "MILLENNIAL", "note": "Disney princess." },
-    { "generation": "BOOMER", "note": "Royal princess." }
+    {
+      "generation": "GEN_Z",
+      "note": "Disney or self-love."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Disney princess."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Royal princess."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👸 Princess Emoji Meaning",
-  "seoDescription": "Learn what the Princess emoji 👸 really means."
+  "seoDescription": "Learn what the Princess emoji 👸 really means.",
+  "skinToneVariations": [
+    "princess-light",
+    "princess-medium-light",
+    "princess-medium",
+    "princess-medium-dark",
+    "princess-dark"
+  ]
 }

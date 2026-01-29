@@ -36,17 +36,42 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Popular for calling people out and engagement." },
-    { "platform": "INSTAGRAM", "note": "Used in 'you' specific content." },
-    { "platform": "TIKTOK", "note": "Common in 'this is for you' and call-out content." }
+    {
+      "platform": "TWITTER",
+      "note": "Popular for calling people out and engagement."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in 'you' specific content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in 'this is for you' and call-out content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Used for direct call-outs and engagement." },
-    { "generation": "MILLENNIAL", "note": "Uncle Sam poster vibes." },
-    { "generation": "BOOMER", "note": "Recognizes the recruitment poster reference." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for direct call-outs and engagement."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Uncle Sam poster vibes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Recognizes the recruitment poster reference."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫵 Index Pointing at Viewer Emoji Meaning - What Does 🫵 Really Mean?",
-  "seoDescription": "Learn what the index pointing at viewer emoji 🫵 really means. From calling out to selecting, discover all its uses."
+  "seoDescription": "Learn what the index pointing at viewer emoji 🫵 really means. From calling out to selecting, discover all its uses.",
+  "skinToneVariations": [
+    "index-pointing-you-light",
+    "index-pointing-you-medium-light",
+    "index-pointing-you-medium",
+    "index-pointing-you-medium-dark",
+    "index-pointing-you-dark"
+  ]
 }
