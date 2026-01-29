@@ -7,36 +7,64 @@
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A sparkling blue gem.",
-  "tldr": "Valuable, treasure, or diamond hands.",
+  "baseMeaning": "A sparkling blue gemstone or diamond.",
+  "tldr": "Precious! Used for something valuable, rare, special, or shiny.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A gem.", "example": "Precious 💎", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Actual gems, jewelry, or precious stones.",
+      "example": "New diamond earrings 💎",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Diamond hands (holding).",
-      "example": "Diamond hands 💎",
+      "meaning": "Something precious, rare, or of high quality.",
+      "example": "This song is a hidden 💎",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Someone valuable.",
-      "example": "You're a gem 💎",
+      "meaning": "Someone special or a great catch.",
+      "example": "You're a real 💎",
       "riskLevel": "LOW"
     },
-    { "context": "WORK", "meaning": "Hidden gem.", "example": "Found a gem 💎", "riskLevel": "LOW" }
+    {
+      "context": "WORK",
+      "meaning": "Diamond hands in investing or high-value items.",
+      "example": "Holding these stocks 💎🙌",
+      "riskLevel": "LOW"
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Crypto diamond hands." },
-    { "platform": "INSTAGRAM", "note": "Jewelry and value." },
-    { "platform": "DISCORD", "note": "Stock/crypto culture." }
+    {
+      "platform": "TWITTER",
+      "note": "Heavy in crypto/investing contexts for diamond hands."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used for luxury, jewelry, and precious things."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Common in gaming for rare/valuable items."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Diamond hands meme." },
-    { "generation": "MILLENNIAL", "note": "Crypto and stocks." },
-    { "generation": "BOOMER", "note": "Precious gem." }
+    {
+      "generation": "GEN_Z",
+      "note": "Diamond hands meme and hidden gem discoveries."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Valuables, quality content, and crypto usage."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Jewelry and precious stone interpretation."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💎 Gem Stone Emoji Meaning - What Does 💎 Really Mean?",
-  "seoDescription": "Learn what the gem stone emoji 💎 really means. Diamond hands or valuable vibes. Complete context guide."
+  "seoDescription": "Learn what the gem stone emoji 💎 really means. Used for precious things, hidden gems, or diamond hands. Complete context guide."
 }
