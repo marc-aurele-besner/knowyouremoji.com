@@ -234,7 +234,7 @@ export function InterpretLoading({
           </p>
           <div className="flex gap-3">
             {onRetry && (
-              <Button variant="default" size="sm" onClick={handleRetry} aria-label="Retry request">
+              <Button variant="primary" size="sm" onClick={handleRetry} aria-label="Retry request">
                 Retry
               </Button>
             )}
