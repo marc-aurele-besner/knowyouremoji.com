@@ -223,8 +223,8 @@ describe('cn utility', () => {
     });
 
     it('should handle real-world button styling', () => {
-      const variant = 'primary';
-      const size = 'md';
+      const variant = 'primary' as string;
+      const size = 'md' as string;
       const disabled = false;
       const result = cn(
         'inline-flex items-center justify-center rounded-md font-medium',
