@@ -4,9 +4,27 @@ import { SearchResults } from '@/components/search/search-results';
 import type { EmojiSummary } from '@/types/emoji';
 
 const mockEmojis: EmojiSummary[] = [
-  { slug: 'skull', character: '💀', name: 'Skull', category: 'faces', tldr: "Usually means 'I'm dead' from laughing" },
-  { slug: 'fire', character: '🔥', name: 'Fire', category: 'travel', tldr: "Something is 'hot' or awesome" },
-  { slug: 'heart', character: '❤️', name: 'Red Heart', category: 'symbols', tldr: 'Expression of love' },
+  {
+    slug: 'skull',
+    character: '💀',
+    name: 'Skull',
+    category: 'faces',
+    tldr: "Usually means 'I'm dead' from laughing",
+  },
+  {
+    slug: 'fire',
+    character: '🔥',
+    name: 'Fire',
+    category: 'travel',
+    tldr: "Something is 'hot' or awesome",
+  },
+  {
+    slug: 'heart',
+    character: '❤️',
+    name: 'Red Heart',
+    category: 'symbols',
+    tldr: 'Expression of love',
+  },
 ];
 
 afterEach(() => {
@@ -73,12 +91,7 @@ describe('SearchResults', () => {
       const onHover = mock(() => {});
 
       render(
-        <SearchResults
-          results={[]}
-          selectedIndex={-1}
-          onSelect={onSelect}
-          onHover={onHover}
-        />
+        <SearchResults results={[]} selectedIndex={-1} onSelect={onSelect} onHover={onHover} />
       );
 
       expect(screen.getByText(/no emojis found/i)).toBeInTheDocument();
@@ -122,7 +135,7 @@ describe('SearchResults', () => {
       fireEvent.click(option!);
 
       expect(onSelect).toHaveBeenCalledTimes(1);
-      expect(onSelect).toHaveBeenCalledWith(mockEmojis[0]);
+      expect(onSelect).toHaveBeenCalledWith(mockEmojis[0], 0);
     });
 
     it('calls onHover when mouse enters item', () => {
