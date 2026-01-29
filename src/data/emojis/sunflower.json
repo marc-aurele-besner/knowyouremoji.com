@@ -7,43 +7,43 @@
   "category": "nature",
   "subcategory": "plant-flower",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A yellow sunflower.",
-  "tldr": "Happiness, positivity, or summer vibes.",
+  "baseMeaning": "A sunflower.",
+  "tldr": "Happiness, summer, or Ukraine support.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A sunflower.",
-      "example": "Sunflower fields 🌻",
+      "meaning": "Sunflower.",
+      "example": "Sunflower field 🌻",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Happiness and positivity.",
-      "example": "Good vibes 🌻",
+      "meaning": "Happiness.",
+      "example": "Sunny vibes 🌻",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Bright personality.",
-      "example": "You're my sunshine 🌻",
+      "context": "WORK",
+      "meaning": "Positivity.",
+      "example": "Bright outlook 🌻",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Forced positivity.",
-      "example": "Everything's fine 🌻",
+      "meaning": "Ukraine support.",
+      "example": "Stand with Ukraine 🌻",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Happy and aesthetic content." },
-    { "platform": "TWITTER", "note": "Positivity posts." },
-    { "platform": "TIKTOK", "note": "Summer content." }
+    { "platform": "TWITTER", "note": "Ukraine support." },
+    { "platform": "INSTAGRAM", "note": "Summer content." },
+    { "platform": "TIKTOK", "note": "Happy vibes." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cottagecore aesthetic." },
+    { "generation": "GEN_Z", "note": "Happy aesthetic." },
     { "generation": "MILLENNIAL", "note": "Positivity." },
-    { "generation": "BOOMER", "note": "Garden flower." }
+    { "generation": "BOOMER", "note": "Gardening." }
   ],
   "warnings": [],
   "relatedCombos": [],
