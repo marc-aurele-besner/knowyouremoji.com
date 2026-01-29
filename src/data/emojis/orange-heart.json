@@ -3,68 +3,50 @@
   "slug": "orange-heart",
   "character": "🧡",
   "name": "Orange Heart",
-  "shortName": "orange-heart",
-  "category": "faces",
+  "shortName": "orangeheart",
+  "category": "symbols",
   "subcategory": "heart",
   "unicodeVersion": "10.0",
   "baseMeaning": "An orange-colored heart.",
-  "tldr": "Friendzone signal, or warmth/energy. Between friend love and romantic love.",
+  "tldr": "Friendship, support, or safer than red heart.",
   "contextMeanings": [
     {
+      "context": "LITERAL",
+      "meaning": "Love and affection.",
+      "example": "Love this 🧡",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "SLANG",
-      "meaning": "Caring friendship or 'I like you but not that way.'",
-      "example": "You're the best 🧡",
+      "meaning": "Friendship love.",
+      "example": "Friends forever 🧡",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Can signal 'just friends' or half-hearted interest.",
-      "example": "Had fun tonight 🧡",
+      "meaning": "Cautious affection.",
+      "example": "Like you 🧡",
       "riskLevel": "LOW"
     },
     {
-      "context": "LITERAL",
-      "meaning": "Autumn vibes, warmth, or energy.",
-      "example": "Fall aesthetic 🧡",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Warm appreciation without being too personal.",
-      "example": "Thanks team 🧡",
+      "context": "IRONIC",
+      "meaning": "Fall vibes.",
+      "example": "Autumn love 🧡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for autumn and warm-toned content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Sometimes signals friendzone or ambiguous feelings."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used when red seems too strong."
-    }
+    { "platform": "INSTAGRAM", "note": "Fall aesthetic." },
+    { "platform": "TWITTER", "note": "Friendly affection." },
+    { "platform": "WHATSAPP", "note": "Warm feelings." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often considered a 'friendzone' heart."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Autumn vibes or warm appreciation."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May not distinguish from other hearts."
-    }
+    { "generation": "GEN_Z", "note": "Friendship heart." },
+    { "generation": "MILLENNIAL", "note": "Safe affection." },
+    { "generation": "BOOMER", "note": "Orange heart." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧡 Orange Heart Emoji Meaning - What Does 🧡 Really Mean?",
-  "seoDescription": "Learn what the orange heart emoji 🧡 really means in texting. Warmth, friendship, or friendzone vibes. Complete context guide."
+  "seoDescription": "Learn what the orange heart emoji 🧡 really means. Friendship or safe affection vibes. Complete context guide."
 }

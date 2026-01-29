@@ -3,68 +3,45 @@
   "slug": "two-hearts",
   "character": "💕",
   "name": "Two Hearts",
-  "shortName": "two_hearts",
-  "category": "faces",
+  "shortName": "twohearts",
+  "category": "symbols",
   "subcategory": "heart",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Two pink hearts, one larger and one smaller, orbiting each other.",
-  "tldr": "Lighter than ❤️ - friendly love and affection without heavy romantic implications.",
+  "baseMeaning": "Two pink hearts.",
+  "tldr": "Love, affection, or mutual feelings.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Expressing friendly love and affection.",
-      "example": "Love you bestie 💕",
+      "meaning": "Love between two.",
+      "example": "Us 💕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Showing appreciation or fondness without being too serious.",
-      "example": "Thanks for helping 💕",
+      "meaning": "Mutual affection.",
+      "example": "We're cute 💕",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Softer romantic gesture than red heart.",
-      "example": "Had fun tonight 💕",
+      "meaning": "Couple love.",
+      "example": "Together 💕",
       "riskLevel": "LOW"
     },
-    {
-      "context": "WORK",
-      "meaning": "Friendly but may be too casual for formal settings.",
-      "example": "Love this team 💕",
-      "riskLevel": "LOW"
-    }
+    { "context": "IRONIC", "meaning": "Cutesy love.", "example": "Adorable 💕", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for friendly, supportive comments."
-    },
-    {
-      "platform": "IMESSAGE",
-      "note": "The 'safe' love heart - works for friends and family."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in supportive or appreciative comments."
-    }
+    { "platform": "INSTAGRAM", "note": "Couple content." },
+    { "platform": "TWITTER", "note": "Mutual appreciation." },
+    { "platform": "WHATSAPP", "note": "Romantic messages." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Preferred over red heart for platonic affection."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "A lighter alternative to the serious red heart."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May not distinguish between different heart types."
-    }
+    { "generation": "GEN_Z", "note": "Cute love." },
+    { "generation": "MILLENNIAL", "note": "Couple hearts." },
+    { "generation": "BOOMER", "note": "Two hearts." }
   ],
   "warnings": [],
-  "relatedCombos": ["hearts-friends"],
+  "relatedCombos": [],
   "seoTitle": "💕 Two Hearts Emoji Meaning - What Does 💕 Really Mean?",
-  "seoDescription": "Learn what the two hearts emoji 💕 really means in modern texting. Lighter love and affection without heavy romantic implications. Complete context guide."
+  "seoDescription": "Learn what the two hearts emoji 💕 really means. Mutual love or affection vibes. Complete context guide."
 }
