@@ -90,4 +90,23 @@ describe('MobileNav', () => {
     const logo = screen.getByRole('link', { name: /knowyouremoji/i });
     expect(logo).toHaveAttribute('href', '/');
   });
+
+  it('has displayName set', () => {
+    expect(MobileNav.displayName).toBe('MobileNav');
+  });
+
+  it('calls onClose when logo is clicked', () => {
+    const onClose = mock(() => {});
+    render(<MobileNav isOpen={true} onClose={onClose} />);
+
+    const logo = screen.getByRole('link', { name: /knowyouremoji/i });
+    fireEvent.click(logo);
+    expect(onClose).toHaveBeenCalled();
+  });
+
+  it('renders emoji in logo', () => {
+    render(<MobileNav {...defaultProps} />);
+    const logo = screen.getByRole('link', { name: /knowyouremoji/i });
+    expect(logo).toHaveTextContent('🤔');
+  });
 });

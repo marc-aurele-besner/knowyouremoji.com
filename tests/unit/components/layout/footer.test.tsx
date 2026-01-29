@@ -76,4 +76,13 @@ describe('Footer', () => {
     expect(screen.getByText('Navigation')).toBeInTheDocument();
     expect(screen.getByText('Legal')).toBeInTheDocument();
   });
+
+  it('has displayName set', () => {
+    expect(Footer.displayName).toBe('Footer');
+  });
+
+  it('renders description text', () => {
+    render(<Footer />);
+    expect(screen.getByText(/understand what emojis really mean/i)).toBeInTheDocument();
+  });
 });
