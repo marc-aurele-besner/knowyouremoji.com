@@ -3,50 +3,40 @@
   "slug": "toilet",
   "character": "🚽",
   "name": "Toilet",
-  "shortName": "toilet",
+  "shortName": "bathroom",
   "category": "objects",
   "subcategory": "household",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A toilet.",
-  "tldr": "Bathroom, crap situation, or TMI.",
+  "baseMeaning": "Toilet emoji.",
+  "tldr": "Bathroom!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Toilet.",
-      "example": "Bathroom break 🚽",
+      "meaning": "Represents Toilet.",
+      "example": "Look at this 🚽",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Crap situation.",
-      "example": "This is crap 🚽",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Toilet bowl.", "example": "Feeling 🚽", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🚽", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "BRB.",
-      "example": "Quick break 🚽",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Going down the drain.",
-      "example": "Flushed 🚽",
+      "meaning": "Work context.",
+      "example": "Work vibes 🚽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "TMI posts." },
-    { "platform": "SLACK", "note": "BRB status." },
-    { "platform": "WHATSAPP", "note": "Casual chat." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Bathroom humor." },
-    { "generation": "MILLENNIAL", "note": "TMI." },
-    { "generation": "BOOMER", "note": "Restroom." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🚽 Toilet Emoji Meaning - What Does 🚽 Really Mean?",
-  "seoDescription": "Learn what the toilet emoji 🚽 really means. Bathroom or crappy situation vibes. Complete context guide."
+  "seoTitle": "🚽 Toilet Emoji Meaning",
+  "seoDescription": "Learn what the Toilet emoji 🚽 really means."
 }

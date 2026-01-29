@@ -3,68 +3,45 @@
   "slug": "gear",
   "character": "⚙️",
   "name": "Gear",
-  "shortName": "gear",
+  "shortName": "settings",
   "category": "objects",
   "subcategory": "tool",
   "unicodeVersion": "4.1",
-  "baseMeaning": "A mechanical gear or cog.",
-  "tldr": "Settings! Used for settings, configuration, or things working together.",
+  "baseMeaning": "Gear emoji.",
+  "tldr": "Settings!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Mechanical gears or machinery.",
-      "example": "Gears turning ⚙️",
+      "meaning": "Represents Gear.",
+      "example": "Look at this ⚙️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Settings or configuration.",
-      "example": "Check the settings ⚙️",
+      "meaning": "Cogwheel gear.",
+      "example": "Feeling ⚙️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⚙️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "System configuration or operations.",
-      "example": "DevOps mode ⚙️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Brain working or thinking hard.",
-      "example": "Brain gears turning ⚙️",
+      "meaning": "Work context.",
+      "example": "Work vibes ⚙️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Essential for settings and configuration."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for systems and settings."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Common for server settings."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Settings icon energy."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Configuration and settings."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Mechanical gear."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⚙️ Gear Emoji Meaning - What Does ⚙️ Really Mean?",
-  "seoDescription": "Learn what the gear emoji ⚙️ really means. Used for settings and configuration. Complete context guide."
+  "seoTitle": "⚙️ Gear Emoji Meaning",
+  "seoDescription": "Learn what the Gear emoji ⚙️ really means."
 }

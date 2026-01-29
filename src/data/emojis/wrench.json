@@ -3,68 +3,45 @@
   "slug": "wrench",
   "character": "🔧",
   "name": "Wrench",
-  "shortName": "wrench",
+  "shortName": "fix",
   "category": "objects",
   "subcategory": "tool",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A wrench or spanner for mechanical work.",
-  "tldr": "Fix it! Used for fixing things, settings, or mechanical work.",
+  "baseMeaning": "Wrench emoji.",
+  "tldr": "Fix it!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Mechanical work or tools.",
-      "example": "Car repair day 🔧",
+      "meaning": "Represents Wrench.",
+      "example": "Look at this 🔧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fixing or adjusting something.",
-      "example": "Time to fix this 🔧",
+      "meaning": "Adjustable wrench.",
+      "example": "Feeling 🔧",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔧", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Settings, configurations, or maintenance.",
-      "example": "Adjusting settings 🔧",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Messing with or breaking things.",
-      "example": "Throw a 🔧 in the plans",
+      "meaning": "Work context.",
+      "example": "Work vibes 🔧",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Common for settings and configurations."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used for fixes and adjustments."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Popular for settings and bot configuration."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Settings and fixing digital things."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "DIY and settings."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Tool for mechanical work."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔧 Wrench Emoji Meaning - What Does 🔧 Really Mean?",
-  "seoDescription": "Learn what the wrench emoji 🔧 really means. Used for fixing things and settings. Complete context guide."
+  "seoTitle": "🔧 Wrench Emoji Meaning",
+  "seoDescription": "Learn what the Wrench emoji 🔧 really means."
 }

@@ -3,12 +3,12 @@
   "slug": "hamsa",
   "character": "🪬",
   "name": "Hamsa",
-  "shortName": "hamsa",
-  "category": "activities",
-  "subcategory": "game",
+  "shortName": "luck",
+  "category": "objects",
+  "subcategory": "household",
   "unicodeVersion": "14.0",
   "baseMeaning": "Hamsa emoji.",
-  "tldr": "Hamsa!",
+  "tldr": "Blessings!",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -18,7 +18,7 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Protection or luck.",
+      "meaning": "Hand of Fatima.",
       "example": "Feeling 🪬",
       "riskLevel": "LOW"
     },

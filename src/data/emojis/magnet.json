@@ -3,50 +3,45 @@
   "slug": "magnet",
   "character": "🧲",
   "name": "Magnet",
-  "shortName": "magnet",
+  "shortName": "attract",
   "category": "objects",
   "subcategory": "tool",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A magnet.",
-  "tldr": "Attraction, pull, or magnetic personality.",
+  "baseMeaning": "Magnet emoji.",
+  "tldr": "Magnetic!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A magnet.",
-      "example": "Magnets 🧲",
+      "meaning": "Represents Magnet.",
+      "example": "Look at this 🧲",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Attracting something.",
-      "example": "Money magnet 🧲",
+      "meaning": "Horseshoe magnet.",
+      "example": "Feeling 🧲",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🧲", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Magnetic attraction.",
-      "example": "Drawn to you 🧲",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Attracting problems.",
-      "example": "Drama magnet 🧲",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🧲",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Attraction posts." },
-    { "platform": "INSTAGRAM", "note": "Manifestation." },
-    { "platform": "TIKTOK", "note": "LOA content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Manifestation." },
-    { "generation": "MILLENNIAL", "note": "Attraction." },
-    { "generation": "BOOMER", "note": "Magnet." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧲 Magnet Emoji Meaning - What Does 🧲 Really Mean?",
-  "seoDescription": "Learn what the magnet emoji 🧲 really means. Attraction or pull vibes. Complete context guide."
+  "seoTitle": "🧲 Magnet Emoji Meaning",
+  "seoDescription": "Learn what the Magnet emoji 🧲 really means."
 }

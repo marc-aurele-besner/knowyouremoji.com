@@ -3,12 +3,12 @@
   "slug": "nazar-amulet",
   "character": "🧿",
   "name": "Nazar Amulet",
-  "shortName": "evil eye",
-  "category": "activities",
-  "subcategory": "game",
+  "shortName": "evil-eye",
+  "category": "objects",
+  "subcategory": "household",
   "unicodeVersion": "11.0",
   "baseMeaning": "Nazar Amulet emoji.",
-  "tldr": "Evil Eye!",
+  "tldr": "Protection!",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -18,7 +18,7 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Protection or luck.",
+      "meaning": "Evil eye protection.",
       "example": "Feeling 🧿",
       "riskLevel": "LOW"
     },

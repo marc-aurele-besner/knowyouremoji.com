@@ -7,41 +7,41 @@
   "category": "objects",
   "subcategory": "money",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A US dollar bill.",
-  "tldr": "Money, cash, or American currency.",
+  "baseMeaning": "Dollar Banknote emoji.",
+  "tldr": "Cash!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Dollar bills.",
-      "example": "Cash only 💵",
+      "meaning": "Represents Dollar Banknote.",
+      "example": "Look at this 💵",
       "riskLevel": "LOW"
     },
-    { "context": "SLANG", "meaning": "Making money.", "example": "Making 💵", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "US dollar bill.",
+      "example": "Feeling 💵",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💵", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Payment or cost.",
-      "example": "Show me the 💵",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Expensive.",
-      "example": "That's some 💵",
+      "meaning": "Work context.",
+      "example": "Work vibes 💵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Money discussions." },
-    { "platform": "INSTAGRAM", "note": "Cash flow." },
-    { "platform": "TIKTOK", "note": "Finance content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cash money." },
-    { "generation": "MILLENNIAL", "note": "Dollar bills." },
-    { "generation": "BOOMER", "note": "US currency." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💵 Dollar Emoji Meaning - What Does 💵 Really Mean?",
-  "seoDescription": "Learn what the dollar emoji 💵 really means. Cash or making money vibes. Complete context guide."
+  "seoTitle": "💵 Dollar Banknote Emoji Meaning",
+  "seoDescription": "Learn what the Dollar Banknote emoji 💵 really means."
 }
