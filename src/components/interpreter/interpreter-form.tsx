@@ -177,7 +177,7 @@ export function InterpreterForm({
     <form role="form" onSubmit={handleSubmit} className={cn('flex flex-col gap-6', className)}>
       {/* Message Input */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-sm font-medium text-gray-700">
+        <label htmlFor="message" className="text-sm font-medium text-gray-700 dark:text-gray-300">
           Message to interpret
         </label>
         <textarea
@@ -190,12 +190,14 @@ export function InterpreterForm({
           placeholder="Paste or type the message you want to decode... (must include emojis)"
           className={cn(
             'min-h-[120px] w-full resize-y rounded-md border bg-white px-3 py-2 text-sm',
-            'placeholder:text-gray-400',
+            'dark:bg-gray-800 dark:text-gray-100',
+            'placeholder:text-gray-400 dark:placeholder:text-gray-500',
             'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+            'dark:focus-visible:ring-offset-gray-900',
             'disabled:cursor-not-allowed disabled:opacity-50',
             errors.message
               ? 'border-red-500 focus-visible:ring-red-500'
-              : 'border-gray-300 focus-visible:ring-blue-600'
+              : 'border-gray-300 dark:border-gray-600 focus-visible:ring-amber-500'
           )}
           aria-describedby={errors.message ? messageErrorId : undefined}
           aria-invalid={!!errors.message}
@@ -216,7 +218,7 @@ export function InterpreterForm({
 
       {/* Platform Selector */}
       <div className="flex flex-col gap-2">
-        <label id="platform-label" className="text-sm font-medium text-gray-700">
+        <label id="platform-label" className="text-sm font-medium text-gray-700 dark:text-gray-300">
           Platform
         </label>
         <PlatformSelector
@@ -235,7 +237,7 @@ export function InterpreterForm({
 
       {/* Context Selector */}
       <div className="flex flex-col gap-2">
-        <label id="context-label" className="text-sm font-medium text-gray-700">
+        <label id="context-label" className="text-sm font-medium text-gray-700 dark:text-gray-300">
           Relationship context
         </label>
         <ContextSelector

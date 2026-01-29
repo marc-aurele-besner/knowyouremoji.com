@@ -18,7 +18,9 @@ const SelectTrigger = forwardRef<
     ref={ref}
     className={cn(
       'flex h-10 w-full items-center justify-between rounded-md border border-gray-300 bg-white px-3 py-2 text-sm',
-      'placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2',
+      'dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100',
+      'placeholder:text-gray-400 dark:placeholder:text-gray-500',
+      'focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900',
       'disabled:cursor-not-allowed disabled:opacity-50',
       '[&>span]:line-clamp-1',
       className
@@ -27,7 +29,7 @@ const SelectTrigger = forwardRef<
   >
     {children}
     <SelectPrimitive.Icon asChild>
-      <span className="ml-2 text-gray-400">▼</span>
+      <span className="ml-2 text-gray-400 dark:text-gray-500">▼</span>
     </SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 ));
@@ -70,6 +72,7 @@ const SelectContent = forwardRef<
       ref={ref}
       className={cn(
         'relative z-50 max-h-96 min-w-[8rem] overflow-hidden rounded-md border bg-white shadow-md',
+        'dark:border-gray-700 dark:bg-gray-800',
         'data-[state=open]:animate-in data-[state=closed]:animate-out',
         'data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
         'data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95',
@@ -118,7 +121,8 @@ const SelectItem = forwardRef<
     ref={ref}
     className={cn(
       'relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none',
-      'focus:bg-gray-100 focus:text-gray-900',
+      'dark:text-gray-100',
+      'focus:bg-gray-100 focus:text-gray-900 dark:focus:bg-gray-700 dark:focus:text-gray-100',
       'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className
     )}
@@ -140,7 +144,7 @@ const SelectSeparator = forwardRef<
 >(({ className, ...props }, ref) => (
   <SelectPrimitive.Separator
     ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-gray-200', className)}
+    className={cn('-mx-1 my-1 h-px bg-gray-200 dark:bg-gray-700', className)}
     {...props}
   />
 ));

@@ -124,7 +124,10 @@ export function StreamingInterpreterForm({
                 {/* Progressive text display */}
                 <div
                   data-testid="streaming-text"
-                  className={cn('text-gray-900 whitespace-pre-wrap', isLoading && 'animate-pulse')}
+                  className={cn(
+                    'text-gray-900 dark:text-gray-100 whitespace-pre-wrap',
+                    isLoading && 'animate-pulse'
+                  )}
                 >
                   {text || (
                     <span className="text-gray-500 italic">
