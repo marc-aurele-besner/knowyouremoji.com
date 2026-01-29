@@ -7,43 +7,43 @@
   "category": "symbols",
   "subcategory": "religion",
   "unicodeVersion": "4.1",
-  "baseMeaning": "An atom symbol with orbiting electrons.",
-  "tldr": "Science, physics, or atomic vibes.",
+  "baseMeaning": "An atom symbol.",
+  "tldr": "Science, physics, or atheism.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Atom or science.",
-      "example": "Science time ⚛️",
+      "meaning": "Atom.",
+      "example": "Physics ⚛️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Big brain energy.",
-      "example": "Galaxy brain ⚛️",
+      "meaning": "Science vibes.",
+      "example": "Big brain ⚛️",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
       "meaning": "Scientific work.",
-      "example": "Research mode ⚛️",
+      "example": "Research ⚛️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Atheist symbol.",
-      "example": "Science over faith ⚛️",
+      "meaning": "Atheism symbol.",
+      "example": "Science rules ⚛️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Science and debates." },
-    { "platform": "DISCORD", "note": "Science communities." },
-    { "platform": "INSTAGRAM", "note": "Science content." }
+    { "platform": "TWITTER", "note": "Science content." },
+    { "platform": "DISCORD", "note": "Nerd culture." },
+    { "platform": "INSTAGRAM", "note": "Education." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Science vibes." },
-    { "generation": "MILLENNIAL", "note": "Science appreciation." },
-    { "generation": "BOOMER", "note": "Atomic symbol." }
+    { "generation": "GEN_Z", "note": "Science aesthetic." },
+    { "generation": "MILLENNIAL", "note": "Big Bang Theory." },
+    { "generation": "BOOMER", "note": "Physics." }
   ],
   "warnings": [],
   "relatedCombos": [],

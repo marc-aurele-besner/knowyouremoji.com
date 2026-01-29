@@ -4,67 +4,49 @@
   "character": "👽",
   "name": "Alien",
   "shortName": "alien",
-  "category": "faces",
+  "category": "smileys",
   "subcategory": "face-costume",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A gray or green alien face with large black eyes.",
-  "tldr": "Represents aliens, feeling weird or different, or something otherworldly.",
+  "baseMeaning": "An alien face.",
+  "tldr": "Weird, different, or extraterrestrial.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Feeling weird, out of place, or different.",
-      "example": "Me at social events 👽",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "LITERAL",
-      "meaning": "Aliens, space, or sci-fi references.",
-      "example": "Area 51 vibes 👽",
+      "meaning": "Alien.",
+      "example": "Space alien 👽",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Something so strange it seems alien.",
-      "example": "This math problem 👽",
+      "context": "SLANG",
+      "meaning": "Feeling weird.",
+      "example": "Feeling alienated 👽",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Playfully calling someone an oddball.",
-      "example": "You're so weird 👽",
+      "meaning": "Being different.",
+      "example": "I'm different 👽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Not from here.",
+      "example": "New to this 👽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used in space discussions and feeling-out-of-place posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Popular in weird humor and 'I'm different' content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Common in gaming and niche community discussions."
-    }
+    { "platform": "TWITTER", "note": "Weird content." },
+    { "platform": "INSTAGRAM", "note": "Unique posts." },
+    { "platform": "TIKTOK", "note": "Alien content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used to express feeling different or misunderstood."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for sci-fi references and feeling like an outsider."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret literally as alien/space related."
-    }
+    { "generation": "GEN_Z", "note": "Different energy." },
+    { "generation": "MILLENNIAL", "note": "Alienated." },
+    { "generation": "BOOMER", "note": "Space alien." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👽 Alien Emoji Meaning - What Does 👽 Really Mean?",
-  "seoDescription": "Learn what the alien emoji 👽 really means in texting. Represents feeling weird, different, or otherworldly. Complete context guide."
+  "seoDescription": "Learn what the alien emoji 👽 really means. Different or weird vibes. Complete context guide."
 }
