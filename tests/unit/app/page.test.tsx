@@ -1,6 +1,6 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
-import HomePage from '@/app/page';
+import HomePage, { generateMetadata } from '@/app/page';
 import { clearEmojiCache } from '@/lib/emoji-data';
 import { clearComboCache } from '@/lib/combo-data';
 
@@ -211,6 +211,86 @@ describe('HomePage', () => {
       const pageContent = document.body.textContent;
       expect(pageContent).toContain('emoji');
       expect(pageContent?.toLowerCase()).toContain('meaning');
+    });
+  });
+
+  describe('generateMetadata', () => {
+    test('returns metadata with correct title', () => {
+      const metadata = generateMetadata();
+
+      expect(metadata.title).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
+    });
+
+    test('returns metadata with correct description', () => {
+      const metadata = generateMetadata();
+
+      expect(metadata.description).toBe(
+        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+      );
+    });
+
+    test('includes canonical URL pointing to homepage', () => {
+      const metadata = generateMetadata();
+
+      expect(metadata.alternates).toBeDefined();
+      expect(metadata.alternates?.canonical).toBeDefined();
+      // Should be the base URL without trailing slash or just /
+      const canonical = metadata.alternates?.canonical as string;
+      expect(canonical.endsWith('/') || canonical === 'http://localhost:3000').toBe(true);
+    });
+
+    test('includes Open Graph metadata', () => {
+      const metadata = generateMetadata();
+
+      const openGraph = metadata.openGraph as {
+        type?: string;
+        url?: string;
+        siteName?: string;
+        title?: string;
+        description?: string;
+      };
+      expect(openGraph).toBeDefined();
+      expect(openGraph?.type).toBe('website');
+      expect(openGraph?.siteName).toBe('KnowYourEmoji');
+      expect(openGraph?.url).toBeDefined();
+    });
+
+    test('includes Twitter Card metadata', () => {
+      const metadata = generateMetadata();
+
+      const twitter = metadata.twitter as {
+        card?: string;
+        title?: string;
+        description?: string;
+      };
+      expect(twitter).toBeDefined();
+      expect(twitter?.card).toBe('summary_large_image');
+    });
+
+    test('includes robots directives', () => {
+      const metadata = generateMetadata();
+
+      expect(metadata.robots).toBeDefined();
+      expect(metadata.robots).toEqual({
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      });
+    });
+
+    test('includes keywords', () => {
+      const metadata = generateMetadata();
+
+      expect(metadata.keywords).toBeDefined();
+      expect(Array.isArray(metadata.keywords)).toBe(true);
+      const keywords = metadata.keywords as string[];
+      expect(keywords).toContain('emoji meaning');
     });
   });
 });
