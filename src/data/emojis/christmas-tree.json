@@ -3,8 +3,8 @@
   "slug": "christmas-tree",
   "character": "🎄",
   "name": "Christmas Tree",
-  "shortName": "xmas tree",
-  "category": "objects",
+  "shortName": "xmas",
+  "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
   "baseMeaning": "Christmas Tree emoji.",
@@ -18,7 +18,7 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Holiday season.",
+      "meaning": "Holiday or festive.",
       "example": "Feeling 🎄",
       "riskLevel": "LOW"
     },

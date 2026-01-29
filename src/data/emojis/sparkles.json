@@ -7,64 +7,41 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Three sparkles or stars, indicating something special or magical.",
-  "tldr": "Magic and emphasis! The ultimate hype emoji for making anything more special.",
+  "baseMeaning": "Sparkles emoji.",
+  "tldr": "Sparkles!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Something sparkly or shiny.",
-      "example": "Clean house ✨",
+      "meaning": "Represents Sparkles.",
+      "example": "Look at this ✨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Emphasis that something is special or aesthetic.",
-      "example": "Self care day ✨",
+      "meaning": "Magic or special.",
+      "example": "Feeling ✨",
       "riskLevel": "LOW"
     },
-    {
-      "context": "IRONIC",
-      "meaning": "Making mundane things seem fancy or magical.",
-      "example": "Depression nap ✨",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ✨", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Highlighting something new or improved.",
-      "example": "New feature deployed ✨",
+      "meaning": "Work context.",
+      "example": "Work vibes ✨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Essential aesthetic emoji, used to make anything sound fancier."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Peak aesthetic emoji for captions and comments."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in captions to add sparkle to any content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "The most versatile aesthetic emoji - makes everything ✨aesthetic✨"
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for emphasis, irony, and genuine sparkle."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Something shiny or celebratory."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✨ Sparkles Emoji Meaning - What Does ✨ Really Mean?",
-  "seoDescription": "Learn what the sparkles emoji ✨ really means. The ultimate hype emoji for aesthetic emphasis. Complete context guide."
+  "seoTitle": "✨ Sparkles Emoji Meaning",
+  "seoDescription": "Learn what the Sparkles emoji ✨ really means."
 }

@@ -4,36 +4,36 @@
   "character": "🌫️",
   "name": "Fog",
   "shortName": "fog",
-  "category": "travel-places",
-  "subcategory": "sky-weather",
-  "unicodeVersion": "6.0",
+  "category": "sky-weather",
+  "subcategory": "weather",
+  "unicodeVersion": "7.0",
   "baseMeaning": "Fog emoji.",
-  "tldr": "Foggy! Fog or unclear.",
+  "tldr": "Foggy!",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Represents Fog.",
-      "example": "Check this out 🌫️",
+      "example": "Look at this 🌫️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Common slang usage.",
-      "example": "Vibes 🌫️",
+      "meaning": "Unclear or hazy.",
+      "example": "Feeling 🌫️",
       "riskLevel": "LOW"
     },
     { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌫️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Professional context.",
-      "example": "Work stuff 🌫️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌫️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common on Twitter." },
-    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
-    { "platform": "TIKTOK", "note": "Used on TikTok." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Gen Z usage." },

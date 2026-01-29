@@ -7,46 +7,41 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "5.2",
-  "baseMeaning": "A baseball.",
-  "tldr": "Baseball, America's pastime, or sports.",
+  "baseMeaning": "Baseball emoji.",
+  "tldr": "Baseball!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Baseball.",
-      "example": "Game day ⚾",
+      "meaning": "Represents Baseball.",
+      "example": "Look at this ⚾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "American sports.",
-      "example": "Play ball ⚾",
+      "meaning": "America or sports.",
+      "example": "Feeling ⚾",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⚾", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Team outing.",
-      "example": "Company tickets ⚾",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Strike out.",
-      "example": "Three strikes ⚾",
+      "meaning": "Work context.",
+      "example": "Work vibes ⚾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "MLB content." },
-    { "platform": "INSTAGRAM", "note": "Ballpark pics." },
-    { "platform": "SLACK", "note": "Sports talk." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Ohtani era." },
-    { "generation": "MILLENNIAL", "note": "Moneyball." },
-    { "generation": "BOOMER", "note": "America's pastime." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⚾ Baseball Emoji Meaning - What Does ⚾ Really Mean?",
-  "seoDescription": "Learn what the baseball emoji ⚾ really means. Sports or game day vibes. Complete context guide."
+  "seoTitle": "⚾ Baseball Emoji Meaning",
+  "seoDescription": "Learn what the Baseball emoji ⚾ really means."
 }

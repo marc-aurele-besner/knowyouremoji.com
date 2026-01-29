@@ -1,39 +1,34 @@
 {
-  "unicode": "2603",
+  "unicode": "26C4",
   "slug": "snowman",
-  "character": "☃️",
-  "name": "Snowman",
+  "character": "⛄",
+  "name": "Snowman Without Snow",
   "shortName": "snowman",
-  "category": "travel-places",
-  "subcategory": "sky-weather",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Snowman emoji.",
-  "tldr": "Winter! Snowman or holiday.",
+  "category": "sky-weather",
+  "subcategory": "weather",
+  "unicodeVersion": "5.2",
+  "baseMeaning": "Snowman Without Snow emoji.",
+  "tldr": "Snowman!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Snowman.",
-      "example": "Check this out ☃️",
+      "meaning": "Represents Snowman Without Snow.",
+      "example": "Look at this ⛄",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Common slang usage.",
-      "example": "Vibes ☃️",
-      "riskLevel": "LOW"
-    },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☃️", "riskLevel": "LOW" },
+    { "context": "SLANG", "meaning": "Winter fun.", "example": "Feeling ⛄", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⛄", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Professional context.",
-      "example": "Work stuff ☃️",
+      "meaning": "Work context.",
+      "example": "Work vibes ⛄",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common on Twitter." },
-    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
-    { "platform": "TIKTOK", "note": "Used on TikTok." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Gen Z usage." },
@@ -42,6 +37,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☃️ Snowman Emoji Meaning",
-  "seoDescription": "Learn what the Snowman emoji ☃️ really means."
+  "seoTitle": "⛄ Snowman Without Snow Emoji Meaning",
+  "seoDescription": "Learn what the Snowman Without Snow emoji ⛄ really means."
 }

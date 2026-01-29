@@ -3,68 +3,45 @@
   "slug": "high-voltage",
   "character": "⚡",
   "name": "High Voltage",
-  "shortName": "zap",
-  "category": "travel-places",
-  "subcategory": "sky-weather",
+  "shortName": "lightning",
+  "category": "sky-weather",
+  "subcategory": "weather",
   "unicodeVersion": "4.0",
-  "baseMeaning": "A lightning bolt or high voltage symbol.",
-  "tldr": "Electric energy! Used for speed, power, excitement, or shocking things.",
+  "baseMeaning": "High Voltage emoji.",
+  "tldr": "Lightning!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Lightning, electricity, or power.",
-      "example": "Thunderstorm coming ⚡",
+      "meaning": "Represents High Voltage.",
+      "example": "Look at this ⚡",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "High energy, speed, or excitement.",
-      "example": "This song goes ⚡",
+      "meaning": "Power or shock.",
+      "example": "Feeling ⚡",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⚡", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Fast execution or quick turnaround.",
-      "example": "Shipped it ⚡",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Something shocking or surprising.",
-      "example": "Plot twist ⚡",
+      "meaning": "Work context.",
+      "example": "Work vibes ⚡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for energy, speed, and hot takes."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for quick wins and fast deployments."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in high-energy and fitness content."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "High energy and hype symbol."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Speed, power, and excitement."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Lightning or electricity."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⚡ High Voltage Emoji Meaning - What Does ⚡ Really Mean?",
-  "seoDescription": "Learn what the high voltage/lightning emoji ⚡ really means. Used for energy, speed, or shocking moments. Complete context guide."
+  "seoTitle": "⚡ High Voltage Emoji Meaning",
+  "seoDescription": "Learn what the High Voltage emoji ⚡ really means."
 }

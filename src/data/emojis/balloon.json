@@ -8,32 +8,32 @@
   "subcategory": "event",
   "unicodeVersion": "6.0",
   "baseMeaning": "Balloon emoji.",
-  "tldr": "Party! Balloons or celebration.",
+  "tldr": "Balloon!",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Represents Balloon.",
-      "example": "Check this out 🎈",
+      "example": "Look at this 🎈",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Common slang usage.",
-      "example": "Vibes 🎈",
+      "meaning": "Party or birthday.",
+      "example": "Feeling 🎈",
       "riskLevel": "LOW"
     },
     { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎈", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Professional context.",
-      "example": "Work stuff 🎈",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎈",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common on Twitter." },
-    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
-    { "platform": "TIKTOK", "note": "Used on TikTok." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Gen Z usage." },

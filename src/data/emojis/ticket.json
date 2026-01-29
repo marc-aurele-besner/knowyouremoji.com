@@ -7,64 +7,41 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An admission ticket for events.",
-  "tldr": "Admission granted! Used for events, concerts, or having access to something.",
+  "baseMeaning": "Ticket emoji.",
+  "tldr": "Ticket!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Event tickets or admission.",
-      "example": "Got concert tickets 🎫",
+      "meaning": "Represents Ticket.",
+      "example": "Look at this 🎫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Having access or entry to something.",
-      "example": "Your ticket to success 🎫",
+      "meaning": "Entry or event.",
+      "example": "Feeling 🎫",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎫", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Bug tickets, support tickets, or tasks.",
-      "example": "Created a ticket 🎫",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "One-way ticket to somewhere bad.",
-      "example": "One-way ticket to burnout 🎫",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for event announcements and getting tickets."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in concert and event posts."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Often refers to Jira/support tickets in tech."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Concert and event culture."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Events and tech tickets."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Admission tickets."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎫 Ticket Emoji Meaning - What Does 🎫 Really Mean?",
-  "seoDescription": "Learn what the ticket emoji 🎫 really means. Used for events, concerts, or access. Complete context guide."
+  "seoTitle": "🎫 Ticket Emoji Meaning",
+  "seoDescription": "Learn what the Ticket emoji 🎫 really means."
 }
