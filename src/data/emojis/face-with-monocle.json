@@ -3,68 +3,50 @@
   "slug": "face-with-monocle",
   "character": "🧐",
   "name": "Face with Monocle",
-  "shortName": "monocle",
-  "category": "faces",
+  "shortName": "face-with-monocle",
+  "category": "smileys",
   "subcategory": "face-glasses",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A face with a monocle, looking inquisitive.",
-  "tldr": "Examining closely, skepticism, or pretending to be sophisticated.",
+  "baseMeaning": "A face wearing a monocle.",
+  "tldr": "Investigating, skeptical, or fancy.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Examining something closely or being skeptical.",
-      "example": "Let me investigate 🧐",
+      "context": "LITERAL",
+      "meaning": "Examining closely.",
+      "example": "Let me see 🧐",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Pretending to be sophisticated or scholarly.",
-      "example": "Indeed, quite interesting 🧐",
+      "context": "SLANG",
+      "meaning": "Sus or skeptical.",
+      "example": "Something's off 🧐",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Reviewing something carefully.",
-      "example": "Looking at the details 🧐",
+      "meaning": "Analyzing.",
+      "example": "Looking into it 🧐",
       "riskLevel": "LOW"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Skeptically examining someone's claims.",
-      "example": "Oh really? 🧐",
-      "riskLevel": "MEDIUM"
+      "context": "IRONIC",
+      "meaning": "Pretentious.",
+      "example": "Very sophisticated 🧐",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Skepticism and 'let me examine this' energy."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Reviewing details or asking for clarification."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Playful skepticism and investigation."
-    }
+    { "platform": "TWITTER", "note": "Skeptical posts." },
+    { "platform": "DISCORD", "note": "Sus investigation." },
+    { "platform": "SLACK", "note": "Analysis." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Meme energy for examining something suspicious."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Sophisticated irony."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May not use as often."
-    }
+    { "generation": "GEN_Z", "note": "Sus detector." },
+    { "generation": "MILLENNIAL", "note": "Investigation." },
+    { "generation": "BOOMER", "note": "Examining." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧐 Face with Monocle Emoji Meaning - What Does 🧐 Really Mean?",
-  "seoDescription": "Learn what the face with monocle emoji 🧐 really means in texting. Examining closely or skepticism. Complete context guide."
+  "seoDescription": "Learn what the monocle face emoji 🧐 really means. Skeptical or investigation vibes. Complete context guide."
 }

@@ -3,68 +3,50 @@
   "slug": "shushing-face",
   "character": "🤫",
   "name": "Shushing Face",
-  "shortName": "shush",
-  "category": "faces",
+  "shortName": "shushing-face",
+  "category": "smileys",
   "subcategory": "face-hand",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A face with finger over lips, indicating quiet or secret.",
-  "tldr": "Quiet, secret, or 'don't tell anyone.' The confidential emoji.",
+  "baseMeaning": "A face making a quiet gesture.",
+  "tldr": "Secret, quiet, or keep it down.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Be quiet or keep a secret.",
-      "example": "Don't tell anyone 🤫",
+      "meaning": "Be quiet.",
+      "example": "Shh 🤫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Sharing something confidential.",
-      "example": "Secret news 🤫",
+      "meaning": "Secret.",
+      "example": "Don't tell anyone 🤫",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Keeping relationship private or a surprise.",
-      "example": "Our little secret 🤫",
+      "meaning": "Secret relationship.",
+      "example": "Keep it quiet 🤫",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Confidential information.",
-      "example": "Don't share yet 🤫",
+      "context": "IRONIC",
+      "meaning": "Tea incoming.",
+      "example": "But listen 🤫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Teasing announcements or sharing secrets."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Secret or exclusive content teasers."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Sharing secrets or confidential info."
-    }
+    { "platform": "TWITTER", "note": "Secret posts." },
+    { "platform": "DISCORD", "note": "Quiet please." },
+    { "platform": "TIKTOK", "note": "Tea spilling." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Secrets and confidential tea."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Keeping secrets and surprises."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Quiet or secret."
-    }
+    { "generation": "GEN_Z", "note": "Secret tea." },
+    { "generation": "MILLENNIAL", "note": "Quiet." },
+    { "generation": "BOOMER", "note": "Be quiet." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤫 Shushing Face Emoji Meaning - What Does 🤫 Really Mean?",
-  "seoDescription": "Learn what the shushing face emoji 🤫 really means in texting. Secrets, quiet, or confidential. Complete context guide."
+  "seoDescription": "Learn what the shushing face emoji 🤫 really means. Secret or quiet vibes. Complete context guide."
 }

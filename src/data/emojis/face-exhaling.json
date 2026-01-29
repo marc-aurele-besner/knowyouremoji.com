@@ -3,50 +3,50 @@
   "slug": "face-exhaling",
   "character": "😮‍💨",
   "name": "Face Exhaling",
-  "shortName": "exhale",
-  "category": "faces",
-  "subcategory": "face-concerned",
+  "shortName": "face-exhaling",
+  "category": "smileys",
+  "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "13.1",
-  "baseMeaning": "A face exhaling a puff of air.",
-  "tldr": "Relief sigh, exhaustion, or 'finally done.' The deep breath emoji.",
+  "baseMeaning": "A face blowing out air.",
+  "tldr": "Sighing, relief, or exhaustion.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sighing or exhaling.",
-      "example": "Finally finished 😮‍💨",
+      "meaning": "Exhaling.",
+      "example": "Deep breath 😮‍💨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Relief or exhaustion.",
-      "example": "That was close 😮‍💨",
+      "meaning": "Relief sigh.",
+      "example": "Finally 😮‍💨",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Done with a tough task.",
-      "example": "Project submitted 😮‍💨",
+      "meaning": "Exhausted.",
+      "example": "Long day 😮‍💨",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Exasperated or fed up.",
+      "meaning": "Frustrated.",
       "example": "Here we go again 😮‍💨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Relief and exhaustion." },
-    { "platform": "SLACK", "note": "Task completion relief." },
-    { "platform": "TIKTOK", "note": "Exhale and relief content." }
+    { "platform": "TWITTER", "note": "Exhaustion posts." },
+    { "platform": "SLACK", "note": "Relief." },
+    { "platform": "TIKTOK", "note": "Sigh content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Relief sigh and exhaustion." },
-    { "generation": "MILLENNIAL", "note": "Deep breath and relief." },
-    { "generation": "BOOMER", "note": "Newer emoji." }
+    { "generation": "GEN_Z", "note": "Exhausted energy." },
+    { "generation": "MILLENNIAL", "note": "Relief sigh." },
+    { "generation": "BOOMER", "note": "Deep breath." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😮‍💨 Face Exhaling Emoji Meaning - What Does 😮‍💨 Really Mean?",
-  "seoDescription": "Learn what the face exhaling emoji 😮‍💨 really means. Relief, exhaustion, or sighing. Complete context guide."
+  "seoDescription": "Learn what the exhaling face emoji 😮‍💨 really means. Relief or exhaustion vibes. Complete context guide."
 }
