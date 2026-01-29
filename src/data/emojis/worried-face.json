@@ -4,49 +4,49 @@
   "character": "😟",
   "name": "Worried Face",
   "shortName": "worried",
-  "category": "faces",
+  "category": "smileys-emotion",
   "subcategory": "face-concerned",
-  "unicodeVersion": "6.1",
-  "baseMeaning": "A face with raised eyebrows and frown showing worry.",
-  "tldr": "Worried, concerned, or troubled about something.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A face with raised eyebrows and a small frown showing worry.",
+  "tldr": "Concerned. Expressing worry or anxiety.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Feeling worried or concerned.",
-      "example": "Haven't heard from them 😟",
+      "meaning": "Feeling worried or anxious.",
+      "example": "Hope everything is okay 😟",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Worried about relationship.",
-      "example": "They seem distant 😟",
+      "context": "SLANG",
+      "meaning": "Concern or unease.",
+      "example": "This doesn't look good 😟",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Concerned about work matters.",
-      "example": "The numbers don't look good 😟",
+      "meaning": "Concern about work matters.",
+      "example": "The deadline 😟",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Mild concern or nervousness.",
-      "example": "Is this going to work? 😟",
+      "context": "DATING",
+      "meaning": "Worry about relationship.",
+      "example": "They haven't texted back 😟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Worried reactions and concerns." },
-    { "platform": "WHATSAPP", "note": "Personal concerns." },
-    { "platform": "SLACK", "note": "Work worries." }
+    { "platform": "TWITTER", "note": "Used for expressing concern." },
+    { "platform": "WHATSAPP", "note": "Common for checking on people." },
+    { "platform": "SLACK", "note": "Work-related worries." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Worry and concern." },
-    { "generation": "MILLENNIAL", "note": "Anxious or worried." },
-    { "generation": "BOOMER", "note": "Concerned." }
+    { "generation": "GEN_Z", "note": "Anxiety and concern." },
+    { "generation": "MILLENNIAL", "note": "Worry and unease." },
+    { "generation": "BOOMER", "note": "Clear concern." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "😟 Worried Face Emoji Meaning - What Does 😟 Really Mean?",
-  "seoDescription": "Learn what the worried face emoji 😟 really means. Worried or concerned. Complete context guide."
+  "seoTitle": "😟 Worried Face Emoji Meaning",
+  "seoDescription": "Learn what the worried face emoji 😟 really means. Concern and anxiety."
 }

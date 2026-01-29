@@ -4,49 +4,49 @@
   "character": "😞",
   "name": "Disappointed Face",
   "shortName": "disappointed",
-  "category": "faces",
+  "category": "smileys-emotion",
   "subcategory": "face-concerned",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A face with downcast eyes showing disappointment.",
-  "tldr": "Disappointed, let down, or sad about an outcome.",
+  "baseMeaning": "A face with closed eyes and a slight frown showing disappointment.",
+  "tldr": "Letdown. Expressing disappointment or sadness.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Feeling disappointed.",
-      "example": "Didn't get the job 😞",
+      "example": "That's a bummer 😞",
       "riskLevel": "LOW"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Expressing displeasure subtly.",
-      "example": "Oh, you forgot 😞",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Let down by someone.",
-      "example": "You cancelled again 😞",
+      "context": "SLANG",
+      "meaning": "Mild sadness or letdown.",
+      "example": "Didn't get it 😞",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Disappointed with results.",
-      "example": "Project got cancelled 😞",
+      "meaning": "Professional disappointment.",
+      "example": "Didn't get the promotion 😞",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Subtle guilt-tripping.",
+      "example": "I guess I'll just stay home 😞",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Disappointment reactions." },
-    { "platform": "WHATSAPP", "note": "Personal disappointments." },
-    { "platform": "SLACK", "note": "Work disappointments." }
+    { "platform": "TWITTER", "note": "Used for letdowns and disappointment." },
+    { "platform": "INSTAGRAM", "note": "Common in vulnerable posts." },
+    { "platform": "WHATSAPP", "note": "Expressing sadness to close ones." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Disappointment and letdowns." },
-    { "generation": "MILLENNIAL", "note": "Sad or disappointed." },
-    { "generation": "BOOMER", "note": "Disappointed." }
+    { "generation": "GEN_Z", "note": "Disappointment and letdown." },
+    { "generation": "MILLENNIAL", "note": "Sadness and disappointment." },
+    { "generation": "BOOMER", "note": "Clear disappointment." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "😞 Disappointed Face Emoji Meaning - What Does 😞 Really Mean?",
-  "seoDescription": "Learn what the disappointed face emoji 😞 really means. Let down or sad about outcomes. Complete context guide."
+  "seoTitle": "😞 Disappointed Face Emoji Meaning",
+  "seoDescription": "Learn what the disappointed face emoji 😞 really means. Letdown and sadness."
 }

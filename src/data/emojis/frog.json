@@ -4,44 +4,44 @@
   "character": "🐸",
   "name": "Frog",
   "shortName": "frog",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-amphibian",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A frog face.",
-  "tldr": "Kermit tea meme, Wednesday, or that's none of my business.",
+  "baseMeaning": "A green frog face.",
+  "tldr": "But that's none of my business. Tea-sipping frog meme.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A frog.", "example": "Ribbit 🐸", "riskLevel": "LOW" },
+    { "context": "LITERAL", "meaning": "Frogs.", "example": "Found a frog 🐸", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Tea/gossip (Kermit).",
-      "example": "But that's none of my business 🐸",
+      "meaning": "Tea-sipping Kermit meme.",
+      "example": "But that's none of my business 🐸☕",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "It is Wednesday my dudes.",
-      "example": "Wednesday 🐸",
+      "meaning": "Minding own business while judging.",
+      "example": "Interesting 🐸",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Kiss a frog.",
-      "example": "Looking for prince 🐸",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Subtle shade.",
+      "example": "I mean... 🐸",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Kermit and Wednesday memes." },
-    { "platform": "TIKTOK", "note": "Wednesday content." },
-    { "platform": "INSTAGRAM", "note": "Tea spilling." }
+    { "platform": "TWITTER", "note": "Kermit meme essential." },
+    { "platform": "INSTAGRAM", "note": "Tea-sipping content." },
+    { "platform": "TIKTOK", "note": "Drama commentary." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Wednesday frog." },
-    { "generation": "MILLENNIAL", "note": "Kermit tea meme." },
-    { "generation": "BOOMER", "note": "Kermit or frog." }
+    { "generation": "GEN_Z", "note": "Tea meme energy." },
+    { "generation": "MILLENNIAL", "note": "Kermit sipping tea." },
+    { "generation": "BOOMER", "note": "Just a frog." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐸 Frog Emoji Meaning - What Does 🐸 Really Mean?",
-  "seoDescription": "Learn what the frog emoji 🐸 really means. Kermit tea or Wednesday vibes. Complete context guide."
+  "seoTitle": "🐸 Frog Emoji Meaning",
+  "seoDescription": "Learn what the frog emoji 🐸 really means. Tea-sipping meme."
 }

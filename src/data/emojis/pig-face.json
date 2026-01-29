@@ -4,73 +4,44 @@
   "character": "🐷",
   "name": "Pig Face",
   "shortName": "pig",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A cute pink pig face.",
-  "tldr": "Represents pigs, overeating, indulgence, or can be used affectionately or as an insult.",
+  "baseMeaning": "A pink pig face with a snout.",
+  "tldr": "Oink! Pigs or being greedy.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Referring to actual pigs or farm animals.",
-      "example": "Visited the farm today 🐷",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Pigs.", "example": "Cute piglet 🐷", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Eating a lot or indulging in food.",
-      "example": "Ate so much at the buffet 🐷",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Can be affectionate or playfully teasing.",
-      "example": "You ate all the cookies 🐷",
+      "meaning": "Overeating or being greedy.",
+      "example": "Ate too much 🐷",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-deprecating about overeating.",
-      "example": "Third slice of cake, don't judge 🐷",
+      "meaning": "Messy or indulgent.",
+      "example": "Cheat day 🐷",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Playful teasing.",
+      "example": "You little piggy 🐷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in food posts and indulgence content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in mukbang and overeating content."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used playfully among friends about food."
-    }
+    { "platform": "TWITTER", "note": "Food and indulgence posts." },
+    { "platform": "INSTAGRAM", "note": "Cute pig content." },
+    { "platform": "TIKTOK", "note": "Food challenge videos." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used self-deprecatingly about eating too much."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for food content and cute pig references."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May use more straightforwardly for pigs or be cautious due to insult potential."
-    }
+    { "generation": "GEN_Z", "note": "Food indulgence." },
+    { "generation": "MILLENNIAL", "note": "Overeating jokes." },
+    { "generation": "BOOMER", "note": "Farm pig." }
   ],
-  "warnings": [
-    {
-      "title": "Context Dependent",
-      "description": "Can be an insult if used to call someone a pig. Use carefully with acquaintances.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐷 Pig Face Emoji Meaning - What Does 🐷 Really Mean?",
-  "seoDescription": "Learn what the pig face emoji 🐷 really means in texting. Often means indulging in food. Complete context guide."
+  "seoTitle": "🐷 Pig Face Emoji Meaning",
+  "seoDescription": "Learn what the pig face emoji 🐷 really means."
 }

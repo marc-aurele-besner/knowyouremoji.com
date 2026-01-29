@@ -3,68 +3,50 @@
   "slug": "crying-face",
   "character": "😢",
   "name": "Crying Face",
-  "shortName": "cry",
-  "category": "faces",
+  "shortName": "crying",
+  "category": "smileys-emotion",
   "subcategory": "face-concerned",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A face with a single tear running down one cheek.",
-  "tldr": "Shows sadness, disappointment, or being touched emotionally. Less intense than sobbing.",
+  "baseMeaning": "A face with a single tear falling, showing sadness.",
+  "tldr": "Sad tears. Expressing sadness with a single tear.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Expressing genuine sadness or disappointment.",
-      "example": "I didn't get the job 😢",
+      "meaning": "Feeling sad or moved to tears.",
+      "example": "That's so sad 😢",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being moved by something touching or beautiful.",
-      "example": "That video of the soldier reunion 😢",
+      "meaning": "Touched or emotional.",
+      "example": "This movie 😢",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to be sad about something trivial.",
-      "example": "No more pizza left 😢",
+      "meaning": "Pretending to be sad.",
+      "example": "No pizza left 😢",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Expressing vulnerability or seeking comfort.",
-      "example": "Missing you tonight 😢",
+      "meaning": "Missing someone.",
+      "example": "Miss you 😢",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Often used in comments on emotional or nostalgic content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common reaction to sad or touching videos."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used in personal conversations to express genuine emotion."
-    }
+    { "platform": "TWITTER", "note": "Used for sad moments." },
+    { "platform": "INSTAGRAM", "note": "Common in emotional posts." },
+    { "platform": "WHATSAPP", "note": "Expressing feelings to loved ones." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used hyperbolically for minor inconveniences."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used both genuinely and for exaggeration."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "More likely to use for genuine emotional expressions."
-    }
+    { "generation": "GEN_Z", "note": "Sadness and emotion." },
+    { "generation": "MILLENNIAL", "note": "Tears and sentiment." },
+    { "generation": "BOOMER", "note": "Clear sadness." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "😢 Crying Face Emoji Meaning - What Does 😢 Really Mean?",
-  "seoDescription": "Learn what the crying face emoji 😢 really means in texting. Shows sadness or being emotionally touched. Complete context guide."
+  "seoTitle": "😢 Crying Face Emoji Meaning",
+  "seoDescription": "Learn what the crying face emoji 😢 really means. Sadness with a single tear."
 }

@@ -4,67 +4,49 @@
   "character": "🦄",
   "name": "Unicorn",
   "shortName": "unicorn",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-mammal",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A mythical horse with a single horn on its forehead.",
-  "tldr": "Represents uniqueness, magic, rarity, or something special. Also startup culture slang.",
+  "baseMeaning": "A unicorn head with rainbow mane.",
+  "tldr": "Magical and rare! Unicorns or being special.",
   "contextMeanings": [
     {
+      "context": "LITERAL",
+      "meaning": "Unicorns or fantasy.",
+      "example": "Unicorn dreams 🦄",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "SLANG",
-      "meaning": "Something unique, rare, or exceptionally special.",
-      "example": "She's a total unicorn 🦄",
+      "meaning": "Being unique or rare.",
+      "example": "A unicorn in tech 🦄",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "A billion-dollar startup or rare talent.",
-      "example": "That company just became a unicorn 🦄",
+      "meaning": "Rare startup or talent.",
+      "example": "Unicorn company 🦄",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Someone who has all the qualities you want (very rare).",
+      "meaning": "Perfect rare find.",
       "example": "Found my unicorn 🦄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "LITERAL",
-      "meaning": "Referencing the mythical creature or fantasy themes.",
-      "example": "Unicorn party theme! 🦄",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Common in startup/tech discussions about billion-dollar companies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for rainbow/fantasy aesthetic content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in fantasy makeup tutorials and unique content."
-    }
+    { "platform": "TWITTER", "note": "Tech startups and uniqueness." },
+    { "platform": "INSTAGRAM", "note": "Fantasy aesthetic." },
+    { "platform": "TIKTOK", "note": "Magical content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used to describe uniqueness or fantasy aesthetics."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Often associated with startup culture and 'unicorn companies.'"
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret as childish or fantastical."
-    }
+    { "generation": "GEN_Z", "note": "Unique and magical." },
+    { "generation": "MILLENNIAL", "note": "Unicorn startups." },
+    { "generation": "BOOMER", "note": "Fantasy creature." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦄 Unicorn Emoji Meaning - What Does 🦄 Really Mean?",
-  "seoDescription": "Learn what the unicorn emoji 🦄 really means in texting. Represents uniqueness, rarity, or startup success. Complete context guide."
+  "seoTitle": "🦄 Unicorn Emoji Meaning",
+  "seoDescription": "Learn what the unicorn emoji 🦄 really means."
 }

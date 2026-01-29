@@ -4,67 +4,49 @@
   "character": "😋",
   "name": "Face Savoring Food",
   "shortName": "yum",
-  "category": "faces",
+  "category": "smileys-emotion",
   "subcategory": "face-tongue",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A smiling face licking its lips, savoring something delicious.",
-  "tldr": "Yummy! Something looks or tastes delicious, or anticipating something good.",
+  "baseMeaning": "A face with tongue out and closed eyes, savoring delicious food.",
+  "tldr": "Yummy! Expressing that something is delicious.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Food is delicious or looks appetizing.",
-      "example": "This pasta is amazing 😋",
+      "meaning": "Food is delicious.",
+      "example": "This is so good 😋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Anticipating something enjoyable.",
-      "example": "Can't wait for the weekend 😋",
+      "meaning": "Anticipating something good.",
+      "example": "Can't wait to try it 😋",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Flirty anticipation or attraction.",
+      "meaning": "Flirty anticipation.",
       "example": "See you tonight 😋",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Eagerness that might be excessive.",
-      "example": "Payday is here 😋",
+      "meaning": "Sarcastic about something unappetizing.",
+      "example": "Leftover pizza for dinner 😋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Essential for food posts and restaurant content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in food reviews and recipe content."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used when talking about food or plans."
-    }
+    { "platform": "INSTAGRAM", "note": "Essential for food posts." },
+    { "platform": "TWITTER", "note": "Used for food content." },
+    { "platform": "TIKTOK", "note": "Popular in food videos." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for food content and anticipation."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Foodie culture staple emoji."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Understood as enjoying food."
-    }
+    { "generation": "GEN_Z", "note": "Food appreciation and flirty." },
+    { "generation": "MILLENNIAL", "note": "Delicious and yummy." },
+    { "generation": "BOOMER", "note": "Food is tasty." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "😋 Face Savoring Food Emoji Meaning - What Does 😋 Really Mean?",
-  "seoDescription": "Learn what the face savoring food emoji 😋 really means in texting. Shows something is delicious or anticipated. Complete context guide."
+  "seoTitle": "😋 Face Savoring Food Emoji Meaning",
+  "seoDescription": "Learn what the yum face emoji 😋 really means. Delicious food appreciation."
 }
