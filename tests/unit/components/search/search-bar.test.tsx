@@ -18,8 +18,20 @@ const mockFetch = mock(() =>
     json: () =>
       Promise.resolve({
         emojis: [
-          { slug: 'skull', character: '💀', name: 'Skull', category: 'faces', tldr: "Usually means 'I'm dead'" },
-          { slug: 'fire', character: '🔥', name: 'Fire', category: 'travel', tldr: 'Something is awesome' },
+          {
+            slug: 'skull',
+            character: '💀',
+            name: 'Skull',
+            category: 'faces',
+            tldr: "Usually means 'I'm dead'",
+          },
+          {
+            slug: 'fire',
+            character: '🔥',
+            name: 'Fire',
+            category: 'travel',
+            tldr: 'Something is awesome',
+          },
         ],
       }),
   })
@@ -230,6 +242,14 @@ describe('SearchBar', () => {
 
       await act(async () => {
         fireEvent.keyDown(input, { key: 'ArrowDown' });
+      });
+
+      await waitFor(() => {
+        const options = screen.getAllByRole('option');
+        expect(options[0]).toHaveAttribute('aria-selected', 'true');
+      });
+
+      await act(async () => {
         fireEvent.keyDown(input, { key: 'Enter' });
       });
 
@@ -329,6 +349,14 @@ describe('SearchBar', () => {
 
       await act(async () => {
         fireEvent.keyDown(input, { key: 'ArrowDown' });
+      });
+
+      await waitFor(() => {
+        const options = screen.getAllByRole('option');
+        expect(options[0]).toHaveAttribute('aria-selected', 'true');
+      });
+
+      await act(async () => {
         fireEvent.keyDown(input, { key: 'Enter' });
       });
 
@@ -349,6 +377,14 @@ describe('SearchBar', () => {
 
       await act(async () => {
         fireEvent.keyDown(input, { key: 'ArrowDown' });
+      });
+
+      await waitFor(() => {
+        const options = screen.getAllByRole('option');
+        expect(options[0]).toHaveAttribute('aria-selected', 'true');
+      });
+
+      await act(async () => {
         fireEvent.keyDown(input, { key: 'Enter' });
       });
 

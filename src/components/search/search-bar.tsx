@@ -31,7 +31,9 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
 
     setIsLoading(true);
     try {
-      const response = await fetch(`/api/emojis/search?q=${encodeURIComponent(searchQuery)}&limit=6`);
+      const response = await fetch(
+        `/api/emojis/search?q=${encodeURIComponent(searchQuery)}&limit=6`
+      );
       const data = await response.json();
       setResults(data.emojis || []);
       setIsOpen(true);
