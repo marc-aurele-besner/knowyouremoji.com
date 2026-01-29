@@ -6,6 +6,8 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ComboHeader } from '@/components/combo/combo-header';
 import { ComboJsonLd } from '@/components/seo/combo-json-ld';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import type { Metadata } from 'next';
 import type { EmojiComboSummary } from '@/types/combo';
 
@@ -129,12 +131,30 @@ export default async function ComboPage({ params }: ComboPageProps) {
   // Get related combos
   const relatedCombos = getRelatedCombos(slug, 6);
 
+  // Breadcrumb items for navigation
+  const breadcrumbItems = [
+    { label: 'Home', href: '/' },
+    { label: 'Combos', href: '/combo' },
+    { label: `${combo.combo} ${combo.name}` },
+  ];
+
+  // Breadcrumb items for JSON-LD (with name instead of label)
+  const breadcrumbJsonLdItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Combos', href: '/combo' },
+    { name: `${combo.combo} ${combo.name}` },
+  ];
+
   return (
     <>
       {/* JSON-LD structured data for rich snippets */}
       <ComboJsonLd combo={combo} appUrl={env.appUrl} appName={env.appName} />
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
       <main className="container mx-auto px-4 py-8 max-w-4xl">
+        {/* Breadcrumb navigation */}
+        <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+
         {/* Header Section */}
         <ComboHeader combo={combo} className="mb-8" />
 
