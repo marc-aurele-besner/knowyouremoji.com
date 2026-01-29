@@ -38,4 +38,9 @@ describe('interpreter component exports', () => {
     expect(InterpreterExports.ProbabilityMeter).toBeDefined();
     expect(typeof InterpreterExports.ProbabilityMeter).toBe('function');
   });
+
+  it('exports PassiveAggressionMeter component', () => {
+    expect(InterpreterExports.PassiveAggressionMeter).toBeDefined();
+    expect(typeof InterpreterExports.PassiveAggressionMeter).toBe('function');
+  });
 });

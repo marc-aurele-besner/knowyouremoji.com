@@ -15,3 +15,6 @@ export type { InterpretLoadingProps } from './interpret-loading';
 
 export { ProbabilityMeter } from './probability-meter';
 export type { ProbabilityMeterProps } from './probability-meter';
+
+export { PassiveAggressionMeter } from './passive-aggression-meter';
+export type { PassiveAggressionMeterProps } from './passive-aggression-meter';

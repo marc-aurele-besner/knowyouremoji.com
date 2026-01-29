@@ -7,6 +7,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ProbabilityMeter } from './probability-meter';
+import { PassiveAggressionMeter } from './passive-aggression-meter';
 import type { InterpretationResult, DetectedEmoji, RedFlag } from '@/types';
 
 export interface InterpretResultProps {
@@ -277,12 +278,7 @@ export function InterpretResult({
             testId="sarcasm-meter"
             description="Likelihood the message contains sarcasm"
           />
-          <ProbabilityMeter
-            label="Passive-Aggression"
-            value={result.metrics.passiveAggressionProbability}
-            testId="passive-aggression-meter"
-            description="Likelihood the message contains passive-aggressive undertones"
-          />
+          <PassiveAggressionMeter value={result.metrics.passiveAggressionProbability} />
         </div>
       </section>
 
