@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useCallback } from 'react';
 import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { cn } from '@/lib/utils';
+import { useEmojiSearch } from '@/hooks/use-emoji-search';
 import type { EmojiSummary } from '@/types/emoji';
 
 export interface EmojiSearchProps {
@@ -31,52 +32,34 @@ export interface EmojiSearchProps {
  * ```
  */
 function EmojiSearch({ emojis, onSelect, className }: EmojiSearchProps) {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const {
+    results: filteredEmojis,
+    query: searchQuery,
+    category: selectedCategory,
+    setQuery,
+    setCategory,
+    clearQuery,
+    categories,
+    resultCount,
+  } = useEmojiSearch({ emojis });
 
-  // Extract unique categories from emojis
-  const categories = useMemo(() => {
-    const uniqueCategories = [...new Set(emojis.map((emoji) => emoji.category))];
-    return uniqueCategories.sort();
-  }, [emojis]);
+  const handleSearchChange = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>) => {
+      setQuery(event.target.value);
+    },
+    [setQuery]
+  );
 
-  // Filter emojis based on search query and category
-  const filteredEmojis = useMemo(() => {
-    let result = emojis;
-
-    // Filter by category
-    if (selectedCategory) {
-      result = result.filter((emoji) => emoji.category === selectedCategory);
-    }
-
-    // Filter by search query
-    if (searchQuery) {
-      const normalizedQuery = searchQuery.toLowerCase();
-      result = result.filter((emoji) => {
-        return (
-          emoji.name.toLowerCase().includes(normalizedQuery) ||
-          emoji.character.includes(searchQuery) ||
-          emoji.category.toLowerCase().includes(normalizedQuery) ||
-          emoji.tldr.toLowerCase().includes(normalizedQuery) ||
-          emoji.slug.toLowerCase().includes(normalizedQuery)
-        );
-      });
-    }
-
-    return result;
-  }, [emojis, searchQuery, selectedCategory]);
-
-  const handleSearchChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(event.target.value);
-  }, []);
-
-  const handleCategoryChange = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedCategory(event.target.value);
-  }, []);
+  const handleCategoryChange = useCallback(
+    (event: React.ChangeEvent<HTMLSelectElement>) => {
+      setCategory(event.target.value);
+    },
+    [setCategory]
+  );
 
   const handleClearSearch = useCallback(() => {
-    setSearchQuery('');
-  }, []);
+    clearQuery();
+  }, [clearQuery]);
 
   const handleEmojiClick = useCallback(
     (emoji: EmojiSummary) => {
@@ -148,9 +131,9 @@ function EmojiSearch({ emojis, onSelect, className }: EmojiSearchProps) {
 
       {/* Result Count */}
       <div className="flex items-center justify-between text-sm text-gray-600">
-        <span>{filteredEmojis.length} emojis</span>
+        <span>{resultCount} emojis</span>
         <span role="status" aria-live="polite">
-          {filteredEmojis.length} emoji{filteredEmojis.length !== 1 ? 's' : ''} found
+          {resultCount} emoji{resultCount !== 1 ? 's' : ''} found
         </span>
       </div>
 
