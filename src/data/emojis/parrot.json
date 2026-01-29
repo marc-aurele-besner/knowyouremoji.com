@@ -4,44 +4,67 @@
   "character": "🦜",
   "name": "Parrot",
   "shortName": "parrot",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-bird",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A colorful parrot.",
-  "tldr": "Colorful, repeating things, or pirate vibes.",
+  "baseMeaning": "A colorful parrot, known for mimicking speech.",
+  "tldr": "Repeat after me! Used for the bird, copying/mimicking, or tropical vibes.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A parrot.",
-      "example": "Pretty bird 🦜",
+      "meaning": "The bird parrot or parrot-related content.",
+      "example": "My parrot learned a new word 🦜",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Repeating what others say.",
-      "example": "Stop parroting 🦜",
+      "meaning": "Copying or repeating what someone else said.",
+      "example": "Stop parroting everything I say 🦜",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Pirate.", "example": "Arrr matey 🦜", "riskLevel": "LOW" },
+    {
+      "context": "IRONIC",
+      "meaning": "Being colorful or loud.",
+      "example": "My outfit today 🦜",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
-      "meaning": "Echo chamber.",
-      "example": "Just repeating 🦜",
+      "meaning": "Related to Slack's party parrot culture.",
+      "example": "Deployment successful! 🦜",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Repeating content." },
-    { "platform": "INSTAGRAM", "note": "Colorful and tropical." },
-    { "platform": "DISCORD", "note": "Party parrot culture." }
+    {
+      "platform": "SLACK",
+      "note": "Associated with the party parrot meme/emoji culture."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for mimicry jokes or tropical content."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in tropical and colorful aesthetic posts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Party parrot." },
-    { "generation": "MILLENNIAL", "note": "Pirate jokes." },
-    { "generation": "BOOMER", "note": "Tropical bird." }
+    {
+      "generation": "GEN_Z",
+      "note": "May know party parrot from Slack or Discord."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Strong party parrot meme association."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "The colorful bird or pirate associations."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦜 Parrot Emoji Meaning - What Does 🦜 Really Mean?",
-  "seoDescription": "Learn what the parrot emoji 🦜 really means. Colorful or repeating vibes. Complete context guide."
+  "seoDescription": "Learn what the parrot emoji 🦜 really means. Used for the bird, mimicking/copying, or party parrot culture. Complete context guide."
 }

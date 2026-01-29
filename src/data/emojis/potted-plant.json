@@ -4,49 +4,67 @@
   "character": "🪴",
   "name": "Potted Plant",
   "shortName": "potted-plant",
-  "category": "nature",
+  "category": "animals-nature",
   "subcategory": "plant-other",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A potted plant.",
-  "tldr": "Plant parent, home decor, or growth.",
+  "baseMeaning": "A small plant in a pot, representing houseplants and gardening.",
+  "tldr": "Plant parent! Used for houseplants, growth, home decor, or nurturing something.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Potted plant.",
-      "example": "New plant 🪴",
+      "meaning": "Houseplants or gardening.",
+      "example": "Added a new plant to my collection 🪴",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Plant parent.",
-      "example": "Green thumb 🪴",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Office decor.",
-      "example": "Desk plant 🪴",
+      "meaning": "Personal growth or nurturing something.",
+      "example": "Working on myself 🪴",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Can't keep plants alive.",
-      "example": "RIP plants 🪴",
+      "meaning": "Jokes about killing plants or being a bad plant parent.",
+      "example": "Let's see how long this one lasts 🪴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Remote work aesthetic or office plants.",
+      "example": "My WFH setup 🪴",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Plant content." },
-    { "platform": "TIKTOK", "note": "Plant care tips." },
-    { "platform": "TWITTER", "note": "Plant parent posts." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Very popular in home decor and plant parent content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Used for self-care and growth metaphors."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in plant care and home aesthetic content."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Plant parent era." },
-    { "generation": "MILLENNIAL", "note": "Indoor jungle." },
-    { "generation": "BOOMER", "note": "Houseplants." }
+    {
+      "generation": "GEN_Z",
+      "note": "Plant parent culture is big - used for home aesthetics."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Peak millennial symbol - houseplant obsession."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Gardening and houseplant interpretation."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🪴 Potted Plant Emoji Meaning - What Does 🪴 Really Mean?",
-  "seoDescription": "Learn what the potted plant emoji 🪴 really means. Plant parent or growth vibes. Complete context guide."
+  "seoDescription": "Learn what the potted plant emoji 🪴 really means. Used for houseplants, growth, or plant parent vibes. Complete context guide."
 }
