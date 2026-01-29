@@ -1,0 +1,52 @@
+{
+  "unicode": "270B",
+  "slug": "raised-hand",
+  "character": "✋",
+  "name": "Raised Hand",
+  "shortName": "hand",
+  "category": "people",
+  "subcategory": "hand-gesture",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Raised hand or stop gesture.",
+  "tldr": "Stop! Or high five.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents stop or high five.",
+      "example": "High five ✋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Wait, stop, or hold up.",
+      "example": "Hold on ✋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Stop talking or back off.",
+      "example": "I've heard enough ✋",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "I have a question or stop.",
+      "example": "Question ✋",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Stop or hold on." },
+    { "platform": "INSTAGRAM", "note": "High five vibes." },
+    { "platform": "SLACK", "note": "Have a question." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Stop or slow down." },
+    { "generation": "MILLENNIAL", "note": "High five." },
+    { "generation": "BOOMER", "note": "Raised hand." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "✋ Raised Hand Emoji Meaning",
+  "seoDescription": "Learn what the Raised Hand emoji ✋ really means."
+}

@@ -3,45 +3,50 @@
   "slug": "pointing-left",
   "character": "👈",
   "name": "Backhand Index Pointing Left",
-  "shortName": "pointleft",
+  "shortName": "point left",
   "category": "people",
-  "subcategory": "hand-single-finger",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A hand pointing to the left.",
-  "tldr": "This guy, look back, or over there.",
+  "baseMeaning": "Finger pointing to the left.",
+  "tldr": "Look left! Drawing attention.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pointing left.",
-      "example": "Over there 👈",
+      "meaning": "Pointing to the left.",
+      "example": "That guy 👈",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "This guy or person.",
-      "example": "This one 👈",
+      "meaning": "This person or reference.",
+      "example": "This guy gets it 👈",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Blaming or pointing out.",
+      "example": "It was them 👈",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Reference to previous.",
-      "example": "See above 👈",
+      "meaning": "Reference to previous item.",
+      "example": "See previous comment 👈",
       "riskLevel": "LOW"
-    },
-    { "context": "IRONIC", "meaning": "Finger guns.", "example": "👈😎👈", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Referencing things." },
-    { "platform": "INSTAGRAM", "note": "Tagging or mentioning." },
-    { "platform": "SLACK", "note": "Referencing previous messages." }
+    { "platform": "TWITTER", "note": "Referencing someone." },
+    { "platform": "INSTAGRAM", "note": "Tag someone." },
+    { "platform": "SLACK", "note": "Refer to message above." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Finger guns meme." },
-    { "generation": "MILLENNIAL", "note": "Pointing at things." },
-    { "generation": "BOOMER", "note": "Literal pointing." }
+    { "generation": "GEN_Z", "note": "This one right here." },
+    { "generation": "MILLENNIAL", "note": "Pointing out." },
+    { "generation": "BOOMER", "note": "Look that way." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👈 Pointing Left Emoji Meaning - What Does 👈 Really Mean?",
-  "seoDescription": "Learn what the pointing left emoji 👈 really means. This guy or look back vibes. Complete context guide."
+  "seoTitle": "👈 Backhand Index Pointing Left Emoji Meaning",
+  "seoDescription": "Learn what the Backhand Index Pointing Left emoji 👈 really means."
 }

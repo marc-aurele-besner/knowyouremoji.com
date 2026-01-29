@@ -4,67 +4,49 @@
   "character": "🧑‍🎨",
   "name": "Artist",
   "shortName": "artist",
-  "category": "people-body",
+  "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A person holding an artist's palette and brush.",
-  "tldr": "Creative soul! Used for artists, creativity, or making something beautiful.",
+  "baseMeaning": "An artist with palette.",
+  "tldr": "Artist! Creative or artistic.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Being an artist or doing art.",
-      "example": "Artist at work 🧑‍🎨",
+      "meaning": "Represents an artist.",
+      "example": "I'm an artist 🧑‍🎨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being creative or making something.",
-      "example": "In my creative era 🧑‍🎨",
+      "meaning": "Being creative or artistic.",
+      "example": "Creating art 🧑‍🎨",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending simple things are artistic.",
-      "example": "My stick figure drawing 🧑‍🎨",
+      "meaning": "Questionable artistic choices.",
+      "example": "My stick figure art 🧑‍🎨",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Designers, artists, or creative work.",
-      "example": "Design team doing their thing 🧑‍🎨",
+      "meaning": "Creative profession.",
+      "example": "Design team 🧑‍🎨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in art and creative content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used by artists and creative professionals."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in art and DIY content."
-    }
+    { "platform": "TWITTER", "note": "Art content." },
+    { "platform": "INSTAGRAM", "note": "Artist community." },
+    { "platform": "TIKTOK", "note": "Art tutorials and process." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Creative identity and artist energy."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Art and creativity."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Artist or painter."
-    }
+    { "generation": "GEN_Z", "note": "Artist vibes." },
+    { "generation": "MILLENNIAL", "note": "Creative person." },
+    { "generation": "BOOMER", "note": "Painter." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🎨 Artist Emoji Meaning - What Does 🧑‍🎨 Really Mean?",
-  "seoDescription": "Learn what the artist emoji 🧑‍🎨 really means. Used for creativity and artistic work. Complete context guide."
+  "seoTitle": "🧑‍🎨 Artist Emoji Meaning",
+  "seoDescription": "Learn what the Artist emoji 🧑‍🎨 really means."
 }

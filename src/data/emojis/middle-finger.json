@@ -3,75 +3,57 @@
   "slug": "middle-finger",
   "character": "🖕",
   "name": "Middle Finger",
-  "shortName": "middle-finger",
-  "category": "people-body",
-  "subcategory": "hand-single-finger",
+  "shortName": "middle finger",
+  "category": "people",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A hand with the middle finger extended, an offensive gesture.",
-  "tldr": "F-you! The universal rude gesture expressing anger or disrespect.",
+  "baseMeaning": "Middle finger extended.",
+  "tldr": "Rude! Offensive gesture.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Expressing strong displeasure or disrespect.",
-      "example": "To everyone who doubted me 🖕",
+      "meaning": "Offensive hand gesture.",
+      "example": "Go away 🖕",
       "riskLevel": "HIGH"
     },
     {
       "context": "SLANG",
-      "meaning": "Rebellion or defiance against something.",
-      "example": "Monday mornings 🖕",
-      "riskLevel": "MEDIUM"
+      "meaning": "Strong rejection or defiance.",
+      "example": "To my haters 🖕",
+      "riskLevel": "HIGH"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking frustration among friends.",
-      "example": "Thanks for eating my food 🖕",
+      "meaning": "Joking defiance.",
+      "example": "Monday morning 🖕",
       "riskLevel": "MEDIUM"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Subtle aggression or resentment.",
-      "example": "Good luck with that 🖕",
+      "context": "WORK",
+      "meaning": "Never appropriate in work contexts.",
+      "example": "Do not use at work",
       "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for expressing frustration or rebellion."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in edgy or defiant content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Used among friends for joking frustration."
-    }
+    { "platform": "TWITTER", "note": "Can get flagged." },
+    { "platform": "INSTAGRAM", "note": "May violate guidelines." },
+    { "platform": "TIKTOK", "note": "Content may be restricted." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for rebellion and frustration."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Expresses anger or defiance."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Clearly understood as offensive."
-    }
+    { "generation": "GEN_Z", "note": "Casual use among friends." },
+    { "generation": "MILLENNIAL", "note": "Strong emotion." },
+    { "generation": "BOOMER", "note": "Very offensive." }
   ],
   "warnings": [
     {
-      "type": "MISINTERPRETATION",
-      "title": "Offensive gesture",
-      "description": "This is a universally recognized offensive gesture and should be used with extreme caution.",
+      "type": "OFFENSIVE",
+      "title": "Offensive Gesture",
+      "description": "This is an offensive gesture. Avoid using in professional or formal settings.",
       "severity": "HIGH"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🖕 Middle Finger Emoji Meaning - What Does 🖕 Really Mean?",
-  "seoDescription": "Learn what the middle finger emoji 🖕 really means. A rude gesture expressing anger or defiance. Complete context guide with warnings."
+  "seoTitle": "🖕 Middle Finger Emoji Meaning",
+  "seoDescription": "Learn what the Middle Finger emoji 🖕 really means."
 }

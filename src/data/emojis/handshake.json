@@ -4,67 +4,49 @@
   "character": "🤝",
   "name": "Handshake",
   "shortName": "handshake",
-  "category": "people-body",
-  "subcategory": "hands",
+  "category": "people",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "9.0",
-  "baseMeaning": "Two hands clasped in a handshake, representing agreement or greeting.",
-  "tldr": "Deal! Used for agreements, partnerships, or sealing a deal.",
+  "baseMeaning": "Two hands shaking in agreement.",
+  "tldr": "Deal! Agreement or partnership.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Greeting or introduction.",
-      "example": "Nice to meet you 🤝",
+      "meaning": "Handshake for agreement.",
+      "example": "Deal 🤝",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Agreement or deal made.",
-      "example": "We have an accord 🤝",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Partnership, deal closed, or collaboration.",
-      "example": "Partnership confirmed 🤝",
+      "meaning": "Agreement or partnership.",
+      "example": "We good 🤝",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Finding common ground with unlikely allies.",
-      "example": "Introverts 🤝 extroverts: hating small talk",
+      "meaning": "Fake agreement.",
+      "example": "Sure, let's agree to disagree 🤝",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Business agreement or deal.",
+      "example": "Partnership confirmed 🤝",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used in the famous X 🤝 Y meme format."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for deals and agreements."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used for partnerships and collaborations."
-    }
+    { "platform": "TWITTER", "note": "Agreements and deals." },
+    { "platform": "INSTAGRAM", "note": "Business and collaboration." },
+    { "platform": "SLACK", "note": "Deal confirmed." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Famous for the X 🤝 Y comparison meme."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Agreements and business deals."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Professional greeting or agreement."
-    }
+    { "generation": "GEN_Z", "note": "We're in agreement." },
+    { "generation": "MILLENNIAL", "note": "Deal sealed." },
+    { "generation": "BOOMER", "note": "Professional handshake." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🤝 Handshake Emoji Meaning - What Does 🤝 Really Mean?",
-  "seoDescription": "Learn what the handshake emoji 🤝 really means. Used for deals, agreements, or the X 🤝 Y meme format. Complete context guide."
+  "seoTitle": "🤝 Handshake Emoji Meaning",
+  "seoDescription": "Learn what the Handshake emoji 🤝 really means."
 }
