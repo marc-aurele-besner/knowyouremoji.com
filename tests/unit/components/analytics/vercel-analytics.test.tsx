@@ -1,5 +1,5 @@
 import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 
 // Store original env
 const originalEnv = { ...process.env };
@@ -12,7 +12,7 @@ function setNodeEnv(value: string | undefined) {
 describe('VercelAnalytics component', () => {
   beforeEach(() => {
     process.env = { ...originalEnv };
-    // Clear module cache to get fresh imports with updated env
+    // Mock @vercel/analytics
     mock.module('@vercel/analytics/react', () => ({
       Analytics: () => <div data-testid="vercel-analytics" />,
     }));
@@ -20,6 +20,7 @@ describe('VercelAnalytics component', () => {
 
   afterEach(() => {
     process.env = originalEnv;
+    cleanup();
   });
 
   it('should not render in test environment', async () => {
@@ -41,9 +42,9 @@ describe('VercelAnalytics component', () => {
     const { VercelAnalytics } =
       await import('../../../../src/components/analytics/vercel-analytics');
 
-    const { getByTestId } = render(<VercelAnalytics />);
+    const { queryByTestId } = render(<VercelAnalytics />);
 
-    expect(getByTestId('vercel-analytics')).toBeDefined();
+    expect(queryByTestId('vercel-analytics')).not.toBeNull();
   });
 
   it('should render Analytics in development environment', async () => {
@@ -52,9 +53,9 @@ describe('VercelAnalytics component', () => {
     const { VercelAnalytics } =
       await import('../../../../src/components/analytics/vercel-analytics');
 
-    const { getByTestId } = render(<VercelAnalytics />);
+    const { queryByTestId } = render(<VercelAnalytics />);
 
-    expect(getByTestId('vercel-analytics')).toBeDefined();
+    expect(queryByTestId('vercel-analytics')).not.toBeNull();
   });
 });
 
