@@ -1,32 +1,32 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "1F4DF",
+  "slug": "pager",
+  "character": "📟",
+  "name": "Pager",
+  "shortName": "pager",
   "category": "objects",
-  "subcategory": "computer",
+  "subcategory": "phone",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "baseMeaning": "Pager emoji.",
+  "tldr": "Pager!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Pager.",
+      "example": "Look at this 📟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
+      "meaning": "Retro or doctor.",
+      "example": "Feeling 📟",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 📟", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes 📟",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +42,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "📟 Pager Emoji Meaning",
+  "seoDescription": "Learn what the Pager emoji 📟 really means."
 }

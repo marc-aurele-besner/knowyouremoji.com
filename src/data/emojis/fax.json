@@ -1,32 +1,32 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "1F4E0",
+  "slug": "fax",
+  "character": "📠",
+  "name": "Fax Machine",
+  "shortName": "fax",
   "category": "objects",
-  "subcategory": "computer",
+  "subcategory": "phone",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "baseMeaning": "Fax Machine emoji.",
+  "tldr": "Fax!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Fax Machine.",
+      "example": "Look at this 📠",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
+      "meaning": "Office or outdated.",
+      "example": "Feeling 📠",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 📠", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes 📠",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +42,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "📠 Fax Machine Emoji Meaning",
+  "seoDescription": "Learn what the Fax Machine emoji 📠 really means."
 }

@@ -1,32 +1,32 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "1FA98",
+  "slug": "long-drum",
+  "character": "🪘",
+  "name": "Long Drum",
+  "shortName": "drum",
   "category": "objects",
-  "subcategory": "computer",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "subcategory": "music",
+  "unicodeVersion": "13.0",
+  "baseMeaning": "Long Drum emoji.",
+  "tldr": "Drum!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Long Drum.",
+      "example": "Look at this 🪘",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
+      "meaning": "African or rhythm.",
+      "example": "Feeling 🪘",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🪘", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes 🪘",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +42,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "🪘 Long Drum Emoji Meaning",
+  "seoDescription": "Learn what the Long Drum emoji 🪘 really means."
 }

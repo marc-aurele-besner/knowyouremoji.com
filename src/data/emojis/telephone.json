@@ -1,32 +1,32 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "260E",
+  "slug": "telephone",
+  "character": "☎️",
+  "name": "Telephone",
+  "shortName": "phone",
   "category": "objects",
-  "subcategory": "computer",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "subcategory": "phone",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "Telephone emoji.",
+  "tldr": "Phone!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Telephone.",
+      "example": "Look at this ☎️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
+      "meaning": "Call or landline.",
+      "example": "Feeling ☎️",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☎️", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes ☎️",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +42,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "☎️ Telephone Emoji Meaning",
+  "seoDescription": "Learn what the Telephone emoji ☎️ really means."
 }

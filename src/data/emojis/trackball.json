@@ -1,32 +1,32 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "1F5B2",
+  "slug": "trackball",
+  "character": "🖲️",
+  "name": "Trackball",
+  "shortName": "trackball",
   "category": "objects",
   "subcategory": "computer",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "unicodeVersion": "7.0",
+  "baseMeaning": "Trackball emoji.",
+  "tldr": "Trackball!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Trackball.",
+      "example": "Look at this 🖲️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
+      "meaning": "Control or retro.",
+      "example": "Feeling 🖲️",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🖲️", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes 🖲️",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +42,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "🖲️ Trackball Emoji Meaning",
+  "seoDescription": "Learn what the Trackball emoji 🖲️ really means."
 }

@@ -3,68 +3,40 @@
   "slug": "clapper-board",
   "character": "🎬",
   "name": "Clapper Board",
-  "shortName": "clapper",
-  "category": "activities",
-  "subcategory": "event",
+  "shortName": "action",
+  "category": "objects",
+  "subcategory": "light-video",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A movie clapperboard used in film production.",
-  "tldr": "Action! Used for movies, taking action, or starting something.",
+  "baseMeaning": "Clapper Board emoji.",
+  "tldr": "Action!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Film production or movies.",
-      "example": "On set today 🎬",
+      "meaning": "Represents Clapper Board.",
+      "example": "Look at this 🎬",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Starting something or taking action.",
-      "example": "Let's do this 🎬",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Dramatic start or treating life like a movie.",
-      "example": "My villain origin story 🎬",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Film or cut.", "example": "Feeling 🎬", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎬", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Starting a project or beginning work.",
-      "example": "And... action 🎬",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎬",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Used for film content and starting new things."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in behind-the-scenes and film content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Popular in content creation posts."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Taking action and cinematic starts."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Film industry and starting things."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Movie production."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎬 Clapper Board Emoji Meaning - What Does 🎬 Really Mean?",
-  "seoDescription": "Learn what the clapper board emoji 🎬 really means. Used for movies and taking action. Complete context guide."
+  "seoTitle": "🎬 Clapper Board Emoji Meaning",
+  "seoDescription": "Learn what the Clapper Board emoji 🎬 really means."
 }

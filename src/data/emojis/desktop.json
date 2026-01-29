@@ -1,32 +1,27 @@
 {
-  "unicode": "1F50B",
-  "slug": "battery",
-  "character": "🔋",
-  "name": "Battery",
-  "shortName": "battery",
+  "unicode": "1F5A5",
+  "slug": "desktop",
+  "character": "🖥️",
+  "name": "Desktop Computer",
+  "shortName": "computer",
   "category": "objects",
   "subcategory": "computer",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Battery emoji.",
-  "tldr": "Battery!",
+  "unicodeVersion": "7.0",
+  "baseMeaning": "Desktop Computer emoji.",
+  "tldr": "Desktop!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Battery.",
-      "example": "Look at this 🔋",
+      "meaning": "Represents Desktop Computer.",
+      "example": "Look at this 🖥️",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Power or charge.",
-      "example": "Feeling 🔋",
-      "riskLevel": "LOW"
-    },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🔋", "riskLevel": "LOW" },
+    { "context": "SLANG", "meaning": "Work or PC.", "example": "Feeling 🖥️", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🖥️", "riskLevel": "LOW" },
     {
       "context": "WORK",
       "meaning": "Work context.",
-      "example": "Work vibes 🔋",
+      "example": "Work vibes 🖥️",
       "riskLevel": "LOW"
     }
   ],
@@ -42,6 +37,6 @@
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🔋 Battery Emoji Meaning",
-  "seoDescription": "Learn what the Battery emoji 🔋 really means."
+  "seoTitle": "🖥️ Desktop Computer Emoji Meaning",
+  "seoDescription": "Learn what the Desktop Computer emoji 🖥️ really means."
 }

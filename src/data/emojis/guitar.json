@@ -5,48 +5,43 @@
   "name": "Guitar",
   "shortName": "guitar",
   "category": "objects",
-  "subcategory": "musical-instrument",
+  "subcategory": "music",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An electric guitar.",
-  "tldr": "Music, rock, or playing guitar.",
+  "baseMeaning": "Guitar emoji.",
+  "tldr": "Guitar!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Guitar.",
-      "example": "Playing guitar 🎸",
+      "meaning": "Represents Guitar.",
+      "example": "Look at this 🎸",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Rock music.",
-      "example": "Let's rock 🎸",
+      "meaning": "Rock or music.",
+      "example": "Feeling 🎸",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎸", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Music industry.",
-      "example": "Band practice 🎸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Wannabe rockstar.",
-      "example": "Garage band era 🎸",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Music posts." },
-    { "platform": "TIKTOK", "note": "Music content." },
-    { "platform": "TWITTER", "note": "Music discussions." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Indie music." },
-    { "generation": "MILLENNIAL", "note": "Rock era." },
-    { "generation": "BOOMER", "note": "Classic rock." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎸 Guitar Emoji Meaning - What Does 🎸 Really Mean?",
-  "seoDescription": "Learn what the guitar emoji 🎸 really means. Music or rock vibes. Complete context guide."
+  "seoTitle": "🎸 Guitar Emoji Meaning",
+  "seoDescription": "Learn what the Guitar emoji 🎸 really means."
 }
