@@ -61,7 +61,7 @@ bun run validate:emojis
 - `src/components/combo/` - Combo display components (ComboHeader)
 - `src/components/interpreter/` - AI interpreter tool components
 - `src/components/seo/` - SEO components (JSON-LD structured data)
-- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering)
+- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state)
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `theme.ts` (design tokens)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
