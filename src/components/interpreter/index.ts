@@ -24,3 +24,6 @@ export type { RedFlagBadgeProps } from './red-flag-badge';
 
 export { RedFlagSection } from './red-flag-section';
 export type { RedFlagSectionProps } from './red-flag-section';
+
+export { EmojiLink } from './emoji-link';
+export type { EmojiLinkProps } from './emoji-link';

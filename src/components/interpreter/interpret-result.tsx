@@ -8,12 +8,15 @@ import { Button } from '@/components/ui/button';
 import { ProbabilityMeter } from './probability-meter';
 import { PassiveAggressionMeter } from './passive-aggression-meter';
 import { RedFlagBadge } from './red-flag-badge';
+import { EmojiLink } from './emoji-link';
 import type { InterpretationResult, DetectedEmoji } from '@/types';
 
 export interface InterpretResultProps {
   result: InterpretationResult;
   isLoading?: boolean;
   onEmojiClick?: (emoji: string) => void;
+  /** Callback for tracking emoji link clicks (for analytics) */
+  onEmojiLinkClick?: (emoji: string, slug: string) => void;
   className?: string;
 }
 
@@ -21,10 +24,17 @@ interface EmojiBreakdownCardProps {
   emoji: DetectedEmoji;
   index: number;
   onEmojiClick?: (emoji: string) => void;
+  onEmojiLinkClick?: (emoji: string, slug: string) => void;
 }
 
-function EmojiBreakdownCard({ emoji, index, onEmojiClick }: EmojiBreakdownCardProps) {
+function EmojiBreakdownCard({
+  emoji,
+  index,
+  onEmojiClick,
+  onEmojiLinkClick,
+}: EmojiBreakdownCardProps) {
   const hasClickHandler = !!onEmojiClick;
+  const hasSlug = !!emoji.slug;
 
   const handleClick = useCallback(() => {
     if (onEmojiClick) {
@@ -39,7 +49,15 @@ function EmojiBreakdownCard({ emoji, index, onEmojiClick }: EmojiBreakdownCardPr
       style={{ animationDelay: `${index * 100}ms` }}
     >
       <CardContent className="flex items-start gap-4 p-4">
-        {hasClickHandler ? (
+        {hasSlug ? (
+          <EmojiLink
+            emoji={emoji.character}
+            slug={emoji.slug}
+            showPreview
+            onLinkClick={onEmojiLinkClick}
+            className="text-4xl p-1"
+          />
+        ) : hasClickHandler ? (
           <button
             onClick={handleClick}
             className="cursor-pointer text-4xl hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
@@ -52,7 +70,16 @@ function EmojiBreakdownCard({ emoji, index, onEmojiClick }: EmojiBreakdownCardPr
         )}
         <div className="flex-1">
           <p className="text-sm text-gray-700">{emoji.meaning}</p>
-          {emoji.slug && <p className="text-xs text-gray-400 mt-1">Learn more about this emoji</p>}
+          {emoji.slug && (
+            <EmojiLink
+              emoji=""
+              slug={emoji.slug}
+              onLinkClick={onEmojiLinkClick}
+              className="text-xs text-blue-500 hover:text-blue-700 mt-1 inline-block"
+            >
+              Learn more about this emoji →
+            </EmojiLink>
+          )}
         </div>
       </CardContent>
     </Card>
@@ -94,6 +121,7 @@ export function InterpretResult({
   result,
   isLoading,
   onEmojiClick,
+  onEmojiLinkClick,
   className,
 }: InterpretResultProps) {
   const [copied, setCopied] = useState(false);
@@ -214,6 +242,7 @@ export function InterpretResult({
                 emoji={emoji}
                 index={index}
                 onEmojiClick={onEmojiClick}
+                onEmojiLinkClick={onEmojiLinkClick}
               />
             ))}
           </div>
