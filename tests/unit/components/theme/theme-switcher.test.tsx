@@ -7,6 +7,11 @@ const mockSetTheme = mock(() => {});
 let mockTheme = 'light';
 let mockMounted = true;
 
+// Capture the useSyncExternalStore callbacks for testing
+let capturedSubscribe: (() => () => void) | null = null;
+let capturedGetSnapshot: (() => boolean) | null = null;
+let capturedGetServerSnapshot: (() => boolean) | null = null;
+
 mock.module('next-themes', () => ({
   useTheme: () => ({
     theme: mockTheme,
@@ -20,7 +25,15 @@ mock.module('react', () => {
   const originalModule = require('react');
   return {
     ...originalModule,
-    useSyncExternalStore: () => {
+    useSyncExternalStore: (
+      subscribe: () => () => void,
+      getSnapshot: () => boolean,
+      getServerSnapshot: () => boolean
+    ) => {
+      // Capture the callbacks for testing
+      capturedSubscribe = subscribe;
+      capturedGetSnapshot = getSnapshot;
+      capturedGetServerSnapshot = getServerSnapshot;
       // Return mockMounted to control the mounted state in tests
       return mockMounted;
     },
@@ -92,5 +105,28 @@ describe('ThemeSwitcher', () => {
     // Should have a placeholder span instead of an SVG
     expect(button.querySelector('svg')).not.toBeInTheDocument();
     expect(button.querySelector('span.h-5')).toBeInTheDocument();
+  });
+
+  describe('useIsMounted hook callbacks', () => {
+    it('subscribe returns a no-op unsubscribe function', () => {
+      render(<ThemeSwitcher />);
+      expect(capturedSubscribe).toBeDefined();
+      const unsubscribe = capturedSubscribe!();
+      expect(typeof unsubscribe).toBe('function');
+      // Call unsubscribe to ensure it doesn't throw
+      unsubscribe();
+    });
+
+    it('getSnapshot returns true (client-side)', () => {
+      render(<ThemeSwitcher />);
+      expect(capturedGetSnapshot).toBeDefined();
+      expect(capturedGetSnapshot!()).toBe(true);
+    });
+
+    it('getServerSnapshot returns false (server-side)', () => {
+      render(<ThemeSwitcher />);
+      expect(capturedGetServerSnapshot).toBeDefined();
+      expect(capturedGetServerSnapshot!()).toBe(false);
+    });
   });
 });
