@@ -3,68 +3,45 @@
   "slug": "light-bulb",
   "character": "💡",
   "name": "Light Bulb",
-  "shortName": "idea",
+  "shortName": "bulb",
   "category": "objects",
   "subcategory": "light-video",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A glowing light bulb representing an idea.",
-  "tldr": "Represents an idea, insight, or 'aha moment'. The universal symbol for thinking.",
+  "baseMeaning": "An illuminated light bulb.",
+  "tldr": "Idea, eureka moment, or bright thought.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Having an idea or realization.",
-      "example": "💡 Just figured it out!",
+      "context": "LITERAL",
+      "meaning": "A light bulb.",
+      "example": "Change the bulb 💡",
       "riskLevel": "LOW"
     },
+    { "context": "SLANG", "meaning": "Got an idea.", "example": "Eureka 💡", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Sharing an idea or suggestion.",
-      "example": "💡 What if we tried a different approach?",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "LITERAL",
-      "meaning": "Light bulbs or lighting topics.",
-      "example": "Need to change the light bulb 💡",
+      "meaning": "Creative solution.",
+      "example": "What if we 💡",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Stating something obvious sarcastically.",
-      "example": "💡 Water is wet",
+      "meaning": "Obviously.",
+      "example": "Genius idea 💡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Very common for sharing ideas and suggestions in teams."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used to highlight insights or tips."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular in tips, life hacks, and inspiration content."
-    }
+    { "platform": "SLACK", "note": "Sharing ideas." },
+    { "platform": "TWITTER", "note": "Thoughts and ideas." },
+    { "platform": "INSTAGRAM", "note": "Creative content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Universal symbol for ideas and realizations."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Commonly used in professional and creative contexts."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Understood as the classic 'idea' symbol."
-    }
+    { "generation": "GEN_Z", "note": "Idea moment." },
+    { "generation": "MILLENNIAL", "note": "Light bulb moment." },
+    { "generation": "BOOMER", "note": "Having an idea." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💡 Light Bulb Emoji Meaning - What Does 💡 Really Mean?",
-  "seoDescription": "Learn what the light bulb emoji 💡 really means in texting. Universal symbol for ideas and insights. Complete context guide."
+  "seoDescription": "Learn what the light bulb emoji 💡 really means. Idea or eureka moment vibes. Complete context guide."
 }

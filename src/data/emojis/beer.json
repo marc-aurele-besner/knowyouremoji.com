@@ -8,63 +8,40 @@
   "subcategory": "drink",
   "unicodeVersion": "6.0",
   "baseMeaning": "A mug of beer with foam.",
-  "tldr": "Beer, celebrations, casual hangouts, or cheers. The casual social drink.",
+  "tldr": "Beer, drinks, or cheers.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Drinking beer or going to a bar.",
-      "example": "Beers after work? 🍺",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Beer.", "example": "Beer time 🍺", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Celebration, cheers, or casual good times.",
-      "example": "We did it! 🍺",
+      "meaning": "Drinking or party.",
+      "example": "Friday vibes 🍺",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Team social or after-work hangout.",
-      "example": "Team happy hour 🍺",
+      "meaning": "After work drinks.",
+      "example": "Happy hour 🍺",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Casual date at a bar.",
-      "example": "Let's grab a beer sometime 🍺",
+      "context": "IRONIC",
+      "meaning": "Cheers to that.",
+      "example": "Needed this 🍺",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for bar, sports, and celebration content."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for coordinating team socials."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used in celebration and casual hangout posts."
-    }
+    { "platform": "TWITTER", "note": "Drinking and social." },
+    { "platform": "INSTAGRAM", "note": "Social content." },
+    { "platform": "SLACK", "note": "Team celebrations." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Casual hang vibes and celebrations."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "After-work drinks and social gatherings."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Straightforward beer reference."
-    }
+    { "generation": "GEN_Z", "note": "Social drinking." },
+    { "generation": "MILLENNIAL", "note": "Craft beer culture." },
+    { "generation": "BOOMER", "note": "Beer." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍺 Beer Mug Emoji Meaning - What Does 🍺 Really Mean?",
-  "seoDescription": "Learn what the beer mug emoji 🍺 really means in texting. Casual drinks, celebrations, or cheers. Complete context guide."
+  "seoTitle": "🍺 Beer Emoji Meaning - What Does 🍺 Really Mean?",
+  "seoDescription": "Learn what the beer emoji 🍺 really means. Drinks or cheers vibes. Complete context guide."
 }

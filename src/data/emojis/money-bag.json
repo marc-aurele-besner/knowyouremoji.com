@@ -3,68 +3,45 @@
   "slug": "money-bag",
   "character": "💰",
   "name": "Money Bag",
-  "shortName": "money",
+  "shortName": "moneybag",
   "category": "objects",
   "subcategory": "money",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bag filled with money, typically with a dollar sign.",
-  "tldr": "Represents money, wealth, profit, or financial success. The 'getting paid' emoji.",
+  "baseMeaning": "A bag of money with dollar sign.",
+  "tldr": "Money, wealth, or getting paid.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Referring to money or financial matters.",
-      "example": "Payday! 💰",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Money.", "example": "Payday 💰", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Success, profit, or something valuable.",
-      "example": "This idea is 💰",
+      "meaning": "Getting paid.",
+      "example": "Secure the bag 💰",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Discussing business success or financial goals.",
-      "example": "Hit our Q4 targets 💰",
+      "meaning": "Business opportunity.",
+      "example": "Big deal 💰",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing money or wealth.",
-      "example": "Me checking my bank account after rent 💰",
+      "meaning": "Expensive.",
+      "example": "That's gonna cost 💰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Popular in finance, crypto, and entrepreneurship content."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in success stories and business content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in money tips, savings challenges, and hustle culture."
-    }
+    { "platform": "TWITTER", "note": "Money discussions." },
+    { "platform": "INSTAGRAM", "note": "Wealth content." },
+    { "platform": "TIKTOK", "note": "Finance content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used both seriously and ironically about money."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common in side hustle and finance discussions."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for money topics."
-    }
+    { "generation": "GEN_Z", "note": "Secure the bag." },
+    { "generation": "MILLENNIAL", "note": "Getting paid." },
+    { "generation": "BOOMER", "note": "Money." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💰 Money Bag Emoji Meaning - What Does 💰 Really Mean?",
-  "seoDescription": "Learn what the money bag emoji 💰 really means in texting. Represents wealth, profit, or financial success. Complete context guide."
+  "seoDescription": "Learn what the money bag emoji 💰 really means. Wealth or getting paid vibes. Complete context guide."
 }
