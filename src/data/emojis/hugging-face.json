@@ -3,68 +3,68 @@
   "slug": "hugging-face",
   "character": "🤗",
   "name": "Hugging Face",
-  "shortName": "hug",
-  "category": "faces",
+  "shortName": "hugging",
+  "category": "smileys-emotion",
   "subcategory": "face-hands",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A smiling face with open hands, as if giving a hug.",
-  "tldr": "Virtual hug, warmth, welcome, or support.",
+  "baseMeaning": "A smiling face with open hands, as if offering a hug.",
+  "tldr": "Virtual hug! Used for warmth, support, or welcoming someone.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Offering a virtual hug.",
-      "example": "Sending hugs 🤗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Warmth, support, or comfort.",
-      "example": "Here for you 🤗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Welcoming or supportive gesture.",
+      "meaning": "Offering a virtual hug or warm greeting.",
       "example": "Welcome to the team! 🤗",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Affection and warmth.",
-      "example": "Miss you 🤗",
+      "context": "SLANG",
+      "meaning": "Expressing support or comfort.",
+      "example": "That sounds rough, sending hugs 🤗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Welcoming or appreciating colleagues.",
+      "example": "Thanks for all your help 🤗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sometimes used in a slightly passive-aggressive welcoming way.",
+      "example": "Can't wait to hear more about your opinions 🤗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "SLACK",
-      "note": "Welcoming new team members or support."
+      "note": "Popular for welcoming new team members and showing appreciation."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Virtual hugs and comfort."
+      "note": "Common for sending comfort to friends and family."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Supportive comments and warmth."
+      "platform": "TWITTER",
+      "note": "Used for supportive messages or community building."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Virtual hugs and support."
+      "note": "Often genuine but occasionally used ironically."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Warm welcome and comfort."
+      "note": "Common for expressing warmth and support."
     },
     {
       "generation": "BOOMER",
-      "note": "Friendly and welcoming."
+      "note": "Clearly understood as friendly and welcoming."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤗 Hugging Face Emoji Meaning - What Does 🤗 Really Mean?",
-  "seoDescription": "Learn what the hugging face emoji 🤗 really means in texting. Virtual hugs, warmth, or support. Complete context guide."
+  "seoDescription": "Learn what the hugging face emoji 🤗 really means. Used for virtual hugs, warmth, and welcoming gestures. Complete context guide."
 }

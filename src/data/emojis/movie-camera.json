@@ -1,52 +1,47 @@
 {
-  "unicode": "1F3AC",
+  "unicode": "1F3A5",
   "slug": "movie-camera",
-  "character": "🎬",
-  "name": "Clapper Board",
-  "shortName": "movie-camera",
+  "character": "🎥",
+  "name": "Movie Camera",
+  "shortName": "camera",
   "category": "objects",
   "subcategory": "light-video",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A clapper board.",
-  "tldr": "Movies, film, or action!",
+  "baseMeaning": "Movie Camera emoji.",
+  "tldr": "Recording!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Film production.",
-      "example": "Action 🎬",
+      "meaning": "Represents Movie Camera.",
+      "example": "Look at this 🎥",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Movie night.",
-      "example": "Film time 🎬",
+      "meaning": "Video camera or filming.",
+      "example": "Feeling 🎥",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎥", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Video production.",
-      "example": "Filming today 🎬",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Main character.",
-      "example": "It's giving movie 🎬",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎥",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Film content." },
-    { "platform": "INSTAGRAM", "note": "Movie posts." },
-    { "platform": "TIKTOK", "note": "Film TikTok." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Content creation." },
-    { "generation": "MILLENNIAL", "note": "Movie night." },
-    { "generation": "BOOMER", "note": "Film." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎬 Clapper Board Emoji Meaning - What Does 🎬 Really Mean?",
-  "seoDescription": "Learn what the clapper board emoji 🎬 really means. Movie or action vibes. Complete context guide."
+  "seoTitle": "🎥 Movie Camera Emoji Meaning",
+  "seoDescription": "Learn what the Movie Camera emoji 🎥 really means."
 }

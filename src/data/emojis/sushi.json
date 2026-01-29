@@ -4,44 +4,44 @@
   "character": "🍣",
   "name": "Sushi",
   "shortName": "sushi",
-  "category": "food",
-  "subcategory": "food-asian",
+  "category": "food-drink",
+  "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A piece of sushi - rice with fish on top.",
-  "tldr": "Japanese food, fancy dinner, or treat yourself meal.",
+  "baseMeaning": "Sushi emoji.",
+  "tldr": "Sushi!",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Sushi.", "example": "Sushi night 🍣", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents Sushi.",
+      "example": "Look at this 🍣",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Treating yourself.",
-      "example": "Self care 🍣",
+      "meaning": "Japanese or fancy.",
+      "example": "Feeling 🍣",
       "riskLevel": "LOW"
     },
-    {
-      "context": "DATING",
-      "meaning": "Nice dinner date.",
-      "example": "Date night 🍣",
-      "riskLevel": "LOW"
-    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍣", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Celebrating with food.",
-      "example": "Project done, sushi time 🍣",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Foodie content." },
-    { "platform": "TWITTER", "note": "Food cravings." },
-    { "platform": "TIKTOK", "note": "Mukbang and food content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Foodie culture." },
-    { "generation": "MILLENNIAL", "note": "Treat yourself." },
-    { "generation": "BOOMER", "note": "Japanese cuisine." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍣 Sushi Emoji Meaning - What Does 🍣 Really Mean?",
-  "seoDescription": "Learn what the sushi emoji 🍣 really means. Treat yourself or date night vibes. Complete context guide."
+  "seoTitle": "🍣 Sushi Emoji Meaning",
+  "seoDescription": "Learn what the Sushi emoji 🍣 really means."
 }

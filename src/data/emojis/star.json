@@ -4,49 +4,49 @@
   "character": "⭐",
   "name": "Star",
   "shortName": "star",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "category": "symbols",
+  "subcategory": "celestial",
   "unicodeVersion": "5.1",
-  "baseMeaning": "A yellow star.",
-  "tldr": "Rating, special, or celebrity status.",
+  "baseMeaning": "Star emoji.",
+  "tldr": "Excellence! Ratings or something special.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A star.",
-      "example": "Starry night ⭐",
+      "meaning": "Represents stars or excellence.",
+      "example": "5 stars ⭐⭐⭐⭐⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "You're a star.",
-      "example": "Gold star ⭐",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Rating or review.",
-      "example": "5 stars ⭐",
+      "meaning": "Something is top quality or special.",
+      "example": "You're a star ⭐",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
       "meaning": "Sarcastic praise.",
+      "example": "Gold star for you ⭐",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Ratings, reviews, or excellence.",
       "example": "Great job ⭐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Emphasis." },
-    { "platform": "INSTAGRAM", "note": "Highlight content." },
-    { "platform": "SLACK", "note": "Favorites." }
+    { "platform": "TWITTER", "note": "Shows appreciation or ratings." },
+    { "platform": "INSTAGRAM", "note": "Used in reviews and highlights." },
+    { "platform": "TIKTOK", "note": "Rating content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gold star energy." },
-    { "generation": "MILLENNIAL", "note": "Rating system." },
-    { "generation": "BOOMER", "note": "Excellence." }
+    { "generation": "GEN_Z", "note": "Ratings and excellence." },
+    { "generation": "MILLENNIAL", "note": "Gold star approval." },
+    { "generation": "BOOMER", "note": "Star rating." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⭐ Star Emoji Meaning - What Does ⭐ Really Mean?",
-  "seoDescription": "Learn what the star emoji ⭐ really means. Rating or special vibes. Complete context guide."
+  "seoTitle": "⭐ Star Emoji Meaning",
+  "seoDescription": "Learn what the Star emoji ⭐ really means."
 }

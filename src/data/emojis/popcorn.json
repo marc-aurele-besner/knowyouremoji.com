@@ -4,49 +4,67 @@
   "character": "🍿",
   "name": "Popcorn",
   "shortName": "popcorn",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A box of popcorn.",
-  "tldr": "Movies, watching drama, or entertainment.",
+  "baseMeaning": "A red and white striped container of popcorn.",
+  "tldr": "Grab the popcorn! Used for movies, watching drama unfold, or entertainment.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Popcorn snack.",
-      "example": "Movie time 🍿",
+      "meaning": "Movie night or eating popcorn.",
+      "example": "Movie marathon 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Watching drama unfold.",
-      "example": "Got my popcorn 🍿",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Entertainment.",
-      "example": "This meeting 🍿",
+      "meaning": "Watching drama unfold from the sidelines.",
+      "example": "This is getting good 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Drama observer.",
-      "example": "Here for the show 🍿",
+      "meaning": "Enjoying chaos or controversy as entertainment.",
+      "example": "Twitter today 🍿",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Watching workplace drama or meetings.",
+      "example": "This meeting is entertaining 🍿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Drama watching." },
-    { "platform": "INSTAGRAM", "note": "Movie night." },
-    { "platform": "DISCORD", "note": "Watch parties." }
+    {
+      "platform": "TWITTER",
+      "note": "Essential for watching drama and controversy."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common for movie nights and entertainment."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used when drama unfolds in servers."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Drama time." },
-    { "generation": "MILLENNIAL", "note": "Movie reference." },
-    { "generation": "BOOMER", "note": "Cinema snack." }
+    {
+      "generation": "GEN_Z",
+      "note": "Drama watching is a sport - 🍿 is the uniform."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Movie culture and spectator energy."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Movies and cinema."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍿 Popcorn Emoji Meaning - What Does 🍿 Really Mean?",
-  "seoDescription": "Learn what the popcorn emoji 🍿 really means. Movies or drama watching vibes. Complete context guide."
+  "seoDescription": "Learn what the popcorn emoji 🍿 really means. Used for movies or watching drama unfold. Complete context guide."
 }

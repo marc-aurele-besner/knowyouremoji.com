@@ -3,50 +3,45 @@
   "slug": "doughnut",
   "character": "🍩",
   "name": "Doughnut",
-  "shortName": "doughnut",
-  "category": "food",
+  "shortName": "donut",
+  "category": "food-drink",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A doughnut.",
-  "tldr": "Doughnut, treat yourself, or Homer Simpson.",
+  "baseMeaning": "Doughnut emoji.",
+  "tldr": "Donut!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A doughnut.",
-      "example": "Doughnut run 🍩",
+      "meaning": "Represents Doughnut.",
+      "example": "Look at this 🍩",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Treat yourself.",
-      "example": "Deserved treat 🍩",
+      "meaning": "Sweet or police joke.",
+      "example": "Feeling 🍩",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍩", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Office snack.",
-      "example": "Brought doughnuts 🍩",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Homer Simpson.",
-      "example": "Mmm doughnut 🍩",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍩",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Food content." },
-    { "platform": "TWITTER", "note": "Snack posts." },
-    { "platform": "TIKTOK", "note": "Food videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Aesthetic food." },
-    { "generation": "MILLENNIAL", "note": "Simpsons reference." },
-    { "generation": "BOOMER", "note": "Doughnut." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍩 Doughnut Emoji Meaning - What Does 🍩 Really Mean?",
-  "seoDescription": "Learn what the doughnut emoji 🍩 really means. Treat or snack vibes. Complete context guide."
+  "seoTitle": "🍩 Doughnut Emoji Meaning",
+  "seoDescription": "Learn what the Doughnut emoji 🍩 really means."
 }

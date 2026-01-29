@@ -4,44 +4,44 @@
   "character": "🌙",
   "name": "Crescent Moon",
   "shortName": "moon",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "category": "sky-weather",
+  "subcategory": "sky",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A crescent moon.",
-  "tldr": "Night time, goodnight, or mysterious vibes.",
+  "baseMeaning": "Crescent Moon emoji.",
+  "tldr": "Night!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The moon.",
-      "example": "Beautiful night 🌙",
-      "riskLevel": "LOW"
-    },
-    { "context": "SLANG", "meaning": "Goodnight.", "example": "Goodnight 🌙", "riskLevel": "LOW" },
-    {
-      "context": "DATING",
-      "meaning": "Late night texts.",
-      "example": "Thinking of you 🌙",
+      "meaning": "Represents Crescent Moon.",
+      "example": "Look at this 🌙",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Night owl.",
-      "example": "3am and still up 🌙",
+      "context": "SLANG",
+      "meaning": "Night or Islamic.",
+      "example": "Feeling 🌙",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌙", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Night and aesthetic content." },
-    { "platform": "WHATSAPP", "note": "Goodnight messages." },
-    { "platform": "TWITTER", "note": "Night content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Night owl energy." },
-    { "generation": "MILLENNIAL", "note": "Goodnight." },
-    { "generation": "BOOMER", "note": "The moon." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌙 Crescent Moon Emoji Meaning - What Does 🌙 Really Mean?",
-  "seoDescription": "Learn what the crescent moon emoji 🌙 really means. Goodnight or night vibes. Complete context guide."
+  "seoTitle": "🌙 Crescent Moon Emoji Meaning",
+  "seoDescription": "Learn what the Crescent Moon emoji 🌙 really means."
 }

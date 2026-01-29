@@ -7,46 +7,41 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "5.2",
-  "baseMeaning": "A golf flag in hole.",
-  "tldr": "Golf, business deals, or retirement vibes.",
+  "baseMeaning": "Flag in Hole emoji.",
+  "tldr": "Golf!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Playing golf.",
-      "example": "Golf day ⛳",
+      "meaning": "Represents Flag in Hole.",
+      "example": "Look at this ⛳",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Business networking.",
-      "example": "Deals on the course ⛳",
+      "meaning": "Golf or hole in one.",
+      "example": "Feeling ⛳",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⛳", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Executive meetings.",
-      "example": "Golf with the boss ⛳",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Retirement goals.",
-      "example": "Living the dream ⛳",
+      "meaning": "Work context.",
+      "example": "Work vibes ⛳",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Golf and business." },
-    { "platform": "INSTAGRAM", "note": "Golf content." },
-    { "platform": "SLACK", "note": "Out of office golf." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dad sport." },
-    { "generation": "MILLENNIAL", "note": "Business golf." },
-    { "generation": "BOOMER", "note": "Golf lifestyle." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⛳ Golf Emoji Meaning - What Does ⛳ Really Mean?",
-  "seoDescription": "Learn what the golf emoji ⛳ really means. Golf or business networking vibes. Complete context guide."
+  "seoTitle": "⛳ Flag in Hole Emoji Meaning",
+  "seoDescription": "Learn what the Flag in Hole emoji ⛳ really means."
 }

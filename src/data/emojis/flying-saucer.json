@@ -3,50 +3,45 @@
   "slug": "flying-saucer",
   "character": "🛸",
   "name": "Flying Saucer",
-  "shortName": "flying-saucer",
+  "shortName": "ufo",
   "category": "travel",
   "subcategory": "transport-air",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A flying saucer (UFO).",
-  "tldr": "Aliens, UFO, or out of this world.",
+  "baseMeaning": "Flying Saucer emoji.",
+  "tldr": "UFO!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "UFO.",
-      "example": "Aliens 🛸",
+      "meaning": "Represents Flying Saucer.",
+      "example": "Look at this 🛸",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Out of this world.",
-      "example": "Amazing 🛸",
+      "meaning": "Alien or sci-fi.",
+      "example": "Feeling 🛸",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🛸", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Ghosting/abducted.",
-      "example": "Got abducted 🛸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Conspiracy.",
-      "example": "The truth is out there 🛸",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🛸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "UFO content." },
-    { "platform": "TIKTOK", "note": "Alien content." },
-    { "platform": "DISCORD", "note": "Conspiracy jokes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Alien content." },
-    { "generation": "MILLENNIAL", "note": "X-Files vibes." },
-    { "generation": "BOOMER", "note": "UFO." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🛸 Flying Saucer Emoji Meaning - What Does 🛸 Really Mean?",
-  "seoDescription": "Learn what the flying saucer emoji 🛸 really means. UFO or alien vibes. Complete context guide."
+  "seoTitle": "🛸 Flying Saucer Emoji Meaning",
+  "seoDescription": "Learn what the Flying Saucer emoji 🛸 really means."
 }

@@ -7,46 +7,41 @@
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A dress.",
-  "tldr": "Formal wear, special occasion, or fashion.",
+  "baseMeaning": "Dress emoji.",
+  "tldr": "Dress!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A dress.",
-      "example": "New dress 👗",
+      "meaning": "Represents Dress.",
+      "example": "Look at this 👗",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Getting dressed up.",
-      "example": "Event ready 👗",
+      "meaning": "Fashion or feminine.",
+      "example": "Feeling 👗",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 👗", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Special occasion.",
-      "example": "Date night 👗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Over dressed.",
-      "example": "Too much 👗",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 👗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Fashion content." },
-    { "platform": "TWITTER", "note": "Event posts." },
-    { "platform": "TIKTOK", "note": "OOTD videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fashion." },
-    { "generation": "MILLENNIAL", "note": "Special occasion." },
-    { "generation": "BOOMER", "note": "Formal wear." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👗 Dress Emoji Meaning - What Does 👗 Really Mean?",
-  "seoDescription": "Learn what the dress emoji 👗 really means. Fashion or special occasion vibes. Complete context guide."
+  "seoTitle": "👗 Dress Emoji Meaning",
+  "seoDescription": "Learn what the Dress emoji 👗 really means."
 }

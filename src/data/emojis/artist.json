@@ -1,0 +1,52 @@
+{
+  "unicode": "1F9D1-200D-1F3A8",
+  "slug": "artist",
+  "character": "🧑‍🎨",
+  "name": "Artist",
+  "shortName": "artist",
+  "category": "people",
+  "subcategory": "person-role",
+  "unicodeVersion": "12.1",
+  "baseMeaning": "An artist with palette.",
+  "tldr": "Artist! Creative or artistic.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents an artist.",
+      "example": "I'm an artist 🧑‍🎨",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Being creative or artistic.",
+      "example": "Creating art 🧑‍🎨",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Questionable artistic choices.",
+      "example": "My stick figure art 🧑‍🎨",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Creative profession.",
+      "example": "Design team 🧑‍🎨",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Art content." },
+    { "platform": "INSTAGRAM", "note": "Artist community." },
+    { "platform": "TIKTOK", "note": "Art tutorials and process." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Artist vibes." },
+    { "generation": "MILLENNIAL", "note": "Creative person." },
+    { "generation": "BOOMER", "note": "Painter." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🧑‍🎨 Artist Emoji Meaning",
+  "seoDescription": "Learn what the Artist emoji 🧑‍🎨 really means."
+}

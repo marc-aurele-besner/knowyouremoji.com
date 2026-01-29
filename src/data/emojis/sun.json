@@ -3,50 +3,45 @@
   "slug": "sun",
   "character": "☀️",
   "name": "Sun",
-  "shortName": "sun",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "shortName": "sunny",
+  "category": "sky-weather",
+  "subcategory": "weather",
   "unicodeVersion": "1.1",
-  "baseMeaning": "The sun.",
-  "tldr": "Sunny day, happiness, or beach vibes.",
+  "baseMeaning": "Sun emoji.",
+  "tldr": "Sunny!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The sun.",
-      "example": "Beautiful day ☀️",
+      "meaning": "Represents Sun.",
+      "example": "Look at this ☀️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Good vibes.",
-      "example": "Feeling sunny ☀️",
+      "meaning": "Bright or happy.",
+      "example": "Feeling ☀️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ☀️", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "You're my sunshine.",
-      "example": "My sunshine ☀️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Too hot.",
-      "example": "Burning up ☀️",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes ☀️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Summer content." },
-    { "platform": "TWITTER", "note": "Weather updates." },
-    { "platform": "TIKTOK", "note": "Beach content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beach day." },
-    { "generation": "MILLENNIAL", "note": "Positive vibes." },
-    { "generation": "BOOMER", "note": "Weather." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "☀️ Sun Emoji Meaning - What Does ☀️ Really Mean?",
-  "seoDescription": "Learn what the sun emoji ☀️ really means. Sunny or happy vibes. Complete context guide."
+  "seoTitle": "☀️ Sun Emoji Meaning",
+  "seoDescription": "Learn what the Sun emoji ☀️ really means."
 }

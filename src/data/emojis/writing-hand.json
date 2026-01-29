@@ -5,48 +5,48 @@
   "name": "Writing Hand",
   "shortName": "writing",
   "category": "people",
-  "subcategory": "hand-prop",
+  "subcategory": "hand-gesture",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A hand holding a pen, writing.",
-  "tldr": "Writing, taking notes, or signing something.",
+  "baseMeaning": "Hand writing with a pen.",
+  "tldr": "Writing! Taking notes or authoring.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Writing.",
-      "example": "Taking notes ✍️",
+      "meaning": "Writing or taking notes.",
+      "example": "Writing this down ✍️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Writing content.",
-      "example": "Writing this thread ✍️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Documentation.",
-      "example": "Writing docs ✍️",
+      "meaning": "Noted or documenting.",
+      "example": "Taking notes ✍️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Taking mental notes.",
-      "example": "Noted ✍️",
+      "meaning": "Sarcastically noting something.",
+      "example": "Oh interesting ✍️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Documentation or writing.",
+      "example": "Drafting the report ✍️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Writing threads or content." },
-    { "platform": "SLACK", "note": "Documentation." },
-    { "platform": "INSTAGRAM", "note": "Writing content." }
+    { "platform": "TWITTER", "note": "Noted, taking notes meme." },
+    { "platform": "INSTAGRAM", "note": "Writing and creative content." },
+    { "platform": "SLACK", "note": "Taking action items." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Taking notes on tea." },
-    { "generation": "MILLENNIAL", "note": "Content writing." },
-    { "generation": "BOOMER", "note": "Writing or signing." }
+    { "generation": "GEN_Z", "note": "Taking notes meme." },
+    { "generation": "MILLENNIAL", "note": "Writing things down." },
+    { "generation": "BOOMER", "note": "Hand writing." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✍️ Writing Hand Emoji Meaning - What Does ✍️ Really Mean?",
-  "seoDescription": "Learn what the writing hand emoji ✍️ really means. Writing or taking notes vibes. Complete context guide."
+  "seoTitle": "✍️ Writing Hand Emoji Meaning",
+  "seoDescription": "Learn what the Writing Hand emoji ✍️ really means."
 }

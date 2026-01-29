@@ -3,40 +3,45 @@
   "slug": "gem-stone",
   "character": "💎",
   "name": "Gem Stone",
-  "shortName": "gem",
+  "shortName": "diamond",
   "category": "objects",
   "subcategory": "clothing",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A sparkling blue gem.",
-  "tldr": "Valuable, treasure, or diamond hands.",
+  "baseMeaning": "Gem Stone emoji.",
+  "tldr": "Diamond!",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A gem.", "example": "Precious 💎", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents Gem Stone.",
+      "example": "Look at this 💎",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Diamond hands (holding).",
-      "example": "Diamond hands 💎",
+      "meaning": "Precious or valuable.",
+      "example": "Feeling 💎",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 💎", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Someone valuable.",
-      "example": "You're a gem 💎",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 💎",
       "riskLevel": "LOW"
-    },
-    { "context": "WORK", "meaning": "Hidden gem.", "example": "Found a gem 💎", "riskLevel": "LOW" }
+    }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Crypto diamond hands." },
-    { "platform": "INSTAGRAM", "note": "Jewelry and value." },
-    { "platform": "DISCORD", "note": "Stock/crypto culture." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Diamond hands meme." },
-    { "generation": "MILLENNIAL", "note": "Crypto and stocks." },
-    { "generation": "BOOMER", "note": "Precious gem." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "💎 Gem Stone Emoji Meaning - What Does 💎 Really Mean?",
-  "seoDescription": "Learn what the gem stone emoji 💎 really means. Diamond hands or valuable vibes. Complete context guide."
+  "seoTitle": "💎 Gem Stone Emoji Meaning",
+  "seoDescription": "Learn what the Gem Stone emoji 💎 really means."
 }

@@ -3,50 +3,40 @@
   "slug": "window",
   "character": "🪟",
   "name": "Window",
-  "shortName": "window",
+  "shortName": "view",
   "category": "objects",
   "subcategory": "household",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A window.",
-  "tldr": "Looking out, transparency, or Windows OS.",
+  "baseMeaning": "Window emoji.",
+  "tldr": "View!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Window.",
-      "example": "Nice view 🪟",
+      "meaning": "Represents Window.",
+      "example": "Look at this 🪟",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Window of opportunity.",
-      "example": "Small window 🪟",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Window pane.", "example": "Feeling 🪟", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🪟", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Transparency.",
-      "example": "Clear view 🪟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Windows OS.",
-      "example": "Blue screen 🪟",
+      "meaning": "Work context.",
+      "example": "Work vibes 🪟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Tech posts." },
-    { "platform": "INSTAGRAM", "note": "View content." },
-    { "platform": "DISCORD", "note": "Windows memes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Windows jokes." },
-    { "generation": "MILLENNIAL", "note": "OS reference." },
-    { "generation": "BOOMER", "note": "Home." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🪟 Window Emoji Meaning - What Does 🪟 Really Mean?",
-  "seoDescription": "Learn what the window emoji 🪟 really means. View or opportunity vibes. Complete context guide."
+  "seoTitle": "🪟 Window Emoji Meaning",
+  "seoDescription": "Learn what the Window emoji 🪟 really means."
 }

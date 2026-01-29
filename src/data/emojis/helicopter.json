@@ -3,50 +3,45 @@
   "slug": "helicopter",
   "character": "🚁",
   "name": "Helicopter",
-  "shortName": "helicopter",
+  "shortName": "heli",
   "category": "travel",
   "subcategory": "transport-air",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A helicopter.",
-  "tldr": "Flying, rescue, or helicopter parenting.",
+  "baseMeaning": "Helicopter emoji.",
+  "tldr": "Helicopter!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A helicopter.",
-      "example": "Chopper ride 🚁",
+      "meaning": "Represents Helicopter.",
+      "example": "Look at this 🚁",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Helicopter parent.",
-      "example": "Mom's hovering 🚁",
+      "meaning": "Flying or rescue.",
+      "example": "Feeling 🚁",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🚁", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "VIP travel.",
-      "example": "Executive travel 🚁",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Over the top.",
-      "example": "Dramatic exit 🚁",
+      "meaning": "Work context.",
+      "example": "Work vibes 🚁",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Travel content." },
-    { "platform": "INSTAGRAM", "note": "Luxury posts." },
-    { "platform": "TIKTOK", "note": "Travel videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Helicopter parent." },
-    { "generation": "MILLENNIAL", "note": "Parenting meme." },
-    { "generation": "BOOMER", "note": "Aircraft." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🚁 Helicopter Emoji Meaning - What Does 🚁 Really Mean?",
-  "seoDescription": "Learn what the helicopter emoji 🚁 really means. Flying or parenting vibes. Complete context guide."
+  "seoTitle": "🚁 Helicopter Emoji Meaning",
+  "seoDescription": "Learn what the Helicopter emoji 🚁 really means."
 }

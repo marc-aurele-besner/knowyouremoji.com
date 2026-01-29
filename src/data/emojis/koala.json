@@ -4,49 +4,49 @@
   "character": "🐨",
   "name": "Koala",
   "shortName": "koala",
-  "category": "animals",
+  "category": "animals-nature",
   "subcategory": "animal-mammal",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A koala face.",
-  "tldr": "Sleepy, cute, or Australian. Loves to nap.",
+  "baseMeaning": "A koala face with fluffy ears.",
+  "tldr": "Sleepy and cuddly! Koalas or wanting to sleep.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A koala.",
-      "example": "Australia trip 🐨",
+      "meaning": "Koalas.",
+      "example": "Koalas are so cute 🐨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being sleepy all the time.",
-      "example": "Koala energy today 🐨",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sleeping 20 hours a day.",
-      "example": "Productive weekend 🐨",
+      "meaning": "Sleepy or clingy.",
+      "example": "Need a nap 🐨",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Wanting cuddles.",
-      "example": "Come be my koala 🐨",
+      "meaning": "Clingy cuddler.",
+      "example": "Koala hugs 🐨",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sleeping all day.",
+      "example": "My weekend plans 🐨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Cute and sleepy content." },
-    { "platform": "TIKTOK", "note": "Sleep and Australia content." },
-    { "platform": "WHATSAPP", "note": "Cute messaging." }
+    { "platform": "INSTAGRAM", "note": "Cute animal content." },
+    { "platform": "TWITTER", "note": "Used for sleepy vibes." },
+    { "platform": "WHATSAPP", "note": "Cute messages." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Sleepy cute energy." },
-    { "generation": "MILLENNIAL", "note": "Australia and cute." },
+    { "generation": "GEN_Z", "note": "Sleepy energy." },
+    { "generation": "MILLENNIAL", "note": "Cute and cuddly." },
     { "generation": "BOOMER", "note": "Australian animal." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🐨 Koala Emoji Meaning - What Does 🐨 Really Mean?",
-  "seoDescription": "Learn what the koala emoji 🐨 really means. Sleepy, cute, or Australian vibes. Complete context guide."
+  "seoTitle": "🐨 Koala Emoji Meaning",
+  "seoDescription": "Learn what the koala emoji 🐨 really means. Sleepy and cuddly."
 }

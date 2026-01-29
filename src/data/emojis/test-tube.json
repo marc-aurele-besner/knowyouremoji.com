@@ -3,50 +3,45 @@
   "slug": "test-tube",
   "character": "🧪",
   "name": "Test Tube",
-  "shortName": "test-tube",
+  "shortName": "lab",
   "category": "objects",
   "subcategory": "science",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A test tube.",
-  "tldr": "Experiment, chemistry, or testing.",
+  "baseMeaning": "Test Tube emoji.",
+  "tldr": "Testing!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Test tube.",
-      "example": "Lab work 🧪",
+      "meaning": "Represents Test Tube.",
+      "example": "Look at this 🧪",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Experimenting.",
-      "example": "Testing things 🧪",
+      "meaning": "Laboratory test tube.",
+      "example": "Feeling 🧪",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🧪", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "A/B testing.",
-      "example": "Experiment 🧪",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Mad scientist.",
-      "example": "Creating chaos 🧪",
+      "meaning": "Work context.",
+      "example": "Work vibes 🧪",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Science content." },
-    { "platform": "SLACK", "note": "Testing." },
-    { "platform": "DISCORD", "note": "Experiments." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Science class." },
-    { "generation": "MILLENNIAL", "note": "A/B testing." },
-    { "generation": "BOOMER", "note": "Chemistry." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧪 Test Tube Emoji Meaning - What Does 🧪 Really Mean?",
-  "seoDescription": "Learn what the test tube emoji 🧪 really means. Experiment or testing vibes. Complete context guide."
+  "seoTitle": "🧪 Test Tube Emoji Meaning",
+  "seoDescription": "Learn what the Test Tube emoji 🧪 really means."
 }

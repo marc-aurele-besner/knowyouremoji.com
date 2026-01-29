@@ -7,41 +7,41 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A confetti ball exploding.",
-  "tldr": "Big celebration, success, or party time.",
+  "baseMeaning": "Confetti Ball emoji.",
+  "tldr": "Confetti!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Celebration.",
-      "example": "We did it 🎊",
+      "meaning": "Represents Confetti Ball.",
+      "example": "Look at this 🎊",
       "riskLevel": "LOW"
     },
-    { "context": "SLANG", "meaning": "Big win.", "example": "Victory 🎊", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Party or celebration.",
+      "example": "Feeling 🎊",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎊", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Project success.",
-      "example": "Shipped 🎊",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastic celebration.",
-      "example": "Made it through Monday 🎊",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Team wins." },
-    { "platform": "TWITTER", "note": "Achievements." },
-    { "platform": "INSTAGRAM", "note": "Celebrations." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Big wins." },
-    { "generation": "MILLENNIAL", "note": "Achievements." },
-    { "generation": "BOOMER", "note": "Party celebration." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎊 Confetti Ball Emoji Meaning - What Does 🎊 Really Mean?",
-  "seoDescription": "Learn what the confetti ball emoji 🎊 really means. Celebration or success vibes. Complete context guide."
+  "seoTitle": "🎊 Confetti Ball Emoji Meaning",
+  "seoDescription": "Learn what the Confetti Ball emoji 🎊 really means."
 }

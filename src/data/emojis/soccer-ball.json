@@ -3,50 +3,45 @@
   "slug": "soccer-ball",
   "character": "⚽",
   "name": "Soccer Ball",
-  "shortName": "soccer-ball",
+  "shortName": "soccer",
   "category": "activities",
   "subcategory": "sport",
-  "unicodeVersion": "5.2",
-  "baseMeaning": "A soccer ball.",
-  "tldr": "Soccer/football, sports, or game time.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Soccer Ball emoji.",
+  "tldr": "Football/Soccer! The beautiful game.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Soccer ball.",
-      "example": "Soccer game ⚽",
+      "meaning": "Represents Soccer Ball.",
+      "example": "Check this out ⚽",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Football (global).",
-      "example": "Footy time ⚽",
+      "meaning": "Common slang usage.",
+      "example": "Vibes ⚽",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⚽", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Team sports.",
-      "example": "Office league ⚽",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sports obsession.",
-      "example": "It's coming home ⚽",
+      "meaning": "Professional context.",
+      "example": "Work stuff ⚽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Match updates." },
-    { "platform": "INSTAGRAM", "note": "Sports content." },
-    { "platform": "WHATSAPP", "note": "Game plans." }
+    { "platform": "TWITTER", "note": "Common on Twitter." },
+    { "platform": "INSTAGRAM", "note": "Popular on Instagram." },
+    { "platform": "TIKTOK", "note": "Used on TikTok." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "FIFA vibes." },
-    { "generation": "MILLENNIAL", "note": "World Cup." },
-    { "generation": "BOOMER", "note": "Classic sport." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⚽ Soccer Ball Emoji Meaning - What Does ⚽ Really Mean?",
-  "seoDescription": "Learn what the soccer ball emoji ⚽ really means. Sports or game day vibes. Complete context guide."
+  "seoTitle": "⚽ Soccer Ball Emoji Meaning",
+  "seoDescription": "Learn what the Soccer Ball emoji ⚽ really means."
 }

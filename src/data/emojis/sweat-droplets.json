@@ -3,74 +3,57 @@
   "slug": "sweat-droplets",
   "character": "💦",
   "name": "Sweat Droplets",
-  "shortName": "sweat_drops",
-  "category": "objects",
-  "subcategory": "light-video",
+  "shortName": "sweat drops",
+  "category": "nature",
+  "subcategory": "water",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Two or three blue water droplets, typically used for sweat.",
-  "tldr": "Can mean sweat/effort, thirst (literal or metaphorical), or has suggestive connotations.",
+  "baseMeaning": "Sweat droplets splashing.",
+  "tldr": "Sweat! Hard work or suggestive meaning.",
   "contextMeanings": [
     {
-      "context": "SLANG",
-      "meaning": "Being 'thirsty' - attracted to or desiring something/someone.",
-      "example": "That photo 💦",
-      "riskLevel": "MEDIUM"
+      "context": "LITERAL",
+      "meaning": "Represents sweating or water splashing.",
+      "example": "Workout done 💦",
+      "riskLevel": "LOW"
     },
     {
-      "context": "LITERAL",
-      "meaning": "Sweating from exercise or hard work.",
-      "example": "Post workout 💦",
-      "riskLevel": "LOW"
+      "context": "SLANG",
+      "meaning": "Can be sexual or suggestive.",
+      "example": "That's hot 💦",
+      "riskLevel": "HIGH"
     },
     {
       "context": "DATING",
-      "meaning": "Suggestive or sexual connotation.",
-      "example": "Can't wait to see you 💦",
-      "riskLevel": "MEDIUM"
+      "meaning": "Often suggestive in romantic contexts.",
+      "example": "Thinking about you 💦",
+      "riskLevel": "HIGH"
     },
     {
-      "context": "LITERAL",
-      "meaning": "Water, rain, or getting splashed.",
-      "example": "Pool day 💦",
-      "riskLevel": "LOW"
+      "context": "WORK",
+      "meaning": "Hard work and effort (use cautiously).",
+      "example": "Sweating over this deadline",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TIKTOK",
-      "note": "Often suggestive - be aware of context."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in fitness posts (sweat) or thirst trap comments."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Generally avoid - too many potential interpretations."
-    }
+    { "platform": "TWITTER", "note": "Context-dependent, often suggestive." },
+    { "platform": "INSTAGRAM", "note": "Fitness or suggestive content." },
+    { "platform": "TIKTOK", "note": "Often used suggestively." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often suggestive/thirsty meaning."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Aware of multiple meanings - context dependent."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "May interpret as sweat or water only."
-    }
+    { "generation": "GEN_Z", "note": "Usually suggestive." },
+    { "generation": "MILLENNIAL", "note": "Context-dependent." },
+    { "generation": "BOOMER", "note": "May use literally for sweat." }
   ],
   "warnings": [
     {
-      "title": "Suggestive connotation",
-      "description": "This emoji is often interpreted as suggestive or indicating attraction. Use carefully.",
-      "severity": "MEDIUM"
+      "type": "SUGGESTIVE",
+      "title": "Sexual Connotation",
+      "description": "This emoji is often used with sexual implications. Use carefully in professional settings.",
+      "severity": "HIGH"
     }
   ],
-  "relatedCombos": ["sweat-workout"],
-  "seoTitle": "💦 Sweat Droplets Emoji Meaning - What Does 💦 Really Mean?",
-  "seoDescription": "Learn what the sweat droplets emoji 💦 really means in modern texting. Can mean effort, thirst, or has suggestive meaning. Complete context guide."
+  "relatedCombos": [],
+  "seoTitle": "💦 Sweat Droplets Emoji Meaning",
+  "seoDescription": "Learn what the Sweat Droplets emoji 💦 really means."
 }

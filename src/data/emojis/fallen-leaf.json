@@ -3,50 +3,45 @@
   "slug": "fallen-leaf",
   "character": "🍂",
   "name": "Fallen Leaf",
-  "shortName": "fallen-leaf",
+  "shortName": "leaf",
   "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Fallen leaves.",
-  "tldr": "Autumn, change, or letting go.",
+  "baseMeaning": "Fallen Leaf emoji.",
+  "tldr": "Fall Leaf!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Fallen leaves.",
-      "example": "Autumn vibes 🍂",
+      "meaning": "Represents Fallen Leaf.",
+      "example": "Look at this 🍂",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Change.",
-      "example": "New chapter 🍂",
+      "meaning": "Autumn or change.",
+      "example": "Feeling 🍂",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍂", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Fall season.",
-      "example": "Q4 begins 🍂",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Basic fall.",
-      "example": "Sweater weather 🍂",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Fall aesthetic." },
-    { "platform": "TWITTER", "note": "Autumn posts." },
-    { "platform": "TIKTOK", "note": "Fall content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Fall aesthetic." },
-    { "generation": "MILLENNIAL", "note": "PSL season." },
-    { "generation": "BOOMER", "note": "Autumn." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍂 Fallen Leaf Emoji Meaning - What Does 🍂 Really Mean?",
-  "seoDescription": "Learn what the fallen leaf emoji 🍂 really means. Autumn or change vibes. Complete context guide."
+  "seoTitle": "🍂 Fallen Leaf Emoji Meaning",
+  "seoDescription": "Learn what the Fallen Leaf emoji 🍂 really means."
 }

@@ -4,44 +4,49 @@
   "character": "🍇",
   "name": "Grapes",
   "shortName": "grapes",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bunch of grapes.",
-  "tldr": "Wine, luxury, or sour grapes.",
+  "baseMeaning": "A bunch of purple grapes.",
+  "tldr": "Wine grapes! Grapes or wine reference.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Grapes.", "example": "Snack time 🍇", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Grapes.",
+      "example": "Fresh grapes 🍇",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
       "meaning": "Wine reference.",
-      "example": "Wine o'clock 🍇",
+      "example": "Wine time 🍇",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Sour grapes.",
+      "example": "Whatever 🍇",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Sour grapes - jealousy.",
-      "example": "Sour grapes 🍇",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Luxury and romance.",
-      "example": "Fancy date 🍇",
+      "meaning": "Vineyard or wine industry.",
+      "example": "Harvest season 🍇",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Wine and food content." },
-    { "platform": "TWITTER", "note": "Sour grapes idiom." },
-    { "platform": "TIKTOK", "note": "Food content." }
+    { "platform": "TWITTER", "note": "Wine and fruit." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Wine videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Wine content." },
+    { "generation": "GEN_Z", "note": "Wine aunt energy." },
     { "generation": "MILLENNIAL", "note": "Wine culture." },
-    { "generation": "BOOMER", "note": "Fruit or wine." }
+    { "generation": "BOOMER", "note": "Fruit." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍇 Grapes Emoji Meaning - What Does 🍇 Really Mean?",
-  "seoDescription": "Learn what the grapes emoji 🍇 really means. Wine or sour grapes vibes. Complete context guide."
+  "seoTitle": "🍇 Grapes Emoji Meaning",
+  "seoDescription": "Learn what the grapes emoji 🍇 really means."
 }

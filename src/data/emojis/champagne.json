@@ -2,51 +2,46 @@
   "unicode": "1F37E",
   "slug": "champagne",
   "character": "🍾",
-  "name": "Bottle with Popping Cork",
+  "name": "Champagne",
   "shortName": "champagne",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "drink",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A champagne bottle with cork popping.",
-  "tldr": "Celebration, big wins, or party time.",
+  "baseMeaning": "Champagne emoji.",
+  "tldr": "Champagne!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Champagne.",
-      "example": "Pop bottles 🍾",
+      "meaning": "Represents Champagne.",
+      "example": "Look at this 🍾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Celebration time.",
-      "example": "We did it 🍾",
+      "meaning": "Celebration or fancy.",
+      "example": "Feeling 🍾",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍾", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Big achievement.",
-      "example": "Project shipped 🍾",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Special occasion.",
-      "example": "Anniversary 🍾",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Celebrations." },
-    { "platform": "INSTAGRAM", "note": "Party and success." },
-    { "platform": "SLACK", "note": "Team wins." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Celebration energy." },
-    { "generation": "MILLENNIAL", "note": "Pop bottles." },
-    { "generation": "BOOMER", "note": "Champagne toast." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍾 Champagne Emoji Meaning - What Does 🍾 Really Mean?",
-  "seoDescription": "Learn what the champagne emoji 🍾 really means. Celebration or party vibes. Complete context guide."
+  "seoTitle": "🍾 Champagne Emoji Meaning",
+  "seoDescription": "Learn what the Champagne emoji 🍾 really means."
 }

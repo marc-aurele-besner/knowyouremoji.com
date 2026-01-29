@@ -2,51 +2,46 @@
   "unicode": "1F3D6",
   "slug": "beach",
   "character": "🏖️",
-  "name": "Beach with Umbrella",
+  "name": "Beach",
   "shortName": "beach",
   "category": "travel",
   "subcategory": "place-geographic",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A beach with umbrella.",
-  "tldr": "Vacation, summer, or relaxation.",
+  "baseMeaning": "Beach emoji.",
+  "tldr": "Beach!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Beach.",
-      "example": "Beach day 🏖️",
+      "meaning": "Represents Beach.",
+      "example": "Look at this 🏖️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Vacation mode.",
-      "example": "Beach vibes 🏖️",
+      "meaning": "Vacation or relaxation.",
+      "example": "Feeling 🏖️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🏖️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "On vacation.",
-      "example": "OOO 🏖️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Summer body.",
-      "example": "Beach ready 🏖️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🏖️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Beach content." },
-    { "platform": "TWITTER", "note": "Vacation posts." },
-    { "platform": "TIKTOK", "note": "Summer content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Beach aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Vacation goals." },
-    { "generation": "BOOMER", "note": "Beach vacation." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏖️ Beach Emoji Meaning - What Does 🏖️ Really Mean?",
-  "seoDescription": "Learn what the beach emoji 🏖️ really means. Vacation or summer vibes. Complete context guide."
+  "seoTitle": "🏖️ Beach Emoji Meaning",
+  "seoDescription": "Learn what the Beach emoji 🏖️ really means."
 }

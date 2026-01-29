@@ -1,47 +1,52 @@
 {
-  "unicode": "2705",
+  "unicode": "2714",
   "slug": "check-mark",
-  "character": "✅",
-  "name": "Check Mark Button",
+  "character": "✔️",
+  "name": "Check Mark",
   "shortName": "check",
   "category": "symbols",
   "subcategory": "other-symbol",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "A green check mark in a box.",
-  "tldr": "Done, approved, or task complete.",
+  "unicodeVersion": "1.1",
+  "baseMeaning": "Check mark indicating completion.",
+  "tldr": "Done! Completed or approved.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Completed or approved.",
-      "example": "Task done ✅",
+      "meaning": "Represents completion or approval.",
+      "example": "Task complete ✔️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Facts or true.",
-      "example": "That's facts ✅",
+      "meaning": "Confirmed or agreed.",
+      "example": "We're set ✔️",
       "riskLevel": "LOW"
     },
-    { "context": "WORK", "meaning": "Task complete.", "example": "Shipped ✅", "riskLevel": "LOW" },
     {
       "context": "IRONIC",
-      "meaning": "Checking off life goals.",
-      "example": "Adulting ✅",
+      "meaning": "Sarcastic confirmation.",
+      "example": "Sure, that happened ✔️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Task completed or approved.",
+      "example": "Done ✔️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Task completion." },
-    { "platform": "TWITTER", "note": "Agreement or facts." },
-    { "platform": "WHATSAPP", "note": "Confirmation." }
+    { "platform": "TWITTER", "note": "Confirmation and completion." },
+    { "platform": "INSTAGRAM", "note": "Checklist content." },
+    { "platform": "SLACK", "note": "Common for task completion." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Facts check." },
-    { "generation": "MILLENNIAL", "note": "To-do lists." },
-    { "generation": "BOOMER", "note": "Approved." }
+    { "generation": "GEN_Z", "note": "Quick confirmation." },
+    { "generation": "MILLENNIAL", "note": "Standard check mark." },
+    { "generation": "BOOMER", "note": "Approval symbol." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✅ Check Mark Emoji Meaning - What Does ✅ Really Mean?",
-  "seoDescription": "Learn what the check mark emoji ✅ really means. Done or approved vibes. Complete context guide."
+  "seoTitle": "✔️ Check Mark Emoji Meaning",
+  "seoDescription": "Learn what the Check Mark emoji ✔️ really means."
 }

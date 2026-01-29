@@ -7,36 +7,46 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A human leg.",
-  "tldr": "Leg day, running, or breaking a leg.",
+  "baseMeaning": "Human leg.",
+  "tldr": "Leg! Walking, running, or leg day.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A leg.", "example": "Leg day 🦵", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Leg workout.",
-      "example": "Never skip 🦵 day",
+      "context": "LITERAL",
+      "meaning": "Represents a leg.",
+      "example": "Leg day 🦵",
       "riskLevel": "LOW"
     },
-    { "context": "WORK", "meaning": "Break a leg.", "example": "Good luck 🦵", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Fitness or running content.",
+      "example": "Never skip leg day 🦵",
+      "riskLevel": "LOW"
+    },
     {
       "context": "IRONIC",
-      "meaning": "Running away.",
-      "example": "Time to run 🦵",
+      "meaning": "Leg related humor.",
+      "example": "My legs after stairs 🦵",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Fitness context.",
+      "example": "Gym schedule 🦵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Fitness content." },
-    { "platform": "TWITTER", "note": "Leg day memes." },
-    { "platform": "TIKTOK", "note": "Workout content." }
+    { "platform": "TWITTER", "note": "Fitness content." },
+    { "platform": "INSTAGRAM", "note": "Workout posts." },
+    { "platform": "TIKTOK", "note": "Gym content." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Leg day memes." },
-    { "generation": "MILLENNIAL", "note": "Never skip leg day." },
-    { "generation": "BOOMER", "note": "Body part." }
+    { "generation": "MILLENNIAL", "note": "Fitness talk." },
+    { "generation": "BOOMER", "note": "A leg." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦵 Leg Emoji Meaning - What Does 🦵 Really Mean?",
-  "seoDescription": "Learn what the leg emoji 🦵 really means. Leg day or running vibes. Complete context guide."
+  "seoTitle": "🦵 Leg Emoji Meaning",
+  "seoDescription": "Learn what the Leg emoji 🦵 really means."
 }

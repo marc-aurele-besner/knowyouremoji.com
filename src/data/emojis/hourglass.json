@@ -4,49 +4,44 @@
   "character": "⌛",
   "name": "Hourglass Done",
   "shortName": "hourglass",
-  "category": "objects",
+  "category": "travel",
   "subcategory": "time",
   "unicodeVersion": "1.1",
-  "baseMeaning": "An hourglass with sand at bottom.",
-  "tldr": "Time's up, waiting, or patience.",
+  "baseMeaning": "Hourglass Done emoji.",
+  "tldr": "Done!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Hourglass.",
-      "example": "Time has passed ⌛",
+      "meaning": "Represents Hourglass Done.",
+      "example": "Look at this ⌛",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Hourglass figure.",
-      "example": "Body goals ⌛",
+      "meaning": "Time up or waiting.",
+      "example": "Feeling ⌛",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⌛", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Time expired.",
-      "example": "Deadline passed ⌛",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Still waiting.",
-      "example": "How long ⌛",
+      "meaning": "Work context.",
+      "example": "Work vibes ⌛",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Time posts." },
-    { "platform": "INSTAGRAM", "note": "Body positivity." },
-    { "platform": "SLACK", "note": "Waiting." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Body reference." },
-    { "generation": "MILLENNIAL", "note": "Time passing." },
-    { "generation": "BOOMER", "note": "Patience." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⌛ Hourglass Emoji Meaning - What Does ⌛ Really Mean?",
-  "seoDescription": "Learn what the hourglass emoji ⌛ really means. Time or figure vibes. Complete context guide."
+  "seoTitle": "⌛ Hourglass Done Emoji Meaning",
+  "seoDescription": "Learn what the Hourglass Done emoji ⌛ really means."
 }

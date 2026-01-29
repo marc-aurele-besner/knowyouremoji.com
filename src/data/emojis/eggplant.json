@@ -4,16 +4,16 @@
   "character": "🍆",
   "name": "Eggplant",
   "shortName": "eggplant",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-vegetable",
   "unicodeVersion": "6.0",
   "baseMeaning": "A purple eggplant.",
-  "tldr": "Suggestive phallic symbol - use with caution.",
+  "tldr": "You know what this means. The most suggestive emoji.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "An eggplant.",
-      "example": "Cooking eggplant 🍆",
+      "meaning": "Eggplant vegetable.",
+      "example": "Eggplant parmesan 🍆",
       "riskLevel": "LOW"
     },
     {
@@ -25,34 +25,35 @@
     {
       "context": "DATING",
       "meaning": "Sexual innuendo.",
-      "example": "You know what this means 🍆",
+      "example": "You up? 🍆",
       "riskLevel": "HIGH"
     },
     {
-      "context": "WORK",
-      "meaning": "Never use professionally.",
-      "example": "Don't use at work",
+      "context": "IRONIC",
+      "meaning": "Intentionally suggestive.",
+      "example": "Nice 🍆",
       "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Suggestive content." },
-    { "platform": "INSTAGRAM", "note": "Can get flagged." },
-    { "platform": "TIKTOK", "note": "Censored content." }
+    { "platform": "TWITTER", "note": "Heavily filtered on some platforms." },
+    { "platform": "INSTAGRAM", "note": "May be hidden in searches." },
+    { "platform": "TIKTOK", "note": "Often censored." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Knows the meaning." },
-    { "generation": "MILLENNIAL", "note": "Primary meaning." },
-    { "generation": "BOOMER", "note": "May not know hidden meaning." }
+    { "generation": "GEN_Z", "note": "Knows exactly what it means." },
+    { "generation": "MILLENNIAL", "note": "Classic sexting emoji." },
+    { "generation": "BOOMER", "note": "May think it's just a vegetable." }
   ],
   "warnings": [
     {
-      "title": "Sexual Innuendo",
-      "description": "Widely used as phallic symbol. Never use professionally.",
+      "type": "MISINTERPRETATION",
+      "title": "Sexual connotation",
+      "description": "Almost universally used as a phallic symbol.",
       "severity": "HIGH"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🍆 Eggplant Emoji Meaning - What Does 🍆 Really Mean?",
-  "seoDescription": "Learn what the eggplant emoji 🍆 really means. Common hidden meaning explained. Complete context guide."
+  "seoTitle": "🍆 Eggplant Emoji Meaning",
+  "seoDescription": "Learn what the eggplant emoji 🍆 really means."
 }

@@ -7,46 +7,64 @@
   "category": "objects",
   "subcategory": "music",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A pair of headphones.",
-  "tldr": "Listening to music, podcast, or do not disturb.",
+  "baseMeaning": "A pair of headphones for listening to audio.",
+  "tldr": "Vibing to music! Used for listening to music, podcasts, or being in the zone.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Headphones.",
-      "example": "Listening 🎧",
+      "meaning": "Listening to music or audio.",
+      "example": "New album on repeat 🎧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "In the zone.",
-      "example": "Focus mode 🎧",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Do not disturb.",
-      "example": "Deep work 🎧",
+      "meaning": "Being in the zone or focused.",
+      "example": "Do not disturb mode 🎧",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Can't hear you.",
-      "example": "Ignoring you 🎧",
+      "meaning": "Ignoring people or tuning out.",
+      "example": "When people start drama 🎧",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Focus time or listening to work audio.",
+      "example": "Deep work hours 🎧",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Music recommendations." },
-    { "platform": "SLACK", "note": "Focus time." },
-    { "platform": "DISCORD", "note": "Listening to." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for music recommendations and focus time."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in music and lifestyle posts."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Indicates focus time or listening to something."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "AirPods in." },
-    { "generation": "MILLENNIAL", "note": "Podcast time." },
-    { "generation": "BOOMER", "note": "Listening." }
+    {
+      "generation": "GEN_Z",
+      "note": "Essential for music culture and focus time."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Podcast and music streaming culture."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Listening to music or audio."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎧 Headphones Emoji Meaning - What Does 🎧 Really Mean?",
-  "seoDescription": "Learn what the headphones emoji 🎧 really means. Focus or music vibes. Complete context guide."
+  "seoDescription": "Learn what the headphones emoji 🎧 really means. Used for music, podcasts, or being in focus mode. Complete context guide."
 }

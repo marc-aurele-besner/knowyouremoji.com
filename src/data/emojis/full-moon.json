@@ -3,50 +3,45 @@
   "slug": "full-moon",
   "character": "🌕",
   "name": "Full Moon",
-  "shortName": "fullmoon",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "shortName": "full moon",
+  "category": "sky-weather",
+  "subcategory": "sky",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A full moon.",
-  "tldr": "Full moon, wild behavior, or werewolf vibes.",
+  "baseMeaning": "Full Moon emoji.",
+  "tldr": "Full Moon!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Full moon.",
-      "example": "Full moon tonight 🌕",
+      "meaning": "Represents Full Moon.",
+      "example": "Look at this 🌕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "People acting crazy.",
-      "example": "Must be a full moon 🌕",
+      "meaning": "Night or werewolf.",
+      "example": "Feeling 🌕",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🌕", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Romantic moon.",
-      "example": "Moonlit walk 🌕",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Werewolf jokes.",
-      "example": "Getting hairy 🌕",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🌕",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Night and moon content." },
-    { "platform": "TWITTER", "note": "Explaining behavior." },
-    { "platform": "TIKTOK", "note": "Astrology content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Astrology vibes." },
-    { "generation": "MILLENNIAL", "note": "Blaming the moon." },
-    { "generation": "BOOMER", "note": "Full moon superstitions." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌕 Full Moon Emoji Meaning - What Does 🌕 Really Mean?",
-  "seoDescription": "Learn what the full moon emoji 🌕 really means. Full moon or wild behavior vibes. Complete context guide."
+  "seoTitle": "🌕 Full Moon Emoji Meaning",
+  "seoDescription": "Learn what the Full Moon emoji 🌕 really means."
 }

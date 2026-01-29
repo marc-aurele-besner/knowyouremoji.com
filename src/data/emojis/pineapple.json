@@ -4,55 +4,56 @@
   "character": "🍍",
   "name": "Pineapple",
   "shortName": "pineapple",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-fruit",
   "unicodeVersion": "6.0",
   "baseMeaning": "A pineapple.",
-  "tldr": "Tropical, hospitality, or swinger symbol.",
+  "tldr": "Tropical! Pineapple or hospitality.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A pineapple.",
-      "example": "Tropical fruit 🍍",
+      "meaning": "Pineapple.",
+      "example": "Fresh pineapple 🍍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Hospitality symbol.",
-      "example": "Welcome 🍍",
+      "meaning": "Welcome or hospitality.",
+      "example": "You're welcome here 🍍",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Pineapple on pizza debate.",
+      "example": "Fight me 🍍🍕",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Can indicate swinging.",
-      "example": "Know what this means? 🍍",
+      "meaning": "Swinger symbol.",
+      "example": "Know what you're doing 🍍",
       "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Pizza topping debate.",
-      "example": "Pineapple on pizza 🍍",
-      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Tropical and decor." },
-    { "platform": "TWITTER", "note": "Pizza debates." },
-    { "platform": "TIKTOK", "note": "Tropical content." }
+    { "platform": "TWITTER", "note": "Tropical and debates." },
+    { "platform": "INSTAGRAM", "note": "Summer aesthetic." },
+    { "platform": "TIKTOK", "note": "Food debates." }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Pizza debates." },
-    { "generation": "MILLENNIAL", "note": "Home decor trend." },
-    { "generation": "BOOMER", "note": "Hospitality symbol." }
+    { "generation": "MILLENNIAL", "note": "Tropical vibes." },
+    { "generation": "BOOMER", "note": "Tropical fruit." }
   ],
   "warnings": [
     {
-      "title": "Hidden Meaning",
-      "description": "Can indicate swinger lifestyle in certain contexts.",
-      "severity": "LOW"
+      "type": "MISINTERPRETATION",
+      "title": "Hidden meaning",
+      "description": "Can have adult connotations.",
+      "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🍍 Pineapple Emoji Meaning - What Does 🍍 Really Mean?",
-  "seoDescription": "Learn what the pineapple emoji 🍍 really means. Tropical or hospitality vibes. Complete context guide."
+  "seoTitle": "🍍 Pineapple Emoji Meaning",
+  "seoDescription": "Learn what the pineapple emoji 🍍 really means."
 }

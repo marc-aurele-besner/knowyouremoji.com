@@ -3,50 +3,45 @@
   "slug": "cocktail",
   "character": "🍸",
   "name": "Cocktail Glass",
-  "shortName": "cocktail",
-  "category": "food",
+  "shortName": "martini",
+  "category": "food-drink",
   "subcategory": "drink",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A martini or cocktail glass.",
-  "tldr": "Cocktails, fancy drinks, or girls' night.",
+  "baseMeaning": "Cocktail Glass emoji.",
+  "tldr": "Cocktail!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A cocktail.",
-      "example": "Cocktail hour 🍸",
+      "meaning": "Represents Cocktail Glass.",
+      "example": "Look at this 🍸",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fancy drinks.",
-      "example": "Feeling fancy 🍸",
+      "meaning": "Fancy or party.",
+      "example": "Feeling 🍸",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍸", "riskLevel": "LOW" },
     {
-      "context": "DATING",
-      "meaning": "Fancy date.",
-      "example": "Date night 🍸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Day drinking.",
-      "example": "It's 5 somewhere 🍸",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Cocktail content." },
-    { "platform": "TWITTER", "note": "Drinking culture." },
-    { "platform": "TIKTOK", "note": "Cocktail recipes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Aesthetic drinks." },
-    { "generation": "MILLENNIAL", "note": "Mixology culture." },
-    { "generation": "BOOMER", "note": "Martini." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍸 Cocktail Emoji Meaning - What Does 🍸 Really Mean?",
-  "seoDescription": "Learn what the cocktail emoji 🍸 really means. Fancy drinks or date night vibes. Complete context guide."
+  "seoTitle": "🍸 Cocktail Glass Emoji Meaning",
+  "seoDescription": "Learn what the Cocktail Glass emoji 🍸 really means."
 }

@@ -7,46 +7,41 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A basketball.",
-  "tldr": "Basketball, hoops, or game time.",
+  "baseMeaning": "Basketball emoji.",
+  "tldr": "Basketball!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Basketball.",
-      "example": "Shooting hoops 🏀",
+      "meaning": "Represents Basketball.",
+      "example": "Look at this 🏀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Ballin.",
-      "example": "Ball is life 🏀",
+      "meaning": "Hoops or sports.",
+      "example": "Feeling 🏀",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🏀", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Team activity.",
-      "example": "Work league 🏀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "NBA drama.",
-      "example": "Trade rumors 🏀",
+      "meaning": "Work context.",
+      "example": "Work vibes 🏀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "NBA content." },
-    { "platform": "INSTAGRAM", "note": "Hoops culture." },
-    { "platform": "TIKTOK", "note": "Basketball clips." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "NBA Twitter." },
-    { "generation": "MILLENNIAL", "note": "Jordan era." },
-    { "generation": "BOOMER", "note": "Classic NBA." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏀 Basketball Emoji Meaning - What Does 🏀 Really Mean?",
-  "seoDescription": "Learn what the basketball emoji 🏀 really means. Sports or ballin vibes. Complete context guide."
+  "seoTitle": "🏀 Basketball Emoji Meaning",
+  "seoDescription": "Learn what the Basketball emoji 🏀 really means."
 }

@@ -7,41 +7,46 @@
   "category": "animals",
   "subcategory": "animal-mammal",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A llama, the South American camelid.",
-  "tldr": "Drama llama, no drama, or Peruvian vibes. Save the drama for your llama.",
+  "baseMeaning": "A llama.",
+  "tldr": "Llama! Drama or no drama.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "A llama.", "example": "Peru trip 🦙", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Represents a llama.",
+      "example": "Cute llama 🦙",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Drama llama.",
-      "example": "Here comes the drama 🦙",
+      "meaning": "Save the drama for your llama.",
+      "example": "No drama llama 🦙",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "No drama llama.",
-      "example": "Keeping it chill 🦙",
+      "meaning": "Avoiding drama.",
+      "example": "Not my drama 🦙",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Avoiding workplace drama.",
-      "example": "Not my drama 🦙",
+      "meaning": "Staying out of office drama.",
+      "example": "Drama-free zone 🦙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Travel and drama memes." },
-    { "platform": "TIKTOK", "note": "Drama content." },
-    { "platform": "SLACK", "note": "No drama at work." }
+    { "platform": "TWITTER", "note": "No drama llama." },
+    { "platform": "INSTAGRAM", "note": "Cute animal." },
+    { "platform": "TIKTOK", "note": "Llama content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Drama llama memes." },
-    { "generation": "MILLENNIAL", "note": "Save the drama." },
-    { "generation": "BOOMER", "note": "May not get the reference." }
+    { "generation": "GEN_Z", "note": "No drama llama." },
+    { "generation": "MILLENNIAL", "note": "Fortnite llama." },
+    { "generation": "BOOMER", "note": "Pack animal." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦙 Llama Emoji Meaning - What Does 🦙 Really Mean?",
-  "seoDescription": "Learn what the llama emoji 🦙 really means. Drama llama or no drama vibes. Complete context guide."
+  "seoTitle": "🦙 Llama Emoji Meaning",
+  "seoDescription": "Learn what the Llama emoji 🦙 really means."
 }

@@ -3,50 +3,45 @@
   "slug": "four-leaf-clover",
   "character": "🍀",
   "name": "Four Leaf Clover",
-  "shortName": "four-leaf-clover",
+  "shortName": "clover",
   "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A four-leaf clover.",
-  "tldr": "Luck, Ireland, or St. Patrick's Day.",
+  "baseMeaning": "Four Leaf Clover emoji.",
+  "tldr": "Lucky!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Four-leaf clover.",
-      "example": "Lucky find 🍀",
+      "meaning": "Represents Four Leaf Clover.",
+      "example": "Look at this 🍀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Good luck.",
-      "example": "Feeling lucky 🍀",
+      "meaning": "Good luck or Irish.",
+      "example": "Feeling 🍀",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍀", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Lucky break.",
-      "example": "Great opportunity 🍀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Need luck.",
-      "example": "Hope this works 🍀",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "St. Patrick's Day." },
-    { "platform": "INSTAGRAM", "note": "Lucky posts." },
-    { "platform": "WHATSAPP", "note": "Good luck wishes." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Lucky vibes." },
-    { "generation": "MILLENNIAL", "note": "St. Paddy's." },
-    { "generation": "BOOMER", "note": "Irish." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍀 Four Leaf Clover Emoji Meaning - What Does 🍀 Really Mean?",
-  "seoDescription": "Learn what the four leaf clover emoji 🍀 really means. Luck or Irish vibes. Complete context guide."
+  "seoTitle": "🍀 Four Leaf Clover Emoji Meaning",
+  "seoDescription": "Learn what the Four Leaf Clover emoji 🍀 really means."
 }

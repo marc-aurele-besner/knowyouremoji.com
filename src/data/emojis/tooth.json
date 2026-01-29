@@ -7,46 +7,46 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A human tooth.",
-  "tldr": "Dental work, tooth fairy, or sweet tooth.",
+  "baseMeaning": "Human tooth.",
+  "tldr": "Tooth! Dentist or tooth fairy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A tooth.",
-      "example": "Dentist visit 🦷",
+      "meaning": "Represents a tooth.",
+      "example": "Dentist appointment 🦷",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Sweet tooth.",
-      "example": "Craving sweets 🦷",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Smile talk.",
-      "example": "Great smile 🦷",
+      "meaning": "Tooth fairy or dental care.",
+      "example": "Lost a tooth 🦷",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Tooth fairy.",
-      "example": "Lost a tooth 🦷",
+      "meaning": "Painful dental experiences.",
+      "example": "Wisdom teeth 🦷",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Healthcare context.",
+      "example": "Dental benefits 🦷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Dental content." },
-    { "platform": "TWITTER", "note": "Dental jokes." },
-    { "platform": "TIKTOK", "note": "Dental transformation content." }
+    { "platform": "TWITTER", "note": "Dental content." },
+    { "platform": "INSTAGRAM", "note": "Smile content." },
+    { "platform": "TIKTOK", "note": "Dentist experiences." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dental care." },
-    { "generation": "MILLENNIAL", "note": "Dental anxiety." },
-    { "generation": "BOOMER", "note": "Dental work." }
+    { "generation": "GEN_Z", "note": "Dental experiences." },
+    { "generation": "MILLENNIAL", "note": "Tooth fairy nostalgia." },
+    { "generation": "BOOMER", "note": "Dental care." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🦷 Tooth Emoji Meaning - What Does 🦷 Really Mean?",
-  "seoDescription": "Learn what the tooth emoji 🦷 really means. Dental or sweet tooth vibes. Complete context guide."
+  "seoTitle": "🦷 Tooth Emoji Meaning",
+  "seoDescription": "Learn what the Tooth emoji 🦷 really means."
 }

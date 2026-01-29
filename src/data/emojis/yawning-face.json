@@ -3,74 +3,75 @@
   "slug": "yawning-face",
   "character": "🥱",
   "name": "Yawning Face",
-  "shortName": "yawn",
-  "category": "faces",
+  "shortName": "yawning",
+  "category": "smileys-emotion",
   "subcategory": "face-sleepy",
   "unicodeVersion": "12.0",
-  "baseMeaning": "A face yawning with a hand covering the mouth.",
-  "tldr": "Tired, sleepy, bored, or something is uninteresting. The polite way to say 'boring.'",
+  "baseMeaning": "A face with closed eyes and an open mouth, yawning with a hand covering it.",
+  "tldr": "Sleepy, tired, or bored. Can also imply something is uninteresting.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Feeling tired or sleepy.",
-      "example": "So exhausted 🥱",
+      "meaning": "Actually feeling sleepy or ready for bed.",
+      "example": "Time for bed 🥱",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Expressing tiredness or exhaustion.",
+      "example": "Need coffee badly 🥱",
       "riskLevel": "LOW"
     },
     {
       "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Implying something is boring.",
-      "example": "Another meeting 🥱",
+      "meaning": "Showing disinterest or that something isn't impressive.",
+      "example": "Oh another hot take 🥱",
       "riskLevel": "MEDIUM"
     },
     {
-      "context": "SLANG",
-      "meaning": "Unimpressed or not interested.",
-      "example": "Heard that before 🥱",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastically dismissing something.",
-      "example": "Wow, so original 🥱",
+      "context": "WORK",
+      "meaning": "Indicating a boring meeting or tiredness at work.",
+      "example": "This meeting 🥱",
       "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Often used to dismiss hot takes or unoriginal content."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in 'I'm not impressed' reactions."
+      "note": "Often used to dismiss unimpressive takes or drama."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Can be dismissive in comments."
+      "note": "Used in late night or early morning posts."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Can indicate long meetings or tiredness at work."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Heavily used to indicate boredom or dismissal."
+      "note": "Frequently used to dismiss or show disinterest."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses for both tiredness and boredom."
+      "note": "Used for tiredness or subtle boredom."
     },
     {
       "generation": "BOOMER",
-      "note": "More likely to interpret as simply tired."
+      "note": "Usually interpreted literally as being sleepy."
     }
   ],
   "warnings": [
     {
-      "title": "Can Be Dismissive",
-      "description": "Often implies boredom rather than tiredness. Can seem rude.",
+      "type": "MISINTERPRETATION",
+      "title": "Can seem dismissive",
+      "description": "Using this in response to someone can come across as rude or dismissive.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
   "seoTitle": "🥱 Yawning Face Emoji Meaning - What Does 🥱 Really Mean?",
-  "seoDescription": "Learn what the yawning face emoji 🥱 really means in texting. Can mean tired OR bored/dismissive. Complete context guide."
+  "seoDescription": "Learn what the yawning face emoji 🥱 really means. Can mean tired, bored, or dismissive. Complete context guide."
 }

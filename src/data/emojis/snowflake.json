@@ -3,56 +3,45 @@
   "slug": "snowflake",
   "character": "❄️",
   "name": "Snowflake",
-  "shortName": "snowflake",
-  "category": "nature",
-  "subcategory": "sky-weather",
+  "shortName": "snow",
+  "category": "sky-weather",
+  "subcategory": "weather",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A snowflake.",
-  "tldr": "Winter, cold, or calling someone sensitive.",
+  "baseMeaning": "Snowflake emoji.",
+  "tldr": "Snow!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Snow or winter.",
-      "example": "Snow day ❄️",
+      "meaning": "Represents Snowflake.",
+      "example": "Look at this ❄️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Someone overly sensitive.",
-      "example": "Such a snowflake ❄️",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Cold person.",
-      "example": "Ice queen ❄️",
+      "meaning": "Cold or unique.",
+      "example": "Feeling ❄️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ❄️", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Freezing.",
-      "example": "It's cold ❄️",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes ❄️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Political usage." },
-    { "platform": "INSTAGRAM", "note": "Winter aesthetic." },
-    { "platform": "TIKTOK", "note": "Winter content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Winter vibes." },
-    { "generation": "MILLENNIAL", "note": "Political debate." },
-    { "generation": "BOOMER", "note": "Sensitive insult." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
-  "warnings": [
-    {
-      "title": "Political Usage",
-      "description": "Can be used to call someone overly sensitive in political debates.",
-      "severity": "MEDIUM"
-    }
-  ],
+  "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "❄️ Snowflake Emoji Meaning - What Does ❄️ Really Mean?",
-  "seoDescription": "Learn what the snowflake emoji ❄️ really means. Winter or sensitivity reference. Complete context guide."
+  "seoTitle": "❄️ Snowflake Emoji Meaning",
+  "seoDescription": "Learn what the Snowflake emoji ❄️ really means."
 }

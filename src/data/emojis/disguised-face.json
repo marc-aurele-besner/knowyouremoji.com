@@ -3,50 +3,68 @@
   "slug": "disguised-face",
   "character": "🥸",
   "name": "Disguised Face",
-  "shortName": "disguise",
-  "category": "faces",
+  "shortName": "disguised",
+  "category": "smileys-emotion",
   "subcategory": "face-glasses",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A face with glasses, fake nose, and mustache disguise.",
-  "tldr": "Incognito, hiding identity, or being sneaky. The 'it's definitely not me' face.",
+  "baseMeaning": "A face wearing glasses and a fake nose with mustache, like a disguise.",
+  "tldr": "Incognito mode! Used for hiding identity, being sneaky, or going undercover.",
   "contextMeanings": [
     {
+      "context": "LITERAL",
+      "meaning": "Being in disguise or trying to hide identity.",
+      "example": "Don't mind me 🥸",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "SLANG",
-      "meaning": "Going incognito or hiding.",
-      "example": "Lurking on their profile 🥸",
+      "meaning": "Being sneaky or trying not to be noticed.",
+      "example": "Stalking my ex's profile 🥸",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Obviously fake disguise.",
-      "example": "Totally not me 🥸",
+      "meaning": "Pretending to be undercover while being obvious.",
+      "example": "Me at the office party 🥸",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Anonymous or undercover.",
-      "example": "Checking out the competition 🥸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Stalking their socials.",
-      "example": "Me on their ex's page 🥸",
+      "meaning": "Working incognito or anonymously.",
+      "example": "Testing as a new user 🥸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Incognito mode and lurking." },
-    { "platform": "TIKTOK", "note": "Sneaky behavior and disguises." },
-    { "platform": "INSTAGRAM", "note": "Stalking profiles incognito." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for jokes about lurking or alt accounts."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common for finsta (fake Instagram) references."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Popular for alt account or anonymous activity jokes."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Social media lurking and incognito." },
-    { "generation": "MILLENNIAL", "note": "Going undercover." },
-    { "generation": "BOOMER", "note": "Disguise or anonymous." }
+    {
+      "generation": "GEN_Z",
+      "note": "Used for lurking, finsta, and incognito memes."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Common for spy/undercover jokes."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Classic Groucho Marx disguise reference."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥸 Disguised Face Emoji Meaning - What Does 🥸 Really Mean?",
-  "seoDescription": "Learn what the disguised face emoji 🥸 really means. Incognito or sneaky behavior. Complete context guide."
+  "seoDescription": "Learn what the disguised face emoji 🥸 really means. Used for going incognito, being sneaky, or undercover jokes. Complete context guide."
 }

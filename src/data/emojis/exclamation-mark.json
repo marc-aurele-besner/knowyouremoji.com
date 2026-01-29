@@ -5,38 +5,48 @@
   "name": "Exclamation Mark",
   "shortName": "exclamation",
   "category": "symbols",
-  "subcategory": "punctuation",
+  "subcategory": "other-symbol",
   "unicodeVersion": "5.2",
-  "baseMeaning": "A red exclamation mark.",
-  "tldr": "Important, urgent, or emphasis.",
+  "baseMeaning": "Red exclamation mark.",
+  "tldr": "Important! Emphasis or warning.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Important.", "example": "Urgent ❗", "riskLevel": "LOW" },
-    { "context": "SLANG", "meaning": "Pay attention.", "example": "Look ❗", "riskLevel": "LOW" },
     {
-      "context": "WORK",
-      "meaning": "Priority alert.",
-      "example": "High priority ❗",
+      "context": "LITERAL",
+      "meaning": "Represents importance or emphasis.",
+      "example": "Important news ❗",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatic emphasis.",
-      "example": "Breaking news ❗",
+      "context": "SLANG",
+      "meaning": "Pay attention or warning.",
+      "example": "Listen up ❗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Aggressive emphasis.",
+      "example": "I said no ❗",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Urgent or important matter.",
+      "example": "Deadline reminder ❗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "SLACK", "note": "Urgent messages." },
-    { "platform": "TWITTER", "note": "Emphasis." },
-    { "platform": "WHATSAPP", "note": "Important info." }
+    { "platform": "TWITTER", "note": "Emphasis and urgency." },
+    { "platform": "INSTAGRAM", "note": "Important announcements." },
+    { "platform": "SLACK", "note": "Urgent messages." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Emphasis and drama." },
-    { "generation": "MILLENNIAL", "note": "Urgency." },
-    { "generation": "BOOMER", "note": "Important." }
+    { "generation": "GEN_Z", "note": "Strong emphasis." },
+    { "generation": "MILLENNIAL", "note": "Important alert." },
+    { "generation": "BOOMER", "note": "Exclamation point." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "❗ Exclamation Mark Emoji Meaning - What Does ❗ Really Mean?",
-  "seoDescription": "Learn what the exclamation mark emoji ❗ really means. Important or urgent vibes. Complete context guide."
+  "seoTitle": "❗ Exclamation Mark Emoji Meaning",
+  "seoDescription": "Learn what the Exclamation Mark emoji ❗ really means."
 }

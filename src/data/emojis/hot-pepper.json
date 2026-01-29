@@ -4,11 +4,11 @@
   "character": "🌶️",
   "name": "Hot Pepper",
   "shortName": "pepper",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-vegetable",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A red hot pepper.",
-  "tldr": "Spicy, hot takes, or attractive person.",
+  "baseMeaning": "A red hot chili pepper.",
+  "tldr": "Spicy! Hot peppers or being hot.",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -18,35 +18,35 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Hot take or controversial.",
-      "example": "Hot take 🌶️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Someone is hot.",
+      "meaning": "Hot or attractive.",
       "example": "Looking 🌶️",
       "riskLevel": "LOW"
     },
     {
+      "context": "DATING",
+      "meaning": "Spicing things up.",
+      "example": "Getting spicy 🌶️",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "WORK",
-      "meaning": "Spicy content.",
-      "example": "Spicy update 🌶️",
+      "meaning": "Controversial or hot takes.",
+      "example": "Hot take 🌶️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Hot takes and spicy content." },
-    { "platform": "INSTAGRAM", "note": "Food and attractive content." },
-    { "platform": "TIKTOK", "note": "Spicy content." }
+    { "platform": "TWITTER", "note": "Spicy takes." },
+    { "platform": "INSTAGRAM", "note": "Attractive photos." },
+    { "platform": "TIKTOK", "note": "Hot content." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Spicy takes." },
-    { "generation": "MILLENNIAL", "note": "Hot takes." },
+    { "generation": "GEN_Z", "note": "Spicy and hot." },
+    { "generation": "MILLENNIAL", "note": "Attractive." },
     { "generation": "BOOMER", "note": "Spicy food." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌶️ Hot Pepper Emoji Meaning - What Does 🌶️ Really Mean?",
-  "seoDescription": "Learn what the hot pepper emoji 🌶️ really means. Spicy or hot vibes. Complete context guide."
+  "seoTitle": "🌶️ Hot Pepper Emoji Meaning",
+  "seoDescription": "Learn what the hot pepper emoji 🌶️ really means."
 }

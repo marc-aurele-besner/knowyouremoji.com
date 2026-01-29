@@ -3,68 +3,45 @@
   "slug": "musical-notes",
   "character": "🎶",
   "name": "Musical Notes",
-  "shortName": "music",
-  "category": "activities",
+  "shortName": "notes",
+  "category": "objects",
   "subcategory": "music",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Multiple musical notes indicating music or melody.",
-  "tldr": "Represents music, singing, good vibes, or something sounds-related.",
+  "baseMeaning": "Musical Notes emoji.",
+  "tldr": "Music!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Music, songs, or listening to music.",
-      "example": "New album drop! 🎶",
+      "meaning": "Represents Musical Notes.",
+      "example": "Look at this 🎶",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Good vibes, happiness, or something melodious.",
-      "example": "Friday feeling 🎶",
+      "meaning": "Singing or melody.",
+      "example": "Feeling 🎶",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎶", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Background music or mood setting.",
-      "example": "Work playlist on 🎶",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastically humming through problems.",
-      "example": "Everything's fine 🎶",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎶",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TIKTOK",
-      "note": "Heavily associated with the platform's music-driven content."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Used in concert and music-related posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common in music discussions and mood posts."
-    }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Associated with vibes, TikTok sounds, and good moods."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for music content and nostalgic songs."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for music references."
-    }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎶 Musical Notes Emoji Meaning - What Does 🎶 Really Mean?",
-  "seoDescription": "Learn what the musical notes emoji 🎶 really means in texting. Represents music, good vibes, or songs. Complete context guide."
+  "seoTitle": "🎶 Musical Notes Emoji Meaning",
+  "seoDescription": "Learn what the Musical Notes emoji 🎶 really means."
 }

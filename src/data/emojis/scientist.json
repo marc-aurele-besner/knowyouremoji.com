@@ -1,0 +1,52 @@
+{
+  "unicode": "1F9D1-200D-1F52C",
+  "slug": "scientist",
+  "character": "🧑‍🔬",
+  "name": "Scientist",
+  "shortName": "scientist",
+  "category": "people",
+  "subcategory": "person-role",
+  "unicodeVersion": "12.1",
+  "baseMeaning": "A scientist with equipment.",
+  "tldr": "Scientist! Science or research.",
+  "contextMeanings": [
+    {
+      "context": "LITERAL",
+      "meaning": "Represents a scientist.",
+      "example": "Science time 🧑‍🔬",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Experimenting or researching.",
+      "example": "Doing science 🧑‍🔬",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Questionable experiments.",
+      "example": "Cooking experiment 🧑‍🔬",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Research context.",
+      "example": "Lab team 🧑‍🔬",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Science content." },
+    { "platform": "INSTAGRAM", "note": "Science communication." },
+    { "platform": "TIKTOK", "note": "Science TikTok." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Science vibes." },
+    { "generation": "MILLENNIAL", "note": "Researcher." },
+    { "generation": "BOOMER", "note": "Scientist." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🧑‍🔬 Scientist Emoji Meaning",
+  "seoDescription": "Learn what the Scientist emoji 🧑‍🔬 really means."
+}

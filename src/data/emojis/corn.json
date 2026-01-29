@@ -4,11 +4,11 @@
   "character": "🌽",
   "name": "Ear of Corn",
   "shortName": "corn",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "food-vegetable",
   "unicodeVersion": "6.0",
   "baseMeaning": "An ear of corn.",
-  "tldr": "Corn, corny jokes, or Midwest vibes.",
+  "tldr": "Corn! Corn or being corny.",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -18,35 +18,35 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Corny or cheesy.",
-      "example": "That's so corny 🌽",
+      "meaning": "Being cheesy or corny.",
+      "example": "That's so 🌽",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Corn Kid meme.",
-      "example": "It's corn! 🌽",
+      "meaning": "Midwest vibes.",
+      "example": "Iowa energy 🌽",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Midwest America.",
-      "example": "Iowa vibes 🌽",
+      "meaning": "Agriculture.",
+      "example": "Harvest time 🌽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TIKTOK", "note": "Corn Kid viral." },
     { "platform": "TWITTER", "note": "Corny jokes." },
-    { "platform": "INSTAGRAM", "note": "Food content." }
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Corn song viral." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Corn Kid song." },
+    { "generation": "GEN_Z", "note": "Corn song meme." },
     { "generation": "MILLENNIAL", "note": "Corny jokes." },
-    { "generation": "BOOMER", "note": "Vegetable." }
+    { "generation": "BOOMER", "note": "Corn vegetable." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🌽 Corn Emoji Meaning - What Does 🌽 Really Mean?",
-  "seoDescription": "Learn what the corn emoji 🌽 really means. Corny or Corn Kid vibes. Complete context guide."
+  "seoTitle": "🌽 Corn Emoji Meaning",
+  "seoDescription": "Learn what the corn emoji 🌽 really means."
 }

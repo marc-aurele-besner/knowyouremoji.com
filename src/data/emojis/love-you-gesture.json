@@ -3,50 +3,68 @@
   "slug": "love-you-gesture",
   "character": "🤟",
   "name": "Love-You Gesture",
-  "shortName": "loveyou",
-  "category": "people",
+  "shortName": "love-you",
+  "category": "people-body",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A hand making the ILY sign (I Love You).",
-  "tldr": "I love you in ASL, rock on, or positive vibes.",
+  "baseMeaning": "American Sign Language gesture for 'I love you'.",
+  "tldr": "I love you! ASL sign combining I, L, and Y for love.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "I love you in sign language.",
-      "example": "Love you 🤟",
+      "meaning": "ASL sign for 'I love you'.",
+      "example": "Love you always 🤟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Rock on or positive vibes.",
-      "example": "Let's go 🤟",
+      "meaning": "Rock on or cool vibes (often confused with rock sign).",
+      "example": "Let's go! 🤟",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Love expression.",
-      "example": "Always 🤟",
+      "meaning": "Expressing love or affection.",
+      "example": "Miss you 🤟",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Rock concert vibes.",
-      "example": "Metal 🤟",
+      "meaning": "Casual love expression or hyping something up.",
+      "example": "This song 🤟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Love and positive posts." },
-    { "platform": "WHATSAPP", "note": "Love messages." },
-    { "platform": "TWITTER", "note": "Positive vibes." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used for love expressions and rock vibes."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Common for expressing love or enthusiasm."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Popular for family and relationship messages."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Love you gesture." },
-    { "generation": "MILLENNIAL", "note": "Rock on or ASL." },
-    { "generation": "BOOMER", "note": "Sign language ILY." }
+    {
+      "generation": "GEN_Z",
+      "note": "Often used interchangeably with rock sign."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Knows ASL meaning but also uses casually."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May know ASL meaning or confuse with rock sign."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤟 Love-You Gesture Emoji Meaning - What Does 🤟 Really Mean?",
-  "seoDescription": "Learn what the love-you gesture emoji 🤟 really means. I love you or rock on vibes. Complete context guide."
+  "seoDescription": "Learn what the love-you gesture emoji 🤟 really means. ASL sign for 'I love you' combining I, L, and Y. Complete context guide."
 }
