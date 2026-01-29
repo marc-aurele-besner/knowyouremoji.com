@@ -4,49 +4,44 @@
   "character": "🛹",
   "name": "Skateboard",
   "shortName": "skateboard",
-  "category": "activities",
-  "subcategory": "sport",
+  "category": "travel",
+  "subcategory": "transport-ground",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A skateboard.",
-  "tldr": "Skating, extreme sports, or cool alternative vibes.",
+  "baseMeaning": "Skateboard emoji.",
+  "tldr": "Skateboard!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Skateboarding.",
-      "example": "Skate session 🛹",
+      "meaning": "Represents Skateboard.",
+      "example": "Look at this 🛹",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Alternative lifestyle.",
-      "example": "Skater vibes 🛹",
+      "meaning": "Skating or cool.",
+      "example": "Feeling 🛹",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🛹", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Tony Hawk references.",
-      "example": "Is that Tony Hawk? 🛹",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Skater aesthetic.",
-      "example": "Skater boy energy 🛹",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🛹",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TIKTOK", "note": "Skate content." },
-    { "platform": "INSTAGRAM", "note": "Extreme sports." },
-    { "platform": "TWITTER", "note": "Skate culture." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Skater aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Tony Hawk nostalgia." },
-    { "generation": "BOOMER", "note": "Skateboarding." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🛹 Skateboard Emoji Meaning - What Does 🛹 Really Mean?",
-  "seoDescription": "Learn what the skateboard emoji 🛹 really means. Skater or alternative vibes. Complete context guide."
+  "seoTitle": "🛹 Skateboard Emoji Meaning",
+  "seoDescription": "Learn what the Skateboard emoji 🛹 really means."
 }

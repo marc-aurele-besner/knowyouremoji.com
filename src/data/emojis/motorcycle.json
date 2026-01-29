@@ -3,50 +3,45 @@
   "slug": "motorcycle",
   "character": "🏍️",
   "name": "Motorcycle",
-  "shortName": "motorcycle",
+  "shortName": "bike",
   "category": "travel",
   "subcategory": "transport-ground",
   "unicodeVersion": "7.0",
-  "baseMeaning": "A motorcycle.",
-  "tldr": "Freedom, speed, or rebel vibes.",
+  "baseMeaning": "Motorcycle emoji.",
+  "tldr": "Motorcycle!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Motorcycle.",
-      "example": "New bike 🏍️",
+      "meaning": "Represents Motorcycle.",
+      "example": "Look at this 🏍️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Freedom.",
-      "example": "Open road 🏍️",
+      "meaning": "Fast or biker.",
+      "example": "Feeling 🏍️",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🏍️", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Fast delivery.",
-      "example": "Quick trip 🏍️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Midlife crisis.",
-      "example": "New hobby 🏍️",
+      "meaning": "Work context.",
+      "example": "Work vibes 🏍️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Bike pics." },
-    { "platform": "TWITTER", "note": "Biker content." },
-    { "platform": "TIKTOK", "note": "Motorcycle videos." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Freedom." },
-    { "generation": "BOOMER", "note": "Harley era." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏍️ Motorcycle Emoji Meaning - What Does 🏍️ Really Mean?",
-  "seoDescription": "Learn what the motorcycle emoji 🏍️ really means. Freedom or speed vibes. Complete context guide."
+  "seoTitle": "🏍️ Motorcycle Emoji Meaning",
+  "seoDescription": "Learn what the Motorcycle emoji 🏍️ really means."
 }
