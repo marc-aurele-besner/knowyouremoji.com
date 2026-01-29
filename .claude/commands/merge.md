@@ -141,14 +141,10 @@ Default configuration (automatically detected or uses these defaults):
 
 9. **Perform the merge**
    - Choose merge strategy:
-     - **Squash and merge** (default, recommended for feature branches)
-     - **Merge commit** (preserves commit history)
+     - **Merge commit** (default, preserves commit history)
+     - **Squash and merge** (combines all commits into one)
      - **Rebase and merge** (linear history)
-   - Execute merge: `gh pr merge <pr-number> --repo <repo> --squash --delete-branch`
-   - For squash merge, ensure commit message is descriptive:
-     - Use PR title as commit message
-     - Include PR number: `#<pr-number>`
-     - Add co-authors if multiple contributors
+   - Execute merge: `gh pr merge <pr-number> --repo <repo> --merge --delete-branch`
    - Confirm merge was successful
 
 10. **Verify merge**
@@ -249,7 +245,7 @@ Default configuration (automatically detected or uses these defaults):
 - **100% test coverage**: Never merge if test coverage drops below 100%. This is a hard requirement.
 - **CI must pass**: All status checks must pass before merging. No exceptions unless explicitly approved by maintainer.
 - **Review requirements**: Follow repository's review policy. Some repos require 1-2 approvals before merge.
-- **Squash merge default**: Squashing keeps the main branch history clean. Use merge commits only for important milestones or when preserving detailed history matters.
+- **Merge commit default**: Regular merge commits preserve the full commit history for traceability. Use squash merge when you want to combine multiple commits into one.
 - **Delete branches**: Always delete feature branches after merge to keep repository clean. Use `--keep-branch` only for special cases (release branches, long-lived feature branches).
 - **Issue linking**: Always link PRs to issues using "Closes #N" or "Resolves #N" in PR description for automatic closure.
 - **Branch protection**: Respect branch protection rules. If you can't merge, it's likely due to protection rules (required reviews, status checks, etc.).
@@ -275,7 +271,7 @@ Default configuration (automatically detected or uses these defaults):
 # 2. Review code changes
 # 3. Check for conflicts
 # 4. Run local validation (optional)
-# 5. Merge with squash
+# 5. Merge with merge commit
 # 6. Close linked issue
 # 7. Clean up branches
 # 8. Provide summary
