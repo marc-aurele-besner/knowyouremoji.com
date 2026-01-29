@@ -4,6 +4,11 @@
   "outputDirectory": ".next",
   "installCommand": "bun install",
   "buildCommand": "bun run build",
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
   "headers": [
     {
       "source": "/:path*",
