@@ -4,73 +4,55 @@
   "character": "❄️",
   "name": "Snowflake",
   "shortName": "snowflake",
-  "category": "travel",
+  "category": "nature",
   "subcategory": "sky-weather",
   "unicodeVersion": "1.1",
-  "baseMeaning": "A detailed ice crystal snowflake.",
-  "tldr": "Represents winter, cold, or can be slang for someone overly sensitive.",
+  "baseMeaning": "A snowflake.",
+  "tldr": "Cold weather, winter, or calling someone overly sensitive.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referring to snow, winter, or cold weather.",
-      "example": "First snow of the season! ❄️",
+      "meaning": "Snow or cold.",
+      "example": "Snowing ❄️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Calling someone overly sensitive or easily offended.",
+      "meaning": "Overly sensitive person.",
       "example": "Such a snowflake ❄️",
-      "riskLevel": "HIGH"
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "DATING",
-      "meaning": "Flirty 'ice queen' or 'cool' vibes.",
-      "example": "Playing it cool ❄️",
+      "meaning": "Cold treatment.",
+      "example": "Getting the cold shoulder ❄️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Self-deprecating about being cold or distant.",
-      "example": "My heart ❄️",
+      "meaning": "Winter is coming.",
+      "example": "Brace yourself ❄️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Often used as an insult in political debates (calling someone a 'snowflake')."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for winter content and holiday posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in winter aesthetic content and calling out sensitivity."
-    }
+    { "platform": "TWITTER", "note": "Political insult or weather." },
+    { "platform": "INSTAGRAM", "note": "Winter content." },
+    { "platform": "TIKTOK", "note": "Seasonal content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Aware of both literal and 'sensitive person' meanings."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "May use ironically about themselves or weather."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Often uses as an insult for younger generations they see as sensitive."
-    }
+    { "generation": "GEN_Z", "note": "Winter or cold." },
+    { "generation": "MILLENNIAL", "note": "Can be derogatory." },
+    { "generation": "BOOMER", "note": "Often used as insult." }
   ],
   "warnings": [
     {
       "title": "Can Be Insulting",
-      "description": "Calling someone a 'snowflake' is often used as an insult implying they're too sensitive.",
+      "description": "Often used to call someone overly sensitive.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
   "seoTitle": "❄️ Snowflake Emoji Meaning - What Does ❄️ Really Mean?",
-  "seoDescription": "Learn what the snowflake emoji ❄️ really means in texting. Represents winter or can be slang for someone sensitive. Complete context guide."
+  "seoDescription": "Learn what the snowflake emoji ❄️ really means. Winter or sensitive person context. Complete context guide."
 }

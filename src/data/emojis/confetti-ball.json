@@ -7,64 +7,41 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A ball exploding with confetti for celebrations.",
-  "tldr": "Celebrations, parties, New Year, or festive occasions.",
+  "baseMeaning": "A confetti ball exploding.",
+  "tldr": "Big celebration, success, or party time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Celebrations and parties.",
-      "example": "Congratulations! 🎊",
+      "meaning": "Celebration.",
+      "example": "We did it 🎊",
       "riskLevel": "LOW"
     },
-    {
-      "context": "SLANG",
-      "meaning": "Big celebration or exciting news.",
-      "example": "We did it! 🎊",
-      "riskLevel": "LOW"
-    },
+    { "context": "SLANG", "meaning": "Big win.", "example": "Victory 🎊", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Team celebrations and milestones.",
-      "example": "Project launched! 🎊",
+      "meaning": "Project success.",
+      "example": "Shipped 🎊",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Celebrating relationship milestones.",
-      "example": "Happy anniversary! 🎊",
+      "context": "IRONIC",
+      "meaning": "Sarcastic celebration.",
+      "example": "Made it through Monday 🎊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "New Year's Eve and celebrations."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Team celebration announcements."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Party and celebration content."
-    }
+    { "platform": "SLACK", "note": "Team wins." },
+    { "platform": "TWITTER", "note": "Achievements." },
+    { "platform": "INSTAGRAM", "note": "Celebrations." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Celebration and hype."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Party and milestone celebrations."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Festive occasions."
-    }
+    { "generation": "GEN_Z", "note": "Big wins." },
+    { "generation": "MILLENNIAL", "note": "Achievements." },
+    { "generation": "BOOMER", "note": "Party celebration." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎊 Confetti Ball Emoji Meaning - What Does 🎊 Really Mean?",
-  "seoDescription": "Learn what the confetti ball emoji 🎊 really means in texting. Celebrations, parties, or festive occasions. Complete context guide."
+  "seoDescription": "Learn what the confetti ball emoji 🎊 really means. Celebration or success vibes. Complete context guide."
 }

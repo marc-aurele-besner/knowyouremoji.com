@@ -3,68 +3,50 @@
   "slug": "four-leaf-clover",
   "character": "🍀",
   "name": "Four Leaf Clover",
-  "shortName": "lucky",
-  "category": "animals",
+  "shortName": "clover",
+  "category": "nature",
   "subcategory": "plant-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A four-leaf clover, symbol of luck.",
-  "tldr": "Good luck, fortune, Irish culture, or wishing someone well.",
+  "baseMeaning": "A four-leaf clover.",
+  "tldr": "Good luck, Irish, or St. Patrick's Day.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Luck or good fortune.",
-      "example": "Good luck on your exam! 🍀",
+      "meaning": "Good luck charm.",
+      "example": "Good luck 🍀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Hoping for the best or feeling lucky.",
-      "example": "Feeling lucky today 🍀",
+      "meaning": "Wishing luck.",
+      "example": "You got this 🍀",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Wishing someone luck on a project.",
-      "example": "Good luck with the presentation! 🍀",
+      "meaning": "Before big events.",
+      "example": "Interview luck 🍀",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Feeling fortunate in love.",
-      "example": "Lucky to have you 🍀",
+      "context": "IRONIC",
+      "meaning": "St. Patrick's Day.",
+      "example": "Feeling lucky 🍀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Very popular on St. Patrick's Day."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Commonly sent for good luck wishes."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used for encouraging team members."
-    }
+    { "platform": "TWITTER", "note": "Luck and Irish content." },
+    { "platform": "INSTAGRAM", "note": "St. Patrick's Day." },
+    { "platform": "WHATSAPP", "note": "Good luck wishes." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Good luck and Irish aesthetic."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Luck and St. Patrick's Day."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Traditional good luck symbol."
-    }
+    { "generation": "GEN_Z", "note": "Good luck vibes." },
+    { "generation": "MILLENNIAL", "note": "Lucky charm." },
+    { "generation": "BOOMER", "note": "Irish symbol." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍀 Four Leaf Clover Emoji Meaning - What Does 🍀 Really Mean?",
-  "seoDescription": "Learn what the four leaf clover emoji 🍀 really means in texting. Good luck and fortune wishes. Complete context guide."
+  "seoDescription": "Learn what the four leaf clover emoji 🍀 really means. Good luck or Irish vibes. Complete context guide."
 }

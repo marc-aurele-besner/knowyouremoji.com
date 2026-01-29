@@ -8,63 +8,45 @@
   "subcategory": "event",
   "unicodeVersion": "6.0",
   "baseMeaning": "A red balloon on a string.",
-  "tldr": "Represents celebrations, parties, birthdays, or festive occasions.",
+  "tldr": "Celebration, birthday, or party time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Balloons, parties, or celebrations.",
-      "example": "Birthday party! 🎈",
+      "meaning": "A balloon.",
+      "example": "Party time 🎈",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Celebration or festive mood.",
-      "example": "Weekend vibes 🎈",
+      "meaning": "Celebration.",
+      "example": "Let's celebrate 🎈",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Team celebrations or milestones.",
-      "example": "Launch party! 🎈",
+      "context": "DATING",
+      "meaning": "Special occasion.",
+      "example": "Anniversary 🎈",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Forced cheerfulness or hollow celebrations.",
-      "example": "Another Monday 🎈",
+      "meaning": "Deflating situation.",
+      "example": "Well that deflated 🎈",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for birthday and celebration posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used in celebration tweets and party announcements."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for team celebrations and birthday wishes."
-    }
+    { "platform": "INSTAGRAM", "note": "Birthday and party content." },
+    { "platform": "TWITTER", "note": "Celebrations." },
+    { "platform": "WHATSAPP", "note": "Birthday wishes." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for celebrations and party content."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Associated with celebrations and nostalgia."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for parties and celebrations."
-    }
+    { "generation": "GEN_Z", "note": "Party vibes." },
+    { "generation": "MILLENNIAL", "note": "Celebrations." },
+    { "generation": "BOOMER", "note": "Party decoration." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎈 Balloon Emoji Meaning - What Does 🎈 Really Mean?",
-  "seoDescription": "Learn what the balloon emoji 🎈 really means in texting. Represents parties, celebrations, or festive occasions. Complete context guide."
+  "seoDescription": "Learn what the balloon emoji 🎈 really means. Party or celebration vibes. Complete context guide."
 }

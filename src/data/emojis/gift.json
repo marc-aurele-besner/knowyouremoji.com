@@ -7,64 +7,46 @@
   "category": "activities",
   "subcategory": "event",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A wrapped present with a bow on top.",
-  "tldr": "Represents gifts, surprises, celebrations, or something special being given.",
+  "baseMeaning": "A wrapped gift box with ribbon.",
+  "tldr": "Present, surprise, or giveaway.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Actual gifts or presents.",
-      "example": "Birthday presents! 🎁",
+      "meaning": "A gift.",
+      "example": "Happy birthday 🎁",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something special or a pleasant surprise.",
-      "example": "This person is a gift 🎁",
+      "meaning": "Surprise or treat.",
+      "example": "Surprise for you 🎁",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Recognition, rewards, or perks.",
-      "example": "End of year bonus 🎁",
+      "meaning": "Bonus or reward.",
+      "example": "End of year gift 🎁",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Romantic surprises or thoughtful gestures.",
-      "example": "Surprise date night 🎁",
+      "context": "IRONIC",
+      "meaning": "Sarcastic gift.",
+      "example": "What a gift 🎁",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for birthday and celebration posts."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Used in giveaway announcements and celebrations."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Common for team celebrations and recognition."
-    }
+    { "platform": "INSTAGRAM", "note": "Giveaways and celebrations." },
+    { "platform": "TWITTER", "note": "Giveaways and surprises." },
+    { "platform": "TIKTOK", "note": "Unboxing content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for celebrations and 'this is a gift' expressions."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common in celebration and appreciation contexts."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for gifts and celebrations."
-    }
+    { "generation": "GEN_Z", "note": "Giveaways." },
+    { "generation": "MILLENNIAL", "note": "Surprises." },
+    { "generation": "BOOMER", "note": "Gift giving." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎁 Gift Emoji Meaning - What Does 🎁 Really Mean?",
-  "seoDescription": "Learn what the gift emoji 🎁 really means in texting. Represents gifts, surprises, or celebrations. Complete context guide."
+  "seoDescription": "Learn what the gift emoji 🎁 really means. Present or surprise vibes. Complete context guide."
 }

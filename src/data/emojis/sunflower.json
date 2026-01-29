@@ -4,67 +4,49 @@
   "character": "🌻",
   "name": "Sunflower",
   "shortName": "sunflower",
-  "category": "animals",
+  "category": "nature",
   "subcategory": "plant-flower",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bright yellow sunflower.",
-  "tldr": "Happiness, sunshine, positivity, or summer vibes.",
+  "baseMeaning": "A yellow sunflower.",
+  "tldr": "Happiness, positivity, or summer vibes.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sunflowers or summer flowers.",
-      "example": "Sunflower field 🌻",
+      "meaning": "A sunflower.",
+      "example": "Sunflower fields 🌻",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Happiness, positivity, or bright energy.",
-      "example": "Spreading sunshine 🌻",
+      "meaning": "Happiness and positivity.",
+      "example": "Good vibes 🌻",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Someone who brightens your day.",
+      "meaning": "Bright personality.",
       "example": "You're my sunshine 🌻",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Positive energy or optimism.",
-      "example": "Staying positive 🌻",
+      "context": "IRONIC",
+      "meaning": "Forced positivity.",
+      "example": "Everything's fine 🌻",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for aesthetic and summer content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Positive vibes and happiness."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Summer content and feel-good videos."
-    }
+    { "platform": "INSTAGRAM", "note": "Happy and aesthetic content." },
+    { "platform": "TWITTER", "note": "Positivity posts." },
+    { "platform": "TIKTOK", "note": "Summer content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Positivity and aesthetic content."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Happiness and sunny disposition."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Flowers and gardening."
-    }
+    { "generation": "GEN_Z", "note": "Cottagecore aesthetic." },
+    { "generation": "MILLENNIAL", "note": "Positivity." },
+    { "generation": "BOOMER", "note": "Garden flower." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🌻 Sunflower Emoji Meaning - What Does 🌻 Really Mean?",
-  "seoDescription": "Learn what the sunflower emoji 🌻 really means in texting. Happiness, positivity, or sunshine vibes. Complete context guide."
+  "seoDescription": "Learn what the sunflower emoji 🌻 really means. Happiness or summer vibes. Complete context guide."
 }
