@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { siteMetadata } from '@/lib/metadata';
 import { VercelAnalytics } from '@/components/analytics/vercel-analytics';
+import { GoogleAnalytics } from '@/components/analytics/google-analytics';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
@@ -35,6 +36,7 @@ export default function RootLayout({
           </div>
         </ThemeProvider>
         <VercelAnalytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
