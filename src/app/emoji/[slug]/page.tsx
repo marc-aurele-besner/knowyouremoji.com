@@ -239,6 +239,7 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             name: emoji.name,
             unicode: emoji.unicode,
             shortcodes: [`:${emoji.shortName}:`],
+            slug: emoji.slug,
           }}
         />
 

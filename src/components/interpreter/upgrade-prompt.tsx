@@ -1,8 +1,10 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { useRateLimit } from '@/hooks/use-rate-limit';
+import { interpreterEvents } from '@/lib/analytics';
 
 export interface UpgradePromptProps {
   className?: string;
@@ -55,7 +57,16 @@ function formatTimeUntilReset(resetTime: Date): string {
  * ```
  */
 export function UpgradePrompt({ className }: UpgradePromptProps) {
-  const { remaining, resetTime } = useRateLimit();
+  const { remaining, maxUses, resetTime } = useRateLimit();
+  const hasTrackedRef = useRef(false);
+
+  // Track rate limit reached when component becomes visible
+  useEffect(() => {
+    if (remaining === 0 && !hasTrackedRef.current) {
+      interpreterEvents.rateLimitReached(maxUses);
+      hasTrackedRef.current = true;
+    }
+  }, [remaining, maxUses]);
 
   // Don't render if user still has remaining uses
   if (remaining > 0) {

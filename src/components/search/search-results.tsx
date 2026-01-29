@@ -6,7 +6,7 @@ import type { EmojiSummary } from '@/types/emoji';
 export interface SearchResultsProps {
   results: EmojiSummary[];
   selectedIndex: number;
-  onSelect: (emoji: EmojiSummary) => void;
+  onSelect: (emoji: EmojiSummary, index: number) => void;
   onHover: (index: number) => void;
 }
 
@@ -41,7 +41,7 @@ function SearchResults({ results, selectedIndex, onSelect, onHover }: SearchResu
           id={`search-result-${index}`}
           role="option"
           aria-selected={index === selectedIndex}
-          onClick={() => onSelect(emoji)}
+          onClick={() => onSelect(emoji, index)}
           onMouseEnter={() => onHover(index)}
           className={cn(
             'flex cursor-pointer items-center gap-3 px-3 py-2 text-sm',
