@@ -3,6 +3,7 @@
 import { useCallback, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useStreamingInterpret } from '@/hooks/use-streaming-interpret';
+import { interpreterEvents } from '@/lib/analytics';
 import type { InterpreterFormData } from './interpreter-form';
 import { InterpreterForm } from './interpreter-form';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
@@ -47,6 +48,9 @@ export function StreamingInterpreterForm({
 
   const handleSubmit = useCallback(
     async (data: InterpreterFormData) => {
+      // Track interpreter submission
+      interpreterEvents.submit(data.message.length, data.platform || 'OTHER');
+
       setShowResult(true);
       interpret({
         message: data.message,

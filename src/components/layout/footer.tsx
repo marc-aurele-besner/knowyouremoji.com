@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
+import { engagementEvents } from '@/lib/analytics';
 
 export type FooterProps = HTMLAttributes<HTMLElement>;
 
@@ -83,6 +84,12 @@ function Footer({ className, ...props }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-gray-400 hover:text-amber-600 transition-colors dark:text-gray-500 dark:hover:text-amber-400"
+            onClick={() =>
+              engagementEvents.externalLinkClick(
+                'https://github.com/marc-aurele-besner/knowyouremoji.com',
+                'Open Source on GitHub'
+              )
+            }
           >
             Open Source on GitHub
           </a>

@@ -9,6 +9,7 @@ import {
   SelectContent,
   SelectItem,
 } from '@/components/ui/select';
+import { interpreterEvents } from '@/lib/analytics';
 
 /**
  * Platform configuration with display name and icon
@@ -90,7 +91,10 @@ export function PlatformSelector({
             aria-checked={value === platform.value}
             data-selected={value === platform.value ? 'true' : undefined}
             disabled={disabled}
-            onClick={() => onChange(platform.value)}
+            onClick={() => {
+              interpreterEvents.platformSelect(platform.value);
+              onChange(platform.value);
+            }}
             className={cn(
               'inline-flex items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
               'min-h-[44px] min-w-[44px]',
@@ -117,7 +121,10 @@ export function PlatformSelector({
     <div className={className}>
       <Select
         value={value}
-        onValueChange={(val) => onChange(val as Platform | 'OTHER')}
+        onValueChange={(val) => {
+          interpreterEvents.platformSelect(val);
+          onChange(val as Platform | 'OTHER');
+        }}
         disabled={disabled}
       >
         <SelectTrigger aria-label="Select messaging platform">
