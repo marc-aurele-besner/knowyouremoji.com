@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import { captureError } from '@/lib/sentry';
 import { useEffect } from 'react';
 
 interface ErrorProps {
@@ -10,7 +11,7 @@ interface ErrorProps {
 
 export default function InterpreterError({ error, reset }: ErrorProps) {
   useEffect(() => {
-    console.error('Interpreter page error:', error);
+    captureError(error, { page: 'interpreter' });
   }, [error]);
 
   return (

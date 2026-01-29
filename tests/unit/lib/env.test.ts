@@ -87,6 +87,18 @@ describe('env configuration', () => {
       expect(env.sentryDsn).toBeUndefined();
     });
 
+    it('should return sentryDsnPublic when set', () => {
+      process.env.NEXT_PUBLIC_SENTRY_DSN = 'https://public@sentry.io/456';
+      const env = getEnv();
+      expect(env.sentryDsnPublic).toBe('https://public@sentry.io/456');
+    });
+
+    it('should return undefined sentryDsnPublic when not set', () => {
+      delete process.env.NEXT_PUBLIC_SENTRY_DSN;
+      const env = getEnv();
+      expect(env.sentryDsnPublic).toBeUndefined();
+    });
+
     it('should return vercelAnalyticsId when set', () => {
       process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID = 'analytics-123';
       const env = getEnv();
