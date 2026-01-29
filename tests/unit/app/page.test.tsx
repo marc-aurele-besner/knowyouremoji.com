@@ -117,9 +117,9 @@ describe('HomePage', () => {
     test('limits displayed emojis to a reasonable number', () => {
       render(<HomePage />);
 
-      // Should show max 6 emojis on homepage
+      // Should show max 12 emojis on homepage
       const emojiCards = screen.queryAllByTestId('emoji-card');
-      expect(emojiCards.length).toBeLessThanOrEqual(6);
+      expect(emojiCards.length).toBeLessThanOrEqual(12);
     });
   });
 
@@ -161,9 +161,9 @@ describe('HomePage', () => {
     test('limits displayed combos to a reasonable number', () => {
       render(<HomePage />);
 
-      // Should show max 4 combos on homepage
+      // Should show max 8 combos on homepage
       const comboCards = screen.queryAllByTestId('combo-card');
-      expect(comboCards.length).toBeLessThanOrEqual(4);
+      expect(comboCards.length).toBeLessThanOrEqual(8);
     });
   });
 

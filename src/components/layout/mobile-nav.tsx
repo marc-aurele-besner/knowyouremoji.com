@@ -31,16 +31,16 @@ function MobileNav({ isOpen, onClose }: MobileNavProps) {
       <div
         data-testid="mobile-nav-drawer"
         className={cn(
-          'fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-xl',
+          'fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-xl dark:bg-gray-900',
           'transform transition-transform duration-300 ease-in-out',
           'translate-x-0'
         )}
       >
-        <div className="flex h-16 items-center justify-between px-4 border-b">
+        <div className="flex h-16 items-center justify-between px-4 border-b dark:border-gray-800">
           <Link
             href="/"
             onClick={onClose}
-            className="flex items-center gap-2 text-xl font-bold text-gray-900"
+            className="flex items-center gap-2 text-xl font-bold text-gray-900 dark:text-white"
           >
             <span className="emoji-display">🤔</span>
             <span>KnowYourEmoji</span>
@@ -50,7 +50,7 @@ function MobileNav({ isOpen, onClose }: MobileNavProps) {
             type="button"
             aria-label="Close menu"
             onClick={onClose}
-            className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white"
           >
             <svg
               className="h-6 w-6"
@@ -72,7 +72,7 @@ function MobileNav({ isOpen, onClose }: MobileNavProps) {
                 <Link
                   href={link.href}
                   onClick={onClose}
-                  className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors py-2"
+                  className="block text-lg font-medium text-gray-900 hover:text-amber-600 transition-colors py-2 dark:text-white dark:hover:text-amber-400"
                 >
                   {link.label}
                 </Link>

@@ -21,31 +21,34 @@ function Footer({ className, ...props }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={cn('border-t bg-gray-50', className)} {...props}>
+    <footer
+      className={cn('border-t bg-gray-50 dark:bg-gray-900 dark:border-gray-800', className)}
+      {...props}
+    >
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="md:col-span-2">
             <Link
               href="/"
-              className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+              className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
             >
               <span className="emoji-display">🤔</span>
               <span>KnowYourEmoji</span>
             </Link>
-            <p className="mt-4 text-sm text-gray-600 max-w-xs">
+            <p className="mt-4 text-sm text-gray-600 max-w-xs dark:text-gray-400">
               Understand what emojis really mean in context. Decode social cues, platform
               differences, and generational nuances.
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Navigation</h3>
+            <h3 className="font-semibold text-gray-900 mb-4 dark:text-white">Navigation</h3>
             <ul className="space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-sm text-gray-600 hover:text-amber-600 transition-colors dark:text-gray-400 dark:hover:text-amber-400"
                   >
                     {link.label}
                   </Link>
@@ -55,13 +58,13 @@ function Footer({ className, ...props }: FooterProps) {
           </div>
 
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
+            <h3 className="font-semibold text-gray-900 mb-4 dark:text-white">Legal</h3>
             <ul className="space-y-3">
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-sm text-gray-600 hover:text-amber-600 transition-colors dark:text-gray-400 dark:hover:text-amber-400"
                   >
                     {link.label}
                   </Link>
@@ -71,8 +74,8 @@ function Footer({ className, ...props }: FooterProps) {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-sm text-gray-500 text-center">
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
+          <p className="text-sm text-gray-500 text-center dark:text-gray-400">
             © {currentYear} KnowYourEmoji. All rights reserved.
           </p>
         </div>

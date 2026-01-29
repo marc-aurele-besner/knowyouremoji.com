@@ -91,7 +91,8 @@ describe('Header', () => {
   it('shows mobile menu button only on small screens via class', () => {
     render(<Header />);
     const menuButton = screen.getByRole('button', { name: /toggle menu/i });
-    expect(menuButton).toHaveClass('md:hidden');
+    // The button is inside a wrapper div with md:hidden class
+    expect(menuButton.parentElement).toHaveClass('md:hidden');
   });
 
   it('closes mobile nav when onClose is called from MobileNav', () => {
