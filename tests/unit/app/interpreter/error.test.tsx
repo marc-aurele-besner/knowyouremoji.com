@@ -1,6 +1,12 @@
-import { describe, it, expect, afterEach, beforeEach, spyOn } from 'bun:test';
+import { describe, it, expect, afterEach, beforeEach, spyOn, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import InterpreterError from '@/app/interpreter/error';
+
+// Mock the sentry module
+const mockCaptureError = mock(() => undefined);
+mock.module('@/lib/sentry', () => ({
+  captureError: mockCaptureError,
+}));
 
 afterEach(() => {
   cleanup();
@@ -13,6 +19,7 @@ describe('InterpreterError', () => {
   beforeEach(() => {
     // Suppress console.error for cleaner test output
     spyOn(console, 'error').mockImplementation(() => {});
+    mockCaptureError.mockClear();
   });
 
   it('renders error heading', () => {
@@ -40,10 +47,9 @@ describe('InterpreterError', () => {
     expect(resetCalled).toBe(true);
   });
 
-  it('logs error to console', () => {
-    const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+  it('captures error with sentry', () => {
     render(<InterpreterError error={mockError} reset={mockReset} />);
-    expect(consoleSpy).toHaveBeenCalledWith('Interpreter page error:', mockError);
+    expect(mockCaptureError).toHaveBeenCalledWith(mockError, { page: 'interpreter' });
   });
 
   it('has container layout', () => {

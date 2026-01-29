@@ -17,8 +17,10 @@ export interface EnvConfig {
   openaiApiKey: string | undefined;
   /** Whether the interpreter feature is enabled */
   enableInterpreter: boolean;
-  /** Sentry DSN for error monitoring */
+  /** Sentry DSN for error monitoring (server-side) */
   sentryDsn: string | undefined;
+  /** Sentry DSN for error monitoring (client-side, public) */
+  sentryDsnPublic: string | undefined;
   /** Vercel Analytics ID */
   vercelAnalyticsId: string | undefined;
 }
@@ -34,6 +36,7 @@ export function getEnv(): EnvConfig {
     openaiApiKey: process.env.OPENAI_API_KEY,
     enableInterpreter: process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false',
     sentryDsn: process.env.SENTRY_DSN,
+    sentryDsnPublic: process.env.NEXT_PUBLIC_SENTRY_DSN,
     vercelAnalyticsId: process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID,
   };
 }
