@@ -254,5 +254,59 @@ describe('EmojiPage', () => {
       expect(jsonLd.headline).toBe('💀 Skull Emoji Meaning');
       expect(jsonLd.description).toBe("Usually means 'that's so funny I'm dead'");
     });
+
+    test('renders HIGH risk level context meanings', async () => {
+      const emojiWithHighRisk: Emoji = {
+        ...mockEmoji,
+        contextMeanings: [
+          {
+            context: 'RED_FLAG',
+            meaning: 'This can be a red flag.',
+            example: 'Example message 💀',
+            riskLevel: 'HIGH',
+          },
+          {
+            context: 'DATING',
+            meaning: 'Dating context meaning.',
+            example: 'Another example 💀',
+            riskLevel: 'MEDIUM',
+          },
+        ],
+      };
+      mockGetEmojiBySlug.mockImplementation(() => emojiWithHighRisk);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      // Check that context meanings render
+      expect(screen.getByText(/This can be a red flag/)).toBeInTheDocument();
+      expect(screen.getByText(/Dating context meaning/)).toBeInTheDocument();
+    });
+
+    test('renders HIGH severity warnings', async () => {
+      const emojiWithHighSeverity: Emoji = {
+        ...mockEmoji,
+        warnings: [
+          {
+            title: 'Critical Warning',
+            description: 'This is a high severity warning.',
+            severity: 'HIGH',
+          },
+          {
+            title: 'Medium Warning',
+            description: 'This is a medium severity warning.',
+            severity: 'MEDIUM',
+          },
+        ],
+      };
+      mockGetEmojiBySlug.mockImplementation(() => emojiWithHighSeverity);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      // Check that warnings render
+      expect(screen.getByText(/Critical Warning/)).toBeInTheDocument();
+      expect(screen.getByText(/Medium Warning/)).toBeInTheDocument();
+    });
   });
 });

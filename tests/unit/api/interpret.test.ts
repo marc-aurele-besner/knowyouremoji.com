@@ -296,4 +296,96 @@ describe('POST /api/interpret', () => {
       expect([200, 400, 503].includes(res.status)).toBe(true);
     });
   });
+
+  describe('mock responses', () => {
+    it('should return mock interpretation when interpreter is disabled', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      process.env.OPENAI_API_KEY = 'sk-test-key';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.id).toMatch(/^int_/);
+      expect(data.message).toBe('Hello there friend 😀 how are you today?');
+      expect(data.interpretation).toContain('placeholder');
+      expect(data.emojis).toBeDefined();
+      expect(data.metrics).toBeDefined();
+      expect(data.timestamp).toBeDefined();
+    });
+
+    it('should return mock interpretation when API key is missing', async () => {
+      delete process.env.OPENAI_API_KEY;
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      // Should return mock response (200) when OpenAI is not configured
+      expect(res.status).toBe(200);
+      expect(data.interpretation).toContain('placeholder');
+    });
+
+    it('should extract emojis correctly in mock response', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Multiple emojis 😀 here 🎉 and 👋',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(200);
+      expect(data.emojis.length).toBe(3);
+      expect(data.emojis.map((e: { character: string }) => e.character)).toContain('😀');
+      expect(data.emojis.map((e: { character: string }) => e.character)).toContain('🎉');
+      expect(data.emojis.map((e: { character: string }) => e.character)).toContain('👋');
+    });
+  });
+
+  describe('validation edge cases', () => {
+    it('should handle multiple validation errors', async () => {
+      const req = createRequest({
+        message: 'Hi', // Too short AND no emoji
+        platform: 'INVALID',
+        context: 'INVALID',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(400);
+      expect(data.fieldErrors).toBeDefined();
+    });
+
+    it('should return fieldErrors with field-specific error messages', async () => {
+      const req = createRequest({
+        message: 'short😀', // Has emoji but too short
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+      const data = await res.json();
+
+      expect(res.status).toBe(400);
+      expect(data.fieldErrors?.message).toBeDefined();
+      expect(data.fieldErrors?.message[0]).toContain('10 characters');
+    });
+  });
 });

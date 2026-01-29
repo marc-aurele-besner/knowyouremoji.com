@@ -416,7 +416,7 @@ export function validateAllEmojis(
 /**
  * Load all emoji JSON files from the data directory
  */
-function loadEmojisFromDirectory(dir: string): Emoji[] {
+export function loadEmojisFromDirectory(dir: string): Emoji[] {
   if (!fs.existsSync(dir)) {
     return [];
   }
@@ -441,7 +441,7 @@ function loadEmojisFromDirectory(dir: string): Emoji[] {
 /**
  * Load all combo slugs from the combos directory
  */
-function loadComboSlugs(dir: string): Set<string> {
+export function loadComboSlugs(dir: string): Set<string> {
   if (!fs.existsSync(dir)) {
     return new Set();
   }
@@ -468,7 +468,7 @@ function loadComboSlugs(dir: string): Set<string> {
 /**
  * Main function - runs validation when script is executed directly
  */
-async function main(): Promise<void> {
+export async function main(): Promise<void> {
   const emojisDir = path.join(process.cwd(), 'src', 'data', 'emojis');
   const combosDir = path.join(process.cwd(), 'src', 'data', 'combos');
 
@@ -500,23 +500,26 @@ async function main(): Promise<void> {
     for (const error of result.errors) {
       console.log(`  • ${error}`);
     }
-
-    if (result.warnings.length > 0) {
-      console.log('\nWarnings:');
-      for (const warning of result.warnings) {
-        console.log(`  ⚠️  ${warning}`);
-      }
-    }
-
     process.exit(1);
   }
 }
 
+/**
+ * Check if this module is being run directly
+ */
+export function isRunningDirectly(): boolean {
+  return import.meta.url === `file://${process.argv[1]}`;
+}
+
+/**
+ * Handle errors from running main
+ */
+export function handleMainError(error: unknown): void {
+  console.error('Validation script failed:', error);
+  process.exit(1);
+}
+
 // Run main function if this script is executed directly
-const isMainModule = import.meta.url === `file://${process.argv[1]}`;
-if (isMainModule) {
-  main().catch((error) => {
-    console.error('Validation script failed:', error);
-    process.exit(1);
-  });
+if (isRunningDirectly()) {
+  main().catch(handleMainError);
 }

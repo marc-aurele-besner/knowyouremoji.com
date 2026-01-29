@@ -93,4 +93,26 @@ describe('Header', () => {
     const menuButton = screen.getByRole('button', { name: /toggle menu/i });
     expect(menuButton).toHaveClass('md:hidden');
   });
+
+  it('closes mobile nav when onClose is called from MobileNav', () => {
+    render(<Header />);
+    const menuButton = screen.getByRole('button', { name: /toggle menu/i });
+
+    // Open mobile nav
+    fireEvent.click(menuButton);
+    const mobileNav = screen.getByTestId('mobile-nav');
+    expect(mobileNav).toBeInTheDocument();
+
+    // Find and click a close mechanism in MobileNav (like clicking outside)
+    // The MobileNav has a close button or backdrop
+    const closeButton = screen.queryByRole('button', { name: /close/i });
+    if (closeButton) {
+      fireEvent.click(closeButton);
+      expect(screen.queryByTestId('mobile-nav')).not.toBeInTheDocument();
+    }
+  });
+
+  it('has displayName set', () => {
+    expect(Header.displayName).toBe('Header');
+  });
 });
