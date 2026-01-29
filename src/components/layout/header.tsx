@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { HTMLAttributes, useState } from 'react';
 import { MobileNav } from './mobile-nav';
 import { ThemeSwitcher } from '@/components/theme/theme-switcher';
+import { SearchBar } from '@/components/search';
 
 export type HeaderProps = HTMLAttributes<HTMLElement>;
 
@@ -45,6 +46,7 @@ function Header({ className, ...props }: HeaderProps) {
                 {link.label}
               </Link>
             ))}
+            <SearchBar className="w-48 lg:w-64" />
             <ThemeSwitcher />
           </nav>
 

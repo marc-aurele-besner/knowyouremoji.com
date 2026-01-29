@@ -14,6 +14,7 @@ import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section';
 import { EmojiCombosSection } from '@/components/emoji/emoji-combos-section';
 import { CategoryLink } from '@/components/emoji/category-link';
+import { PlatformIcon } from '@/components/emoji/platform-icon';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -292,7 +293,10 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
               {emoji.platformNotes.map((note: PlatformNote, index: number) => (
                 <Card key={index}>
                   <CardHeader className="pb-2">
-                    <Badge variant="secondary">{getPlatformLabel(note.platform)}</Badge>
+                    <Badge variant="secondary" className="w-fit gap-1.5">
+                      <PlatformIcon platform={note.platform} className="w-3.5 h-3.5" />
+                      {getPlatformLabel(note.platform)}
+                    </Badge>
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-700 dark:text-gray-300">{note.note}</p>

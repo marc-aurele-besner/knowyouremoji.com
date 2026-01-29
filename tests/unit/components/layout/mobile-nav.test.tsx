@@ -2,6 +2,22 @@ import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { MobileNav } from '@/components/layout/mobile-nav';
 
+// Mock next/navigation for SearchBar
+mock.module('next/navigation', () => ({
+  useRouter: () => ({
+    push: mock(() => {}),
+    replace: mock(() => {}),
+    prefetch: mock(() => {}),
+  }),
+}));
+
+// Mock fetch for SearchBar
+global.fetch = mock(() =>
+  Promise.resolve({
+    json: () => Promise.resolve({ emojis: [] }),
+  })
+) as unknown as typeof fetch;
+
 afterEach(() => {
   cleanup();
 });
@@ -108,5 +124,11 @@ describe('MobileNav', () => {
     render(<MobileNav {...defaultProps} />);
     const logo = screen.getByRole('link', { name: /knowyouremoji/i });
     expect(logo).toHaveTextContent('🤔');
+  });
+
+  it('renders search bar in mobile navigation', () => {
+    render(<MobileNav {...defaultProps} />);
+    // Search bar should be present in mobile nav
+    expect(screen.getByRole('combobox')).toBeInTheDocument();
   });
 });
