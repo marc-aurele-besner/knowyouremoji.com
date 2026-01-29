@@ -61,11 +61,6 @@ export function createSiteMetadata(): Metadata {
     publisher: siteName,
     category: 'technology',
     manifest: '/site.webmanifest',
-    icons: {
-      icon: '/favicon.ico',
-      shortcut: '/favicon-16x16.png',
-      apple: '/apple-touch-icon.png',
-    },
     openGraph: {
       type: 'website',
       locale: 'en_US',
@@ -73,20 +68,11 @@ export function createSiteMetadata(): Metadata {
       siteName: siteName,
       title: defaultTitle,
       description: defaultDescription,
-      images: [
-        {
-          url: `${siteUrl}/og-image.png`,
-          width: 1200,
-          height: 630,
-          alt: defaultTitle,
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: defaultTitle,
       description: defaultDescription,
-      images: [`${siteUrl}/og-image.png`],
     },
     robots: {
       index: true,
