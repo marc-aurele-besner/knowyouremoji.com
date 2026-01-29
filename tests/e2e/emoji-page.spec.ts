@@ -15,8 +15,8 @@ test.describe('Emoji Page Flow', () => {
     test('should navigate to emoji page from homepage emoji card', async ({ page }) => {
       await page.goto('/');
       const firstEmojiCard = page.locator('[data-testid="emoji-card"]').first();
-      await firstEmojiCard.click();
-      await expect(page).toHaveURL(/\/emoji\/.+/);
+      await firstEmojiCard.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL(/\/emoji\/.+/), firstEmojiCard.click()]);
     });
   });
 
@@ -58,14 +58,16 @@ test.describe('Emoji Page Flow', () => {
 
     test('should navigate to home from breadcrumb', async ({ page }) => {
       await page.goto('/emoji/fire');
-      await page.click('nav[aria-label="Breadcrumb"] a:has-text("Home")');
-      await expect(page).toHaveURL('/');
+      const homeLink = page.locator('nav[aria-label="Breadcrumb"] a:has-text("Home")');
+      await homeLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/'), homeLink.click()]);
     });
 
     test('should navigate to emojis list from breadcrumb', async ({ page }) => {
       await page.goto('/emoji/fire');
-      await page.click('nav[aria-label="Breadcrumb"] a:has-text("Emojis")');
-      await expect(page).toHaveURL('/emoji');
+      const emojisLink = page.locator('nav[aria-label="Breadcrumb"] a:has-text("Emojis")');
+      await emojisLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/emoji'), emojisLink.click()]);
     });
   });
 
@@ -257,8 +259,8 @@ test.describe('Emoji Page Flow', () => {
       await page.goto('/emoji/fire');
       const relatedSection = page.locator('section[aria-labelledby="related-emojis-heading"]');
       const firstRelatedCard = relatedSection.locator('a[href^="/emoji/"]').first();
-      await firstRelatedCard.click();
-      await expect(page).toHaveURL(/\/emoji\/.+/);
+      await firstRelatedCard.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL(/\/emoji\/.+/), firstRelatedCard.click()]);
     });
   });
 

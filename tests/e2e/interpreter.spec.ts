@@ -18,8 +18,9 @@ test.describe('Interpreter Flow', () => {
 
     test('should navigate to interpreter from homepage CTA', async ({ page }) => {
       await page.goto('/');
-      await page.click('a:has-text("Interpret a Message")');
-      await expect(page).toHaveURL('/interpreter');
+      const interpreterLink = page.locator('a:has-text("Interpret a Message")');
+      await interpreterLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/interpreter'), interpreterLink.click()]);
     });
   });
 
@@ -45,8 +46,9 @@ test.describe('Interpreter Flow', () => {
 
     test('should navigate to home from breadcrumb', async ({ page }) => {
       await page.goto('/interpreter');
-      await page.click('nav[aria-label="Breadcrumb"] a:has-text("Home")');
-      await expect(page).toHaveURL('/');
+      const homeLink = page.locator('nav[aria-label="Breadcrumb"] a:has-text("Home")');
+      await homeLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/'), homeLink.click()]);
     });
   });
 
