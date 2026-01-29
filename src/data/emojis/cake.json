@@ -7,41 +7,46 @@
   "category": "food",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A slice of strawberry shortcake.",
-  "tldr": "Celebration, birthday adjacent, or sweet treat.",
+  "baseMeaning": "A slice of cake.",
+  "tldr": "Celebration, birthday, or cake is a lie.",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Cake.", "example": "Cake time 🍰", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "Cake.",
+      "example": "Cake time 🍰",
+      "riskLevel": "LOW"
+    },
     {
       "context": "SLANG",
-      "meaning": "Celebration dessert.",
-      "example": "Celebrate good times 🍰",
+      "meaning": "Celebration.",
+      "example": "Let's celebrate 🍰",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Sweet gesture.",
-      "example": "Brought you cake 🍰",
+      "meaning": "Anniversary.",
+      "example": "Cake day 🍰",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Office celebrations.",
-      "example": "Happy work anniversary 🍰",
+      "context": "IRONIC",
+      "meaning": "Cake is a lie.",
+      "example": "Portal reference 🍰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Dessert and celebration content." },
-    { "platform": "TWITTER", "note": "Celebration posts." },
-    { "platform": "SLACK", "note": "Team celebrations." }
+    { "platform": "TWITTER", "note": "Cake day." },
+    { "platform": "INSTAGRAM", "note": "Celebration." },
+    { "platform": "DISCORD", "note": "Birthday." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Dessert content." },
-    { "generation": "MILLENNIAL", "note": "Sweet celebrations." },
-    { "generation": "BOOMER", "note": "Classic dessert." }
+    { "generation": "GEN_Z", "note": "Cake day." },
+    { "generation": "MILLENNIAL", "note": "Portal meme." },
+    { "generation": "BOOMER", "note": "Birthday cake." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍰 Cake Emoji Meaning - What Does 🍰 Really Mean?",
-  "seoDescription": "Learn what the cake emoji 🍰 really means. Celebration or sweet treat vibes. Complete context guide."
+  "seoDescription": "Learn what the cake emoji 🍰 really means. Celebration or birthday vibes. Complete context guide."
 }

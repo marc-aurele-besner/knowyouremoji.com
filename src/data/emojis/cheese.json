@@ -7,46 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A wedge of cheese with holes.",
-  "tldr": "Cheesy, corny, or saying cheese for photos.",
+  "baseMeaning": "A wedge of cheese.",
+  "tldr": "Cheese, cheesy, or say cheese.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "Cheese.",
-      "example": "Cheese board 🧀",
+      "example": "Cheese platter 🧀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something cheesy or corny.",
-      "example": "That's so 🧀",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Say cheese for photos.",
-      "example": "Say 🧀!",
+      "meaning": "Cheesy or corny.",
+      "example": "That's cheesy 🧀",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Cheesy pickup lines.",
-      "example": "Cheesy but cute 🧀",
+      "meaning": "Cheesy pickup line.",
+      "example": "Cheese line 🧀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Say cheese.",
+      "example": "Photo time 🧀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Food and photo content." },
-    { "platform": "TIKTOK", "note": "Cheesy content." },
-    { "platform": "TWITTER", "note": "Corny jokes." }
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TWITTER", "note": "Cheesy jokes." },
+    { "platform": "TIKTOK", "note": "Recipe videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cheesy content." },
-    { "generation": "MILLENNIAL", "note": "Corny and cheesy." },
-    { "generation": "BOOMER", "note": "Say cheese." }
+    { "generation": "GEN_Z", "note": "Cheesy memes." },
+    { "generation": "MILLENNIAL", "note": "Cheese board." },
+    { "generation": "BOOMER", "note": "Cheese." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧀 Cheese Emoji Meaning - What Does 🧀 Really Mean?",
-  "seoDescription": "Learn what the cheese emoji 🧀 really means. Cheesy or corny vibes. Complete context guide."
+  "seoDescription": "Learn what the cheese emoji 🧀 really means. Cheesy or food vibes. Complete context guide."
 }

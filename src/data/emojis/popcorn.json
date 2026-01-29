@@ -7,46 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A red and white striped box of popcorn.",
-  "tldr": "Watching drama unfold, movie time, or this is getting good.",
+  "baseMeaning": "A box of popcorn.",
+  "tldr": "Movies, watching drama, or entertainment.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Popcorn.",
-      "example": "Movie night 🍿",
+      "meaning": "Popcorn snack.",
+      "example": "Movie time 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
       "meaning": "Watching drama unfold.",
-      "example": "This is getting good 🍿",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Enjoying others' drama.",
-      "example": "Reading the comments 🍿",
+      "example": "Got my popcorn 🍿",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Watching chaos unfold.",
-      "example": "Meeting drama 🍿",
+      "meaning": "Entertainment.",
+      "example": "This meeting 🍿",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Drama observer.",
+      "example": "Here for the show 🍿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     { "platform": "TWITTER", "note": "Drama watching." },
-    { "platform": "TIKTOK", "note": "Tea and drama." },
-    { "platform": "DISCORD", "note": "Drama in chat." }
+    { "platform": "INSTAGRAM", "note": "Movie night." },
+    { "platform": "DISCORD", "note": "Watch parties." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Drama watching." },
-    { "generation": "MILLENNIAL", "note": "Gets the popcorn." },
-    { "generation": "BOOMER", "note": "Movie snack." }
+    { "generation": "GEN_Z", "note": "Drama time." },
+    { "generation": "MILLENNIAL", "note": "Movie reference." },
+    { "generation": "BOOMER", "note": "Cinema snack." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍿 Popcorn Emoji Meaning - What Does 🍿 Really Mean?",
-  "seoDescription": "Learn what the popcorn emoji 🍿 really means. Watching drama unfold or movie time. Complete context guide."
+  "seoDescription": "Learn what the popcorn emoji 🍿 really means. Movies or drama watching vibes. Complete context guide."
 }

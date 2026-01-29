@@ -7,46 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A chicken egg.",
-  "tldr": "Fresh start, good egg (nice person), or egghead.",
+  "baseMeaning": "An egg.",
+  "tldr": "Breakfast, Easter, or egg on face.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "An egg.",
-      "example": "Eggs for breakfast 🥚",
+      "example": "Breakfast 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "A good person.",
-      "example": "They're a good egg 🥚",
+      "meaning": "New account.",
+      "example": "Egg profile 🥚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Easter event.",
+      "example": "Egg hunt 🥚",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Egghead or nerdy.",
-      "example": "Total egghead 🥚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Egg on face - embarrassed.",
-      "example": "That was awkward 🥚",
+      "meaning": "Egg on face.",
+      "example": "Embarrassing 🥚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Breakfast content." },
-    { "platform": "TWITTER", "note": "World record egg meme." },
-    { "platform": "TIKTOK", "note": "Food content." }
+    { "platform": "TWITTER", "note": "Default avatar." },
+    { "platform": "INSTAGRAM", "note": "Food content." },
+    { "platform": "TIKTOK", "note": "Recipe videos." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "World record egg." },
-    { "generation": "MILLENNIAL", "note": "Good egg idiom." },
-    { "generation": "BOOMER", "note": "Breakfast staple." }
+    { "generation": "GEN_Z", "note": "Egg account." },
+    { "generation": "MILLENNIAL", "note": "Twitter egg." },
+    { "generation": "BOOMER", "note": "Breakfast." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥚 Egg Emoji Meaning - What Does 🥚 Really Mean?",
-  "seoDescription": "Learn what the egg emoji 🥚 really means. Good egg or breakfast vibes. Complete context guide."
+  "seoDescription": "Learn what the egg emoji 🥚 really means. Breakfast or new account vibes. Complete context guide."
 }

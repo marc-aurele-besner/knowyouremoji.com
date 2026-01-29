@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A slice of pizza with pepperoni toppings.",
-  "tldr": "Universal symbol for pizza, casual dining, or treating yourself. Everyone understands pizza.",
+  "baseMeaning": "A slice of pizza.",
+  "tldr": "Pizza, comfort food, or Friday night.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referring to actual pizza or suggesting eating pizza.",
-      "example": "Pizza night? 🍕",
+      "meaning": "Pizza food.",
+      "example": "Pizza time 🍕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Treating yourself or having a casual good time.",
-      "example": "Friday vibes 🍕",
+      "meaning": "Comfort food.",
+      "example": "Pizza night 🍕",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Suggesting a casual team lunch or celebration.",
-      "example": "Project launch calls for pizza 🍕",
+      "meaning": "Pizza party.",
+      "example": "Team pizza 🍕",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Suggesting a casual, low-pressure date activity.",
-      "example": "Netflix and pizza? 🍕",
+      "context": "IRONIC",
+      "meaning": "That's not pizza.",
+      "example": "Pineapple pizza 🍕",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for food posts and casual hangout content."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Commonly used to organize team lunches or celebrations."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Featured in food content and relatable 'comfort food' posts."
-    }
+    { "platform": "TWITTER", "note": "Food content." },
+    { "platform": "INSTAGRAM", "note": "Food posts." },
+    { "platform": "TIKTOK", "note": "Recipe content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Universal comfort food emoji, used literally and for vibes."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Associated with casual gatherings and self-care."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for pizza-related content."
-    }
+    { "generation": "GEN_Z", "note": "Pizza rolls." },
+    { "generation": "MILLENNIAL", "note": "Friday pizza." },
+    { "generation": "BOOMER", "note": "Family dinner." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍕 Pizza Emoji Meaning - What Does 🍕 Really Mean?",
-  "seoDescription": "Learn what the pizza emoji 🍕 really means in texting. Universal symbol for casual dining and good vibes. Complete context guide."
+  "seoDescription": "Learn what the pizza emoji 🍕 really means. Comfort food or party vibes. Complete context guide."
 }

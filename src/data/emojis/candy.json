@@ -7,64 +7,46 @@
   "category": "food",
   "subcategory": "food-sweet",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A wrapped piece of candy.",
-  "tldr": "Candy, sweetness, Halloween, or eye candy.",
+  "baseMeaning": "A wrapped candy.",
+  "tldr": "Sweet, treat, or Halloween.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Candy or sweets.",
-      "example": "Halloween candy 🍬",
+      "meaning": "Candy.",
+      "example": "Sweet tooth 🍬",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Something or someone sweet.",
+      "meaning": "Something sweet.",
       "example": "Eye candy 🍬",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Sweet like candy or attractive.",
-      "example": "Sweet as candy 🍬",
+      "meaning": "Sweet person.",
+      "example": "You're sweet 🍬",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sugar rush or childlike excitement.",
-      "example": "Like a kid in a candy store 🍬",
+      "meaning": "Too sweet.",
+      "example": "Sweetness overload 🍬",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Halloween and sweet content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Sweetness and treats."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Candy reviews and sweet content."
-    }
+    { "platform": "INSTAGRAM", "note": "Sweet content." },
+    { "platform": "TWITTER", "note": "Halloween." },
+    { "platform": "TIKTOK", "note": "Candy reviews." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Sweetness and Halloween."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Eye candy and treats."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Candy and sweets."
-    }
+    { "generation": "GEN_Z", "note": "Candy aesthetics." },
+    { "generation": "MILLENNIAL", "note": "Halloween." },
+    { "generation": "BOOMER", "note": "Sweets." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍬 Candy Emoji Meaning - What Does 🍬 Really Mean?",
-  "seoDescription": "Learn what the candy emoji 🍬 really means in texting. Sweets, Halloween, or eye candy. Complete context guide."
+  "seoDescription": "Learn what the candy emoji 🍬 really means. Sweet or treat vibes. Complete context guide."
 }
