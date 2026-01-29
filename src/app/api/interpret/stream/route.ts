@@ -151,7 +151,7 @@ export async function POST(
       system: INTERPRETATION_SYSTEM_PROMPT,
       prompt: userPrompt,
       temperature: 0.7,
-      maxTokens: 1000,
+      maxOutputTokens: 1000,
     });
 
     // Return the streaming response with appropriate headers

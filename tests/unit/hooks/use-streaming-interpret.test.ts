@@ -41,7 +41,8 @@ describe('useStreamingInterpret', () => {
 
       // Mock fetch to never resolve during test
       const originalFetch = globalThis.fetch;
-      globalThis.fetch = mock(() => new Promise(() => {}));
+      const mockFetch = mock(() => new Promise(() => {})) as unknown as typeof fetch;
+      globalThis.fetch = mockFetch;
 
       act(() => {
         result.current.interpret({
