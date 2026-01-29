@@ -107,8 +107,11 @@ describe('About Page', () => {
         const el = element as { type?: unknown; props?: { children?: unknown; href?: string } };
         let content = '';
         if (typeof el.type === 'string') content += el.type + ' ';
-        if (typeof el.type === 'function' && (el.type as { displayName?: string }).displayName)
-          content += (el.type as { displayName: string }).displayName + ' ';
+        if (
+          typeof el.type === 'function' &&
+          (el.type as unknown as { displayName?: string }).displayName
+        )
+          content += (el.type as unknown as { displayName: string }).displayName + ' ';
         if (el.props?.href) content += el.props.href + ' ';
         if (el.props?.children) content += extractContent(el.props.children);
         return content;
