@@ -1,9 +1,11 @@
 'use client';
 
-import { useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Input } from '@/components/ui/input';
 import { useEmojiSearch } from '@/hooks/use-emoji-search';
+import { errorEvents } from '@/lib/analytics';
 import type { EmojiSummary } from '@/types/emoji';
 
 export interface NotFoundSearchProps {
@@ -16,6 +18,13 @@ export interface NotFoundSearchProps {
  * Allows users to search for emojis when they land on a non-existent page
  */
 export function NotFoundSearch({ emojis }: NotFoundSearchProps) {
+  const pathname = usePathname();
+
+  // Track 404 page view on mount
+  useEffect(() => {
+    errorEvents.pageNotFound(pathname || '/unknown');
+  }, [pathname]);
+
   const {
     results: filteredEmojis,
     query: searchQuery,

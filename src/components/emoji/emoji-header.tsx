@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { emojiEvents } from '@/lib/analytics';
 
 /**
  * Props for the EmojiHeader component
@@ -17,6 +18,8 @@ export interface EmojiHeaderProps {
     unicode: string;
     /** Shortcodes (e.g., [":grinning:", ":grinning_face:"]) */
     shortcodes: string[];
+    /** URL-friendly identifier for analytics tracking */
+    slug?: string;
   };
   /** Additional CSS class names */
   className?: string;
@@ -45,12 +48,18 @@ export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
     try {
       await navigator.clipboard.writeText(emoji.character);
       setCopied(true);
+
+      // Track emoji copy event
+      if (emoji.slug) {
+        emojiEvents.copy(emoji.character, emoji.slug);
+      }
+
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Clipboard API not available, silently fail
       // Could add a fallback or error toast here
     }
-  }, [emoji.character]);
+  }, [emoji.character, emoji.slug]);
 
   // Format unicode with U+ prefix
   const formattedUnicode = emoji.unicode
