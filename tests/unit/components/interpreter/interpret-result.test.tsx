@@ -224,32 +224,55 @@ describe('InterpretResult', () => {
   });
 
   describe('emoji interaction', () => {
-    it('calls onEmojiClick when emoji is clicked', () => {
-      render(<InterpretResult result={mockResult} onEmojiClick={mockOnEmojiClick} />);
-      const emojiButton = screen.getByRole('button', { name: /👋/i });
-      fireEvent.click(emojiButton);
-      expect(mockOnEmojiClick).toHaveBeenCalledWith('👋');
-    });
-
-    it('makes emojis clickable when onEmojiClick provided', () => {
-      render(<InterpretResult result={mockResult} onEmojiClick={mockOnEmojiClick} />);
-      const emojiButtons = screen.getAllByRole('button', { name: /👋|😊/i });
-      expect(emojiButtons.length).toBeGreaterThan(0);
-    });
-
-    it('does not make emojis buttons when onEmojiClick not provided', () => {
+    it('renders emojis as links when they have slugs', () => {
       render(<InterpretResult result={mockResult} />);
-      const emojiSpans = screen.getAllByText(/👋|😊/);
-      emojiSpans.forEach((span) => {
-        expect(span.tagName).not.toBe('BUTTON');
-      });
+      const emojiLinks = screen.getAllByRole('link', { name: /👋|😊/i });
+      expect(emojiLinks.length).toBeGreaterThanOrEqual(2);
+    });
+
+    it('links emojis to their detail pages', () => {
+      render(<InterpretResult result={mockResult} />);
+      const emojiLink = screen.getByRole('link', { name: /View details for 👋/i });
+      expect(emojiLink).toHaveAttribute('href', '/emoji/waving-hand');
+    });
+
+    it('calls onEmojiLinkClick when emoji link is clicked', () => {
+      const mockOnEmojiLinkClick = mock(() => {});
+      render(<InterpretResult result={mockResult} onEmojiLinkClick={mockOnEmojiLinkClick} />);
+      const emojiLink = screen.getByRole('link', { name: /View details for 👋/i });
+      fireEvent.click(emojiLink);
+      expect(mockOnEmojiLinkClick).toHaveBeenCalledWith('👋', 'waving-hand');
+    });
+
+    it('calls onEmojiClick when emoji button is clicked (fallback for no slug)', () => {
+      const resultNoSlug: InterpretationResult = {
+        ...mockResult,
+        emojis: [{ character: '👍', meaning: 'Approval' }],
+      };
+      render(<InterpretResult result={resultNoSlug} onEmojiClick={mockOnEmojiClick} />);
+      const emojiButton = screen.getByRole('button', { name: /👍/i });
+      fireEvent.click(emojiButton);
+      expect(mockOnEmojiClick).toHaveBeenCalledWith('👍');
+    });
+
+    it('does not render emojis as buttons when they have slugs', () => {
+      render(<InterpretResult result={mockResult} />);
+      // Emojis with slugs should be links, not buttons
+      const emojiLinks = screen.getAllByRole('link', { name: /👋|😊/i });
+      expect(emojiLinks.length).toBeGreaterThanOrEqual(2);
     });
 
     it('shows link indicator when emoji has slug', () => {
-      render(<InterpretResult result={mockResult} onEmojiClick={mockOnEmojiClick} />);
+      render(<InterpretResult result={mockResult} />);
       // Should have cursor pointer or link indicator
-      const emojiButton = screen.getByRole('button', { name: /👋/i });
-      expect(emojiButton).toHaveClass('cursor-pointer');
+      const emojiLink = screen.getByRole('link', { name: /View details for 👋/i });
+      expect(emojiLink).toHaveClass('cursor-pointer');
+    });
+
+    it('renders "Learn more" links for emojis with slugs', () => {
+      render(<InterpretResult result={mockResult} />);
+      const learnMoreLinks = screen.getAllByText(/Learn more about this emoji/i);
+      expect(learnMoreLinks.length).toBe(2);
     });
   });
 
