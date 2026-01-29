@@ -178,6 +178,34 @@ scripts/
 - Premium subscription via Stripe
 - Content management interface
 
+## Deployment
+
+### Vercel Deployment
+
+The project is configured for deployment on Vercel with automatic builds and deployments.
+
+### Custom Domain Setup
+
+To configure the custom domain `knowyouremoji.com`:
+
+1. **Add domain in Vercel Dashboard**
+   - Go to your project's Settings → Domains
+   - Add `knowyouremoji.com` as the primary domain
+   - Add `www.knowyouremoji.com` as an alias (auto-redirects to apex)
+
+2. **Configure DNS at your registrar**
+   - For apex domain (`knowyouremoji.com`): Add an `A` record pointing to `76.76.21.21`
+   - For www subdomain: Add a `CNAME` record pointing to `cname.vercel-dns.com`
+
+3. **SSL Certificate**
+   - Vercel automatically provisions SSL certificates via Let's Encrypt
+   - HSTS is enabled in `vercel.json` for enhanced security
+
+4. **Verify Configuration**
+   - Both domains should resolve to your Vercel deployment
+   - `www.knowyouremoji.com` redirects to `knowyouremoji.com` (301)
+   - SSL should show as valid with HSTS enabled
+
 ## Testing Requirements
 
 **100% test coverage is mandatory.** CI blocks merges if coverage drops.
