@@ -115,63 +115,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Features
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Context-Aware Feature */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="text-2xl">🎯</span>
-                  Context-Aware
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Understand how emoji meaning changes based on context - whether it&apos;s work,
-                  dating, or casual chat.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Generational Differences Feature */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="text-2xl">👥</span>
-                  Generation Guide
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  See how different generations interpret the same emoji - from Gen Z to Boomers.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* AI Interpreter Feature */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="text-2xl">🤖</span>
-                  AI Interpret
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Use our AI-powered interpreter to decode emoji-filled messages and understand
-                  hidden meanings.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Popular Emojis Section */}
       <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -285,6 +228,63 @@ export default function HomePage() {
             <Button asChild variant="outline">
               <Link href="/combo">View All Combos</Link>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Features
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Context-Aware Feature */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="text-2xl">🎯</span>
+                  Context-Aware
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Understand how emoji meaning changes based on context - whether it&apos;s work,
+                  dating, or casual chat.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Generational Differences Feature */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="text-2xl">👥</span>
+                  Generation Guide
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">
+                  See how different generations interpret the same emoji - from Gen Z to Boomers.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* AI Interpreter Feature */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <span className="text-2xl">🤖</span>
+                  AI Interpret
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Use our AI-powered interpreter to decode emoji-filled messages and understand
+                  hidden meanings.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
