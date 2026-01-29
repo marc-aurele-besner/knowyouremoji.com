@@ -186,6 +186,97 @@ describe('UpgradePrompt', () => {
   });
 
   describe('countdown formatting', () => {
+    it('should format 1 hour and minutes correctly', () => {
+      mockUseRateLimit.mockImplementation(() => ({
+        remaining: 0,
+        used: 3,
+        maxUses: 3,
+        canUse: false,
+        isLimited: true,
+        resetTime: new Date(Date.now() + 1 * 60 * 60 * 1000 + 15 * 60 * 1000), // 1 hour and 15 minutes
+        recordUse: mock(() => 0),
+        reset: mock(() => {}),
+      }));
+
+      render(<UpgradePrompt />);
+
+      const countdown = screen.getByTestId('reset-countdown');
+      expect(countdown.textContent).toMatch(/1\s*hour.*and.*15\s*minutes?/i);
+    });
+
+    it('should format multiple hours and 1 minute correctly', () => {
+      mockUseRateLimit.mockImplementation(() => ({
+        remaining: 0,
+        used: 3,
+        maxUses: 3,
+        canUse: false,
+        isLimited: true,
+        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000 + 1 * 60 * 1000), // 2 hours and 1 minute
+        recordUse: mock(() => 0),
+        reset: mock(() => {}),
+      }));
+
+      render(<UpgradePrompt />);
+
+      const countdown = screen.getByTestId('reset-countdown');
+      expect(countdown.textContent).toMatch(/2\s*hours?.*and.*1\s*minute/i);
+    });
+
+    it('should format exact hours (no minutes) correctly', () => {
+      mockUseRateLimit.mockImplementation(() => ({
+        remaining: 0,
+        used: 3,
+        maxUses: 3,
+        canUse: false,
+        isLimited: true,
+        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000), // exactly 2 hours
+        recordUse: mock(() => 0),
+        reset: mock(() => {}),
+      }));
+
+      render(<UpgradePrompt />);
+
+      const countdown = screen.getByTestId('reset-countdown');
+      expect(countdown.textContent).toMatch(/2\s*hours?/i);
+      expect(countdown.textContent).not.toMatch(/and/i);
+    });
+
+    it('should format 1 minute correctly', () => {
+      mockUseRateLimit.mockImplementation(() => ({
+        remaining: 0,
+        used: 3,
+        maxUses: 3,
+        canUse: false,
+        isLimited: true,
+        resetTime: new Date(Date.now() + 1 * 60 * 1000), // 1 minute
+        recordUse: mock(() => 0),
+        reset: mock(() => {}),
+      }));
+
+      render(<UpgradePrompt />);
+
+      const countdown = screen.getByTestId('reset-countdown');
+      expect(countdown.textContent).toMatch(/1\s*minute/i);
+    });
+
+    it('should format less than a minute correctly', () => {
+      mockUseRateLimit.mockImplementation(() => ({
+        remaining: 0,
+        used: 3,
+        maxUses: 3,
+        canUse: false,
+        isLimited: true,
+        resetTime: new Date(Date.now() + 30 * 1000), // 30 seconds
+        recordUse: mock(() => 0),
+        reset: mock(() => {}),
+      }));
+
+      render(<UpgradePrompt />);
+
+      const countdown = screen.getByTestId('reset-countdown');
+      expect(countdown.textContent).toMatch(/less than a minute/i);
+    });
+
     it('should format hours correctly', () => {
       mockUseRateLimit.mockImplementation(() => ({
         remaining: 0,
