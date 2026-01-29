@@ -91,4 +91,33 @@ describe('Breadcrumbs', () => {
     const lastItem = screen.getByText('😀 Grinning Face');
     expect(lastItem).toHaveClass('text-gray-500');
   });
+
+  it('has displayName set', () => {
+    expect(Breadcrumbs.displayName).toBe('Breadcrumbs');
+  });
+
+  it('renders last item with href as text (not link)', () => {
+    const itemsWithLastHref: BreadcrumbItem[] = [
+      { label: 'Home', href: '/' },
+      { label: 'Current Page', href: '/current' },
+    ];
+    render(<Breadcrumbs items={itemsWithLastHref} />);
+    // Last item should be text, not a link, even if it has href
+    const lastItem = screen.getByText('Current Page');
+    expect(lastItem.tagName).not.toBe('A');
+    expect(lastItem).toHaveAttribute('aria-current', 'page');
+  });
+
+  it('renders middle items without href as text', () => {
+    const itemsWithMiddleNoHref: BreadcrumbItem[] = [
+      { label: 'Home', href: '/' },
+      { label: 'Category' },
+      { label: 'Current' },
+    ];
+    render(<Breadcrumbs items={itemsWithMiddleNoHref} />);
+    // Middle item without href should be text without aria-current
+    const middleItem = screen.getByText('Category');
+    expect(middleItem.tagName).not.toBe('A');
+    expect(middleItem).not.toHaveAttribute('aria-current');
+  });
 });
