@@ -3,50 +3,40 @@
   "slug": "ferris-wheel",
   "character": "🎡",
   "name": "Ferris Wheel",
-  "shortName": "ferris-wheel",
+  "shortName": "wheel",
   "category": "travel",
   "subcategory": "place-other",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A ferris wheel.",
-  "tldr": "Amusement park, carnival, or fun.",
+  "baseMeaning": "Ferris Wheel emoji.",
+  "tldr": "Ferris Wheel!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Ferris wheel.",
-      "example": "At the fair 🎡",
+      "meaning": "Represents Ferris Wheel.",
+      "example": "Look at this 🎡",
       "riskLevel": "LOW"
     },
+    { "context": "SLANG", "meaning": "Fair or date.", "example": "Feeling 🎡", "riskLevel": "LOW" },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🎡", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Fun times.",
-      "example": "Carnival vibes 🎡",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Romantic date.",
-      "example": "Ferris wheel date 🎡",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Going in circles.",
-      "example": "Same problems 🎡",
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🎡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "INSTAGRAM", "note": "Theme park posts." },
-    { "platform": "TWITTER", "note": "Fun content." },
-    { "platform": "TIKTOK", "note": "Amusement parks." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Theme park." },
-    { "generation": "MILLENNIAL", "note": "Carnival." },
-    { "generation": "BOOMER", "note": "Fair." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🎡 Ferris Wheel Emoji Meaning - What Does 🎡 Really Mean?",
-  "seoDescription": "Learn what the ferris wheel emoji 🎡 really means. Carnival or fun vibes. Complete context guide."
+  "seoTitle": "🎡 Ferris Wheel Emoji Meaning",
+  "seoDescription": "Learn what the Ferris Wheel emoji 🎡 really means."
 }

@@ -2,41 +2,46 @@
   "unicode": "1F375",
   "slug": "tea",
   "character": "🍵",
-  "name": "Teacup Without Handle",
+  "name": "Teacup",
   "shortName": "tea",
-  "category": "food",
+  "category": "food-drink",
   "subcategory": "drink",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A cup of green tea.",
-  "tldr": "Tea, gossip (the tea), or calm vibes.",
+  "baseMeaning": "Teacup emoji.",
+  "tldr": "Tea!",
   "contextMeanings": [
-    { "context": "LITERAL", "meaning": "Tea.", "example": "Tea time 🍵", "riskLevel": "LOW" },
     {
-      "context": "SLANG",
-      "meaning": "Gossip or drama.",
-      "example": "Spill the tea 🍵",
+      "context": "LITERAL",
+      "meaning": "Represents Teacup.",
+      "example": "Look at this 🍵",
       "riskLevel": "LOW"
     },
-    { "context": "WORK", "meaning": "Calm break.", "example": "Tea break 🍵", "riskLevel": "LOW" },
     {
-      "context": "IRONIC",
-      "meaning": "Sipping tea meme.",
-      "example": "But that's none of my business 🍵",
+      "context": "SLANG",
+      "meaning": "Gossip or relaxation.",
+      "example": "Feeling 🍵",
+      "riskLevel": "LOW"
+    },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🍵", "riskLevel": "LOW" },
+    {
+      "context": "WORK",
+      "meaning": "Work context.",
+      "example": "Work vibes 🍵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Gossip and drama." },
-    { "platform": "TIKTOK", "note": "Tea content." },
-    { "platform": "INSTAGRAM", "note": "Cozy content." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Spill the tea slang." },
-    { "generation": "MILLENNIAL", "note": "Kermit tea meme." },
-    { "generation": "BOOMER", "note": "Tea beverage." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🍵 Tea Emoji Meaning - What Does 🍵 Really Mean?",
-  "seoDescription": "Learn what the tea emoji 🍵 really means. Gossip or calm vibes. Complete context guide."
+  "seoTitle": "🍵 Teacup Emoji Meaning",
+  "seoDescription": "Learn what the Teacup emoji 🍵 really means."
 }

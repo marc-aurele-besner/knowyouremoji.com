@@ -7,46 +7,41 @@
   "category": "travel",
   "subcategory": "place-building",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A bank building.",
-  "tldr": "Money, finance, or broke.",
+  "baseMeaning": "Bank emoji.",
+  "tldr": "Bank!",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Bank building.",
-      "example": "Going to the bank 🏦",
+      "meaning": "Represents Bank.",
+      "example": "Look at this 🏦",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Money matters.",
-      "example": "Bank account 🏦",
+      "meaning": "Money or financial.",
+      "example": "Feeling 🏦",
       "riskLevel": "LOW"
     },
+    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🏦", "riskLevel": "LOW" },
     {
       "context": "WORK",
-      "meaning": "Finance industry.",
-      "example": "Banking 🏦",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Broke.",
-      "example": "Bank says no 🏦",
+      "meaning": "Work context.",
+      "example": "Work vibes 🏦",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Finance content." },
-    { "platform": "INSTAGRAM", "note": "Money posts." },
-    { "platform": "TIKTOK", "note": "Finance tips." }
+    { "platform": "TWITTER", "note": "Common usage." },
+    { "platform": "INSTAGRAM", "note": "Popular posts." },
+    { "platform": "TIKTOK", "note": "Trending." }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Digital banking." },
-    { "generation": "MILLENNIAL", "note": "Student debt." },
-    { "generation": "BOOMER", "note": "Bank visit." }
+    { "generation": "GEN_Z", "note": "Gen Z usage." },
+    { "generation": "MILLENNIAL", "note": "Millennial usage." },
+    { "generation": "BOOMER", "note": "Boomer interpretation." }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🏦 Bank Emoji Meaning - What Does 🏦 Really Mean?",
-  "seoDescription": "Learn what the bank emoji 🏦 really means. Money or finance vibes. Complete context guide."
+  "seoTitle": "🏦 Bank Emoji Meaning",
+  "seoDescription": "Learn what the Bank emoji 🏦 really means."
 }
