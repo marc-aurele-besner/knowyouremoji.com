@@ -7,64 +7,41 @@
   "category": "symbols",
   "subcategory": "other-symbol",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red X mark indicating rejection or cancellation.",
-  "tldr": "Means no, wrong, cancelled, or rejected. The universal stop sign.",
+  "baseMeaning": "A red X mark.",
+  "tldr": "No, wrong, rejected, or cancelled.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Something is wrong, cancelled, or rejected.",
-      "example": "Flight cancelled ❌",
+      "meaning": "No or wrong.",
+      "example": "That's wrong ❌",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Strong disagreement or disapproval.",
-      "example": "That take is ❌",
-      "riskLevel": "LOW"
+      "meaning": "Cancelled or rejected.",
+      "example": "They're cancelled ❌",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Indicating something won't happen or isn't approved.",
-      "example": "Budget not approved ❌",
+      "meaning": "Rejected or failed.",
+      "example": "Build failed ❌",
       "riskLevel": "LOW"
     },
-    {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Shutting something down emphatically.",
-      "example": "Not happening ❌",
-      "riskLevel": "MEDIUM"
-    }
+    { "context": "IRONIC", "meaning": "Hard no.", "example": "Nope ❌", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Popular in threads showing dos and don'ts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used in comparison videos showing what not to do."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Used to indicate rejection or unavailability."
-    }
+    { "platform": "TWITTER", "note": "Cancel culture." },
+    { "platform": "SLACK", "note": "Rejection or failure." },
+    { "platform": "INSTAGRAM", "note": "Disagreement." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used emphatically to reject things."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used in checklist style content for negatives."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly to mean no or wrong."
-    }
+    { "generation": "GEN_Z", "note": "Cancel culture." },
+    { "generation": "MILLENNIAL", "note": "Hard no." },
+    { "generation": "BOOMER", "note": "Wrong or no." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "❌ Cross Mark Emoji Meaning - What Does ❌ Really Mean?",
-  "seoDescription": "Learn what the cross mark emoji ❌ really means in texting. Means no, wrong, or cancelled. Complete context guide."
+  "seoDescription": "Learn what the cross mark emoji ❌ really means. No or cancelled vibes. Complete context guide."
 }

@@ -7,64 +7,41 @@
   "category": "symbols",
   "subcategory": "other-symbol",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A green check mark in a box, indicating completion or approval.",
-  "tldr": "Universal sign for done, approved, or confirmed. The 'all good' symbol.",
+  "baseMeaning": "A green check mark in a box.",
+  "tldr": "Done, approved, or task complete.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Task completed or item confirmed.",
-      "example": "Meeting scheduled ✅",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Acknowledging task completion or agreement.",
-      "example": "Report submitted ✅",
+      "meaning": "Completed or approved.",
+      "example": "Task done ✅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Approving something or showing agreement.",
-      "example": "Outfit looks good ✅",
+      "meaning": "Facts or true.",
+      "example": "That's facts ✅",
       "riskLevel": "LOW"
     },
+    { "context": "WORK", "meaning": "Task complete.", "example": "Shipped ✅", "riskLevel": "LOW" },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Dismissively acknowledging something.",
-      "example": "Fine, whatever you say ✅",
-      "riskLevel": "MEDIUM"
+      "context": "IRONIC",
+      "meaning": "Checking off life goals.",
+      "example": "Adulting ✅",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Widely used for task acknowledgment and to-do lists."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Popular in list posts and 'things to know' threads."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used to confirm plans or acknowledge messages."
-    }
+    { "platform": "SLACK", "note": "Task completion." },
+    { "platform": "TWITTER", "note": "Agreement or facts." },
+    { "platform": "WHATSAPP", "note": "Confirmation." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for approval or in checklist-style content."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Common in productivity and organization contexts."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for confirmation."
-    }
+    { "generation": "GEN_Z", "note": "Facts check." },
+    { "generation": "MILLENNIAL", "note": "To-do lists." },
+    { "generation": "BOOMER", "note": "Approved." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✅ Check Mark Emoji Meaning - What Does ✅ Really Mean?",
-  "seoDescription": "Learn what the check mark emoji ✅ really means in texting. Universal sign for done, approved, or confirmed. Complete context guide."
+  "seoDescription": "Learn what the check mark emoji ✅ really means. Done or approved vibes. Complete context guide."
 }

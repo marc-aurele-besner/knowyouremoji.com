@@ -1,0 +1,47 @@
+{
+  "unicode": "1F6A2",
+  "slug": "ship",
+  "character": "🚢",
+  "name": "Ship",
+  "shortName": "ship",
+  "category": "travel",
+  "subcategory": "transport-water",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A passenger ship.",
+  "tldr": "Cruise, shipping something, or relationship shipping.",
+  "contextMeanings": [
+    { "context": "LITERAL", "meaning": "A ship.", "example": "Cruise time 🚢", "riskLevel": "LOW" },
+    {
+      "context": "SLANG",
+      "meaning": "Shipping (relationship).",
+      "example": "I ship them 🚢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Shipping a product.",
+      "example": "Ready to ship 🚢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Titanic vibes.",
+      "example": "Going down with the ship 🚢",
+      "riskLevel": "LOW"
+    }
+  ],
+  "platformNotes": [
+    { "platform": "TWITTER", "note": "Relationship shipping." },
+    { "platform": "TIKTOK", "note": "Ship culture." },
+    { "platform": "SLACK", "note": "Product shipping." }
+  ],
+  "generationalNotes": [
+    { "generation": "GEN_Z", "note": "Relationship shipping." },
+    { "generation": "MILLENNIAL", "note": "Fandom shipping." },
+    { "generation": "BOOMER", "note": "Cruise or shipping." }
+  ],
+  "warnings": [],
+  "relatedCombos": [],
+  "seoTitle": "🚢 Ship Emoji Meaning - What Does 🚢 Really Mean?",
+  "seoDescription": "Learn what the ship emoji 🚢 really means. Cruise or relationship shipping vibes. Complete context guide."
+}

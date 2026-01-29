@@ -2,69 +2,51 @@
   "unicode": "1F3A7",
   "slug": "headphones",
   "character": "🎧",
-  "name": "Headphone",
+  "name": "Headphones",
   "shortName": "headphones",
   "category": "objects",
   "subcategory": "music",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A pair of headphones for listening to audio.",
-  "tldr": "Listening to music, podcasts, or in your own world.",
+  "baseMeaning": "A pair of headphones.",
+  "tldr": "Listening to music, podcast mode, or do not disturb.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Listening to music or audio.",
-      "example": "Music on 🎧",
+      "meaning": "Headphones.",
+      "example": "Headphones on 🎧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "In the zone, focused, or don't disturb.",
-      "example": "Deep work mode 🎧",
+      "meaning": "In the zone.",
+      "example": "Focused mode 🎧",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Focused work or listening to podcasts.",
-      "example": "Heads down working 🎧",
+      "meaning": "Do not disturb.",
+      "example": "Deep work 🎧",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Sharing music or music compatibility.",
-      "example": "What are you listening to? 🎧",
+      "context": "IRONIC",
+      "meaning": "Ignoring everyone.",
+      "example": "Can't hear the haters 🎧",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Music recommendations and playlists."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Status for focus time or deep work."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Music sharing and playlists."
-    }
+    { "platform": "SLACK", "note": "Focus mode status." },
+    { "platform": "TWITTER", "note": "Music recommendations." },
+    { "platform": "INSTAGRAM", "note": "Vibe content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Music, podcasts, and focus mode."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Podcast culture and music streaming."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Listening to audio."
-    }
+    { "generation": "GEN_Z", "note": "Always plugged in." },
+    { "generation": "MILLENNIAL", "note": "Podcast life." },
+    { "generation": "BOOMER", "note": "Listening to music." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎧 Headphones Emoji Meaning - What Does 🎧 Really Mean?",
-  "seoDescription": "Learn what the headphones emoji 🎧 really means in texting. Music, focus mode, or podcasts. Complete context guide."
+  "seoDescription": "Learn what the headphones emoji 🎧 really means. Focus mode or music vibes. Complete context guide."
 }

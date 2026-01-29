@@ -7,64 +7,46 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A tennis ball and racket.",
-  "tldr": "Tennis, sports, or back-and-forth exchanges.",
+  "baseMeaning": "A tennis ball.",
+  "tldr": "Tennis, fancy sport vibes, or back and forth.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Tennis or playing tennis.",
-      "example": "Tennis match today! 🎾",
+      "meaning": "Tennis.",
+      "example": "Tennis match 🎾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Back-and-forth exchanges.",
-      "example": "The debate was like tennis 🎾",
+      "meaning": "Back and forth discussion.",
+      "example": "Going back and forth 🎾",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Collaborative exchanges.",
-      "example": "Good back and forth on this project 🎾",
+      "meaning": "Negotiations.",
+      "example": "The ball is in their court 🎾",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Activity date or sporty vibes.",
-      "example": "Tennis date? 🎾",
+      "context": "IRONIC",
+      "meaning": "Fancy sport.",
+      "example": "Country club vibes 🎾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Popular during Grand Slam tournaments."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Sports and active lifestyle content."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Coordinating sports activities."
-    }
+    { "platform": "TWITTER", "note": "Tennis and sports." },
+    { "platform": "INSTAGRAM", "note": "Athletic content." },
+    { "platform": "SLACK", "note": "Work metaphors." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Sports content and active lifestyle."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Tennis and country club vibes."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Classic sport reference."
-    }
+    { "generation": "GEN_Z", "note": "Sports content." },
+    { "generation": "MILLENNIAL", "note": "Wimbledon vibes." },
+    { "generation": "BOOMER", "note": "Tennis sport." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎾 Tennis Emoji Meaning - What Does 🎾 Really Mean?",
-  "seoDescription": "Learn what the tennis emoji 🎾 really means in texting. Tennis, sports, or back-and-forth exchanges. Complete context guide."
+  "seoDescription": "Learn what the tennis emoji 🎾 really means. Sports or back and forth vibes. Complete context guide."
 }

@@ -7,19 +7,20 @@
   "category": "travel",
   "subcategory": "place-building",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A small house with a pitched roof.",
-  "tldr": "Home, going home, or domestic life. The comfort of home.",
+  "baseMeaning": "A house with garden.",
+  "tldr": "Home, staying in, or homeowner goals.",
   "contextMeanings": [
+    { "context": "LITERAL", "meaning": "A house.", "example": "New home 🏠", "riskLevel": "LOW" },
     {
-      "context": "LITERAL",
-      "meaning": "Home, house, or living space.",
-      "example": "Finally home 🏠",
+      "context": "SLANG",
+      "meaning": "Going home.",
+      "example": "Heading home 🏠",
       "riskLevel": "LOW"
     },
     {
-      "context": "SLANG",
-      "meaning": "Comfort, safety, or domestic life.",
-      "example": "Homebody vibes 🏠",
+      "context": "DATING",
+      "meaning": "Coming over.",
+      "example": "Your place? 🏠",
       "riskLevel": "LOW"
     },
     {
@@ -27,44 +28,20 @@
       "meaning": "Working from home.",
       "example": "WFH today 🏠",
       "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Inviting someone over or staying in.",
-      "example": "Come to my place 🏠",
-      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Common for WFH status updates."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Home decor and cozy content."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Letting people know you're home."
-    }
+    { "platform": "INSTAGRAM", "note": "Home decor content." },
+    { "platform": "TWITTER", "note": "Home ownership." },
+    { "platform": "SLACK", "note": "Remote work status." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Homebody culture and WFH."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Housing goals and home content."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Home and family."
-    }
+    { "generation": "GEN_Z", "note": "Housing market struggles." },
+    { "generation": "MILLENNIAL", "note": "Homeowner dreams." },
+    { "generation": "BOOMER", "note": "Home and family." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🏠 House Emoji Meaning - What Does 🏠 Really Mean?",
-  "seoDescription": "Learn what the house emoji 🏠 really means in texting. Home, comfort, or going home. Complete context guide."
+  "seoDescription": "Learn what the house emoji 🏠 really means. Home or staying in vibes. Complete context guide."
 }

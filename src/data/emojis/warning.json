@@ -7,64 +7,41 @@
   "category": "symbols",
   "subcategory": "warning",
   "unicodeVersion": "4.0",
-  "baseMeaning": "A yellow triangle with an exclamation mark, indicating caution.",
-  "tldr": "Heads up, be careful, or pay attention. Universal caution signal.",
+  "baseMeaning": "A yellow warning triangle.",
+  "tldr": "Warning, caution, or be careful.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Warning about potential danger or important info.",
-      "example": "⚠️ Road closed ahead",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "Warning.", "example": "Caution ⚠️", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Heads up about something you should know.",
-      "example": "⚠️ Hot take incoming",
+      "meaning": "Red flag alert.",
+      "example": "Warning signs ⚠️",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Flagging important information or deadlines.",
-      "example": "⚠️ Deadline moved to Friday",
+      "meaning": "Potential issue.",
+      "example": "Bug warning ⚠️",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Sarcastically flagging something obvious.",
-      "example": "⚠️ Water is wet",
+      "context": "DATING",
+      "meaning": "Red flag ahead.",
+      "example": "Major warning ⚠️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "SLACK",
-      "note": "Commonly used to flag important messages or announcements."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Often precedes controversial or important statements."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Used in server announcements and rule reminders."
-    }
+    { "platform": "SLACK", "note": "Alerts and issues." },
+    { "platform": "TWITTER", "note": "Warning others." },
+    { "platform": "DISCORD", "note": "Server warnings." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Often used ironically or to dramatize statements."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used to flag genuinely important information."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly as a warning sign."
-    }
+    { "generation": "GEN_Z", "note": "Red flag warnings." },
+    { "generation": "MILLENNIAL", "note": "Caution signs." },
+    { "generation": "BOOMER", "note": "Warning symbol." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "⚠️ Warning Emoji Meaning - What Does ⚠️ Really Mean?",
-  "seoDescription": "Learn what the warning emoji ⚠️ really means in texting. Universal signal for caution or important information. Complete context guide."
+  "seoDescription": "Learn what the warning emoji ⚠️ really means. Caution or alert vibes. Complete context guide."
 }

@@ -2,69 +2,36 @@
   "unicode": "1F697",
   "slug": "car",
   "character": "🚗",
-  "name": "Automobile",
+  "name": "Car",
   "shortName": "car",
   "category": "travel",
   "subcategory": "transport-ground",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A red or orange sedan car.",
-  "tldr": "Cars, driving, road trips, or getting somewhere.",
+  "baseMeaning": "A red car.",
+  "tldr": "Driving, road trip, or on my way.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Driving, cars, or transportation.",
-      "example": "On my way 🚗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Road trip or getting somewhere.",
-      "example": "Road trip vibes 🚗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Commuting or traveling for work.",
-      "example": "Heading to the office 🚗",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "A car.", "example": "New car 🚗", "riskLevel": "LOW" },
+    { "context": "SLANG", "meaning": "On my way.", "example": "OMW 🚗", "riskLevel": "LOW" },
     {
       "context": "DATING",
-      "meaning": "Picking someone up or a drive-in date.",
-      "example": "Be there in 10 🚗",
+      "meaning": "Coming to pick you up.",
+      "example": "Be there soon 🚗",
       "riskLevel": "LOW"
-    }
+    },
+    { "context": "WORK", "meaning": "Commuting.", "example": "In traffic 🚗", "riskLevel": "LOW" }
   ],
   "platformNotes": [
-    {
-      "platform": "WHATSAPP",
-      "note": "Common for letting someone know you're on your way."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Road trip and travel content."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Commute discussions and car content."
-    }
+    { "platform": "WHATSAPP", "note": "Commuting status." },
+    { "platform": "INSTAGRAM", "note": "Road trip content." },
+    { "platform": "TWITTER", "note": "Traffic complaints." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Getting places or road trip energy."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Commuting and travel."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Cars and transportation."
-    }
+    { "generation": "GEN_Z", "note": "Road trip vibes." },
+    { "generation": "MILLENNIAL", "note": "Commute life." },
+    { "generation": "BOOMER", "note": "Transportation." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🚗 Car Emoji Meaning - What Does 🚗 Really Mean?",
-  "seoDescription": "Learn what the car emoji 🚗 really means in texting. Driving, road trips, or on my way. Complete context guide."
+  "seoDescription": "Learn what the car emoji 🚗 really means. On my way or road trip vibes. Complete context guide."
 }

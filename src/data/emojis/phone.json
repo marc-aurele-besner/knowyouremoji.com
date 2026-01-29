@@ -7,64 +7,41 @@
   "category": "objects",
   "subcategory": "phone",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A smartphone or mobile phone.",
-  "tldr": "Represents phone calls, texting, social media, or mobile communication.",
+  "baseMeaning": "A smartphone.",
+  "tldr": "Call me, texting, or addicted to phone.",
   "contextMeanings": [
-    {
-      "context": "LITERAL",
-      "meaning": "Phone calls, texting, or mobile device.",
-      "example": "Call me 📱",
-      "riskLevel": "LOW"
-    },
+    { "context": "LITERAL", "meaning": "A phone.", "example": "New phone 📱", "riskLevel": "LOW" },
     {
       "context": "SLANG",
-      "meaning": "Social media, scrolling, or phone addiction.",
-      "example": "Glued to my phone 📱",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Mobile availability or communication.",
-      "example": "Reach me on mobile 📱",
+      "meaning": "Call or text me.",
+      "example": "Hit my line 📱",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Suggesting to exchange numbers or call.",
-      "example": "Hit me up 📱",
+      "meaning": "Give me your number.",
+      "example": "Can I get your 📱?",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Phone addiction.",
+      "example": "Screen time report 📱",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "INSTAGRAM",
-      "note": "Often used self-referentially about phone/social media use."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common in discussions about mobile tech and social media."
-    },
-    {
-      "platform": "WHATSAPP",
-      "note": "Used to suggest switching to calls."
-    }
+    { "platform": "INSTAGRAM", "note": "Contact and tech content." },
+    { "platform": "TWITTER", "note": "Tech discussions." },
+    { "platform": "TIKTOK", "note": "Phone content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Phone is life - associated with social media and connectivity."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Used for communication and mobile tech discussions."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used straightforwardly for phone-related content."
-    }
+    { "generation": "GEN_Z", "note": "Phone addiction jokes." },
+    { "generation": "MILLENNIAL", "note": "Tech life." },
+    { "generation": "BOOMER", "note": "Cell phone." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📱 Phone Emoji Meaning - What Does 📱 Really Mean?",
-  "seoDescription": "Learn what the phone emoji 📱 really means in texting. Represents mobile communication or social media. Complete context guide."
+  "seoDescription": "Learn what the phone emoji 📱 really means. Call me or tech life vibes. Complete context guide."
 }

@@ -4,67 +4,49 @@
   "character": "🎤",
   "name": "Microphone",
   "shortName": "mic",
-  "category": "activities",
+  "category": "objects",
   "subcategory": "music",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A handheld microphone for singing or speaking.",
-  "tldr": "Represents singing, karaoke, performing, or dropping the mic after a good point.",
+  "baseMeaning": "A microphone.",
+  "tldr": "Karaoke, speaking up, or mic drop moment.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Singing, karaoke, or performances.",
-      "example": "Karaoke night! 🎤",
+      "meaning": "A microphone.",
+      "example": "Karaoke night 🎤",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Mic drop - making a definitive statement.",
-      "example": "Facts only 🎤💧",
+      "meaning": "Speaking up.",
+      "example": "Time to speak 🎤",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Presentations or public speaking.",
-      "example": "Nailed that presentation 🎤",
+      "meaning": "Presenting or podcasting.",
+      "example": "Podcast recording 🎤",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to perform or make announcements.",
-      "example": "And the winner of best excuse is... me 🎤",
+      "meaning": "Mic drop.",
+      "example": "Dropped the mic 🎤",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    {
-      "platform": "TWITTER",
-      "note": "Common in 'mic drop' statements and music discussions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Used for singing content and karaoke videos."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Popular for concert and performance posts."
-    }
+    { "platform": "TWITTER", "note": "Speaking up and opinions." },
+    { "platform": "TIKTOK", "note": "Content creation." },
+    { "platform": "INSTAGRAM", "note": "Music content." }
   ],
   "generationalNotes": [
-    {
-      "generation": "GEN_Z",
-      "note": "Used for performances and 'mic drop' moments."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Associated with karaoke culture and definitive statements."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Used for singing and performance contexts."
-    }
+    { "generation": "GEN_Z", "note": "Content creation." },
+    { "generation": "MILLENNIAL", "note": "Mic drop memes." },
+    { "generation": "BOOMER", "note": "Singing or speaking." }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎤 Microphone Emoji Meaning - What Does 🎤 Really Mean?",
-  "seoDescription": "Learn what the microphone emoji 🎤 really means in texting. Represents singing, karaoke, or mic drop moments. Complete context guide."
+  "seoDescription": "Learn what the microphone emoji 🎤 really means. Karaoke or mic drop vibes. Complete context guide."
 }
