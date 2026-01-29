@@ -2,7 +2,9 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { emojiEvents } from '@/lib/analytics';
 
 /**
  * Related emoji data for display
@@ -86,12 +88,13 @@ function ChevronUpIcon({ className }: { className?: string }) {
 /**
  * Individual related emoji card component
  */
-function RelatedEmojiCard({ emoji }: { emoji: RelatedEmoji }) {
+function RelatedEmojiCard({ emoji, sourceSlug }: { emoji: RelatedEmoji; sourceSlug: string }) {
   return (
     <Link
       href={`/emoji/${emoji.slug}`}
       className="block border rounded-lg p-4 bg-card dark:bg-card hover:border-primary hover:shadow-md transition-all"
       aria-label={`${emoji.name} emoji`}
+      onClick={() => emojiEvents.relatedClick(emoji.character, emoji.slug, sourceSlug)}
     >
       <div className="text-center">
         <span className="text-4xl mb-2 block">{emoji.character}</span>
@@ -121,6 +124,10 @@ function RelatedEmojiCard({ emoji }: { emoji: RelatedEmoji }) {
  */
 export function RelatedEmojisSection({ emojis, className }: RelatedEmojisSectionProps) {
   const [expanded, setExpanded] = useState(true);
+  const pathname = usePathname();
+
+  // Extract the source slug from the current path (e.g., /emoji/fire -> fire)
+  const sourceSlug = pathname?.split('/').pop() || '';
 
   const toggleExpand = useCallback(() => {
     setExpanded((prev) => !prev);
@@ -154,7 +161,7 @@ export function RelatedEmojisSection({ emojis, className }: RelatedEmojisSection
       {expanded && (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {emojis.map((emoji) => (
-            <RelatedEmojiCard key={emoji.slug} emoji={emoji} />
+            <RelatedEmojiCard key={emoji.slug} emoji={emoji} sourceSlug={sourceSlug} />
           ))}
         </div>
       )}

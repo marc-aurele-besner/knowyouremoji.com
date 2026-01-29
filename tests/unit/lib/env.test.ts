@@ -99,16 +99,16 @@ describe('env configuration', () => {
       expect(env.sentryDsnPublic).toBeUndefined();
     });
 
-    it('should return vercelAnalyticsId when set', () => {
-      process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID = 'analytics-123';
+    it('should return gaMeasurementId when set', () => {
+      process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID = 'G-TESTID123';
       const env = getEnv();
-      expect(env.vercelAnalyticsId).toBe('analytics-123');
+      expect(env.gaMeasurementId).toBe('G-TESTID123');
     });
 
-    it('should return undefined vercelAnalyticsId when not set', () => {
-      delete process.env.NEXT_PUBLIC_VERCEL_ANALYTICS_ID;
+    it('should return undefined gaMeasurementId when not set', () => {
+      delete process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
       const env = getEnv();
-      expect(env.vercelAnalyticsId).toBeUndefined();
+      expect(env.gaMeasurementId).toBeUndefined();
     });
   });
 

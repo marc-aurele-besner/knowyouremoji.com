@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes';
 import { useSyncExternalStore } from 'react';
 import { Button } from '@/components/ui/button';
+import { navigationEvents } from '@/lib/analytics';
 
 function useIsMounted() {
   return useSyncExternalStore(
@@ -26,11 +27,17 @@ export function ThemeSwitcher() {
 
   const isDark = resolvedTheme === 'dark';
 
+  const handleThemeToggle = () => {
+    const newTheme = isDark ? 'light' : 'dark';
+    setTheme(newTheme);
+    navigationEvents.themeToggle(newTheme);
+  };
+
   return (
     <Button
       variant="ghost"
       size="icon"
-      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      onClick={handleThemeToggle}
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
     >
       {isDark ? (

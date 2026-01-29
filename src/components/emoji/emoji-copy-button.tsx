@@ -3,6 +3,7 @@
 import { useState, useCallback, forwardRef } from 'react';
 import { Button, ButtonProps } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { emojiEvents } from '@/lib/analytics';
 
 export interface EmojiCopyButtonProps extends Omit<
   ButtonProps,
@@ -10,6 +11,8 @@ export interface EmojiCopyButtonProps extends Omit<
 > {
   /** The emoji character to copy */
   emoji: string;
+  /** The emoji slug for analytics tracking */
+  slug?: string;
   /** Custom label text (default: "Copy Emoji") */
   label?: string;
   /** Whether to show the label text (default: true) */
@@ -44,6 +47,7 @@ const EmojiCopyButton = forwardRef<HTMLButtonElement, EmojiCopyButtonProps>(
   (
     {
       emoji,
+      slug,
       label = 'Copy Emoji',
       showLabel = true,
       resetDelay = 2000,
@@ -67,12 +71,18 @@ const EmojiCopyButton = forwardRef<HTMLButtonElement, EmojiCopyButtonProps>(
         }
         await navigator.clipboard.writeText(emoji);
         setCopied(true);
+
+        // Track emoji copy event
+        if (slug) {
+          emojiEvents.copy(emoji, slug);
+        }
+
         onCopy?.();
         setTimeout(() => setCopied(false), resetDelay);
       } catch (error) {
         onCopyError?.(error instanceof Error ? error : new Error('Copy failed'));
       }
-    }, [emoji, resetDelay, onCopy, onCopyError, disabled]);
+    }, [emoji, slug, resetDelay, onCopy, onCopyError, disabled]);
 
     const displayLabel = copied ? 'Copied!' : label;
     const icon = copied ? '✓' : '📋';

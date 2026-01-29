@@ -6,6 +6,7 @@ import { HTMLAttributes, useState } from 'react';
 import { MobileNav } from './mobile-nav';
 import { ThemeSwitcher } from '@/components/theme/theme-switcher';
 import { SearchBar } from '@/components/search';
+import { navigationEvents } from '@/lib/analytics';
 
 export type HeaderProps = HTMLAttributes<HTMLElement>;
 
@@ -55,7 +56,12 @@ function Header({ className, ...props }: HeaderProps) {
             <button
               type="button"
               aria-label="Toggle menu"
-              onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+              onClick={() => {
+                if (!isMobileNavOpen) {
+                  navigationEvents.mobileNavOpen();
+                }
+                setIsMobileNavOpen(!isMobileNavOpen);
+              }}
               className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500 dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white"
             >
               <svg
