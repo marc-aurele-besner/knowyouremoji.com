@@ -53,4 +53,9 @@ describe('interpreter component exports', () => {
     expect(InterpreterExports.RedFlagSection).toBeDefined();
     expect(typeof InterpreterExports.RedFlagSection).toBe('function');
   });
+
+  it('exports EmojiLink component', () => {
+    expect(InterpreterExports.EmojiLink).toBeDefined();
+    expect(typeof InterpreterExports.EmojiLink).toBe('function');
+  });
 });
