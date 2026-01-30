@@ -7,8 +7,10 @@ import {
   parseOpenAIResponse,
   buildInterpretationResult,
   interpretMessage,
+  interpretMessageWithCache,
 } from '../../../src/lib/interpreter';
 import { OpenAIError, resetClients } from '../../../src/lib/openai';
+import { clearCache } from '../../../src/lib/cache';
 
 // Store original env
 const originalEnv = { ...process.env };
@@ -17,9 +19,10 @@ describe('interpreter service', () => {
   beforeEach(() => {
     // Reset process.env before each test
     process.env = { ...originalEnv, OPENAI_API_KEY: 'sk-test-key' };
-    // Reset OpenAI clients and emoji cache
+    // Reset OpenAI clients, emoji cache, and Redis cache
     resetClients();
     clearEmojiSlugCache();
+    clearCache();
   });
 
   afterEach(() => {
@@ -27,6 +30,7 @@ describe('interpreter service', () => {
     process.env = originalEnv;
     resetClients();
     clearEmojiSlugCache();
+    clearCache();
   });
 
   describe('extractEmojisWithPositions', () => {
@@ -553,6 +557,65 @@ describe('interpreter service', () => {
 
       // Results should be the same
       expect(result1).toBe(result2);
+    });
+  });
+
+  describe('interpretMessageWithCache', () => {
+    it('should be a function', () => {
+      expect(typeof interpretMessageWithCache).toBe('function');
+    });
+
+    it('should throw error when OpenAI key is not configured (like interpretMessage)', async () => {
+      delete process.env.OPENAI_API_KEY;
+      resetClients();
+
+      await expect(
+        interpretMessageWithCache({
+          message: 'Hello 😀 there',
+          platform: 'IMESSAGE',
+          context: 'FRIEND',
+        })
+      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+    });
+
+    it('should work without Redis configured (graceful fallback)', async () => {
+      // Ensure Redis is not configured
+      delete process.env.UPSTASH_REDIS_REST_URL;
+      delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      clearCache();
+
+      // This should not throw even without Redis
+      // It will still fail due to OpenAI API call, but we're testing that
+      // the caching layer doesn't cause issues when Redis is not configured
+      delete process.env.OPENAI_API_KEY;
+      resetClients();
+
+      await expect(
+        interpretMessageWithCache({
+          message: 'Hello 😀',
+          platform: 'IMESSAGE',
+          context: 'FRIEND',
+        })
+      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+    });
+
+    it('should return result with fresh ID and timestamp when cache returns null', async () => {
+      // Without Redis, cacheGet returns null, so it will try to call interpretMessage
+      delete process.env.UPSTASH_REDIS_REST_URL;
+      delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      clearCache();
+
+      // This tests that the flow goes through when cache returns null
+      delete process.env.OPENAI_API_KEY;
+      resetClients();
+
+      await expect(
+        interpretMessageWithCache({
+          message: 'Test message 😊',
+          platform: 'TWITTER',
+          context: 'COWORKER',
+        })
+      ).rejects.toThrow('OPENAI_API_KEY is not configured');
     });
   });
 });

@@ -27,6 +27,10 @@ export interface EnvConfig {
   posthogKey: string | undefined;
   /** PostHog API host URL */
   posthogHost: string | undefined;
+  /** Upstash Redis REST URL for caching (Phase 2) */
+  upstashRedisRestUrl: string | undefined;
+  /** Upstash Redis REST token for authentication (Phase 2) */
+  upstashRedisRestToken: string | undefined;
 }
 
 /**
@@ -44,6 +48,8 @@ export function getEnv(): EnvConfig {
     gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
     posthogKey: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     posthogHost: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+    upstashRedisRestUrl: process.env.UPSTASH_REDIS_REST_URL,
+    upstashRedisRestToken: process.env.UPSTASH_REDIS_REST_TOKEN,
   };
 }
 

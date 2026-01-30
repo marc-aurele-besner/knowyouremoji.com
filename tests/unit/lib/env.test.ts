@@ -134,6 +134,30 @@ describe('env configuration', () => {
       const env = getEnv();
       expect(env.posthogHost).toBeUndefined();
     });
+
+    it('should return upstashRedisRestUrl when set', () => {
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
+      const env = getEnv();
+      expect(env.upstashRedisRestUrl).toBe('https://test.upstash.io');
+    });
+
+    it('should return undefined upstashRedisRestUrl when not set', () => {
+      delete process.env.UPSTASH_REDIS_REST_URL;
+      const env = getEnv();
+      expect(env.upstashRedisRestUrl).toBeUndefined();
+    });
+
+    it('should return upstashRedisRestToken when set', () => {
+      process.env.UPSTASH_REDIS_REST_TOKEN = 'test-redis-token';
+      const env = getEnv();
+      expect(env.upstashRedisRestToken).toBe('test-redis-token');
+    });
+
+    it('should return undefined upstashRedisRestToken when not set', () => {
+      delete process.env.UPSTASH_REDIS_REST_TOKEN;
+      const env = getEnv();
+      expect(env.upstashRedisRestToken).toBeUndefined();
+    });
   });
 
   describe('validateEnv', () => {
