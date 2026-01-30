@@ -2,7 +2,60 @@ import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    // Enable modern image formats for better compression
+    formats: ['image/avif', 'image/webp'],
+
+    // Remote patterns for external emoji images (CDNs)
+    remotePatterns: [
+      // Emojipedia - Common source for emoji images
+      {
+        protocol: 'https',
+        hostname: 'emojipedia-us.s3.amazonaws.com',
+        pathname: '/thumbs/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'emojipedia-us.s3.dualstack.us-west-1.amazonaws.com',
+        pathname: '/thumbs/**',
+      },
+      // Unicode.org emoji chart images
+      {
+        protocol: 'https',
+        hostname: 'unicode.org',
+        pathname: '/emoji/**',
+      },
+      // Twemoji CDN (Twitter emoji)
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+        pathname: '/gh/twitter/twemoji@latest/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'twemoji.maxcdn.com',
+        pathname: '/**',
+      },
+      // Google Noto Emoji
+      {
+        protocol: 'https',
+        hostname: 'fonts.gstatic.com',
+        pathname: '/s/e/notoemoji/**',
+      },
+      // OpenMoji
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+        pathname: '/npm/openmoji@latest/**',
+      },
+    ],
+
+    // Device sizes for responsive images
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+
+    // Image sizes for the `sizes` property
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
 };
 
 // Sentry configuration options

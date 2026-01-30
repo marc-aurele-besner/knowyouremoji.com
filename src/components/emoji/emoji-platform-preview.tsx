@@ -1,6 +1,7 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import { OptimizedImage } from '@/components/ui/optimized-image';
 
 /**
  * Supported platform types for emoji rendering
@@ -111,13 +112,11 @@ export function EmojiPlatformPreview({
               key={platform}
               className="flex flex-col items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <OptimizedImage
                 src={imageUrl}
                 alt={`${character} on ${platformLabels[platform]}`}
                 width={48}
                 height={48}
-                loading="lazy"
                 className="mb-2"
               />
               <span className="text-sm font-medium text-gray-900 dark:text-gray-100">

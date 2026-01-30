@@ -183,8 +183,8 @@ describe('UI Components barrel export (index.ts)', () => {
   describe('all exports are valid components or functions', () => {
     it('exports the correct number of components and types', () => {
       const exportedKeys = Object.keys(uiComponents);
-      // 1 Button + 6 Card + 1 Input + 1 Badge + 1 Skeleton + 10 Dialog + 10 Select + 7 Toast + 3 Collapsible = 40 exports
-      expect(exportedKeys.length).toBe(40);
+      // 1 Button + 6 Card + 1 Input + 1 Badge + 1 Skeleton + 10 Dialog + 10 Select + 7 Toast + 3 Collapsible + 1 OptimizedImage = 41 exports
+      expect(exportedKeys.length).toBe(41);
     });
   });
 });
