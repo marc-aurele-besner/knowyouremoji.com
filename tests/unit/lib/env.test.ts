@@ -158,6 +158,42 @@ describe('env configuration', () => {
       const env = getEnv();
       expect(env.upstashRedisRestToken).toBeUndefined();
     });
+
+    it('should return supabaseUrl when set', () => {
+      process.env.NEXT_PUBLIC_SUPABASE_URL = 'https://test.supabase.co';
+      const env = getEnv();
+      expect(env.supabaseUrl).toBe('https://test.supabase.co');
+    });
+
+    it('should return undefined supabaseUrl when not set', () => {
+      delete process.env.NEXT_PUBLIC_SUPABASE_URL;
+      const env = getEnv();
+      expect(env.supabaseUrl).toBeUndefined();
+    });
+
+    it('should return supabaseAnonKey when set', () => {
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = 'test-anon-key';
+      const env = getEnv();
+      expect(env.supabaseAnonKey).toBe('test-anon-key');
+    });
+
+    it('should return undefined supabaseAnonKey when not set', () => {
+      delete process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+      const env = getEnv();
+      expect(env.supabaseAnonKey).toBeUndefined();
+    });
+
+    it('should return supabaseServiceRoleKey when set', () => {
+      process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-service-role-key';
+      const env = getEnv();
+      expect(env.supabaseServiceRoleKey).toBe('test-service-role-key');
+    });
+
+    it('should return undefined supabaseServiceRoleKey when not set', () => {
+      delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+      const env = getEnv();
+      expect(env.supabaseServiceRoleKey).toBeUndefined();
+    });
   });
 
   describe('validateEnv', () => {
