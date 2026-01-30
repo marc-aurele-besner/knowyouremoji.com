@@ -4,10 +4,14 @@
  * Provides typed functions for tracking user interactions throughout the app.
  * Sends events to both Google Analytics (via @next/third-parties/google)
  * and PostHog for comprehensive product analytics.
+ *
+ * PostHog is loaded dynamically to reduce initial bundle size.
  */
 
 import { sendGAEvent } from '@next/third-parties/google';
-import posthog from 'posthog-js';
+
+/** Cached PostHog module instance */
+let posthogModule: typeof import('posthog-js') | null = null;
 
 /**
  * Check if analytics is available (client-side only)
@@ -17,15 +21,36 @@ function isAnalyticsAvailable(): boolean {
 }
 
 /**
+ * Get PostHog module, loading it dynamically if needed
+ * Caches the module for subsequent calls
+ */
+async function getPostHog(): Promise<typeof import('posthog-js') | null> {
+  if (!isAnalyticsAvailable()) return null;
+
+  if (!posthogModule) {
+    try {
+      posthogModule = await import('posthog-js');
+    } catch {
+      return null;
+    }
+  }
+  return posthogModule;
+}
+
+/**
  * Safe wrapper for sending PostHog events
+ * Uses dynamic import to reduce initial bundle size
  * Silently fails if PostHog is not available
  */
-function safePostHogCapture(
+async function safePostHogCapture(
   eventName: string,
   eventParams: Record<string, string | number | boolean>
-): void {
+): Promise<void> {
   try {
-    posthog.capture(eventName, eventParams);
+    const posthog = await getPostHog();
+    if (posthog) {
+      posthog.default.capture(eventName, eventParams);
+    }
   } catch {
     // Silently fail if PostHog is not loaded
     if (process.env.NODE_ENV === 'development') {
@@ -55,6 +80,7 @@ function safeGAEvent(
 /**
  * Safe wrapper for tracking events to all analytics providers
  * Sends events to both Google Analytics and PostHog
+ * PostHog is loaded dynamically to reduce initial bundle size
  * Silently fails if analytics is not available
  */
 function safeTrackEvent(
@@ -63,10 +89,10 @@ function safeTrackEvent(
 ): void {
   if (!isAnalyticsAvailable()) return;
 
-  // Send to Google Analytics
+  // Send to Google Analytics (synchronous)
   safeGAEvent(eventName, eventParams);
 
-  // Send to PostHog
+  // Send to PostHog (asynchronous, non-blocking)
   safePostHogCapture(eventName, eventParams);
 }
 

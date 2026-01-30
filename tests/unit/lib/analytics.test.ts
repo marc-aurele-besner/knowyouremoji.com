@@ -234,76 +234,88 @@ describe('analytics', () => {
   });
 
   describe('PostHog integration', () => {
-    it('sends emoji copy event to PostHog', () => {
+    // Helper to wait for async PostHog calls to complete
+    const waitForPostHog = () => new Promise((resolve) => setTimeout(resolve, 10));
+
+    it('sends emoji copy event to PostHog', async () => {
       emojiEvents.copy('😀', 'grinning-face');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_copy', {
         emoji: '😀',
         slug: 'grinning-face',
       });
     });
 
-    it('sends emoji search event to PostHog', () => {
+    it('sends emoji search event to PostHog', async () => {
       emojiEvents.search('fire', 5);
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_search', {
         search_term: 'fire',
         result_count: 5,
       });
     });
 
-    it('sends combo copy event to PostHog', () => {
+    it('sends combo copy event to PostHog', async () => {
       comboEvents.copy('🔥💯', 'fire-hundred');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('combo_copy', {
         combo: '🔥💯',
         slug: 'fire-hundred',
       });
     });
 
-    it('sends interpreter submit event to PostHog', () => {
+    it('sends interpreter submit event to PostHog', async () => {
       interpreterEvents.submit(50, 'INSTAGRAM');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('interpreter_submit', {
         message_length: 50,
         platform: 'INSTAGRAM',
       });
     });
 
-    it('sends interpreter result view event to PostHog', () => {
+    it('sends interpreter result view event to PostHog', async () => {
       interpreterEvents.resultView(true, 75);
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('interpreter_result_view', {
         has_red_flags: true,
         passive_aggression_score: 75,
       });
     });
 
-    it('sends share link copy event to PostHog', () => {
+    it('sends share link copy event to PostHog', async () => {
       shareEvents.copyLink('https://knowyouremoji.com/emoji/fire', 'emoji');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('share_link_copy', {
         url: 'https://knowyouremoji.com/emoji/fire',
         content_type: 'emoji',
       });
     });
 
-    it('silently catches errors when posthog.capture throws', () => {
+    it('silently catches errors when posthog.capture throws', async () => {
       mockPostHogCapture.mockImplementation(() => {
         throw new Error('PostHog not loaded');
       });
 
       // Should not throw
       expect(() => emojiEvents.copy('🔥', 'fire')).not.toThrow();
+      await waitForPostHog();
 
       // Reset mock
       mockPostHogCapture.mockImplementation(() => {});
     });
 
-    it('sends upgrade click event to PostHog', () => {
+    it('sends upgrade click event to PostHog', async () => {
       conversionEvents.upgradeClick('pricing_page', 'pro');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('upgrade_click', {
         source: 'pricing_page',
         plan: 'pro',
       });
     });
 
-    it('sends payment success event to PostHog', () => {
+    it('sends payment success event to PostHog', async () => {
       conversionEvents.paymentSuccess('pro', 9.99, 'usd');
+      await waitForPostHog();
       expect(mockPostHogCapture).toHaveBeenCalledWith('payment_success', {
         plan: 'pro',
         amount: 9.99,

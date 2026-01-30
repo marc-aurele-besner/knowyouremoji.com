@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, type ReactNode } from 'react';
-import posthog from 'posthog-js';
 import { isTest } from '@/lib/env';
 
 /**
@@ -60,10 +59,12 @@ export function isPostHogEnabled(): boolean {
 }
 
 /**
- * Initialize PostHog with the given config
+ * Initialize PostHog with the given config using dynamic import
+ * Reduces initial bundle size by lazy-loading PostHog
  * @internal Exported for testing
  */
-export function initializePostHog(config: PostHogConfig): void {
+export async function initializePostHog(config: PostHogConfig): Promise<void> {
+  const posthog = (await import('posthog-js')).default;
   posthog.init(config.key, {
     api_host: config.host,
     person_profiles: 'identified_only',
@@ -79,6 +80,7 @@ export function initializePostHog(config: PostHogConfig): void {
  *
  * This component initializes PostHog for product analytics and feature flags.
  * It is disabled in test environments and when no API key is provided.
+ * PostHog is loaded dynamically to reduce initial bundle size.
  *
  * Usage:
  * ```tsx
