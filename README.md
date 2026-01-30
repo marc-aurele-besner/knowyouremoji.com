@@ -1,5 +1,7 @@
 # KnowYourEmoji.com
 
+[![CI](https://github.com/marc-aurele-besner/knowyouremoji.com/actions/workflows/ci.yml/badge.svg)](https://github.com/marc-aurele-besner/knowyouremoji.com/actions/workflows/ci.yml)
+
 > Not what the emoji is supposed to mean, but what the person sending it probably meant.
 
 KnowYourEmoji.com is a context-aware emoji interpretation platform that explains what emojis actually mean in real-world usage, not just their Unicode definitions.
@@ -217,7 +219,7 @@ To configure the custom domain `knowyouremoji.com`:
 
 ## Testing Requirements
 
-**100% test coverage is mandatory.** CI blocks merges if coverage drops.
+**99.4%+ line coverage and 99.5%+ function coverage are mandatory.** CI blocks merges if coverage drops below threshold. The slight allowance (vs 100%) accommodates third-party SDK integration code that cannot be unit tested without actual service setup.
 
 - Unit tests for all utilities, services, and hooks
 - Component tests for all UI components
