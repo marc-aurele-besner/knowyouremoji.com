@@ -11,6 +11,8 @@ import type {
   DetectedEmoji,
   InterpretationMetrics,
   RedFlag,
+  SuggestedResponseTone,
+  InterpretationResultWithTones,
 } from '../../../src/types/emoji';
 
 // Counter for generating unique IDs
@@ -171,3 +173,136 @@ export function createMultipleRedFlags(count: number, overrides: Partial<RedFlag
     ...overrides,
   }));
 }
+
+// ============================================
+// RESPONSE TONE SUGGESTION FACTORIES (Phase 2)
+// ============================================
+
+/**
+ * Create a valid SuggestedResponseTone with default values
+ * @param overrides - Partial tone suggestion fields to override defaults
+ */
+export function createSuggestedResponseTone(
+  overrides: Partial<SuggestedResponseTone> = {}
+): SuggestedResponseTone {
+  return {
+    tone: 'PLAYFUL',
+    reasoning:
+      'The positive tone invites a playful response that can strengthen the connection and keep things light.',
+    confidence: 85,
+    examples: [
+      'Haha, love it! 😄 Speaking of which...',
+      "You're too much! 😂 But seriously though...",
+    ],
+    ...overrides,
+  };
+}
+
+/**
+ * Create multiple SuggestedResponseTone objects
+ * @param count - Number of tone suggestions to create (max 5)
+ * @param overrides - Partial fields to apply to all suggestions
+ */
+export function createMultipleSuggestedTones(
+  count: number,
+  overrides: Partial<SuggestedResponseTone> = {}
+): SuggestedResponseTone[] {
+  const defaultTones: SuggestedResponseTone[] = [
+    {
+      tone: 'PLAYFUL',
+      reasoning: 'The positive tone invites a playful response.',
+      confidence: 90,
+      examples: ['Haha, love it! 😄', "You're too much! 😂"],
+    },
+    {
+      tone: 'DIRECT',
+      reasoning: 'A straightforward response ensures clarity.',
+      confidence: 75,
+      examples: ["Here's what I'm thinking...", 'Let me be direct about this...'],
+    },
+    {
+      tone: 'CLARIFYING',
+      reasoning: 'Seeking clarification shows engagement.',
+      confidence: 70,
+      examples: ['Just to make sure I understand...', 'Can you tell me more about...?'],
+    },
+    {
+      tone: 'NEUTRAL',
+      reasoning: 'A balanced response maintains professionalism.',
+      confidence: 65,
+      examples: ['Thanks for sharing that.', 'Understood. My thoughts are...'],
+    },
+    {
+      tone: 'MATCHING',
+      reasoning: "Matching the sender's energy builds rapport.",
+      confidence: 60,
+      examples: ['YES! 🎉 I love this!', 'Same energy! ✨'],
+    },
+  ];
+
+  return Array.from({ length: Math.min(count, 5) }, (_, i) => ({
+    ...defaultTones[i % defaultTones.length],
+    ...overrides,
+  }));
+}
+
+/**
+ * Create a valid InterpretationResultWithTones with default values
+ * @param overrides - Partial result fields to override defaults
+ */
+export function createInterpretationResultWithTones(
+  overrides: Partial<InterpretationResultWithTones> = {}
+): InterpretationResultWithTones {
+  const baseResult = createInterpretationResult(overrides);
+
+  return {
+    ...baseResult,
+    suggestedTones: overrides.suggestedTones ?? createMultipleSuggestedTones(3),
+  };
+}
+
+/**
+ * Create tone suggestions appropriate for different message types
+ */
+export const TONE_SUGGESTION_PRESETS = {
+  /** Friendly positive message */
+  friendly: createMultipleSuggestedTones(3, {}),
+
+  /** Passive-aggressive message */
+  passiveAggressive: [
+    createSuggestedResponseTone({
+      tone: 'CLARIFYING',
+      reasoning: 'Asking clarifying questions can bring underlying concerns to the surface.',
+      confidence: 95,
+    }),
+    createSuggestedResponseTone({
+      tone: 'DIRECT',
+      reasoning: 'A direct response addresses the underlying message clearly.',
+      confidence: 85,
+    }),
+    createSuggestedResponseTone({
+      tone: 'NEUTRAL',
+      reasoning: 'Maintaining neutrality prevents escalation.',
+      confidence: 70,
+    }),
+  ],
+
+  /** Professional/work context */
+  professional: [
+    createSuggestedResponseTone({
+      tone: 'NEUTRAL',
+      reasoning: 'A professional tone maintains appropriate boundaries.',
+      confidence: 90,
+    }),
+    createSuggestedResponseTone({
+      tone: 'DIRECT',
+      reasoning: 'Clear communication is valued in professional settings.',
+      confidence: 80,
+    }),
+    createSuggestedResponseTone({
+      tone: 'CLARIFYING',
+      reasoning: 'Ensuring mutual understanding prevents miscommunication.',
+      confidence: 75,
+    }),
+  ],
+} as const;

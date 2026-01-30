@@ -7,12 +7,17 @@ import {
   createRedFlag,
   createMultipleDetectedEmojis,
   createMultipleRedFlags,
+  createSuggestedResponseTone,
+  createMultipleSuggestedTones,
+  createInterpretationResultWithTones,
+  TONE_SUGGESTION_PRESETS,
 } from '../../../utils/factories/interpreter.factory';
 import type {
   DetectedEmoji,
   RedFlag,
   Platform,
   RelationshipContext,
+  ResponseToneType,
 } from '../../../../src/types/emoji';
 
 describe('interpreter.factory', () => {
@@ -279,6 +284,145 @@ describe('interpreter.factory', () => {
       const redFlags = createMultipleRedFlags(0);
 
       expect(redFlags).toHaveLength(0);
+    });
+  });
+
+  describe('createSuggestedResponseTone', () => {
+    it('should create a valid SuggestedResponseTone with default values', () => {
+      const suggestion = createSuggestedResponseTone();
+
+      expect(suggestion.tone).toBeDefined();
+      expect(suggestion.reasoning).toBeDefined();
+      expect(typeof suggestion.confidence).toBe('number');
+      expect(suggestion.confidence).toBeGreaterThanOrEqual(0);
+      expect(suggestion.confidence).toBeLessThanOrEqual(100);
+      expect(Array.isArray(suggestion.examples)).toBe(true);
+      expect(suggestion.examples.length).toBeGreaterThan(0);
+    });
+
+    it('should allow overriding specific fields', () => {
+      const suggestion = createSuggestedResponseTone({
+        tone: 'DIRECT',
+        reasoning: 'Custom reasoning',
+        confidence: 95,
+        examples: ['Example 1', 'Example 2'],
+      });
+
+      expect(suggestion.tone).toBe('DIRECT');
+      expect(suggestion.reasoning).toBe('Custom reasoning');
+      expect(suggestion.confidence).toBe(95);
+      expect(suggestion.examples).toEqual(['Example 1', 'Example 2']);
+    });
+
+    it('should accept all valid tone types', () => {
+      const tones: ResponseToneType[] = ['DIRECT', 'PLAYFUL', 'CLARIFYING', 'NEUTRAL', 'MATCHING'];
+
+      tones.forEach((tone) => {
+        const suggestion = createSuggestedResponseTone({ tone });
+        expect(suggestion.tone).toBe(tone);
+      });
+    });
+  });
+
+  describe('createMultipleSuggestedTones', () => {
+    it('should create the specified number of tone suggestions', () => {
+      const suggestions = createMultipleSuggestedTones(3);
+
+      expect(suggestions).toHaveLength(3);
+      suggestions.forEach((suggestion) => {
+        expect(suggestion.tone).toBeDefined();
+        expect(suggestion.reasoning).toBeDefined();
+        expect(suggestion.confidence).toBeDefined();
+        expect(suggestion.examples).toBeDefined();
+      });
+    });
+
+    it('should apply overrides to all suggestions', () => {
+      const suggestions = createMultipleSuggestedTones(3, { confidence: 75 });
+
+      suggestions.forEach((suggestion) => {
+        expect(suggestion.confidence).toBe(75);
+      });
+    });
+
+    it('should cap at 5 suggestions', () => {
+      const suggestions = createMultipleSuggestedTones(10);
+
+      expect(suggestions).toHaveLength(5);
+    });
+
+    it('should return empty array for count of 0', () => {
+      const suggestions = createMultipleSuggestedTones(0);
+
+      expect(suggestions).toHaveLength(0);
+    });
+  });
+
+  describe('createInterpretationResultWithTones', () => {
+    it('should create a valid InterpretationResultWithTones with default values', () => {
+      const result = createInterpretationResultWithTones();
+
+      // Base InterpretationResult fields
+      expect(result.id).toBeDefined();
+      expect(result.message).toBeDefined();
+      expect(result.interpretation).toBeDefined();
+      expect(result.metrics).toBeDefined();
+      expect(result.emojis).toBeDefined();
+      expect(result.redFlags).toBeDefined();
+      expect(result.timestamp).toBeDefined();
+
+      // Extended suggestedTones field
+      expect(Array.isArray(result.suggestedTones)).toBe(true);
+      expect(result.suggestedTones).toHaveLength(3);
+    });
+
+    it('should allow overriding suggestedTones', () => {
+      const customTones = createMultipleSuggestedTones(2, { confidence: 80 });
+      const result = createInterpretationResultWithTones({
+        suggestedTones: customTones,
+      });
+
+      expect(result.suggestedTones).toHaveLength(2);
+      result.suggestedTones.forEach((tone) => {
+        expect(tone.confidence).toBe(80);
+      });
+    });
+
+    it('should allow overriding base InterpretationResult fields', () => {
+      const result = createInterpretationResultWithTones({
+        id: 'custom-id',
+        message: 'Custom message 😀',
+      });
+
+      expect(result.id).toBe('custom-id');
+      expect(result.message).toBe('Custom message 😀');
+    });
+  });
+
+  describe('TONE_SUGGESTION_PRESETS', () => {
+    it('should have friendly preset', () => {
+      const preset = TONE_SUGGESTION_PRESETS.friendly;
+
+      expect(Array.isArray(preset)).toBe(true);
+      expect(preset.length).toBe(3);
+    });
+
+    it('should have passiveAggressive preset', () => {
+      const preset = TONE_SUGGESTION_PRESETS.passiveAggressive;
+
+      expect(Array.isArray(preset)).toBe(true);
+      expect(preset.length).toBe(3);
+      // CLARIFYING should be first for passive-aggressive
+      expect(preset[0].tone).toBe('CLARIFYING');
+    });
+
+    it('should have professional preset', () => {
+      const preset = TONE_SUGGESTION_PRESETS.professional;
+
+      expect(Array.isArray(preset)).toBe(true);
+      expect(preset.length).toBe(3);
+      // NEUTRAL should be first for professional
+      expect(preset[0].tone).toBe('NEUTRAL');
     });
   });
 });
