@@ -12,6 +12,7 @@ export interface MobileNavProps {
 const navLinks = [
   { label: 'Emojis', href: '/emoji' },
   { label: 'Interpreter', href: '/interpreter' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
 ];
 
