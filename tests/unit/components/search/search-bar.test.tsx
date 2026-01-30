@@ -137,6 +137,54 @@ describe('SearchBar', () => {
 
       expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
     });
+
+    it('clears results and closes dropdown when query is cleared', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      // First, type something to get results
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      // Now clear the query
+      await act(async () => {
+        fireEvent.change(input, { target: { value: '' } });
+        // Wait for debounce to trigger fetchResults with empty query
+        await new Promise((r) => setTimeout(r, 250));
+      });
+
+      // Dropdown should be closed and results cleared
+      expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+    });
+
+    it('clears results and closes dropdown when query is only whitespace', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      // First, type something to get results
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      // Now enter only whitespace
+      await act(async () => {
+        fireEvent.change(input, { target: { value: '   ' } });
+        // Wait for debounce to trigger fetchResults with whitespace query
+        await new Promise((r) => setTimeout(r, 250));
+      });
+
+      // Dropdown should be closed and results cleared
+      expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+    });
   });
 
   describe('keyboard navigation', () => {

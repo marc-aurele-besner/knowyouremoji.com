@@ -1,11 +1,13 @@
 /**
- * Google Analytics event tracking utilities
+ * Analytics service for tracking custom events
  *
  * Provides typed functions for tracking user interactions throughout the app.
- * Uses @next/third-parties/google for optimized GA4 integration.
+ * Sends events to both Google Analytics (via @next/third-parties/google)
+ * and PostHog for comprehensive product analytics.
  */
 
 import { sendGAEvent } from '@next/third-parties/google';
+import posthog from 'posthog-js';
 
 /**
  * Check if analytics is available (client-side only)
@@ -15,7 +17,44 @@ function isAnalyticsAvailable(): boolean {
 }
 
 /**
+ * Safe wrapper for sending PostHog events
+ * Silently fails if PostHog is not available
+ */
+function safePostHogCapture(
+  eventName: string,
+  eventParams: Record<string, string | number | boolean>
+): void {
+  try {
+    posthog.capture(eventName, eventParams);
+  } catch {
+    // Silently fail if PostHog is not loaded
+    if (process.env.NODE_ENV === 'development') {
+      console.debug(`[PostHog] ${eventName}`, eventParams);
+    }
+  }
+}
+
+/**
  * Safe wrapper for sending GA events
+ * Silently fails if analytics is not available
+ */
+function safeGAEvent(
+  eventName: string,
+  eventParams: Record<string, string | number | boolean>
+): void {
+  try {
+    sendGAEvent('event', eventName, eventParams);
+  } catch {
+    // Silently fail if GA is not loaded
+    if (process.env.NODE_ENV === 'development') {
+      console.debug(`[GA] ${eventName}`, eventParams);
+    }
+  }
+}
+
+/**
+ * Safe wrapper for tracking events to all analytics providers
+ * Sends events to both Google Analytics and PostHog
  * Silently fails if analytics is not available
  */
 function safeTrackEvent(
@@ -24,14 +63,11 @@ function safeTrackEvent(
 ): void {
   if (!isAnalyticsAvailable()) return;
 
-  try {
-    sendGAEvent('event', eventName, eventParams);
-  } catch {
-    // Silently fail if GA is not loaded
-    if (process.env.NODE_ENV === 'development') {
-      console.debug(`[Analytics] ${eventName}`, eventParams);
-    }
-  }
+  // Send to Google Analytics
+  safeGAEvent(eventName, eventParams);
+
+  // Send to PostHog
+  safePostHogCapture(eventName, eventParams);
 }
 
 /**

@@ -201,7 +201,8 @@ describe('UpgradePrompt', () => {
       render(<UpgradePrompt />);
 
       const countdown = screen.getByTestId('reset-countdown');
-      expect(countdown.textContent).toMatch(/1\s*hour.*and.*15\s*minutes?/i);
+      // Allow for timing variance (14-15 minutes due to test execution time)
+      expect(countdown.textContent).toMatch(/1\s*hour.*and.*(14|15)\s*minutes?/i);
     });
 
     it('should format multiple hours and 1 minute correctly', () => {

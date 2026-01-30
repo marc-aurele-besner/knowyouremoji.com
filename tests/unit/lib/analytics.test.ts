@@ -15,13 +15,26 @@ mock.module('@next/third-parties/google', () => ({
   sendGAEvent: mockSendGAEvent,
 }));
 
+// Mock posthog-js
+const mockPostHogCapture = mock(() => {});
+mock.module('posthog-js', () => ({
+  default: {
+    capture: mockPostHogCapture,
+    init: mock(() => {}),
+    identify: mock(() => {}),
+    reset: mock(() => {}),
+  },
+}));
+
 describe('analytics', () => {
   beforeEach(() => {
     mockSendGAEvent.mockClear();
+    mockPostHogCapture.mockClear();
   });
 
   afterEach(() => {
     mockSendGAEvent.mockClear();
+    mockPostHogCapture.mockClear();
   });
 
   describe('emojiEvents', () => {
@@ -216,6 +229,68 @@ describe('analytics', () => {
         url: 'https://knowyouremoji.com/emoji/fire',
         content_type: 'emoji',
       });
+    });
+  });
+
+  describe('PostHog integration', () => {
+    it('sends emoji copy event to PostHog', () => {
+      emojiEvents.copy('😀', 'grinning-face');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_copy', {
+        emoji: '😀',
+        slug: 'grinning-face',
+      });
+    });
+
+    it('sends emoji search event to PostHog', () => {
+      emojiEvents.search('fire', 5);
+      expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_search', {
+        search_term: 'fire',
+        result_count: 5,
+      });
+    });
+
+    it('sends combo copy event to PostHog', () => {
+      comboEvents.copy('🔥💯', 'fire-hundred');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('combo_copy', {
+        combo: '🔥💯',
+        slug: 'fire-hundred',
+      });
+    });
+
+    it('sends interpreter submit event to PostHog', () => {
+      interpreterEvents.submit(50, 'INSTAGRAM');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('interpreter_submit', {
+        message_length: 50,
+        platform: 'INSTAGRAM',
+      });
+    });
+
+    it('sends interpreter result view event to PostHog', () => {
+      interpreterEvents.resultView(true, 75);
+      expect(mockPostHogCapture).toHaveBeenCalledWith('interpreter_result_view', {
+        has_red_flags: true,
+        passive_aggression_score: 75,
+      });
+    });
+
+    it('sends share link copy event to PostHog', () => {
+      shareEvents.copyLink('https://knowyouremoji.com/emoji/fire', 'emoji');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('share_link_copy', {
+        url: 'https://knowyouremoji.com/emoji/fire',
+        content_type: 'emoji',
+      });
+    });
+
+    it('silently catches errors when posthog.capture throws', () => {
+      mockPostHogCapture.mockImplementation(() => {
+        throw new Error('PostHog not loaded');
+      });
+
+      // Should not throw
+      expect(() => emojiEvents.copy('🔥', 'fire')).not.toThrow();
+
+      // Reset mock
+      mockPostHogCapture.mockImplementation(() => {});
     });
   });
 
