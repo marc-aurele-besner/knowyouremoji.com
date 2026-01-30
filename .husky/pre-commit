@@ -1,1 +1,8 @@
+# Run lint-staged (eslint + prettier on staged files)
 bun run lint-staged
+
+# Run type checking
+bun run typecheck
+
+# Run tests with coverage check
+bun run test
