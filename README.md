@@ -130,6 +130,16 @@ bun run lint
 bun run typecheck
 ```
 
+### Pre-commit Hooks
+
+This project uses [Husky](https://typicode.github.io/husky/) with pre-commit hooks that automatically run before each commit:
+
+1. **lint-staged** - Runs ESLint and Prettier on staged files
+2. **Type checking** - Runs `tsc --noEmit` to catch type errors
+3. **Tests** - Runs the full test suite to ensure all tests pass
+
+If any check fails, the commit will be blocked. This ensures code quality is maintained before changes enter the repository.
+
 ## Project Structure
 
 ```
