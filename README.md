@@ -99,8 +99,12 @@ Copy `.env.example` to `.env.local` and configure:
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID`   | No       | Google Analytics 4 Measurement ID (starts with G-)   |
 | `NEXT_PUBLIC_POSTHOG_KEY`         | No       | PostHog project API key for product analytics        |
 | `NEXT_PUBLIC_POSTHOG_HOST`        | No       | PostHog API host (default: https://us.i.posthog.com) |
+| `NEXT_PUBLIC_SUPABASE_URL`        | No\*\*   | Supabase project URL (Phase 2)                       |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY`   | No\*\*   | Supabase anonymous key for client-side auth          |
+| `SUPABASE_SERVICE_ROLE_KEY`       | No       | Supabase service role key for admin operations       |
 
 \*Required if interpreter feature is enabled
+\*\*Required for Phase 2 features (auth, subscriptions, history)
 
 ## Development Commands
 
@@ -160,7 +164,8 @@ src/
 ├── lib/                    # Core utilities
 │   ├── emoji-data.ts       # Data loader
 │   ├── rate-limit.ts       # Rate limiting
-│   └── openai.ts           # AI integration
+│   ├── openai.ts           # AI integration
+│   └── supabase.ts         # Supabase client for auth/database (Phase 2)
 ├── data/                   # Static JSON emoji data
 │   ├── emojis/             # Individual emoji data
 │   └── combos/             # Emoji combination data

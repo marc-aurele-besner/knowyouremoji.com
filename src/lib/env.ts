@@ -31,6 +31,12 @@ export interface EnvConfig {
   upstashRedisRestUrl: string | undefined;
   /** Upstash Redis REST token for authentication (Phase 2) */
   upstashRedisRestToken: string | undefined;
+  /** Supabase project URL (Phase 2) */
+  supabaseUrl: string | undefined;
+  /** Supabase anonymous key for client-side auth (Phase 2) */
+  supabaseAnonKey: string | undefined;
+  /** Supabase service role key for admin operations (Phase 2, server-side only) */
+  supabaseServiceRoleKey: string | undefined;
 }
 
 /**
@@ -50,6 +56,9 @@ export function getEnv(): EnvConfig {
     posthogHost: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     upstashRedisRestUrl: process.env.UPSTASH_REDIS_REST_URL,
     upstashRedisRestToken: process.env.UPSTASH_REDIS_REST_TOKEN,
+    supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
   };
 }
 

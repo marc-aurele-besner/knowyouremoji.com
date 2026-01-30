@@ -69,7 +69,7 @@ bun run validate:emojis
 - `src/components/share/` - Share components (ShareButtons for Twitter, Facebook, copy link)
 - `src/components/not-found/` - 404 page components (NotFoundSearch)
 - `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
-- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `cache.ts` (Redis caching with Upstash), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `cache.ts` (Redis caching with Upstash), `supabase.ts` (Supabase client for auth/database), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `scripts/` - Utility scripts including `validate-emojis.ts` for data validation and `check-coverage.ts` for coverage enforcement
