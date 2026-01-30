@@ -2,6 +2,32 @@ import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs';
 
 const nextConfig: NextConfig = {
+  // Bundle optimization: Enable modular imports for large libraries
+  modularizeImports: {
+    // Optimize Radix UI imports - import only what's used
+    '@radix-ui/react-dialog': {
+      transform: '@radix-ui/react-dialog',
+    },
+    '@radix-ui/react-select': {
+      transform: '@radix-ui/react-select',
+    },
+    '@radix-ui/react-tooltip': {
+      transform: '@radix-ui/react-tooltip',
+    },
+    '@radix-ui/react-collapsible': {
+      transform: '@radix-ui/react-collapsible',
+    },
+    '@radix-ui/react-toast': {
+      transform: '@radix-ui/react-toast',
+    },
+  },
+
+  // Experimental optimizations for better bundle splitting
+  experimental: {
+    // Optimize package imports for better tree-shaking
+    optimizePackageImports: ['@radix-ui/react-icons', 'posthog-js'],
+  },
+
   images: {
     // Enable modern image formats for better compression
     formats: ['image/avif', 'image/webp'],

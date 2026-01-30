@@ -221,7 +221,7 @@ describe('posthog utilities', () => {
       const posthog = (await import('posthog-js')).default;
 
       const config = { key: 'phc_test123', host: 'https://app.posthog.com' };
-      initializePostHog(config);
+      await initializePostHog(config);
 
       expect(posthog.init).toHaveBeenCalledWith('phc_test123', {
         api_host: 'https://app.posthog.com',
