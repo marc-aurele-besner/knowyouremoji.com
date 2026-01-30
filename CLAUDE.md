@@ -69,7 +69,8 @@ bun run validate:emojis
 - `src/components/seo/` - SEO components (JSON-LD structured data)
 - `src/components/share/` - Share components (ShareButtons for Twitter, Facebook, copy link)
 - `src/components/not-found/` - 404 page components (NotFoundSearch)
-- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
+- `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useComboSearch` (client-side combo search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
+- `src/components/search/` - Search components (SearchBar, SearchResults, SearchPageClient)
 - `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `response-tones.ts` (suggested response tone generation for Phase 2), `cache.ts` (Redis caching with Upstash), `supabase.ts` (Supabase client for auth/database), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
@@ -81,9 +82,10 @@ bun run validate:emojis
 
 1. Emoji pages: JSON files → `emoji-data.ts` loader → SSG/ISR pages at `/emoji/[slug]`
 2. Combo pages: JSON files → `combo-data.ts` loader → SSG/ISR pages at `/combo/[slug]`
-3. Interpreter: User input → `/api/interpret` → `interpreter.ts` service → Redis cache check → OpenAI API (on miss) → `InterpretationResult`
-4. Streaming Interpreter: User input → `/api/interpret/stream` → Vercel AI SDK streamText → Progressive text stream
-5. Rate limiting (Phase 1): localStorage tracks daily usage count
+3. Search page: JSON data → `emoji-data.ts` & `combo-data.ts` → SSG page at `/search` → Client-side search via `useEmojiSearch` & `useComboSearch`
+4. Interpreter: User input → `/api/interpret` → `interpreter.ts` service → Redis cache check → OpenAI API (on miss) → `InterpretationResult`
+5. Streaming Interpreter: User input → `/api/interpret/stream` → Vercel AI SDK streamText → Progressive text stream
+6. Rate limiting (Phase 1): localStorage tracks daily usage count
 
 ## Testing Requirements
 
