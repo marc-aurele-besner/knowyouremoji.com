@@ -67,7 +67,7 @@ bun run validate:emojis
 - `src/components/share/` - Share components (ShareButtons for Twitter, Facebook, copy link)
 - `src/components/not-found/` - 404 page components (NotFoundSearch)
 - `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
-- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities)
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `scripts/` - Utility scripts including `validate-emojis.ts` for data validation and `check-coverage.ts` for coverage enforcement
@@ -97,6 +97,6 @@ bun run validate:emojis
 - **Framework:** Next.js 16.1 (App Router), React 19, TypeScript 5.x
 - **Styling:** Tailwind CSS, Radix UI, clsx, tailwind-merge
 - **AI:** OpenAI API with Vercel AI SDK
-- **Monitoring:** Sentry for error tracking
+- **Monitoring:** Sentry for error tracking, PostHog for product analytics
 - **Database (Phase 2):** Supabase (PostgreSQL + Auth)
 - **Testing:** Bun test (unit), Playwright (E2E)
