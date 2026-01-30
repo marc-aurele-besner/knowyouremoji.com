@@ -37,6 +37,12 @@ export type {
   RedFlag,
   InterpretationResult,
   InterpretErrorResponse,
+  // Response tone suggestion types (Phase 2)
+  ResponseToneType,
+  ResponseToneTypeInfo,
+  SuggestedResponseTone,
+  ToneSuggestionRating,
+  InterpretationResultWithTones,
 } from './emoji';
 
 export type {
