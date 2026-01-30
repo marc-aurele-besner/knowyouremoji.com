@@ -110,6 +110,30 @@ describe('env configuration', () => {
       const env = getEnv();
       expect(env.gaMeasurementId).toBeUndefined();
     });
+
+    it('should return posthogKey when set', () => {
+      process.env.NEXT_PUBLIC_POSTHOG_KEY = 'phc_test123';
+      const env = getEnv();
+      expect(env.posthogKey).toBe('phc_test123');
+    });
+
+    it('should return undefined posthogKey when not set', () => {
+      delete process.env.NEXT_PUBLIC_POSTHOG_KEY;
+      const env = getEnv();
+      expect(env.posthogKey).toBeUndefined();
+    });
+
+    it('should return posthogHost when set', () => {
+      process.env.NEXT_PUBLIC_POSTHOG_HOST = 'https://app.posthog.com';
+      const env = getEnv();
+      expect(env.posthogHost).toBe('https://app.posthog.com');
+    });
+
+    it('should return undefined posthogHost when not set', () => {
+      delete process.env.NEXT_PUBLIC_POSTHOG_HOST;
+      const env = getEnv();
+      expect(env.posthogHost).toBeUndefined();
+    });
   });
 
   describe('validateEnv', () => {
