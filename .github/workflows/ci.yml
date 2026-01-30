@@ -73,7 +73,7 @@ jobs:
 
   # Wrapper job for branch protection - reports combined status of all CI jobs
   ci:
-    name: CI
+    name: ci
     runs-on: ubuntu-latest
     needs: [lint-typecheck-test, e2e]
     if: always()
