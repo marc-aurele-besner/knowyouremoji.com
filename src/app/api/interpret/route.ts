@@ -78,6 +78,13 @@ function generateId(): string {
   return `int_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
 }
 
+// Cache headers for dynamic interpret responses
+// - private: Only browser can cache (not CDN)
+// - no-store: Do not cache at all (each interpretation is unique)
+const NO_CACHE_HEADERS = {
+  'Cache-Control': 'private, no-store',
+};
+
 /**
  * Create an error response with consistent structure
  */
@@ -92,7 +99,7 @@ function createErrorResponse(
       status,
       ...(fieldErrors && { fieldErrors }),
     },
-    { status }
+    { status, headers: NO_CACHE_HEADERS }
   );
 }
 
@@ -186,12 +193,12 @@ export async function POST(
     if (!interpreterEnabled || !openaiKey) {
       // Return mock interpretation when service is disabled or not configured
       const mockResult = createMockInterpretation(validatedData, emojis);
-      return NextResponse.json(mockResult, { status: 200 });
+      return NextResponse.json(mockResult, { status: 200, headers: NO_CACHE_HEADERS });
     }
 
     // Call the interpreter service
     const result = await interpretMessage(validatedData);
-    return NextResponse.json(result, { status: 200 });
+    return NextResponse.json(result, { status: 200, headers: NO_CACHE_HEADERS });
   } catch (error) {
     console.error('Error in /api/interpret:', error);
 

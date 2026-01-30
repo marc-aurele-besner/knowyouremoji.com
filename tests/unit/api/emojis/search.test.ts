@@ -1,13 +1,43 @@
-import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
+import { describe, it, expect, mock } from 'bun:test';
 import { NextRequest } from 'next/server';
 
 // Mock emoji data
 const mockEmojiSummaries = [
-  { slug: 'skull', character: '💀', name: 'Skull', category: 'faces', tldr: "Usually means 'I'm dead' from laughing" },
-  { slug: 'fire', character: '🔥', name: 'Fire', category: 'travel', tldr: "Something is 'hot' or awesome" },
-  { slug: 'heart', character: '❤️', name: 'Red Heart', category: 'symbols', tldr: 'Expression of love' },
-  { slug: 'grinning-face', character: '😀', name: 'Grinning Face', category: 'faces', tldr: 'Basic happy expression' },
-  { slug: 'thinking-face', character: '🤔', name: 'Thinking Face', category: 'faces', tldr: 'Contemplation or skepticism' },
+  {
+    slug: 'skull',
+    character: '💀',
+    name: 'Skull',
+    category: 'faces',
+    tldr: "Usually means 'I'm dead' from laughing",
+  },
+  {
+    slug: 'fire',
+    character: '🔥',
+    name: 'Fire',
+    category: 'travel',
+    tldr: "Something is 'hot' or awesome",
+  },
+  {
+    slug: 'heart',
+    character: '❤️',
+    name: 'Red Heart',
+    category: 'symbols',
+    tldr: 'Expression of love',
+  },
+  {
+    slug: 'grinning-face',
+    character: '😀',
+    name: 'Grinning Face',
+    category: 'faces',
+    tldr: 'Basic happy expression',
+  },
+  {
+    slug: 'thinking-face',
+    character: '🤔',
+    name: 'Thinking Face',
+    category: 'faces',
+    tldr: 'Contemplation or skepticism',
+  },
 ];
 
 // Mock emoji-data module
@@ -224,6 +254,33 @@ describe('GET /api/emojis/search', () => {
       expect(emoji.name).toBeDefined();
       expect(emoji.category).toBeDefined();
       expect(emoji.tldr).toBeDefined();
+    });
+  });
+
+  describe('cache headers', () => {
+    it('should include Cache-Control header for caching', async () => {
+      const req = createRequest();
+      const res = await GET(req);
+
+      const cacheControl = res.headers.get('Cache-Control');
+      expect(cacheControl).toBeDefined();
+      expect(cacheControl).toContain('max-age');
+    });
+
+    it('should set Cache-Control with public directive', async () => {
+      const req = createRequest({ q: 'skull' });
+      const res = await GET(req);
+
+      const cacheControl = res.headers.get('Cache-Control');
+      expect(cacheControl).toContain('public');
+    });
+
+    it('should set stale-while-revalidate directive', async () => {
+      const req = createRequest({ q: 'fire' });
+      const res = await GET(req);
+
+      const cacheControl = res.headers.get('Cache-Control');
+      expect(cacheControl).toContain('stale-while-revalidate');
     });
   });
 });
