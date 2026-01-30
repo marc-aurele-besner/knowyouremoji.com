@@ -21,6 +21,14 @@ import {
   type InterpretationResponse,
 } from './openai';
 import { getAllEmojis } from './emoji-data';
+import {
+  cacheGet,
+  cacheSet,
+  getCacheKey,
+  CACHE_PREFIXES,
+  DEFAULT_TTL,
+  hashInterpretationRequest,
+} from './cache';
 import type {
   InterpretRequest,
   InterpretationResult,
@@ -286,4 +294,51 @@ export async function interpretMessage(request: InterpretRequest): Promise<Inter
 
   // Build and return the final result
   return buildInterpretationResult(request.message, openaiResponse, slugMap);
+}
+
+// ============================================
+// CACHED INTERPRETATION
+// ============================================
+
+/**
+ * Interpret a message with Redis caching support
+ *
+ * This function wraps interpretMessage with Redis caching to:
+ * 1. Check if the interpretation already exists in cache
+ * 2. Return cached result if available
+ * 3. Call OpenAI and cache the result if not in cache
+ *
+ * Cache is keyed by hash of (message, platform, relationship)
+ *
+ * @param request - The interpretation request
+ * @returns Complete interpretation result (from cache or fresh)
+ * @throws {OpenAIError} If OpenAI call fails or response is invalid
+ */
+export async function interpretMessageWithCache(
+  request: InterpretRequest
+): Promise<InterpretationResult> {
+  // Generate cache key from request parameters
+  const requestHash = hashInterpretationRequest(request.message, request.platform, request.context);
+  const cacheKey = getCacheKey(CACHE_PREFIXES.INTERPRETATION, requestHash);
+
+  // Try to get from cache first
+  const cachedResult = await cacheGet<InterpretationResult>(cacheKey);
+  if (cachedResult) {
+    // Return cached result with a fresh ID and timestamp
+    return {
+      ...cachedResult,
+      id: generateId(),
+      timestamp: new Date().toISOString(),
+    };
+  }
+
+  // Not in cache - call OpenAI
+  const result = await interpretMessage(request);
+
+  // Store in cache (fire and forget - don't await)
+  cacheSet(cacheKey, result, DEFAULT_TTL.INTERPRETATION).catch(() => {
+    // Silently ignore cache errors - they're already logged in cacheSet
+  });
+
+  return result;
 }
