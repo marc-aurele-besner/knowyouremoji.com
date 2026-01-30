@@ -396,3 +396,65 @@ export interface InterpretErrorResponse {
   /** Optional field-specific errors for validation */
   fieldErrors?: Record<string, string[]>;
 }
+
+// ============================================
+// RESPONSE TONE SUGGESTION TYPES (Phase 2)
+// ============================================
+
+/**
+ * Available response tone types for suggestions
+ */
+export type ResponseToneType = 'DIRECT' | 'PLAYFUL' | 'CLARIFYING' | 'NEUTRAL' | 'MATCHING';
+
+/**
+ * Display information for response tone types
+ */
+export interface ResponseToneTypeInfo {
+  /** The tone type identifier */
+  type: ResponseToneType;
+  /** Human-readable label */
+  label: string;
+  /** Detailed description of the tone */
+  description: string;
+  /** Emoji icon for the tone */
+  icon: string;
+}
+
+/**
+ * A suggested response tone with reasoning and examples
+ */
+export interface SuggestedResponseTone {
+  /** The type of tone being suggested */
+  tone: ResponseToneType;
+  /** Why this tone is recommended for the given message */
+  reasoning: string;
+  /** Confidence score for this suggestion (0-100) */
+  confidence: number;
+  /** Example response templates demonstrating this tone */
+  examples: string[];
+}
+
+/**
+ * User rating for a response tone suggestion (Phase 2)
+ * Requires user authentication for personalization
+ */
+export interface ToneSuggestionRating {
+  /** ID of the interpretation this rating is for */
+  interpretationId: string;
+  /** The tone type being rated */
+  tone: ResponseToneType;
+  /** User's rating (1-5 stars) */
+  rating: 1 | 2 | 3 | 4 | 5;
+  /** Optional feedback text */
+  feedback?: string;
+  /** Timestamp of the rating */
+  timestamp: string;
+}
+
+/**
+ * Extended interpretation result including response tone suggestions
+ */
+export interface InterpretationResultWithTones extends InterpretationResult {
+  /** Suggested response tones (2-3 suggestions) */
+  suggestedTones: SuggestedResponseTone[];
+}
