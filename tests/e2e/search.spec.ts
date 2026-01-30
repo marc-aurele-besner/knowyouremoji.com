@@ -256,12 +256,14 @@ test.describe('Search Flow', () => {
     test('should find emoji by partial name match', async ({ page }) => {
       await page.goto('/');
       const searchInput = page.locator('header input[aria-label="Search emojis"]');
-      await searchInput.fill('thu');
+      // Search with unique prefix that should match specific emojis
+      await searchInput.fill('grim');
       await page.waitForSelector('#search-results li[role="option"]', { timeout: 3000 });
-      const thumbsResult = page
-        .locator('#search-results li[role="option"]:has-text("Thumbs")')
+      // Verify results contain text matching the partial search
+      const grimResult = page
+        .locator('#search-results li[role="option"]:has-text("Grimacing")')
         .first();
-      await expect(thumbsResult).toBeVisible();
+      await expect(grimResult).toBeVisible();
     });
   });
 
