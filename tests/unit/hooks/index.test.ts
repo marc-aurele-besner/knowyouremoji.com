@@ -9,6 +9,13 @@ describe('Hooks barrel export (index.ts)', () => {
     });
   });
 
+  describe('useComboSearch exports', () => {
+    it('exports useComboSearch hook', () => {
+      expect(hooks.useComboSearch).toBeDefined();
+      expect(typeof hooks.useComboSearch).toBe('function');
+    });
+  });
+
   describe('useRateLimit exports', () => {
     it('exports useRateLimit hook', () => {
       expect(hooks.useRateLimit).toBeDefined();
@@ -24,19 +31,25 @@ describe('Hooks barrel export (index.ts)', () => {
   });
 
   describe('all exports are valid', () => {
-    it('exports the correct number of items (3 hooks + 6 types = 9 exports)', () => {
+    it('exports the correct number of items (4 hooks + 8 types = 12 exports)', () => {
       const exportedKeys = Object.keys(hooks);
-      // useEmojiSearch, useRateLimit, useStreamingInterpret = 3 hooks
+      // useEmojiSearch, useComboSearch, useRateLimit, useStreamingInterpret = 4 hooks
       // UseEmojiSearchOptions, UseEmojiSearchReturn = 2 types
+      // UseComboSearchOptions, UseComboSearchReturn = 2 types
       // UseRateLimitOptions, UseRateLimitReturn = 2 types
       // UseStreamingInterpretOptions, UseStreamingInterpretReturn, InterpretInput = 3 types
       // Note: Type exports may not appear in runtime Object.keys
-      // At minimum, 3 hooks should be exported
-      expect(exportedKeys.length).toBeGreaterThanOrEqual(3);
+      // At minimum, 4 hooks should be exported
+      expect(exportedKeys.length).toBeGreaterThanOrEqual(4);
     });
 
     it('all hook exports are valid functions', () => {
-      const hookNames = ['useEmojiSearch', 'useRateLimit', 'useStreamingInterpret'];
+      const hookNames = [
+        'useEmojiSearch',
+        'useComboSearch',
+        'useRateLimit',
+        'useStreamingInterpret',
+      ];
       hookNames.forEach((name) => {
         const hook = hooks[name as keyof typeof hooks];
         expect(typeof hook).toBe('function');
@@ -44,7 +57,12 @@ describe('Hooks barrel export (index.ts)', () => {
     });
 
     it('hook names follow the React hook naming convention (use prefix)', () => {
-      const hookNames = ['useEmojiSearch', 'useRateLimit', 'useStreamingInterpret'];
+      const hookNames = [
+        'useEmojiSearch',
+        'useComboSearch',
+        'useRateLimit',
+        'useStreamingInterpret',
+      ];
       hookNames.forEach((name) => {
         expect(name.startsWith('use')).toBe(true);
       });
