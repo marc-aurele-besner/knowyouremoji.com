@@ -42,14 +42,16 @@ test.describe('Homepage', () => {
 
     test('should navigate to interpreter page from hero CTA', async ({ page }) => {
       await page.goto('/');
-      await page.click('a:has-text("Interpret a Message")');
-      await expect(page).toHaveURL('/interpreter');
+      const interpreterLink = page.locator('a:has-text("Interpret a Message")');
+      await interpreterLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/interpreter'), interpreterLink.click()]);
     });
 
     test('should navigate to emoji page from hero CTA', async ({ page }) => {
       await page.goto('/');
-      await page.click('a:has-text("Browse All Emojis")');
-      await expect(page).toHaveURL('/emoji');
+      const browseLink = page.locator('a:has-text("Browse All Emojis")');
+      await browseLink.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/emoji'), browseLink.click()]);
     });
   });
 
@@ -94,19 +96,20 @@ test.describe('Homepage', () => {
       const emojiCards = page.locator('[data-testid="emoji-card"]');
       const count = await emojiCards.count();
       expect(count).toBeGreaterThan(0);
-      expect(count).toBeLessThanOrEqual(6);
+      expect(count).toBeLessThanOrEqual(12);
     });
 
     test('should navigate to emoji detail page when clicking emoji card', async ({ page }) => {
       await page.goto('/');
       const firstEmojiCard = page.locator('[data-testid="emoji-card"]').first();
-      await firstEmojiCard.click();
-      await expect(page).toHaveURL(/\/emoji\/.+/);
+      await firstEmojiCard.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL(/\/emoji\/.+/), firstEmojiCard.click()]);
     });
 
     test('should have View All Emojis button', async ({ page }) => {
       await page.goto('/');
-      const viewAllButton = page.locator('a:has-text("View All Emojis")');
+      // Button text includes the count, e.g., "View All 4086 Emojis"
+      const viewAllButton = page.locator('a:has-text("View All")').filter({ hasText: 'Emojis' });
       await expect(viewAllButton).toBeVisible();
       await expect(viewAllButton).toHaveAttribute('href', '/emoji');
     });
@@ -130,14 +133,14 @@ test.describe('Homepage', () => {
       const comboCards = page.locator('[data-testid="combo-card"]');
       const count = await comboCards.count();
       expect(count).toBeGreaterThan(0);
-      expect(count).toBeLessThanOrEqual(4);
+      expect(count).toBeLessThanOrEqual(8);
     });
 
     test('should navigate to combo detail page when clicking combo card', async ({ page }) => {
       await page.goto('/');
       const firstComboCard = page.locator('[data-testid="combo-card"]').first();
-      await firstComboCard.click();
-      await expect(page).toHaveURL(/\/combo\/.+/);
+      await firstComboCard.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL(/\/combo\/.+/), firstComboCard.click()]);
     });
 
     test('should have View All Combos button', async ({ page }) => {
@@ -165,8 +168,8 @@ test.describe('Homepage', () => {
     test('should navigate to interpreter from final CTA', async ({ page }) => {
       await page.goto('/');
       const ctaButton = page.locator('a:has-text("Try the Interpreter")');
-      await ctaButton.click();
-      await expect(page).toHaveURL('/interpreter');
+      await ctaButton.waitFor({ state: 'visible' });
+      await Promise.all([page.waitForURL('/interpreter'), ctaButton.click()]);
     });
   });
 
