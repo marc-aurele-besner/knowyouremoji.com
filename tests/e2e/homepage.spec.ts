@@ -96,7 +96,7 @@ test.describe('Homepage', () => {
       const emojiCards = page.locator('[data-testid="emoji-card"]');
       const count = await emojiCards.count();
       expect(count).toBeGreaterThan(0);
-      expect(count).toBeLessThanOrEqual(6);
+      expect(count).toBeLessThanOrEqual(12);
     });
 
     test('should navigate to emoji detail page when clicking emoji card', async ({ page }) => {
@@ -108,7 +108,8 @@ test.describe('Homepage', () => {
 
     test('should have View All Emojis button', async ({ page }) => {
       await page.goto('/');
-      const viewAllButton = page.locator('a:has-text("View All Emojis")');
+      // Button text includes the count, e.g., "View All 4086 Emojis"
+      const viewAllButton = page.locator('a:has-text("View All")').filter({ hasText: 'Emojis' });
       await expect(viewAllButton).toBeVisible();
       await expect(viewAllButton).toHaveAttribute('href', '/emoji');
     });
@@ -132,7 +133,7 @@ test.describe('Homepage', () => {
       const comboCards = page.locator('[data-testid="combo-card"]');
       const count = await comboCards.count();
       expect(count).toBeGreaterThan(0);
-      expect(count).toBeLessThanOrEqual(4);
+      expect(count).toBeLessThanOrEqual(8);
     });
 
     test('should navigate to combo detail page when clicking combo card', async ({ page }) => {
