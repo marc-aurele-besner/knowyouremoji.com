@@ -39,3 +39,4 @@ export {
   ToastAction,
 } from './toast';
 export { Collapsible, CollapsibleTrigger, CollapsibleContent } from './collapsible';
+export { OptimizedImage, type OptimizedImageProps } from './optimized-image';
