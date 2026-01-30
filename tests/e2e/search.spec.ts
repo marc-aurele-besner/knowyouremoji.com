@@ -194,9 +194,10 @@ test.describe('Search Flow', () => {
     test('should navigate from search to fire emoji page', async ({ page }) => {
       await page.goto('/');
       const searchInput = page.locator('header input[aria-label="Search emojis"]');
-      await searchInput.fill('fire');
+      // Search by emoji character for exact match
+      await searchInput.fill('🔥');
       await page.waitForSelector('#search-results li[role="option"]', { timeout: 3000 });
-      const fireResult = page.locator('#search-results li[role="option"]:has-text("Fire")').first();
+      const fireResult = page.locator('#search-results li[role="option"]').first();
       await fireResult.click();
       await expect(page).toHaveURL(/\/emoji\/fire/);
       await expect(page.locator('h1')).toContainText('Fire');
@@ -205,7 +206,8 @@ test.describe('Search Flow', () => {
     test('should clear search input after selection', async ({ page }) => {
       await page.goto('/');
       const searchInput = page.locator('header input[aria-label="Search emojis"]');
-      await searchInput.fill('skull');
+      // Search by emoji character for exact match
+      await searchInput.fill('💀');
       await page.waitForSelector('#search-results li[role="option"]', { timeout: 3000 });
       const firstResult = page.locator('#search-results li[role="option"]').first();
       await firstResult.click();
@@ -220,11 +222,10 @@ test.describe('Search Flow', () => {
       await page.goto('/emoji/fire');
       await expect(page.locator('h1')).toContainText('Fire');
       const searchInput = page.locator('header input[aria-label="Search emojis"]');
-      await searchInput.fill('skull');
+      // Search by emoji character for exact match
+      await searchInput.fill('💀');
       await page.waitForSelector('#search-results li[role="option"]', { timeout: 3000 });
-      const skullResult = page
-        .locator('#search-results li[role="option"]:has-text("Skull")')
-        .first();
+      const skullResult = page.locator('#search-results li[role="option"]').first();
       await skullResult.click();
       await expect(page).toHaveURL(/\/emoji\/skull/);
       await expect(page.locator('h1')).toContainText('Skull');
