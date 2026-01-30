@@ -618,4 +618,37 @@ describe('POST /api/interpret', () => {
       expect(typeof data.emojis[0].meaning).toBe('string');
     });
   });
+
+  describe('cache headers', () => {
+    it('should not cache successful responses (dynamic content)', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+
+      const cacheControl = res.headers.get('Cache-Control');
+      expect(cacheControl).toBeDefined();
+      expect(cacheControl).toContain('no-store');
+    });
+
+    it('should include private directive to prevent proxy caching', async () => {
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+
+      const req = createRequest({
+        message: 'Hello there friend 😀 how are you today?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+
+      const res = await POST(req);
+
+      const cacheControl = res.headers.get('Cache-Control');
+      expect(cacheControl).toContain('private');
+    });
+  });
 });
