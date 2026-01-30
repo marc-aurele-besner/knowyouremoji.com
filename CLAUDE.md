@@ -71,6 +71,7 @@ bun run validate:emojis
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `scripts/` - Utility scripts including `validate-emojis.ts` for data validation and `check-coverage.ts` for coverage enforcement
 - `tests/unit/`, `tests/integration/`, `tests/e2e/` - Test files
+- `tests/utils/` - Test utilities: mock factories (`createEmoji`, `createEmojiCombo`, etc.), validation helpers (`isValidEmoji`, `assertValidEmoji`, etc.), and curated fixtures for emojis, combos, and messages
 
 ### Data Flow
 
