@@ -6,6 +6,7 @@ import {
   navigationEvents,
   engagementEvents,
   errorEvents,
+  shareEvents,
 } from '@/lib/analytics';
 
 // Mock sendGAEvent from @next/third-parties/google
@@ -195,6 +196,25 @@ describe('analytics', () => {
       errorEvents.pageNotFound('/nonexistent-page');
       expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'page_not_found', {
         attempted_path: '/nonexistent-page',
+      });
+    });
+  });
+
+  describe('shareEvents', () => {
+    it('tracks content share', () => {
+      shareEvents.share('twitter', 'https://knowyouremoji.com/emoji/fire', 'emoji');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'content_share', {
+        platform: 'twitter',
+        url: 'https://knowyouremoji.com/emoji/fire',
+        content_type: 'emoji',
+      });
+    });
+
+    it('tracks share link copy', () => {
+      shareEvents.copyLink('https://knowyouremoji.com/emoji/fire', 'emoji');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'share_link_copy', {
+        url: 'https://knowyouremoji.com/emoji/fire',
+        content_type: 'emoji',
       });
     });
   });

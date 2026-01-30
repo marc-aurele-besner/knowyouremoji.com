@@ -143,3 +143,16 @@ export const errorEvents = {
   pageNotFound: (attemptedPath: string) =>
     safeTrackEvent('page_not_found', { attempted_path: attemptedPath }),
 };
+
+/**
+ * Share event tracking
+ */
+export const shareEvents = {
+  /** Track when user shares content via a platform */
+  share: (platform: string, url: string, contentType: string) =>
+    safeTrackEvent('content_share', { platform, url, content_type: contentType }),
+
+  /** Track when user copies a share link */
+  copyLink: (url: string, contentType: string) =>
+    safeTrackEvent('share_link_copy', { url, content_type: contentType }),
+};
