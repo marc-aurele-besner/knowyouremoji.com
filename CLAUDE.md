@@ -62,6 +62,7 @@ bun run validate:emojis
 - `src/app/` - Next.js App Router pages with route groups: `(marketing)`, `(emoji)`, `(tools)`, `(auth)`, `(dashboard)`
 - `src/components/ui/` - Reusable UI primitives (Radix UI + Tailwind)
 - `src/components/layout/` - Layout components (Header, Footer, MobileNav, Breadcrumbs)
+- `src/components/auth/` - Authentication components (LoginForm)
 - `src/components/emoji/` - Emoji display components
 - `src/components/combo/` - Combo display components (ComboHeader)
 - `src/components/interpreter/` - AI interpreter tool components
