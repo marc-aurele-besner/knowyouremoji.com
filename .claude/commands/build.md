@@ -179,6 +179,7 @@ Default configuration (automatically detected or uses these defaults):
       - Push: `git push origin <branch-name>`
     - **Conservative approach**: Only add/modify workflows that are directly relevant to the changes
     - If no CI/CD changes are needed, proceed without modifications
+    - Workflow should now include step to run e2e tests
 
 13. **Review and update README and documentation**
     - Review existing documentation files: `README.md`, `CLAUDE.md`, `AGENT.md`, etc.
@@ -308,7 +309,7 @@ Default configuration (automatically detected or uses these defaults):
 - **Error handling**: If validation fails after 5 attempts, report the issue and ask for manual intervention rather than proceeding with errors.
 - **Branch naming**: Follow pattern `issue-<number>-<sanitized-title>` for consistency.
 - **Commit messages**: Use conventional commits format (`feat:`, `fix:`, `test:`, `chore:`, `docs:`, etc.).
-- **CI/CD workflows**: Be conservative when adding or modifying workflows. Only make changes that are directly relevant to the issue. Not every issue requires workflow changes—documentation, data files, or minor updates may not need CI/CD modifications.
+- **CI/CD workflows**: Be conservative when adding or modifying workflows. Only make changes that are directly relevant to the issue. Not every issue requires workflow changes—documentation, data files, or minor updates may not need CI/CD modifications. Make sure to never run e2e test command in workflows!
 - **Documentation updates**: Keep documentation in sync with code changes. Update README.md for user-facing changes, and CLAUDE.md/AGENT.md for architecture or development workflow changes. Be conservative—only update what's directly affected.
 
 ## Example Workflow
