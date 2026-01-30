@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { siteMetadata } from '@/lib/metadata';
 import { GoogleAnalytics } from '@/components/analytics/google-analytics';
+import { PostHogProvider } from '@/components/analytics/posthog';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
@@ -27,14 +28,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
-        <GoogleAnalytics />
+        <PostHogProvider>
+          <ThemeProvider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </ThemeProvider>
+          <GoogleAnalytics />
+        </PostHogProvider>
       </body>
     </html>
   );

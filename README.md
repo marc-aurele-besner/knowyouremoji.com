@@ -88,14 +88,17 @@ Open [http://localhost:3000](http://localhost:3000) to view the app.
 
 Copy `.env.example` to `.env.local` and configure:
 
-| Variable                          | Required | Description                        |
-| --------------------------------- | -------- | ---------------------------------- |
-| `NEXT_PUBLIC_APP_URL`             | No       | App URL (default: localhost:3000)  |
-| `NEXT_PUBLIC_APP_NAME`            | No       | App name (default: KnowYourEmoji)  |
-| `OPENAI_API_KEY`                  | Yes\*    | OpenAI API key for interpreter     |
-| `NEXT_PUBLIC_ENABLE_INTERPRETER`  | No       | Enable interpreter (default: true) |
-| `SENTRY_DSN`                      | No       | Sentry DSN for error monitoring    |
-| `NEXT_PUBLIC_VERCEL_ANALYTICS_ID` | No       | Vercel Analytics ID                |
+| Variable                          | Required | Description                                          |
+| --------------------------------- | -------- | ---------------------------------------------------- |
+| `NEXT_PUBLIC_APP_URL`             | No       | App URL (default: localhost:3000)                    |
+| `NEXT_PUBLIC_APP_NAME`            | No       | App name (default: KnowYourEmoji)                    |
+| `OPENAI_API_KEY`                  | Yes\*    | OpenAI API key for interpreter                       |
+| `NEXT_PUBLIC_ENABLE_INTERPRETER`  | No       | Enable interpreter (default: true)                   |
+| `SENTRY_DSN`                      | No       | Sentry DSN for error monitoring                      |
+| `NEXT_PUBLIC_VERCEL_ANALYTICS_ID` | No       | Vercel Analytics ID                                  |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID`   | No       | Google Analytics 4 Measurement ID (starts with G-)   |
+| `NEXT_PUBLIC_POSTHOG_KEY`         | No       | PostHog project API key for product analytics        |
+| `NEXT_PUBLIC_POSTHOG_HOST`        | No       | PostHog API host (default: https://us.i.posthog.com) |
 
 \*Required if interpreter feature is enabled
 

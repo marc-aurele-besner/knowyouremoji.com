@@ -23,6 +23,10 @@ export interface EnvConfig {
   sentryDsnPublic: string | undefined;
   /** Google Analytics Measurement ID (starts with G-) */
   gaMeasurementId: string | undefined;
+  /** PostHog project API key for product analytics */
+  posthogKey: string | undefined;
+  /** PostHog API host URL */
+  posthogHost: string | undefined;
 }
 
 /**
@@ -38,6 +42,8 @@ export function getEnv(): EnvConfig {
     sentryDsn: process.env.SENTRY_DSN,
     sentryDsnPublic: process.env.NEXT_PUBLIC_SENTRY_DSN,
     gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+    posthogKey: process.env.NEXT_PUBLIC_POSTHOG_KEY,
+    posthogHost: process.env.NEXT_PUBLIC_POSTHOG_HOST,
   };
 }
 
