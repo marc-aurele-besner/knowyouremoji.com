@@ -192,3 +192,22 @@ export const shareEvents = {
   copyLink: (url: string, contentType: string) =>
     safeTrackEvent('share_link_copy', { url, content_type: contentType }),
 };
+
+/**
+ * Conversion event tracking for upgrade flows and payments
+ */
+export const conversionEvents = {
+  /** Track when user clicks an upgrade button */
+  upgradeClick: (source: string, plan: string) => safeTrackEvent('upgrade_click', { source, plan }),
+
+  /** Track when upgrade/pricing modal is shown */
+  upgradeModalView: (trigger: string) => safeTrackEvent('upgrade_modal_view', { trigger }),
+
+  /** Track successful payment completion */
+  paymentSuccess: (plan: string, amount: number, currency: string) =>
+    safeTrackEvent('payment_success', { plan, amount, currency }),
+
+  /** Track failed payment attempt */
+  paymentFailed: (plan: string, errorType: string) =>
+    safeTrackEvent('payment_failed', { plan, error_type: errorType }),
+};

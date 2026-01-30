@@ -7,6 +7,7 @@ import {
   engagementEvents,
   errorEvents,
   shareEvents,
+  conversionEvents,
 } from '@/lib/analytics';
 
 // Mock sendGAEvent from @next/third-parties/google
@@ -291,6 +292,57 @@ describe('analytics', () => {
 
       // Reset mock
       mockPostHogCapture.mockImplementation(() => {});
+    });
+
+    it('sends upgrade click event to PostHog', () => {
+      conversionEvents.upgradeClick('pricing_page', 'pro');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('upgrade_click', {
+        source: 'pricing_page',
+        plan: 'pro',
+      });
+    });
+
+    it('sends payment success event to PostHog', () => {
+      conversionEvents.paymentSuccess('pro', 9.99, 'usd');
+      expect(mockPostHogCapture).toHaveBeenCalledWith('payment_success', {
+        plan: 'pro',
+        amount: 9.99,
+        currency: 'usd',
+      });
+    });
+  });
+
+  describe('conversionEvents', () => {
+    it('tracks upgrade click', () => {
+      conversionEvents.upgradeClick('pricing_page', 'pro');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'upgrade_click', {
+        source: 'pricing_page',
+        plan: 'pro',
+      });
+    });
+
+    it('tracks upgrade modal view', () => {
+      conversionEvents.upgradeModalView('rate_limit');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'upgrade_modal_view', {
+        trigger: 'rate_limit',
+      });
+    });
+
+    it('tracks payment success', () => {
+      conversionEvents.paymentSuccess('pro', 9.99, 'usd');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'payment_success', {
+        plan: 'pro',
+        amount: 9.99,
+        currency: 'usd',
+      });
+    });
+
+    it('tracks payment failed', () => {
+      conversionEvents.paymentFailed('pro', 'card_declined');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'payment_failed', {
+        plan: 'pro',
+        error_type: 'card_declined',
+      });
     });
   });
 
