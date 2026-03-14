@@ -264,7 +264,7 @@ describe('EmojiGrid', () => {
     it('has hover transition classes', () => {
       render(<EmojiGrid emojis={singleEmoji} />);
       const link = screen.getByRole('link', { name: /fire/i });
-      expect(link).toHaveClass('transition-colors');
+      expect(link).toHaveClass('emoji-card-hover');
     });
   });
 
@@ -272,7 +272,7 @@ describe('EmojiGrid', () => {
     it('has dark mode classes for hover background', () => {
       render(<EmojiGrid emojis={singleEmoji} />);
       const link = screen.getByRole('link', { name: /fire/i });
-      expect(link).toHaveClass('dark:hover:bg-gray-800');
+      expect(link).toHaveClass('dark:bg-gray-800/50');
     });
 
     it('has dark mode classes for border', () => {

@@ -98,17 +98,24 @@ function EmojiCard({
     <Link
       href={`/emoji/${emoji.slug}`}
       className={cn(
-        'flex flex-col items-center rounded-lg border border-gray-200 dark:border-gray-700 transition-colors hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800',
+        'group flex flex-col items-center rounded-xl border border-gray-200 dark:border-gray-700 emoji-card-hover bg-white dark:bg-gray-800/50',
         compact ? 'p-2' : 'p-4'
       )}
       aria-label={emoji.name}
     >
-      <span className={cn(compact ? 'text-2xl' : 'text-4xl')} role="img" aria-hidden="true">
+      <span
+        className={cn(
+          'emoji-char inline-block group-hover:animate-wiggle',
+          compact ? 'text-2xl' : 'text-4xl'
+        )}
+        role="img"
+        aria-hidden="true"
+      >
         {emoji.character}
       </span>
       <span
         className={cn(
-          'text-center font-medium text-gray-700 dark:text-gray-100',
+          'text-center font-medium text-gray-700 dark:text-gray-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors',
           compact ? 'mt-1 text-xs' : 'mt-2 text-sm'
         )}
       >

@@ -23,7 +23,10 @@ function Footer({ className, ...props }: FooterProps) {
 
   return (
     <footer
-      className={cn('border-t bg-gray-50 dark:bg-gray-900 dark:border-gray-800', className)}
+      className={cn(
+        'border-t bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 dark:border-gray-800',
+        className
+      )}
       {...props}
     >
       <div className="container mx-auto px-4 py-12">
@@ -31,10 +34,12 @@ function Footer({ className, ...props }: FooterProps) {
           <div className="md:col-span-2">
             <Link
               href="/"
-              className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
+              className="group flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
             >
-              <span className="emoji-display">🤔</span>
-              <span>KnowYourEmoji</span>
+              <span className="emoji-display inline-block group-hover:animate-wiggle">🤔</span>
+              <span className="bg-gradient-to-r from-amber-600 to-orange-500 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
+                KnowYourEmoji
+              </span>
             </Link>
             <p className="mt-4 text-sm text-gray-600 max-w-xs dark:text-gray-400">
               Understand what emojis really mean in context. Decode social cues, platform

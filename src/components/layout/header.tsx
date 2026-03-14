@@ -32,10 +32,14 @@ function Header({ className, ...props }: HeaderProps) {
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
           <Link
             href="/"
-            className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
+            className="group flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
           >
-            <span className="emoji-display">🤔</span>
-            <span>KnowYourEmoji</span>
+            <span className="emoji-display inline-block group-hover:animate-wiggle transition-transform">
+              🤔
+            </span>
+            <span className="bg-gradient-to-r from-amber-600 to-orange-500 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
+              KnowYourEmoji
+            </span>
           </Link>
 
           <nav aria-label="Main" className="hidden md:flex items-center gap-6">
