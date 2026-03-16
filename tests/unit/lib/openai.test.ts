@@ -9,6 +9,7 @@ import {
   isRetryableError,
   resetClients,
   INTERPRETATION_SYSTEM_PROMPT,
+  STREAMING_SYSTEM_PROMPT,
   OPENAI_MODEL,
   MAX_RETRIES,
   RETRY_DELAY_MS,
@@ -68,6 +69,25 @@ describe('openai module', () => {
 
     it('should mention passive-aggression scoring', () => {
       expect(INTERPRETATION_SYSTEM_PROMPT.toLowerCase()).toContain('passive');
+    });
+  });
+
+  describe('STREAMING_SYSTEM_PROMPT', () => {
+    it('should be a non-empty string', () => {
+      expect(typeof STREAMING_SYSTEM_PROMPT).toBe('string');
+      expect(STREAMING_SYSTEM_PROMPT.length).toBeGreaterThan(0);
+    });
+
+    it('should mention emoji interpretation', () => {
+      expect(STREAMING_SYSTEM_PROMPT.toLowerCase()).toContain('emoji');
+    });
+
+    it('should not request JSON output', () => {
+      expect(STREAMING_SYSTEM_PROMPT).toContain('Do NOT output JSON');
+    });
+
+    it('should request readable text', () => {
+      expect(STREAMING_SYSTEM_PROMPT.toLowerCase()).toContain('readable');
     });
   });
 

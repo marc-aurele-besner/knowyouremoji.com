@@ -75,6 +75,20 @@ Provide your analysis in a structured JSON format with:
 
 Be honest and direct in your analysis. If a message seems concerning, say so clearly.`;
 
+/**
+ * System prompt for the streaming endpoint — produces human-readable text, not JSON.
+ */
+export const STREAMING_SYSTEM_PROMPT = `You are an expert emoji interpreter. Analyze messages containing emojis and provide a clear, concise, human-readable interpretation.
+
+Keep your response short and focused. Structure it as:
+
+1. **Emoji Breakdown** — What each emoji means in this specific context (1-2 sentences per emoji).
+2. **Overall Interpretation** — What the full message likely means (2-3 sentences max).
+3. **Tone** — Is it positive, neutral, or negative? Note any sarcasm or passive-aggression.
+4. **Watch Out** — Only if relevant, flag any red flags (manipulation, guilt-tripping, mixed signals). Skip this section if there are none.
+
+Do NOT output JSON. Write in plain, readable text with markdown formatting. Be direct and concise.`;
+
 // ============================================
 // SCHEMAS
 // ============================================

@@ -6,7 +6,7 @@ import type { InterpretRequest, InterpretErrorResponse } from '@/types';
 import {
   getOpenAIProvider,
   buildInterpretationPrompt,
-  INTERPRETATION_SYSTEM_PROMPT,
+  STREAMING_SYSTEM_PROMPT,
   OPENAI_MODEL,
   MAX_OUTPUT_TOKENS,
   OpenAIError,
@@ -149,7 +149,7 @@ export async function POST(
     // Use Vercel AI SDK streamText for streaming response
     const result = streamText({
       model: openai(OPENAI_MODEL),
-      system: INTERPRETATION_SYSTEM_PROMPT,
+      system: STREAMING_SYSTEM_PROMPT,
       prompt: userPrompt,
       temperature: 0.7,
       maxOutputTokens: MAX_OUTPUT_TOKENS,

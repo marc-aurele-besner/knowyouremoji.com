@@ -129,7 +129,7 @@ export function StreamingInterpreterForm({
                 <div
                   data-testid="streaming-text"
                   className={cn(
-                    'text-gray-900 dark:text-gray-100 whitespace-pre-wrap',
+                    'text-gray-900 dark:text-gray-100 whitespace-pre-wrap leading-relaxed',
                     isLoading && 'animate-pulse'
                   )}
                 >
