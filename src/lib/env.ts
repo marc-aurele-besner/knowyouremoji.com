@@ -15,6 +15,8 @@ export interface EnvConfig {
   appName: string;
   /** OpenRouter API key for interpreter feature */
   openrouterApiKey: string | undefined;
+  /** OpenRouter model for interpreter (defaults to liquid/lfm2-8b-a1b) */
+  openrouterModel: string;
   /** Whether the interpreter feature is enabled */
   enableInterpreter: boolean;
   /** Sentry DSN for error monitoring (server-side) */
@@ -48,6 +50,7 @@ export function getEnv(): EnvConfig {
     appUrl: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
     appName: process.env.NEXT_PUBLIC_APP_NAME || 'KnowYourEmoji',
     openrouterApiKey: process.env.OPENROUTER_API_KEY,
+    openrouterModel: process.env.OPENROUTER_MODEL || 'liquid/lfm2-8b-a1b',
     enableInterpreter: process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false',
     sentryDsn: process.env.SENTRY_DSN,
     sentryDsnPublic: process.env.NEXT_PUBLIC_SENTRY_DSN,

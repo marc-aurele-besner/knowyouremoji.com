@@ -19,8 +19,11 @@ import type { InterpretRequest, Platform, RelationshipContext } from '@/types';
 // CONSTANTS
 // ============================================
 
-/** The model to use for interpretations (via OpenRouter) */
-export const OPENAI_MODEL = 'liquid/lfm2-8b-a1b';
+/** Default model for interpretations (via OpenRouter) */
+const DEFAULT_MODEL = 'liquid/lfm2-8b-a1b';
+
+/** The model to use for interpretations (via OpenRouter), configurable via OPENROUTER_MODEL env var */
+export const OPENAI_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_MODEL;
 
 /** Maximum output tokens to restrict response size */
 export const MAX_OUTPUT_TOKENS = 512;

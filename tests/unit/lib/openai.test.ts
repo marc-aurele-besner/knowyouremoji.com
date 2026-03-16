@@ -72,8 +72,14 @@ describe('openai module', () => {
   });
 
   describe('OPENAI_MODEL', () => {
-    it('should be liquid/lfm2-8b-a1b', () => {
-      expect(OPENAI_MODEL).toBe('liquid/lfm2-8b-a1b');
+    it('should default to liquid/lfm2-8b-a1b or use OPENROUTER_MODEL env var', () => {
+      const expected = process.env.OPENROUTER_MODEL || 'liquid/lfm2-8b-a1b';
+      expect(OPENAI_MODEL).toBe(expected);
+    });
+
+    it('should be a non-empty string', () => {
+      expect(typeof OPENAI_MODEL).toBe('string');
+      expect(OPENAI_MODEL.length).toBeGreaterThan(0);
     });
   });
 
