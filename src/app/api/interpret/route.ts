@@ -188,9 +188,9 @@ export async function POST(
 
     // Check if interpreter is enabled
     const interpreterEnabled = process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false';
-    const openaiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.OPENROUTER_API_KEY;
 
-    if (!interpreterEnabled || !openaiKey) {
+    if (!interpreterEnabled || !apiKey) {
       // Return mock interpretation when service is disabled or not configured
       const mockResult = createMockInterpretation(validatedData, emojis);
       return NextResponse.json(mockResult, { status: 200, headers: NO_CACHE_HEADERS });

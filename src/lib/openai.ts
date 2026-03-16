@@ -19,14 +19,23 @@ import type { InterpretRequest, Platform, RelationshipContext } from '@/types';
 // CONSTANTS
 // ============================================
 
-/** The OpenAI model to use for interpretations */
-export const OPENAI_MODEL = 'gpt-4-turbo';
+/** Default model for interpretations (via OpenRouter) */
+const DEFAULT_MODEL = 'liquid/lfm2-8b-a1b';
+
+/** The model to use for interpretations (via OpenRouter), configurable via OPENROUTER_MODEL env var */
+export const OPENAI_MODEL = process.env.OPENROUTER_MODEL || DEFAULT_MODEL;
+
+/** Maximum output tokens to restrict response size */
+export const MAX_OUTPUT_TOKENS = 512;
 
 /** Maximum number of retries for transient failures */
 export const MAX_RETRIES = 3;
 
 /** Delay between retries in milliseconds */
 export const RETRY_DELAY_MS = 1000;
+
+/** OpenRouter API base URL (OpenAI-compatible) */
+const OPENROUTER_BASE_URL = 'https://openrouter.ai/api/v1';
 
 // ============================================
 // SYSTEM PROMPT
@@ -65,6 +74,20 @@ Provide your analysis in a structured JSON format with:
 - Any red flags detected
 
 Be honest and direct in your analysis. If a message seems concerning, say so clearly.`;
+
+/**
+ * System prompt for the streaming endpoint — produces human-readable text, not JSON.
+ */
+export const STREAMING_SYSTEM_PROMPT = `You are an expert emoji interpreter. Analyze messages containing emojis and provide a clear, concise, human-readable interpretation.
+
+Keep your response short and focused. Structure it as:
+
+1. **Emoji Breakdown** — What each emoji means in this specific context (1-2 sentences per emoji).
+2. **Overall Interpretation** — What the full message likely means (2-3 sentences max).
+3. **Tone** — Is it positive, neutral, or negative? Note any sarcasm or passive-aggression.
+4. **Watch Out** — Only if relevant, flag any red flags (manipulation, guilt-tripping, mixed signals). Skip this section if there are none.
+
+Do NOT output JSON. Write in plain, readable text with markdown formatting. Be direct and concise.`;
 
 // ============================================
 // SCHEMAS
@@ -197,19 +220,20 @@ let openaiClient: OpenAI | null = null;
 let openaiProvider: ReturnType<typeof createOpenAI> | null = null;
 
 /**
- * Get or create the OpenAI client instance
- * @throws {OpenAIError} If OPENAI_API_KEY is not configured
+ * Get or create the OpenAI-compatible client instance (routed via OpenRouter)
+ * @throws {OpenAIError} If OPENROUTER_API_KEY is not configured
  */
 export function getOpenAIClient(): OpenAI {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
 
   if (!apiKey) {
-    throw new OpenAIError('OPENAI_API_KEY is not configured', 'CONFIG_ERROR');
+    throw new OpenAIError('OPENROUTER_API_KEY is not configured', 'CONFIG_ERROR');
   }
 
   if (!openaiClient) {
     openaiClient = new OpenAI({
       apiKey,
+      baseURL: OPENROUTER_BASE_URL,
       // Allow in browser-like test environments (happy-dom)
       // This is safe as API calls only happen server-side in production
       dangerouslyAllowBrowser: process.env.NODE_ENV === 'test',
@@ -220,19 +244,20 @@ export function getOpenAIClient(): OpenAI {
 }
 
 /**
- * Get or create the Vercel AI SDK OpenAI provider
- * @throws {OpenAIError} If OPENAI_API_KEY is not configured
+ * Get or create the Vercel AI SDK OpenAI provider (routed via OpenRouter)
+ * @throws {OpenAIError} If OPENROUTER_API_KEY is not configured
  */
 export function getOpenAIProvider(): ReturnType<typeof createOpenAI> {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
 
   if (!apiKey) {
-    throw new OpenAIError('OPENAI_API_KEY is not configured', 'CONFIG_ERROR');
+    throw new OpenAIError('OPENROUTER_API_KEY is not configured', 'CONFIG_ERROR');
   }
 
   if (!openaiProvider) {
     openaiProvider = createOpenAI({
       apiKey,
+      baseURL: OPENROUTER_BASE_URL,
     });
   }
 
@@ -263,6 +288,22 @@ Provide your analysis as a JSON object with these fields:
 - interpretation: Overall interpretation of the message
 - metrics: {sarcasmProbability, passiveAggressionProbability, overallTone, confidence}
 - redFlags: Array of {type, description, severity} for any concerns`;
+}
+
+/**
+ * Build the user prompt for streaming interpretation (plain text output)
+ */
+export function buildStreamingPrompt(request: InterpretRequest): string {
+  const platformDisplay = formatPlatform(request.platform);
+  const contextDisplay = formatContext(request.context);
+
+  return `Analyze this message and explain what the emojis mean in context. Write in plain readable text, NOT JSON.
+
+**Message:** "${request.message}"
+
+**Platform:** ${request.platform}${platformDisplay ? ` (${platformDisplay})` : ''}
+
+**Relationship Context:** ${request.context}${contextDisplay ? ` - ${contextDisplay}` : ''}`;
 }
 
 /**

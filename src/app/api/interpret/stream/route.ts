@@ -5,9 +5,10 @@ import { streamText } from 'ai';
 import type { InterpretRequest, InterpretErrorResponse } from '@/types';
 import {
   getOpenAIProvider,
-  buildInterpretationPrompt,
-  INTERPRETATION_SYSTEM_PROMPT,
+  buildStreamingPrompt,
+  STREAMING_SYSTEM_PROMPT,
   OPENAI_MODEL,
+  MAX_OUTPUT_TOKENS,
   OpenAIError,
 } from '@/lib/openai';
 
@@ -133,25 +134,25 @@ export async function POST(
 
     // Check if interpreter is enabled
     const interpreterEnabled = process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false';
-    const openaiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.OPENROUTER_API_KEY;
 
-    if (!interpreterEnabled || !openaiKey) {
+    if (!interpreterEnabled || !apiKey) {
       return createErrorResponse('AI service is not configured', 503);
     }
 
     // Get the OpenAI provider for Vercel AI SDK
     const openai = getOpenAIProvider();
 
-    // Build the prompt
-    const userPrompt = buildInterpretationPrompt(validatedData);
+    // Build the prompt (plain text output, not JSON)
+    const userPrompt = buildStreamingPrompt(validatedData);
 
     // Use Vercel AI SDK streamText for streaming response
     const result = streamText({
       model: openai(OPENAI_MODEL),
-      system: INTERPRETATION_SYSTEM_PROMPT,
+      system: STREAMING_SYSTEM_PROMPT,
       prompt: userPrompt,
       temperature: 0.7,
-      maxOutputTokens: 1000,
+      maxOutputTokens: MAX_OUTPUT_TOKENS,
     });
 
     // Return the streaming response with appropriate headers

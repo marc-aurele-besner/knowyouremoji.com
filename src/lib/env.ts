@@ -13,8 +13,10 @@ export interface EnvConfig {
   appUrl: string;
   /** Application name (defaults to KnowYourEmoji) */
   appName: string;
-  /** OpenAI API key for interpreter feature */
-  openaiApiKey: string | undefined;
+  /** OpenRouter API key for interpreter feature */
+  openrouterApiKey: string | undefined;
+  /** OpenRouter model for interpreter (defaults to liquid/lfm2-8b-a1b) */
+  openrouterModel: string;
   /** Whether the interpreter feature is enabled */
   enableInterpreter: boolean;
   /** Sentry DSN for error monitoring (server-side) */
@@ -47,7 +49,8 @@ export function getEnv(): EnvConfig {
   return {
     appUrl: process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000',
     appName: process.env.NEXT_PUBLIC_APP_NAME || 'KnowYourEmoji',
-    openaiApiKey: process.env.OPENAI_API_KEY,
+    openrouterApiKey: process.env.OPENROUTER_API_KEY,
+    openrouterModel: process.env.OPENROUTER_MODEL || 'liquid/lfm2-8b-a1b',
     enableInterpreter: process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false',
     sentryDsn: process.env.SENTRY_DSN,
     sentryDsnPublic: process.env.NEXT_PUBLIC_SENTRY_DSN,
@@ -70,9 +73,9 @@ export function validateEnv(): string[] {
   const env = getEnv();
   const warnings: string[] = [];
 
-  // Warn if interpreter is enabled but OpenAI key is missing
-  if (env.enableInterpreter && !env.openaiApiKey) {
-    warnings.push('OPENAI_API_KEY is not set. Interpreter feature will not work.');
+  // Warn if interpreter is enabled but OpenRouter key is missing
+  if (env.enableInterpreter && !env.openrouterApiKey) {
+    warnings.push('OPENROUTER_API_KEY is not set. Interpreter feature will not work.');
   }
 
   return warnings;

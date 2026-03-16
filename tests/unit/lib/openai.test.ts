@@ -9,6 +9,8 @@ import {
   isRetryableError,
   resetClients,
   INTERPRETATION_SYSTEM_PROMPT,
+  STREAMING_SYSTEM_PROMPT,
+  buildStreamingPrompt,
   OPENAI_MODEL,
   MAX_RETRIES,
   RETRY_DELAY_MS,
@@ -33,19 +35,19 @@ describe('openai module', () => {
   });
 
   describe('getOpenAIClient', () => {
-    it('should throw error when OPENAI_API_KEY is not set', () => {
-      delete process.env.OPENAI_API_KEY;
-      expect(() => getOpenAIClient()).toThrow('OPENAI_API_KEY is not configured');
+    it('should throw error when OPENROUTER_API_KEY is not set', () => {
+      delete process.env.OPENROUTER_API_KEY;
+      expect(() => getOpenAIClient()).toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should return OpenAI client when API key is set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client = getOpenAIClient();
       expect(client).toBeDefined();
     });
 
     it('should return the same client instance on subsequent calls', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client1 = getOpenAIClient();
       const client2 = getOpenAIClient();
       expect(client1).toBe(client2);
@@ -71,9 +73,34 @@ describe('openai module', () => {
     });
   });
 
+  describe('STREAMING_SYSTEM_PROMPT', () => {
+    it('should be a non-empty string', () => {
+      expect(typeof STREAMING_SYSTEM_PROMPT).toBe('string');
+      expect(STREAMING_SYSTEM_PROMPT.length).toBeGreaterThan(0);
+    });
+
+    it('should mention emoji interpretation', () => {
+      expect(STREAMING_SYSTEM_PROMPT.toLowerCase()).toContain('emoji');
+    });
+
+    it('should not request JSON output', () => {
+      expect(STREAMING_SYSTEM_PROMPT).toContain('Do NOT output JSON');
+    });
+
+    it('should request readable text', () => {
+      expect(STREAMING_SYSTEM_PROMPT.toLowerCase()).toContain('readable');
+    });
+  });
+
   describe('OPENAI_MODEL', () => {
-    it('should be gpt-4-turbo', () => {
-      expect(OPENAI_MODEL).toBe('gpt-4-turbo');
+    it('should default to liquid/lfm2-8b-a1b or use OPENROUTER_MODEL env var', () => {
+      const expected = process.env.OPENROUTER_MODEL || 'liquid/lfm2-8b-a1b';
+      expect(OPENAI_MODEL).toBe(expected);
+    });
+
+    it('should be a non-empty string', () => {
+      expect(typeof OPENAI_MODEL).toBe('string');
+      expect(OPENAI_MODEL.length).toBeGreaterThan(0);
     });
   });
 
@@ -276,6 +303,36 @@ describe('openai module', () => {
     });
   });
 
+  describe('buildStreamingPrompt', () => {
+    it('should include the message', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Hey 😊 how are you?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+      expect(prompt).toContain('Hey 😊 how are you?');
+    });
+
+    it('should not ask for JSON output', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Hey 😊',
+        platform: 'SLACK',
+        context: 'COWORKER',
+      });
+      expect(prompt).toContain('NOT JSON');
+    });
+
+    it('should include platform and context', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Test 😊',
+        platform: 'DISCORD',
+        context: 'FRIEND',
+      });
+      expect(prompt).toContain('DISCORD');
+      expect(prompt).toContain('FRIEND');
+    });
+  });
+
   describe('OpenAIError', () => {
     it('should be a custom error class', () => {
       const error = new OpenAIError('Test error', 'API_ERROR');
@@ -387,19 +444,19 @@ describe('openai module', () => {
   });
 
   describe('getOpenAIProvider', () => {
-    it('should throw error when OPENAI_API_KEY is not set', () => {
-      delete process.env.OPENAI_API_KEY;
-      expect(() => getOpenAIProvider()).toThrow('OPENAI_API_KEY is not configured');
+    it('should throw error when OPENROUTER_API_KEY is not set', () => {
+      delete process.env.OPENROUTER_API_KEY;
+      expect(() => getOpenAIProvider()).toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should return OpenAI provider when API key is set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider = getOpenAIProvider();
       expect(provider).toBeDefined();
     });
 
     it('should return the same provider instance on subsequent calls', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider1 = getOpenAIProvider();
       const provider2 = getOpenAIProvider();
       expect(provider1).toBe(provider2);
@@ -408,7 +465,7 @@ describe('openai module', () => {
 
   describe('resetClients', () => {
     it('should reset client instances', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client1 = getOpenAIClient();
       resetClients();
       const client2 = getOpenAIClient();
@@ -416,7 +473,7 @@ describe('openai module', () => {
     });
 
     it('should reset provider instances', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider1 = getOpenAIProvider();
       resetClients();
       const provider2 = getOpenAIProvider();
