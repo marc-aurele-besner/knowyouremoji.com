@@ -36,7 +36,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900',
           'disabled:pointer-events-none disabled:opacity-50',
           {
-            'bg-amber-500 text-white hover:bg-amber-600 focus-visible:ring-amber-500 dark:bg-amber-500 dark:hover:bg-amber-400':
+            'bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 focus-visible:ring-amber-500 dark:from-amber-500 dark:to-orange-500 dark:hover:from-amber-400 dark:hover:to-orange-400':
               variant === 'primary',
             'bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-400 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600':
               variant === 'secondary',

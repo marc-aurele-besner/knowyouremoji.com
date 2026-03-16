@@ -34,7 +34,11 @@ describe('HomePage', () => {
       render(<HomePage />);
 
       // Check for description text about emoji meanings
-      expect(screen.getByText(/real meaning/i)).toBeInTheDocument();
+      // Text is split across elements due to <em> tag, so use a custom matcher
+      const element = screen.getByText((_, el) => {
+        return el?.tagName === 'P' && /real meaning/i.test(el?.textContent ?? '');
+      });
+      expect(element).toBeInTheDocument();
     });
   });
 

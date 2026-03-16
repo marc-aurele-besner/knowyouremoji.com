@@ -22,8 +22,12 @@ describe('Card', () => {
   it('applies default card classes', () => {
     render(<Card data-testid="card">Content</Card>);
     const card = screen.getByTestId('card');
-    expect(card).toHaveClass('rounded-lg');
+    expect(card).toHaveClass('rounded-2xl');
     expect(card).toHaveClass('border');
+    expect(card).toHaveClass('shadow-sm');
+    expect(card).toHaveClass('dark:bg-gray-800/60');
+    expect(card).toHaveClass('transition-all');
+    expect(card).toHaveClass('duration-300');
   });
 
   it('merges custom className', () => {

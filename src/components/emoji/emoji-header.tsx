@@ -68,16 +68,18 @@ export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
     .join('-');
 
   return (
-    <header className={cn('flex flex-col items-center text-center py-8 px-4', className)}>
+    <header className={cn('flex flex-col items-center text-center py-10 px-4', className)}>
       {/* Emoji Character */}
-      <div className="text-6xl md:text-8xl mb-4 select-none" role="img" aria-label={emoji.name}>
+      <div
+        className="text-7xl md:text-9xl mb-6 select-none animate-bounce-in hover:animate-wiggle cursor-default"
+        role="img"
+        aria-label={emoji.name}
+      >
         {emoji.character}
       </div>
 
       {/* Emoji Name */}
-      <h1 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-        {emoji.name}
-      </h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold mb-4 gradient-text">{emoji.name}</h1>
 
       {/* Copy Button */}
       <Button

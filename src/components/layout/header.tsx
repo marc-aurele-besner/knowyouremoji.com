@@ -24,18 +24,22 @@ function Header({ className, ...props }: HeaderProps) {
     <>
       <header
         className={cn(
-          'sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:bg-gray-900/95 dark:border-gray-800 dark:supports-[backdrop-filter]:bg-gray-900/60',
+          'sticky top-0 z-50 w-full border-b border-gray-200/50 bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/60 dark:bg-gray-900/80 dark:border-gray-700/50 dark:supports-[backdrop-filter]:bg-gray-900/60',
           className
         )}
         {...props}
       >
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
+        <div className="container mx-auto flex h-14 items-center justify-between px-4">
           <Link
             href="/"
-            className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
+            className="group flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-amber-600 transition-colors dark:text-white dark:hover:text-amber-400"
           >
-            <span className="emoji-display">🤔</span>
-            <span>KnowYourEmoji</span>
+            <span className="emoji-display inline-block group-hover:animate-wiggle transition-transform">
+              🤔
+            </span>
+            <span className="bg-gradient-to-r from-amber-600 to-orange-500 dark:from-amber-400 dark:to-orange-400 bg-clip-text text-transparent">
+              KnowYourEmoji
+            </span>
           </Link>
 
           <nav aria-label="Main" className="hidden md:flex items-center gap-6">
