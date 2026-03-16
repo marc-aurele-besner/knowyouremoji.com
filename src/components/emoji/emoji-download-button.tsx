@@ -48,30 +48,6 @@ export function EmojiDownloadButton({
       ctx.font = `${size * 0.75}px serif`;
       ctx.fillText(character, size / 2, size / 2);
 
-      // Draw site logo watermark in bottom-right corner
-      try {
-        const logo = new Image();
-        logo.crossOrigin = 'anonymous';
-        await new Promise<void>((resolve, reject) => {
-          logo.onload = () => resolve();
-          logo.onerror = () => reject(new Error('Logo failed to load'));
-          logo.src = '/logo.png';
-        });
-        const logoSize = 48;
-        const padding = 8;
-        ctx.globalAlpha = 0.6;
-        ctx.drawImage(
-          logo,
-          size - logoSize - padding,
-          size - logoSize - padding,
-          logoSize,
-          logoSize
-        );
-        ctx.globalAlpha = 1;
-      } catch {
-        // Logo is optional — continue without it
-      }
-
       // Convert to blob and download
       const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
       if (!blob) return;

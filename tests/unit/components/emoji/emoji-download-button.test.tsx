@@ -5,15 +5,12 @@ import { EmojiDownloadButton } from '@/components/emoji/emoji-download-button';
 // Mock canvas context
 const mockFillText = mock(() => {});
 const mockClearRect = mock(() => {});
-const mockDrawImage = mock(() => {});
 const mockGetContext = mock(() => ({
   clearRect: mockClearRect,
   fillText: mockFillText,
-  drawImage: mockDrawImage,
   textAlign: '',
   textBaseline: '',
   font: '',
-  globalAlpha: 1,
 }));
 
 // Mock canvas toBlob
@@ -25,46 +22,7 @@ const mockToBlob = mock((callback: (blob: Blob | null) => void) => {
 const originalCreateElement = document.createElement.bind(document);
 const mockClick = mock(() => {});
 
-// Store original Image constructor
-const OriginalImage = globalThis.Image;
-
-// Control whether the logo loads or fails
-let logoShouldLoad = true;
-
 beforeEach(() => {
-  logoShouldLoad = true;
-
-  // Mock Image constructor for logo loading
-  globalThis.Image = class MockImage {
-    crossOrigin = '';
-    src = '';
-    onload: (() => void) | null = null;
-    onerror: (() => void) | null = null;
-    width = 48;
-    height = 48;
-
-    constructor() {
-      // Trigger onload/onerror asynchronously after src is set
-      const originalSrcDescriptor = Object.getOwnPropertyDescriptor(
-        Object.getPrototypeOf(this),
-        'src'
-      );
-      let _src = '';
-      Object.defineProperty(this, 'src', {
-        get: () => _src,
-        set: (value: string) => {
-          _src = value;
-          // Ignore if not a real property set (avoids recursion from descriptor lookup)
-          if (originalSrcDescriptor) return;
-          setTimeout(() => {
-            if (logoShouldLoad && this.onload) this.onload();
-            else if (!logoShouldLoad && this.onerror) this.onerror();
-          }, 0);
-        },
-      });
-    }
-  } as unknown as typeof Image;
-
   document.createElement = mock((tag: string) => {
     if (tag === 'canvas') {
       return {
@@ -90,10 +48,8 @@ beforeEach(() => {
 afterEach(() => {
   cleanup();
   document.createElement = originalCreateElement;
-  globalThis.Image = OriginalImage;
   mockFillText.mockClear();
   mockClearRect.mockClear();
-  mockDrawImage.mockClear();
   mockGetContext.mockClear();
   mockToBlob.mockClear();
   mockClick.mockClear();
@@ -151,23 +107,6 @@ describe('EmojiDownloadButton', () => {
 
       await waitFor(() => {
         expect(URL.revokeObjectURL).toHaveBeenCalledWith('blob:mock-url');
-      });
-    });
-  });
-
-  describe('logo watermark', () => {
-    it('continues download when logo fails to load', async () => {
-      logoShouldLoad = false;
-
-      render(<EmojiDownloadButton character="😀" name="Grinning Face" />);
-      const button = screen.getByRole('button', { name: /download emoji as image/i });
-
-      fireEvent.click(button);
-
-      await waitFor(() => {
-        // Download should still succeed without logo
-        expect(mockClick).toHaveBeenCalled();
-        expect(mockFillText).toHaveBeenCalledWith('😀', 256, 256);
       });
     });
   });
