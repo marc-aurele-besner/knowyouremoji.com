@@ -74,7 +74,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const tickerEmojis = [
+const tickerEmojiChars = [
   '😂',
   '❤️',
   '🔥',
@@ -135,11 +135,18 @@ const featureCards = [
  */
 export default function HomePage() {
   // Get sample emojis and combos for display - show more on homepage
-  const emojiSummaries = getEmojiSummaries().slice(0, 12);
+  const allSummaries = getEmojiSummaries();
+  const emojiSummaries = allSummaries.slice(0, 12);
   const comboSummaries = getComboSummaries().slice(0, 8);
   const emojiCount = getEmojiCount();
   const comboCount = getComboCount();
   const categories = getAllCategoryInfo();
+
+  // Build ticker list by matching characters to their summaries for slug links
+  const summaryByChar = new Map(allSummaries.map((s) => [s.character, s]));
+  const tickerEmojis = tickerEmojiChars
+    .map((char) => summaryByChar.get(char))
+    .filter((s): s is (typeof allSummaries)[number] => s != null);
 
   return (
     <>
@@ -211,13 +218,15 @@ export default function HomePage() {
       {/* Emoji Ticker */}
       <div className="emoji-ticker bg-gray-50 dark:bg-gray-800/50 border-y border-gray-200/60 dark:border-gray-700/60 py-4">
         <div className="flex animate-marquee whitespace-nowrap">
-          {[...tickerEmojis, ...tickerEmojis].map((emoji, i) => (
-            <span
+          {[...tickerEmojis, ...tickerEmojis].map((item, i) => (
+            <Link
               key={i}
-              className="mx-6 text-2xl md:text-3xl opacity-60 hover:opacity-100 hover:scale-125 transition-all cursor-default select-none"
+              href={`/emoji/${item.slug}`}
+              className="mx-6 text-2xl md:text-3xl opacity-60 hover:opacity-100 hover:scale-125 transition-all select-none inline-block"
+              aria-label={item.name}
             >
-              {emoji}
-            </span>
+              {item.character}
+            </Link>
           ))}
         </div>
       </div>
