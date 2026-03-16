@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
     },
   },
 
+  // Fix Turbopack workspace root detection (prevents resolving from wrong lockfile)
+  turbopack: {
+    root: process.cwd(),
+  },
+
   // Experimental optimizations for better bundle splitting
   experimental: {
     // Optimize package imports for better tree-shaking
