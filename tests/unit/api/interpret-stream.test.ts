@@ -8,7 +8,7 @@ const originalEnv = { ...process.env };
 beforeEach(() => {
   process.env = {
     ...originalEnv,
-    OPENAI_API_KEY: 'test-api-key',
+    OPENROUTER_API_KEY: 'test-api-key',
     // Disable interpreter to use mock responses (avoids real OpenAI calls in tests)
     NEXT_PUBLIC_ENABLE_INTERPRETER: 'false',
   };
@@ -207,7 +207,7 @@ describe('POST /api/interpret/stream', () => {
     });
 
     it('should return 503 when OpenAI API key is missing', async () => {
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       const req = createRequest({
@@ -315,7 +315,7 @@ describe('POST /api/interpret/stream', () => {
   describe('interpreter configuration states', () => {
     it('should return 503 when interpreter disabled', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       resetClients();
 
       const req = createRequest({
@@ -333,7 +333,7 @@ describe('POST /api/interpret/stream', () => {
 
     it('should return 503 when both interpreter disabled and no API key', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       const req = createRequest({

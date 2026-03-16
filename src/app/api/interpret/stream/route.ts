@@ -8,6 +8,7 @@ import {
   buildInterpretationPrompt,
   INTERPRETATION_SYSTEM_PROMPT,
   OPENAI_MODEL,
+  MAX_OUTPUT_TOKENS,
   OpenAIError,
 } from '@/lib/openai';
 
@@ -133,9 +134,9 @@ export async function POST(
 
     // Check if interpreter is enabled
     const interpreterEnabled = process.env.NEXT_PUBLIC_ENABLE_INTERPRETER !== 'false';
-    const openaiKey = process.env.OPENAI_API_KEY;
+    const apiKey = process.env.OPENROUTER_API_KEY;
 
-    if (!interpreterEnabled || !openaiKey) {
+    if (!interpreterEnabled || !apiKey) {
       return createErrorResponse('AI service is not configured', 503);
     }
 
@@ -151,7 +152,7 @@ export async function POST(
       system: INTERPRETATION_SYSTEM_PROMPT,
       prompt: userPrompt,
       temperature: 0.7,
-      maxOutputTokens: 1000,
+      maxOutputTokens: MAX_OUTPUT_TOKENS,
     });
 
     // Return the streaming response with appropriate headers

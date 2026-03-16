@@ -18,7 +18,7 @@ const originalEnv = { ...process.env };
 describe('interpreter service', () => {
   beforeEach(() => {
     // Reset process.env before each test
-    process.env = { ...originalEnv, OPENAI_API_KEY: 'sk-test-key' };
+    process.env = { ...originalEnv, OPENROUTER_API_KEY: 'sk-test-key' };
     // Reset OpenAI clients, emoji cache, and Redis cache
     resetClients();
     clearEmojiSlugCache();
@@ -106,7 +106,7 @@ describe('interpreter service', () => {
 
   describe('interpretMessage', () => {
     it('should throw error when OpenAI key is not configured', async () => {
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       await expect(
@@ -115,7 +115,7 @@ describe('interpreter service', () => {
           platform: 'IMESSAGE',
           context: 'FRIEND',
         })
-      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+      ).rejects.toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should be a function', () => {
@@ -566,7 +566,7 @@ describe('interpreter service', () => {
     });
 
     it('should throw error when OpenAI key is not configured (like interpretMessage)', async () => {
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       await expect(
@@ -575,7 +575,7 @@ describe('interpreter service', () => {
           platform: 'IMESSAGE',
           context: 'FRIEND',
         })
-      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+      ).rejects.toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should work without Redis configured (graceful fallback)', async () => {
@@ -587,7 +587,7 @@ describe('interpreter service', () => {
       // This should not throw even without Redis
       // It will still fail due to OpenAI API call, but we're testing that
       // the caching layer doesn't cause issues when Redis is not configured
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       await expect(
@@ -596,7 +596,7 @@ describe('interpreter service', () => {
           platform: 'IMESSAGE',
           context: 'FRIEND',
         })
-      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+      ).rejects.toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should return result with fresh ID and timestamp when cache returns null', async () => {
@@ -606,7 +606,7 @@ describe('interpreter service', () => {
       clearCache();
 
       // This tests that the flow goes through when cache returns null
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       resetClients();
 
       await expect(
@@ -615,7 +615,7 @@ describe('interpreter service', () => {
           platform: 'TWITTER',
           context: 'COWORKER',
         })
-      ).rejects.toThrow('OPENAI_API_KEY is not configured');
+      ).rejects.toThrow('OPENROUTER_API_KEY is not configured');
     });
   });
 });

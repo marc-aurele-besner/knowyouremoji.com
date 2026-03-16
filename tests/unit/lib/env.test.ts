@@ -45,16 +45,16 @@ describe('env configuration', () => {
       expect(env.appName).toBe('CustomAppName');
     });
 
-    it('should return openaiApiKey when set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+    it('should return openrouterApiKey when set', () => {
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const env = getEnv();
-      expect(env.openaiApiKey).toBe('sk-test-key');
+      expect(env.openrouterApiKey).toBe('sk-test-key');
     });
 
-    it('should return undefined openaiApiKey when not set', () => {
-      delete process.env.OPENAI_API_KEY;
+    it('should return undefined openrouterApiKey when not set', () => {
+      delete process.env.OPENROUTER_API_KEY;
       const env = getEnv();
-      expect(env.openaiApiKey).toBeUndefined();
+      expect(env.openrouterApiKey).toBeUndefined();
     });
 
     it('should return enableInterpreter as true when set to "true"', () => {
@@ -198,30 +198,32 @@ describe('env configuration', () => {
 
   describe('validateEnv', () => {
     it('should return empty array when all required vars are set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
       const warnings = validateEnv();
       expect(warnings).toEqual([]);
     });
 
-    it('should warn when OPENAI_API_KEY is missing and interpreter is enabled', () => {
-      delete process.env.OPENAI_API_KEY;
+    it('should warn when OPENROUTER_API_KEY is missing and interpreter is enabled', () => {
+      delete process.env.OPENROUTER_API_KEY;
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
       const warnings = validateEnv();
-      expect(warnings).toContain('OPENAI_API_KEY is not set. Interpreter feature will not work.');
-    });
-
-    it('should not warn when OPENAI_API_KEY is missing but interpreter is disabled', () => {
-      delete process.env.OPENAI_API_KEY;
-      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      const warnings = validateEnv();
-      expect(warnings).not.toContain(
-        'OPENAI_API_KEY is not set. Interpreter feature will not work.'
+      expect(warnings).toContain(
+        'OPENROUTER_API_KEY is not set. Interpreter feature will not work.'
       );
     });
 
-    it('should return empty warnings when OPENAI_API_KEY is set', () => {
-      process.env.OPENAI_API_KEY = 'sk-valid-key';
+    it('should not warn when OPENROUTER_API_KEY is missing but interpreter is disabled', () => {
+      delete process.env.OPENROUTER_API_KEY;
+      process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
+      const warnings = validateEnv();
+      expect(warnings).not.toContain(
+        'OPENROUTER_API_KEY is not set. Interpreter feature will not work.'
+      );
+    });
+
+    it('should return empty warnings when OPENROUTER_API_KEY is set', () => {
+      process.env.OPENROUTER_API_KEY = 'sk-valid-key';
       delete process.env.NEXT_PUBLIC_ENABLE_INTERPRETER; // defaults to true
       const warnings = validateEnv();
       expect(warnings.length).toBe(0);

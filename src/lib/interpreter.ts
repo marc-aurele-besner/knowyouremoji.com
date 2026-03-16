@@ -16,6 +16,7 @@ import {
   buildInterpretationPrompt,
   INTERPRETATION_SYSTEM_PROMPT,
   OPENAI_MODEL,
+  MAX_OUTPUT_TOKENS,
   interpretationResponseSchema,
   OpenAIError,
   type InterpretationResponse,
@@ -277,9 +278,8 @@ export async function interpretMessage(request: InterpretRequest): Promise<Inter
       { role: 'system', content: INTERPRETATION_SYSTEM_PROMPT },
       { role: 'user', content: userPrompt },
     ],
-    response_format: { type: 'json_object' },
     temperature: 0.7,
-    max_tokens: 1000,
+    max_tokens: MAX_OUTPUT_TOKENS,
   });
 
   // Extract response content

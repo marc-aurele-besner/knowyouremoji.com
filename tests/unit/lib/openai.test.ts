@@ -33,19 +33,19 @@ describe('openai module', () => {
   });
 
   describe('getOpenAIClient', () => {
-    it('should throw error when OPENAI_API_KEY is not set', () => {
-      delete process.env.OPENAI_API_KEY;
-      expect(() => getOpenAIClient()).toThrow('OPENAI_API_KEY is not configured');
+    it('should throw error when OPENROUTER_API_KEY is not set', () => {
+      delete process.env.OPENROUTER_API_KEY;
+      expect(() => getOpenAIClient()).toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should return OpenAI client when API key is set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client = getOpenAIClient();
       expect(client).toBeDefined();
     });
 
     it('should return the same client instance on subsequent calls', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client1 = getOpenAIClient();
       const client2 = getOpenAIClient();
       expect(client1).toBe(client2);
@@ -72,8 +72,8 @@ describe('openai module', () => {
   });
 
   describe('OPENAI_MODEL', () => {
-    it('should be gpt-4-turbo', () => {
-      expect(OPENAI_MODEL).toBe('gpt-4-turbo');
+    it('should be liquid/lfm2-8b-a1b', () => {
+      expect(OPENAI_MODEL).toBe('liquid/lfm2-8b-a1b');
     });
   });
 
@@ -387,19 +387,19 @@ describe('openai module', () => {
   });
 
   describe('getOpenAIProvider', () => {
-    it('should throw error when OPENAI_API_KEY is not set', () => {
-      delete process.env.OPENAI_API_KEY;
-      expect(() => getOpenAIProvider()).toThrow('OPENAI_API_KEY is not configured');
+    it('should throw error when OPENROUTER_API_KEY is not set', () => {
+      delete process.env.OPENROUTER_API_KEY;
+      expect(() => getOpenAIProvider()).toThrow('OPENROUTER_API_KEY is not configured');
     });
 
     it('should return OpenAI provider when API key is set', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider = getOpenAIProvider();
       expect(provider).toBeDefined();
     });
 
     it('should return the same provider instance on subsequent calls', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider1 = getOpenAIProvider();
       const provider2 = getOpenAIProvider();
       expect(provider1).toBe(provider2);
@@ -408,7 +408,7 @@ describe('openai module', () => {
 
   describe('resetClients', () => {
     it('should reset client instances', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const client1 = getOpenAIClient();
       resetClients();
       const client2 = getOpenAIClient();
@@ -416,7 +416,7 @@ describe('openai module', () => {
     });
 
     it('should reset provider instances', () => {
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
       const provider1 = getOpenAIProvider();
       resetClients();
       const provider2 = getOpenAIProvider();

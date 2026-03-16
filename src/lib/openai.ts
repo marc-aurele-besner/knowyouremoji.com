@@ -19,14 +19,20 @@ import type { InterpretRequest, Platform, RelationshipContext } from '@/types';
 // CONSTANTS
 // ============================================
 
-/** The OpenAI model to use for interpretations */
-export const OPENAI_MODEL = 'gpt-4-turbo';
+/** The model to use for interpretations (via OpenRouter) */
+export const OPENAI_MODEL = 'liquid/lfm2-8b-a1b';
+
+/** Maximum output tokens to restrict response size */
+export const MAX_OUTPUT_TOKENS = 512;
 
 /** Maximum number of retries for transient failures */
 export const MAX_RETRIES = 3;
 
 /** Delay between retries in milliseconds */
 export const RETRY_DELAY_MS = 1000;
+
+/** OpenRouter API base URL (OpenAI-compatible) */
+const OPENROUTER_BASE_URL = 'https://openrouter.ai/api/v1';
 
 // ============================================
 // SYSTEM PROMPT
@@ -197,19 +203,20 @@ let openaiClient: OpenAI | null = null;
 let openaiProvider: ReturnType<typeof createOpenAI> | null = null;
 
 /**
- * Get or create the OpenAI client instance
- * @throws {OpenAIError} If OPENAI_API_KEY is not configured
+ * Get or create the OpenAI-compatible client instance (routed via OpenRouter)
+ * @throws {OpenAIError} If OPENROUTER_API_KEY is not configured
  */
 export function getOpenAIClient(): OpenAI {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
 
   if (!apiKey) {
-    throw new OpenAIError('OPENAI_API_KEY is not configured', 'CONFIG_ERROR');
+    throw new OpenAIError('OPENROUTER_API_KEY is not configured', 'CONFIG_ERROR');
   }
 
   if (!openaiClient) {
     openaiClient = new OpenAI({
       apiKey,
+      baseURL: OPENROUTER_BASE_URL,
       // Allow in browser-like test environments (happy-dom)
       // This is safe as API calls only happen server-side in production
       dangerouslyAllowBrowser: process.env.NODE_ENV === 'test',
@@ -220,19 +227,20 @@ export function getOpenAIClient(): OpenAI {
 }
 
 /**
- * Get or create the Vercel AI SDK OpenAI provider
- * @throws {OpenAIError} If OPENAI_API_KEY is not configured
+ * Get or create the Vercel AI SDK OpenAI provider (routed via OpenRouter)
+ * @throws {OpenAIError} If OPENROUTER_API_KEY is not configured
  */
 export function getOpenAIProvider(): ReturnType<typeof createOpenAI> {
-  const apiKey = process.env.OPENAI_API_KEY;
+  const apiKey = process.env.OPENROUTER_API_KEY;
 
   if (!apiKey) {
-    throw new OpenAIError('OPENAI_API_KEY is not configured', 'CONFIG_ERROR');
+    throw new OpenAIError('OPENROUTER_API_KEY is not configured', 'CONFIG_ERROR');
   }
 
   if (!openaiProvider) {
     openaiProvider = createOpenAI({
       apiKey,
+      baseURL: OPENROUTER_BASE_URL,
     });
   }
 

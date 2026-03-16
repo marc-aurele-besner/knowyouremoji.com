@@ -6,7 +6,7 @@ const originalEnv = process.env;
 beforeEach(() => {
   process.env = {
     ...originalEnv,
-    OPENAI_API_KEY: 'test-api-key',
+    OPENROUTER_API_KEY: 'test-api-key',
     // Disable interpreter to use mock responses (avoids real OpenAI calls in tests)
     NEXT_PUBLIC_ENABLE_INTERPRETER: 'false',
   };
@@ -300,7 +300,7 @@ describe('POST /api/interpret', () => {
   describe('mock responses', () => {
     it('should return mock interpretation when interpreter is disabled', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
 
       const req = createRequest({
         message: 'Hello there friend 😀 how are you today?',
@@ -321,7 +321,7 @@ describe('POST /api/interpret', () => {
     });
 
     it('should return mock interpretation when API key is missing', async () => {
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
 
       const req = createRequest({
@@ -522,7 +522,7 @@ describe('POST /api/interpret', () => {
   describe('interpreter configuration states', () => {
     it('should return mock when interpreter enabled but no API key', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'true';
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
 
       const req = createRequest({
         message: 'Hello there friend 😀 how are you today?',
@@ -539,7 +539,7 @@ describe('POST /api/interpret', () => {
 
     it('should return mock when interpreter disabled with API key', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      process.env.OPENAI_API_KEY = 'sk-test-key';
+      process.env.OPENROUTER_API_KEY = 'sk-test-key';
 
       const req = createRequest({
         message: 'Hello there friend 😀 how are you today?',
@@ -556,7 +556,7 @@ describe('POST /api/interpret', () => {
 
     it('should return mock when both interpreter disabled and no API key', async () => {
       process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
-      delete process.env.OPENAI_API_KEY;
+      delete process.env.OPENROUTER_API_KEY;
 
       const req = createRequest({
         message: 'Hello there friend 😀 how are you today?',
