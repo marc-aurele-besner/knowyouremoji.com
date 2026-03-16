@@ -175,5 +175,43 @@ describe('EmojiDownloadButton', () => {
         expect(mockClick).toHaveBeenCalled();
       });
     });
+
+    it('tracks download analytics when slug is provided', async () => {
+      const mockEmojiDownload = mock(() => {});
+      const analyticsModule = await import('@/lib/analytics');
+      const originalDownload = analyticsModule.emojiEvents.download;
+      analyticsModule.emojiEvents.download = mockEmojiDownload;
+
+      render(<EmojiDownloadButton character="😀" name="Grinning Face" slug="grinning-face" />);
+      const button = screen.getByRole('button', { name: /download emoji as image/i });
+
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockEmojiDownload).toHaveBeenCalledWith('😀', 'grinning-face');
+      });
+
+      analyticsModule.emojiEvents.download = originalDownload;
+    });
+
+    it('does not track analytics when slug is not provided', async () => {
+      const mockEmojiDownload = mock(() => {});
+      const analyticsModule = await import('@/lib/analytics');
+      const originalDownload = analyticsModule.emojiEvents.download;
+      analyticsModule.emojiEvents.download = mockEmojiDownload;
+
+      render(<EmojiDownloadButton character="😀" name="Grinning Face" />);
+      const button = screen.getByRole('button', { name: /download emoji as image/i });
+
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockClick).toHaveBeenCalled();
+      });
+
+      expect(mockEmojiDownload).not.toHaveBeenCalled();
+
+      analyticsModule.emojiEvents.download = originalDownload;
+    });
   });
 });

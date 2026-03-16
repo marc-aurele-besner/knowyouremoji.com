@@ -330,6 +330,15 @@ describe('analytics', () => {
         currency: 'usd',
       });
     });
+
+    it('sends emoji download event to PostHog', async () => {
+      emojiEvents.download('😀', 'grinning-face');
+      await waitForPostHog();
+      expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_download', {
+        emoji: '😀',
+        slug: 'grinning-face',
+      });
+    });
   });
 
   describe('conversionEvents', () => {
