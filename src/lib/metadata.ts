@@ -61,6 +61,14 @@ export function createSiteMetadata(): Metadata {
     publisher: siteName,
     category: 'technology',
     manifest: '/site.webmanifest',
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+        { url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      ],
+      apple: [{ url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    },
     openGraph: {
       type: 'website',
       locale: 'en_US',
@@ -68,11 +76,23 @@ export function createSiteMetadata(): Metadata {
       siteName: siteName,
       title: defaultTitle,
       description: defaultDescription,
+      images: [
+        {
+          url: '/logo.png',
+          alt: defaultTitle,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: defaultTitle,
       description: defaultDescription,
+      images: [
+        {
+          url: '/logo.png',
+          alt: defaultTitle,
+        },
+      ],
     },
     robots: {
       index: true,
