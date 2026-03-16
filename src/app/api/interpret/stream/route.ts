@@ -5,7 +5,7 @@ import { streamText } from 'ai';
 import type { InterpretRequest, InterpretErrorResponse } from '@/types';
 import {
   getOpenAIProvider,
-  buildInterpretationPrompt,
+  buildStreamingPrompt,
   STREAMING_SYSTEM_PROMPT,
   OPENAI_MODEL,
   MAX_OUTPUT_TOKENS,
@@ -143,8 +143,8 @@ export async function POST(
     // Get the OpenAI provider for Vercel AI SDK
     const openai = getOpenAIProvider();
 
-    // Build the prompt
-    const userPrompt = buildInterpretationPrompt(validatedData);
+    // Build the prompt (plain text output, not JSON)
+    const userPrompt = buildStreamingPrompt(validatedData);
 
     // Use Vercel AI SDK streamText for streaming response
     const result = streamText({

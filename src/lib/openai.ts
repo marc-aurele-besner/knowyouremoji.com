@@ -291,6 +291,22 @@ Provide your analysis as a JSON object with these fields:
 }
 
 /**
+ * Build the user prompt for streaming interpretation (plain text output)
+ */
+export function buildStreamingPrompt(request: InterpretRequest): string {
+  const platformDisplay = formatPlatform(request.platform);
+  const contextDisplay = formatContext(request.context);
+
+  return `Analyze this message and explain what the emojis mean in context. Write in plain readable text, NOT JSON.
+
+**Message:** "${request.message}"
+
+**Platform:** ${request.platform}${platformDisplay ? ` (${platformDisplay})` : ''}
+
+**Relationship Context:** ${request.context}${contextDisplay ? ` - ${contextDisplay}` : ''}`;
+}
+
+/**
  * Format platform for display
  */
 function formatPlatform(platform: Platform | 'OTHER'): string {

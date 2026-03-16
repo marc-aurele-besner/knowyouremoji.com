@@ -10,6 +10,7 @@ import {
   resetClients,
   INTERPRETATION_SYSTEM_PROMPT,
   STREAMING_SYSTEM_PROMPT,
+  buildStreamingPrompt,
   OPENAI_MODEL,
   MAX_RETRIES,
   RETRY_DELAY_MS,
@@ -299,6 +300,36 @@ describe('openai module', () => {
         });
         expect(prompt).toContain(expectedLabel);
       }
+    });
+  });
+
+  describe('buildStreamingPrompt', () => {
+    it('should include the message', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Hey 😊 how are you?',
+        platform: 'IMESSAGE',
+        context: 'FRIEND',
+      });
+      expect(prompt).toContain('Hey 😊 how are you?');
+    });
+
+    it('should not ask for JSON output', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Hey 😊',
+        platform: 'SLACK',
+        context: 'COWORKER',
+      });
+      expect(prompt).toContain('NOT JSON');
+    });
+
+    it('should include platform and context', () => {
+      const prompt = buildStreamingPrompt({
+        message: 'Test 😊',
+        platform: 'DISCORD',
+        context: 'FRIEND',
+      });
+      expect(prompt).toContain('DISCORD');
+      expect(prompt).toContain('FRIEND');
     });
   });
 
