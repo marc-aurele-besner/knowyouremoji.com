@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { EmojiDownloadButton } from '@/components/emoji/emoji-download-button';
 import { emojiEvents } from '@/lib/analytics';
 
 /**
@@ -81,17 +82,20 @@ export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
       {/* Emoji Name */}
       <h1 className="text-3xl md:text-4xl font-extrabold mb-4 gradient-text">{emoji.name}</h1>
 
-      {/* Copy Button */}
-      <Button
-        onClick={handleCopy}
-        variant={copied ? 'secondary' : 'primary'}
-        size="md"
-        aria-label={copied ? 'Copied!' : 'Copy emoji'}
-        className="mb-6"
-      >
-        <span className="mr-2">{copied ? '✓' : '📋'}</span>
-        {copied ? 'Copied!' : 'Copy Emoji'}
-      </Button>
+      {/* Action Buttons */}
+      <div className="flex flex-wrap items-center gap-3 mb-6">
+        <Button
+          onClick={handleCopy}
+          variant={copied ? 'secondary' : 'primary'}
+          size="md"
+          aria-label={copied ? 'Copied!' : 'Copy emoji'}
+        >
+          <span className="mr-2">{copied ? '✓' : '📋'}</span>
+          {copied ? 'Copied!' : 'Copy Emoji'}
+        </Button>
+
+        <EmojiDownloadButton character={emoji.character} name={emoji.name} slug={emoji.slug} />
+      </div>
 
       {/* Unicode Info */}
       <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">

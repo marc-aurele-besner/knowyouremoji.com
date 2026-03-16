@@ -107,6 +107,9 @@ export const emojiEvents = {
   /** Track when user copies an emoji character */
   copy: (emoji: string, slug: string) => safeTrackEvent('emoji_copy', { emoji, slug }),
 
+  /** Track when user downloads an emoji as image */
+  download: (emoji: string, slug: string) => safeTrackEvent('emoji_download', { emoji, slug }),
+
   /** Track when user searches for emojis */
   search: (searchTerm: string, resultCount: number) =>
     safeTrackEvent('emoji_search', { search_term: searchTerm, result_count: resultCount }),

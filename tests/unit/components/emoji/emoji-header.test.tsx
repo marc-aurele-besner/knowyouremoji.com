@@ -56,6 +56,11 @@ describe('EmojiHeader', () => {
       render(<EmojiHeader emoji={mockEmoji} />);
       expect(screen.getByRole('button', { name: /copy emoji/i })).toBeInTheDocument();
     });
+
+    it('renders the download button', () => {
+      render(<EmojiHeader emoji={mockEmoji} />);
+      expect(screen.getByRole('button', { name: /download emoji as image/i })).toBeInTheDocument();
+    });
   });
 
   describe('accessibility', () => {
