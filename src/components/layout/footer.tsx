@@ -24,7 +24,7 @@ function Footer({ className, ...props }: FooterProps) {
   return (
     <footer
       className={cn(
-        'border-t bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 dark:border-gray-800',
+        'border-t border-gray-200/50 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 dark:border-gray-700/50',
         className
       )}
       {...props}
