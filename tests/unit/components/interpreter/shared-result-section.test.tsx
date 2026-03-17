@@ -1,23 +1,58 @@
-import { describe, it, expect, mock, afterEach } from 'bun:test';
+import { describe, it, expect, mock, afterEach, beforeEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import { SharedResultSection } from '@/components/interpreter/shared-result-section';
 import { encodeInterpretation } from '@/lib/share-encoding';
 import type { InterpretationResult } from '@/types';
 
-// Mock the hooks used by InterpreterClient
+// Mock the hooks used by InterpreterClient (same as other interpreter tests)
 mock.module('@/hooks/use-rate-limit', () => ({
-  useRateLimit: () => ({ remaining: 3, maxUses: 3, recordUse: () => {} }),
+  useRateLimit: () => ({
+    remaining: 3,
+    used: 0,
+    maxUses: 3,
+    canUse: true,
+    isLimited: false,
+    resetTime: new Date(Date.now() + 12 * 60 * 60 * 1000),
+    recordUse: mock(() => 2),
+    reset: mock(() => {}),
+  }),
 }));
 
-// Mock streaming interpreter form
-mock.module('@/components/interpreter/streaming-interpreter-form', () => ({
-  StreamingInterpreterForm: () => <div data-testid="mock-streaming-form">Interpreter Form</div>,
+mock.module('@/hooks/use-streaming-interpret', () => ({
+  useStreamingInterpret: () => ({
+    text: '',
+    isLoading: false,
+    error: null,
+    interpret: mock(() => {}),
+    stop: mock(() => {}),
+    reset: mock(() => {}),
+  }),
 }));
 
-// Mock upgrade prompt
-mock.module('@/components/interpreter/upgrade-prompt', () => ({
-  UpgradePrompt: () => null,
-}));
+// Mock localStorage for rate limit
+const createLocalStorageMock = () => {
+  let store: Record<string, string> = {};
+  return {
+    getItem: (key: string): string | null => store[key] ?? null,
+    setItem: (key: string, value: string): void => {
+      store[key] = value;
+    },
+    removeItem: (key: string): void => {
+      delete store[key];
+    },
+    clear: (): void => {
+      store = {};
+    },
+    get length(): number {
+      return Object.keys(store).length;
+    },
+    key: (index: number): string | null => Object.keys(store)[index] ?? null,
+  };
+};
+
+beforeEach(() => {
+  globalThis.localStorage = createLocalStorageMock();
+});
 
 afterEach(() => {
   cleanup();
@@ -46,7 +81,7 @@ describe('SharedResultSection', () => {
     expect(screen.getByText('A friendly greeting.')).toBeInTheDocument();
   });
 
-  it('renders fallback form when encoded data is invalid', () => {
+  it('renders fallback message when encoded data is invalid', () => {
     render(<SharedResultSection encodedResult="invalid-data" />);
     expect(screen.getByText(/could not be loaded/i)).toBeInTheDocument();
   });
@@ -59,6 +94,7 @@ describe('SharedResultSection', () => {
 
   it('renders interpreter form for invalid data', () => {
     render(<SharedResultSection encodedResult="bad-data" />);
-    expect(screen.getByTestId('mock-streaming-form')).toBeInTheDocument();
+    // The real InterpreterClient should render with mocked hooks
+    expect(screen.getByRole('textbox', { name: /message/i })).toBeInTheDocument();
   });
 });
