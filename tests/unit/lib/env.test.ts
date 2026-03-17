@@ -194,6 +194,30 @@ describe('env configuration', () => {
       const env = getEnv();
       expect(env.supabaseServiceRoleKey).toBeUndefined();
     });
+
+    it('should return slackBotToken when set', () => {
+      process.env.SLACK_BOT_TOKEN = 'xoxb-test-token';
+      const env = getEnv();
+      expect(env.slackBotToken).toBe('xoxb-test-token');
+    });
+
+    it('should return undefined slackBotToken when not set', () => {
+      delete process.env.SLACK_BOT_TOKEN;
+      const env = getEnv();
+      expect(env.slackBotToken).toBeUndefined();
+    });
+
+    it('should return slackLogChannelId when set', () => {
+      process.env.SLACK_LOG_CHANNEL_ID = 'C12345678';
+      const env = getEnv();
+      expect(env.slackLogChannelId).toBe('C12345678');
+    });
+
+    it('should return undefined slackLogChannelId when not set', () => {
+      delete process.env.SLACK_LOG_CHANNEL_ID;
+      const env = getEnv();
+      expect(env.slackLogChannelId).toBeUndefined();
+    });
   });
 
   describe('validateEnv', () => {

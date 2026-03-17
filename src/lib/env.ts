@@ -39,6 +39,10 @@ export interface EnvConfig {
   supabaseAnonKey: string | undefined;
   /** Supabase service role key for admin operations (Phase 2, server-side only) */
   supabaseServiceRoleKey: string | undefined;
+  /** Slack Bot token for logging interpreter usage */
+  slackBotToken: string | undefined;
+  /** Slack channel ID for interpreter usage logs */
+  slackLogChannelId: string | undefined;
 }
 
 /**
@@ -62,6 +66,8 @@ export function getEnv(): EnvConfig {
     supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL,
     supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
+    slackBotToken: process.env.SLACK_BOT_TOKEN,
+    slackLogChannelId: process.env.SLACK_LOG_CHANNEL_ID,
   };
 }
 

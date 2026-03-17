@@ -11,6 +11,7 @@ import {
   MAX_OUTPUT_TOKENS,
   OpenAIError,
 } from '@/lib/openai';
+import { logInterpreterUsage } from '@/lib/slack';
 
 // Valid platforms (matches Platform type + OTHER)
 const VALID_PLATFORMS = [
@@ -153,6 +154,15 @@ export async function POST(
       prompt: userPrompt,
       temperature: 0.7,
       maxOutputTokens: MAX_OUTPUT_TOKENS,
+      async onFinish({ text }) {
+        // Fire-and-forget Slack logging after stream completes
+        logInterpreterUsage({
+          message: validatedData.message,
+          platform: validatedData.platform,
+          context: validatedData.context,
+          output: text,
+        }).catch(() => {});
+      },
     });
 
     // Return the streaming response with appropriate headers

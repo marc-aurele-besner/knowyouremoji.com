@@ -4,6 +4,7 @@ import OpenAI from 'openai';
 import type { InterpretRequest, InterpretationResult, InterpretErrorResponse } from '@/types';
 import { interpretMessage } from '@/lib/interpreter';
 import { OpenAIError } from '@/lib/openai';
+import { logInterpreterUsage } from '@/lib/slack';
 
 /**
  * Check if a string contains at least one emoji
@@ -198,6 +199,15 @@ export async function POST(
 
     // Call the interpreter service
     const result = await interpretMessage(validatedData);
+
+    // Fire-and-forget Slack logging
+    logInterpreterUsage({
+      message: validatedData.message,
+      platform: validatedData.platform,
+      context: validatedData.context,
+      output: result.interpretation,
+    }).catch(() => {});
+
     return NextResponse.json(result, { status: 200, headers: NO_CACHE_HEADERS });
   } catch (error) {
     console.error('Error in /api/interpret:', error);
