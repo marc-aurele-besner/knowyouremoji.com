@@ -15,6 +15,9 @@ import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section'
 import { EmojiCombosSection } from '@/components/emoji/emoji-combos-section';
 import { CategoryLink } from '@/components/emoji/category-link';
 import { PlatformIcon } from '@/components/emoji/platform-icon';
+import { ShareSection } from '@/components/share/share-section';
+import { CopySectionButton } from '@/components/ui/copy-section-button';
+import { ShareMeaningButton } from '@/components/share/share-meaning-button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -243,11 +246,33 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
           }}
         />
 
+        {/* Share Section */}
+        <ShareSection
+          url={`${env.appUrl}/emoji/${emoji.slug}`}
+          title={`Check out what ${emoji.character} really means!`}
+          description={emoji.tldr}
+          hashtags={['emoji', emoji.shortName]}
+          contentType="emoji"
+          className="mb-8"
+        />
+
         {/* TL;DR Section */}
         <section className="mb-8">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">TL;DR</CardTitle>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg">TL;DR</CardTitle>
+                <div className="flex items-center gap-1">
+                  <CopySectionButton text={emoji.tldr} contentType="tldr" />
+                  <ShareMeaningButton
+                    emoji={emoji.character}
+                    context="TL;DR"
+                    meaning={emoji.tldr}
+                    slug={emoji.slug}
+                    index={-1}
+                  />
+                </div>
+              </div>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 dark:text-gray-300">{emoji.tldr}</p>
@@ -263,13 +288,28 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             </h2>
             <div className="space-y-4">
               {emoji.contextMeanings.map((ctx: ContextMeaning, index: number) => (
-                <Card key={index}>
+                <Card key={index} id={`context-${index}`}>
                   <CardHeader className="pb-2">
-                    <div className="flex items-center gap-2">
-                      <Badge variant="default">{getContextLabel(ctx.context)}</Badge>
-                      <Badge variant={getRiskBadgeVariant(ctx.riskLevel)}>
-                        {ctx.riskLevel} Risk
-                      </Badge>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Badge variant="default">{getContextLabel(ctx.context)}</Badge>
+                        <Badge variant={getRiskBadgeVariant(ctx.riskLevel)}>
+                          {ctx.riskLevel} Risk
+                        </Badge>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <CopySectionButton
+                          text={`${ctx.meaning}\nExample: "${ctx.example}"`}
+                          contentType="context-meaning"
+                        />
+                        <ShareMeaningButton
+                          emoji={emoji.character}
+                          context={getContextLabel(ctx.context)}
+                          meaning={ctx.meaning}
+                          slug={emoji.slug}
+                          index={index}
+                        />
+                      </div>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -300,7 +340,10 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
                     </Badge>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
+                    <div className="flex items-start justify-between gap-2">
+                      <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
+                      <CopySectionButton text={note.note} contentType="platform-note" />
+                    </div>
                   </CardContent>
                 </Card>
               ))}

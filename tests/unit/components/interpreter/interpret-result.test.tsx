@@ -279,12 +279,12 @@ describe('InterpretResult', () => {
   describe('share and copy functionality', () => {
     it('renders copy button', () => {
       render(<InterpretResult result={mockResult} />);
-      expect(screen.getByRole('button', { name: /copy/i })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /copy interpretation/i })).toBeInTheDocument();
     });
 
     it('copies interpretation to clipboard when copy button clicked', async () => {
       render(<InterpretResult result={mockResult} />);
-      const copyButton = screen.getByRole('button', { name: /copy/i });
+      const copyButton = screen.getByRole('button', { name: /copy interpretation/i });
       fireEvent.click(copyButton);
 
       await waitFor(() => {
@@ -297,7 +297,7 @@ describe('InterpretResult', () => {
 
     it('shows success feedback after copying', async () => {
       render(<InterpretResult result={mockResult} />);
-      const copyButton = screen.getByRole('button', { name: /copy/i });
+      const copyButton = screen.getByRole('button', { name: /copy interpretation/i });
       fireEvent.click(copyButton);
 
       await waitFor(() => {
@@ -305,9 +305,9 @@ describe('InterpretResult', () => {
       });
     });
 
-    it('renders share button', () => {
+    it('renders share section', () => {
       render(<InterpretResult result={mockResult} />);
-      expect(screen.getByRole('button', { name: /share/i })).toBeInTheDocument();
+      expect(screen.getByText('Share')).toBeInTheDocument();
     });
   });
 
@@ -381,7 +381,7 @@ describe('InterpretResult', () => {
 
     it('announces copy success to screen readers', async () => {
       render(<InterpretResult result={mockResult} />);
-      const copyButton = screen.getByRole('button', { name: /copy/i });
+      const copyButton = screen.getByRole('button', { name: /copy interpretation/i });
       fireEvent.click(copyButton);
 
       await waitFor(() => {

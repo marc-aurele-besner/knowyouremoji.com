@@ -413,4 +413,140 @@ describe('ShareButtons', () => {
       });
     });
   });
+
+  describe('WhatsApp share', () => {
+    it('renders WhatsApp button when included in platforms', () => {
+      render(<ShareButtons {...defaultProps} platforms={['whatsapp']} />);
+      expect(screen.getByRole('button', { name: /share on whatsapp/i })).toBeInTheDocument();
+    });
+
+    it('opens WhatsApp share URL when clicked', () => {
+      render(<ShareButtons {...defaultProps} platforms={['whatsapp']} />);
+      const button = screen.getByRole('button', { name: /share on whatsapp/i });
+      fireEvent.click(button);
+      expect(mockOpen).toHaveBeenCalledWith(
+        expect.stringContaining('wa.me'),
+        '_blank',
+        'noopener,noreferrer'
+      );
+    });
+
+    it('includes title and url in WhatsApp share', () => {
+      render(<ShareButtons {...defaultProps} platforms={['whatsapp']} />);
+      const button = screen.getByRole('button', { name: /share on whatsapp/i });
+      fireEvent.click(button);
+      const callArg = getLastOpenUrl();
+      expect(callArg).toContain(encodeURIComponent(defaultProps.title));
+      expect(callArg).toContain(encodeURIComponent(defaultProps.url));
+    });
+  });
+
+  describe('Email share', () => {
+    it('renders email button when included in platforms', () => {
+      render(<ShareButtons {...defaultProps} platforms={['email']} />);
+      expect(screen.getByRole('button', { name: /share via email/i })).toBeInTheDocument();
+    });
+
+    it('opens mailto link when clicked', () => {
+      render(<ShareButtons {...defaultProps} platforms={['email']} />);
+      const button = screen.getByRole('button', { name: /share via email/i });
+      fireEvent.click(button);
+      expect(mockOpen).toHaveBeenCalledWith(expect.stringContaining('mailto:'));
+    });
+
+    it('includes title in email subject', () => {
+      render(<ShareButtons {...defaultProps} platforms={['email']} />);
+      const button = screen.getByRole('button', { name: /share via email/i });
+      fireEvent.click(button);
+      const callArg = getLastOpenUrl();
+      expect(callArg).toContain(`subject=${encodeURIComponent(defaultProps.title)}`);
+    });
+  });
+
+  describe('Native share', () => {
+    it('renders native share button when included in platforms', () => {
+      render(<ShareButtons {...defaultProps} platforms={['native']} />);
+      expect(screen.getByRole('button', { name: /share via device/i })).toBeInTheDocument();
+    });
+
+    it('calls navigator.share when available', async () => {
+      const mockShare = mock(() => Promise.resolve());
+      Object.defineProperty(navigator, 'share', {
+        value: mockShare,
+        writable: true,
+        configurable: true,
+      });
+
+      render(<ShareButtons {...defaultProps} platforms={['native']} description="A description" />);
+      const button = screen.getByRole('button', { name: /share via device/i });
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockShare).toHaveBeenCalledWith({
+          title: defaultProps.title,
+          text: 'A description',
+          url: defaultProps.url,
+        });
+      });
+
+      // Clean up
+      Object.defineProperty(navigator, 'share', {
+        value: undefined,
+        writable: true,
+        configurable: true,
+      });
+    });
+
+    it('uses title as text when description not provided', async () => {
+      const mockShare = mock(() => Promise.resolve());
+      Object.defineProperty(navigator, 'share', {
+        value: mockShare,
+        writable: true,
+        configurable: true,
+      });
+
+      render(<ShareButtons {...defaultProps} platforms={['native']} />);
+      const button = screen.getByRole('button', { name: /share via device/i });
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockShare).toHaveBeenCalledWith({
+          title: defaultProps.title,
+          text: defaultProps.title,
+          url: defaultProps.url,
+        });
+      });
+
+      Object.defineProperty(navigator, 'share', {
+        value: undefined,
+        writable: true,
+        configurable: true,
+      });
+    });
+
+    it('handles share failure gracefully', async () => {
+      const mockShare = mock(() => Promise.reject(new Error('User cancelled')));
+      Object.defineProperty(navigator, 'share', {
+        value: mockShare,
+        writable: true,
+        configurable: true,
+      });
+
+      render(<ShareButtons {...defaultProps} platforms={['native']} />);
+      const button = screen.getByRole('button', { name: /share via device/i });
+
+      // Should not throw
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockShare).toHaveBeenCalled();
+      });
+
+      Object.defineProperty(navigator, 'share', {
+        value: undefined,
+        writable: true,
+        configurable: true,
+      });
+    });
+  });
 });

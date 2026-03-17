@@ -27,3 +27,9 @@ export type { RedFlagSectionProps } from './red-flag-section';
 
 export { EmojiLink } from './emoji-link';
 export type { EmojiLinkProps } from './emoji-link';
+
+export { SharedInterpretationView } from './shared-interpretation-view';
+export type { SharedInterpretationViewProps } from './shared-interpretation-view';
+
+export { SharedResultSection } from './shared-result-section';
+export type { SharedResultSectionProps } from './shared-result-section';

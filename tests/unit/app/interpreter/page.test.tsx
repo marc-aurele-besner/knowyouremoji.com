@@ -59,84 +59,100 @@ afterEach(() => {
   cleanup();
 });
 
+const defaultSearchParams = Promise.resolve({} as { r?: string });
+
 describe('InterpreterPage', () => {
-  it('renders the main heading', () => {
-    render(<InterpreterPage />);
+  it('renders the main heading', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(
       screen.getByRole('heading', { level: 1, name: /emoji interpreter/i })
     ).toBeInTheDocument();
   });
 
-  it('renders the page description', () => {
-    render(<InterpreterPage />);
+  it('renders the page description', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(
       screen.getByText(/paste a message with emojis and we.?ll decode what they really mean/i)
     ).toBeInTheDocument();
   });
 
-  it('renders main content area', () => {
-    render(<InterpreterPage />);
+  it('renders main content area', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByRole('main')).toBeInTheDocument();
   });
 
-  it('renders breadcrumb navigation', () => {
-    render(<InterpreterPage />);
+  it('renders breadcrumb navigation', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByRole('navigation', { name: /breadcrumb/i })).toBeInTheDocument();
   });
 
-  it('has breadcrumb with Home link', () => {
-    render(<InterpreterPage />);
+  it('has breadcrumb with Home link', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByRole('link', { name: /home/i })).toHaveAttribute('href', '/');
   });
 
-  it('has breadcrumb with current page indicator', () => {
-    render(<InterpreterPage />);
+  it('has breadcrumb with current page indicator', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     const currentPage = screen.getByText('Interpreter');
     expect(currentPage).toHaveAttribute('aria-current', 'page');
   });
 
-  it('renders hero section with appropriate styling', () => {
-    render(<InterpreterPage />);
+  it('renders hero section with appropriate styling', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     const heading = screen.getByRole('heading', { level: 1 });
     expect(heading).toHaveClass('font-bold');
   });
 
-  it('renders the interpreter form section', () => {
-    render(<InterpreterPage />);
+  it('renders the interpreter form section', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     const formSection = screen.getByTestId('interpreter-form-section');
     expect(formSection).toBeInTheDocument();
   });
 
-  it('renders the interpreter form with message input', () => {
-    render(<InterpreterPage />);
+  it('renders the interpreter form with message input', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByRole('textbox', { name: /message/i })).toBeInTheDocument();
   });
 
-  it('renders the usage counter', () => {
-    render(<InterpreterPage />);
+  it('renders the usage counter', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByTestId('usage-counter')).toBeInTheDocument();
   });
 
-  it('renders the interpret button', () => {
-    render(<InterpreterPage />);
+  it('renders the interpret button', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     expect(screen.getByRole('button', { name: /interpret/i })).toBeInTheDocument();
   });
 
-  it('uses semantic article element for hero content', () => {
-    render(<InterpreterPage />);
+  it('uses semantic article element for hero content', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     // Check that the page has proper semantic structure
     const main = screen.getByRole('main');
     expect(main).toBeInTheDocument();
   });
 
-  it('applies container layout classes', () => {
-    render(<InterpreterPage />);
+  it('applies container layout classes', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     const main = screen.getByRole('main');
     expect(main).toHaveClass('container');
   });
 
-  it('has maximum width constraint for readability', () => {
-    render(<InterpreterPage />);
+  it('has maximum width constraint for readability', async () => {
+    const page = await InterpreterPage({ searchParams: defaultSearchParams });
+    render(page);
     const main = screen.getByRole('main');
     expect(main).toHaveClass('max-w-4xl');
   });
