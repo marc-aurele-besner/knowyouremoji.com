@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getComboBySlug, getAllComboSlugs, getRelatedCombos } from '@/lib/combo-data';
 import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { ShareSection } from '@/components/share/share-section';
+import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ComboHeader } from '@/components/combo/combo-header';
@@ -172,11 +174,24 @@ export default async function ComboPage({ params }: ComboPageProps) {
         {/* Header Section */}
         <ComboHeader combo={combo} className="mb-8" />
 
+        {/* Share Section */}
+        <ShareSection
+          url={`${env.appUrl}/combo/${combo.slug}`}
+          title={`${combo.combo} ${combo.name} - see what it really means!`}
+          description={combo.meaning}
+          hashtags={['emoji', 'emojicombo']}
+          contentType="combo"
+          className="mb-8"
+        />
+
         {/* Meaning Section */}
         <section className="mb-8">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Meaning</CardTitle>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg">Meaning</CardTitle>
+                <CopySectionButton text={combo.meaning} contentType="combo-meaning" />
+              </div>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 dark:text-gray-300">{combo.meaning}</p>
@@ -188,7 +203,10 @@ export default async function ComboPage({ params }: ComboPageProps) {
         <section className="mb-8">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Description</CardTitle>
+              <div className="flex items-center justify-between">
+                <CardTitle className="text-lg">Description</CardTitle>
+                <CopySectionButton text={combo.description} contentType="combo-description" />
+              </div>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 dark:text-gray-300">{combo.description}</p>
@@ -206,9 +224,12 @@ export default async function ComboPage({ params }: ComboPageProps) {
               {combo.examples.map((example, index) => (
                 <Card key={index}>
                   <CardContent className="pt-4">
-                    <p className="text-gray-700 dark:text-gray-300 italic">
-                      &ldquo;{example}&rdquo;
-                    </p>
+                    <div className="flex items-start justify-between gap-2">
+                      <p className="text-gray-700 dark:text-gray-300 italic">
+                        &ldquo;{example}&rdquo;
+                      </p>
+                      <CopySectionButton text={example} contentType="combo-example" />
+                    </div>
                   </CardContent>
                 </Card>
               ))}

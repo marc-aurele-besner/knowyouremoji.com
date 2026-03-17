@@ -9,6 +9,8 @@ import { ProbabilityMeter } from './probability-meter';
 import { PassiveAggressionMeter } from './passive-aggression-meter';
 import { RedFlagBadge } from './red-flag-badge';
 import { EmojiLink } from './emoji-link';
+import { ShareSection } from '@/components/share/share-section';
+import { getShareUrl } from '@/lib/share-encoding';
 import type { InterpretationResult, DetectedEmoji } from '@/types';
 
 export interface InterpretResultProps {
@@ -139,22 +141,6 @@ export function InterpretResult({
     }
   }, [result]);
 
-  const handleShare = useCallback(async () => {
-    const shareData = {
-      title: 'Emoji Interpretation - KnowYourEmoji',
-      text: `${result.interpretation}`,
-      url: window.location.href,
-    };
-
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData);
-      }
-    } catch {
-      // User cancelled or share failed
-    }
-  }, [result.interpretation]);
-
   const getToneBadgeConfig = (tone: 'positive' | 'neutral' | 'negative') => {
     switch (tone) {
       case 'positive':
@@ -224,9 +210,12 @@ export function InterpretResult({
                 Copied to clipboard
               </span>
             )}
-            <Button variant="outline" size="sm" onClick={handleShare} aria-label="Share">
-              Share
-            </Button>
+            <ShareSection
+              url={getShareUrl(result, typeof window !== 'undefined' ? window.location.origin : '')}
+              title={`Emoji Interpretation: "${result.message.slice(0, 50)}${result.message.length > 50 ? '...' : ''}"`}
+              description={result.interpretation.slice(0, 200)}
+              contentType="interpretation"
+            />
           </div>
         </CardContent>
       </Card>

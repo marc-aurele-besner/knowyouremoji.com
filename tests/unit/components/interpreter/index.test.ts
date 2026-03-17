@@ -58,4 +58,14 @@ describe('interpreter component exports', () => {
     expect(InterpreterExports.EmojiLink).toBeDefined();
     expect(typeof InterpreterExports.EmojiLink).toBe('function');
   });
+
+  it('exports SharedInterpretationView component', () => {
+    expect(InterpreterExports.SharedInterpretationView).toBeDefined();
+    expect(typeof InterpreterExports.SharedInterpretationView).toBe('function');
+  });
+
+  it('exports SharedResultSection component', () => {
+    expect(InterpreterExports.SharedResultSection).toBeDefined();
+    expect(typeof InterpreterExports.SharedResultSection).toBe('function');
+  });
 });

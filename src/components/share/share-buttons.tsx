@@ -5,13 +5,15 @@ import { Button, ButtonProps } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { shareEvents } from '@/lib/analytics';
 
-export type SharePlatform = 'twitter' | 'facebook' | 'copy';
+export type SharePlatform = 'twitter' | 'facebook' | 'copy' | 'native' | 'whatsapp' | 'email';
 
 export interface ShareButtonsProps {
   /** The URL to share */
   url: string;
   /** The title/text to share */
   title: string;
+  /** Optional description for native share (Web Share API) */
+  description?: string;
   /** Which platforms to show (default: all) */
   platforms?: SharePlatform[];
   /** Hashtags for Twitter share (without #) */
@@ -60,6 +62,7 @@ export interface ShareButtonsProps {
 export function ShareButtons({
   url,
   title,
+  description,
   platforms = ['twitter', 'facebook', 'copy'],
   hashtags = [],
   direction = 'horizontal',
@@ -118,6 +121,39 @@ export function ShareButtons({
     }
   }, [url, copyResetDelay, contentType, onCopy, onCopyError, onShare]);
 
+  const handleNativeShare = useCallback(async () => {
+    const shareData: ShareData = {
+      title,
+      text: description || title,
+      url,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        shareEvents.share('native', url, contentType);
+        onShare?.('native', url);
+      }
+    } catch {
+      // User cancelled or share failed
+    }
+  }, [url, title, description, contentType, onShare]);
+
+  const handleWhatsAppShare = useCallback(() => {
+    const text = `${title} ${url}`;
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    shareEvents.share('whatsapp', url, contentType);
+    onShare?.('whatsapp', url);
+  }, [url, title, contentType, onShare]);
+
+  const handleEmailShare = useCallback(() => {
+    const mailtoUrl = `mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(`${title} ${url}`)}`;
+    window.open(mailtoUrl);
+    shareEvents.share('email', url, contentType);
+    onShare?.('email', url);
+  }, [url, title, contentType, onShare]);
+
   const buttonSize = size === 'icon' ? 'icon' : size;
 
   return (
@@ -159,6 +195,42 @@ export function ShareButtons({
         >
           <span className={showLabels ? 'mr-2' : ''}>{copied ? '✓' : '🔗'}</span>
           {showLabels && (copied ? 'Copied!' : 'Copy Link')}
+        </Button>
+      )}
+
+      {platforms.includes('native') && (
+        <Button
+          variant={variant}
+          size={buttonSize}
+          onClick={handleNativeShare}
+          aria-label="Share via device"
+        >
+          <span className={showLabels ? 'mr-2' : ''}>📤</span>
+          {showLabels && 'Share'}
+        </Button>
+      )}
+
+      {platforms.includes('whatsapp') && (
+        <Button
+          variant={variant}
+          size={buttonSize}
+          onClick={handleWhatsAppShare}
+          aria-label="Share on WhatsApp"
+        >
+          <span className={showLabels ? 'mr-2' : ''}>💬</span>
+          {showLabels && 'WhatsApp'}
+        </Button>
+      )}
+
+      {platforms.includes('email') && (
+        <Button
+          variant={variant}
+          size={buttonSize}
+          onClick={handleEmailShare}
+          aria-label="Share via email"
+        >
+          <span className={showLabels ? 'mr-2' : ''}>📧</span>
+          {showLabels && 'Email'}
         </Button>
       )}
     </div>

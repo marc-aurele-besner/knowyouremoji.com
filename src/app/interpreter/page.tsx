@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { InterpreterClient } from '@/components/interpreter/interpreter-client';
+import { SharedResultSection } from '@/components/interpreter/shared-result-section';
 import { getEnv } from '@/lib/env';
 
 const pageTitle = 'Emoji Interpreter - Decode Hidden Meanings';
@@ -69,7 +70,13 @@ export function generateMetadata(): Metadata {
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Interpreter' }];
 
-export default function InterpreterPage() {
+interface InterpreterPageProps {
+  searchParams: Promise<{ r?: string }>;
+}
+
+export default async function InterpreterPage({ searchParams }: InterpreterPageProps) {
+  const { r: sharedResult } = await searchParams;
+
   return (
     <main className="container mx-auto px-4 py-8 max-w-4xl">
       <Breadcrumbs items={breadcrumbItems} className="mb-6" />
@@ -81,12 +88,16 @@ export default function InterpreterPage() {
         </p>
       </section>
 
-      <section
-        data-testid="interpreter-form-section"
-        className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800"
-      >
-        <InterpreterClient />
-      </section>
+      {sharedResult ? (
+        <SharedResultSection encodedResult={sharedResult} />
+      ) : (
+        <section
+          data-testid="interpreter-form-section"
+          className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800"
+        >
+          <InterpreterClient />
+        </section>
+      )}
     </main>
   );
 }
