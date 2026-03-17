@@ -58,30 +58,44 @@ export async function logInterpreterUsage(params: SlackLogParams): Promise<void>
     return;
   }
 
-  try {
-    const text = buildSlackMessage(params);
+  const text = buildSlackMessage(params);
+  const maxRetries = 2;
 
-    const response = await fetch(SLACK_API_URL, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${env.slackBotToken}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        channel: env.slackLogChannelId,
-        text,
-      }),
-    });
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-    if (!response.ok) {
-      console.error(`Slack API HTTP error: ${response.status}`);
-    } else {
-      const data = (await response.json()) as { ok: boolean; error?: string };
-      if (!data.ok) {
-        console.error(`Slack API error: ${data.error}`);
+      const response = await fetch(SLACK_API_URL, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${env.slackBotToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          channel: env.slackLogChannelId,
+          text,
+        }),
+        signal: controller.signal,
+      });
+
+      clearTimeout(timeoutId);
+
+      if (!response.ok) {
+        console.error(`Slack API HTTP error: ${response.status}`);
+      } else {
+        const data = (await response.json()) as { ok: boolean; error?: string };
+        if (!data.ok) {
+          console.error(`Slack API error: ${data.error}`);
+        }
       }
+      return;
+    } catch (error) {
+      if (attempt < maxRetries) {
+        await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
+        continue;
+      }
+      console.error('Failed to log to Slack:', error);
     }
-  } catch (error) {
-    console.error('Failed to log to Slack:', error);
   }
 }
