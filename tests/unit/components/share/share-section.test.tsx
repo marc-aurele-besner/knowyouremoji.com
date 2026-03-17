@@ -61,4 +61,27 @@ describe('ShareSection', () => {
     // Labels should be hidden in ShareSection (showLabels=false)
     expect(screen.queryByText('Twitter')).not.toBeInTheDocument();
   });
+
+  it('shows native share button when navigator.share is available', async () => {
+    Object.defineProperty(navigator, 'share', {
+      value: () => Promise.resolve(),
+      writable: true,
+      configurable: true,
+    });
+
+    render(<ShareSection {...defaultProps} />);
+
+    // After useEffect runs, should switch to mobile platforms including native
+    const { waitFor } = await import('@testing-library/react');
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /share via device/i })).toBeInTheDocument();
+    });
+
+    // Restore
+    Object.defineProperty(navigator, 'share', {
+      value: undefined,
+      writable: true,
+      configurable: true,
+    });
+  });
 });

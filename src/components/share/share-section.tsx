@@ -1,6 +1,6 @@
 'use client';
 
-import { useSyncExternalStore } from 'react';
+import { useState, useEffect } from 'react';
 import { ShareButtons, type SharePlatform } from './share-buttons';
 import { cn } from '@/lib/utils';
 
@@ -19,20 +19,6 @@ export interface ShareSectionProps {
   className?: string;
 }
 
-function subscribeNoop(callback: () => void) {
-  // navigator.share availability doesn't change at runtime
-  void callback;
-  return () => {};
-}
-
-function getHasNativeShare() {
-  return typeof navigator !== 'undefined' && !!navigator.share;
-}
-
-function getServerSnapshot() {
-  return false;
-}
-
 /**
  * Smart share section wrapper with responsive platform selection.
  * On mobile (when navigator.share available): shows native share as primary + other platforms.
@@ -46,12 +32,18 @@ export function ShareSection({
   contentType,
   className,
 }: ShareSectionProps) {
-  const hasNativeShare = useSyncExternalStore(subscribeNoop, getHasNativeShare, getServerSnapshot);
-
   const desktopPlatforms: SharePlatform[] = ['twitter', 'facebook', 'whatsapp', 'copy', 'email'];
   const mobilePlatforms: SharePlatform[] = ['native', 'twitter', 'copy'];
 
-  const platforms = hasNativeShare ? mobilePlatforms : desktopPlatforms;
+  // Check navigator.share on mount; default to desktop platforms for SSR
+  const [platforms, setPlatforms] = useState<SharePlatform[]>(desktopPlatforms);
+
+  useEffect(() => {
+    if (typeof navigator !== 'undefined' && 'share' in navigator) {
+      setPlatforms(mobilePlatforms);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={cn('flex items-center gap-3', className)}>
