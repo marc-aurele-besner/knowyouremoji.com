@@ -212,7 +212,7 @@ describe('UpgradePrompt', () => {
         maxUses: 3,
         canUse: false,
         isLimited: true,
-        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000 + 1 * 60 * 1000), // 2 hours and 1 minute
+        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000 + 1.5 * 60 * 1000), // 2 hours and ~1.5 minutes (buffer for execution time)
         recordUse: mock(() => 0),
         reset: mock(() => {}),
       }));
