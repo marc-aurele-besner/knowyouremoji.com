@@ -56,6 +56,14 @@ describe('analytics', () => {
       });
     });
 
+    it('tracks emoji download', () => {
+      emojiEvents.download('😀', 'grinning-face');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'emoji_download', {
+        emoji: '😀',
+        slug: 'grinning-face',
+      });
+    });
+
     it('tracks emoji search', () => {
       emojiEvents.search('fire', 5);
       expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'emoji_search', {
@@ -320,6 +328,15 @@ describe('analytics', () => {
         plan: 'pro',
         amount: 9.99,
         currency: 'usd',
+      });
+    });
+
+    it('sends emoji download event to PostHog', async () => {
+      emojiEvents.download('😀', 'grinning-face');
+      await waitForPostHog();
+      expect(mockPostHogCapture).toHaveBeenCalledWith('emoji_download', {
+        emoji: '😀',
+        slug: 'grinning-face',
       });
     });
   });

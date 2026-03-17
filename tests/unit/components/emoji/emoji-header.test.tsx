@@ -56,6 +56,11 @@ describe('EmojiHeader', () => {
       render(<EmojiHeader emoji={mockEmoji} />);
       expect(screen.getByRole('button', { name: /copy emoji/i })).toBeInTheDocument();
     });
+
+    it('renders the download button', () => {
+      render(<EmojiHeader emoji={mockEmoji} />);
+      expect(screen.getByRole('button', { name: /download emoji as image/i })).toBeInTheDocument();
+    });
   });
 
   describe('accessibility', () => {
@@ -167,6 +172,39 @@ describe('EmojiHeader', () => {
       expect(screen.getByText('👨‍💻')).toBeInTheDocument();
       // Each segment gets U+ prefix: U+1F468-U+200D-U+1F4BB
       expect(screen.getByText(/U\+1F468-U\+200D-U\+1F4BB/)).toBeInTheDocument();
+    });
+
+    it('tracks copy analytics when slug is provided', async () => {
+      const mockEmojiCopy = mock(() => {});
+      const analyticsModule = await import('@/lib/analytics');
+      const originalCopy = analyticsModule.emojiEvents.copy;
+      analyticsModule.emojiEvents.copy = mockEmojiCopy;
+
+      const emojiWithSlug = { ...mockEmoji, slug: 'grinning-face' };
+      render(<EmojiHeader emoji={emojiWithSlug} />);
+      const button = screen.getByRole('button', { name: /copy emoji/i });
+
+      fireEvent.click(button);
+
+      await waitFor(() => {
+        expect(mockEmojiCopy).toHaveBeenCalledWith('😀', 'grinning-face');
+      });
+
+      analyticsModule.emojiEvents.copy = originalCopy;
+    });
+
+    it('handles clipboard API failure gracefully', async () => {
+      mockWriteText.mockImplementation(() => Promise.reject(new Error('Clipboard denied')));
+
+      render(<EmojiHeader emoji={mockEmoji} />);
+      const button = screen.getByRole('button', { name: /copy emoji/i });
+
+      fireEvent.click(button);
+
+      // Should not crash and button should still be in initial state
+      await waitFor(() => {
+        expect(screen.getByRole('button', { name: /copy emoji/i })).toBeInTheDocument();
+      });
     });
   });
 });
