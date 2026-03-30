@@ -13,3 +13,11 @@ export type {
   UseStreamingInterpretReturn,
   InterpretInput,
 } from './use-streaming-interpret';
+
+export { useRealtimeContent } from './use-realtime-content';
+export type {
+  UseRealtimeContentOptions,
+  UseRealtimeContentReturn,
+  RealtimeEvent,
+  RealtimeStatus,
+} from './use-realtime-content';
