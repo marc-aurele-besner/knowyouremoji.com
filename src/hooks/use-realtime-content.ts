@@ -198,8 +198,7 @@ export function useRealtimeContent<T extends Record<string, unknown>>({
       }
       setStatus('closed');
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [table, schema, injectedClient]);
+  }, [table, schema, injectedClient, handleChange, events]);
 
   // isAvailable: true when an explicit client was provided or Supabase env is configured
   const isAvailable = injectedClient !== undefined ? Boolean(injectedClient) : isSupabaseConfigured();

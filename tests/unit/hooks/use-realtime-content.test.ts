@@ -16,10 +16,12 @@ function createMockSupabaseClient(subscribeStatus: string = 'SUBSCRIBED') {
   let changeHandler: ((payload: unknown) => void) | null = null;
   let subscribeCallback: ((status: string) => void) | null = null;
   let removeChannelCalled = false;
+  let lastOnFilter: { event: string; schema: string; table: string } | null = null;
 
   const mockChannel = {
-    on: (_event: string, _filter: unknown, handler: (payload: unknown) => void) => {
+    on: (_event: string, filter: { event: string; schema: string; table: string }, handler: (payload: unknown) => void) => {
       changeHandler = handler;
+      lastOnFilter = filter;
       return mockChannel;
     },
     subscribe: (cb: (status: string) => void) => {
@@ -56,6 +58,9 @@ function createMockSupabaseClient(subscribeStatus: string = 'SUBSCRIBED') {
     },
     get removeChannelCalled() {
       return removeChannelCalled;
+    },
+    get lastOnFilter() {
+      return lastOnFilter;
     },
   };
 }
@@ -456,6 +461,9 @@ describe('useRealtimeContent', () => {
         })
       );
 
+      // Wildcard filter is used for all-event subscription
+      expect(mock.lastOnFilter?.event).toBe('*');
+
       // All three event types should work
       mock.triggerChange('INSERT', { slug: 'new', name: 'New', category: 'objects' });
       expect(result.current.content).toHaveLength(4);
@@ -473,7 +481,10 @@ describe('useRealtimeContent', () => {
         })
       );
 
-      // Only UPDATE events should be processed
+      // Verify the event filter was set to 'UPDATE' (not '*')
+      expect(mock.lastOnFilter?.event).toBe('UPDATE');
+
+      // Only UPDATE events should be processed; INSERT should be ignored
       const beforeLength = result.current.content.length;
       mock.triggerChange('INSERT', { slug: 'new', name: 'New', category: 'objects' });
       expect(result.current.content).toHaveLength(beforeLength);
