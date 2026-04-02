@@ -2,7 +2,11 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
-import type { SupabaseClient, RealtimeChannel, RealtimePostgresChangesPayload } from '@supabase/supabase-js';
+import type {
+  SupabaseClient,
+  RealtimeChannel,
+  RealtimePostgresChangesPayload,
+} from '@supabase/supabase-js';
 
 // ============================================
 // TYPES
@@ -172,11 +176,7 @@ export function useRealtimeContent<T extends Record<string, unknown>>({
 
     const channel = supabase
       .channel(channelName)
-      .on<T>(
-        'postgres_changes',
-        { event: eventFilter as '*', schema, table },
-        handleChange
-      )
+      .on<T>('postgres_changes', { event: eventFilter as '*', schema, table }, handleChange)
       .subscribe((subscribeStatus) => {
         if (subscribeStatus === 'SUBSCRIBED') {
           setStatus('connected');
@@ -201,7 +201,8 @@ export function useRealtimeContent<T extends Record<string, unknown>>({
   }, [table, schema, injectedClient, handleChange, events]);
 
   // isAvailable: true when an explicit client was provided or Supabase env is configured
-  const isAvailable = injectedClient !== undefined ? Boolean(injectedClient) : isSupabaseConfigured();
+  const isAvailable =
+    injectedClient !== undefined ? Boolean(injectedClient) : isSupabaseConfigured();
   const isConnected = status === 'connected';
 
   return {
