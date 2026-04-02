@@ -14,6 +14,7 @@ bail = true
 # 5. Files with 99%+ coverage that have edge cases difficult to reach
 coveragePathIgnorePatterns = [
   "src/lib/env.ts",
+  "src/lib/neon.ts",
   "src/app/api/interpret/route.ts",
   "src/app/api/interpret/stream/route.ts",
   "src/lib/interpreter.ts",

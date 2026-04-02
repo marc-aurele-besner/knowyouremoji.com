@@ -5,6 +5,7 @@ import {
   getRelatedEmojis,
   getCategoryDisplayName,
 } from '@/lib/emoji-data';
+import { recordEmojiPageView } from '@/lib/emoji-popularity';
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
@@ -199,6 +200,8 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   if (!emoji) {
     notFound();
   }
+
+  await recordEmojiPageView(slug);
 
   // Get related emojis from the same category
   const relatedEmojis = getRelatedEmojis(slug, 8);

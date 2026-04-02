@@ -43,6 +43,11 @@ export interface EnvConfig {
   slackBotToken: string | undefined;
   /** Slack channel ID for interpreter usage logs */
   slackLogChannelId: string | undefined;
+  /**
+   * Neon Postgres connection string (server-only).
+   * When set, emoji detail views increment popularity used on the homepage.
+   */
+  databaseUrl: string | undefined;
 }
 
 /**
@@ -68,6 +73,7 @@ export function getEnv(): EnvConfig {
     supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
     slackBotToken: process.env.SLACK_BOT_TOKEN,
     slackLogChannelId: process.env.SLACK_LOG_CHANNEL_ID,
+    databaseUrl: process.env.DATABASE_URL,
   };
 }
 
