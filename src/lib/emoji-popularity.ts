@@ -24,9 +24,15 @@ function ensureEmojiPopularitySchema(sql: NeonSql): Promise<void> {
 /**
  * Record a page view for an emoji slug (non-blocking via Next.js `after`).
  * No-ops when DATABASE_URL is missing or slug is invalid.
+ *
+ * Skips during `next build` static generation: `after()` requires a request scope and throws
+ * otherwise, and prerender passes must not count as real traffic.
  */
 export async function recordEmojiPageView(slug: string): Promise<void> {
   if (!SLUG_PATTERN.test(slug)) {
+    return;
+  }
+  if (process.env.NEXT_PHASE === 'phase-production-build') {
     return;
   }
   const sql = getNeonSql();
@@ -34,20 +40,24 @@ export async function recordEmojiPageView(slug: string): Promise<void> {
     return;
   }
 
-  after(async () => {
-    try {
-      await ensureEmojiPopularitySchema(sql);
-      await sql`
-        INSERT INTO emoji_page_views (slug, view_count, updated_at)
-        VALUES (${slug}, 1, now())
-        ON CONFLICT (slug) DO UPDATE SET
-          view_count = emoji_page_views.view_count + 1,
-          updated_at = now()
-      `;
-    } catch (err) {
-      console.error('[emoji-popularity] Failed to record emoji page view:', err);
-    }
-  });
+  try {
+    after(async () => {
+      try {
+        await ensureEmojiPopularitySchema(sql);
+        await sql`
+          INSERT INTO emoji_page_views (slug, view_count, updated_at)
+          VALUES (${slug}, 1, now())
+          ON CONFLICT (slug) DO UPDATE SET
+            view_count = emoji_page_views.view_count + 1,
+            updated_at = now()
+        `;
+      } catch (err) {
+        console.error('[emoji-popularity] Failed to record emoji page view:', err);
+      }
+    });
+  } catch {
+    // No request scope (e.g. some static contexts) — do not fail the render
+  }
 }
 
 function summaryMapFromList(summaries: EmojiSummary[]): Map<string, EmojiSummary> {

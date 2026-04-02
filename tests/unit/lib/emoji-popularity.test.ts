@@ -42,7 +42,11 @@ const sampleSummaries: EmojiSummary[] = [
 describe('emoji-popularity', () => {
   afterEach(() => {
     Reflect.deleteProperty(process.env, 'DATABASE_URL');
+    Reflect.deleteProperty(process.env, 'NEXT_PHASE');
     mockAfter.mockClear();
+    mockAfter.mockImplementation((fn: () => void | Promise<void>) => {
+      void fn();
+    });
     mockSql.mockClear();
     mockSql.mockImplementation(defaultSqlImpl);
   });
@@ -101,6 +105,23 @@ describe('emoji-popularity', () => {
     const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
     await recordEmojiPageView('ok-slug');
     expect(mockAfter).not.toHaveBeenCalled();
+  });
+
+  it('recordEmojiPageView skips during NEXT_PHASE=phase-production-build', async () => {
+    process.env.DATABASE_URL = 'postgresql://test';
+    process.env.NEXT_PHASE = 'phase-production-build';
+    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
+    await recordEmojiPageView('valid-slug');
+    expect(mockAfter).not.toHaveBeenCalled();
+  });
+
+  it('recordEmojiPageView does not throw when after() has no request scope', async () => {
+    process.env.DATABASE_URL = 'postgresql://test';
+    mockAfter.mockImplementation(() => {
+      throw new Error('`after` was called outside a request scope');
+    });
+    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
+    await expect(recordEmojiPageView('valid-slug')).resolves.toBeUndefined();
   });
 
   it('recordEmojiPageView logs when the insert fails', async () => {
