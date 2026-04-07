@@ -43,15 +43,7 @@ function getToneConfig(tone: 'positive' | 'neutral' | 'negative') {
   }
 }
 
-function MetricBar({
-  label,
-  value,
-  testId,
-}: {
-  label: string;
-  value: number;
-  testId: string;
-}) {
+function MetricBar({ label, value, testId }: { label: string; value: number; testId: string }) {
   const getBarColor = (val: number) => {
     if (val >= 70) return 'bg-red-400';
     if (val >= 40) return 'bg-yellow-400';
@@ -146,11 +138,7 @@ export function ShareableCard({ data, shareUrl, className }: ShareableCardProps)
 
           {/* Metrics row */}
           <div className="grid grid-cols-2 gap-4">
-            <MetricBar
-              label="Sarcasm"
-              value={data.sarcasm}
-              testId="shareable-card-sarcasm"
-            />
+            <MetricBar label="Sarcasm" value={data.sarcasm} testId="shareable-card-sarcasm" />
             <MetricBar
               label="Passive-aggression"
               value={data.passiveAggression}
@@ -161,18 +149,13 @@ export function ShareableCard({ data, shareUrl, className }: ShareableCardProps)
           {/* Footer */}
           <div className="flex items-center justify-between border-t border-gray-100 pt-4">
             <span className="text-xs text-gray-400">knowyouremoji.com</span>
-            <span className="text-xs font-medium text-gray-600">
-              {data.confidence}% confidence
-            </span>
+            <span className="text-xs font-medium text-gray-600">{data.confidence}% confidence</span>
           </div>
         </div>
       </div>
 
       {/* Share actions below the card */}
-      <div
-        data-testid="shareable-card-actions"
-        className="flex items-center justify-between"
-      >
+      <div data-testid="shareable-card-actions" className="flex items-center justify-between">
         <button
           onClick={handleCopyAsText}
           className="text-sm text-gray-500 hover:text-gray-700 transition-colors"

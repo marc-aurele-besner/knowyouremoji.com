@@ -41,7 +41,10 @@ export function SharedInterpretationView({ data, className }: SharedInterpretati
 
       {/* CTA */}
       <div className="text-center pt-4">
-        <Link href="/interpreter" onClick={() => shareEvents.shareConversion(shareUrl, 'interpretation')}>
+        <Link
+          href="/interpreter"
+          onClick={() => shareEvents.shareConversion(shareUrl, 'interpretation')}
+        >
           <Button size="lg">Try the Interpreter Yourself</Button>
         </Link>
       </div>
