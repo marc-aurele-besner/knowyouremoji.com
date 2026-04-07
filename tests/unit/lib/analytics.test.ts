@@ -239,6 +239,35 @@ describe('analytics', () => {
         content_type: 'emoji',
       });
     });
+
+    it('tracks share view', () => {
+      shareEvents.shareView('https://knowyouremoji.com/interpreter?r=abc', 'interpretation');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'share_view', {
+        url: 'https://knowyouremoji.com/interpreter?r=abc',
+        content_type: 'interpretation',
+      });
+    });
+
+    it('tracks share conversion', () => {
+      shareEvents.shareConversion('https://knowyouremoji.com/interpreter?r=abc', 'interpretation');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'share_conversion', {
+        url: 'https://knowyouremoji.com/interpreter?r=abc',
+        content_type: 'interpretation',
+      });
+    });
+
+    it('tracks share re-share', () => {
+      shareEvents.shareReShare(
+        'twitter',
+        'https://knowyouremoji.com/interpreter?r=abc',
+        'interpretation'
+      );
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'share_reshare', {
+        platform: 'twitter',
+        url: 'https://knowyouremoji.com/interpreter?r=abc',
+        content_type: 'interpretation',
+      });
+    });
   });
 
   describe('PostHog integration', () => {
