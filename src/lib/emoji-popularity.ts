@@ -4,22 +4,9 @@
 
 import { after } from 'next/server';
 import type { EmojiSummary } from '@/types/emoji';
-import { getNeonSql, type NeonSql } from '@/lib/neon';
+import { getNeonSql } from '@/lib/neon';
 
 const SLUG_PATTERN = /^[a-z0-9-]+$/;
-
-let schemaReady: Promise<void> | undefined;
-
-function ensureEmojiPopularitySchema(sql: NeonSql): Promise<void> {
-  schemaReady ??= sql`
-    CREATE TABLE IF NOT EXISTS emoji_page_views (
-      slug text PRIMARY KEY,
-      view_count bigint NOT NULL DEFAULT 0,
-      updated_at timestamptz NOT NULL DEFAULT now()
-    )
-  `.then(() => undefined);
-  return schemaReady;
-}
 
 /**
  * Record a page view for an emoji slug (non-blocking via Next.js `after`).
@@ -43,7 +30,6 @@ export async function recordEmojiPageView(slug: string): Promise<void> {
   try {
     after(async () => {
       try {
-        await ensureEmojiPopularitySchema(sql);
         await sql`
           INSERT INTO emoji_page_views (slug, view_count, updated_at)
           VALUES (${slug}, 1, now())
@@ -84,7 +70,6 @@ export async function getPopularEmojiSummariesForHome(
   }
 
   try {
-    await ensureEmojiPopularitySchema(sql);
     const rows = (await sql`
       SELECT slug, view_count
       FROM emoji_page_views

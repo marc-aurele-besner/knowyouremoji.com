@@ -9,14 +9,8 @@ mock.module('next/server', () => ({
   after: mockAfter,
 }));
 
-const defaultSqlImpl = async (
-  strings: TemplateStringsArray,
-  ..._values: unknown[]
-): Promise<unknown[] | undefined> => {
+const defaultSqlImpl = async (strings: TemplateStringsArray): Promise<unknown[] | undefined> => {
   const head = strings[0] ?? '';
-  if (head.includes('CREATE TABLE')) {
-    return undefined;
-  }
   if (head.includes('SELECT slug')) {
     return [
       { slug: 'second', view_count: 10 },
@@ -84,7 +78,6 @@ describe('emoji-popularity', () => {
   it('recordEmojiPageView schedules work after response', async () => {
     process.env.DATABASE_URL = 'postgresql://test';
     mockSql.mockImplementation(async (strings) => {
-      if (strings[0]?.includes('CREATE TABLE')) return undefined;
       if (strings[0]?.includes('INSERT INTO')) return undefined;
       return [];
     });
@@ -130,13 +123,8 @@ describe('emoji-popularity', () => {
     const origErr = console.error;
     console.error = errSpy as typeof console.error;
 
-    let call = 0;
     mockSql.mockImplementation(async (strings) => {
       const head = strings[0] ?? '';
-      if (head.includes('CREATE TABLE')) {
-        return undefined;
-      }
-      call += 1;
       if (head.includes('INSERT INTO')) {
         throw new Error('insert failed');
       }
