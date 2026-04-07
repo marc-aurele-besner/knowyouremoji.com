@@ -25,10 +25,6 @@ mock.module('next/navigation', () => ({
   notFound: mockNotFound,
 }));
 
-mock.module('@/lib/emoji-popularity', () => ({
-  recordEmojiPageView: mock(async () => {}),
-}));
-
 const mockEmoji: Emoji = {
   unicode: '1F480',
   slug: 'skull',

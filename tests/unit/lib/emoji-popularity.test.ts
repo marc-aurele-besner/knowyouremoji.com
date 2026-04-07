@@ -1,14 +1,6 @@
 import { describe, it, expect, afterEach, mock } from 'bun:test';
 import type { EmojiSummary } from '@/types/emoji';
 
-const mockAfter = mock((fn: () => void | Promise<void>) => {
-  void fn();
-});
-
-mock.module('next/server', () => ({
-  after: mockAfter,
-}));
-
 const defaultSqlImpl = async (strings: TemplateStringsArray): Promise<unknown[] | undefined> => {
   const head = strings[0] ?? '';
   if (head.includes('SELECT slug')) {
@@ -36,11 +28,6 @@ const sampleSummaries: EmojiSummary[] = [
 describe('emoji-popularity', () => {
   afterEach(() => {
     Reflect.deleteProperty(process.env, 'DATABASE_URL');
-    Reflect.deleteProperty(process.env, 'NEXT_PHASE');
-    mockAfter.mockClear();
-    mockAfter.mockImplementation((fn: () => void | Promise<void>) => {
-      void fn();
-    });
     mockSql.mockClear();
     mockSql.mockImplementation(defaultSqlImpl);
   });
@@ -75,71 +62,25 @@ describe('emoji-popularity', () => {
     expect(result).toEqual(sampleSummaries.slice(0, 2));
   });
 
-  it('recordEmojiPageView schedules work after response', async () => {
+  it('getPopularEmojiSummariesForHome returns empty array for limit <= 0', async () => {
+    const { getPopularEmojiSummariesForHome } = await import('@/lib/emoji-popularity');
+    const result = await getPopularEmojiSummariesForHome(0, sampleSummaries);
+    expect(result).toEqual([]);
+  });
+
+  it('getPopularEmojiSummariesForHome skips rows with invalid slugs', async () => {
     process.env.DATABASE_URL = 'postgresql://test';
     mockSql.mockImplementation(async (strings) => {
-      if (strings[0]?.includes('INSERT INTO')) return undefined;
-      return [];
-    });
-    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-    await recordEmojiPageView('valid-slug');
-    expect(mockAfter).toHaveBeenCalled();
-  });
-
-  it('recordEmojiPageView ignores invalid slugs', async () => {
-    process.env.DATABASE_URL = 'postgresql://test';
-    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-    await recordEmojiPageView('bad slug!');
-    expect(mockAfter).not.toHaveBeenCalled();
-  });
-
-  it('recordEmojiPageView no-ops when DATABASE_URL is unset', async () => {
-    Reflect.deleteProperty(process.env, 'DATABASE_URL');
-    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-    await recordEmojiPageView('ok-slug');
-    expect(mockAfter).not.toHaveBeenCalled();
-  });
-
-  it('recordEmojiPageView skips during NEXT_PHASE=phase-production-build', async () => {
-    process.env.DATABASE_URL = 'postgresql://test';
-    process.env.NEXT_PHASE = 'phase-production-build';
-    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-    await recordEmojiPageView('valid-slug');
-    expect(mockAfter).not.toHaveBeenCalled();
-  });
-
-  it('recordEmojiPageView does not throw when after() has no request scope', async () => {
-    process.env.DATABASE_URL = 'postgresql://test';
-    mockAfter.mockImplementation(() => {
-      throw new Error('`after` was called outside a request scope');
-    });
-    const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-    await expect(recordEmojiPageView('valid-slug')).resolves.toBeUndefined();
-  });
-
-  it('recordEmojiPageView logs when the insert fails', async () => {
-    process.env.DATABASE_URL = 'postgresql://test';
-    const errSpy = mock(() => {});
-    const origErr = console.error;
-    console.error = errSpy as typeof console.error;
-
-    mockSql.mockImplementation(async (strings) => {
-      const head = strings[0] ?? '';
-      if (head.includes('INSERT INTO')) {
-        throw new Error('insert failed');
+      if (strings[0]?.includes('SELECT slug')) {
+        return [
+          { slug: 'bad slug!', view_count: 100 },
+          { slug: 'second', view_count: 10 },
+        ];
       }
       return [];
     });
-
-    try {
-      const { recordEmojiPageView } = await import('@/lib/emoji-popularity');
-      await recordEmojiPageView('valid-slug');
-      expect(mockAfter).toHaveBeenCalled();
-      await mockAfter.mock.calls[0][0]();
-      expect(errSpy).toHaveBeenCalled();
-    } finally {
-      console.error = origErr;
-      mockSql.mockImplementation(defaultSqlImpl);
-    }
+    const { getPopularEmojiSummariesForHome } = await import('@/lib/emoji-popularity');
+    const result = await getPopularEmojiSummariesForHome(2, sampleSummaries);
+    expect(result.map((s) => s.slug)).toEqual(['second', 'first']);
   });
 });
