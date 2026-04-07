@@ -220,6 +220,18 @@ export const shareEvents = {
   /** Track when user copies a share link */
   copyLink: (url: string, contentType: string) =>
     safeTrackEvent('share_link_copy', { url, content_type: contentType }),
+
+  /** Track when a shared result is viewed by a recipient */
+  shareView: (url: string, contentType: string) =>
+    safeTrackEvent('share_view', { url, content_type: contentType }),
+
+  /** Track when a share recipient clicks the CTA to try the interpreter */
+  shareConversion: (url: string, contentType: string) =>
+    safeTrackEvent('share_conversion', { url, content_type: contentType }),
+
+  /** Track when a share recipient re-shares the content */
+  shareReShare: (platform: string, url: string, contentType: string) =>
+    safeTrackEvent('share_reshare', { platform, url, content_type: contentType }),
 };
 
 /**
