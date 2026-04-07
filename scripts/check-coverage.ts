@@ -28,7 +28,7 @@ interface CoverageResult {
 
 async function runTestsWithCoverage(): Promise<{ output: string; exitCode: number }> {
   const proc = spawn({
-    cmd: ['bun', 'test', 'tests/unit', 'tests/integration', '--coverage'],
+    cmd: ['npx', 'bun', 'test', 'tests/unit', 'tests/integration', '--coverage'],
     stdout: 'pipe',
     stderr: 'pipe',
   });

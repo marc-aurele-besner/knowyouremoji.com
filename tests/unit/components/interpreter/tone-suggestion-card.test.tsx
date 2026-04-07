@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, mock, spyOn } from 'bun:test';
+import { describe, it, expect, afterEach, beforeEach, mock, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor } from '@testing-library/react';
 import { ToneSuggestionCard } from '@/components/interpreter/tone-suggestion-card';
 import { createSuggestedResponseTone } from '../../../utils/factories/interpreter.factory';
@@ -98,6 +98,15 @@ describe('ToneSuggestionCard', () => {
   });
 
   describe('copy example functionality', () => {
+    beforeEach(() => {
+      // Other tests set navigator.clipboard to undefined; ensure a spy-able API exists
+      Object.defineProperty(navigator, 'clipboard', {
+        value: { writeText: mock(() => Promise.resolve()) },
+        writable: true,
+        configurable: true,
+      });
+    });
+
     it('shows copy button on hover', () => {
       render(<ToneSuggestionCard suggestion={defaultSuggestion} index={0} />);
       const copyButtons = screen.getAllByRole('button', { name: /copy/i });
@@ -106,55 +115,68 @@ describe('ToneSuggestionCard', () => {
 
     it('copies example to clipboard when copy button is clicked', async () => {
       const writeTextMock = mock(() => Promise.resolve());
-      spyOn(navigator.clipboard, 'writeText').mockImplementation(writeTextMock);
+      const clipboardSpy = spyOn(navigator.clipboard, 'writeText').mockImplementation(writeTextMock);
 
-      const onCopyExample = mock();
-      render(
-        <ToneSuggestionCard
-          suggestion={defaultSuggestion}
-          index={0}
-          onCopyExample={onCopyExample}
-        />
-      );
+      try {
+        const onCopyExample = mock();
+        render(
+          <ToneSuggestionCard
+            suggestion={defaultSuggestion}
+            index={0}
+            onCopyExample={onCopyExample}
+          />
+        );
 
-      const copyButtons = screen.getAllByRole('button', { name: /copy/i });
-      fireEvent.click(copyButtons[0]);
+        const copyButtons = screen.getAllByRole('button', { name: /copy/i });
+        fireEvent.click(copyButtons[0]);
 
-      await waitFor(() => {
-        expect(writeTextMock).toHaveBeenCalledWith(defaultSuggestion.examples[0]);
-        expect(onCopyExample).toHaveBeenCalledWith(defaultSuggestion.examples[0]);
-      });
+        await waitFor(() => {
+          expect(writeTextMock).toHaveBeenCalledWith(defaultSuggestion.examples[0]);
+          expect(onCopyExample).toHaveBeenCalledWith(defaultSuggestion.examples[0]);
+        });
+      } finally {
+        clipboardSpy.mockRestore();
+      }
     });
 
     it('shows copied state after copying', async () => {
-      spyOn(navigator.clipboard, 'writeText').mockImplementation(() => Promise.resolve());
+      const clipboardSpy = spyOn(navigator.clipboard, 'writeText').mockImplementation(() =>
+        Promise.resolve()
+      );
 
-      render(<ToneSuggestionCard suggestion={defaultSuggestion} index={0} />);
+      try {
+        render(<ToneSuggestionCard suggestion={defaultSuggestion} index={0} />);
 
-      const copyButtons = screen.getAllByRole('button', { name: /copy/i });
-      fireEvent.click(copyButtons[0]);
+        const copyButtons = screen.getAllByRole('button', { name: /copy/i });
+        fireEvent.click(copyButtons[0]);
 
-      await waitFor(() => {
-        expect(screen.getByRole('button', { name: /copied/i })).toBeInTheDocument();
-      });
+        await waitFor(() => {
+          expect(screen.getByRole('button', { name: /copied/i })).toBeInTheDocument();
+        });
+      } finally {
+        clipboardSpy.mockRestore();
+      }
     });
 
     it('handles copy failure gracefully', async () => {
       const consoleErrorSpy = spyOn(console, 'error').mockImplementation(() => {});
-      spyOn(navigator.clipboard, 'writeText').mockImplementation(() =>
+      const clipboardSpy = spyOn(navigator.clipboard, 'writeText').mockImplementation(() =>
         Promise.reject(new Error('Copy failed'))
       );
 
-      render(<ToneSuggestionCard suggestion={defaultSuggestion} index={0} />);
+      try {
+        render(<ToneSuggestionCard suggestion={defaultSuggestion} index={0} />);
 
-      const copyButtons = screen.getAllByRole('button', { name: /copy/i });
-      fireEvent.click(copyButtons[0]);
+        const copyButtons = screen.getAllByRole('button', { name: /copy/i });
+        fireEvent.click(copyButtons[0]);
 
-      await waitFor(() => {
-        expect(consoleErrorSpy).toHaveBeenCalledWith('Failed to copy example');
-      });
-
-      consoleErrorSpy.mockRestore();
+        await waitFor(() => {
+          expect(consoleErrorSpy).toHaveBeenCalledWith('Failed to copy example');
+        });
+      } finally {
+        clipboardSpy.mockRestore();
+        consoleErrorSpy.mockRestore();
+      }
     });
   });
 

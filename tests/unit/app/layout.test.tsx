@@ -313,6 +313,7 @@ describe('Root Layout Component', () => {
       GoogleAnalytics: ({ gaId }: { gaId: string }) => (
         <div data-testid="ga-component" data-ga-id={gaId} />
       ),
+      sendGAEvent: mock(() => {}),
     }));
   });
 

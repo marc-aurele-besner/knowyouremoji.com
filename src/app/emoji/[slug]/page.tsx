@@ -18,6 +18,7 @@ import { PlatformIcon } from '@/components/emoji/platform-icon';
 import { ShareSection } from '@/components/share/share-section';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { ShareMeaningButton } from '@/components/share/share-meaning-button';
+import { EmojiViewTracker } from '@/components/emoji/emoji-view-tracker';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
@@ -227,6 +228,7 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
 
   return (
     <>
+      <EmojiViewTracker slug={slug} />
       {/* JSON-LD structured data for rich snippets */}
       <EmojiJsonLd emoji={emoji} appUrl={env.appUrl} appName={env.appName} />
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />

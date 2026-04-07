@@ -1,14 +1,23 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
-import HomePage, { generateMetadata } from '@/app/page';
-import { clearEmojiCache } from '@/lib/emoji-data';
-import { clearComboCache } from '@/lib/combo-data';
+import { generateMetadata } from '@/app/page';
+import { HomePageContent } from '@/components/home/home-page-content';
+import { getEmojiSummaries, clearEmojiCache } from '@/lib/emoji-data';
+import { getComboSummaries, clearComboCache } from '@/lib/combo-data';
 
 /**
  * Homepage tests using real emoji and combo data
  * This approach avoids mock.module conflicts with other tests
  */
 describe('HomePage', () => {
+  function renderHome() {
+    const emojiSummaries = getEmojiSummaries().slice(0, 12);
+    const comboSummaries = getComboSummaries().slice(0, 8);
+    return render(
+      <HomePageContent emojiSummaries={emojiSummaries} comboSummaries={comboSummaries} />
+    );
+  }
+
   // Clear caches before each test to ensure clean state
   beforeEach(() => {
     clearEmojiCache();
@@ -22,7 +31,7 @@ describe('HomePage', () => {
 
   describe('Hero section', () => {
     test('renders main headline', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for main heading
       const heading = screen.getByRole('heading', { level: 1 });
@@ -31,7 +40,7 @@ describe('HomePage', () => {
     });
 
     test('renders descriptive subheadline', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for description text about emoji meanings
       // Text is split across elements due to <em> tag, so use a custom matcher
@@ -44,14 +53,14 @@ describe('HomePage', () => {
 
   describe('Features section', () => {
     test('renders features heading', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for features section heading
       expect(screen.getByRole('heading', { name: 'Features', level: 2 })).toBeInTheDocument();
     });
 
     test('displays key platform features', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for context-aware feature (heading)
       expect(screen.getByRole('heading', { name: /Context-Aware/i })).toBeInTheDocument();
@@ -66,7 +75,7 @@ describe('HomePage', () => {
 
   describe('CTA section', () => {
     test('renders interpreter CTA link', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for link to interpreter - there are multiple, check that at least one exists with correct href
       const ctaLinks = screen.getAllByRole('link', { name: /interpret/i });
@@ -75,7 +84,7 @@ describe('HomePage', () => {
     });
 
     test('renders browse emojis link', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check for link to emoji browsing
       const browseLinks = screen.getAllByRole('link', { name: /browse|view all emoji/i });
@@ -85,14 +94,14 @@ describe('HomePage', () => {
 
   describe('Sample emojis section', () => {
     test('renders sample emojis section heading', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Use exact text match to distinguish from "Popular Emoji Combos"
       expect(screen.getByRole('heading', { name: 'Popular Emojis', level: 2 })).toBeInTheDocument();
     });
 
     test('displays emoji cards with characters', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check that some emoji cards are displayed (using data-testid)
       const emojiCards = screen.queryAllByTestId('emoji-card');
@@ -107,7 +116,7 @@ describe('HomePage', () => {
     });
 
     test('emoji cards link to detail pages', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Get all links and verify some link to emoji detail pages
       const allLinks = screen.getAllByRole('link');
@@ -119,7 +128,7 @@ describe('HomePage', () => {
     });
 
     test('limits displayed emojis to a reasonable number', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Should show max 12 emojis on homepage
       const emojiCards = screen.queryAllByTestId('emoji-card');
@@ -129,7 +138,7 @@ describe('HomePage', () => {
 
   describe('Featured combos section', () => {
     test('renders featured combos section heading', () => {
-      render(<HomePage />);
+      renderHome();
 
       expect(
         screen.getByRole('heading', { name: /popular emoji combo/i, level: 2 })
@@ -137,7 +146,7 @@ describe('HomePage', () => {
     });
 
     test('displays combo cards', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check that some combo cards are displayed (using data-testid)
       const comboCards = screen.queryAllByTestId('combo-card');
@@ -151,7 +160,7 @@ describe('HomePage', () => {
     });
 
     test('combo cards link to detail pages', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Get all links and verify some link to combo detail pages
       const allLinks = screen.getAllByRole('link');
@@ -163,7 +172,7 @@ describe('HomePage', () => {
     });
 
     test('limits displayed combos to a reasonable number', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Should show max 8 combos on homepage
       const comboCards = screen.queryAllByTestId('combo-card');
@@ -173,7 +182,7 @@ describe('HomePage', () => {
 
   describe('Accessibility', () => {
     test('has proper heading hierarchy', () => {
-      render(<HomePage />);
+      renderHome();
 
       const h1 = screen.getByRole('heading', { level: 1 });
       expect(h1).toBeInTheDocument();
@@ -183,7 +192,7 @@ describe('HomePage', () => {
     });
 
     test('links have descriptive text', () => {
-      render(<HomePage />);
+      renderHome();
 
       const links = screen.getAllByRole('link');
       links.forEach((link) => {
@@ -197,7 +206,7 @@ describe('HomePage', () => {
     });
 
     test('page content renders correctly', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Page renders its content (main landmark is now in layout)
       const h1 = screen.getByRole('heading', { level: 1 });
@@ -207,7 +216,7 @@ describe('HomePage', () => {
 
   describe('SEO elements', () => {
     test('page is structured for SEO', () => {
-      render(<HomePage />);
+      renderHome();
 
       // Check that important keywords are present in content
       const pageContent = document.body.textContent;
@@ -294,5 +303,13 @@ describe('HomePage', () => {
       const keywords = metadata.keywords as string[];
       expect(keywords).toContain('emoji meaning');
     });
+  });
+
+  test('default export loads popular emojis and renders homepage', async () => {
+    delete process.env.DATABASE_URL;
+    const { default: HomePage } = await import('@/app/page');
+    const ui = await HomePage();
+    render(ui);
+    expect(screen.getByRole('heading', { name: 'Popular Emojis', level: 2 })).toBeInTheDocument();
   });
 });

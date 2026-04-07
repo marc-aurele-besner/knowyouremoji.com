@@ -5,11 +5,14 @@ import { render, cleanup } from '@testing-library/react';
 const originalEnv = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const originalNodeEnv = process.env.NODE_ENV;
 
-// Mock @next/third-parties/google
+const mockSendGAEvent = mock(() => {});
+
+// Mock @next/third-parties/google (must export sendGAEvent — analytics imports it)
 mock.module('@next/third-parties/google', () => ({
   GoogleAnalytics: ({ gaId }: { gaId: string }) => (
     <div data-testid="ga-component" data-ga-id={gaId} />
   ),
+  sendGAEvent: mockSendGAEvent,
 }));
 
 // We need to test the component's behavior under different NODE_ENV values.
