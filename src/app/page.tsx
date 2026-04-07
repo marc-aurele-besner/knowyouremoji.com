@@ -82,7 +82,5 @@ export default async function HomePage() {
   const emojiSummaries = await getPopularEmojiSummariesForHome(12, allSummaries);
   const comboSummaries = getComboSummaries().slice(0, 8);
 
-  return (
-    <HomePageContent emojiSummaries={emojiSummaries} comboSummaries={comboSummaries} />
-  );
+  return <HomePageContent emojiSummaries={emojiSummaries} comboSummaries={comboSummaries} />;
 }
