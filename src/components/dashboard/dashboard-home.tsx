@@ -50,7 +50,9 @@ function DashboardHome() {
           </CardHeader>
           <CardContent>
             <div className="text-3xl font-bold text-gray-900 dark:text-white">{used}</div>
-            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">of {maxUses} daily limit</p>
+            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              of {maxUses} daily limit
+            </p>
             <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-gray-200 dark:bg-gray-700">
               <div
                 data-testid="usage-bar"
@@ -86,7 +88,10 @@ function DashboardHome() {
             <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
               {maxUses} interpretations/day
             </p>
-            <Link href="/pricing" className="mt-2 inline-block text-xs font-medium text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300">
+            <Link
+              href="/pricing"
+              className="mt-2 inline-block text-xs font-medium text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300"
+            >
               Upgrade for unlimited →
             </Link>
           </CardContent>
