@@ -26,7 +26,7 @@ const mockSubscriptionsUpdate = mock(() =>
   Promise.resolve({
     id: 'sub_test_123',
     cancel_at_period_end: true,
-    current_period_end: Math.floor(futureDate.getTime() / 1000),
+    cancel_at: Math.floor(futureDate.getTime() / 1000),
   })
 );
 
@@ -107,7 +107,7 @@ describe('POST /api/billing/cancel', () => {
       Promise.resolve({
         id: 'sub_test_123',
         cancel_at_period_end: true,
-        current_period_end: Math.floor(futureDate.getTime() / 1000),
+        cancel_at: Math.floor(futureDate.getTime() / 1000),
       })
     );
     mockDbUpdate.mockImplementation(
@@ -236,14 +236,13 @@ describe('POST /api/billing/cancel', () => {
     expect(mockDbUpdate).toHaveBeenCalled();
   });
 
-  it('uses existing currentPeriodEnd when Stripe returns no period end', async () => {
-    mockSubscriptionsUpdate.mockImplementation(() =>
+  it('uses existing currentPeriodEnd when Stripe returns no cancel_at', async () => {
+    mockSubscriptionsUpdate.mockImplementation((() =>
       Promise.resolve({
         id: 'sub_test_123',
         cancel_at_period_end: true,
-        current_period_end: null,
-      })
-    );
+        cancel_at: null,
+      })) as never);
     const res = await POST();
     expect(res.status).toBe(200);
     const body = await res.json();
@@ -264,13 +263,12 @@ describe('POST /api/billing/cancel', () => {
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       })) as never);
-    mockSubscriptionsUpdate.mockImplementation(() =>
+    mockSubscriptionsUpdate.mockImplementation((() =>
       Promise.resolve({
         id: 'sub_test_123',
         cancel_at_period_end: true,
-        current_period_end: null,
-      })
-    );
+        cancel_at: null,
+      })) as never);
     const res = await POST();
     expect(res.status).toBe(200);
     const body = await res.json();

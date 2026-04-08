@@ -39,8 +39,9 @@ export async function POST() {
     );
 
     // Update local subscription status to canceled
-    const periodEnd = stripeSubscription.current_period_end
-      ? new Date(stripeSubscription.current_period_end * 1000)
+    // In Stripe v22, period end is on items; use cancel_at as fallback from response
+    const periodEnd = stripeSubscription.cancel_at
+      ? new Date(stripeSubscription.cancel_at * 1000)
       : subscription.currentPeriodEnd;
 
     await db
