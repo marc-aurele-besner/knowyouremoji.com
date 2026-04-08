@@ -4,3 +4,4 @@ export { HistoryPage, type HistoryEntry } from './history-page';
 export { HistoryDetailView, type HistoryDetailViewProps } from './history-detail-view';
 export { ProfilePage } from './profile-page';
 export { SettingsPage } from './settings-page';
+export { BillingPage } from './billing-page';
