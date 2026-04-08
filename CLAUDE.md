@@ -53,7 +53,7 @@ bun run validate:emojis
 - Client-side rate limiting via localStorage (3 free interpretations/day)
 - SSG with ISR (Incremental Static Regeneration) for emoji, combo, and category pages (1-hour revalidation)
 
-**Phase 2:** Supabase integration for auth, subscriptions, and history
+**Phase 2:** Auth, subscriptions, and history via NextAuth + Neon DB + Resend
 
 - Redis caching via Upstash for interpretation results (reduces OpenAI API calls)
 
@@ -71,7 +71,7 @@ bun run validate:emojis
 - `src/components/not-found/` - 404 page components (NotFoundSearch)
 - `src/hooks/` - Custom React hooks: `useEmojiSearch` (client-side emoji search/filtering), `useComboSearch` (client-side combo search/filtering), `useRateLimit` (reactive rate limit state), `useStreamingInterpret` (streaming AI interpretation)
 - `src/components/search/` - Search components (SearchBar, SearchResults, SearchPageClient)
-- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `response-tones.ts` (suggested response tone generation for Phase 2), `cache.ts` (Redis caching with Upstash), `supabase.ts` (Supabase client for auth/database), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
+- `src/lib/` - Core utilities: `env.ts` (environment config), `emoji-data.ts` (emoji loader), `combo-data.ts` (combo loader), `rate-limit.ts`, `openai.ts` (OpenAI client), `interpreter.ts` (interpreter service), `response-tones.ts` (suggested response tone generation for Phase 2), `cache.ts` (Redis caching with Upstash), `auth.ts` (NextAuth v5 config), `db/schema.ts` (Drizzle ORM schema), `db/index.ts` (Neon DB client), `email.ts` (Resend email service), `theme.ts` (design tokens), `metadata.ts` (site metadata/SEO defaults), `sentry.ts` (error tracking utilities), `analytics.ts` (analytics service for tracking custom events to GA and PostHog)
 - `src/data/` - Static JSON emoji data (Phase 1)
 - `src/types/` - TypeScript interfaces for Emoji, EmojiCombo, ContextMeaning, etc.
 - `scripts/` - Utility scripts including `validate-emojis.ts` for data validation and `check-coverage.ts` for coverage enforcement
@@ -103,6 +103,8 @@ bun run validate:emojis
 - **Styling:** Tailwind CSS, Radix UI, clsx, tailwind-merge
 - **AI:** OpenAI API with Vercel AI SDK
 - **Monitoring:** Sentry for error tracking, PostHog for product analytics
-- **Database (Phase 2):** Supabase (PostgreSQL + Auth)
-- **Caching (Phase 2):** Upstash Redis for interpretation result caching
+- **Auth:** NextAuth v5 (credentials, Google, GitHub OAuth)
+- **Database:** Neon Postgres with Drizzle ORM
+- **Email:** Resend for transactional emails (verification, password reset)
+- **Caching:** Upstash Redis for interpretation result caching
 - **Testing:** Bun test (unit), Playwright (E2E)

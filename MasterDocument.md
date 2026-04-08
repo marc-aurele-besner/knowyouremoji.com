@@ -296,7 +296,7 @@ This avoids thin-content penalties.
 - **Runtime:** Bun
 - **Framework:** Next.js 16.1 (App Router)
 - **Styling:** Tailwind CSS, Radix UI
-- **Database:** Supabase (PostgreSQL + Auth + Storage) - **Phase 2**
+- **Database:** Neon Postgres (with Drizzle ORM, NextAuth, Resend) (PostgreSQL + Auth + Storage) - **Phase 2**
 - **AI:** OpenAI API with Vercel AI SDK
 - **Hosting:** Vercel
 
@@ -311,6 +311,7 @@ Phase 1 (MVP/Beta) operates without a database:
 - No subscription system
 
 This approach enables:
+
 - Fastest possible page loads
 - Zero database costs
 - Simplified deployment
@@ -318,13 +319,13 @@ This approach enables:
 
 ### 6.3 Phase 2 Architecture (Database Integration)
 
-Supabase integration adds:
+Neon Postgres (with Drizzle ORM, NextAuth, Resend) integration adds:
 
 - User authentication (OAuth + Email)
 - Subscription management
 - Interpretation history storage
 - Server-side rate limiting
-- Content management via Supabase
+- Content management via Neon Postgres (with Drizzle ORM, NextAuth, Resend)
 
 ### 6.4 Content Structure
 
@@ -339,7 +340,7 @@ Emoji object includes:
 - SEO metadata
 
 Phase 1: JSON files in `/src/data/emojis/`
-Phase 2: Supabase tables with admin UI
+Phase 2: Neon Postgres (with Drizzle ORM, NextAuth, Resend) tables with admin UI
 
 ### 6.5 Performance
 
@@ -433,6 +434,7 @@ Short-form videos explaining emoji misunderstandings
 - All content curated and version-controlled
 
 **Deliverables:**
+
 - 500+ emoji detail pages
 - 30+ combo pages
 - Working interpreter tool (3 free uses/day)
@@ -441,7 +443,7 @@ Short-form videos explaining emoji misunderstandings
 
 ### Phase 2: Growth (2–4 months) - Database Integration
 
-**Supabase integration:**
+**Neon Postgres (with Drizzle ORM, NextAuth, Resend) integration:**
 
 - User authentication (Google, GitHub, Email)
 - Premium subscription via Stripe
@@ -451,6 +453,7 @@ Short-form videos explaining emoji misunderstandings
 - Content admin interface
 
 **Deliverables:**
+
 - User accounts
 - Premium tier ($9/month)
 - Interpretation history

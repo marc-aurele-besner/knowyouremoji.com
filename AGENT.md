@@ -42,11 +42,12 @@ bun run typecheck
 ### Two-Phase Development
 
 **Phase 1 (MVP/Beta):** Static architecture with no database
+
 - All emoji content stored as JSON files in `/src/data/emojis/` and `/src/data/combos/`
 - Client-side rate limiting via localStorage (3 free interpretations/day)
 - SSG for all emoji pages
 
-**Phase 2:** Supabase integration for auth, subscriptions, and history
+**Phase 2:** Auth, subscriptions, and history via NextAuth + Neon DB + Resend
 
 ### Key Directories
 
@@ -80,5 +81,7 @@ bun run typecheck
 - **Framework:** Next.js 16.1 (App Router), React 19, TypeScript 5.x
 - **Styling:** Tailwind CSS, Radix UI, clsx, tailwind-merge
 - **AI:** OpenAI API with Vercel AI SDK
-- **Database (Phase 2):** Supabase (PostgreSQL + Auth)
+- **Auth:** NextAuth v5 (credentials, Google, GitHub OAuth)
+- **Database:** Neon Postgres with Drizzle ORM
+- **Email:** Resend for transactional emails
 - **Testing:** Bun test (unit), Playwright (E2E)
