@@ -2,7 +2,13 @@ import { describe, it, expect, beforeEach, afterEach, spyOn, mock } from 'bun:te
 import * as cacheModule from '../../../src/lib/cache';
 
 // Mock auth module for getRateLimitIdentifier tests
-const mockAuth = mock(() => Promise.resolve(null));
+const mockAuth = mock(
+  () =>
+    Promise.resolve(null) as Promise<{
+      user?: { id?: string; email?: string };
+      expires: string;
+    } | null>
+);
 mock.module('@/lib/auth', () => ({
   auth: mockAuth,
   handlers: {},
