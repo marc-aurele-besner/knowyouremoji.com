@@ -269,6 +269,105 @@ describe('HistoryPage', () => {
     expect(dateElements.length).toBeGreaterThan(0);
   });
 
+  it('expands entry when clicked', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    // Click the first entry
+    const entryButton = screen.getByRole('button', {
+      name: /view details for interpretation: hey/i,
+    });
+    await act(async () => {
+      fireEvent.click(entryButton);
+    });
+    // Should now show the detail view with section headers
+    expect(screen.getByText('Original Message')).toBeInTheDocument();
+    expect(screen.getByText('Interpretation')).toBeInTheDocument();
+  });
+
+  it('collapses entry when close button is clicked', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    // Expand
+    const entryButton = screen.getByRole('button', {
+      name: /view details for interpretation: hey/i,
+    });
+    await act(async () => {
+      fireEvent.click(entryButton);
+    });
+    expect(screen.getByText('Original Message')).toBeInTheDocument();
+    // Close
+    const closeButton = screen.getByRole('button', { name: /close detail view/i });
+    await act(async () => {
+      fireEvent.click(closeButton);
+    });
+    // Should no longer show detail view headers
+    expect(screen.queryByText('Original Message')).not.toBeInTheDocument();
+  });
+
+  it('expands entry via keyboard Enter', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    const entryButton = screen.getByRole('button', {
+      name: /view details for interpretation: hey/i,
+    });
+    await act(async () => {
+      fireEvent.keyDown(entryButton, { key: 'Enter' });
+    });
+    expect(screen.getByText('Original Message')).toBeInTheDocument();
+  });
+
+  it('expands entry via keyboard Space', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    const entryButton = screen.getByRole('button', {
+      name: /view details for interpretation: hey/i,
+    });
+    await act(async () => {
+      fireEvent.keyDown(entryButton, { key: ' ' });
+    });
+    expect(screen.getByText('Original Message')).toBeInTheDocument();
+  });
+
   it('has displayName set', () => {
     expect(HistoryPage.displayName).toBe('HistoryPage');
   });

@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useSession } from 'next-auth/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { HistoryDetailView } from './history-detail-view';
 
 /**
  * Interpretation history entry
@@ -23,6 +24,7 @@ function HistoryPage() {
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(0);
   const [hasMore, setHasMore] = useState(false);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
 
   const isAuthenticated = status === 'authenticated';
 
@@ -147,28 +149,49 @@ function HistoryPage() {
       {isAuthenticated && !isLoading && !error && entries.length > 0 && (
         <>
           <div className="space-y-4">
-            {entries.map((entry) => (
-              <Card key={entry.id} className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                      {formatDate(entry.created_at)}
-                    </CardTitle>
-                    <span className="text-xs text-gray-400 dark:text-gray-500">
-                      {entry.emoji_count} emoji{entry.emoji_count !== 1 ? 's' : ''}
-                    </span>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm font-medium text-gray-900 dark:text-white mb-2">
-                    {entry.message}
-                  </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
-                    {entry.interpretation}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+            {entries.map((entry) =>
+              expandedId === entry.id ? (
+                <HistoryDetailView
+                  key={entry.id}
+                  entry={entry}
+                  onClose={() => setExpandedId(null)}
+                />
+              ) : (
+                <Card
+                  key={entry.id}
+                  className="hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={() => setExpandedId(entry.id)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`View details for interpretation: ${entry.message}`}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      setExpandedId(entry.id);
+                    }
+                  }}
+                >
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center justify-between">
+                      <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                        {formatDate(entry.created_at)}
+                      </CardTitle>
+                      <span className="text-xs text-gray-400 dark:text-gray-500">
+                        {entry.emoji_count} emoji{entry.emoji_count !== 1 ? 's' : ''}
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white mb-2">
+                      {entry.message}
+                    </p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+                      {entry.interpretation}
+                    </p>
+                  </CardContent>
+                </Card>
+              )
+            )}
           </div>
 
           {/* Pagination */}

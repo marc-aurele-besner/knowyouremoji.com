@@ -44,13 +44,23 @@ describe('Dashboard Components barrel export (index.ts)', () => {
     expect(dashboardComponents.SettingsPage).toBeDefined();
   });
 
-  it('exports the correct number of items (4 components)', () => {
+  it('exports HistoryDetailView component', () => {
+    expect(dashboardComponents.HistoryDetailView).toBeDefined();
+  });
+
+  it('exports the correct number of items (5 components)', () => {
     const exportedKeys = Object.keys(dashboardComponents);
-    expect(exportedKeys.length).toBe(4);
+    expect(exportedKeys.length).toBe(5);
   });
 
   it('all component exports are functions', () => {
-    const componentNames = ['DashboardSidebar', 'DashboardHome', 'HistoryPage', 'SettingsPage'];
+    const componentNames = [
+      'DashboardSidebar',
+      'DashboardHome',
+      'HistoryPage',
+      'HistoryDetailView',
+      'SettingsPage',
+    ];
     componentNames.forEach((name) => {
       const component = dashboardComponents[name as keyof typeof dashboardComponents];
       expect(typeof component).toBe('function');

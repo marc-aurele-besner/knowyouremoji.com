@@ -22,10 +22,24 @@ mock.module('@/lib/db', () => ({
 
 mock.module('@/lib/db/schema', () => ({
   users: { id: 'id' },
+  accounts: {},
+  sessions: {},
+  verificationTokens: {},
+  interpretations: {
+    id: 'id',
+    userId: 'user_id',
+    message: 'message',
+    interpretation: 'interpretation',
+    emojiCount: 'emoji_count',
+    createdAt: 'created_at',
+  },
+  emojiPageViews: {},
 }));
 
 mock.module('drizzle-orm', () => ({
   eq: mock((col: unknown, val: unknown) => ({ col, val })),
+  and: mock((...conditions: unknown[]) => ({ conditions })),
+  desc: mock((col: unknown) => ({ col, direction: 'desc' })),
 }));
 
 const { DELETE } = await import('@/app/api/auth/delete-account/route');
