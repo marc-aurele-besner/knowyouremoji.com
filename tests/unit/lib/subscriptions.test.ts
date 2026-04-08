@@ -52,7 +52,7 @@ function setupDbMock(rows: Record<string, unknown>[]) {
   const fromFn = mock(() => ({ where: whereFn }));
   const selectFn = mock(() => ({ from: fromFn }));
   const dbInstance = { select: selectFn };
-  mockGetDb.mockReturnValue(dbInstance as ReturnType<typeof mockGetDb>);
+  mockGetDb.mockReturnValue(dbInstance as unknown as ReturnType<typeof mockGetDb>);
   return { selectFn, fromFn, whereFn, limitFn };
 }
 
