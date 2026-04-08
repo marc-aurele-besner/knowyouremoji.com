@@ -7,6 +7,7 @@ import { HTMLAttributes, useState } from 'react';
 
 const sidebarLinks = [
   { label: 'Overview', href: '/dashboard', icon: '📊' },
+  { label: 'Profile', href: '/dashboard/profile', icon: '👤' },
   { label: 'History', href: '/dashboard/history', icon: '📜' },
   { label: 'Settings', href: '/dashboard/settings', icon: '⚙️' },
 ];

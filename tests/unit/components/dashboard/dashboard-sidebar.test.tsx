@@ -27,6 +27,7 @@ describe('DashboardSidebar', () => {
   it('renders all sidebar links', () => {
     render(<DashboardSidebar />);
     expect(screen.getByRole('link', { name: /overview/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /profile/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /history/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /settings/i })).toBeInTheDocument();
   });
@@ -34,6 +35,10 @@ describe('DashboardSidebar', () => {
   it('links have correct hrefs', () => {
     render(<DashboardSidebar />);
     expect(screen.getByRole('link', { name: /overview/i })).toHaveAttribute('href', '/dashboard');
+    expect(screen.getByRole('link', { name: /profile/i })).toHaveAttribute(
+      'href',
+      '/dashboard/profile'
+    );
     expect(screen.getByRole('link', { name: /history/i })).toHaveAttribute(
       'href',
       '/dashboard/history'
