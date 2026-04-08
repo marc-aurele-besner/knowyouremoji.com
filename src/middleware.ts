@@ -9,7 +9,7 @@ const PROTECTED_ROUTES = ['/dashboard'];
 /**
  * Routes that should redirect to dashboard if already authenticated
  */
-const AUTH_ROUTES = ['/login', '/register'];
+const AUTH_ROUTES = ['/login', '/register', '/forgot-password', '/reset-password'];
 
 /**
  * Storage key for Supabase auth session
@@ -118,5 +118,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/login', '/register'],
+  matcher: ['/dashboard/:path*', '/login', '/register', '/forgot-password', '/reset-password'],
 };
