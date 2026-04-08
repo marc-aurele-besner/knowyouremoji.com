@@ -12,6 +12,7 @@ import {
   OpenAIError,
 } from '@/lib/openai';
 import { logInterpreterUsage } from '@/lib/slack';
+import { checkRateLimit, getClientIp, rateLimitHeaders } from '@/lib/server-rate-limit';
 
 // Valid platforms (matches Platform type + OTHER)
 const VALID_PLATFORMS = [
@@ -103,6 +104,14 @@ export async function POST(
   request: NextRequest
 ): Promise<NextResponse<InterpretErrorResponse> | Response> {
   try {
+    // Server-side rate limiting
+    const clientIp = getClientIp(request.headers);
+    const rateLimitResult = await checkRateLimit(clientIp);
+
+    if (!rateLimitResult.allowed) {
+      return createErrorResponse('Rate limit exceeded. Please try again later.', 429);
+    }
+
     // Parse request body
     let body: unknown;
     try {
@@ -170,6 +179,7 @@ export async function POST(
       headers: {
         'Cache-Control': 'no-cache, no-transform',
         Connection: 'keep-alive',
+        ...rateLimitHeaders(rateLimitResult),
       },
     });
   } catch (error) {

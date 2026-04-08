@@ -5,6 +5,7 @@ import type { InterpretRequest, InterpretationResult, InterpretErrorResponse } f
 import { interpretMessage } from '@/lib/interpreter';
 import { OpenAIError } from '@/lib/openai';
 import { logInterpreterUsage } from '@/lib/slack';
+import { checkRateLimit, getClientIp, rateLimitHeaders } from '@/lib/server-rate-limit';
 
 /**
  * Check if a string contains at least one emoji
@@ -154,6 +155,14 @@ export async function POST(
   request: NextRequest
 ): Promise<NextResponse<InterpretationResult | InterpretErrorResponse>> {
   try {
+    // Server-side rate limiting
+    const clientIp = getClientIp(request.headers);
+    const rateLimitResult = await checkRateLimit(clientIp);
+
+    if (!rateLimitResult.allowed) {
+      return createErrorResponse('Rate limit exceeded. Please try again later.', 429);
+    }
+
     // Parse request body
     let body: unknown;
     try {
@@ -194,7 +203,10 @@ export async function POST(
     if (!interpreterEnabled || !apiKey) {
       // Return mock interpretation when service is disabled or not configured
       const mockResult = createMockInterpretation(validatedData, emojis);
-      return NextResponse.json(mockResult, { status: 200, headers: NO_CACHE_HEADERS });
+      return NextResponse.json(mockResult, {
+        status: 200,
+        headers: { ...NO_CACHE_HEADERS, ...rateLimitHeaders(rateLimitResult) },
+      });
     }
 
     // Call the interpreter service
@@ -208,7 +220,10 @@ export async function POST(
       output: result.interpretation,
     }).catch(() => {});
 
-    return NextResponse.json(result, { status: 200, headers: NO_CACHE_HEADERS });
+    return NextResponse.json(result, {
+      status: 200,
+      headers: { ...NO_CACHE_HEADERS, ...rateLimitHeaders(rateLimitResult) },
+    });
   } catch (error) {
     console.error('Error in /api/interpret:', error);
 
