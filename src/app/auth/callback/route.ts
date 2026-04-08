@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
+import { getSupabaseServerClient } from '@/lib/supabase';
 
 /**
  * Auth callback handler for Supabase OAuth and magic link flows.
@@ -12,28 +12,19 @@ export async function GET(request: NextRequest) {
   const redirectTo = searchParams.get('redirect') || '/dashboard';
 
   if (!code) {
-    // No code provided - redirect to login with error
     const loginUrl = new URL('/login', request.url);
     loginUrl.searchParams.set('error', 'missing_code');
     return NextResponse.redirect(loginUrl);
   }
 
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-  if (!supabaseUrl || !supabaseAnonKey) {
-    const loginUrl = new URL('/login', request.url);
-    loginUrl.searchParams.set('error', 'auth_not_configured');
-    return NextResponse.redirect(loginUrl);
-  }
-
   try {
-    const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-      auth: {
-        persistSession: false,
-        autoRefreshToken: false,
-      },
-    });
+    const supabase = getSupabaseServerClient();
+
+    if (!supabase) {
+      const loginUrl = new URL('/login', request.url);
+      loginUrl.searchParams.set('error', 'auth_not_configured');
+      return NextResponse.redirect(loginUrl);
+    }
 
     const { error } = await supabase.auth.exchangeCodeForSession(code);
 
@@ -43,7 +34,6 @@ export async function GET(request: NextRequest) {
       return NextResponse.redirect(loginUrl);
     }
 
-    // Successful auth - redirect to intended destination
     return NextResponse.redirect(new URL(redirectTo, request.url));
   } catch {
     const loginUrl = new URL('/login', request.url);

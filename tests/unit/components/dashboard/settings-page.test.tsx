@@ -19,7 +19,6 @@ const mockUpdateUser = mock((): Promise<{ error: any }> => Promise.resolve({ err
 const mockSignOut = mock((): Promise<{ error: any }> => Promise.resolve({ error: null }));
 
 mock.module('@/lib/supabase', () => ({
-  isSupabaseConfigured: () => true,
   getSupabaseClient: () => ({
     auth: {
       getUser: mockGetUser,

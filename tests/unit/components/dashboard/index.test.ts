@@ -2,7 +2,6 @@ import { describe, it, expect, mock } from 'bun:test';
 
 // Mock dependencies that dashboard components need
 mock.module('@/lib/supabase', () => ({
-  isSupabaseConfigured: () => false,
   getSupabaseClient: () => null,
 }));
 

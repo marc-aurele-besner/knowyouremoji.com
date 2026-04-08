@@ -1,30 +1,21 @@
-import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
+import { describe, it, expect, mock, beforeEach } from 'bun:test';
 
-const originalEnv = { ...process.env };
+const mockExchangeCodeForSession = mock(
+  (): Promise<{ error: { message: string } | null }> => Promise.resolve({ error: null })
+);
 
-const mockExchangeCodeForSession = mock((): Promise<{ error: { message: string } | null }> => Promise.resolve({ error: null }));
-const mockCreateClient = mock(() => ({
-  auth: {
-    exchangeCodeForSession: mockExchangeCodeForSession,
-  },
-}));
-
-mock.module('@supabase/supabase-js', () => ({
-  createClient: mockCreateClient,
+mock.module('@/lib/supabase', () => ({
+  getSupabaseServerClient: () => ({
+    auth: {
+      exchangeCodeForSession: mockExchangeCodeForSession,
+    },
+  }),
 }));
 
 const { GET } = await import('@/app/auth/callback/route');
 
 beforeEach(() => {
-  process.env.NEXT_PUBLIC_SUPABASE_URL = 'https://testproject.supabase.co';
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = 'test-anon-key';
   mockExchangeCodeForSession.mockImplementation(() => Promise.resolve({ error: null }));
-});
-
-afterEach(() => {
-  process.env = { ...originalEnv };
-  mockExchangeCodeForSession.mockClear();
-  mockCreateClient.mockClear();
 });
 
 function createMockRequest(searchParams: Record<string, string> = {}): Request {
@@ -43,13 +34,25 @@ describe('GET /auth/callback', () => {
   });
 
   it('redirects to login when Supabase is not configured', async () => {
-    delete process.env.NEXT_PUBLIC_SUPABASE_URL;
-    delete process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    // Override mock to return null (not configured)
+    mock.module('@/lib/supabase', () => ({
+      getSupabaseServerClient: () => null,
+    }));
+    const { GET: GET2 } = await import('@/app/auth/callback/route');
     const req = createMockRequest({ code: 'test-code' });
-    const response = await GET(req as any);
+    const response = await GET2(req as any);
     const location = response.headers.get('location');
     expect(location).toContain('/login');
     expect(location).toContain('error=auth_not_configured');
+
+    // Restore mock
+    mock.module('@/lib/supabase', () => ({
+      getSupabaseServerClient: () => ({
+        auth: {
+          exchangeCodeForSession: mockExchangeCodeForSession,
+        },
+      }),
+    }));
   });
 
   it('exchanges code for session and redirects to dashboard', async () => {

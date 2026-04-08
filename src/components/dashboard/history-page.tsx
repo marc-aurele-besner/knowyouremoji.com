@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
+import { getSupabaseClient } from '@/lib/supabase';
 
 /**
  * Interpretation history entry from Supabase
@@ -30,7 +30,7 @@ function HistoryPage() {
   const [isSupabaseReady, setIsSupabaseReady] = useState(false);
 
   useEffect(() => {
-    setIsSupabaseReady(isSupabaseConfigured());
+    setIsSupabaseReady(getSupabaseClient() !== null);
   }, []);
 
   const fetchHistory = useCallback(

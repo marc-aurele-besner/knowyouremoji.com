@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { getSupabaseClient, isSupabaseConfigured } from '@/lib/supabase';
+import { getSupabaseClient } from '@/lib/supabase';
 
 interface UserProfile {
   email: string;
@@ -22,7 +22,7 @@ function SettingsPage() {
   const [isSupabaseReady, setIsSupabaseReady] = useState(false);
 
   useEffect(() => {
-    setIsSupabaseReady(isSupabaseConfigured());
+    setIsSupabaseReady(getSupabaseClient() !== null);
   }, []);
 
   useEffect(() => {

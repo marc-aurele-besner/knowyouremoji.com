@@ -7,7 +7,6 @@ const mockRange = mock((): Promise<{ data: any[] | null; error: any }> =>
 );
 
 mock.module('@/lib/supabase', () => ({
-  isSupabaseConfigured: () => true,
   getSupabaseClient: () => ({
     from: () => ({
       select: () => ({
