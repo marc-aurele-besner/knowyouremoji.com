@@ -6,6 +6,10 @@ const mockCaptureException = mock(() => 'mock-event-id');
 
 mock.module('@sentry/nextjs', () => ({
   captureException: mockCaptureException,
+  captureMessage: mock(() => 'mock-message-id'),
+  setUser: mock(() => {}),
+  setContext: mock(() => {}),
+  addBreadcrumb: mock(() => {}),
 }));
 
 // Store original console.error

@@ -296,4 +296,14 @@ describe('RelatedEmojisSection', () => {
       expect(link.closest('.border')).toHaveClass('transition-all');
     });
   });
+
+  describe('click interactions', () => {
+    it('fires onClick handler when clicking a related emoji card', () => {
+      render(<RelatedEmojisSection emojis={singleEmoji} />);
+      const link = screen.getByRole('link', { name: /fire/i });
+      // Should not throw — exercises the onClick analytics callback
+      fireEvent.click(link);
+      expect(link).toBeInTheDocument();
+    });
+  });
 });

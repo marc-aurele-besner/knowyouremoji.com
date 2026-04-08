@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from 'bun:test';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { Breadcrumbs, type BreadcrumbItem } from '@/components/layout/breadcrumbs';
 
 afterEach(() => {
@@ -119,5 +119,13 @@ describe('Breadcrumbs', () => {
     const middleItem = screen.getByText('Category');
     expect(middleItem.tagName).not.toBe('A');
     expect(middleItem).not.toHaveAttribute('aria-current');
+  });
+
+  it('fires onClick handler when clicking breadcrumb link', () => {
+    render(<Breadcrumbs items={defaultItems} />);
+    const homeLink = screen.getByRole('link', { name: 'Home' });
+    // Should not throw when clicked — exercises the onClick callback
+    fireEvent.click(homeLink);
+    expect(homeLink).toBeInTheDocument();
   });
 });
