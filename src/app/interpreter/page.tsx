@@ -28,9 +28,7 @@ export async function generateMetadata({ searchParams }: MetadataProps): Promise
   const title = sharedData
     ? `Emoji Interpretation: "${sharedData.message.slice(0, 60)}${sharedData.message.length > 60 ? '...' : ''}"`
     : pageTitle;
-  const description = sharedData
-    ? sharedData.interpretation.slice(0, 160)
-    : pageDescription;
+  const description = sharedData ? sharedData.interpretation.slice(0, 160) : pageDescription;
 
   const ogImageUrl = sharedData
     ? `${env.appUrl}/og/interpretation?r=${sharedResult}`
