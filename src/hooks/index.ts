@@ -14,6 +14,9 @@ export type {
   InterpretInput,
 } from './use-streaming-interpret';
 
+export { useServiceWorker } from './use-service-worker';
+export type { UseServiceWorkerReturn } from './use-service-worker';
+
 export { useRealtimeContent } from './use-realtime-content';
 export type {
   UseRealtimeContentOptions,

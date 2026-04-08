@@ -30,17 +30,20 @@ describe('Hooks barrel export (index.ts)', () => {
     });
   });
 
+  describe('useServiceWorker exports', () => {
+    it('exports useServiceWorker hook', () => {
+      expect(hooks.useServiceWorker).toBeDefined();
+      expect(typeof hooks.useServiceWorker).toBe('function');
+    });
+  });
+
   describe('all exports are valid', () => {
-    it('exports the correct number of items (4 hooks + 8 types = 12 exports)', () => {
+    it('exports the correct number of items (5 hooks + types)', () => {
       const exportedKeys = Object.keys(hooks);
-      // useEmojiSearch, useComboSearch, useRateLimit, useStreamingInterpret = 4 hooks
-      // UseEmojiSearchOptions, UseEmojiSearchReturn = 2 types
-      // UseComboSearchOptions, UseComboSearchReturn = 2 types
-      // UseRateLimitOptions, UseRateLimitReturn = 2 types
-      // UseStreamingInterpretOptions, UseStreamingInterpretReturn, InterpretInput = 3 types
+      // useEmojiSearch, useComboSearch, useRateLimit, useStreamingInterpret, useServiceWorker = 5 hooks
       // Note: Type exports may not appear in runtime Object.keys
-      // At minimum, 4 hooks should be exported
-      expect(exportedKeys.length).toBeGreaterThanOrEqual(4);
+      // At minimum, 5 hooks should be exported
+      expect(exportedKeys.length).toBeGreaterThanOrEqual(5);
     });
 
     it('all hook exports are valid functions', () => {
@@ -49,6 +52,7 @@ describe('Hooks barrel export (index.ts)', () => {
         'useComboSearch',
         'useRateLimit',
         'useStreamingInterpret',
+        'useServiceWorker',
       ];
       hookNames.forEach((name) => {
         const hook = hooks[name as keyof typeof hooks];
@@ -62,6 +66,7 @@ describe('Hooks barrel export (index.ts)', () => {
         'useComboSearch',
         'useRateLimit',
         'useStreamingInterpret',
+        'useServiceWorker',
       ];
       hookNames.forEach((name) => {
         expect(name.startsWith('use')).toBe(true);
