@@ -159,22 +159,24 @@ describe('InterpreterPage', () => {
 });
 
 describe('generateMetadata', () => {
-  it('returns metadata with correct title', () => {
-    const metadata = generateMetadata();
+  const defaultMetadataParams = { searchParams: Promise.resolve({} as { r?: string }) };
+
+  it('returns metadata with correct title', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     expect(metadata.title).toBe('Emoji Interpreter - Decode Hidden Meanings | KnowYourEmoji');
   });
 
-  it('returns metadata with correct description', () => {
-    const metadata = generateMetadata();
+  it('returns metadata with correct description', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     expect(metadata.description).toBe(
       'Paste any text message with emojis and our AI will decode the hidden meanings, tone, and context.'
     );
   });
 
-  it('includes canonical URL pointing to interpreter page', () => {
-    const metadata = generateMetadata();
+  it('includes canonical URL pointing to interpreter page', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     expect(metadata.alternates).toBeDefined();
     expect(metadata.alternates?.canonical).toBeDefined();
@@ -182,8 +184,8 @@ describe('generateMetadata', () => {
     expect(canonical).toContain('/interpreter');
   });
 
-  it('includes Open Graph metadata', () => {
-    const metadata = generateMetadata();
+  it('includes Open Graph metadata', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     const openGraph = metadata.openGraph as {
       type?: string;
@@ -201,8 +203,8 @@ describe('generateMetadata', () => {
     );
   });
 
-  it('includes Twitter Card metadata', () => {
-    const metadata = generateMetadata();
+  it('includes Twitter Card metadata', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     const twitter = metadata.twitter as {
       card?: string;
@@ -217,8 +219,8 @@ describe('generateMetadata', () => {
     );
   });
 
-  it('includes robots directives', () => {
-    const metadata = generateMetadata();
+  it('includes robots directives', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     expect(metadata.robots).toBeDefined();
     expect(metadata.robots).toEqual({
@@ -234,13 +236,54 @@ describe('generateMetadata', () => {
     });
   });
 
-  it('includes keywords', () => {
-    const metadata = generateMetadata();
+  it('includes keywords', async () => {
+    const metadata = await generateMetadata(defaultMetadataParams);
 
     expect(metadata.keywords).toBeDefined();
     expect(Array.isArray(metadata.keywords)).toBe(true);
     const keywords = metadata.keywords as string[];
     expect(keywords).toContain('emoji interpreter');
     expect(keywords).toContain('decode emoji');
+  });
+
+  it('uses dynamic OG image for shared interpretations', async () => {
+    // Create a valid encoded interpretation
+    const { encodeInterpretation } = await import('@/lib/share-encoding');
+    const { createInterpretationResult } = await import('../../../utils');
+    const encoded = encodeInterpretation(
+      createInterpretationResult({
+        message: 'Test message 😊',
+        interpretation: 'A positive test interpretation.',
+        metrics: {
+          overallTone: 'positive',
+          sarcasmProbability: 5,
+          passiveAggressionProbability: 2,
+          confidence: 90,
+        },
+      })
+    );
+
+    const metadata = await generateMetadata({
+      searchParams: Promise.resolve({ r: encoded }),
+    });
+
+    const openGraph = metadata.openGraph as {
+      images?: Array<{ url: string }>;
+      title?: string;
+      url?: string;
+    };
+    expect(openGraph?.images?.[0]?.url).toContain('/og/interpretation?r=');
+    expect(openGraph?.title).toContain('Test message');
+    expect(openGraph?.url).toContain('?r=');
+  });
+
+  it('uses default OG image for invalid shared data', async () => {
+    const metadata = await generateMetadata({
+      searchParams: Promise.resolve({ r: 'invalid-data' }),
+    });
+
+    const openGraph = metadata.openGraph as { images?: Array<{ url: string }>; title?: string };
+    expect(openGraph?.images?.[0]?.url).toContain('/og-image.png');
+    expect(openGraph?.title).toBe('Emoji Interpreter - Decode Hidden Meanings');
   });
 });
