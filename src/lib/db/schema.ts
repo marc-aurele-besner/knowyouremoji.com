@@ -69,6 +69,20 @@ export const interpretations = pgTable('interpretations', {
   createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
 });
 
+export const subscriptions = pgTable('subscriptions', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  userId: uuid('user_id')
+    .notNull()
+    .references(() => users.id, { onDelete: 'cascade' }),
+  status: text('status').notNull().default('free'),
+  plan: text('plan').notNull().default('free'),
+  stripeCustomerId: text('stripe_customer_id'),
+  stripeSubscriptionId: text('stripe_subscription_id'),
+  currentPeriodEnd: timestamp('current_period_end', { mode: 'date' }),
+  createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+  updatedAt: timestamp('updated_at', { mode: 'date' }).defaultNow().notNull(),
+});
+
 export const emojiPageViews = pgTable('emoji_page_views', {
   slug: text('slug').primaryKey(),
   viewCount: bigint('view_count', { mode: 'number' }).notNull().default(0),

@@ -190,6 +190,27 @@ describe('posthog utilities', () => {
       // In test env, should return null to disable analytics
       expect(getPostHogConfig()).toBeNull();
     });
+
+    it('returns config in non-test environment with valid key', async () => {
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+      process.env.NEXT_PUBLIC_POSTHOG_KEY = 'phc_prod123';
+      process.env.NEXT_PUBLIC_POSTHOG_HOST = 'https://app.posthog.com';
+
+      const { getPostHogConfig } = await import('@/components/analytics/posthog');
+      const config = getPostHogConfig();
+
+      expect(config).not.toBeNull();
+      expect(config?.key).toBe('phc_prod123');
+      expect(config?.host).toBe('https://app.posthog.com');
+    });
+
+    it('returns null in non-test environment without key', async () => {
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+      delete process.env.NEXT_PUBLIC_POSTHOG_KEY;
+
+      const { getPostHogConfig } = await import('@/components/analytics/posthog');
+      expect(getPostHogConfig()).toBeNull();
+    });
   });
 
   describe('isPostHogEnabled', () => {

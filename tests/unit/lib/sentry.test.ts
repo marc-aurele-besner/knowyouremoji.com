@@ -6,6 +6,7 @@ import {
   setUser,
   addBreadcrumb,
 } from '@/lib/sentry';
+import * as Sentry from '@sentry/nextjs';
 
 // Store original env
 const originalEnv = { ...process.env };
@@ -158,6 +159,87 @@ describe('Sentry utilities', () => {
           data: { key: 'value' },
         })
       ).not.toThrow();
+    });
+  });
+
+  // ============================================
+  // Sentry-enabled path tests
+  // ============================================
+
+  describe('when Sentry is enabled', () => {
+    let captureExceptionSpy: ReturnType<typeof spyOn>;
+    let captureMessageSpy: ReturnType<typeof spyOn>;
+    let setUserSpy: ReturnType<typeof spyOn>;
+    let setContextSpy: ReturnType<typeof spyOn>;
+    let addBreadcrumbSpy: ReturnType<typeof spyOn>;
+
+    beforeEach(() => {
+      setNodeEnv('production');
+      process.env.SENTRY_DSN = 'https://test@sentry.io/123';
+      captureExceptionSpy = spyOn(Sentry, 'captureException').mockReturnValue('mock-event-id');
+      captureMessageSpy = spyOn(Sentry, 'captureMessage').mockReturnValue('mock-message-id');
+      setUserSpy = spyOn(Sentry, 'setUser').mockImplementation(() => {});
+      setContextSpy = spyOn(Sentry, 'setContext').mockImplementation(() => {});
+      addBreadcrumbSpy = spyOn(Sentry, 'addBreadcrumb').mockImplementation(() => {});
+    });
+
+    afterEach(() => {
+      captureExceptionSpy.mockRestore();
+      captureMessageSpy.mockRestore();
+      setUserSpy.mockRestore();
+      setContextSpy.mockRestore();
+      addBreadcrumbSpy.mockRestore();
+    });
+
+    it('captureError should call Sentry.captureException', () => {
+      const error = new Error('Production error');
+      const result = captureError(error);
+
+      expect(captureExceptionSpy).toHaveBeenCalledWith(error);
+      expect(result).toBe('mock-event-id');
+    });
+
+    it('captureError should set context when provided', () => {
+      const error = new Error('Production error');
+      const context = { userId: '123', action: 'test' };
+      captureError(error, context);
+
+      expect(setContextSpy).toHaveBeenCalledWith('additional', context);
+      expect(captureExceptionSpy).toHaveBeenCalledWith(error);
+    });
+
+    it('captureError should not set context when not provided', () => {
+      const error = new Error('Production error');
+      captureError(error);
+
+      expect(setContextSpy).not.toHaveBeenCalled();
+    });
+
+    it('captureMessage should call Sentry.captureMessage', () => {
+      const result = captureMessage('Production message', 'warning');
+
+      expect(captureMessageSpy).toHaveBeenCalledWith('Production message', 'warning');
+      expect(result).toBe('mock-message-id');
+    });
+
+    it('setUser should call Sentry.setUser', () => {
+      const user = { id: '123', email: 'test@example.com' };
+      setUser(user);
+
+      expect(setUserSpy).toHaveBeenCalledWith(user);
+    });
+
+    it('setUser should call Sentry.setUser with null to clear', () => {
+      setUser(null);
+
+      expect(setUserSpy).toHaveBeenCalledWith(null);
+    });
+
+    it('addBreadcrumb should call Sentry.addBreadcrumb', () => {
+      const breadcrumb = { message: 'User clicked', category: 'ui', level: 'info' as const };
+      addBreadcrumb(breadcrumb);
+
+      expect(addBreadcrumbSpy).toHaveBeenCalledWith(breadcrumb);
     });
   });
 });

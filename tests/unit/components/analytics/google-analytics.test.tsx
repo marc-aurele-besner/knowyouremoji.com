@@ -90,4 +90,28 @@ describe('GoogleAnalytics', () => {
       expect(container.innerHTML).toBe('');
     });
   });
+
+  describe('production environment behavior', () => {
+    it('renders GA component when not in test env and measurement ID is set', async () => {
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+      process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID = 'G-TESTID123';
+
+      const { GoogleAnalytics } = await import('@/components/analytics/google-analytics');
+      const { container } = render(<GoogleAnalytics />);
+
+      const gaComponent = container.querySelector('[data-testid="ga-component"]');
+      expect(gaComponent).not.toBeNull();
+      expect(gaComponent?.getAttribute('data-ga-id')).toBe('G-TESTID123');
+    });
+
+    it('does not render when not in test env but measurement ID is missing', async () => {
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+      delete process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
+      const { GoogleAnalytics } = await import('@/components/analytics/google-analytics');
+      const { container } = render(<GoogleAnalytics />);
+
+      expect(container.innerHTML).toBe('');
+    });
+  });
 });
