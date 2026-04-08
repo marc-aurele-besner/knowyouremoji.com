@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { useSession } from 'next-auth/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -21,21 +21,27 @@ function HistoryPage() {
   const { status } = useSession();
   const [entries, setEntries] = useState<HistoryEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(0);
   const [hasMore, setHasMore] = useState(false);
   const [expandedId, setExpandedId] = useState<string | null>(null);
+  const sentinelRef = useRef<HTMLDivElement>(null);
 
   const isAuthenticated = status === 'authenticated';
 
   const fetchHistory = useCallback(
-    async (pageNum: number) => {
+    async (pageNum: number, append: boolean = false) => {
       if (!isAuthenticated) {
         setIsLoading(false);
         return;
       }
 
-      setIsLoading(true);
+      if (append) {
+        setIsLoadingMore(true);
+      } else {
+        setIsLoading(true);
+      }
       setError(null);
 
       try {
@@ -47,28 +53,49 @@ function HistoryPage() {
           return;
         }
 
-        setEntries(data.data);
+        if (append) {
+          setEntries((prev) => [...prev, ...data.data]);
+        } else {
+          setEntries(data.data);
+        }
         setHasMore(data.hasMore);
       } catch {
         setError('Failed to load history');
       } finally {
         setIsLoading(false);
+        setIsLoadingMore(false);
       }
     },
     [isAuthenticated]
   );
 
   useEffect(() => {
-    fetchHistory(page);
-  }, [page, fetchHistory]);
+    fetchHistory(0);
+  }, [fetchHistory]);
 
-  const handlePreviousPage = () => {
-    if (page > 0) setPage(page - 1);
-  };
+  const handleLoadMore = useCallback(() => {
+    if (!hasMore || isLoadingMore) return;
+    const nextPage = page + 1;
+    setPage(nextPage);
+    fetchHistory(nextPage, true);
+  }, [hasMore, isLoadingMore, page, fetchHistory]);
 
-  const handleNextPage = () => {
-    if (hasMore) setPage(page + 1);
-  };
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel || !hasMore) return;
+
+    const observer = new IntersectionObserver(
+      (observerEntries) => {
+        if (observerEntries[0].isIntersecting) {
+          handleLoadMore();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [hasMore, handleLoadMore]);
 
   const formatDate = (dateStr: string): string => {
     try {
@@ -194,16 +221,32 @@ function HistoryPage() {
             )}
           </div>
 
-          {/* Pagination */}
-          <div className="flex items-center justify-between pt-4">
-            <Button variant="outline" size="sm" onClick={handlePreviousPage} disabled={page === 0}>
-              Previous
-            </Button>
-            <span className="text-sm text-gray-500 dark:text-gray-400">Page {page + 1}</span>
-            <Button variant="outline" size="sm" onClick={handleNextPage} disabled={!hasMore}>
-              Next
-            </Button>
-          </div>
+          {/* Load More / Infinite Scroll */}
+          <div ref={sentinelRef} aria-hidden="true" />
+          {isLoadingMore && (
+            <div className="flex justify-center pt-4">
+              <div className="space-y-4 w-full">
+                {Array.from({ length: 2 }).map((_, i) => (
+                  <Card key={`loading-more-${i}`}>
+                    <CardContent className="py-4">
+                      <div className="animate-pulse space-y-3">
+                        <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
+                        <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full" />
+                        <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-1/4" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+          {hasMore && !isLoadingMore && (
+            <div className="flex justify-center pt-4">
+              <Button variant="outline" size="sm" onClick={handleLoadMore}>
+                Load More
+              </Button>
+            </div>
+          )}
         </>
       )}
     </div>
