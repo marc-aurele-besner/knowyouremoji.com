@@ -51,6 +51,10 @@ export interface EnvConfig {
   slackBotToken: string | undefined;
   /** Slack channel ID for interpreter usage logs */
   slackLogChannelId: string | undefined;
+  /** Stripe secret key for server-side API calls */
+  stripeSecretKey: string | undefined;
+  /** Stripe publishable key for client-side usage */
+  stripePublishableKey: string | undefined;
   /**
    * Neon Postgres connection string (server-only).
    * When set, emoji detail views increment popularity used on the homepage.
@@ -85,6 +89,8 @@ export function getEnv(): EnvConfig {
     resendFromEmail: process.env.RESEND_FROM_EMAIL,
     slackBotToken: process.env.SLACK_BOT_TOKEN,
     slackLogChannelId: process.env.SLACK_LOG_CHANNEL_ID,
+    stripeSecretKey: process.env.STRIPE_SECRET_KEY,
+    stripePublishableKey: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
     databaseUrl: process.env.DATABASE_URL,
   };
 }

@@ -1,12 +1,27 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['NEXT_PUBLIC_APP_URL', 'NEXT_PUBLIC_APP_NAME'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('Site Metadata Configuration', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv };
+    saveEnv();
     // Set test environment values
     process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
     process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
@@ -16,8 +31,7 @@ describe('Site Metadata Configuration', () => {
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('createSiteMetadata', () => {

@@ -1,17 +1,34 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { generateMetadata, default as PrivacyPage } from '../../../src/app/privacy/page';
 
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['NEXT_PUBLIC_APP_URL', 'NEXT_PUBLIC_APP_NAME'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('Privacy Page', () => {
   beforeEach(() => {
-    process.env = { ...originalEnv };
+    saveEnv();
     process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
     process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
   });
 
   afterEach(() => {
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('generateMetadata', () => {

@@ -12,13 +12,29 @@ import {
 import { OpenAIError, resetClients } from '../../../src/lib/openai';
 import { clearCache } from '../../../src/lib/cache';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['OPENROUTER_API_KEY', 'UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('interpreter service', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv, OPENROUTER_API_KEY: 'sk-test-key' };
+    saveEnv();
+    process.env.OPENROUTER_API_KEY = 'sk-test-key';
     // Reset OpenAI clients, emoji cache, and Redis cache
     resetClients();
     clearEmojiSlugCache();
@@ -26,8 +42,7 @@ describe('interpreter service', () => {
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
     resetClients();
     clearEmojiSlugCache();
     clearCache();

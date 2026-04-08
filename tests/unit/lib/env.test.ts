@@ -1,23 +1,72 @@
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 import { getEnv, validateEnv, isProduction, isDevelopment, isTest } from '../../../src/lib/env';
 
-// Store original env
-const originalEnv = { ...process.env };
+// All env var keys that tests may touch — used for save/restore
+const TESTED_KEYS = [
+  'NEXT_PUBLIC_APP_URL',
+  'NEXT_PUBLIC_APP_NAME',
+  'OPENROUTER_API_KEY',
+  'OPENROUTER_MODEL',
+  'NEXT_PUBLIC_ENABLE_INTERPRETER',
+  'SENTRY_DSN',
+  'NEXT_PUBLIC_SENTRY_DSN',
+  'NEXT_PUBLIC_GA_MEASUREMENT_ID',
+  'NEXT_PUBLIC_POSTHOG_KEY',
+  'NEXT_PUBLIC_POSTHOG_HOST',
+  'UPSTASH_REDIS_REST_URL',
+  'UPSTASH_REDIS_REST_TOKEN',
+  'AUTH_SECRET',
+  'GOOGLE_CLIENT_ID',
+  'GOOGLE_CLIENT_SECRET',
+  'GITHUB_CLIENT_ID',
+  'GITHUB_CLIENT_SECRET',
+  'RESEND_API_KEY',
+  'RESEND_FROM_EMAIL',
+  'SLACK_BOT_TOKEN',
+  'SLACK_LOG_CHANNEL_ID',
+  'STRIPE_SECRET_KEY',
+  'NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY',
+  'DATABASE_URL',
+  'NODE_ENV',
+] as const;
+
+// Save original values (undefined means the key was not set)
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+
+function restoreEnv() {
+  const env = process.env as Record<string, string | undefined>;
+  for (const key of TESTED_KEYS) {
+    const original = savedEnv[key];
+    if (original === undefined) {
+      delete env[key];
+    } else {
+      env[key] = original;
+    }
+  }
+}
 
 // Helper to set NODE_ENV while bypassing TypeScript's readonly constraint
 function setNodeEnv(value: string | undefined) {
-  (process.env as Record<string, string | undefined>).NODE_ENV = value;
+  if (value === undefined) {
+    delete (process.env as Record<string, string | undefined>).NODE_ENV;
+  } else {
+    (process.env as Record<string, string | undefined>).NODE_ENV = value;
+  }
 }
 
 describe('env configuration', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv };
+    saveEnv();
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('getEnv', () => {
@@ -217,6 +266,30 @@ describe('env configuration', () => {
       delete process.env.SLACK_LOG_CHANNEL_ID;
       const env = getEnv();
       expect(env.slackLogChannelId).toBeUndefined();
+    });
+
+    it('should return stripeSecretKey when set', () => {
+      process.env.STRIPE_SECRET_KEY = 'sk_test_123';
+      const env = getEnv();
+      expect(env.stripeSecretKey).toBe('sk_test_123');
+    });
+
+    it('should return undefined stripeSecretKey when not set', () => {
+      delete process.env.STRIPE_SECRET_KEY;
+      const env = getEnv();
+      expect(env.stripeSecretKey).toBeUndefined();
+    });
+
+    it('should return stripePublishableKey when set', () => {
+      process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = 'pk_test_123';
+      const env = getEnv();
+      expect(env.stripePublishableKey).toBe('pk_test_123');
+    });
+
+    it('should return undefined stripePublishableKey when not set', () => {
+      delete process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+      const env = getEnv();
+      expect(env.stripePublishableKey).toBeUndefined();
     });
   });
 

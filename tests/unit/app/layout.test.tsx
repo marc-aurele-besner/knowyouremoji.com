@@ -1,13 +1,34 @@
 import { describe, expect, test, beforeEach, afterEach, mock } from 'bun:test';
 import { render } from '@testing-library/react';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = [
+  'NEXT_PUBLIC_APP_URL',
+  'NEXT_PUBLIC_APP_NAME',
+  'NODE_ENV',
+  'NEXT_PUBLIC_GA_MEASUREMENT_ID',
+] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  const env = process.env as Record<string, string | undefined>;
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete env[key];
+    } else {
+      env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('Root Layout Metadata', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv };
+    saveEnv();
     // Set test environment values
     process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
     process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
@@ -17,8 +38,7 @@ describe('Root Layout Metadata', () => {
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('Basic metadata', () => {
