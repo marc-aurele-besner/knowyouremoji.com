@@ -30,6 +30,39 @@ const sampleEntries = [
   },
 ];
 
+const moreEntries = [
+  {
+    id: '3',
+    message: '😂😂',
+    interpretation: 'Laughing hard at something funny.',
+    created_at: '2026-03-28T12:00:00Z',
+    emoji_count: 2,
+  },
+  {
+    id: '4',
+    message: '❤️🫶',
+    interpretation: 'Expressing love and care.',
+    created_at: '2026-03-27T09:00:00Z',
+    emoji_count: 2,
+  },
+];
+
+// Mock IntersectionObserver
+let intersectionCallback: IntersectionObserverCallback | null = null;
+const mockObserve = mock(() => {});
+const mockDisconnect = mock(() => {});
+
+class MockIntersectionObserver {
+  constructor(callback: IntersectionObserverCallback) {
+    intersectionCallback = callback;
+  }
+  observe = mockObserve;
+  disconnect = mockDisconnect;
+  unobserve = mock(() => {});
+}
+
+globalThis.IntersectionObserver = MockIntersectionObserver as never;
+
 // Mock fetch
 const mockFetch = mock(() =>
   Promise.resolve({
@@ -48,6 +81,9 @@ beforeEach(() => {
       json: () => Promise.resolve({ data: [], hasMore: false }),
     } as never)
   );
+  intersectionCallback = null;
+  mockObserve.mockClear();
+  mockDisconnect.mockClear();
 });
 
 afterEach(() => {
@@ -140,54 +176,7 @@ describe('HistoryPage', () => {
     });
   });
 
-  it('renders pagination controls when entries exist', async () => {
-    mockFetch.mockImplementation(() =>
-      Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
-      } as never)
-    );
-    await act(async () => {
-      render(<HistoryPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByRole('button', { name: /previous/i })).toBeInTheDocument();
-      expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument();
-      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
-    });
-  });
-
-  it('previous button is disabled on first page', async () => {
-    mockFetch.mockImplementation(() =>
-      Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
-      } as never)
-    );
-    await act(async () => {
-      render(<HistoryPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByRole('button', { name: /previous/i })).toBeDisabled();
-    });
-  });
-
-  it('next button is disabled when no more pages', async () => {
-    mockFetch.mockImplementation(() =>
-      Promise.resolve({
-        ok: true,
-        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
-      } as never)
-    );
-    await act(async () => {
-      render(<HistoryPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByRole('button', { name: /next/i })).toBeDisabled();
-    });
-  });
-
-  it('clicking next advances to page 2', async () => {
+  it('shows Load More button when more data is available', async () => {
     mockFetch.mockImplementation(() =>
       Promise.resolve({
         ok: true,
@@ -198,17 +187,61 @@ describe('HistoryPage', () => {
       render(<HistoryPage />);
     });
     await waitFor(() => {
-      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
-    });
-    await act(async () => {
-      fireEvent.click(screen.getByRole('button', { name: /next/i }));
-    });
-    await waitFor(() => {
-      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: /load more/i })).toBeInTheDocument();
     });
   });
 
-  it('clicking previous goes back to page 1', async () => {
+  it('hides Load More button when no more data', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    expect(screen.queryByRole('button', { name: /load more/i })).not.toBeInTheDocument();
+  });
+
+  it('appends entries when Load More is clicked', async () => {
+    let callCount = 0;
+    mockFetch.mockImplementation(() => {
+      callCount++;
+      if (callCount === 1) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+        } as never);
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: moreEntries, hasMore: false }),
+      } as never);
+    });
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /load more/i }));
+    });
+    await waitFor(() => {
+      // Original entries still present
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+      expect(screen.getByText('🔥🔥🔥')).toBeInTheDocument();
+      // New entries appended
+      expect(screen.getByText('😂😂')).toBeInTheDocument();
+      expect(screen.getByText('❤️🫶')).toBeInTheDocument();
+    });
+  });
+
+  it('fetches page 1 on Load More click', async () => {
     mockFetch.mockImplementation(() =>
       Promise.resolve({
         ok: true,
@@ -219,25 +252,16 @@ describe('HistoryPage', () => {
       render(<HistoryPage />);
     });
     await waitFor(() => {
-      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
     });
-    // Go to page 2
+    mockFetch.mockClear();
     await act(async () => {
-      fireEvent.click(screen.getByRole('button', { name: /next/i }));
+      fireEvent.click(screen.getByRole('button', { name: /load more/i }));
     });
-    await waitFor(() => {
-      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
-    });
-    // Go back to page 1
-    await act(async () => {
-      fireEvent.click(screen.getByRole('button', { name: /previous/i }));
-    });
-    await waitFor(() => {
-      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
-    });
+    expect(mockFetch).toHaveBeenCalledWith('/api/interpretations?page=1');
   });
 
-  it('next button is enabled when more data available', async () => {
+  it('sets up IntersectionObserver when hasMore is true', async () => {
     mockFetch.mockImplementation(() =>
       Promise.resolve({
         ok: true,
@@ -248,8 +272,66 @@ describe('HistoryPage', () => {
       render(<HistoryPage />);
     });
     await waitFor(() => {
-      expect(screen.getByRole('button', { name: /next/i })).not.toBeDisabled();
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
     });
+    expect(mockObserve).toHaveBeenCalled();
+  });
+
+  it('triggers load more when sentinel is intersecting', async () => {
+    let callCount = 0;
+    mockFetch.mockImplementation(() => {
+      callCount++;
+      if (callCount === 1) {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+        } as never);
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: moreEntries, hasMore: false }),
+      } as never);
+    });
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    // Simulate intersection
+    await act(async () => {
+      intersectionCallback?.(
+        [{ isIntersecting: true } as IntersectionObserverEntry],
+        {} as IntersectionObserver
+      );
+    });
+    await waitFor(() => {
+      expect(screen.getByText('😂😂')).toBeInTheDocument();
+    });
+  });
+
+  it('does not trigger load more when sentinel is not intersecting', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
+    });
+    mockFetch.mockClear();
+    // Simulate non-intersection
+    await act(async () => {
+      intersectionCallback?.(
+        [{ isIntersecting: false } as IntersectionObserverEntry],
+        {} as IntersectionObserver
+      );
+    });
+    expect(mockFetch).not.toHaveBeenCalled();
   });
 
   it('formats dates correctly', async () => {
