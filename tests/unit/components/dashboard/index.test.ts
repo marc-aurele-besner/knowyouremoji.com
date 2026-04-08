@@ -1,8 +1,10 @@
 import { describe, it, expect, mock } from 'bun:test';
 
 // Mock dependencies that dashboard components need
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => null,
+mock.module('next-auth/react', () => ({
+  signIn: mock(() => Promise.resolve({ error: null })),
+  signOut: mock(() => Promise.resolve()),
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
 }));
 
 mock.module('@/hooks/use-rate-limit', () => ({

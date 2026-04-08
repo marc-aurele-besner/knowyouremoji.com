@@ -47,20 +47,14 @@ describe('DashboardSidebar', () => {
   it('marks current page link with aria-current', () => {
     mockPathname = '/dashboard';
     render(<DashboardSidebar />);
-    expect(screen.getByRole('link', { name: /overview/i })).toHaveAttribute(
-      'aria-current',
-      'page'
-    );
+    expect(screen.getByRole('link', { name: /overview/i })).toHaveAttribute('aria-current', 'page');
     expect(screen.getByRole('link', { name: /history/i })).not.toHaveAttribute('aria-current');
   });
 
   it('marks history link as active when on history page', () => {
     mockPathname = '/dashboard/history';
     render(<DashboardSidebar />);
-    expect(screen.getByRole('link', { name: /history/i })).toHaveAttribute(
-      'aria-current',
-      'page'
-    );
+    expect(screen.getByRole('link', { name: /history/i })).toHaveAttribute('aria-current', 'page');
     expect(screen.getByRole('link', { name: /overview/i })).not.toHaveAttribute('aria-current');
   });
 

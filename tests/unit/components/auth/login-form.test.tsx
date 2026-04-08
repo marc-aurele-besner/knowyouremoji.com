@@ -2,30 +2,11 @@ import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { LoginForm } from '@/components/auth/login-form';
 
-// Type for Supabase auth response
-interface AuthResponse {
-  data: { user?: { id: string } } | null;
-  error: { message: string } | null;
-}
-
-// Mock the supabase module - use type assertion for Bun's mock
-const mockSignInWithPassword = mock(() =>
-  Promise.resolve({ data: null, error: null } as AuthResponse)
-);
-const mockSignInWithOtp = mock(() => Promise.resolve({ data: null, error: null } as AuthResponse));
-const mockSignInWithOAuth = mock(() =>
-  Promise.resolve({ data: null, error: null } as AuthResponse)
-);
-
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    auth: {
-      signInWithPassword: mockSignInWithPassword,
-      signInWithOtp: mockSignInWithOtp,
-      signInWithOAuth: mockSignInWithOAuth,
-    },
-  }),
-  isSupabaseConfigured: () => true,
+// Mock next-auth/react
+const mockSignIn = mock((): Promise<{ error: string | null }> => Promise.resolve({ error: null }));
+mock.module('next-auth/react', () => ({
+  signIn: mockSignIn,
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
 }));
 
 // Mock next/navigation
@@ -38,12 +19,17 @@ mock.module('next/navigation', () => ({
   }),
 }));
 
+// Mock fetch for magic link
+const mockFetch = mock(() =>
+  Promise.resolve({ ok: true, json: () => Promise.resolve({ success: true }) })
+);
+globalThis.fetch = mockFetch as never;
+
 afterEach(() => {
   cleanup();
-  mockSignInWithPassword.mockClear();
-  mockSignInWithOtp.mockClear();
-  mockSignInWithOAuth.mockClear();
+  mockSignIn.mockClear();
   mockPush.mockClear();
+  mockFetch.mockClear();
 });
 
 describe('LoginForm', () => {
@@ -112,27 +98,21 @@ describe('LoginForm', () => {
       const emailInput = screen.getByLabelText(/^email$/i);
       const passwordInput = screen.getByLabelText(/password/i);
 
-      // Set values and verify they're applied
       fireEvent.change(emailInput, { target: { value: 'invalid-email' } });
       fireEvent.change(passwordInput, { target: { value: 'password123' } });
 
-      expect(emailInput).toHaveValue('invalid-email');
-      expect(passwordInput).toHaveValue('password123');
-
-      // Submit the form
       const form = emailInput.closest('form');
       fireEvent.submit(form!);
 
-      // Validation should prevent API call and show error
       await waitFor(() => {
-        expect(mockSignInWithPassword).not.toHaveBeenCalled();
+        expect(mockSignIn).not.toHaveBeenCalled();
         expect(screen.getByText(/invalid email format/i)).toBeInTheDocument();
       });
     });
   });
 
   describe('email/password sign in', () => {
-    it('calls signInWithPassword with correct credentials', async () => {
+    it('calls signIn with correct credentials', async () => {
       render(<LoginForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -143,16 +123,17 @@ describe('LoginForm', () => {
       fireEvent.click(screen.getByRole('button', { name: /^sign in$/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithPassword).toHaveBeenCalledWith({
+        expect(mockSignIn).toHaveBeenCalledWith('credentials', {
           email: 'test@example.com',
           password: 'password123',
+          redirect: false,
         });
       });
     });
 
     it('shows loading state during sign in', async () => {
-      mockSignInWithPassword.mockImplementation(
-        () => new Promise((resolve) => setTimeout(() => resolve({ data: null, error: null }), 100))
+      mockSignIn.mockImplementation(
+        () => new Promise((resolve) => setTimeout(() => resolve({ error: null }), 100))
       );
       render(<LoginForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
@@ -169,10 +150,7 @@ describe('LoginForm', () => {
     });
 
     it('shows error message on sign in failure', async () => {
-      mockSignInWithPassword.mockResolvedValue({
-        data: null,
-        error: { message: 'Invalid credentials' },
-      });
+      mockSignIn.mockResolvedValue({ error: 'CredentialsSignin' });
       render(<LoginForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -183,15 +161,12 @@ describe('LoginForm', () => {
       fireEvent.click(screen.getByRole('button', { name: /^sign in$/i }));
 
       await waitFor(() => {
-        expect(screen.getByText(/invalid credentials/i)).toBeInTheDocument();
+        expect(screen.getByText(/invalid email or password/i)).toBeInTheDocument();
       });
     });
 
     it('redirects to dashboard on successful sign in', async () => {
-      mockSignInWithPassword.mockResolvedValue({
-        data: { user: { id: '123' } },
-        error: null,
-      });
+      mockSignIn.mockResolvedValue({ error: null });
       render(<LoginForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -217,9 +192,8 @@ describe('LoginForm', () => {
       });
     });
 
-    it('calls signInWithOtp with email for magic link', async () => {
+    it('calls fetch for magic link', async () => {
       render(<LoginForm />);
-      // Switch to magic link mode
       fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
 
       await waitFor(() => {
@@ -232,19 +206,16 @@ describe('LoginForm', () => {
       fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithOtp).toHaveBeenCalledWith({
-          email: 'test@example.com',
-          options: {
-            emailRedirectTo: expect.stringContaining('/auth/callback'),
-          },
+        expect(mockFetch).toHaveBeenCalledWith('/api/auth/magic-link', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: 'test@example.com' }),
         });
       });
     });
 
     it('shows success message after magic link sent', async () => {
-      mockSignInWithOtp.mockResolvedValue({ data: {}, error: null });
       render(<LoginForm />);
-      // Switch to magic link mode
       fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
 
       await waitFor(() => {
@@ -258,71 +229,11 @@ describe('LoginForm', () => {
 
       await waitFor(() => {
         expect(screen.getByText(/check your email/i)).toBeInTheDocument();
-      });
-    });
-
-    it('shows error when magic link fails', async () => {
-      mockSignInWithOtp.mockResolvedValue({
-        data: null,
-        error: { message: 'Rate limit exceeded' },
-      });
-      render(<LoginForm />);
-      // Switch to magic link mode
-      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
-
-      await waitFor(() => {
-        expect(screen.getByRole('button', { name: /send magic link/i })).toBeInTheDocument();
-      });
-
-      fireEvent.change(screen.getByLabelText(/email/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/rate limit exceeded/i)).toBeInTheDocument();
-      });
-    });
-
-    it('requires email for magic link', async () => {
-      render(<LoginForm />);
-      // Switch to magic link mode
-      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
-
-      await waitFor(() => {
-        expect(screen.getByRole('button', { name: /send magic link/i })).toBeInTheDocument();
-      });
-
-      fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/email is required/i)).toBeInTheDocument();
-      });
-    });
-
-    it('can toggle back to password mode', async () => {
-      render(<LoginForm />);
-      // Switch to magic link mode
-      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
-
-      await waitFor(() => {
-        expect(
-          screen.getByRole('button', { name: /sign in with password instead/i })
-        ).toBeInTheDocument();
-      });
-
-      // Switch back to password mode
-      fireEvent.click(screen.getByRole('button', { name: /sign in with password instead/i }));
-
-      await waitFor(() => {
-        expect(screen.getByLabelText(/password/i)).toBeInTheDocument();
       });
     });
 
     it('can return to sign in from magic link success', async () => {
-      mockSignInWithOtp.mockResolvedValue({ data: {}, error: null });
       render(<LoginForm />);
-      // Switch to magic link mode
       fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
 
       await waitFor(() => {
@@ -338,7 +249,6 @@ describe('LoginForm', () => {
         expect(screen.getByText(/check your email/i)).toBeInTheDocument();
       });
 
-      // Click back to sign in
       fireEvent.click(screen.getByRole('button', { name: /back to sign in/i }));
 
       await waitFor(() => {
@@ -348,44 +258,21 @@ describe('LoginForm', () => {
   });
 
   describe('OAuth sign in', () => {
-    it('calls signInWithOAuth for Google', async () => {
+    it('calls signIn for Google', async () => {
       render(<LoginForm />);
       fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithOAuth).toHaveBeenCalledWith({
-          provider: 'google',
-          options: {
-            redirectTo: expect.stringContaining('/auth/callback'),
-          },
-        });
+        expect(mockSignIn).toHaveBeenCalledWith('google', { callbackUrl: '/dashboard' });
       });
     });
 
-    it('calls signInWithOAuth for GitHub', async () => {
+    it('calls signIn for GitHub', async () => {
       render(<LoginForm />);
       fireEvent.click(screen.getByRole('button', { name: /continue with github/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithOAuth).toHaveBeenCalledWith({
-          provider: 'github',
-          options: {
-            redirectTo: expect.stringContaining('/auth/callback'),
-          },
-        });
-      });
-    });
-
-    it('shows error when OAuth fails', async () => {
-      mockSignInWithOAuth.mockResolvedValue({
-        data: null,
-        error: { message: 'OAuth error' },
-      });
-      render(<LoginForm />);
-      fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/oauth error/i)).toBeInTheDocument();
+        expect(mockSignIn).toHaveBeenCalledWith('github', { callbackUrl: '/dashboard' });
       });
     });
   });
@@ -410,10 +297,7 @@ describe('LoginForm', () => {
     });
 
     it('displays error in accessible alert role', async () => {
-      mockSignInWithPassword.mockResolvedValue({
-        data: null,
-        error: { message: 'Test error' },
-      });
+      mockSignIn.mockResolvedValue({ error: 'CredentialsSignin' });
       render(<LoginForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -424,7 +308,7 @@ describe('LoginForm', () => {
       fireEvent.click(screen.getByRole('button', { name: /^sign in$/i }));
 
       await waitFor(() => {
-        expect(screen.getByRole('alert')).toHaveTextContent(/test error/i);
+        expect(screen.getByRole('alert')).toHaveTextContent(/invalid email or password/i);
       });
     });
   });

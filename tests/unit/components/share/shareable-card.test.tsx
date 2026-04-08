@@ -90,14 +90,18 @@ describe('ShareableCard', () => {
     });
 
     it('renders negative tone badge', () => {
-      render(<ShareableCard data={{ ...mockData, tone: 'negative' }} shareUrl={defaultProps.shareUrl} />);
+      render(
+        <ShareableCard data={{ ...mockData, tone: 'negative' }} shareUrl={defaultProps.shareUrl} />
+      );
       const badge = screen.getByTestId('shareable-card-tone-badge');
       expect(badge).toHaveTextContent('Negative');
       expect(badge).toHaveClass('bg-red-100');
     });
 
     it('renders neutral tone badge', () => {
-      render(<ShareableCard data={{ ...mockData, tone: 'neutral' }} shareUrl={defaultProps.shareUrl} />);
+      render(
+        <ShareableCard data={{ ...mockData, tone: 'neutral' }} shareUrl={defaultProps.shareUrl} />
+      );
       const badge = screen.getByTestId('shareable-card-tone-badge');
       expect(badge).toHaveTextContent('Neutral');
       expect(badge).toHaveClass('bg-gray-100');
@@ -112,13 +116,17 @@ describe('ShareableCard', () => {
     });
 
     it('renders red accent for negative tone', () => {
-      render(<ShareableCard data={{ ...mockData, tone: 'negative' }} shareUrl={defaultProps.shareUrl} />);
+      render(
+        <ShareableCard data={{ ...mockData, tone: 'negative' }} shareUrl={defaultProps.shareUrl} />
+      );
       const accent = screen.getByTestId('shareable-card-accent');
       expect(accent).toHaveClass('from-red-400');
     });
 
     it('renders gray accent for neutral tone', () => {
-      render(<ShareableCard data={{ ...mockData, tone: 'neutral' }} shareUrl={defaultProps.shareUrl} />);
+      render(
+        <ShareableCard data={{ ...mockData, tone: 'neutral' }} shareUrl={defaultProps.shareUrl} />
+      );
       const accent = screen.getByTestId('shareable-card-accent');
       expect(accent).toHaveClass('from-gray-400');
     });
@@ -153,7 +161,9 @@ describe('ShareableCard', () => {
   describe('actions', () => {
     it('renders copy as text button', () => {
       render(<ShareableCard {...defaultProps} />);
-      expect(screen.getByRole('button', { name: /copy interpretation as text/i })).toBeInTheDocument();
+      expect(
+        screen.getByRole('button', { name: /copy interpretation as text/i })
+      ).toBeInTheDocument();
     });
 
     it('renders share section', () => {

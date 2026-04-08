@@ -115,7 +115,9 @@ describe('ToneSuggestionCard', () => {
 
     it('copies example to clipboard when copy button is clicked', async () => {
       const writeTextMock = mock(() => Promise.resolve());
-      const clipboardSpy = spyOn(navigator.clipboard, 'writeText').mockImplementation(writeTextMock);
+      const clipboardSpy = spyOn(navigator.clipboard, 'writeText').mockImplementation(
+        writeTextMock
+      );
 
       try {
         const onCopyExample = mock();

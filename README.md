@@ -53,7 +53,9 @@ Paste any message and get an AI-powered breakdown including:
 - **Framework:** Next.js 16.1 (App Router), React 19, TypeScript 5.x
 - **Styling:** Tailwind CSS, Radix UI
 - **AI:** OpenAI API with Vercel AI SDK
-- **Database:** Supabase (Phase 2)
+- **Auth:** NextAuth v5 (credentials + Google/GitHub OAuth)
+- **Database:** Neon Postgres with Drizzle ORM
+- **Email:** Resend
 - **Hosting:** Vercel
 - **Testing:** Bun test (unit), Playwright (E2E)
 
@@ -99,12 +101,18 @@ Copy `.env.example` to `.env.local` and configure:
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID`   | No       | Google Analytics 4 Measurement ID (starts with G-)   |
 | `NEXT_PUBLIC_POSTHOG_KEY`         | No       | PostHog project API key for product analytics        |
 | `NEXT_PUBLIC_POSTHOG_HOST`        | No       | PostHog API host (default: https://us.i.posthog.com) |
-| `NEXT_PUBLIC_SUPABASE_URL`        | No\*\*   | Supabase project URL (Phase 2)                       |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY`   | No\*\*   | Supabase anonymous key for client-side auth          |
-| `SUPABASE_SERVICE_ROLE_KEY`       | No       | Supabase service role key for admin operations       |
+| `DATABASE_URL`                    | No\*\*   | Neon Postgres connection string                      |
+| `AUTH_SECRET`                     | No\*\*   | NextAuth secret for JWT signing                      |
+| `AUTH_URL`                        | No\*\*   | NextAuth URL (same as NEXT_PUBLIC_APP_URL)           |
+| `GOOGLE_CLIENT_ID`                | No       | Google OAuth client ID                               |
+| `GOOGLE_CLIENT_SECRET`            | No       | Google OAuth client secret                           |
+| `GITHUB_CLIENT_ID`                | No       | GitHub OAuth client ID                               |
+| `GITHUB_CLIENT_SECRET`            | No       | GitHub OAuth client secret                           |
+| `RESEND_API_KEY`                  | No\*\*   | Resend API key for transactional emails              |
+| `RESEND_FROM_EMAIL`               | No\*\*   | Sender email address (verified in Resend)            |
 
 \*Required if interpreter feature is enabled
-\*\*Required for Phase 2 features (auth, subscriptions, history)
+\*\*Required for auth features (login, registration, password reset)
 
 ## Development Commands
 
@@ -165,7 +173,9 @@ src/
 │   ├── emoji-data.ts       # Data loader
 │   ├── rate-limit.ts       # Rate limiting
 │   ├── openai.ts           # AI integration
-│   └── supabase.ts         # Supabase client for auth/database (Phase 2)
+│   ├── auth.ts             # NextAuth v5 configuration
+│   ├── db/                 # Drizzle ORM schema and database client
+│   └── email.ts            # Resend email service
 ├── data/                   # Static JSON emoji data
 │   ├── emojis/             # Individual emoji data
 │   └── combos/             # Emoji combination data
@@ -192,7 +202,7 @@ scripts/
 
 ### Phase 2: Growth (Database Integration)
 
-- Supabase integration for auth and subscriptions
+- NextAuth + Neon DB + Resend for auth, subscriptions, and email
 - User accounts and interpretation history
 - Server-side rate limiting
 - Premium subscription via Stripe

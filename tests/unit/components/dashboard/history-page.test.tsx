@@ -1,28 +1,17 @@
 import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
-// Mock supabase before importing component
-const mockRange = mock((): Promise<{ data: any[] | null; error: any }> =>
-  Promise.resolve({ data: [], error: null })
-);
-
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    from: () => ({
-      select: () => ({
-        order: () => ({
-          range: mockRange,
-        }),
-      }),
-    }),
+// Mock next-auth/react
+mock.module('next-auth/react', () => ({
+  useSession: () => ({
+    data: { user: { id: 'user-1', email: 'test@example.com' } },
+    status: 'authenticated' as const,
   }),
 }));
 
 mock.module('next/navigation', () => ({
   useRouter: () => ({ push: mock(() => {}) }),
 }));
-
-const { HistoryPage } = await import('@/components/dashboard/history-page');
 
 const sampleEntries = [
   {
@@ -41,12 +30,29 @@ const sampleEntries = [
   },
 ];
 
+// Mock fetch
+const mockFetch = mock(() =>
+  Promise.resolve({
+    ok: true,
+    json: () => Promise.resolve({ data: [], hasMore: false }),
+  })
+);
+globalThis.fetch = mockFetch as never;
+
+const { HistoryPage } = await import('@/components/dashboard/history-page');
+
 beforeEach(() => {
-  mockRange.mockImplementation(() => Promise.resolve({ data: [], error: null }));
+  mockFetch.mockImplementation(() =>
+    Promise.resolve({
+      ok: true,
+      json: () => Promise.resolve({ data: [], hasMore: false }),
+    } as never)
+  );
 });
 
 afterEach(() => {
   cleanup();
+  mockFetch.mockClear();
 });
 
 describe('HistoryPage', () => {
@@ -65,7 +71,6 @@ describe('HistoryPage', () => {
   });
 
   it('shows empty state when no entries', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: [], error: null }));
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -75,7 +80,12 @@ describe('HistoryPage', () => {
   });
 
   it('displays history entries', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: sampleEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -87,8 +97,15 @@ describe('HistoryPage', () => {
   });
 
   it('shows singular emoji text for 1 emoji', async () => {
-    mockRange.mockImplementation(() =>
-      Promise.resolve({ data: [{ ...sampleEntries[0], emoji_count: 1 }], error: null })
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({
+            data: [{ ...sampleEntries[0], emoji_count: 1 }],
+            hasMore: false,
+          }),
+      } as never)
     );
     await act(async () => {
       render(<HistoryPage />);
@@ -99,8 +116,11 @@ describe('HistoryPage', () => {
   });
 
   it('shows error message on fetch error', async () => {
-    mockRange.mockImplementation(() =>
-      Promise.resolve({ data: null, error: { message: 'Database error' } })
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: false,
+        json: () => Promise.resolve({ error: 'Database error' }),
+      } as never)
     );
     await act(async () => {
       render(<HistoryPage />);
@@ -111,7 +131,7 @@ describe('HistoryPage', () => {
   });
 
   it('shows error when fetch throws', async () => {
-    mockRange.mockImplementation(() => Promise.reject(new Error('Network error')));
+    mockFetch.mockImplementation(() => Promise.reject(new Error('Network error')));
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -121,7 +141,12 @@ describe('HistoryPage', () => {
   });
 
   it('renders pagination controls when entries exist', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: sampleEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -133,7 +158,12 @@ describe('HistoryPage', () => {
   });
 
   it('previous button is disabled on first page', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: sampleEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -143,7 +173,12 @@ describe('HistoryPage', () => {
   });
 
   it('next button is disabled when no more pages', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: sampleEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -152,12 +187,63 @@ describe('HistoryPage', () => {
     });
   });
 
+  it('clicking next advances to page 2', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /next/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
+    });
+  });
+
+  it('clicking previous goes back to page 1', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+    });
+    // Go to page 2
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /next/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
+    });
+    // Go back to page 1
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /previous/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+    });
+  });
+
   it('next button is enabled when more data available', async () => {
-    const manyEntries = Array.from({ length: 11 }, (_, i) => ({
-      ...sampleEntries[0],
-      id: String(i + 1),
-    }));
-    mockRange.mockImplementation(() => Promise.resolve({ data: manyEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
@@ -167,14 +253,18 @@ describe('HistoryPage', () => {
   });
 
   it('formats dates correctly', async () => {
-    mockRange.mockImplementation(() => Promise.resolve({ data: sampleEntries, error: null }));
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
     await act(async () => {
       render(<HistoryPage />);
     });
     await waitFor(() => {
       expect(screen.getByText('Hey 😊👋')).toBeInTheDocument();
     });
-    // The formatted date should contain "Apr" for April 2026
     const dateElements = screen.getAllByText(/Apr/);
     expect(dateElements.length).toBeGreaterThan(0);
   });

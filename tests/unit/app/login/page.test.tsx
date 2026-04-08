@@ -2,16 +2,10 @@ import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import LoginPage, { generateMetadata } from '@/app/(auth)/login/page';
 
-// Mock the supabase module (same as login-form tests)
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    auth: {
-      signInWithPassword: mock(() => Promise.resolve({ data: null, error: null })),
-      signInWithOtp: mock(() => Promise.resolve({ data: null, error: null })),
-      signInWithOAuth: mock(() => Promise.resolve({ data: null, error: null })),
-    },
-  }),
-  isSupabaseConfigured: () => true,
+// Mock next-auth/react
+mock.module('next-auth/react', () => ({
+  signIn: mock(() => Promise.resolve({ error: null })),
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
 }));
 
 // Mock next/navigation

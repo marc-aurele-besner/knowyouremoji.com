@@ -31,13 +31,15 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 ### 1.2 Architecture Philosophy
 
 **Phase 1 (MVP/Beta):** Fully static architecture
+
 - No database required
 - All content as version-controlled JSON files
 - Client-side rate limiting
 - Fastest possible page loads
 - 100% test coverage from day one
 
-**Phase 2 (Growth):** Database integration with Supabase
+**Phase 2 (Growth):** Database integration with Neon DB
+
 - User authentication
 - Subscription management
 - Interpretation history
@@ -46,6 +48,7 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 ### 1.3 Core Features
 
 **Phase 1:**
+
 - Emoji detail pages with contextual meanings (static)
 - Emoji combo pages (static)
 - AI-powered emoji interpreter tool
@@ -53,6 +56,7 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 - Client-side search
 
 **Phase 2:**
+
 - User accounts and authentication
 - Premium subscription system
 - Interpretation history
@@ -64,11 +68,12 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 
 ### 2.1 Runtime & Package Manager
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| Bun | 1.x | JavaScript runtime, package manager, bundler, test runner |
+| Technology | Version | Purpose                                                   |
+| ---------- | ------- | --------------------------------------------------------- |
+| Bun        | 1.x     | JavaScript runtime, package manager, bundler, test runner |
 
 **Why Bun:**
+
 - Significantly faster package installation than npm/yarn/pnpm
 - Native TypeScript support without transpilation
 - Built-in test runner (replaces Jest for unit tests)
@@ -77,36 +82,39 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 
 ### 2.2 Core Framework
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| Next.js | 16.1 | App Router, SSG, Server Actions |
-| React | 19.x | UI Components |
-| TypeScript | 5.x | Type Safety |
+| Technology | Version | Purpose                         |
+| ---------- | ------- | ------------------------------- |
+| Next.js    | 16.1    | App Router, SSG, Server Actions |
+| React      | 19.x    | UI Components                   |
+| TypeScript | 5.x     | Type Safety                     |
 
 ### 2.3 Styling
 
-| Technology | Purpose |
-|------------|---------|
-| Tailwind CSS | Utility-first styling |
-| tailwind-merge | Class merging |
-| clsx | Conditional classes |
-| Radix UI | Accessible primitives |
+| Technology     | Purpose               |
+| -------------- | --------------------- |
+| Tailwind CSS   | Utility-first styling |
+| tailwind-merge | Class merging         |
+| clsx           | Conditional classes   |
+| Radix UI       | Accessible primitives |
 
 ### 2.4 Database & Content
 
 #### Phase 1 (Static)
-| Technology | Purpose |
-|------------|---------|
-| JSON Files | Static emoji data in `/src/data/` |
-| localStorage | Client-side rate limiting |
+
+| Technology   | Purpose                           |
+| ------------ | --------------------------------- |
+| JSON Files   | Static emoji data in `/src/data/` |
+| localStorage | Client-side rate limiting         |
 
 #### Phase 2 (Database Integration)
-| Technology | Purpose |
-|------------|---------|
-| Supabase | PostgreSQL database, Auth, Storage, Realtime |
-| Upstash Redis | Caching, server-side rate limiting |
 
-**Why Supabase:**
+| Technology    | Purpose                                      |
+| ------------- | -------------------------------------------- |
+| Neon DB       | PostgreSQL database, Auth, Storage, Realtime |
+| Upstash Redis | Caching, server-side rate limiting           |
+
+**Why Neon DB:**
+
 - Integrated PostgreSQL with automatic API generation
 - Built-in authentication (OAuth, Email, Magic Link)
 - Row Level Security (RLS) for data protection
@@ -116,37 +124,37 @@ A context-aware emoji interpretation platform that explains what emojis mean in 
 
 ### 2.5 Authentication & Payments (Phase 2)
 
-| Technology | Purpose |
-|------------|---------|
-| Supabase Auth | Authentication (OAuth, Email, Magic Link) |
-| Stripe | Payment processing |
+| Technology   | Purpose                                   |
+| ------------ | ----------------------------------------- |
+| Neon DB Auth | Authentication (OAuth, Email, Magic Link) |
+| Stripe       | Payment processing                        |
 
-*Note: Phase 1 operates without authentication. All features are available anonymously with client-side rate limiting.*
+_Note: Phase 1 operates without authentication. All features are available anonymously with client-side rate limiting._
 
 ### 2.6 AI & APIs
 
-| Technology | Purpose |
-|------------|---------|
-| OpenAI API | Emoji interpretation |
-| Vercel AI SDK | Streaming responses |
+| Technology    | Purpose              |
+| ------------- | -------------------- |
+| OpenAI API    | Emoji interpretation |
+| Vercel AI SDK | Streaming responses  |
 
 ### 2.7 Analytics & Monitoring
 
-| Technology | Purpose |
-|------------|---------|
-| Vercel Analytics | Web analytics |
-| PostHog | Product analytics |
-| Sentry | Error tracking |
+| Technology       | Purpose           |
+| ---------------- | ----------------- |
+| Vercel Analytics | Web analytics     |
+| PostHog          | Product analytics |
+| Sentry           | Error tracking    |
 
 ### 2.8 Development Tools
 
-| Technology | Purpose |
-|------------|---------|
-| ESLint | Linting |
-| Prettier | Formatting |
-| Husky | Git hooks |
-| Bun Test | Unit testing (built-in) |
-| Playwright | E2E testing |
+| Technology | Purpose                 |
+| ---------- | ----------------------- |
+| ESLint     | Linting                 |
+| Prettier   | Formatting              |
+| Husky      | Git hooks               |
+| Bun Test   | Unit testing (built-in) |
+| Playwright | E2E testing             |
 
 ---
 
@@ -227,7 +235,7 @@ knowyouremoji.com/
 │   │       ├── share-buttons.tsx
 │   │       └── loading-spinner.tsx
 │   ├── lib/
-│   │   ├── supabase.ts                     # Supabase client (Phase 2)
+│   │   ├── auth.ts                     # Neon DB client (Phase 2)
 │   │   ├── redis.ts                        # Redis client (Phase 2)
 │   │   ├── stripe.ts                       # Stripe config (Phase 2)
 │   │   ├── openai.ts                       # OpenAI client
@@ -249,7 +257,7 @@ knowyouremoji.com/
 │   │   ├── interpreter.ts
 │   │   ├── user.ts
 │   │   ├── api.ts
-│   │   └── supabase.ts                    # Generated: bunx supabase gen types (Phase 2)
+│   │   └── auth.ts                    # Auth-related types
 │   ├── constants/
 │   │   ├── platforms.ts
 │   │   ├── contexts.ts
@@ -261,10 +269,10 @@ knowyouremoji.com/
 │       │   └── ...
 │       └── combos/                         # Static combo data
 │           └── ...
-├── supabase/                              # Phase 2 - Database
+├── migrations/                              # Phase 2 - Database
 │   ├── migrations/                        # SQL migrations
 │   ├── seed.sql                           # Seed data
-│   └── config.toml                        # Supabase config
+│   └── config.toml                        # Neon DB config
 ├── public/
 │   ├── emoji-renders/                      # Platform-specific renders
 │   │   ├── apple/
@@ -300,6 +308,7 @@ knowyouremoji.com/
 In Phase 1, all emoji data is stored as static JSON files. No database required.
 
 **File Structure:**
+
 ```
 src/data/
 ├── emojis/
@@ -315,6 +324,7 @@ src/data/
 ```
 
 **Example Emoji JSON:**
+
 ```json
 // src/data/emojis/skull.json
 {
@@ -361,14 +371,14 @@ src/data/
 }
 ```
 
-### 4.2 Phase 2: Supabase Schema
+### 4.2 Phase 2: Neon DB Schema
 
 Database tables for Phase 2 (user accounts, subscriptions, history).
 
 ```sql
--- supabase/migrations/001_initial_schema.sql
+-- migrations/migrations/001_initial_schema.sql
 
--- ============ PROFILES (extends Supabase Auth) ============
+-- ============ PROFILES (extends Neon DB Auth) ============
 
 CREATE TABLE profiles (
   id UUID REFERENCES auth.users(id) PRIMARY KEY,
@@ -598,12 +608,7 @@ export interface EmojiAnalysis {
   link: string;
 }
 
-export type RelationshipContext =
-  | 'DATING'
-  | 'FRIENDS'
-  | 'WORK'
-  | 'FAMILY'
-  | 'UNKNOWN';
+export type RelationshipContext = 'DATING' | 'FRIENDS' | 'WORK' | 'FAMILY' | 'UNKNOWN';
 ```
 
 ---
@@ -612,252 +617,256 @@ export type RelationshipContext =
 
 ### 5.1 Project Setup - Phase 1 (Foundation)
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| SETUP-001 | Initialize Next.js 16.1 project with Bun | `bunx create-next-app@latest` with Next.js 16.1, Bun, App Router, TypeScript, Tailwind CSS, React 19 | P0 |
-| SETUP-002 | Configure ESLint & Prettier | Set up linting rules, formatting config, husky pre-commit hooks (via bun) | P0 |
-| SETUP-003 | Set up test infrastructure | Configure Bun test with 100% coverage requirements, Playwright for E2E | P0 |
-| SETUP-004 | Configure environment variables | Create .env.example, document all required env vars | P0 |
-| SETUP-005 | Create static data structure | Set up `/src/data/` folder with emoji/combo JSON schema and loaders | P0 |
-| SETUP-006 | Create base UI components | Button, Card, Input, Select, Badge, Dialog using Radix UI | P0 |
-| SETUP-007 | Set up Tailwind theme | Configure colors, typography, spacing for brand | P0 |
-| SETUP-008 | Create layout components | Header, Footer, MobileNav, Breadcrumbs | P0 |
-| SETUP-009 | Implement client-side rate limiting | localStorage-based rate limiting for interpreter (3/day) | P0 |
+| Ticket ID | Title                                    | Description                                                                                          | Priority |
+| --------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------- |
+| SETUP-001 | Initialize Next.js 16.1 project with Bun | `bunx create-next-app@latest` with Next.js 16.1, Bun, App Router, TypeScript, Tailwind CSS, React 19 | P0       |
+| SETUP-002 | Configure ESLint & Prettier              | Set up linting rules, formatting config, husky pre-commit hooks (via bun)                            | P0       |
+| SETUP-003 | Set up test infrastructure               | Configure Bun test with 100% coverage requirements, Playwright for E2E                               | P0       |
+| SETUP-004 | Configure environment variables          | Create .env.example, document all required env vars                                                  | P0       |
+| SETUP-005 | Create static data structure             | Set up `/src/data/` folder with emoji/combo JSON schema and loaders                                  | P0       |
+| SETUP-006 | Create base UI components                | Button, Card, Input, Select, Badge, Dialog using Radix UI                                            | P0       |
+| SETUP-007 | Set up Tailwind theme                    | Configure colors, typography, spacing for brand                                                      | P0       |
+| SETUP-008 | Create layout components                 | Header, Footer, MobileNav, Breadcrumbs                                                               | P0       |
+| SETUP-009 | Implement client-side rate limiting      | localStorage-based rate limiting for interpreter (3/day)                                             | P0       |
 
 ### 5.2 Authentication System (Phase 2)
 
-*Deferred to Phase 2. Phase 1 operates without authentication.*
+_Deferred to Phase 2. Phase 1 operates without authentication._
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| AUTH-001 | Configure Supabase Auth | Set up Supabase client, auth providers (Google, GitHub, Email) | P2 |
-| AUTH-002 | Create login page | Email/password form, OAuth buttons, magic link option | P2 |
-| AUTH-003 | Create registration page | Sign up form with email verification | P2 |
-| AUTH-004 | Create forgot password flow | Password reset via Supabase Auth | P2 |
-| AUTH-005 | Add auth middleware | Protect dashboard routes using Supabase session | P2 |
-| AUTH-006 | Create user profile page | Display user info, subscription status | P2 |
-| AUTH-007 | Set up profile trigger | Auto-create profile on Supabase user signup | P2 |
+| Ticket ID | Title                       | Description                                                   | Priority |
+| --------- | --------------------------- | ------------------------------------------------------------- | -------- |
+| AUTH-001  | Configure Neon DB Auth      | Set up Neon DB client, auth providers (Google, GitHub, Email) | P2       |
+| AUTH-002  | Create login page           | Email/password form, OAuth buttons, magic link option         | P2       |
+| AUTH-003  | Create registration page    | Sign up form with email verification                          | P2       |
+| AUTH-004  | Create forgot password flow | Password reset via Neon DB Auth                               | P2       |
+| AUTH-005  | Add auth middleware         | Protect dashboard routes using Neon DB session                | P2       |
+| AUTH-006  | Create user profile page    | Display user info, subscription status                        | P2       |
+| AUTH-007  | Set up profile trigger      | Auto-create profile on Neon DB user signup                    | P2       |
 
 ### 5.3 Emoji Data & Content System - Phase 1 (Static)
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| EMOJI-001 | Define emoji TypeScript types | Create comprehensive type definitions for emoji data | P0 |
-| EMOJI-002 | Create emoji JSON schema | Define JSON structure with validation | P0 |
-| EMOJI-003 | Build emoji data loader | Utility to load and type emoji JSON files | P0 |
-| EMOJI-004 | Create first 50 emoji JSON files | Manual curation of high-traffic emojis | P0 |
-| EMOJI-005 | Build emoji search (client-side) | Search across static JSON data | P0 |
-| EMOJI-006 | Create emoji validation script | Validate all JSON files against schema | P0 |
-| EMOJI-007 | Build AI content generation script | Generate emoji content drafts for review | P1 |
-| EMOJI-008 | Create next 150 emoji JSON files | Expand to 200 total emojis | P0 |
-| EMOJI-009 | Create remaining 300+ emoji files | Complete coverage of common emojis | P1 |
+| Ticket ID | Title                              | Description                                          | Priority |
+| --------- | ---------------------------------- | ---------------------------------------------------- | -------- |
+| EMOJI-001 | Define emoji TypeScript types      | Create comprehensive type definitions for emoji data | P0       |
+| EMOJI-002 | Create emoji JSON schema           | Define JSON structure with validation                | P0       |
+| EMOJI-003 | Build emoji data loader            | Utility to load and type emoji JSON files            | P0       |
+| EMOJI-004 | Create first 50 emoji JSON files   | Manual curation of high-traffic emojis               | P0       |
+| EMOJI-005 | Build emoji search (client-side)   | Search across static JSON data                       | P0       |
+| EMOJI-006 | Create emoji validation script     | Validate all JSON files against schema               | P0       |
+| EMOJI-007 | Build AI content generation script | Generate emoji content drafts for review             | P1       |
+| EMOJI-008 | Create next 150 emoji JSON files   | Expand to 200 total emojis                           | P0       |
+| EMOJI-009 | Create remaining 300+ emoji files  | Complete coverage of common emojis                   | P1       |
 
 ### 5.3b Emoji Content System - Phase 2 (Database)
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| EMOJI-P2-001 | Create Supabase emoji tables | Migrate schema to Supabase | P2 |
-| EMOJI-P2-002 | Build migration script | Import JSON data to Supabase | P2 |
-| EMOJI-P2-003 | Create emoji admin interface | CRUD UI for content editors | P2 |
-| EMOJI-P2-004 | Add real-time content updates | Enable live editing without redeploy | P2 |
+| Ticket ID    | Title                         | Description                          | Priority |
+| ------------ | ----------------------------- | ------------------------------------ | -------- |
+| EMOJI-P2-001 | Create Neon DB emoji tables   | Migrate schema to Neon DB            | P2       |
+| EMOJI-P2-002 | Build migration script        | Import JSON data to Neon DB          | P2       |
+| EMOJI-P2-003 | Create emoji admin interface  | CRUD UI for content editors          | P2       |
+| EMOJI-P2-004 | Add real-time content updates | Enable live editing without redeploy | P2       |
 
 ### 5.4 Emoji Detail Pages
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| PAGE-001 | Create emoji detail page route | Dynamic route /emoji/[slug] with SSG | P0 |
-| PAGE-002 | Build EmojiHeader component | Emoji character, name, copy button, Unicode info | P0 |
-| PAGE-003 | Build EmojiTLDR component | Short meaning summary with styled callout | P0 |
-| PAGE-004 | Build EmojiContextCard component | Individual context meaning with example, risk badge | P0 |
-| PAGE-005 | Build context meanings section | Grid/list of all context cards, collapsible | P0 |
-| PAGE-006 | Build EmojiPlatformPreview component | Show emoji renders from iOS, Android, Twitter | P0 |
-| PAGE-007 | Build platform notes section | Platform-specific meaning differences | P0 |
-| PAGE-008 | Build generational notes section | Gen Z vs Millennial usage differences | P1 |
-| PAGE-009 | Build EmojiComboList component | Related combos with links | P1 |
-| PAGE-010 | Build EmojiWarnings component | Misuse warnings with severity indicators | P1 |
-| PAGE-011 | Add copy emoji functionality | Copy to clipboard with toast notification | P0 |
-| PAGE-012 | Implement related emojis section | Similar emojis by category or meaning | P2 |
-| PAGE-013 | Add structured data (JSON-LD) | Schema.org markup for SEO | P0 |
-| PAGE-014 | Create emoji OG image generator | Dynamic OG images for social sharing | P1 |
+| Ticket ID | Title                                | Description                                         | Priority |
+| --------- | ------------------------------------ | --------------------------------------------------- | -------- |
+| PAGE-001  | Create emoji detail page route       | Dynamic route /emoji/[slug] with SSG                | P0       |
+| PAGE-002  | Build EmojiHeader component          | Emoji character, name, copy button, Unicode info    | P0       |
+| PAGE-003  | Build EmojiTLDR component            | Short meaning summary with styled callout           | P0       |
+| PAGE-004  | Build EmojiContextCard component     | Individual context meaning with example, risk badge | P0       |
+| PAGE-005  | Build context meanings section       | Grid/list of all context cards, collapsible         | P0       |
+| PAGE-006  | Build EmojiPlatformPreview component | Show emoji renders from iOS, Android, Twitter       | P0       |
+| PAGE-007  | Build platform notes section         | Platform-specific meaning differences               | P0       |
+| PAGE-008  | Build generational notes section     | Gen Z vs Millennial usage differences               | P1       |
+| PAGE-009  | Build EmojiComboList component       | Related combos with links                           | P1       |
+| PAGE-010  | Build EmojiWarnings component        | Misuse warnings with severity indicators            | P1       |
+| PAGE-011  | Add copy emoji functionality         | Copy to clipboard with toast notification           | P0       |
+| PAGE-012  | Implement related emojis section     | Similar emojis by category or meaning               | P2       |
+| PAGE-013  | Add structured data (JSON-LD)        | Schema.org markup for SEO                           | P0       |
+| PAGE-014  | Create emoji OG image generator      | Dynamic OG images for social sharing                | P1       |
 
 ### 5.5 Emoji Combo Pages - Phase 1 (Static)
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| COMBO-001 | Define combo TypeScript types | Type definitions for combo data | P0 |
-| COMBO-002 | Create combo detail page route | Dynamic route /emoji-combo/[slug] with SSG | P0 |
-| COMBO-003 | Build combo header component | Show all emojis in sequence, copy button | P0 |
-| COMBO-004 | Build combo meaning section | Explanation, examples, context | P0 |
-| COMBO-005 | Create top 30 combo JSON files | Manual curation of popular combos | P0 |
-| COMBO-006 | Add combo search (client-side) | Search combos by emoji or meaning | P1 |
-| COMBO-007 | Internal linking: emoji to combos | Link emojis to their related combos | P0 |
-| COMBO-008 | Internal linking: combos to emojis | Link combos back to individual emoji pages | P0 |
+| Ticket ID | Title                              | Description                                | Priority |
+| --------- | ---------------------------------- | ------------------------------------------ | -------- |
+| COMBO-001 | Define combo TypeScript types      | Type definitions for combo data            | P0       |
+| COMBO-002 | Create combo detail page route     | Dynamic route /emoji-combo/[slug] with SSG | P0       |
+| COMBO-003 | Build combo header component       | Show all emojis in sequence, copy button   | P0       |
+| COMBO-004 | Build combo meaning section        | Explanation, examples, context             | P0       |
+| COMBO-005 | Create top 30 combo JSON files     | Manual curation of popular combos          | P0       |
+| COMBO-006 | Add combo search (client-side)     | Search combos by emoji or meaning          | P1       |
+| COMBO-007 | Internal linking: emoji to combos  | Link emojis to their related combos        | P0       |
+| COMBO-008 | Internal linking: combos to emojis | Link combos back to individual emoji pages | P0       |
 
 ### 5.6 Emoji Interpreter Tool
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| INTERP-001 | Create interpreter page | Base page layout at /interpreter | P0 |
-| INTERP-002 | Build InterpreterForm component | Message input, platform/context selectors | P0 |
-| INTERP-003 | Build PlatformSelector component | Dropdown/buttons for platform selection | P0 |
-| INTERP-004 | Build ContextSelector component | Relationship context radio/select | P0 |
-| INTERP-005 | Create interpret API route | POST /api/interpret with validation | P0 |
-| INTERP-006 | Integrate OpenAI API | Configure client, create interpretation prompt | P0 |
-| INTERP-007 | Build interpreter service | Business logic for interpretation | P0 |
-| INTERP-008 | Build InterpretResult component | Display tone, meaning, probabilities | P0 |
-| INTERP-009 | Add sarcasm probability meter | Visual indicator (0-100%) | P1 |
-| INTERP-010 | Add passive-aggression meter | Visual indicator (0-100%) | P1 |
-| INTERP-011 | Build red flag indicators | Warning badges for concerning patterns | P1 |
-| INTERP-012 | Add suggested response tone | Optional recommendation | P2 |
-| INTERP-013 | Implement streaming response | Use Vercel AI SDK for streaming | P1 |
-| INTERP-014 | Add loading states | Skeleton loaders, progress indicators | P0 |
-| INTERP-015 | Link detected emojis | Link to emoji detail pages in results | P1 |
+| Ticket ID  | Title                            | Description                                    | Priority |
+| ---------- | -------------------------------- | ---------------------------------------------- | -------- |
+| INTERP-001 | Create interpreter page          | Base page layout at /interpreter               | P0       |
+| INTERP-002 | Build InterpreterForm component  | Message input, platform/context selectors      | P0       |
+| INTERP-003 | Build PlatformSelector component | Dropdown/buttons for platform selection        | P0       |
+| INTERP-004 | Build ContextSelector component  | Relationship context radio/select              | P0       |
+| INTERP-005 | Create interpret API route       | POST /api/interpret with validation            | P0       |
+| INTERP-006 | Integrate OpenAI API             | Configure client, create interpretation prompt | P0       |
+| INTERP-007 | Build interpreter service        | Business logic for interpretation              | P0       |
+| INTERP-008 | Build InterpretResult component  | Display tone, meaning, probabilities           | P0       |
+| INTERP-009 | Add sarcasm probability meter    | Visual indicator (0-100%)                      | P1       |
+| INTERP-010 | Add passive-aggression meter     | Visual indicator (0-100%)                      | P1       |
+| INTERP-011 | Build red flag indicators        | Warning badges for concerning patterns         | P1       |
+| INTERP-012 | Add suggested response tone      | Optional recommendation                        | P2       |
+| INTERP-013 | Implement streaming response     | Use Vercel AI SDK for streaming                | P1       |
+| INTERP-014 | Add loading states               | Skeleton loaders, progress indicators          | P0       |
+| INTERP-015 | Link detected emojis             | Link to emoji detail pages in results          | P1       |
 
 ### 5.7 Rate Limiting & Usage Tracking
 
 #### Phase 1 (Client-Side)
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| RATE-001 | Implement localStorage rate limiter | Client-side rate limiting (3/day) with date tracking | P0 |
-| RATE-002 | Build UsageCounter component | Show remaining free interpretations | P0 |
-| RATE-003 | Create upgrade prompt | Show when limit reached (links to pricing) | P0 |
-| RATE-004 | Handle rate limit UI | Disable form, show countdown to reset | P0 |
+
+| Ticket ID | Title                               | Description                                          | Priority |
+| --------- | ----------------------------------- | ---------------------------------------------------- | -------- |
+| RATE-001  | Implement localStorage rate limiter | Client-side rate limiting (3/day) with date tracking | P0       |
+| RATE-002  | Build UsageCounter component        | Show remaining free interpretations                  | P0       |
+| RATE-003  | Create upgrade prompt               | Show when limit reached (links to pricing)           | P0       |
+| RATE-004  | Handle rate limit UI                | Disable form, show countdown to reset                | P0       |
 
 #### Phase 2 (Server-Side)
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| RATE-P2-001 | Implement Redis rate limiter | Server-side rate limiting via Upstash | P2 |
-| RATE-P2-002 | Add authenticated usage tracking | Track by Supabase user ID | P2 |
-| RATE-P2-003 | Implement premium bypass | Unlimited for paid subscribers | P2 |
+
+| Ticket ID   | Title                            | Description                           | Priority |
+| ----------- | -------------------------------- | ------------------------------------- | -------- |
+| RATE-P2-001 | Implement Redis rate limiter     | Server-side rate limiting via Upstash | P2       |
+| RATE-P2-002 | Add authenticated usage tracking | Track by Neon DB user ID              | P2       |
+| RATE-P2-003 | Implement premium bypass         | Unlimited for paid subscribers        | P2       |
 
 ### 5.8 Subscription & Payments (Phase 2)
 
-*Deferred to Phase 2. Phase 1 is free with client-side rate limiting.*
+_Deferred to Phase 2. Phase 1 is free with client-side rate limiting._
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| PAY-001 | Configure Stripe | Set up Stripe client, products, prices | P2 |
-| PAY-002 | Create subscription Supabase table | Subscription table with RLS policies | P2 |
-| PAY-003 | Build pricing page | Display pricing tiers, feature comparison | P1 |
-| PAY-004 | Create checkout session endpoint | POST /api/checkout with Supabase user | P2 |
-| PAY-005 | Build checkout redirect flow | Redirect to Stripe Checkout | P2 |
-| PAY-006 | Create Stripe webhook handler | Handle subscription events, update Supabase | P2 |
-| PAY-007 | Handle subscription activation | Update Supabase subscription status | P2 |
-| PAY-008 | Handle subscription cancellation | Update status, retain access until period end | P2 |
-| PAY-009 | Build subscription management UI | Cancel, update payment method | P2 |
-| PAY-010 | Create customer portal redirect | Link to Stripe billing portal | P2 |
-| PAY-011 | Add subscription status checks | Middleware/utility for feature gating | P2 |
-| PAY-012 | Implement trial period | 7-day free trial option | P2 |
+| Ticket ID | Title                             | Description                                   | Priority |
+| --------- | --------------------------------- | --------------------------------------------- | -------- |
+| PAY-001   | Configure Stripe                  | Set up Stripe client, products, prices        | P2       |
+| PAY-002   | Create subscription Neon DB table | Subscription table with RLS policies          | P2       |
+| PAY-003   | Build pricing page                | Display pricing tiers, feature comparison     | P1       |
+| PAY-004   | Create checkout session endpoint  | POST /api/checkout with Neon DB user          | P2       |
+| PAY-005   | Build checkout redirect flow      | Redirect to Stripe Checkout                   | P2       |
+| PAY-006   | Create Stripe webhook handler     | Handle subscription events, update Neon DB    | P2       |
+| PAY-007   | Handle subscription activation    | Update Neon DB subscription status            | P2       |
+| PAY-008   | Handle subscription cancellation  | Update status, retain access until period end | P2       |
+| PAY-009   | Build subscription management UI  | Cancel, update payment method                 | P2       |
+| PAY-010   | Create customer portal redirect   | Link to Stripe billing portal                 | P2       |
+| PAY-011   | Add subscription status checks    | Middleware/utility for feature gating         | P2       |
+| PAY-012   | Implement trial period            | 7-day free trial option                       | P2       |
 
-*Note: PAY-003 (Pricing Page) is P1 as it's needed for Phase 1 to show future plans.*
+_Note: PAY-003 (Pricing Page) is P1 as it's needed for Phase 1 to show future plans._
 
 ### 5.9 User Dashboard (Phase 2)
 
-*Deferred to Phase 2. Requires authentication.*
+_Deferred to Phase 2. Requires authentication._
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| DASH-001 | Create dashboard layout | Sidebar navigation, responsive | P2 |
-| DASH-002 | Build dashboard home page | Usage stats, quick actions | P2 |
-| DASH-003 | Build interpretation history page | List past interpretations from Supabase | P2 |
-| DASH-004 | Add history pagination | Load more/infinite scroll | P2 |
-| DASH-005 | Build history detail view | Expand to see full interpretation | P2 |
-| DASH-006 | Create settings page | Profile, preferences, subscription | P2 |
-| DASH-007 | Add delete account functionality | GDPR compliance, Supabase data deletion | P2 |
+| Ticket ID | Title                             | Description                            | Priority |
+| --------- | --------------------------------- | -------------------------------------- | -------- |
+| DASH-001  | Create dashboard layout           | Sidebar navigation, responsive         | P2       |
+| DASH-002  | Build dashboard home page         | Usage stats, quick actions             | P2       |
+| DASH-003  | Build interpretation history page | List past interpretations from Neon DB | P2       |
+| DASH-004  | Add history pagination            | Load more/infinite scroll              | P2       |
+| DASH-005  | Build history detail view         | Expand to see full interpretation      | P2       |
+| DASH-006  | Create settings page              | Profile, preferences, subscription     | P2       |
+| DASH-007  | Add delete account functionality  | GDPR compliance, Neon DB data deletion | P2       |
 
 ### 5.10 SEO & Marketing Pages
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| SEO-001 | Configure metadata defaults | Title, description, OG tags in layout | P0 |
-| SEO-002 | Create dynamic sitemap | Generate sitemap.xml for all emoji pages | P0 |
-| SEO-003 | Create robots.txt | Configure crawler directives | P0 |
-| SEO-004 | Build homepage | Hero, features, CTA, sample emojis | P0 |
-| SEO-005 | Build about page | Mission, how it works, trust signals | P1 |
-| SEO-006 | Create category index pages | /emoji/category/[category] | P1 |
-| SEO-007 | Add canonical URLs | Prevent duplicate content issues | P0 |
-| SEO-008 | Implement breadcrumbs | With Schema.org markup | P1 |
-| SEO-009 | Add internal linking strategy | Related emojis, combos, categories | P1 |
-| SEO-010 | Create 404 page | Custom not found with search | P1 |
-| SEO-011 | Create search page | /search with results | P2 |
+| Ticket ID | Title                         | Description                              | Priority |
+| --------- | ----------------------------- | ---------------------------------------- | -------- |
+| SEO-001   | Configure metadata defaults   | Title, description, OG tags in layout    | P0       |
+| SEO-002   | Create dynamic sitemap        | Generate sitemap.xml for all emoji pages | P0       |
+| SEO-003   | Create robots.txt             | Configure crawler directives             | P0       |
+| SEO-004   | Build homepage                | Hero, features, CTA, sample emojis       | P0       |
+| SEO-005   | Build about page              | Mission, how it works, trust signals     | P1       |
+| SEO-006   | Create category index pages   | /emoji/category/[category]               | P1       |
+| SEO-007   | Add canonical URLs            | Prevent duplicate content issues         | P0       |
+| SEO-008   | Implement breadcrumbs         | With Schema.org markup                   | P1       |
+| SEO-009   | Add internal linking strategy | Related emojis, combos, categories       | P1       |
+| SEO-010   | Create 404 page               | Custom not found with search             | P1       |
+| SEO-011   | Create search page            | /search with results                     | P2       |
 
 ### 5.11 Share & Viral Features
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| SHARE-001 | Build ShareButtons component | Twitter, Facebook, copy link | P1 |
-| SHARE-002 | Create shareable interpretation cards | Visual card for sharing results | P2 |
-| SHARE-003 | Generate share images | Dynamic image generation for results | P2 |
-| SHARE-004 | Add share tracking | Analytics for shared content | P2 |
+| Ticket ID | Title                                 | Description                          | Priority |
+| --------- | ------------------------------------- | ------------------------------------ | -------- |
+| SHARE-001 | Build ShareButtons component          | Twitter, Facebook, copy link         | P1       |
+| SHARE-002 | Create shareable interpretation cards | Visual card for sharing results      | P2       |
+| SHARE-003 | Generate share images                 | Dynamic image generation for results | P2       |
+| SHARE-004 | Add share tracking                    | Analytics for shared content         | P2       |
 
 ### 5.12 Analytics & Monitoring
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| ANAL-001 | Set up Vercel Analytics | Basic web analytics | P0 |
-| ANAL-002 | Integrate PostHog | Product analytics, feature flags | P1 |
-| ANAL-003 | Set up Sentry | Error tracking, performance monitoring | P0 |
-| ANAL-004 | Create analytics service | Track custom events | P1 |
-| ANAL-005 | Build admin analytics dashboard | View counts, popular emojis | P2 |
-| ANAL-006 | Track conversion events | Upgrade clicks, successful payments | P1 |
+| Ticket ID | Title                           | Description                            | Priority |
+| --------- | ------------------------------- | -------------------------------------- | -------- |
+| ANAL-001  | Set up Vercel Analytics         | Basic web analytics                    | P0       |
+| ANAL-002  | Integrate PostHog               | Product analytics, feature flags       | P1       |
+| ANAL-003  | Set up Sentry                   | Error tracking, performance monitoring | P0       |
+| ANAL-004  | Create analytics service        | Track custom events                    | P1       |
+| ANAL-005  | Build admin analytics dashboard | View counts, popular emojis            | P2       |
+| ANAL-006  | Track conversion events         | Upgrade clicks, successful payments    | P1       |
 
 ### 5.13 Performance & Caching
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| PERF-001 | Configure ISR for emoji pages | Revalidate on content updates | P0 |
-| PERF-002 | Implement Redis caching | Cache emoji data, interpretations | P1 |
-| PERF-003 | Optimize images | Use next/image, WebP, lazy loading | P0 |
-| PERF-004 | Add service worker | Offline emoji page caching | P2 |
-| PERF-005 | Implement API response caching | Cache-Control headers | P1 |
-| PERF-006 | Bundle optimization | Analyze and reduce JS bundle | P1 |
+| Ticket ID | Title                          | Description                        | Priority |
+| --------- | ------------------------------ | ---------------------------------- | -------- |
+| PERF-001  | Configure ISR for emoji pages  | Revalidate on content updates      | P0       |
+| PERF-002  | Implement Redis caching        | Cache emoji data, interpretations  | P1       |
+| PERF-003  | Optimize images                | Use next/image, WebP, lazy loading | P0       |
+| PERF-004  | Add service worker             | Offline emoji page caching         | P2       |
+| PERF-005  | Implement API response caching | Cache-Control headers              | P1       |
+| PERF-006  | Bundle optimization            | Analyze and reduce JS bundle       | P1       |
 
 ### 5.14 Testing (100% Coverage Required)
 
 **CRITICAL:** All code must have 100% test coverage. No exceptions. No merges without passing tests.
 
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| TEST-001 | Set up Bun test with coverage enforcement | Configure 100% coverage threshold, fail CI if not met | P0 |
-| TEST-002 | Set up Playwright for E2E | E2E test configuration (runs via bun) | P0 |
-| TEST-003 | Write UI component tests | Test all components in /components/ui/ | P0 |
-| TEST-004 | Write emoji component tests | Test all emoji-related components | P0 |
-| TEST-005 | Write interpreter component tests | Test all interpreter components | P0 |
-| TEST-006 | Write layout component tests | Test header, footer, nav components | P0 |
-| TEST-007 | Write emoji data loader tests | Test JSON loading and validation | P0 |
-| TEST-008 | Write rate limit utility tests | Test localStorage rate limiting logic | P0 |
-| TEST-009 | Write utility function tests | Test all functions in /lib/utils.ts | P0 |
-| TEST-010 | Write hook tests | Test all custom React hooks | P0 |
-| TEST-011 | Write API route tests | Test all API endpoints | P0 |
-| TEST-012 | Create E2E: Homepage flow | Navigate, verify hero, search, featured emojis | P0 |
-| TEST-013 | Create E2E: Emoji page flow | Navigate to emoji, verify all sections render | P0 |
-| TEST-014 | Create E2E: Interpreter flow | Submit message, verify results display | P0 |
-| TEST-015 | Create E2E: Rate limit flow | Exhaust free uses, verify limit message | P0 |
-| TEST-016 | Create E2E: Search flow | Search emojis, verify results | P0 |
-| TEST-017 | Set up CI pipeline | GitHub Actions: lint, typecheck, test (100% coverage), E2E | P0 |
-| TEST-018 | Add pre-commit hooks | Block commits without passing tests | P0 |
-| TEST-019 | Create test utilities | Mock factories, test helpers, fixtures | P0 |
+| Ticket ID | Title                                     | Description                                                | Priority |
+| --------- | ----------------------------------------- | ---------------------------------------------------------- | -------- |
+| TEST-001  | Set up Bun test with coverage enforcement | Configure 100% coverage threshold, fail CI if not met      | P0       |
+| TEST-002  | Set up Playwright for E2E                 | E2E test configuration (runs via bun)                      | P0       |
+| TEST-003  | Write UI component tests                  | Test all components in /components/ui/                     | P0       |
+| TEST-004  | Write emoji component tests               | Test all emoji-related components                          | P0       |
+| TEST-005  | Write interpreter component tests         | Test all interpreter components                            | P0       |
+| TEST-006  | Write layout component tests              | Test header, footer, nav components                        | P0       |
+| TEST-007  | Write emoji data loader tests             | Test JSON loading and validation                           | P0       |
+| TEST-008  | Write rate limit utility tests            | Test localStorage rate limiting logic                      | P0       |
+| TEST-009  | Write utility function tests              | Test all functions in /lib/utils.ts                        | P0       |
+| TEST-010  | Write hook tests                          | Test all custom React hooks                                | P0       |
+| TEST-011  | Write API route tests                     | Test all API endpoints                                     | P0       |
+| TEST-012  | Create E2E: Homepage flow                 | Navigate, verify hero, search, featured emojis             | P0       |
+| TEST-013  | Create E2E: Emoji page flow               | Navigate to emoji, verify all sections render              | P0       |
+| TEST-014  | Create E2E: Interpreter flow              | Submit message, verify results display                     | P0       |
+| TEST-015  | Create E2E: Rate limit flow               | Exhaust free uses, verify limit message                    | P0       |
+| TEST-016  | Create E2E: Search flow                   | Search emojis, verify results                              | P0       |
+| TEST-017  | Set up CI pipeline                        | GitHub Actions: lint, typecheck, test (100% coverage), E2E | P0       |
+| TEST-018  | Add pre-commit hooks                      | Block commits without passing tests                        | P0       |
+| TEST-019  | Create test utilities                     | Mock factories, test helpers, fixtures                     | P0       |
 
 ### 5.15 Deployment & Infrastructure
 
 #### Phase 1 (Static Site)
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| DEPLOY-001 | Configure Vercel project | Connect repo, set env vars (OpenAI only) | P0 |
-| DEPLOY-002 | Configure custom domain | DNS, SSL certificate | P0 |
-| DEPLOY-003 | Set up staging environment | Preview deployments for PRs | P0 |
-| DEPLOY-004 | Configure Sentry | Error tracking and monitoring | P0 |
-| DEPLOY-005 | Set up Vercel Analytics | Web analytics | P0 |
-| DEPLOY-006 | Create deployment documentation | Runbook for deployments | P1 |
+
+| Ticket ID  | Title                           | Description                              | Priority |
+| ---------- | ------------------------------- | ---------------------------------------- | -------- |
+| DEPLOY-001 | Configure Vercel project        | Connect repo, set env vars (OpenAI only) | P0       |
+| DEPLOY-002 | Configure custom domain         | DNS, SSL certificate                     | P0       |
+| DEPLOY-003 | Set up staging environment      | Preview deployments for PRs              | P0       |
+| DEPLOY-004 | Configure Sentry                | Error tracking and monitoring            | P0       |
+| DEPLOY-005 | Set up Vercel Analytics         | Web analytics                            | P0       |
+| DEPLOY-006 | Create deployment documentation | Runbook for deployments                  | P1       |
 
 #### Phase 2 (Database Integration)
-| Ticket ID | Title | Description | Priority |
-|-----------|-------|-------------|----------|
-| DEPLOY-P2-001 | Set up Supabase project | Create project, configure auth providers | P2 |
-| DEPLOY-P2-002 | Run Supabase migrations | Apply schema to production | P2 |
-| DEPLOY-P2-003 | Set up Upstash Redis | Provision for rate limiting | P2 |
-| DEPLOY-P2-004 | Configure Stripe webhooks | Production webhook endpoints | P2 |
-| DEPLOY-P2-005 | Set up database backups | Configure Supabase backup schedule | P2 |
+
+| Ticket ID     | Title                     | Description                              | Priority |
+| ------------- | ------------------------- | ---------------------------------------- | -------- |
+| DEPLOY-P2-001 | Set up Neon DB project    | Create project, configure auth providers | P2       |
+| DEPLOY-P2-002 | Run Neon DB migrations    | Apply schema to production               | P2       |
+| DEPLOY-P2-003 | Set up Upstash Redis      | Provision for rate limiting              | P2       |
+| DEPLOY-P2-004 | Configure Stripe webhooks | Production webhook endpoints             | P2       |
+| DEPLOY-P2-005 | Set up database backups   | Configure Neon DB backup schedule        | P2       |
 
 ---
 
@@ -865,47 +874,52 @@ export type RelationshipContext =
 
 ### 6.1 Phase 1 API Routes
 
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/interpret` | Interpret message (OpenAI) | No |
-| GET | `/api/emoji/search` | Search static emoji data | No |
+| Method | Endpoint            | Description                | Auth |
+| ------ | ------------------- | -------------------------- | ---- |
+| POST   | `/api/interpret`    | Interpret message (OpenAI) | No   |
+| GET    | `/api/emoji/search` | Search static emoji data   | No   |
 
-*Note: In Phase 1, emoji data is loaded from static JSON files. No emoji CRUD API needed.*
+_Note: In Phase 1, emoji data is loaded from static JSON files. No emoji CRUD API needed._
 
 ### 6.2 Phase 2 API Routes
 
-#### Authentication (Supabase)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/auth/callback` | Supabase OAuth callback | - |
+#### Authentication (Neon DB)
+
+| Method | Endpoint             | Description            | Auth |
+| ------ | -------------------- | ---------------------- | ---- |
+| POST   | `/api/auth/callback` | Neon DB OAuth callback | -    |
 
 #### Interpreter
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/interpret` | Interpret message (enhanced) | Optional |
-| GET | `/api/interpret/history` | Get user's history | User |
-| GET | `/api/interpret/[id]` | Get interpretation by ID | User |
+
+| Method | Endpoint                 | Description                  | Auth     |
+| ------ | ------------------------ | ---------------------------- | -------- |
+| POST   | `/api/interpret`         | Interpret message (enhanced) | Optional |
+| GET    | `/api/interpret/history` | Get user's history           | User     |
+| GET    | `/api/interpret/[id]`    | Get interpretation by ID     | User     |
 
 #### Subscription
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/checkout` | Create Stripe checkout session | User |
-| POST | `/api/webhooks/stripe` | Stripe webhook handler | Stripe |
-| GET | `/api/subscription` | Get subscription status | User |
-| POST | `/api/billing/portal` | Create Stripe billing portal session | User |
+
+| Method | Endpoint               | Description                          | Auth   |
+| ------ | ---------------------- | ------------------------------------ | ------ |
+| POST   | `/api/checkout`        | Create Stripe checkout session       | User   |
+| POST   | `/api/webhooks/stripe` | Stripe webhook handler               | Stripe |
+| GET    | `/api/subscription`    | Get subscription status              | User   |
+| POST   | `/api/billing/portal`  | Create Stripe billing portal session | User   |
 
 #### User
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| GET | `/api/user/me` | Get current user profile | User |
-| PUT | `/api/user/me` | Update user profile | User |
-| DELETE | `/api/user/me` | Delete account (GDPR) | User |
+
+| Method | Endpoint       | Description              | Auth |
+| ------ | -------------- | ------------------------ | ---- |
+| GET    | `/api/user/me` | Get current user profile | User |
+| PUT    | `/api/user/me` | Update user profile      | User |
+| DELETE | `/api/user/me` | Delete account (GDPR)    | User |
 
 #### Admin (Phase 2+)
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/admin/emoji` | Create emoji | Admin |
-| PUT | `/api/admin/emoji/[id]` | Update emoji | Admin |
+
+| Method | Endpoint                | Description  | Auth  |
+| ------ | ----------------------- | ------------ | ----- |
+| POST   | `/api/admin/emoji`      | Create emoji | Admin |
+| PUT    | `/api/admin/emoji/[id]` | Update emoji | Admin |
 | DELETE | `/api/admin/emoji/[id]` | Delete emoji | Admin |
 
 ---
@@ -914,52 +928,52 @@ export type RelationshipContext =
 
 ### 7.1 UI Components (src/components/ui/)
 
-| Component | Props | Description |
-|-----------|-------|-------------|
-| `Button` | variant, size, disabled, loading | Primary action button |
-| `Card` | className, children | Container with shadow |
-| `Input` | type, placeholder, error | Form input field |
-| `Select` | options, value, onChange | Dropdown selector |
-| `Badge` | variant, children | Status/label indicator |
-| `Collapsible` | open, onOpenChange, children | Expandable section |
-| `Dialog` | open, onOpenChange, children | Modal dialog |
-| `Toast` | message, type, duration | Notification toast |
-| `Skeleton` | width, height | Loading placeholder |
+| Component     | Props                            | Description            |
+| ------------- | -------------------------------- | ---------------------- |
+| `Button`      | variant, size, disabled, loading | Primary action button  |
+| `Card`        | className, children              | Container with shadow  |
+| `Input`       | type, placeholder, error         | Form input field       |
+| `Select`      | options, value, onChange         | Dropdown selector      |
+| `Badge`       | variant, children                | Status/label indicator |
+| `Collapsible` | open, onOpenChange, children     | Expandable section     |
+| `Dialog`      | open, onOpenChange, children     | Modal dialog           |
+| `Toast`       | message, type, duration          | Notification toast     |
+| `Skeleton`    | width, height                    | Loading placeholder    |
 
 ### 7.2 Emoji Components (src/components/emoji/)
 
-| Component | Props | Description |
-|-----------|-------|-------------|
-| `EmojiHeader` | emoji, onCopy | Main emoji display with metadata |
-| `EmojiTLDR` | tldr | Quick meaning summary |
-| `EmojiContextCard` | context, meaning, example, riskLevel | Single context meaning |
-| `EmojiPlatformPreview` | platforms[] | Platform render comparison |
-| `EmojiComboList` | combos[] | Related emoji combinations |
-| `EmojiWarnings` | warnings[] | Usage warnings |
-| `EmojiCopyButton` | emoji | Copy emoji to clipboard |
-| `EmojiSearch` | onSelect | Search and select emoji |
+| Component              | Props                                | Description                      |
+| ---------------------- | ------------------------------------ | -------------------------------- |
+| `EmojiHeader`          | emoji, onCopy                        | Main emoji display with metadata |
+| `EmojiTLDR`            | tldr                                 | Quick meaning summary            |
+| `EmojiContextCard`     | context, meaning, example, riskLevel | Single context meaning           |
+| `EmojiPlatformPreview` | platforms[]                          | Platform render comparison       |
+| `EmojiComboList`       | combos[]                             | Related emoji combinations       |
+| `EmojiWarnings`        | warnings[]                           | Usage warnings                   |
+| `EmojiCopyButton`      | emoji                                | Copy emoji to clipboard          |
+| `EmojiSearch`          | onSelect                             | Search and select emoji          |
 
 ### 7.3 Interpreter Components (src/components/interpreter/)
 
-| Component | Props | Description |
-|-----------|-------|-------------|
-| `InterpreterForm` | onSubmit, isLoading | Message input form |
-| `InterpreterResult` | result, isStreaming | Interpretation display |
-| `ContextSelector` | value, onChange | Relationship context picker |
-| `PlatformSelector` | value, onChange | Platform picker |
-| `UsageCounter` | remaining, max | Usage indicator |
-| `ProbabilityMeter` | label, value | Visual probability bar |
-| `RedFlagBadge` | indicator | Warning indicator |
+| Component           | Props               | Description                 |
+| ------------------- | ------------------- | --------------------------- |
+| `InterpreterForm`   | onSubmit, isLoading | Message input form          |
+| `InterpreterResult` | result, isStreaming | Interpretation display      |
+| `ContextSelector`   | value, onChange     | Relationship context picker |
+| `PlatformSelector`  | value, onChange     | Platform picker             |
+| `UsageCounter`      | remaining, max      | Usage indicator             |
+| `ProbabilityMeter`  | label, value        | Visual probability bar      |
+| `RedFlagBadge`      | indicator           | Warning indicator           |
 
 ### 7.4 Layout Components (src/components/layout/)
 
-| Component | Props | Description |
-|-----------|-------|-------------|
-| `Header` | user | Site header with nav |
-| `Footer` | - | Site footer |
-| `MobileNav` | isOpen, onClose | Mobile navigation drawer |
-| `Breadcrumbs` | items[] | Navigation breadcrumbs |
-| `Sidebar` | items[], activeItem | Dashboard sidebar |
+| Component     | Props               | Description              |
+| ------------- | ------------------- | ------------------------ |
+| `Header`      | user                | Site header with nav     |
+| `Footer`      | -                   | Site footer              |
+| `MobileNav`   | isOpen, onClose     | Mobile navigation drawer |
+| `Breadcrumbs` | items[]             | Navigation breadcrumbs   |
+| `Sidebar`     | items[], activeItem | Dashboard sidebar        |
 
 ---
 
@@ -968,47 +982,53 @@ export type RelationshipContext =
 ### 8.1 Phase 1 Pages
 
 #### Marketing Pages
-| Route | Page | Description |
-|-------|------|-------------|
-| `/` | Homepage | Hero, features, popular emojis, CTA |
-| `/about` | About | How it works, mission, team |
-| `/pricing` | Pricing | Plans comparison, FAQ (coming soon teaser) |
+
+| Route      | Page     | Description                                |
+| ---------- | -------- | ------------------------------------------ |
+| `/`        | Homepage | Hero, features, popular emojis, CTA        |
+| `/about`   | About    | How it works, mission, team                |
+| `/pricing` | Pricing  | Plans comparison, FAQ (coming soon teaser) |
 
 #### Emoji Pages (Static)
-| Route | Page | Description |
-|-------|------|-------------|
-| `/emoji/[slug]` | Emoji Detail | Full emoji information (SSG) |
-| `/emoji-combo/[slug]` | Combo Detail | Emoji combination explanation (SSG) |
-| `/emoji/category/[category]` | Category Index | Emojis by category (SSG) |
+
+| Route                        | Page           | Description                         |
+| ---------------------------- | -------------- | ----------------------------------- |
+| `/emoji/[slug]`              | Emoji Detail   | Full emoji information (SSG)        |
+| `/emoji-combo/[slug]`        | Combo Detail   | Emoji combination explanation (SSG) |
+| `/emoji/category/[category]` | Category Index | Emojis by category (SSG)            |
 
 #### Tool Pages
-| Route | Page | Description |
-|-------|------|-------------|
+
+| Route          | Page        | Description                                     |
+| -------------- | ----------- | ----------------------------------------------- |
 | `/interpreter` | Interpreter | AI interpretation tool (client-side rate limit) |
 
 #### Utility Pages
-| Route | Page | Description |
-|-------|------|-------------|
-| `/search` | Search Results | Client-side search across static data |
-| `/sitemap.xml` | Sitemap | Generated at build time |
-| `/404` | Not Found | Custom 404 with search |
+
+| Route          | Page           | Description                           |
+| -------------- | -------------- | ------------------------------------- |
+| `/search`      | Search Results | Client-side search across static data |
+| `/sitemap.xml` | Sitemap        | Generated at build time               |
+| `/404`         | Not Found      | Custom 404 with search                |
 
 ### 8.2 Phase 2 Pages (Database Required)
 
 #### Auth Pages
-| Route | Page | Description |
-|-------|------|-------------|
-| `/login` | Login | Supabase Auth sign in |
-| `/register` | Register | Supabase Auth sign up |
+
+| Route            | Page          | Description            |
+| ---------------- | ------------- | ---------------------- |
+| `/login`         | Login         | Neon DB Auth sign in   |
+| `/register`      | Register      | Neon DB Auth sign up   |
 | `/auth/callback` | Auth Callback | OAuth redirect handler |
 
 #### Dashboard Pages
-| Route | Page | Description |
-|-------|------|-------------|
-| `/dashboard` | Dashboard Home | Usage stats, quick actions |
-| `/dashboard/history` | History | Past interpretations from Supabase |
-| `/dashboard/settings` | Settings | Profile, preferences |
-| `/dashboard/billing` | Billing | Stripe subscription management |
+
+| Route                 | Page           | Description                       |
+| --------------------- | -------------- | --------------------------------- |
+| `/dashboard`          | Dashboard Home | Usage stats, quick actions        |
+| `/dashboard/history`  | History        | Past interpretations from Neon DB |
+| `/dashboard/settings` | Settings       | Profile, preferences              |
+| `/dashboard/billing`  | Billing        | Stripe subscription management    |
 
 ---
 
@@ -1019,6 +1039,7 @@ export type RelationshipContext =
 **Purpose:** AI-powered emoji interpretation
 
 **Implementation:**
+
 ```typescript
 // src/lib/openai.ts
 import OpenAI from 'openai';
@@ -1031,6 +1052,7 @@ export const INTERPRETATION_MODEL = 'gpt-4-turbo-preview';
 ```
 
 **Prompt Structure:**
+
 ```
 You are an expert at interpreting emoji usage in digital communication.
 Given a message with emojis, analyze:
@@ -1044,42 +1066,46 @@ Context: {platform}, {relationship}
 Message: {message}
 ```
 
-### 9.2 Supabase (Phase 2)
+### 9.2 Neon DB + NextAuth + Resend
 
-**Purpose:** Database, Authentication, Storage
+**Purpose:** Database (Neon Postgres + Drizzle ORM), Authentication (NextAuth v5), Email (Resend)
 
 **Implementation:**
+
 ```typescript
-// src/lib/supabase.ts
-import { createClient } from '@supabase/supabase-js';
-import type { Database } from '@/types/supabase';
+// src/lib/db/index.ts - Drizzle ORM client
+import { neon } from '@neondatabase/serverless';
+import { drizzle } from 'drizzle-orm/neon-http';
+import * as schema from './schema';
 
-// Client-side (browser)
-export const supabase = createClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-);
+export function getDb() {
+  const url = process.env.DATABASE_URL;
+  if (!url) return null;
+  return drizzle(neon(url), { schema });
+}
 
-// Server-side (API routes)
-export const supabaseAdmin = createClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+// src/lib/auth.ts - NextAuth v5 config
+import NextAuth from 'next-auth';
+import { DrizzleAdapter } from '@auth/drizzle-adapter';
+// Providers: Credentials, Google, GitHub
 ```
 
 **Auth Providers:**
+
 - Google OAuth
 - GitHub OAuth
-- Email/Password
-- Magic Link
+- Email/Password (bcryptjs)
+- Magic Link (via Resend)
 
 ### 9.3 Stripe (Phase 2)
 
 **Products:**
+
 - `price_monthly` - $9/month
 - `price_yearly` - $70/year
 
 **Webhook Events:**
+
 - `checkout.session.completed`
 - `customer.subscription.updated`
 - `customer.subscription.deleted`
@@ -1090,6 +1116,7 @@ export const supabaseAdmin = createClient<Database>(
 **Purpose:** Server-side rate limiting
 
 **Keys:**
+
 - `rate:ip:{ip}` - Rate limit by IP
 - `rate:user:{userId}` - Rate limit by authenticated user
 
@@ -1125,10 +1152,20 @@ NEXT_PUBLIC_APP_NAME=KnowYourEmoji
 # OpenAI
 OPENAI_API_KEY=sk-...
 
-# Supabase
-NEXT_PUBLIC_SUPABASE_URL=https://xxx.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJ...
-SUPABASE_SERVICE_ROLE_KEY=eyJ...
+# Neon DB
+DATABASE_URL=postgresql://...
+
+# Auth (NextAuth)
+AUTH_SECRET=...
+AUTH_URL=https://knowyouremoji.com
+GOOGLE_CLIENT_ID=...
+GOOGLE_CLIENT_SECRET=...
+GITHUB_CLIENT_ID=...
+GITHUB_CLIENT_SECRET=...
+
+# Email (Resend)
+RESEND_API_KEY=re_...
+RESEND_FROM_EMAIL=noreply@knowyouremoji.com
 
 # Redis (Upstash)
 UPSTASH_REDIS_REST_URL=https://...
@@ -1202,6 +1239,7 @@ bail = true
 Bun's built-in test runner provides Jest-compatible syntax with faster execution.
 
 **Configuration:** `bunfig.toml`
+
 ```toml
 [test]
 coverage = true
@@ -1211,6 +1249,7 @@ coverageReporters = ["text", "lcov", "html"]
 ```
 
 **Test File Structure:**
+
 ```
 tests/
 ├── unit/
@@ -1246,6 +1285,7 @@ tests/
 ```
 
 **Example Component Test:**
+
 ```typescript
 import { describe, it, expect } from 'bun:test';
 import { render, screen } from '@testing-library/react';
@@ -1278,6 +1318,7 @@ describe('EmojiHeader', () => {
 ```
 
 **Example Utility Test:**
+
 ```typescript
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 import { RateLimiter } from '@/lib/rate-limit';
@@ -1316,17 +1357,20 @@ describe('RateLimiter', () => {
 ### 11.2 Integration Tests
 
 **API Route Tests (Phase 1):**
+
 - Interpret endpoint: valid request, invalid request, missing fields
 - Emoji endpoint: get by slug, not found, search
 
 **API Route Tests (Phase 2):**
-- Auth flows with Supabase
+
+- Auth flows with Neon DB
 - Subscription status checks
 - Webhook processing
 
 ### 11.3 E2E Tests (Playwright)
 
 **Phase 1 Critical Paths:**
+
 1. Homepage loads with featured emojis
 2. Emoji search returns results
 3. Emoji detail page renders all sections
@@ -1338,12 +1382,7 @@ describe('RateLimiter', () => {
 9. SEO metadata renders correctly
 10. 404 page displays for invalid routes
 
-**Phase 2 Critical Paths:**
-11. User can sign up via OAuth
-12. User can sign in/out
-13. User can subscribe via Stripe
-14. Subscribed user has unlimited interpretations
-15. User can view interpretation history
+**Phase 2 Critical Paths:** 11. User can sign up via OAuth 12. User can sign in/out 13. User can subscribe via Stripe 14. Subscribed user has unlimited interpretations 15. User can view interpretation history
 
 ---
 
@@ -1367,26 +1406,21 @@ describe('RateLimiter', () => {
 }
 ```
 
-### 12.2 Database Migrations (Phase 2)
+### 12.2 Database Migrations
 
 ```bash
-# Link to Supabase project
-bunx supabase link --project-ref <project-id>
+# Generate migration from schema changes
+bunx drizzle-kit generate
 
-# Create new migration
-bunx supabase migration new <migration-name>
+# Apply migrations to database
+bunx drizzle-kit push
 
-# Apply migrations locally
-bunx supabase db push
+# Open Drizzle Studio (database GUI)
+bunx drizzle-kit studio
 
-# Apply migrations to production
-bunx supabase db push --linked
-
-# Generate TypeScript types from schema
-bunx supabase gen types typescript --linked > src/types/supabase.ts
-
-# Reset local database
-bunx supabase db reset
+# Or apply SQL migrations manually
+psql $DATABASE_URL < migrations/002_create_auth_tables.sql
+psql $DATABASE_URL < migrations/003_create_interpretations.sql
 ```
 
 ### 12.3 Build Commands
@@ -1443,10 +1477,9 @@ bun run scripts/generate-emoji-pages.ts
     "validate": "bun run typecheck && bun run lint && bun run test",
     "validate:emoji": "bun run scripts/validate-emoji-data.ts",
     "generate:emoji": "bun run scripts/generate-emoji-content.ts",
-    "db:migrate": "supabase migration new",
-    "db:push": "supabase db push",
-    "db:types": "supabase gen types typescript --linked > src/types/supabase.ts",
-    "db:studio": "supabase studio",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
     "prepare": "husky install"
   }
 }
@@ -1457,6 +1490,7 @@ bun run scripts/generate-emoji-pages.ts
 ### 12.5 Pre-deployment Checklist
 
 #### Phase 1
+
 - [ ] Bun version specified in package.json engines
 - [ ] All tests passing with 100% coverage (`bun test`)
 - [ ] E2E tests passing (`bun run test:e2e`)
@@ -1471,9 +1505,10 @@ bun run scripts/generate-emoji-pages.ts
 - [ ] Vercel configured with Bun install/build commands
 
 #### Phase 2 (Additional)
-- [ ] Supabase project created and configured
-- [ ] Supabase migrations applied
-- [ ] Supabase Auth providers configured
+
+- [ ] Neon DB project created and configured
+- [ ] Neon DB migrations applied
+- [ ] Neon DB Auth providers configured
 - [ ] Upstash Redis provisioned
 - [ ] Stripe products/prices created
 - [ ] Stripe webhooks configured
@@ -1483,22 +1518,24 @@ bun run scripts/generate-emoji-pages.ts
 
 ## Appendix A: Ticket Priority Legend
 
-| Priority | Phase | Description |
-|----------|-------|-------------|
-| P0 | Phase 1 | Critical for MVP/Beta launch |
-| P1 | Phase 1 | Important for Phase 1 completeness |
-| P2 | Phase 2 | Requires database (Supabase) |
+| Priority | Phase   | Description                        |
+| -------- | ------- | ---------------------------------- |
+| P0       | Phase 1 | Critical for MVP/Beta launch       |
+| P1       | Phase 1 | Important for Phase 1 completeness |
+| P2       | Phase 2 | Requires database (Neon DB)        |
 
 ## Appendix B: Estimation Notes
 
 All tickets are scoped to 1-2 hours of focused work. If a ticket exceeds 2 hours, it should be broken down further.
 
 **Phase 1 (MVP/Beta):**
+
 - P0 tickets: ~60
 - P1 tickets: ~15
 - Total Phase 1: ~75 tickets
 
 **Phase 2 (Growth):**
+
 - P2 tickets: ~45
 - Total Phase 2: ~45 tickets
 
@@ -1507,6 +1544,7 @@ All tickets are scoped to 1-2 hours of focused work. If a ticket exceeds 2 hours
 ## Appendix C: Phase Summary
 
 ### Phase 1 - Static Architecture
+
 - No database required
 - All emoji content as JSON files
 - Client-side rate limiting (localStorage)
@@ -1515,7 +1553,8 @@ All tickets are scoped to 1-2 hours of focused work. If a ticket exceeds 2 hours
 - SEO-optimized static pages
 
 ### Phase 2 - Database Integration
-- Supabase for PostgreSQL + Auth
+
+- Neon DB for PostgreSQL + Auth
 - User accounts and profiles
 - Stripe subscriptions
 - Server-side rate limiting (Redis)

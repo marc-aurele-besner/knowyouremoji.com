@@ -15,7 +15,9 @@ const window = new GlobalWindow({
   settings: { disableCSSFileLoading: true },
 });
 
-function patchWindowConstructors(w: { Error?: unknown; TypeError?: unknown; SyntaxError?: unknown } | null | undefined): void {
+function patchWindowConstructors(
+  w: { Error?: unknown; TypeError?: unknown; SyntaxError?: unknown } | null | undefined
+): void {
   if (!w) return;
   // happy-dom's SelectorParser uses this.window.SyntaxError when validating CSS selectors
   w.Error = NativeError;

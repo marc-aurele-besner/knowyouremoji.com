@@ -159,40 +159,40 @@ describe('env configuration', () => {
       expect(env.upstashRedisRestToken).toBeUndefined();
     });
 
-    it('should return supabaseUrl when set', () => {
-      process.env.NEXT_PUBLIC_SUPABASE_URL = 'https://test.supabase.co';
+    it('should return authSecret when set', () => {
+      process.env.AUTH_SECRET = 'test-auth-secret';
       const env = getEnv();
-      expect(env.supabaseUrl).toBe('https://test.supabase.co');
+      expect(env.authSecret).toBe('test-auth-secret');
     });
 
-    it('should return undefined supabaseUrl when not set', () => {
-      delete process.env.NEXT_PUBLIC_SUPABASE_URL;
+    it('should return undefined authSecret when not set', () => {
+      delete process.env.AUTH_SECRET;
       const env = getEnv();
-      expect(env.supabaseUrl).toBeUndefined();
+      expect(env.authSecret).toBeUndefined();
     });
 
-    it('should return supabaseAnonKey when set', () => {
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY = 'test-anon-key';
+    it('should return resendApiKey when set', () => {
+      process.env.RESEND_API_KEY = 'test-resend-key';
       const env = getEnv();
-      expect(env.supabaseAnonKey).toBe('test-anon-key');
+      expect(env.resendApiKey).toBe('test-resend-key');
     });
 
-    it('should return undefined supabaseAnonKey when not set', () => {
-      delete process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    it('should return undefined resendApiKey when not set', () => {
+      delete process.env.RESEND_API_KEY;
       const env = getEnv();
-      expect(env.supabaseAnonKey).toBeUndefined();
+      expect(env.resendApiKey).toBeUndefined();
     });
 
-    it('should return supabaseServiceRoleKey when set', () => {
-      process.env.SUPABASE_SERVICE_ROLE_KEY = 'test-service-role-key';
+    it('should return resendFromEmail when set', () => {
+      process.env.RESEND_FROM_EMAIL = 'noreply@test.com';
       const env = getEnv();
-      expect(env.supabaseServiceRoleKey).toBe('test-service-role-key');
+      expect(env.resendFromEmail).toBe('noreply@test.com');
     });
 
-    it('should return undefined supabaseServiceRoleKey when not set', () => {
-      delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+    it('should return undefined resendFromEmail when not set', () => {
+      delete process.env.RESEND_FROM_EMAIL;
       const env = getEnv();
-      expect(env.supabaseServiceRoleKey).toBeUndefined();
+      expect(env.resendFromEmail).toBeUndefined();
     });
 
     it('should return slackBotToken when set', () => {
