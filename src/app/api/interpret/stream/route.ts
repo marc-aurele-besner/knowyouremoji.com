@@ -105,11 +105,23 @@ export async function POST(
 ): Promise<NextResponse<InterpretErrorResponse> | Response> {
   try {
     // Server-side rate limiting (uses user ID for authenticated, IP for anonymous)
-    const { identifier, config } = await getRateLimitIdentifier(request.headers);
-    const rateLimitResult = await checkRateLimit(identifier, config);
+    const { identifier, config, isPremium } = await getRateLimitIdentifier(request.headers);
 
-    if (!rateLimitResult.allowed) {
-      return createErrorResponse('Rate limit exceeded. Please try again later.', 429);
+    // Premium subscribers bypass rate limiting entirely
+    let rateLimitResult;
+    if (isPremium) {
+      rateLimitResult = {
+        allowed: true,
+        remaining: Infinity,
+        limit: Infinity,
+        resetAt: 0,
+      };
+    } else {
+      rateLimitResult = await checkRateLimit(identifier, config);
+
+      if (!rateLimitResult.allowed) {
+        return createErrorResponse('Rate limit exceeded. Please try again later.', 429);
+      }
     }
 
     // Parse request body
