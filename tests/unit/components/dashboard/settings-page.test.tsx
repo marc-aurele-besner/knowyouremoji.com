@@ -319,4 +319,163 @@ describe('SettingsPage', () => {
     });
     expect(screen.getByText(/settings not available/i)).toBeInTheDocument();
   });
+
+  it('renders delete account button', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+  });
+
+  it('renders danger zone section', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/danger zone/i)).toBeInTheDocument();
+    });
+  });
+
+  it('shows delete confirmation when delete button is clicked', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    expect(screen.getByText(/this action is irreversible/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText('DELETE')).toBeInTheDocument();
+  });
+
+  it('disables permanently delete button until DELETE is typed', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    const confirmButton = screen.getByRole('button', { name: /permanently delete account/i });
+    expect(confirmButton).toBeDisabled();
+    fireEvent.change(screen.getByPlaceholderText('DELETE'), { target: { value: 'DELETE' } });
+    expect(confirmButton).not.toBeDisabled();
+  });
+
+  it('cancels delete confirmation', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    expect(screen.getByText(/this action is irreversible/i)).toBeInTheDocument();
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /cancel/i }));
+    });
+    expect(screen.queryByText(/this action is irreversible/i)).not.toBeInTheDocument();
+  });
+
+  it('deletes account successfully', async () => {
+    mockFetch.mockImplementation(((url: string, options?: RequestInit) => {
+      if (url === '/api/auth/delete-account' && options?.method === 'DELETE') {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({ success: true }),
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({ displayName: 'Test User', createdAt: '2026-01-15T10:00:00.000Z' }),
+      });
+    }) as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    fireEvent.change(screen.getByPlaceholderText('DELETE'), { target: { value: 'DELETE' } });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /permanently delete account/i }));
+    });
+    await waitFor(() => {
+      expect(mockFetch).toHaveBeenCalledWith('/api/auth/delete-account', { method: 'DELETE' });
+      expect(mockSignOut).toHaveBeenCalledWith({ callbackUrl: '/' });
+    });
+  });
+
+  it('shows error when account deletion fails', async () => {
+    mockFetch.mockImplementation(((url: string, options?: RequestInit) => {
+      if (url === '/api/auth/delete-account' && options?.method === 'DELETE') {
+        return Promise.resolve({
+          ok: false,
+          json: () => Promise.resolve({ error: 'Deletion failed' }),
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({ displayName: 'Test User', createdAt: '2026-01-15T10:00:00.000Z' }),
+      });
+    }) as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    fireEvent.change(screen.getByPlaceholderText('DELETE'), { target: { value: 'DELETE' } });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /permanently delete account/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText('Deletion failed')).toBeInTheDocument();
+    });
+  });
+
+  it('shows error when delete request throws', async () => {
+    mockFetch.mockImplementation(((url: string, options?: RequestInit) => {
+      if (url === '/api/auth/delete-account' && options?.method === 'DELETE') {
+        return Promise.reject(new Error('Network error'));
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({ displayName: 'Test User', createdAt: '2026-01-15T10:00:00.000Z' }),
+      });
+    }) as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('button', { name: /delete account/i })).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /delete account/i }));
+    });
+    fireEvent.change(screen.getByPlaceholderText('DELETE'), { target: { value: 'DELETE' } });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /permanently delete account/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/failed to delete account/i)).toBeInTheDocument();
+    });
+  });
 });

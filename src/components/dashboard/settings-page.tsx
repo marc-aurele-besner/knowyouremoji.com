@@ -13,6 +13,9 @@ function SettingsPage() {
   const [isSaving, setIsSaving] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
   const [createdAt, setCreatedAt] = useState<string | null>(null);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [deleteConfirmText, setDeleteConfirmText] = useState('');
 
   const isLoading = status === 'loading';
   const isAuthenticated = status === 'authenticated';
@@ -72,6 +75,31 @@ function SettingsPage() {
       await signOut({ callbackUrl: '/' });
     } catch {
       setError('Failed to sign out');
+    }
+  };
+
+  const handleDeleteAccount = async () => {
+    if (deleteConfirmText !== 'DELETE') return;
+
+    setIsDeleting(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/auth/delete-account', {
+        method: 'DELETE',
+      });
+
+      if (!response.ok) {
+        const data = await response.json();
+        setError(data.error || 'Failed to delete account');
+        return;
+      }
+
+      await signOut({ callbackUrl: '/' });
+    } catch {
+      setError('Failed to delete account');
+    } finally {
+      setIsDeleting(false);
     }
   };
 
@@ -233,6 +261,74 @@ function SettingsPage() {
                   Sign Out
                 </Button>
               </div>
+            </CardContent>
+          </Card>
+
+          {/* Danger Zone */}
+          <Card className="border-red-200 dark:border-red-800">
+            <CardHeader>
+              <CardTitle className="text-red-600 dark:text-red-400">Danger Zone</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {!showDeleteConfirm ? (
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-medium text-gray-900 dark:text-white">Delete Account</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Permanently delete your account and all associated data.
+                    </p>
+                  </div>
+                  <Button variant="destructive" onClick={() => setShowDeleteConfirm(true)}>
+                    Delete Account
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div
+                    className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
+                    role="alert"
+                  >
+                    This action is irreversible. All your data, including interpretation history,
+                    will be permanently deleted.
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="deleteConfirm"
+                      className="block text-sm font-medium text-gray-700 dark:text-gray-200"
+                    >
+                      Type <strong>DELETE</strong> to confirm
+                    </label>
+                    <Input
+                      id="deleteConfirm"
+                      type="text"
+                      value={deleteConfirmText}
+                      onChange={(e) => setDeleteConfirmText(e.target.value)}
+                      placeholder="DELETE"
+                      disabled={isDeleting}
+                    />
+                  </div>
+                  <div className="flex gap-3">
+                    <Button
+                      variant="destructive"
+                      onClick={handleDeleteAccount}
+                      loading={isDeleting}
+                      disabled={deleteConfirmText !== 'DELETE' || isDeleting}
+                    >
+                      {isDeleting ? 'Deleting...' : 'Permanently Delete Account'}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      onClick={() => {
+                        setShowDeleteConfirm(false);
+                        setDeleteConfirmText('');
+                      }}
+                      disabled={isDeleting}
+                    >
+                      Cancel
+                    </Button>
+                  </div>
+                </div>
+              )}
             </CardContent>
           </Card>
         </>
