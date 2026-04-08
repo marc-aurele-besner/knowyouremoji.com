@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
-import { render, screen, cleanup, waitFor, act } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
 // Mock next-auth/react
 mock.module('next-auth/react', () => ({
@@ -184,6 +184,56 @@ describe('HistoryPage', () => {
     });
     await waitFor(() => {
       expect(screen.getByRole('button', { name: /next/i })).toBeDisabled();
+    });
+  });
+
+  it('clicking next advances to page 2', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /next/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
+    });
+  });
+
+  it('clicking previous goes back to page 1', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: true }),
+      } as never)
+    );
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
+    });
+    // Go to page 2
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /next/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 2/i)).toBeInTheDocument();
+    });
+    // Go back to page 1
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /previous/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/page 1/i)).toBeInTheDocument();
     });
   });
 

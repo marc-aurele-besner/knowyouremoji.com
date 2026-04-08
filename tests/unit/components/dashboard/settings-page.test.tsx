@@ -271,6 +271,44 @@ describe('SettingsPage', () => {
     expect(screen.queryByText(/profile updated successfully/i)).not.toBeInTheDocument();
   });
 
+  it('shows loading skeleton when session is loading', async () => {
+    mockUseSession.mockReturnValue({
+      data: null,
+      status: 'loading' as const,
+    } as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    // Loading skeletons render animated pulse divs
+    const pulseElements = document.querySelectorAll('.animate-pulse');
+    expect(pulseElements.length).toBeGreaterThan(0);
+  });
+
+  it('handles save throwing an exception', async () => {
+    mockFetch.mockImplementation(((url: string) => {
+      if (url === '/api/auth/update-profile') {
+        return Promise.reject(new Error('Network error'));
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({ displayName: 'Test User', createdAt: '2026-01-15T10:00:00.000Z' }),
+      });
+    }) as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByDisplayValue('Test User')).toBeInTheDocument();
+    });
+    await act(async () => {
+      fireEvent.click(screen.getByRole('button', { name: /save changes/i }));
+    });
+    await waitFor(() => {
+      expect(screen.getByText(/failed to save profile/i)).toBeInTheDocument();
+    });
+  });
+
   it('shows not available when unauthenticated', async () => {
     mockUseSession.mockReturnValue({
       data: null,
