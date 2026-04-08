@@ -40,6 +40,10 @@ describe('Dashboard Components barrel export (index.ts)', () => {
     expect(dashboardComponents.HistoryPage).toBeDefined();
   });
 
+  it('exports ProfilePage component', () => {
+    expect(dashboardComponents.ProfilePage).toBeDefined();
+  });
+
   it('exports SettingsPage component', () => {
     expect(dashboardComponents.SettingsPage).toBeDefined();
   });
@@ -48,9 +52,9 @@ describe('Dashboard Components barrel export (index.ts)', () => {
     expect(dashboardComponents.HistoryDetailView).toBeDefined();
   });
 
-  it('exports the correct number of items (5 components)', () => {
+  it('exports the correct number of items (6 components)', () => {
     const exportedKeys = Object.keys(dashboardComponents);
-    expect(exportedKeys.length).toBe(5);
+    expect(exportedKeys.length).toBe(6);
   });
 
   it('all component exports are functions', () => {
@@ -59,6 +63,7 @@ describe('Dashboard Components barrel export (index.ts)', () => {
       'DashboardHome',
       'HistoryPage',
       'HistoryDetailView',
+      'ProfilePage',
       'SettingsPage',
     ];
     componentNames.forEach((name) => {
