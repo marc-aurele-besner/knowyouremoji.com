@@ -9,7 +9,6 @@
  */
 
 import { getRedisClient, isRedisConfigured } from '@/lib/cache';
-import { auth } from '@/lib/auth';
 
 // ============================================
 // CONSTANTS
@@ -197,8 +196,10 @@ export interface RateLimitIdentifier {
  * For anonymous users, falls back to IP address with the default limit.
  */
 export async function getRateLimitIdentifier(headers: Headers): Promise<RateLimitIdentifier> {
-  // Try to get the authenticated session
+  // Try to get the authenticated session (dynamic import to avoid pulling
+  // auth.ts into the module graph for tests that only need rate limiting)
   try {
+    const { auth } = await import('@/lib/auth');
     const session = await auth();
     if (session?.user?.id) {
       return {
