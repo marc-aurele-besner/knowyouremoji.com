@@ -56,7 +56,7 @@ describe('DELETE /api/auth/delete-account', () => {
   });
 
   it('returns 401 when not authenticated', async () => {
-    mockAuth.mockImplementation(() => Promise.resolve(null));
+    mockAuth.mockImplementation((() => Promise.resolve(null)) as never);
     const res = await DELETE();
     expect(res.status).toBe(401);
     const body = await res.json();
@@ -64,13 +64,13 @@ describe('DELETE /api/auth/delete-account', () => {
   });
 
   it('returns 401 when session has no user id', async () => {
-    mockAuth.mockImplementation(() => Promise.resolve({ user: {} }));
+    mockAuth.mockImplementation((() => Promise.resolve({ user: {} })) as never);
     const res = await DELETE();
     expect(res.status).toBe(401);
   });
 
   it('returns 503 when database is not configured', async () => {
-    mockGetDb.mockImplementation(() => null);
+    mockGetDb.mockImplementation((() => null) as never);
     const res = await DELETE();
     expect(res.status).toBe(503);
     const body = await res.json();
