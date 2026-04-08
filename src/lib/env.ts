@@ -33,12 +33,20 @@ export interface EnvConfig {
   upstashRedisRestUrl: string | undefined;
   /** Upstash Redis REST token for authentication (Phase 2) */
   upstashRedisRestToken: string | undefined;
-  /** Supabase project URL (Phase 2) */
-  supabaseUrl: string | undefined;
-  /** Supabase anonymous key for client-side auth (Phase 2) */
-  supabaseAnonKey: string | undefined;
-  /** Supabase service role key for admin operations (Phase 2, server-side only) */
-  supabaseServiceRoleKey: string | undefined;
+  /** NextAuth secret for JWT signing */
+  authSecret: string | undefined;
+  /** Google OAuth client ID */
+  googleClientId: string | undefined;
+  /** Google OAuth client secret */
+  googleClientSecret: string | undefined;
+  /** GitHub OAuth client ID */
+  githubClientId: string | undefined;
+  /** GitHub OAuth client secret */
+  githubClientSecret: string | undefined;
+  /** Resend API key for transactional emails */
+  resendApiKey: string | undefined;
+  /** Resend from email address */
+  resendFromEmail: string | undefined;
   /** Slack Bot token for logging interpreter usage */
   slackBotToken: string | undefined;
   /** Slack channel ID for interpreter usage logs */
@@ -68,9 +76,13 @@ export function getEnv(): EnvConfig {
     posthogHost: process.env.NEXT_PUBLIC_POSTHOG_HOST,
     upstashRedisRestUrl: process.env.UPSTASH_REDIS_REST_URL,
     upstashRedisRestToken: process.env.UPSTASH_REDIS_REST_TOKEN,
-    supabaseUrl: process.env.NEXT_PUBLIC_SUPABASE_URL,
-    supabaseAnonKey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-    supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY,
+    authSecret: process.env.AUTH_SECRET,
+    googleClientId: process.env.GOOGLE_CLIENT_ID,
+    googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    githubClientId: process.env.GITHUB_CLIENT_ID,
+    githubClientSecret: process.env.GITHUB_CLIENT_SECRET,
+    resendApiKey: process.env.RESEND_API_KEY,
+    resendFromEmail: process.env.RESEND_FROM_EMAIL,
     slackBotToken: process.env.SLACK_BOT_TOKEN,
     slackLogChannelId: process.env.SLACK_LOG_CHANNEL_ID,
     databaseUrl: process.env.DATABASE_URL,

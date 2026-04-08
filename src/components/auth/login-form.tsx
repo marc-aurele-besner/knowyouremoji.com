@@ -3,11 +3,10 @@
 import { useState, FormEvent } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { signIn } from 'next-auth/react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
-import { getSupabaseClient } from '@/lib/supabase';
-import { getEnv } from '@/lib/env';
 
 interface FormErrors {
   email?: string;
@@ -25,9 +24,6 @@ export function LoginForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [magicLinkSent, setMagicLinkSent] = useState(false);
   const [authMode, setAuthMode] = useState<AuthMode>('password');
-
-  const env = getEnv();
-  const redirectUrl = `${env.appUrl}/auth/callback`;
 
   const validateEmail = (emailValue: string): boolean => {
     if (!emailValue) {
@@ -65,25 +61,18 @@ export function LoginForm() {
     setIsLoading(true);
 
     try {
-      const supabase = getSupabaseClient();
-      if (!supabase) {
-        setErrors({ general: 'Authentication is not configured' });
-        return;
-      }
-
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const result = await signIn('credentials', {
         email,
         password,
+        redirect: false,
       });
 
-      if (error) {
-        setErrors({ general: error.message });
+      if (result?.error) {
+        setErrors({ general: 'Invalid email or password' });
         return;
       }
 
-      if (data?.user) {
-        router.push('/dashboard');
-      }
+      router.push('/dashboard');
     } finally {
       setIsLoading(false);
     }
@@ -100,21 +89,16 @@ export function LoginForm() {
     setIsLoading(true);
 
     try {
-      const supabase = getSupabaseClient();
-      if (!supabase) {
-        setErrors({ general: 'Authentication is not configured' });
-        return;
-      }
-
-      const { error } = await supabase.auth.signInWithOtp({
-        email,
-        options: {
-          emailRedirectTo: redirectUrl,
-        },
+      const response = await fetch('/api/auth/magic-link', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
       });
 
-      if (error) {
-        setErrors({ general: error.message });
+      const data = await response.json();
+
+      if (!response.ok) {
+        setErrors({ general: data.error || 'Failed to send magic link' });
         return;
       }
 
@@ -129,23 +113,9 @@ export function LoginForm() {
     setIsLoading(true);
 
     try {
-      const supabase = getSupabaseClient();
-      if (!supabase) {
-        setErrors({ general: 'Authentication is not configured' });
-        return;
-      }
-
-      const { error } = await supabase.auth.signInWithOAuth({
-        provider,
-        options: {
-          redirectTo: redirectUrl,
-        },
-      });
-
-      if (error) {
-        setErrors({ general: error.message });
-      }
-    } finally {
+      await signIn(provider, { callbackUrl: '/dashboard' });
+    } catch {
+      setErrors({ general: 'Failed to sign in with provider' });
       setIsLoading(false);
     }
   };

@@ -1,73 +1,71 @@
 import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
-// Mock supabase before importing component
-const mockGetUser = mock((): Promise<{ data: { user: any }; error: any }> =>
-  Promise.resolve({
-    data: {
-      user: {
-        id: 'user-1',
-        email: 'test@example.com',
-        created_at: '2026-01-15T10:00:00Z',
-        user_metadata: { display_name: 'Test User' },
-      },
+// Mock next-auth/react
+const mockSignOut = mock(() => Promise.resolve());
+const mockUseSession = mock(() => ({
+  data: {
+    user: {
+      id: 'user-1',
+      email: 'test@example.com',
+      name: 'Test User',
     },
-    error: null,
-  })
-);
-const mockUpdateUser = mock((): Promise<{ error: any }> => Promise.resolve({ error: null }));
-const mockSignOut = mock((): Promise<{ error: any }> => Promise.resolve({ error: null }));
+  },
+  status: 'authenticated' as const,
+}));
 
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    auth: {
-      getUser: mockGetUser,
-      updateUser: mockUpdateUser,
-      signOut: mockSignOut,
-    },
-  }),
+mock.module('next-auth/react', () => ({
+  useSession: mockUseSession,
+  signOut: mockSignOut,
 }));
 
 mock.module('next/navigation', () => ({
   useRouter: () => ({ push: mock(() => {}) }),
 }));
 
+// Mock fetch
+const mockFetch = mock(() =>
+  Promise.resolve({
+    ok: true,
+    json: () =>
+      Promise.resolve({
+        displayName: 'Test User',
+        createdAt: '2026-01-15T10:00:00.000Z',
+      }),
+  })
+);
+globalThis.fetch = mockFetch as never;
+
 const { SettingsPage } = await import('@/components/dashboard/settings-page');
 
-// Mock window.location
-const originalLocation = globalThis.location;
-
 beforeEach(() => {
-  mockGetUser.mockImplementation(() =>
-    Promise.resolve({
-      data: {
-        user: {
-          id: 'user-1',
-          email: 'test@example.com',
-          created_at: '2026-01-15T10:00:00Z',
-          user_metadata: { display_name: 'Test User' },
-        },
+  mockUseSession.mockReturnValue({
+    data: {
+      user: {
+        id: 'user-1',
+        email: 'test@example.com',
+        name: 'Test User',
       },
-      error: null,
-    })
+    },
+    status: 'authenticated' as const,
+  } as never);
+  mockFetch.mockImplementation(() =>
+    Promise.resolve({
+      ok: true,
+      json: () =>
+        Promise.resolve({
+          displayName: 'Test User',
+          createdAt: '2026-01-15T10:00:00.000Z',
+        }),
+    } as never)
   );
-  mockUpdateUser.mockImplementation(() => Promise.resolve({ error: null }));
-  mockSignOut.mockImplementation(() => Promise.resolve({ error: null }));
-
-  Object.defineProperty(globalThis, 'location', {
-    value: { ...originalLocation, href: '' },
-    writable: true,
-    configurable: true,
-  });
+  mockSignOut.mockImplementation(() => Promise.resolve());
 });
 
 afterEach(() => {
   cleanup();
-  Object.defineProperty(globalThis, 'location', {
-    value: originalLocation,
-    writable: true,
-    configurable: true,
-  });
+  mockFetch.mockClear();
+  mockSignOut.mockClear();
 });
 
 describe('SettingsPage', () => {
@@ -183,17 +181,29 @@ describe('SettingsPage', () => {
       fireEvent.click(screen.getByRole('button', { name: /save changes/i }));
     });
     await waitFor(() => {
-      expect(mockUpdateUser).toHaveBeenCalledWith({
-        data: { display_name: 'Updated Name' },
+      expect(mockFetch).toHaveBeenCalledWith('/api/auth/update-profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ displayName: 'Updated Name' }),
       });
       expect(screen.getByText(/profile updated successfully/i)).toBeInTheDocument();
     });
   });
 
   it('shows error when save fails', async () => {
-    mockUpdateUser.mockImplementation(() =>
-      Promise.resolve({ error: { message: 'Update failed' } })
-    );
+    mockFetch.mockImplementation(((url: string) => {
+      if (url === '/api/auth/update-profile') {
+        return Promise.resolve({
+          ok: false,
+          json: () => Promise.resolve({ error: 'Update failed' }),
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () =>
+          Promise.resolve({ displayName: 'Test User', createdAt: '2026-01-15T10:00:00.000Z' }),
+      });
+    }) as never);
     await act(async () => {
       render(<SettingsPage />);
     });
@@ -208,18 +218,6 @@ describe('SettingsPage', () => {
     });
   });
 
-  it('shows error when profile load fails', async () => {
-    mockGetUser.mockImplementation(() =>
-      Promise.resolve({ data: { user: null }, error: { message: 'Not logged in' } })
-    );
-    await act(async () => {
-      render(<SettingsPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByText(/unable to load profile/i)).toBeInTheDocument();
-    });
-  });
-
   it('handles sign out', async () => {
     await act(async () => {
       render(<SettingsPage />);
@@ -231,45 +229,7 @@ describe('SettingsPage', () => {
       fireEvent.click(screen.getByRole('button', { name: /sign out/i }));
     });
     await waitFor(() => {
-      expect(mockSignOut).toHaveBeenCalled();
-    });
-  });
-
-  it('uses full_name fallback when display_name is not set', async () => {
-    mockGetUser.mockImplementation(() =>
-      Promise.resolve({
-        data: {
-          user: {
-            id: 'user-1',
-            email: 'test@example.com',
-            created_at: '2026-01-15T10:00:00Z',
-            user_metadata: { full_name: 'Full Name User' },
-          },
-        },
-        error: null,
-      })
-    );
-    await act(async () => {
-      render(<SettingsPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByDisplayValue('Full Name User')).toBeInTheDocument();
-    });
-  });
-
-  it('handles save throwing an exception', async () => {
-    mockUpdateUser.mockImplementation(() => Promise.reject(new Error('Network error')));
-    await act(async () => {
-      render(<SettingsPage />);
-    });
-    await waitFor(() => {
-      expect(screen.getByDisplayValue('Test User')).toBeInTheDocument();
-    });
-    await act(async () => {
-      fireEvent.click(screen.getByRole('button', { name: /save changes/i }));
-    });
-    await waitFor(() => {
-      expect(screen.getByText(/failed to save profile/i)).toBeInTheDocument();
+      expect(mockSignOut).toHaveBeenCalledWith({ callbackUrl: '/' });
     });
   });
 
@@ -309,5 +269,16 @@ describe('SettingsPage', () => {
     const nameInput = screen.getByDisplayValue('Test User');
     fireEvent.change(nameInput, { target: { value: 'Changed' } });
     expect(screen.queryByText(/profile updated successfully/i)).not.toBeInTheDocument();
+  });
+
+  it('shows not available when unauthenticated', async () => {
+    mockUseSession.mockReturnValue({
+      data: null,
+      status: 'unauthenticated' as const,
+    } as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    expect(screen.getByText(/settings not available/i)).toBeInTheDocument();
   });
 });

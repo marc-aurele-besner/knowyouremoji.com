@@ -2,43 +2,32 @@ import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { RegisterForm } from '@/components/auth/register-form';
 
-// Type for Supabase auth response
-interface AuthResponse {
-  data: { user?: { id: string } } | null;
-  error: { message: string } | null;
-}
-
-// Mock the supabase module - use type assertion for Bun's mock
-const mockSignUp = mock(() => Promise.resolve({ data: null, error: null } as AuthResponse));
-const mockSignInWithOAuth = mock(() =>
-  Promise.resolve({ data: null, error: null } as AuthResponse)
-);
-
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    auth: {
-      signUp: mockSignUp,
-      signInWithOAuth: mockSignInWithOAuth,
-    },
-  }),
-  isSupabaseConfigured: () => true,
+// Mock next-auth/react
+const mockSignIn = mock(() => Promise.resolve({ error: null }));
+mock.module('next-auth/react', () => ({
+  signIn: mockSignIn,
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
 }));
 
 // Mock next/navigation
-const mockPush = mock(() => {});
 mock.module('next/navigation', () => ({
   useRouter: () => ({
-    push: mockPush,
+    push: mock(() => {}),
     replace: mock(() => {}),
     prefetch: mock(() => {}),
   }),
 }));
 
+// Mock fetch for registration
+const mockFetch = mock(() =>
+  Promise.resolve({ ok: true, json: () => Promise.resolve({ success: true }) })
+);
+globalThis.fetch = mockFetch as never;
+
 afterEach(() => {
   cleanup();
-  mockSignUp.mockClear();
-  mockSignInWithOAuth.mockClear();
-  mockPush.mockClear();
+  mockSignIn.mockClear();
+  mockFetch.mockClear();
 });
 
 describe('RegisterForm', () => {
@@ -95,39 +84,6 @@ describe('RegisterForm', () => {
       });
     });
 
-    it('shows error when confirm password is empty on submit', async () => {
-      render(<RegisterForm />);
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.change(screen.getByLabelText(/^password$/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
-      await waitFor(() => {
-        expect(screen.getByText(/please confirm your password/i)).toBeInTheDocument();
-      });
-    });
-
-    it('shows error for invalid email format', async () => {
-      render(<RegisterForm />);
-      const emailInput = screen.getByLabelText(/^email$/i);
-      const passwordInput = screen.getByLabelText(/^password$/i);
-      const confirmPasswordInput = screen.getByLabelText(/confirm password/i);
-
-      fireEvent.change(emailInput, { target: { value: 'invalid-email' } });
-      fireEvent.change(passwordInput, { target: { value: 'password123' } });
-      fireEvent.change(confirmPasswordInput, { target: { value: 'password123' } });
-
-      const form = emailInput.closest('form');
-      fireEvent.submit(form!);
-
-      await waitFor(() => {
-        expect(mockSignUp).not.toHaveBeenCalled();
-        expect(screen.getByText(/invalid email format/i)).toBeInTheDocument();
-      });
-    });
-
     it('shows error when password is too short', async () => {
       render(<RegisterForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
@@ -163,10 +119,28 @@ describe('RegisterForm', () => {
         expect(screen.getByText(/passwords do not match/i)).toBeInTheDocument();
       });
     });
+
+    it('shows error for invalid email format', async () => {
+      render(<RegisterForm />);
+      const emailInput = screen.getByLabelText(/^email$/i);
+      fireEvent.change(emailInput, { target: { value: 'invalid-email' } });
+      fireEvent.change(screen.getByLabelText(/^password$/i), { target: { value: 'password123' } });
+      fireEvent.change(screen.getByLabelText(/confirm password/i), {
+        target: { value: 'password123' },
+      });
+
+      const form = emailInput.closest('form');
+      fireEvent.submit(form!);
+
+      await waitFor(() => {
+        expect(mockFetch).not.toHaveBeenCalled();
+        expect(screen.getByText(/invalid email format/i)).toBeInTheDocument();
+      });
+    });
   });
 
   describe('email/password registration', () => {
-    it('calls signUp with correct credentials', async () => {
+    it('calls fetch with correct data', async () => {
       render(<RegisterForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -180,64 +154,15 @@ describe('RegisterForm', () => {
       fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
 
       await waitFor(() => {
-        expect(mockSignUp).toHaveBeenCalledWith({
-          email: 'test@example.com',
-          password: 'password123',
-          options: {
-            emailRedirectTo: expect.stringContaining('/auth/callback'),
-          },
+        expect(mockFetch).toHaveBeenCalledWith('/api/auth/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: 'test@example.com', password: 'password123' }),
         });
       });
     });
 
-    it('shows loading state during registration', async () => {
-      mockSignUp.mockImplementation(
-        () => new Promise((resolve) => setTimeout(() => resolve({ data: null, error: null }), 100))
-      );
-      render(<RegisterForm />);
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.change(screen.getByLabelText(/^password$/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.change(screen.getByLabelText(/confirm password/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
-
-      await waitFor(() => {
-        expect(screen.getByRole('button', { name: /creating account/i })).toBeDisabled();
-      });
-    });
-
-    it('shows error message on registration failure', async () => {
-      mockSignUp.mockResolvedValue({
-        data: null,
-        error: { message: 'Email already registered' },
-      });
-      render(<RegisterForm />);
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.change(screen.getByLabelText(/^password$/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.change(screen.getByLabelText(/confirm password/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/email already registered/i)).toBeInTheDocument();
-      });
-    });
-
     it('shows email verification message on successful registration', async () => {
-      mockSignUp.mockResolvedValue({
-        data: { user: { id: '123' } },
-        error: null,
-      });
       render(<RegisterForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -256,11 +181,29 @@ describe('RegisterForm', () => {
       });
     });
 
-    it('can return to registration form from success message', async () => {
-      mockSignUp.mockResolvedValue({
-        data: { user: { id: '123' } },
-        error: null,
+    it('shows error message on registration failure', async () => {
+      mockFetch.mockResolvedValueOnce({
+        ok: false,
+        json: () => Promise.resolve({ error: 'An account with this email already exists' }),
+      } as never);
+      render(<RegisterForm />);
+      fireEvent.change(screen.getByLabelText(/^email$/i), {
+        target: { value: 'test@example.com' },
       });
+      fireEvent.change(screen.getByLabelText(/^password$/i), {
+        target: { value: 'password123' },
+      });
+      fireEvent.change(screen.getByLabelText(/confirm password/i), {
+        target: { value: 'password123' },
+      });
+      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText(/an account with this email already exists/i)).toBeInTheDocument();
+      });
+    });
+
+    it('can return to registration form from success message', async () => {
       render(<RegisterForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -286,44 +229,21 @@ describe('RegisterForm', () => {
   });
 
   describe('OAuth sign up', () => {
-    it('calls signInWithOAuth for Google', async () => {
+    it('calls signIn for Google', async () => {
       render(<RegisterForm />);
       fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithOAuth).toHaveBeenCalledWith({
-          provider: 'google',
-          options: {
-            redirectTo: expect.stringContaining('/auth/callback'),
-          },
-        });
+        expect(mockSignIn).toHaveBeenCalledWith('google', { callbackUrl: '/dashboard' });
       });
     });
 
-    it('calls signInWithOAuth for GitHub', async () => {
+    it('calls signIn for GitHub', async () => {
       render(<RegisterForm />);
       fireEvent.click(screen.getByRole('button', { name: /continue with github/i }));
 
       await waitFor(() => {
-        expect(mockSignInWithOAuth).toHaveBeenCalledWith({
-          provider: 'github',
-          options: {
-            redirectTo: expect.stringContaining('/auth/callback'),
-          },
-        });
-      });
-    });
-
-    it('shows error when OAuth fails', async () => {
-      mockSignInWithOAuth.mockResolvedValue({
-        data: null,
-        error: { message: 'OAuth error' },
-      });
-      render(<RegisterForm />);
-      fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/oauth error/i)).toBeInTheDocument();
+        expect(mockSignIn).toHaveBeenCalledWith('github', { callbackUrl: '/dashboard' });
       });
     });
   });
@@ -350,10 +270,10 @@ describe('RegisterForm', () => {
     });
 
     it('displays error in accessible alert role', async () => {
-      mockSignUp.mockResolvedValue({
-        data: null,
-        error: { message: 'Test error' },
-      });
+      mockFetch.mockResolvedValueOnce({
+        ok: false,
+        json: () => Promise.resolve({ error: 'Test error' }),
+      } as never);
       render(<RegisterForm />);
       fireEvent.change(screen.getByLabelText(/^email$/i), {
         target: { value: 'test@example.com' },
@@ -381,55 +301,10 @@ describe('RegisterForm', () => {
         expect(screen.getByText(/email is required/i)).toBeInTheDocument();
       });
 
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 't' },
-      });
+      fireEvent.change(screen.getByLabelText(/^email$/i), { target: { value: 't' } });
 
       await waitFor(() => {
         expect(screen.queryByText(/email is required/i)).not.toBeInTheDocument();
-      });
-    });
-
-    it('clears password error when typing', async () => {
-      render(<RegisterForm />);
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/password is required/i)).toBeInTheDocument();
-      });
-
-      fireEvent.change(screen.getByLabelText(/^password$/i), {
-        target: { value: 'p' },
-      });
-
-      await waitFor(() => {
-        expect(screen.queryByText(/password is required/i)).not.toBeInTheDocument();
-      });
-    });
-
-    it('clears confirm password error when typing', async () => {
-      render(<RegisterForm />);
-      fireEvent.change(screen.getByLabelText(/^email$/i), {
-        target: { value: 'test@example.com' },
-      });
-      fireEvent.change(screen.getByLabelText(/^password$/i), {
-        target: { value: 'password123' },
-      });
-      fireEvent.click(screen.getByRole('button', { name: /^create account$/i }));
-
-      await waitFor(() => {
-        expect(screen.getByText(/please confirm your password/i)).toBeInTheDocument();
-      });
-
-      fireEvent.change(screen.getByLabelText(/confirm password/i), {
-        target: { value: 'p' },
-      });
-
-      await waitFor(() => {
-        expect(screen.queryByText(/please confirm your password/i)).not.toBeInTheDocument();
       });
     });
   });

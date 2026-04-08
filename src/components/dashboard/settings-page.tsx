@@ -1,71 +1,44 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useSession, signOut } from 'next-auth/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { getSupabaseClient } from '@/lib/supabase';
-
-interface UserProfile {
-  email: string;
-  displayName: string;
-  createdAt: string;
-}
 
 function SettingsPage() {
-  const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const { data: session, status } = useSession();
   const [displayName, setDisplayName] = useState('');
+  const [error, setError] = useState<string | null>(null);
   const [isSaving, setIsSaving] = useState(false);
   const [saveSuccess, setSaveSuccess] = useState(false);
-  const [isSupabaseReady, setIsSupabaseReady] = useState(false);
+  const [createdAt, setCreatedAt] = useState<string | null>(null);
+
+  const isLoading = status === 'loading';
+  const isAuthenticated = status === 'authenticated';
 
   useEffect(() => {
-    setIsSupabaseReady(getSupabaseClient() !== null);
-  }, []);
+    if (session?.user?.name) {
+      setDisplayName(session.user.name);
+    }
+  }, [session]);
 
   useEffect(() => {
-    async function loadProfile() {
-      if (!isSupabaseReady) {
-        setIsLoading(false);
-        return;
-      }
-
+    async function fetchProfile() {
+      if (!isAuthenticated) return;
       try {
-        const supabase = getSupabaseClient();
-        if (!supabase) {
-          setError('Authentication is not configured');
-          return;
+        const response = await fetch('/api/auth/profile');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.displayName) setDisplayName(data.displayName);
+          if (data.createdAt) setCreatedAt(data.createdAt);
         }
-
-        const {
-          data: { user },
-          error: userError,
-        } = await supabase.auth.getUser();
-
-        if (userError || !user) {
-          setError('Unable to load profile');
-          return;
-        }
-
-        const userProfile: UserProfile = {
-          email: user.email || '',
-          displayName: user.user_metadata?.display_name || user.user_metadata?.full_name || '',
-          createdAt: user.created_at || '',
-        };
-
-        setProfile(userProfile);
-        setDisplayName(userProfile.displayName);
       } catch {
-        setError('Failed to load profile');
-      } finally {
-        setIsLoading(false);
+        // Profile fetch is best-effort
       }
     }
-
-    loadProfile();
-  }, [isSupabaseReady]);
+    fetchProfile();
+  }, [isAuthenticated]);
 
   const handleSaveProfile = async () => {
     setIsSaving(true);
@@ -73,25 +46,20 @@ function SettingsPage() {
     setError(null);
 
     try {
-      const supabase = getSupabaseClient();
-      if (!supabase) {
-        setError('Authentication is not configured');
-        return;
-      }
-
-      const { error: updateError } = await supabase.auth.updateUser({
-        data: { display_name: displayName },
+      const response = await fetch('/api/auth/update-profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ displayName }),
       });
 
-      if (updateError) {
-        setError(updateError.message);
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.error || 'Failed to save profile');
         return;
       }
 
       setSaveSuccess(true);
-      if (profile) {
-        setProfile({ ...profile, displayName });
-      }
     } catch {
       setError('Failed to save profile');
     } finally {
@@ -101,11 +69,7 @@ function SettingsPage() {
 
   const handleSignOut = async () => {
     try {
-      const supabase = getSupabaseClient();
-      if (supabase) {
-        await supabase.auth.signOut();
-        window.location.href = '/';
-      }
+      await signOut({ callbackUrl: '/' });
     } catch {
       setError('Failed to sign out');
     }
@@ -132,7 +96,7 @@ function SettingsPage() {
         </p>
       </div>
 
-      {!isSupabaseReady && (
+      {!isAuthenticated && !isLoading && (
         <Card>
           <CardContent className="py-12 text-center">
             <div className="text-4xl mb-4">🔒</div>
@@ -146,7 +110,7 @@ function SettingsPage() {
         </Card>
       )}
 
-      {isSupabaseReady && error && (
+      {isAuthenticated && error && (
         <div
           className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
           role="alert"
@@ -155,7 +119,7 @@ function SettingsPage() {
         </div>
       )}
 
-      {isSupabaseReady && saveSuccess && (
+      {isAuthenticated && saveSuccess && (
         <div
           className="p-4 text-sm text-green-600 bg-green-50 dark:bg-green-900/20 dark:text-green-400 rounded-lg"
           role="status"
@@ -164,7 +128,7 @@ function SettingsPage() {
         </div>
       )}
 
-      {isSupabaseReady && isLoading && (
+      {isLoading && (
         <div className="space-y-4">
           {Array.from({ length: 2 }).map((_, i) => (
             <Card key={i}>
@@ -179,7 +143,7 @@ function SettingsPage() {
         </div>
       )}
 
-      {isSupabaseReady && !isLoading && profile && (
+      {isAuthenticated && !isLoading && (
         <>
           {/* Profile Section */}
           <Card>
@@ -194,7 +158,7 @@ function SettingsPage() {
                 >
                   Email
                 </label>
-                <Input id="email" type="email" value={profile.email} disabled />
+                <Input id="email" type="email" value={session?.user?.email || ''} disabled />
                 <p className="text-xs text-gray-500 dark:text-gray-400">
                   Email cannot be changed here.
                 </p>
@@ -220,9 +184,11 @@ function SettingsPage() {
                 />
               </div>
 
-              <div className="text-sm text-gray-500 dark:text-gray-400">
-                Member since {formatDate(profile.createdAt)}
-              </div>
+              {createdAt && (
+                <div className="text-sm text-gray-500 dark:text-gray-400">
+                  Member since {formatDate(createdAt)}
+                </div>
+              )}
 
               <Button onClick={handleSaveProfile} loading={isSaving} disabled={isSaving}>
                 {isSaving ? 'Saving...' : 'Save Changes'}

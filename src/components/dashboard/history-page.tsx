@@ -1,12 +1,12 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import { useSession } from 'next-auth/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { getSupabaseClient } from '@/lib/supabase';
 
 /**
- * Interpretation history entry from Supabase
+ * Interpretation history entry
  */
 export interface HistoryEntry {
   id: string;
@@ -16,26 +16,19 @@ export interface HistoryEntry {
   emoji_count: number;
 }
 
-/**
- * Number of history entries per page
- */
-const PAGE_SIZE = 10;
-
 function HistoryPage() {
+  const { status } = useSession();
   const [entries, setEntries] = useState<HistoryEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [page, setPage] = useState(0);
   const [hasMore, setHasMore] = useState(false);
-  const [isSupabaseReady, setIsSupabaseReady] = useState(false);
 
-  useEffect(() => {
-    setIsSupabaseReady(getSupabaseClient() !== null);
-  }, []);
+  const isAuthenticated = status === 'authenticated';
 
   const fetchHistory = useCallback(
     async (pageNum: number) => {
-      if (!isSupabaseReady) {
+      if (!isAuthenticated) {
         setIsLoading(false);
         return;
       }
@@ -44,38 +37,23 @@ function HistoryPage() {
       setError(null);
 
       try {
-        const supabase = getSupabaseClient();
-        if (!supabase) {
-          setError('Authentication is not configured');
+        const response = await fetch(`/api/interpretations?page=${pageNum}`);
+        const data = await response.json();
+
+        if (!response.ok) {
+          setError(data.error || 'Failed to load history');
           return;
         }
 
-        const from = pageNum * PAGE_SIZE;
-        const to = from + PAGE_SIZE;
-
-        const { data, error: fetchError } = await supabase
-          .from('interpretations')
-          .select('id, message, interpretation, created_at, emoji_count')
-          .order('created_at', { ascending: false })
-          .range(from, to);
-
-        if (fetchError) {
-          setError(fetchError.message);
-          return;
-        }
-
-        if (data) {
-          // If we got more than PAGE_SIZE, there are more pages
-          setHasMore(data.length > PAGE_SIZE);
-          setEntries(data.slice(0, PAGE_SIZE));
-        }
+        setEntries(data.data);
+        setHasMore(data.hasMore);
       } catch {
         setError('Failed to load history');
       } finally {
         setIsLoading(false);
       }
     },
-    [isSupabaseReady]
+    [isAuthenticated]
   );
 
   useEffect(() => {
@@ -113,7 +91,7 @@ function HistoryPage() {
         </p>
       </div>
 
-      {!isSupabaseReady && (
+      {!isAuthenticated && status !== 'loading' && (
         <Card>
           <CardContent className="py-12 text-center">
             <div className="text-4xl mb-4">🔒</div>
@@ -127,7 +105,7 @@ function HistoryPage() {
         </Card>
       )}
 
-      {isSupabaseReady && error && (
+      {isAuthenticated && error && (
         <div
           className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
           role="alert"
@@ -136,7 +114,7 @@ function HistoryPage() {
         </div>
       )}
 
-      {isSupabaseReady && isLoading && (
+      {isAuthenticated && isLoading && (
         <div className="space-y-4">
           {Array.from({ length: 3 }).map((_, i) => (
             <Card key={i}>
@@ -152,7 +130,7 @@ function HistoryPage() {
         </div>
       )}
 
-      {isSupabaseReady && !isLoading && !error && entries.length === 0 && (
+      {isAuthenticated && !isLoading && !error && entries.length === 0 && (
         <Card>
           <CardContent className="py-12 text-center">
             <div className="text-4xl mb-4">📭</div>
@@ -166,7 +144,7 @@ function HistoryPage() {
         </Card>
       )}
 
-      {isSupabaseReady && !isLoading && !error && entries.length > 0 && (
+      {isAuthenticated && !isLoading && !error && entries.length > 0 && (
         <>
           <div className="space-y-4">
             {entries.map((entry) => (

@@ -8,6 +8,7 @@ import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { ServiceWorkerRegister } from '@/components/pwa/service-worker-register';
+import { SessionProvider } from 'next-auth/react';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,17 +30,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <PostHogProvider>
-          <ThemeProvider>
-            <div className="flex min-h-screen flex-col">
-              <Header />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-          </ThemeProvider>
-          <GoogleAnalytics />
-          <ServiceWorkerRegister />
-        </PostHogProvider>
+        <SessionProvider>
+          <PostHogProvider>
+            <ThemeProvider>
+              <div className="flex min-h-screen flex-col">
+                <Header />
+                <main className="flex-1">{children}</main>
+                <Footer />
+              </div>
+            </ThemeProvider>
+            <GoogleAnalytics />
+            <ServiceWorkerRegister />
+          </PostHogProvider>
+        </SessionProvider>
       </body>
     </html>
   );

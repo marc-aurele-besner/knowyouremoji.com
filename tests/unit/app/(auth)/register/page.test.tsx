@@ -6,15 +6,10 @@ afterEach(() => {
   cleanup();
 });
 
-// Mock the supabase module
-mock.module('@/lib/supabase', () => ({
-  getSupabaseClient: () => ({
-    auth: {
-      signUp: mock(() => Promise.resolve({ data: null, error: null })),
-      signInWithOAuth: mock(() => Promise.resolve({ data: null, error: null })),
-    },
-  }),
-  isSupabaseConfigured: () => true,
+// Mock next-auth/react
+mock.module('next-auth/react', () => ({
+  signIn: mock(() => Promise.resolve({ error: null })),
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
 }));
 
 // Mock next/navigation
