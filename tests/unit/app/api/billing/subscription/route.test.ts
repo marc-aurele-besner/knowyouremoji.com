@@ -15,6 +15,7 @@ const mockGetUserSubscription = mock(() =>
     stripeCustomerId: 'cus_test_123',
     stripeSubscriptionId: 'sub_test_123',
     currentPeriodEnd: new Date('2026-06-01T00:00:00.000Z'),
+    trialEndsAt: null,
     createdAt: new Date('2025-01-01'),
     updatedAt: new Date('2025-01-01'),
   })
@@ -63,6 +64,7 @@ describe('GET /api/billing/subscription', () => {
         stripeCustomerId: 'cus_test_123',
         stripeSubscriptionId: 'sub_test_123',
         currentPeriodEnd: new Date('2026-06-01T00:00:00.000Z'),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       })
@@ -130,6 +132,7 @@ describe('GET /api/billing/subscription', () => {
         stripeCustomerId: 'cus_test_123',
         stripeSubscriptionId: 'sub_test_123',
         currentPeriodEnd: null,
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       })) as never);

@@ -32,6 +32,7 @@ export interface UserSubscription {
   stripeCustomerId: string | null;
   stripeSubscriptionId: string | null;
   currentPeriodEnd: Date | null;
+  trialEndsAt: Date | null;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -71,6 +72,7 @@ export const DEFAULT_SUBSCRIPTION: Omit<
   stripeCustomerId: null,
   stripeSubscriptionId: null,
   currentPeriodEnd: null,
+  trialEndsAt: null,
 };
 
 // ============================================
@@ -109,6 +111,7 @@ export async function getUserSubscription(userId: string): Promise<UserSubscript
     stripeCustomerId: row.stripeCustomerId,
     stripeSubscriptionId: row.stripeSubscriptionId,
     currentPeriodEnd: row.currentPeriodEnd,
+    trialEndsAt: row.trialEndsAt,
     createdAt: row.createdAt,
     updatedAt: row.updatedAt,
   };
@@ -134,12 +137,27 @@ export async function hasActiveSubscription(userId: string): Promise<boolean> {
 /**
  * Check if a subscription is currently active.
  * An active subscription has status 'active' and, if it has a period end date,
- * that date must be in the future.
+ * that date must be in the future. A user with an active trial (trialEndsAt in
+ * the future) is also considered active.
  *
  * @param subscription - The subscription to check
  * @returns Whether the subscription is active
  */
 export function isSubscriptionActive(subscription: UserSubscription): boolean {
+  // Check if trial is active (trialEndsAt is in the future)
+  if (subscription.trialEndsAt && subscription.trialEndsAt > new Date()) {
+    return true;
+  }
+
+  // If trial has expired (trialEndsAt is set but in the past) and no paid period, not active
+  if (
+    subscription.trialEndsAt &&
+    subscription.trialEndsAt <= new Date() &&
+    !subscription.currentPeriodEnd
+  ) {
+    return false;
+  }
+
   if (subscription.status !== 'active') {
     return false;
   }
