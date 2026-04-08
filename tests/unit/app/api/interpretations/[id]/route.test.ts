@@ -42,6 +42,10 @@ mock.module('@/lib/db', () => ({
 }));
 
 mock.module('@/lib/db/schema', () => ({
+  users: { id: 'id' },
+  accounts: {},
+  sessions: {},
+  verificationTokens: {},
   interpretations: {
     id: 'id',
     userId: 'user_id',
@@ -50,11 +54,13 @@ mock.module('@/lib/db/schema', () => ({
     emojiCount: 'emoji_count',
     createdAt: 'created_at',
   },
+  emojiPageViews: {},
 }));
 
 mock.module('drizzle-orm', () => ({
   eq: mock((col: unknown, val: unknown) => ({ col, val })),
   and: mock((...conditions: unknown[]) => ({ conditions })),
+  desc: mock((col: unknown) => ({ col, direction: 'desc' })),
 }));
 
 const { GET } = await import('@/app/api/interpretations/[id]/route');
