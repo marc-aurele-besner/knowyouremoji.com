@@ -1,12 +1,16 @@
 import { describe, it, expect, beforeEach, afterEach, spyOn } from 'bun:test';
 import * as cacheModule from '../../../src/lib/cache';
+import * as authModule from '../../../src/lib/auth';
 import {
   checkRateLimit,
   getClientIp,
   rateLimitHeaders,
   buildRateLimitKey,
+  getRateLimitIdentifier,
   DEFAULT_RATE_LIMIT,
   DEFAULT_WINDOW_SECONDS,
+  AUTHENTICATED_RATE_LIMIT,
+  AUTHENTICATED_RATE_LIMIT_PREFIX,
 } from '../../../src/lib/server-rate-limit';
 
 // Mock Redis client
@@ -262,6 +266,98 @@ describe('server-rate-limit', () => {
 
     it('should have correct default window (24 hours)', () => {
       expect(DEFAULT_WINDOW_SECONDS).toBe(86400);
+    });
+
+    it('should have correct authenticated rate limit', () => {
+      expect(AUTHENTICATED_RATE_LIMIT).toBe(50);
+    });
+
+    it('should have correct authenticated prefix', () => {
+      expect(AUTHENTICATED_RATE_LIMIT_PREFIX).toBe('kye:ratelimit:user');
+    });
+  });
+
+  describe('getRateLimitIdentifier', () => {
+    let authSpy: ReturnType<typeof spyOn>;
+
+    beforeEach(() => {
+      authSpy = spyOn(authModule, 'auth');
+    });
+
+    afterEach(() => {
+      authSpy.mockRestore();
+    });
+
+    it('should return user ID and authenticated config when session exists', async () => {
+      authSpy.mockResolvedValue({
+        user: { id: 'user-abc-123', email: 'test@example.com' },
+        expires: '2099-01-01',
+      });
+
+      const headers = new Headers({ 'x-forwarded-for': '1.2.3.4' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('user-abc-123');
+      expect(result.isAuthenticated).toBe(true);
+      expect(result.config.limit).toBe(AUTHENTICATED_RATE_LIMIT);
+      expect(result.config.prefix).toBe(AUTHENTICATED_RATE_LIMIT_PREFIX);
+    });
+
+    it('should fall back to IP when session has no user', async () => {
+      authSpy.mockResolvedValue({ user: undefined, expires: '2099-01-01' });
+
+      const headers = new Headers({ 'x-forwarded-for': '10.0.0.1' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('10.0.0.1');
+      expect(result.isAuthenticated).toBe(false);
+      expect(result.config).toEqual({});
+    });
+
+    it('should fall back to IP when session user has no ID', async () => {
+      authSpy.mockResolvedValue({
+        user: { email: 'test@example.com' },
+        expires: '2099-01-01',
+      });
+
+      const headers = new Headers({ 'x-forwarded-for': '10.0.0.2' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('10.0.0.2');
+      expect(result.isAuthenticated).toBe(false);
+      expect(result.config).toEqual({});
+    });
+
+    it('should fall back to IP when auth returns null', async () => {
+      authSpy.mockResolvedValue(null);
+
+      const headers = new Headers({ 'x-real-ip': '192.168.1.1' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('192.168.1.1');
+      expect(result.isAuthenticated).toBe(false);
+      expect(result.config).toEqual({});
+    });
+
+    it('should fall back to IP when auth throws an error', async () => {
+      authSpy.mockRejectedValue(new Error('Auth service unavailable'));
+
+      const headers = new Headers({ 'x-forwarded-for': '5.5.5.5' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('5.5.5.5');
+      expect(result.isAuthenticated).toBe(false);
+      expect(result.config).toEqual({});
+    });
+
+    it('should return "unknown" IP when no headers and unauthenticated', async () => {
+      authSpy.mockResolvedValue(null);
+
+      const headers = new Headers({});
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('unknown');
+      expect(result.isAuthenticated).toBe(false);
     });
   });
 });
