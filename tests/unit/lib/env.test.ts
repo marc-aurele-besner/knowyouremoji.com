@@ -218,6 +218,30 @@ describe('env configuration', () => {
       const env = getEnv();
       expect(env.slackLogChannelId).toBeUndefined();
     });
+
+    it('should return stripeSecretKey when set', () => {
+      process.env.STRIPE_SECRET_KEY = 'sk_test_123';
+      const env = getEnv();
+      expect(env.stripeSecretKey).toBe('sk_test_123');
+    });
+
+    it('should return undefined stripeSecretKey when not set', () => {
+      delete process.env.STRIPE_SECRET_KEY;
+      const env = getEnv();
+      expect(env.stripeSecretKey).toBeUndefined();
+    });
+
+    it('should return stripePublishableKey when set', () => {
+      process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY = 'pk_test_123';
+      const env = getEnv();
+      expect(env.stripePublishableKey).toBe('pk_test_123');
+    });
+
+    it('should return undefined stripePublishableKey when not set', () => {
+      delete process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
+      const env = getEnv();
+      expect(env.stripePublishableKey).toBeUndefined();
+    });
   });
 
   describe('validateEnv', () => {
