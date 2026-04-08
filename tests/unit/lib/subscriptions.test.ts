@@ -39,6 +39,7 @@ function createMockSubscription(overrides: Partial<UserSubscription> = {}): User
     stripeCustomerId: 'cus_test',
     stripeSubscriptionId: 'sub_test',
     currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days from now
+    trialEndsAt: null,
     createdAt: new Date('2025-01-01'),
     updatedAt: new Date('2025-01-01'),
     ...overrides,
@@ -102,6 +103,10 @@ describe('subscriptions module', () => {
     it('should have null period end', () => {
       expect(DEFAULT_SUBSCRIPTION.currentPeriodEnd).toBeNull();
     });
+
+    it('should have null trial ends at', () => {
+      expect(DEFAULT_SUBSCRIPTION.trialEndsAt).toBeNull();
+    });
   });
 
   // ============================================
@@ -130,6 +135,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date('2026-06-01'),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-15'),
       };
@@ -144,6 +150,37 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date('2026-06-01'),
+        trialEndsAt: null,
+        createdAt: new Date('2025-01-01'),
+        updatedAt: new Date('2025-01-15'),
+      });
+    });
+
+    it('should return the subscription with trial period when found', async () => {
+      const mockRow = {
+        id: 'sub-123',
+        userId: 'user-456',
+        status: 'active',
+        plan: 'pro',
+        stripeCustomerId: 'cus_test',
+        stripeSubscriptionId: 'sub_test',
+        currentPeriodEnd: new Date('2026-06-01'),
+        trialEndsAt: new Date('2026-04-15'),
+        createdAt: new Date('2025-01-01'),
+        updatedAt: new Date('2025-01-15'),
+      };
+      setupDbMock([mockRow]);
+
+      const result = await getUserSubscription('user-456');
+      expect(result).toEqual({
+        id: 'sub-123',
+        userId: 'user-456',
+        status: 'active',
+        plan: 'pro',
+        stripeCustomerId: 'cus_test',
+        stripeSubscriptionId: 'sub_test',
+        currentPeriodEnd: new Date('2026-06-01'),
+        trialEndsAt: new Date('2026-04-15'),
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-15'),
       });
@@ -209,6 +246,33 @@ describe('subscriptions module', () => {
       const sub = createMockSubscription({ status: 'free' });
       expect(isSubscriptionActive(sub)).toBe(false);
     });
+
+    it('should return true for subscription with future trial end', () => {
+      const sub = createMockSubscription({
+        status: 'active',
+        trialEndsAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days from now
+        currentPeriodEnd: null,
+      });
+      expect(isSubscriptionActive(sub)).toBe(true);
+    });
+
+    it('should return true for subscription with active trial and future period end', () => {
+      const sub = createMockSubscription({
+        status: 'active',
+        trialEndsAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days from now
+        currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000), // 30 days from now
+      });
+      expect(isSubscriptionActive(sub)).toBe(true);
+    });
+
+    it('should return false for subscription with expired trial', () => {
+      const sub = createMockSubscription({
+        status: 'active',
+        trialEndsAt: new Date(Date.now() - 86400000), // 1 day ago
+        currentPeriodEnd: null, // no paid period yet - trial just ended
+      });
+      expect(isSubscriptionActive(sub)).toBe(false);
+    });
   });
 
   // ============================================
@@ -237,6 +301,26 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
+        createdAt: new Date('2025-01-01'),
+        updatedAt: new Date('2025-01-01'),
+      };
+      setupDbMock([mockRow]);
+
+      const result = await hasActiveSubscription('user-456');
+      expect(result).toBe(true);
+    });
+
+    it('should return true for subscription during trial period', async () => {
+      const mockRow = {
+        id: 'sub-123',
+        userId: 'user-456',
+        status: 'active',
+        plan: 'pro',
+        stripeCustomerId: 'cus_test',
+        stripeSubscriptionId: 'sub_test',
+        currentPeriodEnd: null,
+        trialEndsAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -255,6 +339,26 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
+        createdAt: new Date('2025-01-01'),
+        updatedAt: new Date('2025-01-01'),
+      };
+      setupDbMock([mockRow]);
+
+      const result = await hasActiveSubscription('user-456');
+      expect(result).toBe(false);
+    });
+
+    it('should return false for expired trial subscription', async () => {
+      const mockRow = {
+        id: 'sub-123',
+        userId: 'user-456',
+        status: 'active',
+        plan: 'pro',
+        stripeCustomerId: 'cus_test',
+        stripeSubscriptionId: 'sub_test',
+        currentPeriodEnd: null,
+        trialEndsAt: new Date(Date.now() - 86400000), // 1 day ago
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -316,6 +420,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -334,6 +439,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() - 86400000),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -376,6 +482,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -394,6 +501,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: null,
         stripeSubscriptionId: null,
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -430,6 +538,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
@@ -448,6 +557,7 @@ describe('subscriptions module', () => {
         stripeCustomerId: 'cus_test',
         stripeSubscriptionId: 'sub_test',
         currentPeriodEnd: null,
+        trialEndsAt: null,
         createdAt: new Date('2025-01-01'),
         updatedAt: new Date('2025-01-01'),
       };
