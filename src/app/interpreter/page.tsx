@@ -2,23 +2,43 @@ import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { InterpreterClient } from '@/components/interpreter/interpreter-client';
 import { SharedResultSection } from '@/components/interpreter/shared-result-section';
+import { decodeInterpretation } from '@/lib/share-encoding';
 import { getEnv } from '@/lib/env';
 
 const pageTitle = 'Emoji Interpreter - Decode Hidden Meanings';
 const pageDescription =
   'Paste any text message with emojis and our AI will decode the hidden meanings, tone, and context.';
 
+interface MetadataProps {
+  searchParams: Promise<{ r?: string }>;
+}
+
 /**
- * Generate metadata for the interpreter page including canonical URL
- * Prevents duplicate content issues with canonical link tags
+ * Generate metadata for the interpreter page including canonical URL.
+ * When a shared result is present (?r=...), generates a dynamic OG image.
  */
-export function generateMetadata(): Metadata {
+export async function generateMetadata({ searchParams }: MetadataProps): Promise<Metadata> {
   const env = getEnv();
   const pageUrl = `${env.appUrl}/interpreter`;
+  const { r: sharedResult } = await searchParams;
+
+  // Check if this is a shared interpretation with valid data
+  const sharedData = sharedResult ? decodeInterpretation(sharedResult) : null;
+
+  const title = sharedData
+    ? `Emoji Interpretation: "${sharedData.message.slice(0, 60)}${sharedData.message.length > 60 ? '...' : ''}"`
+    : pageTitle;
+  const description = sharedData
+    ? sharedData.interpretation.slice(0, 160)
+    : pageDescription;
+
+  const ogImageUrl = sharedData
+    ? `${env.appUrl}/og/interpretation?r=${sharedResult}`
+    : `${env.appUrl}/og-image.png`;
 
   return {
-    title: `${pageTitle} | ${env.appName}`,
-    description: pageDescription,
+    title: `${title} | ${env.appName}`,
+    description,
     keywords: [
       'emoji interpreter',
       'decode emoji',
@@ -35,24 +55,24 @@ export function generateMetadata(): Metadata {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: pageUrl,
+      url: sharedResult ? `${pageUrl}?r=${sharedResult}` : pageUrl,
       siteName: env.appName,
-      title: pageTitle,
-      description: pageDescription,
+      title,
+      description,
       images: [
         {
-          url: `${env.appUrl}/og-image.png`,
+          url: ogImageUrl,
           width: 1200,
           height: 630,
-          alt: pageTitle,
+          alt: title,
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: pageTitle,
-      description: pageDescription,
-      images: [`${env.appUrl}/og-image.png`],
+      title,
+      description,
+      images: [ogImageUrl],
     },
     robots: {
       index: true,
