@@ -29,6 +29,7 @@ describe('DashboardSidebar', () => {
     expect(screen.getByRole('link', { name: /overview/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /profile/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /history/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /billing/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /settings/i })).toBeInTheDocument();
   });
 
@@ -42,6 +43,10 @@ describe('DashboardSidebar', () => {
     expect(screen.getByRole('link', { name: /history/i })).toHaveAttribute(
       'href',
       '/dashboard/history'
+    );
+    expect(screen.getByRole('link', { name: /billing/i })).toHaveAttribute(
+      'href',
+      '/dashboard/billing'
     );
     expect(screen.getByRole('link', { name: /settings/i })).toHaveAttribute(
       'href',

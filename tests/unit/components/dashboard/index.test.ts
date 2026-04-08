@@ -48,13 +48,17 @@ describe('Dashboard Components barrel export (index.ts)', () => {
     expect(dashboardComponents.SettingsPage).toBeDefined();
   });
 
+  it('exports BillingPage component', () => {
+    expect(dashboardComponents.BillingPage).toBeDefined();
+  });
+
   it('exports HistoryDetailView component', () => {
     expect(dashboardComponents.HistoryDetailView).toBeDefined();
   });
 
-  it('exports the correct number of items (6 components)', () => {
+  it('exports the correct number of items (7 components)', () => {
     const exportedKeys = Object.keys(dashboardComponents);
-    expect(exportedKeys.length).toBe(6);
+    expect(exportedKeys.length).toBe(7);
   });
 
   it('all component exports are functions', () => {
@@ -65,6 +69,7 @@ describe('Dashboard Components barrel export (index.ts)', () => {
       'HistoryDetailView',
       'ProfilePage',
       'SettingsPage',
+      'BillingPage',
     ];
     componentNames.forEach((name) => {
       const component = dashboardComponents[name as keyof typeof dashboardComponents];

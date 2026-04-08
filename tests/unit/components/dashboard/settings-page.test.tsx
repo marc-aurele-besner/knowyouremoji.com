@@ -156,6 +156,18 @@ describe('SettingsPage', () => {
     });
   });
 
+  it('renders manage billing link', async () => {
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(screen.getByRole('link', { name: /manage billing/i })).toHaveAttribute(
+        'href',
+        '/dashboard/billing'
+      );
+    });
+  });
+
   it('allows editing display name', async () => {
     await act(async () => {
       render(<SettingsPage />);

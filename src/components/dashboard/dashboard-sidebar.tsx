@@ -9,6 +9,7 @@ const sidebarLinks = [
   { label: 'Overview', href: '/dashboard', icon: '📊' },
   { label: 'Profile', href: '/dashboard/profile', icon: '👤' },
   { label: 'History', href: '/dashboard/history', icon: '📜' },
+  { label: 'Billing', href: '/dashboard/billing', icon: '💳' },
   { label: 'Settings', href: '/dashboard/settings', icon: '⚙️' },
 ];
 

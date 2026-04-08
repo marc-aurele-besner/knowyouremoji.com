@@ -237,9 +237,14 @@ function SettingsPage() {
                     3 interpretations per day
                   </p>
                 </div>
-                <Button variant="outline" asChild>
-                  <a href="/pricing">Upgrade</a>
-                </Button>
+                <div className="flex gap-2">
+                  <Button variant="outline" asChild>
+                    <a href="/dashboard/billing">Manage Billing</a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a href="/pricing">Upgrade</a>
+                  </Button>
+                </div>
               </div>
             </CardContent>
           </Card>
