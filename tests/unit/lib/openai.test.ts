@@ -16,20 +16,34 @@ import {
   RETRY_DELAY_MS,
 } from '../../../src/lib/openai';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['OPENROUTER_API_KEY', 'OPENROUTER_MODEL'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('openai module', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv };
+    saveEnv();
     // Reset client instances
     resetClients();
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
     // Reset client instances after each test
     resetClients();
   });

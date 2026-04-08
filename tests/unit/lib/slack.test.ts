@@ -1,14 +1,30 @@
 import { describe, it, expect, beforeEach, afterEach, spyOn } from 'bun:test';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['SLACK_BOT_TOKEN', 'SLACK_LOG_CHANNEL_ID'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 beforeEach(() => {
-  process.env = { ...originalEnv };
+  saveEnv();
 });
 
 afterEach(() => {
-  process.env = originalEnv;
+  restoreEnv();
 });
 
 import { isSlackConfigured, buildSlackMessage, logInterpreterUsage } from '../../../src/lib/slack';

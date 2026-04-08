@@ -40,12 +40,13 @@ function saveEnv() {
 }
 
 function restoreEnv() {
+  const env = process.env as Record<string, string | undefined>;
   for (const key of TESTED_KEYS) {
     const original = savedEnv[key];
     if (original === undefined) {
-      delete process.env[key];
+      delete env[key];
     } else {
-      process.env[key] = original;
+      env[key] = original;
     }
   }
 }

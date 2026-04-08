@@ -1,19 +1,34 @@
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 import { NextRequest } from 'next/server';
 
-// Mock environment before importing route
-const originalEnv = process.env;
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['OPENROUTER_API_KEY', 'NEXT_PUBLIC_ENABLE_INTERPRETER'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
+
 beforeEach(() => {
-  process.env = {
-    ...originalEnv,
-    OPENROUTER_API_KEY: 'test-api-key',
-    // Disable interpreter to use mock responses (avoids real OpenAI calls in tests)
-    NEXT_PUBLIC_ENABLE_INTERPRETER: 'false',
-  };
+  saveEnv();
+  process.env.OPENROUTER_API_KEY = 'test-api-key';
+  // Disable interpreter to use mock responses (avoids real OpenAI calls in tests)
+  process.env.NEXT_PUBLIC_ENABLE_INTERPRETER = 'false';
 });
 
 afterEach(() => {
-  process.env = originalEnv;
+  restoreEnv();
 });
 
 // Import the route handler

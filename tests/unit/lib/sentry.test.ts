@@ -8,8 +8,25 @@ import {
 } from '@/lib/sentry';
 import * as Sentry from '@sentry/nextjs';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['NODE_ENV', 'SENTRY_DSN'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  const env = process.env as Record<string, string | undefined>;
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete env[key];
+    } else {
+      env[key] = savedEnv[key];
+    }
+  }
+}
 
 // Helper to set NODE_ENV while bypassing TypeScript's readonly constraint
 function setNodeEnv(value: string | undefined) {
@@ -18,13 +35,11 @@ function setNodeEnv(value: string | undefined) {
 
 describe('Sentry utilities', () => {
   beforeEach(() => {
-    // Reset process.env before each test
-    process.env = { ...originalEnv };
+    saveEnv();
   });
 
   afterEach(() => {
-    // Restore original env
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('isSentryEnabled', () => {

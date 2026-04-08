@@ -32,10 +32,6 @@ const mockGetStripe = mock(() => ({
   },
 }));
 
-const mockGetEnv = mock(() => ({
-  appUrl: 'http://localhost:3000',
-}));
-
 mock.module('@/lib/auth', () => ({
   auth: mockAuth,
 }));
@@ -66,14 +62,16 @@ mock.module('@/lib/subscriptions', () => ({
   getUserSubscription: mockGetUserSubscription,
 }));
 
-mock.module('@/lib/env', () => ({
-  getEnv: mockGetEnv,
-}));
-
 const { POST } = await import('@/app/api/billing/portal/route');
+
+// Save/restore NEXT_PUBLIC_APP_URL to avoid polluting other tests
+let savedAppUrl: string | undefined;
 
 describe('POST /api/billing/portal', () => {
   beforeEach(() => {
+    savedAppUrl = process.env.NEXT_PUBLIC_APP_URL;
+    process.env.NEXT_PUBLIC_APP_URL = 'http://localhost:3000';
+
     mockAuth.mockImplementation(() =>
       Promise.resolve({ user: { id: 'user-123', email: 'test@example.com' } })
     );
@@ -100,21 +98,19 @@ describe('POST /api/billing/portal', () => {
     mockPortalCreate.mockImplementation(() =>
       Promise.resolve({ url: 'https://billing.stripe.com/session/test_123' })
     );
-    mockGetEnv.mockImplementation(
-      () =>
-        ({
-          appUrl: 'http://localhost:3000',
-        }) as never
-    );
   });
 
   afterEach(() => {
+    if (savedAppUrl === undefined) {
+      delete process.env.NEXT_PUBLIC_APP_URL;
+    } else {
+      process.env.NEXT_PUBLIC_APP_URL = savedAppUrl;
+    }
     mockAuth.mockClear();
     mockGetDb.mockClear();
     mockGetStripe.mockClear();
     mockGetUserSubscription.mockClear();
     mockPortalCreate.mockClear();
-    mockGetEnv.mockClear();
   });
 
   it('returns 401 when not authenticated', async () => {

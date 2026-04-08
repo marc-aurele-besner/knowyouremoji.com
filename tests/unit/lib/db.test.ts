@@ -10,16 +10,32 @@ import {
   subscriptions,
 } from '../../../src/lib/db/schema';
 
-// Store original env
-const originalEnv = { ...process.env };
+// Save/restore only the env vars this test file touches
+const TESTED_KEYS = ['DATABASE_URL'] as const;
+const savedEnv: Record<string, string | undefined> = {};
+
+function saveEnv() {
+  for (const key of TESTED_KEYS) {
+    savedEnv[key] = process.env[key];
+  }
+}
+function restoreEnv() {
+  for (const key of TESTED_KEYS) {
+    if (savedEnv[key] === undefined) {
+      delete process.env[key];
+    } else {
+      process.env[key] = savedEnv[key];
+    }
+  }
+}
 
 describe('db module', () => {
   beforeEach(() => {
-    process.env = { ...originalEnv };
+    saveEnv();
   });
 
   afterEach(() => {
-    process.env = originalEnv;
+    restoreEnv();
   });
 
   describe('isDatabaseConfigured', () => {

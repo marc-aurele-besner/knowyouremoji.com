@@ -1,12 +1,4 @@
-import { describe, it, expect, mock, beforeEach } from 'bun:test';
-
-const mockGetEnv = mock(() => ({
-  stripeSecretKey: undefined as string | undefined,
-}));
-
-mock.module('@/lib/env', () => ({
-  getEnv: mockGetEnv,
-}));
+import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
 
 // Mock the Stripe constructor
 const MockStripeConstructor = mock(
@@ -22,11 +14,23 @@ mock.module('stripe', () => ({
 
 const { getStripe, resetStripe } = await import('@/lib/stripe');
 
+// Save/restore STRIPE_SECRET_KEY to avoid polluting other tests
+let savedStripeKey: string | undefined;
+
 describe('stripe client', () => {
   beforeEach(() => {
+    savedStripeKey = process.env.STRIPE_SECRET_KEY;
+    delete process.env.STRIPE_SECRET_KEY;
     resetStripe();
-    mockGetEnv.mockReturnValue({ stripeSecretKey: undefined } as never);
     MockStripeConstructor.mockClear();
+  });
+
+  afterEach(() => {
+    if (savedStripeKey === undefined) {
+      delete process.env.STRIPE_SECRET_KEY;
+    } else {
+      process.env.STRIPE_SECRET_KEY = savedStripeKey;
+    }
   });
 
   it('returns null when STRIPE_SECRET_KEY is not set', () => {
@@ -35,14 +39,14 @@ describe('stripe client', () => {
   });
 
   it('returns a Stripe instance when STRIPE_SECRET_KEY is set', () => {
-    mockGetEnv.mockReturnValue({ stripeSecretKey: 'sk_test_123' } as never);
+    process.env.STRIPE_SECRET_KEY = 'sk_test_123';
     const stripe = getStripe();
     expect(stripe).not.toBeNull();
     expect(MockStripeConstructor).toHaveBeenCalledWith('sk_test_123', { typescript: true });
   });
 
   it('returns the same instance on subsequent calls', () => {
-    mockGetEnv.mockReturnValue({ stripeSecretKey: 'sk_test_123' } as never);
+    process.env.STRIPE_SECRET_KEY = 'sk_test_123';
     const first = getStripe();
     const second = getStripe();
     expect(first).toBe(second);
@@ -50,7 +54,7 @@ describe('stripe client', () => {
   });
 
   it('creates a new instance after resetStripe', () => {
-    mockGetEnv.mockReturnValue({ stripeSecretKey: 'sk_test_123' } as never);
+    process.env.STRIPE_SECRET_KEY = 'sk_test_123';
     const first = getStripe();
     resetStripe();
     const second = getStripe();
