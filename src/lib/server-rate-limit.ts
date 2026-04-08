@@ -5,8 +5,7 @@
  * stored in Upstash Redis. Falls back gracefully (allowing requests)
  * when Redis is not configured.
  *
- * Uses IP address for anonymous users and can be extended to use
- * user IDs for authenticated users in the future.
+ * Uses IP address for anonymous users and user IDs for authenticated users.
  */
 
 import { getRedisClient, isRedisConfigured } from '@/lib/cache';
@@ -15,11 +14,17 @@ import { getRedisClient, isRedisConfigured } from '@/lib/cache';
 // CONSTANTS
 // ============================================
 
-/** Rate limit cache key prefix */
+/** Rate limit cache key prefix for anonymous (IP-based) users */
 const RATE_LIMIT_PREFIX = 'kye:ratelimit';
 
-/** Default rate limit: max requests per window */
+/** Rate limit cache key prefix for authenticated users */
+export const AUTHENTICATED_RATE_LIMIT_PREFIX = 'kye:ratelimit:user';
+
+/** Default rate limit for anonymous users: max requests per window */
 export const DEFAULT_RATE_LIMIT = 10;
+
+/** Rate limit for authenticated users: max requests per window */
+export const AUTHENTICATED_RATE_LIMIT = 50;
 
 /** Default rate limit window in seconds (24 hours) */
 export const DEFAULT_WINDOW_SECONDS = 86400;
@@ -168,5 +173,51 @@ export function rateLimitHeaders(result: RateLimitResult): Record<string, string
     ...(result.allowed
       ? {}
       : { 'Retry-After': String(result.resetAt - Math.floor(Date.now() / 1000)) }),
+  };
+}
+
+// ============================================
+// AUTHENTICATED USAGE TRACKING
+// ============================================
+
+export interface RateLimitIdentifier {
+  /** The identifier string (user ID or IP address) */
+  identifier: string;
+  /** Whether the user is authenticated */
+  isAuthenticated: boolean;
+  /** Rate limit config to use based on auth status */
+  config: RateLimitConfig;
+}
+
+/**
+ * Determine the rate limit identifier for a request.
+ *
+ * For authenticated users, uses the user ID with a higher rate limit.
+ * For anonymous users, falls back to IP address with the default limit.
+ */
+export async function getRateLimitIdentifier(headers: Headers): Promise<RateLimitIdentifier> {
+  // Try to get the authenticated session (dynamic import to avoid pulling
+  // auth.ts into the module graph for tests that only need rate limiting)
+  try {
+    const { auth } = await import('@/lib/auth');
+    const session = await auth();
+    if (session?.user?.id) {
+      return {
+        identifier: session.user.id,
+        isAuthenticated: true,
+        config: {
+          limit: AUTHENTICATED_RATE_LIMIT,
+          prefix: AUTHENTICATED_RATE_LIMIT_PREFIX,
+        },
+      };
+    }
+  } catch {
+    // Auth check failed — fall through to anonymous
+  }
+
+  return {
+    identifier: getClientIp(headers),
+    isAuthenticated: false,
+    config: {},
   };
 }

@@ -5,7 +5,7 @@ import type { InterpretRequest, InterpretationResult, InterpretErrorResponse } f
 import { interpretMessage } from '@/lib/interpreter';
 import { OpenAIError } from '@/lib/openai';
 import { logInterpreterUsage } from '@/lib/slack';
-import { checkRateLimit, getClientIp, rateLimitHeaders } from '@/lib/server-rate-limit';
+import { checkRateLimit, getRateLimitIdentifier, rateLimitHeaders } from '@/lib/server-rate-limit';
 
 /**
  * Check if a string contains at least one emoji
@@ -155,9 +155,9 @@ export async function POST(
   request: NextRequest
 ): Promise<NextResponse<InterpretationResult | InterpretErrorResponse>> {
   try {
-    // Server-side rate limiting
-    const clientIp = getClientIp(request.headers);
-    const rateLimitResult = await checkRateLimit(clientIp);
+    // Server-side rate limiting (uses user ID for authenticated, IP for anonymous)
+    const { identifier, config } = await getRateLimitIdentifier(request.headers);
+    const rateLimitResult = await checkRateLimit(identifier, config);
 
     if (!rateLimitResult.allowed) {
       return createErrorResponse('Rate limit exceeded. Please try again later.', 429);
