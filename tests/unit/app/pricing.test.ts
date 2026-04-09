@@ -237,5 +237,19 @@ describe('Pricing Page', () => {
         content.includes('unlimited') || content.includes('priority') || content.includes('pro');
       expect(hasProBenefits).toBe(true);
     });
+
+    test('contains checkout button for pro tier', () => {
+      const result = PricingPage();
+
+      const content = extractContent(result);
+      expect(content).toContain('CheckoutButton');
+    });
+
+    test('contains Most Popular badge for pro tier', () => {
+      const result = PricingPage();
+
+      const content = extractContent(result).toLowerCase();
+      expect(content).toContain('most popular');
+    });
   });
 });
