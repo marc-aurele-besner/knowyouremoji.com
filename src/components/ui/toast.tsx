@@ -2,7 +2,7 @@
 
 import * as ToastPrimitive from '@radix-ui/react-toast';
 import { cn } from '@/lib/utils';
-import { forwardRef, ComponentPropsWithoutRef, ElementRef } from 'react';
+import { forwardRef, ComponentPropsWithoutRef, ElementRef, useState } from 'react';
 
 const ToastProvider = ToastPrimitive.Provider;
 
@@ -111,6 +111,69 @@ const ToastDescription = forwardRef<
 ToastDescription.displayName = ToastPrimitive.Description.displayName;
 
 type ToastActionElement = React.ReactElement<typeof ToastAction>;
+
+// Toast hook for triggering toasts
+type ToastData = {
+  id: string;
+  title: string;
+  description?: string;
+  variant?: 'default' | 'destructive' | 'success';
+};
+
+let toastListeners: ((toast: ToastData) => void)[] = [];
+
+export function toast({
+  title,
+  description,
+  variant = 'default',
+}: {
+  title: string;
+  description?: string;
+  variant?: 'default' | 'destructive' | 'success';
+}) {
+  const id = Math.random().toString(36).slice(2);
+  toastListeners.forEach((listener) => listener({ id, title, description, variant }));
+}
+
+export function useToast() {
+  const [toasts, setToasts] = useState<ToastData[]>([]);
+
+  // Register listener
+  useState(() => {
+    const addToast = (newToast: ToastData) => {
+      setToasts((prev) => [...prev, newToast]);
+      setTimeout(() => {
+        setToasts((prev) => prev.filter((t) => t.id !== newToast.id));
+      }, 5000);
+    };
+    toastListeners.push(addToast);
+    return () => {
+      toastListeners = toastListeners.filter((l) => l !== addToast);
+    };
+  });
+
+  return { toasts };
+}
+
+// Toaster component - wrap your app with this
+export function Toaster() {
+  const { toasts } = useToast();
+
+  return (
+    <ToastProvider>
+      {toasts.map((t) => (
+        <Toast key={t.id} variant={t.variant}>
+          <div className="flex-1">
+            <ToastTitle>{t.title}</ToastTitle>
+            {t.description && <ToastDescription>{t.description}</ToastDescription>}
+          </div>
+          <ToastClose />
+        </Toast>
+      ))}
+      <ToastViewport />
+    </ToastProvider>
+  );
+}
 
 export {
   type ToastActionElement,
