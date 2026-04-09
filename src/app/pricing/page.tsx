@@ -180,9 +180,7 @@ export default function PricingPage() {
                     <span className="text-gray-600 dark:text-gray-300">No ads</span>
                   </li>
                 </ul>
-                <CheckoutButton className="w-full">
-                  Start 7-Day Free Trial
-                </CheckoutButton>
+                <CheckoutButton className="w-full">Start 7-Day Free Trial</CheckoutButton>
               </CardContent>
             </Card>
           </div>

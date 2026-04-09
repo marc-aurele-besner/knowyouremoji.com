@@ -49,12 +49,7 @@ function CheckoutButton({ children, ...props }: CheckoutButtonProps) {
 
   return (
     <div>
-      <Button
-        onClick={handleCheckout}
-        loading={isLoading}
-        disabled={isLoading}
-        {...props}
-      >
+      <Button onClick={handleCheckout} loading={isLoading} disabled={isLoading} {...props}>
         {children ?? 'Start Free Trial'}
       </Button>
       {error && (
