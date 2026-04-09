@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { CheckoutButton } from '@/components/checkout';
 import { getEnv } from '@/lib/env';
 
 const pageTitle = 'Pricing';
@@ -142,7 +143,7 @@ export default function PricingPage() {
             {/* Pro Tier */}
             <Card className="relative border-amber-500 dark:border-amber-400">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge variant="warning">Coming Soon</Badge>
+                <Badge variant="warning">Most Popular</Badge>
               </div>
               <CardHeader>
                 <CardTitle className="text-2xl">Pro</CardTitle>
@@ -179,9 +180,9 @@ export default function PricingPage() {
                     <span className="text-gray-600 dark:text-gray-300">No ads</span>
                   </li>
                 </ul>
-                <Button className="w-full" disabled>
-                  Coming in Phase 2
-                </Button>
+                <CheckoutButton className="w-full">
+                  Start 7-Day Free Trial
+                </CheckoutButton>
               </CardContent>
             </Card>
           </div>
