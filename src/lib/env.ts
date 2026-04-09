@@ -55,6 +55,8 @@ export interface EnvConfig {
   stripeSecretKey: string | undefined;
   /** Stripe publishable key for client-side usage */
   stripePublishableKey: string | undefined;
+  /** Stripe webhook secret for signature verification */
+  stripeWebhookSecret: string | undefined;
   /**
    * Neon Postgres connection string (server-only).
    * When set, emoji detail views increment popularity used on the homepage.
@@ -91,6 +93,7 @@ export function getEnv(): EnvConfig {
     slackLogChannelId: process.env.SLACK_LOG_CHANNEL_ID,
     stripeSecretKey: process.env.STRIPE_SECRET_KEY,
     stripePublishableKey: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
+    stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
     databaseUrl: process.env.DATABASE_URL,
   };
 }

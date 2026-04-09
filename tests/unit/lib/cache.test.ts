@@ -234,62 +234,94 @@ describe('cache module', () => {
 
   describe('cacheGet error handling', () => {
     it('should return null and log error when Redis call fails', async () => {
-      process.env.UPSTASH_REDIS_REST_URL = 'https://invalid-test.upstash.io';
+      // Set valid env vars to create the client, then mock get to throw
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-      // Suppress console.error during this test
+      // Get the client to initialize it
+      const client = getRedisClient();
+      expect(client).not.toBeNull();
+
+      // Mock the get method to throw
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      const originalGet = client!.get.bind(client);
+      client!.get = async () => {
+        throw new Error('Redis connection failed');
+      };
 
       const result = await cacheGet('test-key');
       expect(result).toBeNull();
       expect(consoleSpy).toHaveBeenCalled();
 
+      // Restore
+      client!.get = originalGet;
       consoleSpy.mockRestore();
     });
   });
 
   describe('cacheSet error handling', () => {
     it('should return false and log error when Redis call fails with TTL', async () => {
-      process.env.UPSTASH_REDIS_REST_URL = 'https://invalid-test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-      // Suppress console.error during this test
+      const client = getRedisClient();
+      expect(client).not.toBeNull();
+
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      const originalSet = client!.set.bind(client);
+      client!.set = async () => {
+        throw new Error('Redis connection failed');
+      };
 
       const result = await cacheSet('test-key', { data: 'test' }, 3600);
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
+      client!.set = originalSet;
       consoleSpy.mockRestore();
     });
 
     it('should return false and log error when Redis call fails without TTL', async () => {
-      process.env.UPSTASH_REDIS_REST_URL = 'https://invalid-test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-      // Suppress console.error during this test
+      const client = getRedisClient();
+      expect(client).not.toBeNull();
+
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      const originalSet = client!.set.bind(client);
+      client!.set = async () => {
+        throw new Error('Redis connection failed');
+      };
 
       const result = await cacheSet('test-key', { data: 'test' });
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
+      client!.set = originalSet;
       consoleSpy.mockRestore();
     });
   });
 
   describe('cacheDelete error handling', () => {
     it('should return false and log error when Redis call fails', async () => {
-      process.env.UPSTASH_REDIS_REST_URL = 'https://invalid-test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-      // Suppress console.error during this test
+      const client = getRedisClient();
+      expect(client).not.toBeNull();
+
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      const originalDel = client!.del.bind(client);
+      client!.del = async () => {
+        throw new Error('Redis connection failed');
+      };
 
       const result = await cacheDelete('test-key');
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
+      client!.del = originalDel;
       consoleSpy.mockRestore();
     });
   });
