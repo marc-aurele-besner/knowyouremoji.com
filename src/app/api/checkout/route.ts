@@ -71,7 +71,7 @@ export async function POST() {
     }
 
     // Get the Stripe price ID from environment
-    const stripePriceId = process.env.STRIPE_PRO_PRICE_ID;
+    const stripePriceId = env.stripeProPriceId;
     if (!stripePriceId) {
       return NextResponse.json({ error: 'Stripe price not configured' }, { status: 503 });
     }

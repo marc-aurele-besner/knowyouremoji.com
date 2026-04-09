@@ -57,6 +57,8 @@ export interface EnvConfig {
   stripePublishableKey: string | undefined;
   /** Stripe webhook secret for signature verification */
   stripeWebhookSecret: string | undefined;
+  /** Stripe price ID for the Pro subscription plan */
+  stripeProPriceId: string | undefined;
   /**
    * Neon Postgres connection string (server-only).
    * When set, emoji detail views increment popularity used on the homepage.
@@ -94,6 +96,7 @@ export function getEnv(): EnvConfig {
     stripeSecretKey: process.env.STRIPE_SECRET_KEY,
     stripePublishableKey: process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY,
     stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET,
+    stripeProPriceId: process.env.STRIPE_PRO_PRICE_ID,
     databaseUrl: process.env.DATABASE_URL,
   };
 }
