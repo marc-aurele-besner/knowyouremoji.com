@@ -26,6 +26,9 @@ export const DEFAULT_RATE_LIMIT = 10;
 /** Rate limit for authenticated users: max requests per window */
 export const AUTHENTICATED_RATE_LIMIT = 50;
 
+/** Rate limit prefix for premium users (for tracking only) */
+export const PREMIUM_RATE_LIMIT_PREFIX = 'kye:ratelimit:premium';
+
 /** Default rate limit window in seconds (24 hours) */
 export const DEFAULT_WINDOW_SECONDS = 86400;
 
@@ -185,13 +188,65 @@ export interface RateLimitIdentifier {
   identifier: string;
   /** Whether the user is authenticated */
   isAuthenticated: boolean;
+  /** Whether the user has an active premium subscription (bypasses rate limits) */
+  isPremium: boolean;
   /** Rate limit config to use based on auth status */
   config: RateLimitConfig;
 }
 
 /**
+ * Check if a user has an active premium subscription.
+ *
+ * Queries the subscriptions table for the given user ID.
+ * Returns true if the user has an active subscription with a non-free plan
+ * and the current period has not ended.
+ *
+ * Falls back to false if the database is not configured or the query fails.
+ */
+export async function checkPremiumStatus(userId: string): Promise<boolean> {
+  try {
+    const { getDb } = await import('@/lib/db');
+    const { subscriptions } = await import('@/lib/db/schema');
+    const { eq, and, ne } = await import('drizzle-orm');
+
+    const db = getDb();
+    if (!db) return false;
+
+    const rows = await db
+      .select({
+        status: subscriptions.status,
+        plan: subscriptions.plan,
+        currentPeriodEnd: subscriptions.currentPeriodEnd,
+      })
+      .from(subscriptions)
+      .where(
+        and(
+          eq(subscriptions.userId, userId),
+          eq(subscriptions.status, 'active'),
+          ne(subscriptions.plan, 'free')
+        )
+      )
+      .limit(1);
+
+    if (rows.length === 0) return false;
+
+    const sub = rows[0];
+    // If currentPeriodEnd is set, check it hasn't expired
+    if (sub.currentPeriodEnd && sub.currentPeriodEnd < new Date()) {
+      return false;
+    }
+
+    return true;
+  } catch {
+    // DB check failed — treat as non-premium
+    return false;
+  }
+}
+
+/**
  * Determine the rate limit identifier for a request.
  *
+ * For premium subscribers, sets isPremium to true (bypasses rate limits).
  * For authenticated users, uses the user ID with a higher rate limit.
  * For anonymous users, falls back to IP address with the default limit.
  */
@@ -202,9 +257,23 @@ export async function getRateLimitIdentifier(headers: Headers): Promise<RateLimi
     const { auth } = await import('@/lib/auth');
     const session = await auth();
     if (session?.user?.id) {
+      const isPremium = await checkPremiumStatus(session.user.id);
+
+      if (isPremium) {
+        return {
+          identifier: session.user.id,
+          isAuthenticated: true,
+          isPremium: true,
+          config: {
+            prefix: PREMIUM_RATE_LIMIT_PREFIX,
+          },
+        };
+      }
+
       return {
         identifier: session.user.id,
         isAuthenticated: true,
+        isPremium: false,
         config: {
           limit: AUTHENTICATED_RATE_LIMIT,
           prefix: AUTHENTICATED_RATE_LIMIT_PREFIX,
@@ -218,6 +287,7 @@ export async function getRateLimitIdentifier(headers: Headers): Promise<RateLimi
   return {
     identifier: getClientIp(headers),
     isAuthenticated: false,
+    isPremium: false,
     config: {},
   };
 }

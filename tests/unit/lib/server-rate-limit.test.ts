@@ -16,17 +16,21 @@ mock.module('@/lib/auth', () => ({
   signOut: mock(() => {}),
 }));
 
-import {
+import * as serverRateLimit from '../../../src/lib/server-rate-limit';
+
+const {
   checkRateLimit,
   getClientIp,
   rateLimitHeaders,
   buildRateLimitKey,
   getRateLimitIdentifier,
+  checkPremiumStatus,
   DEFAULT_RATE_LIMIT,
   DEFAULT_WINDOW_SECONDS,
   AUTHENTICATED_RATE_LIMIT,
   AUTHENTICATED_RATE_LIMIT_PREFIX,
-} from '../../../src/lib/server-rate-limit';
+  PREMIUM_RATE_LIMIT_PREFIX,
+} = serverRateLimit;
 
 // Mock Redis client
 const mockObj = {
@@ -292,10 +296,104 @@ describe('server-rate-limit', () => {
     });
   });
 
+  describe('constants (premium)', () => {
+    it('should have correct premium prefix', () => {
+      expect(PREMIUM_RATE_LIMIT_PREFIX).toBe('kye:ratelimit:premium');
+    });
+  });
+
+  describe('checkPremiumStatus', () => {
+    it('should return false when DB is not configured (getDb returns null)', async () => {
+      // checkPremiumStatus dynamically imports @/lib/db; we spy on the module-level fn
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue(null);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(false);
+      getDbSpy.mockRestore();
+    });
+
+    it('should return false when no subscription found', async () => {
+      const mockLimit = mock(() => Promise.resolve([]));
+      const mockWhere = mock(() => ({ limit: mockLimit }));
+      const mockFrom = mock(() => ({ where: mockWhere }));
+      const mockSelect = mock(() => ({ from: mockFrom }));
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue({ select: mockSelect } as never);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(false);
+      getDbSpy.mockRestore();
+    });
+
+    it('should return true for active premium subscription', async () => {
+      const futureDate = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000);
+      const mockLimit = mock(() =>
+        Promise.resolve([{ status: 'active', plan: 'premium', currentPeriodEnd: futureDate }])
+      );
+      const mockWhere = mock(() => ({ limit: mockLimit }));
+      const mockFrom = mock(() => ({ where: mockWhere }));
+      const mockSelect = mock(() => ({ from: mockFrom }));
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue({ select: mockSelect } as never);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(true);
+      getDbSpy.mockRestore();
+    });
+
+    it('should return true when currentPeriodEnd is null (lifetime)', async () => {
+      const mockLimit = mock(() =>
+        Promise.resolve([{ status: 'active', plan: 'pro', currentPeriodEnd: null }])
+      );
+      const mockWhere = mock(() => ({ limit: mockLimit }));
+      const mockFrom = mock(() => ({ where: mockWhere }));
+      const mockSelect = mock(() => ({ from: mockFrom }));
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue({ select: mockSelect } as never);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(true);
+      getDbSpy.mockRestore();
+    });
+
+    it('should return false when subscription has expired', async () => {
+      const pastDate = new Date(Date.now() - 24 * 60 * 60 * 1000);
+      const mockLimit = mock(() =>
+        Promise.resolve([{ status: 'active', plan: 'premium', currentPeriodEnd: pastDate }])
+      );
+      const mockWhere = mock(() => ({ limit: mockLimit }));
+      const mockFrom = mock(() => ({ where: mockWhere }));
+      const mockSelect = mock(() => ({ from: mockFrom }));
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue({ select: mockSelect } as never);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(false);
+      getDbSpy.mockRestore();
+    });
+
+    it('should return false when DB query throws', async () => {
+      const mockLimit = mock(() => Promise.reject(new Error('DB connection failed')));
+      const mockWhere = mock(() => ({ limit: mockLimit }));
+      const mockFrom = mock(() => ({ where: mockWhere }));
+      const mockSelect = mock(() => ({ from: mockFrom }));
+      const dbMod = await import('../../../src/lib/db');
+      const getDbSpy = spyOn(dbMod, 'getDb').mockReturnValue({ select: mockSelect } as never);
+      const result = await checkPremiumStatus('user-123');
+      expect(result).toBe(false);
+      getDbSpy.mockRestore();
+    });
+  });
+
   describe('getRateLimitIdentifier', () => {
+    let checkPremiumSpy: ReturnType<typeof spyOn>;
+
     beforeEach(() => {
       mockAuth.mockReset();
       mockAuth.mockResolvedValue(null);
+
+      // Spy on checkPremiumStatus to avoid DB dependency
+      checkPremiumSpy = spyOn(serverRateLimit, 'checkPremiumStatus').mockResolvedValue(false);
+    });
+
+    afterEach(() => {
+      checkPremiumSpy.mockRestore();
     });
 
     it('should return user ID and authenticated config when session exists', async () => {
@@ -309,8 +407,42 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('user-abc-123');
       expect(result.isAuthenticated).toBe(true);
+      expect(result.isPremium).toBe(false);
       expect(result.config.limit).toBe(AUTHENTICATED_RATE_LIMIT);
       expect(result.config.prefix).toBe(AUTHENTICATED_RATE_LIMIT_PREFIX);
+    });
+
+    it('should return premium config for premium subscriber', async () => {
+      mockAuth.mockResolvedValue({
+        user: { id: 'user-premium-456', email: 'premium@example.com' },
+        expires: '2099-01-01',
+      });
+      checkPremiumSpy.mockResolvedValue(true);
+
+      const headers = new Headers({ 'x-forwarded-for': '1.2.3.4' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('user-premium-456');
+      expect(result.isAuthenticated).toBe(true);
+      expect(result.isPremium).toBe(true);
+      expect(result.config.prefix).toBe(PREMIUM_RATE_LIMIT_PREFIX);
+      expect(result.config.limit).toBeUndefined();
+    });
+
+    it('should fall back to authenticated config when premium check returns false', async () => {
+      mockAuth.mockResolvedValue({
+        user: { id: 'user-789', email: 'test@example.com' },
+        expires: '2099-01-01',
+      });
+      checkPremiumSpy.mockResolvedValue(false);
+
+      const headers = new Headers({ 'x-forwarded-for': '1.2.3.4' });
+      const result = await getRateLimitIdentifier(headers);
+
+      expect(result.identifier).toBe('user-789');
+      expect(result.isAuthenticated).toBe(true);
+      expect(result.isPremium).toBe(false);
+      expect(result.config.limit).toBe(AUTHENTICATED_RATE_LIMIT);
     });
 
     it('should fall back to IP when session has no user', async () => {
@@ -321,6 +453,7 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('10.0.0.1');
       expect(result.isAuthenticated).toBe(false);
+      expect(result.isPremium).toBe(false);
       expect(result.config).toEqual({});
     });
 
@@ -335,6 +468,7 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('10.0.0.2');
       expect(result.isAuthenticated).toBe(false);
+      expect(result.isPremium).toBe(false);
       expect(result.config).toEqual({});
     });
 
@@ -346,6 +480,7 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('192.168.1.1');
       expect(result.isAuthenticated).toBe(false);
+      expect(result.isPremium).toBe(false);
       expect(result.config).toEqual({});
     });
 
@@ -357,6 +492,7 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('5.5.5.5');
       expect(result.isAuthenticated).toBe(false);
+      expect(result.isPremium).toBe(false);
       expect(result.config).toEqual({});
     });
 
@@ -368,6 +504,7 @@ describe('server-rate-limit', () => {
 
       expect(result.identifier).toBe('unknown');
       expect(result.isAuthenticated).toBe(false);
+      expect(result.isPremium).toBe(false);
     });
   });
 });
