@@ -470,5 +470,257 @@ describe('Stripe webhook handler', () => {
       const response = await POST(request);
       expect(response.status).toBe(200);
     });
+
+    it('should handle customer.subscription.updated with canceled status', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+      const limitMock = mock(() => Promise.resolve([{ id: 'sub-123', userId: 'user-456' }]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.updated',
+        data: {
+          object: {
+            id: 'sub_test123',
+            status: 'canceled',
+            current_period_end: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
+            trial_end: null,
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle customer.subscription.updated with past_due status', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+      const limitMock = mock(() => Promise.resolve([{ id: 'sub-123', userId: 'user-456' }]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.updated',
+        data: {
+          object: {
+            id: 'sub_test123',
+            status: 'past_due',
+            current_period_end: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
+            trial_end: null,
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle checkout.session.completed when db is not configured', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      mockStripeInstance.subscriptions.retrieve.mockResolvedValue({
+        trial_end: Math.floor(Date.now() / 1000) + 7 * 24 * 60 * 60,
+        current_period_end: Math.floor(Date.now() / 1000) + 37 * 24 * 60 * 60,
+      });
+
+      // Return null for db to exercise the early return
+      mockGetDb.mockReturnValue(null);
+
+      const mockEvent = {
+        type: 'checkout.session.completed',
+        data: {
+          object: {
+            mode: 'subscription',
+            metadata: { userId: 'user-123' },
+            subscription: 'sub_test123',
+            customer: 'cus_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle customer.subscription.updated when no subscription found in db', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      mockStripeInstance.subscriptions.retrieve.mockResolvedValue({
+        id: 'sub_test123',
+        status: 'active',
+      });
+
+      // Return empty array to simulate no subscription found
+      const limitMock = mock(() => Promise.resolve([]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.updated',
+        data: {
+          object: {
+            id: 'sub_test123',
+            status: 'active',
+            current_period_end: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
+            trial_end: null,
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle customer.subscription.deleted when db is not configured', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // Return null for db to exercise the early return
+      mockGetDb.mockReturnValue(null);
+
+      const mockEvent = {
+        type: 'customer.subscription.deleted',
+        data: {
+          object: {
+            id: 'sub_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle invoice.payment_failed when db is not configured', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // Return null for db to exercise the early return
+      mockGetDb.mockReturnValue(null);
+
+      const mockEvent = {
+        type: 'invoice.payment_failed',
+        data: {
+          object: {
+            subscription: 'sub_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
   });
 });

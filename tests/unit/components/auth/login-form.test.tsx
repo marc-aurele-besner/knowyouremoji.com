@@ -255,6 +255,26 @@ describe('LoginForm', () => {
         expect(screen.getByRole('button', { name: /^sign in$/i })).toBeInTheDocument();
       });
     });
+
+    it('does not send magic link with invalid email', async () => {
+      mockFetch.mockClear();
+      render(<LoginForm />);
+      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
+
+      await waitFor(() => {
+        expect(screen.getByRole('button', { name: /send magic link/i })).toBeInTheDocument();
+      });
+
+      fireEvent.change(screen.getByLabelText(/email/i), {
+        target: { value: 'not-an-email' },
+      });
+      fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
+
+      // fetch should not be called with invalid email
+      await waitFor(() => {
+        expect(mockFetch).not.toHaveBeenCalled();
+      });
+    });
   });
 
   describe('OAuth sign in', () => {
@@ -273,6 +293,16 @@ describe('LoginForm', () => {
 
       await waitFor(() => {
         expect(mockSignIn).toHaveBeenCalledWith('github', { callbackUrl: '/dashboard' });
+      });
+    });
+
+    it('shows error when OAuth sign in throws', async () => {
+      mockSignIn.mockImplementation(() => Promise.reject(new Error('OAuth error')));
+      render(<LoginForm />);
+      fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText(/failed to sign in with provider/i)).toBeInTheDocument();
       });
     });
   });
