@@ -251,3 +251,98 @@ describe('ToastClose', () => {
     });
   });
 });
+
+describe('Toast custom classNames', () => {
+  it('applies custom className to ToastViewport', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true}>
+          <ToastTitle>Title</ToastTitle>
+        </Toast>
+        <ToastViewport data-testid="viewport" className="custom-viewport" />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('viewport')).toHaveClass('custom-viewport');
+    });
+  });
+
+  it('applies custom className to Toast', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true} data-testid="toast" className="custom-toast">
+          <ToastTitle>Title</ToastTitle>
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('toast')).toHaveClass('custom-toast');
+    });
+  });
+
+  it('applies custom className to ToastTitle', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true}>
+          <ToastTitle data-testid="title" className="custom-title">Title</ToastTitle>
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('title')).toHaveClass('custom-title');
+    });
+  });
+
+  it('applies custom className to ToastDescription', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true}>
+          <ToastTitle>Title</ToastTitle>
+          <ToastDescription data-testid="desc" className="custom-desc">Desc</ToastDescription>
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('desc')).toHaveClass('custom-desc');
+    });
+  });
+
+  it('applies custom className to ToastAction', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true}>
+          <ToastTitle>Title</ToastTitle>
+          <ToastAction altText="Act" data-testid="action" className="custom-action">Act</ToastAction>
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('action')).toHaveClass('custom-action');
+    });
+  });
+
+  it('applies custom className to ToastClose', async () => {
+    render(
+      <ToastProvider>
+        <Toast open={true}>
+          <ToastTitle>Title</ToastTitle>
+          <ToastClose data-testid="close" className="custom-close" />
+        </Toast>
+        <ToastViewport />
+      </ToastProvider>
+    );
+
+    await waitFor(() => {
+      expect(screen.getByTestId('close')).toHaveClass('custom-close');
+    });
+  });
+});
