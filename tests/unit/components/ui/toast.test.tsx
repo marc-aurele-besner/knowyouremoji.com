@@ -8,6 +8,9 @@ import {
   ToastDescription,
   ToastAction,
   ToastClose,
+  toast,
+  useToast,
+  Toaster,
 } from '@/components/ui/toast';
 
 afterEach(() => {
@@ -249,5 +252,47 @@ describe('ToastClose', () => {
       expect(close).toHaveClass('right-2');
       expect(close).toHaveClass('top-2');
     });
+  });
+});
+
+// Test the toast function and useToast hook
+describe('toast function', () => {
+  it('creates a toast with title only', () => {
+    // The toast function adds a listener and calls it
+    // We test that it doesn't throw
+    expect(() => {
+      toast({ title: 'Test toast' });
+    }).not.toThrow();
+  });
+
+  it('creates a toast with title and description', () => {
+    expect(() => {
+      toast({ title: 'Test', description: 'Description' });
+    }).not.toThrow();
+  });
+
+  it('creates a toast with variant', () => {
+    expect(() => {
+      toast({ title: 'Test', variant: 'destructive' });
+    }).not.toThrow();
+  });
+
+  it('creates a toast with success variant', () => {
+    expect(() => {
+      toast({ title: 'Success', variant: 'success' });
+    }).not.toThrow();
+  });
+});
+
+// Test the Toaster component
+describe('Toaster', () => {
+  it('renders Toaster component without crashing', () => {
+    expect(() => {
+      render(
+        <ToastProvider>
+          <Toaster />
+        </ToastProvider>
+      );
+    }).not.toThrow();
   });
 });
