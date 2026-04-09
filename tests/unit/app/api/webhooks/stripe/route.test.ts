@@ -26,7 +26,8 @@ const mockGetEnv = mock(() => ({
   stripeSecretKey: 'sk_test_123',
   stripeWebhookSecret: 'wh_secret_test',
 }));
-const mockGetDb = mock(() => null);
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const mockGetDb: any = mock(() => null);
 
 mock.module('@/lib/stripe', () => ({
   getStripe: mockGetStripe,
@@ -185,6 +186,238 @@ describe('Stripe webhook handler', () => {
 
       // Restore the mock for subsequent tests
       mockGetStripe.mockReturnValue(mockStripeInstance);
+    });
+
+    it('should handle checkout.session.completed with db insert for new subscription', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      mockStripeInstance.subscriptions.retrieve.mockResolvedValue({
+        trial_end: Math.floor(Date.now() / 1000) + 7 * 24 * 60 * 60,
+        current_period_end: Math.floor(Date.now() / 1000) + 37 * 24 * 60 * 60,
+      });
+
+      const limitMock = mock(() => Promise.resolve([]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const insertMock: any = mock(() => ({ values: mock(() => Promise.resolve({})) }));
+
+      const mockDb = {
+        select: selectMock,
+        insert: insertMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'checkout.session.completed',
+        data: {
+          object: {
+            mode: 'subscription',
+            metadata: { userId: 'user-123' },
+            subscription: 'sub_test123',
+            customer: 'cus_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle checkout.session.completed with db update for existing subscription', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      mockStripeInstance.subscriptions.retrieve.mockResolvedValue({
+        trial_end: Math.floor(Date.now() / 1000) + 7 * 24 * 60 * 60,
+        current_period_end: Math.floor(Date.now() / 1000) + 37 * 24 * 60 * 60,
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+      const limitMock = mock(() => Promise.resolve([{ id: 'sub-123', userId: 'user-456' }]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'checkout.session.completed',
+        data: {
+          object: {
+            mode: 'subscription',
+            metadata: { userId: 'user-123' },
+            subscription: 'sub_test123',
+            customer: 'cus_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle customer.subscription.updated with db update', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+      const limitMock = mock(() => Promise.resolve([{ id: 'sub-123', userId: 'user-456' }]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.updated',
+        data: {
+          object: {
+            id: 'sub_test123',
+            status: 'active',
+            current_period_end: Math.floor(Date.now() / 1000) + 30 * 24 * 60 * 60,
+            trial_end: null,
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle customer.subscription.deleted with db update', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+
+      const mockDb = {
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.deleted',
+        data: {
+          object: {
+            id: 'sub_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+    });
+
+    it('should handle invoice.payment_failed with db update', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const updateMock: any = mock(() => ({
+        set: mock(() => ({ where: mock(() => Promise.resolve({})) })),
+      }));
+
+      const mockDb = {
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'invoice.payment_failed',
+        data: {
+          object: {
+            subscription: 'sub_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
     });
 
     it('should return 200 for customer.subscription.updated when no subscription found', async () => {
