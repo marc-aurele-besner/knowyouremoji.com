@@ -18,6 +18,40 @@ mock.module('@/lib/combo-data', () => ({
   getRelatedCombos: mockGetRelatedCombos,
 }));
 
+// Mock env to ensure appName is available
+const mockGetEnv = mock(() => ({
+  appUrl: 'http://localhost:3000',
+  appName: 'KnowYourEmoji',
+  openrouterApiKey: undefined,
+  openrouterModel: 'liquid/lfm2-8b-a1b',
+  enableInterpreter: true,
+  sentryDsn: undefined,
+  sentryDsnPublic: undefined,
+  gaMeasurementId: undefined,
+  posthogKey: undefined,
+  posthogHost: undefined,
+  upstashRedisRestUrl: undefined,
+  upstashRedisRestToken: undefined,
+  authSecret: 'test-secret',
+  googleClientId: undefined,
+  googleClientSecret: undefined,
+  githubClientId: undefined,
+  githubClientSecret: undefined,
+  resendApiKey: undefined,
+  resendFromEmail: undefined,
+  slackBotToken: undefined,
+  slackLogChannelId: undefined,
+  stripeSecretKey: undefined,
+  stripePublishableKey: 'pk_test',
+  stripeWebhookSecret: undefined,
+  stripeProPriceId: undefined,
+  databaseUrl: undefined,
+}));
+
+mock.module('@/lib/env', () => ({
+  getEnv: mockGetEnv,
+}));
+
 // Mock the emoji-data module for emoji lookup
 const mockEmojiData: Record<string, { character: string; name: string }> = {
   skull: { character: '💀', name: 'Skull' },
@@ -82,6 +116,35 @@ describe('ComboPage', () => {
     mockGetAllComboSlugs.mockReset();
     mockGetRelatedCombos.mockReset();
     mockNotFound.mockReset();
+    mockGetEnv.mockReset();
+    mockGetEnv.mockImplementation(() => ({
+      appUrl: 'http://localhost:3000',
+      appName: 'KnowYourEmoji',
+      openrouterApiKey: undefined,
+      openrouterModel: 'liquid/lfm2-8b-a1b',
+      enableInterpreter: true,
+      sentryDsn: undefined,
+      sentryDsnPublic: undefined,
+      gaMeasurementId: undefined,
+      posthogKey: undefined,
+      posthogHost: undefined,
+      upstashRedisRestUrl: undefined,
+      upstashRedisRestToken: undefined,
+      authSecret: 'test-secret',
+      googleClientId: undefined,
+      googleClientSecret: undefined,
+      githubClientId: undefined,
+      githubClientSecret: undefined,
+      resendApiKey: undefined,
+      resendFromEmail: undefined,
+      slackBotToken: undefined,
+      slackLogChannelId: undefined,
+      stripeSecretKey: undefined,
+      stripePublishableKey: 'pk_test',
+      stripeWebhookSecret: undefined,
+      stripeProPriceId: undefined,
+      databaseUrl: undefined,
+    }));
     mockGetAllComboSlugs.mockImplementation(() => ['skull-laughing', 'fire-100']);
   });
 
