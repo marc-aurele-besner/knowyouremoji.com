@@ -89,3 +89,16 @@ export const emojiPageViews = pgTable('emoji_page_views', {
   viewCount: bigint('view_count', { mode: 'number' }).notNull().default(0),
   updatedAt: timestamp('updated_at', { mode: 'date' }).defaultNow().notNull(),
 });
+
+// ============================================
+// Profiles (extends Supabase Auth)
+// ============================================
+
+export const profiles = pgTable('profiles', {
+  id: uuid('id').notNull().primaryKey(), // References auth.users(id)
+  email: text('email').unique().notNull(),
+  name: text('name'),
+  avatarUrl: text('avatar_url'),
+  createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+  updatedAt: timestamp('updated_at', { mode: 'date' }).defaultNow().notNull(),
+});
