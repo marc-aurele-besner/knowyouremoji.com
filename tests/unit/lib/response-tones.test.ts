@@ -311,6 +311,28 @@ describe('response-tones', () => {
       const reasoning = generateToneReasoning('CLARIFYING', lowConfMetrics);
       expect(reasoning.toLowerCase()).toContain('ambiguity');
     });
+
+    it('should generate context-specific reasoning for NEUTRAL with passive-aggression > 30', () => {
+      const paMetrics: InterpretationMetrics = {
+        ...baseMetrics,
+        passiveAggressionProbability: 35,
+        overallTone: 'neutral',
+      };
+
+      const reasoning = generateToneReasoning('NEUTRAL', paMetrics);
+      expect(reasoning.toLowerCase()).toContain('neutrality');
+    });
+
+    it('should generate context-specific reasoning for MATCHING with negative tone', () => {
+      const negativeMetrics: InterpretationMetrics = {
+        ...baseMetrics,
+        overallTone: 'negative',
+      };
+
+      const reasoning = generateToneReasoning('MATCHING', negativeMetrics);
+      expect(typeof reasoning).toBe('string');
+      expect(reasoning.length).toBeGreaterThan(0);
+    });
   });
 
   describe('generateToneExamples', () => {
