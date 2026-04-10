@@ -295,4 +295,109 @@ describe('Toaster', () => {
       );
     }).not.toThrow();
   });
+
+  it('renders Toaster with toasts', async () => {
+    render(
+      <ToastProvider>
+        <Toaster />
+      </ToastProvider>
+    );
+
+    // Trigger a toast
+    toast({ title: 'Test Toast', description: 'Test Description' });
+
+    await waitFor(() => {
+      expect(screen.getByText('Test Toast')).toBeInTheDocument();
+      expect(screen.getByText('Test Description')).toBeInTheDocument();
+    });
+  });
+
+  it('renders Toaster with destructive variant toast', async () => {
+    render(
+      <ToastProvider>
+        <Toaster />
+      </ToastProvider>
+    );
+
+    toast({ title: 'Error Toast', variant: 'destructive' });
+
+    await waitFor(() => {
+      expect(screen.getByText('Error Toast')).toBeInTheDocument();
+    });
+  });
+
+  it('renders Toaster with success variant toast', async () => {
+    render(
+      <ToastProvider>
+        <Toaster />
+      </ToastProvider>
+    );
+
+    toast({ title: 'Success Toast', variant: 'success' });
+
+    await waitFor(() => {
+      expect(screen.getByText('Success Toast')).toBeInTheDocument();
+    });
+  });
+
+  it('renders multiple toasts via Toaster', async () => {
+    render(
+      <ToastProvider>
+        <Toaster />
+      </ToastProvider>
+    );
+
+    toast({ title: 'First Toast' });
+    toast({ title: 'Second Toast' });
+
+    await waitFor(() => {
+      expect(screen.getByText('First Toast')).toBeInTheDocument();
+      expect(screen.getByText('Second Toast')).toBeInTheDocument();
+    });
+  });
+});
+
+// Test useToast hook directly
+describe('useToast hook', () => {
+  // Create a test component that uses useToast
+  function TestComponent({ onToasts }: { onToasts?: (toasts: unknown[]) => void }) {
+    const { toasts } = useToast();
+    if (onToasts) {
+      onToasts(toasts);
+    }
+    return (
+      <div>
+        {toasts.map((t) => (
+          <div key={t.id}>{t.title}</div>
+        ))}
+      </div>
+    );
+  }
+
+  it('useToast returns empty toasts initially', async () => {
+    let capturedToasts: unknown[] = [];
+    render(
+      <ToastProvider>
+        <TestComponent onToasts={(t) => (capturedToasts = t)} />
+      </ToastProvider>
+    );
+
+    expect(capturedToasts).toHaveLength(0);
+  });
+
+  it('useToast receives toasts after toast() is called', async () => {
+    let capturedToasts: unknown[] = [];
+    render(
+      <ToastProvider>
+        <TestComponent onToasts={(t) => (capturedToasts = t)} />
+      </ToastProvider>
+    );
+
+    toast({ title: 'Hook Test' });
+
+    await waitFor(() => {
+      expect(capturedToasts).toHaveLength(1);
+      expect(capturedToasts[0]).toHaveProperty('title', 'Hook Test');
+    });
+  });
 });
