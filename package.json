@@ -16,6 +16,7 @@
     "test:watch": "npx bun test tests/unit tests/integration --watch",
     "test:e2e": "playwright test",
     "validate:emojis": "npx bun run scripts/validate-emojis.ts",
+    "import:neon": "npx bun run scripts/import-to-neon.ts",
     "prepare": "husky"
   },
   "dependencies": {
