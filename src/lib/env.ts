@@ -55,7 +55,7 @@ export interface EnvConfig {
   stripeSecretKey: string | undefined;
   /** Stripe publishable key for client-side usage */
   stripePublishableKey: string | undefined;
-  /** Stripe webhook secret for signature verification */
+  /** Stripe webhook secret for webhook signature verification */
   stripeWebhookSecret: string | undefined;
   /** Stripe price ID for the Pro subscription plan */
   stripeProPriceId: string | undefined;
