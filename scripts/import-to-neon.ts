@@ -1,11 +1,11 @@
 #!/usr/bin/env bun
 /**
- * Import JSON data to Supabase
+ * Import JSON data to Neon Postgres
  *
- * Imports all emoji and combo data from JSON files into the Supabase database.
+ * Imports all emoji and combo data from JSON files into the Neon Postgres database.
  * This script is used for Phase 2 migration from static JSON to database.
  *
- * Usage: bun run scripts/import-to-supabase.ts
+ * Usage: bun run scripts/import-to-neon.ts
  */
 
 import fs from 'fs';
@@ -238,7 +238,7 @@ async function importCombos(combos: EmojiCombo[]): Promise<{ success: number; fa
 // ============================================
 
 async function main(): Promise<void> {
-  console.log('🚀 Starting Supabase import...\n');
+  console.log('🚀 Starting Neon Postgres import...\n');
 
   // Check for DATABASE_URL
   if (!process.env.DATABASE_URL) {
