@@ -309,3 +309,421 @@ export function getEmojiSummariesByCategory(category: string): EmojiSummary[] {
     tldr: emoji.tldr,
   }));
 }
+
+// ============================================
+// PLATFORM UTILITIES
+// ============================================
+
+import type { Platform } from '@/types/emoji';
+
+/**
+ * Platform display names mapping
+ */
+const PLATFORM_DISPLAY_NAMES: Record<Platform, string> = {
+  IMESSAGE: 'iMessage',
+  INSTAGRAM: 'Instagram',
+  TIKTOK: 'TikTok',
+  WHATSAPP: 'WhatsApp',
+  SLACK: 'Slack',
+  DISCORD: 'Discord',
+  TWITTER: 'Twitter/X',
+};
+
+/**
+ * Platform descriptions mapping
+ */
+const PLATFORM_DESCRIPTIONS: Record<Platform, string> = {
+  IMESSAGE:
+    'Discover how emojis are interpreted differently on Apple iMessage. Learn the platform-specific meanings and usage.',
+  INSTAGRAM:
+    'Discover how emojis are interpreted on Instagram. Learn the platform-specific meanings and usage for social media.',
+  TIKTOK:
+    'Discover how emojis are interpreted on TikTok. Learn the platform-specific meanings and usage for the viral platform.',
+  WHATSAPP:
+    'Discover how emojis are interpreted on WhatsApp. Learn the platform-specific meanings and usage.',
+  SLACK:
+    'Discover how emojis are interpreted on Slack. Learn the platform-specific meanings and usage for workplace communication.',
+  DISCORD:
+    'Discover how emojis are interpreted on Discord. Learn the platform-specific meanings and usage for servers and groups.',
+  TWITTER:
+    'Discover how emojis are interpreted on Twitter/X. Learn the platform-specific meanings and usage for social media.',
+};
+
+/**
+ * All supported platforms
+ */
+const ALL_PLATFORMS: Platform[] = [
+  'IMESSAGE',
+  'INSTAGRAM',
+  'TIKTOK',
+  'WHATSAPP',
+  'SLACK',
+  'DISCORD',
+  'TWITTER',
+];
+
+/**
+ * Get all platforms
+ * @returns Array of all platform names
+ */
+export function getAllPlatforms(): Platform[] {
+  return ALL_PLATFORMS;
+}
+
+/**
+ * Get the display name for a platform
+ * @param platform - Platform slug
+ * @returns Human-readable platform name
+ */
+export function getPlatformDisplayName(platform: string): string {
+  return PLATFORM_DISPLAY_NAMES[platform as Platform] || platform;
+}
+
+/**
+ * Get the description for a platform
+ * @param platform - Platform slug
+ * @returns Platform description
+ */
+export function getPlatformDescription(platform: string): string {
+  return (
+    PLATFORM_DESCRIPTIONS[platform as Platform] ||
+    `Discover how emojis are interpreted on ${platform}.`
+  );
+}
+
+/**
+ * Get emojis that have notable notes for a specific platform
+ * @param platform - Platform to filter by
+ * @returns Array of emojis with platform notes
+ */
+export function getEmojisWithPlatformNotes(platform: Platform): Emoji[] {
+  return loadEmojis().filter((emoji) =>
+    emoji.platformNotes.some((note) => note.platform === platform)
+  );
+}
+
+/**
+ * Get emoji summaries for a specific platform
+ * @param platform - Platform to filter by
+ * @returns Array of emoji summaries with platform notes
+ */
+export function getEmojiSummariesByPlatform(platform: Platform): EmojiSummary[] {
+  return getEmojisWithPlatformNotes(platform).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+  }));
+}
+
+/**
+ * Platform info for listing and display
+ */
+export interface PlatformInfo {
+  /** Platform slug */
+  slug: Platform;
+  /** Human-readable platform name */
+  displayName: string;
+  /** Platform description */
+  description: string;
+  /** Number of emojis with notes for this platform */
+  emojiCount: number;
+}
+
+/**
+ * Get info for a specific platform
+ * @param platform - Platform slug
+ * @returns Platform info
+ */
+export function getPlatformInfo(platform: Platform): PlatformInfo {
+  return {
+    slug: platform,
+    displayName: getPlatformDisplayName(platform),
+    description: getPlatformDescription(platform),
+    emojiCount: getEmojisWithPlatformNotes(platform).length,
+  };
+}
+
+/**
+ * Get info for all platforms
+ * @returns Array of platform info, sorted by emoji count descending
+ */
+export function getAllPlatformInfo(): PlatformInfo[] {
+  return getAllPlatforms()
+    .map((platform) => getPlatformInfo(platform))
+    .sort((a, b) => b.emojiCount - a.emojiCount);
+}
+
+// ============================================
+// GENERATION UTILITIES
+// ============================================
+
+import type { Generation } from '@/types/emoji';
+
+/**
+ * Generation display names mapping
+ */
+const GENERATION_DISPLAY_NAMES: Record<Generation, string> = {
+  GEN_Z: 'Gen Z',
+  MILLENNIAL: 'Millennial',
+  GEN_X: 'Gen X',
+  BOOMER: 'Boomer',
+};
+
+/**
+ * Generation descriptions mapping
+ */
+const GENERATION_DESCRIPTIONS: Record<Generation, string> = {
+  GEN_Z:
+    'Learn how Gen Z interprets emojis. From skull means dying to fire means fire, Gen Z emoji meanings are unique.',
+  MILLENNIAL:
+    'Learn how Millennials interpret emojis. This generation bridges traditional and modern emoji usage.',
+  GEN_X:
+    'Learn how Gen X interprets emojis. This generation has its own takes on emoji meaning and usage.',
+  BOOMER:
+    'Learn how Boomers interpret emojis. Understanding generational differences in emoji interpretation.',
+};
+
+/**
+ * All supported generations
+ */
+const ALL_GENERATIONS: Generation[] = ['GEN_Z', 'MILLENNIAL', 'GEN_X', 'BOOMER'];
+
+/**
+ * Get all generations
+ * @returns Array of all generation names
+ */
+export function getAllGenerations(): Generation[] {
+  return ALL_GENERATIONS;
+}
+
+/**
+ * Get the display name for a generation
+ * @param generation - Generation slug
+ * @returns Human-readable generation name
+ */
+export function getGenerationDisplayName(generation: string): string {
+  return GENERATION_DISPLAY_NAMES[generation as Generation] || generation;
+}
+
+/**
+ * Get the description for a generation
+ * @param generation - Generation slug
+ * @returns Generation description
+ */
+export function getGenerationDescription(generation: string): string {
+  return (
+    GENERATION_DESCRIPTIONS[generation as Generation] ||
+    `Learn how ${generation} interprets emojis.`
+  );
+}
+
+/**
+ * Get emojis that have notable notes for a specific generation
+ * @param generation - Generation to filter by
+ * @returns Array of emojis with generational notes
+ */
+export function getEmojisWithGenerationNotes(generation: Generation): Emoji[] {
+  return loadEmojis().filter((emoji) =>
+    emoji.generationalNotes.some((note) => note.generation === generation)
+  );
+}
+
+/**
+ * Get emoji summaries for a specific generation
+ * @param generation - Generation to filter by
+ * @returns Array of emoji summaries with generational notes
+ */
+export function getEmojiSummariesByGeneration(generation: Generation): EmojiSummary[] {
+  return getEmojisWithGenerationNotes(generation).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+  }));
+}
+
+/**
+ * Generation info for listing and display
+ */
+export interface GenerationInfo {
+  /** Generation slug */
+  slug: Generation;
+  /** Human-readable generation name */
+  displayName: string;
+  /** Generation description */
+  description: string;
+  /** Number of emojis with notes for this generation */
+  emojiCount: number;
+}
+
+/**
+ * Get info for a specific generation
+ * @param generation - Generation slug
+ * @returns Generation info
+ */
+export function getGenerationInfo(generation: Generation): GenerationInfo {
+  return {
+    slug: generation,
+    displayName: getGenerationDisplayName(generation),
+    description: getGenerationDescription(generation),
+    emojiCount: getEmojisWithGenerationNotes(generation).length,
+  };
+}
+
+/**
+ * Get info for all generations
+ * @returns Array of generation info, sorted by emoji count descending
+ */
+export function getAllGenerationInfo(): GenerationInfo[] {
+  return getAllGenerations()
+    .map((generation) => getGenerationInfo(generation))
+    .sort((a, b) => b.emojiCount - a.emojiCount);
+}
+
+// ============================================
+// CONTEXT UTILITIES
+// ============================================
+
+import type { ContextType } from '@/types/emoji';
+
+/**
+ * Context display names mapping
+ */
+const CONTEXT_DISPLAY_NAMES: Record<ContextType, string> = {
+  LITERAL: 'Literal',
+  SLANG: 'Slang',
+  IRONIC: 'Ironic',
+  PASSIVE_AGGRESSIVE: 'Passive-Aggressive',
+  DATING: 'Dating',
+  WORK: 'Work',
+  RED_FLAG: 'Red Flag',
+};
+
+/**
+ * Context descriptions mapping
+ */
+const CONTEXT_DESCRIPTIONS: Record<ContextType, string> = {
+  LITERAL: 'The base Unicode meaning of emojis before slang and modern interpretation.',
+  SLANG: 'Modern slang meanings for emojis that differ from their original intent.',
+  IRONIC: 'Ironic or sarcastic emoji usage where the meaning is opposite to literal.',
+  PASSIVE_AGGRESSIVE: 'Passive-aggressive emoji usage that subtly conveys negative sentiment.',
+  DATING: 'Dating and flirtatious contexts where emojis take on romantic meanings.',
+  WORK: 'Work-appropriate emoji usage that is safe for professional settings.',
+  RED_FLAG: 'Warning about emoji misuse that can signal problematic behavior.',
+};
+
+/**
+ * Context types that make sense as pages (excluding LITERAL which is the default)
+ */
+const PAGEABLE_CONTEXTS: ContextType[] = [
+  'SLANG',
+  'DATING',
+  'WORK',
+  'IRONIC',
+  'PASSIVE_AGGRESSIVE',
+  'RED_FLAG',
+];
+
+/**
+ * Get all context types that can have dedicated pages
+ * @returns Array of context type names
+ */
+export function getPageableContextTypes(): ContextType[] {
+  return PAGEABLE_CONTEXTS;
+}
+
+/**
+ * Get all context types
+ * @returns Array of all context type names
+ */
+export function getAllContextTypes(): ContextType[] {
+  return Object.keys(CONTEXT_DISPLAY_NAMES) as ContextType[];
+}
+
+/**
+ * Get the display name for a context
+ * @param context - Context slug
+ * @returns Human-readable context name
+ */
+export function getContextDisplayName(context: string): string {
+  return CONTEXT_DISPLAY_NAMES[context as ContextType] || context;
+}
+
+/**
+ * Get the description for a context
+ * @param context - Context slug
+ * @returns Context description
+ */
+export function getContextDescription(context: string): string {
+  return (
+    CONTEXT_DESCRIPTIONS[context as ContextType] ||
+    `Explore emojis with ${context} context meanings.`
+  );
+}
+
+/**
+ * Get emojis that have notable meanings for a specific context
+ * @param context - Context to filter by
+ * @returns Array of emojis with context meanings
+ */
+export function getEmojisByContext(context: ContextType): Emoji[] {
+  return loadEmojis().filter((emoji) =>
+    emoji.contextMeanings.some((meaning) => meaning.context === context)
+  );
+}
+
+/**
+ * Get emoji summaries for a specific context
+ * @param context - Context to filter by
+ * @returns Array of emoji summaries with context meanings
+ */
+export function getEmojiSummariesByContext(context: ContextType): EmojiSummary[] {
+  return getEmojisByContext(context).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+  }));
+}
+
+/**
+ * Context info for listing and display
+ */
+export interface ContextInfo {
+  /** Context slug */
+  slug: ContextType;
+  /** Human-readable context name */
+  displayName: string;
+  /** Context description */
+  description: string;
+  /** Number of emojis with this context */
+  emojiCount: number;
+}
+
+/**
+ * Get info for a specific context
+ * @param context - Context slug
+ * @returns Context info
+ */
+export function getContextInfo(context: ContextType): ContextInfo {
+  return {
+    slug: context,
+    displayName: getContextDisplayName(context),
+    description: getContextDescription(context),
+    emojiCount: getEmojisByContext(context).length,
+  };
+}
+
+/**
+ * Get info for all pageable contexts
+ * @returns Array of context info, sorted by emoji count descending
+ */
+export function getAllContextInfo(): ContextInfo[] {
+  return getPageableContextTypes()
+    .map((context) => getContextInfo(context))
+    .sort((a, b) => b.emojiCount - a.emojiCount);
+}
