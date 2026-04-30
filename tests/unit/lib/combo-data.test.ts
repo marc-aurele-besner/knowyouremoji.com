@@ -437,3 +437,112 @@ describe('combo types', () => {
     expect(mockCombo.examples.length).toBeGreaterThan(0);
   });
 });
+
+describe('combo category utilities', () => {
+  describe('isValidComboCategory', () => {
+    it('should return true for valid categories', async () => {
+      const { isValidComboCategory } = await import('../../../src/lib/combo-data');
+      expect(isValidComboCategory('humor')).toBe(true);
+      expect(isValidComboCategory('flirting')).toBe(true);
+      expect(isValidComboCategory('sarcasm')).toBe(true);
+      expect(isValidComboCategory('celebration')).toBe(true);
+      expect(isValidComboCategory('emotion')).toBe(true);
+      expect(isValidComboCategory('reaction')).toBe(true);
+      expect(isValidComboCategory('relationship')).toBe(true);
+      expect(isValidComboCategory('work')).toBe(true);
+      expect(isValidComboCategory('food')).toBe(true);
+      expect(isValidComboCategory('travel')).toBe(true);
+      expect(isValidComboCategory('other')).toBe(true);
+    });
+
+    it('should return false for invalid categories', async () => {
+      const { isValidComboCategory } = await import('../../../src/lib/combo-data');
+      expect(isValidComboCategory('invalid')).toBe(false);
+      expect(isValidComboCategory('')).toBe(false);
+      expect(isValidComboCategory('HUMOR')).toBe(false);
+    });
+  });
+
+  describe('getComboCategoryDisplayName', () => {
+    it('should return correct display names for valid categories', async () => {
+      const { getComboCategoryDisplayName } = await import('../../../src/lib/combo-data');
+      expect(getComboCategoryDisplayName('humor')).toBe('Humor');
+      expect(getComboCategoryDisplayName('flirting')).toBe('Flirting');
+      expect(getComboCategoryDisplayName('sarcasm')).toBe('Sarcasm');
+      expect(getComboCategoryDisplayName('celebration')).toBe('Celebration');
+      expect(getComboCategoryDisplayName('emotion')).toBe('Emotion');
+      expect(getComboCategoryDisplayName('reaction')).toBe('Reaction');
+      expect(getComboCategoryDisplayName('relationship')).toBe('Relationship');
+      expect(getComboCategoryDisplayName('work')).toBe('Work');
+      expect(getComboCategoryDisplayName('food')).toBe('Food');
+      expect(getComboCategoryDisplayName('travel')).toBe('Travel');
+      expect(getComboCategoryDisplayName('other')).toBe('Other');
+    });
+
+    it('should capitalize unknown categories', async () => {
+      const { getComboCategoryDisplayName } = await import('../../../src/lib/combo-data');
+      expect(getComboCategoryDisplayName('unknown')).toBe('Unknown');
+    });
+  });
+
+  describe('getComboCategoryDescription', () => {
+    it('should return descriptions for valid categories', async () => {
+      const { getComboCategoryDescription } = await import('../../../src/lib/combo-data');
+      const desc = getComboCategoryDescription('humor');
+      expect(typeof desc).toBe('string');
+      expect(desc.length).toBeGreaterThan(0);
+    });
+
+    it('should return fallback for unknown categories', async () => {
+      const { getComboCategoryDescription } = await import('../../../src/lib/combo-data');
+      const desc = getComboCategoryDescription('unknown');
+      expect(desc).toContain('unknown');
+    });
+  });
+
+  describe('getComboCategoryInfo', () => {
+    it('should return info for valid category', async () => {
+      const { getComboCategoryInfo } = await import('../../../src/lib/combo-data');
+      const info = getComboCategoryInfo('humor');
+      expect(info).toBeDefined();
+      expect(info?.slug).toBe('humor');
+      expect(info?.displayName).toBe('Humor');
+      expect(info?.description.length).toBeGreaterThan(0);
+      expect(info?.comboCount).toBeGreaterThan(0);
+    });
+
+    it('should return null for invalid category', async () => {
+      const { getComboCategoryInfo } = await import('../../../src/lib/combo-data');
+      const info = getComboCategoryInfo('invalid');
+      expect(info).toBeNull();
+    });
+  });
+
+  describe('getAllComboCategoryInfo', () => {
+    it('should return array of category info for all categories', async () => {
+      const { getAllComboCategoryInfo } = await import('../../../src/lib/combo-data');
+      const info = getAllComboCategoryInfo();
+      expect(Array.isArray(info)).toBe(true);
+      expect(info.length).toBeGreaterThan(0);
+    });
+
+    it('should be sorted by combo count descending', async () => {
+      const { getAllComboCategoryInfo } = await import('../../../src/lib/combo-data');
+      const info = getAllComboCategoryInfo();
+      for (let i = 1; i < info.length; i++) {
+        expect(info[i - 1].comboCount).toBeGreaterThanOrEqual(info[i].comboCount);
+      }
+    });
+
+    it('should contain all required fields', async () => {
+      const { getAllComboCategoryInfo } = await import('../../../src/lib/combo-data');
+      const info = getAllComboCategoryInfo();
+      info.forEach((cat) => {
+        expect(cat).toHaveProperty('slug');
+        expect(cat).toHaveProperty('displayName');
+        expect(cat).toHaveProperty('description');
+        expect(cat).toHaveProperty('comboCount');
+      });
+    });
+  });
+});
