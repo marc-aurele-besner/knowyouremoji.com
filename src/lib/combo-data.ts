@@ -204,6 +204,144 @@ export function getComboSummariesByEmoji(
 }
 
 /**
+ * Combo category display names mapping
+ */
+const COMBO_CATEGORY_DISPLAY_NAMES: Record<EmojiComboCategoryName, string> = {
+  humor: 'Humor',
+  flirting: 'Flirting',
+  sarcasm: 'Sarcasm',
+  celebration: 'Celebration',
+  emotion: 'Emotion',
+  reaction: 'Reaction',
+  relationship: 'Relationship',
+  work: 'Work',
+  food: 'Food',
+  travel: 'Travel',
+  other: 'Other',
+};
+
+/**
+ * Combo category descriptions mapping
+ */
+const COMBO_CATEGORY_DESCRIPTIONS: Record<EmojiComboCategoryName, string> = {
+  humor:
+    'The best emoji combos for humor and jokes. Make people laugh with these emoji combinations.',
+  flirting:
+    'Flirty emoji combinations for dating and romantic messages. Perfect for catching attention.',
+  sarcasm: 'Sarcastic emoji combos for ironic and tongue-in-cheek messages.',
+  celebration:
+    'Celebrate with these emoji combinations perfect for exciting news and achievements.',
+  emotion: 'Express emotions with these meaningful emoji combinations.',
+  reaction: 'React to messages with these expressive emoji combinations.',
+  relationship: 'Relationship-themed emoji combos for friends and family.',
+  work: 'Work-appropriate emoji combinations for professional settings.',
+  food: 'Food and drink emoji combinations for culinary conversations.',
+  travel: 'Travel and vacation emoji combinations for wanderlust.',
+  other: "Unique emoji combinations that don't fit other categories.",
+};
+
+/**
+ * Valid combo categories
+ */
+const VALID_COMBO_CATEGORIES: EmojiComboCategoryName[] = [
+  'humor',
+  'flirting',
+  'sarcasm',
+  'celebration',
+  'emotion',
+  'reaction',
+  'relationship',
+  'work',
+  'food',
+  'travel',
+  'other',
+];
+
+/**
+ * Check if a combo category is valid
+ * @param category - Category slug to check
+ * @returns True if the category is valid
+ */
+export function isValidComboCategory(category: string): category is EmojiComboCategoryName {
+  return VALID_COMBO_CATEGORIES.includes(category as EmojiComboCategoryName);
+}
+
+/**
+ * Get the display name for a combo category
+ * @param category - Category slug
+ * @returns Human-readable category name
+ */
+export function getComboCategoryDisplayName(category: string): string {
+  return (
+    COMBO_CATEGORY_DISPLAY_NAMES[category as EmojiComboCategoryName] ||
+    category.charAt(0).toUpperCase() + category.slice(1)
+  );
+}
+
+/**
+ * Get the description for a combo category
+ * @param category - Category slug
+ * @returns Category description
+ */
+export function getComboCategoryDescription(category: string): string {
+  return (
+    COMBO_CATEGORY_DESCRIPTIONS[category as EmojiComboCategoryName] ||
+    `Explore ${category} emoji combos and their meanings.`
+  );
+}
+
+/**
+ * Combo category info for listing and display
+ */
+export interface ComboCategoryInfo {
+  /** Category slug */
+  slug: EmojiComboCategoryName;
+  /** Human-readable category name */
+  displayName: string;
+  /** Category description */
+  description: string;
+  /** Number of combos in this category */
+  comboCount: number;
+}
+
+/**
+ * Get info for a specific combo category
+ * @param category - Category slug
+ * @returns Category info or null if invalid
+ */
+export function getComboCategoryInfo(category: string): ComboCategoryInfo | null {
+  if (!isValidComboCategory(category)) {
+    return null;
+  }
+
+  const combos = getCombosByCategory(category);
+
+  return {
+    slug: category,
+    displayName: getComboCategoryDisplayName(category),
+    description: getComboCategoryDescription(category),
+    comboCount: combos.length,
+  };
+}
+
+/**
+ * Get info for all combo categories
+ * @returns Array of combo category info, sorted by combo count descending
+ */
+export function getAllComboCategoryInfo(): ComboCategoryInfo[] {
+  const categories = getAllComboCategories();
+
+  return categories
+    .map((category) => ({
+      slug: category,
+      displayName: getComboCategoryDisplayName(category),
+      description: getComboCategoryDescription(category),
+      comboCount: getCombosByCategory(category).length,
+    }))
+    .sort((a, b) => b.comboCount - a.comboCount);
+}
+
+/**
  * Clear the combo cache (useful for testing)
  */
 export function clearComboCache(): void {
