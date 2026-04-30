@@ -413,3 +413,326 @@ describe('emoji types', () => {
     expect(validSeverities).toContain(mockSkullEmoji.warnings[0].severity);
   });
 });
+
+describe('platform utilities', () => {
+  describe('getAllPlatforms', () => {
+    it('should return all 7 platforms', async () => {
+      const { getAllPlatforms } = await import('../../../src/lib/emoji-data');
+      const platforms = getAllPlatforms();
+      expect(platforms).toContain('IMESSAGE');
+      expect(platforms).toContain('INSTAGRAM');
+      expect(platforms).toContain('TIKTOK');
+      expect(platforms).toContain('WHATSAPP');
+      expect(platforms).toContain('SLACK');
+      expect(platforms).toContain('DISCORD');
+      expect(platforms).toContain('TWITTER');
+      expect(platforms.length).toBe(7);
+    });
+  });
+
+  describe('getPlatformDisplayName', () => {
+    it('should return correct display names', async () => {
+      const { getPlatformDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getPlatformDisplayName('IMESSAGE')).toBe('iMessage');
+      expect(getPlatformDisplayName('INSTAGRAM')).toBe('Instagram');
+      expect(getPlatformDisplayName('TIKTOK')).toBe('TikTok');
+      expect(getPlatformDisplayName('WHATSAPP')).toBe('WhatsApp');
+      expect(getPlatformDisplayName('SLACK')).toBe('Slack');
+      expect(getPlatformDisplayName('DISCORD')).toBe('Discord');
+      expect(getPlatformDisplayName('TWITTER')).toBe('Twitter/X');
+    });
+
+    it('should return original string for unknown platforms', async () => {
+      const { getPlatformDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getPlatformDisplayName('unknown')).toBe('unknown');
+    });
+  });
+
+  describe('getPlatformDescription', () => {
+    it('should return descriptions for valid platforms', async () => {
+      const { getPlatformDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getPlatformDescription('TIKTOK');
+      expect(typeof desc).toBe('string');
+      expect(desc.length).toBeGreaterThan(0);
+    });
+
+    it('should return fallback for unknown platforms', async () => {
+      const { getPlatformDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getPlatformDescription('unknown');
+      expect(desc).toContain('unknown');
+    });
+  });
+
+  describe('getEmojisWithPlatformNotes', () => {
+    it('should return emojis that have notes for a platform', async () => {
+      const { getEmojisWithPlatformNotes } = await import('../../../src/lib/emoji-data');
+      const emojis = getEmojisWithPlatformNotes('TIKTOK');
+      expect(Array.isArray(emojis)).toBe(true);
+      emojis.forEach((emoji) => {
+        const hasTikTokNote = emoji.platformNotes.some((n) => n.platform === 'TIKTOK');
+        expect(hasTikTokNote).toBe(true);
+      });
+    });
+
+    it('should return different results for different platforms', async () => {
+      const { getEmojisWithPlatformNotes } = await import('../../../src/lib/emoji-data');
+      const tiktokEmojis = getEmojisWithPlatformNotes('TIKTOK');
+      const slackEmojis = getEmojisWithPlatformNotes('SLACK');
+      expect(tiktokEmojis).not.toEqual(slackEmojis);
+    });
+  });
+
+  describe('getEmojiSummariesByPlatform', () => {
+    it('should return emoji summaries for a platform', async () => {
+      const { getEmojiSummariesByPlatform } = await import('../../../src/lib/emoji-data');
+      const summaries = getEmojiSummariesByPlatform('TIKTOK');
+      expect(Array.isArray(summaries)).toBe(true);
+      if (summaries.length > 0) {
+        const summary = summaries[0];
+        expect(summary).toHaveProperty('slug');
+        expect(summary).toHaveProperty('character');
+        expect(summary).toHaveProperty('name');
+        expect(summary).not.toHaveProperty('platformNotes');
+      }
+    });
+  });
+
+  describe('getPlatformInfo', () => {
+    it('should return info for a valid platform', async () => {
+      const { getPlatformInfo } = await import('../../../src/lib/emoji-data');
+      const info = getPlatformInfo('TIKTOK');
+      expect(info.slug).toBe('TIKTOK');
+      expect(info.displayName).toBe('TikTok');
+      expect(info.description.length).toBeGreaterThan(0);
+      expect(info.emojiCount).toBeGreaterThan(0);
+    });
+  });
+
+  describe('getAllPlatformInfo', () => {
+    it('should return info for all platforms', async () => {
+      const { getAllPlatformInfo } = await import('../../../src/lib/emoji-data');
+      const info = getAllPlatformInfo();
+      expect(info.length).toBe(7);
+    });
+
+    it('should be sorted by emoji count descending', async () => {
+      const { getAllPlatformInfo } = await import('../../../src/lib/emoji-data');
+      const info = getAllPlatformInfo();
+      for (let i = 1; i < info.length; i++) {
+        expect(info[i - 1].emojiCount).toBeGreaterThanOrEqual(info[i].emojiCount);
+      }
+    });
+  });
+});
+
+describe('generation utilities', () => {
+  describe('getAllGenerations', () => {
+    it('should return all 4 generations', async () => {
+      const { getAllGenerations } = await import('../../../src/lib/emoji-data');
+      const generations = getAllGenerations();
+      expect(generations).toContain('GEN_Z');
+      expect(generations).toContain('MILLENNIAL');
+      expect(generations).toContain('GEN_X');
+      expect(generations).toContain('BOOMER');
+      expect(generations.length).toBe(4);
+    });
+  });
+
+  describe('getGenerationDisplayName', () => {
+    it('should return correct display names', async () => {
+      const { getGenerationDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getGenerationDisplayName('GEN_Z')).toBe('Gen Z');
+      expect(getGenerationDisplayName('MILLENNIAL')).toBe('Millennial');
+      expect(getGenerationDisplayName('GEN_X')).toBe('Gen X');
+      expect(getGenerationDisplayName('BOOMER')).toBe('Boomer');
+    });
+
+    it('should return original string for unknown generations', async () => {
+      const { getGenerationDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getGenerationDisplayName('unknown')).toBe('unknown');
+    });
+  });
+
+  describe('getGenerationDescription', () => {
+    it('should return descriptions for valid generations', async () => {
+      const { getGenerationDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getGenerationDescription('GEN_Z');
+      expect(typeof desc).toBe('string');
+      expect(desc.length).toBeGreaterThan(0);
+    });
+
+    it('should return fallback for unknown generations', async () => {
+      const { getGenerationDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getGenerationDescription('unknown');
+      expect(desc).toContain('unknown');
+    });
+  });
+
+  describe('getEmojisWithGenerationNotes', () => {
+    it('should return emojis that have notes for a generation', async () => {
+      const { getEmojisWithGenerationNotes } = await import('../../../src/lib/emoji-data');
+      const emojis = getEmojisWithGenerationNotes('GEN_Z');
+      expect(Array.isArray(emojis)).toBe(true);
+      emojis.forEach((emoji) => {
+        const hasGenZNote = emoji.generationalNotes.some((n) => n.generation === 'GEN_Z');
+        expect(hasGenZNote).toBe(true);
+      });
+    });
+  });
+
+  describe('getEmojiSummariesByGeneration', () => {
+    it('should return emoji summaries for a generation', async () => {
+      const { getEmojiSummariesByGeneration } = await import('../../../src/lib/emoji-data');
+      const summaries = getEmojiSummariesByGeneration('GEN_Z');
+      expect(Array.isArray(summaries)).toBe(true);
+      if (summaries.length > 0) {
+        const summary = summaries[0];
+        expect(summary).toHaveProperty('slug');
+        expect(summary).toHaveProperty('character');
+        expect(summary).toHaveProperty('name');
+        expect(summary).not.toHaveProperty('generationalNotes');
+      }
+    });
+  });
+
+  describe('getGenerationInfo', () => {
+    it('should return info for a valid generation', async () => {
+      const { getGenerationInfo } = await import('../../../src/lib/emoji-data');
+      const info = getGenerationInfo('GEN_Z');
+      expect(info.slug).toBe('GEN_Z');
+      expect(info.displayName).toBe('Gen Z');
+      expect(info.description.length).toBeGreaterThan(0);
+      expect(info.emojiCount).toBeGreaterThan(0);
+    });
+  });
+
+  describe('getAllGenerationInfo', () => {
+    it('should return info for all generations', async () => {
+      const { getAllGenerationInfo } = await import('../../../src/lib/emoji-data');
+      const info = getAllGenerationInfo();
+      expect(info.length).toBe(4);
+    });
+  });
+});
+
+describe('context utilities', () => {
+  describe('getAllContextTypes', () => {
+    it('should return all 7 context types', async () => {
+      const { getAllContextTypes } = await import('../../../src/lib/emoji-data');
+      const contexts = getAllContextTypes();
+      expect(contexts).toContain('LITERAL');
+      expect(contexts).toContain('SLANG');
+      expect(contexts).toContain('IRONIC');
+      expect(contexts).toContain('PASSIVE_AGGRESSIVE');
+      expect(contexts).toContain('DATING');
+      expect(contexts).toContain('WORK');
+      expect(contexts).toContain('RED_FLAG');
+      expect(contexts.length).toBe(7);
+    });
+  });
+
+  describe('getPageableContextTypes', () => {
+    it('should return 6 context types (excluding LITERAL)', async () => {
+      const { getPageableContextTypes } = await import('../../../src/lib/emoji-data');
+      const contexts = getPageableContextTypes();
+      expect(contexts).not.toContain('LITERAL');
+      expect(contexts).toContain('SLANG');
+      expect(contexts).toContain('DATING');
+      expect(contexts).toContain('WORK');
+      expect(contexts.length).toBe(6);
+    });
+  });
+
+  describe('getContextDisplayName', () => {
+    it('should return correct display names', async () => {
+      const { getContextDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getContextDisplayName('SLANG')).toBe('Slang');
+      expect(getContextDisplayName('DATING')).toBe('Dating');
+      expect(getContextDisplayName('WORK')).toBe('Work');
+      expect(getContextDisplayName('IRONIC')).toBe('Ironic');
+      expect(getContextDisplayName('PASSIVE_AGGRESSIVE')).toBe('Passive-Aggressive');
+      expect(getContextDisplayName('RED_FLAG')).toBe('Red Flag');
+    });
+
+    it('should return original string for unknown contexts', async () => {
+      const { getContextDisplayName } = await import('../../../src/lib/emoji-data');
+      expect(getContextDisplayName('unknown')).toBe('unknown');
+    });
+  });
+
+  describe('getContextDescription', () => {
+    it('should return descriptions for valid contexts', async () => {
+      const { getContextDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getContextDescription('SLANG');
+      expect(typeof desc).toBe('string');
+      expect(desc.length).toBeGreaterThan(0);
+    });
+
+    it('should return fallback for unknown contexts', async () => {
+      const { getContextDescription } = await import('../../../src/lib/emoji-data');
+      const desc = getContextDescription('unknown');
+      expect(desc).toContain('unknown');
+    });
+  });
+
+  describe('getEmojisByContext', () => {
+    it('should return emojis that have meanings for a context', async () => {
+      const { getEmojisByContext } = await import('../../../src/lib/emoji-data');
+      const emojis = getEmojisByContext('SLANG');
+      expect(Array.isArray(emojis)).toBe(true);
+      emojis.forEach((emoji) => {
+        const hasSlangContext = emoji.contextMeanings.some((m) => m.context === 'SLANG');
+        expect(hasSlangContext).toBe(true);
+      });
+    });
+
+    it('should return different results for different contexts', async () => {
+      const { getEmojisByContext } = await import('../../../src/lib/emoji-data');
+      const slangEmojis = getEmojisByContext('SLANG');
+      const datingEmojis = getEmojisByContext('DATING');
+      expect(slangEmojis).not.toEqual(datingEmojis);
+    });
+  });
+
+  describe('getEmojiSummariesByContext', () => {
+    it('should return emoji summaries for a context', async () => {
+      const { getEmojiSummariesByContext } = await import('../../../src/lib/emoji-data');
+      const summaries = getEmojiSummariesByContext('SLANG');
+      expect(Array.isArray(summaries)).toBe(true);
+      if (summaries.length > 0) {
+        const summary = summaries[0];
+        expect(summary).toHaveProperty('slug');
+        expect(summary).toHaveProperty('character');
+        expect(summary).toHaveProperty('name');
+        expect(summary).not.toHaveProperty('contextMeanings');
+      }
+    });
+  });
+
+  describe('getContextInfo', () => {
+    it('should return info for a valid context', async () => {
+      const { getContextInfo } = await import('../../../src/lib/emoji-data');
+      const info = getContextInfo('SLANG');
+      expect(info.slug).toBe('SLANG');
+      expect(info.displayName).toBe('Slang');
+      expect(info.description.length).toBeGreaterThan(0);
+      expect(info.emojiCount).toBeGreaterThan(0);
+    });
+  });
+
+  describe('getAllContextInfo', () => {
+    it('should return info for all pageable contexts', async () => {
+      const { getAllContextInfo } = await import('../../../src/lib/emoji-data');
+      const info = getAllContextInfo();
+      expect(info.length).toBe(6);
+    });
+
+    it('should be sorted by emoji count descending', async () => {
+      const { getAllContextInfo } = await import('../../../src/lib/emoji-data');
+      const info = getAllContextInfo();
+      for (let i = 1; i < info.length; i++) {
+        expect(info[i - 1].emojiCount).toBeGreaterThanOrEqual(info[i].emojiCount);
+      }
+    });
+  });
+});
