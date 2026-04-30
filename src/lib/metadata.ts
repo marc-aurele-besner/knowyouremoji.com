@@ -108,6 +108,9 @@ export function createSiteMetadata(): Metadata {
     alternates: {
       canonical: siteUrl,
     },
+    other: {
+      'google-adsense-account': 'ca-pub-4731086750813339',
+    },
   };
 }
 

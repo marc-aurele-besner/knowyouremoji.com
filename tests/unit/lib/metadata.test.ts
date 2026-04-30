@@ -327,6 +327,15 @@ describe('Site Metadata Configuration', () => {
       const alternates = metadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://knowyouremoji.com');
     });
+
+    test('has google-adsense-account meta tag', async () => {
+      const { createSiteMetadata } = await import('../../../src/lib/metadata');
+      const metadata = createSiteMetadata();
+
+      const other = metadata.other as Record<string, string>;
+      expect(other).toBeDefined();
+      expect(other['google-adsense-account']).toBe('ca-pub-4731086750813339');
+    });
   });
 
   describe('Helper functions', () => {
