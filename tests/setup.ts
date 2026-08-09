@@ -1,19 +1,36 @@
+// IMPORTANT: setup-dom must be imported BEFORE @testing-library/jest-dom.
+// Starting with @testing-library/dom v10, the `screen` object captures
+// `document.body` at module load time and throws if a global `document` is
+// not available yet. See https://testing-library.com/s/screen-global-error
+//
+// @testing-library/dom v10 became a (peer) dependency of
+// @testing-library/jest-dom v7.0.0 — before that, jest-dom did not pull in
+// @testing-library/dom at all, so the load order didn't matter.
+import './setup-dom';
+
+// Bun's test runner loads @testing-library/dom before any preload runs, which
+// causes its `screen` object to capture `document.body` while it's still
+// undefined. After setup-dom has installed the DOM globals, drop the cached
+// copy of @testing-library/dom so the next import evaluates `screen` against
+// the live happy-dom document.
+const path = require('path') as typeof import('path'); // eslint-disable-line @typescript-eslint/no-require-imports
+const domResolved = require.resolve('@testing-library/dom');
+if (require.cache[domResolved]) {
+  for (const key of Object.keys(require.cache)) {
+    if (key.includes(`${path.sep}@testing-library${path.sep}dom${path.sep}`)) {
+      delete require.cache[key];
+    }
+  }
+}
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+require('@testing-library/dom');
+
 import '@testing-library/jest-dom';
 import { afterEach, beforeEach } from 'bun:test';
-import { GlobalWindow } from 'happy-dom';
 
-/** Captured at load time — tests must not be able to leave window.SyntaxError undefined */
 const NativeError = Error;
 const NativeTypeError = TypeError;
 const NativeSyntaxError = SyntaxError;
-
-// Create a happy-dom window and register its properties globally.
-// Disable fetching external CSS — linked stylesheets can trigger happy-dom selector parsing
-// bugs under concurrent tests when window.SyntaxError is momentarily inconsistent.
-const window = new GlobalWindow({
-  url: 'https://localhost:3000/',
-  settings: { disableCSSFileLoading: true },
-});
 
 function patchWindowConstructors(
   w: { Error?: unknown; TypeError?: unknown; SyntaxError?: unknown } | null | undefined
@@ -24,42 +41,6 @@ function patchWindowConstructors(
   w.TypeError = NativeTypeError;
   w.SyntaxError = NativeSyntaxError;
 }
-
-patchWindowConstructors(window);
-
-// Register DOM globals that testing-library needs
-Object.assign(globalThis, {
-  window,
-  document: window.document,
-  navigator: window.navigator,
-  location: window.location,
-  Error: NativeError,
-  TypeError: NativeTypeError,
-  SyntaxError: NativeSyntaxError,
-  HTMLElement: window.HTMLElement,
-  HTMLButtonElement: window.HTMLButtonElement,
-  HTMLDivElement: window.HTMLDivElement,
-  HTMLHeadingElement: window.HTMLHeadingElement,
-  HTMLParagraphElement: window.HTMLParagraphElement,
-  HTMLInputElement: window.HTMLInputElement,
-  HTMLAnchorElement: window.HTMLAnchorElement,
-  Element: window.Element,
-  Node: window.Node,
-  NodeFilter: window.NodeFilter,
-  DocumentFragment: window.DocumentFragment,
-  customElements: window.customElements,
-  MutationObserver: window.MutationObserver,
-  getComputedStyle: window.getComputedStyle.bind(window),
-  requestAnimationFrame: window.requestAnimationFrame.bind(window),
-  cancelAnimationFrame: window.cancelAnimationFrame.bind(window),
-  Event: window.Event,
-  CustomEvent: window.CustomEvent,
-  MouseEvent: window.MouseEvent,
-  KeyboardEvent: window.KeyboardEvent,
-  FocusEvent: window.FocusEvent,
-  ResizeObserver: window.ResizeObserver,
-  IntersectionObserver: window.IntersectionObserver,
-});
 
 beforeEach(() => {
   globalThis.Error = NativeError;
