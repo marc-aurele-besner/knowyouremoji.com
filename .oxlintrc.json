@@ -1,0 +1,73 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "react", "nextjs", "jsx-a11y", "import"],
+  "categories": {
+    "correctness": "off",
+    "suspicious": "off",
+    "pedantic": "off",
+    "perf": "off",
+    "style": "off",
+    "restriction": "off",
+    "nursery": "off"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "typescript/no-unused-vars": "error",
+    "no-explicit-any": "error",
+    "no-unused-expressions": "warn",
+    "nextjs/no-img-element": "error",
+    "nextjs/no-html-link-for-pages": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off",
+    "react/jsx-no-target-blank": "off",
+    "jsx-a11y/alt-text": ["warn", { "elements": ["img"], "img": ["Image"] }],
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-redundant-roles": "off",
+    "jsx-a11y/heading-has-content": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/no-noninteractive-element-to-interactive-role": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "jsx-a11y/prefer-tag-over-role": "off",
+    "import/no-anonymous-default-export": "warn",
+    "import/no-unassigned-import": "off",
+    "import/namespace": "off",
+    "import/no-named-as-default-member": "off",
+    "eslint/no-shadow": "off",
+    "eslint/no-misleading-character-class": "off",
+    "eslint/no-await-in-loop": "off",
+    "react/no-array-index-key": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/require-module-specifiers": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "19.2.0"
+    }
+  },
+  "env": {
+    "builtin": true,
+    "browser": true,
+    "node": true,
+    "es2024": true
+  },
+  "ignorePatterns": [
+    ".next/**",
+    "out/**",
+    "build/**",
+    "node_modules/**",
+    "next-env.d.ts",
+    "**/*.d.ts",
+    ".claude/**",
+    "scripts/**",
+    "migrations/**",
+    "tests/**",
+    "playwright-report/**"
+  ]
+}
