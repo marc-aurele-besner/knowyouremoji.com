@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -239,10 +240,10 @@ function SettingsPage() {
                 </div>
                 <div className="flex gap-2">
                   <Button variant="outline" asChild>
-                    <a href="/dashboard/billing">Manage Billing</a>
+                    <Link href="/dashboard/billing">Manage Billing</Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="/pricing">Upgrade</a>
+                    <Link href="/pricing">Upgrade</Link>
                   </Button>
                 </div>
               </div>

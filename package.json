@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
+    "lint": "oxlint src/",
+    "lint:fix": "oxlint src/ --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,json,css}\"",
     "typecheck": "tsc --noEmit",
@@ -62,12 +62,10 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "drizzle-kit": "^0.31.10",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.0",
-    "eslint-config-prettier": "^10.1.8",
     "happy-dom": "^20.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
+    "oxlint": "^1.77.0",
     "prettier": "^3.8.1",
     "tailwindcss": "^4",
     "typescript": "^7.0.0"
@@ -82,7 +80,7 @@
   ],
   "lint-staged": {
     "*.{ts,tsx}": [
-      "eslint --fix",
+      "oxlint --fix",
       "prettier --write"
     ],
     "*.{json,md,css}": [
