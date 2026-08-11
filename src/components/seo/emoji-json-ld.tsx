@@ -3,6 +3,8 @@
  *
  * Generates Schema.org Article markup for rich snippets in search results.
  * Uses DefinedTerm to describe the emoji entity within the article.
+ * When the emoji ships FAQs (CONTENT-P1-001), an additional FAQPage entity
+ * is emitted so search engines can pick up "People Also Ask" style answers.
  */
 
 import type { Emoji } from '@/types/emoji';
@@ -24,7 +26,33 @@ function capitalizeFirst(str: string): string {
 }
 
 /**
+ * Build an optional FAQPage entity when the emoji has FAQs to expose.
+ * Returns `undefined` when there are no FAQs so the Article payload stays
+ * clean for thin pages.
+ */
+function buildFaqEntity(emoji: Emoji) {
+  const faqs = emoji.longForm?.faqs;
+  if (!Array.isArray(faqs) || faqs.length === 0) return undefined;
+
+  return {
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
+/**
  * Generate JSON-LD structured data for an emoji page
+ *
+ * Emits a single @graph with Article + (optional) FAQPage entries so
+ * search engines can pick up both the article metadata and any
+ * "People Also Ask" answers (CONTENT-P1-001).
  */
 function generateEmojiJsonLd(emoji: Emoji, appUrl: string, appName: string) {
   const pageUrl = `${appUrl}/emoji/${emoji.slug}`;
@@ -41,8 +69,7 @@ function generateEmojiJsonLd(emoji: Emoji, appUrl: string, appName: string) {
     'emoji guide',
   ];
 
-  return {
-    '@context': 'https://schema.org',
+  const article = {
     '@type': 'Article',
     headline: `${emoji.character} ${emoji.name} Emoji Meaning`,
     description: emoji.tldr,
@@ -67,6 +94,19 @@ function generateEmojiJsonLd(emoji: Emoji, appUrl: string, appName: string) {
         name: 'Unicode Emoji',
       },
     },
+  };
+
+  const faqEntity = buildFaqEntity(emoji);
+  if (faqEntity) {
+    return {
+      '@context': 'https://schema.org',
+      '@graph': [article, faqEntity],
+    };
+  }
+
+  return {
+    '@context': 'https://schema.org',
+    ...article,
   };
 }
 

@@ -180,6 +180,59 @@ export interface EmojiWarning {
 }
 
 /**
+ * Settings where a conversation example takes place
+ * Used for the long-form `conversationExamples` field.
+ */
+export type ConversationSetting = 'dating' | 'friends' | 'work' | 'family' | 'social' | 'other';
+
+/**
+ * A single FAQ entry for the FAQ section
+ * Used inside `EmojiLongForm.faqs`.
+ */
+export interface EmojiFaq {
+  /** Question as a reader might type it into a search engine */
+  question: string;
+  /** Direct, self-contained answer */
+  answer: string;
+}
+
+/**
+ * Long-form, article-style content for AdSense/SEO depth.
+ * All sub-fields are optional so older (thin) JSON still validates.
+ */
+export interface EmojiLongForm {
+  /** 2–4 paragraph overview that goes beyond the `tldr` one-liner */
+  overview?: string;
+  /** How people actually use the emoji in chat */
+  howPeopleUseIt?: string;
+  /** When NOT to use it / common misreads */
+  whenNotToUse?: string;
+  /** How to reply when you receive it */
+  howToReply?: string;
+  /** FAQ entries for "People Also Ask" style content */
+  faqs?: EmojiFaq[];
+}
+
+/**
+ * A richer, full-message conversation example than the one-line
+ * `ContextMeaning.example` field.
+ */
+export interface ConversationExample {
+  /** Setting where the exchange takes place */
+  setting: ConversationSetting;
+  /** The full message being interpreted */
+  message: string;
+  /** What the message (and emoji) actually means in this context */
+  interpretation: string;
+}
+
+/**
+ * Content depth tier for publishing QA.
+ * Drives both validation thresholds and visual treatment on the page.
+ */
+export type ContentTier = 'thin' | 'standard' | 'deep';
+
+/**
  * Complete emoji data structure
  */
 export interface Emoji {
@@ -223,6 +276,14 @@ export interface Emoji {
   skinToneBase?: string;
   /** Skin tone modifier type (for variations) */
   skinToneModifier?: 'light' | 'medium-light' | 'medium' | 'medium-dark' | 'dark';
+  /** Optional long-form article-style content (CONTENT-P1-001) */
+  longForm?: EmojiLongForm;
+  /** Optional richer conversation examples (CONTENT-P1-001) */
+  conversationExamples?: ConversationExample[];
+  /** Optional content depth tier for publishing QA (CONTENT-P1-001) */
+  contentTier?: ContentTier;
+  /** ISO date string of last content refresh (CONTENT-P1-001) */
+  contentUpdatedAt?: string;
 }
 
 /**

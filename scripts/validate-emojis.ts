@@ -15,11 +15,16 @@ import type {
   GenerationalNote,
   EmojiWarning,
   EmojiValidationResult,
+  EmojiLongForm,
+  EmojiFaq,
+  ConversationExample,
+  ContentTier,
   ContextType,
   RiskLevel,
   Platform,
   Generation,
   WarningSeverity,
+  ConversationSetting,
 } from '../src/types/emoji';
 
 // Valid enum values for validation
@@ -48,6 +53,39 @@ const VALID_PLATFORMS: Platform[] = [
 const VALID_GENERATIONS: Generation[] = ['GEN_Z', 'MILLENNIAL', 'GEN_X', 'BOOMER'];
 
 const VALID_SEVERITIES: WarningSeverity[] = ['LOW', 'MEDIUM', 'HIGH'];
+
+const VALID_CONTENT_TIERS: ContentTier[] = ['thin', 'standard', 'deep'];
+
+const VALID_CONVERSATION_SETTINGS: ConversationSetting[] = [
+  'dating',
+  'friends',
+  'work',
+  'family',
+  'social',
+  'other',
+];
+
+// Minimum word count for the `longForm.overview` field on deep-tier pages
+export const DEEP_OVERVIEW_MIN_WORDS = 120;
+
+// Minimum number of richer conversation examples for deep-tier pages
+export const DEEP_CONVERSATION_EXAMPLES_MIN = 3;
+
+// Minimum number of FAQ entries for deep-tier pages (when longForm is present)
+export const DEEP_FAQS_MIN = 3;
+
+// Minimum character length per platform note for deep-tier pages
+export const DEEP_PLATFORM_NOTE_MIN_CHARS = 40;
+
+// Boilerplate substrings that will fail deep-tier platform note validation.
+// Keep intentionally short so we don't over-fit; writers can always add detail.
+export const DEEP_BOILERPLATE_PATTERNS: string[] = [
+  'commonly used',
+  'very common',
+  'general purpose',
+  'used for various',
+  'used in many contexts',
+];
 
 // Required emoji fields
 const REQUIRED_EMOJI_FIELDS: (keyof Emoji)[] = [
@@ -204,6 +242,223 @@ export function validateWarning(warning: EmojiWarning, index: number): Validatio
 }
 
 /**
+ * Count the whitespace-delimited words in a string.
+ */
+export function countWords(text: string): number {
+  if (typeof text !== 'string') return 0;
+  const trimmed = text.trim();
+  if (trimmed === '') return 0;
+  return trimmed.split(/\s+/).length;
+}
+
+/**
+ * Validate a single FAQ entry
+ */
+export function validateFaq(faq: EmojiFaq, index: number): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const prefix = `longForm.faqs[${index}]`;
+
+  if (!faq.question || typeof faq.question !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid question field',
+    });
+  }
+
+  if (!faq.answer || typeof faq.answer !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid answer field',
+    });
+  }
+
+  return errors;
+}
+
+/**
+ * Validate the optional longForm block
+ */
+export function validateLongForm(longForm: EmojiLongForm): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const stringFields: (keyof EmojiLongForm)[] = [
+    'overview',
+    'howPeopleUseIt',
+    'whenNotToUse',
+    'howToReply',
+  ];
+
+  for (const field of stringFields) {
+    const value = longForm[field];
+    if (value !== undefined && (typeof value !== 'string' || value.trim() === '')) {
+      errors.push({
+        file: '',
+        field: `longForm.${field}`,
+        message: `longForm.${field} must be a non-empty string when provided`,
+      });
+    }
+  }
+
+  if (longForm.faqs !== undefined) {
+    if (!Array.isArray(longForm.faqs)) {
+      errors.push({
+        file: '',
+        field: 'longForm.faqs',
+        message: 'longForm.faqs must be an array',
+      });
+    } else {
+      longForm.faqs.forEach((faq, index) => {
+        const faqErrors = validateFaq(faq, index);
+        errors.push(...faqErrors);
+      });
+    }
+  }
+
+  return errors;
+}
+
+/**
+ * Validate a single conversation example
+ */
+export function validateConversationExample(
+  example: ConversationExample,
+  index: number
+): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const prefix = `conversationExamples[${index}]`;
+
+  if (!example.setting || !VALID_CONVERSATION_SETTINGS.includes(example.setting)) {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: `Invalid setting: ${example.setting}. Must be one of: ${VALID_CONVERSATION_SETTINGS.join(', ')}`,
+    });
+  }
+
+  if (!example.message || typeof example.message !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid message field',
+    });
+  }
+
+  if (!example.interpretation || typeof example.interpretation !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid interpretation field',
+    });
+  }
+
+  return errors;
+}
+
+/**
+ * Validate a contentTier value
+ */
+function validateContentTier(tier: unknown): ValidationError[] {
+  const errors: ValidationError[] = [];
+  if (tier !== undefined && !VALID_CONTENT_TIERS.includes(tier as ContentTier)) {
+    errors.push({
+      file: '',
+      field: 'contentTier',
+      message: `Invalid contentTier: ${String(tier)}. Must be one of: ${VALID_CONTENT_TIERS.join(', ')}`,
+    });
+  }
+  return errors;
+}
+
+/**
+ * Validate a contentUpdatedAt ISO date string
+ */
+function validateContentUpdatedAt(value: unknown): ValidationError[] {
+  const errors: ValidationError[] = [];
+  if (value === undefined) return errors;
+  if (typeof value !== 'string') {
+    errors.push({
+      file: '',
+      field: 'contentUpdatedAt',
+      message: 'contentUpdatedAt must be an ISO date string',
+    });
+    return errors;
+  }
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) {
+    errors.push({
+      file: '',
+      field: 'contentUpdatedAt',
+      message: `contentUpdatedAt must be a valid ISO date string (got "${value}")`,
+    });
+  }
+  return errors;
+}
+
+/**
+ * Enforce thresholds required when an emoji opts into contentTier: 'deep'.
+ *
+ * Throws errors (not warnings) so the publishing QA pipeline can gate on them.
+ */
+export function validateDeepTier(emoji: Emoji): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const file = emoji.slug || 'unknown';
+
+  const longForm = emoji.longForm ?? {};
+  const overview = longForm.overview ?? '';
+  const overviewWords = countWords(overview);
+
+  if (overviewWords < DEEP_OVERVIEW_MIN_WORDS) {
+    errors.push({
+      file,
+      field: 'longForm.overview',
+      message: `deep-tier requires longForm.overview of at least ${DEEP_OVERVIEW_MIN_WORDS} words (got ${overviewWords})`,
+    });
+  }
+
+  const examples = Array.isArray(emoji.conversationExamples) ? emoji.conversationExamples : [];
+  if (examples.length < DEEP_CONVERSATION_EXAMPLES_MIN) {
+    errors.push({
+      file,
+      field: 'conversationExamples',
+      message: `deep-tier requires at least ${DEEP_CONVERSATION_EXAMPLES_MIN} conversationExamples (got ${examples.length})`,
+    });
+  }
+
+  const faqs = Array.isArray(longForm.faqs) ? longForm.faqs : [];
+  if (faqs.length < DEEP_FAQS_MIN) {
+    errors.push({
+      file,
+      field: 'longForm.faqs',
+      message: `deep-tier requires at least ${DEEP_FAQS_MIN} longForm.faqs entries (got ${faqs.length})`,
+    });
+  }
+
+  // Per-platform notes: must be ≥ min chars and not match boilerplate patterns.
+  emoji.platformNotes.forEach((note, index) => {
+    const trimmed = (note.note ?? '').trim();
+    if (trimmed.length < DEEP_PLATFORM_NOTE_MIN_CHARS) {
+      errors.push({
+        file,
+        field: `platformNotes[${index}].note`,
+        message: `deep-tier requires platformNotes[${index}].note to be at least ${DEEP_PLATFORM_NOTE_MIN_CHARS} characters (got ${trimmed.length})`,
+      });
+    }
+    const lowered = trimmed.toLowerCase();
+    const matchedPattern = DEEP_BOILERPLATE_PATTERNS.find((pattern) => lowered.includes(pattern));
+    if (matchedPattern) {
+      errors.push({
+        file,
+        field: `platformNotes[${index}].note`,
+        message: `deep-tier platformNotes[${index}].note matches boilerplate pattern "${matchedPattern}"; write an emoji-specific note instead`,
+      });
+    }
+  });
+
+  return errors;
+}
+
+/**
  * Validate a single emoji object
  */
 export function validateEmoji(emoji: Emoji): ValidationError[] {
@@ -321,6 +576,62 @@ export function validateEmoji(emoji: Emoji): ValidationError[] {
       field: 'relatedCombos',
       message: 'relatedCombos must be an array',
     });
+  }
+
+  // Optional contentTier (CONTENT-P1-001)
+  const tierErrors = validateContentTier(emoji.contentTier);
+  tierErrors.forEach((e) => {
+    e.file = emoji.slug || 'unknown';
+    errors.push(e);
+  });
+
+  // Optional contentUpdatedAt (CONTENT-P1-001)
+  const updatedAtErrors = validateContentUpdatedAt(emoji.contentUpdatedAt);
+  updatedAtErrors.forEach((e) => {
+    e.file = emoji.slug || 'unknown';
+    errors.push(e);
+  });
+
+  // Optional longForm (CONTENT-P1-001)
+  if (emoji.longForm !== undefined) {
+    if (typeof emoji.longForm !== 'object' || emoji.longForm === null) {
+      errors.push({
+        file: emoji.slug || 'unknown',
+        field: 'longForm',
+        message: 'longForm must be an object',
+      });
+    } else {
+      const longFormErrors = validateLongForm(emoji.longForm);
+      longFormErrors.forEach((e) => {
+        e.file = emoji.slug || 'unknown';
+        errors.push(e);
+      });
+    }
+  }
+
+  // Optional conversationExamples (CONTENT-P1-001)
+  if (emoji.conversationExamples !== undefined) {
+    if (!Array.isArray(emoji.conversationExamples)) {
+      errors.push({
+        file: emoji.slug || 'unknown',
+        field: 'conversationExamples',
+        message: 'conversationExamples must be an array',
+      });
+    } else {
+      emoji.conversationExamples.forEach((example, index) => {
+        const exampleErrors = validateConversationExample(example, index);
+        exampleErrors.forEach((e) => {
+          e.file = emoji.slug || 'unknown';
+          errors.push(e);
+        });
+      });
+    }
+  }
+
+  // If opted into deep tier, enforce the strict thresholds.
+  if (emoji.contentTier === 'deep') {
+    const deepErrors = validateDeepTier(emoji);
+    errors.push(...deepErrors);
   }
 
   return errors;
