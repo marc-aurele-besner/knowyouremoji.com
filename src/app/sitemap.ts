@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { getAllEmojiSlugs, getAllCategories } from '@/lib/emoji-data';
 import { getAllComboSlugs } from '@/lib/combo-data';
+import { getPublishedGuideSummaries } from '@/lib/guide-data';
 import { getSiteUrl } from '@/lib/metadata';
 
 /**
@@ -61,5 +62,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...emojiPages, ...comboPages, ...categoryPages];
+  // Guides index page (CONTENT-P1-003) — editorial content is high signal
+  // for AdSense and SEO, so we surface it prominently.
+  const guideIndexPage: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/guides`,
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+  ];
+
+  // Per-guide pages, using their publishedAt / updatedAt as lastModified so
+  // search engines can prioritize recently updated editorial content.
+  const guideSummaries = getPublishedGuideSummaries();
+  const guidePages: MetadataRoute.Sitemap = guideSummaries.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}`,
+    lastModified: new Date(guide.updatedAt || guide.publishedAt),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticPages,
+    ...emojiPages,
+    ...comboPages,
+    ...categoryPages,
+    ...guideIndexPage,
+    ...guidePages,
+  ];
 }

@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeEach, spyOn, afterEach } from 'bun:test';
 import * as emojiData from '../../../src/lib/emoji-data';
 import * as comboData from '../../../src/lib/combo-data';
+import * as guideData from '../../../src/lib/guide-data';
 
 // Mock data
 const mockEmojis = [
@@ -59,15 +60,35 @@ const mockCombos = [
 
 const mockCategories = ['faces', 'people'];
 
+const mockGuideSummaries = [
+  {
+    slug: 'what-does-skull-mean-in-texting',
+    title: 'What does 💀 mean in texting in 2026?',
+    description: 'A complete guide to the skull emoji.',
+    heroEmoji: '💀',
+    tags: ['gen-z', 'slang'],
+    publishedAt: '2026-08-12T00:00:00.000Z',
+    updatedAt: '2026-08-12T00:00:00.000Z',
+    readingTimeMinutes: 7,
+    author: 'KnowYourEmoji Editorial',
+    relatedEmojis: ['skull'],
+    relatedCombos: ['skull-laughing'],
+    seoTitle: 'What does 💀 mean in texting?',
+    seoDescription: 'The skull emoji decoded for 2026.',
+  },
+];
+
 describe('sitemap', () => {
   let getAllEmojiSlugsSpy: ReturnType<typeof spyOn>;
   let getAllComboSlugsSpy: ReturnType<typeof spyOn>;
   let getAllCategoriesSpy: ReturnType<typeof spyOn>;
+  let getPublishedGuideSummariesSpy: ReturnType<typeof spyOn>;
 
   beforeEach(() => {
     // Clear caches before each test
     emojiData.clearEmojiCache();
     comboData.clearComboCache();
+    guideData.clearGuideCache();
 
     // Set up spies with mock data
     getAllEmojiSlugsSpy = spyOn(emojiData, 'getAllEmojiSlugs').mockReturnValue(
@@ -77,6 +98,9 @@ describe('sitemap', () => {
       mockCombos.map((c) => c.slug)
     );
     getAllCategoriesSpy = spyOn(emojiData, 'getAllCategories').mockReturnValue(mockCategories);
+    getPublishedGuideSummariesSpy = spyOn(guideData, 'getPublishedGuideSummaries').mockReturnValue(
+      mockGuideSummaries
+    );
   });
 
   afterEach(() => {
@@ -84,6 +108,7 @@ describe('sitemap', () => {
     getAllEmojiSlugsSpy.mockRestore();
     getAllComboSlugsSpy.mockRestore();
     getAllCategoriesSpy.mockRestore();
+    getPublishedGuideSummariesSpy.mockRestore();
   });
 
   describe('sitemap function', () => {
@@ -176,6 +201,29 @@ describe('sitemap', () => {
       const urls = result.map((entry) => entry.url);
       const uniqueUrls = [...new Set(urls)];
       expect(urls.length).toBe(uniqueUrls.length);
+    });
+
+    it('should include the guides index page', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const guidesIndex = result.find((entry) => entry.url.endsWith('/guides'));
+      expect(guidesIndex).toBeDefined();
+      expect(guidesIndex?.priority).toBe(0.8);
+      expect(guidesIndex?.changeFrequency).toBe('weekly');
+    });
+
+    it('should include individual guide pages', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const guidePage = result.find((entry) =>
+        entry.url.includes('/guides/what-does-skull-mean-in-texting')
+      );
+      expect(guidePage).toBeDefined();
+      expect(guidePage?.priority).toBe(0.8);
+      expect(guidePage?.changeFrequency).toBe('monthly');
+      expect(guidePage?.lastModified instanceof Date).toBe(true);
     });
   });
 });

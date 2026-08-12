@@ -4,6 +4,7 @@ import { generateMetadata } from '@/app/page';
 import { HomePageContent } from '@/components/home/home-page-content';
 import { getEmojiSummaries, clearEmojiCache } from '@/lib/emoji-data';
 import { getComboSummaries, clearComboCache } from '@/lib/combo-data';
+import { getPublishedGuideSummaries, clearGuideCache } from '@/lib/guide-data';
 
 /**
  * Homepage tests using real emoji and combo data
@@ -13,8 +14,13 @@ describe('HomePage', () => {
   function renderHome() {
     const emojiSummaries = getEmojiSummaries().slice(0, 12);
     const comboSummaries = getComboSummaries().slice(0, 8);
+    const guideSummaries = getPublishedGuideSummaries().slice(0, 3);
     return render(
-      <HomePageContent emojiSummaries={emojiSummaries} comboSummaries={comboSummaries} />
+      <HomePageContent
+        emojiSummaries={emojiSummaries}
+        comboSummaries={comboSummaries}
+        guideSummaries={guideSummaries}
+      />
     );
   }
 
@@ -22,6 +28,7 @@ describe('HomePage', () => {
   beforeEach(() => {
     clearEmojiCache();
     clearComboCache();
+    clearGuideCache();
   });
 
   // Ensure DOM is cleaned up after each test

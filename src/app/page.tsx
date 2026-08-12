@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getEmojiSummaries } from '@/lib/emoji-data';
 import { getComboSummaries } from '@/lib/combo-data';
+import { getPublishedGuideSummaries } from '@/lib/guide-data';
 import { getPopularEmojiSummariesForHome } from '@/lib/emoji-popularity';
 import { getEnv } from '@/lib/env';
 import { HomePageContent } from '@/components/home/home-page-content';
@@ -81,6 +82,13 @@ export default async function HomePage() {
   const allSummaries = getEmojiSummaries();
   const emojiSummaries = await getPopularEmojiSummariesForHome(12, allSummaries);
   const comboSummaries = getComboSummaries().slice(0, 8);
+  const guideSummaries = getPublishedGuideSummaries().slice(0, 3);
 
-  return <HomePageContent emojiSummaries={emojiSummaries} comboSummaries={comboSummaries} />;
+  return (
+    <HomePageContent
+      emojiSummaries={emojiSummaries}
+      comboSummaries={comboSummaries}
+      guideSummaries={guideSummaries}
+    />
+  );
 }
