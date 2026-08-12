@@ -41,11 +41,35 @@ function patchWindowConstructors(
 
 patchWindowConstructors(window);
 
+// Wrap navigator in a Proxy so `clipboard` can be redefined across runtimes.
+// On Linux + Bun 1.3.14 + V8, happy-dom's `Navigator.prototype.clipboard`
+// getter is reported as non-configurable, causing test files that do
+// `Object.defineProperty(navigator, 'clipboard', ...)` to throw
+// "Attempting to change configurable attribute of unconfigurable property".
+// The Proxy traps `clipboard` access so tests can shadow it freely while
+// every other navigator property still resolves through happy-dom.
+const baseNavigator = window.navigator;
+let mockClipboard: { writeText: (...args: unknown[]) => unknown } | undefined;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const proxiedNavigator = new Proxy(baseNavigator, {
+  get(target, prop) {
+    if (prop === 'clipboard') return mockClipboard;
+    return Reflect.get(target, prop, target);
+  },
+  defineProperty(target, prop, descriptor) {
+    if (prop === 'clipboard') {
+      mockClipboard = descriptor.value;
+      return true;
+    }
+    return Reflect.defineProperty(target, prop, descriptor);
+  },
+});
+
 // Register DOM globals that testing-library needs
 Object.assign(globalThis, {
   window,
   document: window.document,
-  navigator: window.navigator,
+  navigator: proxiedNavigator,
   location: window.location,
   Error: NativeError,
   TypeError: NativeTypeError,
