@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Common for expressing frustration with news, takes, or people."
+      "note": "Common for expressing frustration with takes, news, or people."
     },
     {
       "platform": "IMESSAGE",
-      "note": "Can escalate tension quickly - clearly signals displeasure."
+      "note": "Can escalate tension quickly; clearly signals displeasure."
     },
     {
       "platform": "SLACK",
       "note": "Generally too negative for workplace communication."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server members use it as the 'not this again' reaction."
     }
   ],
   "generationalNotes": [
@@ -72,5 +76,58 @@
   ],
   "relatedCombos": ["rolling-eyes-sigh"],
   "seoTitle": "🙄 Rolling Eyes Emoji Meaning - What Does 🙄 Really Mean?",
-  "seoDescription": "Learn what the rolling eyes emoji 🙄 really means in modern texting. Universal sign of annoyance or dismissiveness. Complete context guide."
+  "seoDescription": "Learn what the rolling eyes emoji 🙄 really means in modern texting. Universal sign of annoyance or dismissiveness. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "🙄 is the universal eye-roll emoji, the one that signals 'I cannot believe this' or 'not this again' with maximum clarity. The visual cue — eyes rolled upward, flat mouth — is the most direct contempt signal in the Unicode face set. On Twitter, iMessage, and Discord 🙄 shows up as the go-to reaction to a take that deserves dismissal, a person who is being exhausting, or a situation that has happened so many times that the only response is exasperation. The emoji is unambiguous in a way few others are: there is no soft read, no ironic rescue, no romantic undercurrent. It means what it shows.\n\nThe emoji also doubles as the meta-reaction to things that are eye-roll worthy in the obvious sense — a basic take, a recycled joke, a public statement that misses the point. The dual reading — 'I am annoyed' or 'this is so predictable' — lands on the same beat: disengagement. Reserve 🙄 for moments that genuinely warrant the eye-roll, because the emoji escalates quickly and can damage relationships if used carelessly.",
+    "howPeopleUseIt": "🙄 arrives as the quote-tweet reaction to a tired take, the direct reply to a friend's exhausting update, or the punchline on a 'here we go again' reaction. On Twitter it functions as the standard dismissal reaction to bad takes, recycled jokes, and predictable public statements. On iMessage it lands as the direct response to a friend who is being extra — the clear signal that the sender has had enough.\n\nIn group chats 🙄 works as the shared 'cannot believe this' reaction when a friend shares news that warrants the eye-roll. The emoji pairs naturally with 😒 for the cooler unamused variant, with 🤦 for the facepalm, and with a sentence that names the frustration so the eye-roll does not feel performative.",
+    "whenNotToUse": "Skip 🙄 in contexts where the dismissive reading will cause damage — in workplace feedback, in customer-facing comms, or in serious personal conversations. A 🙄 on a coworker's idea will read as hostile and will damage trust. Avoid it on a friend's vulnerable post; the contempt will land wrong.\n\nAlso avoid 🙄 when the frustration is real but the conversation warrants care. A partner who is going through a hard time needs empathy, not contempt. Reach for a softer reaction or a sentence that engages with the actual emotional weight.",
+    "howToReply": "Mirror 🙄 with another 🙄 or 😒 if you want to keep the dismissive energy going, or upgrade to a softer reaction if the conversation warrants care. If you receive 🙄 as a reaction to your own take, treat it as a signal that the content landed wrong and consider whether to clarify or let it go.\n\nIf 🙄 arrives on a friend's shared frustration, mirror with a sentence that engages with the actual issue. And if you want to send 🙄 as a meta-reaction to something predictable, anchor the emoji with a sentence that names what was so eye-roll-worthy so it does not feel pointed.",
+    "faqs": [
+      {
+        "question": "What does 🙄 mean in texting?",
+        "answer": "🙄 means 'I cannot believe this' or 'not this again.' The rolling-eyes face is the universal dismissal reaction and signals clear contempt or exasperation."
+      },
+      {
+        "question": "What does 🙄 mean from a girl?",
+        "answer": "From a girl or anyone else, 🙄 means the sender is annoyed or dismissive. There is no gendered meaning; the emoji is about the contempt, not who is sending it."
+      },
+      {
+        "question": "Is 🙄 rude?",
+        "answer": "🙄 can read as rude, especially in workplace or vulnerable contexts. The contempt is unambiguous, so use it carefully to avoid escalating conflicts."
+      },
+      {
+        "question": "What does 🙄 mean from a guy?",
+        "answer": "From a guy, 🙄 has the same meaning it has from anyone else: clear annoyance or dismissiveness. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "they really did it again 🙄",
+      "interpretation": "Friend sharing a recurring frustration. Mirror with 🙄 or a sentence that engages with the situation."
+    },
+    {
+      "setting": "social",
+      "message": "groundbreaking observation 🙄",
+      "interpretation": "Public sarcasm on a tired take. Mirror with 🙄 or a sentence that adds to the dismissal."
+    },
+    {
+      "setting": "work",
+      "message": "the meeting was 'optional' 🙄",
+      "interpretation": "Risky in a wide team channel; safe in a tight collaborator DM. If used in a team channel, anchor with a sentence that adds context."
+    },
+    {
+      "setting": "dating",
+      "message": "sure, you remembered 🙄",
+      "interpretation": "Partner's skeptical reaction. Mirror with a softer reaction or a sentence that addresses the doubt."
+    },
+    {
+      "setting": "family",
+      "message": "dad's jokes at dinner 🙄",
+      "interpretation": "Family group laughter at a relative's joke. Mirror with 🙄 or a sentence that engages with the humor."
+    }
+  ]
 }

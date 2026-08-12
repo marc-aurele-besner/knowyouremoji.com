@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "SLACK",
-      "note": "Very common for celebrating team achievements."
+      "note": "The standard celebration reaction in team wins and shipped-feature announcements."
     },
     {
       "platform": "TWITTER",
-      "note": "Used for enthusiastic agreement or celebration."
+      "note": "Used for enthusiastic agreement, hallelujah posts, and hype reactions."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in celebratory posts and comments."
+      "note": "Common in celebratory captions and milestone announcements."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server admins paste it on big announcements as the celebration marker."
     }
   ],
   "generationalNotes": [
@@ -73,5 +77,58 @@
     "raising-hands-medium",
     "raising-hands-medium-dark",
     "raising-hands-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "🙌 is the universal celebration emoji, the two hands raised in triumph that lands as the visual 'hallelujah' for any moment worth cheering. On Slack, Teams, and Discord 🙌 shows up as the standard team-win reaction — the closer on a shipped feature, the visual tag for a milestone achieved, the celebration marker on a company-wide announcement. On Twitter and Instagram the emoji functions as the personal victory closer on a goal reached, a Friday afternoon, or a major life update. The visual cue is unmistakable: hands thrown up means it's time to celebrate.\n\nThe emoji also carries a softer hallelujah / praise reading. Religious-adjacent contexts use 🙌 as the visual shorthand for 'praise be' or 'thank God,' and the dual reading — secular celebration or spiritual praise — keeps it versatile. Reserve 🙌 for the moments that genuinely warrant the celebration, because the emoji is loud and overusing it begins to undercut the rare triumph beat.",
+    "howPeopleUseIt": "🙌 arrives as the team-channel reaction to a shipped feature, the personal-caption closer on a milestone, or the punchline on a 'finally Friday' moment. On Slack the emoji lands as the celebration marker in product-launch threads and team-win announcements. On Instagram captions 🙌 shows up on engagement posts, job announcements, and milestone celebrations as the signature flourish.\n\nIn family group chats 🙌 doubles as the celebration emoji for a graduation, a new baby, or a big move. The emoji pairs naturally with 🎉 for party energy, with 🏆 for the win, and with a sentence that names what is being celebrated. Stand-alone 🙌 reads as celebration; in a stack it leans performative.",
+    "whenNotToUse": "Skip 🙌 in contexts where the celebration would feel mismatched — in serious professional channels, in customer complaint threads, or in condolences. A 🙌 in a customer complaint reply will read as tone deaf. Avoid it in discussions about grief or loss; the celebration energy will not land where empathy is needed.\n\nAlso avoid 🙌 when the achievement is too minor to warrant the celebration. A 🙌 for remembering to take a lunch break reads as sarcastic, and the irony note may not land in mixed channels. Match the emoji to the actual weight of the moment.",
+    "howToReply": "Mirror 🙌 with another 🙌 or 🎉 if you want to keep the celebration going, or upgrade to 🏆 for the elite-win emphasis. If you receive 🙌 on a personal milestone, reply with 'thanks 🙌' or a sentence that acknowledges the celebration.\n\nIf 🙌 arrives as a team win, mirror with a sentence that names the specific work that earned the celebration. And if you want to send 🙌 as a praise / hallelujah moment, anchor the emoji with a sentence that lands the spiritual reading so the celebration does not feel performative.",
+    "faqs": [
+      {
+        "question": "What does 🙌 mean in texting?",
+        "answer": "🙌 means 'celebration' or 'hallelujah.' The two raised hands are the universal visual tag for triumph, and the emoji reads as either personal celebration or team win depending on context."
+      },
+      {
+        "question": "What does 🙌 mean from a girl?",
+        "answer": "From a girl or anyone else, 🙌 means the sender is celebrating something. There is no gendered meaning; the emoji is about the triumph, not who is sending it."
+      },
+      {
+        "question": "Is 🙌 flirty?",
+        "answer": "No, 🙌 is not flirty. It marks celebration or praise, with no romantic undercurrent. Using it on a romantic post will read as supportive rather than flirtatious."
+      },
+      {
+        "question": "What does 🙌 mean from a guy?",
+        "answer": "From a guy, 🙌 has the same meaning it has from anyone else: celebration or strong approval. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "shipped it 🙌",
+      "interpretation": "Team win in a tight channel. Mirror with 🙌 or 🎉 to match the celebration."
+    },
+    {
+      "setting": "friends",
+      "message": "she said yes 🙌",
+      "interpretation": "Friend announcing a milestone. Mirror with 🙌 or 'congratulations' to celebrate the moment."
+    },
+    {
+      "setting": "family",
+      "message": "graduated 🙌",
+      "interpretation": "Family sharing a milestone. Mirror with 🙌 or 'so proud' to acknowledge the moment."
+    },
+    {
+      "setting": "dating",
+      "message": "we made it to the weekend 🙌",
+      "interpretation": "Romantic partner's playful closer. Mirror with 🙌 or a heart to engage with the energy."
+    },
+    {
+      "setting": "social",
+      "message": "FRIDAY 🙌",
+      "interpretation": "Public celebration of the weekend. Mirror with 🙌 or a sentence that joins the relief."
+    }
   ]
 }
