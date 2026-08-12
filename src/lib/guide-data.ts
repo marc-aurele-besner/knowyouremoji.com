@@ -85,8 +85,11 @@ export function parseGuideFrontmatter(source: string): {
  * Throws when a required field is missing or has the wrong shape — the
  * loader surfaces those failures with the file path so writers can fix
  * authoring mistakes before they hit production.
+ *
+ * Exported (named `_buildGuideFromFrontmatter`) so unit tests can drive
+ * the validation paths without going through the filesystem loader.
  */
-function buildGuideFromFrontmatter(
+export function _buildGuideFromFrontmatter(
   data: Record<string, unknown>,
   body: string,
   slug: GuideSlug
@@ -205,7 +208,7 @@ function loadGuides(): Guide[] {
     try {
       const source = fs.readFileSync(filePath, 'utf-8');
       const { data, body } = parseGuideFrontmatter(source);
-      const guide = buildGuideFromFrontmatter(data, body, slug);
+      const guide = _buildGuideFromFrontmatter(data, body, slug);
       loaded.push(guide);
     } catch (error) {
       // Surface the failure but don't crash the build — drafts may be in

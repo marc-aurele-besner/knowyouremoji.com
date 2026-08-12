@@ -7,7 +7,7 @@
  * repo. They act as a guard against accidental format regressions.
  */
 
-import { describe, it, expect, beforeEach, spyOn, afterEach } from 'bun:test';
+import { describe, it, expect, beforeEach } from 'bun:test';
 import {
   getAllGuides,
   getAllGuideSlugs,
@@ -21,6 +21,7 @@ import {
   deriveSeoTitle,
   deriveSeoDescription,
   clearGuideCache,
+  _buildGuideFromFrontmatter,
 } from '../../../src/lib/guide-data';
 
 describe('guide-data (live loader)', () => {
@@ -149,58 +150,33 @@ describe('guide-data (live loader)', () => {
 
   describe('frontmatter validation', () => {
     /**
-     * Spy-driven tests for the validation paths inside
-     * `buildGuideFromFrontmatter`. We can't reach the build step directly
-     * (it's not exported), so we swap out `fs.readFileSync` to feed
-     * malformed inputs through the real loader pipeline.
-     *
-     * Validation failures are caught by the loader and the offending file
-     * is skipped (logged via `console.error`) so a single bad draft cannot
-     * block the production build. We assert on the resulting empty list
-     * plus the captured log output.
+     * Validation paths inside `_buildGuideFromFrontmatter`. The helper is
+     * exported so tests can drive it directly without going through the
+     * filesystem loader (which is what the bug-prone fs-spy approach did
+     * previously — see PR #347 review).
      */
-    let readFileSyncSpy: ReturnType<typeof spyOn> | null = null;
-    let errorSpy: ReturnType<typeof spyOn> | null = null;
 
-    afterEach(() => {
-      readFileSyncSpy?.mockRestore();
-      readFileSyncSpy = null;
-      errorSpy?.mockRestore();
-      errorSpy = null;
-      clearGuideCache();
+    it('throws a helpful error when a required field is missing', () => {
+      expect(() =>
+        _buildGuideFromFrontmatter({ title: 'only title' }, 'body', 'test-slug')
+      ).toThrow(/missing required frontmatter field/);
     });
 
-    it('skips and logs files missing required frontmatter fields', () => {
-      const fs = require('fs') as typeof import('fs');
-      readFileSyncSpy = spyOn(fs, 'readFileSync').mockReturnValue(`---
-title: missing other required fields
----
-
-body`);
-      errorSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const guides = getAllGuides();
-      expect(guides).toEqual([]);
-      expect(errorSpy).toHaveBeenCalled();
-      const firstCall = errorSpy.mock.calls[0]?.[0] as string;
-      expect(firstCall).toMatch(/Failed to load/);
-    });
-
-    it('skips and logs files whose tags field is not a list', () => {
-      const fs = require('fs') as typeof import('fs');
-      readFileSyncSpy = spyOn(fs, 'readFileSync').mockReturnValue(`---
-title: ok
-description: ok
-publishedAt: 2026-01-01
-updatedAt: 2026-01-01
-author: ok
-tags: not-a-list
----
-
-body`);
-      errorSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const guides = getAllGuides();
-      expect(guides).toEqual([]);
-      expect(errorSpy).toHaveBeenCalled();
+    it('throws when tags is not a list', () => {
+      expect(() =>
+        _buildGuideFromFrontmatter(
+          {
+            title: 'ok',
+            description: 'ok',
+            publishedAt: '2026-01-01',
+            updatedAt: '2026-01-01',
+            author: 'ok',
+            tags: 'not-a-list',
+          },
+          'body',
+          'test-slug'
+        )
+      ).toThrow(/must be a list/);
     });
   });
 
