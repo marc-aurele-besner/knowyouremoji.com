@@ -256,6 +256,66 @@ describe('EmojiJsonLd', () => {
     });
   });
 
+  describe('long-form FAQ support (CONTENT-P1-001)', () => {
+    it('keeps the legacy Article shape when there are no FAQs', () => {
+      render(<EmojiJsonLd emoji={mockEmoji} appUrl={mockAppUrl} appName={mockAppName} />);
+
+      const script = document.querySelector('script[type="application/ld+json"]');
+      const parsed = JSON.parse(script!.textContent!);
+      expect(parsed['@type']).toBe('Article');
+      expect(parsed['@graph']).toBeUndefined();
+    });
+
+    it('emits an @graph with Article + FAQPage when longForm.faqs is present', () => {
+      const emojiWithFaqs: Emoji = {
+        ...mockEmoji,
+        longForm: {
+          faqs: [
+            { question: 'What does 💀 mean?', answer: 'It means "dead from laughing".' },
+            { question: 'Is 💀 flirty?', answer: 'Usually not.' },
+          ],
+        },
+      };
+
+      render(<EmojiJsonLd emoji={emojiWithFaqs} appUrl={mockAppUrl} appName={mockAppName} />);
+
+      const script = document.querySelector('script[type="application/ld+json"]');
+      const parsed = JSON.parse(script!.textContent!);
+
+      expect(parsed['@context']).toBe('https://schema.org');
+      expect(Array.isArray(parsed['@graph'])).toBe(true);
+      const graph = parsed['@graph'] as Array<Record<string, unknown>>;
+
+      const article = graph.find((node) => node['@type'] === 'Article');
+      const faq = graph.find((node) => node['@type'] === 'FAQPage');
+      expect(article).toBeDefined();
+      expect(faq).toBeDefined();
+
+      const faqEntity = faq as {
+        mainEntity: Array<{ '@type': string; name: string; acceptedAnswer: { text: string } }>;
+      };
+      expect(faqEntity.mainEntity).toHaveLength(2);
+      expect(faqEntity.mainEntity[0]['@type']).toBe('Question');
+      expect(faqEntity.mainEntity[0].name).toBe('What does 💀 mean?');
+      expect(faqEntity.mainEntity[0].acceptedAnswer.text).toBe('It means "dead from laughing".');
+    });
+
+    it('does not emit an FAQPage when longForm is present but has no FAQs', () => {
+      const emojiLongFormNoFaqs: Emoji = {
+        ...mockEmoji,
+        longForm: { overview: 'paragraph' },
+      };
+
+      render(<EmojiJsonLd emoji={emojiLongFormNoFaqs} appUrl={mockAppUrl} appName={mockAppName} />);
+
+      const script = document.querySelector('script[type="application/ld+json"]');
+      const parsed = JSON.parse(script!.textContent!);
+
+      expect(parsed['@type']).toBe('Article');
+      expect(parsed['@graph']).toBeUndefined();
+    });
+  });
+
   describe('SEO compliance', () => {
     it('includes all required Article properties per Schema.org', () => {
       render(<EmojiJsonLd emoji={mockEmoji} appUrl={mockAppUrl} appName={mockAppName} />);

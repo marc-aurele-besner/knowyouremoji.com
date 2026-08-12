@@ -308,5 +308,55 @@ describe('EmojiPage', () => {
       expect(screen.getByText(/Critical Warning/)).toBeInTheDocument();
       expect(screen.getByText(/Medium Warning/)).toBeInTheDocument();
     });
+
+    test('renders the long-form section when longForm is present', async () => {
+      const emojiWithLongForm: Emoji = {
+        ...mockEmoji,
+        longForm: {
+          overview: 'First paragraph of the article overview.\n\nSecond paragraph follows.',
+          howPeopleUseIt: 'It shows up everywhere.',
+          whenNotToUse: 'Skip it in formal channels.',
+          howToReply: 'Mirror the energy with another skull.',
+          faqs: [{ question: 'What does it mean?', answer: 'It means the sender is amused.' }],
+        },
+      };
+      mockGetEmojiBySlug.mockImplementation(() => emojiWithLongForm);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      expect(screen.getByTestId('emoji-long-form-section')).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'Overview', level: 2 })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'How People Use It', level: 2 })
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'When Not to Use It', level: 2 })
+      ).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'How to Reply', level: 2 })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'Frequently Asked Questions', level: 2 })
+      ).toBeInTheDocument();
+    });
+
+    test('renders conversation examples when provided', async () => {
+      const emojiWithExamples: Emoji = {
+        ...mockEmoji,
+        conversationExamples: [
+          {
+            setting: 'friends',
+            message: 'bro i just tripped into the projector at work 💀',
+            interpretation: 'Sender is laughing at their own embarrassment.',
+          },
+        ],
+      };
+      mockGetEmojiBySlug.mockImplementation(() => emojiWithExamples);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      expect(screen.getByTestId('emoji-conversation-examples-section')).toBeInTheDocument();
+      expect(screen.getByText(/tripped into the projector/)).toBeInTheDocument();
+    });
   });
 });

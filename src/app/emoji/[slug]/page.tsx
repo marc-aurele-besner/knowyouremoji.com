@@ -15,6 +15,8 @@ import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section'
 import { EmojiCombosSection } from '@/components/emoji/emoji-combos-section';
 import { CategoryLink } from '@/components/emoji/category-link';
 import { PlatformIcon } from '@/components/emoji/platform-icon';
+import { EmojiLongFormSection } from '@/components/emoji/emoji-long-form-section';
+import { EmojiConversationExamplesSection } from '@/components/emoji/emoji-conversation-examples-section';
 import { ShareSection } from '@/components/share/share-section';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { ShareMeaningButton } from '@/components/share/share-meaning-button';
@@ -282,6 +284,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
           </Card>
         </section>
 
+        {/* Long-form article sections (CONTENT-P1-001) — only render when present */}
+        {emoji.longForm && <EmojiLongFormSection longForm={emoji.longForm} />}
+
         {/* Context Meanings Section */}
         {emoji.contextMeanings.length > 0 && (
           <section className="mb-8">
@@ -372,6 +377,11 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
               ))}
             </div>
           </section>
+        )}
+
+        {/* Conversation Examples (CONTENT-P1-001) */}
+        {emoji.conversationExamples && emoji.conversationExamples.length > 0 && (
+          <EmojiConversationExamplesSection examples={emoji.conversationExamples} />
         )}
 
         {/* Warnings Section */}

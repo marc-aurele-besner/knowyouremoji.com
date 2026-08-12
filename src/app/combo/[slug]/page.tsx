@@ -12,6 +12,8 @@ import { ComboJsonLd } from '@/components/seo/combo-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { RelatedCombosSection } from '@/components/combo/related-combos-section';
+import { ComboLongFormSection } from '@/components/combo/combo-long-form-section';
+import { ComboConversationExamplesSection } from '@/components/combo/combo-conversation-examples-section';
 import type { Metadata } from 'next';
 
 interface ComboPageProps {
@@ -213,6 +215,14 @@ export default async function ComboPage({ params }: ComboPageProps) {
             </CardContent>
           </Card>
         </section>
+
+        {/* Long-Form Content (CONTENT-P1-001) */}
+        {combo.longForm && <ComboLongFormSection longForm={combo.longForm} />}
+
+        {/* Conversation Examples (CONTENT-P1-001) */}
+        {combo.conversationExamples && combo.conversationExamples.length > 0 && (
+          <ComboConversationExamplesSection examples={combo.conversationExamples} />
+        )}
 
         {/* Examples Section */}
         {combo.examples.length > 0 && (

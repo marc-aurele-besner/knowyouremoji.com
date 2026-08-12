@@ -22,6 +22,13 @@ export {
   type EmojiWarningExtended,
 } from './emoji-warnings';
 
+// Long-form content sections (CONTENT-P1-001)
+export { EmojiLongFormSection, type EmojiLongFormSectionProps } from './emoji-long-form-section';
+export {
+  EmojiConversationExamplesSection,
+  type EmojiConversationExamplesSectionProps,
+} from './emoji-conversation-examples-section';
+
 // Section components
 export {
   ContextMeaningsSection,

@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "INSTAGRAM",
-      "note": "Classic selfie pose emoji."
+      "note": "Classic selfie pose emoji on casual posts and stories."
     },
     {
       "platform": "TWITTER",
-      "note": "Common for casual goodbyes and peace."
+      "note": "Common for casual goodbyes and peace-sign closers."
     },
     {
       "platform": "TIKTOK",
-      "note": "Popular in selfie and exit content."
+      "note": "Popular in selfie and exit-content videos."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Standard casual goodbye reaction between friends."
     }
   ],
   "generationalNotes": [
@@ -73,5 +77,58 @@
     "victory-hand-medium",
     "victory-hand-medium-dark",
     "victory-hand-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "✌️ is the universal peace sign emoji, the index-and-middle-fingers V that signals peace, victory, casual goodbye, or selfie pose. The hand gesture has carried the peace meaning for so long across cultures that the emoji lands with the same simplicity. On Instagram, Twitter, and TikTok ✌️ shows up as the standard selfie pose, the casual goodbye closer, and the visual tag for chill vibes. The emoji is one of the cleanest positive-casual signals on the keyboard because the meaning is unambiguous — peace, win, or simply leaving.\n\nThe emoji also doubles as the casual-goodbye reaction. A friend says 'see you tomorrow' and the appropriate reply is ✌️ — the visual tag for 'all good, peace out.' The dual reading — selfie pose or casual goodbye — keeps ✌️ versatile without diluting the chill vibe. Use ✌️ when the moment calls for the peace-sign energy, not as a default reaction to every minor farewell.",
+    "howPeopleUseIt": "✌️ arrives as the selfie pose on a casual post, the goodbye closer on a friend's message, or the punchline on a vibe-signaling story. On Instagram the emoji lands as the standard selfie pose on a cap or fit pic. On Twitter it functions as the casual goodbye reaction to a public conversation. On TikTok creators pair ✌️ with the peace-pose opener as the visual tag for the vibe.\n\nIn group chats ✌️ works as the shared 'I am out of here' reaction when a friend signs off. The emoji also pairs naturally with 🤙 for the hang-loose sibling, with 🌴 for the chill-aesthetic, and with a sentence that names what is being signed off from so the peace does not feel generic.",
+    "whenNotToUse": "Skip ✌️ in contexts where the peace sign will land wrong — in countries where the gesture has a different meaning (it can be offensive in some parts of the world), in serious professional channels, or in customer complaint replies. A ✌️ in a customer complaint reply will sound tone deaf. Avoid it in conversations where the recipient needs more than a casual goodbye.\n\nAlso avoid ✌️ when the situation actually warrants a stronger goodbye. The peace sign is the chill version of leaving, so a ✌️ on a meaningful farewell will feel underweighted. Reach for a heart or a sentence for the moments that warrant weight.",
+    "howToReply": "Mirror ✌️ with another ✌️ or 🤙 if you want to keep the chill vibe going, or upgrade to a heart for a warmer goodbye. If you receive ✌️ on a selfie, reply with a heart or a sentence that acknowledges the look.\n\nIf ✌️ arrives as a casual goodbye, mirror with the same or a sentence that closes the loop. And if you want to send ✌️ as a chill vibe sign, anchor the emoji with a sentence that names the moment so the peace does not feel generic.",
+    "faqs": [
+      {
+        "question": "What does ✌️ mean in texting?",
+        "answer": "✌️ means 'peace' or 'see ya.' The victory hand emoji is the universal peace sign and reads as selfie pose, casual goodbye, or chill vibe signal depending on context."
+      },
+      {
+        "question": "What does ✌️ mean from a girl?",
+        "answer": "From a girl or anyone else, ✌️ means the sender is sending peace or casually saying goodbye. There is no gendered meaning; the emoji is about the vibe, not who is sending it."
+      },
+      {
+        "question": "Is ✌️ flirty?",
+        "answer": "✌️ can read as flirty in a dating context, especially when paired with a selfie. In other contexts it stays in the casual peace-sign zone."
+      },
+      {
+        "question": "What does ✌️ mean from a guy?",
+        "answer": "From a guy, ✌️ has the same meaning it has from anyone else: peace, victory, or casual goodbye. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "see ya tomorrow ✌️",
+      "interpretation": "Friend's casual goodbye. Mirror with ✌️ or a heart to close the loop warmly."
+    },
+    {
+      "setting": "social",
+      "message": "cap photo ✌️",
+      "interpretation": "Public selfie pose. Mirror with a heart or a sentence that engages with the look."
+    },
+    {
+      "setting": "dating",
+      "message": "great date ✌️",
+      "interpretation": "Romantic partner's casual sign-off. Mirror with a heart or a sentence that engages with the date."
+    },
+    {
+      "setting": "family",
+      "message": "bye mom ✌️",
+      "interpretation": "Family casual goodbye. Mirror with ❤️ or a sentence that closes the loop."
+    },
+    {
+      "setting": "work",
+      "message": "wrapping up for the day ✌️",
+      "interpretation": "Team sign-off in a tight channel. Mirror with ✌️ or a sentence that acknowledges the wrap."
+    }
   ]
 }

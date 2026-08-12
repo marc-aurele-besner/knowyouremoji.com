@@ -36,9 +36,22 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common for expressing disappointment." },
-    { "platform": "INSTAGRAM", "note": "Used in sad posts." },
-    { "platform": "TIKTOK", "note": "Dramatic content and breakup stories." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for breakup announcements and public disappointment reactions."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Shows up under sad single posts and unrequited love captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Creators paste it on breakup storytimes and dramatic relationship content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Group chat acknowledgment when a friend shares a sad update."
+    }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Often used dramatically or ironically." },
@@ -46,7 +59,60 @@
     { "generation": "BOOMER", "note": "Serious emotional pain." }
   ],
   "warnings": [],
-  "relatedCombos": [],
+  "relatedCombos": ["sob-broken-heart"],
   "seoTitle": "💔 Broken Heart Emoji Meaning",
-  "seoDescription": "Learn what the Broken Heart emoji 💔 really means."
+  "seoDescription": "Learn what the Broken Heart emoji 💔 really means.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "💔 is the emoji that says 'love did not work out.' The visual cue is the heart sliced down the middle, the most direct visual metaphor for heartbreak in the Unicode set. On Twitter, Instagram, and TikTok the emoji shows up under breakup announcements, unrequited love posts, and dramatic disappointment reactions — anywhere the sender wants to mark the moment as a real loss rather than a minor setback. The combo with 😭 (sob-broken-heart) is the standard intensifier when the pain is genuine.\n\nThe emoji also doubles as the standard dramatic disappointment reaction. A cancelled concert, a sold-out drop, a creator's favorite show ending — all of these collect 💔 as the 'I am genuinely gutted' shorthand. The informal reading has stretched the emoji past its romantic roots into a general grief shorthand, which is why a 💔 on a friend's post about a job rejection or a missed opportunity reads as sincere. The dual use — heartbreak or dramatic disappointment — keeps 💔 versatile without diluting the emotional weight.",
+    "howPeopleUseIt": "💔 arrives as the closer on a breakup announcement, the caption on a sad single, or as the punchline reaction on a piece of cancelled news. On Instagram captions the emoji lands as the signature flourish on a soft-launch breakup, paired with a sober black-and-white photo. On Twitter quote-tweets it functions as the 'this is painful' reaction to public news that disappointed a fanbase. On TikTok creators paste 💔 on breakup storytimes as the visual tag for the moment the relationship ended.\n\nIn group chats 💔 works as the absorbing reaction when a friend shares a sad update. The emoji also pairs naturally with 😭 (sob-broken-heart) for maximum intensity, with 🖤 for the darker aesthetic, and with a sentence that names the loss so the heart does not feel generic.",
+    "whenNotToUse": "Skip 💔 in contexts where the disappointment is too minor to warrant the heavy heart — a cancelled lunch, a slow Wi-Fi day, a friend's small mistake. A 💔 on a minor inconvenience reads as dramatic and undercuts the genuine weight the emoji carries. Also avoid it as a joke in situations where someone is actually grieving or sharing real loss; the dramatic reading will land wrong.\n\nAlso avoid 💔 when you want to actually offer support. A friend who is going through a breakup needs a sentence or a heart emoji, not a dramatic 💔 that centers your reaction. Reserve the emoji for moments where the dramatic weight matches the actual loss.",
+    "howToReply": "Mirror 💔 with another 💔 or 😭 if you want to acknowledge the weight, or upgrade to a soft sentence that asks what the sender needs. If you receive 💔 on a breakup announcement, reply with a heart or a 'thinking of you' so the care lands without piling on more drama.\n\nIf 💔 arrives as a dramatic disappointment reaction, mirror with a softer reaction or a sentence that matches the actual gravity. And if you want to send 💔 on a friend's sad post, anchor the emoji with a sentence that names what happened so the heart does not feel performative.",
+    "faqs": [
+      {
+        "question": "What does 💔 mean in texting?",
+        "answer": "💔 means heartbreak or deep disappointment. The split-heart visual reads as either a literal breakup or as dramatic disappointment about a cancelled plan, a missed opportunity, or a lost relationship."
+      },
+      {
+        "question": "What does 💔 mean from a girl?",
+        "answer": "From a girl or anyone else, 💔 means the sender is heartbroken or dramatically disappointed. There is no gendered meaning; the emoji is about the emotional weight, not who is sending it."
+      },
+      {
+        "question": "Is 💔 flirty?",
+        "answer": "No, 💔 is not flirty. It marks emotional pain or loss, so it sits on the opposite side of the spectrum from romantic interest. Using it around someone you are flirting with will read as confusing."
+      },
+      {
+        "question": "What does 💔 mean from a guy?",
+        "answer": "From a guy, 💔 has the same meaning it has from anyone else: heartbreak or serious disappointment. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "dating",
+      "message": "we broke up 💔",
+      "interpretation": "Friend announcing a breakup. Mirror with a soft heart or a sentence that lands care without piling on drama."
+    },
+    {
+      "setting": "social",
+      "message": "concert cancelled 💔",
+      "interpretation": "Public disappointment reaction. Mirror with 💔 or 😢 to match the sadness."
+    },
+    {
+      "setting": "friends",
+      "message": "they actually did not invite me 💔",
+      "interpretation": "Friend sharing a social exclusion. Mirror with a softer reaction or a sentence that validates the hurt."
+    },
+    {
+      "setting": "family",
+      "message": "grandma's garden did not survive the storm 💔",
+      "interpretation": "Family sharing a loss. Mirror with a soft heart or a sentence that acknowledges the moment."
+    },
+    {
+      "setting": "work",
+      "message": "the project got cut 💔",
+      "interpretation": "Team disappointment in a tight channel. Mirror with a softer reaction or a sentence that acknowledges the team."
+    }
+  ]
 }

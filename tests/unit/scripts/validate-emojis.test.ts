@@ -9,6 +9,15 @@ import {
   validatePlatformNote,
   validateGenerationalNote,
   validateWarning,
+  validateLongForm,
+  validateFaq,
+  validateConversationExample,
+  validateDeepTier,
+  countWords,
+  DEEP_OVERVIEW_MIN_WORDS,
+  DEEP_CONVERSATION_EXAMPLES_MIN,
+  DEEP_FAQS_MIN,
+  DEEP_PLATFORM_NOTE_MIN_CHARS,
   checkDuplicateSlugs,
   checkComboReferences,
   validateAllEmojis,
@@ -632,6 +641,272 @@ describe('validate-emojis', () => {
       expect(() => handleMainError(testError)).toThrow('process.exit called');
       expect(consoleErrorSpy).toHaveBeenCalledWith('Validation script failed:', testError);
       expect(processExitSpy).toHaveBeenCalledWith(1);
+    });
+  });
+
+  // ========================================================================
+  // CONTENT-P1-001 — long-form, conversationExamples, contentTier
+  // ========================================================================
+
+  const deepEmoji = (overrides: Partial<Emoji> = {}): Emoji => {
+    const longOverview = Array.from({ length: DEEP_OVERVIEW_MIN_WORDS + 5 })
+      .map((_, i) => `word${i}`)
+      .join(' ');
+    const platformNote = 'Used in comment sections to react to viral clips with repeated skulls.';
+    return {
+      unicode: '1F480',
+      slug: 'skull',
+      character: '💀',
+      name: 'Skull',
+      shortName: 'skull',
+      category: 'faces',
+      unicodeVersion: '6.0',
+      baseMeaning: 'A human skull.',
+      tldr: "Usually means I'm dead from laughing.",
+      contextMeanings: [],
+      platformNotes: [{ platform: 'TIKTOK', note: platformNote }],
+      generationalNotes: [],
+      warnings: [],
+      relatedCombos: [],
+      seoTitle: 'Skull Emoji Meaning',
+      seoDescription: 'Learn what the skull emoji means.',
+      contentTier: 'deep',
+      contentUpdatedAt: '2026-01-15',
+      longForm: {
+        overview: longOverview,
+        howPeopleUseIt: 'After punchlines.',
+        whenNotToUse: 'Never in professional channels.',
+        howToReply: 'Mirror with another skull.',
+        faqs: [
+          { question: 'What does it mean?', answer: 'The sender is dead from laughing.' },
+          { question: 'Is it flirty?', answer: 'Usually not.' },
+          { question: 'Is it morbid?', answer: 'No.' },
+        ],
+      },
+      conversationExamples: [
+        { setting: 'friends', message: 'lol 💀', interpretation: 'laughing' },
+        { setting: 'work', message: 'meeting at 8 💀', interpretation: 'sarcastic exhaustion' },
+        { setting: 'social', message: 'did you see that 💀', interpretation: 'hyping the chat' },
+      ],
+      ...overrides,
+    };
+  };
+
+  describe('countWords', () => {
+    it('counts whitespace-delimited tokens', () => {
+      expect(countWords('one two three')).toBe(3);
+    });
+
+    it('returns zero for empty or whitespace-only strings', () => {
+      expect(countWords('')).toBe(0);
+      expect(countWords('   ')).toBe(0);
+    });
+
+    it('treats non-string values as zero', () => {
+      expect(countWords(undefined as unknown as string)).toBe(0);
+      expect(countWords(null as unknown as string)).toBe(0);
+    });
+  });
+
+  describe('validateFaq', () => {
+    it('passes for a valid FAQ', () => {
+      expect(validateFaq({ question: 'Q?', answer: 'A.' }, 0)).toEqual([]);
+    });
+
+    it('flags missing question and answer', () => {
+      const errors = validateFaq(
+        {
+          question: '',
+          answer: '',
+        } as unknown as NonNullable<NonNullable<Emoji['longForm']>['faqs']>[number],
+        0
+      );
+      expect(
+        errors.some((e) => e.field === 'longForm.faqs[0]' && e.message.includes('question'))
+      ).toBe(true);
+      expect(
+        errors.some((e) => e.field === 'longForm.faqs[0]' && e.message.includes('answer'))
+      ).toBe(true);
+    });
+  });
+
+  describe('validateLongForm', () => {
+    it('returns no errors for an empty object', () => {
+      expect(validateLongForm({})).toEqual([]);
+    });
+
+    it('flags non-string string fields', () => {
+      const errors = validateLongForm({ overview: 123 as unknown as string });
+      expect(errors.some((e) => e.field === 'longForm.overview')).toBe(true);
+    });
+
+    it('flags non-array faqs', () => {
+      const errors = validateLongForm({
+        faqs: 'not-an-array' as unknown as NonNullable<Emoji['longForm']>['faqs'],
+      });
+      expect(errors.some((e) => e.field === 'longForm.faqs')).toBe(true);
+    });
+
+    it('flags invalid FAQ entries inside the array', () => {
+      const errors = validateLongForm({
+        faqs: [
+          {
+            question: '',
+            answer: '',
+          } as unknown as NonNullable<NonNullable<Emoji['longForm']>['faqs']>[number],
+        ],
+      });
+      expect(errors.some((e) => e.field === 'longForm.faqs[0]')).toBe(true);
+    });
+  });
+
+  describe('validateConversationExample', () => {
+    it('passes for a valid example', () => {
+      expect(
+        validateConversationExample(
+          { setting: 'friends', message: 'lol 💀', interpretation: 'laughing' },
+          0
+        )
+      ).toEqual([]);
+    });
+
+    it('flags invalid settings', () => {
+      const errors = validateConversationExample(
+        {
+          setting: 'invalid-setting' as unknown as NonNullable<
+            Emoji['conversationExamples']
+          >[number]['setting'],
+          message: 'x',
+          interpretation: 'y',
+        },
+        0
+      );
+      expect(errors.some((e) => e.message.includes('setting'))).toBe(true);
+    });
+
+    it('flags missing message and interpretation', () => {
+      const errors = validateConversationExample(
+        {
+          setting: 'work',
+          message: '',
+          interpretation: '',
+        } as unknown as NonNullable<Emoji['conversationExamples']>[number],
+        2
+      );
+      expect(errors.some((e) => e.field === 'conversationExamples[2]')).toBe(true);
+    });
+  });
+
+  describe('validateDeepTier', () => {
+    it('returns no errors for a fully populated deep emoji', () => {
+      expect(validateDeepTier(deepEmoji())).toEqual([]);
+    });
+
+    it('rejects deep tier when overview is too short', () => {
+      const errors = validateDeepTier(deepEmoji({ longForm: { overview: 'too short' } }));
+      expect(errors.some((e) => e.field === 'longForm.overview')).toBe(true);
+    });
+
+    it('rejects deep tier when fewer than the minimum conversationExamples are provided', () => {
+      const errors = validateDeepTier(
+        deepEmoji({
+          conversationExamples: [{ setting: 'friends', message: 'a', interpretation: 'b' }],
+        })
+      );
+      expect(errors.some((e) => e.field === 'conversationExamples')).toBe(true);
+    });
+
+    it('rejects deep tier when fewer than the minimum FAQs are provided', () => {
+      const errors = validateDeepTier(
+        deepEmoji({
+          longForm: {
+            overview: Array.from({ length: DEEP_OVERVIEW_MIN_WORDS + 1 }, (_, i) => `w${i}`).join(
+              ' '
+            ),
+            faqs: [{ question: 'Q1', answer: 'A1' }],
+          },
+        })
+      );
+      expect(errors.some((e) => e.field === 'longForm.faqs')).toBe(true);
+    });
+
+    it('rejects deep tier when a platform note is below the minimum length', () => {
+      const errors = validateDeepTier(
+        deepEmoji({
+          platformNotes: [{ platform: 'TIKTOK', note: 'short' }],
+        })
+      );
+      expect(errors.some((e) => e.field === 'platformNotes[0].note')).toBe(true);
+    });
+
+    it('rejects deep tier when a platform note matches a boilerplate pattern', () => {
+      const errors = validateDeepTier(
+        deepEmoji({
+          platformNotes: [
+            {
+              platform: 'TIKTOK',
+              note: 'This emoji is very common in comment sections for various contexts.',
+            },
+          ],
+        })
+      );
+      expect(errors.some((e) => e.field === 'platformNotes[0].note')).toBe(true);
+    });
+  });
+
+  describe('validateEmoji (long-form + contentTier)', () => {
+    it('passes a thin emoji without contentTier unchanged', () => {
+      expect(validateEmoji(validEmoji)).toEqual([]);
+    });
+
+    it('flags an invalid contentTier value', () => {
+      const errors = validateEmoji({
+        ...validEmoji,
+        contentTier: 'invalid' as unknown as Emoji['contentTier'],
+      });
+      expect(errors.some((e) => e.field === 'contentTier')).toBe(true);
+    });
+
+    it('flags an invalid contentUpdatedAt value', () => {
+      const errors = validateEmoji({
+        ...validEmoji,
+        contentUpdatedAt: 'not-a-date',
+      });
+      expect(errors.some((e) => e.field === 'contentUpdatedAt')).toBe(true);
+    });
+
+    it('flags longForm that is not an object', () => {
+      const errors = validateEmoji({
+        ...validEmoji,
+        longForm: 'not-an-object' as unknown as Emoji['longForm'],
+      });
+      expect(errors.some((e) => e.field === 'longForm')).toBe(true);
+    });
+
+    it('flags conversationExamples that are not an array', () => {
+      const errors = validateEmoji({
+        ...validEmoji,
+        conversationExamples: 'not-an-array' as unknown as Emoji['conversationExamples'],
+      });
+      expect(errors.some((e) => e.field === 'conversationExamples')).toBe(true);
+    });
+
+    it('passes the golden deep-tier skull fixture', () => {
+      // SKULL_DEEP_EMOJI is a published fixture so we import it directly.
+      // Using dynamic require avoids a circular static import.
+      const { SKULL_DEEP_EMOJI } = require('../../utils/fixtures/emojis.fixtures') as {
+        SKULL_DEEP_EMOJI: Emoji;
+      };
+      expect(validateEmoji(SKULL_DEEP_EMOJI)).toEqual([]);
+    });
+  });
+
+  describe('deep-tier threshold constants', () => {
+    it('exposes the documented thresholds', () => {
+      expect(DEEP_OVERVIEW_MIN_WORDS).toBe(120);
+      expect(DEEP_CONVERSATION_EXAMPLES_MIN).toBe(3);
+      expect(DEEP_FAQS_MIN).toBe(3);
+      expect(DEEP_PLATFORM_NOTE_MIN_CHARS).toBe(40);
     });
   });
 });

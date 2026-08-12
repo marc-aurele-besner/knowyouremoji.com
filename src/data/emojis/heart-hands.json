@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Extremely popular in K-pop communities."
+      "note": "Extremely popular in K-pop fandoms and stan communities."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in appreciation and love posts."
+      "note": "Common in appreciation and love posts across creators."
     },
     {
       "platform": "TIKTOK",
-      "note": "Viral gesture emoji, especially in fan content."
+      "note": "Viral gesture emoji, especially in fan content and edits."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server members paste it as the appreciation reaction on shared wins."
     }
   ],
   "generationalNotes": [
@@ -73,5 +77,58 @@
     "heart-hands-medium",
     "heart-hands-medium-dark",
     "heart-hands-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "🫶 is the heart hands emoji, the two hands forming a heart shape that signals love, appreciation, or the K-pop fan-culture gesture. The visual cue — palms together, fingers forming a heart — is a relatively recent Unicode addition (2021) that has rapidly become one of the most-used love emoji on the keyboard. On Twitter, Instagram, and TikTok 🫶 shows up as the universal 'sending love' reaction, the fan-culture marker on K-pop appreciation posts, and the cute affection closer on a friend's wholesome message. The emoji is interesting because it spans romantic warmth, friendship appreciation, and fandom culture all on the same beat.\n\nThe emoji also doubles as the cute-affection reaction. A friend shares something sweet and the appropriate reply is 🫶 — the visual tag for 'I am sending you love.' The dual reading — romantic, friendship, or fan-appreciation — keeps 🫶 versatile without diluting the warmth. Use 🫶 when the moment calls for the cute love signal, not as a default reaction to every nice moment.",
+    "howPeopleUseIt": "🫶 arrives as the love reaction to a friend's wholesome post, the fan-culture marker on a K-pop tweet, or the punchline on a cute affection message. On Twitter it functions as the fandom reaction to a favorite artist's post. On Instagram captions the emoji lands as the signature flourish on a love post or a glow-up share. On TikTok creators paste 🫶 on fan edits as the visual tag for the appreciation moment.\n\nIn group chats 🫶 works as the shared 'sending love' reaction when a friend shares something sweet. The emoji also pairs naturally with ❤️ for layered affection, with 🥰 for the warm admiration, and with a sentence that names what is being loved so the heart-hands does not feel generic.",
+    "whenNotToUse": "Skip 🫶 in contexts where the love reading will land wrong — in cold professional channels, in customer complaint replies, or in formal client emails. A 🫶 in a customer complaint thread will sound tone deaf. Avoid it in serious discussions about grief or loss where the cuteness cannot reach the actual pain.\n\nAlso avoid 🫶 when you want to actually deliver careful feedback. A manager who replies to a missed deadline with 🫶 sounds as if they are softening bad news with cuteness rather than delivering clear direction. Reach for words or a more neutral emoji when the message needs to land as honest.",
+    "howToReply": "Mirror 🫶 with another 🫶 or ❤️ if you want to keep the warmth going, or upgrade to 🥰 for the warm admiration. If you receive 🫶 on a wholesome post, reply with 'thanks 🫶' or a sentence that acknowledges the love.\n\nIf 🫶 arrives as a fan-culture reaction, mirror with a heart or a sentence that engages with the fandom. And if you want to send 🫶 as a soft friendly reaction, anchor the emoji with a sentence that names the warmth so the heart-hands does not feel generic.",
+    "faqs": [
+      {
+        "question": "What does 🫶 mean in texting?",
+        "answer": "🫶 means 'I love you' or 'sending love.' The heart-hands emoji is the universal cute-affection signal and reads as romantic, friendship, or fandom appreciation depending on context."
+      },
+      {
+        "question": "What does 🫶 mean from a girl?",
+        "answer": "From a girl or anyone else, 🫶 means the sender is sending love or affection. There is no gendered meaning; the emoji is about the warmth, not who is sending it."
+      },
+      {
+        "question": "Is 🫶 flirty?",
+        "answer": "🫶 can read as flirty in a dating context, especially paired with romantic content. In other contexts it stays in the wholesome or fandom zone."
+      },
+      {
+        "question": "What does 🫶 mean from a guy?",
+        "answer": "From a guy, 🫶 has the same meaning it has from anyone else: cute love or appreciation. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "love you bestie 🫶",
+      "interpretation": "Friend's warm affection. Mirror with 🫶 or a heart to close the loop."
+    },
+    {
+      "setting": "social",
+      "message": "my bias did the thing 🫶",
+      "interpretation": "Fan-culture reaction. Mirror with 🫶 or a sentence that engages with the fandom."
+    },
+    {
+      "setting": "dating",
+      "message": "you mean everything to me 🫶",
+      "interpretation": "Romantic partner's love message. Mirror with 🫶 or a heart to engage with the warmth."
+    },
+    {
+      "setting": "family",
+      "message": "love you mom 🫶",
+      "interpretation": "Family warmth. Mirror with 🫶 or a heart to close the loop."
+    },
+    {
+      "setting": "work",
+      "message": "thanks for the handoff 🫶",
+      "interpretation": "Risky in a wide team channel; safe in a tight collaborator DM. If used in a team channel, anchor with a sentence that adds context."
+    }
   ]
 }

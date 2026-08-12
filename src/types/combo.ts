@@ -38,6 +38,63 @@ export type EmojiComboCategoryName =
 // ============================================
 
 /**
+ * Settings where a conversation example takes place
+ * Used for the long-form `conversationExamples` field on combos.
+ */
+export type ComboConversationSetting =
+  | 'dating'
+  | 'friends'
+  | 'work'
+  | 'family'
+  | 'social'
+  | 'other';
+
+/**
+ * A single FAQ entry for the combo long-form FAQ section
+ */
+export interface ComboFaq {
+  /** Question as a reader might type it into a search engine */
+  question: string;
+  /** Direct, self-contained answer */
+  answer: string;
+}
+
+/**
+ * Long-form, article-style content for combo pages (CONTENT-P1-001).
+ * Mirrors `EmojiLongForm` so the same renderer can be used.
+ */
+export interface ComboLongForm {
+  /** 2–4 paragraph overview that goes beyond the one-line `meaning` */
+  overview?: string;
+  /** How people actually use the combo in chat */
+  howPeopleUseIt?: string;
+  /** When NOT to use it / common misreads */
+  whenNotToUse?: string;
+  /** How to reply when you receive it */
+  howToReply?: string;
+  /** FAQ entries for "People Also Ask" style content */
+  faqs?: ComboFaq[];
+}
+
+/**
+ * A richer, full-message conversation example than the one-line
+ * `examples` field on `EmojiCombo`.
+ */
+export interface ComboConversationExample {
+  /** Setting where the exchange takes place */
+  setting: ComboConversationSetting;
+  /** The full message being interpreted */
+  message: string;
+  /** What the message (and combo) actually means in this context */
+  interpretation: string;
+}
+
+/**
+ * Content depth tier for publishing QA on combos.
+ */
+export type ComboContentTier = 'thin' | 'standard' | 'deep';
+
+/**
  * Complete emoji combo data structure
  * Represents the full data stored in combo JSON files
  */
@@ -68,6 +125,14 @@ export interface EmojiCombo {
   tags?: string[];
   /** Optional popularity score (0-100) */
   popularity?: number;
+  /** Optional long-form article-style content (CONTENT-P1-001) */
+  longForm?: ComboLongForm;
+  /** Optional richer conversation examples (CONTENT-P1-001) */
+  conversationExamples?: ComboConversationExample[];
+  /** Optional content depth tier for publishing QA (CONTENT-P1-001) */
+  contentTier?: ComboContentTier;
+  /** ISO date string of last content refresh (CONTENT-P1-001) */
+  contentUpdatedAt?: string;
 }
 
 /**
