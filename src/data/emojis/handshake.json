@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Agreements and deals."
+      "note": "Agreements and deal announcements on brand accounts."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Business and collaboration."
+      "note": "Business and collaboration announcements."
     },
     {
       "platform": "SLACK",
-      "note": "Deal confirmed."
+      "note": "Standard deal-confirmed reaction in product and partnership channels."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Standard deal-confirmed reaction in partnership and product channels."
     }
   ],
   "generationalNotes": [
@@ -73,5 +77,58 @@
     "handshake-medium",
     "handshake-medium-dark",
     "handshake-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-12",
+  "longForm": {
+    "overview": "🤝 is the universal deal-confirmed emoji, the two-hands-shaking pair that signals agreement, partnership, or a deal sealed. The visual cue — two hands clasped in a handshake — is the most direct agreement symbol in the Unicode set, and it has stayed consistent across cultures and contexts. On Slack, Twitter, and LinkedIn 🤝 shows up as the standard reaction to a partnership announcement, the closer on a deal-confirmed thread, and the agreement tag on a stakeholder reply. The emoji is one of the cleanest professional signals on the keyboard because the meaning is unambiguous across age groups and platforms.\n\nThe emoji also doubles as the soft-fake-agreement reaction. A friend says something absurd and the appropriate reply is 🤝 — the visual tag for 'I am agreeing because the joke is worth it.' The dual reading — real agreement or sarcastic compliance — keeps 🤝 versatile without diluting the meaning. Use 🤝 when the moment calls for partner-energy agreement, not as a default reaction to casual agreement.",
+    "howPeopleUseIt": "🤝 arrives as the closer on a partnership announcement, the deal-confirmed reaction in a Slack thread, or the punchline on a sarcastic agreement. On LinkedIn the emoji lands as the standard reaction to a professional milestone or a collaboration post. On Twitter it functions as the quote-tweet reaction to a deal-confirmed announcement. On Slack the same pattern repeats in product or partnership channels as the visual tag for the moment the deal lands.\n\nIn group chats 🤝 works as the shared 'we are aligned' reaction when a friend agrees with a take. The emoji also pairs naturally with 💼 for the business variant, with 👀 for the seeing-eye check, and with a sentence that names what is being agreed to so the handshake does not feel generic.",
+    "whenNotToUse": "Skip 🤝 in contexts where the agreement reading will land wrong — in sarcastic compliance where the recipient does not get the joke, in customer complaint threads where the partnership energy is misplaced, or in hot takes where the agreement is not actually mutual. A 🤝 in a customer complaint reply will read as cynical. Avoid it where genuine disagreement is the right move.\n\nAlso avoid 🤝 when you want to actually offer detailed feedback. The emoji is the agreement signal, so sending it on a friend's first draft of something will read as 'looks good, do not change it' rather than 'here are my notes.' Reach for words or a sentence when the message needs nuance.",
+    "howToReply": "Mirror 🤝 with another 🤝 if you want to keep the agreement going, or upgrade to 💼 for the business variant. If you receive 🤝 on a partnership announcement, reply with a sentence that acknowledges the milestone.\n\nIf 🤝 arrives as a sarcastic agreement, mirror with a sentence that engages with the joke. And if you want to send 🤝 as a deal-confirmed whisper, anchor the emoji with a sentence that names what is being agreed to so the handshake does not feel generic.",
+    "faqs": [
+      {
+        "question": "What does 🤝 mean in texting?",
+        "answer": "🤝 means 'agreement' or 'deal sealed.' The handshake emoji is the universal deal-confirmed symbol and reads as either genuine partnership or sarcastic compliance."
+      },
+      {
+        "question": "What does 🤝 mean from a girl?",
+        "answer": "From a girl or anyone else, 🤝 means the sender is agreeing or confirming a deal. There is no gendered meaning; the emoji is about the agreement, not who is sending it."
+      },
+      {
+        "question": "Is 🤝 flirty?",
+        "answer": "🤝 is not flirty. It marks agreement or partnership, with no romantic undercurrent. Using it on a romantic post will read as supportive rather than flirtatious."
+      },
+      {
+        "question": "What does 🤝 mean from a guy?",
+        "answer": "From a guy, 🤝 has the same meaning it has from anyone else: agreement or partnership. The emoji is not gendered and reads the same regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "deal confirmed 🤝",
+      "interpretation": "Team confirmation in a partner channel. Mirror with 🤝 or a sentence that acknowledges the deal."
+    },
+    {
+      "setting": "friends",
+      "message": "we good 🤝",
+      "interpretation": "Friend confirming agreement. Mirror with 🤝 or a sentence that engages with the deal."
+    },
+    {
+      "setting": "social",
+      "message": "new partnership announced 🤝",
+      "interpretation": "Public partnership announcement. Mirror with 🤝 or a sentence that celebrates the collaboration."
+    },
+    {
+      "setting": "family",
+      "message": "we agreed no more pineapple on pizza 🤝",
+      "interpretation": "Family agreement on a divisive topic. Mirror with 🤝 or a sentence that engages with the rule."
+    },
+    {
+      "setting": "dating",
+      "message": "monday is our day 🤝",
+      "interpretation": "Romantic partner confirming a recurring plan. Mirror with a heart or a sentence that engages with the date."
+    }
   ]
 }
