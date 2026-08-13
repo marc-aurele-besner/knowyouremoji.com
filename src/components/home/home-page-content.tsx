@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import { getEmojiCount, getAllCategoryInfo, getEmojiSummaries } from '@/lib/emoji-data';
 import { getComboCount } from '@/lib/combo-data';
+import { getPublishedGuideCount } from '@/lib/guide-data';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { GuideCard } from '@/components/guides/guide-card';
 import type { EmojiSummary } from '@/types/emoji';
 import type { EmojiComboSummary } from '@/types/combo';
+import type { GuideSummary } from '@/types/guide';
 
 const tickerEmojiChars = [
   '😂',
@@ -60,15 +63,22 @@ export interface HomePageContentProps {
   emojiSummaries: EmojiSummary[];
   /** Combos shown in the Popular Emoji Combos section. */
   comboSummaries: EmojiComboSummary[];
+  /** Latest published guides shown in the Editorial section (top 3). */
+  guideSummaries: GuideSummary[];
 }
 
 /**
  * Homepage layout and sections (hero, popular emojis, categories, combos, features, CTA).
  */
-export function HomePageContent({ emojiSummaries, comboSummaries }: HomePageContentProps) {
+export function HomePageContent({
+  emojiSummaries,
+  comboSummaries,
+  guideSummaries,
+}: HomePageContentProps) {
   const allSummaries = getEmojiSummaries();
   const emojiCount = getEmojiCount();
   const comboCount = getComboCount();
+  const guideCount = getPublishedGuideCount();
   const categories = getAllCategoryInfo();
 
   const summaryByChar = new Map(allSummaries.map((s) => [s.character, s]));
@@ -290,6 +300,37 @@ export function HomePageContent({ emojiSummaries, comboSummaries }: HomePageCont
           </div>
         </div>
       </section>
+
+      <div className="section-divider" aria-hidden="true" />
+
+      {guideSummaries.length > 0 && (
+        <section className="py-20 md:py-24 bg-white dark:bg-gray-900">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
+                Editorial
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+                Latest Guides
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg">
+                {guideCount} long-form {guideCount === 1 ? 'explainer' : 'explainers'} on what
+                emojis actually mean
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {guideSummaries.slice(0, 3).map((guide) => (
+                <GuideCard key={guide.slug} guide={guide} />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Button asChild variant="outline" className="hover:scale-105 transition-transform">
+                <Link href="/guides">Browse All Guides</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
 
       <div className="section-divider" aria-hidden="true" />
 

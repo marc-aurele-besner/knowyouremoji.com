@@ -12,6 +12,7 @@ export type HeaderProps = HTMLAttributes<HTMLElement>;
 
 const navLinks = [
   { label: 'Emojis', href: '/emoji' },
+  { label: 'Guides', href: '/guides' },
   { label: 'Interpreter', href: '/interpreter' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },

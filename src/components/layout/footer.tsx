@@ -9,6 +9,7 @@ export type FooterProps = HTMLAttributes<HTMLElement>;
 
 const navLinks = [
   { label: 'Emojis', href: '/emoji' },
+  { label: 'Guides', href: '/guides' },
   { label: 'Interpreter', href: '/interpreter' },
   { label: 'About', href: '/about' },
 ];
