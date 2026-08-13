@@ -75,7 +75,7 @@ export default function GuidesIndexPage() {
           <header className="text-center pb-10 md:pb-14">
             <p className="guides-eyebrow mb-4">Field Notes from the Emoji Frontier</p>
             <h1
-              className="guides-wordmark text-7xl md:text-9xl text-stone-900 dark:text-stone-50"
+              className="guides-wordmark text-5xl md:text-7xl text-stone-900 dark:text-stone-50"
               data-testid="guides-masthead"
             >
               Emoji Guides

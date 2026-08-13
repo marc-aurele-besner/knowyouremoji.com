@@ -59,7 +59,7 @@ function DispatchRow({
       >
         <article className="grid gap-6 md:gap-10 md:grid-cols-[auto_1fr] items-start">
           <div className="flex flex-col items-start gap-4">
-            <span className="guides-dispatch-number text-5xl md:text-7xl" aria-hidden="true">
+            <span className="guides-dispatch-number text-3xl md:text-5xl" aria-hidden="true">
               №{num}
             </span>
             {guide.heroEmoji && (
@@ -79,7 +79,7 @@ function DispatchRow({
               <span className="mx-3 opacity-50">·</span>
               <span>{guide.readingTimeMinutes} min read</span>
             </p>
-            <h2 className="guides-wordmark text-4xl md:text-6xl text-stone-900 dark:text-stone-50 group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+            <h2 className="guides-wordmark text-3xl md:text-5xl text-stone-900 dark:text-stone-50 group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
               {guide.title}
             </h2>
             <p className="guides-lede mt-4">{guide.description}</p>
@@ -106,7 +106,7 @@ function DispatchRow({
       data-testid="guide-dispatch"
     >
       <article className="grid gap-4 md:gap-6 md:grid-cols-[5rem_1fr_auto] items-baseline">
-        <span className="guides-dispatch-number text-3xl md:text-4xl" aria-hidden="true">
+        <span className="guides-dispatch-number text-2xl md:text-3xl" aria-hidden="true">
           №{num}
         </span>
         <div className="min-w-0">

@@ -164,7 +164,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
             )}
 
             <h1
-              className="guides-wordmark text-4xl md:text-6xl text-stone-900 dark:text-stone-50 mb-6 leading-[1.05]"
+              className="guides-wordmark text-3xl md:text-5xl text-stone-900 dark:text-stone-50 mb-6 leading-[1.05]"
               data-testid="guide-title"
             >
               {guide.title}
