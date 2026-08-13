@@ -1,13 +1,14 @@
 /**
- * Dark-mode guide card — used in the /guides article-page "Filed nearby"
- * section. Sized for the wire-service aesthetic: monospace dispatch
- * number, italic serif title, dense metadata, all in black + signal red.
+ * Magazine-style guide card — used in the /guides article-page
+ * "Filed nearby" section. Sized for the editorial layout: monospace
+ * dispatch number, italic serif title, dense metadata, all in the
+ * site's normal white surface with amber accents.
  */
 
 import Link from 'next/link';
 import type { GuideSummary } from '@/types/guide';
 
-export interface GuideCardDarkProps {
+export interface GuideCardMagazineProps {
   /** Summary data for the guide being rendered. */
   guide: GuideSummary;
   /** 1-indexed position in the archive (rendered as the leading number). */
@@ -31,10 +32,10 @@ function dispatchNumber(index: number): string {
 }
 
 /**
- * A dense, dark-mode guide card. Uses the `.guides-filed-card` and
- * `.guides-filed-card-title` classes defined in `globals.css`.
+ * A dense, magazine-style guide card. Uses the `.guides-filed-card`
+ * and `.guides-filed-card-title` classes defined in `globals.css`.
  */
-export function GuideCardDark({ guide, index }: GuideCardDarkProps) {
+export function GuideCardMagazine({ guide, index }: GuideCardMagazineProps) {
   const num = dispatchNumber(index);
 
   return (
@@ -53,7 +54,7 @@ export function GuideCardDark({ guide, index }: GuideCardDarkProps) {
           </span>
         )}
       </div>
-      <h3 className="guides-filed-card-title group-hover:text-amber-400 transition-colors">
+      <h3 className="guides-filed-card-title group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
         {guide.title}
       </h3>
       <p className="guides-meta-strip mt-3">
@@ -64,7 +65,7 @@ export function GuideCardDark({ guide, index }: GuideCardDarkProps) {
         {guide.readingTimeMinutes} min
       </p>
       <p
-        className="guides-byline mt-4 text-amber-500 group-hover:text-red-400 transition-colors"
+        className="guides-byline mt-4 text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors"
         aria-hidden="true"
       >
         Read <span className="guides-arrow">→</span>

@@ -11,7 +11,7 @@ import {
 import { GuideJsonLd } from '@/components/seo/guide-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
-import { GuideCardDark } from '@/components/guides/guide-card-dark';
+import { GuideCardMagazine } from '@/components/guides/guide-card-magazine';
 import { ReadingProgress } from '@/components/guides/reading-progress';
 import { ShareSection } from '@/components/share/share-section';
 import { getEmojiBySlug } from '@/lib/emoji-data';
@@ -137,10 +137,10 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <ReadingProgress targetSelector='[data-testid="guide-article"]' />
 
       <main className="guides-page" data-testid="guides-article-page" data-slug={guide.slug}>
-        {/* Live wire ticker — variant with the article's dispatch number. */}
-        <div className="guides-ticker" aria-label="Wire status">
+        {/* Issue strip — variant with the article's dispatch number. */}
+        <div className="guides-ticker" aria-label="Issue status">
           <span className="guides-ticker-dot" aria-hidden="true" />
-          <span className="text-amber-500">DISPATCH №{dispatchNum}</span>
+          <span>Dispatch №{dispatchNum}</span>
           <span aria-hidden="true" className="opacity-30">
             /
           </span>
@@ -148,15 +148,12 @@ export default async function GuidePage({ params }: GuidePageProps) {
           <span aria-hidden="true" className="hidden sm:inline opacity-30">
             /
           </span>
-          <span className="text-red-400">TRANSMITTING</span>
+          <span>{guide.readingTimeMinutes} min read</span>
         </div>
 
         {/* Hero — asymmetric masthead with the dispatch number as the anchor. */}
         <header className="container mx-auto px-4 max-w-6xl guides-masthead">
-          <Breadcrumbs
-            items={breadcrumbItems}
-            className="mt-4 mb-10 [&_a]:text-stone-400 [&_span]:text-stone-500"
-          />
+          <Breadcrumbs items={breadcrumbItems} className="mt-4 mb-10" />
 
           <div className="grid gap-8 md:gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-start">
             {/* Left rail — dispatch number, stamp, vertical mark. */}
@@ -172,7 +169,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
                 </div>
               )}
               <span className="guides-vertical-mark hidden md:inline-block" aria-hidden="true">
-                FIELD NOTES · UNCLASSIFIED · EYES ONLY
+                FIELD NOTES · LONG-FORM · FROM THE EDITORS
               </span>
             </div>
 
@@ -180,7 +177,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
             <div className="min-w-0">
               <p className="guides-eyebrow mb-6">Field Notes from the Emoji Frontier</p>
               <h1
-                className="guides-wordmark text-5xl md:text-[6.5rem] text-stone-50 mb-8"
+                className="guides-wordmark text-5xl md:text-[6.5rem] text-gray-900 dark:text-white mb-8"
                 data-testid="guide-title"
               >
                 {guide.title}
@@ -189,11 +186,11 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
               <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 guides-byline">
                 <span>By {guide.author}</span>
-                <span aria-hidden="true" className="text-amber-500">
+                <span aria-hidden="true" className="text-amber-600 dark:text-amber-400">
                   |
                 </span>
                 <time dateTime={guide.publishedAt}>{formatDate(guide.publishedAt)}</time>
-                <span aria-hidden="true" className="text-amber-500">
+                <span aria-hidden="true" className="text-amber-600 dark:text-amber-400">
                   |
                 </span>
                 <span>{guide.readingTimeMinutes} min read</span>
@@ -224,7 +221,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
             description={guide.description}
             hashtags={['emoji', 'emojiguide', ...guide.tags.slice(0, 2)]}
             contentType="guide"
-            className="text-stone-400 [&_span]:text-stone-400"
           />
         </div>
 
@@ -284,7 +280,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
             </section>
           )}
 
-          <p className="guides-byline mt-10 pt-6 border-t border-stone-800">
+          <p className="guides-byline mt-10 pt-6 border-t border-gray-200 dark:border-gray-800">
             Filed {formatDate(guide.publishedAt)} · Last revised {formatDate(guide.updatedAt)} ·
             Dispatch №{dispatchNum}
           </p>
@@ -297,18 +293,20 @@ export default async function GuidePage({ params }: GuidePageProps) {
               <div className="flex items-baseline justify-between mb-10">
                 <div>
                   <p className="guides-eyebrow mb-3">Filed nearby</p>
-                  <h2 className="guides-wordmark text-3xl md:text-5xl">More dispatches</h2>
+                  <h2 className="guides-wordmark text-3xl md:text-5xl text-gray-900 dark:text-white">
+                    More dispatches
+                  </h2>
                 </div>
                 <Link
                   href="/guides"
-                  className="guides-byline text-amber-500 hover:text-red-400 transition-colors"
+                  className="guides-byline text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 transition-colors"
                 >
                   All dispatches <span className="guides-arrow">→</span>
                 </Link>
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {moreGuides.map((summary, i) => (
-                  <GuideCardDark key={summary.slug} guide={summary} index={i + 1} />
+                  <GuideCardMagazine key={summary.slug} guide={summary} index={i + 1} />
                 ))}
               </div>
             </div>
