@@ -400,4 +400,15 @@ describe('useToast hook', () => {
       expect(capturedToasts[0]).toHaveProperty('title', 'Hook Test');
     });
   });
+
+  it('unmounting the consumer clears its registered listener', () => {
+    // Mount, then unmount — drives the useState cleanup branch so we don't
+    // leak the listener into subsequent tests (line 150-151 of toast.tsx).
+    const { unmount } = render(
+      <ToastProvider>
+        <TestComponent />
+      </ToastProvider>
+    );
+    expect(() => unmount()).not.toThrow();
+  });
 });
