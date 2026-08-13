@@ -1,13 +1,13 @@
 /**
  * Dispatch-list — the editorial archive layout for the /guides index.
  *
- * The list is structured as a wire-service archive:
+ * The list is structured as a magazine archive:
  *  - The latest dispatch is rendered as a large, asymmetric "lead" card
- *    with oversized monospace dispatch number, classified stamp, and
- *    a heavy serif headline.
+ *    with an oversized monospace dispatch number, the hero emoji, and
+ *    a heavy italic serif headline.
  *  - Subsequent dispatches are tighter, three-column rows in the
- *    style of a masthead TOC — number · title · metadata · stamp.
- *  - All set in pure black with signal-red and amber accents.
+ *    style of a magazine TOC — number · title · metadata · emoji.
+ *  - All set on the site's standard white surface with amber accents.
  */
 
 import Link from 'next/link';
@@ -77,18 +77,18 @@ function LatestDispatch({ guide, index }: { guide: GuideSummary; index: number }
         {/* Right block — title, lede, tags, footer. */}
         <div className="min-w-0">
           <p className="guides-eyebrow mb-6">Lead dispatch</p>
-          <h2 className="guides-wordmark text-4xl md:text-7xl text-stone-50 group-hover:text-amber-400 transition-colors">
+          <h2 className="guides-wordmark text-4xl md:text-7xl text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
             {guide.title}
           </h2>
           <p className="guides-lede mt-6 max-w-2xl">{guide.description}</p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 guides-byline">
             <span>By {guide.author}</span>
-            <span aria-hidden="true" className="text-amber-500">
+            <span aria-hidden="true" className="text-amber-600 dark:text-amber-400">
               |
             </span>
             <time dateTime={guide.publishedAt}>{formatDate(guide.publishedAt)}</time>
-            <span aria-hidden="true" className="text-amber-500">
+            <span aria-hidden="true" className="text-amber-600 dark:text-amber-400">
               |
             </span>
             <span>{guide.readingTimeMinutes} min</span>
@@ -105,7 +105,7 @@ function LatestDispatch({ guide, index }: { guide: GuideSummary; index: number }
           )}
 
           <p
-            className="mt-10 guides-byline text-amber-500 group-hover:text-red-400 transition-colors"
+            className="mt-10 guides-byline text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors"
             aria-hidden="true"
           >
             Read dispatch <span className="guides-arrow">→</span>
@@ -133,10 +133,10 @@ function ArchiveRow({ guide, index }: { guide: GuideSummary; index: number }) {
           {num}
         </span>
         <div className="min-w-0">
-          <h3 className="guides-wordmark text-xl md:text-2xl text-stone-50 group-hover:text-amber-400 transition-colors leading-tight">
+          <h3 className="guides-wordmark text-xl md:text-2xl text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors leading-tight">
             {guide.title}
           </h3>
-          <p className="mt-1.5 text-sm text-stone-400 line-clamp-2 max-w-2xl">
+          <p className="mt-1.5 text-sm text-gray-500 dark:text-gray-400 line-clamp-2 max-w-2xl">
             {guide.description}
           </p>
         </div>
@@ -177,7 +177,7 @@ export function DispatchList({ guides }: DispatchListProps) {
     <section className="guides-page" aria-label="All guides" data-testid="guides-dispatch-list">
       {latest && <LatestDispatch guide={latest} index={0} />}
       {archive.length > 0 && (
-        <div className="border-t border-stone-800">
+        <div className="border-t border-gray-200 dark:border-gray-800">
           <div className="px-4 md:px-10 py-3 flex items-center gap-3">
             <span className="guides-eyebrow">Archive</span>
             <span className="guides-byline opacity-60">
