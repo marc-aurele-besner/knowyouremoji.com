@@ -11,7 +11,7 @@ import {
 import { GuideJsonLd } from '@/components/seo/guide-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
-import { GuideCard } from '@/components/guides/guide-card';
+import { GuideCardDark } from '@/components/guides/guide-card-dark';
 import { ReadingProgress } from '@/components/guides/reading-progress';
 import { ShareSection } from '@/components/share/share-section';
 import { getEmojiBySlug } from '@/lib/emoji-data';
@@ -79,29 +79,19 @@ function formatDate(iso: string): string {
   return parsed.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
-/** Body prose — built on @tailwindcss/typography but tuned for the editorial section. */
-const proseClasses =
-  'prose prose-lg dark:prose-invert max-w-none ' +
-  'font-sans ' +
-  'prose-headings:font-serif prose-headings:font-normal prose-headings:tracking-tight ' +
-  'prose-headings:text-stone-900 dark:prose-headings:text-stone-50 ' +
-  'prose-h1:hidden ' +
-  'prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 ' +
-  'prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 ' +
-  'prose-p:text-stone-700 dark:prose-p:text-stone-300 prose-p:leading-[1.75] prose-p:my-5 ' +
-  'prose-a:text-amber-700 dark:prose-a:text-amber-400 prose-a:font-medium prose-a:no-underline hover:prose-a:underline ' +
-  'prose-strong:text-stone-900 dark:prose-strong:text-stone-50 prose-strong:font-semibold ' +
-  'prose-em:font-serif prose-em:italic ' +
-  'prose-code:font-mono prose-code:text-[0.9em] prose-code:bg-stone-100 dark:prose-code:bg-stone-800 ' +
-  'prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-amber-800 dark:prose-code:text-amber-300 ' +
-  'prose-code:before:content-none prose-code:after:content-none ' +
-  'prose-pre:bg-stone-900 dark:prose-pre:bg-stone-950 prose-pre:border prose-pre:border-stone-800 ' +
-  'prose-blockquote:border-l-2 prose-blockquote:border-amber-600 dark:prose-blockquote:border-amber-400 ' +
-  'prose-blockquote:font-serif prose-blockquote:italic prose-blockquote:text-stone-700 dark:prose-blockquote:text-stone-300 ' +
-  'prose-blockquote:not-italic prose-blockquote:py-1 ' +
-  'prose-ul:my-6 prose-ol:my-6 ' +
-  'prose-li:my-2 prose-li:text-stone-700 dark:prose-li:text-stone-300 ' +
-  'prose-hr:border-stone-300 dark:prose-hr:border-stone-700';
+/** Format an ISO date for the wire-ticker. */
+function formatTimestamp(iso: string): string {
+  const parsed = new Date(iso);
+  if (Number.isNaN(parsed.getTime())) return iso;
+  return parsed.toUTCString().replace('GMT', 'UTC').toUpperCase();
+}
+
+/** Get the dispatch's 1-indexed position in the published archive. */
+function getDispatchNumber(slug: string): string {
+  const summaries = getPublishedGuideSummaries();
+  const index = summaries.findIndex((s) => s.slug === slug);
+  return String((index >= 0 ? index : 0) + 1).padStart(3, '0');
+}
 
 export default async function GuidePage({ params }: GuidePageProps) {
   const { slug } = await params;
@@ -109,6 +99,7 @@ export default async function GuidePage({ params }: GuidePageProps) {
   if (!guide) notFound();
 
   const env = getEnv();
+  const dispatchNum = getDispatchNumber(guide.slug);
   const relatedEmojiCards = (guide.relatedEmojis ?? [])
     .map((emojiSlug) => getEmojiBySlug(emojiSlug))
     .filter((e): e is NonNullable<typeof e> => Boolean(e))
@@ -146,137 +137,178 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <ReadingProgress targetSelector='[data-testid="guide-article"]' />
 
       <main className="guides-page" data-testid="guides-article-page" data-slug={guide.slug}>
-        <article className="container mx-auto px-4 pt-8 pb-16 max-w-3xl">
-          <Breadcrumbs items={breadcrumbItems} className="mb-10" />
+        {/* Live wire ticker — variant with the article's dispatch number. */}
+        <div className="guides-ticker" aria-label="Wire status">
+          <span className="guides-ticker-dot" aria-hidden="true" />
+          <span className="text-amber-500">DISPATCH №{dispatchNum}</span>
+          <span aria-hidden="true" className="opacity-30">
+            /
+          </span>
+          <span className="hidden sm:inline">{formatTimestamp(guide.publishedAt)}</span>
+          <span aria-hidden="true" className="hidden sm:inline opacity-30">
+            /
+          </span>
+          <span className="text-red-400">TRANSMITTING</span>
+        </div>
 
-          {/* Masthead block: kicker, dispatch number, oversized stamp, title */}
-          <header className="mb-10 md:mb-14 text-center">
-            <p className="guides-eyebrow mb-6">Field Notes from the Emoji Frontier</p>
+        {/* Hero — asymmetric masthead with the dispatch number as the anchor. */}
+        <header className="container mx-auto px-4 max-w-6xl guides-masthead">
+          <Breadcrumbs
+            items={breadcrumbItems}
+            className="mt-4 mb-10 [&_a]:text-stone-400 [&_span]:text-stone-500"
+          />
 
-            {guide.heroEmoji && (
-              <div
-                className="guides-stamp guides-stamp--article mx-auto mb-6 inline-block"
-                aria-hidden="true"
-                data-testid="guide-hero-stamp"
+          <div className="grid gap-8 md:gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] items-start">
+            {/* Left rail — dispatch number, stamp, vertical mark. */}
+            <div className="flex flex-col items-start gap-6 md:gap-8">
+              <span className="guides-eyebrow">№ {dispatchNum}</span>
+              {guide.heroEmoji && (
+                <div
+                  className="guides-stamp guides-stamp--article inline-block"
+                  aria-hidden="true"
+                  data-testid="guide-hero-stamp"
+                >
+                  {guide.heroEmoji}
+                </div>
+              )}
+              <span className="guides-vertical-mark hidden md:inline-block" aria-hidden="true">
+                FIELD NOTES · UNCLASSIFIED · EYES ONLY
+              </span>
+            </div>
+
+            {/* Right block — title, lede, byline, tags. */}
+            <div className="min-w-0">
+              <p className="guides-eyebrow mb-6">Field Notes from the Emoji Frontier</p>
+              <h1
+                className="guides-wordmark text-5xl md:text-[6.5rem] text-stone-50 mb-8"
+                data-testid="guide-title"
               >
-                {guide.heroEmoji}
+                {guide.title}
+              </h1>
+              <p className="guides-lede">{guide.description}</p>
+
+              <div className="mt-8 flex flex-wrap items-center gap-x-3 gap-y-2 guides-byline">
+                <span>By {guide.author}</span>
+                <span aria-hidden="true" className="text-amber-500">
+                  |
+                </span>
+                <time dateTime={guide.publishedAt}>{formatDate(guide.publishedAt)}</time>
+                <span aria-hidden="true" className="text-amber-500">
+                  |
+                </span>
+                <span>{guide.readingTimeMinutes} min read</span>
               </div>
-            )}
 
-            <h1
-              className="guides-wordmark text-3xl md:text-5xl text-stone-900 dark:text-stone-50 mb-6 leading-[1.05]"
-              data-testid="guide-title"
-            >
-              {guide.title}
-            </h1>
+              {guide.tags.length > 0 && (
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {guide.tags.map((tag) => (
+                    <span key={tag} className="guides-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        </header>
 
-            <p className="guides-lede">{guide.description}</p>
+        <p className="guides-divider" aria-hidden="true">
+          ✦&nbsp;✦&nbsp;✦
+        </p>
 
-            <p className="guides-byline mt-6 flex flex-wrap justify-center items-center gap-x-2">
-              <span>By {guide.author}</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime={guide.publishedAt}>{formatDate(guide.publishedAt)}</time>
-              <span aria-hidden="true">·</span>
-              <span>{guide.readingTimeMinutes} min read</span>
-            </p>
-
-            {guide.tags.length > 0 && (
-              <div className="mt-5 flex flex-wrap justify-center gap-2">
-                {guide.tags.map((tag) => (
-                  <span key={tag} className="guides-tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            )}
-          </header>
-
-          <p className="guides-divider" aria-hidden="true">
-            ✦&nbsp;✦&nbsp;✦
-          </p>
-
-          {/* Share row sits between the masthead and the body */}
+        {/* Share row sits between the masthead and the body. */}
+        <div className="container mx-auto px-4 max-w-3xl mb-12">
           <ShareSection
             url={`${env.appUrl}/guides/${guide.slug}`}
             title={guide.title}
             description={guide.description}
             hashtags={['emoji', 'emojiguide', ...guide.tags.slice(0, 2)]}
             contentType="guide"
-            className="mb-10"
+            className="text-stone-400 [&_span]:text-stone-400"
           />
+        </div>
 
-          {/* The article body — typography handled by @tailwindcss/typography. */}
-          <div
-            data-testid="guide-article"
-            className={`${proseClasses} guides-dropcap`}
-            dangerouslySetInnerHTML={{ __html: guide.html }}
-          />
-
-          <p className="guides-divider" aria-hidden="true">
-            ✦&nbsp;✦&nbsp;✦
-          </p>
-
-          {/* Footer — related references + last-updated stamp */}
-          <footer className="mt-10">
-            {relatedEmojiCards.length > 0 && (
-              <section className="mb-8">
-                <h2 className="guides-eyebrow mb-4">Specimens referenced</h2>
-                <div className="flex flex-wrap gap-2">
-                  {relatedEmojiCards.map((emoji) => (
-                    <Link
-                      key={emoji.slug}
-                      href={`/emoji/${emoji.slug}`}
-                      className="guides-tag"
-                      aria-label={`${emoji.name} emoji`}
-                    >
-                      <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
-                        {emoji.character}
-                      </span>
-                      {emoji.name}
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            {relatedComboCards.length > 0 && (
-              <section className="mb-8">
-                <h2 className="guides-eyebrow mb-4">Combos in this dispatch</h2>
-                <div className="flex flex-wrap gap-2">
-                  {relatedComboCards.map((combo) => (
-                    <Link
-                      key={combo.slug}
-                      href={`/combo/${combo.slug}`}
-                      className="guides-tag"
-                      aria-label={`${combo.name} combo`}
-                    >
-                      <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
-                        {combo.combo}
-                      </span>
-                      {combo.name}
-                    </Link>
-                  ))}
-                </div>
-              </section>
-            )}
-
-            <p className="guides-byline mt-8 pt-6 border-t border-stone-300 dark:border-stone-700">
-              Filed {formatDate(guide.publishedAt)} · Last revised {formatDate(guide.updatedAt)}
-            </p>
-          </footer>
+        {/* The article body — typography handled by `.guides-article`. */}
+        <article
+          data-testid="guide-article"
+          className="container mx-auto px-4 max-w-3xl guides-article guides-dropcap"
+        >
+          <div dangerouslySetInnerHTML={{ __html: guide.html }} />
         </article>
 
-        {/* More dispatches — keeps the reader on the page */}
+        <p className="guides-divider" aria-hidden="true">
+          ✦&nbsp;✦&nbsp;✦
+        </p>
+
+        {/* Footer — related references + last-updated stamp. */}
+        <footer className="container mx-auto px-4 max-w-3xl mt-12">
+          {relatedEmojiCards.length > 0 && (
+            <section className="mb-10">
+              <h2 className="guides-eyebrow mb-4">Specimens referenced</h2>
+              <div className="guides-spec">
+                {relatedEmojiCards.map((emoji) => (
+                  <Link
+                    key={emoji.slug}
+                    href={`/emoji/${emoji.slug}`}
+                    className="guides-tag"
+                    aria-label={`${emoji.name} emoji`}
+                  >
+                    <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
+                      {emoji.character}
+                    </span>
+                    {emoji.name}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {relatedComboCards.length > 0 && (
+            <section className="mb-10">
+              <h2 className="guides-eyebrow mb-4">Combos in this dispatch</h2>
+              <div className="guides-spec">
+                {relatedComboCards.map((combo) => (
+                  <Link
+                    key={combo.slug}
+                    href={`/combo/${combo.slug}`}
+                    className="guides-tag"
+                    aria-label={`${combo.name} combo`}
+                  >
+                    <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
+                      {combo.combo}
+                    </span>
+                    {combo.name}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
+          <p className="guides-byline mt-10 pt-6 border-t border-stone-800">
+            Filed {formatDate(guide.publishedAt)} · Last revised {formatDate(guide.updatedAt)} ·
+            Dispatch №{dispatchNum}
+          </p>
+        </footer>
+
+        {/* More dispatches — keeps the reader on the page. */}
         {moreGuides.length > 0 && (
-          <section className="border-t-2 border-stone-900/80 dark:border-amber-400/60 bg-stone-100/40 dark:bg-stone-900/40">
-            <div className="container mx-auto px-4 py-14 max-w-5xl">
-              <p className="guides-eyebrow text-center mb-3">Filed nearby</p>
-              <h2 className="guides-wordmark text-3xl md:text-5xl text-center text-stone-900 dark:text-stone-50 mb-10">
-                More dispatches
-              </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {moreGuides.map((summary) => (
-                  <GuideCard key={summary.slug} guide={summary} />
+          <section className="guides-filed-nearby mt-20">
+            <div className="container mx-auto px-4 py-16 max-w-6xl">
+              <div className="flex items-baseline justify-between mb-10">
+                <div>
+                  <p className="guides-eyebrow mb-3">Filed nearby</p>
+                  <h2 className="guides-wordmark text-3xl md:text-5xl">More dispatches</h2>
+                </div>
+                <Link
+                  href="/guides"
+                  className="guides-byline text-amber-500 hover:text-red-400 transition-colors"
+                >
+                  All dispatches <span className="guides-arrow">→</span>
+                </Link>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {moreGuides.map((summary, i) => (
+                  <GuideCardDark key={summary.slug} guide={summary} index={i + 1} />
                 ))}
               </div>
             </div>
