@@ -12,7 +12,7 @@ import { GuideJsonLd } from '@/components/seo/guide-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { GuideCard } from '@/components/guides/guide-card';
-import { Badge } from '@/components/ui/badge';
+import { ReadingProgress } from '@/components/guides/reading-progress';
 import { ShareSection } from '@/components/share/share-section';
 import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getComboBySlug } from '@/lib/combo-data';
@@ -72,31 +72,36 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
   };
 }
 
-/**
- * Article body styles. Centralized so we never sprinkle prose classes
- * across route components and so tests have a stable hook to assert
- * against.
- */
-const proseClasses =
-  'prose prose-lg dark:prose-invert max-w-none ' +
-  'prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white ' +
-  'prose-h1:text-3xl prose-h1:mt-10 prose-h1:mb-4 ' +
-  'prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-3 ' +
-  'prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-2 ' +
-  'prose-p:text-gray-700 dark:prose-p:text-gray-300 ' +
-  'prose-a:text-amber-600 dark:prose-a:text-amber-400 prose-a:no-underline hover:prose-a:underline ' +
-  'prose-strong:text-gray-900 dark:prose-strong:text-white ' +
-  'prose-code:bg-gray-100 dark:prose-code:bg-gray-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded ' +
-  'prose-pre:bg-gray-900 dark:prose-pre:bg-gray-950 ' +
-  'prose-blockquote:border-l-amber-500 prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-400 ' +
-  'prose-ul:list-disc prose-ol:list-decimal';
-
 /** Format an ISO date for human display. */
 function formatDate(iso: string): string {
   const parsed = new Date(iso);
   if (Number.isNaN(parsed.getTime())) return iso;
   return parsed.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 }
+
+/** Body prose — built on @tailwindcss/typography but tuned for the editorial section. */
+const proseClasses =
+  'prose prose-lg dark:prose-invert max-w-none ' +
+  'font-sans ' +
+  'prose-headings:font-serif prose-headings:font-normal prose-headings:tracking-tight ' +
+  'prose-headings:text-stone-900 dark:prose-headings:text-stone-50 ' +
+  'prose-h1:hidden ' +
+  'prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-4 ' +
+  'prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 ' +
+  'prose-p:text-stone-700 dark:prose-p:text-stone-300 prose-p:leading-[1.75] prose-p:my-5 ' +
+  'prose-a:text-amber-700 dark:prose-a:text-amber-400 prose-a:font-medium prose-a:no-underline hover:prose-a:underline ' +
+  'prose-strong:text-stone-900 dark:prose-strong:text-stone-50 prose-strong:font-semibold ' +
+  'prose-em:font-serif prose-em:italic ' +
+  'prose-code:font-mono prose-code:text-[0.9em] prose-code:bg-stone-100 dark:prose-code:bg-stone-800 ' +
+  'prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-amber-800 dark:prose-code:text-amber-300 ' +
+  'prose-code:before:content-none prose-code:after:content-none ' +
+  'prose-pre:bg-stone-900 dark:prose-pre:bg-stone-950 prose-pre:border prose-pre:border-stone-800 ' +
+  'prose-blockquote:border-l-2 prose-blockquote:border-amber-600 dark:prose-blockquote:border-amber-400 ' +
+  'prose-blockquote:font-serif prose-blockquote:italic prose-blockquote:text-stone-700 dark:prose-blockquote:text-stone-300 ' +
+  'prose-blockquote:not-italic prose-blockquote:py-1 ' +
+  'prose-ul:my-6 prose-ol:my-6 ' +
+  'prose-li:my-2 prose-li:text-stone-700 dark:prose-li:text-stone-300 ' +
+  'prose-hr:border-stone-300 dark:prose-hr:border-stone-700';
 
 export default async function GuidePage({ params }: GuidePageProps) {
   const { slug } = await params;
@@ -137,103 +142,143 @@ export default async function GuidePage({ params }: GuidePageProps) {
       <GuideJsonLd guide={guide} appUrl={env.appUrl} appName={env.appName} />
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
-        <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+      {/* Reading-progress bar is a client component that tracks scroll. */}
+      <ReadingProgress targetSelector='[data-testid="guide-article"]' />
 
-        <header className="mb-8 pb-8 border-b border-gray-200 dark:border-gray-800">
-          <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-4">
-            {guide.heroEmoji && <span className="text-3xl">{guide.heroEmoji}</span>}
-            <span>{formatDate(guide.publishedAt)}</span>
-            <span aria-hidden="true">·</span>
-            <span>{guide.readingTimeMinutes} min read</span>
-            <span aria-hidden="true">·</span>
-            <span>By {guide.author}</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
-            {guide.title}
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">{guide.description}</p>
-          {guide.tags.length > 0 && (
-            <div className="mt-4 flex flex-wrap gap-2">
-              {guide.tags.map((tag) => (
-                <Badge key={tag} variant="outline">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </header>
+      <main className="guides-page" data-testid="guides-article-page" data-slug={guide.slug}>
+        <article className="container mx-auto px-4 pt-8 pb-16 max-w-3xl">
+          <Breadcrumbs items={breadcrumbItems} className="mb-10" />
 
-        <ShareSection
-          url={`${env.appUrl}/guides/${guide.slug}`}
-          title={guide.title}
-          description={guide.description}
-          hashtags={['emoji', 'emojiguide', ...guide.tags.slice(0, 2)]}
-          contentType="guide"
-          className="mb-8"
-        />
+          {/* Masthead block: kicker, dispatch number, oversized stamp, title */}
+          <header className="mb-10 md:mb-14 text-center">
+            <p className="guides-eyebrow mb-6">Field Notes from the Emoji Frontier</p>
 
-        <article
-          data-testid="guide-article"
-          className={proseClasses}
-          dangerouslySetInnerHTML={{ __html: guide.html }}
-        />
+            {guide.heroEmoji && (
+              <div
+                className="guides-stamp guides-stamp--article mx-auto mb-6 inline-block"
+                aria-hidden="true"
+                data-testid="guide-hero-stamp"
+              >
+                {guide.heroEmoji}
+              </div>
+            )}
 
-        <footer className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800">
-          {relatedEmojiCards.length > 0 && (
-            <section className="mb-8">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Related emojis
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {relatedEmojiCards.map((emoji) => (
-                  <Link
-                    key={emoji.slug}
-                    href={`/emoji/${emoji.slug}`}
-                    className="inline-flex items-center gap-2 px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
-                    aria-label={`${emoji.name} emoji`}
-                  >
-                    <span className="text-xl">{emoji.character}</span>
-                    <span className="text-gray-700 dark:text-gray-300">{emoji.name}</span>
-                  </Link>
+            <h1
+              className="guides-wordmark text-4xl md:text-6xl text-stone-900 dark:text-stone-50 mb-6 leading-[1.05]"
+              data-testid="guide-title"
+            >
+              {guide.title}
+            </h1>
+
+            <p className="guides-lede">{guide.description}</p>
+
+            <p className="guides-byline mt-6 flex flex-wrap justify-center items-center gap-x-2">
+              <span>By {guide.author}</span>
+              <span aria-hidden="true">·</span>
+              <time dateTime={guide.publishedAt}>{formatDate(guide.publishedAt)}</time>
+              <span aria-hidden="true">·</span>
+              <span>{guide.readingTimeMinutes} min read</span>
+            </p>
+
+            {guide.tags.length > 0 && (
+              <div className="mt-5 flex flex-wrap justify-center gap-2">
+                {guide.tags.map((tag) => (
+                  <span key={tag} className="guides-tag">
+                    {tag}
+                  </span>
                 ))}
               </div>
-            </section>
-          )}
+            )}
+          </header>
 
-          {relatedComboCards.length > 0 && (
-            <section className="mb-8">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                Related combos
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                {relatedComboCards.map((combo) => (
-                  <Link
-                    key={combo.slug}
-                    href={`/combo/${combo.slug}`}
-                    className="inline-flex items-center gap-2 px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
-                    aria-label={`${combo.name} combo`}
-                  >
-                    <span className="text-xl">{combo.combo}</span>
-                    <span className="text-gray-700 dark:text-gray-300">{combo.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          <p className="text-xs text-gray-500 dark:textgray-400">
-            Last updated {formatDate(guide.updatedAt)}
+          <p className="guides-divider" aria-hidden="true">
+            ✦&nbsp;✦&nbsp;✦
           </p>
-        </footer>
 
+          {/* Share row sits between the masthead and the body */}
+          <ShareSection
+            url={`${env.appUrl}/guides/${guide.slug}`}
+            title={guide.title}
+            description={guide.description}
+            hashtags={['emoji', 'emojiguide', ...guide.tags.slice(0, 2)]}
+            contentType="guide"
+            className="mb-10"
+          />
+
+          {/* The article body — typography handled by @tailwindcss/typography. */}
+          <div
+            data-testid="guide-article"
+            className={`${proseClasses} guides-dropcap`}
+            dangerouslySetInnerHTML={{ __html: guide.html }}
+          />
+
+          <p className="guides-divider" aria-hidden="true">
+            ✦&nbsp;✦&nbsp;✦
+          </p>
+
+          {/* Footer — related references + last-updated stamp */}
+          <footer className="mt-10">
+            {relatedEmojiCards.length > 0 && (
+              <section className="mb-8">
+                <h2 className="guides-eyebrow mb-4">Specimens referenced</h2>
+                <div className="flex flex-wrap gap-2">
+                  {relatedEmojiCards.map((emoji) => (
+                    <Link
+                      key={emoji.slug}
+                      href={`/emoji/${emoji.slug}`}
+                      className="guides-tag"
+                      aria-label={`${emoji.name} emoji`}
+                    >
+                      <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
+                        {emoji.character}
+                      </span>
+                      {emoji.name}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {relatedComboCards.length > 0 && (
+              <section className="mb-8">
+                <h2 className="guides-eyebrow mb-4">Combos in this dispatch</h2>
+                <div className="flex flex-wrap gap-2">
+                  {relatedComboCards.map((combo) => (
+                    <Link
+                      key={combo.slug}
+                      href={`/combo/${combo.slug}`}
+                      className="guides-tag"
+                      aria-label={`${combo.name} combo`}
+                    >
+                      <span className="text-base mr-1.5 -ml-0.5" aria-hidden="true">
+                        {combo.combo}
+                      </span>
+                      {combo.name}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            <p className="guides-byline mt-8 pt-6 border-t border-stone-300 dark:border-stone-700">
+              Filed {formatDate(guide.publishedAt)} · Last revised {formatDate(guide.updatedAt)}
+            </p>
+          </footer>
+        </article>
+
+        {/* More dispatches — keeps the reader on the page */}
         {moreGuides.length > 0 && (
-          <section className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">More guides</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {moreGuides.map((summary) => (
-                <GuideCard key={summary.slug} guide={summary} />
-              ))}
+          <section className="border-t-2 border-stone-900/80 dark:border-amber-400/60 bg-stone-100/40 dark:bg-stone-900/40">
+            <div className="container mx-auto px-4 py-14 max-w-5xl">
+              <p className="guides-eyebrow text-center mb-3">Filed nearby</p>
+              <h2 className="guides-wordmark text-3xl md:text-5xl text-center text-stone-900 dark:text-stone-50 mb-10">
+                More dispatches
+              </h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {moreGuides.map((summary) => (
+                  <GuideCard key={summary.slug} guide={summary} />
+                ))}
+              </div>
             </div>
           </section>
         )}

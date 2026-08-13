@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Geist_Mono, Instrument_Serif } from 'next/font/google';
 import './globals.css';
 import { siteMetadata } from '@/lib/metadata';
 import { GoogleAnalytics } from '@/components/analytics/google-analytics';
@@ -20,6 +20,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+// Editorial serif used only by the /guides section. Gives long-form
+// articles a print-publication feel that distinguishes them from the
+// otherwise sans-serif site.
+const instrumentSerif = Instrument_Serif({
+  variable: '--font-instrument-serif',
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+});
+
 export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
@@ -29,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
+      >
         <SessionProvider>
           <PostHogProvider>
             <ThemeProvider>
