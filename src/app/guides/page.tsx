@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { getPublishedGuideSummaries, getPublishedGuideCount } from '@/lib/guide-data';
-import { GuideCard } from '@/components/guides/guide-card';
+import { GuidesIndexList } from '@/components/guides/guides-index-list';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { getEnv } from '@/lib/env';
@@ -86,25 +86,10 @@ export default function GuidesIndexPage() {
           </div>
         </section>
 
-        {/* Guide list — card grid that matches the rest of the site. */}
-        <section className="py-12 md:py-16">
+        {/* Editorial index — featured spread + dispatch rows. */}
+        <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 max-w-6xl">
-            {summaries.length === 0 ? (
-              <div className="py-16 text-center">
-                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
-                  No guides yet.
-                </p>
-                <p className="guides-meta mt-3 justify-center">
-                  New dispatches ship every week — check back soon.
-                </p>
-              </div>
-            ) : (
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {summaries.map((guide) => (
-                  <GuideCard key={guide.slug} guide={guide} />
-                ))}
-              </div>
-            )}
+            <GuidesIndexList guides={summaries} />
           </div>
         </section>
       </div>
