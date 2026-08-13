@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { getPublishedGuideSummaries, getPublishedGuideCount } from '@/lib/guide-data';
-import { DispatchList } from '@/components/guides/dispatch-list';
+import { GuideCard } from '@/components/guides/guide-card';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { getEnv } from '@/lib/env';
@@ -49,16 +48,10 @@ export function generateMetadata(): Metadata {
   };
 }
 
-/** Build the volume + issue line that sits beneath the masthead. */
+/** Build the issue line that sits under the hero. */
 function formatIssueLine(count: number): string {
   const year = new Date().getFullYear();
-  return `VOL. I · ${year} · ${count.toString().padStart(3, '0')} ${count === 1 ? 'DISPATCH' : 'DISPATCHES'} ON FILE`;
-}
-
-/** Timestamp for the live ticker — recomputed per request. */
-function formatTimestamp(): string {
-  const now = new Date();
-  return now.toUTCString().replace('GMT', 'UTC').toUpperCase();
+  return `Vol. I · ${year} · ${count.toString().padStart(3, '0')} on file`;
 }
 
 export default function GuidesIndexPage() {
@@ -73,93 +66,48 @@ export default function GuidesIndexPage() {
     <>
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="guides-page" data-testid="guides-index">
-        {/* Masthead — a thin meta strip with the issue line. */}
-        <div className="guides-ticker" aria-label="Issue status">
-          <span className="guides-ticker-dot" aria-hidden="true" />
-          <span>Issue {total.toString().padStart(3, '0')}</span>
-          <span aria-hidden="true" className="opacity-30">
-            /
-          </span>
-          <span className="hidden sm:inline">{formatTimestamp()}</span>
-          <span aria-hidden="true" className="hidden sm:inline opacity-30">
-            /
-          </span>
-          <span>{new Date().getFullYear()} edition</span>
-        </div>
+      <div className="guides-page" data-testid="guides-index">
+        {/* Hero — amber gradient on light, gray on dark. */}
+        <section className="bg-gradient-to-b from-amber-50 via-amber-50/40 to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 border-b border-amber-100/60 dark:border-gray-800">
+          <div className="container mx-auto px-4 max-w-6xl pt-8 pb-16 md:pb-20">
+            <Breadcrumbs items={breadcrumbItems} className="mb-8" />
 
-        {/* Masthead — the editorial hero, asymmetric grid. */}
-        <div className="container mx-auto px-4 max-w-6xl">
-          <Breadcrumbs items={breadcrumbItems} className="mt-6 mb-8" />
-
-          <header className="guides-masthead grid gap-6 md:gap-8 md:grid-cols-[1fr_auto] items-start">
-            <div>
-              <p className="guides-eyebrow mb-6">Field Notes from the Emoji Frontier</p>
+            <div className="max-w-3xl">
+              <span className="guides-eyebrow">Editorial</span>
               <h1
-                className="guides-wordmark text-6xl md:text-9xl text-gray-900 dark:text-white"
+                className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight"
                 data-testid="guides-masthead"
               >
-                Dispatches<span className="text-amber-600 dark:text-amber-400">.</span>
+                Emoji Guides
               </h1>
-              <p className="guides-lede mt-8 max-w-2xl">{siteDescription}</p>
+              <p className="guides-lede mt-6">{siteDescription}</p>
+              <p className="guides-meta mt-6">{formatIssueLine(total)}</p>
             </div>
-
-            <div className="flex flex-col items-start md:items-end gap-3 pr-1">
-              <span className="guides-vertical-mark" aria-hidden="true">
-                ON THE EMOJI FRONTIER · LONG-FORM
-              </span>
-              <p className="guides-byline text-right">{formatIssueLine(total)}</p>
-              <p className="guides-byline text-right opacity-60">
-                EST. {new Date().getFullYear() - 3} · VOL.{' '}
-                {String(new Date().getFullYear()).slice(-2)}
-              </p>
-            </div>
-          </header>
-        </div>
-
-        {summaries.length === 0 ? (
-          <div className="container mx-auto px-4 py-24 max-w-2xl text-center">
-            <p className="guides-wordmark text-7xl text-gray-900 dark:text-white">
-              No dispatches on file.
-            </p>
-            <p className="guides-divider" aria-hidden="true">
-              ·&nbsp;·&nbsp;·
-            </p>
-            <p className="guides-lede mt-6">
-              The wire is quiet. We publish new explainers every week — check back soon.
-            </p>
-            <p className="mt-8 text-sm text-gray-500 dark:text-gray-400">
-              Got a topic?{' '}
-              <Link
-                href="/about"
-                className="text-amber-600 dark:text-amber-400 underline underline-offset-4 hover:text-amber-700 dark:hover:text-amber-300"
-              >
-                File a tip
-              </Link>
-              .
-            </p>
           </div>
-        ) : (
-          <div className="max-w-6xl mx-auto">
-            <DispatchList guides={summaries} />
-          </div>
-        )}
+        </section>
 
-        {/* Colophon — a single editorial note under the index. */}
-        {summaries.length > 0 && (
-          <div className="container mx-auto px-4 max-w-3xl pt-20 pb-24 text-center">
-            <p className="guides-divider" aria-hidden="true">
-              ✦&nbsp;✦&nbsp;✦
-            </p>
-            <p className="guides-eyebrow justify-center mt-2">Colophon</p>
-            <p className="guides-annotation mt-6 leading-relaxed text-center max-w-2xl mx-auto">
-              Each dispatch is written from the field &mdash; actual messages, real recipients,
-              verified meanings. We cite sources when we can, and say so when we can&rsquo;t.
-              Subscribe via the homepage footer to get new issues as they ship.
-            </p>
+        {/* Guide list — card grid that matches the rest of the site. */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {summaries.length === 0 ? (
+              <div className="py-16 text-center">
+                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                  No guides yet.
+                </p>
+                <p className="guides-meta mt-3 justify-center">
+                  New dispatches ship every week — check back soon.
+                </p>
+              </div>
+            ) : (
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {summaries.map((guide) => (
+                  <GuideCard key={guide.slug} guide={guide} />
+                ))}
+              </div>
+            )}
           </div>
-        )}
-      </main>
+        </section>
+      </div>
     </>
   );
 }
