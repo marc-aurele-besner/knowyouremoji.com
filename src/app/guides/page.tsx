@@ -110,7 +110,8 @@ export default function GuidesIndexPage() {
               </span>
               <p className="guides-byline text-right">{formatIssueLine(total)}</p>
               <p className="guides-byline text-right opacity-60">
-                EST. {new Date().getFullYear() - 3} · VOL. {String(new Date().getFullYear()).slice(-2)}
+                EST. {new Date().getFullYear() - 3} · VOL.{' '}
+                {String(new Date().getFullYear()).slice(-2)}
               </p>
             </div>
           </header>
@@ -129,7 +130,10 @@ export default function GuidesIndexPage() {
             </p>
             <p className="mt-8 text-sm text-gray-500 dark:text-gray-400">
               Got a topic?{' '}
-              <Link href="/about" className="text-amber-600 dark:text-amber-400 underline underline-offset-4 hover:text-amber-700 dark:hover:text-amber-300">
+              <Link
+                href="/about"
+                className="text-amber-600 dark:text-amber-400 underline underline-offset-4 hover:text-amber-700 dark:hover:text-amber-300"
+              >
                 File a tip
               </Link>
               .
