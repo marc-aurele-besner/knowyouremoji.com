@@ -12,12 +12,20 @@ bail = true
 # 3. Script entry points that can't be tested via module imports
 # 4. Interpreter components with complex user interactions that are hard to simulate
 # 5. Files with 99%+ coverage that have edge cases difficult to reach
+# 6. NextAuth config — has module-load-time side effects (NextAuth() invoked at
+#    top level) and is mocked in every test that touches it. The npm-installed
+#    bun used by CI's `bun x bun run scripts/check-coverage.ts` does not honor
+#    `mock.module('@/lib/auth', ...)` the same way as the official bun binary,
+#    so auth.ts gets tracked in CI but not locally, dragging functions coverage
+#    by ~0.4%. Excluding the file matches the test intent (the real module is
+#    never exercised — only the mock is) and keeps CI and local results aligned.
 coveragePathIgnorePatterns = [
   "src/lib/env.ts",
   "src/lib/neon.ts",
   "src/app/api/interpret/route.ts",
   "src/app/api/interpret/stream/route.ts",
   "src/lib/interpreter.ts",
+  "src/lib/auth.ts",
   "scripts/*.ts",
   "src/components/interpreter/streaming-interpreter-form.tsx",
   "src/components/interpreter/interpreter-form.tsx",
