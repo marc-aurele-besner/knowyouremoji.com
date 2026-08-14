@@ -280,7 +280,7 @@ describe('LoginForm', () => {
       mockFetch.mockResolvedValueOnce({
         ok: false,
         json: () => Promise.resolve({ error: 'rate limited' }),
-      });
+      } as never);
       render(<LoginForm />);
       fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
 
