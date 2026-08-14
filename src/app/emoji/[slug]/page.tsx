@@ -7,6 +7,7 @@ import {
 } from '@/lib/emoji-data';
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
+import { decisionToRobots, getIndexingDecision } from '@/lib/seo-policy';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
@@ -58,7 +59,14 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
 
   const env = getEnv();
   const pageUrl = `${env.appUrl}/emoji/${emoji.slug}`;
+  const basePageUrl = emoji.skinToneBase ? `${env.appUrl}/emoji/${emoji.skinToneBase}` : undefined;
   const ogTitle = `${emoji.character} ${emoji.name} Emoji Meaning`;
+
+  // Apply the indexing policy from src/lib/seo-policy.ts — see issue #344.
+  // - Deep/standard pages → index, follow
+  // - Skin-tone variants → noindex, follow, canonical to base
+  // - Stub thin pages → noindex, follow
+  const indexing = getIndexingDecision(emoji, pageUrl, basePageUrl);
 
   // Generate keywords array
   const keywords = [
@@ -77,7 +85,7 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
     description: emoji.seoDescription,
     keywords,
     alternates: {
-      canonical: pageUrl,
+      canonical: indexing.canonical || pageUrl,
     },
     openGraph: {
       title: ogTitle,
@@ -100,17 +108,7 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
       description: emoji.tldr,
       images: [`${env.appUrl}/og/emoji/${emoji.slug}.png`],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
+    robots: decisionToRobots(indexing),
   };
 }
 
