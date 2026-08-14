@@ -38,39 +38,105 @@
   "platformNotes": [
     {
       "platform": "TIKTOK",
-      "note": "Common for expressing attraction to creators or content."
+      "note": "Pasted in comments on creator thirst-trap content and on dance-transition videos where the visual flirt is the point."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Used in comments on attractive photos."
+      "note": "Comment reaction on attractive photos and outfit-of-the-day reels; the emoji does the visible thirst comment without typing."
     },
     {
       "platform": "TWITTER",
-      "note": "Both temperature complaints and thirst comments."
+      "note": "Sent on weather-complaint threads and on thirst-comment quote-tweets where the emoji carries the same register as the message."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction emoji on thirst-trap spam and on weather-complaint rants; the emoji tags both registers without favor."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Primarily means finding something/someone hot (attractive)."
+      "note": "Primarily means finding someone attractive; uses 🥵 on thirst-trap content and on partner photos where the flirt is the visible point."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Both literal heat and attraction meanings."
+      "note": "Splits between literal heat and attraction reads; uses 🥵 on hot-weather complaints and on partner-appreciation threads."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🥵 more literally for hot weather; catches the attraction read through longer exposure to thirsty content."
     },
     {
       "generation": "BOOMER",
-      "note": "More likely to use for actual temperature."
+      "note": "Sends 🥵 for literal heat; rarely catches the thirst-comment register."
     }
   ],
   "warnings": [
     {
       "title": "Attraction connotation",
-      "description": "When used in response to a person, almost always implies attraction.",
+      "description": "When used in response to a person, almost always implies attraction. Sending on a colleague's photo reads as workplace creep; sending on a friend's photo reads as friendly flirt. Match the channel.",
       "severity": "LOW"
+    },
+    {
+      "title": "Forwardable",
+      "description": "A 🥵 on a friend's photo can be screenshotted and shared. Use sparingly when the recipient may not want the visible thirst comment preserved.",
+      "severity": "MEDIUM"
     }
   ],
   "relatedCombos": ["hot-fire"],
   "seoTitle": "🥵 Hot Face Emoji Meaning - What Does 🥵 Really Mean?",
-  "seoDescription": "Learn what the hot face emoji 🥵 really means in modern texting. Being overheated or finding something attractive. Complete context guide."
+  "seoDescription": "Learn what the hot face emoji 🥵 really means in modern texting. Being overheated or finding something attractive. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🥵 is the heat and attraction emoji - a yellow face with flushed cheeks, sweat drops on the forehead, and tongue sticking out as if panting. The visual cue reads instantly as either actual heat (the literal 'I am too hot') or the slang 'I cannot handle how attractive that is' thirst reaction. On modern chat threads 🥵 does most of its work as the latter, the visible thirst comment on a partner's photo or a creator's thirst-trap content.\n\nThe split between literal and slang registers is the emoji's defining feature. A 🥵 on a weather-complaint thread reads as 'I am melting;' a 🥵 on a friend's photo reads as 'I am dead, you look incredible.' The two registers are not usually confused because the context of the message does the disambiguation. The emoji is widely understood across English-speaking channels, though older senders tend to default to the literal reading while younger senders default to the thirst register.",
+    "howPeopleUseIt": "🥵 lands as the comment reaction on a partner's photo, the weather-complaint closer on a heat wave, and the visible thirst comment on a creator's post. On TikTok the emoji fills the comments on thirst-trap content where the visible flirt is the point.\n\nOn Instagram 🥵 is the comment reaction on outfit-of-the-day reels and portrait posts where the recipient wants the visible appreciation. On X the emoji shows up on weather-complaint threads and on thirst-comment quote-tweets where the register matches the message. The emoji pairs naturally with 🔥 for the layered attraction stack and with 😍 for the warm-flirt combo.",
+    "whenNotToUse": "Avoid 🥵 on a colleague's photo where the attraction read reads as workplace creep. The emoji is too flirty for professional channels; use a sentence that acknowledges the visual without the visible thirst.\n\nAvoid 🥵 on a friend's photo where the relationship does not tolerate the flirty read. A 🥵 on a friend's photo can be screenshotted and shared; use sparingly when the recipient may not want the visible thirst comment preserved.",
+    "howToReply": "If a partner sends 🥵 on your photo, mirror with another 🥵, 😍, or 'you are not so bad yourself' so the flirt escalates.\n\nIf 🥵 lands as a weather-complaint closer, mirror with another 🥵 or 'stay hydrated' so the channel stays useful. And if you want to send 🥵 yourself, pair it with the subject so the heat or attraction frame matches a real reason.",
+    "faqs": [
+      {
+        "question": "What does 🥵 mean in texting?",
+        "answer": "🥵 usually means finding someone attractive. The literal 'I am too hot' read survives on weather complaints. Context and the surrounding message decode which read lands."
+      },
+      {
+        "question": "Is 🥵 flirty?",
+        "answer": "Yes, when used on a person. 🥵 on a partner's photo reads as direct attraction; 🥵 on a weather complaint reads as literal heat. The channel carries the meaning."
+      },
+      {
+        "question": "What does 🥵 mean from a girl?",
+        "answer": "From a girl or anyone else, 🥵 carries the same heat or attraction read. There is no gendered meaning; the slang register works the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 🥵 mean at work?",
+        "answer": "Rarely appropriate. 🥵 in a work channel reads as inappropriate. Use a sentence that acknowledges the heat without the emoji."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "this summer is no joke 🥵",
+      "interpretation": "Friend's weather complaint. Mirror with another 🥵 or 'stay cool' so the channel stays useful."
+    },
+    {
+      "setting": "social",
+      "message": "this photo is unreal 🥵",
+      "interpretation": "Public thirst comment. Mirror with 🔥 or 'beautiful' so the appreciation reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "you look so good in that 🥵",
+      "interpretation": "Partner's flirt. Mirror with 😍 or 'you are not so bad yourself' so the warmth escalates."
+    },
+    {
+      "setting": "work",
+      "message": "the server room is collapsing 🥵",
+      "interpretation": "Risky reading: weather or thirst? Mirror with 'stay safe' rather than another 🥵 that doubles the ambiguity."
+    },
+    {
+      "setting": "family",
+      "message": "grandpa is shoveling in the heat 🥵",
+      "interpretation": "Family weather worry. Mirror with another 🥵 or 'get him inside' so the concern reads back."
+    }
+  ]
 }
