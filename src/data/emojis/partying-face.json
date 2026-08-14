@@ -38,33 +38,100 @@
   "platformNotes": [
     {
       "platform": "SLACK",
-      "note": "Very popular for celebrating team achievements and milestones."
+      "note": "Pasted in team channel announcements when the project ships; the emoji does the visible team celebration without anyone typing 'way to go.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Used in birthday posts and celebration stories."
+      "note": "Default birthday-story and celebration-reel emoji; the party hat visually matches the moment."
     },
     {
       "platform": "TWITTER",
-      "note": "Common for announcing good news or achievements."
+      "note": "Engagement-announcement closer; the emoji punctuates good news where the poster wants the visible celebration."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "Friend-group birthday reaction and date-night closer; the emoji does the visible ratchet-up of any morning text."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Standard celebration emoji, widely used."
+      "note": "Default celebration emoji across friend groups; uses 🥳 for birthdays, achievements, and ironic small wins."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Popular for birthdays and achievements."
+      "note": "Reads 🥳 as sincere celebration; uses it for birthdays and milestones without the ironic register."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🥳 for birthdays and holidays; treats the emoji as a sincere celebration day."
     },
     {
       "generation": "BOOMER",
-      "note": "Easily understood as a party or celebration."
+      "note": "Sends 🥳 for birthdays and holidays; the literal party hat reads clearly even without the slang register."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Tone mismatch",
+      "description": "🥳 on a friend's vulnerable share can read poorly if the celebration framing undercuts the moment. Use a heart or a softer emoji when the recipient needed support.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🥳 Partying Face Emoji Meaning - What Does 🥳 Really Mean?",
-  "seoDescription": "Learn what the partying face emoji 🥳 really means. Used for birthdays, celebrations, achievements, and good news. Complete context guide."
+  "seoDescription": "Learn what the partying face emoji 🥳 really means. Used for birthdays, celebrations, achievements, and good news. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🥳 is the celebration emoji - a yellow face wearing a conical party hat, blowing a party horn, with confetti floating around its head. The visual cue is the universal sign of a birthday or other celebration, drawn in the same friendly style as the rest of the face-hat emoji set. On modern chat threads 🥳 does most of its work as the default celebration reaction: the closer on a friend's birthday text, the visual punctuation on a milestone announcement, the team win in a Slack channel.\n\nThe emoji is widely understood across generations. Unlike most memes that catch on within a specific age cohort, 🥳 reads as celebration in every channel where it has been adopted. The party hat is unambiguous enough that the meaning travels from a young person's birthday story to a Boomer's family chat without any register shift. The only split is the ironic register, where Gen Z uses 🥳 on small wins ('made it through Monday 🥳') that older senders might sincerely celebrate.",
+    "howPeopleUseIt": "🥳 lands as the closer on a birthday wish, the team win in a project channel, and the encouragement on a friend's milestone announcement. On Instagram the emoji is the default birthday story and celebration reel tag.\n\nIn Slack channels 🥳 precedes the project-shipped announcement and the same-day launch milestone. On X the emoji punctuates engagement announcements and good-news tweets where the poster wants the visible joy. The emoji pairs naturally with 🎉 for the layered celebration stack and with 🎂 for the birthday-specific combo.",
+    "whenNotToUse": "Avoid 🥳 in any channel where the recipient needed support. A 🥳 on a friend's loss disclosure reads as 'celebrate' rather than 'I am with you.' Substitute with a heart or a sentence that acknowledges the moment.\n\nAvoid 🥳 in formal workplace channels where the celebration reads as too informal. A 🥳 on a serious project update can undercut the gravity; the channel deserves measured language rather than the party emoji.",
+    "howToReply": "If a friend sends 🥳 on a birthday wish, mirror with another 🥳, 🎉, or 'happy birthday' so the celebration flows back.\n\nIf 🥳 lands as the team win in a work channel, mirror with another 🥳 or 🙌 so the visible celebration reads back. And if you want to send 🥳 yourself, pair it with the subject so the celebration frame matches a real reason.",
+    "faqs": [
+      {
+        "question": "What does 🥳 mean in texting?",
+        "answer": "🥳 means celebration. The emoji does most of its work as the default celebration reaction on birthdays, milestones, and team wins. The ironic register ('made it through Monday 🥳') is widely used but never the only register."
+      },
+      {
+        "question": "What does 🥳 mean from a girl?",
+        "answer": "From a girl or anyone else, 🥳 carries the same celebration read. There is no gendered meaning; the emoji works the same regardless of who is sending it."
+      },
+      {
+        "question": "Is 🥳 a birthday emoji?",
+        "answer": "Yes, primarily. 🥳 is the default birthday emoji across most platforms, paired with 🎂 for the cake-and-party combo."
+      },
+      {
+        "question": "What does 🥳 mean at work?",
+        "answer": "In Slack channels 🥳 usually reads as a team win or milestone. Save it for casual teams where the celebration register is established."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy birthday queen 🥳",
+      "interpretation": "Friend's birthday wish. Mirror with another 🥳 or 'love you' so the celebration reads back."
+    },
+    {
+      "setting": "social",
+      "message": "we shipped v2 🥳",
+      "interpretation": "Public milestone share. Mirror with another 🥳 or 'big win' so the celebration travels."
+    },
+    {
+      "setting": "dating",
+      "message": "year one with you 🥳",
+      "interpretation": "Anniversary share. Mirror with ❤️ or 'year 50 too' so the warmth travels."
+    },
+    {
+      "setting": "work",
+      "message": "team, we made it. PR merged 🥳",
+      "interpretation": "Team win. Mirror with 🙌 or 'shoutout to all' so the credit spreads."
+    },
+    {
+      "setting": "family",
+      "message": "grandpa turned 90 today 🥳",
+      "interpretation": "Family milestone. Mirror with another 🥳 or 'so proud' so the family joy translates."
+    }
+  ]
 }

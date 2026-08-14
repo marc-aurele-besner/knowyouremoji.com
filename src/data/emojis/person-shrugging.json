@@ -8,70 +8,126 @@
   "subcategory": "person",
   "unicodeVersion": "9.0",
   "baseMeaning": "A person with raised shoulders and arms, palms facing up.",
-  "tldr": "The 'I don't know' or 'whatever' gesture. Can show confusion or indifference.",
+  "tldr": "The universal 'idk' or 'whatever.' Confusion, indifference, or 'I don't know what to tell you.'",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Expressing not knowing or being unsure.",
-      "example": "Where are my keys 🤷",
+      "meaning": "Genuinely unsure - 'I do not know' or 'I am lost.'",
+      "example": "where are my keys 🤷",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Indifference or 'whatever happens, happens'.",
-      "example": "Guess we'll see 🤷",
+      "meaning": "Indifference or 'whatever happens, happens' - active disengagement rather than confusion.",
+      "example": "guess we'll see 🤷",
       "riskLevel": "LOW"
     },
     {
       "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Dismissing responsibility or avoiding accountability.",
-      "example": "Not my problem 🤷",
+      "meaning": "Dismissing responsibility - 'not my problem' read where accountability should sit.",
+      "example": "not my job 🤷",
       "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Feigning ignorance or indifference.",
-      "example": "Don't know what happened to the cookies 🤷",
+      "context": "WORK",
+      "meaning": "Casual admission of uncertainty in Slack threads where the team has the register.",
+      "example": "no idea 🤷 will check",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Common for expressing uncertainty or indifference."
+      "note": "Tag for uncertain threads and 'no one knows' takes where the poster wants to flag the absence of an answer without claiming one."
     },
     {
       "platform": "SLACK",
-      "note": "Acceptable for casual admissions of uncertainty."
+      "note": "Standard 'I don't know yet' reaction in work channels where the team has the register; pairs with a sentence ('will check') so the channel stays useful."
     },
     {
       "platform": "IMESSAGE",
-      "note": "Standard 'I don't know' gesture."
+      "note": "Default 'idk' between friends and family; the shrug emoji does the uncertainty work without anyone typing 'I have no idea.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction emoji on debates where no one can agree; the shrug does the visible 'no consensus' energy."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "The universal 'idk' or 'whatever' emoji."
+      "note": "Default shrug; uses 🤷 for both uncertainty and indifference, and the receiver decodes the read from the rest of the message."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Same usage - confusion or indifference."
+      "note": "Universal confusion or indifference emoji - uses 🤷 for 'idk' across personal and work chat."
     },
     {
       "generation": "BOOMER",
-      "note": "May not be as familiar with this gesture emoji."
+      "note": "May not be as familiar with the shrug gesture - reads the emoji as confusion rather than the meme register."
     }
   ],
-  "warnings": [],
-  "relatedCombos": ["shrug-idk"],
+  "warnings": [
+    {
+      "title": "Avoiding accountability",
+      "description": "A 🤷 on a question you should be able to answer reads as dodging responsibility. Pair with a sentence that names the next step so the channel stays useful.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["shrug-idk", "shrug-upside-down"],
   "seoTitle": "🤷 Person Shrugging Emoji Meaning - What Does 🤷 Really Mean?",
-  "seoDescription": "Learn what the shrug emoji 🤷 really means in modern texting. The universal 'I don't know' or 'whatever' gesture. Complete context guide.",
-  "skinToneVariations": [
-    "person-shrugging-light",
-    "person-shrugging-medium-light",
-    "person-shrugging-medium",
-    "person-shrugging-medium-dark",
-    "person-shrugging-dark"
+  "seoDescription": "Learn what the person shrugging emoji 🤷 really means - the 'idk' register, the indifference inverse, and where the emoji reads as dodging rather than confused.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🤷 is the universal shrug emoji - a cartoon person with shoulders raised, palms turned up, mouth in a small flat line. The image reads instantly as 'I don't know' or 'whatever happens.' On modern chat threads 🤷 does most of its work as the shrug emoji for both genuine uncertainty (a real 'I have no idea') and active indifference ('I do not care enough to have an opinion'), and the rest of the message decodes which read lands.\n\nThe shrug emoji is one of the most commonly sent reactions in chat threads because it does the 'idk' work without anyone typing the words. A 🤷 on a friend's question reads as 'genuinely no idea,' a 🤷 on a friend's bad day reads as 'I do not know what to tell you, but I am with you,' and a 🤷 on a friend's bad take reads as 'I will not engage this.' The same emoji carries three reads and the context does the disambiguation.",
+    "howPeopleUseIt": "🤷 lands as the 'genuine uncertainty' reaction on a friend's question ('no idea where they are 🤷'), the 'indifference' closer on a friend's complaint ('couldn't tell you 🤷'), and the 'I won't engage' dismiss on a friend's hot take. On X the emoji tags threads where the poster wants to flag that the answer is unknown.\n\nIn work channels 🤷 functions as the lowest-effort 'I have not solved this yet' reaction. The emoji pairs naturally with 😅 or 'will check' so the channel stays useful. In dating threads 🤷 functions as the playful 'who knows, maybe?' energy on plans that have not locked in yet.",
+    "whenNotToUse": "Avoid 🤷 when you should be able to give a real answer. A 🤷 from a manager on an employee question reads as 'I do not know, do not bother me,' which the employee experiences as dismissal. When you do not know, say 'I will check' rather than shrug.\n\nAvoid 🤷 in any channel where the recipient needs a real opinion. A 🤷 on a friend's vulnerable share reads as 'I have no idea what to say to you,' which is a worse outcome than saying nothing. Use a heart or a sentence that acknowledges the moment.",
+    "howToReply": "If a friend sends 🤷 on a question, mirror with a sentence that actually answers, or another 🤷 to share the confusion. The shrug chain works as 'same' when the question is unanswerable.\n\nIf 🤷 lands as the indifference closer on a friend's bad day, mirror with a heart or 'I am here' rather than another 🤷 that doubles the disengage. And if you want to send 🤷 yourself, pair it with the subject so the shrug frame matches a real reason.",
+    "faqs": [
+      {
+        "question": "What does 🤷 mean in texting?",
+        "answer": "🤷 means 'I don't know,' 'I don't care,' or 'whatever happens.' The emoji carries both uncertainty and indifference; the context and the surrounding message decode the read."
+      },
+      {
+        "question": "Is 🤷 rude?",
+        "answer": "Sometimes. A 🤷 on a friend's vulnerable moment reads as 'I have nothing to say to you.' Use sparingly when the recipient expected engagement and select a softer emoji when you do not have an opinion."
+      },
+      {
+        "question": "What does 🤷 mean from a guy?",
+        "answer": "From a guy or anyone else, 🤷 carries the same idk or indifference read. There is no gendered meaning; the shrug works the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 🤷 mean at work?",
+        "answer": "In work channels 🤷 usually reads as 'I don't have an answer yet.' Pair with 'will check' or 'will follow up' so the channel stays productive."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "where did I put my wallet 🤷",
+      "interpretation": "Friend genuinely asking. Mirror with 'check the kitchen counter' or 'try the car' rather than another 🤷 that doubles the confusion."
+    },
+    {
+      "setting": "social",
+      "message": "why is the election this way 🤷",
+      "interpretation": "Friend processing public news. Mirror with a sentence that engages rather than another 🤷 that doubles the resignation."
+    },
+    {
+      "setting": "dating",
+      "message": "Saturday maybe, idk 🤷",
+      "interpretation": "Partner noncommittal on a plan. Mirror with a sentence that locks the plan in ('let's say 7') or another 🤷 that accepts the indecision."
+    },
+    {
+      "setting": "work",
+      "message": "blocked on the design call, will follow up 🤷",
+      "interpretation": "Work channel: 'I don't have an answer yet.' Mirror with 'ping me Friday' so the thread stays productive."
+    },
+    {
+      "setting": "family",
+      "message": "where did grandma's ring go 🤷",
+      "interpretation": "Family wonder. Mirror with 'check the dresser' rather than another 🤷 that doubles the worry."
+    }
   ]
 }

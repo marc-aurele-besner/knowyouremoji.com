@@ -8,7 +8,7 @@
   "subcategory": "emotion",
   "unicodeVersion": "1.1",
   "baseMeaning": "Red Heart emoji representing love and affection.",
-  "tldr": "Love! Deep affection or romance.",
+  "tldr": "Love! Deep affection, romance, or earnest support.",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -30,23 +30,119 @@
     },
     {
       "context": "WORK",
-      "meaning": "Professional appreciation (use sparingly).",
+      "meaning": "Professional appreciation - use sparingly in work contexts, can read as too personal.",
       "example": "Thanks for the help ❤️",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "An over-the-top ❤️ on a complaint can read as performative support or sarcasm rather than genuine care.",
+      "example": "Sure, totally fine ❤️",
       "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Universal symbol of love and support." },
-    { "platform": "INSTAGRAM", "note": "Most used emoji on the platform." },
-    { "platform": "TIKTOK", "note": "Shows love for content." }
+    {
+      "platform": "TWITTER",
+      "note": "Floods reply timelines during launches, anniversaries, and tributes - the universal reaction for any public moment of love or support."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Most-used emoji across the platform - sits at the end of captions on partner posts, anniversary milestones, and wholesome pet content."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Floods comment sections under couple duets, parents' kid reveals, and wholesome animal clips - the default reaction of choice."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Doubles as a thumbs-up substitute for warm acknowledgements - family groups lean on it as 'love you' so they don't need to type the words."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "May prefer other colored hearts for variety." },
-    { "generation": "MILLENNIAL", "note": "Classic love emoji." },
-    { "generation": "BOOMER", "note": "Primary heart choice." }
+    {
+      "generation": "GEN_Z",
+      "note": "Has loosened ❤️ to mean 'I appreciate this' more than 'I love you' - pairs it with friend content, food posts, and reaction comments without romance."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Still uses ❤️ as the strongest love emoji - the simple red heart hits harder than themed variants and signals commitment over trendiness."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads ❤️ as a literal 'love you' - pastes one at the end of family texts where younger relatives paste two or three at a time."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Uses ❤️ as the default 'lots of love' closer on emails, birthday cards, and any message they want to feel affectionate."
+    }
   ],
-  "warnings": [],
-  "relatedCombos": [],
-  "seoTitle": "❤️ Red Heart Emoji Meaning",
-  "seoDescription": "Learn what the Red Heart emoji ❤️ really means across contexts."
+  "warnings": [
+    {
+      "title": "Workplace read",
+      "description": "A ❤️ in a work channel can read as too familiar or flirty depending on context. Use sparingly when the recipient is a manager, client, or new coworker.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Sarcastic overload",
+      "description": "Multiple ❤️ or a ❤️ on a complaint (e.g. 'totally fine ❤️') reads as sarcasm rather than warmth. The emoji's sincerity drops fast when stacked.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["heart-eyes", "heart-eyes-fire", "double-hearts"],
+  "seoTitle": "❤️ Red Heart Emoji Meaning - What Does ❤️ Really Mean?",
+  "seoDescription": "Learn what the red heart emoji ❤️ really means - romantic love, friendship support, wholesome hype, and when it accidentally reads as flirty at work.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "❤️ is the most-used heart in the Unicode set and the most-used emoji on Instagram by a wide margin. The visual cue is the bright red, slightly cartoon heart shape, the same silhouette that has meant love and care on cards and valentines for a century. On social media the red heart gets the maximum-strength read of every love-emoji category: the strongest sign of affection, appreciation, or allegiance a keyboard can dispatch in a single tap.\n\nWhat has changed is how broadly the emoji spreads. A ❤️ on a friend's sad post reads as warm support, not romantic interest. A ❤️ on a creator's announcement reads as public applause. A ❤️ on a brand's product launch reads as genuine endorsement. The emoji has widened into a general-purpose 'I care' signal, and that widening is what makes it more useful than its themed cousins (💜, 🖤, 💛) - the red heart carries weight without demanding a specific relationship.",
+    "howPeopleUseIt": "❤️ lands as the sign-off on a long message to a friend ('miss you, see you soon ❤️'), the punctuation at the end of a partner's morning text, and the reaction comment on any emotional social post - from a parent's loss to a creator's wedding announcement. In group chats with family it functions as the lazy 'love you' so the message reads as warm without forcing everyone to type the words.\n\nOn Instagram the ❤️ is the universal reaction emoji - creators gauge engagement by counting red hearts on a reveal or a launch. On TikTok the same read: comment sections under a wholesome duet flood with ❤️, and the emoji is the most reliable way to react to a creator when typing a comment feels like too much. On WhatsApp it sits at the end of messages between couples where its mere presence replaces 'I love you' entirely.",
+    "whenNotToUse": "Avoid ❤️ in any professional or formal message where affection is off the table - a thank-you email to a manager, a customer support reply, a vendor introduction. The heart reads warm but can land as flirty or overly familiar depending on the recipient. If you want to express appreciation at work, swap to 👍 or a plain sentence.\n\nAlso avoid ❤️ when the underlying message is sarcastic or cold. A 'totally fine ❤️' or 'thanks for nothing ❤️' reads as passive-aggressive because the heart at the end contradicts the sentence. Either drop the emoji or rewrite the sentence so the warmth matches the tone.",
+    "howToReply": "If a friend texts 'love you ❤️' or sends a string of ❤️, mirror with another ❤️ or a 'love you too ❤️' so the affection echoes. If ❤️ arrives as a reaction under a vulnerable share, mirror with a sentence that asks what they need - 'tell me more' or 'I'm here' lands better than another heart emoji alone.\n\nIf ❤️ lands as a flirty read in a dating thread, match the energy with a ❤️ or escalate with an explicit line ('yeah, you too ❤️'). If ❤️ arrives under a work context, mirror sparingly with a 👍 or 'thanks' so the register stays professional.",
+    "faqs": [
+      {
+        "question": "What does ❤️ mean from a girl?",
+        "answer": "From a girl, ❤️ can mean romantic love, sincere appreciation, or general support depending on the relationship. With a close friend it reads as warmth. With a partner it reads as love. The emoji is not gendered; the rest of the message carries most of the meaning."
+      },
+      {
+        "question": "Is ❤️ flirty?",
+        "answer": "It can be. A ❤️ on a dating thread, especially paired with compliments or late-night texting, reads as romantic interest. A ❤️ on a friend's sad post reads as supportive. Read the channel before assuming the flirty read."
+      },
+      {
+        "question": "What does ❤️ mean at work?",
+        "answer": "At work a ❤️ can read as too familiar, depending on the recipient. Peer-to-peer on a casual team it lands as appreciation. Manager-to-direct-report or client-facing it can land as flirty or unprofessional. When in doubt choose 👍 or a sentence."
+      },
+      {
+        "question": "What does ❤️ mean from a guy?",
+        "answer": "From a guy or anyone else, ❤️ means warmth, love, or appreciation - same as from any sender. The emoji does not carry a gendered meaning; the context determines whether it is romantic, friendly, or supportive."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "haven't seen you in forever ❤️",
+      "interpretation": "Friend sending warmth. Mirror with a ❤️ and a sentence that confirms plans or asks how they are."
+    },
+    {
+      "setting": "dating",
+      "message": "tonight was perfect ❤️",
+      "interpretation": "Partner closing a date night warmly. Mirror with a ❤️ and a sentence that agrees or escalates the affection."
+    },
+    {
+      "setting": "family",
+      "message": "love you, drive safe ❤️",
+      "interpretation": "Family sign-off. Mirror with a ❤️ and a quick 'on my way' so the love lands with the confirmation."
+    },
+    {
+      "setting": "work",
+      "message": "thanks for covering the deploy ❤️",
+      "interpretation": "Colleague appreciation in Slack - reads casual but warm. Mirror with a sentence ('no worries, go home') rather than another ❤️ which can read too personal."
+    },
+    {
+      "setting": "social",
+      "message": "congrats on the new job ❤️",
+      "interpretation": "Public support on a friend's announcement. Mirror with another ❤️ or 'so happy for you' so the energy of the announcement lands back."
+    }
+  ]
 }

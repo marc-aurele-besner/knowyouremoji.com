@@ -8,51 +8,141 @@
   "subcategory": "body-parts",
   "unicodeVersion": "13.0",
   "baseMeaning": "Pair of eyes.",
-  "tldr": "Represents looking.",
+  "tldr": "Watching, side-eyeing, or curiosity about drama - 'I see what's happening here'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Looking at something.",
+      "meaning": "Looking at something, paying attention.",
       "example": "Let me see 👀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Side eye or watching drama.",
+      "meaning": "Watching drama unfold, asking for tea, or 'I'm watching you.'",
       "example": "The tea is hot 👀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Flirtatious interest - 'I'm watching you, and I like what I see.'",
+      "example": "you're not subtle 👀",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Suspicion that someone is doing something shady - 'I see you, and I'm not buying it.'",
+      "example": "interesting 👀",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Playful 'pay attention' on something obvious or pretend-spying on a friend's update.",
+      "example": "you sure about that 👀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about eyes."
+      "note": "Tag-emoji in quote-tweets of bombshell news - readers paste 👀 at the start of a hot take thread to signal 'this is the tea, keep reading.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Comments on a soft-launch relationship post or a friend's surprise announcement - the eyebrow-raise emoji that says 'I noticed this.'"
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Creators paste 👀 on storytime videos to flag the moment the story turns spicy - viewers leave 👀 in the comments to mark the twist."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Reaction emoji to call out a sus claim in a friend's update - 'I'm watching, explain yourself' reads playful in long-running friend groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 👀 in casual contexts."
+      "note": "Owns 👀 as the central drama-watching emoji - uses it to flag questionable behavior, soft-launch reveals, and friend-group investigations."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 👀 across platforms."
+      "note": "Adopted 👀 from the same gossip-tablet Twitter culture - uses it as the universal 'I see what's happening' reaction."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads 👀 more literally - pastes it on 'look at this sunset' type posts; catches the side-eye read through repetition in family chats."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 👀 literally."
+      "note": "Frequently misreads 👀 as a literal 'eyes' or 'look at this' tag and uses it sincerely on travel photos."
     }
   ],
-  "warnings": [],
-  "relatedCombos": [],
+  "warnings": [
+    {
+      "title": "Spy mode",
+      "description": "Solo 👀 in a work or dating context can read as suspicion - 'interesting 👀' lands as you are noting shady behavior. Pair with a sentence if you do not intend the read.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Dating flirty edge",
+      "description": "👀 on a date's photo or message reads as you are watching them - mostly flattering, sometimes flirty. Be aware of the read if your audience misses the joke.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["eyes-tea", "thinking-eyes"],
   "seoTitle": "👀 Eyes Emoji Meaning - What Does 👀 Really Mean?",
-  "seoDescription": "Learn what the eyes emoji 👀 really means in texts and social media."
+  "seoDescription": "Learn what the eyes emoji 👀 really means - watching, side-eyeing, asking for tea, the universal drama reaction, and where it crosses into flirty or passive-aggressive.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "👀 is the universal 'I see what is happening here' emoji. The visual cue is two wide cartoon eyes - one slightly above the other - that reads instantly as 'watching' or 'paying attention.' On social feeds the emoji now does most of its work as a tag for drama: paired with a screenshot of a suspect tweet, dropped into a quote-tweet of a soft-launch, or sent in a friend group DM to flag that someone is doing something shady.\n\nWhat makes 👀 useful is its tonal range - it can be a sincere 'I am paying attention,' a curious 'what is going on here,' a flirting 'I'm watching you, and I like it,' or a sarcastic 'I'm side-eyeing this.' The base meaning stays close to attention, but the emoji picks up additional flavor from the rest of the message. The 👀 at the end of 'wait, what?' reads as genuine confusion; the 👀 at the end of 'interesting choice' reads as suspicious.",
+    "howPeopleUseIt": "👀 lands as the first reaction to bombshell tweets in quote-retweet threads - readers paste 👀 to flag that the post contains real tea and to invite others to read along. On Instagram creators and viewers paste 👀 in the comments of soft-launch posts (a mystery hand on someone's waist, a coded caption) to flag the reveal is coming. On TikTok 👀 appears in storytime videos at the moment the story turns spicy, signaling 'pay attention to the next part.'\n\nIn group chats 👀 works as the absorbing reaction when a friend shares a suspect screenshot or updates the room on a development. A 'sure, send it 👀' or 'wait what 👀' turns the emoji into the visible side-eye of the group. In dating threads 👀 softens flirty interest without being overt - a 'you are looking directly at me 👀' reads as flirting without escalating. In work threads a single 👀 can read as you are watching, so most professionals reserve it for casual channels.",
+    "whenNotToUse": "Avoid 👀 in any context where the message is sensitive or where you want to extend actual care. A solo 👀 on a friend's vulnerable share reads as you are observing rather than supporting - drop in a heart or a sentence instead. Likewise skip 👀 paired with a complaint in a work channel ('this is a problem 👀') because the side-eye read is more performative than helpful.\n\nAvoid 👀 in formal messages to authority - a manager update, an apology to a client, a vendor follow-up. The cartoon eyes undercut the gravity of the language. In those registers mirror the room's seriousness and use a sentence alone.",
+    "howToReply": "If a friend sends 'okay wait 👀' before a long update, react with another 👀 or a 'tell me more' to absorb the suspense. If 👀 lands as part of a suspect claim, send a question that opens the conversation ('what happened?') rather than piling on side-eyes.\n\nWhen you receive 👀 in a dating context it usually means the sender wants you to notice something - a glance, a detail in a photo. Reply with a sentence that escalates the flirty banter ('noticed, what are you going to do about it'). When 👀 lands in work, mirror the energy sparingly with a 👍 or 'got it' so the read stays useful without becoming performative.",
+    "faqs": [
+      {
+        "question": "What does 👀 mean from a girl?",
+        "answer": "From a girl 👀 can mean playful watching, asking for the tea, or flirty noticing. The emoji is not gendered; the rest of the message carries most of the meaning - 'you look great 👀' reads as flirty; 'update 👀' reads as curious."
+      },
+      {
+        "question": "Is 👀 flirty?",
+        "answer": "It can be. A 👀 on a date's photo reads as noticing them with intent. A 👀 on a friend's story reads as drama-watching. Read the rest of the message before assuming the flirty read."
+      },
+      {
+        "question": "What does 👀 mean in a work text?",
+        "answer": "In Slack or Discord the 👀 can mean 'I see, noted' - sometimes playful, sometimes low-key side-eyeing. In formal channels it can read as too informal - when in doubt choose 👍 or a sentence."
+      },
+      {
+        "question": "What does 👀 mean when someone sends just one?",
+        "answer": "A solo 👀 almost always means 'I'm watching' or 'what's going on here' - it reads as side-eye or curiosity. Pair it with a question or a sentence if you do not want to leave the recipient guessing."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "she just posted a soft-launch 👀",
+      "interpretation": "Friend flagging drama. Mirror with 👀 or 'who is it' to absorb the reveal and stay in the group-watch."
+    },
+    {
+      "setting": "dating",
+      "message": "you keep looking over here 👀",
+      "interpretation": "Flirty observation. Mirror with a 😏 or a sentence that owns the glance ('you're worth looking at')."
+    },
+    {
+      "setting": "social",
+      "message": "ok, full story 👀",
+      "interpretation": "Friend about to spill tea. Mirror with 👀 or 'go' so the suspense pays off without skipping any detail."
+    },
+    {
+      "setting": "work",
+      "message": "PR landed 👀 any thoughts",
+      "interpretation": "Casual teammate flagging a deliverable. Mirror with a sentence ('looks good, left comments in the doc') rather than another 👀 which reads as low-effort."
+    },
+    {
+      "setting": "family",
+      "message": "did you see what auntie posted 👀",
+      "interpretation": "Family tag-teaming about a relative's update. Mirror with 'no what happened' so the thread stays open."
+    }
+  ]
 }

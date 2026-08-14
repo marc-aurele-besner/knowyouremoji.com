@@ -8,51 +8,130 @@
   "subcategory": "emotion",
   "unicodeVersion": "13.0",
   "baseMeaning": "Sleep symbol.",
-  "tldr": "Represents sleep.",
+  "tldr": "Sleep, tired, or 'this is so boring I'm falling asleep.' The disengage emoji.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sleeping.",
-      "example": "Going to bed 💤",
+      "meaning": "Sleep, bedtime, or genuine tiredness.",
+      "example": "heading to bed 💤",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Boring or tired.",
-      "example": "So sleepy 💤",
+      "meaning": "Bored, disengaged, or 'this conversation is putting me to sleep' - the dismiss-through-sleep reaction.",
+      "example": "this meeting is putting me to sleep 💤",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Sign-off that says 'going to bed, do not expect me online tonight.'",
+      "example": "done for the day 💤",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Self-aware laziness - 'I should be working but I am sleeping instead.'",
+      "example": "todo list: 💤",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about zzz."
+      "note": "Tag for 'goodnight' threads and for bored-with-this-take quote-tweets where the emoji does the disengage without writing the complaint."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Pasted on cozy-candle posts, sleep-mask reels, and aesthetic bedtime content; commenters 💤 in agreement."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Sticker-reaction on cozy-room-tour and sleep-routine videos; viewers paste 💤 in the comments where they relate."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Sign-off emoji in work channels - 'I'm off, will pick this up tomorrow' without anyone typing the words."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 💤 in casual contexts."
+      "note": "Owns 💤 as the disengage reaction on boring content and on cozy-sleep aesthetic posts - the emoji does both jobs without effort."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 💤 across platforms."
+      "note": "Sends 💤 on sleep-routine content and on work sign-offs; uses it for both literal and slang disengage."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads 💤 as the literal sleep symbol; catches the boredom slang through longer exposure to friend-group chats."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 💤 literally."
+      "note": "Almost always sends 💤 literally for bedtime; rarely catches the 'this is boring' slang register."
     }
   ],
-  "warnings": [],
-  "relatedCombos": [],
+  "warnings": [
+    {
+      "title": "Disengage edge",
+      "description": "💤 on a friend's share can read as 'this put me to sleep' - dismissive. Use sparingly when the recipient expected engagement and pick a softer emoji for an actively received piece.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["sleep-tired", "weary-tired", "weary-sob"],
   "seoTitle": "💤 Zzz Emoji Meaning - What Does 💤 Really Mean?",
-  "seoDescription": "Learn what the zzz emoji 💤 really means in texts and social media."
+  "seoDescription": "Learn what the zzz emoji 💤 really means - the bedtime read, the disengage reaction on boring content, and how the emoji lands in work sign-offs.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "💤 is the sleep and disengage emoji: a small cloud with three Zs drifting out of it, the universal cartoon shorthand for being asleep. The emoji does most of its work as a literal sign-off on chat threads ('going to bed 💤') and as a disengage reaction on content the sender finds boring. The visual cue is so cartoonish and consistent that the meaning rarely gets confused: any reader immediately understands the sender is either sleeping or signaling that the conversation is putting them to sleep.\n\nThe 💤 emoji sits at a useful level of the emoji register. It is warmer than 🙄 and softer than 😒 - the disengage reads as a tired shrug rather than a sharp eye-roll. On a friend's share the emoji can read as dismissive, but in most channels it lands as the playful 'okay I am off' sign-off that closes a chat gracefully without anyone typing the words.",
+    "howPeopleUseIt": "💤 lands as the closer on a good-night message between friends, the comment reaction on cozy bedtime content, and the work sign-off in channels that have the register. On X tags of 'goodnight' threads often paste 💤 as the visual closer.\n\nIn group chats 💤 functions as the disengage emoji when a conversation has dragged on - 'this argument 💤' signals that the speaker is stepping away from the back-and-forth. The emoji pairs naturally with 😴 for a heavier 'I am actually gone' energy and with 🤪 for an ironic 'no sleep tonight' signal. On Instagram stories the emoji lives on cozy-candle and sleep-mask aesthetics where the visual cue matches the vibe.",
+    "whenNotToUse": "Avoid 💤 in any channel where the recipient expected active engagement. A 💤 on a friend's vulnerable share reads as 'this put me to sleep' - dismissive and a bit cruel. Use a heart, a sentence that acknowledges the moment, or skip the reply altogether.\n\nAvoid 💤 in formal workplace channels where the disengage reads as unprofessional. A 💤 on a project thread reads as 'I have checked out'; the work channel deserves an explicit sign-off rather than the cute emoji. Save 💤 for casual channels where the team has the register.",
+    "howToReply": "If a friend sends 💤 as the closer on a good-night, mirror with another 💤, a 😴, or 'sweet dreams' to close the night. The chain of disengage emojis works as the conversation closing.\n\nIf 💤 lands as the disengage on a friend's share in a group chat, mirror with a sentence that continues the conversation (rather than another 💤 that closes the thread). And if you want to send 💤 yourself as a sign-off, anchor it with a sentence ('see you tomorrow 💤') so the read lands as the intended good-night.",
+    "faqs": [
+      {
+        "question": "What does 💤 mean in texting?",
+        "answer": "💤 means sleep or boredom. The emoji functions as a literal sign-off ('heading to bed 💤') and as the disengage reaction on content the sender finds boring."
+      },
+      {
+        "question": "Is 💤 rude?",
+        "answer": "It can be. A 💤 on a friend's vulnerable share reads as 'this is putting me to sleep' - dismissive. Use sparingly when the recipient expected engagement."
+      },
+      {
+        "question": "What does 💤 mean from a girl?",
+        "answer": "From a girl or anyone else, 💤 carries the same sleep or boredom read. There is no gendered meaning; the emoji works the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 💤 mean at work?",
+        "answer": "In work channels 💤 usually reads as 'signing off, picking this up later.' Save it for casual channels where the register is already established; avoid in formal workplaces where disengage reads unprofessional."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "okay my bedtime is calling 💤",
+      "interpretation": "Friend signing off for the night. Mirror with another 💤 or 'sweet dreams' to close the night warmly."
+    },
+    {
+      "setting": "social",
+      "message": "this thread is putting me to sleep 💤",
+      "interpretation": "Public disengage from a long thread. Mirror with another 💤 or 'fair' so the callout reads as agreement."
+    },
+    {
+      "setting": "dating",
+      "message": "good night babe 💤",
+      "interpretation": "Partner's good-night. Mirror with a heart or 'sweet dreams' so the warmth travels."
+    },
+    {
+      "setting": "work",
+      "message": "wrapping for the night, will pick this up tomorrow 💤",
+      "interpretation": "Work sign-off. Mirror with 'rest well' or 'sounds good' so the channel stays useful."
+    },
+    {
+      "setting": "family",
+      "message": "long day, going to sleep 💤",
+      "interpretation": "Family signaling an early night. Mirror with 'sweet dreams' or a heart so the night's quiet close lands."
+    }
+  ]
 }

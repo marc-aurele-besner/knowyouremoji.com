@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach } from 'bun:test';
-import { parseGuideFrontmatter } from '../../../src/lib/guide-data';
+import { parseGuideFrontmatter, _buildGuideFromFrontmatter, deriveSeoTitle } from '../../../src/lib/guide-data';
 
 describe('guide-data', () => {
   describe('parseGuideFrontmatter', () => {
@@ -113,6 +113,44 @@ body`;
       const { data, body } = parseGuideFrontmatter(source);
       expect(data.title).toBe('crlf');
       expect(body).toBe('body');
+    });
+  });
+
+  describe('deriveSeoTitle', () => {
+    it('falls back to the first H1 heading when seoTitle is missing', () => {
+      const source = `---
+title: Frontmatter title
+description: A description.
+publishedAt: '2026-01-01'
+updatedAt: '2026-01-01'
+author: 'Test Author'
+---
+
+# Heading from body
+
+Body content.`;
+      const { data, body } = parseGuideFrontmatter(source);
+      const guide = _buildGuideFromFrontmatter(data, body, 'whatever' as never);
+      // seoTitle is empty in the parsed result, so deriveSeoTitle falls back
+      // to the firstHeadingFallback helper.
+      const title = deriveSeoTitle(guide);
+      expect(title).toBe('Heading from body');
+    });
+
+    it('returns the frontmatter title when there is no H1 and no seoTitle', () => {
+      const source = `---
+title: Frontmatter title
+description: A description.
+publishedAt: '2026-01-01'
+updatedAt: '2026-01-01'
+author: 'Test Author'
+---
+
+Just body, no headings here.`;
+      const { data, body } = parseGuideFrontmatter(source);
+      const guide = _buildGuideFromFrontmatter(data, body, 'whatever' as never);
+      const title = deriveSeoTitle(guide);
+      expect(title).toBe('Frontmatter title');
     });
   });
 });

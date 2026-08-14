@@ -722,5 +722,64 @@ describe('Stripe webhook handler', () => {
       const response = await POST(request);
       expect(response.status).toBe(200);
     });
+
+    it('should return 400 when verifyWebhookEvent throws and returns null', async () => {
+      // Force constructEvent to throw so the inner catch returns null
+      mockStripeInstance.webhooks.constructEvent.mockImplementation(() => {
+        throw new Error('signature verification failed');
+      });
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify({ type: 'test' }),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(400);
+      const body = await response.json();
+      expect(body.error).toBe('Invalid signature');
+    });
+
+    it('should return 500 when a handler throws', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // Make the handler throw: subscription.deleted with db that throws
+      const updateMock = mock(() => {
+        throw new Error('db exploded');
+      });
+      const mockDb = {
+        update: updateMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'customer.subscription.deleted',
+        data: {
+          object: { id: 'sub_test123' },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(500);
+      const body = await response.json();
+      expect(body.error).toBe('Webhook handler failed');
+    });
   });
 });

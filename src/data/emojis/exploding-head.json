@@ -38,33 +38,100 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used for hot takes or surprising revelations."
+      "note": "Pasted on hot-take tweets and on surprising-revelation quote-tweets where the visible mind-blown framing matches the message."
     },
     {
       "platform": "SLACK",
-      "note": "Popular for reacting to impressive solutions or discoveries."
+      "note": "Channel reaction on impressive solutions or breakthrough discoveries; the emoji does the visible 'we cracked it' celebration."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common on educational or 'life hack' content."
+      "note": "Comment reaction on educational-content and life-hack reveals where the visible mind-blown reaction is the algorithm-friendly response."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction emoji on surprising-revelation threads and friend-group debates where the mind-blown frame punctuates the moment."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for genuine shock and sarcastic 'mind blown' moments."
+      "note": "Splits between genuine shock and sarcastic 'mind blown' on obvious things; uses 🤯 on revelation content and on self-aware surprise."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "The visual version of 'mind = blown'."
+      "note": "Reads 🤯 as the visual 'mind = blown' meme; uses it on surprising news and on clever solutions."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🤯 for genuine surprise; catches the slang register through longer exposure to meme content."
     },
     {
       "generation": "BOOMER",
-      "note": "May interpret as stress or confusion."
+      "note": "Sometimes interprets 🤯 as stress or confusion; the literal exploding-head visual can read as distress before the slang register is understood."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Visual stress",
+      "description": "The literal exploding-head visual can read as distress to older senders. On a friend's vulnerable share the emoji may read as 'this is overwhelming' rather than 'this is amazing.' Match the channel register.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🤯 Exploding Head Emoji Meaning - What Does 🤯 Really Mean?",
-  "seoDescription": "Learn what the exploding head emoji 🤯 really means. Used when your mind is blown by shocking or amazing information. Complete context guide."
+  "seoDescription": "Learn what the exploding head emoji 🤯 really means. Used when your mind is blown by shocking or amazing information. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🤯 is the mind-blown emoji - a yellow face with the top of its head visually exploding, eyes wide, mouth in a small o-shape. The visual cue reads instantly as 'mind blown,' the slang combination of surprise and intellectual overwhelm. On modern chat threads 🤯 does most of its work as the visible reaction on surprising news, clever solutions, revelation content, and the sarcastic 'mind blown' on obvious things.\n\nThe emoji caught on through 2010s meme culture where 'mind blown' was the universal reaction to clever content. The visual cue is so readable that the meaning travels across channels and across the ironical-sincere split: a 🤯 on a friend's clever solution is sincere appreciation, a 🤯 on 'water is wet' is the sarcastic mind-blown on the obvious. The same emoji carries both registers because the context of the message does the disambiguation.",
+    "howPeopleUseIt": "🤯 lands as the comment reaction on a clever solution, the quote-tweet reaction on a revelation, and the visible mind-blown on a friend's surprise. On X the emoji punctuates clever-take tweets where the audience wants the visible mind-blown frame.\n\nIn Slack 🤯 does the channel reaction on a breakthrough discovery or a hack that worked. On TikTok the emoji fills the comments on life-hack and educational content where the visible reaction is the algorithm-friendly response. The emoji pairs naturally with 💡 for the layered 'mind-blown-on-the-idea' stack and with 💀 for the 'I cannot believe this' combo.",
+    "whenNotToUse": "Avoid 🤯 on a friend's vulnerable share where the literal exploding-head visual can read as distress. A 🤯 on a friend's loss disclosure reads as 'this is overwhelming' rather than 'I am with you.' Substitute with a heart or a sentence that holds space.\n\nAvoid 🤯 in formal workplace channels where the visual explosion reads as unprofessional. The exploding-head visual is too playful for formal channels; use a sentence that acknowledges the cleverness without the visual.",
+    "howToReply": "If a friend sends 🤯 on a clever solution, mirror with another 🤯, 💡, or 'genius' so the appreciation travels.\n\nIf 🤯 lands as the sarcastic mind-blown on an obvious thing, mirror with another 🤯 or 'shocker' so the irony reads back. And if you want to send 🤯 yourself, pair it with the subject so the mind-blown frame matches a real reason.",
+    "faqs": [
+      {
+        "question": "What does 🤯 mean in texting?",
+        "answer": "🤯 means mind blown. The emoji does most of its work as the visible reaction on clever solutions, surprising news, and revelation content. The ironic register ('water is wet 🤯') is widely used but never the only register."
+      },
+      {
+        "question": "Is 🤯 a meme?",
+        "answer": "Yes. 🤯 is the visual version of the 'mind = blown' meme. The emoji caught on through 2010s meme culture and is now widely understood across channels."
+      },
+      {
+        "question": "What does 🤯 mean from a girl?",
+        "answer": "From a girl or anyone else, 🤯 carries the same mind-blown read. There is no gendered meaning; the slang register works the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 🤯 mean at work?",
+        "answer": "Sometimes appropriate. In Slack 🤯 reads as the channel reaction on a breakthrough discovery. Use sparingly in formal channels where the visual is too playful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "wait, they're siblings 🤯",
+      "interpretation": "Friend's surprise share. Mirror with another 🤯 or 'no way' so the surprise reads back."
+    },
+    {
+      "setting": "social",
+      "message": "did you know octopuses have three hearts 🤯",
+      "interpretation": "Public fact-share. Mirror with another 🤯 or 'wild' so the surprise reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "you planned all this for me 🤯",
+      "interpretation": "Flirty touched moment. Mirror with 🥹 or ❤️ so the romance travels."
+    },
+    {
+      "setting": "work",
+      "message": "the new hire shipped the migration in a week 🤯",
+      "interpretation": "Slack reaction. Mirror with 🙌 or 'legend' so the credit spreads."
+    },
+    {
+      "setting": "family",
+      "message": "mom learned to use emojis 🤯",
+      "interpretation": "Family joy. Mirror with another 🤯 or 'icons' so the family love reads back."
+    }
+  ]
 }
