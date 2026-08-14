@@ -4,49 +4,134 @@
   "character": "😤",
   "name": "Face with Steam From Nose",
   "shortName": "huffing",
-  "category": "smileys-emotion",
+  "category": "faces",
   "subcategory": "face-negative",
   "unicodeVersion": "6.0",
   "baseMeaning": "A face with steam coming from its nose, expressing frustration or triumph.",
-  "tldr": "Frustrated or determined! Used for anger, determination, or working hard.",
+  "tldr": "Determined. Frustrated, grinding, hyped, or motivational — depends on whether the speaker is mad or fired up.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Feeling frustrated or angry.",
-      "example": "So annoyed right now 😤",
+      "meaning": "Frustrated or angry — steam venting from the nose signals pent-up frustration.",
+      "example": "so done with this 😤",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Determination or working hard.",
-      "example": "Grinding 😤",
+      "meaning": "Determination, hype, or grind culture — the 'let's go' face.",
+      "example": "ship the thing 😤",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Frustrated with work or pushing through.",
-      "example": "Deadline mode 😤",
+      "meaning": "Frustrated with work, pushing through deadline, or motivating a team to ship.",
+      "example": "deadline mode 😤",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Playfully frustrated or hyped up.",
-      "example": "Let's GO 😤",
+      "context": "DATING",
+      "meaning": "Flirty determined — 'I am going to make this happen' on a relationship push.",
+      "example": "asking her out tonight 😤",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for determination and hype." },
-    { "platform": "INSTAGRAM", "note": "Common in workout and motivation content." },
-    { "platform": "TIKTOK", "note": "Popular for grind culture content." }
+    {
+      "platform": "TWITTER",
+      "note": "Hangs off determination quote-tweets and shipping announcements where the poster wants to signal 'we made it' energy."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Pasted on workout videos and grind-culture edits; the emoji does the 'one more rep' framing where the frustration is actually motivation."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Comment reaction on motivational posts and workout reels; pairs with 🔥 for the hype stack."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction emoji for goal-tracking channels; the frustration is celebratory rather than upset."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Determination and hype emoji." },
-    { "generation": "MILLENNIAL", "note": "Frustration and hard work." },
-    { "generation": "BOOMER", "note": "Anger or frustration." }
+    {
+      "generation": "GEN_Z",
+      "note": "Uses 😤 more for the hype and grind-culture read than for literal anger - treats frustration as fuel."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Splits between 'frustrated with work 😤' and 'let's ship this 😤' depending on the channel; reads both register."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads 😤 as literal anger mostly; catches the hype-grind register through workout content and team channels."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Sends 😤 for clear frustration - rarely catches the motivational use."
+    }
   ],
-  "warnings": [],
-  "relatedCombos": [],
+  "warnings": [
+    {
+      "title": "Anger reads",
+      "description": "😤 on a customer-facing post can read as hostility. On a friend's venting thread it reads as solidarity. Match the channel register before sending.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "relatedCombos": ["flex-strong", "flexed-biceps-fire"],
   "seoTitle": "😤 Face with Steam From Nose Emoji Meaning",
-  "seoDescription": "Learn what the huffing face emoji 😤 really means. Used for frustration or determination."
+  "seoDescription": "Learn what the huffing face emoji 😤 really means - frustrated venting, the hype-grind determination read, and where the emoji lands as anger rather than motivation.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "😤 is the frustrated-but-determined emoji - a yellow face with steam puffing out of both nostrils, eyes narrowed, mouth set in a hard line. The visual cue reads as anger at first glance, but the emoji does double duty in modern chat threads as the 'pushing through' or 'grind mode' face. The same face works for 'I am fed up' and for 'let's ship this thing,' and the rest of the message does the tonal handoff.\n\nThe emoji caught on through workout content and grind-culture edits where the frustration is actually the point - 'one more set 😤' is the visual shorthand for turning exhaustion into fuel. In work channels 😤 carries the deadline-mode read: 'this is hard but we are shipping it.' On a friend's venting thread 😤 is solidarity: 'I see how frustrating this is.' The same emoji carries both readings because the situation determines whether the speaker is venting or hyping themselves up.",
+    "howPeopleUseIt": "😤 lands on workout videos as the 'one more rep' tag, on shipping announcements as the 'we made it' closer, and on venting threads as the solidarity reaction. On X the emoji punctuates determination quote-tweets where the poster wants to flag the moment they pushed through.\n\nIn a dating thread 😤 reads as the flirty determined push: 'asking her out tonight 😤' carries the same energy as 'I am going to make this happen.' The emoji also pairs with 💪 for the full motivational stack. In Slack 😤 functions as the team hype during a deadline - 'almost there 😤' is the visual closer in a long sprint thread.",
+    "whenNotToUse": "Avoid 😤 in any channel where the literal anger read is unwelcome. A 😤 on a customer-facing message reads as hostility, especially if the customer is already upset. Pick a softer emoji when the channel audience cannot handle the visible frustration.\n\nAvoid 😤 when the recipient is in a moment of grief or loss. The visible frustration reads as 'I am fed up' rather than 'I am with you,' and the speaker's energy undertows the moment. Use a heart, a 🫶, or a sentence that acknowledges the loss.",
+    "howToReply": "If a friend sends 😤 on a venting thread, mirror with another 😤 or a sentence that validates the frustration ('genuinely'). The 😤 chain works as solidarity; doubling the emoji signals agreement with the upset.\n\nIf 😤 lands as the motivational tag on a workout or a shipping announcement, mirror with 💪, 🙌, or 'ship it' so the celebratory energy travels. And if you want to send 😤 yourself, pair it with a clear subject - 'one more week 😤' works; 'cool 😤' alone reads as hostile.",
+    "faqs": [
+      {
+        "question": "What does 😤 mean in texting?",
+        "answer": "😤 means frustrated or determined. The same emoji carries literal anger ('I am fed up') and motivational hype ('let's ship this'). Context and the surrounding message determine which read lands."
+      },
+      {
+        "question": "Is 😤 flirty?",
+        "answer": "Sometimes. A 😤 on a dating thread can read as flirty determined - 'I am going to make this happen' energy. On a friend's venting thread it reads as solidarity. The channel carries most of the meaning."
+      },
+      {
+        "question": "What does 😤 mean in work chat?",
+        "answer": "In work channels 😤 usually reads as 'we are pushing through this' rather than anger. Save it for deadline-mode threads where the grind framing matches the team's energy."
+      },
+      {
+        "question": "What does 😤 mean from a girl?",
+        "answer": "From a girl or anyone else, 😤 carries the same frustrated or determined read. There is no gendered meaning; the register applies regardless of who sends it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I locked myself out AGAIN 😤",
+      "interpretation": "Friend venting a recurring frustration. Mirror with another 😤 or 'rough, do you need help?' so the solidarity travels."
+    },
+    {
+      "setting": "dating",
+      "message": "cooking dinner for her tonight 😤",
+      "interpretation": "Flirty determined push. Mirror with 🔥 or 'good luck' so the energy matches the moment."
+    },
+    {
+      "setting": "work",
+      "message": "shipping the v2 Friday no matter what 😤",
+      "interpretation": "Team deadline push. Mirror with 💪 or 'I will clear the blockers' so the team energy travels."
+    },
+    {
+      "setting": "social",
+      "message": "PR is going to drop tonight 😤",
+      "interpretation": "Public hype on a creator drop. Mirror with 🙌 or 'lmaoo ready' so the anticipation matches."
+    },
+    {
+      "setting": "family",
+      "message": "taxes filed, finally 😤",
+      "interpretation": "Family sigh of relief. Mirror with another 😤 or 'self-care achieved' so the relief travels."
+    }
+  ]
 }
