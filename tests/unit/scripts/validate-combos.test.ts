@@ -116,7 +116,7 @@ describe('validateComboLongForm', () => {
 
 describe('validateComboFaq', () => {
   it('returns no errors for a valid faq', () => {
-    const errors = validateComboFaq(baseCombo.longForm!.faqs[0], 0);
+    const errors = validateComboFaq(baseCombo.longForm!.faqs![0], 0);
     expect(errors).toEqual([]);
   });
 
@@ -174,7 +174,7 @@ describe('validateComboDeepTier', () => {
   it('flags a deep combo with fewer than the minimum FAQs', () => {
     const errors = validateComboDeepTier({
       ...baseCombo,
-      longForm: { ...baseCombo.longForm!, faqs: baseCombo.longForm!.faqs.slice(0, 1) },
+      longForm: { ...baseCombo.longForm!, faqs: baseCombo.longForm!.faqs!.slice(0, 1) },
     });
     expect(errors.some((e) => e.field === 'longForm.faqs')).toBe(true);
   });
@@ -196,7 +196,7 @@ describe('validateCombo', () => {
   });
 
   it('flags missing required fields', () => {
-    const errors = validateCombo({ slug: 'only' }, knownSlugs);
+    const errors = validateCombo({ slug: 'only' } as unknown as EmojiCombo, knownSlugs);
     expect(errors.length).toBeGreaterThan(0);
   });
 
@@ -233,7 +233,7 @@ describe('validateCombo', () => {
   });
 
   it('grandfathers thin-tier combos that lack required prose fields', () => {
-    const thin: EmojiCombo = { slug: 'legacy', contentTier: 'thin' };
+    const thin = { slug: 'legacy', contentTier: 'thin' } as unknown as EmojiCombo;
     expect(validateCombo(thin, knownSlugs)).toEqual([]);
   });
 });
