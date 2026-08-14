@@ -267,12 +267,37 @@ describe('ComboPage', () => {
     });
 
     test('includes proper robots directives', async () => {
+      // skull-laughing mock has no longForm / conversationExamples, so it
+      // resolves to the thin tier → noindex, follow (see issue #355).
       mockGetComboBySlug.mockImplementation(() => mockCombo);
       const metadata = await generateMetadata({
         params: Promise.resolve({ slug: 'skull-laughing' }),
       });
 
       expect(metadata.robots).toBeDefined();
+      expect(metadata.robots).toEqual({
+        index: false,
+        follow: true,
+        googleBot: {
+          index: false,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      });
+    });
+
+    test('returns index,follow robots for combos with longForm', async () => {
+      const deepCombo: EmojiCombo = {
+        ...mockCombo,
+        longForm: { overview: 'A multi-paragraph overview of this combo in real chats.' },
+      };
+      mockGetComboBySlug.mockImplementation(() => deepCombo);
+      const metadata = await generateMetadata({
+        params: Promise.resolve({ slug: 'skull-laughing' }),
+      });
+
       expect(metadata.robots).toEqual({
         index: true,
         follow: true,

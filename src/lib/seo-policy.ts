@@ -21,6 +21,7 @@
  */
 
 import type { Emoji, ContentTier } from '@/types/emoji';
+import type { EmojiCombo, ComboContentTier } from '@/types/combo';
 
 export interface IndexingDecision {
   /** Whether search engines should index the page */
@@ -110,5 +111,64 @@ export function decisionToRobots(decision: IndexingDecision) {
       'max-image-preview': 'large' as const,
       'max-snippet': -1,
     },
+  };
+}
+
+/**
+ * Effective content tier for a combo, mirroring {@link resolveContentTier}
+ * for emojis. Combos do not have skin-tone variants, so the rules are:
+ *
+ * 1. Explicit `contentTier: 'thin' | 'standard' | 'deep'` wins.
+ * 2. Otherwise: pages with `longForm` (article-style content) or any
+ *    `conversationExamples` are treated as `standard`. Bare-bones combos
+ *    with only `meaning`/`description`/`examples` are treated as `thin`
+ *    until someone fills them in.
+ */
+export function resolveComboContentTier(combo: EmojiCombo): ComboContentTier {
+  if (combo.contentTier) return combo.contentTier;
+
+  const hasLongForm =
+    Boolean(combo.longForm) &&
+    (Boolean(combo.longForm?.overview) ||
+      Boolean(combo.longForm?.howPeopleUseIt) ||
+      Boolean(combo.longForm?.whenNotToUse) ||
+      Boolean(combo.longForm?.howToReply) ||
+      (combo.longForm?.faqs?.length ?? 0) > 0);
+
+  if (hasLongForm) return 'deep';
+
+  if ((combo.conversationExamples?.length ?? 0) > 0) return 'standard';
+
+  // Bare meaning/description/examples only — treat as thin until enriched.
+  return 'thin';
+}
+
+/**
+ * Decide how a combo page should be indexed and canonicalized.
+ *
+ * Mirrors {@link getIndexingDecision} for emojis. Combos do not have
+ * skin-tone variants, so the policy is simpler:
+ *
+ * - `deep`     → index, follow
+ * - `standard` → index, follow
+ * - `thin`     → noindex, follow (page still serves users)
+ */
+export function getComboIndexingDecision(combo: EmojiCombo, pageUrl: string): IndexingDecision {
+  const tier = resolveComboContentTier(combo);
+
+  if (tier === 'thin') {
+    return {
+      index: false,
+      follow: true,
+      canonical: pageUrl,
+      reason: 'thin content → keep reachable for users, de-emphasize in search',
+    };
+  }
+
+  return {
+    index: true,
+    follow: true,
+    canonical: pageUrl,
+    reason: `${tier} content → index,follow`,
   };
 }

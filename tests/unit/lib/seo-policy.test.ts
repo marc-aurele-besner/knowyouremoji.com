@@ -2,10 +2,13 @@ import { describe, expect, test } from 'bun:test';
 import {
   decisionToRobots,
   getIndexingDecision,
+  getComboIndexingDecision,
+  resolveComboContentTier,
   resolveContentTier,
 } from '../../../src/lib/seo-policy';
 import { createEmoji } from '../../utils/factories/emoji.factory';
 import { createContextMeaning } from '../../utils/factories/emoji.factory';
+import { createEmojiCombo } from '../../utils/factories/combo.factory';
 
 describe('seo-policy', () => {
   describe('resolveContentTier', () => {
@@ -158,6 +161,83 @@ describe('seo-policy', () => {
       expect(robots.follow).toBe(true);
       expect(robots.googleBot?.index).toBe(false);
       expect(robots.googleBot?.follow).toBe(true);
+    });
+  });
+
+  describe('resolveComboContentTier', () => {
+    test('returns explicit contentTier when set', () => {
+      expect(resolveComboContentTier(createEmojiCombo({ contentTier: 'deep' }))).toBe('deep');
+      expect(resolveComboContentTier(createEmojiCombo({ contentTier: 'standard' }))).toBe(
+        'standard'
+      );
+      expect(resolveComboContentTier(createEmojiCombo({ contentTier: 'thin' }))).toBe('thin');
+    });
+
+    test('promotes combo with longForm to deep', () => {
+      const combo = createEmojiCombo({
+        longForm: { overview: 'A two-paragraph overview of how this combo is used.' },
+      });
+      expect(resolveComboContentTier(combo)).toBe('deep');
+    });
+
+    test('promotes combo with conversation examples to standard', () => {
+      const combo = createEmojiCombo({
+        conversationExamples: [
+          {
+            setting: 'friends',
+            message: 'lol 💀😂',
+            interpretation: 'reacting to a joke',
+          },
+        ],
+      });
+      expect(resolveComboContentTier(combo)).toBe('standard');
+    });
+
+    test('treats bare-bones combo as thin', () => {
+      expect(resolveComboContentTier(createEmojiCombo())).toBe('thin');
+    });
+  });
+
+  describe('getComboIndexingDecision', () => {
+    test('thin combo → noindex, follow, self canonical', () => {
+      const combo = createEmojiCombo({ contentTier: 'thin' });
+      const url = 'https://knowyouremoji.com/combo/thin-combo';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(url);
+      expect(decision.reason).toContain('thin');
+    });
+
+    test('standard combo → index, follow, self canonical', () => {
+      const combo = createEmojiCombo({ contentTier: 'standard' });
+      const url = 'https://knowyouremoji.com/combo/standard-combo';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(true);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(url);
+    });
+
+    test('deep combo → index, follow, self canonical', () => {
+      const combo = createEmojiCombo({ contentTier: 'deep' });
+      const url = 'https://knowyouremoji.com/combo/deep-combo';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(true);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(url);
+      expect(decision.reason).toContain('deep');
+    });
+
+    test('bare-bones combo (no contentTier) → noindex by default', () => {
+      const combo = createEmojiCombo();
+      const url = 'https://knowyouremoji.com/combo/bare-combo';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
     });
   });
 });
