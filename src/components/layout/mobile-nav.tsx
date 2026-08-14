@@ -3,19 +3,12 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { SearchBar } from '@/components/search';
+import { PRIMARY_NAV_LINKS } from '@/lib/nav-links';
 
 export interface MobileNavProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const navLinks = [
-  { label: 'Emojis', href: '/emoji' },
-  { label: 'Guides', href: '/guides' },
-  { label: 'Interpreter', href: '/interpreter' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'About', href: '/about' },
-];
 
 function MobileNav({ isOpen, onClose }: MobileNavProps) {
   if (!isOpen) {
@@ -73,7 +66,7 @@ function MobileNav({ isOpen, onClose }: MobileNavProps) {
             <SearchBar placeholder="Search emojis..." />
           </div>
           <ul className="space-y-4">
-            {navLinks.map((link) => (
+            {PRIMARY_NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}

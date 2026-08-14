@@ -1,1 +1,14 @@
+# ads.txt for KnowYourEmoji.com
+#
+# Per Google AdSense program policies, this file lists authorized ad sellers.
+# We only populate this once AdSense has approved the site for monetization.
+#
+# See issue #344 (CONTENT-P1-006 — Publisher trust signals + thin-page
+# indexing policy) and the operational checklist in
+# docs/seo-indexing-policy.md.
+#
+# Pre-approval, do NOT render any <ins class="adsbygoogle"> slots or other ad
+# markup on the site — empty ad slots count against the publisher in review.
+# AdSense account meta is set in src/lib/metadata.ts via
+# `google-adsense-account` so the verification crawler can find the site.
 google.com, pub-4731086750813339, DIRECT, f08c47fec0942fa0
