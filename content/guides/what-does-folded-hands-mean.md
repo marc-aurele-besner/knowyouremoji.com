@@ -24,7 +24,7 @@ This is the bug in the emoji system that nobody at the Unicode Consortium is in 
 The folded-hands emoji was added to Unicode in 2010 (codepoint U+1F64F) under the dry description "person with folded hands." The Consortium specifies the codepoint, the name, and a rough intent. It does not specify the artwork. Each platform draws its own version, and that decision quietly created a decade-long divide:
 
 - **Apple, Facebook, WhatsApp, Twitter:** 🙏 is two open palms pressed together at the fingertips, almost touching. Most users read this as prayer, "thank you," namaste, or a respectful gesture.
-- **Google, Samsung, Microsoft, and most Android keyboards:** Until 2019, 🙏 was two hands in front of the face, palms apart — a high-five, or a "gathering" gesture. After Google's redesign it moved closer to Apple, but older devices, older screenshots, and older group chats still show the hands-apart variant.
+- **Google, Samsung, Microsoft, and most Android keyboards:** Until 2019, 🙏 was two hands in front of the face, palms apart. A high-five, or a "gathering" gesture. After Google's redesign it moved closer to Apple, but older devices, older screenshots, and older group chats still show the hands-apart variant.
 
 The two readings aren't equally distributed across age groups. A 35-year-old Samsung user replying "good luck with the move 🙏" almost certainly means "high-five, you got this." A 25-year-old iPhone user reading that same message sees two palms pressed together and reads it as "I'm praying for you during this hard time."
 
@@ -40,14 +40,14 @@ The surrounding sentence usually settles the meaning. A few reliable patterns:
 - **Stacking 🙏🙏🙏.** Three folded hands in a row almost always mean prayer or deep gratitude on every platform. The repetition softens the meaning into "please please please" or "I am so grateful."
 - **Paired with a sad emoji 🙏🥺 or 🙏💔.** Almost always leans prayer. Paired with 🙌 or 🎉, it leans celebration.
 
-If you genuinely can't tell, look at the platform the sender is using. iMessage users tend to mean "thank you." Android users — especially in older threads — may mean "high five."
+If you genuinely can't tell, look at the platform the sender is using. iMessage users tend to mean "thank you." Android users. especially in older threads. may mean "high five."
 
 ## Where 🙏 reliably fails
 
 🙏 misfires more than almost any other emoji, mostly because of the platform split. Skip it when:
 
 1. **The recipient is grieving or in crisis.** A prayer 🙏 in a condolence thread feels right; a high-five 🙏 from an Android user in the same thread lands as wildly off-tone. Pick a different gesture — 💐 or 🕯️ makes the sentiment unmistakable.
-2. **You're congratulating someone.** "Congrats on the offer 🙏" reads ambiguous across platforms. Use 🎉 or 🙌 — those have stable meanings everywhere.
+2. **You're congratulating someone.** "Congrats on the offer 🙏" reads ambiguous across platforms. Use 🎉 or 🙌; those have stable meanings everywhere.
 3. **You actually mean "thank you, sincerely."** 🙏 is fine in casual DMs but feels stiff in professional or apologetic contexts where "thank you" alone lands cleaner.
 4. **You're in a cross-platform group with mixed ages.** If even one person in the chat is on an older Android, treat 🙏 as ambiguous. The safest high-five is 🙌; the safest "thank you" is ❤️, 👍, or just the words themselves.
 
@@ -55,7 +55,7 @@ If you genuinely can't tell, look at the platform the sender is using. iMessage 
 
 A few reliable options:
 
-- **Match with 🙏.** Universal — both readers will pull a friendly sentiment out of it.
+- **Match with 🙏.** Universal. both readers will pull a friendly sentiment out of it.
 - **Escalate to 🙌.** Clear "high-five / we did it" energy on every platform.
 - **Soften with 😊 or ❤️.** If you read the 🙏 as appreciation or sympathy, a warm emoji closes the loop.
 - **Send the [🙏💖 folded hands pleading combo](/combo/folded-hands-pleading)** when the sender is begging you for something in the cutest way possible. The combo stacks the prayer read with the pleading read into a single unit that lands the same on every phone.
