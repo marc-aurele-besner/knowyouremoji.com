@@ -26,6 +26,17 @@ import type {
   WarningSeverity,
   ConversationSetting,
 } from '../src/types/emoji';
+import type {
+  EmojiCombo,
+  ComboLongForm,
+  ComboFaq,
+  ComboConversationExample,
+  ComboConversationSetting,
+  ComboContentTier,
+  EmojiComboValidationResult,
+  EmojiComboCategoryName,
+  EmojiComboSlug,
+} from '../src/types/combo';
 
 // Valid enum values for validation
 const VALID_CONTEXT_TYPES: ContextType[] = [
@@ -776,6 +787,464 @@ export function loadComboSlugs(dir: string): Set<string> {
   return slugs;
 }
 
+// ============================================
+// COMBO VALIDATION (CONTENT-P1-005)
+// ============================================
+
+const VALID_COMBO_CATEGORIES: EmojiComboCategoryName[] = [
+  'humor',
+  'flirting',
+  'sarcasm',
+  'celebration',
+  'emotion',
+  'reaction',
+  'relationship',
+  'work',
+  'food',
+  'travel',
+  'other',
+];
+
+const VALID_COMBO_CONTENT_TIERS: ComboContentTier[] = ['thin', 'standard', 'deep'];
+
+const VALID_COMBO_CONVERSATION_SETTINGS: ComboConversationSetting[] = [
+  'dating',
+  'friends',
+  'work',
+  'family',
+  'social',
+  'other',
+];
+
+// Minimum word count for `longForm.overview` on deep-tier combos (mirrors emoji rule)
+export const COMBO_DEEP_OVERVIEW_MIN_WORDS = 120;
+
+// Minimum number of FAQs for deep-tier combos (when longForm is present)
+export const COMBO_DEEP_FAQS_MIN = 3;
+
+// Minimum number of richer conversation examples for deep-tier combos
+export const COMBO_DEEP_CONVERSATION_EXAMPLES_MIN = 3;
+
+// Minimum length of combined `description + meaning` for "rich" combos
+export const COMBO_RICH_PROSE_MIN_WORDS = 40;
+
+/**
+ * Validate the optional longForm block on a combo.
+ */
+export function validateComboLongForm(longForm: ComboLongForm): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const stringFields: (keyof ComboLongForm)[] = [
+    'overview',
+    'howPeopleUseIt',
+    'whenNotToUse',
+    'howToReply',
+  ];
+
+  for (const field of stringFields) {
+    const value = longForm[field];
+    if (value !== undefined && (typeof value !== 'string' || value.trim() === '')) {
+      errors.push({
+        file: '',
+        field: `longForm.${field}`,
+        message: `longForm.${field} must be a non-empty string when provided`,
+      });
+    }
+  }
+
+  if (longForm.faqs !== undefined) {
+    if (!Array.isArray(longForm.faqs)) {
+      errors.push({
+        file: '',
+        field: 'longForm.faqs',
+        message: 'longForm.faqs must be an array',
+      });
+    } else {
+      longForm.faqs.forEach((faq, index) => {
+        const faqErrors = validateComboFaq(faq, index);
+        errors.push(...faqErrors);
+      });
+    }
+  }
+
+  return errors;
+}
+
+/**
+ * Validate a single combo FAQ entry.
+ */
+export function validateComboFaq(faq: ComboFaq, index: number): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const prefix = `longForm.faqs[${index}]`;
+
+  if (!faq.question || typeof faq.question !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid question field',
+    });
+  }
+
+  if (!faq.answer || typeof faq.answer !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid answer field',
+    });
+  }
+
+  return errors;
+}
+
+/**
+ * Validate a single combo conversation example.
+ */
+export function validateComboConversationExample(
+  example: ComboConversationExample,
+  index: number
+): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const prefix = `conversationExamples[${index}]`;
+
+  if (!example.setting || !VALID_COMBO_CONVERSATION_SETTINGS.includes(example.setting)) {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: `Invalid setting: ${example.setting}. Must be one of: ${VALID_COMBO_CONVERSATION_SETTINGS.join(', ')}`,
+    });
+  }
+
+  if (!example.message || typeof example.message !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid message field',
+    });
+  }
+
+  if (!example.interpretation || typeof example.interpretation !== 'string') {
+    errors.push({
+      file: '',
+      field: prefix,
+      message: 'Missing or invalid interpretation field',
+    });
+  }
+
+  return errors;
+}
+
+/**
+ * Validate the optional contentTier on a combo.
+ */
+export function validateComboContentTier(tier: unknown): ValidationError[] {
+  const errors: ValidationError[] = [];
+  if (tier !== undefined && !VALID_COMBO_CONTENT_TIERS.includes(tier as ComboContentTier)) {
+    errors.push({
+      file: '',
+      field: 'contentTier',
+      message: `Invalid contentTier: ${String(tier)}. Must be one of: ${VALID_COMBO_CONTENT_TIERS.join(', ')}`,
+    });
+  }
+  return errors;
+}
+
+/**
+ * Enforce thresholds required when a combo opts into contentTier: 'deep'.
+ */
+export function validateComboDeepTier(combo: EmojiCombo): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const file = combo.slug || 'unknown';
+
+  const longForm = combo.longForm ?? {};
+  const overview = longForm.overview ?? '';
+  const overviewWords = countWords(overview);
+
+  if (overviewWords < COMBO_DEEP_OVERVIEW_MIN_WORDS) {
+    errors.push({
+      file,
+      field: 'longForm.overview',
+      message: `deep-tier requires longForm.overview of at least ${COMBO_DEEP_OVERVIEW_MIN_WORDS} words (got ${overviewWords})`,
+    });
+  }
+
+  const faqs = Array.isArray(longForm.faqs) ? longForm.faqs : [];
+  if (faqs.length < COMBO_DEEP_FAQS_MIN) {
+    errors.push({
+      file,
+      field: 'longForm.faqs',
+      message: `deep-tier requires at least ${COMBO_DEEP_FAQS_MIN} longForm.faqs entries (got ${faqs.length})`,
+    });
+  }
+
+  const examples = Array.isArray(combo.conversationExamples) ? combo.conversationExamples : [];
+  if (examples.length < COMBO_DEEP_CONVERSATION_EXAMPLES_MIN) {
+    errors.push({
+      file,
+      field: 'conversationExamples',
+      message: `deep-tier requires at least ${COMBO_DEEP_CONVERSATION_EXAMPLES_MIN} conversationExamples (got ${examples.length})`,
+    });
+  }
+
+  return errors;
+}
+
+/**
+ * Required fields on every combo JSON file.
+ */
+const REQUIRED_COMBO_FIELDS: (keyof EmojiCombo)[] = [
+  'slug',
+  'combo',
+  'emojis',
+  'name',
+  'description',
+  'meaning',
+  'examples',
+  'category',
+  'seoTitle',
+  'seoDescription',
+];
+
+/**
+ * Validate a single combo JSON object.
+ */
+export function validateCombo(
+  combo: EmojiCombo,
+  knownSlugs: Set<EmojiComboSlug>
+): ValidationError[] {
+  const errors: ValidationError[] = [];
+
+  for (const field of REQUIRED_COMBO_FIELDS) {
+    if (combo[field] === undefined || combo[field] === null) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field,
+        message: `Missing required field: ${field}`,
+      });
+    }
+  }
+
+  // Thin-tier combos (legacy stubs) only require a slug — grandfathered to keep
+  // existing entries that pre-date the rich-prose / deep-tier program.
+  if (combo.contentTier === 'thin') {
+    return errors.filter(
+      (e) =>
+        e.field !== 'combo' &&
+        e.field !== 'emojis' &&
+        e.field !== 'name' &&
+        e.field !== 'description' &&
+        e.field !== 'meaning' &&
+        e.field !== 'examples' &&
+        e.field !== 'category' &&
+        e.field !== 'seoTitle' &&
+        e.field !== 'seoDescription'
+    );
+  }
+
+  if (typeof combo.slug !== 'string' || combo.slug.trim() === '') {
+    errors.push({
+      file: String(combo.slug ?? 'unknown'),
+      field: 'slug',
+      message: 'slug must be a non-empty string',
+    });
+  }
+
+  if (typeof combo.combo !== 'string' || combo.combo.trim() === '') {
+    errors.push({
+      file: combo.slug || 'unknown',
+      field: 'combo',
+      message: 'combo must be a non-empty string',
+    });
+  }
+
+  if (!Array.isArray(combo.emojis) || combo.emojis.length < 1) {
+    errors.push({
+      file: combo.slug || 'unknown',
+      field: 'emojis',
+      message: 'emojis must be a non-empty array of emoji slugs',
+    });
+  } else if (combo.contentTier === 'deep' && combo.emojis.length < 2) {
+    errors.push({
+      file: combo.slug || 'unknown',
+      field: 'emojis',
+      message: 'deep-tier combo must reference at least 2 emojis',
+    });
+  }
+
+  // Examples are required on deep combos, optional on thin combos (legacy stubs).
+  if (combo.contentTier === 'deep') {
+    if (!Array.isArray(combo.examples) || combo.examples.length < 3) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field: 'examples',
+        message: 'deep-tier combo requires at least 3 examples',
+      });
+    }
+  } else if (combo.examples !== undefined && !Array.isArray(combo.examples)) {
+    errors.push({
+      file: combo.slug || 'unknown',
+      field: 'examples',
+      message: 'examples must be an array when provided',
+    });
+  }
+
+  if (!combo.category || !VALID_COMBO_CATEGORIES.includes(combo.category)) {
+    errors.push({
+      file: combo.slug || 'unknown',
+      field: 'category',
+      message: `Invalid category: ${combo.category}. Must be one of: ${VALID_COMBO_CATEGORIES.join(', ')}`,
+    });
+  }
+
+  // Rich-prose sanity check on description + meaning.
+  // Thin-tier combos are grandfathered with minimal prose; only standard/deep
+  // (or unspecified) combos need to meet the rich-prose floor.
+  const tier: ComboContentTier | undefined = combo.contentTier as ComboContentTier | undefined;
+  if (tier !== 'thin') {
+    const prose = `${combo.description ?? ''} ${combo.meaning ?? ''}`.trim();
+    const proseWords = countWords(prose);
+    if (proseWords < COMBO_RICH_PROSE_MIN_WORDS) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field: 'description+meaning',
+        message: `description + meaning must total at least ${COMBO_RICH_PROSE_MIN_WORDS} words of meaningful prose (got ${proseWords})`,
+      });
+    }
+  }
+
+  // relatedCombos references must point at known slugs when present.
+  if (combo.relatedCombos !== undefined) {
+    if (!Array.isArray(combo.relatedCombos)) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field: 'relatedCombos',
+        message: 'relatedCombos must be an array when provided',
+      });
+    } else {
+      combo.relatedCombos.forEach((slug, index) => {
+        if (typeof slug !== 'string' || !knownSlugs.has(slug)) {
+          errors.push({
+            file: combo.slug || 'unknown',
+            field: `relatedCombos[${index}]`,
+            message: `Referenced combo "${slug}" does not exist`,
+          });
+        }
+      });
+    }
+  }
+
+  // Optional longForm
+  if (combo.longForm !== undefined) {
+    if (typeof combo.longForm !== 'object' || combo.longForm === null) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field: 'longForm',
+        message: 'longForm must be an object',
+      });
+    } else {
+      const longFormErrors = validateComboLongForm(combo.longForm);
+      longFormErrors.forEach((e) => {
+        e.file = combo.slug || 'unknown';
+        errors.push(e);
+      });
+    }
+  }
+
+  // Optional conversationExamples
+  if (combo.conversationExamples !== undefined) {
+    if (!Array.isArray(combo.conversationExamples)) {
+      errors.push({
+        file: combo.slug || 'unknown',
+        field: 'conversationExamples',
+        message: 'conversationExamples must be an array',
+      });
+    } else {
+      combo.conversationExamples.forEach((example, index) => {
+        const exampleErrors = validateComboConversationExample(example, index);
+        exampleErrors.forEach((e) => {
+          e.file = combo.slug || 'unknown';
+          errors.push(e);
+        });
+      });
+    }
+  }
+
+  // contentTier + contentUpdatedAt
+  const tierErrors = validateComboContentTier(combo.contentTier);
+  tierErrors.forEach((e) => {
+    e.file = combo.slug || 'unknown';
+    errors.push(e);
+  });
+
+  const updatedAtErrors = validateContentUpdatedAt(combo.contentUpdatedAt);
+  updatedAtErrors.forEach((e) => {
+    e.file = combo.slug || 'unknown';
+    errors.push(e);
+  });
+
+  if (combo.contentTier === 'deep') {
+    errors.push(...validateComboDeepTier(combo));
+  }
+
+  return errors;
+}
+
+/**
+ * Validate every combo JSON file.
+ */
+export function validateAllCombos(combos: EmojiCombo[]): EmojiComboValidationResult {
+  const allErrors: ValidationError[] = [];
+
+  // Slug uniqueness
+  const slugCounts = new Map<string, number>();
+  for (const combo of combos) {
+    if (typeof combo.slug !== 'string') continue;
+    slugCounts.set(combo.slug, (slugCounts.get(combo.slug) ?? 0) + 1);
+  }
+  for (const [slug, count] of slugCounts) {
+    if (count > 1) {
+      allErrors.push({
+        file: slug,
+        field: 'slug',
+        message: `Duplicate combo slug found: "${slug}" appears ${count} times`,
+      });
+    }
+  }
+
+  // Cross-reference set for relatedCombos validation
+  const knownSlugs = new Set<string>(slugCounts.keys());
+
+  for (const combo of combos) {
+    allErrors.push(...validateCombo(combo, knownSlugs));
+  }
+
+  return {
+    valid: allErrors.length === 0,
+    errors: allErrors.map((e) => `[${e.file}] ${e.field}: ${e.message}`),
+    warnings: [],
+  };
+}
+
+/**
+ * Load all combo JSON files from the combos directory as full EmojiCombo objects.
+ */
+export function loadCombosFromDirectory(dir: string): EmojiCombo[] {
+  if (!fs.existsSync(dir)) return [];
+
+  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
+  const combos: EmojiCombo[] = [];
+
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8');
+      combos.push(JSON.parse(content) as EmojiCombo);
+    } catch (error) {
+      console.error(`Error loading combo ${file}:`, error);
+    }
+  }
+
+  return combos;
+}
+
 /**
  * Main function - runs validation when script is executed directly
  */
@@ -783,32 +1252,43 @@ export async function main(): Promise<void> {
   const emojisDir = path.join(process.cwd(), 'src', 'data', 'emojis');
   const combosDir = path.join(process.cwd(), 'src', 'data', 'combos');
 
-  console.log('🔍 Validating emoji data files...\n');
+  console.log('🔍 Validating emoji and combo data files...\n');
 
   // Load data
   const emojis = loadEmojisFromDirectory(emojisDir);
-  const comboSlugs = loadComboSlugs(combosDir);
+  const combos = loadCombosFromDirectory(combosDir);
+  const comboSlugs = new Set(combos.map((c) => c.slug).filter(Boolean));
 
   console.log(`Found ${emojis.length} emoji files`);
-  console.log(`Found ${comboSlugs.size} combo files\n`);
+  console.log(`Found ${combos.length} combo files\n`);
 
   if (emojis.length === 0) {
     console.log('⚠️  No emoji files found in', emojisDir);
     process.exit(1);
   }
 
-  // Validate
-  const result = validateAllEmojis(emojis, comboSlugs);
+  // Validate emoji files (and combo references in them)
+  const emojiResult = validateAllEmojis(emojis, comboSlugs);
+
+  // Validate combo files themselves
+  const comboResult = validateAllCombos(combos);
+
+  const totalErrors = [
+    ...emojiResult.errors.map((msg) => `[emoji] ${msg}`),
+    ...comboResult.errors.map((msg) => `[combo] ${msg}`),
+  ];
 
   // Output results
-  if (result.valid) {
-    console.log('✅ All emoji files are valid!\n');
+  if (totalErrors.length === 0) {
+    console.log('✅ All emoji and combo files are valid!\n');
     console.log(`Validated ${emojis.length} emoji files`);
-    console.log(`Checked ${comboSlugs.size} combo references`);
+    console.log(`Validated ${combos.length} combo files`);
+    const deepCombos = combos.filter((c) => c.contentTier === 'deep').length;
+    console.log(`  • ${deepCombos} combo(s) opted into contentTier: 'deep'`);
   } else {
     console.log('❌ Validation failed!\n');
     console.log('Errors:');
-    for (const error of result.errors) {
+    for (const error of totalErrors) {
       console.log(`  • ${error}`);
     }
     process.exit(1);

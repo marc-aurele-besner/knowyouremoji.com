@@ -596,7 +596,7 @@ describe('validate-emojis', () => {
       fs.writeFileSync(path.join(emojisDir, 'skull.json'), JSON.stringify(validEmoji));
       fs.writeFileSync(
         path.join(combosDir, 'skull-laughing.json'),
-        JSON.stringify({ slug: 'skull-laughing' })
+        JSON.stringify({ slug: 'skull-laughing', contentTier: 'thin' })
       );
 
       await main();
