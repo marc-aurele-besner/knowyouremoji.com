@@ -4,47 +4,134 @@
   "character": "🫡",
   "name": "Saluting Face",
   "shortName": "saluting face emoji",
-  "category": "Smileys & Emotion",
-  "subcategory": "Face Hand",
+  "category": "faces",
+  "subcategory": "face-hand",
   "unicodeVersion": "16.0",
-  "baseMeaning": "Salute face",
-  "tldr": "Yes sir face",
+  "baseMeaning": "A yellow cartoon face with hand in a flat salute.",
+  "tldr": "The 'yes sir' or 'on it' reaction. Respectful acknowledgment, dutiful compliance, or ironic over-the-top sincerity.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Saluting",
-      "example": "🫡 reporting!",
+      "meaning": "Sincere respect, recognition, or 'yes sir' acknowledgment.",
+      "example": "🫡 reporting for duty",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Will do or respect",
-      "example": "🫡 on it",
+      "meaning": "Dutiful compliance or humorously over-the-top acknowledgment - '🫡 on it.'",
+      "example": "Will do 🫡",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Casual 'I'm on it' reaction in Slack threads where the team has the right register.",
+      "example": "🫡 noted, fixing now",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Self-aware overrespectful reaction to a benign request — 'yes boss, very serious request.'",
+      "example": "Get me a coffee 🫡",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "platform": "DISCORD",
+      "note": "Server reaction emoji of choice for dutiful compliance — moderators paste 🫡 when a server note goes out and they want to confirm receipt."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "platform": "TWITTER",
+      "note": "Reactions on boss-meme tweets; users paste 🫡 when an executive or creator says something everyone already agrees with."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Pasted on respectful-creator content and on meme replies where the salute frames the take as dutiful or humorous."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Casual 'got it, fixing now' reaction in work channels where the team has the right register."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Owns 🫡 as the ironic 'yes sir' emoji; uses it on mundane requests for comedic deference and on boss-meme energy."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Adopted 🫡 for the dutiful-compliance read; uses it on Slack as a low-key acknowledgment with a wink."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads 🫡 as a literal military or respectful salute; catches the slang 'on it' register over time."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Often sends 🫡 sincerely as 'yes sir' or 'understood' on a chain of command message; rarely catches the ironic register."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Mismatched register",
+      "description": "🫡 on a casual message between peers reads as performative respect; on a formal message it reads as low-effort acknowledgment. Match the tone of the channel.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🫡 Saluting Face Emoji Meaning - What Does 🫡 Really Mean?",
-  "seoDescription": "Learn what the saluting face emoji 🫡 really means in texts and social media."
+  "seoDescription": "Learn what the saluting face emoji 🫡 really means - the dutiful 'yes sir' reaction, the ironic over-deference, and where the emoji reads as performative.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🫡 is the saluting emoji — a yellow cartoon face with a flat hand raised to the forehead. The image reads as sincere respect or dutiful compliance, the same gesture a soldier makes when receiving an order. On modern chat threads the emoji does most of its work as the lowest-effort acknowledgment with a salute: '🫡 noted,' '🫡 on it,' 'will do 🫡.'\n\nThe saluting face is one of the newer emojis to gain real traction — it has the same dutiful-compliance energy as 🙏 without the prayer subtext, which is why it has rapidly migrated into casual work channels. The emoji also pulled a heavy ironic register during 2023-2024, when Gen Z adopted it as the comedic over-deference reaction on boss-meme content and on routine Slack requests.",
+    "howPeopleUseIt": "🫡 lands as the closing reaction on a friend's request ('will do 🫡'), the comment on a server announcement ('🫡' across the staff channel), and the Slack acknowledgment on a routine assignment. On X it tags boss-meme tweets and dutiful-compliance moments where the salute framing reads as humor.\n\nIn dating threads 🫡 functions as a deferential closer — '🫡 see you at seven' carries the same sincerity as 'yes sir' without the heavy formality. In Discord the emoji is a moderator-side reaction for thread confirmations: every note that goes out can get a wave of 🫡 across the team. In TikTok comments 🫡 sits on the dutiful side of boss content where creators flag their compliance to a trend.",
+    "whenNotToUse": "Avoid 🫡 in any channel where the salute registers as performative. A 🫡 between close friends on a casual message can read as over-the-top deference; the irony there might land but the sincere send is unlikely to register. Likewise skip 🫡 in formal channels where the visual salute reads as cute rather than professional.\n\nAvoid 🫡 on content where the recipient expects real substance. A '🫡' reply to a friend's vent reads as dismissive; the dutiful-compliance framing deflects the support the friend was hoping for. Send a sentence that engages the moment instead.",
+    "howToReply": "If a friend texts a request and adds 🫡 as a closer, mirror with another 🫡 or a sentence that confirms the commitment. The 🫡 chain works on both sides when the request is light.\n\nIf 🫡 lands in a work channel as a casual acknowledgment, mirror with a sentence that names what you are doing ('on it, will report by 3'). And if you want to send 🫡 yourself, pair it with a clear ask so the dutiful framing supports a real statement rather than replacing one.",
+    "faqs": [
+      {
+        "question": "What does 🫡 mean in texting?",
+        "answer": "🫡 means 'yes sir,' 'on it,' or sincere dutiful acknowledgment. It can also function as the ironic over-deference on mundane requests."
+      },
+      {
+        "question": "What does 🫡 mean from a girl?",
+        "answer": "From a girl or anyone, 🫡 carries the same dutiful compliance read. There is no gendered meaning; the context determines whether the salute is sincere or ironic."
+      },
+      {
+        "question": "Is 🫡 flirty?",
+        "answer": "Rarely. 🫡 on its own reads as respect or compliance. Pair with a heart, 😏, or a clear subject to send the flirty read."
+      },
+      {
+        "question": "What does 🫡 mean in work chat?",
+        "answer": "In Slack or Teams 🫡 usually reads as 'got it, fixing now' or 'noted.' It is one of the safer emojis for casual work channels because the dutiful framing keeps the register friendly."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "remember the milk 🫡",
+      "interpretation": "Friend requesting a chore. Mirror with another 🫡 or 'on it' so the salutes match."
+    },
+    {
+      "setting": "work",
+      "message": "PR comments addressed 🫡",
+      "interpretation": "Teammate confirming review work. Mirror with 'merging' or 'ship it' so the read translates to action."
+    },
+    {
+      "setting": "social",
+      "message": "policy update from mods 🫡",
+      "interpretation": "Server announcement closure. Mirror with another 🫡 so the staff channel confirms receipt."
+    },
+    {
+      "setting": "dating",
+      "message": "dinner at 8 🫡",
+      "interpretation": "Partner confirming the date. Mirror with 'on my way' or a heart so the warmth travels."
+    },
+    {
+      "setting": "family",
+      "message": "taking grandma to her appointment 🫡",
+      "interpretation": "Family member announcing helpful action. Mirror with a heart or 'thank you' so the gesture receives the gratitude."
+    }
+  ]
 }
