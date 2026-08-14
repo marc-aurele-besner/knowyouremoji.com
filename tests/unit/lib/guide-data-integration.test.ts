@@ -38,7 +38,7 @@ describe('guide-data (live loader)', () => {
     it('parses every required field from the seed guide', () => {
       const guide = getGuideBySlug('what-does-skull-mean-in-texting');
       expect(guide).toBeDefined();
-      expect(guide?.title).toBe('What does 💀 mean in texting in 2026?');
+      expect(guide?.title).toBe('💀 stopped meaning death somewhere around 2018');
       expect(guide?.tags).toContain('gen-z');
       expect(guide?.readingTimeMinutes).toBe(7);
       expect(guide?.heroEmoji).toBe('💀');
@@ -108,7 +108,9 @@ describe('guide-data (live loader)', () => {
   describe('deriveSeoTitle', () => {
     it('returns seoTitle when set', () => {
       const guide = getGuideBySlug('what-does-skull-mean-in-texting');
-      expect(deriveSeoTitle(guide!)).toBe('What does 💀 mean in texting? The skull emoji, decoded');
+      expect(deriveSeoTitle(guide!)).toBe(
+        "When did 💀 stop meaning death? The skull emoji's slow takeover of 😂"
+      );
     });
 
     it('falls back to the frontmatter title when seoTitle is missing', () => {

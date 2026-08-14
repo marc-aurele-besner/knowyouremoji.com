@@ -608,232 +608,81 @@
   }
 
   /* ============================================================
-   * /guides editorial styles — "After-Hours Wire Service"
-   * Pure black, off-white type, hot signal-red & amber phosphor
-   * accents. Asymmetric masthead, oversized monospace dispatch
-   * numbers, hero emoji as a classified document stamp. The
-   * section is intentionally jarring against the rest of the
-   * site — the moment the reader enters /guides, the world goes
-   * dark. Scoped under `.guides-page` so nothing leaks.
+   * /guides editorial styles — "Field Notes from the Emoji Frontier"
+   * Sits on the same white / dark-blue surface as the rest of the
+   * site. Only the article body carries editorial typography
+   * (italic serif headings, amber drop cap, § glyphs, amber
+   * blockquote rule) — the page chrome uses the same Tailwind
+   * patterns as the rest of the marketing site.
    * ============================================================ */
 
   .guides-page {
-    /* Full-bleed black, no tint, no gradient. */
-    background-color: #000000;
-    color: #f5f5f4;
-
-    /* Subtle paper grain — keeps the black from feeling like a screen. */
-    background-image:
-      radial-gradient(circle at 12% 18%, rgba(239, 68, 68, 0.06) 0, transparent 38%),
-      radial-gradient(circle at 88% 80%, rgba(245, 158, 11, 0.05) 0, transparent 42%);
-    background-repeat: no-repeat;
+    background-color: var(--background);
+    color: var(--foreground);
   }
 
-  /* Dark mode reads the same — it's already night. */
-  .dark .guides-page {
-    background-color: #000000;
-    color: #f5f5f4;
-  }
-
-  /* The masthead wordmark — italic serif at maximum impact. */
-  .guides-wordmark {
-    font-family: var(--font-serif);
-    font-style: italic;
-    letter-spacing: -0.045em;
-    line-height: 0.88;
-    font-weight: 400;
-    color: #f5f5f4;
-  }
-
-  /* A telegraph-style eyebrow in monospace — like a wire-service
-     slug line. Sits inline with vertical filaments. */
+  /* Mono-uppercase eyebrow — used on the section headers. */
   .guides-eyebrow {
     font-family: var(--font-mono);
     text-transform: uppercase;
-    letter-spacing: 0.34em;
-    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    font-size: 0.75rem;
     font-weight: 500;
-    color: #f59e0b;
+    color: var(--primary-600);
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
   }
 
-  .dark .guides-eyebrow {
-    color: #fbbf24;
-  }
-
-  /* Masthead filament — a short amber line that sits beside the eyebrow. */
   .guides-eyebrow::before {
     content: '';
     display: inline-block;
-    width: 1.75rem;
+    width: 1.25rem;
     height: 1px;
-    background: #f59e0b;
+    background: var(--primary-600);
   }
 
-  /* The full-bleed black "filing cabinet" frame — used to wrap the
-     archive list, the article hero, and the index masthead. */
-  .guides-frame {
-    border-top: 1px solid #1f1f1f;
-    border-bottom: 1px solid #1f1f1f;
-  }
-
-  /* Dispatch rows in the index — vertical ruled "filing card" lines. */
-  .guides-dispatch {
-    display: grid;
-    grid-template-columns: 1fr;
-    border-top: 1px solid #1f1f1f;
-    transition:
-      background-color 200ms ease,
-      border-color 200ms ease;
-    position: relative;
-  }
-
-  .dark .guides-dispatch {
-    border-top-color: #1f1f1f;
-  }
-
-  .guides-dispatch:last-child {
-    border-bottom: 1px solid #1f1f1f;
-  }
-
-  .dark .guides-dispatch:last-child {
-    border-bottom-color: #1f1f1f;
-  }
-
-  .guides-dispatch:hover {
-    background-color: rgba(239, 68, 68, 0.06);
-    border-top-color: rgba(239, 68, 68, 0.4);
-  }
-
-  .dark .guides-dispatch:hover {
-    background-color: rgba(239, 68, 68, 0.08);
-    border-top-color: rgba(239, 68, 68, 0.45);
-  }
-
-  /* The dispatch number — oversized monospace, signal red. */
-  .guides-dispatch-number {
+  /* Mono metadata — used for date, author, reading time. */
+  .guides-meta {
     font-family: var(--font-mono);
-    color: #ef4444;
-    font-style: normal;
-    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.6875rem;
     font-weight: 500;
-    font-variant-numeric: tabular-nums;
-    line-height: 1;
+    color: var(--muted-foreground);
   }
 
-  .dark .guides-dispatch-number {
-    color: #f87171;
-  }
-
-  /* Hero emoji stamped as a classified document — black plate,
-     dashed signal-red border, slight rotation. Sits inverted from
-     the rest of the page (the only "thing" on the void). */
-  .guides-stamp {
-    display: inline-block;
-    transform: rotate(-4deg);
-    background: #000000;
-    border: 1.5px dashed #ef4444;
-    padding: 0.4rem 0.7rem;
-    line-height: 1;
-    box-shadow:
-      0 0 0 3px #000000,
-      0 0 0 4px rgba(239, 68, 68, 0.35),
-      0 12px 28px -8px rgba(0, 0, 0, 0.8),
-      0 0 36px -8px rgba(239, 68, 68, 0.45);
-  }
-
-  .dark .guides-stamp {
-    background: #000000;
-    border-color: #f87171;
-    box-shadow:
-      0 0 0 3px #000000,
-      0 0 0 4px rgba(248, 113, 113, 0.4),
-      0 12px 28px -8px rgba(0, 0, 0, 0.8),
-      0 0 36px -8px rgba(239, 68, 68, 0.5);
-  }
-
-  /* The oversized hero stamp shown on the latest dispatch card. */
-  .guides-stamp--hero {
-    transform: rotate(-6deg);
-    padding: 0.6rem 1rem;
-  }
-
-  /* The article-page hero stamp — sits behind the title. */
-  .guides-stamp--article {
-    font-family: var(--font-emoji);
-    font-size: clamp(6rem, 18vw, 12rem);
-    line-height: 0.8;
-    padding: 0.5rem 1rem;
-    transform: rotate(-3deg);
-  }
-
-  /* Drop-cap — the first letter of the article opens in signal red. */
-  .guides-dropcap > p:first-of-type::first-letter {
-    font-family: var(--font-serif);
-    font-size: 5em;
-    float: left;
-    line-height: 0.82;
-    margin: 0.05em 0.14em -0.08em 0;
-    color: #ef4444;
-    font-style: normal;
-    font-weight: 400;
-  }
-
-  .dark .guides-dropcap > p:first-of-type::first-letter {
-    color: #f87171;
-  }
-
-  /* The lede — a large italic serif that introduces the dispatch. */
+  /* Italic serif lede — a single paragraph at the top of a piece. */
   .guides-lede {
     font-family: var(--font-serif);
     font-style: italic;
-    font-size: clamp(1.25rem, 1.5vw + 0.9rem, 1.85rem);
-    line-height: 1.35;
-    color: #d6d3d1;
+    font-size: clamp(1.25rem, 1.5vw + 0.9rem, 1.65rem);
+    line-height: 1.4;
+    color: var(--muted-foreground);
   }
 
-  .dark .guides-lede {
-    color: #d6d3d1;
-  }
-
-  /* Reading-progress bar — a hot red ticker pinned to the top. */
+  /* Reading-progress bar — amber gradient pinned to the top. */
   .guides-progress {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #ef4444 0%, #f59e0b 100%);
+    background: linear-gradient(90deg, var(--primary-500) 0%, var(--primary-600) 100%);
     transform-origin: 0 50%;
     z-index: 60;
     pointer-events: none;
-    box-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
+    box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
   }
 
-  /* The byline — monospace metadata, amber when "active" lines. */
-  .guides-byline {
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.6875rem;
-    font-weight: 500;
-    color: #a3a3a3;
-  }
-
-  .dark .guides-byline {
-    color: #a8a29e;
-  }
-
-  /* Editorial divider — a perforated dashed line with a center dot. */
+  /* Editorial divider — perforated dashed line. */
   .guides-divider {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    color: #f59e0b;
-    margin: 3rem 0;
+    color: var(--primary-600);
+    margin: 2.5rem 0;
     font-size: 0.75rem;
     letter-spacing: 0.5em;
     position: relative;
@@ -844,152 +693,25 @@
     content: '';
     flex: 1;
     height: 0;
-    border-top: 1px dashed #404040;
+    border-top: 1px dashed var(--card-border);
     max-width: 18rem;
   }
 
-  .dark .guides-divider {
-    color: #f59e0b;
-  }
-
-  /* Tag chip — wire-tag style, outlined rectangle in mono. */
-  .guides-tag {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.25rem 0.65rem;
-    border: 1px solid #2a2a2a;
-    border-radius: 0;
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    font-weight: 500;
-    color: #a3a3a3;
-    background: transparent;
-    font-family: var(--font-mono);
-    transition:
-      border-color 180ms ease,
-      color 180ms ease;
-  }
-
-  .dark .guides-tag {
-    border-color: #2a2a2a;
-    color: #d6d3d1;
-  }
-
-  .guides-tag:hover {
-    border-color: #ef4444;
-    color: #ef4444;
-  }
-
-  .dark .guides-tag:hover {
-    border-color: #f87171;
-    color: #f87171;
-  }
-
-  /* Ticker — a horizontal strip at the top of pages mimicking a
-     wire-service "live" indicator. */
-  .guides-ticker {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 1rem;
-    border-top: 1px solid #1f1f1f;
-    border-bottom: 1px solid #1f1f1f;
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.22em;
-    color: #a3a3a3;
-    background: #050505;
-  }
-
-  .guides-ticker-dot {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: #ef4444;
-    box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
-    animation: guides-ticker-pulse 2.2s ease-in-out infinite;
-  }
-
-  /* "Filed" / metadata tag — used in the archive rows. */
-  .guides-meta-strip {
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #737373;
-  }
-
-  /* "Live" pulse — used by the ticker dot. */
-  @keyframes guides-ticker-pulse {
-    0%,
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.4;
-      transform: scale(0.7);
-    }
-  }
-
-  /* Spec sheet — a small blocklist of "specimen" / "filed under" tags. */
-  .guides-spec {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-
-  /* Annotation — a small italic editorial mark. */
-  .guides-annotation {
+  /* Drop-cap — the first letter of the article opens in amber. */
+  .guides-dropcap > p:first-of-type::first-letter {
     font-family: var(--font-serif);
-    font-style: italic;
-    color: #a3a3a3;
-    font-size: 0.875rem;
+    font-size: 4.5em;
+    float: left;
+    line-height: 0.82;
+    margin: 0.05em 0.14em -0.08em 0;
+    color: var(--primary-600);
+    font-style: normal;
+    font-weight: 400;
   }
 
-  /* "Confidential" / "On the wire" echoed mark — a rotated
-     vertical strip on the side of the masthead. */
-  .guides-vertical-mark {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-family: var(--font-mono);
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.4em;
-    color: #f59e0b;
-  }
-
-  /* Filed-nearby card — a strip-card alternative to the global
-     Card primitive. Used in the article-page footer. */
-  .guides-filed-card {
-    display: block;
-    padding: 1.25rem 1rem;
-    border: 1px solid #1f1f1f;
-    background: #050505;
-    color: #f5f5f4;
-    transition:
-      border-color 200ms ease,
-      background-color 200ms ease;
-  }
-
-  .guides-filed-card:hover {
-    border-color: #ef4444;
-    background: #0a0a0a;
-  }
-
-  .guides-filed-card-title {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.2;
-    color: #f5f5f4;
-  }
-
-  /* Article body — overrides for @tailwindcss/typography prose. */
+  /* Article body — typography handled by `.guides-article`. */
   .guides-article {
-    color: #d6d3d1;
+    color: var(--foreground);
     font-family: var(--font-sans);
     font-size: 1.0625rem;
     line-height: 1.78;
@@ -997,7 +719,7 @@
 
   .guides-article p {
     margin: 1.25rem 0;
-    color: #d6d3d1;
+    color: var(--foreground);
   }
 
   .guides-article h2 {
@@ -1005,45 +727,45 @@
     font-style: italic;
     font-weight: 400;
     letter-spacing: -0.02em;
-    color: #f5f5f4;
-    font-size: clamp(1.6rem, 1.4vw + 1rem, 2.25rem);
-    margin: 3rem 0 1rem;
-    line-height: 1.1;
+    color: var(--foreground);
+    font-size: clamp(1.6rem, 1.4vw + 1rem, 2.1rem);
+    margin: 2.75rem 0 1rem;
+    line-height: 1.15;
   }
 
   .guides-article h2::before {
     content: '§';
-    color: #ef4444;
+    color: var(--primary-600);
     font-family: var(--font-mono);
     font-style: normal;
     font-size: 0.6em;
     vertical-align: 0.25em;
-    margin-right: 0.6rem;
+    margin-right: 0.5rem;
     font-weight: 500;
   }
 
   .guides-article h3 {
     font-family: var(--font-serif);
     font-weight: 400;
-    color: #f5f5f4;
+    color: var(--foreground);
     font-size: 1.35rem;
-    margin: 2.25rem 0 0.75rem;
+    margin: 2rem 0 0.75rem;
     line-height: 1.2;
   }
 
   .guides-article a {
-    color: #f59e0b;
+    color: var(--primary-600);
     text-decoration: none;
-    border-bottom: 1px solid rgba(245, 158, 11, 0.4);
+    border-bottom: 1px solid rgba(217, 119, 6, 0.4);
     transition: border-color 160ms ease;
   }
 
   .guides-article a:hover {
-    border-bottom-color: #f59e0b;
+    border-bottom-color: var(--primary-600);
   }
 
   .guides-article strong {
-    color: #f5f5f4;
+    color: var(--foreground);
     font-weight: 600;
   }
 
@@ -1055,26 +777,26 @@
   .guides-article code {
     font-family: var(--font-mono);
     font-size: 0.9em;
-    background: #0a0a0a;
-    border: 1px solid #1f1f1f;
+    background: var(--muted-background);
+    border: 1px solid var(--card-border);
     padding: 0.1em 0.4em;
-    color: #f59e0b;
+    color: var(--primary-600);
   }
 
   .guides-article pre {
-    background: #0a0a0a;
-    border: 1px solid #1f1f1f;
+    background: var(--muted-background);
+    border: 1px solid var(--card-border);
     padding: 1rem 1.25rem;
     overflow-x: auto;
   }
 
   .guides-article blockquote {
-    border-left: 2px solid #ef4444;
+    border-left: 2px solid var(--primary-600);
     padding: 0.25rem 0 0.25rem 1.25rem;
     margin: 1.75rem 0;
     font-family: var(--font-serif);
     font-style: italic;
-    color: #d6d3d1;
+    color: var(--muted-foreground);
   }
 
   .guides-article ul,
@@ -1094,7 +816,7 @@
     content: '—';
     position: absolute;
     left: 0;
-    color: #ef4444;
+    color: var(--primary-600);
     font-family: var(--font-mono);
   }
 
@@ -1114,73 +836,14 @@
     content: counter(guides-ol, decimal-leading-zero);
     position: absolute;
     left: 0;
-    color: #ef4444;
+    color: var(--primary-600);
     font-family: var(--font-mono);
     font-size: 0.85em;
   }
 
   .guides-article hr {
     border: 0;
-    border-top: 1px dashed #2a2a2a;
+    border-top: 1px dashed var(--card-border);
     margin: 2.5rem 0;
-  }
-
-  /* Article masthead — the symmetric, asymmetric, dramatic block. */
-  .guides-masthead {
-    position: relative;
-    padding: 4rem 0 3rem;
-    border-bottom: 1px solid #1f1f1f;
-  }
-
-  .guides-masthead::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(239, 68, 68, 0.6) 30%,
-      rgba(245, 158, 11, 0.6) 70%,
-      transparent
-    );
-  }
-
-  /* Filed-nearby section — a section at the bottom of the article
-     with a different visual texture. */
-  .guides-filed-nearby {
-    background: #050505;
-    border-top: 1px solid #1f1f1f;
-    border-bottom: 1px solid #1f1f1f;
-  }
-
-  /* "Dispatch" annotation — a small chevron-style marker used in
-     index list rows. */
-  .guides-arrow {
-    display: inline-block;
-    color: #ef4444;
-    font-family: var(--font-mono);
-    transition: transform 200ms ease;
-  }
-
-  .guides-dispatch:hover .guides-arrow {
-    transform: translateX(4px);
-  }
-
-  /* Respect reduced motion — disable stamp rotation, ticker pulse, arrow. */
-  @media (prefers-reduced-motion: reduce) {
-    .guides-stamp,
-    .guides-stamp--hero,
-    .guides-stamp--article {
-      transform: none;
-    }
-    .guides-ticker-dot {
-      animation: none;
-    }
-    .guides-dispatch:hover .guides-arrow {
-      transform: none;
-    }
   }
 }
