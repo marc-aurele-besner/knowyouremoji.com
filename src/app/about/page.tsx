@@ -7,7 +7,7 @@ import { getEnv } from '@/lib/env';
 
 const pageTitle = 'About Us';
 const pageDescription =
-  'Learn about KnowYourEmoji - our mission to help you understand emoji meanings in context, how our platform works, and why millions trust us for accurate emoji interpretations.';
+  'How KnowYourEmoji researches emoji meanings, our editorial standards, and why context matters more than the Unicode definition.';
 
 /**
  * Generate metadata for the about page including canonical URL
@@ -28,6 +28,7 @@ export function generateMetadata(): Metadata {
       'emoji translation service',
       'emoji context explanation',
       'how emoji meanings work',
+      'emoji methodology',
     ],
     alternates: {
       canonical: pageUrl,
@@ -70,12 +71,78 @@ export function generateMetadata(): Metadata {
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'About' }];
 
+const methodologySteps = [
+  {
+    title: 'Start with the Unicode definition',
+    description:
+      'We anchor every emoji to the original Unicode Consortium description so we never invent a meaning that contradicts the platform standard.',
+  },
+  {
+    title: 'Research real-world usage',
+    description:
+      'We read published linguistic work, watch how creators use the emoji on TikTok and Twitter, and cross-reference community wikis and emoji dictionaries.',
+  },
+  {
+    title: 'Capture platform and generational nuance',
+    description:
+      'An emoji often means different things in a Slack thread vs. a Tinder DM. We surface those splits on every page instead of pretending there is one universal meaning.',
+  },
+  {
+    title: 'Review before publishing',
+    description:
+      'Long-form pages are reviewed for tone, accuracy, and originality. Thin pages are either enriched or marked as thin (and de-emphasized in search).',
+  },
+];
+
+const editorialPillars = [
+  {
+    title: 'Original writing',
+    description:
+      'Every entry on the site is written for the question a reader is actually asking — not a rewrite of the Unicode spec.',
+  },
+  {
+    title: 'Specific, not generic',
+    description:
+      'We avoid filler like "popular in captions and stories." If a sentence could apply to any emoji, it does not belong on the page.',
+  },
+  {
+    title: 'Sourced and dated',
+    description:
+      'Pages record when they were last reviewed so you can judge whether the meaning still matches current usage.',
+  },
+  {
+    title: 'Honest about limits',
+    description:
+      'Emoji meaning shifts. We say so when we are uncertain rather than pretending the AI interpreter is definitive.',
+  },
+];
+
+const whoWeAre = [
+  {
+    title: 'Operator',
+    description:
+      'KnowYourEmoji is built and maintained by Marc-Aurele Besner. Source code, commit history, and editorial decisions are public on GitHub.',
+  },
+  {
+    title: 'Funding',
+    description:
+      'Currently a personal, self-funded project. No paid placements or affiliate-driven emoji rankings — see our editorial policy.',
+  },
+  {
+    title: 'Disclosure',
+    description:
+      'The AI interpreter uses third-party language models. The site does not permanently store interpreted messages.',
+  },
+];
+
 /**
  * About page for KnowYourEmoji.com
  *
  * Includes:
  * - Mission statement explaining our purpose
- * - How it works section explaining the platform
+ * - Methodology (the "not just Unicode" section)
+ * - Editorial standards
+ * - Who operates the site
  * - Trust signals section for credibility
  * - CTA to try the interpreter
  */
@@ -91,7 +158,8 @@ export default function AboutPage() {
             About KnowYourEmoji
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
-            Helping you understand what emojis really mean in context.
+            We explain what emojis actually mean in real conversations — not just what the Unicode
+            Consortium named them.
           </p>
         </div>
       </section>
@@ -100,7 +168,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white dark:bg-gray-900" data-testid="mission-section">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Our Mission
+            Our mission
           </h2>
           <div className="prose prose-lg dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
@@ -122,8 +190,127 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Methodology Section */}
+      <section
+        id="methodology"
+        className="py-16 bg-gray-50 dark:bg-gray-800 scroll-mt-20"
+        data-testid="methodology-section"
+      >
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
+              Methodology
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              How we decide what an emoji means
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
+              Emoji meaning is not the same as the Unicode definition. Here is the process we use
+              for every entry on the site.
+            </p>
+          </div>
+          <ol className="grid md:grid-cols-2 gap-6 list-none [counter-reset:step]">
+            {methodologySteps.map((step, index) => (
+              <li
+                key={step.title}
+                className="relative bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
+              >
+                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center shadow-md">
+                  {index + 1}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 mt-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {step.description}
+                </p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-10 text-sm text-gray-500 dark:text-gray-400 text-center max-w-3xl mx-auto">
+            Pages without original research — older entries that are still anchored to the Unicode
+            description — are clearly marked as thin content and de-emphasized in search while we
+            expand our editorial coverage.
+          </p>
+        </div>
+      </section>
+
+      {/* Editorial Standards Section */}
+      <section
+        className="py-16 bg-white dark:bg-gray-900"
+        data-testid="editorial-standards-section"
+      >
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
+              Editorial Standards
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              What we publish
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
+              We hold every entry on the site to the same four standards. Anything that does not
+              meet them is rewritten, not quietly shipped.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {editorialPillars.map((pillar) => (
+              <Card key={pillar.title}>
+                <CardHeader>
+                  <CardTitle className="text-lg">{pillar.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {pillar.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who operates the site */}
+      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="who-section">
+        <div className="container mx-auto px-4 max-w-5xl">
+          <div className="text-center mb-12">
+            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
+              Who we are
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Who runs KnowYourEmoji
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {whoWeAre.map((item) => (
+              <div
+                key={item.title}
+                className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 text-center text-gray-600 dark:text-gray-300">
+            Questions, corrections, or partnership ideas?{' '}
+            <Link
+              href="/contact"
+              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
+            >
+              Contact us
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
+
       {/* How It Works Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="how-it-works-section">
+      <section className="py-16 bg-white dark:bg-gray-900" data-testid="how-it-works-section">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             How It Works
@@ -139,8 +326,8 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 dark:text-gray-300">
-                  Explore our comprehensive emoji database or search for specific emojis. Each emoji
-                  page includes detailed context-aware meanings.
+                  Explore our emoji database or search for specific emojis. Each emoji page includes
+                  detailed context-aware meanings.
                 </p>
               </CardContent>
             </Card>
@@ -181,7 +368,7 @@ export default function AboutPage() {
       </section>
 
       {/* Trust Signals Section */}
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="trust-section">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="trust-section">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
             Why Trust Us

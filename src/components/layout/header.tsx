@@ -7,16 +7,9 @@ import { MobileNav } from './mobile-nav';
 import { ThemeSwitcher } from '@/components/theme/theme-switcher';
 import { SearchBar } from '@/components/search';
 import { navigationEvents } from '@/lib/analytics';
+import { PRIMARY_NAV_LINKS } from '@/lib/nav-links';
 
 export type HeaderProps = HTMLAttributes<HTMLElement>;
-
-const navLinks = [
-  { label: 'Emojis', href: '/emoji' },
-  { label: 'Guides', href: '/guides' },
-  { label: 'Interpreter', href: '/interpreter' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'About', href: '/about' },
-];
 
 function Header({ className, ...props }: HeaderProps) {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -44,7 +37,7 @@ function Header({ className, ...props }: HeaderProps) {
           </Link>
 
           <nav aria-label="Main" className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
+            {PRIMARY_NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

@@ -4,20 +4,9 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
 import { engagementEvents } from '@/lib/analytics';
+import { PRIMARY_NAV_LINKS, FOOTER_LEGAL_LINKS } from '@/lib/nav-links';
 
 export type FooterProps = HTMLAttributes<HTMLElement>;
-
-const navLinks = [
-  { label: 'Emojis', href: '/emoji' },
-  { label: 'Guides', href: '/guides' },
-  { label: 'Interpreter', href: '/interpreter' },
-  { label: 'About', href: '/about' },
-];
-
-const legalLinks = [
-  { label: 'Privacy', href: '/privacy' },
-  { label: 'Terms', href: '/terms' },
-];
 
 function Footer({ className, ...props }: FooterProps) {
   const currentYear = new Date().getFullYear();
@@ -51,7 +40,7 @@ function Footer({ className, ...props }: FooterProps) {
           <div>
             <h3 className="font-semibold text-gray-900 mb-4 dark:text-white">Navigation</h3>
             <ul className="space-y-3">
-              {navLinks.map((link) => (
+              {PRIMARY_NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -67,7 +56,7 @@ function Footer({ className, ...props }: FooterProps) {
           <div>
             <h3 className="font-semibold text-gray-900 mb-4 dark:text-white">Legal</h3>
             <ul className="space-y-3">
-              {legalLinks.map((link) => (
+              {FOOTER_LEGAL_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

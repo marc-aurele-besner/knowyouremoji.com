@@ -147,6 +147,22 @@ export function HomePageContent({
               <Link href="/emoji">Browse All Emojis</Link>
             </Button>
           </div>
+
+          {guideCount > 0 && (
+            <p
+              className="mt-8 text-sm text-gray-600 dark:text-gray-300 animate-slide-up"
+              style={{ animationDelay: '0.3s' }}
+            >
+              Or read our{' '}
+              <Link
+                href="/guides"
+                className="font-semibold text-amber-700 hover:text-amber-800 underline underline-offset-4 dark:text-amber-300 dark:hover:text-amber-200"
+              >
+                {guideCount} long-form guides
+              </Link>{' '}
+              on what emojis actually mean.
+            </p>
+          )}
         </div>
       </section>
 
@@ -213,6 +229,35 @@ export function HomePageContent({
           </div>
         </div>
       </section>
+
+      {guideSummaries.length > 0 && (
+        <section className="py-20 md:py-24 bg-gray-50/50 dark:bg-gray-800/30">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="text-center mb-12">
+              <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
+                Editorial
+              </span>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+                Latest Guides
+              </h2>
+              <p className="text-gray-500 dark:text-gray-400 text-lg">
+                {guideCount} long-form {guideCount === 1 ? 'explainer' : 'explainers'} on what
+                emojis actually mean
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {guideSummaries.slice(0, 3).map((guide) => (
+                <GuideCard key={guide.slug} guide={guide} />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Button asChild variant="outline" className="hover:scale-105 transition-transform">
+                <Link href="/guides">Browse All Guides</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+      )}
 
       <div className="section-divider" aria-hidden="true" />
 
@@ -300,37 +345,6 @@ export function HomePageContent({
           </div>
         </div>
       </section>
-
-      <div className="section-divider" aria-hidden="true" />
-
-      {guideSummaries.length > 0 && (
-        <section className="py-20 md:py-24 bg-white dark:bg-gray-900">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="text-center mb-12">
-              <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
-                Editorial
-              </span>
-              <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
-                Latest Guides
-              </h2>
-              <p className="text-gray-500 dark:text-gray-400 text-lg">
-                {guideCount} long-form {guideCount === 1 ? 'explainer' : 'explainers'} on what
-                emojis actually mean
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {guideSummaries.slice(0, 3).map((guide) => (
-                <GuideCard key={guide.slug} guide={guide} />
-              ))}
-            </div>
-            <div className="text-center mt-12">
-              <Button asChild variant="outline" className="hover:scale-105 transition-transform">
-                <Link href="/guides">Browse All Guides</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-      )}
 
       <div className="section-divider" aria-hidden="true" />
 
