@@ -8,63 +8,141 @@
   "subcategory": "sky-weather",
   "unicodeVersion": "13.0",
   "baseMeaning": "Fire emoji.",
-  "tldr": "Represents fire.",
+  "tldr": "Approval, hype, or heat - 'this is fire.' Also sets a vibe of intensity in dating, fashion, or banter.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents fire.",
+      "meaning": "Represents fire, flames, or something burning.",
       "example": "Beautiful fire 🔥",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Nature or aesthetic vibes.",
-      "example": "Vibes 🔥",
+      "meaning": "Endorsement: 'this is fire' = it's good, hot, on trend.",
+      "example": "That track is fire 🔥",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Romantic nature context.",
-      "example": "So beautiful 🔥",
-      "riskLevel": "LOW"
+      "meaning": "Attraction or 'you're looking hot' - can read flirty or hypersexual depending on context.",
+      "example": "Looking fire tonight 🔥",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastic appreciation.",
-      "example": "Oh great 🔥",
+      "meaning": "Sarcastic approval when something is the opposite of fire.",
+      "example": "yeah, the weather is fire 🔥",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Approval in performance reviews or work hype - use carefully, can read as too casual.",
+      "example": "Shipped the launch, the team is fire 🔥",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about fire."
+      "note": "Reply default for any drop, leak, or take that the user wants to endorse - pairs naturally with 'this is fire' in any art or music thread."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Lives under outfit and food posts as the aesthetic 'hot' tag - creators sprinkle it on captions next to a fitted look or a baked tray."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Replaces the older 'swag' praise - creators paste it in comment sections to hype dance trends, transitions, and outfit-of-the-day clips."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Has migrated into product and design channels as a lighter 'this is hot, nice work' - reads casual but friendly in tech teams."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🔥 in casual contexts."
+      "note": "Treats 🔥 as a baseline endorsement emoji - drops it on any outfit, post, or sound that lands as 'hot,' with or without the literal word."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🔥 across platforms."
+      "note": "Uses 🔥 the same way as Gen Z - the slang approval was minted in the early 2010s hip-hop era and survives into Slack culture."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads 🔥 more literally than younger users do, then picks up the slang read through context - sometimes thinks a dating text is about a real fire."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🔥 literally."
+      "note": "Frequently sends 🔥 as 'this is amazing' or 'great job' in feedback; rarely registers the flirty subtext of the dating use."
     }
   ],
-  "warnings": [],
-  "relatedCombos": [],
+  "warnings": [
+    {
+      "title": "Flirty subtext",
+      "description": "Sending 🔥 to a date, a crush, or a hook-up buddy reads as 'you're hot,' which can be hypersexual depending on the rest of the message. Read the room before pairing it with a comment on someone's body.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Casual workplace read",
+      "description": "A lone 🔥 on a work deliverable can read as too casual in a serious channel. Reserve for slack threads where team banter is already established.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["fire-100", "fire-heart", "hot-fire"],
   "seoTitle": "🔥 Fire Emoji Meaning - What Does 🔥 Really Mean?",
-  "seoDescription": "Learn what the fire emoji 🔥 really means in texts and social media."
+  "seoDescription": "Learn what the fire emoji 🔥 really means - from 'this is fire' slang approval to flirty dating texts to work hype. Tone, context, and how to use it without misreading.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-08-14",
+  "longForm": {
+    "overview": "🔥 was the workhorse approval emoji before 🫶, 💯, and 👏 competed for the title. The visual cue is the flame itself - a stylized red-and-orange tongue of fire that pulls eyes instantly on a feed. In real chat the emoji now signals three layered meanings at once: literal fire or heat, the slang endorsement 'this is fire' (meaning 'this is great'), and a flirty 'you look hot' that anchors dating-language intensity.\n\nWhat makes 🔥 useful - and slightly slippery - is the rate at which it spreads across registers. A late-night text from a date with a 🔥 at the end carries obvious sexual tension. The same emoji dropped on a co-worker's pull request in Slack is just 'nice work.' Without surrounding context the emoji sits closer to the flirty end of the spectrum, which is why writers and brand teams often prefer it for hype reads over its drier cousins.",
+    "howPeopleUseIt": "🔥 lands on TikTok outfit-of-the-day transitions as the default 'this look lands' tag, on Twitter when a new track, leak, or rumor drops, and on Instagram captions underneath any dish or fit the poster wants to call attention to. The slang endorsement is by far the most common meaning in 2026, and people paste a single 🔥 on someone else's content as a one-character 'lit' that the algorithm and the recipient both understand.\n\nIn a texting conversation with a date, 🔥 shows up as a feedback signal on an outfit photo ('dropping fire tonight'), on a flirty line ('we should make plans 🔥'), or as a closer after a confident reply. In work channels it leans into the hype culture of smaller product or design teams where everyone already trades '🔥' on a tight ship. A 🔥 stacked on a press release draft in a corporate channel, in contrast, reads as off-key.",
+    "whenNotToUse": "Avoid 🔥 in any message where fire is the literal hazard - a kitchen accident, a wildfire alert, an evacuation notice. The slang read distracts from the urgency. Likewise skip it on a friend's vulnerable share - a 'this is fire' under a breakup confession lands as careless rather than supportive.\n\nAvoid 🔥 in workplace messages when the audience skews older or the channel skews formal. A solo 🔥 under a board update from a CFO will read as flippant, and a flirty 🔥 on a colleague who has not signaled interest can come across as unprofessional. When in doubt, mirror the channel's existing tempo rather than escalating it.",
+    "howToReply": "If a friend texts a fit pic or a new song with a 🔥 next to it, mirror with another 🔥 or a 'lmaoo you're right' so the hype exchanges cleanly. If you're hyping a date, pair the 🔥 with a sentence that explains the read ('that fit is genuinely crazy') so the compliment lands as effort rather than a drive-by.\n\nIf 🔥 arrives as a flirty closer on a dating text, mirror with a 🔥 of your own, a 😏, or escalate the conversation thread with a confident reply. If 🔥 lands in a work context, mirror sparingly - a 👍 or 'thanks' keeps the read professional without killing the energy of the emoji.",
+    "faqs": [
+      {
+        "question": "What does 🔥 mean from a girl?",
+        "answer": "From a girl or anyone else, 🔥 usually reads as 'that's hot' or 'good job.' On a dating thread it can carry flirty or sexual subtext, especially when paired with a comment on someone's body or outfit. Context and tone are everything."
+      },
+      {
+        "question": "Is 🔥 flirty?",
+        "answer": "Often yes. A 🔥 on a dating thread reads as 'you're attractive' or 'this is hot.' On a hype thread - a track, an outfit, a launch - it reads as 'this is great.' Read the rest of the message before assuming the flirty read."
+      },
+      {
+        "question": "What does 🔥 mean in a work text?",
+        "answer": "In casual Slack or Discord work channels 🔥 is shorthand for 'nice work' or 'this slaps.' In formal email or executive channels a 🔥 can read as too informal - mirror the register of the room."
+      },
+      {
+        "question": "Is 🔥 rude?",
+        "answer": "No, 🔥 on its own is approval or hype. It can land as sarcastic when paired with a clearly mid take ('oh, the weather is fire 🔥'), but the literal emoji does not carry a hostile tone."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "new haircut, be honest 😂🔥",
+      "interpretation": "Friend asking for an opinion on a new look. Mirror the hype with a 🔥, a 💯, or a sentence that names what works ('shorter sides, very clean')."
+    },
+    {
+      "setting": "dating",
+      "message": "that fit is illegal 🔥",
+      "interpretation": "Flirty compliment under an outfit pic. Mirror with a 🔥, a 😏, or a sentence that escalates ('you clean up well') to keep the chemistry warm."
+    },
+    {
+      "setting": "social",
+      "message": "did you hear that track yet? it's fire 🔥",
+      "interpretation": "Hyping a new release. Mirror with a 🔥 or a 'lmaoo totally' to confirm the take without dragging the thread."
+    },
+    {
+      "setting": "work",
+      "message": "shipped the launch, marketing asset is fire 🔥",
+      "interpretation": "Casual Slack hype on a teammate's deliverable. Mirror with a 🔥 or a 'nice shipping it' so the celebration lands without overdoing it."
+    },
+    {
+      "setting": "family",
+      "message": "your grandma's brisket is fire 🔥",
+      "interpretation": "Wholesome family praise. Mirror with another 🔥 or a sentence that names the recipe so the praise reaches the cook."
+    }
+  ]
 }
