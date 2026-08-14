@@ -17,7 +17,7 @@ draft: false
 
 The Unicode Consortium ships one codepoint per emoji. iMessage draws the emoji one way, Discord draws it another, and Instagram draws it a third. The artwork differs, the slang differs more, and the consequences show up in every cross-platform group chat where a message lands differently on every recipient's screen.
 
-The three platforms are not interchangeable. Each has its own emoji dialect — its own preferred reactions, its own visual conventions, its own age skew, and its own embarrassment tolerance. Crossing between them without knowing the dialect is how you end up sending the wrong emoji to the wrong audience.
+The three platforms are not interchangeable. Each has its own emoji dialect. ITS own preferred reactions, its own visual conventions, its own age skew, and its own embarrassment tolerance. Crossing between them without knowing the dialect is how you end up sending the wrong emoji to the wrong audience.
 
 ## The three dialects at a glance
 
@@ -36,7 +36,7 @@ iMessage is the most cross-generational of the three. It is the default SMS repl
 - **Low emoji density.** Most iMessage threads average one emoji per message, sometimes less. Stacking five emojis in a row reads as over-eager or ironic on iMessage in a way it does not on Discord.
 - **Family-tolerant.** iMessage threads often include parents, aunts, and older relatives. The result is that the platform has calibrated toward emojis that read across generations — [❤️](/emoji/heart), [👍](/emoji/thumbs-up), 😂, 🙏. The platform skews toward emojis that have stable meanings across age groups.
 - **Reaction images via Tapback.** iMessage has a built-in reaction system (love, like, dislike, laugh, emphasize, question) that lives separately from the emoji keyboard. Most iMessage users prefer Tapbacks over typed emojis for reactions, which keeps emoji density low.
-- **The 🙏 split.** iPhone renders 🙏 as palms-pressed-together — the "thank you" or prayer reading. The high-five reading that survives on Android is rare on iMessage. If you are texting from an iPhone, your 🙏 is being read as "thank you" or "prayer."
+- **The 🙏 split.** iPhone renders 🙏 as palms-pressed-together. THE "thank you" or prayer reading. The high-five reading that survives on Android is rare on iMessage. If you are texting from an iPhone, your 🙏 is being read as "thank you" or "prayer."
 
 ## Instagram — the public stage
 
@@ -44,7 +44,7 @@ Instagram is performance. Every DM is potentially a screenshot, every comment is
 
 - **Higher density.** Instagram DMs tolerate more emojis per message, especially in flirty or hype contexts. Stacking [✨](/emoji/sparkles) and [🔥](/emoji/fire) under a story reaction is normal.
 - **The audience is mixed-age but skews younger.** Instagram's emoji vocabulary is mostly Gen Z and younger millennial. Older Instagram users tend to use simpler emojis (❤️, 👍) because the slang reads are unfamiliar.
-- **Reactions to stories.** Instagram stories have a built-in reaction emoji (the DM that gets sent when you tap the paper plane). That reaction system has its own vocabulary — most users send ❤️ as the default, but [🔥](/emoji/fire), [😍](/emoji/smiling-face-with-heart-eyes), [😂](/emoji/crying-laughing), and [💯](/emoji/hundred-points) are also common.
+- **Reactions to stories.** Instagram stories have a built-in reaction emoji (the DM that gets sent when you tap the paper plane). That reaction system has its own vocabulary. most users send ❤️ as the default, but [🔥](/emoji/fire), [😍](/emoji/smiling-face-with-heart-eyes), [😂](/emoji/crying-laughing), and [💯](/emoji/hundred-points) are also common.
 - **Public comments.** Instagram comments are where the emoji-as-performance language lives. [🤡 clown emoji](/emoji/clown) in a comment is the "this is delusional" tag. 💯 in a comment is validation. The slang is sharp because the audience is reading.
 
 ## Discord — the inside joke
@@ -61,7 +61,7 @@ Discord is the densest emoji environment on the internet. Every server has its o
 The collision points are predictable:
 
 - **Cross-platform group chats.** A group chat with iPhone users, Android users, and a Discord regular is an emoji-translation minefield. The 🙏 split (Apple-prayer vs Android-high-five) is the most famous collision, but the density mismatch causes more friction. A Discord regular sending five emojis in a row in an iMessage-heavy chat reads as over-eager or unhinged to the iPhone readers.
-- **Screenshot culture.** Instagram and Twitter screenshots of Discord conversations are a meme genre. The high-density Discord style looks absurd in a screenshot to anyone calibrated to iMessage norms. The reverse is also true — iMessage-style emoji density in a Discord thread reads as old.
+- **Screenshot culture.** Instagram and Twitter screenshots of Discord conversations are a meme genre. The high-density Discord style looks absurd in a screenshot to anyone calibrated to iMessage norms. The reverse is also true. iMessage-style emoji density in a Discord thread reads as old.
 - **The "I'm using the wrong platform" tell.** A user who switches platforms mid-conversation often signals it by switching emoji density. Watching density change is sometimes how you know someone has moved from iMessage to Discord or back.
 
 ## How to read across the three

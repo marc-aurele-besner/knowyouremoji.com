@@ -15,7 +15,7 @@ seoDescription: 👍, 👌, 🙏, 😊, and 🙏 all read differently across cul
 draft: false
 ---
 
-The Unicode Consortium ships one set of codepoints to every country on Earth. Each country reads them differently. The result is a layer of cross-cultural miscommunication that no one warned you about — a thumbs-up that reads as friendly in California reads as an insult in parts of the Middle East, and a folded-hands prayer emoji on iPhone reads as a high-five in older Brazilian group chats.
+The Unicode Consortium ships one set of codepoints to every country on Earth. Each country reads them differently. The result is a layer of cross-cultural miscommunication that no one warned you about. A thumbs-up that reads as friendly in California reads as an insult in parts of the Middle East, and a folded-hands prayer emoji on iPhone reads as a high-five in older Brazilian group chats.
 
 If you text across cultures, you have hit at least one of these pitfalls. Most people never figure out why the message landed wrong. The fix is small. The problem is that no one tells you which emojis are unsafe in which contexts.
 
@@ -34,7 +34,7 @@ The thumbs-up emoji reads as approval in most of the English-speaking world. It 
 The OK hand is even worse than the thumbs-up for cross-cultural confusion:
 
 - **Most English-speaking countries.** 👌 reads as "okay," "perfect," or "got it." The default meaning is positive.
-- **Brazil, parts of Southern Europe, Turkey.** 👌 can read as a vulgar insult — equivalent to the middle finger in American English. The "OK" gesture is read as a reference to a body part in some regions.
+- **Brazil, parts of Southern Europe, Turkey.** 👌 can read as a vulgar insult. equivalent to the middle finger in American English. The "OK" gesture is read as a reference to a body part in some regions.
 - **Mediterranean and parts of the Middle East.** 👌 sometimes reads as the "evil eye" gesture, with negative or superstitious connotations.
 
 **What this means in practice.** 👌 is one of the most context-dependent emojis on the keyboard. It is fine in American DMs and unsafe in cross-cultural work DMs with Brazilian, Turkish, or Mediterranean recipients. Default to [✔️](/emoji/check-mark) (the check mark) or just the words when the recipient's region is unknown.
@@ -45,7 +45,7 @@ The 🙏 split was covered in detail in our other guide, but the cross-cultural 
 
 - **United States, most of the English-speaking world.** 🙏 reads as "thank you," "prayer," or "namaste." The palms-pressed-together gesture is read as respectful.
 - **Brazil, parts of Latin America.** 🙏 is often read as a high-five or "we did it" gesture, especially on older devices and in older group chats. The high-five meaning is the default in some Brazilian contexts.
-- **India, parts of South Asia.** 🙏 reads as the namaste greeting — a respectful hello. The "thank you" or "prayer" meaning is also present, but the greeting reading is dominant.
+- **India, parts of South Asia.** 🙏 reads as the namaste greeting. A respectful hello. The "thank you" or "prayer" meaning is also present, but the greeting reading is dominant.
 - **Christian contexts.** 🙏 leans prayer in any church-related group, regardless of region.
 
 **What this means in practice.** 🙏 is the single most ambiguous emoji across cultures and across platforms. If you are texting internationally, default to ❤️ for thanks, 🙌 for high-five, or just the words. 🙏 in a condolence thread to a Brazilian recipient may not land the way you expect.
@@ -55,8 +55,8 @@ The 🙏 split was covered in detail in our other guide, but the cross-cultural 
 The smiling face with smiling eyes has a quieter cross-cultural problem:
 
 - **United States, Canada, most of the English-speaking world.** 😊 reads as warm, friendly, slightly soft. The default meaning is "this is good."
-- **Japan, parts of East Asia.** 😊 reads as awkward, forced, or passive-aggressive. In Japanese texting culture, 😊 can read as insincere — the "smiling through gritted teeth" beat. The default Japanese emoji for warmth is the bigger smiley (😄) or the warm-face emoji.
-- **China, parts of East Asia.** 😊 is similar — read as polite but not necessarily warm. The Chinese emoji vocabulary defaults to different faces for "genuinely happy."
+- **Japan, parts of East Asia.** 😊 reads as awkward, forced, or passive-aggressive. In Japanese texting culture, 😊 can read as insincere. THE "smiling through gritted teeth" beat. The default Japanese emoji for warmth is the bigger smiley (😄) or the warm-face emoji.
+- **China, parts of East Asia.** 😊 is similar. read as polite but not necessarily warm. The Chinese emoji vocabulary defaults to different faces for "genuinely happy."
 
 **What this means in practice.** A 😊 at the end of a work message to a Japanese or Chinese recipient can read as cold or sarcastic, especially if the surrounding sentence is delivering bad news. If you are texting a recipient in East Asia, default to a clearer warm emoji (❤️ or 😄) or just the words.
 
@@ -65,7 +65,7 @@ The smiling face with smiling eyes has a quieter cross-cultural problem:
 The smiling face with halo reads almost everywhere as angelic, innocent, or "I'm being good":
 
 - **Most regions.** 😇 reads as innocence, angelic behavior, or "I'm being good."
-- **Latin America, parts of Southern Europe.** 😇 can read as sexual — paired with certain messages, the angel-with-a-secret face reads as "I am being naughty but pretending otherwise." The "inocentón" (innocent-ish) reading is common.
+- **Latin America, parts of Southern Europe.** 😇 can read as sexual. paired with certain messages, the angel-with-a-secret face reads as "I am being naughty but pretending otherwise." The "inocentón" (innocent-ish) reading is common.
 - **English-speaking meme culture.** 😇 is the emoji used sarcastically when admitting something questionable: "I definitely did not eat the last slice 😇."
 
 **What this means in practice.** 😇 is mostly safe but can land unexpectedly in cross-cultural flirting contexts. If you are sending 😇 as part of a flirty message to a Latin American recipient, be aware the read may be more risqué than you intended.
@@ -95,8 +95,8 @@ A small but real pitfall:
 The upside-down face has an unexpectedly specific regional split:
 
 - **Most English-speaking regions.** 🙃 reads as sarcasm, irony, or "I'm being sarcastic." The default meaning is "this is not what it seems."
-- **Some European regions.** 🙃 can read as silly, playful, or "tee-hee" — closer to the 😊 register than to sarcasm.
-- **Younger North American users.** 🙃 reads as "I'm being sarcastic but warmly" — softer sarcasm than the older American reading.
+- **Some European regions.** 🙃 can read as silly, playful, or "tee-hee". closer to the 😊 register than to sarcasm.
+- **Younger North American users.** 🙃 reads as "I'm being sarcastic but warmly". softer sarcasm than the older American reading.
 
 **What this means in practice.** 🙃 in a cross-cultural work DM may not land as sarcasm. If you are being sarcastic, write it out as text.
 
@@ -114,7 +114,7 @@ The raised hand has a small regional split:
 A few rules that survive the cross-cultural minefield:
 
 - **Default to ❤️ for warmth.** The red heart reads as warm in almost every region. It is the safest cross-cultural emoji.
-- **Default to 👍 for approval — but be aware of the Middle East pitfall.** If you do not know the recipient's region, ❤️ or just the words are safer.
+- **Default to 👍 for approval. BUT be aware of the Middle East pitfall.** If you do not know the recipient's region, ❤️ or just the words are safer.
 - **Default to 👌 only in American contexts.** Replace with ✔️ or just "okay" for international recipients.
 - **Default to 🙏 only when the meaning is clear from context.** For unambiguous "thank you," use ❤️ or the words. For unambiguous high-five, use 🙌.
 - **Default to 😊 with caution.** In East Asian contexts, default to a bigger smiley (😄) or the words.

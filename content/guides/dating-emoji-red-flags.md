@@ -28,7 +28,7 @@ The red flag emoji is the universal "this is a problem" tag:
 - **In a dating profile bio.** Some people list 🚩 in their own bio as a self-aware joke ("here are my red flags: I text back too fast 🚩"). The self-aware use is usually a sign of emotional intelligence; the clueless use is rare.
 - **Reacting to a specific behavior.** "love bombing on date two 🚩" → the 🚩 is the punchline on a story of bad dating behavior.
 
-The canonical dating read: 🚩 under a story about someone's behavior is the friend saying "you should leave." The [🚩🏃 red flag running combo](/combo/red-flag-running) escalates to "leave, now" — the visual sprint paired with the visual flag. The [🚩🚩🚩 multiple red flags combo](/combo/red-flags-dating) is the "this is a serious problem" version.
+The canonical dating read: 🚩 under a story about someone's behavior is the friend saying "you should leave." The [🚩🏃 red flag running combo](/combo/red-flag-running) escalates to "leave, now". THE visual sprint paired with the visual flag. The [🚩🚩🚩 multiple red flags combo](/combo/red-flags-dating) is the "this is a serious problem" version.
 
 ## 🍑 — the peach
 
@@ -53,13 +53,13 @@ The [🍆🍑 suggestive duo combo](/combo/eggplant-peach) (or its reversed orde
 The 🤡 in dating contexts reads as self-aware bad behavior:
 
 - **Aimed at someone else.** "he really thought that line would work 🤡" → the sender is calling out a bad approach. The clown is the universal "this is delusional" tag.
-- **Aimed at yourself.** "I just sent the most cringe opener 🤡" → the sender is performing self-deprecation. The clown is the self-roast emoji — used on yourself, it reads as charming; used on someone else, it reads as judgmental.
+- **Aimed at yourself.** "I just sent the most cringe opener 🤡" → the sender is performing self-deprecation. The clown is the self-roast emoji. used on yourself, it reads as charming; used on someone else, it reads as judgmental.
 
-In dating-app conversations, a 🤡 at the end of a message is usually self-deprecating. The clown emoji does the work of "I'm being ridiculous and I know it." If someone sends 🤡 at _you_ rather than at themselves, the dynamic is different — that is a judgment, and it usually reads as a put-down.
+In dating-app conversations, a 🤡 at the end of a message is usually self-deprecating. The clown emoji does the work of "I'm being ridiculous and I know it." If someone sends 🤡 at _you_ rather than at themselves, the dynamic is different. THAT is a judgment, and it usually reads as a put-down.
 
 ## 🙃 — the upside-down face
 
-The 🙃 in dating contexts is doing specific work:
+The 🙃 in dating contexts has its own use cases:
 
 - **Sarcastic acceptance.** "cool, I guess 🙃" → the sender is performing agreement they do not feel. The upside-down face says "this is not okay, but I am going to pretend it is."
 - **Soft frustration.** "you forgot our date 🙃" → the sender is calling out a problem without escalating to anger. The 🙃 is the "I'm annoyed but I'm not going to yell about it" tag.
@@ -75,7 +75,7 @@ The grimacing face reads differently in dating contexts:
 - **Soft second-thoughts.** "maybe I shouldn't have texted him at 2am 😬" → the sender is questioning a decision. The grimace is the "I see the problem with this" tag.
 - **Discomfort with a topic.** "so about the ex situation 😬" → the sender is about to go somewhere uncomfortable. The 😬 is the "brace yourself" beat.
 
-The grimacing face in a dating thread is almost always a warning sign — either the sender is doing something questionable, or they are about to bring up something questionable. Read the surrounding sentence.
+The grimacing face in a dating thread is almost always a warning sign. either the sender is doing something questionable, or they are about to bring up something questionable. Read the surrounding sentence.
 
 ## 💅 — the nail polish
 
@@ -108,10 +108,10 @@ The 🙄 is one of the more dangerous emojis in dating threads because it can re
 
 Some emoji combos carry specific dating meaning:
 
-- **🚩🚩🚩** — multiple red flags, the "this is a serious problem" tag.
-- **🍆🍑 or 🍑🍆** — the canonical sexual emoji combo. Universal on dating apps.
-- **💅🙃** — the "I am unbothered but sarcastically so" combo. Used when someone is performing confidence after a disappointment.
-- **🙄💅** — the eye-roll-plus-nail-polish is the "I am unimpressed and I am doing my nails while I wait for you to catch up" combo. Used as a clap-back.
+- **🚩🚩🚩**. multiple red flags, the "this is a serious problem" tag.
+- **🍆🍑 or 🍑🍆**. THE canonical sexual emoji combo. Universal on dating apps.
+- **💅🙃**. THE "I am unbothered but sarcastically so" combo. Used when someone is performing confidence after a disappointment.
+- **🙄💅**. THE eye-roll-plus-nail-polish is the "I am unimpressed and I am doing my nails while I wait for you to catch up" combo. Used as a clap-back.
 
 ## How to read dating red flags in emoji form
 
@@ -124,4 +124,4 @@ A few rules that survive the dating-app minefield:
 - **A 😬 after a story is a "this is awkward" beat.** The sender is either embarrassed or about to make things more awkward.
 - **Use the [🚩🏃 red flag running combo](/combo/red-flag-running) when you want to confirm the read.** The combo is the universal "leave now" tag.
 
-The dating-app emoji vocabulary is one of the most developed slang layers on the modern internet. It is also one of the most actionable. The 🚩 is cheap; the 🍑🍆 is universal; the 🙃 is the early-warning system. Learning to read these is faster than learning to read the people sending them — and a lot less expensive than learning the hard way.
+The dating-app emoji vocabulary is one of the most developed slang layers on the modern internet. It is also one of the most actionable. The 🚩 is cheap; the 🍑🍆 is universal; the 🙃 is the early-warning system. Learning to read these is faster than learning to read the people sending them. AND a lot less expensive than learning the hard way.

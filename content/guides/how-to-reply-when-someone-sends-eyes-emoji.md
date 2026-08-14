@@ -31,7 +31,7 @@ If the eyes arrived at the end of a flirty message, the sender is signaling "I a
 
 **What to skip:**
 
-- **🙃** — the upside-down face in a flirty thread reads as sarcasm or as the early-warning system for unprocessed feelings. Both reads kill the vibe.
+- **🙃**. THE upside-down face in a flirty thread reads as sarcasm or as the early-warning system for unprocessed feelings. Both reads kill the vibe.
 - **A long defensive sentence.** "I wasn't trying to be weird" reads as anxiety. The flirty thread cannot survive a defensive reply.
 - **A question that requires the sender to clarify.** "what do you mean?" in a flirty thread is the moment the spell breaks.
 
@@ -47,13 +47,13 @@ If the eyes arrived attached to a screenshot, a hot take, or a "did you see this
 
 **What to skip:**
 
-- **👍** — the thumbs-up reads as "this is fine" rather than "I am interested." The gossip thread dies with a thumbs-up reply.
+- **👍**. THE thumbs-up reads as "this is fine" rather than "I am interested." The gossip thread dies with a thumbs-up reply.
 - **A flat "lol."** The laughing-out-loud without any emoji reads as low investment. The gossip thread needs more energy than that.
 - **A deflection.** "I am not really into drama" is the death of a gossip thread. If you actually want the story, ask for it.
 
 ## 👀 at work
 
-If the eyes arrived in a work channel — Slack, Teams, email — the sender is doing one of three things: signaling interest in a project, signaling suspicion about a decision, or signaling that they are watching the situation closely. The work reply depends on which.
+If the eyes arrived in a work channel. Slack, Teams, email. THE sender is doing one of three things: signaling interest in a project, signaling suspicion about a decision, or signaling that they are watching the situation closely. The work reply depends on which.
 
 **What to send:**
 
@@ -63,13 +63,13 @@ If the eyes arrived in a work channel — Slack, Teams, email — the sender is 
 
 **What to skip:**
 
-- **😏 or 😉** — the smirk and wink in a work channel read as flirtatious or condescending. Both are bad.
-- **🔥** — fire in a work channel reads as too-casual unless the surrounding topic is celebratory.
+- **😏 or 😉**. THE smirk and wink in a work channel read as flirtatious or condescending. Both are bad.
+- **🔥**. fire in a work channel reads as too-casual unless the surrounding topic is celebratory.
 - **A defensive sentence.** "I wasn't sure about that decision either" reads as insubordinate. If you want to engage with the work topic, ask a question.
 
 ## 👀 on a vulnerable message
 
-If the eyes arrived attached to a vulnerable message — a friend's struggle, a personal disclosure, an apology — the sender is doing one of two things: showing they are paying attention, or doing a poor job of showing they are paying attention. The right reply depends on which.
+If the eyes arrived attached to a vulnerable message. A friend's struggle, a personal disclosure, an apology. THE sender is doing one of two things: showing they are paying attention, or doing a poor job of showing they are paying attention. The right reply depends on which.
 
 **What to send:**
 
@@ -85,7 +85,7 @@ If the eyes arrived attached to a vulnerable message — a friend's struggle, a 
 
 ## 👀 on a flirty post
 
-If the eyes arrived under a flirty social-media post — an Instagram story, a TikTok, a tweet — the sender is signaling interest. The right reply depends on whether you want to encourage the flirtation or deflect it.
+If the eyes arrived under a flirty social-media post. AN Instagram story, a TikTok, a tweet. THE sender is signaling interest. The right reply depends on whether you want to encourage the flirtation or deflect it.
 
 **What to send if you want to encourage:**
 
@@ -101,7 +101,7 @@ If the eyes arrived under a flirty social-media post — an Instagram story, a T
 
 ## 👀 on your own post
 
-If the eyes arrived as a reaction to your own post — Instagram story, TikTok, tweet — the sender is signaling interest in what you shared. The right reply depends on the post's content and your relationship with the sender.
+If the eyes arrived as a reaction to your own post. Instagram story, TikTok, tweet. THE sender is signaling interest in what you shared. The right reply depends on the post's content and your relationship with the sender.
 
 **What to send:**
 
@@ -126,4 +126,4 @@ A few general rules that work across all six contexts:
 - **Default to the [🤔👀 suspicious thinking combo](/combo/thinking-eyes) when the eyes were paired with a screenshot.** The combo is the "I see it, and I am processing" beat.
 - **Never reply with 👀 alone.** A solitary 👀 reply is the emoji equivalent of leaving someone on read. The recipient will interpret it as the worst-case read.
 
-The 👀 is the most ambiguous emoji on the keyboard, but it is also one of the most useful. Replying right takes context-reading; replying wrong takes one emoji. The cost of the wrong reply is asymmetric — sending 😏 to someone who was flirting is recoverable; sending 🙃 to someone who was flirting is not. The safest reading strategy is still: trust the surrounding sentence, mirror the energy, and ask when you cannot tell.
+The 👀 is the most ambiguous emoji on the keyboard, but it is also one of the most useful. Replying right takes context-reading; replying wrong takes one emoji. The cost of the wrong reply is asymmetric. SENDING 😏 to someone who was flirting is recoverable; sending 🙃 to someone who was flirting is not. The safest reading strategy is still: trust the surrounding sentence, mirror the energy, and ask when you cannot tell.

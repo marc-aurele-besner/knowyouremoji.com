@@ -117,7 +117,7 @@ This is a cheat sheet for the ten most-misread texts in the modern emoji vocabul
 
 **Why the misread happens.** The staring-eye-mouth-emoji combo is a meme that has spread on TikTok and Twitter, but the meme reading is not universal. The misread happens when the sender is calibrated to the meme and the recipient has not encountered it.
 
-**How to disambiguate.** Meme-based combos are inherently unstable across audiences. The 👁️👄👁️ is a meme, and memes age poorly when removed from their original context. If the audience may not be familiar with the meme, use 💀 or 😬 instead — both are more universally read.
+**How to disambiguate.** Meme-based combos are inherently unstable across audiences. The 👁️👄👁️ is a meme, and memes age poorly when removed from their original context. If the audience may not be familiar with the meme, use 💀 or 😬 instead. both are more universally read.
 
 ## The cheat sheet for avoiding misreads
 

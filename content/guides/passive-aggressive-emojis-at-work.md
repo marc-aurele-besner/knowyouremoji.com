@@ -27,7 +27,7 @@ The 🙂 is the single most passive-aggressive emoji on the keyboard:
 - **"Let's be friends after I reject your proposal."** "I appreciate the work 🙂" → the 🙂 is performing warmth while delivering a soft no.
 - **"I am at the end of my patience."** "thanks for the update 🙂" after the third delayed update → the 🙂 is the "I am professionally losing my mind" beat.
 
-The 🙂 at work is one of the most dangerous emojis because the smile is doing genuine work — the sender is being friendly. But the slightness is also doing work — the sender is signaling that they are not enthusiastic. The result is a smile that reads as a smile and as a warning at the same time.
+The 🙂 at work is one of the most dangerous emojis because the smile is doing genuine work. THE sender is being friendly. But the slightness is also doing work. THE sender is signaling that they are not enthusiastic. The result is a smile that reads as a smile and as a warning at the same time.
 
 The [🙂😬 tense politeness combo](/combo/slight-smile-tension) is the maximum passive-aggressive emoji stack. The slight smile plus the grimace is the universal "I am being polite but I am at the end of my rope" beat. Use only when the situation actually warrants it.
 
@@ -54,7 +54,7 @@ The 👌 in passive-aggressive mode is rarer than the 🙂 or 👍. The 👌 req
 
 ## 👏 — the clapping
 
-The 👏 in passive-aggressive mode is doing specific work:
+The 👏 in passive-aggressive mode has its own use cases:
 
 - **"Congratulations, I guess."** "nice job 👏" → the clapping is the sarcastic applause tag. The 👏 is performing support while signaling the opposite.
 - **"I told you so."** "well, that worked out 👏" → the clapping is the "I see you failed and I am acknowledging it" tag.
@@ -63,7 +63,7 @@ The 👏 in passive-aggressive mode is one of the most biting emojis in a work c
 
 ## ❤️ — the heart
 
-The ❤️ in passive-aggressive mode is doing specific work:
+The ❤️ in passive-aggressive mode has its own use cases:
 
 - **"I appreciate this, but I am frustrated."** "thanks for letting me know at the last minute ❤️" → the heart is the cover; the message is the truth. The recipient knows the sender is being ironic.
 - **"I love this idea, and by love I mean I think it is terrible."** "great thinking ❤️" → the heart is performing support while delivering a soft rejection.
@@ -81,7 +81,7 @@ The 😊 is less obviously passive-aggressive than the 🙂. The warmer smile ma
 
 ## 🔥 — the fire
 
-The 🔥 in passive-aggressive mode is doing specific work:
+The 🔥 in passive-aggressive mode has its own use cases:
 
 - **"Great work, I guess."** "shipped it 🔥" → the fire is the sarcastic enthusiasm tag. The 🔥 in a thread where the sender usually does not use hype reads as performative.
 - **"This is fine."** "we hit the deadline 🔥" when the deadline was actually missed → the fire is the "I am pretending this is fine when it is not" tag.
@@ -116,4 +116,4 @@ The passive-aggressive emoji is doing real work in a work thread, and the reply 
 - **Use 👍 or 🙏 as the universal safe reply.** If you do not know what to send, 👍 or 🙏 closes the loop without committing to anything. They are the lowest-risk emojis on the keyboard.
 - **Avoid [🙂😬 tense politeness combo](/combo/slight-smile-tension) unless the situation actually warrants it.** The combo is the maximum passive-aggressive emoji stack. Using it casually ages you.
 
-The passive-aggressive work emoji is one of the most under-discussed dynamics in modern workplaces. The 🙂 is doing real work that words often cannot — and the cost of misreading is friction that compounds over time. The safest strategy is still: watch the contrast, watch the brevity, watch the channel, and ask when in doubt.
+The passive-aggressive work emoji is one of the most under-discussed dynamics in modern workplaces. The 🙂 is doing real work that words often cannot. AND the cost of misreading is friction that compounds over time. The safest strategy is still: watch the contrast, watch the brevity, watch the channel, and ask when in doubt.

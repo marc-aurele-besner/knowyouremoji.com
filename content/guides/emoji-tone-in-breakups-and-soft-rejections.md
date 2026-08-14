@@ -58,7 +58,7 @@ The 🙂 is one of the most passive-aggressive emojis on the keyboard, and it sh
 - **"I am being polite but I am not interested."** "thanks but I don't think we are a match 🙂" → the 🙂 is the universal "this is not a no but it is also not a yes" beat. The slight smile is doing the work of softening a rejection.
 - **"Let's be friends."** "I really value our friendship 🙂" → the 🙂 is the "let's downgrade this relationship" beat. The slight smile is performing warmth while delivering a soft rejection.
 
-The 🙂 in a soft-rejection context is one of the most important emojis to read correctly. A 🙂 after "let's just be friends" is doing real work — the smile is the cover, the slightness is the truth.
+The 🙂 in a soft-rejection context is one of the most important emojis to read correctly. A 🙂 after "let's just be friends" is doing real work. THE smile is the cover, the slightness is the truth.
 
 ## 🙃 — the upside-down face
 
@@ -80,7 +80,7 @@ The 🤍 is increasingly used in soft-rejection contexts as a way to signal warm
 
 ## 🥺 — the pleading face
 
-The 🥺 in rejection contexts is doing specific work:
+The 🥺 in rejection contexts has its own use cases:
 
 - **"Please don't be upset with me."** "I really am sorry 🥺" → the 🥺 is the "please forgive me" beat. The pleading face is performing guilt and asking for grace.
 - **"I wish things were different."** "I wish I could but I can't 🥺" → the 🥺 is the "I am being honest about my limitations" beat. The pleading face is the "I am sad about this too" tag.
@@ -100,10 +100,10 @@ The 😊 in a soft rejection reads as genuine friendliness. It is less ambiguous
 
 The "let's be friends" message has its own emoji vocabulary. A few reliable patterns:
 
-- **🙂 + "I value our friendship"** — the classic soft rejection. The slight smile is the cover; the message is the truth.
-- **🤍 + "I care about you"** — the white-heart downgrade. The shift from ❤️ to 🤍 is sometimes the only signal that the relationship has been downgraded.
-- **😊 + "no worries"** — the friendly acceptance. The warm smile is performing graciousness.
-- **😇 + "no hard feelings"** — the gracious-exit beat. The halo is the cover; the message is the truth.
+- **🙂 + "I value our friendship"**. THE classic soft rejection. The slight smile is the cover; the message is the truth.
+- **🤍 + "I care about you"**. THE white-heart downgrade. The shift from ❤️ to 🤍 is sometimes the only signal that the relationship has been downgraded.
+- **😊 + "no worries"**. THE friendly acceptance. The warm smile is performing graciousness.
+- **😇 + "no hard feelings"**. THE gracious-exit beat. The halo is the cover; the message is the truth.
 
 ## How to read rejection emojis
 
