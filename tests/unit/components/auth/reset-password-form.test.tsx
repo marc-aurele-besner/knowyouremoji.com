@@ -247,5 +247,24 @@ describe('ResetPasswordForm', () => {
         expect(screen.queryByText(/please confirm your password/i)).not.toBeInTheDocument();
       });
     });
+
+    it('shows error when token or email is missing from the URL', async () => {
+      // Make get return null for both token and email
+      mockSearchParams.get.mockReturnValue(null);
+
+      render(<ResetPasswordForm />);
+      fireEvent.change(screen.getByLabelText(/^new password$/i), {
+        target: { value: 'password123' },
+      });
+      fireEvent.change(screen.getByLabelText(/^confirm new password$/i), {
+        target: { value: 'password123' },
+      });
+      fireEvent.click(screen.getByRole('button', { name: /^update password$/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText(/invalid reset link/i)).toBeInTheDocument();
+        expect(mockFetch).not.toHaveBeenCalled();
+      });
+    });
   });
 });

@@ -246,6 +246,16 @@ describe('RegisterForm', () => {
         expect(mockSignIn).toHaveBeenCalledWith('github', { callbackUrl: '/dashboard' });
       });
     });
+
+    it('shows error when OAuth sign up throws', async () => {
+      mockSignIn.mockImplementationOnce(() => Promise.reject(new Error('OAuth failed')));
+      render(<RegisterForm />);
+      fireEvent.click(screen.getByRole('button', { name: /continue with google/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText(/failed to sign up with provider/i)).toBeInTheDocument();
+      });
+    });
   });
 
   describe('accessibility', () => {

@@ -275,6 +275,28 @@ describe('LoginForm', () => {
         expect(mockFetch).not.toHaveBeenCalled();
       });
     });
+
+    it('shows error when magic link fetch returns non-ok', async () => {
+      mockFetch.mockResolvedValueOnce({
+        ok: false,
+        json: () => Promise.resolve({ error: 'rate limited' }),
+      });
+      render(<LoginForm />);
+      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
+
+      await waitFor(() => {
+        expect(screen.getByRole('button', { name: /send magic link/i })).toBeInTheDocument();
+      });
+
+      fireEvent.change(screen.getByLabelText(/email/i), {
+        target: { value: 'test@example.com' },
+      });
+      fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText(/rate limited/i)).toBeInTheDocument();
+      });
+    });
   });
 
   describe('OAuth sign in', () => {
