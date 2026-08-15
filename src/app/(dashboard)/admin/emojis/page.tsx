@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import { getAllEmojis } from '@/lib/emoji-data';
 import { AdminEmojiList } from '@/components/admin/admin-emoji-list';
+import { AdminNav } from '@/components/admin/admin-nav';
 
 export default async function AdminEmojiPage() {
   const emojis = getAllEmojis();
 
   return (
-    <div>
+    <div className="space-y-6">
+      <AdminNav />
       <div className="mb-8 flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold">Emoji Admin</h1>
