@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getComboBySlug, getAllComboSlugs, getRelatedCombos } from '@/lib/combo-data';
 import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { decisionToRobots, getComboIndexingDecision } from '@/lib/seo-policy';
 import { ShareSection } from '@/components/share/share-section';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { Badge } from '@/components/ui/badge';
@@ -50,6 +51,11 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
   const pageUrl = `${env.appUrl}/combo/${combo.slug}`;
   const ogTitle = `${combo.combo} ${combo.name} Combo Meaning`;
 
+  // Apply the indexing policy from src/lib/seo-policy.ts — see issue #355.
+  // - Deep/standard combos → index, follow
+  // - Thin combos → noindex, follow (page still serves users)
+  const indexing = getComboIndexingDecision(combo, pageUrl);
+
   // Generate keywords array
   const keywords = [
     `${combo.name.toLowerCase()} combo`,
@@ -67,7 +73,7 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
     description: combo.seoDescription,
     keywords,
     alternates: {
-      canonical: pageUrl,
+      canonical: indexing.canonical || pageUrl,
     },
     openGraph: {
       title: ogTitle,
@@ -90,17 +96,7 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
       description: combo.meaning,
       images: [`${env.appUrl}/og/combo/${combo.slug}.png`],
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
+    robots: decisionToRobots(indexing),
   };
 }
 

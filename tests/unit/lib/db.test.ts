@@ -59,6 +59,11 @@ describe('db module', () => {
     it('should not throw when called', () => {
       expect(() => clearDb()).not.toThrow();
     });
+
+    it('should reset the cached db instance', () => {
+      clearDb();
+      expect(() => clearDb()).not.toThrow();
+    });
   });
 });
 

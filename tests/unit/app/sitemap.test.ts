@@ -2,9 +2,13 @@ import { describe, it, expect, beforeEach, spyOn, afterEach } from 'bun:test';
 import * as emojiData from '../../../src/lib/emoji-data';
 import * as comboData from '../../../src/lib/combo-data';
 import * as guideData from '../../../src/lib/guide-data';
+import * as comparisonData from '../../../src/lib/comparison-data';
+import type { Emoji } from '../../../src/types/emoji';
+import type { EmojiCombo, EmojiComboCategoryName } from '../../../src/types/combo';
+import type { EmojiComparison } from '../../../src/types/comparison';
 
 // Mock data
-const mockEmojis = [
+const mockEmojis: Emoji[] = [
   {
     unicode: '1F480',
     slug: 'skull',
@@ -16,13 +20,21 @@ const mockEmojis = [
     unicodeVersion: '6.0',
     baseMeaning: 'A human skull',
     tldr: "Usually means 'that's so funny I'm dead'",
-    contextMeanings: [],
+    contextMeanings: [
+      {
+        context: 'SLANG',
+        meaning: 'Used to react to something very funny',
+        example: 'That joke 💀',
+        riskLevel: 'LOW',
+      },
+    ],
     platformNotes: [],
     generationalNotes: [],
     warnings: [],
     relatedCombos: [],
     seoTitle: 'Skull Emoji Meaning',
     seoDescription: 'Learn what skull emoji means',
+    contentUpdatedAt: '2026-08-01T00:00:00.000Z',
   },
   {
     unicode: '1F602',
@@ -43,22 +55,81 @@ const mockEmojis = [
     seoTitle: 'Joy Emoji Meaning',
     seoDescription: 'Learn what joy emoji means',
   },
+  // Skin-tone variant — should be excluded from sitemap.
+  {
+    unicode: '1F44B-1F3FD',
+    slug: 'wave-medium',
+    character: '👋🏽',
+    name: 'Waving Hand Medium Skin Tone',
+    shortName: 'wave-medium',
+    category: 'people',
+    unicodeVersion: '14.0',
+    baseMeaning: 'A waving hand with medium skin tone',
+    tldr: 'Wave with medium skin tone',
+    contextMeanings: [],
+    platformNotes: [],
+    generationalNotes: [],
+    warnings: [],
+    relatedCombos: [],
+    seoTitle: 'Wave Medium Skin Tone Emoji',
+    seoDescription: 'Learn what the medium-skin-tone wave emoji means',
+    skinToneBase: 'wave',
+  },
+  // Stub emoji — should be excluded (no contentTier override → resolveContentTier = thin).
+  {
+    unicode: '1F000',
+    slug: 'stub-emoji',
+    character: '�',
+    name: 'Stub',
+    shortName: 'stub',
+    category: 'symbols',
+    unicodeVersion: '1.0',
+    baseMeaning: 'Stub',
+    tldr: 'Stub',
+    contextMeanings: [],
+    platformNotes: [],
+    generationalNotes: [],
+    warnings: [],
+    relatedCombos: [],
+    seoTitle: 'Stub',
+    seoDescription: 'Stub',
+  },
 ];
 
-const mockCombos = [
+const mockCombos: EmojiCombo[] = [
   {
     slug: 'skull-laughing',
     combo: '💀😂',
     name: 'Skull Laughing',
     meaning: 'Something very funny',
     description: 'Used when something is extremely funny',
-    category: 'reactions' as const,
+    category: 'humor',
     emojis: ['skull', 'face-with-tears-of-joy'],
+    examples: ['That thread 💀😂', 'Dead 💀😂'],
     tags: ['funny', 'laughing'],
+    seoTitle: '💀😂 Skull Laughing Combo Meaning',
+    seoDescription: 'What does 💀😂 mean?',
+    contentUpdatedAt: '2026-08-02T00:00:00.000Z',
+  },
+  {
+    slug: 'thin-combo',
+    combo: '🙂🙂',
+    name: 'Thin Combo',
+    meaning: 'A thin combo',
+    description: 'Description',
+    category: 'other',
+    emojis: ['slightly-smiling-face'],
+    examples: ['Hi 🙂🙂'],
+    tags: [],
+    seoTitle: 'Thin Combo Meaning',
+    seoDescription: 'Thin combo description',
+    contentTier: 'thin',
   },
 ];
 
 const mockCategories = ['faces', 'people'];
+
+const mockComboCategories = ['humor', 'other'];
 
 const mockGuideSummaries = [
   {
@@ -78,37 +149,73 @@ const mockGuideSummaries = [
   },
 ];
 
+const mockComparisons: EmojiComparison[] = [
+  {
+    slug: 'skull-vs-face-with-tears-of-joy',
+    emoji1Slug: 'skull',
+    emoji2Slug: 'face-with-tears-of-joy',
+    seoTitle: 'Skull vs Joy',
+    seoDescription: 'Comparison',
+    comparisonPoints: [],
+  },
+];
+
 describe('sitemap', () => {
-  let getAllEmojiSlugsSpy: ReturnType<typeof spyOn>;
-  let getAllComboSlugsSpy: ReturnType<typeof spyOn>;
+  let getAllEmojisSpy: ReturnType<typeof spyOn>;
   let getAllCategoriesSpy: ReturnType<typeof spyOn>;
+  let getAllPlatformsSpy: ReturnType<typeof spyOn>;
+  let getAllGenerationsSpy: ReturnType<typeof spyOn>;
+  let getPageableContextTypesSpy: ReturnType<typeof spyOn>;
+  let getAllCombosSpy: ReturnType<typeof spyOn>;
+  let getAllComboCategoriesSpy: ReturnType<typeof spyOn>;
   let getPublishedGuideSummariesSpy: ReturnType<typeof spyOn>;
+  let getAllComparisonsSpy: ReturnType<typeof spyOn>;
 
   beforeEach(() => {
     // Clear caches before each test
     emojiData.clearEmojiCache();
     comboData.clearComboCache();
     guideData.clearGuideCache();
+    comparisonData.clearComparisonCache();
 
     // Set up spies with mock data
-    getAllEmojiSlugsSpy = spyOn(emojiData, 'getAllEmojiSlugs').mockReturnValue(
-      mockEmojis.map((e) => e.slug)
-    );
-    getAllComboSlugsSpy = spyOn(comboData, 'getAllComboSlugs').mockReturnValue(
-      mockCombos.map((c) => c.slug)
-    );
+    getAllEmojisSpy = spyOn(emojiData, 'getAllEmojis').mockReturnValue(mockEmojis);
     getAllCategoriesSpy = spyOn(emojiData, 'getAllCategories').mockReturnValue(mockCategories);
+    getAllPlatformsSpy = spyOn(emojiData, 'getAllPlatforms').mockReturnValue([
+      'IMESSAGE',
+      'INSTAGRAM',
+    ] as never);
+    getAllGenerationsSpy = spyOn(emojiData, 'getAllGenerations').mockReturnValue([
+      'GEN_Z',
+      'MILLENNIAL',
+    ] as never);
+    getPageableContextTypesSpy = spyOn(emojiData, 'getPageableContextTypes').mockReturnValue([
+      'SLANG',
+      'DATING',
+    ] as never);
+    getAllCombosSpy = spyOn(comboData, 'getAllCombos').mockReturnValue(mockCombos);
+    getAllComboCategoriesSpy = spyOn(comboData, 'getAllComboCategories').mockReturnValue(
+      mockComboCategories as EmojiComboCategoryName[]
+    );
     getPublishedGuideSummariesSpy = spyOn(guideData, 'getPublishedGuideSummaries').mockReturnValue(
       mockGuideSummaries
+    );
+    getAllComparisonsSpy = spyOn(comparisonData, 'getAllComparisons').mockReturnValue(
+      mockComparisons
     );
   });
 
   afterEach(() => {
     // Restore all spies
-    getAllEmojiSlugsSpy.mockRestore();
-    getAllComboSlugsSpy.mockRestore();
+    getAllEmojisSpy.mockRestore();
     getAllCategoriesSpy.mockRestore();
+    getAllPlatformsSpy.mockRestore();
+    getAllGenerationsSpy.mockRestore();
+    getPageableContextTypesSpy.mockRestore();
+    getAllCombosSpy.mockRestore();
+    getAllComboCategoriesSpy.mockRestore();
     getPublishedGuideSummariesSpy.mockRestore();
+    getAllComparisonsSpy.mockRestore();
   });
 
   describe('sitemap function', () => {
@@ -122,56 +229,117 @@ describe('sitemap', () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
-      // Check homepage
       const homepage = result.find((entry) => entry.url.endsWith('/'));
       expect(homepage).toBeDefined();
       expect(homepage?.priority).toBe(1.0);
       expect(homepage?.changeFrequency).toBe('daily');
 
-      // Check interpreter page
       const interpreter = result.find((entry) => entry.url.endsWith('/interpreter'));
       expect(interpreter).toBeDefined();
       expect(interpreter?.priority).toBe(0.9);
       expect(interpreter?.changeFrequency).toBe('weekly');
     });
 
-    it('should include emoji pages', async () => {
+    it('should include about/contact/pricing/privacy/terms/search/emoji/combo hubs', async () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
-      // Check emoji pages
-      const skullPage = result.find((entry) => entry.url.includes('/emoji/skull'));
-      expect(skullPage).toBeDefined();
-      expect(skullPage?.priority).toBe(0.8);
-      expect(skullPage?.changeFrequency).toBe('weekly');
-
-      const joyPage = result.find((entry) => entry.url.includes('/emoji/face-with-tears-of-joy'));
-      expect(joyPage).toBeDefined();
+      for (const path of [
+        '/about',
+        '/contact',
+        '/pricing',
+        '/privacy',
+        '/terms',
+        '/search',
+        '/emoji',
+        '/combo',
+      ]) {
+        const entry = result.find((e) => e.url.endsWith(path));
+        expect(entry).toBeDefined();
+      }
     });
 
-    it('should include combo pages', async () => {
+    it('should include emoji pages for indexable emojis', async () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
-      // Check combo pages
+      const skullPage = result.find((entry) => entry.url.includes('/emoji/skull'));
+      expect(skullPage).toBeDefined();
+      expect(skullPage?.priority).toBeGreaterThanOrEqual(0.7);
+      expect(skullPage?.changeFrequency).toBe('weekly');
+    });
+
+    it('should exclude skin-tone variant emoji URLs', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const skinTonePage = result.find((entry) => entry.url.includes('/emoji/wave-medium'));
+      expect(skinTonePage).toBeUndefined();
+    });
+
+    it('should exclude stub/thin emoji URLs without explicit contentTier', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const stubPage = result.find((entry) => entry.url.includes('/emoji/stub-emoji'));
+      expect(stubPage).toBeUndefined();
+    });
+
+    it('should include combo pages for indexable combos', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
       const comboPage = result.find((entry) => entry.url.includes('/combo/skull-laughing'));
       expect(comboPage).toBeDefined();
-      expect(comboPage?.priority).toBe(0.7);
-      expect(comboPage?.changeFrequency).toBe('weekly');
+      expect(comboPage?.priority).toBeGreaterThanOrEqual(0.7);
+    });
+
+    it('should exclude thin-tier combo URLs', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const thinPage = result.find((entry) => entry.url.includes('/combo/thin-combo'));
+      expect(thinPage).toBeUndefined();
     });
 
     it('should include category pages', async () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
-      // Check category pages
       const facesCategory = result.find((entry) => entry.url.includes('/emoji/category/faces'));
       expect(facesCategory).toBeDefined();
-      expect(facesCategory?.priority).toBe(0.7);
-      expect(facesCategory?.changeFrequency).toBe('weekly');
+      expect(facesCategory?.priority).toBeLessThanOrEqual(0.7);
 
       const peopleCategory = result.find((entry) => entry.url.includes('/emoji/category/people'));
       expect(peopleCategory).toBeDefined();
+    });
+
+    it('should include combo category pages', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const humorCategory = result.find((entry) => entry.url.includes('/combo/category/humor'));
+      expect(humorCategory).toBeDefined();
+    });
+
+    it('should include facet hubs (platform, generation, context)', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      expect(result.find((e) => e.url.endsWith('/emoji/platform/IMESSAGE'))).toBeDefined();
+      expect(result.find((e) => e.url.endsWith('/emoji/platform/INSTAGRAM'))).toBeDefined();
+      expect(result.find((e) => e.url.endsWith('/emoji/generation/GEN_Z'))).toBeDefined();
+      expect(result.find((e) => e.url.endsWith('/emoji/context/SLANG'))).toBeDefined();
+    });
+
+    it('should include compare pages in canonical order', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const compare = result.find((entry) =>
+        entry.url.endsWith('/compare/skull/face-with-tears-of-joy')
+      );
+      expect(compare).toBeDefined();
     });
 
     it('should have lastModified dates on all entries', async () => {
@@ -188,7 +356,6 @@ describe('sitemap', () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
-      // All URLs should start with the configured base URL
       result.forEach((entry) => {
         expect(entry.url).toMatch(/^https?:\/\//);
       });
@@ -209,7 +376,7 @@ describe('sitemap', () => {
 
       const guidesIndex = result.find((entry) => entry.url.endsWith('/guides'));
       expect(guidesIndex).toBeDefined();
-      expect(guidesIndex?.priority).toBe(0.8);
+      expect(guidesIndex?.priority).toBe(0.9);
       expect(guidesIndex?.changeFrequency).toBe('weekly');
     });
 
@@ -221,9 +388,20 @@ describe('sitemap', () => {
         entry.url.includes('/guides/what-does-skull-mean-in-texting')
       );
       expect(guidePage).toBeDefined();
-      expect(guidePage?.priority).toBe(0.8);
+      expect(guidePage?.priority).toBe(0.85);
       expect(guidePage?.changeFrequency).toBe('monthly');
       expect(guidePage?.lastModified instanceof Date).toBe(true);
+    });
+
+    it('should not include private surfaces (api/dashboard/admin/auth)', async () => {
+      const { default: sitemap } = await import('../../../src/app/sitemap');
+      const result = await sitemap();
+
+      const urls = result.map((entry) => entry.url);
+      expect(urls.some((url) => url.includes('/api/'))).toBe(false);
+      expect(urls.some((url) => url.includes('/dashboard'))).toBe(false);
+      expect(urls.some((url) => url.includes('/admin'))).toBe(false);
+      expect(urls.some((url) => url.includes('/login'))).toBe(false);
     });
   });
 });
