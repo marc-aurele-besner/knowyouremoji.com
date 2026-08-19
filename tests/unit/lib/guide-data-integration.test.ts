@@ -140,6 +140,49 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('heart-hands guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-heart-hands-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe('🫶 is the hug emoji that became a fandom signal');
+      expect(guide?.tags).toContain('fandom');
+      expect(guide?.tags).toContain('kpop');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🫶');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-heart-hands-mean');
+      expect(guide?.relatedEmojis).toContain('heart-hands');
+      expect(guide?.relatedEmojis).toContain('heart-red');
+      expect(guide?.relatedEmojis).toContain('sparkling-heart');
+      expect(guide?.relatedEmojis).toContain('thumbs-up');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-heart-hands-mean');
+      expect(guide?.relatedCombos).toContain('double-hearts');
+      expect(guide?.relatedCombos).toContain('hand-heart-love');
+      expect(guide?.relatedCombos).toContain('sparkle-heart');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-heart-hands-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-heart-hands-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-heart-hands-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🫶');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
