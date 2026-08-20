@@ -183,6 +183,50 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('face-with-hand-over-mouth guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-face-with-hand-over-mouth-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe('🤭 is the "hehe" emoji that quietly became flirty');
+      expect(guide?.tags).toContain('bashful');
+      expect(guide?.tags).toContain('dating');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🤭');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-face-with-hand-over-mouth-mean');
+      expect(guide?.relatedEmojis).toContain('face-with-hand-over-mouth');
+      expect(guide?.relatedEmojis).toContain('smiling-face-with-smiling-eyes');
+      expect(guide?.relatedEmojis).toContain('see-no-evil');
+      expect(guide?.relatedEmojis).toContain('smirk');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-face-with-hand-over-mouth-mean');
+      expect(guide?.relatedCombos).toContain('shy-blush');
+      expect(guide?.relatedCombos).toContain('smirk-wink');
+      expect(guide?.relatedCombos).toContain('blush-rose');
+      expect(guide?.relatedCombos).toContain('soft-smile');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-face-with-hand-over-mouth-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-face-with-hand-over-mouth-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-face-with-hand-over-mouth-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🤭');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
