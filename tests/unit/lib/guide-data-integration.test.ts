@@ -227,6 +227,52 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('saluting-face guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-saluting-face-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(`🫡 is the "yes sir" emoji that became Gen Z's quiet check-out`);
+      expect(guide?.tags).toContain('gen-z');
+      expect(guide?.tags).toContain('work');
+      expect(guide?.tags).toContain('passive-aggressive');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🫡');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-saluting-face-mean');
+      expect(guide?.relatedEmojis).toContain('saluting-face');
+      expect(guide?.relatedEmojis).toContain('folded-hands');
+      expect(guide?.relatedEmojis).toContain('thumbs-up');
+      expect(guide?.relatedEmojis).toContain('face-with-hand-over-mouth');
+      expect(guide?.relatedEmojis).toContain('see-no-evil');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-saluting-face-mean');
+      expect(guide?.relatedCombos).toContain('folded-hands-pleading');
+      expect(guide?.relatedCombos).toContain('eye-roll-clap');
+      expect(guide?.relatedCombos).toContain('rolling-eyes-sigh');
+      expect(guide?.relatedCombos).toContain('flex-strong');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-saluting-face-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-saluting-face-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-saluting-face-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🫡');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
