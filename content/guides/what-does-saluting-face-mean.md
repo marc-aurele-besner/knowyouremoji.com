@@ -6,17 +6,7 @@ publishedAt: 2026-08-21
 updatedAt: 2026-08-21
 author: KnowYourEmoji Editorial
 tags: [gen-z, work, passive-aggressive, slang, generational, military, meme]
-relatedEmojis:
-  [
-    saluting-face,
-    folded-hands,
-    thumbs-up,
-    sunglasses,
-    grimacing,
-    cowboy-hat-face,
-    see-no-evil,
-    face-with-hand-over-mouth,
-  ]
+relatedEmojis: [saluting-face, folded-hands, thumbs-up, face-with-hand-over-mouth, see-no-evil]
 relatedCombos: [folded-hands-pleading, eye-roll-clap, rolling-eyes-sigh, flex-strong]
 heroEmoji: 🫡
 readingTimeMinutes: 7

@@ -245,11 +245,8 @@ describe('guide-data (live loader)', () => {
       expect(guide?.relatedEmojis).toContain('saluting-face');
       expect(guide?.relatedEmojis).toContain('folded-hands');
       expect(guide?.relatedEmojis).toContain('thumbs-up');
-      expect(guide?.relatedEmojis).toContain('sunglasses');
-      expect(guide?.relatedEmojis).toContain('grimacing');
-      expect(guide?.relatedEmojis).toContain('cowboy-hat-face');
-      expect(guide?.relatedEmojis).toContain('see-no-evil');
       expect(guide?.relatedEmojis).toContain('face-with-hand-over-mouth');
+      expect(guide?.relatedEmojis).toContain('see-no-evil');
     });
 
     it('resolves the relatedCombos slugs to known combo records', () => {
