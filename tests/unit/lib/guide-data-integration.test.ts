@@ -273,6 +273,50 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('upside-down-face guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-upside-down-face-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(`🙃 is the "I'm fine" emoji that stopped being fine around 2016`);
+      expect(guide?.tags).toContain('sarcasm');
+      expect(guide?.tags).toContain('passive-aggressive');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🙃');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-upside-down-face-mean');
+      expect(guide?.relatedEmojis).toContain('upside-down-face');
+      expect(guide?.relatedEmojis).toContain('slightly-smiling');
+      expect(guide?.relatedEmojis).toContain('smirk');
+      expect(guide?.relatedEmojis).toContain('grimacing');
+      expect(guide?.relatedEmojis).toContain('face-with-raised-eyebrow');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-upside-down-face-mean');
+      expect(guide?.relatedCombos).toContain('upside-down-fine');
+      expect(guide?.relatedCombos).toContain('shrug-upside-down');
+      expect(guide?.relatedCombos).toContain('thumbs-up-slightly-smiling');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-upside-down-face-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-upside-down-face-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-upside-down-face-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🙃');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
