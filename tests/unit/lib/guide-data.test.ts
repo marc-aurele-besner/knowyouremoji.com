@@ -1,5 +1,9 @@
 import { describe, it, expect, beforeEach } from 'bun:test';
-import { parseGuideFrontmatter, _buildGuideFromFrontmatter, deriveSeoTitle } from '../../../src/lib/guide-data';
+import {
+  parseGuideFrontmatter,
+  _buildGuideFromFrontmatter,
+  deriveSeoTitle,
+} from '../../../src/lib/guide-data';
 
 describe('guide-data', () => {
   describe('parseGuideFrontmatter', () => {
@@ -113,6 +117,27 @@ body`;
       const { data, body } = parseGuideFrontmatter(source);
       expect(data.title).toBe('crlf');
       expect(body).toBe('body');
+    });
+
+    it('parses inline lists split across multiple lines (prettier output)', () => {
+      const source = `---
+title: split-list
+tags: [gen-z, slang]
+relatedEmojis:
+  [
+    fire,
+    sparkles,
+    thumbs-up,
+  ]
+relatedCombos:
+  [fire-100, fire-heart, party-fire]
+---
+
+body`;
+      const { data } = parseGuideFrontmatter(source);
+      expect(data.tags).toEqual(['gen-z', 'slang']);
+      expect(data.relatedEmojis).toEqual(['fire', 'sparkles', 'thumbs-up']);
+      expect(data.relatedCombos).toEqual(['fire-100', 'fire-heart', 'party-fire']);
     });
   });
 

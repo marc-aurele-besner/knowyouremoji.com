@@ -49,9 +49,15 @@ export function parseGuideFrontmatter(source: string): {
   const body = afterClosing.startsWith('\n') ? afterClosing.slice(1) : afterClosing;
 
   const data: Record<string, unknown> = {};
-  for (const rawLine of frontmatterBlock.split('\n')) {
+  const lines = frontmatterBlock.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const rawLine = lines[i];
     const line = rawLine.trim();
-    if (!line || line.startsWith('#')) continue;
+    if (!line || line.startsWith('#')) {
+      i++;
+      continue;
+    }
 
     const colonAt = line.indexOf(':');
     if (colonAt === -1) {
@@ -59,18 +65,65 @@ export function parseGuideFrontmatter(source: string): {
     }
 
     const key = line.slice(0, colonAt).trim();
-    let value: string | string[] = line.slice(colonAt + 1).trim();
+    let valueStr = line.slice(colonAt + 1).trim();
+    let consumed = 1;
 
+    // Inline list syntax may span multiple lines when prettier splits long
+    // lists across lines. That can look like `key: [` (open bracket, no
+    // close on this line) or even `key:` followed by `  [` on the next
+    // line. In both cases the value isn't finished yet, so consume the
+    // following indented lines until the matching `]` appears. We only
+    // do this when the value clearly belongs to a list (the line ends
+    // with `[` or starts one on the next line) so an intentional empty
+    // value is preserved.
+    const listAlreadyClosed = valueStr.includes(']');
+    const listOpensHere = valueStr === '' || valueStr.startsWith('[');
+    if (listOpensHere && !listAlreadyClosed) {
+      const parts: string[] = [];
+      if (valueStr !== '') {
+        parts.push(valueStr);
+      }
+      let j = i + 1;
+      let foundCloser = false;
+      while (j < lines.length && !foundCloser) {
+        const next = lines[j].trim();
+        if (next === '') {
+          j++;
+          continue;
+        }
+        // Bail out if the next content line is a new `key:` — that means
+        // the current key was intentionally left empty, not a list.
+        if (parts.length === 0 && next.startsWith('[')) {
+          parts.push(next);
+        } else if (parts.length === 0) {
+          // Empty value followed by a non-list line: keep the empty value.
+          break;
+        } else {
+          parts.push(next);
+        }
+        if (next.includes(']')) foundCloser = true;
+        j++;
+      }
+      if (parts.length > 0 && parts.join(' ').includes(']')) {
+        valueStr = parts.join(' ').trim();
+        consumed = j - i;
+      } else {
+        consumed = 1;
+      }
+    }
+    i += consumed;
+
+    let value: string | string[];
     // Inline list syntax: `[a, b, c]` → string[]
-    if (value.startsWith('[') && value.endsWith(']')) {
-      value = value
+    if (valueStr.startsWith('[') && valueStr.endsWith(']')) {
+      value = valueStr
         .slice(1, -1)
         .split(',')
         .map((entry) => entry.trim().replace(/^['"]|['"]$/g, ''))
         .filter((entry) => entry.length > 0);
     } else {
       // Strip surrounding quotes for plain string values.
-      value = value.replace(/^['"]|['"]$/g, '');
+      value = valueStr.replace(/^['"]|['"]$/g, '');
     }
 
     data[key] = value;
