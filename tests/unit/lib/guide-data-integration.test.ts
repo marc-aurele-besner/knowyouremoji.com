@@ -317,6 +317,61 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('fire guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-fire-emoji-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(`🔥 is the compliment emoji that stopped meaning it`);
+      expect(guide?.tags).toContain('gen-z');
+      expect(guide?.tags).toContain('millennial');
+      expect(guide?.tags).toContain('slang');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🔥');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-fire-emoji-mean');
+      expect(guide?.relatedEmojis).toContain('fire');
+      expect(guide?.relatedEmojis).toContain('sparkles');
+      expect(guide?.relatedEmojis).toContain('star-struck');
+      expect(guide?.relatedEmojis).toContain('sunglasses');
+      expect(guide?.relatedEmojis).toContain('smirk');
+      expect(guide?.relatedEmojis).toContain('thumbs-up');
+      expect(guide?.relatedEmojis).toContain('ok-hand');
+      expect(guide?.relatedEmojis).toContain('party-popper');
+      expect(guide?.relatedEmojis).toContain('flexed-biceps');
+      expect(guide?.relatedEmojis).toContain('crown');
+      expect(guide?.relatedEmojis).toContain('smiling-face-with-heart-eyes');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-fire-emoji-mean');
+      expect(guide?.relatedCombos).toContain('fire-100');
+      expect(guide?.relatedCombos).toContain('fire-heart');
+      expect(guide?.relatedCombos).toContain('party-fire');
+      expect(guide?.relatedCombos).toContain('crown-fire');
+      expect(guide?.relatedCombos).toContain('heart-on-fire');
+      expect(guide?.relatedCombos).toContain('heart-eyes-fire');
+      expect(guide?.relatedCombos).toContain('flexed-biceps-fire');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-fire-emoji-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-fire-emoji-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-fire-emoji-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🔥');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
