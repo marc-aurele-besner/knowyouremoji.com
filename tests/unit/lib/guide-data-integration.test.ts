@@ -372,6 +372,64 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('champagne guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-champagne-emoji-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(
+        `🍾 is the "cheers to me" emoji that turned a toast into a personal brand`
+      );
+      expect(guide?.tags).toContain('gen-z');
+      expect(guide?.tags).toContain('millennial');
+      expect(guide?.tags).toContain('slang');
+      expect(guide?.tags).toContain('celebration');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('🍾');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-champagne-emoji-mean');
+      expect(guide?.relatedEmojis).toContain('champagne');
+      expect(guide?.relatedEmojis).toContain('clinking-glasses');
+      expect(guide?.relatedEmojis).toContain('party-popper');
+      expect(guide?.relatedEmojis).toContain('confetti-ball');
+      expect(guide?.relatedEmojis).toContain('balloon');
+      expect(guide?.relatedEmojis).toContain('wrapped-gift');
+      expect(guide?.relatedEmojis).toContain('cake');
+      expect(guide?.relatedEmojis).toContain('trophy');
+      expect(guide?.relatedEmojis).toContain('sparkler');
+      expect(guide?.relatedEmojis).toContain('sunglasses');
+      expect(guide?.relatedEmojis).toContain('crown');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-champagne-emoji-mean');
+      expect(guide?.relatedCombos).toContain('balloon-party');
+      expect(guide?.relatedCombos).toContain('cake-party');
+      expect(guide?.relatedCombos).toContain('party-poppers');
+      expect(guide?.relatedCombos).toContain('party-celebrate');
+      expect(guide?.relatedCombos).toContain('party-fire');
+      expect(guide?.relatedCombos).toContain('trophy-star');
+      expect(guide?.relatedCombos).toContain('clinking-glasses');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-champagne-emoji-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-champagne-emoji-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-champagne-emoji-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🍾');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
