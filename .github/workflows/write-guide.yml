@@ -50,6 +50,6 @@ jobs:
                 "ANTHROPIC_SMALL_FAST_MODEL": "${{ secrets.ANTHROPIC_MODEL }}",
                 "ANTHROPIC_DEFAULT_SONNET_MODEL": "${{ secrets.ANTHROPIC_MODEL }}",
                 "ANTHROPIC_DEFAULT_OPUS_MODEL": "${{ secrets.ANTHROPIC_MODEL }}",
-                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "${{ secrets.ANTHROPIC_MODEL }}",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "${{ secrets.ANTHROPIC_MODEL }}"
               }
             }
