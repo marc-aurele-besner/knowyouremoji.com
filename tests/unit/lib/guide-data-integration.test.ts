@@ -430,6 +430,55 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('weary guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-weary-emoji-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(`😩 is the "I cannot even" emoji that took over group chats`);
+      expect(guide?.tags).toContain('gen-z');
+      expect(guide?.tags).toContain('slang');
+      expect(guide?.tags).toContain('generational');
+      expect(guide?.tags).toContain('work');
+      expect(guide?.tags).toContain('dating');
+      expect(guide?.readingTimeMinutes).toBe(7);
+      expect(guide?.heroEmoji).toBe('😩');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-weary-emoji-mean');
+      expect(guide?.relatedEmojis).toContain('weary');
+      expect(guide?.relatedEmojis).toContain('sob');
+      expect(guide?.relatedEmojis).toContain('weary-cat');
+      expect(guide?.relatedEmojis).toContain('face-with-steam-from-nose');
+      expect(guide?.relatedEmojis).toContain('tired-face');
+      expect(guide?.relatedEmojis).toContain('sleeping');
+      expect(guide?.relatedEmojis).toContain('drooling');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-weary-emoji-mean');
+      expect(guide?.relatedCombos).toContain('weary-sob');
+      expect(guide?.relatedCombos).toContain('weary-tired');
+      expect(guide?.relatedCombos).toContain('sleep-tired');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-weary-emoji-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-weary-emoji-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-weary-emoji-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('😩');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
