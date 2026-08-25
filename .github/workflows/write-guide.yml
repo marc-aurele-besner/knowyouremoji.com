@@ -2,8 +2,9 @@ name: Write Guide Post
 
 on:
   schedule:
-    # 1:30 AM UTC, weekdays
+    # 1:30 AM Toronto/Montreal, weekdays (handles EDT/EST)
     - cron: '30 1 * * 1-5'
+      timezone: America/Toronto
   workflow_dispatch:
 
 jobs:
