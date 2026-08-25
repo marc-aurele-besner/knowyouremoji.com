@@ -36,6 +36,7 @@ jobs:
           claude_code_oauth_token: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
 
           prompt: "In a new PR, write a new guide post. Go with your judgement on what is the best next post to write and don't ask me questions."
+          show_full_output: true
 
           claude_args: |
             --dangerously-skip-permissions
