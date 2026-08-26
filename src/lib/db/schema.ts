@@ -71,13 +71,16 @@ export const interpretations = pgTable('interpretations', {
 
 export const subscriptions = pgTable('subscriptions', {
   id: uuid('id').defaultRandom().primaryKey(),
+  // One row per user, and one row per Stripe subscription: see
+  // migrations/006_create_subscriptions.sql
   userId: uuid('user_id')
     .notNull()
+    .unique()
     .references(() => users.id, { onDelete: 'cascade' }),
   status: text('status').notNull().default('free'),
   plan: text('plan').notNull().default('free'),
   stripeCustomerId: text('stripe_customer_id'),
-  stripeSubscriptionId: text('stripe_subscription_id'),
+  stripeSubscriptionId: text('stripe_subscription_id').unique(),
   currentPeriodEnd: timestamp('current_period_end', { mode: 'date' }),
   trialEndsAt: timestamp('trial_ends_at', { mode: 'date' }),
   createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
