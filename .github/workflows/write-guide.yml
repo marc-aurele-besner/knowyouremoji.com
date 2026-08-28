@@ -25,7 +25,11 @@ jobs:
           # Write access; store a fine-grained PAT as WRITE_GUIDE_GITHUB_TOKEN.
           # token: ${{ secrets.WRITE_GUIDE_GITHUB_TOKEN }}
 
-      - uses: anthropics/claude-code-action@v1
+      - name: Snapshot remote branches
+        run: git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | sort > "$RUNNER_TEMP/branches-before.txt"
+
+      - id: claude
+        uses: anthropics/claude-code-action@v1
         env:
           ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
           ANTHROPIC_AUTH_TOKEN: ${{ secrets.ANTHROPIC_AUTH_TOKEN }}
@@ -46,7 +50,13 @@ jobs:
           # bot_id: "12345678"
           # bot_name: "the-username"
 
-          prompt: "In a new PR, write a new guide post. Go with your judgement on what is the best next post to write and don't ask me questions."
+          prompt: |
+            Write a new guide post. Pick the best next topic yourself and do not ask questions.
+
+            You must finish by opening a GitHub pull request with `gh pr create`.
+            Do not stop after writing the file, committing, or pushing a branch.
+            Do not leave only a compare URL. Before you finish, `gh pr view --json url`
+            for that branch must return an open PR.
           show_full_output: true
 
           claude_args: |
@@ -65,3 +75,88 @@ jobs:
                 "ANTHROPIC_DEFAULT_HAIKU_MODEL": "${{ secrets.ANTHROPIC_MODEL }}"
               }
             }
+
+      - name: Open a pull request if Claude skipped it
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ steps.claude.outputs.github_token || github.token }}
+          CLAUDE_BRANCH: ${{ steps.claude.outputs.branch_name }}
+          RUN_ID: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          has_work=false
+          if [ -n "$(git status --porcelain)" ]; then
+            has_work=true
+          fi
+
+          unpushed=false
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            unpushed=true
+          fi
+
+          if [ "$has_work" = true ] || [ "$unpushed" = true ]; then
+            changed="$(git status --porcelain -- content/guides | awk '{print $NF; exit}')"
+            slug=""
+            if [ -n "${changed:-}" ]; then
+              slug="$(basename "$changed" .md)"
+            fi
+
+            branch="${CLAUDE_BRANCH:-}"
+            if [ -z "$branch" ] || [ "$branch" = "main" ] || [ "$branch" = "master" ]; then
+              if [ -n "$slug" ]; then
+                branch="guide/${slug}"
+              else
+                branch="guide/write-guide-${RUN_ID}"
+              fi
+            fi
+
+            current="$(git branch --show-current)"
+            if [ "$current" = "main" ] || [ "$current" = "master" ] || [ -z "$current" ]; then
+              git checkout -B "$branch"
+            fi
+
+            if [ "$has_work" = true ]; then
+              git add -A
+              if ! git diff --cached --quiet; then
+                git commit -m "feat(guides): add scheduled guide post"
+              fi
+            fi
+
+            git push -u origin HEAD
+          fi
+
+          git ls-remote --heads origin | awk '{print $2}' | sed 's#refs/heads/##' | sort > "$RUNNER_TEMP/branches-after.txt"
+
+          {
+            comm -13 "$RUNNER_TEMP/branches-before.txt" "$RUNNER_TEMP/branches-after.txt" || true
+            if [ -n "${CLAUDE_BRANCH:-}" ]; then
+              printf '%s\n' "$CLAUDE_BRANCH"
+            fi
+          } | awk 'NF && $0 != "main" && $0 != "master"' | sort -u > "$RUNNER_TEMP/pr-candidates.txt"
+
+          opened=0
+          while IFS= read -r branch; do
+            [ -z "$branch" ] && continue
+            if [ -z "$(git ls-remote --heads origin "refs/heads/${branch}")" ]; then
+              echo "Skipping ${branch} (not on origin)"
+              continue
+            fi
+            number="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
+            if [ -n "$number" ]; then
+              echo "PR #${number} already exists for ${branch}"
+              opened=1
+              continue
+            fi
+            gh pr create --head "$branch" --base main --fill
+            opened=1
+          done < "$RUNNER_TEMP/pr-candidates.txt"
+
+          if [ "$opened" -eq 0 ]; then
+            echo "::error::No pull request was opened. Claude must leave a pushed branch so this step can create one."
+            exit 1
+          fi
