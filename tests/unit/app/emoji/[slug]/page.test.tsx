@@ -25,6 +25,42 @@ mock.module('next/navigation', () => ({
   notFound: mockNotFound,
 }));
 
+// Mock env so generateMetadata's openGraph.siteName is deterministic
+// regardless of process.env state leaked in from other test files (PR 388 flake).
+// Mirrors the pattern in tests/unit/app/combo/[slug]/page.test.tsx.
+const mockGetEnv = mock(() => ({
+  appUrl: 'http://localhost:3000',
+  appName: 'KnowYourEmoji',
+  openrouterApiKey: undefined,
+  openrouterModel: 'liquid/lfm2-8b-a1b',
+  enableInterpreter: true,
+  sentryDsn: undefined,
+  sentryDsnPublic: undefined,
+  gaMeasurementId: undefined,
+  posthogKey: undefined,
+  posthogHost: undefined,
+  upstashRedisRestUrl: undefined,
+  upstashRedisRestToken: undefined,
+  authSecret: undefined,
+  googleClientId: undefined,
+  googleClientSecret: undefined,
+  githubClientId: undefined,
+  githubClientSecret: undefined,
+  resendApiKey: undefined,
+  resendFromEmail: undefined,
+  slackBotToken: undefined,
+  slackLogChannelId: undefined,
+  stripeSecretKey: undefined,
+  stripePublishableKey: undefined,
+  stripeWebhookSecret: undefined,
+  stripeProPriceId: undefined,
+  databaseUrl: undefined,
+}));
+
+mock.module('@/lib/env', () => ({
+  getEnv: mockGetEnv,
+}));
+
 const mockEmoji: Emoji = {
   unicode: '1F480',
   slug: 'skull',
