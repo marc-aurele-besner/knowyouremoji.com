@@ -79,11 +79,14 @@
     "unrs-resolver"
   ],
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "src/**/*.{ts,tsx}": [
       "oxlint --fix",
       "prettier --write"
     ],
-    "*.{json,md,css}": [
+    "**/*.{ts,tsx}": [
+      "prettier --write"
+    ],
+    "**/*.{json,md,css}": [
       "prettier --write"
     ]
   }
