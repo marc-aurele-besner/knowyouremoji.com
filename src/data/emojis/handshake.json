@@ -5,130 +5,133 @@
   "name": "Handshake",
   "shortName": "handshake",
   "category": "people",
-  "subcategory": "hand-gesture",
-  "unicodeVersion": "9.0",
-  "baseMeaning": "Two hands shaking in agreement.",
-  "tldr": "Deal! Agreement or partnership.",
+  "subcategory": "hand-fingers-partial",
+  "unicodeVersion": "13.0",
+  "baseMeaning": "Two hands clasped in a handshake, signaling agreement or partnership.",
+  "tldr": "Deal-coded agreement, 'we're good' register, or partnership-coded professional comfort.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Handshake for agreement.",
+      "meaning": "A handshake signaling agreement or partnership.",
       "example": "Deal 🤝",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Agreement or partnership.",
-      "example": "We good 🤝",
+      "meaning": "Deal-coded agreement or 'we're good' register.",
+      "example": "We're good 🤝",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Fake agreement.",
-      "example": "Sure, let's agree to disagree 🤝",
+      "context": "DATING",
+      "meaning": "Mutual-coded partner check-in or 'let's make this work' moment.",
+      "example": "Let's make this work 🤝",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Business agreement or deal.",
-      "example": "Partnership confirmed 🤝",
+      "meaning": "Partnership-coded team energy or 'closed the deal' moment.",
+      "example": "Closed the deal 🤝",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Agreements and deal announcements on brand accounts."
+      "note": "Anchors deal-coded threads, 'we're good' replies, and 'mood 🤝' reveals where the handshake cue matches the partnership register."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Business and collaboration announcements."
+      "note": "Lands on partnership-coded story reposts, deal photo posts, and 'mood 🤝' reveals where the handshake cue reads as mutual-coded comfort."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Travels in handshake-coded transitions, 'closed the deal' reveals, and reaction-content where the handshake cue signals partnership-coded energy."
     },
     {
       "platform": "SLACK",
-      "note": "Standard deal-confirmed reaction in product and partnership channels."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Standard deal-confirmed reaction in partnership and product channels."
+      "note": "Surfaces on partner 'let's make this work' check-ins, family-coded deal messages, and group chats where the handshake cue matches the moment."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "We're in agreement."
+      "note": "Uses 🤝 heavily on deal-coded threads, 'we're good' moments, and partnership-coded reveals where the handshake cue matches the mutual register."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Deal sealed."
+      "note": "Reaches for the handshake on partner 'let's make this work' check-ins, partnership-coded comfort moments, and family deal-coded messages where the universal deal cue fits."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends it on deal-coded messages and family reveals, treating the handshake as literal partnership energy."
     },
     {
       "generation": "BOOMER",
-      "note": "Professional handshake."
+      "note": "Reads it as a literal handshake and sends it on family and grandchild-coded messages without parsing the modern 'we're good' subtext."
     }
   ],
-  "warnings": [],
-  "relatedCombos": [],
-  "seoTitle": "🤝 Handshake Emoji Meaning",
-  "seoDescription": "Learn what the Handshake emoji 🤝 really means.",
-  "skinToneVariations": [
-    "handshake-light",
-    "handshake-medium-light",
-    "handshake-medium",
-    "handshake-medium-dark",
-    "handshake-dark"
+  "warnings": [
+    {
+      "title": "Reads as formal-coded in casual contexts",
+      "description": "Sending 🤝 in casual friend or partner contexts where intimacy is expected can read as too formal-coded or distance-coded. Use a sentence that signals the agreement without the handshake cue when casual intimacy is the goal.",
+      "severity": "LOW"
+    }
   ],
+  "relatedCombos": [],
+  "seoTitle": "🤝 Handshake Emoji Meaning - What Does 🤝 Really Mean?",
+  "seoDescription": "Learn what the Handshake emoji 🤝 really means in texts and DMs. Deal-coded agreement, 'we're good' register, or partnership-coded professional comfort.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-12",
+  "contentUpdatedAt": "2026-09-12",
   "longForm": {
-    "overview": "🤝 is the universal deal-confirmed emoji, the two-hands-shaking pair that signals agreement, partnership, or a deal sealed. The visual cue — two hands clasped in a handshake — is the most direct agreement symbol in the Unicode set, and it has stayed consistent across cultures and contexts. On Slack, Twitter, and LinkedIn 🤝 shows up as the standard reaction to a partnership announcement, the closer on a deal-confirmed thread, and the agreement tag on a stakeholder reply. The emoji is one of the cleanest professional signals on the keyboard because the meaning is unambiguous across age groups and platforms.\n\nThe emoji also doubles as the soft-fake-agreement reaction. A friend says something absurd and the appropriate reply is 🤝 — the visual tag for 'I am agreeing because the joke is worth it.' The dual reading — real agreement or sarcastic compliance — keeps 🤝 versatile without diluting the meaning. Use 🤝 when the moment calls for partner-energy agreement, not as a default reaction to casual agreement.",
-    "howPeopleUseIt": "🤝 arrives as the closer on a partnership announcement, the deal-confirmed reaction in a Slack thread, or the punchline on a sarcastic agreement. On LinkedIn the emoji lands as the standard reaction to a professional milestone or a collaboration post. On Twitter it functions as the quote-tweet reaction to a deal-confirmed announcement. On Slack the same pattern repeats in product or partnership channels as the visual tag for the moment the deal lands.\n\nIn group chats 🤝 works as the shared 'we are aligned' reaction when a friend agrees with a take. The emoji also pairs naturally with 💼 for the business variant, with 👀 for the seeing-eye check, and with a sentence that names what is being agreed to so the handshake does not feel generic.",
-    "whenNotToUse": "Skip 🤝 in contexts where the agreement reading will land wrong — in sarcastic compliance where the recipient does not get the joke, in customer complaint threads where the partnership energy is misplaced, or in hot takes where the agreement is not actually mutual. A 🤝 in a customer complaint reply will read as cynical. Avoid it where genuine disagreement is the right move.\n\nAlso avoid 🤝 when you want to actually offer detailed feedback. The emoji is the agreement signal, so sending it on a friend's first draft of something will read as 'looks good, do not change it' rather than 'here are my notes.' Reach for words or a sentence when the message needs nuance.",
-    "howToReply": "Mirror 🤝 with another 🤝 if you want to keep the agreement going, or upgrade to 💼 for the business variant. If you receive 🤝 on a partnership announcement, reply with a sentence that acknowledges the milestone.\n\nIf 🤝 arrives as a sarcastic agreement, mirror with a sentence that engages with the joke. And if you want to send 🤝 as a deal-confirmed whisper, anchor the emoji with a sentence that names what is being agreed to so the handshake does not feel generic.",
+    "overview": "🤝 is the emoji of deal-coded agreement - two hands clasped in a handshake, the iconography of 'we're good,' partnership-coded professional comfort, and 'closed the deal' register. Where 🫱 reads as offering-coded hand and 🤜 reads as fist-bump-coded bro energy, 🤝 captures the moment when the sender wants to communicate mutual-coded intimacy - a 'let's make this work 🤝' partner moment or a 'closed the deal 🤝' work reveal. The handshake cue borrows from the universal deal tradition and the modern 'we're good' aesthetic, which is exactly why the emoji reads as partnership-coded rather than literal agreement.\n\nIn real-world usage 🤝 lives in the spaces where the sender wants to communicate partnership-coded comfort. A partner sends it on a 'let's make this work 🤝' check-in. A friend sends it on a 'we're good 🤝' reveal. A coworker sends it on a 'closed the deal 🤝' work message. The handshake cue is what makes the emoji feel mutual-coded - it is not just 'deal,' it is 'deal-coded we're-good.'\n\nWhat separates 🤝 from the rest of the hand-emoji family is the we're-good register. The emoji is not saying 'offering hand' (🫱), 'fist-bump bro' (🤜), or 'high-five' (✋). It is saying 'deal-coded agreement,' which carries a specific partnership-coded energy. That is why 🤝 travels especially well on partner 'let's make this work' check-ins, family deal-coded messages, and any context where the sender wants the message to land with mutual-coded comfort.",
+    "howPeopleUseIt": "🤝 shows up as the closer on a 'let's make this work tonight' partner message ('let's make this work tonight 🤝'), the punctuation on a 'we're good 🤝' deal-coded reveal ('we're good 🤝'), and the softener on a 'closed the deal 🤝' team check-in. It pairs naturally with sentences that name the deal-coded agreement - 'we're good,' 'let's make this work,' 'closed the deal' - and sits beautifully on partner 'let's make this work' check-ins and family deal-coded messages.\n\nIn group chats 🤝 anchors 'handshake appreciation' threads, partnership-coded moments, and 'mood 🤝' reveals where the handshake cue matches the moment. On Instagram it lands on deal-coded story reposts and partnership photo posts. On TikTok it travels in handshake-coded transitions and 'mood 🤝' reveals.\n\nThe emoji also works in dating contexts. A 'let's make this work tonight 🤝' partner message uses the handshake cue to communicate mutual-coded romance. Across all of these surfaces the rule is the same: the more partnership-coded the comfort, the more natural 🤝 feels.",
+    "whenNotToUse": "Skip 🤝 in sympathy, condolence, or break-up contexts. The deal-coded agreement cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤝 in casual friend or partner contexts where intimacy is expected - the formal-coded reading can land as distance-coded. Stick to a sentence or a clear message when casual intimacy is the goal.\n\nSkip 🤝 when you want to communicate soft affection. The partnership-coded register is too formal-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
+    "howToReply": "If someone sends 🤝, the cleanest mirror is another 🤝, 🫱, or a sentence that joins the deal-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'we're good right back' or 'closed the deal too.' If the handshake cue feels too formal-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the partnership volume.\n\nWhen 🤝 lands as a partner 'let's make this work' check-in, mirror with another 🤝, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'we're good 🤝' deal reveal, mirror with another 🤝, a sentence that joins the partnership energy, or a heart emoji that matches.",
     "faqs": [
       {
-        "question": "What does 🤝 mean in texting?",
-        "answer": "🤝 means 'agreement' or 'deal sealed.' The handshake emoji is the universal deal-confirmed symbol and reads as either genuine partnership or sarcastic compliance."
-      },
-      {
-        "question": "What does 🤝 mean from a girl?",
-        "answer": "From a girl or anyone else, 🤝 means the sender is agreeing or confirming a deal. There is no gendered meaning; the emoji is about the agreement, not who is sending it."
+        "question": "What does 🤝 mean from a guy?",
+        "answer": "From a guy, 🤝 signals deal-coded agreement - 'we're good' or 'closed the deal.' The handshake cue reads as partnership-coded rather than literal agreement, so it tends to land on partner 'let's make this work' check-ins, family deal-coded messages, and mutual-coded reveals."
       },
       {
         "question": "Is 🤝 flirty?",
-        "answer": "🤝 is not flirty. It marks agreement or partnership, with no romantic undercurrent. Using it on a romantic post will read as supportive rather than flirtatious."
+        "answer": "It can be - but the formal-coded register can land as distance-coded. In a partner context 🤝 can read as mutual-coded romance - 'let's make this work tonight 🤝' is a soft-coded romantic check-in. On its own the emoji is more partnership-coded than romantic."
       },
       {
-        "question": "What does 🤝 mean from a guy?",
-        "answer": "From a guy, 🤝 has the same meaning it has from anyone else: agreement or partnership. The emoji is not gendered and reads the same regardless of who sends it."
+        "question": "What is the difference between 🤝 and 🤜?",
+        "answer": "🤜 is the right-facing fist - the cue is fist-bump-coded bro energy, the 'bro moment' casual greeting. 🤝 is the handshake - the cue is deal-coded agreement, the 'we're good' partnership energy. Use 🤜 when the moment is casual bro energy; use 🤝 when the moment is partnership-coded."
+      },
+      {
+        "question": "Is 🤝 for 'we're good' moments?",
+        "answer": "Yes - 🤝 is one of the most common partnership-coded emojis. The handshake cue is a natural fit for 'we're good' moments, deal-coded reveals, and partner 'closed the deal' check-ins."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "work",
-      "message": "deal confirmed 🤝",
-      "interpretation": "Team confirmation in a partner channel. Mirror with 🤝 or a sentence that acknowledges the deal."
-    },
-    {
-      "setting": "friends",
-      "message": "we good 🤝",
-      "interpretation": "Friend confirming agreement. Mirror with 🤝 or a sentence that engages with the deal."
+      "setting": "dating",
+      "message": "let's make this work tonight, full handshake romance 🤝",
+      "interpretation": "Partner mutual-coded romance. Mirror with another 🤝, a heart emoji, or a sentence that escalates the romance."
     },
     {
       "setting": "social",
-      "message": "new partnership announced 🤝",
-      "interpretation": "Public partnership announcement. Mirror with 🤝 or a sentence that celebrates the collaboration."
+      "message": "cannot handle this whole thread, the we're good 🤝",
+      "interpretation": "Public handshake appreciation. Mirror with another 🤝, a sentence that joins the deal energy, or a heart emoji that matches."
     },
     {
       "setting": "family",
-      "message": "we agreed no more pineapple on pizza 🤝",
-      "interpretation": "Family agreement on a divisive topic. Mirror with 🤝 or a sentence that engages with the rule."
+      "message": "closed the deal with the family, full handshake mode 🤝",
+      "interpretation": "Family deal-coded reveal. Mirror with another 🤝, a sentence that joins the family warmth, or a heart emoji that matches."
     },
     {
-      "setting": "dating",
-      "message": "monday is our day 🤝",
-      "interpretation": "Romantic partner confirming a recurring plan. Mirror with a heart or a sentence that engages with the date."
+      "setting": "friends",
+      "message": "we're good today, full partnership energy 🤝",
+      "interpretation": "Friend mutual-coded reveal. Mirror with another 🤝, a sentence that joins the partnership energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "work",
+      "message": "closed the deal today, full handshake mode 🤝",
+      "interpretation": "Work partnership-coded moment. Mirror with another 🤝, a sentence that joins the team energy, or a heart emoji that matches."
     }
   ]
 }

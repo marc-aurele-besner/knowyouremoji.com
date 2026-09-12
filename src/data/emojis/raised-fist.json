@@ -3,75 +3,135 @@
   "slug": "raised-fist",
   "character": "✊",
   "name": "Raised Fist",
-  "shortName": "fist",
+  "shortName": "raised fist",
   "category": "people",
-  "subcategory": "hand-gesture",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "Raised fist of solidarity.",
-  "tldr": "Solidarity! Power, resistance, or fist bump.",
+  "subcategory": "hand-fingers-closed",
+  "unicodeVersion": "13.0",
+  "baseMeaning": "A raised, clenched fist, signaling solidarity or strength.",
+  "tldr": "Solidarity-coded strength, protest register, or 'we stand together' resistance-coded comfort.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents solidarity or resistance.",
-      "example": "Stay strong ✊",
+      "meaning": "A raised fist signaling solidarity or strength.",
+      "example": "Solidarity ✊",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Power, unity, or protest.",
-      "example": "We stand together ✊",
-      "riskLevel": "LOW"
+      "meaning": "Resistance-coded strength or 'fight the power' register.",
+      "example": "Fight the power ✊",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Mock solidarity.",
-      "example": "Workers unite ✊",
+      "context": "DATING",
+      "meaning": "Supportive-coded partner check-in or 'I've got you' moment.",
+      "example": "I've got you ✊",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Team solidarity.",
-      "example": "Let's do this ✊",
+      "meaning": "Solidarity-coded team energy or 'we're in this' moment.",
+      "example": "We're in this ✊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Social movements and solidarity."
+      "note": "Anchors solidarity-coded threads, 'we stand together' replies, and 'mood ✊' reveals where the raised-fist cue matches the resistance register."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Activist content."
+      "note": "Lands on protest-coded story reposts, solidarity photo posts, and 'mood ✊' reveals where the raised-fist cue reads as resistance-coded comfort."
     },
     {
       "platform": "TIKTOK",
-      "note": "Protest and unity content."
+      "note": "Travels in raised-fist-coded transitions, 'we're in this' reveals, and reaction-content where the raised-fist cue signals solidarity-coded energy."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Surfaces on partner 'I've got you' check-ins, family-coded solidarity messages, and group chats where the raised-fist cue matches the moment."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Social justice symbol."
+      "note": "Uses ✊ heavily on solidarity-coded threads, 'we stand together' moments, and resistance-coded reveals where the raised-fist cue matches the protest register."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Solidarity and resistance."
+      "note": "Reaches for the raised-fist on partner 'I've got you' check-ins, solidarity-coded comfort moments, and family resistance-coded messages where the universal strength cue fits."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends it on solidarity-coded messages and family reveals, treating the raised-fist as literal protest energy."
     },
     {
       "generation": "BOOMER",
-      "note": "Power symbol."
+      "note": "Reads it as a literal solidarity gesture and sends it on family and grandchild-coded messages without parsing the modern 'fight the power' subtext."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Reads as political-coded in casual contexts",
+      "description": "Sending ✊ in casual contexts where the political-coded or resistance-coded reading is unwelcome can land as preachy-coded or off-topic. Use a sentence that signals the support without the raised-fist cue when the moment is non-political.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "✊ Raised Fist Emoji Meaning",
-  "seoDescription": "Learn what the Raised Fist emoji ✊ really means.",
-  "skinToneVariations": [
-    "raised-fist-light",
-    "raised-fist-medium-light",
-    "raised-fist-medium",
-    "raised-fist-medium-dark",
-    "raised-fist-dark"
+  "seoTitle": "✊ Raised Fist Emoji Meaning - What Does ✊ Really Mean?",
+  "seoDescription": "Learn what the Raised Fist emoji ✊ really means in texts and DMs. Solidarity-coded strength, protest register, or 'we stand together' resistance-coded comfort.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-12",
+  "longForm": {
+    "overview": "✊ is the emoji of solidarity-coded strength - a raised, clenched fist, the iconography of 'we stand together,' resistance-coded comfort, and 'fight the power' register. Where 🤜 reads as fist-bump-coded bro energy and 💪 reads as flex-coded strength, ✊ captures the moment when the sender wants to communicate solidarity-coded intimacy - an 'I've got you ✊' partner moment or a 'we're in this ✊' work reveal. The raised-fist cue borrows from the universal solidarity tradition and the modern 'fight the power' aesthetic, which is exactly why the emoji reads as resistance-coded rather than literal strength.\n\nIn real-world usage ✊ lives in the spaces where the sender wants to communicate solidarity-coded comfort. A partner sends it on an 'I've got you ✊' check-in. A friend sends it on a 'we stand together ✊' reveal. A coworker sends it on a 'we're in this ✊' work message. The raised-fist cue is what makes the emoji feel resistance-coded - it is not just 'fist,' it is 'fist-coded we-stand-together.'\n\nWhat separates ✊ from the rest of the hand-emoji family is the we-stand-together register. The emoji is not saying 'fist-bump bro' (🤜), 'flex strength' (💪), or 'high-five' (✋). It is saying 'solidarity-coded strength,' which carries a specific resistance-coded energy. That is why ✊ travels especially well on partner 'I've got you' check-ins, family solidarity-coded messages, and any context where the sender wants the message to land with protest-coded comfort.",
+    "howPeopleUseIt": "✊ shows up as the closer on an 'I've got you tonight' partner message ('I've got you tonight ✊'), the punctuation on a 'we stand together ✊' solidarity-coded reveal ('we stand together ✊'), and the softener on a 'we're in this ✊' team check-in. It pairs naturally with sentences that name the solidarity-coded strength - 'I've got you,' 'we stand together,' 'we're in this' - and sits beautifully on partner 'I've got you' check-ins and family resistance-coded messages.\n\nIn group chats ✊ anchors 'fist appreciation' threads, solidarity-coded moments, and 'mood ✊' reveals where the raised-fist cue matches the moment. On Instagram it lands on protest-coded story reposts and solidarity photo posts. On TikTok it travels in raised-fist-coded transitions and 'mood ✊' reveals.\n\nThe emoji also works in dating contexts. An 'I've got you tonight ✊' partner message uses the raised-fist cue to communicate solidarity-coded romance. Across all of these surfaces the rule is the same: the more resistance-coded the comfort, the more natural ✊ feels.",
+    "whenNotToUse": "Skip ✊ in sympathy, condolence, or break-up contexts. The solidarity-coded strength cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid ✊ in casual contexts where the political-coded or resistance-coded reading is unwelcome - the preachy-coded register can land as off-topic. Stick to a sentence or a clear message when the moment is non-political.\n\nSkip ✊ when you want to communicate soft affection. The resistance-coded register is too solidarity-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
+    "howToReply": "If someone sends ✊, the cleanest mirror is another ✊, 🤜, or a sentence that joins the solidarity-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'we stand together right back' or 'we're in this too.' If the raised-fist cue feels too resistance-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the solidarity volume.\n\nWhen ✊ lands as a partner 'I've got you' check-in, mirror with another ✊, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'we stand together ✊' solidarity reveal, mirror with another ✊, a sentence that joins the resistance energy, or a heart emoji that matches.",
+    "faqs": [
+      {
+        "question": "What does ✊ mean from a guy?",
+        "answer": "From a guy, ✊ signals solidarity-coded strength - 'I've got you' or 'we stand together.' The raised-fist cue reads as resistance-coded rather than literal strength, so it tends to land on partner 'I've got you' check-ins, family solidarity-coded messages, and protest-coded reveals."
+      },
+      {
+        "question": "Is ✊ flirty?",
+        "answer": "It can be. In a partner context ✊ can read as solidarity-coded romance - 'I've got you tonight ✊' is a soft-coded romantic check-in. On its own the emoji is more resistance-coded than romantic."
+      },
+      {
+        "question": "What is the difference between ✊ and 🤜?",
+        "answer": "🤜 is the right-facing fist - the cue is fist-bump-coded bro energy, the 'bro moment' casual greeting. ✊ is the raised fist - the cue is solidarity-coded strength, the 'we stand together' resistance energy. Use 🤜 when the moment is casual bro energy; use ✊ when the moment is solidarity-coded."
+      },
+      {
+        "question": "Is ✊ for 'we stand together' moments?",
+        "answer": "Yes - ✊ is one of the most common solidarity-coded emojis. The raised-fist cue is a natural fit for 'we stand together' moments, resistance-coded reveals, and partner 'I've got you' check-ins."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "dating",
+      "message": "I've got you tonight, full raised-fist romance ✊",
+      "interpretation": "Partner solidarity-coded romance. Mirror with another ✊, a heart emoji, or a sentence that escalates the romance."
+    },
+    {
+      "setting": "social",
+      "message": "cannot handle this whole thread, the we stand together ✊",
+      "interpretation": "Public fist appreciation. Mirror with another ✊, a sentence that joins the resistance energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "family",
+      "message": "we're in this with the family, full raised-fist mode ✊",
+      "interpretation": "Family solidarity-coded reveal. Mirror with another ✊, a sentence that joins the family warmth, or a heart emoji that matches."
+    },
+    {
+      "setting": "friends",
+      "message": "we stand together today, full solidarity energy ✊",
+      "interpretation": "Friend resistance-coded reveal. Mirror with another ✊, a sentence that joins the protest energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "work",
+      "message": "we're in this today, full raised-fist mode ✊",
+      "interpretation": "Work solidarity-coded moment. Mirror with another ✊, a sentence that joins the team energy, or a heart emoji that matches."
+    }
   ]
 }
