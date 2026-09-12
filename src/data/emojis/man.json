@@ -6,72 +6,132 @@
   "shortName": "man",
   "category": "people",
   "subcategory": "person",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "An adult man.",
-  "tldr": "Man! Adult male.",
+  "unicodeVersion": "13.0",
+  "baseMeaning": "A man, often depicted with neutral expression.",
+  "tldr": "Man-coded default, 'guy reply' register, or gender-coded neutral.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents an adult man.",
-      "example": "My husband 👨",
+      "meaning": "A man or male adult.",
+      "example": "Saw a man 👨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dude or guy.",
-      "example": "My man 👨",
+      "meaning": "Man-coded default or 'guy reply' register.",
+      "example": "Guy reply 👨",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Typical man behavior.",
-      "example": "Men 👨",
+      "context": "DATING",
+      "meaning": "Cozy-coded partner check-in or 'thinking of you' moment.",
+      "example": "Thinking of you 👨",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Male representation.",
-      "example": "Team member 👨",
+      "meaning": "Coworker-coded team energy or 'meeting him' moment.",
+      "example": "Meeting him 👨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Male representation."
+      "note": "Anchors man-coded threads, 'guy reply' replies, and 'mood 👨' reveals where the man cue matches the default register."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "People content."
+      "note": "Lands on default-coded story reposts, neutral-coded photo posts, and 'mood 👨' reveals where the man cue reads as gender-coded comfort."
     },
     {
       "platform": "TIKTOK",
-      "note": "Man content."
+      "note": "Travels in man-coded transitions, 'thinking of you' reveals, and reaction-content where the man cue signals default-coded energy."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Surfaces on partner 'thinking of you' check-ins, family-coded default messages, and group chats where the man cue matches the moment."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Dude."
+      "note": "Uses 👨 heavily on man-coded threads, 'guy reply' moments, and default-coded reveals where the man cue matches the gender register."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Adult male."
+      "note": "Reaches for the man on partner 'thinking of you' check-ins, default-coded comfort moments, and family default messages where the universal adult cue fits."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends it on default-coded messages and family reveals, treating the man as literal adult energy."
     },
     {
       "generation": "BOOMER",
-      "note": "A man."
+      "note": "Reads it as a literal man and sends it on family and grandchild-coded messages without parsing the modern 'guy reply' subtext."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Reads as gender-binary-coded in non-binary contexts",
+      "description": "Sending 👨 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome can land as exclusionary-coded. Be aware of the personal-coded reading when sending to non-binary audiences.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👨 Man Emoji Meaning",
-  "seoDescription": "Learn what the Man emoji 👨 really means.",
-  "skinToneVariations": [
-    "man-light",
-    "man-medium-light",
-    "man-medium",
-    "man-medium-dark",
-    "man-dark"
+  "seoTitle": "👨 Man Emoji Meaning - What Does 👨 Really Mean?",
+  "seoDescription": "Learn what the Man emoji 👨 really means in texts and DMs. Man-coded default, 'guy reply' register, or gender-coded neutral.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-12",
+  "longForm": {
+    "overview": "👨 is the emoji of man-coded default - a man, the iconography of 'guy reply,' default-coded comfort, and 'thinking of you' register. Where 👶 reads as baby-coded softness and 👵 reads as grandma-coded wisdom, 👨 captures the moment when the sender wants to communicate default-coded intimacy - a 'thinking of you 👨' partner moment or a 'guy reply 👨' default reveal. The man cue borrows from the universal adult tradition and the modern 'guy reply' aesthetic, which is exactly why the emoji reads as default-coded rather than literal adult.\n\nIn real-world usage 👨 lives in the spaces where the sender wants to communicate default-coded comfort. A partner sends it on a 'thinking of you 👨' check-in. A friend sends it on a 'guy reply 👨' reveal. A coworker sends it on a 'meeting him 👨' work message. The man cue is what makes the emoji feel default-coded - it is not just 'man,' it is 'man-coded guy-reply.'\n\nWhat separates 👨 from the rest of the people-emoji family is the guy-reply register. The emoji is not saying 'baby softness' (👶), 'granny wisdom' (👵), or 'kid play' (🧒). It is saying 'man-coded default,' which carries a specific default-coded charm. That is why 👨 travels especially well on partner 'thinking of you' check-ins, family default messages, and any context where the sender wants the message to land with default-coded comfort.",
+    "howPeopleUseIt": "👨 shows up as the closer on a 'thinking of you tonight' partner message ('thinking of you tonight 👨'), the punctuation on a 'guy reply 👨' default-coded reveal ('guy reply 👨'), and the softener on a 'meeting him 👨' team check-in. It pairs naturally with sentences that name the man-coded default - 'thinking of you,' 'guy reply,' 'meeting him' - and sits beautifully on partner 'thinking of you' check-ins and family default messages.\n\nIn group chats 👨 anchors 'man appreciation' threads, default-coded moments, and 'mood 👨' reveals where the man cue matches the moment. On Instagram it lands on default-coded story reposts and neutral-coded photo posts. On TikTok it travels in man-coded transitions and 'mood 👨' reveals.\n\nThe emoji also works in dating contexts. A 'thinking of you tonight 👨' partner message uses the man cue to communicate default-coded romance. Across all of these surfaces the rule is the same: the more default-coded the comfort, the more natural 👨 feels.",
+    "whenNotToUse": "Skip 👨 in sympathy, condolence, or break-up contexts. The man-coded default cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👨 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome - the exclusionary-coded register can land as off. Stick to a sentence or a clear message when sending to non-binary audiences.\n\nSkip 👨 when you want to communicate specific identity. The default-coded register is too neutral for explicit identity moments; use specific identity pronouns or a clearer message when the moment is identity-specific.",
+    "howToReply": "If someone sends 👨, the cleanest mirror is another 👨, 👩, or a sentence that joins the default-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'thinking of you right back' or 'guy reply too.' If the man cue feels too default-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the default volume.\n\nWhen 👨 lands as a partner 'thinking of you' check-in, mirror with another 👨, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'guy reply 👨' default reveal, mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches.",
+    "faqs": [
+      {
+        "question": "What does 👨 mean from a guy?",
+        "answer": "From a guy, 👨 signals man-coded default - 'guy reply' or 'thinking of you.' The man cue reads as default-coded rather than literal adult, so it tends to land on partner 'thinking of you' check-ins, family default messages, and default-coded reveals."
+      },
+      {
+        "question": "Is 👨 flirty?",
+        "answer": "It can be. In a partner context 👨 can read as default-coded romance - 'thinking of you tonight 👨' is a soft-coded romantic check-in. On its own the emoji is more default-coded than romantic."
+      },
+      {
+        "question": "What is the difference between 👨 and 👩?",
+        "answer": "👩 is the woman - the cue is woman-coded default, the 'woman-coded' default-coded woman-coded energy. 👨 is the man - the cue is man-coded default, the 'guy reply' man-coded default charm. Use 👩 when the moment is woman-specific; use 👨 when the moment is man-specific."
+      },
+      {
+        "question": "Is 👨 for 'guy reply' moments?",
+        "answer": "Yes - 👨 is one of the most common default-coded emojis. The man cue is a natural fit for 'guy reply' moments, default-coded reveals, and partner 'thinking of you' check-ins."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "dating",
+      "message": "thinking of you tonight, full man romance 👨",
+      "interpretation": "Partner default-coded romance. Mirror with another 👨, a heart emoji, or a sentence that escalates the romance."
+    },
+    {
+      "setting": "social",
+      "message": "cannot handle this whole thread, the guy reply 👨",
+      "interpretation": "Public man appreciation. Mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "family",
+      "message": "meeting him with the family, full man mode 👨",
+      "interpretation": "Family default-coded reveal. Mirror with another 👨, a sentence that joins the family warmth, or a heart emoji that matches."
+    },
+    {
+      "setting": "friends",
+      "message": "guy reply today, full default energy 👨",
+      "interpretation": "Friend default-coded reveal. Mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "work",
+      "message": "meeting him today, full man mode 👨",
+      "interpretation": "Work coworker-coded moment. Mirror with another 👨, a sentence that joins the team energy, or a heart emoji that matches."
+    }
   ]
 }
