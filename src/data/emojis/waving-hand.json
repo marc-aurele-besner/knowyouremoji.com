@@ -8,7 +8,7 @@
   "subcategory": "hand",
   "unicodeVersion": "6.0",
   "baseMeaning": "A hand waving, used for greeting or farewell.",
-  "tldr": "Hello or goodbye wave. Friendly greeting or casual farewell.",
+  "tldr": "Hello or goodbye wave. Friendly greeting, casual farewell, or a soft opener in a chat.",
   "contextMeanings": [
     {
       "context": "LITERAL",
@@ -37,41 +37,106 @@
   ],
   "platformNotes": [
     {
-      "platform": "SLACK",
-      "note": "Common for greetings and introductions."
+      "platform": "IMESSAGE",
+      "note": "Sits at the top of group chats as the universal 'hi everyone' opener and at the bottom of goodnight threads as the soft 'talk tomorrow' sign-off."
     },
     {
-      "platform": "IMESSAGE",
-      "note": "Standard hello/goodbye wave."
+      "platform": "SLACK",
+      "note": "Anchors the 'morning team' Slack messages in casual channels and the 'signing off for the day' closers in #random, where the wave reads as friendly without going formal."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Common in family group chats as the first message of the morning and in long-distance goodnight exchanges where the wave reads as 'I am here, thinking of you.'"
     },
     {
       "platform": "TWITTER",
-      "note": "Used for introductions or saying goodbye."
+      "note": "Closes out farewell tweets ('new chapter 👋') and signals the polite 'greetings' reply to a brand or creator who has just followed back or replied."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Standard greeting wave."
+      "note": "Treats 👋 as the default 'hi/hello/goodbye' wave emoji - uses it casually on first DMs, group-chat openers, and TikTok story replies without reading it as dated."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Common for friendly hellos and goodbyes."
+      "note": "Has been sending 👋 since the early iPhone years and still reaches for it as the cleanest hello/goodbye; pairs it freely with 'hey' or 'see you' in both work and personal threads."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads the wave as a literal greeting and uses it as the polite opener in work DMs and family group chats; comfortable sending it without the Gen-Z ironic layer."
     },
     {
       "generation": "BOOMER",
-      "note": "Universal wave gesture."
+      "note": "Treats 👋 as the friendliest possible opener in any chat, sends it to start a thread with a brand, a customer service agent, or a grandchild without thinking twice."
     }
   ],
-  "warnings": [],
-  "relatedCombos": ["wave-hello"],
+  "warnings": [
+    {
+      "title": "Reads cold in serious conversations",
+      "description": "Sending 👋 as the entire response to a friend's disclosure, a work apology, or a moment that needed warmth will come across as dismissive. Pair it with a sentence or use a different emoji.",
+      "severity": "LOW"
+    },
+    {
+      "title": "Can sound abrupt at the end of a difficult thread",
+      "description": "Closing a tense exchange with 'okay 👋' reads as walking away. If you want to disengage politely, write a full sentence that acknowledges the other person rather than relying on the wave alone.",
+      "severity": "LOW"
+    }
+  ],
+  "relatedCombos": ["wave-hello", "wave-coffee"],
   "seoTitle": "👋 Waving Hand Emoji Meaning - What Does 👋 Really Mean?",
-  "seoDescription": "Learn what the waving hand emoji 👋 really means in modern texting. Hello or goodbye wave. Complete context guide.",
-  "skinToneVariations": [
-    "waving-hand-light",
-    "waving-hand-medium-light",
-    "waving-hand-medium",
-    "waving-hand-medium-dark",
-    "waving-hand-dark"
+  "seoDescription": "Learn what the Waving Hand emoji 👋 really means in modern texting. Hello, goodbye, friendly opener, and the softer ways to use it without sounding abrupt.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-11",
+  "longForm": {
+    "overview": "👋 is the most universal emoji in any keyboard - the digital equivalent of the physical wave you give across a parking lot, through a window, or at the door before leaving. There is no specialized slang to learn, no generational subtext to decode, and no platform where it reads as out of place. It means 'hello' when it opens a conversation and 'goodbye' when it closes one, and that double-duty is precisely why it has stayed at the top of every emoji popularity list since 2015.\n\nWhat is interesting about 👋 is how cleanly it travels across audiences. A teen sends it as the first message in a new DM with someone they just matched with; a parent sends it as the first message of the morning in a family group chat; a manager sends it in a Slack #general channel when they are signing off for the day. The emoji does not change meaning by audience - it simply signals 'I see you, I am friendly, I am here' - which is why it is the safest greeting emoji available across every platform.\n\nIn work contexts 👋 carries a quiet flexibility. A 'morning team 👋' Slack message reads as warm without being saccharine; a 'signing off 👋' closer in a casual channel is the cleanest way to signal 'done for the day' without the formality of a full status update. The wave is one of the few emojis that works in a first DM with a brand's customer service team, a late-night check-in with your sibling, and a new group chat with a college roommate's wider friend circle - all without feeling out of place.",
+    "howPeopleUseIt": "👋 shows up as the opener on a new DM ('hey! 👋'), the closer on a goodnight text ('see you tomorrow 👋'), and the punctuation on a casual 'I am heading out' message ('off to grab coffee 👋'). It pairs naturally with hi/hey/goodbye sentences and rarely sits next to a serious or vulnerable statement.\n\nIn group chats 👋 anchors the first message of the morning and the last message of the night. A 'morning everyone 👋' in a family group chat, a 'morning team 👋' in a Slack channel, and a 'goodnight all 👋' in a Discord server all use the same emoji to bookend the day. In long-distance friendships 👋 punctuates the 'thinking of you' check-in where the wave reads as 'I am waving at you from here.'\n\nThe emoji also works as a soft 'I am leaving' signal in work threads. A 'wrapping up for the day 👋' message in a team channel is the friendly way to log off without writing a full status update. On Twitter 👋 closes out farewell tweets ('new chapter 👋') and signals the polite 'greetings' reply to a brand or creator who has just followed back or replied to a comment. Across all of these surfaces the rule is the same: 👋 is the cleanest way to mark the start or end of an interaction without adding emotional weight.",
+    "whenNotToUse": "Skip 👋 as the entire response to a friend's disclosure, a work apology, or a moment that needed warmth. A wave alone after someone has shared something vulnerable reads as dismissive - the gesture is too brief for the moment. Pair it with a sentence, or use a different emoji entirely.\n\nAvoid 👋 as a closer to a tense or unresolved thread. Closing a difficult conversation with 'okay 👋' reads as walking away mid-conversation. If you want to disengage politely, write a full sentence that acknowledges the other person, or use 'okay, talk soon' without the wave. The emoji's brevity works against you in moments that need a soft landing.\n\nSkip 👋 in condolence, sympathy, or break-up messages. The greeting cue reads as 'hello' even when used as a goodbye, and the cheerful energy is the wrong tone for moments of grief or loss. A quiet heart, a 🕊️, or a plain sentence is a better fit.",
+    "howToReply": "If someone sends 👋 as an opener, the easiest mirror is another 👋 - it confirms the friendly energy without making you write more. If you want to escalate the warmth, follow with a 'hey! how are you' sentence that opens the conversation beyond the wave. If 👋 arrives as a closer, mirror with another wave or a 'see you soon' sentence that acknowledges the goodbye.\n\nWhen 👋 lands as a check-in from a friend or family member ('morning! 👋'), mirror with a wave and a sentence that answers the check-in - 'morning! how are you' or 'hey, just getting started.' When it arrives as a polite opener from a brand or customer service agent, a wave back plus a clear sentence about what you need tends to land better than another 👋 alone.",
+    "faqs": [
+      {
+        "question": "What does 👋 mean in a text?",
+        "answer": "In a text 👋 means 'hello' when it opens a conversation and 'goodbye' when it closes one. The double-duty greeting emoji is the most universal symbol for friendly acknowledgment across every platform - it is safe in work channels, family chats, and new DMs alike."
+      },
+      {
+        "question": "Is 👋 flirty?",
+        "answer": "Not inherently, but it can read as friendly opener in a flirty conversation. A 👋 on its own is just 'hi' - to make it flirty, pair it with 😏, a compliment, or a clear sentence that signals romantic interest. Without that context the wave reads as a neutral greeting."
+      },
+      {
+        "question": "What does 👋 mean from a guy?",
+        "answer": "From a guy, 👋 means 'hello' or 'goodbye' - same as it does from anyone else. The wave is not gendered; it is the cleanest greeting emoji on the keyboard and reads as friendly regardless of who sends it."
+      },
+      {
+        "question": "Can 👋 sound rude?",
+        "answer": "It can. Using 👋 as the entire response to a vulnerable message, closing a tense thread with 'okay 👋,' or sending it without a sentence after a long silence can read as dismissive. Pair the wave with a sentence when the moment needs more than a wave."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "morning team 👋 launching the deck review in 10",
+      "interpretation": "Friendly Slack opener for a standup or meeting kickoff. Mirror with a 👍, ✅, or a 'morning, on my way' reply to acknowledge the wave and confirm the meeting."
+    },
+    {
+      "setting": "friends",
+      "message": "just landed, on my way to the Airbnb 👋",
+      "interpretation": "Traveling friend announcing arrival in a group chat. Mirror with a 👋 or a 'safe travels, see you soon' sentence to match the friendly energy."
+    },
+    {
+      "setting": "family",
+      "message": "good morning from the lake house 👋",
+      "interpretation": "Family member sending a vacation morning check-in. Mirror with a wave and a sentence about the trip to keep the thread warm."
+    },
+    {
+      "setting": "dating",
+      "message": "hey, just got your number from Jess 👋",
+      "interpretation": "New match or set-up reaching out politely. Mirror with a wave and a sentence that opens the conversation ('hey! nice to meet you') rather than leaving the opener hanging."
+    },
+    {
+      "setting": "social",
+      "message": "okay, signing off for the night, sleep well everyone 👋",
+      "interpretation": "Friendly Discord or group-chat sign-off. Mirror with a wave and a 'goodnight' to match the closing energy."
+    }
   ]
 }

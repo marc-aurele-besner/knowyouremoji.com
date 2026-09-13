@@ -7,52 +7,131 @@
   "category": "people",
   "subcategory": "hand-fingers-open",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Raised hand.",
-  "tldr": "Represents stop or volunteer.",
+  "baseMeaning": "A raised open hand, the universal 'stop,' 'high five,' or 'I have a question' gesture.",
+  "tldr": "Hand up! Stop, high five, 'I have a question,' or 'pick me' energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Raised hand gesture.",
-      "example": "I have a question ✋",
+      "meaning": "Raised hand for attention or high five.",
+      "example": "High five ✋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Stop or high five.",
-      "example": "Wait ✋",
+      "meaning": "Stop signal or 'wait a minute' request.",
+      "example": "Hold up ✋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Asking to speak in a meeting or volunteering.",
+      "example": "I have a question ✋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Playful 'stop' or 'high five' moment.",
+      "example": "Wait, hold up ✋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Anchors 'I have a question' messages, meeting-volunteer replies, and 'wait, can I add something' messages where the raised-hand cue matches the moment."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about raised hand."
+      "note": "Travels in 'hold up, wait a minute' tweets, question-asking threads, and 'I need to add something' replies where the raised-hand cue signals a pause."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Surfaces in 'high five' stories, volunteer-coded reveals, and 'wait, look at this' moments where the raised-hand cue matches the moment."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Sits in 'I have a question' chat replies, volunteer-coded threads, and 'hold up' messages where the raised-hand cue softens a request."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ✋ in casual contexts."
+      "note": "Uses ✋ on volunteer-coded threads, 'high five' moments, and 'wait, hold up' messages where the raised-hand cue matches the pause-coded moment."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ✋ across platforms."
+      "note": "Reaches for the raised hand on 'I have a question' moments, meeting-volunteer replies, and high-five check-ins where the universal pause cue fits."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends it on question-coded messages and volunteer reveals, treating the raised hand as a literal 'pick me' gesture."
     },
     {
       "generation": "BOOMER",
-      "note": "May use ✋ literally."
+      "note": "Reads it as a literal raised hand and sends it on question-coded and volunteer messages without parsing the modern pause subtext."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Can read as 'stop' in the wrong context",
+      "description": "Sending ✋ in a romantic-coded or supportive conversation can read as a hard stop signal. The raised-hand cue has a 'halt' register that can feel jarring in soft moments. Use a softer pause emoji or a sentence when you need a softer interruption.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "✋ Raised Hand Emoji Meaning - What Does ✋ Really Mean?",
-  "seoDescription": "Learn what the raised hand emoji ✋ really means in texts and social media."
+  "seoDescription": "Learn what the Raised Hand emoji ✋ really means in modern texting. Stop signal, high five, volunteer request, and how to send it without sounding harsh.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-11",
+  "longForm": {
+    "overview": "✋ is the emoji of pause - a raised open hand, the universal gesture of 'stop,' 'high five,' or 'I have something to say.' Where 🛑 reads as hard-stop and 🙋 reads as volunteer-coded, ✋ captures the moment when the sender wants to interrupt, ask, or volunteer - to put their hand up in the conversation. The raised-hand cue borrows from classroom 'pick me' gestures and the universal 'wait a minute' hand, which is exactly why the emoji reads as pause-coded rather than hard-stop.\n\nIn real-world usage ✋ lives in the spaces where the sender wants to interrupt, ask, or celebrate. A coworker sends it on 'I have a question.' A friend sends it on 'high five on that win.' A partner sends it on 'wait, hold up.' The raised-hand cue is what makes the emoji feel like an active interruption - it is not just 'wait,' it is 'I am putting my hand up to say something.'\n\nWhat separates ✋ from the rest of the pause-emoji family is the versatile-interrupt register. The emoji is not saying 'hard stop' (🛑), 'I volunteer' (🙋), or 'no' (❌). It is saying 'wait a minute, I need to say something,' which carries a versatile pause energy. That is why ✋ travels especially well on question-asking moments, volunteer-coded replies, and any context where the sender wants to actively interrupt the flow.",
+    "howPeopleUseIt": "✋ shows up as the closer on a 'I have a question' message ('can I add something ✋'), the punctuation on a 'wait, hold up' reveal ('hold on, what ✋'), and the softener on a high-five celebration ('high five on that win ✋'). It pairs naturally with sentences that name the pause - 'wait,' 'I have a question,' 'hold up' - and sits beautifully on question-asking threads and volunteer-coded moments.\n\nIn group chats ✋ anchors 'I have a question' replies, meeting-volunteer messages, and 'wait, look at this' reveals where the raised-hand cue matches the moment. On Slack it lands on question-coded work threads and volunteer reveals. On Twitter it travels in 'hold up' tweets and 'wait a minute' threads.\n\nThe emoji also works in playful contexts. A 'wait, hold up ✋' partner message uses the raised-hand cue to playfully interrupt a conversation without crossing into harsh territory. Across all of these surfaces the rule is the same: the more pause-coded the moment, the more natural ✋ feels.",
+    "whenNotToUse": "Skip ✋ in sympathy, condolence, or break-up contexts. The pause-coded cue is the wrong tone for any conversation where the moment is emotional; a quiet ❤️ or a sentence that acknowledges the feeling is a better fit.\n\nAvoid ✋ in romantic-coded or supportive conversations where a hard interrupt feels jarring. The raised-hand cue has a halt register that can read as cold. Use a softer pause emoji or a sentence when you need to interrupt softly.\n\nSkip ✋ as the only response to a soft-coded message. The active interruption can undercut the warmth; pair with a sentence that softens the pause.",
+    "howToReply": "If someone sends ✋, the cleanest mirror is another ✋, a sentence that joins the pause, or a follow-up question that matches the moment. If you want to escalate the engagement, follow with a sentence that adds context: 'what is up' or 'go ahead.' If the raised-hand cue feels too interruptive, reply with a softer emoji (🤔 or 🙋) that signals pause without matching the active interruption.\n\nWhen ✋ lands as a 'I have a question' work message, mirror with another ✋, a sentence that invites the question, or a follow-up that adds context. When it arrives as a 'wait, hold up' partner message, mirror with a sentence that joins the playful interrupt rather than another raised hand that doubles the cue.",
+    "faqs": [
+      {
+        "question": "What does ✋ mean from a guy?",
+        "answer": "From a guy, ✋ signals active pause - 'wait, I need to say something.' The raised-hand cue is one of the most universally recognized pause gestures, so it tends to land on question-asking moments, volunteer-coded replies, and 'hold up' messages."
+      },
+      {
+        "question": "Is ✋ rude?",
+        "answer": "It can be. The raised-hand cue has a hard-stop register that can read as rude if used to interrupt a soft-coded conversation. In a work or playful context it reads as active engagement; in a romantic or supportive moment it can feel jarring."
+      },
+      {
+        "question": "What is the difference between ✋ and 🛑?",
+        "answer": "🛑 is the stop sign - the cue is hard-stop, the absolute halt signal. ✋ is the raised hand - the cue is active pause, the 'I need to say something' interruption. Use 🛑 when the message needs to land as a hard halt; use ✋ when the sender is pausing to ask or volunteer."
+      },
+      {
+        "question": "Is ✋ okay at work?",
+        "answer": "Yes - ✋ is one of the cleanest work-channel emoji for question-asking and volunteer moments. A 'I have a question ✋' Slack message uses the raised-hand cue to interrupt a work thread without sounding unprofessional."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "I have a quick question on the spec ✋",
+      "interpretation": "Work question-asking. Mirror with another ✋, a sentence that invites the question, or a follow-up that adds context."
+    },
+    {
+      "setting": "friends",
+      "message": "high five on that win, you earned it ✋",
+      "interpretation": "Friend high-five celebration. Mirror with another ✋, 🙌, or a sentence that joins the celebration."
+    },
+    {
+      "setting": "dating",
+      "message": "wait, hold up, did you just say what I think you said ✋",
+      "interpretation": "Partner playful interrupt. Mirror with a sentence that joins the playful interrupt rather than another raised hand that doubles the cue."
+    },
+    {
+      "setting": "family",
+      "message": "before you answer, hold up ✋",
+      "interpretation": "Family pause request. Mirror with another ✋, a sentence that acknowledges the pause, or a follow-up question."
+    },
+    {
+      "setting": "social",
+      "message": "I have a thought on this, can I add something ✋",
+      "interpretation": "Public volunteer message. Mirror with a sentence that invites the contribution rather than another raised hand that doubles the cue."
+    }
+  ]
 }

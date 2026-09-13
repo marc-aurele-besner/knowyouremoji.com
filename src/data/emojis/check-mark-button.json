@@ -6,132 +6,126 @@
   "shortName": "check mark button",
   "category": "symbols",
   "subcategory": "other-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Check Mark Button emoji.",
-  "tldr": "Confirmation or done. The workhorse acknowledgment that says 'yes,' 'completed,' or 'this is correct.'",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A check mark inside a button.",
+  "tldr": "Check-mark-coded done, 'all done' register, or confirm-coded approval.",
   "contextMeanings": [
     {
-      "context": "WORK",
-      "meaning": "Confirmed, done, or approved - the lowest-effort acknowledgment in a project thread.",
-      "example": "task: ✅",
+      "context": "LITERAL",
+      "meaning": "A check mark inside a button, indicating completion or approval.",
+      "example": "All done ✅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Emphasis or visual bullet - the emoji that decorates a list without doing semantic work.",
-      "example": "what you need: ✅ resume, ✅ portfolio, ✅ luck",
+      "meaning": "Check-mark-coded done or 'all done' register.",
+      "example": "All done ✅",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Confirmed plans - 'I see your plan and I am in.'",
-      "example": "dinner saturday ✅",
+      "meaning": "Confirm-coded partner check-in or 'check mark for you' moment.",
+      "example": "Check mark for you ✅",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Playful 'so official' reaction - the social-media compliance check.",
-      "example": "completed my taxes ✅",
+      "context": "WORK",
+      "meaning": "Done-coded team energy or 'check mark mode' moment.",
+      "example": "Check mark mode ✅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "SLACK",
-      "note": "Project-management workhorse - pastes into completed-task lists, status updates, and channel announcements where the team expects the visual confirmation."
-    },
-    {
       "platform": "TWITTER",
-      "note": "Decorative list-bullet across goal posts and how-to threads; readers paste ✅ alongside list items to anchor the structure."
+      "note": "Anchors check-mark-coded threads, 'all done' replies, and 'mood ✅' reveals where the check mark cue matches the done register."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Comment reaction on checklist posts (morning routines, packing lists, study schedules) where the visual completion rule applies."
+      "note": "Lands on confirm-coded story reposts, check mark posts, and 'mood ✅' reveals where the check mark cue reads as done-coded comfort."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Travels in check-mark-coded transitions, 'check mark for you' reveals, and reaction-content where the check mark cue signals confirm-coded energy."
     },
     {
       "platform": "DISCORD",
-      "note": "Server reaction emoji on tasks-completed messages; the emoji tags the moment a milestone is hit."
+      "note": "Surfaces on partner 'check mark for you' check-ins, family-coded done messages, and group chats where the check mark cue matches the moment."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ✅ as a visual list-bullet and as the work-confirmation emoji; defaults to it in productivity content."
+      "note": "Uses ✅ heavily on check-mark-coded threads, 'all done' moments, and confirm-coded reveals where the check mark cue matches the modern done register."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Default work-conformation emoji across project tools and threads; relies on it for low-effort acknowledgment."
+      "note": "Reaches for the check mark on partner 'check mark for you' check-ins, done-coded comfort moments, and family confirm messages where the universal check mark cue fits."
     },
     {
       "generation": "GEN_X",
-      "note": "Reads ✅ as the office confirmation symbol; uses it on completed-task lists without the slang register."
+      "note": "Sends it on done-coded messages and family reveals, treating the check mark as literal check mark energy."
     },
     {
       "generation": "BOOMER",
-      "note": "Sends ✅ sincerely for the literal confirmation; rarely pastes it as a decorative bullet."
+      "note": "Reads it as a literal check mark and sends it on family and grandchild-coded messages without parsing the modern 'all done' subtext."
     }
   ],
-  "warnings": [
-    {
-      "title": "Cold read",
-      "description": "A lone ✅ on a friend's vulnerable share can read as cold or too business-like. Pair with a sentence that acknowledges the moment when warmth matters.",
-      "severity": "LOW"
-    }
-  ],
-  "relatedCombos": ["ok-perfect", "thumbs-up-ok"],
+  "warnings": [],
+  "relatedCombos": [],
   "seoTitle": "✅ Check Mark Button Emoji Meaning - What Does ✅ Really Mean?",
-  "seoDescription": "Learn what the check mark button emoji ✅ really means - workhorse confirmation, visual list bullet, completed-task tag, and where the emoji reads as cold.",
+  "seoDescription": "Learn what the Check Mark Button emoji ✅ really means in texts and DMs. Check-mark-coded done, 'all done' register, or confirm-coded approval.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-14",
+  "contentUpdatedAt": "2026-09-12",
   "longForm": {
-    "overview": "✅ is the universal confirmation emoji - a white check mark inside a green button, the same shape that has meant 'yes' or 'done' on forms and task lists for decades. The visual cue is unmistakable: the sender is flagging something as confirmed, complete, or correct. On modern chat threads ✅ does most of its work as the lowest-effort acknowledgment in work channels, the visual bullet in a list post, and the 'task completed' tag in progress updates.\n\nThe check mark button is one of the few emojis that does not drift into ironic territory. ✅ almost always reads as confirmation, with the rare exception being the 'so official' ironic use on obviously mundane tasks ('completed my taxes ✅'). Outside that gentle humor the emoji sits firmly in the productivity register; it is widely understood and rarely misread across age groups.",
-    "howPeopleUseIt": "✅ lands on checklist posts as the visual bullet, on completed-task lists as the workhorse completion tag, and on confirmation messages as the lowest-effort acknowledgment. On X the emoji decorates goal threads and how-to posts where the structured list benefits from visual anchors.\n\nIn Slack channels ✅ pastes into project threads as the 'task completed' closer. On Instagram creators use it on morning-routine posts and packing lists where the visual cue matches the structure. In dating threads a single ✅ on a friend's plan text ('dinner saturday ✅') reads as confirmation - low-effort but warm in a casual relationship where that is acceptable.",
-    "whenNotToUse": "Avoid ✅ in channels where the warmth matters. A lone ✅ on a friend's vulnerable share reads as cold, like a project-management acknowledgment when the recipient needed support. Substitute with a heart, a 🫶, or a sentence that mirrors the moment.\n\nAvoid ✅ in customer-facing channels where the workhorse confirmation reads as too clinical. A ✅ on a customer's apology reads as 'noted,' which the recipient experiences as dismissive. When warmth matters in a service channel, write a sentence.",
-    "howToReply": "If a project-mate sends ✅ to confirm a task, mirror with ✅ or 'all good' so the work thread stays productive.\n\nIf ✅ lands as confirmation on a friend's plan ('dinner saturday ✅'), mirror with another ✅, a sentence that confirms, or a soft 'locked in.' And if you want to send ✅ yourself, pair it with the subject so the confirmation frame matches a real reason.",
+    "overview": "✅ is the emoji of check-mark-coded done - a check mark inside a button, the iconography of 'all done,' confirm-coded approval, and 'check mark for you' register. Where ❎ reads as cross-mark-coded reject and ⛔ reads as no-entry-coded block, ✅ captures the moment when the sender wants to communicate done-coded intimacy - a 'check mark for you ✅' partner moment or a 'all done ✅' confirm reveal. The check mark cue borrows from the universal done tradition and the modern 'all done' aesthetic, which is exactly why the emoji reads as confirm-coded rather than literal symbol.\n\nIn real-world usage ✅ lives in the spaces where the sender wants to communicate done-coded comfort. A partner sends it on a 'check mark for you ✅' check-in. A friend sends it on a 'all done ✅' reveal. A coworker sends it on a 'check mark mode ✅' work message. The check mark cue is what makes the emoji feel confirm-coded - it is not just 'check mark,' it is 'check-mark-coded all-done.'\n\nWhat separates ✅ from the rest of the symbols-emoji family is the all-done register. The emoji is not saying 'cross-mark reject' (❎), 'no-entry block' (⛔), or 'prohibited ban' (🛇). It is saying 'check-mark-coded done,' which carries a specific confirm-coded charm. That is why ✅ travels especially well on partner 'check mark for you' check-ins, family done messages, and any context where the sender wants the message to land with confirm-coded approval.",
+    "howPeopleUseIt": "✅ shows up as the closer on a 'check mark for you tonight' partner message ('check mark for you tonight ✅'), the punctuation on a 'all done ✅' done-coded reveal ('all done ✅'), and the softener on a 'check mark mode ✅' team check-in. It pairs naturally with sentences that name the check-mark-coded done - 'check mark for you,' 'all done,' 'check mark mode' - and sits beautifully on partner 'check mark for you' check-ins and family done messages.\n\nIn group chats ✅ anchors 'check mark appreciation' threads, confirm-coded moments, and 'mood ✅' reveals where the check mark cue matches the moment. On Instagram it lands on done-coded story reposts and check mark posts. On TikTok it travels in check-mark-coded transitions and 'mood ✅' reveals.\n\nThe emoji also works in dating contexts. A 'check mark for you tonight ✅' partner message uses the check mark cue to communicate confirm-coded romance. Across all of these surfaces the rule is the same: the more done-coded the approval, the more natural ✅ feels.",
+    "whenNotToUse": "Skip ✅ in sympathy, condolence, or break-up contexts. The check-mark-coded done cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip ✅ when you want to communicate playful affection. The confirm-coded register is too done-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
+    "howToReply": "If someone sends ✅, the cleanest mirror is another ✅, ❎, or a sentence that joins the done-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'check mark for you right back' or 'all done too.' If the check mark cue feels too confirm-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the done volume.\n\nWhen ✅ lands as a partner 'check mark for you' check-in, mirror with another ✅, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'all done ✅' confirm reveal, mirror with another ✅, a sentence that joins the done energy, or a heart emoji that matches.",
     "faqs": [
       {
-        "question": "What does ✅ mean in texting?",
-        "answer": "✅ means confirmed, done, or approved. The emoji does most of its work as the workhorse acknowledgment in work threads and as a visual bullet in list posts."
+        "question": "What does ✅ mean from a guy?",
+        "answer": "From a guy, ✅ signals check-mark-coded done - 'all done' or 'check mark for you.' The check mark cue reads as confirm-coded rather than literal symbol, so it tends to land on partner 'check mark for you' check-ins, family done messages, and done-coded reveals."
       },
       {
-        "question": "Is ✅ rude?",
-        "answer": "Rarely, but a lone ✅ on a vulnerable share can read as cold. Pair with a sentence when warmth matters and the channel is not a workspace."
+        "question": "Is ✅ flirty?",
+        "answer": "It can be. In a partner context ✅ can read as confirm-coded romance - 'check mark for you tonight ✅' is a soft-coded romantic check-in. On its own the emoji is more done-coded than romantic."
       },
       {
-        "question": "What does ✅ mean from a girl?",
-        "answer": "From a girl or anyone, ✅ carries the same confirmation read. There is no gendered meaning; the emoji works the same regardless of who is sending it."
+        "question": "What is the difference between ✅ and ❎?",
+        "answer": "❎ is the cross mark button - the cue is cross-mark-coded reject, the 'no way' cross-mark-style reject-coded charm. ✅ is the check mark button - the cue is check-mark-coded done, the 'all done' confirm-coded done-coded energy. Use ❎ when the moment is reject; use ✅ when the moment is done."
       },
       {
-        "question": "What does ✅ mean at work?",
-        "answer": "In Slack or Teams ✅ usually means 'task completed' or 'confirmed.' It is the workhorse acknowledgment in project channels."
+        "question": "Is ✅ for 'all done' moments?",
+        "answer": "Yes - ✅ is one of the most common done-coded emojis. The check mark cue is a natural fit for 'all done' moments, confirm-coded reveals, and partner 'check mark for you' check-ins."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "moving in saturday ✅",
-      "interpretation": "Friend confirming a logistical plan. Mirror with another ✅ or 'see you then' so the plan locks in."
-    },
-    {
-      "setting": "work",
-      "message": "PR merged ✅",
-      "interpretation": "Project-mate closing out a code review. Mirror with ✅ or 'shipping it' so the channel stays productive."
-    },
-    {
       "setting": "dating",
-      "message": "dinner at eight ✅",
-      "interpretation": "Partner confirming the plan. Mirror with a heart or 'on my way' so the warmth travels."
+      "message": "check mark for you tonight, full check mark romance ✅",
+      "interpretation": "Partner confirm-coded romance. Mirror with another ✅, a heart emoji, or a sentence that escalates the romance."
     },
     {
       "setting": "social",
-      "message": "morning routine: ✅ coffee, ✅ run, ✅ journal",
-      "interpretation": "List-style post. Mirror with another ✅ or 'looks great' so the structure reads back."
+      "message": "cannot handle this whole thread, the all done ✅",
+      "interpretation": "Public check mark appreciation. Mirror with another ✅, a sentence that joins the done energy, or a heart emoji that matches."
     },
     {
       "setting": "family",
-      "message": "flights booked for the wedding ✅",
-      "interpretation": "Family logistics. Mirror with another ✅ or 'see you there' so the family plan locks in."
+      "message": "check mark mode with the family, full check mark mode ✅",
+      "interpretation": "Family confirm-coded reveal. Mirror with another ✅, a sentence that joins the family warmth, or a heart emoji that matches."
+    },
+    {
+      "setting": "friends",
+      "message": "all done today, full done energy ✅",
+      "interpretation": "Friend done-coded reveal. Mirror with another ✅, a sentence that joins the confirm energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "work",
+      "message": "check mark mode today, full check mark mode ✅",
+      "interpretation": "Work confirm-coded moment. Mirror with another ✅, a sentence that joins the team energy, or a heart emoji that matches."
     }
   ]
 }
