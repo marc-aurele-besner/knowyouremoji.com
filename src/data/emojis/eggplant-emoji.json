@@ -3,146 +3,145 @@
   "slug": "eggplant-emoji",
   "character": "🍆",
   "name": "Eggplant",
-  "shortName": "eggplant emoji",
+  "shortName": "eggplant",
   "category": "food-drink",
   "subcategory": "food-vegetable",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Eggplant emoji.",
-  "tldr": "Often carries an innuendo read in dating or flirt-heavy contexts. Use literal in food chats, careful around mixed audiences.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Eggplant.",
+  "tldr": "Eggplant-coded nightshade, 'in the mood' register, or aubergine-coded wink.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The food item eggplant.",
-      "example": "Eggplant parm tonight 🍆",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Innuendo - usually phallic, signals sexual interest or a flirty invitation.",
-      "example": "thinking about you 🍆",
-      "riskLevel": "HIGH"
+      "meaning": "Eggplant.",
+      "example": "In the mood 🍆",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "SLANG",
-      "meaning": "Craving or enjoying food with a wink.",
-      "example": "Need this 🍆",
-      "riskLevel": "LOW"
+      "meaning": "Eggplant-coded nightshade or 'in the mood' register.",
+      "example": "In the mood 🍆",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Sarcastic food reference, deliberately innocent for comedic effect.",
-      "example": "Healthy 🍆",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "Aubergine-coded partner check-in or 'eggplant for you' moment.",
+      "example": "Eggplant for you 🍆",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Avoid outside very safe channels - can be read as sexual innuendo.",
-      "example": "Need help with the eggplant asset 🍆",
-      "riskLevel": "HIGH"
+      "meaning": "Wink-coded team energy or 'eggplant mode' moment.",
+      "example": "Eggplant mode 🍆",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
-      "platform": "INSTAGRAM",
-      "note": "Sits on cooking reels and dinner posts as a literal vegetable tag - and on flirty captions when the creator wants a wink without spelling out the innuendo."
+      "platform": "TWITTER",
+      "note": "Reads eggplant-coded threads, 'in the mood' replies, and 'mood 🍆' reveals where the eggplant cue matches the nightshade register — high suggestive-read risk on public timelines."
     },
     {
-      "platform": "TWITTER",
-      "note": "Lands as bait in dunk threads where the joke is the word itself - writers use 🍆 in caption contests because the innuendo does most of the work."
+      "platform": "INSTAGRAM",
+      "note": "Lands on aubergine-coded story reposts, eggplant posts, and 'mood 🍆' reveals where the eggplant cue reads as wink-coded comfort — keep to close friends for innuendo."
     },
     {
       "platform": "TIKTOK",
-      "note": "Shows up in food content under the literal 'did you know' cooking videos - creators reuse it because the emoji pulls engagement on any platform."
+      "note": "Travels in eggplant-coded transitions, 'eggplant for you' reveals, and reaction-content where the eggplant cue signals aubergine-coded energy — comments amplify the suggestive read."
     },
     {
       "platform": "DISCORD",
-      "note": "Common as a server name and reaction in adult-only servers; rarely seen in general servers because the dominant read is sexual."
+      "note": "Surfaces on partner 'eggplant for you' check-ins, family-coded aubergine messages, and group chats where the eggplant cue matches the moment — verify channel norms first."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Treats 🍆 as a transparent innuendo first - uses it for the wink, not the food. Most remember the 🍆 meme era before the literal version ever landed."
+      "note": "Uses 🍆 heavily on eggplant-coded threads, 'in the mood' moments, and aubergine-coded reveals where the eggplant cue matches the modern nightshade register — the innuendo read is universal among Gen Z."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Same dual read as Gen Z - the innuendo predates the food use and still dominates among adults, who paste it for the wordplay."
+      "note": "Reaches for the eggplant on partner 'eggplant for you' check-ins, wink-coded comfort moments, and family aubergine messages where the universal eggplant cue fits — reads the suggestive double meaning."
     },
     {
       "generation": "GEN_X",
-      "note": "Frequently sends 🍆 as a literal vegetable - did not register the innuendo until family members pointed it out."
+      "note": "Sends it on aubergine-coded messages and family reveals, treating the eggplant as literal eggplant energy — may miss the modern innuendo read entirely."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads 🍆 as the vegetable and uses it innocently on food posts. Often learns of the second meaning after sending."
+      "note": "Reads it as a literal eggplant and sends it on family and grandchild-coded messages without parsing the modern 'in the mood' subtext — best to skip in cross-generational work threads."
     }
   ],
   "warnings": [
     {
-      "title": "Strong innuendo",
-      "description": "Sending 🍆 to a date, a partner, or a near-stranger reads as a phallic innuendo. It is one of the most sexually-coded emojis and the dominant read is sexual even in neutral settings.",
+      "title": "Strong suggestive / phallic innuendo",
+      "description": "Strong suggestive / phallic innuendo read — particularly between adults and on dating platforms. Avoid in professional contexts and family group chats unless the joke is unmistakable.",
       "severity": "HIGH"
     },
     {
-      "title": "Workplace risk",
-      "description": "Even in food-related work chat, 🍆 reads risky because the innuendo undercuts the topic. Use 🌽 or 🥦 as safer vegetable alternatives when cooking is the topic.",
+      "title": "Reads as sexual in work chats",
+      "description": "Sending 🍆 in a work chat or to an unknown contact will almost always be read as sexual. Use only with close partners where the innuendo is welcomed.",
+      "severity": "HIGH"
+    },
+    {
+      "title": "Generational mismatch",
+      "description": "Boomer / Gen X senders may miss the innuendo and use 🍆 as a literal vegetable. Recipient generations often read it as crude regardless of intent.",
       "severity": "MEDIUM"
     }
   ],
-  "relatedCombos": ["eggplant-peach", "peach-eggplant"],
+  "relatedCombos": [],
   "seoTitle": "🍆 Eggplant Emoji Meaning - What Does 🍆 Really Mean?",
-  "seoDescription": "Learn what the eggplant emoji 🍆 really means - the innuendo read that dominates in dating, the food read in cooking content, and where the emoji is risky.",
+  "seoDescription": "Learn what the Eggplant emoji 🍆 really means in texts and DMs. Eggplant-coded nightshade, 'in the mood' register, or aubergine-coded wink.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-14",
+  "contentUpdatedAt": "2026-09-13",
   "longForm": {
-    "overview": "🍆 is the emoji the internet turned into a phallic innuendo long before anyone used it for the vegetable. The visual cue is a purple oval eggplant with a green cap, the same shape that has meant 'aubergine' on grocery signs for decades. In modern chat the dominant read is almost always sexual: a 🍆 on a dating thread, a flirty DM, or an adult-only server reads as a phallic reference that everyone in the room understands.\n\nWhat makes 🍆 tricky is the rare but real second read - a literal 'I made eggplant parm' in a food chat, a recipe post on a cooking account, a tag on a vegetable haul. The emoji still works for those uses, but only when the audience has already established the food context. The default read of 🍆 in any unknown chat is sexual innuendo, which is why even cooking channels often prefer 🌽 or 🥦 when the topic is just food.",
-    "howPeopleUseIt": "🍆 lands as the innuendo closer in a flirty DM ('thinking about tonight 🍆'), the wink emoji under a thirst-trap caption, or the reaction to someone's risky-but-successful dating move. The emoji is one of the most sexual-coded in the set, and most adults who use it know what they are doing when they send it.\n\nIn cooking content the emoji shows up under parm recipes, eggplant stack videos, and grocery haul reels. The literal read functions when the channel or the caption makes the food context obvious, but viewers regularly leave 🍆 in the comments even on innocent cooking posts for the joke. In group chats 🍆 in a mixed audience tends to draw laughs and winks; in unknown audiences it draws awkward questions.",
-    "whenNotToUse": "Avoid 🍆 in any channel where the audience could reasonably read the emoji as accidental innuendo. A new coworker reading your food post should not encounter 🍆 without warning; the time you save on captioning is not worth the awkward follow-up. Likewise skip 🍆 in front of older family members who might not register the double meaning.\n\nAvoid 🍆 in formal workplace channels. Even when the topic is recipe roundups or lunch polls, the innuendo cuts through and the joke lands on management rather than the audience. Use a different vegetable emoji as a safer stand-in. And avoid 🍆 when you want to be taken seriously - a stand-up bit, a public statement, an apology - because the emoji will undercut the gravity.",
-    "howToReply": "If a date sends 🍆 as a flirty closer, mirror with another 🍆, a 🔥, or a sentence that escalates the moment without spelling out what is happening. If 🍆 lands under a friend's cooking post, mirror with a 'looks amazing' sentence so the food read holds rather than dragging the post into the innuendo lane.\n\nIf 🍆 arrives in a work channel where the read is unwelcome, send a clear pivot ('great parm, all') and avoid 🍆 emoji yourself in that thread. If you want to send 🍆 in a cooking post, anchor the caption with the food context ('made eggplant parm for the first time 🍆') so the literal read lands before the joke ever does.",
+    "overview": "🍆 is the emoji of eggplant-coded nightshade - an eggplant, the iconography of 'in the mood,' aubergine-coded wink, and 'eggplant for you' register. Where 🥕 reads as carrot-coded crunch and 🌽 reads as ear-of-corn-coded cob, 🍆 captures the moment when the sender wants to communicate aubergine-coded intimacy - an 'eggplant for you 🍆' partner moment or an 'in the mood 🍆' wink reveal. The eggplant cue borrows from the universal nightshade tradition and the modern 'in the mood' aesthetic, which is exactly why the emoji reads as aubergine-coded rather than literal eggplant.\n\nIn real-world usage 🍆 lives in the spaces where the sender wants to communicate wink-coded comfort - and crucially, where the suggestive read is welcome. A partner sends it on an 'eggplant for you 🍆' check-in. A close friend sends it on an 'in the mood 🍆' reveal. The eggplant cue is what makes the emoji feel aubergine-coded - it is not just 'eggplant,' it is 'eggplant-coded in-the-mood.' That double meaning is the entire point of the emoji and the reason 🍆 is the most cautioned vegetable in any emoji dictionary.\n\nWhat separates 🍆 from the rest of the food-drink-emoji family is the in-the-mood register. The emoji is not saying 'carrot crunch' (🥕), 'ear-of-corn cob' (🌽), or 'roasted-sweet-potato yam' (🍠). It is saying 'eggplant-coded nightshade,' which carries a specific aubergine-coded charm. That is why 🍆 travels especially well on partner 'eggplant for you' check-ins, close friend aubergine messages, and any context where the wink-coded energy is intentional and welcome. Use care anywhere else.",
+    "howPeopleUseIt": "🍆 shows up as the closer on an 'eggplant for you tonight' partner message ('eggplant for you tonight 🍆'), the punctuation on an 'in the mood 🍆' aubergine-coded reveal ('in the mood 🍆'), and the softener on an 'eggplant mode 🍆' team check-in - though the team check-in is the highest-risk use case and should be avoided in mixed company. It pairs naturally with sentences that name the eggplant-coded nightshade - 'eggplant for you,' 'in the mood,' 'eggplant mode' - and sits beautifully on partner 'eggplant for you' check-ins and close friend aubergine messages.\n\nIn group chats 🍆 anchors 'eggplant appreciation' threads, aubergine-coded moments, and 'mood 🍆' reveals where the eggplant cue matches the moment - but only in adult-only groups where the innuendo is the joke. On Instagram it lands on wink-coded story reposts and eggplant posts - keep to close friends. On TikTok it travels in eggplant-coded transitions and 'mood 🍆' reveals - comments will always amplify the suggestive read.\n\nThe emoji also works in dating contexts. An 'eggplant for you tonight 🍆' partner message uses the eggplant cue to communicate aubergine-coded romance. Across all of these surfaces the rule is the same: the more wink-coded the nightshade, the more natural 🍆 feels - but only with audiences that will read it as intended.",
+    "whenNotToUse": "Skip 🍆 in sympathy, condolence, or break-up contexts. The eggplant-coded nightshade cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 🍆 in any professional context - work chats, customer service, recruiting outreach, or anything where the suggestive read could create a hostile or HR-flagged exchange. The wink-coded register is too aubergine-coded for professional moments.\n\nSkip 🍆 in family group chats unless every member is on the same page about the joke. The aubergine-coded register reads very differently across generations and the receiver can always screenshot.",
+    "howToReply": "If someone sends 🍆, the cleanest mirror is another 🍆, 😏, or a sentence that joins the wink-coded energy - but only if the suggestive read is welcomed. If you want to escalate the engagement, follow with a sentence that adds context: 'eggplant for you right back' or 'in the mood too.' If the eggplant cue feels too aubergine-coded or unwelcome, reply with a softer emoji (❤️ or 🥕) that signals warmth without matching the wink volume.\n\nWhen 🍆 lands as a partner 'eggplant for you' check-in, mirror with another 🍆, 😏, or a sentence that escalates the romance. When it arrives as a literal vegetable 🍆 from a Boomer or Gen X sender, a sentence-only reply like 'love parm too 🍝' can defuse any misread without being rude.",
     "faqs": [
       {
-        "question": "What does 🍆 really mean?",
-        "answer": "🍆 most often reads as phallic innuendo in dating or flirty contexts. In food chats it can still mean literal eggplant, but only when the food context is obvious. The default read in modern chat is sexual."
+        "question": "What does 🍆 mean from a guy?",
+        "answer": "From a guy, 🍆 usually signals eggplant-coded nightshade - 'in the mood' or 'eggplant for you' with the suggestive read fully intended. The eggplant cue reads as aubergine-coded wink energy rather than literal eggplant, so it lands overwhelmingly on partner 'eggplant for you' check-ins and close friend aubergine messages."
       },
       {
-        "question": "Is 🍆 flirtatious?",
-        "answer": "Yes. 🍆 is one of the most sexually-coded emojis and reads as flirty or explicit on any dating thread. Use only when you know the audience and the read."
+        "question": "Is 🍆 flirty?",
+        "answer": "Almost always yes. 🍆 is the most-coded sexual emoji in the food family. In a partner or dating context 🍆 reads as aubergine-coded romance - 'eggplant for you tonight 🍆' is direct. On its own the emoji is still wink-coded, not romantic."
       },
       {
-        "question": "What does 🍆 mean at work?",
-        "answer": "At work 🍆 reads as risky, even in cooking channels. The innuendo undercuts the topic. Use a different vegetable emoji when the audience could include an HR-eyed manager."
+        "question": "What is the difference between 🍆 and 🥕?",
+        "answer": "🥕 is the carrot - the cue is carrot-coded crunch, the 'crunch time' carrot-style crunch-coded charm with no innuendo read. 🍆 is the eggplant - the cue is eggplant-coded nightshade, the 'in the mood' aubergine-coded wink-coded energy with a near-universal suggestive read. Use 🥕 when the moment is crunch; use 🍆 only when the moment is wink."
       },
       {
-        "question": "Is 🍆 appropriate to send to a crush?",
-        "answer": "In a fully flirty chat with a consenting adult, 🍆 reads as a wink and can spice up the banter. To a new crush or someone you are unsure about, send a less-coded emoji; the innuendo can land as too forward."
+        "question": "Is 🍆 for 'in the mood' moments?",
+        "answer": "Yes - 🍆 is the most common wink-coded emoji in the food family. The eggplant cue is a natural fit for 'in the mood' moments, aubergine-coded reveals, and partner 'eggplant for you' check-ins - but never in work contexts or cross-generational family chats without explicit shared humor."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "dinner at mine 🍆",
-      "interpretation": "Flirty invitation. Mirror with 🔥 or 🍆 and a sentence that escalates the moment ('be there at 8')."
-    },
-    {
-      "setting": "friends",
-      "message": "eggplant parm came out perfect 🍆",
-      "interpretation": "Friend announcing a successful dinner. Mirror with 'looks incredible' or a sentence that celebrates the food before the innuendo."
+      "message": "eggplant for you tonight, full eggplant romance 🍆",
+      "interpretation": "Partner aubergine-coded romance. Mirror with another 🍆, 😏, or a sentence that escalates the romance."
     },
     {
       "setting": "social",
-      "message": "someone explain this reel 🍆",
-      "interpretation": "Friend tagging a strange cooking video. Mirror with a sentence that engages the content rather than the joke that the emoji invites."
-    },
-    {
-      "setting": "work",
-      "message": "we shipped the new produce module 🥦",
-      "interpretation": "Mock example - notice the swap. If a teammate sent 🍆 here, mirror with 'is this the literal vegetable or' rather than the emoji. Different audience, different read."
+      "message": "cannot handle this whole thread, the in the mood 🍆",
+      "interpretation": "Public eggplant appreciation. Mirror with another 🍆, a sentence that joins the wink energy, or a 😏 that matches."
     },
     {
       "setting": "family",
-      "message": "made your dad's eggplant 🍆",
-      "interpretation": "Wholesome family recipe. Mirror with a sentence that asks for the recipe and avoid doubling the emoji so the food read holds."
+      "message": "eggplant parm for dinner, full eggplant parm 🍆",
+      "interpretation": "Family aubergine-coded food talk. Mirror with another 🍆, a sentence about the meal, or a heart emoji that matches — recipients from older generations may read literally."
+    },
+    {
+      "setting": "friends",
+      "message": "in the mood today, full nightshade energy 🍆",
+      "interpretation": "Friend wink-coded reveal. Mirror with another 🍆, a sentence that joins the aubergine energy, or a 😏 that matches."
+    },
+    {
+      "setting": "work",
+      "message": "eggplant mode today, full eggplant mode 🍆",
+      "interpretation": "Work aubergine-coded moment. Strongly avoid sending 🍆 in work channels - the innuendo read dominates. If the moment is food-only, 🥦 or 🍽 reads safer."
     }
   ]
 }

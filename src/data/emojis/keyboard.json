@@ -1,47 +1,131 @@
 {
   "unicode": "2328",
   "slug": "keyboard",
-  "character": "⌨️",
+  "character": "⌨",
   "name": "Keyboard",
   "shortName": "keyboard",
   "category": "objects",
   "subcategory": "computer",
   "unicodeVersion": "1.1",
-  "baseMeaning": "Keyboard emoji.",
-  "tldr": "Keyboard!",
+  "baseMeaning": "A computer keyboard with a partial layout, the universal image of typing and input.",
+  "tldr": "Tech-coded typing register, 'pounding keys' register, or build-mode cosign.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Keyboard.",
-      "example": "Look at this ⌨️",
+      "meaning": "Represents typing, coding, writing, or any keyboard-input activity.",
+      "example": "deep work mode ⌨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Typing or gaming.",
-      "example": "Feeling ⌨️",
+      "meaning": "Signals coding sessions, writing sprints, or a 'typing fast' status update.",
+      "example": "shipping a feature tonight ⌨",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⌨️", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Used in bios to flag writing or coding as a hobby; less common than 💻 for remote-work signaling.",
+      "example": "writer by night ⌨",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes ⌨️",
+      "meaning": "Appears in developer, writer, and editor channels; signals an active input session.",
+      "example": "drafting the proposal ⌨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "TWITTER",
+      "note": "Twitter uses ⌨ to flag coding sessions, writing sprints, and 'I am typing' status pings; the emoji clusters around developer and writer timelines."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Instagram creators stamp ⌨ on aesthetic writing shots, mechanical-keyboard product posts, and 'currently drafting' story updates."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "TikTok leans on ⌨ for typing ASMR, keyboard-review trends, and 'POV you just hit your word count' writer content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord servers for writers, devs, and editors adopt ⌨ as a category emoji; users set it as a status when they are mid-sentence."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Treats ⌨ as core shorthand for typing, coding, and writing; uses it freely in writing-tok and coding-tok posts."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Reads ⌨ as both literal gear and as a work-mode marker; uses it in dev and writing communities."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Reads ⌨ as the literal keyboard; uses it in IT and tech-support discussions."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Often sends ⌨ to flag typing or input activity; reads the emoji as the actual device."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⌨️ Keyboard Emoji Meaning",
-  "seoDescription": "Learn what the Keyboard emoji ⌨️ really means."
+  "seoTitle": "⌨ Keyboard Emoji Meaning - What Does ⌨ Really Mean?",
+  "seoDescription": "Learn what the keyboard emoji ⌨ really means in modern texting. Tech-coded typing register, 'pounding keys' register, or build-mode cosign. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-13",
+  "longForm": {
+    "overview": "The ⌨ keyboard emoji is the universal image of typing and input. Literally it shows a partial keyboard layout, instantly recognizable from any computer setup. In chat ⌨ carries three jobs: marking a typing-themed post, signaling 'I am mid-sentence' status, and inviting collaboration on a writing or coding project.\n\nOutside of pure work contexts ⌨ shows up in writing-tok culture, mechanical-keyboard hobbyist posts, and ASMR content. The emoji is core shorthand for anyone who types for a living — devs, writers, editors, journalists. It also functions as a quiet 'I am in the zone' closer in writing and coding channels.\n\nThere is no meaningful generational split on ⌨. All four generations treat it as straightforward typing and use it in the contexts where typing actually happens. The slang layer is mostly the 'pounding keys' energy of a productive session.\n\nThe safest read of ⌨ is that typing, coding, or writing is the topic. Slang usage centers on the 'mid-sentence' framing. A dating-app user sending ⌨ is signaling that writing or coding is part of their identity.",
+    "howPeopleUseIt": "On ship day ⌨ anchors writing posts. 'first draft done ⌨', 'shipping tonight ⌨', and 'word count just hit ⌨' all use the keyboard as a default tag for typing beats. Writers and developers lean on ⌨ as a content marker for productivity timelines.\n\nIn private DMs ⌨ opens the door to pair-writing invites, code-review requests, and 'are you free to draft?' pings. 'got your keyboard? ⌨' is the standard text for a friend trying to set up a writing session. The emoji shows up in long-distance friendships as a way to draft together in real time.\n\nIn work contexts ⌨ survives in dev and editorial teams. 'mid-sentence, brb ⌨' tells teammates the sender is in the zone. Editorial and content teams use ⌨ as a thematic anchor in publishing rituals. The emoji is rare in formal decks but never inappropriate when typing is genuinely the topic.",
+    "whenNotToUse": "Avoid ⌨ in contexts where the audience is supposed to put the keyboard down — dinner with friends, family time, or mindfulness posts. The emoji can undercut the message by reminding everyone of the device they are trying to escape.\n\nAlso avoid ⌨ in customer-service complaint threads where the 'I am typing' energy reads as dismissive of the customer's frustration. Skip ⌨ in formal professional writing where the typing metaphor is filler; investor updates, legal briefs, and academic papers do not benefit from a keyboard image.",
+    "howToReply": "Mirror ⌨ with another ⌨ to keep the typing energy, especially when celebrating a draft or a commit. Add a flame or checkmark tag for emphasis: 'word count smashed ⌨'. If you receive ⌨ as an availability ping, save non-urgent pings for later.\n\nWhen ⌨ arrives as a dating opener, share your own writing stake. 'novelist-in-progress, you? ⌨' is a clean reply. If writing is not your thing, suggest an in-person alternative — 'happy to swap the keyboard for a walk' keeps the door open.",
+    "faqs": [
+      {
+        "question": "What does ⌨ mean in texting?",
+        "answer": "In texting ⌨ means typing, coding, or writing. It shows up in shipping updates, drafting pings, and 'I am mid-sentence' status markers."
+      },
+      {
+        "question": "Is ⌨ about coding?",
+        "answer": "Often yes. ⌨ is broadly the typing-and-input marker, tied to coding, writing, and editing. Outside those contexts it can read as filler."
+      },
+      {
+        "question": "What does ⌨ mean on Instagram bios?",
+        "answer": "On Instagram bios ⌨ marks the account holder as someone who writes, codes, or edits online. Writers, devs, and content creators lean on it as a default identity tag."
+      },
+      {
+        "question": "Can I use ⌨ in a work chat?",
+        "answer": "Yes, especially in editorial, dev, and content channels. Skip it in formal decks and customer-facing comms where the casual tone is wrong."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "drafting all weekend ⌨",
+      "interpretation": "Writing-mode update. Drop an encouragement or ask how the draft is going."
+    },
+    {
+      "setting": "dating",
+      "message": "writer by night, runner by day ⌨",
+      "interpretation": "Identity-flag opener. Reply with your own routine to find a hook for the conversation."
+    },
+    {
+      "setting": "work",
+      "message": "mid-sentence on the proposal ⌨",
+      "interpretation": "Focus-mode heads-up. Save non-urgent pings for after they finish the section."
+    },
+    {
+      "setting": "social",
+      "message": "word count smashed today ⌨",
+      "interpretation": "Productivity brag. Drop a fire emoji or ask what they are writing."
+    },
+    {
+      "setting": "family",
+      "message": "still typing at midnight ⌨",
+      "interpretation": "Family concern about overwork. Reply with care and ask whether they have eaten."
+    }
+  ]
 }
