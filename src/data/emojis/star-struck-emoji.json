@@ -25,34 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about star-struck."
+      "platform": "INSTAGRAM",
+      "note": "Default starstruck sticker on celebrity-meeting stories and fandom-coded captions; the star eyes and wide grin are the visible fan-squeal default."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to celebrity-coded tweets and visible fandom reactions; reads as the universal fan-coded 'I cannot believe' tag."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to celebrity-clip moments; pairs with 'this is huge' and fandom-coded content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to celebrity-coded content or big announcements; the star eyes fit fandom-coded celebration."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤩 in casual contexts."
+      "note": "Uses 🤩 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤩 across platforms."
+      "note": "Reads 🤩 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🤩 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤩 literally."
+      "note": "Uses 🤩 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤩 Star-Struck Emoji Meaning - What Does 🤩 Really Mean?",
-  "seoDescription": "Learn what the star-struck emoji 🤩 really means in texts and social media."
+  "seoDescription": "Learn what the star-struck emoji 🤩 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🤩 Star-Struck emoji was added in Unicode 11 (2018) and is drawn as a yellow round face with a wide open smile and two star-shaped eyes. The visual cue reads instantly as starstruck, fandom-coded excitement, or the visible 'I am starstruck' moment. By 2026 🤩 has become the go-to emoji for the celebrity-cringe reaction, the visible-fandom-fangirl tag, and the 'I cannot believe I am meeting them' squeal.\n\nIn modern chat 🤩 does very specific work. People send it as a literal starstruck feeling, as the visible fan-squeal tag, or as the meet-celebrity reaction. The star eyes and open grin are the visual cue that the moment is fandom-level. Writers should pick 🤩 when the message is fan-girl excitement, and avoid it when the emotion is calmer — 😍 works for crush-level, 🤩 is celebrity-coded.",
+    "howPeopleUseIt": "🤩 lands on a friend's 'I MET TAYLOR' message, in a work channel where a big client signed, and in a dating-app DM where the sender is starstruck by the match. The star eyes anchor the read.\n\nIn close-friends chats 🤩 reads as the universal 'I am freaking out' fan tag. On X the emoji punctuates celebrity-meeting tweets. The emoji pairs with 😍 for the layered love-and-stars stack and with 🎉 for the celebration-by-fan-default stack.",
+    "whenNotToUse": "Skip 🤩 in any context where the excitement is calmer or less celebrity-coded. The star-eyes are too loud for mild happiness. Avoid it in professional contexts where the fandom-coded read feels off-task, and skip it in ironic contexts where the sender is being sarcastic — 🙄 or 😏 fits better there.",
+    "howToReply": "If a friend sends 🤩 on a celebrity-meet moment, mirror with another 🤩 or a sentence that squeals with them. The starstruck chain reads as solidarity.\n\nIf 🤩 lands as the fandom-coded excitement, reply with another 🤩 or 🎉. And if you want to send 🤩 yourself, pair it with the moment so the fan excitement is clear.",
+    "faqs": [
+      {
+        "question": "What does 🤩 mean in text?",
+        "answer": "🤩 means starstruck, fan-coded excitement, or 'I am freaking out.' The star eyes and open grin are the visual cue that the moment is fandom-level."
+      },
+      {
+        "question": "Is 🤩 flirty?",
+        "answer": "Sometimes. 🤩 can read as visible flirty fandom-coded energy in a dating thread when targeted at the recipient. It is more 'fan' than 'crush' though."
+      },
+      {
+        "question": "What does 🤩 mean on Instagram?",
+        "answer": "On Instagram, 🤩 is the default sticker on celebrity-meeting story overlays and visible-fandom-coded content."
+      },
+      {
+        "question": "What does 🤩 mean at work?",
+        "answer": "In Slack, 🤩 is rare. Use 🎉 or 🏆 for work wins; reserve 🤩 for fandom-coded contexts."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I MET HIM 🤩",
+      "interpretation": "Friend sharing starstruck moment. Mirror with another 🤩 or 😱 so the squeal chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "you look amazing 🤩",
+      "interpretation": "Dating-coded flirty fandom energy. Mirror with 🤩 or ❤️ so the warm fandom read returns."
+    },
+    {
+      "setting": "social",
+      "message": "I am literally shaking 🤩",
+      "interpretation": "Public starstruck moment. Mirror with another 🤩 or 😱 so the fan-coded excitement reads back."
+    },
+    {
+      "setting": "family",
+      "message": "we saw the aurora 🤩",
+      "interpretation": "Family-coded wonder. Mirror with 🤩 or ✨ so the family starstruck energy reads back."
+    },
+    {
+      "setting": "work",
+      "message": "client loved it 🤩",
+      "interpretation": "Work-coded celebration. Mirror with another 🎉 or 🤩 so the celebration chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
