@@ -12,7 +12,7 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Jar",
+      "meaning": "Glass jar",
       "example": "In the 🫙",
       "riskLevel": "LOW"
     },
@@ -21,16 +21,36 @@
       "meaning": "Preserving or tip jar",
       "example": "🫙 it up",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Preserving-coded reaction to a romantic memory.",
+      "example": "saving us in a 🫙",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing saving or hoarding something.",
+      "example": "all in the 🫙",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for food-coded and adult-coded preserve tweets. The jar is the visible 'saving' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in cozy-coded stories and aesthetic-coded pantry shares. The jar reads as the visible preserve default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded preserve clips. The jar pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal pantry default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to food-coded content. The jar is the default 'jar it' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🫙 literally for canning or pantry references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫙 Jar Emoji Meaning - What Does 🫙 Really Mean?",
-  "seoDescription": "Learn what the jar emoji 🫙 really means in texts and social media."
+  "seoDescription": "Learn what the jar emoji 🫙 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🫙 Jar emoji was added in Unicode 14 (2021) and is drawn as a clear glass mason jar with a metal lid, empty or filled with a small batch of preserved contents. The visual cue reads instantly as preserve-coded reference, pantry default, or the visible 'jar it' tag. By 2026 🫙 has become the go-to emoji for the cozy-coded reaction, the visible preserve default, and the tip-jar-coded reaction in close-friends and group chats.\n\nIn modern chat 🫙 does very specific work. People send it as a literal food-coded reference, as the visible 'I am canning this' tag, or as the preserve-coded default. The clear mason jar with metal lid is the visual cue that the read is preserve or pantry. Writers should pick 🫙 when the read is cozy or visible 'saving' energy, and avoid it when the read is full-on bottle — 🍾 fits better there.",
+    "howPeopleUseIt": "🫙 lands on a friend's preserve-coded message, in a work channel where someone is signaling cozy-coded energy, and in a group chat where the sender is signaling 'jar it'. The clear mason jar anchors the read.\n\nIn close-friends chats 🫙 reads as the universal cozy default and the visible 'jar it' tag. On X the emoji punctuates food-coded and pantry tweets. The emoji pairs with 🍯 for the layered jar-and-honey stack and with 🥫 for the layered jar-and-canned stack.",
+    "whenNotToUse": "Skip 🫙 in any context where the read is supposed to be quick. The jar implies slow preserve, not fast. Avoid 🫙 in casual contexts where the preserve-coded read lands as fussy.",
+    "howToReply": "If a friend sends 🫙 on a cozy-coded message, mirror with another 🫙 or 🍯 to send matching energy. The preserve chain reads as solidarity.\n\nIf 🫙 lands as the tip-jar default, reply with another 🫙 or 💰. And if you want to send 🫙 yourself, pair it with the moment so the food-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫙 mean in text?",
+        "answer": "🫙 means preserve-coded reference, cozy energy, or the visible 'jar it' reaction. The clear mason jar is the visual cue that the read is preserve or pantry."
+      },
+      {
+        "question": "Is 🫙 flirty?",
+        "answer": "Sometimes. 🫙 reads as flirty-coded in a dating thread combined with 'saving us in a jar' tag content as romantic memory-keeping nod."
+      },
+      {
+        "question": "What does 🫙 mean from a girl?",
+        "answer": "From a girl or anyone, 🫙 carries the same preserve-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫙 mean on Instagram?",
+        "answer": "On Instagram, 🫙 is the default sticker on cozy-coded captions and aesthetic-coded canning-recipe story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "jarred the leftovers 🫙",
+      "interpretation": "Friend preserve share. Mirror with another 🫙 or 🍯 so the cozy chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "shipped it, all jarred 🫙",
+      "interpretation": "Work-coded cozy share. Mirror with a clarifying sentence — 🫙 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "saving our memories in a 🫙",
+      "interpretation": "Dating-coded flirty share. Mirror with 🫙 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "grandma's jam in the 🫙",
+      "interpretation": "Family-coded cozy share. Mirror with 🫙 or 🍯 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "tip jar full 🫙",
+      "interpretation": "Public adult-coded cozy share. Mirror with another 🫙 or 💰 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

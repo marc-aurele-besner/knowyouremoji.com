@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pouring liquid",
+      "meaning": "Pouring a drink",
       "example": "🫗 some water",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Spilling tea",
+      "meaning": "Spilling the tea or gossip",
       "example": "🫗 the tea",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Pouring-coded reaction to a romantic pour-over moment.",
+      "example": "pour one for me 🫗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing the act of spilling tea or secrets.",
+      "example": "all the tea 🫗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for gossip-coded and adult-coded spill tweets. The pouring liquid is the visible 'spilling tea' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in gossip-coded stories and aesthetic-coded pour shares. The pouring liquid reads as the visible spill default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded gossip clips. The pouring liquid pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal pour default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to gossip-coded content. The pouring liquid is the default 'spill it' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🫗 literally for kitchen or beverage references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫗 Pouring Liquid Emoji Meaning - What Does 🫗 Really Mean?",
-  "seoDescription": "Learn what the pouring liquid emoji 🫗 really means in texts and social media."
+  "seoDescription": "Learn what the pouring liquid emoji 🫗 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🫗 Pouring Liquid emoji was added in Unicode 14 (2021) and is drawn as a transparent pitcher pouring a stream of liquid into a waiting container. The visual cue reads instantly as pour-coded reference, spill default, or the visible 'spilling the tea' tag. By 2026 🫗 has become the go-to emoji for the gossip-coded reaction, the visible pour default, and the spill-coded reaction in close-friends and group chats.\n\nIn modern chat 🫗 does very specific work. People send it as a literal pour-coded reference, as the visible 'spilling tea' tag, or as the gossip-coded default. The pouring pitcher is the visual cue that the read is pour or gossip. Writers should pick 🫗 when the read is spill or visible 'tea is hot' energy, and avoid it when the read is full-on teapot — 🫖 fits better there.",
+    "howPeopleUseIt": "🫗 lands on a friend's gossip-coded message, in a work channel where someone is signaling spill-coded energy, and in a group chat where the sender is signaling 'spill it'. The pouring pitcher anchors the read.\n\nIn close-friends chats 🫗 reads as the universal pour default and the visible 'spill it' tag. On X the emoji punctuates gossip-coded and spill tweets. The emoji pairs with 🫖 for the layered pour-and-teapot stack and with 🍵 for the layered pour-and-tea-cup stack.",
+    "whenNotToUse": "Skip 🫗 in any context where the read is supposed to be still. The pouring liquid implies motion, not still. Avoid 🫗 in casual contexts where the spill-coded read lands as messy.",
+    "howToReply": "If a friend sends 🫗 on a spill-coded message, mirror with another 🫗 or 🍵 to send matching energy. The gossip chain reads as solidarity.\n\nIf 🫗 lands as the pour-over default, reply with another 🫗 or ☕. And if you want to send 🫗 yourself, pair it with the moment so the spill-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫗 mean in text?",
+        "answer": "🫗 means pour-coded reference, spill energy, or the visible 'spilling the tea' reaction. The pouring pitcher is the visual cue that the read is pour or gossip."
+      },
+      {
+        "question": "Is 🫗 flirty?",
+        "answer": "Sometimes. 🫗 reads as flirty-coded in a dating thread combined with 'pour one for me' tag content as romantic pour-coded invite."
+      },
+      {
+        "question": "What does 🫗 mean from a girl?",
+        "answer": "From a girl or anyone, 🫗 carries the same pour-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫗 mean on Instagram?",
+        "answer": "On Instagram, 🫗 is the default sticker on gossip-coded captions and aesthetic-coded pour-over coffee story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "spill the tea 🫗",
+      "interpretation": "Friend gossip share. Mirror with another 🫗 or 🍵 so the spill chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "pitching again 🫗",
+      "interpretation": "Work-coded pour share. Mirror with a clarifying sentence — 🫗 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "pour me a drink 🫗",
+      "interpretation": "Dating-coded flirty share. Mirror with 🫗 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "milking the cow 🫗",
+      "interpretation": "Family-coded pour share. Mirror with 🫗 or 🥛 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "all the gossip 🫗",
+      "interpretation": "Public adult-coded gossip share. Mirror with another 🫗 or 🍵 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Dining setting",
+      "meaning": "Dinner setting",
       "example": "Ready to eat 🍽",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Meal time",
+      "meaning": "Meal time or fine-dining-coded",
       "example": "🍽 date",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Dinner-date-coded reaction to a romantic meal.",
+      "example": "dinner tonight 🍽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing being well-fed or fine-dining-coded.",
+      "example": "fine dining 🍽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for meal-coded and adult-coded fine-dining tweets. The plate-and-cutlery is the visible 'fine dining' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in food-coded stories and aesthetic-coded dinner shares. The plate-and-cutlery reads as the visible dinner default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded food clips. The plate-and-cutlery pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal fine-dining default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to meal-coded content. The plate-and-cutlery is the default 'dinner time' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🍽 literally for dinner or restaurant references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍽 Fork and Knife with Plate Emoji Meaning - What Does 🍽 Really Mean?",
-  "seoDescription": "Learn what the fork and knife with plate emoji 🍽 really means in texts and social media."
+  "seoDescription": "Learn what the fork and knife with plate emoji 🍽 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🍽 Fork and Knife with Plate emoji was added in Unicode 7 (2014) and is drawn as a circular plate viewed from above with a fork on the left and a knife on the right. The visual cue reads instantly as meal-coded reference, fine-dining default, or the visible 'dinner is ready' tag. By 2026 🍽 has become the go-to emoji for the meal-coded reaction, the visible dinner default, and the restaurant-coded reaction in close-friends and family chats.\n\nIn modern chat 🍽 does very specific work. People send it as a literal food-coded reference, as the visible 'dinner is on' tag, or as the restaurant-coded default. The plate with fork and knife is the visual cue that the read is fine dining or sit-down meal. Writers should pick 🍽 when the read is dinner or visible 'sit-down' energy, and avoid it when the read is full-on fork-and-knife alone — 🍴 fits better there.",
+    "howPeopleUseIt": "🍽 lands on a friend's dinner-coded message, in a work channel where someone is signaling meal-coded energy, and in a group chat where the sender is signaling 'fine dining'. The plate with cutlery anchors the read.\n\nIn close-friends chats 🍽 reads as the universal fine-dining default and the visible 'dinner date' tag. On X the emoji punctuates food-coded and restaurant tweets. The emoji pairs with 🍴 for the layered plate-and-cutlery stack and with 🍷 for the layered dinner-and-wine stack.",
+    "whenNotToUse": "Skip 🍽 in any context where the read is supposed to be fast. The plate-and-cutlery implies sit-down meal, not fast food. Avoid 🍽 in casual contexts where the meal-coded read lands as formal.",
+    "howToReply": "If a friend sends 🍽 on a dinner-coded message, mirror with another 🍽 or 🍷 to send matching energy. The fine-dining chain reads as solidarity.\n\nIf 🍽 lands as the date-night default, reply with another 🍽 or 🥂. And if you want to send 🍽 yourself, pair it with the moment so the meal-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🍽 mean in text?",
+        "answer": "🍽 means meal-coded reference, fine-dining energy, or the visible 'dinner is on' reaction. The plate with cutlery is the visual cue that the read is sit-down meal."
+      },
+      {
+        "question": "Is 🍽 flirty?",
+        "answer": "Sometimes. 🍽 reads as flirty-coded in a dating thread combined with 'dinner date' tag content as romantic fine-dining-coded invite."
+      },
+      {
+        "question": "What does 🍽 mean from a girl?",
+        "answer": "From a girl or anyone, 🍽 carries the same meal-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🍽 mean on Instagram?",
+        "answer": "On Instagram, 🍽 is the default sticker on food-coded captions and aesthetic-coded restaurant-recipe story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "dinner is served 🍽",
+      "interpretation": "Friend meal share. Mirror with another 🍽 or 🍷 so the dinner chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team dinner 🍽",
+      "interpretation": "Work-coded meal share. Mirror with a clarifying sentence — 🍽 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "dinner tonight 🍽",
+      "interpretation": "Dating-coded flirty share. Mirror with 🍽 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "sunday dinner 🍽",
+      "interpretation": "Family-coded meal share. Mirror with 🍽 or 🥘 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "fine dining tonight 🍽",
+      "interpretation": "Public adult-coded restaurant share. Mirror with another 🍽 or 🍷 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

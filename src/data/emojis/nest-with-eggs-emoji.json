@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Bird nest",
+      "meaning": "Bird nest with eggs",
       "example": "Found a 🪺",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Family or home",
-      "example": "Empty 🪺",
+      "meaning": "Family planning or new beginnings",
+      "example": "Building a 🪺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Family-coded reaction to a romantic partner hinting at children.",
+      "example": "future us 🪺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing bubbling family plans or hope.",
+      "example": "one day 🪺",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for family-coded and adult-coded new-beginnings tweets. The nest with eggs is the visible 'family planning' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in life-event-coded stories and aesthetic-coded home shares. The nest with eggs reads as the visible new-beginnings default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded family clips. The nest with eggs pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal family-planning default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to family-coded content. The nest with eggs is the default 'expecting' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🪺 literally for family planning or new-beginnings references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🪺 Nest with Eggs Emoji Meaning - What Does 🪺 Really Mean?",
-  "seoDescription": "Learn what the nest with eggs emoji 🪺 really means in texts and social media."
+  "seoDescription": "Learn what the nest with eggs emoji 🪺 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🪺 Nest with Eggs emoji was added in Unicode 15.1 (2023) and is drawn as a woven bird nest with two or three small speckled eggs visible inside. The visual cue reads instantly as family-coded reference, expecting default, or the visible 'new beginnings' tag. By 2026 🪺 has become the go-to emoji for the family-coded reaction, the visible new-beginnings default, and the spring-coded reaction in close-friends and family chats.\n\nIn modern chat 🪺 does very specific work. People send it as a literal bird-coded reference, as the visible 'I am planning ahead' tag, or as the family-coded default. The nest with eggs is the visual cue that the read is family planning or new life. Writers should pick 🪺 when the read is expecting or visible 'family ahead' energy, and avoid it when the read is full-on empty nest — 🪹 fits better there.",
+    "howPeopleUseIt": "🪺 lands on a friend's new-beginnings message, in a work channel where someone is signaling family-coded energy, and in a group chat where the sender is signaling 'expecting'. The nest with eggs anchors the read.\n\nIn close-friends chats 🪺 reads as the universal new-beginnings default and the visible 'family is growing' tag. On X the emoji punctuates family-coded and life-event tweets. The emoji pairs with 🪹 for the layered eggs-and-empty nest stack and with 👶 for the layered nest-and-baby stack.",
+    "whenNotToUse": "Skip 🪺 in any context where the read is supposed to be finished. The nest with eggs implies in-progress, not done. Avoid 🪺 in casual contexts where the family-coded read lands as forward.",
+    "howToReply": "If a friend sends 🪺 on a new-beginnings message, mirror with another 🪺 or 👶 to send matching energy. The family chain reads as solidarity.\n\nIf 🪺 lands as the expecting default, reply with another 🪺 or 🥚. And if you want to send 🪺 yourself, pair it with the moment so the family-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🪺 mean in text?",
+        "answer": "🪺 means family-coded reference, new-beginnings energy, or the visible 'expecting' reaction. The nest with eggs is the visual cue that the read is family planning or new life."
+      },
+      {
+        "question": "Is 🪺 flirty?",
+        "answer": "Sometimes. 🪺 reads as flirty-coded in a dating thread combined with 'future us' tag content as family-planning romantic nod."
+      },
+      {
+        "question": "What does 🪺 mean from a girl?",
+        "answer": "From a girl or anyone, 🪺 carries the same family-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🪺 mean on Instagram?",
+        "answer": "On Instagram, 🪺 is the default sticker on mom-coded captions and aesthetic-coded family-planning story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "the 🪺 is full",
+      "interpretation": "Friend family share. Mirror with another 🪺 or 👶 so the new-beginnings chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "growing the team like a 🪺",
+      "interpretation": "Work-coded new-beginnings share. Mirror with a clarifying sentence — 🪺 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "future us and our 🪺",
+      "interpretation": "Dating-coded flirty share. Mirror with 🪺 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "expecting 🪺",
+      "interpretation": "Family-coded new-beginnings share. Mirror with 🪺 or 👶 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "one day our own 🪺",
+      "interpretation": "Public adult-coded family share. Mirror with another 🪺 or 👶 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
