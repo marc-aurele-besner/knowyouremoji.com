@@ -1,70 +1,127 @@
 {
-  "unicode": "2714",
+  "unicode": "U+2714",
   "slug": "check-mark-emoji",
   "character": "✔️",
   "name": "Check Mark",
   "shortName": "check mark emoji",
   "category": "symbols",
-  "subcategory": "other-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Check Mark emoji.",
-  "tldr": "Represents check mark.",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Check mark.",
+  "tldr": "Confirmed, done, or 'yes'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The check mark symbol.",
-      "example": "✔️",
+      "meaning": "A check mark.",
+      "example": "done ✔️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used for emphasis or decoration.",
-      "example": "Check this ✔️",
+      "meaning": "Confirmed or 'yes'.",
+      "example": "shipped ✔️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Confirmed-coded affection.",
+      "example": "you're a yes ✔️",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional or organizational use.",
-      "example": "Status: ✔️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Playful or decorative use.",
-      "example": "So official ✔️",
+      "meaning": "Task-completed signal.",
+      "example": "task done ✔️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about check mark."
+      "note": "Staple of confirmed-coded tweets and 'yes' reactions; reads as 'done' rather than literal check."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in confirmed-coded captions and done-story overlays; pairs with ✅ for the double-check stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to confirmed clips and 'yes' videos; reads as 'I agree.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in confirmed channels and done-coded servers; reads as 'I agree.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ✔️ in casual contexts."
+      "note": "Uses ✔️ for confirmed-coded affection and self-aware done reactions; the 'yes' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ✔️ across platforms."
+      "note": "Familiar with ✔️ across platforms; reads as 'done' or 'confirmed-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use ✔️ literally."
+      "note": "May use ✔️ literally as a check mark; the cultural layer of confirmed-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "✔️ Check Mark Emoji Meaning - What Does ✔️ Really Mean?",
-  "seoDescription": "Learn what the check mark emoji ✔️ really means in texts and social media."
+  "seoDescription": "Learn what the check mark emoji ✔️ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ✔️ Check Mark emoji was added in Unicode 6 (2010) and has been a default for confirmed-coded reactions ever since. The bold black check mark is the visual shorthand for done, confirmed-coded affection, and 'yes' self-aware task-completion. In 2026 ✔️ is the default emoji for done captions, confirmed reactions, and 'I agree' drops.\n\nIn real-world chat ✔️ does very specific work. People send it in confirmed-coded captions, as a done affection signal, or as the visual equivalent of 'yes.' The check carries both literal confirmation and self-aware-done. Writers should pick ✔️ when the message is about confirmed-coded energy, and avoid it when refusal is needed. The check has been a fixture of confirmed-coded captions since Unicode 6 and continues to land as the yes-and-confirmed default in 2026 chats across platforms.",
+    "howPeopleUseIt": "✔️ shows up in done captions, in 'yes' reactions, and in confirmed-coded posts. People send it during a confirmed-coded share, as a date-coded opener, or as a work task-completed signal. The emoji pairs naturally with ✅ for the double-check stack and with ❌ for the binary stack.\n\nIn close-friends chats ✔️ reads as 'yes.' In dating-app messages it can land as a confirmed-coded affection signal. In public posts it is the done-coded and confirmed default.",
+    "whenNotToUse": "Skip ✔️ in any context where refusal or 'no' is needed. Avoid it in contexts where the sender wants to be subtle about the done-coded read — the check is too obvious.\n\nAlso avoid ✔️ in ironic contexts where the sender is actually not done — the check implies real task-completion.",
+    "howToReply": "Mirror ✔️ with another ✔️ if you are matching the done energy, or pair with ✅ for the double-check stack. If the sender is signaling confirmed-coded, mirror with ✔️ or ☑ and a sentence that engages. If the sender is using ✔️ as a date-coded opener, mirror with ✔️ or ❤️ and a follow-up.\n\nIf ✔️ lands as a 'yes' reaction, mirror with ✔️ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ✔️ mean in text?",
+        "answer": "✔️ means confirmed, done, or 'yes.' The check is the visual cue for done-coded affection."
+      },
+      {
+        "question": "What does ✔️ mean from a guy?",
+        "answer": "From a guy, ✔️ reads as a done-coded affection signal or 'ship it' coded humor. The check is firm rather than coded."
+      },
+      {
+        "question": "What does ✔️ mean on Instagram?",
+        "answer": "On Instagram, ✔️ is the default for confirmed-coded aesthetic captions and done-overlay content."
+      },
+      {
+        "question": "When should I use ✔️?",
+        "answer": "Use ✔️ for confirmation, done-coded reactions, or 'yes' posts. Avoid it when refusal is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "shipped ✔️",
+      "interpretation": "Friend signaling done vibes. Mirror with ✔️ or 🙌."
+    },
+    {
+      "setting": "dating",
+      "message": "you're a yes ✔️",
+      "interpretation": "Confirmed-coded affection. Mirror with ✔️ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "task done ✔️",
+      "interpretation": "Work-coded done share. Reply with ✔️ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "done sunday ✔️",
+      "interpretation": "Family-coded confirmed share. Mirror with ✔️ or ☑."
+    },
+    {
+      "setting": "social",
+      "message": "yes vibes ✔️",
+      "interpretation": "Public done post. Mirror with ✔️ or ✅."
+    }
+  ]
 }

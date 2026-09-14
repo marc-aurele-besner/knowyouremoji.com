@@ -4,47 +4,124 @@
   "character": "❎",
   "name": "Cross Mark Button",
   "shortName": "cross mark button emoji",
-  "category": "Symbols",
-  "subcategory": "Other Symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Green squared X",
-  "tldr": "Decline button",
+  "category": "symbols",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Cross mark.",
+  "tldr": "No-coded, refused, or 'pass'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Decline or uncheck",
-      "example": "Press ❎",
+      "meaning": "A cross mark in a button.",
+      "example": "no ❎",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Pass on this",
-      "example": "❎ not interested",
+      "meaning": "No-coded or 'pass'.",
+      "example": "pass ❎",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Refusal-coded affection.",
+      "example": "no thanks ❎",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Task-failed signal.",
+      "example": "ticket rejected ❎",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Staple of no-coded tweets and 'pass' reactions; reads as 'no' rather than literal cross."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in no-coded captions and pass-story overlays; pairs with ✅ for the binary stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to refusal clips and 'pass' videos; reads as 'no.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in no channels and pass-coded servers; reads as 'I am passing.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses ❎ for no-coded affection and self-aware 'pass' reactions; the 'no thanks' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Familiar with ❎ across platforms; reads as 'no' or 'pass-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use ❎ literally as cross mark; the cultural layer of no-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "❎ Cross Mark Button Emoji Meaning - What Does ❎ Really Mean?",
-  "seoDescription": "Learn what the cross mark button emoji ❎ really means in texts and social media."
+  "seoDescription": "Learn what the cross mark button emoji ❎ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ❎ Cross Mark Button emoji was added in Unicode 6 (2010) and has been a default for no-coded reactions ever since. The bold green square with a white X is the visual shorthand for refusal, no-coded affection, and 'pass' self-aware rejection. In 2026 ❎ is the default emoji for no captions, pass reactions, and 'no thanks' drops.\n\nIn real-world chat ❎ does very specific work. People send it in no-coded captions, as a refusal affection signal, or as the visual equivalent of 'pass.' The cross carries both literal X and self-aware-no. Writers should pick ❎ when the message is about no-coded energy, and avoid it when agreement is needed — that's ✅ territory. The cross has been a fixture of no-coded captions since Unicode 6 and continues to land as the pass-and-no-thanks default in 2026 chats across platforms.",
+    "howPeopleUseIt": "❎ shows up in no captions, in 'pass' reactions, and in refusal-coded posts. People send it during a no-coded share, as a date-coded opener, or as a work task-failed signal. The emoji pairs naturally with ✅ for the binary stack and with ❌ for the cross-mark stack.\n\nIn close-friends chats ❎ reads as 'no.' In dating-app messages it can land as a refusal-coded affection signal when rejecting an ex or idea. In public posts it is the no-coded and pass default.",
+    "whenNotToUse": "Skip ❎ in any context where agreement or 'yes' is needed — ✅ is the yes counterpart. Avoid it in contexts where the sender wants to be subtle about the no-coded read — the bold cross is too obvious.\n\nAlso avoid ❎ in ironic contexts where the sender actually agrees — the cross implies real refusal.",
+    "howToReply": "Mirror ❎ with another ❎ if you are matching the no energy, or pair with ✅ for the binary stack. If the sender is signaling pass-coded, mirror with ❎ or ❌ and a sentence that engages. If the sender is using ❎ as a refusal-coded opener, mirror with ❎ or ❤️ and a follow-up.\n\nIf ❎ lands as a 'pass' reaction, mirror with ❎ or 🙅 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ❎ mean in text?",
+        "answer": "❎ means no-coded, refused, or 'pass.' The cross is the visual cue for refusal-coded affection."
+      },
+      {
+        "question": "What does ❎ mean from a guy?",
+        "answer": "From a guy, ❎ reads as a refusal-coded affection signal or 'pass' coded humor. The cross is firm rather than coded."
+      },
+      {
+        "question": "What does ❎ mean on Instagram?",
+        "answer": "On Instagram, ❎ is the default for no-coded aesthetic captions and pass-overlay content."
+      },
+      {
+        "question": "When should I use ❎?",
+        "answer": "Use ❎ for refusal, no-coded reactions, or 'pass' posts. Avoid it when agreement is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "pass ❎",
+      "interpretation": "Friend signaling no vibes. Mirror with ❎ or ❌."
+    },
+    {
+      "setting": "dating",
+      "message": "no thanks ❎",
+      "interpretation": "Refusal-coded affection. Mirror with ❎ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "ticket rejected ❎",
+      "interpretation": "Work-coded no share. Reply with ❎ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "no sunday ❎",
+      "interpretation": "Family-coded refusal share. Mirror with ❎ or 🙅."
+    },
+    {
+      "setting": "social",
+      "message": "pass vibes ❎",
+      "interpretation": "Public no post. Mirror with ❎ or ❌."
+    }
+  ]
 }

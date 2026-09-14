@@ -1,70 +1,127 @@
 {
-  "unicode": "00A9",
+  "unicode": "U+00A9",
   "slug": "copyright-emoji",
   "character": "©️",
   "name": "Copyright",
   "shortName": "copyright emoji",
   "category": "symbols",
-  "subcategory": "other-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Copyright emoji.",
-  "tldr": "Represents copyright.",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Copyright.",
+  "tldr": "Copyright-coded, mine, or 'I made this'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The copyright symbol.",
-      "example": "©️",
+      "meaning": "A copyright symbol.",
+      "example": "©️ 2026",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used for emphasis or decoration.",
-      "example": "Check this ©️",
+      "meaning": "Mine-coded or 'I made this'.",
+      "example": "this is mine ©️",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Mine-coded affection.",
+      "example": "you're mine ©️",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Professional or organizational use.",
-      "example": "Status: ©️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Playful or decorative use.",
-      "example": "So official ©️",
+      "meaning": "Work product ownership.",
+      "example": "I made this ©️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about copyright."
+      "note": "Staple of ownership-coded tweets and 'I made this' reactions; reads as 'mine' rather than literal copyright."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in ownership-coded captions and mine-story overlays; pairs with ®️ for the trademark stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to ownership clips and 'mine' videos; reads as 'I made this.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in ownership channels and mine-coded servers; reads as 'this is mine.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ©️ in casual contexts."
+      "note": "Uses ©️ for ownership-coded affection and self-aware 'mine' reactions; the 'I made this' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ©️ across platforms."
+      "note": "Familiar with ©️ across platforms; reads as 'copyright' or 'mine-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use ©️ literally."
+      "note": "May use ©️ literally as copyright; the cultural layer of ownership-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "©️ Copyright Emoji Meaning - What Does ©️ Really Mean?",
-  "seoDescription": "Learn what the copyright emoji ©️ really means in texts and social media."
+  "seoDescription": "Learn what the copyright emoji ©️ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ©️ Copyright emoji was added in Unicode 6 (2010) and has been a default for ownership-coded reactions ever since. The 'C' inside a circle is the visual shorthand for mine, ownership-coded affection, and 'I made this' self-aware possessiveness. In 2026 ©️ is the default emoji for ownership captions, mine reactions, and 'this is mine' drops.\n\nIn real-world chat ©️ does very specific work. People send it in ownership-coded captions, as a mine affection signal, or as the visual equivalent of 'I made this.' The symbol carries both literal copyright and self-aware-mine. Writers should pick ©️ when the message is about ownership-coded energy, and avoid it when shared ownership is being described. The symbol has been a fixture of ownership-coded captions since Unicode 6 and continues to land as the mine-and-I-made-this default in 2026 chats across platforms.",
+    "howPeopleUseIt": "©️ shows up in ownership captions, in 'mine' reactions, and in I-made-this posts. People send it during an ownership-coded share, as a date-coded opener, or as a work product-ownership signal. The emoji pairs naturally with ®️ for the trademark stack and with ™️ for the trademark-stack two.\n\nIn close-friends chats ©️ reads as 'mine.' In dating-app messages it can land as an ownership-coded affection signal. In public posts it is the ownership-coded and mine default.",
+    "whenNotToUse": "Skip ©️ in any context where shared ownership is being described. The mine read is too possessive. Avoid it in contexts where the sender wants to be subtle about the ownership read — the symbol is too obvious.\n\nAlso avoid ©️ in professional contexts where the copyright read lands as legal-coded rather than playful possessiveness.",
+    "howToReply": "Mirror ©️ with another ©️ if you are matching the ownership energy, or pair with ®️ for the trademark stack. If the sender is signaling mine-coded, mirror with ©️ or ™️ and a sentence that engages. If the sender is using ©️ as a date-coded opener, mirror with ©️ or ❤️ and a follow-up.\n\nIf ©️ lands as a 'I made this' reaction, mirror with ©️ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ©️ mean in text?",
+        "answer": "©️ means copyright-coded, mine, or 'I made this.' The symbol is the visual cue for ownership-coded affection."
+      },
+      {
+        "question": "What does ©️ mean from a guy?",
+        "answer": "From a guy, ©️ reads as an ownership-coded affection signal or 'you're mine' coded humor. The symbol is possessive rather than coded."
+      },
+      {
+        "question": "What does ©️ mean on Instagram?",
+        "answer": "On Instagram, ©️ is the default for ownership-coded aesthetic captions and mine-overlay content."
+      },
+      {
+        "question": "When should I use ©️?",
+        "answer": "Use ©️ for ownership, mine-coded reactions, or 'I made this' posts. Avoid it when shared ownership is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "this is mine ©️",
+      "interpretation": "Friend signaling ownership vibes. Mirror with ©️ or 🙌."
+    },
+    {
+      "setting": "dating",
+      "message": "you're mine ©️",
+      "interpretation": "Mine-coded affection. Mirror with ©️ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "I made this ©️",
+      "interpretation": "Work-coded ownership share. Reply with ©️ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "this sunday ©️",
+      "interpretation": "Family-coded ownership share. Mirror with ©️ or ™️."
+    },
+    {
+      "setting": "social",
+      "message": "mine vibes ©️",
+      "interpretation": "Public ownership post. Mirror with ©️ or 🙌."
+    }
+  ]
 }
