@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Socks",
+      "meaning": "Pair of socks",
       "example": "Cozy 🧦",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Knocked your socks off",
+      "meaning": "Knocked your socks off or cozy tag",
       "example": "🧦 off!",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Cozy-couple-coded reaction to a comfortable vibe.",
+      "example": "cozy with you 🧦",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing socks-on-floor-off vibe.",
+      "example": "match day 🧦",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for cozy-coded and adult-coded sock-match tweets. The pair of socks is the visible 'cozy' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in outfit-coded stories and aesthetic-coded cozy shares. The pair of socks reads as the visible cute-default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded cozy clips. The pair of socks pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal match-day default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to cozy-coded content. The pair of socks is the default 'comfy' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🧦 literally for sock or laundry references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧦 Socks Emoji Meaning - What Does 🧦 Really Mean?",
-  "seoDescription": "Learn what the socks emoji 🧦 really means in texts and social media."
+  "seoDescription": "Learn what the socks emoji 🧦 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🧦 Socks emoji was added in Unicode 10 (2017) and is drawn as a single striped sock in green and white with visible cuff at the top. The visual cue reads instantly as cozy-coded reference, sock default, or the visible 'knock your socks off' tag. By 2026 🧦 has become the go-to emoji for the cozy-coded reaction, the visible pair default, and the matchy-coded reaction in close-friends and group chats.\n\nIn modern chat 🧦 does very specific work. People send it as a literal clothing-coded reference, as the visible 'cozy' tag, or as the matchy-coded default. The striped sock with cuff is the visual cue that the read is footwear-adjacent or cozy. Writers should pick 🧦 when the read is cozy or visible 'comfy' energy, and avoid it when the read is full-on shoes — 👟 fits better there.",
+    "howPeopleUseIt": "🧦 lands on a friend's cozy-coded message, in a work channel where someone is signaling warm-coded energy, and in a dating-app DM where the sender is signaling flirty comfy. The striped sock with cuff anchors the read.\n\nIn close-friends chats 🧦 reads as the universal cozy default and the visible 'matching socks' tag. On X the emoji punctuates cozy-coded and outfit tweets. The emoji pairs with 👟 for the layered socks-and-shoes stack and with 🧣 for the layered socks-and-scarf stack.",
+    "whenNotToUse": "Skip 🧦 in any context where the read is supposed to be rugged. The striped sock implies cozy, not rugged. Avoid 🧦 in casual contexts where the cozy-coded read lands as lazy.",
+    "howToReply": "If a friend sends 🧦 on a cozy-coded message, mirror with another 🧦 or 🧣 to send matching energy. The cozy chain reads as solidarity.\n\nIf 🧦 lands as the cozy default, reply with another 🧦 or ☕. And if you want to send 🧦 yourself, pair it with the moment so the cozy-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🧦 mean in text?",
+        "answer": "🧦 means cozy-coded reference, comfy energy, or the visible 'match day' reaction. The striped sock with cuff is the visual cue that the read is socks or cozy."
+      },
+      {
+        "question": "Is 🧦 flirty?",
+        "answer": "Rarely. 🧦 reads as flirty-coded only in a dating thread combined with 'cozy morning' tag content as intimate vibe."
+      },
+      {
+        "question": "What does 🧦 mean from a girl?",
+        "answer": "From a girl or anyone, 🧦 carries the same cozy-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🧦 mean on Instagram?",
+        "answer": "On Instagram, 🧦 is the default sticker on cozy-coded captions and aesthetic-coded outfit-of-the-day story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "cozy mode unlocked 🧦",
+      "interpretation": "Friend cozy share. Mirror with another 🧦 or ☕ so the comfy chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "WFH and the 🧦 are out",
+      "interpretation": "Work-coded cozy share. Mirror with a clarifying sentence — 🧦 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "movie night, cozy 🧦",
+      "interpretation": "Dating-coded flirty share. Mirror with 🧦 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "mom sent holiday 🧦",
+      "interpretation": "Family-coded cozy share. Mirror with 🧦 or 🎁 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "matching socks day 🧦",
+      "interpretation": "Public adult-coded cozy share. Mirror with another 🧦 or 👟 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
