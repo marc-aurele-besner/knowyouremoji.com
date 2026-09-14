@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Popular during cold and flu season posts." },
-    { "platform": "INSTAGRAM", "note": "Used in sick day stories." },
-    { "platform": "TIKTOK", "note": "Common in allergy season content." }
+    {
+      "platform": "TWITTER",
+      "note": "Popular during cold and flu season posts."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in sick day stories. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Common in allergy season content. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to sick-coded content; the tissue and sneeze lines are the default 'I am under the weather' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Sometimes used as slang for 'that's fire' or impressive." },
-    { "generation": "MILLENNIAL", "note": "Standard cold/flu emoji." },
-    { "generation": "BOOMER", "note": "Used literally for illness." }
+    {
+      "generation": "GEN_Z",
+      "note": "Sometimes used as slang for 'that's fire' or impressive."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Standard cold/flu emoji."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Used literally for illness."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤧 Sneezing Face Emoji Meaning - What Does 🤧 Really Mean?",
-  "seoDescription": "Learn what the sneezing face emoji 🤧 really means. From cold symptoms to slang uses, discover all the ways this emoji is used."
+  "seoDescription": "Learn what the sneezing face emoji 🤧 really means. From cold symptoms to slang uses, discover all the ways this emoji is used.",
+  "longForm": {
+    "overview": "The 🤧 Sneezing Face emoji was added in Unicode 8 (2015) and is drawn as a yellow face with scrunched closed eyes, a frown, and a tissue or kerchief held to the nose with visible sneeze lines flying out. The visual cue reads instantly as sick-coded, sneezing-coded reaction, or the visible 'achoo' tag. By 2026 🤧 has become the go-to emoji for the sick-coded reaction, the visible 'I am under the weather' default, and the sneeze-coded reaction in close-friends and family chats.\n\nIn modern chat 🤧 does very specific work. People send it as a literal sick-coded reaction, as the visible 'achoo' tag, or as the allergy-coded default. The tissue and sneeze lines are the visual cue that the read is sick-coded. Writers should pick 🤧 when the read is sneezing-coded sick or visible 'I am sick' energy, and avoid it when the read is general disgust — 🤢 fits better there.",
+    "howPeopleUseIt": "🤧 lands on a friend's 'I am dying of cold' message, in a work channel where someone is signaling sick-coded energy, and in a dating-app DM where the sender is admitting they're under the weather. The tissue and sneeze lines anchor the read.\n\nIn close-friends chats 🤧 reads as the universal sneeze default and the visible 'I am sick' tag. On X the emoji punctuates sick-coded and allergy-coded tweets. The emoji pairs with 🤒 for the layered sick-face stack and with 🤢 for the layered sick-and-disgust stack.",
+    "whenNotToUse": "Skip 🤧 in any context where the read is general disgust only. The tissue implies sick-coded sneezing, not just gross. Avoid 🤧 in fake-sick contexts where the allergy-coded read could be misread as manipulative.",
+    "howToReply": "If a friend sends 🤧 on a sick-coded message, mirror with another 🤧 or 🍵 to send care. The sick chain reads as solidarity.\n\nIf 🤧 lands as the allergy-coded default, reply with another 🤧 or 💊. And if you want to send 🤧 yourself, pair it with the moment so the sick-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🤧 mean in text?",
+        "answer": "🤧 means sneezing-coded sick, visible 'achoo' energy, or the allergy-coded reaction. The tissue and sneeze lines are the visual cue that the read is sick-coded."
+      },
+      {
+        "question": "Is 🤧 flirty?",
+        "answer": "Rarely. 🤧 usually reads as sick-coded rather than flirty; in a dating thread it can read as 'poor baby' content."
+      },
+      {
+        "question": "What does 🤧 mean from a girl?",
+        "answer": "From a girl or anyone, 🤧 carries the same sick-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🤧 mean at work?",
+        "answer": "In Slack, 🤧 reads as the visible 'I am out sick' default when paired with 'feeling under the weather' content."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I cannot stop sneezing 🤧",
+      "interpretation": "Friend sick-coded share. Mirror with another 🤧 or 🍵 so the care chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "wfh today allergies are killing me 🤧",
+      "interpretation": "Work-coded sick share. Mirror with a clarifying sentence — 🤧 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "feeling gross sorry for flaking 🤧",
+      "interpretation": "Dating-coded warm-coded share. Mirror with 🤧 or 🤗 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "kids brought home a cold 🤧",
+      "interpretation": "Family-coded sick share. Mirror with 🤧 or 🧡 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "allergy season is here 🤧",
+      "interpretation": "Public adult-coded sick share. Mirror with another 🤧 or 🌸 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

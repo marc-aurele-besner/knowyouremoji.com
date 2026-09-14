@@ -36,14 +36,36 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Context-dependent, can be suggestive." },
-    { "platform": "INSTAGRAM", "note": "Food or flirty content." },
-    { "platform": "TIKTOK", "note": "Often playful or suggestive." }
+    {
+      "platform": "TWITTER",
+      "note": "Context-dependent, can be suggestive. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Food or flirty content. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Often playful or suggestive. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to playful-coded content; the red tongue is the default 'bleh' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Often suggestive or playful." },
-    { "generation": "MILLENNIAL", "note": "Context matters." },
-    { "generation": "BOOMER", "note": "May use literally for taste." }
+    {
+      "generation": "GEN_Z",
+      "note": "Often suggestive or playful."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Context matters."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use literally for taste."
+    }
   ],
   "warnings": [
     {
@@ -55,5 +77,58 @@
   ],
   "relatedCombos": [],
   "seoTitle": "👅 Tongue Emoji Meaning",
-  "seoDescription": "Learn what the Tongue emoji 👅 really means."
+  "seoDescription": "Learn what the Tongue emoji 👅 really means.",
+  "longForm": {
+    "overview": "The 👅 Tongue emoji was added in Unicode 6 (2010) and is drawn as a single red tongue sticking out, no face around it. The visual cue reads instantly as tongue-out reaction, playful-coded lick, or the visible 'bleh' tag. By 2026 👅 has become the go-to emoji for the tongue-out reaction, the visible 'lick' default, and the playful-coded reaction in close-friends and dating chats.\n\nIn modern chat 👅 does very specific work. People send it as a literal tongue reference, as the visible 'bleh' tag, or as the playful-coded default. The red tongue and no-face format are the visual cue that the read is tongue-only. Writers should pick 👅 when the read is tongue-out or visible 'bleh' energy, and avoid it when the read is face-required — 😝 fits better there.",
+    "howPeopleUseIt": "👅 lands on a friend's playful tease, in a work channel where someone is signaling tongue-coded energy, and in a dating-app DM where the sender is reacting with flirty tongue energy. The red tongue anchors the read.\n\nIn close-friends chats 👅 reads as the universal tongue default and the visible 'bleh' tag. On X the emoji punctuates playful-coded and flirty-coded tweets. The emoji pairs with 😝 for the layered face-tongue stack and with 👄 for the layered mouth-and-tongue pair stack.",
+    "whenNotToUse": "Skip 👅 in any context where the read is face-required. The no-face format implies tongue-only. Avoid 👅 in formal contexts where the tongue-coded read lands as unprofessional.",
+    "howToReply": "If a friend sends 👅 on a playful-coded message, mirror with another 👅 or 😝 to match the energy. The tongue chain reads as solidarity.\n\nIf 👅 lands as the playful-coded default, reply with another 👅 or 👄. And if you want to send 👅 yourself, pair it with the moment so the tongue-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👅 mean in text?",
+        "answer": "👅 means tongue-out reaction, visible 'bleh' energy, or the playful-coded reaction. The red tongue and no-face format are the visual cue that the read is tongue-only."
+      },
+      {
+        "question": "Is 👅 flirty?",
+        "answer": "Yes. 👅 is one of the most flirty-coded emojis in the standard set. In a dating thread it reads as visible 'bleh' or flirty tongue energy."
+      },
+      {
+        "question": "What does 👅 mean from a girl?",
+        "answer": "From a girl or anyone, 👅 carries the same playful-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 👅 mean on Instagram?",
+        "answer": "On Instagram, 👅 is the default sticker on flirty-coded captions and tongue-out story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "bleh 👅",
+      "interpretation": "Friend tongue-coded share. Mirror with another 👅 or 😝 so the playful chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "crazy how good this cake is 👅",
+      "interpretation": "Work-coded playful share. Mirror with a clarifying sentence — 👅 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "that kiss was amazing 👅",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 👅 or 😘 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "baby is sticking out tongue 👅",
+      "interpretation": "Family-coded cute share. Mirror with 👅 or 👶 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "food era forever 👅",
+      "interpretation": "Public adult-coded tongue share. Mirror with another 👅 or 🍴 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

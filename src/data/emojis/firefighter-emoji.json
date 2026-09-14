@@ -26,11 +26,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently"
+      "note": "Renders consistently Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
     },
     {
       "platform": "SLACK",
-      "note": "Popular in work contexts"
+      "note": "Popular in work contexts Server-channel reaction to visual-cue-coded content; the emoji is the default visual-cue tag in work-coded contexts."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to firefighter-coded content; the red uniform and black fire helmet are the default 'on call' tag among close-friends groups."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
     }
   ],
   "generationalNotes": [
@@ -46,5 +54,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧑‍🚒 Firefighter Emoji - What Does 🧑‍🚒 Mean?",
-  "seoDescription": "Learn what the firefighter emoji 🧑‍🚒 means in texts and social media."
+  "seoDescription": "Learn what the firefighter emoji 🧑‍🚒 means in texts and social media.",
+  "longForm": {
+    "overview": "The 🧑‍🚒 Firefighter emoji was added in Unicode 12.1 (2019) and is drawn as a gender-neutral figure wearing a red firefighter uniform with a black fire helmet. The visual cue reads instantly as firefighter-coded figure, emergency-coded default, or the visible 'on call' tag. By 2026 🧑‍🚒 has become the go-to emoji for the firefighter-coded reaction, the visible on-call default, and the emergency-coded reaction in close-friends and family chats.\n\nIn modern chat 🧑‍🚒 does very specific work. People send it as a literal firefighter reference, as the visible 'on call' tag, or as the emergency-coded default. The red uniform and black fire helmet are the visual cue that the read is firefighter-coded. Writers should pick 🧑‍🚒 when the read is firefighter or visible 'rescue' energy, and avoid it when the read is police — 👮 fits better there.",
+    "howPeopleUseIt": "🧑‍🚒 lands on a friend's 'working a 24' message, in a work channel where someone is signaling emergency-coded energy, and in a family group where the sender is referencing a relative in fire and rescue. The red uniform and black fire helmet anchor the read.\n\nIn close-friends chats 🧑‍🚒 reads as the universal firefighter default and the visible 'on call' tag. On X the emoji punctuates emergency-coded and fire-coded tweets. The emoji pairs with 🚒 for the layered firefighter-and-fire-engine stack and with 👨‍🚒 for the layered firefighter-and-male-firefighter stack.",
+    "whenNotToUse": "Skip 🧑‍🚒 in any context where the read is police. The red uniform implies firefighter-coded, not law-enforcement. Avoid 🧑‍🚒 in casual contexts where the emergency-coded read lands as over-the-top.",
+    "howToReply": "If a friend sends 🧑‍🚒 on an emergency-coded message, mirror with another 🧑‍🚒 or 🚒 to match the energy. The firefighter chain reads as solidarity.\n\nIf 🧑‍🚒 lands as the on-call-coded default, reply with another 🧑‍🚒 or 🔥. And if you want to send 🧑‍🚒 yourself, pair it with the moment so the firefighter-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🧑‍🚒 mean in text?",
+        "answer": "🧑‍🚒 means firefighter-coded figure, visible emergency-coded energy, or the visible 'on call' tag. The red uniform and black fire helmet are the visual cue that the read is firefighter-coded."
+      },
+      {
+        "question": "Is 🧑‍🚒 flirty?",
+        "answer": "Rarely. 🧑‍🚒 usually reads as emergency-coded rather than flirty; in a dating thread it can read as 'I will rescue you' content."
+      },
+      {
+        "question": "What does 🧑‍🚒 mean from a girl?",
+        "answer": "From a girl or anyone, 🧑‍🚒 carries the same firefighter-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🧑‍🚒 mean on Instagram?",
+        "answer": "On Instagram, 🧑‍🚒 is the default sticker on rescue-coded captions and emergency-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "24 hour shift ahead 🧑‍🚒",
+      "interpretation": "Friend firefighter share. Mirror with another 🧑‍🚒 or 🔥 so the emergency chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "on call this weekend 🧑‍🚒",
+      "interpretation": "Work-coded on-call share. Mirror with a clarifying sentence — 🧑‍🚒 can land as off-topic in non-rescue channels."
+    },
+    {
+      "setting": "dating",
+      "message": "I will come rescue you 🧑‍🚒",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🧑‍🚒 or ❤️ so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "cousin just made firefighter 🧑‍🚒",
+      "interpretation": "Family-coded pride share. Mirror with 🧑‍🚒 or 🎉 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "fire and rescue life 🧑‍🚒",
+      "interpretation": "Public adult-coded firefighter share. Mirror with another 🧑‍🚒 or 🚒 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

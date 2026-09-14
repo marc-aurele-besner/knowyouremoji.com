@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Perfect for skeptical reactions and mild shade." },
-    { "platform": "INSTAGRAM", "note": "Used in unimpressed comments." },
-    { "platform": "TIKTOK", "note": "Popular for 'not impressed' reactions." }
+    {
+      "platform": "TWITTER",
+      "note": "Perfect for skeptical reactions and mild shade."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Used in unimpressed comments. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Popular for 'not impressed' reactions. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to skeptical-coded content; the diagonal mouth and small frown are the default 'I am not sure about this' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "The official 'meh' emoji." },
-    { "generation": "MILLENNIAL", "note": "Used to express being underwhelmed." },
-    { "generation": "BOOMER", "note": "May not recognize this newer emoji." }
+    {
+      "generation": "GEN_Z",
+      "note": "The official 'meh' emoji."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Used to express being underwhelmed."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not recognize this newer emoji."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫤 Face with Diagonal Mouth Emoji Meaning - What Does 🫤 Really Mean?",
-  "seoDescription": "Learn what the face with diagonal mouth emoji 🫤 really means. From skepticism to 'meh' energy, discover all its uses."
+  "seoDescription": "Learn what the face with diagonal mouth emoji 🫤 really means. From skepticism to 'meh' energy, discover all its uses.",
+  "longForm": {
+    "overview": "The 🫤 Face with Diagonal Mouth emoji was added in Unicode 14 (2021) and is drawn as a yellow face with a small frown and a mouth that runs diagonally across the face in a confused, skeptical expression. The visual cue reads instantly as skeptical-coded reaction, unsure-coded meh, or the visible 'I am not sure about this' tag. By 2026 🫤 has become the go-to emoji for the skeptical-coded reaction, the visible 'meh' default, and the unsure-skeptical coded reaction in close-friends and family chats.\n\nIn modern chat 🫤 does very specific work. People send it as a literal skeptical-coded reaction, as the visible 'meh' tag, or as the unsure-coded default. The diagonal mouth and small frown are the visual cue that the read is skeptical-coded. Writers should pick 🫤 when the read is skeptical meh or visible 'I am not sure' energy, and avoid it when the read is full-on confused — 😕 fits better there.",
+    "howPeopleUseIt": "🫤 lands on a friend's questionable plan, in a work channel where someone is signaling skeptical-coded energy, and in a dating-app DM where the sender is reacting with mild skepticism. The diagonal mouth and small frown anchor the read.\n\nIn close-friends chats 🫤 reads as the universal skeptical default and the visible 'meh' tag. On X the emoji punctuates skeptical-coded and unsure-coded tweets. The emoji pairs with 🤨 for the layered skeptical-face stack and with 😕 for the layered confused-face stack.",
+    "whenNotToUse": "Skip 🫤 in any context where the read is full-on confused only. The diagonal mouth implies skeptical-coded meh, not pure confusion. Avoid 🫤 in formal critique contexts where the meh-coded read lands as dismissive.",
+    "howToReply": "If a friend sends 🫤 on a skeptical-coded message, mirror with another 🫤 or 🤨 to match the energy. The skeptical chain reads as solidarity.\n\nIf 🫤 lands as the unsure-coded default, reply with another 🫤 or 🤷. And if you want to send 🫤 yourself, pair it with the moment so the skeptical-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫤 mean in text?",
+        "answer": "🫤 means skeptical-coded reaction, visible 'meh' energy, or the unsure-skeptical reaction. The diagonal mouth and small frown are the visual cue that the read is skeptical-coded."
+      },
+      {
+        "question": "Is 🫤 flirty?",
+        "answer": "Rarely. 🫤 usually reads as skeptical-coded rather than flirty; in a dating thread it can read as 'I am not sure about us' content."
+      },
+      {
+        "question": "What does 🫤 mean from a girl?",
+        "answer": "From a girl or anyone, 🫤 carries the same skeptical-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫤 mean on TikTok?",
+        "answer": "On TikTok, 🫤 is the default comment reaction to skeptical-coded clips and unsure-coded videos."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I mean sure I guess 🫤",
+      "interpretation": "Friend skeptical-coded share. Mirror with another 🫤 or 🤨 so the unsure chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "that strategy is... a choice 🫤",
+      "interpretation": "Work-coded skeptical share. Mirror with a clarifying sentence — 🫤 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "I am not sure about this 🫤",
+      "interpretation": "Dating-coded unsure-coded share. Mirror with 🫤 or 💬 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "thanks grandma I guess 🫤",
+      "interpretation": "Family-coded meh share. Mirror with 🫤 or 🤨 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "monday plan: questionable 🫤",
+      "interpretation": "Public adult-coded skeptical share. Mirror with another 🫤 or ☕ so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

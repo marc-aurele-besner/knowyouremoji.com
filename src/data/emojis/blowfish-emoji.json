@@ -26,15 +26,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about blowfish."
+      "note": "Used in posts about blowfish. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Popular in captions and stories. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Common in comments and reactions. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to food-coded content; the round inflated body and visible spikes are the default 'puffed up' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -54,5 +58,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🐡 Blowfish Emoji Meaning - What Does 🐡 Really Mean?",
-  "seoDescription": "Learn what the blowfish emoji 🐡 really means in texts and social media."
+  "seoDescription": "Learn what the blowfish emoji 🐡 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🐡 Blowfish emoji was added in Unicode 6 (2010) and is drawn as a round inflated puffer fish with visible spikes and a small tail, shown from the side. The visual cue reads instantly as puffer fish, inflated-coded reference, or the visible 'puffed up' tag. By 2026 🐡 has become the go-to emoji for the blowfish reaction, the visible puffed-up default, and the Japanese-cuisine-coded reaction in close-friends and family chats.\n\nIn modern chat 🐡 does very specific work. People send it as a literal blowfish reference, as the visible 'puffed up' tag, or as the food-coded default. The round inflated body and visible spikes are the visual cue that the read is blowfish-coded. Writers should pick 🐡 when the read is puffer fish or visible 'puffed up' energy, and avoid it when the read is generic fish — 🐟 fits better there.",
+    "howPeopleUseIt": "🐡 lands on a friend's sushi-night message, in a work channel where someone is signaling food-coded energy, and in a family group where the sender is referencing Japanese cuisine. The round inflated body and visible spikes anchor the read.\n\nIn close-friends chats 🐡 reads as the universal blowfish default and the visible 'puffed up' tag. On X the emoji punctuates food-coded and fish-coded tweets. The emoji pairs with 🍣 for the layered blowfish-and-sushi stack and with 🐟 for the layered blowfish-and-fish pair stack.",
+    "whenNotToUse": "Skip 🐡 in any context where the read is generic fish. The inflated spikes imply blowfish-coded, not generic-fish. Avoid 🐡 in formal contexts where the fish-coded read lands as out-of-place.",
+    "howToReply": "If a friend sends 🐡 on a food-coded message, mirror with another 🐡 or 🍣 to match the energy. The blowfish chain reads as solidarity.\n\nIf 🐡 lands as the puffed-up-coded default, reply with another 🐡 or 🐠. And if you want to send 🐡 yourself, pair it with the moment so the blowfish-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🐡 mean in text?",
+        "answer": "🐡 means blowfish-coded reference, visible puffed-up energy, or the Japanese-cuisine reaction. The round inflated body and visible spikes are the visual cue that the read is blowfish-coded."
+      },
+      {
+        "question": "Is 🐡 flirty?",
+        "answer": "Rarely. 🐡 usually reads as food-coded rather than flirty; in a dating thread it can read as 'you make me feel puffed up' content."
+      },
+      {
+        "question": "What does 🐡 mean from a girl?",
+        "answer": "From a girl or anyone, 🐡 carries the same blowfish-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🐡 mean on Instagram?",
+        "answer": "On Instagram, 🐡 is the default sticker on sushi-coded captions and Japanese-cuisine-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "fugu for the brave 🐡",
+      "interpretation": "Friend food share. Mirror with another 🐡 or 🍣 so the sushi chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "sushi lunch run 🐡",
+      "interpretation": "Work-coded food share. Mirror with a clarifying sentence — 🐡 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "you make me feel puffed up 🐡",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🐡 or 😘 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "kids trying sushi for the first time 🐡",
+      "interpretation": "Family-coded food share. Mirror with 🐡 or 🍱 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "sushi era forever 🐡",
+      "interpretation": "Public adult-coded food share. Mirror with another 🐡 or 🍣 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

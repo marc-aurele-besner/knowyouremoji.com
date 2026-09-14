@@ -22,7 +22,12 @@
       "example": "Feeling 🫕",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🫕", "riskLevel": "LOW" },
+    {
+      "context": "IRONIC",
+      "meaning": "Ironic usage.",
+      "example": "Mood 🫕",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
       "meaning": "Work context.",
@@ -31,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "TWITTER",
+      "note": "Common usage. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Popular posts. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Trending. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to fondue-coded content; the dark pot with melted contents and a handle is the default 'dipping sauce' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z usage."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennial usage."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Boomer interpretation."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫕 Fondue Emoji Meaning",
-  "seoDescription": "Learn what the Fondue emoji 🫕 really means."
+  "seoDescription": "Learn what the Fondue emoji 🫕 really means.",
+  "longForm": {
+    "overview": "The 🫕 Fondue emoji was added in Unicode 13 (2020) and is drawn as a black or dark pot with a wooden handle and visible melted cheese or chocolate inside. The visual cue reads instantly as fondue-coded reference, melted-cheese default, or the visible 'dipping sauce' tag. By 2026 🫕 has become the go-to emoji for the fondue reaction, the visible melted-cheese default, and the cozy-coded reaction in close-friends and family chats.\n\nIn modern chat 🫕 does very specific work. People send it as a literal fondue reference, as the visible 'dipping sauce' tag, or as the cozy-coded default. The dark pot with melted contents and a handle is the visual cue that the read is fondue-coded. Writers should pick 🫕 when the read is fondue or visible 'cozy meal' energy, and avoid it when the read is pan — 🥘 fits better there.",
+    "howPeopleUseIt": "🫕 lands on a friend's 'fondue night' message, in a work channel where someone is signaling cozy-coded energy, and in a dating-app DM where the sender is signaling 'cozy date'. The dark pot with melted contents and a handle anchors the read.\n\nIn close-friends chats 🫕 reads as the universal fondue default and the visible 'dipping sauce' tag. On X the emoji punctuates food-coded and cozy-coded tweets. The emoji pairs with 🥖 for the layered fondue-and-bread stack and with 🧀 for the layered fondue-and-cheese pair stack.",
+    "whenNotToUse": "Skip 🫕 in any context where the read is pan of food. The fondue pot implies melted cheese or chocolate, not regular cooking. Avoid 🫕 in formal contexts where the food-coded read lands as out-of-place.",
+    "howToReply": "If a friend sends 🫕 on a cozy-coded message, mirror with another 🫕 or 🧀 to match the energy. The fondue chain reads as solidarity.\n\nIf 🫕 lands as the melted-cheese-coded default, reply with another 🫕 or 🥖. And if you want to send 🫕 yourself, pair it with the moment so the fondue-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫕 mean in text?",
+        "answer": "🫕 means fondue-coded reference, visible melted-cheese energy, or the cozy-coded reaction. The dark pot with melted contents and a handle is the visual cue that the read is fondue-coded."
+      },
+      {
+        "question": "Is 🫕 flirty?",
+        "answer": "Sometimes. 🫕 reads as flirty-coded in a dating thread combined with 'cozy date night' content."
+      },
+      {
+        "question": "What does 🫕 mean from a girl?",
+        "answer": "From a girl or anyone, 🫕 carries the same fondue-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫕 mean on Instagram?",
+        "answer": "On Instagram, 🫕 is the default sticker on cozy-coded captions and date-night-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "fondue night 🫕",
+      "interpretation": "Friend cozy share. Mirror with another 🫕 or 🥖 so the dip chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team cheese night 🫕",
+      "interpretation": "Work-coded cozy share. Mirror with a clarifying sentence — 🫕 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "fondue date at home 🫕",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🫕 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "kids love the cheese fondue 🫕",
+      "interpretation": "Family-coded cozy share. Mirror with 🫕 or 🧀 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "cozy food era 🫕",
+      "interpretation": "Public adult-coded cozy share. Mirror with another 🫕 or 🧀 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

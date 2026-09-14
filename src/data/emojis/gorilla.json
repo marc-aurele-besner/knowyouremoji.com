@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Crypto and stock culture." },
-    { "platform": "INSTAGRAM", "note": "Strong content." },
-    { "platform": "DISCORD", "note": "WSB ape culture." }
+    {
+      "platform": "TWITTER",
+      "note": "Crypto and stock culture. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Strong content. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "WSB ape culture. Server reaction to visual-cue-coded content; the emoji is the default visual-cue tag among adult-coded community audiences."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to strength-coded content; the dark gorilla face and heavy brow are the default 'beast mode' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Return to monke meme." },
-    { "generation": "MILLENNIAL", "note": "Apes together strong." },
-    { "generation": "BOOMER", "note": "Great ape." }
+    {
+      "generation": "GEN_Z",
+      "note": "Return to monke meme."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Apes together strong."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Great ape."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🦍 Gorilla Emoji Meaning",
-  "seoDescription": "Learn what the Gorilla emoji 🦍 really means."
+  "seoDescription": "Learn what the Gorilla emoji 🦍 really means.",
+  "longForm": {
+    "overview": "The 🦍 Gorilla emoji was added in Unicode 9 (2016) and is drawn as a dark gorilla face shown from the front, with a heavy brow and visible musculature. The visual cue reads instantly as gorilla-coded reference, strong-animal default, or the visible 'beast mode' tag. By 2026 🦍 has become the go-to emoji for the gorilla reaction, the visible beast-mode default, and the strength-coded reaction in close-friends and family chats.\n\nIn modern chat 🦍 does very specific work. People send it as a literal gorilla reference, as the visible 'beast mode' tag, or as the strength-coded default. The dark gorilla face and heavy brow are the visual cue that the read is gorilla-coded. Writers should pick 🦍 when the read is strong-animal or visible 'beast mode' energy, and avoid it when the read is monkey — 🐒 fits better there.",
+    "howPeopleUseIt": "🦍 lands on a friend's 'gym PR' message, in a work channel where someone is signaling strength-coded energy, and in a dating-app DM where the sender is signaling 'big strong'. The dark gorilla face and heavy brow anchor the read.\n\nIn close-friends chats 🦍 reads as the universal gorilla default and the visible 'beast mode' tag. On X the emoji punctuates strength-coded and gym-coded tweets. The emoji pairs with 💪 for the layered gorilla-and-biceps stack and with 🐒 for the layered gorilla-and-monkey pair stack.",
+    "whenNotToUse": "Skip 🦍 in any context where the read is monkey. The gorilla face implies ape-coded, not monkey-coded. Avoid 🦍 in formal contexts where the strength-coded read lands as aggressive.",
+    "howToReply": "If a friend sends 🦍 on a strength-coded message, mirror with another 🦍 or 💪 to match the energy. The gorilla chain reads as solidarity.\n\nIf 🦍 lands as the beast-mode-coded default, reply with another 🦍 or 🐒. And if you want to send 🦍 yourself, pair it with the moment so the gorilla-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🦍 mean in text?",
+        "answer": "🦍 means gorilla-coded reference, visible beast-mode energy, or the strength-coded reaction. The dark gorilla face and heavy brow are the visual cue that the read is gorilla-coded."
+      },
+      {
+        "question": "Is 🦍 flirty?",
+        "answer": "Sometimes. 🦍 reads as flirty-coded in a dating thread combined with 'big strong' content."
+      },
+      {
+        "question": "What does 🦍 mean from a girl?",
+        "answer": "From a girl or anyone, 🦍 carries the same gorilla-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🦍 mean on TikTok?",
+        "answer": "On TikTok, 🦍 is the default comment reaction to gym-coded clips and beast-mode-coded videos."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "just hit a PR 🦍",
+      "interpretation": "Friend gym share. Mirror with another 🦍 or 💪 so the strength chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "beast mode at the office 🦍",
+      "interpretation": "Work-coded strength share. Mirror with a clarifying sentence — 🦍 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "feeling strong today 🦍",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🦍 or 💪 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "dad being beast mode 🦍",
+      "interpretation": "Family-coded strength share. Mirror with 🦍 or 🏋️ so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "800 deadlift era 🦍",
+      "interpretation": "Public adult-coded strength share. Mirror with another 🦍 or 💪 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
