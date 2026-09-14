@@ -25,34 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about green salad."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on healthy-aesthetic captions and salad-coded story overlays; the bowl-with-leafy-greens fits adult-coded healthy content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to healthy-coded and salad-coded tweets; reads as the universal green salad default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to healthy-coded content; pairs with 'I am being healthy' and salad-coded clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to salad-coded content; the bowl-with-leafy-greens is the default 'salad' tag in food-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🥗 in casual contexts."
+      "note": "Uses 🥗 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🥗 across platforms."
+      "note": "Reads 🥗 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🥗 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🥗 literally."
+      "note": "Uses 🥗 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🥗 Green Salad Emoji Meaning - What Does 🥗 Really Mean?",
-  "seoDescription": "Learn what the green salad emoji 🥗 really means in texts and social media."
+  "seoDescription": "Learn what the green salad emoji 🥗 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🥗 Green Salad emoji was added in Unicode 9 (2016) and is drawn as a bowl filled with green leafy lettuce and red tomato wedges on top. The visual cue reads instantly as green salad, the visible-healthy-coded default, or the veggie-bowl tag. By 2026 🥗 has become the go-to emoji for the green-salad-coded reaction, the visible-healthy-coded default, and the veggie-bowl tag.\n\nIn modern chat 🥗 does very specific work. People send it as a literal green salad reference, as the visible healthy-coded default, or as the veggie-bowl tag. The bowl-with-leafy-greens-and-tomatoes is the visual cue that the read is healthy-coded. Writers should pick 🥗 when the read is green-salad or healthy, and avoid it when the read is fruit-coded — 🍓 fits better there.",
+    "howPeopleUseIt": "🥗 lands on a friend's 'healthy lunch' message, in a work channel where someone is signing off with food-coded content, and in a dating-app DM where the sender is sending healthy-coded content. The bowl-with-leafy-greens anchors the read.\n\nIn close-friends chats 🥗 reads as the universal healthy default. On X the emoji punctuates healthy-coded and salad-coded tweets. The emoji pairs with 🥦 for the layered healthy stack and with 🥬 for the layered leafy-green pair stack.",
+    "whenNotToUse": "Skip 🥗 in any context where the read is fruit-coded — 🍓 fits better. Avoid 🥗 in work channels where the healthy-coded read lands as off-topic. Pick 🥦 when the read is vegetable-only.",
+    "howToReply": "If a friend sends 🥗 on a healthy-coded message, mirror with another 🥗 or 🥦 to match the healthy-coded energy. The salad chain reads as solidarity.\n\nIf 🥗 lands as the 'I am being healthy' default, reply with another 🥗 or 🥦. And if you want to send 🥗 yourself, pair it with the moment so the salad-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🥗 mean in text?",
+        "answer": "🥗 means green salad, healthy-coded default, or veggie-bowl tag. The bowl-with-leafy-greens-and-tomatoes is the visual cue that the read is healthy-coded."
+      },
+      {
+        "question": "Is 🥗 flirty?",
+        "answer": "Sometimes. 🥗 reads as healthy-coded flirty in a dating thread combined with 'let me make you a salad' content. It is more food-coded than flirty-coded by itself."
+      },
+      {
+        "question": "What does 🥗 mean from a girl?",
+        "answer": "From a girl or anyone, 🥗 carries the same healthy-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🥗 mean on Instagram?",
+        "answer": "On Instagram, 🥗 is the default sticker on healthy-aesthetic-coded captions and salad-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "healthy lunch 🥗",
+      "interpretation": "Friend healthy-coded share. Mirror with another 🥗 or 🥦 so the healthy chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "let me make you a salad 🥗",
+      "interpretation": "Dating-coded healthy-coded share. Mirror with 🥗 or 🥦 so the warm chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "salad day 🥗",
+      "interpretation": "Public adult-coded salad share. Mirror with another 🥗 or 🥦 so the salad chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "salad tonight 🥗",
+      "interpretation": "Family-coded salad share. Mirror with 🥗 or 🥦 so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team salad lunch 🥗",
+      "interpretation": "Work-coded salad share. Mirror with another sentence — 🥗 can land as off-topic in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

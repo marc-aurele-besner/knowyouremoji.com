@@ -25,34 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about salt."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on salty-mood captions and seasoning-coded story overlays; the salt-shaker fits adult-coded salty content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to 'I am feeling salty' tweets and seasoning-coded content; reads as the universal salt default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to salty-coded content; pairs with 'salty mood' and seasoning clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to salty-coded content; the salt-shaker is the default 'salty' tag in chat-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🧂 in casual contexts."
+      "note": "Uses 🧂 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🧂 across platforms."
+      "note": "Reads 🧂 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🧂 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🧂 literally."
+      "note": "Uses 🧂 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🧂 Salt Emoji Meaning - What Does 🧂 Really Mean?",
-  "seoDescription": "Learn what the salt emoji 🧂 really means in texts and social media."
+  "seoDescription": "Learn what the salt emoji 🧂 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🧂 Salt emoji was added in Unicode 11 (2018) and is drawn as a small glass salt shaker with a silver metal cap and white salt visible through the glass. The visual cue reads instantly as salt, the visible-seasoning default, or the 'salty' emotional-coded tag. By 2026 🧂 has become the go-to emoji for the salt-coded reaction, the visible-seasoning default, and the 'I am feeling salty' emotional-coded tag.\n\nIn modern chat 🧂 does very specific work. People send it as a literal salt reference, as the visible seasoning default, or as the 'I am feeling salty' emotional-coded tag. The salt-shaker-with-salt is the visual cue that the read is seasoning-or-salty-coded. Writers should pick 🧂 when the read is salt or 'feeling salty,' and avoid it when the read is pepper-only — 🌶️ fits better there.",
+    "howPeopleUseIt": "🧂 lands on a friend's 'salty mood' message, in a work channel where someone is signing off with food-coded content, and in a dating-app DM where the sender is sending salty-coded content. The salt-shaker anchors the read.\n\nIn close-friends chats 🧂 reads as the universal salty default. On X the emoji punctuates seasoning-coded and 'salty mood' tweets. The emoji pairs with 🌶️ for the layered seasoning pair stack and with 😤 for the layered salty-and-frustrated stack.",
+    "whenNotToUse": "Skip 🧂 in any context where the read is pepper-only — 🌶️ fits better. Avoid 🧂 in work channels where the 'feeling salty' read lands as visible frustration. Pick 😤 when the read is purely frustrated.",
+    "howToReply": "If a friend sends 🧂 on a salty-coded message, mirror with another 🧂 or 😤 to match the salty energy. The salt chain reads as solidarity.\n\nIf 🧂 lands as the seasoning default, reply with another 🧂 or 🌶️. And if you want to send 🧂 yourself, pair it with the moment so the salty-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🧂 mean in text?",
+        "answer": "🧂 means salt, seasoning default, or 'I am feeling salty' emotional-coded tag. The salt-shaker-with-salt is the visual cue that the read is seasoning-or-salty-coded."
+      },
+      {
+        "question": "Is 🧂 passive aggressive?",
+        "answer": "Sometimes. 🧂 reads as 'I am feeling salty' visible frustration in a thread where the sender is upset. Watch the surrounding context for the read."
+      },
+      {
+        "question": "What does 🧂 mean from a girl?",
+        "answer": "From a girl or anyone, 🧂 carries the same salty read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🧂 mean at work?",
+        "answer": "In Slack, 🧂 reads as the 'I am feeling salty' tag when reacting to an annoying thread. Pair with a sentence so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "salty mood 🧂",
+      "interpretation": "Friend salty-coded share. Mirror with another 🧂 or 😤 so the salty chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "feeling salty today 🧂",
+      "interpretation": "Dating-coded salty-coded share. Mirror with 🧂 or a sentence that addresses, not just the salt."
+    },
+    {
+      "setting": "social",
+      "message": "this take is bad 🧂",
+      "interpretation": "Public adult-coded salty-coded share. Mirror with a sentence that engages the take, not just 🧂."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma 🧂",
+      "interpretation": "Family-coded salty-coded share. Mirror with 🧂 or sentence that respects the family chain."
+    },
+    {
+      "setting": "work",
+      "message": "I am feeling salty about this 🧂",
+      "interpretation": "Work-coded salty tag. Mirror with a clarifying sentence — 🧂 alone can land as low-context in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
