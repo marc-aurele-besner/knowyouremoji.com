@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Romantic content." },
-    { "platform": "INSTAGRAM", "note": "Couple posts." },
-    { "platform": "TIKTOK", "note": "Romance content." }
+    {
+      "platform": "TWITTER",
+      "note": "Romantic content. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Couple posts. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Romance content. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to couple-coded content; the two figures and small heart are the default 'mwah couple' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Cute couple moment." },
-    { "generation": "MILLENNIAL", "note": "Romantic." },
-    { "generation": "BOOMER", "note": "Kissing couple." }
+    {
+      "generation": "GEN_Z",
+      "note": "Cute couple moment."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Romantic."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Kissing couple."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💏 Kiss Emoji Meaning",
-  "seoDescription": "Learn what the Kiss emoji 💏 really means."
+  "seoDescription": "Learn what the Kiss emoji 💏 really means.",
+  "longForm": {
+    "overview": "The 💏 Kiss emoji was added in Unicode 6 (2010) and is drawn as two adult figures shown kissing with a small heart floating between them. The visual cue reads instantly as couple-kissing, romantic-coded moment, or the visible 'mwah' tag. By 2026 💏 has become the go-to emoji for the couple-coded kiss reaction, the visible romantic default, and the PDA-coded reaction in close-friends and dating chats.\n\nIn modern chat 💏 does very specific work. People send it as a literal couple-kiss reference, as the visible 'mwah' tag, or as the romantic-coded default. The two figures and the small heart are the visual cue that the read is couple-coded. Writers should pick 💏 when the read is romantic couple-kiss or visible 'mwah couple' energy, and avoid it when the read is single kiss — 😘 fits better there.",
+    "howPeopleUseIt": "💏 lands on a friend's anniversary post, in a work channel where someone is signaling couple-coded energy, and in a dating-app DM where the sender is reacting with romantic-coded content. The two figures and small heart anchor the read.\n\nIn close-friends chats 💏 reads as the universal couple-kiss default and the visible 'mwah' tag. On X the emoji punctuates romantic-coded and couple-coded tweets. The emoji pairs with 😘 for the layered kiss-mark-and-couple stack and with ❤️ for the layered couple-kiss-and-heart stack.",
+    "whenNotToUse": "Skip 💏 in any context where the read is single-person kiss. The two figures imply couple-coded. Avoid 💏 in contexts where the PDA-coded read could be misread as unprofessional.",
+    "howToReply": "If a friend sends 💏 on a romantic-coded message, mirror with another 💏 or ❤️ to match the energy. The couple chain reads as solidarity.\n\nIf 💏 lands as the PDA-coded default, reply with another 💏 or 🥰. And if you want to send 💏 yourself, pair it with the moment so the couple-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 💏 mean in text?",
+        "answer": "💏 means couple-kissing, visible romantic-coded energy, or the visible 'mwah' tag. The two figures and the small heart are the visual cue that the read is couple-coded."
+      },
+      {
+        "question": "Is 💏 flirty?",
+        "answer": "Yes. 💏 is one of the most romantic-coded emojis in the standard set. In a dating thread it reads as visible couple-coded romantic energy."
+      },
+      {
+        "question": "What does 💏 mean from a girl?",
+        "answer": "From a girl or anyone, 💏 carries the same couple-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 💏 mean at work?",
+        "answer": "In Slack, 💏 rarely lands because it is too romantic-coded. Use a sentence instead; reserve 💏 for clearly couple-coded contexts."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy anniversary babe 💏",
+      "interpretation": "Friend couple-coded share. Mirror with another 💏 or ❤️ so the love chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "work husband / work wife energy 💏",
+      "interpretation": "Work-coded couple share. Mirror with a clarifying sentence — 💏 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "best date ever 💏",
+      "interpretation": "Dating-coded romantic-coded share. Mirror with 💏 or 😘 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "parents still in love after 30 years 💏",
+      "interpretation": "Family-coded love share. Mirror with 💏 or 🥰 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "couple goals forever 💏",
+      "interpretation": "Public adult-coded couple share. Mirror with another 💏 or ❤️ so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

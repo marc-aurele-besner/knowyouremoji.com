@@ -26,11 +26,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently"
+      "note": "Renders consistently Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
     },
     {
       "platform": "SLACK",
-      "note": "Popular in work contexts"
+      "note": "Popular in work contexts Server-channel reaction to visual-cue-coded content; the emoji is the default visual-cue tag in work-coded contexts."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to factory-coded content; the blue uniform and hard hat on a male figure are the default male industrial-worker tag among close-friends groups."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
     }
   ],
   "generationalNotes": [
@@ -46,5 +54,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👨‍🏭 Man Factory Worker Emoji - What Does 👨‍🏭 Mean?",
-  "seoDescription": "Learn what the man factory worker emoji 👨‍🏭 means in texts and social media."
+  "seoDescription": "Learn what the man factory worker emoji 👨‍🏭 means in texts and social media.",
+  "longForm": {
+    "overview": "The 👨‍🏭 Man Factory Worker emoji was added in Unicode 6 (2010) and is drawn as an adult man wearing a blue factory-worker uniform and a hard hat with a small wrench. The visual cue reads instantly as male-factory-worker-coded figure, blue-collar-coded default, or the visible 'industrial worker' tag. By 2026 👨‍🏭 has become the go-to emoji for the male-factory-worker reaction, the visible blue-collar default, and the industrial-worker coded reaction in close-friends and family chats.\n\nIn modern chat 👨‍🏭 does very specific work. People send it as a literal male factory worker reference, as the visible 'blue-collar' tag, or as the work-coded default. The blue uniform and hard hat on a male figure are the visual cue that the read is male-factory-worker-coded. Writers should pick 👨‍🏭 when the read is specifically male factory worker or visible 'blue-collar male' energy, and avoid it when the read is gender-neutral factory — 🧑‍🏭 fits better there.",
+    "howPeopleUseIt": "👨‍🏭 lands on a friend's 'shift at the plant' message, in a work channel where someone is signaling blue-collar energy, and in a family group where the sender is referencing a relative in manufacturing. The blue uniform and hard hat on a male figure anchor the read.\n\nIn close-friends chats 👨‍🏭 reads as the universal male factory worker default and the visible 'blue-collar' tag. On X the emoji punctuates work-coded and industrial-coded tweets. The emoji pairs with 👷‍♂️ for the layered factory-and-construction pair stack and with 🧑‍🏭 for the layered male-and-gender-neutral pair stack.",
+    "whenNotToUse": "Skip 👨‍🏭 in any context where the read is gender-neutral factory worker. The male figure implies male-coded, not neutral. Avoid 👨‍🏭 in formal contexts where the gender-coded read could be misread as exclusionary.",
+    "howToReply": "If a friend sends 👨‍🏭 on a work-coded message, mirror with another 👨‍🏭 or 🔧 to match the energy. The worker chain reads as solidarity.\n\nIf 👨‍🏭 lands as the industrial-coded default, reply with another 👨‍🏭 or ⚙️. And if you want to send 👨‍🏭 yourself, pair it with the moment so the male-factory-worker-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👨‍🏭 mean in text?",
+        "answer": "👨‍🏭 means male-factory-worker-coded figure, visible blue-collar energy, or the industrial-worker reaction. The blue uniform and hard hat on a male figure are the visual cue that the read is male-factory-worker-coded."
+      },
+      {
+        "question": "Is 👨‍🏭 flirty?",
+        "answer": "Rarely. 👨‍🏭 usually reads as work-coded rather than flirty; in a dating thread it can read as 'blue-collar male vibe' content."
+      },
+      {
+        "question": "What does 👨‍🏭 mean from a girl?",
+        "answer": "From a girl or anyone, 👨‍🏭 carries the same male-factory-worker-coded read. The emoji is gendered male; it works the same regardless of who sends it."
+      },
+      {
+        "question": "What does 👨‍🏭 mean at work?",
+        "answer": "In Slack, 👨‍🏭 reads as the visible 'factory shift' default when paired with 'male worker on the line' content."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "12 hour shift ahead 👨‍🏭",
+      "interpretation": "Friend factory share. Mirror with another 👨‍🏭 or 🔧 so the worker chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "production floor all week 👨‍🏭",
+      "interpretation": "Work-coded factory share. Mirror with a clarifying sentence — 👨‍🏭 can land as off-topic in non-factory channels."
+    },
+    {
+      "setting": "dating",
+      "message": "blue collar vibe 👨‍🏭",
+      "interpretation": "Dating-coded warm-coded share. Mirror with 👨‍🏭 or 💪 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "dad off to the plant 👨‍🏭",
+      "interpretation": "Family-coded worker share. Mirror with 👨‍🏭 or 🛠️ so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "shift work grind 👨‍🏭",
+      "interpretation": "Public adult-coded worker share. Mirror with another 👨‍🏭 or ⚙️ so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
