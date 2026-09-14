@@ -1,77 +1,127 @@
 {
-  "unicode": "270B",
+  "unicode": "U+1F91A",
   "slug": "stop-hand",
-  "character": "✋",
-  "name": "Raised Hand",
-  "shortName": "raised-hand",
-  "category": "people",
-  "subcategory": "hands",
-  "unicodeVersion": "6.0",
-  "baseMeaning": "A raised hand, palm facing outward.",
-  "tldr": "Stop, volunteer, or high five.",
+  "character": "🖐️",
+  "name": "Raised Hand with Fingers Splayed",
+  "shortName": "stop hand emoji",
+  "category": "People & Body",
+  "subcategory": "Hand",
+  "unicodeVersion": "13.0",
+  "baseMeaning": "Raised open palm hand",
+  "tldr": "Stop hand",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Raising hand to volunteer or stop.",
-      "example": "I volunteer! ✋",
+      "meaning": "Open palm or raised hand",
+      "example": "Stop 🖐️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Stop or halt something.",
-      "example": "Hold up ✋",
+      "meaning": "Stop or wait",
+      "example": "Wait 🖐️",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Setting boundaries or volunteering.",
-      "example": "Wait, I have something to say ✋",
+      "meaning": "Suggesting a high-five or playful pause.",
+      "example": "wait your turn 🖐️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Dramatically stopping something.",
-      "example": "✋ We need to talk about this",
+      "meaning": "Dramatizing a full stop.",
+      "example": "halt 🖐️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used for volunteering and stop moments."
+      "note": "Used for stop-coded and adult-coded halt tweets. The raised palm is the visible 'wait a sec' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in engagement and participation."
+      "note": "Common in story-coded shares and aesthetic-coded wait shares. The raised palm reads as the visible wait default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Popular for 'me' and volunteering content."
+      "note": "Default comment-section reaction to adult-coded pause clips. The raised palm pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal stop default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to stop-coded content. The raised palm is the default 'hold on' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for volunteering and stop moments."
+      "note": "Used in various creative contexts"
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic raised hand emoji."
+      "note": "Straightforward usage"
     },
     {
       "generation": "BOOMER",
-      "note": "Straightforward stop or greeting."
+      "note": "May use 🖐️ literally for stop gestures."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✋ Raised Hand Emoji Meaning - What Does ✋ Really Mean?",
-  "seoDescription": "Learn what the raised hand emoji ✋ really means. From volunteering to stop signals, discover all its uses.",
-  "skinToneVariations": [
-    "stop-hand-light",
-    "stop-hand-medium-light",
-    "stop-hand-medium",
-    "stop-hand-medium-dark",
-    "stop-hand-dark"
-  ]
+  "seoTitle": "🖐️ Raised Hand with Fingers Splayed Emoji Meaning - What Does 🖐️ Really Mean?",
+  "seoDescription": "Learn what the stop hand emoji 🖐️ really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🖐️ Raised Hand with Fingers Splayed emoji was added in Unicode 7 (2014) and is drawn as an open palm raised forward with all five fingers visibly spread apart. The visual cue reads instantly as stop-coded reference, wait default, or the visible 'hold on' tag. By 2026 🖐️ has become the go-to emoji for the stop-coded reaction, the visible wait default, and the halt-coded reaction in close-friends and group chats.\n\nIn modern chat 🖐️ does very specific work. People send it as a literal stop-coded reference, as the visible 'wait' tag, or as the halt-coded default. The open palm with all five fingers is the visual cue that the read is stop-coded. Writers should pick 🖐️ when the read is pause/stop or visible 'high five' energy, and avoid it when the read is full-on thumbs up — 👍 fits better there.",
+    "howPeopleUseIt": "🖐️ lands on a friend's too-much message, in a work channel where someone is signaling stop-coded energy, and in a family group chat where the sender is signaling pause. The open palm with all five fingers anchors the read.\n\nIn close-friends chats 🖐️ reads as the universal stop default and the visible 'wait a sec' tag. On X the emoji punctuates stop-coded and halt tweets. The emoji pairs with ✋ for the layered open-palm-and-raised-hand stack and with 🛑 for the layered stop-and-sign stack.",
+    "whenNotToUse": "Skip 🖐️ in any context where the read is supposed to be a high-five only. The raised palm implies stop-coded, not just greeting. Avoid 🖐️ in casual contexts where the wait-coded read lands as condescending.",
+    "howToReply": "If a friend sends 🖐️ on a stop-coded message, mirror with another 🖐️ or ✋ to send matching energy. The stop chain reads as solidarity.\n\nIf 🖐️ lands as the halt default, reply with another 🖐️ or 👌. And if you want to send 🖐️ yourself, pair it with the moment so the stop-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🖐️ mean in text?",
+        "answer": "🖐️ means stop-coded reference, wait energy, or the visible 'hold on' reaction. The open palm with all five fingers is the visual cue that the read is stop-coded."
+      },
+      {
+        "question": "Is 🖐️ flirty?",
+        "answer": "Rarely. 🖐️ reads as flirty-coded only in a dating thread combined with 'wait your turn' tag content as playful pause."
+      },
+      {
+        "question": "What does 🖐️ mean from a girl?",
+        "answer": "From a girl or anyone, 🖐️ carries the same stop-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🖐️ mean on Instagram?",
+        "answer": "On Instagram, 🖐️ is the default sticker on wait-coded captions and aesthetic-coded stop story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "wait, what did you just say 🖐️",
+      "interpretation": "Friend stop share. Mirror with another 🖐️ or ❓ so the wait chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "halt, let me reread 🖐️",
+      "interpretation": "Work-coded halt share. Mirror with a clarifying sentence — 🖐️ can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "stop being so cute 🖐️",
+      "interpretation": "Dating-coded flirty share. Mirror with 🖐️ or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "hold on, mom is calling 🖐️",
+      "interpretation": "Family-coded pause share. Mirror with 🖐️ or 📞 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "actually do not continue 🖐️",
+      "interpretation": "Public adult-coded share. Mirror with another 🖐️ or 🛑 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

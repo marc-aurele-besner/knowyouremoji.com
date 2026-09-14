@@ -1,58 +1,127 @@
 {
-  "unicode": "1F6B4",
+  "unicode": "U+1F6B4",
   "slug": "person-biking-emoji",
   "character": "🚴",
   "name": "Person Biking",
   "shortName": "person biking emoji",
-  "category": "people",
-  "subcategory": "person-activity",
+  "category": "People & Body",
+  "subcategory": "Person Activity",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A person cycling.",
-  "tldr": "Represents biking.",
+  "baseMeaning": "Person riding a bicycle",
+  "tldr": "Cycling",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Riding a bicycle.",
-      "example": "Bike ride 🚴",
+      "meaning": "Biking or cycling",
+      "example": "Weekend 🚴",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cycling life.",
-      "example": "Biking to work 🚴",
+      "meaning": "Going fast or grinding",
+      "example": "Hustling 🚴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Adventure-coded cycling date or flirty workout tag.",
+      "example": "ride with me 🚴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Calling out a friend pedaling hard.",
+      "example": "fast spin 🚴",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person biking."
+      "note": "Used for fitness-coded and adult-coded cycling tweets. The cyclist is the visible 'road riding' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in fitness-coded stories and aesthetic-coded cycling shares. The cyclist reads as the visible workout default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Default comment-section reaction to adult-coded cycling clips. The cyclist pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal spin default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to cycling-coded content. The cyclist is the default 'on the road' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🚴 in casual contexts."
+      "note": "Used in various creative contexts"
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🚴 across platforms."
+      "note": "Straightforward usage"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🚴 literally."
+      "note": "May use 🚴 literally for cycling references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🚴 Person Biking Emoji Meaning - What Does 🚴 Really Mean?",
-  "seoDescription": "Learn what the person biking emoji 🚴 really means in texts and social media."
+  "seoDescription": "Learn what the person biking emoji 🚴 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🚴 Person Biking emoji was added in Unicode 6 (2010) and is drawn as a person wearing a helmet riding a bicycle, pedaling forward. The visual cue reads instantly as fitness-coded reference, cycling default, or the visible 'on the road' tag. By 2026 🚴 has become the go-to emoji for the cycling-coded reaction, the visible workout default, and the ride-coded reaction in close-friends and group chats.\n\nIn modern chat 🚴 does very specific work. People send it as a literal cycling-coded reference, as the visible 'I am grinding' tag, or as the ride-coded default. The cyclist with helmet is the visual cue that the read is sport or commute. Writers should pick 🚴 when the read is cycling or visible 'on the bike' energy, and avoid it when the read is full-on motorcycle — 🏍️ fits better there.",
+    "howPeopleUseIt": "🚴 lands on a friend's workout message, in a work channel where someone is signaling cycling-coded energy, and in a dating-app DM where the sender is signaling flirty ride. The cyclist with helmet anchors the read.\n\nIn close-friends chats 🚴 reads as the universal spin default and the visible 'cycling' tag. On X the emoji punctuates fitness-coded and commute tweets. The emoji pairs with 🚲 for the layered biker-and-bicycle stack and with 🛤️ for the layered biker-and-tracks stack.",
+    "whenNotToUse": "Skip 🚴 in any context where the read is supposed to be slow. The cycling implies movement, not station. Avoid 🚴 in casual contexts where the cycling-coded read lands as over-the-top cardio.",
+    "howToReply": "If a friend sends 🚴 on a cycling-coded message, mirror with another 🚴 or 🚲 to send matching energy. The ride chain reads as solidarity.\n\nIf 🚴 lands as the spin default, reply with another 🚴 or 💪. And if you want to send 🚴 yourself, pair it with the moment so the cycling-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🚴 mean in text?",
+        "answer": "🚴 means cycling-coded reference, workout energy, or the visible 'on the road' reaction. The cyclist with helmet is the visual cue that the read is cycling-coded."
+      },
+      {
+        "question": "Is 🚴 flirty?",
+        "answer": "Sometimes. 🚴 reads as flirty-coded in a dating thread combined with 'ride with me' tag content as a date invite."
+      },
+      {
+        "question": "What does 🚴 mean from a girl?",
+        "answer": "From a girl or anyone, 🚴 carries the same cycling-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🚴 mean on Instagram?",
+        "answer": "On Instagram, 🚴 is the default sticker on cycling-coded captions and aesthetic-coded ride story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "long ride today 🚴",
+      "interpretation": "Friend cycling share. Mirror with another 🚴 or 🚲 so the ride chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "commute grind 🚴",
+      "interpretation": "Work-coded cycling share. Mirror with a clarifying sentence — 🚴 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "ride with me this weekend 🚴",
+      "interpretation": "Dating-coded flirty share. Mirror with 🚴 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "dad took us on a ride 🚴",
+      "interpretation": "Family-coded cycling share. Mirror with 🚴 or 👨 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "century ride weekend 🚴",
+      "interpretation": "Public adult-coded cycling share. Mirror with another 🚴 or 🏔️ so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Sniffing out drama."
+      "note": "Used for sniffing-out-coded drama and adult-coded intuition tweets. The nose is the visible 'I smell something' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Smell-related content."
+      "note": "Common in aesthetic-coded smell shares and gossip-coded stories. The nose reads as the visible nosy-coded default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Being nosy content."
+      "note": "Default comment-section reaction to adult-coded suspicious clips. The nose pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal sniffing default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to gossip-coded content. The nose is the default 'I smell tea' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -73,5 +77,58 @@
     "nose-medium",
     "nose-medium-dark",
     "nose-dark"
-  ]
+  ],
+  "longForm": {
+    "overview": "The 👃 Nose emoji was added in Unicode 6 (2010) and is drawn as a human nose with visible nostrils, presented in profile. The visual cue reads instantly as smell-coded reference, sniffing-out default, or the visible 'I am being nosy' tag. By 2026 👃 has become the go-to emoji for the smell-coded reaction, the visible nosy default, and the intuition-coded reaction in close-friends and family chats.\n\nIn modern chat 👃 does very specific work. People send it as a literal smell-coded reference, as the visible 'I am sniffing out gossip' tag, or as the intuition-coded default. The nose with visible nostrils is the visual cue that the read is nosy-coded. Writers should pick 👃 when the read is sniffing-out energy or visible 'I smell drama' tag, and avoid it when the read is just a face feature — 👃 itself remains the body-part emoji.",
+    "howPeopleUseIt": "👃 lands on a friend's gossip message, in a work channel where someone is signaling intuition-coded energy, and in a dating-app DM where the sender is signaling playful suspicion. The nose with visible nostrils anchors the read.\n\nIn close-friends chats 👃 reads as the universal nosy default and the visible 'I am sniffing it out' tag. On X the emoji punctuates intuition-coded and gossip tweets. The emoji pairs with 👀 for the layered nosy-and-side-eye stack and with 🍵 for the layered sniffing-out-and-tea stack.",
+    "whenNotToUse": "Skip 👃 in any context where the read is casual conversation only. The nose implies sniffing-out-coded, not just idle chat. Avoid 👃 in formal contexts where the nosy-coded read lands as gossipy.",
+    "howToReply": "If a friend sends 👃 on a sniffing-out-coded message, mirror with another 👃 or 👀 to send matching energy. The nosy chain reads as solidarity.\n\nIf 👃 lands as the intuition default, reply with another 👃 or 🔍. And if you want to send 👃 yourself, pair it with the moment so the sniffing-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👃 mean in text?",
+        "answer": "👃 means smell-coded reference, sniffing-out energy, or the visible 'I am being nosy' reaction. The nose with visible nostrils is the visual cue that the read is nosy-coded."
+      },
+      {
+        "question": "Is 👃 flirty?",
+        "answer": "Rarely. 👃 usually reads as nosy-coded rather than flirty; in a dating thread it can read as 'I am sniffing things out' tag content."
+      },
+      {
+        "question": "What does 👃 mean from a girl?",
+        "answer": "From a girl or anyone, 👃 carries the same nosy-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 👃 mean on Instagram?",
+        "answer": "On Instagram, 👃 is the default sticker on gossip-coded captions and aesthetic-coded nosy story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "what are you two up to 👃",
+      "interpretation": "Friend nosy share. Mirror with another 👃 or 👀 so the sniffing chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "something's off with this report 👃",
+      "interpretation": "Work-coded intuition share. Mirror with a clarifying sentence — 👃 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "you smell nice today 👃",
+      "interpretation": "Dating-coded flirty share. Mirror with 👃 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "what is grandma cooking 👃",
+      "interpretation": "Family-coded smell share. Mirror with 👃 or 🍪 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "I smell a plot twist 👃",
+      "interpretation": "Public adult-coded intuition share. Mirror with another 👃 or 🍿 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
