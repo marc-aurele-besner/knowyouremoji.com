@@ -6,65 +6,122 @@
   "shortName": "antenna bars",
   "category": "symbols",
   "subcategory": "av-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Antenna Bars emoji.",
-  "tldr": "Represents antenna bars.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Antenna bars indicating cell signal strength.",
+  "tldr": "Cell signal, full bars, or 'I am reachable.'",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The symbol for antenna bars.",
-      "example": "📶",
+      "meaning": "Showing cell signal strength.",
+      "example": "Full bars 📶",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Emphasizing a point.",
-      "example": "Important 📶",
+      "meaning": "Signal or 'I am reachable.'",
+      "example": "Hit me up 📶",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional signaling.",
-      "example": "Note this 📶",
+      "meaning": "Connectivity status or work-from-anywhere.",
+      "example": "WFH full bars 📶",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Over-emphasis for humor.",
-      "example": "So serious 📶",
+      "meaning": "Joking about bad signal.",
+      "example": "One bar of patience 📶",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about antenna bars."
+      "note": "Staple of remote-work and connectivity tweets; reads as 'I have signal, I am reachable.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Appears in WFH and travel captions; reads as 'full bars here' or 'no signal there.'"
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to connectivity complaints; pairs with 🏠 for the WFH stack."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Less common than on Twitter; appears in tech-support channels and connectivity rants."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 📶 frequently in casual chat."
+      "note": "Uses 📶 in WFH and remote-work captions; the connectivity read is the default."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 📶 across platforms."
+      "note": "Familiar with 📶 across platforms; reads as 'cell signal' or 'I am reachable.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 📶 literally."
+      "note": "May use 📶 literally for cell signal; the cultural layer is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📶 Antenna Bars Emoji Meaning - What Does 📶 Really Mean?",
-  "seoDescription": "Learn what the antenna bars emoji 📶 really means in texts and social media. Discover all its uses and interpretations."
+  "seoDescription": "Learn what the antenna bars emoji 📶 really means. Cell signal or remote-work vibes. Complete context guide.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 📶 antenna bars emoji is the cell-signal status indicator of the standard set. The ascending bars are an unmistakable visual reference to the signal-strength indicator on every phone. Added in Unicode 6 (2010), 📶 has been adopted as the default emoji for cell signal, remote-work status, and connectivity jokes.\n\nIn real-world chat 📶 does very specific work. People send it after a WFH day, in complaints about bad signal, or as a status check-in ('I have full bars'). The bars are unambiguous. Writers should pick 📶 when the message is about connectivity or signal strength, and avoid it when a more emotive indicator is needed. The bars have been a fixture of phone UI since the original emoji set and continue to land as the cell-signal default in 2026 chats across platforms.",
+    "howPeopleUseIt": "📶 shows up in WFH captions, in connectivity complaints, and as a status check-in. People send it after a productive remote-work day, in travel posts about losing signal, or as a 'I am reachable' closer in a work thread. The emoji pairs naturally with 🏠 for the WFH stack and with 😤 for the bad-signal complaint.\n\nIn close-friends chats 📶 can read as 'I am reachable.' In work channels it is the default connectivity status, where 'full bars 📶' means 'I am online and ready.' In public posts it can read as 'no service here' in travel complaints.",
+    "whenNotToUse": "Skip 📶 in any context where the recipient expects warmth or emotion — a celebration, a personal moment, a celebration of connection. The bars are utilitarian. Avoid it in personal messages where the recipient will read it as dismissive rather than informative.\n\nAlso avoid 📶 in ironic contexts where the sender is not actually talking about signal. The bars imply real connectivity, so playful 📶 reads as off-topic.",
+    "howToReply": "Mirror 📶 with another 📶 if you are confirming signal status, or pair with 🏠 for the WFH stack. If the sender is signaling 'I am reachable,' reply with 👍 or a sentence that initiates the conversation. If the sender is signaling bad signal, mirror with 📶 and a commiserating sentence.\n\nIf 📶 lands as a connectivity check, mirror with 📶 or 👍 to confirm.",
+    "faqs": [
+      {
+        "question": "What does 📶 mean in text?",
+        "answer": "📶 means cell signal, connectivity status, or 'I am reachable.' The ascending bars are the visual cue for signal strength."
+      },
+      {
+        "question": "What does 📶 mean on Twitter?",
+        "answer": "On Twitter, 📶 reads as 'I have signal' or 'WFH full bars' — used in remote-work and connectivity tweets."
+      },
+      {
+        "question": "What does 📶 mean from a coworker?",
+        "answer": "From a coworker, 📶 reads as 'I am online and reachable' — a status check-in for remote work."
+      },
+      {
+        "question": "When should I use 📶?",
+        "answer": "Use 📶 for cell-signal updates, remote-work status, or connectivity jokes. Avoid it for warmth or emotion."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "no service at the cabin 📶",
+      "interpretation": "Friend complaining about losing signal. Mirror with 📶 or commiserate."
+    },
+    {
+      "setting": "work",
+      "message": "WFH full bars 📶",
+      "interpretation": "Coworker status check-in. Reply with 👍 or a sentence initiating work."
+    },
+    {
+      "setting": "family",
+      "message": "grandma has better wifi than me 📶",
+      "interpretation": "Family-coded connectivity joke. Mirror with 😂 or commiserate."
+    },
+    {
+      "setting": "social",
+      "message": "remote life 📶",
+      "interpretation": "Public WFH post. Mirror with 📶 or 🏠."
+    },
+    {
+      "setting": "other",
+      "message": "one bar of patience 📶",
+      "interpretation": "Ironic signal joke. Mirror with 📶 or 😂."
+    }
+  ]
 }
