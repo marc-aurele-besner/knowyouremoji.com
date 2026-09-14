@@ -1,70 +1,127 @@
 {
-  "unicode": "1F516",
+  "unicode": "U+1F516",
   "slug": "bookmark-ribbon",
   "character": "🔖",
   "name": "Bookmark",
   "shortName": "bookmark ribbon",
   "category": "objects",
-  "subcategory": "book-paper",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Bookmark emoji.",
-  "tldr": "Represents bookmark.",
+  "subcategory": "Book",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Bookmark.",
+  "tldr": "Save-coded, remember, or 'tag'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The object bookmark.",
-      "example": "Got a bookmark 🔖",
+      "meaning": "A bookmark.",
+      "example": "save 🔖",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Reference to the object's function.",
-      "example": "Need this 🔖",
+      "meaning": "Save-coded or 'tag'.",
+      "example": "saving 🔖",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Save-coded affection.",
+      "example": "saving you 🔖",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional use of bookmark.",
-      "example": "Working with bookmark 🔖",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastic reference.",
-      "example": "Very professional 🔖",
+      "meaning": "Tag-coded reference.",
+      "example": "tagging 🔖",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about bookmark."
+      "note": "Staple of save-coded tweets and 'tag' reactions; reads as 'remember' rather than literal bookmark."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in save-coded captions and tag-story overlays; pairs with 📑 for the bookmark stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to save clips and 'tag' videos; reads as 'remember.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in tag channels and save-coded servers; reads as 'I am tagging.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🔖 in casual contexts."
+      "note": "Uses 🔖 for save-coded affection and self-aware tag reactions; the 'remember' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🔖 across platforms."
+      "note": "Familiar with 🔖 across platforms; reads as 'bookmark' or 'tag-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🔖 literally."
+      "note": "May use 🔖 literally as bookmark; the cultural layer of save-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🔖 Bookmark Emoji Meaning - What Does 🔖 Really Mean?",
-  "seoDescription": "Learn what the bookmark emoji 🔖 really means in texts and social media."
+  "seoDescription": "Learn what the bookmark emoji 🔖 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🔖 Bookmark emoji was added in Unicode 6 (2010) and has been a default for save-coded reactions ever since. The red bookmark with tassel is the visual shorthand for remember, save-coded affection, and 'tag' self-aware reference. In 2026 🔖 is the default emoji for save captions, tag reactions, and 'remember' drops.\n\nIn real-world chat 🔖 does very specific work. People send it in save-coded captions, as a tag affection signal, or as the visual equivalent of 'I am tagging this.' The bookmark carries both literal save and self-aware-tag. Writers should pick 🔖 when the message is about save-coded energy, and avoid it when multiple bookmarks are needed — that's 📑 territory. The bookmark has been a fixture of save-coded captions since Unicode 6 and continues to land as the tag-and-remember default in 2026 chats across platforms.",
+    "howPeopleUseIt": "🔖 shows up in save captions, in 'tag' reactions, and in remember-coded posts. People send it during a save-coded share, as a date-coded opener, or as a work tagging signal. The emoji pairs naturally with 📑 for the bookmark stack and with 🏷️ for the label stack.\n\nIn close-friends chats 🔖 reads as 'remember.' In dating-app messages it can land as a save-coded affection signal. In public posts it is the remember-coded and save default.",
+    "whenNotToUse": "Skip 🔖 in any context where multiple bookmarks are needed — 📑 is the multi-tabs counterpart. Avoid it in contexts where the sender wants to be subtle about the save read — the red bookmark is too obvious.\n\nAlso avoid 🔖 in contexts where the recipient expects actual tag-coded info — the bookmark read is too vague for actual data.",
+    "howToReply": "Mirror 🔖 with another 🔖 if you are matching the save energy, or pair with 📑 for the bookmark stack. If the sender is signaling remember-coded, mirror with 🔖 or 🏷️ and a sentence that engages. If the sender is using 🔖 as a date-coded opener, mirror with 🔖 or ❤️ and a follow-up.\n\nIf 🔖 lands as a 'tagging' reaction, mirror with 🔖 or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🔖 mean in text?",
+        "answer": "🔖 means save-coded, remember, or 'tag.' The bookmark is the visual cue for save-coded affection."
+      },
+      {
+        "question": "What does 🔖 mean from a guy?",
+        "answer": "From a guy, 🔖 reads as a save-coded affection signal or 'saving you' coded humor. The bookmark is reference-coded rather than coded."
+      },
+      {
+        "question": "What does 🔖 mean on Instagram?",
+        "answer": "On Instagram, 🔖 is the default for save-coded aesthetic captions and tag-overlay content."
+      },
+      {
+        "question": "When should I use 🔖?",
+        "answer": "Use 🔖 for save, remember-coded reactions, or 'tag' posts. Avoid it when multiple bookmarks are needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "saving 🔖",
+      "interpretation": "Friend signaling save vibes. Mirror with 🔖 or 📑."
+    },
+    {
+      "setting": "dating",
+      "message": "saving you 🔖",
+      "interpretation": "Save-coded affection. Mirror with 🔖 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "tagging 🔖",
+      "interpretation": "Work-coded reference share. Reply with 🔖 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "remember sunday 🔖",
+      "interpretation": "Family-coded bookmark share. Mirror with 🔖 or 🏷️."
+    },
+    {
+      "setting": "social",
+      "message": "tag vibes 🔖",
+      "interpretation": "Public bookmark post. Mirror with 🔖 or 📑."
+    }
+  ]
 }

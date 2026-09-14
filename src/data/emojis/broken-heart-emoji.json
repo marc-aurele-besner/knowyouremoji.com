@@ -6,45 +6,122 @@
   "shortName": "broken heart emoji",
   "category": "Smileys & Emotion",
   "subcategory": "Emotion",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Heartbreak",
-  "tldr": "Sad heart",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Heartbreak.",
+  "tldr": "Heartbroken, sad, or 'ugh'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Heartbroken",
-      "example": "💔 over it",
+      "meaning": "A broken heart.",
+      "example": "Look at this 💔",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Heartbroken or 'ugh'.",
+      "example": "no 💔",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Breakup or sad",
-      "example": "Feeling 💔",
-      "riskLevel": "LOW"
+      "meaning": "Heartbreak-coded affection.",
+      "example": "we broke up 💔",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Clipped heartbreak when words won't do.",
+      "example": "k fine 💔",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Staple of heartbreak-coded tweets and 'no' reactions; reads as 'I am gutted.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in sad-story captions and breakup overlays; pairs with 😢 for the teary stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to sad clips and 'no' videos; reads as 'I am sad.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in heartbreak channels and sad-coded servers; reads as 'heartbroken.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses 💔 for dramatic-heartbreak-coded content and self-aware sad reactions; the irony layer is sometimes intentional."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Familiar with 💔 across platforms; reads as 'sad' or 'heartbroken-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 💔 literally as a heartbreak signal; the cultural layer of self-aware sadness is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💔 Broken Heart Emoji Meaning - What Does 💔 Really Mean?",
-  "seoDescription": "Learn what the broken heart emoji 💔 really means in texts and social media."
+  "seoDescription": "Learn what the broken heart emoji 💔 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 💔 Broken Heart emoji was added in Unicode 6 (2010) and has been a default for heartbreak reactions ever since. The red-cracked heart is the visual shorthand for sadness, heartbreak-coded affection, and 'ugh' self-aware drama. In 2026 💔 is the default emoji for sad captions, heartbreak reactions, and breakup overlays.\n\nIn real-world chat 💔 does very specific work. People send it in sad-coded captions, as a heartbreak affection signal, or as the visual equivalent of 'I am gutted.' The heart carries both genuine sadness and self-aware drama. Writers should pick 💔 when the message is about heartbreak-coded emotion, and avoid it when a more specific emoji is needed. The heart has been a fixture of sad-coded captions since Unicode 6 and continues to land as the heartbreak-and-sad default in 2026 chats across platforms.",
+    "howPeopleUseIt": "💔 shows up in sad captions, in 'no' reactions, and in heartbreak-coded posts. People send it during a sad-coded share, as a passive-aggressive 'k fine' opener, or as a self-aware drama signal. The emoji pairs naturally with 😢 for the teary stack and with 🥀 for the wilted-flower stack.\n\nIn close-friends chats 💔 reads as 'I am sad.' In dating-app messages it can land as a heartbreak-coded affection signal. In public posts it is the sad-coded and heartbreak default.",
+    "whenNotToUse": "Skip 💔 in any context where the recipient expects a more specific emoji. The heart reads as heartbreak-coded, not generic. Avoid it in contexts where the sender wants to be subtle about the sad-coded read — the heart is too dramatic.\n\nAlso avoid 💔 in contexts where the sender is actually dealing with real loss. The drama layer can read as performative.",
+    "howToReply": "Mirror 💔 with another 💔 if you are matching the sad energy, or pair with 😢 for the teary stack. If the sender is signaling heartbreak-coded, mirror with 💔 or 🥀 and a sentence that engages. If the sender is using 💔 as a passive-aggressive 'k fine,' mirror with 💔 or 😔 to match the energy.\n\nIf 💔 lands as a self-aware drama post, mirror with 💔 or 🥀 to acknowledge without dismissing.",
+    "faqs": [
+      {
+        "question": "What does 💔 mean in text?",
+        "answer": "💔 means sad, heartbroken, or 'no.' The heart is the visual cue for heartbreak-coded affection."
+      },
+      {
+        "question": "What does 💔 mean from a girl?",
+        "answer": "From a girl, 💔 reads as a heartbreak-coded affection signal or sad-coded pet name. The heart is dramatic rather than coded."
+      },
+      {
+        "question": "What does 💔 mean on Instagram?",
+        "answer": "On Instagram, 💔 is the default for sad-coded aesthetic captions and breakup-overlay content."
+      },
+      {
+        "question": "When should I use 💔?",
+        "answer": "Use 💔 for sadness, heartbreak-coded reactions, or breakup posts. Avoid it when a more specific emoji is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "no 💔",
+      "interpretation": "Friend signaling sad vibes. Mirror with 💔 or 😢."
+    },
+    {
+      "setting": "dating",
+      "message": "we broke up 💔",
+      "interpretation": "Heartbreak-coded affection. Mirror with 💔 or 🥀 to engage."
+    },
+    {
+      "setting": "work",
+      "message": "project cancelled 💔",
+      "interpretation": "Work-coded sad share. Reply with 💔 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "sad sunday 💔",
+      "interpretation": "Family-coded heartbreak share. Mirror with 💔 or 😔."
+    },
+    {
+      "setting": "social",
+      "message": "ugh vibes 💔",
+      "interpretation": "Public sad-coded post. Mirror with 💔 or 🥀."
+    }
+  ]
 }

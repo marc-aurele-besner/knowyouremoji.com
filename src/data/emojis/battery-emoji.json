@@ -1,58 +1,127 @@
 {
-  "unicode": "1F50B",
+  "unicode": "U+1F50B",
   "slug": "battery-emoji",
   "character": "🔋",
   "name": "Battery",
   "shortName": "battery emoji",
   "category": "objects",
-  "subcategory": "computer",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "A battery.",
-  "tldr": "Represents power.",
+  "subcategory": "Object",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Battery.",
+  "tldr": "Battery-coded, charged, or 'energy'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "A battery.",
-      "example": "Low battery 🔋",
+      "example": "low 🔋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Energy levels.",
-      "example": "Fully charged 🔋",
+      "meaning": "Battery-coded or 'energy'.",
+      "example": "drained 🔋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Drained-coded affection.",
+      "example": "you're draining 🔋",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Energy-coded or charged.",
+      "example": "fully charged 🔋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about battery."
+      "note": "Staple of battery-coded tweets and 'drained' reactions; reads as 'energy-coded' rather than literal battery."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in energy-coded captions and drained-story overlays; pairs with ⚡ for the energy stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to drained clips and 'energy' videos; reads as 'I am drained.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in energy channels and drained-coded servers; reads as 'I am drained.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🔋 in casual contexts."
+      "note": "Uses 🔋 for battery-coded affection and self-aware drained reactions; the 'energy' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🔋 across platforms."
+      "note": "Familiar with 🔋 across platforms; reads as 'battery' or 'energy-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🔋 literally."
+      "note": "May use 🔋 literally as battery; the cultural layer of energy-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🔋 Battery Emoji Meaning - What Does 🔋 Really Mean?",
-  "seoDescription": "Learn what the battery emoji 🔋 really means in texts and social media."
+  "seoDescription": "Learn what the battery emoji 🔋 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🔋 Battery emoji was added in Unicode 6 (2010) and has been a default for battery-coded reactions ever since. The green battery with a lightning bolt is the visual shorthand for energy, battery-coded affection, and 'drained' self-aware energy-levels. In 2026 🔋 is the default emoji for energy captions, drained reactions, and 'fully charged' drops.\n\nIn real-world chat 🔋 does very specific work. People send it in energy-coded captions, as a drained affection signal, or as the visual equivalent of 'I am drained.' The battery carries both literal battery and self-aware-energy. Writers should pick 🔋 when the message is about battery-coded energy, and avoid it when actual technical battery info is being shared. The battery has been a fixture of energy-coded captions since Unicode 6 and continues to land as the drained-and-energy default in 2026 chats across platforms.",
+    "howPeopleUseIt": "🔋 shows up in energy captions, in 'drained' reactions, and in battery-coded posts. People send it during a battery-coded share, as a date-coded opener, or as a work energy-coded signal. The emoji pairs naturally with ⚡ for the energy stack and with 🔌 for the plug stack.\n\nIn close-friends chats 🔋 reads as 'I am drained.' In dating-app messages it can land as a drained-coded affection signal when the sender is exhausted. In public posts it is the energy-coded and battery default.",
+    "whenNotToUse": "Skip 🔋 in any context where actual technical battery info is being shared. The energy-coded read is too metaphorical for literal battery talk. Avoid it in contexts where the sender wants to be obviously technical — the lightning bolt is too playful.\n\nAlso avoid 🔋 in professional contexts where the 'drained' read lands as disengagement rather than honest tiredness.",
+    "howToReply": "Mirror 🔋 with another 🔋 if you are matching the battery energy, or pair with ⚡ for the energy stack. If the sender is signaling drained-coded, mirror with 🔋 or 😴 and a sentence that engages. If the sender is using 🔋 as a date-coded opener, mirror with 🔋 or ❤️ and a follow-up.\n\nIf 🔋 lands as a 'fully charged' reaction, mirror with 🔋 or ⚡ to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🔋 mean in text?",
+        "answer": "🔋 means battery-coded, charged, or 'energy.' The battery is the visual cue for energy-coded affection."
+      },
+      {
+        "question": "What does 🔋 mean from a guy?",
+        "answer": "From a guy, 🔋 reads as a battery-coded affection signal or 'drained' coded humor. The battery is energy-coded rather than technical."
+      },
+      {
+        "question": "What does 🔋 mean on Instagram?",
+        "answer": "On Instagram, 🔋 is the default for energy-coded aesthetic captions and drained-overlay content."
+      },
+      {
+        "question": "When should I use 🔋?",
+        "answer": "Use 🔋 for energy, battery-coded reactions, or 'drained' posts. Avoid it when actual technical battery info is being shared."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "drained 🔋",
+      "interpretation": "Friend signaling drained vibes. Mirror with 🔋 or 😴."
+    },
+    {
+      "setting": "dating",
+      "message": "you're draining 🔋",
+      "interpretation": "Drained-coded affection. Mirror with 🔋 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "fully charged 🔋",
+      "interpretation": "Work-coded energy share. Reply with 🔋 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "drained sunday 🔋",
+      "interpretation": "Family-coded battery share. Mirror with 🔋 or ⚡."
+    },
+    {
+      "setting": "social",
+      "message": "energy vibes 🔋",
+      "interpretation": "Public battery post. Mirror with 🔋 or 🔌."
+    }
+  ]
 }

@@ -1,70 +1,127 @@
 {
-  "unicode": "1F4DA",
+  "unicode": "U+1F4DA",
   "slug": "books-emoji",
   "character": "📚",
   "name": "Books",
   "shortName": "books emoji",
   "category": "objects",
-  "subcategory": "book-paper",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Books emoji.",
-  "tldr": "Represents books.",
+  "subcategory": "Book",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Books.",
+  "tldr": "Book-coded, study, or 'smart'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The object books.",
-      "example": "Got a books 📚",
+      "meaning": "A stack of books.",
+      "example": "reading 📚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Reference to the object's function.",
-      "example": "Need this 📚",
+      "meaning": "Book-coded or 'smart'.",
+      "example": "study 📚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Book-coded affection.",
+      "example": "smart babe 📚",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional use of books.",
-      "example": "Working with books 📚",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastic reference.",
-      "example": "Very professional 📚",
+      "meaning": "Study or research-coded.",
+      "example": "research 📚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about books."
+      "note": "Staple of book-coded tweets and 'study' reactions; reads as 'smart' rather than literal books."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in study-coded captions and book-aesthetic overlays; pairs with 📖 for the book stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to study clips and 'booktok' videos; reads as 'I am reading.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in study channels and book-coded servers; reads as 'I am studying.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 📚 in casual contexts."
+      "note": "Uses 📚 for book-coded affection and self-aware study reactions; the 'booktok' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 📚 across platforms."
+      "note": "Familiar with 📚 across platforms; reads as 'books' or 'study-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 📚 literally."
+      "note": "May use 📚 literally as books; the cultural layer of book-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📚 Books Emoji Meaning - What Does 📚 Really Mean?",
-  "seoDescription": "Learn what the books emoji 📚 really means in texts and social media."
+  "seoDescription": "Learn what the books emoji 📚 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 📚 Books emoji was added in Unicode 6 (2010) and has been a default for book-coded reactions ever since. The stack of three colored books is the visual shorthand for study, book-coded affection, and 'smart' self-aware learning. In 2026 📚 is the default emoji for book captions, study reactions, and 'I am reading' drops.\n\nIn real-world chat 📚 does very specific work. People send it in study-coded captions, as a book affection signal, or as the visual equivalent of 'I am reading.' The books carry both literal stack and self-aware-study. Writers should pick 📚 when the message is about book-coded energy, and avoid it when a single book is needed — that's 📖 territory. The books have been a fixture of study-coded captions since Unicode 6 and continue to land as the booktok-and-study default in 2026 chats across platforms.",
+    "howPeopleUseIt": "📚 shows up in study captions, in 'booktok' reactions, and in book-coded posts. People send it during a study-coded share, as a date-coded opener, or as a work research signal. The emoji pairs naturally with 📖 for the book stack and with 📝 for the note stack.\n\nIn close-friends chats 📚 reads as 'I am reading.' In dating-app messages it can land as a book-coded affection signal. In public posts it is the study-coded and book default.",
+    "whenNotToUse": "Skip 📚 in any context where a single book is needed — 📖 is the single counterpart. Avoid it in contexts where the sender wants to be subtle about the study read — the stack is too obvious.\n\nAlso avoid 📚 in contexts where the recipient expects actual reading-coded info — the stack reads as too vague for actual study material.",
+    "howToReply": "Mirror 📚 with another 📚 if you are matching the book energy, or pair with 📖 for the book stack. If the sender is signaling study-coded, mirror with 📚 or 📝 and a sentence that engages. If the sender is using 📚 as a date-coded opener, mirror with 📚 or ❤️ and a follow-up.\n\nIf 📚 lands as a 'booktok' reaction, mirror with 📚 or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 📚 mean in text?",
+        "answer": "📚 means book-coded, study, or 'smart.' The books are the visual cue for study-coded affection."
+      },
+      {
+        "question": "What does 📚 mean from a guy?",
+        "answer": "From a guy, 📚 reads as a book-coded affection signal or 'smart babe' coded humor. The books are reference-coded rather than coded."
+      },
+      {
+        "question": "What does 📚 mean on Instagram?",
+        "answer": "On Instagram, 📚 is the default for study-coded aesthetic captions and booktok-overlay content."
+      },
+      {
+        "question": "When should I use 📚?",
+        "answer": "Use 📚 for study, book-coded reactions, or 'I am reading' posts. Avoid it when a single book is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "study 📚",
+      "interpretation": "Friend signaling book vibes. Mirror with 📚 or 📖."
+    },
+    {
+      "setting": "dating",
+      "message": "smart babe 📚",
+      "interpretation": "Book-coded affection. Mirror with 📚 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "research 📚",
+      "interpretation": "Work-coded study share. Reply with 📚 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "study sunday 📚",
+      "interpretation": "Family-coded book share. Mirror with 📚 or 📝."
+    },
+    {
+      "setting": "social",
+      "message": "booktok vibes 📚",
+      "interpretation": "Public book post. Mirror with 📚 or 📖."
+    }
+  ]
 }

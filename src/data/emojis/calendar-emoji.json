@@ -1,70 +1,127 @@
 {
-  "unicode": "1F4C5",
+  "unicode": "U+1F4C5",
   "slug": "calendar-emoji",
   "character": "📅",
   "name": "Calendar",
   "shortName": "calendar emoji",
   "category": "objects",
-  "subcategory": "office",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Calendar emoji.",
-  "tldr": "Represents calendar.",
+  "subcategory": "Office",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Calendar.",
+  "tldr": "Date-coded, scheduled-coded, or 'save the date'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The object calendar.",
-      "example": "Got a calendar 📅",
+      "meaning": "A calendar.",
+      "example": "schedule 📅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Reference to the object's function.",
-      "example": "Need this 📅",
+      "meaning": "Date-coded or 'save the date'.",
+      "example": "save the date 📅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Date-coded affection.",
+      "example": "save a date 📅",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional use of calendar.",
-      "example": "Working with calendar 📅",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Sarcastic reference.",
-      "example": "Very professional 📅",
+      "meaning": "Schedule-coded signal.",
+      "example": "team schedule 📅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about calendar."
+      "note": "Staple of date-coded tweets and 'save the date' reactions; reads as 'schedule' rather than literal calendar."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in date-coded captions and save-the-date overlays; pairs with ⏰ for the time stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to date clips and 'save the date' videos; reads as 'schedule.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in schedule channels and date-coded servers; reads as 'team schedule.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 📅 in casual contexts."
+      "note": "Uses 📅 for date-coded affection and self-aware save-the-date reactions; the 'schedule' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 📅 across platforms."
+      "note": "Familiar with 📅 across platforms; reads as 'date' or 'schedule-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 📅 literally."
+      "note": "May use 📅 literally as calendar; the cultural layer of save-the-date-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "📅 Calendar Emoji Meaning - What Does 📅 Really Mean?",
-  "seoDescription": "Learn what the calendar emoji 📅 really means in texts and social media."
+  "seoDescription": "Learn what the calendar emoji 📅 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 📅 Calendar emoji was added in Unicode 6 (2010) and has been a default for date-coded reactions ever since. The tear-off calendar is the visual shorthand for schedule, date-coded affection, and 'save the date' self-aware planning. In 2026 📅 is the default emoji for date captions, schedule reactions, and 'team schedule' drops.\n\nIn real-world chat 📅 does very specific work. People send it in date-coded captions, as a save-the-date affection signal, or as the visual equivalent of 'mark it down.' The calendar carries both literal date and self-aware-schedule. Writers should pick 📅 when the message is about date-coded energy, and avoid it when time-only-coded content is being described — that's ⏰ territory. The calendar has been a fixture of date-coded captions since Unicode 6 and continues to land as the save-the-date-and-schedule default in 2026 chats across platforms.",
+    "howPeopleUseIt": "📅 shows up in date captions, in 'save the date' reactions, and in schedule-coded posts. People send it during a date-coded share, as a date-coded opener, or as a work team-schedule signal. The emoji pairs naturally with ⏰ for the time stack and with 🗓 for the schedule stack.\n\nIn close-friends chats 📅 reads as 'schedule.' In dating-app messages it can land as a save-the-date affection signal. In public posts it is the schedule-coded and date default.",
+    "whenNotToUse": "Skip 📅 in any context where time-only-coded content is being described — ⏰ is the time counterpart. Avoid it in contexts where the sender wants to be subtle about the date read — the bold calendar is too obvious.\n\nAlso avoid 📅 in professional contexts where the team-schedule read lands as 'overbooked' rather than 'schedule-coded.'",
+    "howToReply": "Mirror 📅 with another 📅 if you are matching the date energy, or pair with ⏰ for the time stack. If the sender is signaling schedule-coded, mirror with 📅 or ⏰ and a sentence that engages. If the sender is using 📅 as a date-coded opener, mirror with 📅 or ❤️ and a follow-up.\n\nIf 📅 lands as a 'team schedule' reaction, mirror with 📅 or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 📅 mean in text?",
+        "answer": "📅 means date-coded, scheduled-coded, or 'save the date.' The calendar is the visual cue for date-coded affection."
+      },
+      {
+        "question": "What does 📅 mean from a girl?",
+        "answer": "From a girl, 📅 reads as a date-coded affection signal or 'save a date' coded romantic. The calendar is warm-schedule rather than coded."
+      },
+      {
+        "question": "What does 📅 mean on Instagram?",
+        "answer": "On Instagram, 📅 is the default for date-coded aesthetic captions and schedule-overlay content."
+      },
+      {
+        "question": "When should I use 📅?",
+        "answer": "Use 📅 for date-coded reactions, schedule content, or 'save the date' posts. Avoid it when time-only-coded content is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "save the date 📅",
+      "interpretation": "Friend signaling date-coded vibes. Mirror with 📅 or ⏰."
+    },
+    {
+      "setting": "dating",
+      "message": "save a date 📅",
+      "interpretation": "Date-coded affection. Mirror with 📅 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "team schedule 📅",
+      "interpretation": "Work-coded date share. Reply with 📅 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "schedule sunday 📅",
+      "interpretation": "Family-coded date share. Mirror with 📅 or ⏰."
+    },
+    {
+      "setting": "social",
+      "message": "date vibes 📅",
+      "interpretation": "Public schedule post. Mirror with 📅 or 🙌."
+    }
+  ]
 }

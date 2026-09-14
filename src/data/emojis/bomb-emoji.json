@@ -1,58 +1,127 @@
 {
-  "unicode": "1F4A3",
+  "unicode": "U+1F4A3",
   "slug": "bomb-emoji",
   "character": "💣",
   "name": "Bomb",
   "shortName": "bomb emoji",
   "category": "symbols",
-  "subcategory": "other-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "A bomb.",
-  "tldr": "Represents explosions.",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Bomb.",
+  "tldr": "Bomb-coded, dropping, or 'incoming'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
       "meaning": "A bomb.",
-      "example": "Bomb squad 💣",
+      "example": "Look at this 💣",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Amazing or devastating.",
-      "example": "This is the bomb 💣",
+      "meaning": "Bomb-coded or 'incoming'.",
+      "example": "this is 💣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Bomb-coded affection.",
+      "example": "you're 💣",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Code-drop or hot-take.",
+      "example": "code drop 💣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about bomb."
+      "note": "Staple of bomb-coded tweets and 'incoming' reactions; reads as 'this hits hard' rather than literal threat."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in bomb-coded captions and dropping-story overlays; pairs with 💥 for the explosion stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to hot clips and 'incoming' videos; reads as 'this hits.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in bomb channels and incoming-coded servers; reads as 'I am dropping.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 💣 in casual contexts."
+      "note": "Uses 💣 for bomb-coded affection and self-aware incoming reactions; the 'this hits' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 💣 across platforms."
+      "note": "Familiar with 💣 across platforms; reads as 'bomb' or 'incoming-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 💣 literally."
+      "note": "May use 💣 literally as a bomb; the cultural layer of bomb-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💣 Bomb Emoji Meaning - What Does 💣 Really Mean?",
-  "seoDescription": "Learn what the bomb emoji 💣 really means in texts and social media."
+  "seoDescription": "Learn what the bomb emoji 💣 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 💣 Bomb emoji was added in Unicode 6 (2010) and has been a default for bomb-coded reactions ever since. The round black bomb with a lit fuse is the visual shorthand for hot-take, bomb-coded affection, and 'incoming' self-aware hype. In 2026 💣 is the default emoji for bomb captions, incoming reactions, and 'this hits' drops.\n\nIn real-world chat 💣 does very specific work. People send it in bomb-coded captions, as a hot affection signal, or as the visual equivalent of 'incoming.' The bomb carries both literal threat and self-aware-hype. Writers should pick 💣 when the message is about bomb-coded energy, and avoid it when sensitivity is needed. The bomb has been a fixture of bomb-coded captions since Unicode 6 and continues to land as the incoming-and-this-hits default in 2026 chats across platforms.",
+    "howPeopleUseIt": "💣 shows up in bomb captions, in 'incoming' reactions, and in hot-take posts. People send it during a bomb-coded share, as a date-coded opener, or as a work code-drop signal. The emoji pairs naturally with 💥 for the explosion stack and with 🔥 for the fire stack.\n\nIn close-friends chats 💣 reads as 'incoming.' In dating-app messages it can land as a bomb-coded affection signal. In public posts it is the bomb-coded and hot-take default.",
+    "whenNotToUse": "Skip 💣 in any context where sensitivity about violence is needed. The bomb read is graphic. Avoid it in professional contexts where the bomb read lands as threatening. Also avoid 💣 in contexts where the sender wants to be subtle about the hot-take read — the bomb is too loud.\n\nAlso avoid 💣 in contexts where the recipient is dealing with actual war or violence — the hype layer reads as flippant.",
+    "howToReply": "Mirror 💣 with another 💣 if you are matching the bomb energy, or pair with 💥 for the explosion stack. If the sender is signaling bomb-coded, mirror with 💣 or 🔥 and a sentence that engages. If the sender is using 💣 as a date-coded opener, mirror with 💣 or ❤️ and a follow-up.\n\nIf 💣 lands as a 'code drop' reaction, mirror with 💣 or 🚀 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 💣 mean in text?",
+        "answer": "💣 means bomb-coded, dropping, or 'incoming.' The bomb is the visual cue for hot-take-coded affection."
+      },
+      {
+        "question": "What does 💣 mean from a girl?",
+        "answer": "From a girl, 💣 reads as a bomb-coded affection signal or 'you're hot' pet name. The bomb is bold rather than coded."
+      },
+      {
+        "question": "What does 💣 mean on Instagram?",
+        "answer": "On Instagram, 💣 is the default for bomb-coded aesthetic captions and dropping-overlay content."
+      },
+      {
+        "question": "When should I use 💣?",
+        "answer": "Use 💣 for hot-take, bomb-coded reactions, or 'incoming' posts. Avoid it when sensitivity is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "this is 💣",
+      "interpretation": "Friend signaling hot vibes. Mirror with 💣 or 💥."
+    },
+    {
+      "setting": "dating",
+      "message": "you're 💣",
+      "interpretation": "Bomb-coded affection. Mirror with 💣 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "code drop 💣",
+      "interpretation": "Work-coded bomb share. Reply with 💣 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "lit sunday 💣",
+      "interpretation": "Family-coded bomb share. Mirror with 💣 or 🚀."
+    },
+    {
+      "setting": "social",
+      "message": "incoming vibes 💣",
+      "interpretation": "Public bomb post. Mirror with 💣 or 🔥."
+    }
+  ]
 }

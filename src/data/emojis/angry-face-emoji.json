@@ -7,44 +7,121 @@
   "category": "Smileys & Emotion",
   "subcategory": "Face Negative",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Mad",
-  "tldr": "Grumpy",
+  "baseMeaning": "Mad.",
+  "tldr": "Mad, frustrated, or 'ugh'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Angry",
-      "example": "😠 not happy",
+      "meaning": "An angry expression.",
+      "example": "I am 😠",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Frustrated",
-      "example": "😠 this is annoying",
+      "meaning": "Frustrated or 'ugh'.",
+      "example": "this is 😠",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Clipped frustration when words won't do.",
+      "example": "fine 😠",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Mock-anger about something trivial.",
+      "example": "no dessert 😠",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Staple of frustrated replies and 'ugh' reactions; reads as low-key irritation rather than serious rage."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in ranted captions and petty-story overlays; pairs with 💢 for the anger stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to petty clips and self-aware rage videos; reads as 'I'm mildly furious.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in frustration reactions and mild-rant channels; reads as 'ugh' rather than 'fight me.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses 😠 for mock-anger and self-aware frustration; the irony layer is the dominant read."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Familiar with 😠 across platforms; reads as 'frustrated' with a thin passive-aggressive edge."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May read 😠 as serious anger rather than mock-rage; the cultural layer of petulant frustration is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😠 Angry Face Emoji Meaning - What Does 😠 Really Mean?",
-  "seoDescription": "Learn what the angry face emoji 😠 really means in texts and social media."
+  "seoDescription": "Learn what the angry face emoji 😠 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 😠 Angry Face emoji was added in Unicode 6 (2010) and has been a default for frustration reactions ever since. The red-mad face with downturned mouth and furrowed brow is the visual shorthand for low-key irritation, mock-rage, and 'ugh' affection. In 2026 😠 is the default emoji for frustrated reactions, petty-rant captions, and passive-aggressive 'fine' drops.\n\nIn real-world chat 😠 does very specific work. People send it when they're mildly furious, when they're mock-fuming about something trivial, or as the visual equivalent of 'I can't even.' The face carries both genuine-frustration and self-aware-rage. Writers should pick 😠 when the message is about petulant frustration, and avoid it when serious anger is needed — that's 😡 territory. The face has been a fixture of frustrated-reaction rosters since Unicode 6 and continues to land as the petty-rage default in 2026 chats across platforms.",
+    "howPeopleUseIt": "😠 shows up in frustrated reactions, in 'ugh' posts, and in self-aware petty captions. People send it during a mild-rant, as a passive-aggressive 'fine' opener, or as a mock-furious pet name. The emoji pairs naturally with 💢 for the anger stack and with 🙄 for the eye-roll stack.\n\nIn close-friends chats 😠 reads as 'ugh.' In passive-aggressive texts it can land as clipped frustration. In public posts it is the mock-rage and petulant-frustration default.",
+    "whenNotToUse": "Skip 😠 in any context where serious anger is needed — 😡 is the read for 'actually mad.' Avoid it in professional contexts where the anger read lands poorly even when ironic. Also avoid 😠 in contexts where the recipient is dealing with real loss or grief — the mock-rage layer reads as dismissive.",
+    "howToReply": "Mirror 😠 with another 😠 if you are matching the frustration energy, or pair with 🙄 for the eye-roll stack. If the sender is signaling mock-rage, mirror with 😠 or 😂 and a sentence that engages. If the sender is using 😠 as a passive-aggressive 'fine,' mirror with 😠 or 😒 to match the energy.\n\nIf 😠 lands as a frustrated reaction, mirror with 😠 or 💢 to acknowledge without escalating.",
+    "faqs": [
+      {
+        "question": "What does 😠 mean in text?",
+        "answer": "😠 means frustrated, mock-angry, or 'ugh.' The face is the visual cue for petulant frustration."
+      },
+      {
+        "question": "What does 😠 mean from a guy?",
+        "answer": "From a guy, 😠 reads as a frustrated reaction or mock-rage pet name. The face is warm-iffy rather than threatening."
+      },
+      {
+        "question": "What does 😠 mean on Instagram?",
+        "answer": "On Instagram, 😠 is the default for frustrated captions and petty-rant story overlays."
+      },
+      {
+        "question": "When should I use 😠?",
+        "answer": "Use 😠 for low-key irritation, mock-rage, or 'ugh' reactions. Avoid it when serious anger is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "ugh monday 😠",
+      "interpretation": "Friend signaling petulant frustration. Mirror with 😠 or 🙄."
+    },
+    {
+      "setting": "dating",
+      "message": "you forgot 😠",
+      "interpretation": "Mock-rage flirtation. Mirror with 😠 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "the printer again 😠",
+      "interpretation": "Work-coded petty frustration. Reply with 😠 or a sentence commiserating."
+    },
+    {
+      "setting": "family",
+      "message": "no wifi sunday 😠",
+      "interpretation": "Family-coded mock-rage. Mirror with 😠 or 😅."
+    },
+    {
+      "setting": "social",
+      "message": "ugh vibes 😠",
+      "interpretation": "Public frustrated post. Mirror with 😠 or 💢."
+    }
+  ]
 }

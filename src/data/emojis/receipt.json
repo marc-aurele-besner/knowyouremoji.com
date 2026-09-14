@@ -1,47 +1,127 @@
 {
-  "unicode": "1F9FE",
+  "unicode": "U+1F9FE",
   "slug": "receipt",
   "character": "🧾",
   "name": "Receipt",
-  "shortName": "bill",
+  "shortName": "receipt emoji",
   "category": "objects",
-  "subcategory": "money",
+  "subcategory": "Money",
   "unicodeVersion": "11.0",
-  "baseMeaning": "Receipt emoji.",
-  "tldr": "Paid!",
+  "baseMeaning": "Receipt.",
+  "tldr": "Spend-coded, money-coded, or 'show me the receipt'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Receipt.",
-      "example": "Look at this 🧾",
+      "meaning": "A receipt.",
+      "example": "receipt 🧾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Receipt or bill.",
-      "example": "Feeling 🧾",
+      "meaning": "Spend-coded or 'show me the receipt'.",
+      "example": "show me the receipt 🧾",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🧾", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Spend-coded affection.",
+      "example": "treat me 🧾",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes 🧾",
+      "meaning": "Expense-coded signal.",
+      "example": "team expense 🧾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "TWITTER",
+      "note": "Staple of spend-coded tweets and 'show me the receipt' reactions; reads as 'proof' rather than literal receipt."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in spend-coded captions and proof overlays; pairs with 💰 for the money stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to spend clips and 'show me the receipt' videos; reads as 'proof-coded.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in spend channels and proof-coded servers; reads as 'team expense.'"
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Uses 🧾 for spend-coded affection and self-aware show-me-the-receipt reactions; the 'proof' read is dominant."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Familiar with 🧾 across platforms; reads as 'receipt' or 'spend-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🧾 literally as receipt; the cultural layer of proof-coding is sometimes missed."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🧾 Receipt Emoji Meaning",
-  "seoDescription": "Learn what the Receipt emoji 🧾 really means."
+  "seoTitle": "🧾 Receipt Emoji Meaning - What Does 🧾 Really Mean?",
+  "seoDescription": "Learn what the receipt emoji 🧾 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🧾 Receipt emoji was added in Unicode 11 (2018) and has been a default for spend-coded reactions ever since. The long paper receipt is the visual shorthand for proof, spend-coded affection, and 'show me the receipt' self-aware receipts-on-receipts. In 2026 🧾 is the default emoji for spend captions, proof reactions, and 'team expense' drops.\n\nIn real-world chat 🧾 does very specific work. People send it in spend-coded captions, as a proof affection signal, or as the visual equivalent of 'treat me.' The receipt carries both literal receipt and self-aware-show-me-the-receipt. Writers should pick 🧾 when the message is about spend-coded energy, and avoid it when save-coded content is being described. The receipt has been a fixture of spend-coded captions since Unicode 11 and continues to land as the proof-and-show-me-the-receipt default in 2026 chats across platforms.",
+    "howPeopleUseIt": "🧾 shows up in spend captions, in 'show me the receipt' reactions, and in proof-coded posts. People send it during a spend-coded share, as a date-coded opener, or as a work team-expense signal. The emoji pairs naturally with 💰 for the money stack and with 💳 for the credit-card stack.\n\nIn close-friends chats 🧾 reads as 'spend-coded.' In dating-app messages it can land as a treat affection signal. In public posts it is the proof-coded and receipt default.",
+    "whenNotToUse": "Skip 🧾 in any context where save-coded content is being described. The show-me-the-receipt read is too spend. Avoid it in contexts where the sender wants to be obvious about casual-coded energy — the receipt is too proof.\n\nAlso avoid 🧾 in professional contexts where the team-expense read lands as 'audit' rather than 'spend-coded.'",
+    "howToReply": "Mirror 🧾 with another 🧾 if you are matching the spend energy, or pair with 💰 for the money stack. If the sender is signaling proof-coded, mirror with 🧾 or 💳 and a sentence that engages. If the sender is using 🧾 as a date-coded opener, mirror with 🧾 or ❤️ and a follow-up.\n\nIf 🧾 lands as a 'team expense' reaction, mirror with 🧾 or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🧾 mean in text?",
+        "answer": "🧾 means spend-coded, money-coded, or 'show me the receipt.' The receipt is the visual cue for spend-coded affection."
+      },
+      {
+        "question": "What does 🧾 mean from a guy?",
+        "answer": "From a guy, 🧾 reads as a spend-coded affection signal or 'treat me' coded humor. The receipt is firm rather than coded."
+      },
+      {
+        "question": "What does 🧾 mean on Instagram?",
+        "answer": "On Instagram, 🧾 is the default for spend-coded aesthetic captions and proof-overlay content."
+      },
+      {
+        "question": "When should I use 🧾?",
+        "answer": "Use 🧾 for spend-coded reactions, proof content, or 'show me the receipt' posts. Avoid it when save-coded content is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "show me the receipt 🧾",
+      "interpretation": "Friend signaling spend-coded vibes. Mirror with 🧾 or 💰."
+    },
+    {
+      "setting": "dating",
+      "message": "treat me 🧾",
+      "interpretation": "Spend-coded affection. Mirror with 🧾 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "team expense 🧾",
+      "interpretation": "Work-coded spend share. Reply with 🧾 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "spend sunday 🧾",
+      "interpretation": "Family-coded proof share. Mirror with 🧾 or 💳."
+    },
+    {
+      "setting": "social",
+      "message": "proof vibes 🧾",
+      "interpretation": "Public spend post. Mirror with 🧾 or 🙌."
+    }
+  ]
 }

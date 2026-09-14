@@ -1,47 +1,127 @@
 {
-  "unicode": "23F0",
+  "unicode": "U+23F0",
   "slug": "alarm-clock",
   "character": "⏰",
   "name": "Alarm Clock",
-  "shortName": "alarm",
+  "shortName": "alarm clock emoji",
   "category": "travel",
-  "subcategory": "time",
+  "subcategory": "Time",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Alarm Clock emoji.",
-  "tldr": "Alarm!",
+  "baseMeaning": "Alarm clock.",
+  "tldr": "Wake-coded, alarm-coded, or 'time up'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Alarm Clock.",
-      "example": "Look at this ⏰",
+      "meaning": "An alarm clock.",
+      "example": "wake up ⏰",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Wake up or reminder.",
-      "example": "Feeling ⏰",
+      "meaning": "Wake-coded or 'time up'.",
+      "example": "time's up ⏰",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⏰", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Wake-coded affection.",
+      "example": "wake me ⏰",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes ⏰",
+      "meaning": "Deadline-coded signal.",
+      "example": "deadline ⏰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "TWITTER",
+      "note": "Staple of wake-coded tweets and 'time up' reactions; reads as 'deadline' rather than literal alarm clock."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in wake-coded captions and deadline overlays; pairs with 📅 for the time stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to wake clips and 'time up' videos; reads as 'deadline-coded.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in deadline channels and time-coded servers; reads as 'team deadline.'"
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Uses ⏰ for wake-coded affection and self-aware time-up reactions; the 'deadline' read is dominant."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Familiar with ⏰ across platforms; reads as 'alarm' or 'wake-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use ⏰ literally as alarm clock; the cultural layer of deadline-coding is sometimes missed."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "⏰ Alarm Clock Emoji Meaning",
-  "seoDescription": "Learn what the Alarm Clock emoji ⏰ really means."
+  "seoTitle": "⏰ Alarm Clock Emoji Meaning - What Does ⏰ Really Mean?",
+  "seoDescription": "Learn what the alarm clock emoji ⏰ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ⏰ Alarm Clock emoji was added in Unicode 6 (2010) and has been a default for wake-coded reactions ever since. The classic red alarm clock is the visual shorthand for deadline, wake-coded affection, and 'time up' self-aware urgency. In 2026 ⏰ is the default emoji for wake captions, deadline reactions, and 'team deadline' drops.\n\nIn real-world chat ⏰ does very specific work. People send it in wake-coded captions, as a deadline affection signal, or as the visual equivalent of 'wake me.' The clock carries both literal alarm and self-aware-time-up. Writers should pick ⏰ when the message is about wake-coded energy, and avoid it when stopwatch-coded content is being described — that's ⏱️ territory. The clock has been a fixture of wake-coded captions since Unicode 6 and continues to land as the deadline-and-time-up default in 2026 chats across platforms.",
+    "howPeopleUseIt": "⏰ shows up in wake captions, in 'time up' reactions, and in deadline-coded posts. People send it during a wake-coded share, as a date-coded opener, or as a work team-deadline signal. The emoji pairs naturally with 📅 for the time stack and with ⏱️ for the stopwatch stack.\n\nIn close-friends chats ⏰ reads as 'wake-coded.' In dating-app messages it can land as a deadline affection signal. In public posts it is the deadline-coded and wake default.",
+    "whenNotToUse": "Skip ⏰ in any context where stopwatch-coded content is being described — ⏱️ is the stopwatch counterpart. Avoid it in contexts where the sender wants to be subtle about the deadline read — the bold clock is too obvious.\n\nAlso avoid ⏰ in professional contexts where the team-deadline read lands as 'overworked' rather than 'deadline-coded.'",
+    "howToReply": "Mirror ⏰ with another ⏰ if you are matching the wake energy, or pair with ⏱️ for the stopwatch stack. If the sender is signaling deadline-coded, mirror with ⏰ or 📅 and a sentence that engages. If the sender is using ⏰ as a date-coded opener, mirror with ⏰ or ❤️ and a follow-up.\n\nIf ⏰ lands as a 'team deadline' reaction, mirror with ⏰ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ⏰ mean in text?",
+        "answer": "⏰ means wake-coded, alarm-coded, or 'time up.' The clock is the visual cue for wake-coded affection."
+      },
+      {
+        "question": "What does ⏰ mean from a girl?",
+        "answer": "From a girl, ⏰ reads as a wake-coded affection signal or 'wake me' coded cute. The clock is warm-wake rather than coded."
+      },
+      {
+        "question": "What does ⏰ mean on Instagram?",
+        "answer": "On Instagram, ⏰ is the default for wake-coded aesthetic captions and deadline-overlay content."
+      },
+      {
+        "question": "When should I use ⏰?",
+        "answer": "Use ⏰ for wake-coded reactions, deadline content, or 'time up' posts. Avoid it when stopwatch-coded content is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "time's up ⏰",
+      "interpretation": "Friend signaling wake-coded vibes. Mirror with ⏰ or ⏱️."
+    },
+    {
+      "setting": "dating",
+      "message": "wake me ⏰",
+      "interpretation": "Wake-coded affection. Mirror with ⏰ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "deadline ⏰",
+      "interpretation": "Work-coded deadline share. Reply with ⏰ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "wake sunday ⏰",
+      "interpretation": "Family-coded wake share. Mirror with ⏰ or 📅."
+    },
+    {
+      "setting": "social",
+      "message": "time-up vibes ⏰",
+      "interpretation": "Public wake post. Mirror with ⏰ or 🙌."
+    }
+  ]
 }

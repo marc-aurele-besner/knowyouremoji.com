@@ -5,46 +5,123 @@
   "name": "Face with Peeking Eye",
   "shortName": "face with peeking eye emoji",
   "category": "Smileys & Emotion",
-  "subcategory": "Face Hand",
-  "unicodeVersion": "16.0",
-  "baseMeaning": "Peeking through fingers",
-  "tldr": "Cant look face",
+  "subcategory": "Face Reaction",
+  "unicodeVersion": "14.0",
+  "baseMeaning": "Peeking.",
+  "tldr": "Peeking, shy, or 'I shouldn't be looking'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Peeking",
-      "example": "🫣 is it over?",
+      "meaning": "A face peeking from behind a hand.",
+      "example": "Look at this 🫣",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Scared to look",
-      "example": "🫣 the results",
+      "meaning": "Peeking-coded or shy.",
+      "example": "don't look 🫣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Shy-coded affection.",
+      "example": "looking at you 🫣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Curiosity-coded peek.",
+      "example": "spying on slack 🫣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Staple of peeking-coded tweets and 'don't look' reactions; reads as 'I shouldn't be looking.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in shy-coded captions and peek-story overlays; pairs with 🙈 for the see-no-evil stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to peeking clips and 'curiosity' videos; reads as 'ooh.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in shy channels and peek-coded servers; reads as 'I shouldn't.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses 🫣 for shy-coded affection and self-aware peeking; the curiosity read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Familiar with 🫣 across platforms; reads as 'peek' or 'shy-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not recognize 🫣 as the peeking face; the cultural layer of curiosity-coding is often missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫣 Face with Peeking Eye Emoji Meaning - What Does 🫣 Really Mean?",
-  "seoDescription": "Learn what the face with peeking eye emoji 🫣 really means in texts and social media."
+  "seoDescription": "Learn what the face with peeking eye emoji 🫣 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🫣 Face with Peeking Eye emoji was added in Unicode 14 (2021) and has been a default for peek-coded reactions ever since. The yellow face peeking from behind a hand is the visual shorthand for curiosity, shy-coded affection, and 'I shouldn't be looking' self-aware peeking. In 2026 🫣 is the default emoji for shy captions, peek reactions, and 'ooh' drops.\n\nIn real-world chat 🫣 does very specific work. People send it in shy-coded captions, as a curious affection signal, or as the visual equivalent of 'I shouldn't.' The face carries both literal peeking and self-aware-curiosity. Writers should pick 🫣 when the message is about peek-coded energy, and avoid it when confidence is needed — the hand-over-face reads as 'I am shy.' The face has been a fixture of shy-coded captions since Unicode 14 and continues to land as the ooh-and-shy default in 2026 chats across platforms.",
+    "howPeopleUseIt": "🫣 shows up in shy captions, in 'don't look' reactions, and in peek-coded posts. People send it during a curiosity-coded share, as a date-coded opener, or as a self-aware peeking signal. The emoji pairs naturally with 🙈 for the see-no-evil stack and with 🫢 for the gasp stack.\n\nIn close-friends chats 🫣 reads as 'ooh.' In dating-app messages it can land as a shy-coded affection signal. In public posts it is the shy-coded and peek default.",
+    "whenNotToUse": "Skip 🫣 in any context where confidence or assertiveness is needed. The peeking read is too timid. Avoid it in professional contexts where the shy read lands as disengagement. Also avoid 🫣 in contexts where the sender wants to be loud — the hand-over-face is too subtle.",
+    "howToReply": "Mirror 🫣 with another 🫣 if you are matching the peek energy, or pair with 🙈 for the see-no-evil stack. If the sender is signaling shy-coded, mirror with 🫣 or 🫢 and a sentence that engages. If the sender is using 🫣 as a date-coded opener, mirror with 🫣 or ❤️ and a follow-up.\n\nIf 🫣 lands as a 'don't look' reaction, mirror with 🫣 or 🙈 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🫣 mean in text?",
+        "answer": "🫣 means peeking, shy, or 'I shouldn't be looking.' The face is the visual cue for curiosity-coded affection."
+      },
+      {
+        "question": "What does 🫣 mean from a guy?",
+        "answer": "From a guy, 🫣 reads as a shy-coded affection signal or 'ooh' coded humor. The face is timid rather than coded."
+      },
+      {
+        "question": "What does 🫣 mean on Instagram?",
+        "answer": "On Instagram, 🫣 is the default for shy-coded aesthetic captions and peek-overlay content."
+      },
+      {
+        "question": "When should I use 🫣?",
+        "answer": "Use 🫣 for peeking, shy-coded reactions, or 'ooh' posts. Avoid it when confidence is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "don't look 🫣",
+      "interpretation": "Friend signaling peek vibes. Mirror with 🫣 or 🙈."
+    },
+    {
+      "setting": "dating",
+      "message": "looking at you 🫣",
+      "interpretation": "Shy-coded affection. Mirror with 🫣 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "spying on slack 🫣",
+      "interpretation": "Work-coded curiosity share. Reply with 🫣 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "sneaky sunday 🫣",
+      "interpretation": "Family-coded peek share. Mirror with 🫣 or 🫢."
+    },
+    {
+      "setting": "social",
+      "message": "ooh vibes 🫣",
+      "interpretation": "Public shy post. Mirror with 🫣 or 🙈."
+    }
+  ]
 }

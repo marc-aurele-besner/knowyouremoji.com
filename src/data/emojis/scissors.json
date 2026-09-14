@@ -1,47 +1,127 @@
 {
-  "unicode": "2702",
+  "unicode": "U+2702",
   "slug": "scissors",
   "character": "✂️",
   "name": "Scissors",
-  "shortName": "cut",
+  "shortName": "scissors emoji",
   "category": "objects",
-  "subcategory": "office",
-  "unicodeVersion": "1.1",
-  "baseMeaning": "Scissors emoji.",
-  "tldr": "Cut!",
+  "subcategory": "Tool",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Scissors.",
+  "tldr": "Cut-coded, snip-coded, or 'goodbye'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Scissors.",
-      "example": "Look at this ✂️",
+      "meaning": "Scissors.",
+      "example": "cut ✂️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Cutting scissors.",
-      "example": "Feeling ✂️",
+      "meaning": "Cut-coded or 'goodbye'.",
+      "example": "goodbye ✂️",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ✂️", "riskLevel": "LOW" },
+    {
+      "context": "DATING",
+      "meaning": "Cut-coded affection.",
+      "example": "cut ties ✂️",
+      "riskLevel": "MEDIUM"
+    },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes ✂️",
+      "meaning": "Cut-coded signal.",
+      "example": "team cut ✂️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "TWITTER",
+      "note": "Staple of cut-coded tweets and 'goodbye' reactions; reads as 'snip' rather than literal scissors."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in cut-coded captions and snip overlays; pairs with 🧵 for the thread stack."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to cut clips and 'goodbye' videos; reads as 'snip-coded.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in cut channels and snip-coded servers; reads as 'team cut.'"
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Uses ✂️ for cut-coded affection and self-aware goodbye reactions; the 'snip' read is dominant."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Familiar with ✂️ across platforms; reads as 'cut' or 'snip-coded.'"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use ✂️ literally as scissors; the cultural layer of goodbye-coding is sometimes missed."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "✂️ Scissors Emoji Meaning",
-  "seoDescription": "Learn what the Scissors emoji ✂️ really means."
+  "seoTitle": "✂️ Scissors Emoji Meaning - What Does ✂️ Really Mean?",
+  "seoDescription": "Learn what the scissors emoji ✂️ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ✂️ Scissors emoji was added in Unicode 6 (2010) and has been a default for cut-coded reactions ever since. The black scissors with red handles is the visual shorthand for snip, cut-coded affection, and 'goodbye' self-aware separation. In 2026 ✂️ is the default emoji for cut captions, goodbye reactions, and 'team cut' drops.\n\nIn real-world chat ✂️ does very specific work. People send it in cut-coded captions, as a snip affection signal, or as the visual equivalent of 'cut ties.' The scissors carry both literal scissors and self-aware-goodbye. Writers should pick ✂️ when the message is about cut-coded energy, and avoid it when connection-coded content is being described. The scissors have been a fixture of cut-coded captions since Unicode 6 and continues to land as the snip-and-goodbye default in 2026 chats across platforms.",
+    "howPeopleUseIt": "✂️ shows up in cut captions, in 'goodbye' reactions, and in snip-coded posts. People send it during a cut-coded share, as a date-coded opener, or as a work team-cut signal. The emoji pairs naturally with 🧵 for the thread stack and with 🪡 for the needle stack.\n\nIn close-friends chats ✂️ reads as 'cut-coded.' In dating-app messages it can land as a snip affection signal. In public posts it is the snip-coded and cut default.",
+    "whenNotToUse": "Skip ✂️ in any context where connection-coded content is being described. The cut read is too separation-coded. Avoid it in contexts where the sender wants to be obvious about casual-coded energy — the scissors are too final.\n\nAlso avoid ✂️ in professional contexts where the team-cut read lands as 'layoff' rather than 'snip-coded.'",
+    "howToReply": "Mirror ✂️ with another ✂️ if you are matching the cut energy, or pair with 🧵 for the thread stack. If the sender is signaling snip-coded, mirror with ✂️ or 🪡 and a sentence that engages. If the sender is using ✂️ as a date-coded opener, mirror with ✂️ or ❤️ and a follow-up.\n\nIf ✂️ lands as a 'team cut' reaction, mirror with ✂️ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ✂️ mean in text?",
+        "answer": "✂️ means cut-coded, snip-coded, or 'goodbye.' The scissors are the visual cue for cut-coded affection."
+      },
+      {
+        "question": "What does ✂️ mean from a guy?",
+        "answer": "From a guy, ✂️ reads as a cut-coded affection signal or 'cut ties' coded humor. The scissors are firm rather than coded."
+      },
+      {
+        "question": "What does ✂️ mean on Instagram?",
+        "answer": "On Instagram, ✂️ is the default for cut-coded aesthetic captions and snip-overlay content."
+      },
+      {
+        "question": "When should I use ✂️?",
+        "answer": "Use ✂️ for cut-coded reactions, snip content, or 'goodbye' posts. Avoid it when connection-coded content is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "goodbye ✂️",
+      "interpretation": "Friend signaling cut-coded vibes. Mirror with ✂️ or 🧵."
+    },
+    {
+      "setting": "dating",
+      "message": "cut ties ✂️",
+      "interpretation": "Cut-coded affection. Mirror with ✂️ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "team cut ✂️",
+      "interpretation": "Work-coded cut share. Reply with ✂️ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "snip sunday ✂️",
+      "interpretation": "Family-coded cut share. Mirror with ✂️ or 🪡."
+    },
+    {
+      "setting": "social",
+      "message": "snip vibes ✂️",
+      "interpretation": "Public cut post. Mirror with ✂️ or 🙌."
+    }
+  ]
 }
