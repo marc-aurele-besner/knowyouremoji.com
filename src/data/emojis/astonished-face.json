@@ -37,34 +37,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Common reaction to shocking news or plot twists."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Used in comments showing surprise."
+      "note": "Sticker on big-news stories and visible-shock reactions; the wide eyes and jaw-drop fit fandom and reaction-coded stories."
     },
     {
-      "platform": "WHATSAPP",
-      "note": "Used in personal conversations for genuine surprise."
+      "platform": "TWITTER",
+      "note": "Reply to viral news and jaw-drop tweets; reads as the universal 'WHAT' tag among adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to shocking clips; pairs with 'did you see this?' reactions and big-moment content."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to big announcements and jaw-drop news; the wide-eye read is the default 'I cannot believe' tag."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for genuine and exaggerated shock."
+      "note": "Uses 😲 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic shocked emoji for surprising moments."
+      "note": "Reads 😲 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 😲 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "Understood as surprise or shock."
+      "note": "Uses 😲 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😲 Astonished Face Emoji Meaning - What Does 😲 Really Mean?",
-  "seoDescription": "Learn what the astonished face emoji 😲 really means in texting. Shows shock, surprise, or being mind-blown. Complete context guide."
+  "seoDescription": "Learn what the astonished face emoji 😲 really means in texting. Shows shock, surprise, or being mind-blown. Complete context guide.",
+  "longForm": {
+    "overview": "The 😲 Astonished Face emoji (alt slug) was added in Unicode 6 (2010) and is drawn as a yellow round face with raised eyebrows, wide open eyes, and a small open oval mouth. The visual cue reads instantly as shock, surprise, or the visible 'wait, what?' jaw-drop. By 2026 😲 has become the go-to emoji for the genuine-shock reaction, the visible 'I cannot believe this' tag, and the surprised-by-news default.\n\nIn modern chat 😲 does very specific work. People send it as a literal shocked feeling, as the visible 'did you see this?' tag, or as the surprised reaction. The wide eyes and small open mouth are the visual cue that something genuinely surprised the sender. Writers should pick 😲 when the surprise is genuine and the jaw is dropping, and avoid it when the emotion is milder — 😯 fits for calmer surprise.",
+    "howPeopleUseIt": "😲 lands on a friend's 'you got engaged?!' message, in a work channel where big news just dropped, and in a dating-app DM where the sender is reacting to a jaw-drop. The wide eyes anchor the read.\n\nIn close-friends chats 😲 reads as the universal 'WHAT' tag. On X the emoji punctuates reaction-to-big-news. The emoji pairs with 😱 for the layered shocked-and-screaming stack and with 🤯 for the mind-blown stack.",
+    "whenNotToUse": "Skip 😲 in any context where the surprise is mild or performative. The wide-eye-jaw-drop read is too loud for calm surprise. Avoid 😲 in ironic contexts where the sender is being sarcastic — 🙄 fits better when the surprise is faked.",
+    "howToReply": "If a friend sends 😲 on a big-news reaction, mirror with another 😲 or a sentence that engages the news. The shock chain reads as solidarity.\n\nIf 😲 lands as the surprised reaction, reply with another 😲 or 🤯. And if you want to send 😲 yourself, pair it with the subject so the shock is clear.",
+    "faqs": [
+      {
+        "question": "What does 😲 mean in text?",
+        "answer": "😲 means shocked, surprised, or 'I cannot believe this.' The wide eyes and small oval mouth are the visual cue that something genuinely surprised the sender."
+      },
+      {
+        "question": "Is 😲 the same as 😱?",
+        "answer": "Similar but not identical. 😱 is the screaming-in-fear face; 😲 is the jaw-drop shock. 😲 often precedes 😱 in escalation threads."
+      },
+      {
+        "question": "What does 😲 mean from a girl?",
+        "answer": "From a girl or anyone, 😲 carries the same shock read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 😲 mean at work?",
+        "answer": "In Slack, 😲 lands as the visible 'did you see this?' tag after big news. Use sparingly and pair with a clarifying sentence."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "you GOT the job 😲",
+      "interpretation": "Friend reacting to big news. Mirror with another 😲 or 🎉 so the shock-celebration chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "you're moving here? 😲",
+      "interpretation": "Dating-coded shock at good news. Mirror with 😲 or ❤️ so the warm surprise returns."
+    },
+    {
+      "setting": "work",
+      "message": "the client wants to double the contract 😲",
+      "interpretation": "Work-coded jaw-drop. Reply with a sentence that engages the moment rather than another emoji."
+    },
+    {
+      "setting": "family",
+      "message": "sister is pregnant 😲",
+      "interpretation": "Family-coded shock at big news. Mirror with 😲 or ❤️ so the family surprise reads back."
+    },
+    {
+      "setting": "social",
+      "message": "did this just happen 😲",
+      "interpretation": "Public adult-coded shock. Mirror with another 😲 or 🤯 so the shock chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

@@ -37,34 +37,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about fireworks."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on new-year-aesthetic captions and celebration-coded story overlays; the exploding-colorful-fireworks fits adult-coded celebration content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to new-year-coded and celebration-coded tweets; reads as the universal fireworks default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to celebration-coded content; pairs with 'happy new year' and celebration clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to celebration-coded content; the exploding-fireworks is the default 'fireworks' tag in adult-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🎆 in casual contexts."
+      "note": "Uses 🎆 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🎆 across platforms."
+      "note": "Reads 🎆 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🎆 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🎆 literally."
+      "note": "Uses 🎆 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎆 Fireworks Emoji Meaning - What Does 🎆 Really Mean?",
-  "seoDescription": "Learn what the fireworks emoji 🎆 really means in texts and social media."
+  "seoDescription": "Learn what the fireworks emoji 🎆 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🎆 Fireworks emoji was added in Unicode 6 (2010) and is drawn as colorful exploding fireworks in a night sky with multiple bursts of pink, blue, and yellow stars. The visual cue reads instantly as fireworks, the visible-celebration default, or the new-year-coded 'happy new year' tag. By 2026 🎆 has become the go-to emoji for the fireworks-coded reaction, the visible-celebration default, and the new-year-coded tag.\n\nIn modern chat 🎆 does very specific work. People send it as a literal fireworks reference, as the visible celebration default, or as the new-year-coded tag. The exploding-colorful-fireworks is the visual cue that the read is celebration-coded. Writers should pick 🎆 when the read is celebration or new-year, and avoid it when the read is indoor-fireworks — 🪅 fits better there.",
+    "howPeopleUseIt": "🎆 lands on a friend's 'happy new year' message, in a work channel where someone is celebrating a milestone, and in a dating-app DM where the sender is sending celebration-coded content. The exploding-colorful-fireworks anchors the read.\n\nIn close-friends chats 🎆 reads as the universal celebration default. On X the emoji punctuates new-year-coded and celebration-coded tweets. The emoji pairs with 🎉 for the layered celebration-coded stack and with 🥂 for the layered new-year pair stack.",
+    "whenNotToUse": "Skip 🎆 in any context where the read is indoor-fireworks — 🪅 fits better. Avoid 🎆 in work channels where the celebration-coded read lands as off-topic. Pick 🎉 when the read is party-coded.",
+    "howToReply": "If a friend sends 🎆 on a celebration-coded message, mirror with another 🎆 or 🎉 to match the celebration energy. The fireworks chain reads as solidarity.\n\nIf 🎆 lands as the new-year-coded default, reply with another 🎆 or 🥂. And if you want to send 🎆 yourself, pair it with the moment so the celebration-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🎆 mean in text?",
+        "answer": "🎆 means fireworks, celebration default, or new-year-coded tag. The exploding-colorful-fireworks is the visual cue that the read is celebration-coded."
+      },
+      {
+        "question": "Is 🎆 flirty?",
+        "answer": "Sometimes. 🎆 reads as new-year-coded flirty in a dating thread combined with 'happy new year' content."
+      },
+      {
+        "question": "What does 🎆 mean from a guy?",
+        "answer": "From a guy or anyone, 🎆 carries the same celebration-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🎆 mean on Instagram?",
+        "answer": "On Instagram, 🎆 is the default sticker on new-year-aesthetic-coded captions and celebration-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy new year 🎆",
+      "interpretation": "Friend new-year share. Mirror with another 🎆 or 🥂 so the new-year chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "let's celebrate 🎆",
+      "interpretation": "Dating-coded celebration share. Mirror with 🎆 or 🥂 so the warm chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "happy 2026 🎆",
+      "interpretation": "Public adult-coded new-year share. Mirror with another 🎆 or 🥂 so the new-year chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma 🎆",
+      "interpretation": "Family-coded warm share. Mirror with 🎆 or 🎉 so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team milestone 🎆",
+      "interpretation": "Work-coded celebration share. Mirror with 🎉 or a sentence — 🎆 can land as off-topic in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

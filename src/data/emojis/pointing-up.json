@@ -37,30 +37,38 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Making a point."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Highlighting something above."
+      "note": "Sticker on important-note stories and key-point overlays; the pointing finger fits attention-directing adult content."
     },
     {
-      "platform": "SLACK",
-      "note": "Important note."
+      "platform": "TWITTER",
+      "note": "Reply to 'key point above' tweets and wait-coded content; reads as the visible 'wait, important' tag across reply-guy audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to directing content; pairs with attention-directing and 'actually' clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to key-coded content; the pointing finger is the default 'wait, important' tag in chat-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Actually meme."
+      "note": "Uses ☝️ across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Making a point."
+      "note": "Reads ☝️ as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends ☝️ for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "Pointing upward."
+      "note": "Uses ☝️ either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
@@ -73,5 +81,58 @@
     "pointing-up-medium",
     "pointing-up-medium-dark",
     "pointing-up-dark"
-  ]
+  ],
+  "longForm": {
+    "overview": "The ☝️ Index Pointing Up emoji was added in Unicode 6 (2010) and is drawn as a yellow hand with the palm facing forward and the index finger pointing upward. The visual cue reads instantly as 'look up,' direction, or the visible 'this is important' tag. By 2026 ☝️ has become the go-to emoji for the attention-directing tag above, the visible 'wait, important point' default, and the small-noted-but-key-coded reference.\n\nIn modern chat ☝️ does very specific work. People send it as a literal up-direction tag, as the visible 'wait, listen' marker, or as the small-but-key-coded reference. The pointing-index-finger-up is the visual cue that the message is directing attention upward or signaling an important note. Writers should pick ☝️ when the read is 'wait, important' or up-direction, and avoid it when the read is different — 👇 fits better for below-coded direction.",
+    "howPeopleUseIt": "☝️ lands on a friend's 'wait, important' message, in a work channel where someone is signaling a key point, and in a dating-app DM where the sender is making a small-but-key-coded note. The pointing-index-finger-up anchors the read.\n\nIn close-friends chats ☝️ reads as the universal 'wait, important' tag and the up-pointing default. On X the emoji punctuates 'key point above' coded tweets. The emoji pairs with 👇 for the layered up-and-down pointing pair and with 💡 for the idea-coded reference combo.",
+    "whenNotToUse": "Skip ☝️ in any context where the direction is down — 👇 fits better. Avoid ☝️ in ironic contexts where the pointing is faked — 🙄 fits better when the important note is performed.",
+    "howToReply": "If a friend sends ☝️ on an important-note message, mirror with a sentence that engages the point. The pointing chain needs an audience.\n\nIf ☝️ lands as the 'wait, listen' default, reply with a sentence that engages the note. And if you want to send ☝️ yourself, pair it with the subject so the direction is clear.",
+    "faqs": [
+      {
+        "question": "What does ☝️ mean in text?",
+        "answer": "☝️ means 'look up,' 'wait, important,' or up-direction. The pointing-index-finger-up is the visual cue that the message is directing attention upward or signaling an important note."
+      },
+      {
+        "question": "Is ☝️ passive aggressive?",
+        "answer": "Sometimes. ☝️ can read as visible correction or 'well, actually' coded moment in a thread where the sender is being slightly smug. Watch the surrounding context."
+      },
+      {
+        "question": "What does ☝️ mean from a guy?",
+        "answer": "From a guy or anyone, ☝️ carries the same up-direction/important-note read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does ☝️ mean at work?",
+        "answer": "In Slack, ☝️ reads as the 'wait, important note' tag. Pair with a sentence about the key point so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "wait, important point ☝️",
+      "interpretation": "Friend signaling a key point. Mirror with a sentence that engages the point, not just ☝️."
+    },
+    {
+      "setting": "dating",
+      "message": "small thing but ☝️",
+      "interpretation": "Dating-coded small-but-key note. Mirror with a sentence that listens, not just a pointing emoji."
+    },
+    {
+      "setting": "social",
+      "message": "actually, ☝️",
+      "interpretation": "Public adult-coded wait-coded note. Mirror with a sentence that engages the correction, not just ☝️."
+    },
+    {
+      "setting": "family",
+      "message": "one thing though ☝️",
+      "interpretation": "Family-coded small-note share. Mirror with a sentence that engages, not just ☝️."
+    },
+    {
+      "setting": "work",
+      "message": "well actually ☝️",
+      "interpretation": "Work-coded wait-note. Reply with a clarifying question — ☝️ can land as slightly smug in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

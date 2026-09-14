@@ -25,34 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about waving hand."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on welcome stories and friendly-coded story overlays; the open palm fits warm-coded adult content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to greeting tweets and friendly-coded 'hi there' content; reads as the universal 'hello' tag across reply-guy audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to friendly-coded content; pairs with 'hi friends' clip reactions and warm-coded welcomes."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Work-coded 'morning everyone' or 'signing off' tag; pair with a sentence about context so the channel stays useful."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 👋 in casual contexts."
+      "note": "Uses 👋 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 👋 across platforms."
+      "note": "Reads 👋 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 👋 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 👋 literally."
+      "note": "Uses 👋 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👋 Waving Hand Emoji Meaning - What Does 👋 Really Mean?",
-  "seoDescription": "Learn what the waving hand emoji 👋 really means in texts and social media."
+  "seoDescription": "Learn what the waving hand emoji 👋 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 👋 Waving Hand emoji was added in Unicode 6 (2010) and is drawn as a yellow hand with the palm facing forward and fingers slightly spread in a friendly waving motion. The visual cue reads instantly as a hello, goodbye, or the visible 'hey there' tag. By 2026 👋 has become the go-to emoji for friendly-coded greetings, the visible 'hi' tag, and the soft-coded welcome default.\n\nIn modern chat 👋 does very specific work. People send it as a literal hello/goodbye, as the visible 'welcome' tag, or as the friendly-coded opener. The open palm is the visual cue that the gesture is welcoming. Writers should pick 👋 when the read is greeting or friendly-coded welcome, and avoid it when the read is different — 🤝 fits better for the formal handshake-coded moment.",
+    "howPeopleUseIt": "👋 lands on a friend's 'hey, how are you?' message, in a work channel where someone is signing in or out, and in a dating-app DM where the sender is greeting. The open palm anchors the read.\n\nIn close-friends chats 👋 reads as the universal 'hey there' tag and the friendly-coded opener. On X the emoji punctuates 'hi friends' coded tweets. The emoji pairs with 😊 for the layered greet-and-smile stack and with 🤗 for the hug-coded welcome combo.",
+    "whenNotToUse": "Skip 👋 in any context where the greeting is formal or the read is professional-only. The open palm is too casual for formal-coded welcome moments. Avoid 👋 in ironic contexts where the wave is faked — 🙄 fits better when the friendly is performed.",
+    "howToReply": "If a friend sends 👋 on a greeting message, mirror with another 👋 or 😊 to match the friendly energy. The wave chain reads as solidarity.\n\nIf 👋 lands as the friendly-coded opener, reply with another 👋 or 🤗. And if you want to send 👋 yourself, pair it with the moment so the friendly read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👋 mean in text?",
+        "answer": "👋 means hello, goodbye, or 'hey there.' The open palm is the visual cue that the gesture is welcoming and friendly."
+      },
+      {
+        "question": "What does 👋 mean from a guy?",
+        "answer": "From a guy or anyone, 👋 carries the same greeting read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "Is 👋 flirty?",
+        "answer": "Sometimes, gently. 👋 can read as soft-coded flirty hello in a dating thread. It is warmer than a literal 'hi' but less loaded than 😘."
+      },
+      {
+        "question": "What does 👋 mean at work?",
+        "answer": "In Slack, 👋 reads as the 'morning everyone' or 'signing off' tag. Pair with a sentence about context so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "hey how are you 👋",
+      "interpretation": "Friend greeting opener. Mirror with another 👋 or a sentence that responds to the question."
+    },
+    {
+      "setting": "dating",
+      "message": "hey there 👋",
+      "interpretation": "Dating-coded soft flirty hello. Mirror with 👋 or 😊 so the warm greeting chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "hi friends 👋",
+      "interpretation": "Public adult-coded greeting. Mirror with another 👋 or 😊 so the warm coded chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "we're here 👋",
+      "interpretation": "Family-coded arrival. Mirror with 👋 or 🤗 so the family arrival chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "morning team 👋",
+      "interpretation": "Work-coded morning greeting. Mirror with another 👋 or a sentence that engages the team."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

@@ -25,34 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about heart suit."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on card-suit-coded captions and visible-love-symbol overlays; the playing-card-heart fits adult-coded suit-coded content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to suit-coded and 'card' tweets; reads as the universal card-suit default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to card-coded content; pairs with suit-coded and 'four-suit' clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to card-coded content; the playing-card-heart is the default 'suit' tag in card-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ♥ in casual contexts."
+      "note": "Uses ♥ across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ♥ across platforms."
+      "note": "Reads ♥ as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends ♥ for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use ♥ literally."
+      "note": "Uses ♥ either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "♥ Heart Suit Emoji Meaning - What Does ♥ Really Mean?",
-  "seoDescription": "Learn what the heart suit emoji ♥ really means in texts and social media."
+  "seoDescription": "Learn what the heart suit emoji ♥ really means in texts and social media.",
+  "longForm": {
+    "overview": "The ♥️ Heart Suit emoji was added in Unicode 1.1 (1993) as a black or red playing card heart suit symbol, paired with variation selectors for color in modern emoji sets. The visual cue reads instantly as card-suit-coded love, romantic-coded symbol, or the visible-'heart' card default. By 2026 ♥️ has become the go-to emoji for card-suit-coded hearts, the visible-playing-card default, and the romantic-coded symbol that pairs with ♦♣♠ for the four-suit stack.\n\nIn modern chat ♥️ does very specific work. People send it as a literal playing-card heart, as the visible card-suit-coded default, or as the romantic-symbol layer in a card-coded combo. The playing-card-heart is the visual cue that the message is suit-coded. Writers should pick ♥️ when the read is card-suit-coded or symbol-coded love, and avoid it when the read is love-coded reaction — ❤️ fits better for the love-coded affection default.",
+    "howPeopleUseIt": "♥️ lands on a friend's 'I love this card' message, in a work channel where someone is referencing suit-coded content, and in a dating-app DM where the sender is sending a love-coded symbol. The playing-card-heart anchors the read.\n\nIn close-friends chats ♥️ reads as the universal card-suit default. On X the emoji punctuates suit-coded and 'love' card tweets. The emoji pairs with ♦️♣️♠️ for the layered four-suit stack and with ❤️ for the layered card-suit-and-affection stack.",
+    "whenNotToUse": "Skip ♥️ in any context where the read is love-coded affection — ❤️ fits better. Avoid ♥️ in ironic contexts where the suit is faked — 🙄 fits better there.",
+    "howToReply": "If a friend sends ♥️ on a card-suit-coded message, mirror with another ♥️ or ♦️ to match the suit-coded energy. The card-suit chain reads as solidarity.\n\nIf ♥️ lands as the romantic-symbol default, reply with another ♥️ or ❤️. And if you want to send ♥️ yourself, pair it with the moment so the suit-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does ♥️ mean in text?",
+        "answer": "♥️ means card-suit-coded love, romantic symbol, or visible playing-card heart. The playing-card-heart is the visual cue that the message is suit-coded."
+      },
+      {
+        "question": "Is ♥️ flirty?",
+        "answer": "Sometimes. ♥️ reads as suit-coded romance-coded. In a dating thread it works as a card-coded love symbol but is less warm than ❤️."
+      },
+      {
+        "question": "What does ♥️ mean from a guy?",
+        "answer": "From a guy or anyone, ♥️ carries the same card-suit read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does ♥️ mean at work?",
+        "answer": "In Slack, ♥️ reads as the suit-coded default or card-coded reference. Pair with a sentence about the card context so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "love this game ♥️",
+      "interpretation": "Friend suit-coded share. Mirror with another ♥️ or ♦️ so the card-suit chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "you're my ace of hearts ♥️",
+      "interpretation": "Dating-coded suit-coded romance share. Mirror with ♥️ or ❤️ so the suit-coded romance chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "poker night ♥️♦️♣️♠️",
+      "interpretation": "Public adult-coded four-suit share. Mirror with ♥️ or another suit emoji so the four-suit chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma ♥️",
+      "interpretation": "Family-coded suit-coded love share. Mirror with ♥️ or ❤️ so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "love this design ♥️",
+      "interpretation": "Work-coded suit-coded share. Mirror with another ❤️ or a sentence — ♥️ can land as too suit-coded in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

@@ -37,34 +37,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about fire engine."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on emergency-coded captions and 'on it' story overlays; the red-fire-engine-with-ladder fits adult-coded emergency content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to emergency-coded and 'on it' tweets; reads as the universal fire engine default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to emergency-coded content; pairs with 'on fire' and emergency-coded clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to emergency-coded content; the red-fire-engine is the default 'fire engine' tag in adult-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🚒 in casual contexts."
+      "note": "Uses 🚒 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🚒 across platforms."
+      "note": "Reads 🚒 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🚒 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🚒 literally."
+      "note": "Uses 🚒 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🚒 Fire Engine Emoji Meaning - What Does 🚒 Really Mean?",
-  "seoDescription": "Learn what the fire engine emoji 🚒 really means in texts and social media."
+  "seoDescription": "Learn what the fire engine emoji 🚒 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🚒 Fire Engine emoji was added in Unicode 6 (2010) and is drawn as a red fire engine truck with a ladder on top, visible wheels, and emergency lights. The visual cue reads instantly as fire engine, the visible-emergency default, or the 'on fire' coded work-coded tag. By 2026 🚒 has become the go-to emoji for the fire-engine-coded reaction, the visible-emergency default, and the work-coded 'on it' tag.\n\nIn modern chat 🚒 does very specific work. People send it as a literal fire engine reference, as the visible emergency default, or as the work-coded 'on it' tag. The red-fire-engine-with-ladder is the visual cue that the read is emergency-coded. Writers should pick 🚒 when the read is fire-engine or emergency-coded, and avoid it when the read is fire-only — 🔥 fits better there.",
+    "howPeopleUseIt": "🚒 lands on a friend's 'on fire' message, in a work channel where someone is signaling emergency, and in a dating-app DM where the sender is sending emergency-coded content. The red-fire-engine-with-ladder anchors the read.\n\nIn close-friends chats 🚒 reads as the universal emergency default. On X the emoji punctuates emergency-coded and 'on it' tweets. The emoji pairs with 🔥 for the layered fire-coded stack and with 🚑 for the layered emergency pair stack.",
+    "whenNotToUse": "Skip 🚒 in any context where the read is fire-only — 🔥 fits better. Avoid 🚒 in work channels where the emergency-coded read lands as alarmist. Pick 🔥 when the read is fire-only.",
+    "howToReply": "If a friend sends 🚒 on an emergency-coded message, mirror with another 🚒 or 🚑 to match the emergency energy. The fire-engine chain reads as solidarity.\n\nIf 🚒 lands as the 'on it' default, reply with another 🚒 or 🔥. And if you want to send 🚒 yourself, pair it with the moment so the emergency-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🚒 mean in text?",
+        "answer": "🚒 means fire engine, emergency default, or work-coded 'on it' tag. The red-fire-engine-with-ladder is the visual cue that the read is emergency-coded."
+      },
+      {
+        "question": "Is 🚒 flirty?",
+        "answer": "Sometimes. 🚒 reads as 'I am coming for you' coded flirty in a dating thread. It is more emergency-coded than flirty-coded by itself."
+      },
+      {
+        "question": "What does 🚒 mean from a guy?",
+        "answer": "From a guy or anyone, 🚒 carries the same emergency-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🚒 mean on Instagram?",
+        "answer": "On Instagram, 🚒 is the default sticker on emergency-coded captions and 'on it' story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "on it 🚒",
+      "interpretation": "Friend emergency-coded share. Mirror with another 🚒 or 🚑 so the emergency chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "coming for you 🚒",
+      "interpretation": "Dating-coded flirty share. Mirror with 🚒 or 🔥 so the warm chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "fire engine day 🚒",
+      "interpretation": "Public adult-coded emergency share. Mirror with another 🚒 or 🚑 so the emergency chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma 🚒",
+      "interpretation": "Family-coded warm share. Mirror with 🚒 or 🔥 so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team on it 🚒",
+      "interpretation": "Work-coded emergency tag. Mirror with a clarifying sentence — 🚒 alone can land as alarmist in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

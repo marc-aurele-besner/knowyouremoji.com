@@ -25,26 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "platform": "INSTAGRAM",
+      "note": "Sticker on calm-down-coded captions and 'relax' overlays; the palm-down fits adult-coded calm-down content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "platform": "TWITTER",
+      "note": "Reply to calm-down-coded and 'relax' tweets; reads as the visible 'calm down' tag across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to calm-down-coded content; pairs with 'relax' clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to calm-down-coded content; the palm-down is the default 'relax' tag in chat-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses 🫳 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Reads 🫳 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🫳 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Uses 🫳 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫳 Palm Down Hand Emoji Meaning - What Does 🫳 Really Mean?",
-  "seoDescription": "Learn what the palm down hand emoji 🫳 really means in texts and social media."
+  "seoDescription": "Learn what the palm down hand emoji 🫳 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🫳 Palm Down Hand emoji was added in Unicode 14 (2021) and is drawn as a yellow hand with the palm facing downward, fingers together, in a 'put it down' or 'calm down' gesture. The visual cue reads instantly as 'calm down,' putting-down, or the visible-'relax' tag. By 2026 🫳 has become the go-to emoji for the calm-down-coded reaction, the visible-'relax' tag, and the put-it-down default.\n\nIn modern chat 🫳 does very specific work. People send it as a literal calm-down feeling, as the visible 'calm down' tag, or as the put-it-down default. The palm-down-fingers-together is the visual cue that the message is calm-down-coded. Writers should pick 🫳 when the read is calm down or relax, and avoid it when the read is different — ✋ fits better for the universal stop coded default.",
+    "howPeopleUseIt": "🫳 lands on a friend's 'calm down' message, in a work channel where someone is signaling relax, and in a dating-app DM where the sender is reacting with calm-down-coded content. The palm-down-fingers-together anchors the read.\n\nIn close-friends chats 🫳 reads as the universal 'calm down' tag and the put-it-down default. On X the emoji punctuates calm-down-coded tweets. The emoji pairs with ✋ for the layered calm-and-stop stack and with 🤚 for the layered palm-down pair stack.",
+    "whenNotToUse": "Skip 🫳 in any context where the read is purely stop — ✋ fits better. Avoid 🫳 in ironic contexts where the calm-down is faked — 🙄 fits better there.",
+    "howToReply": "If a friend sends 🫳 on a calm-down message, mirror with a sentence that respects the request. The palm-down chain needs an acknowledgment.\n\nIf 🫳 lands as the 'relax' default, reply with a sentence that engages the calm-down. And if you want to send 🫳 yourself, pair it with the moment so the calm-down read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫳 mean in text?",
+        "answer": "🫳 means 'calm down,' putting-down, or 'relax.' The palm-down-fingers-together is the visual cue that the message is calm-down-coded."
+      },
+      {
+        "question": "What does 🫳 mean from a girl?",
+        "answer": "From a girl or anyone, 🫳 carries the same calm-down read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "Is 🫳 passive aggressive?",
+        "answer": "Sometimes. 🫳 can read as visible-'I am telling you to calm down' in a tense thread. Watch the surrounding context for the read."
+      },
+      {
+        "question": "What does 🫳 mean at work?",
+        "answer": "In Slack, 🫳 reads as the 'let's stay calm' tag in a tense thread. Pair with a sentence about de-escalation so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "calm down bestie 🫳",
+      "interpretation": "Friend calm-down-coded share. Mirror with a sentence that acknowledges the request."
+    },
+    {
+      "setting": "dating",
+      "message": "let's just chill 🫳",
+      "interpretation": "Dating-coded soft-coded calm-down share. Mirror with a sentence that respects, not just another palm-down."
+    },
+    {
+      "setting": "social",
+      "message": "take a breath 🫳",
+      "interpretation": "Public adult-coded calm-down share. Mirror with a sentence that engages the calm-down, not just the emoji."
+    },
+    {
+      "setting": "family",
+      "message": "it's fine, calm down 🫳",
+      "interpretation": "Family-coded calm-down share. Mirror with a sentence that respects the request."
+    },
+    {
+      "setting": "work",
+      "message": "let's de-escalate 🫳",
+      "interpretation": "Work-coded calm-down tag. Mirror with a sentence about de-escalation so the channel stays useful."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

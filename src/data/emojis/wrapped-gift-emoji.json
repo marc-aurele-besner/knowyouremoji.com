@@ -37,34 +37,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used in posts about wrapped gift."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on birthday-aesthetic captions and holiday-coded story overlays; the wrapped-box-with-bow fits adult-coded celebration content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "platform": "TWITTER",
+      "note": "Reply to birthday-coded and holiday-coded tweets; reads as the universal gift default across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to celebration-coded content; pairs with birthday-coded and 'happy birthday' clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to celebration-coded content; the wrapped-box is the default 'gift' tag in adult-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🎁 in casual contexts."
+      "note": "Uses 🎁 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🎁 across platforms."
+      "note": "Reads 🎁 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🎁 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🎁 literally."
+      "note": "Uses 🎁 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🎁 Wrapped Gift Emoji Meaning - What Does 🎁 Really Mean?",
-  "seoDescription": "Learn what the wrapped gift emoji 🎁 really means in texts and social media."
+  "seoDescription": "Learn what the wrapped gift emoji 🎁 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🎁 Wrapped Gift emoji was added in Unicode 6 (2010) and is drawn as a square gift box wrapped in paper with a red ribbon and bow on top. The visual cue reads instantly as wrapped present, the visible-birthday-or-holiday default, or the surprise-coded celebration tag. By 2026 🎁 has become the go-to emoji for the gift-coded celebration reaction, the visible-'I have something for you' tag, and the warm-coded birthday or holiday-coded default.\n\nIn modern chat 🎁 does very specific work. People send it as a literal gift reference, as the visible birthday or holiday-coded default, or as the surprise-coded celebration tag. The wrapped-box-with-bow is the visual cue that the read is gift-coded. Writers should pick 🎁 when the read is gift or surprise-celebration, and avoid it when the read is unboxed-present — 🎀 fits better there.",
+    "howPeopleUseIt": "🎁 lands on a friend's 'happy birthday' message, in a work channel where someone is celebrating a milestone, and in a dating-app DM where the sender is sending surprise-coded content. The wrapped-box-with-bow anchors the read.\n\nIn close-friends chats 🎁 reads as the universal gift-coded default. On X the emoji punctuates birthday-coded and holiday-coded tweets. The emoji pairs with 🎂 for the layered birthday-coded stack and with 🎉 for the layered celebration pair stack.",
+    "whenNotToUse": "Skip 🎁 in any context where the read is unboxed-present — 🎀 fits better. Avoid 🎁 in work channels where the surprise-coded read lands as off-topic. Pick 🎈 when the read is party-coded.",
+    "howToReply": "If a friend sends 🎁 on a gift-coded message, mirror with another 🎁 or 🎂 to match the celebration energy. The gift chain reads as solidarity.\n\nIf 🎁 lands as the surprise-coded default, reply with another 🎁 or 🎉. And if you want to send 🎁 yourself, pair it with the moment so the gift-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🎁 mean in text?",
+        "answer": "🎁 means wrapped gift, birthday or holiday-coded default, or surprise-coded celebration tag. The wrapped-box-with-bow is the visual cue that the read is gift-coded."
+      },
+      {
+        "question": "Is 🎁 flirty?",
+        "answer": "Sometimes. 🎁 reads as 'I have something for you' flirty in a dating thread combined with surprise-coded content."
+      },
+      {
+        "question": "What does 🎁 mean from a guy?",
+        "answer": "From a guy or anyone, 🎁 carries the same gift-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🎁 mean on Instagram?",
+        "answer": "On Instagram, 🎁 is the default sticker on birthday-aesthetic-coded captions and holiday-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy birthday 🎁",
+      "interpretation": "Friend birthday-coded share. Mirror with another 🎁 or 🎂 so the birthday chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "I have something for you 🎁",
+      "interpretation": "Dating-coded flirty surprise share. Mirror with 🎁 or ❤️ so the warm chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "happy holidays 🎁",
+      "interpretation": "Public adult-coded holiday share. Mirror with another 🎁 or 🎄 so the holiday chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma 🎁",
+      "interpretation": "Family-coded warm share. Mirror with 🎁 or 🎂 so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team milestone 🎁",
+      "interpretation": "Work-coded celebration share. Mirror with 🎉 or a sentence — 🎁 can land as off-topic in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
