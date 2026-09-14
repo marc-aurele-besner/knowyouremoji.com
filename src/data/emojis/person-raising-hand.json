@@ -6,61 +6,65 @@
   "shortName": "person raising hand",
   "category": "people",
   "subcategory": "gesture",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Person Raising Hand emoji.",
-  "tldr": "Represents person raising hand.",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "A person with one hand raised, indicating volunteering, asking a question, or wanting to speak.",
+  "tldr": "Volunteering, asking, or 'pick me!'",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents person raising hand.",
-      "example": "Look at this person raising hand 🙋",
+      "meaning": "Raising a hand to volunteer or ask.",
+      "example": "I have a question 🙋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a person raising hand.",
-      "example": "They're such a person raising hand 🙋",
+      "meaning": "Enthusiastic volunteering or 'me!' reactions.",
+      "example": "Me! 🙋",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Professional context for person raising hand.",
-      "example": "Meeting with the team 🙋",
+      "context": "DATING",
+      "meaning": "Soft-flirty 'pick me' signal.",
+      "example": "take me out 🙋",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing person raising hand.",
-      "example": "Sure, I'm totally a person raising hand 🙋",
+      "meaning": "Mock volunteering for something undesirable.",
+      "example": "Who wants to do the dishes 🙋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person raising hand."
+      "note": "Enthusiastic 'me!' reaction under 'who wants to...' tweets; reads as volunteering energy."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Staple of 'tag yourself' and 'me!' caption reactions; pairs with 🙋‍♂️ for the gender split."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction under 'who's coming?' posts; reads as 'count me in.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server-volunteer reaction; reads as 'I will do it' in mod channels and event planning."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🙋 frequently in casual chat."
+      "note": "Uses 🙋 for emphatic volunteering and 'me!' reactions; reads as enthusiastic agreement."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🙋 across platforms."
+      "note": "Classic volunteering gesture emoji; reads as 'I have a question' or 'I will do it.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🙋 literally."
+      "note": "Straightforward classroom gesture meaning; the meme layer is sometimes missed."
     }
   ],
   "warnings": [],
@@ -73,5 +77,58 @@
     "person-raising-hand-medium",
     "person-raising-hand-medium-dark",
     "person-raising-hand-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🙋 person raising hand emoji shows a figure with one hand raised — the universal 'I have a question' or 'pick me' gesture. It was added in Unicode 6 (2010) and has become the default emoji for volunteering, asking, and 'me!' reactions. The body language is unmistakable: this person wants to be called on.\n\nIn real-world chat 🙋 does very specific work. People send it after volunteering for a task, as a 'me!' reaction to a 'who wants' question, and in soft-flirty 'pick me' contexts. The gesture is stronger than a plain ✋ because it carries a full body, which makes it feel more performative. Writers should pick 🙋 when the message is about volunteering or asking, and avoid it when a quieter hand-up would land cleaner.",
+    "howPeopleUseIt": "🙋 shows up in 'me!' reactions, in volunteering replies, and in 'pick me' contexts. People send it after a 'who wants to...' prompt, as a 'I have a question' opener, or as a soft-flirty 'take me out' signal. The emoji pairs naturally with 🙋‍♂️ for the gender split and with ✋ for the simpler hand-up.\n\nIn close-friends chats 🙋 reads as 'I am in.' In dating-app messages it can land as a soft 'pick me' — flirty but not too forward. In work channels it is the formal 'I volunteer' or 'I have a question.'",
+    "whenNotToUse": "Skip 🙅 in any context where the recipient expects a quieter yes. The full-body volunteer gesture reads as more dramatic than the moment warrants. Avoid it in professional contexts where the recipient will read it as over-the-top or unprofessional.\n\nAlso avoid 🙋 in ironic contexts where the sender actually means no. The raised-hand gesture is too enthusiastic for playful flip-flopping.",
+    "howToReply": "Mirror 🙋 with another 🙋 if you want to amplify the volunteering energy, or pair with ✋ for the simpler hand-up. If the sender is signaling volunteering and you want to match, mirror with 🙋 or 👍 and a sentence that confirms. If the sender is using 🙋 as a 'me!' reaction, mirror with 🙋 and a sentence of agreement.\n\nIf 🙋 lands as a real volunteering offer in a serious context, mirror with 👍 or 🙋 and a follow-up that confirms.",
+    "faqs": [
+      {
+        "question": "What does 🙋 mean in text?",
+        "answer": "🙋 means volunteering, asking, or 'pick me!' The raised hand is the universal classroom and event gesture."
+      },
+      {
+        "question": "What is the difference between 🙋 and ✋?",
+        "answer": "✋ is a flat raised hand (stop, high-five, or 'I have a question'); 🙋 is a full person with one hand raised (volunteering or 'me!'). The body changes the read."
+      },
+      {
+        "question": "Is 🙋 flirty?",
+        "answer": "🙋 can read as soft-flirty when used in a dating context — a 'pick me' or 'take me out' signal. In other contexts it is volunteering or asking."
+      },
+      {
+        "question": "When should I use 🙋?",
+        "answer": "Use 🙋 when you want to volunteer, ask a question, or react to a 'who wants' prompt. Avoid it when a quieter hand-up would land cleaner."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "who wants pizza 🙋",
+      "interpretation": "Friend volunteering or reacting to a 'who wants' prompt. Mirror with 🙋 or 🍕 to confirm."
+    },
+    {
+      "setting": "dating",
+      "message": "take me out 🙋",
+      "interpretation": "Soft-flirty 'pick me' signal. Mirror with 🙋 or ❤️ to keep the energy going."
+    },
+    {
+      "setting": "work",
+      "message": "I'll take that ticket 🙋",
+      "interpretation": "Work volunteering for a task. Reply with 👍 to acknowledge."
+    },
+    {
+      "setting": "family",
+      "message": "I'll do the dishes 🙋",
+      "interpretation": "Family volunteering. Mirror with ❤️ or a sentence of thanks."
+    },
+    {
+      "setting": "social",
+      "message": "me! 🙋",
+      "interpretation": "Public 'count me in' reaction. Mirror with 🙋 or 👍."
+    }
   ]
 }

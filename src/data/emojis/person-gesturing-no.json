@@ -38,29 +38,33 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used for emphatic rejection and boundaries."
+      "note": "Boundary-setting and emphatic-rejection emoji; reads as 'not me, never.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in 'not today' type content."
+      "note": "Staple of 'not today' and 'not me' captions; pairs with ❌ for the emphatic refusal."
     },
     {
       "platform": "TIKTOK",
-      "note": "Popular in boundary setting content."
+      "note": "Popular in boundary-setting and self-care content; reads as 'I am drawing a line.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Common in server-moderation contexts; reads as 'declined' or 'not happening.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for dramatic 'no' energy."
+      "note": "Used for dramatic 'no' energy and boundary-setting; pairs naturally with ❌."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic rejection gesture emoji."
+      "note": "Classic rejection gesture emoji; reads as 'no thank you' with extra emphasis."
     },
     {
       "generation": "BOOMER",
-      "note": "Straightforward no meaning."
+      "note": "Straightforward no meaning; the cultural weight of the gesture is sometimes missed."
     }
   ],
   "warnings": [],
@@ -73,5 +77,58 @@
     "person-gesturing-no-medium",
     "person-gesturing-no-medium-dark",
     "person-gesturing-no-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🙅 person gesturing no emoji shows a figure with arms crossed in an X shape — the universal 'no' gesture. It was added in Unicode 6 (2010) and has become the default emoji for emphatic refusal, dramatic rejection, and boundary-setting. The full-body image makes the 'no' unmistakable: this is not a polite decline, it is a hard line.\n\nIn real-world chat 🙅 does very specific work. People send it after a hard pass, in 'not me' captions, and in boundary-setting content. The gesture is stronger than a plain ❌ because it carries a human figure, which makes it feel more performative. Writers should pick 🙅 when the message is about emphatic refusal or boundary-setting, and avoid it when a softer 'no thank you' is needed.",
+    "howPeopleUseIt": "🙅 shows up in 'not today' captions, in 'not me' reactions, and in boundary-setting content. People send it after a friend's bad idea, in self-care posts about cutting something out, or as a reaction to drama they want no part of. The emoji pairs naturally with ❌ for the emphatic refusal stack and with 🙆 for the yes-no comparison.\n\nIn close-friends chats 🙅 reads as 'I am out.' In dating-app messages it can land as a soft 'not interested' signal. In work channels it is the formal 'decline' or 'not in scope.'",
+    "whenNotToUse": "Skip 🙅 in any context where the recipient expects a softer no. The full-body refusal reads as more dramatic than the moment warrants. Avoid it in professional contexts where the recipient will read it as rude or dismissive.\n\nAlso avoid 🙅 in ironic contexts where the sender actually means yes. The X-arm gesture is too strong for playful flip-flopping.",
+    "howToReply": "Mirror 🙅 with another 🙅 if you want to amplify the refusal, or pair with ❌ for the emphatic no. If the sender is setting a boundary and you want to respect it, send a softer emoji like 👍 or ❤️ and a sentence that acknowledges. If the sender is using 🙅 as a dramatic reaction, mirror with 🙅 and a sentence of agreement.\n\nIf 🙅 lands as a real 'no' in a serious context, respect the boundary. Do not push back with a counter-emoji.",
+    "faqs": [
+      {
+        "question": "What does 🙅 mean in text?",
+        "answer": "🙅 means emphatic refusal, boundary-setting, or 'not happening.' The crossed arms are the universal no gesture."
+      },
+      {
+        "question": "What is the difference between 🙅 and ❌?",
+        "answer": "❌ is a flat cross mark; 🙅 is a person making the no gesture. 🙅 reads as more performative and human."
+      },
+      {
+        "question": "Is 🙅 rude?",
+        "answer": "🙅 can read as rude in contexts where the recipient expects a softer no. In meme contexts it is usually comedic refusal."
+      },
+      {
+        "question": "When should I use 🙅?",
+        "answer": "Use 🙅 when you want to land an emphatic no, set a boundary, or react to something you are clearly out on. Avoid it for minor declines where 👍 would be cleaner."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "we are NOT going to that club 🙅",
+      "interpretation": "Friend veto of a plan. Mirror with 🙅 or 😂 to amplify the refusal."
+    },
+    {
+      "setting": "dating",
+      "message": "I'm not doing that 🙅",
+      "interpretation": "Boundary-setting in a relationship. Respect the boundary; do not push back with a counter-emoji."
+    },
+    {
+      "setting": "work",
+      "message": "that's out of scope for this sprint 🙅",
+      "interpretation": "Work rejection of a request. Reply with 👍 to acknowledge or a clarifying question."
+    },
+    {
+      "setting": "family",
+      "message": "no more dessert 🙅",
+      "interpretation": "Family-coded self-control. Mirror with 😂 or a sentence of agreement."
+    },
+    {
+      "setting": "social",
+      "message": "drama in 2026 🙅",
+      "interpretation": "Public boundary-setting. Mirror with 🙅 or ❤️."
+    }
   ]
 }

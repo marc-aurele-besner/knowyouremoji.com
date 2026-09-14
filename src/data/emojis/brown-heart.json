@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for diversity representation." },
-    { "platform": "INSTAGRAM", "note": "Popular for autumn aesthetic." },
-    { "platform": "TIKTOK", "note": "Cozy and earthy content." }
+    {
+      "platform": "TWITTER",
+      "note": "Diversity and POC-pride posts use 🤎 as a literal skin-tone-coded heart; also reads as autumn-coded."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Staple of fall aesthetic and 'clean girl' brown-toned posts; pairs with 🍂 and ☕."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Cozy and earthy content default; reads as 'grounded warmth' rather than romance."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Less loaded than other hearts in most servers; appears in cozy-mood channels."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Diversity and aesthetic." },
-    { "generation": "MILLENNIAL", "note": "Earthy vibes." },
-    { "generation": "BOOMER", "note": "May not know the diversity meaning." }
+    {
+      "generation": "GEN_Z",
+      "note": "Diversity-coded and aesthetic-coded; the POC-pride meaning is well established."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Earthy vibes default; the diversity read is known but not always foregrounded."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May not know the diversity meaning; reads as a warm autumn heart."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤎 Brown Heart Emoji Meaning",
-  "seoDescription": "Learn what the Brown Heart emoji 🤎 really means."
+  "seoDescription": "Learn what the Brown Heart emoji 🤎 really means.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🤎 brown heart was added in Unicode 12 (2019) and quickly split into two parallel meanings. The first is aesthetic: brown-coded fall content, cozy vibes, and 'clean girl' neutral palettes where 🤎 pairs with cream and tan. The second is identity-coded: Brown pride, POC visibility, and skin-tone representation in a heart that had historically defaulted to lighter pinks. In 2026 both readings are mainstream, and which one a sender activates depends on the surrounding text.\n\nIn real-world chat 🤎 lives in a warm, grounded register. It is not the strongest heart (that is ❤️), not the friendship heart (💛), not the romance heart. It is the 'I am cozy with you' heart — useful for content about comfort, autumn, coffee, and identity. Writers should pick 🤎 when they want warmth without romantic weight and when the context allows the earthy or POC-pride read.",
+    "howPeopleUseIt": "🤎 shows up at the end of fall aesthetic posts, in POC-pride captions, and in cozy-mood content of every kind. People send it after a coffee run, a hike in autumn woods, or a friend's announcement about heritage. The emoji pairs naturally with 🍂 for autumn content, ☕ for coffee culture, and 🤎🫶 for the brown heart with hands.\n\nIn dating contexts 🤎 can read as 'I am grounded with you' — a softer romantic signal than ❤️. In family chats 🤎 is the warm, all-ages-appropriate heart when the topic is comfort food or home.",
+    "whenNotToUse": "Skip 🤎 in a romantic context where the partner expects ❤️. Sending 🤎 where ❤️ would land can read as 'cozy, not romantic,' which may not match the sender's intent. Avoid it in any context where the recipient expects a clear romantic signal and will read brown as 'I am warm but I do not love you.'\n\nAlso avoid 🤎 in ironic or dark contexts — the color reads as earnest and cozy, so sarcasm with 🤎 lands flat.",
+    "howToReply": "Mirror 🤎 with another 🤎 if you want to keep the cozy register, or pair with 🍂 to amplify the autumn aesthetic. If the sender is signaling identity-coded pride, mirror with 🤎 and a sentence that affirms the read ('love that'). If the sender is using 🤎 as a soft romantic signal, mirror with 🤎 to keep the register or escalate to ❤️ if you want a stronger read.\n\nIf 🤎 lands in a POC-pride context and you want to engage, mirror with 🤎 and an affirming sentence. The color is doing identity work, not just aesthetic work.",
+    "faqs": [
+      {
+        "question": "What does 🤎 mean in text?",
+        "answer": "🤎 means either earthy/aesthetic warmth (autumn, coffee, cozy) or POC pride and diversity-coded affection. The read depends on context."
+      },
+      {
+        "question": "Is 🤎 flirty?",
+        "answer": "🤎 can read as soft-flirty in dating contexts — a 'grounded warmth' signal. In identity-coded contexts it is community love, not romantic."
+      },
+      {
+        "question": "What does 🤎 mean from a Black person?",
+        "answer": "From a Black person, 🤎 often signals Brown pride or POC-coded affection — a heart that acknowledges skin tone rather than defaulting to pink."
+      },
+      {
+        "question": "What is the difference between 🤎 and ❤️?",
+        "answer": "❤️ is the strongest romantic heart; 🤎 is earthy warmth, aesthetic-coded, or identity-coded. The color matters for the read."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "first PSL of the season 🤎",
+      "interpretation": "Pumpkin spice latte fall vibe. Mirror with 🤎 or 🍂 to amplify the autumn read."
+    },
+    {
+      "setting": "dating",
+      "message": "you are my home 🤎",
+      "interpretation": "Soft romantic signal grounded in warmth. Mirror with 🤎 or ❤️ if you want a stronger register."
+    },
+    {
+      "setting": "work",
+      "message": "brown and proud 🤎",
+      "interpretation": "Identity-coded coworker post. Mirror with 🤎 and an affirming sentence."
+    },
+    {
+      "setting": "family",
+      "message": "family recipe night 🤎",
+      "interpretation": "Cozy family content. Mirror with 🤎 or a sentence about the recipe."
+    },
+    {
+      "setting": "social",
+      "message": "fall forever 🤎",
+      "interpretation": "Seasonal aesthetic post. Mirror with 🤎 or 🍂."
+    }
+  ]
 }
