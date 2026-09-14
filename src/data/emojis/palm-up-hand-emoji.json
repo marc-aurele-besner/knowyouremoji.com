@@ -25,26 +25,95 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "platform": "INSTAGRAM",
+      "note": "Sticker on offering-coded captions and 'I don't know' overlays; the palm-up fits adult-coded palm-up-content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "platform": "TWITTER",
+      "note": "Reply to offering-coded and 'I don't know' tweets; reads as the visible palm-up tag across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to offering-coded content; pairs with 'I don't know' clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to offering-coded content; the palm-up is the default 'I have nothing' tag in chat-coded contexts."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Uses 🫴 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Reads 🫴 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🫴 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Uses 🫴 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫴 Palm Up Hand Emoji Meaning - What Does 🫴 Really Mean?",
-  "seoDescription": "Learn what the palm up hand emoji 🫴 really means in texts and social media."
+  "seoDescription": "Learn what the palm up hand emoji 🫴 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🫴 Palm Up Hand emoji was added in Unicode 14 (2021) and is drawn as a yellow hand with the palm facing upward, fingers together, in an offering or 'I don't know' gesture. The visual cue reads instantly as offering, 'I don't know,' or the visible-shrugging-coded tag. By 2026 🫴 has become the go-to emoji for the offering reaction, the visible-'I do not know what to tell you' tag, and the palm-up-shrug default.\n\nIn modern chat 🫴 does very specific work. People send it as a literal palm-up-offering feeling, as the visible 'I do not know' tag, or as the shrugging-palm-up default. The palm-up-fingers-together is the visual cue that the message is offering or shrugging-coded. Writers should pick 🫴 when the read is 'I don't know' or offering, and avoid it when the read is different — 🤷 fits better for the universal shrug coded default.",
+    "howPeopleUseIt": "🫴 lands on a friend's 'I don't know what to tell you' message, in a work channel where someone is shrugging or offering, and in a dating-app DM where the sender is reacting with palm-up-coded content. The palm-up-fingers-together anchors the read.\n\nIn close-friends chats 🫴 reads as the universal 'I don't know' tag and the palm-up-offering default. On X the emoji punctuates offering-coded tweets. The emoji pairs with 🤷 for the layered palm-up-and-shrug stack and with 🤲 for the layered palm-up pair stack.",
+    "whenNotToUse": "Skip 🫴 in any context where the read is purely shrug universal — 🤷 fits better. Avoid 🫴 in ironic contexts where the offering is faked — 🙄 fits better there.",
+    "howToReply": "If a friend sends 🫴 on an offering message, mirror with a sentence that engages the question. The palm-up chain needs an answer.\n\nIf 🫴 lands as the 'I don't know' default, reply with a sentence that engages the question. And if you want to send 🫴 yourself, pair it with the moment so the offering read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫴 mean in text?",
+        "answer": "🫴 means offering, 'I don't know,' or palm-up shrug. The palm-up-fingers-together is the visual cue that the message is offering or shrugging-coded."
+      },
+      {
+        "question": "What does 🫴 mean from a guy?",
+        "answer": "From a guy or anyone, 🫴 carries the same offering read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "Is 🫴 passive aggressive?",
+        "answer": "Sometimes. 🫴 can read as visible-'I have nothing' in a passive context. Watch the surrounding context for the read."
+      },
+      {
+        "question": "What does 🫴 mean at work?",
+        "answer": "In Slack, 🫴 reads as the 'I am offering this' or 'I do not know' tag. Pair with a clarifying sentence so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I don't know bestie 🫴",
+      "interpretation": "Friend offering-coded share. Mirror with a sentence that engages the question, not just 🫴."
+    },
+    {
+      "setting": "dating",
+      "message": "what can I offer you 🫴",
+      "interpretation": "Dating-coded offering-coded flirty share. Mirror with a sentence that engages the offer, not just the palm."
+    },
+    {
+      "setting": "social",
+      "message": "I have nothing 🫴",
+      "interpretation": "Public adult-coded offering share. Mirror with a sentence that engages, not just the emoji."
+    },
+    {
+      "setting": "family",
+      "message": "I don't have an answer 🫴",
+      "interpretation": "Family-coded offering share. Mirror with a sentence that engages the question."
+    },
+    {
+      "setting": "work",
+      "message": "I have no idea 🫴",
+      "interpretation": "Work-coded offering tag. Mirror with a sentence — 🫴 alone can land as low-context in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

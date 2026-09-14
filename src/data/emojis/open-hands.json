@@ -37,30 +37,38 @@
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Jazz hands excitement."
+      "platform": "INSTAGRAM",
+      "note": "Sticker on openness-coded captions and welcoming-coded story overlays; the open-palms fit warm-coded adult content."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Welcoming content."
+      "platform": "TWITTER",
+      "note": "Reply to openness-coded and 'nothing to hide' tweets; reads as the visible openness tag across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Dramatic reveals."
+      "note": "Comment-section reaction to openness-coded content; pairs with welcoming-coded clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to openness-coded content; the open-palms are the default 'I have nothing to hide' tag."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Jazz hands meme."
+      "note": "Uses 👐 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Open and receiving."
+      "note": "Reads 👐 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 👐 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
     },
     {
       "generation": "BOOMER",
-      "note": "Hands open."
+      "note": "Uses 👐 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
     }
   ],
   "warnings": [],
@@ -73,5 +81,58 @@
     "open-hands-medium",
     "open-hands-medium-dark",
     "open-hands-dark"
-  ]
+  ],
+  "longForm": {
+    "overview": "The 👐 Open Hands emoji was added in Unicode 6 (2010) and is drawn as two yellow open hands, palms facing up, in a gesture of openness or showing emptiness. The visual cue reads instantly as openness, 'I have nothing,' or the visible 'look, hands up' tag. By 2026 👐 has become the go-to emoji for the openness reaction, the visible-'nothing to hide' tag, and the welcoming-coded open-arms default.\n\nIn modern chat 👐 does very specific work. People send it as a literal openness feeling, as the visible 'I have nothing' tag, or as the welcoming open-arms default. The two-open-palms-up are the visual cue that the gesture is openness-coded. Writers should pick 👐 when the read is openness or welcoming, and avoid it when the read is hugging — 🤗 fits better for hug-coded moments.",
+    "howPeopleUseIt": "👐 lands on a friend's 'nothing to hide' message, in a work channel where someone is showing openness, and in a dating-app DM where the sender is welcoming. The two-open-palms anchor the read.\n\nIn close-friends chats 👐 reads as the universal 'open arms' tag. On X the emoji punctuates openness-coded tweets. The emoji pairs with 🤗 for the layered openness-and-hug stack and with 🫶 for the visible love-pair stack.",
+    "whenNotToUse": "Skip 👐 in any context where the read is hugging — 🤗 fits better. Avoid 👐 in ironic contexts where the openness is faked — 🙄 fits better there.",
+    "howToReply": "If a friend sends 👐 on an openness message, mirror with another 👐 or 🤗 to match the welcoming energy. The open-arms chain reads as solidarity.\n\nIf 👐 lands as the welcoming default, reply with another 👐 or 🫶. And if you want to send 👐 yourself, pair it with the moment so the openness read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👐 mean in text?",
+        "answer": "👐 means openness, 'nothing to hide,' or welcoming-coded open-arms. The two-open-palms-up are the visual cue that the gesture is openness-coded."
+      },
+      {
+        "question": "Is 👐 flirty?",
+        "answer": "Sometimes, gently. 👐 can read as soft-coded flirty welcoming in a dating thread. It is warmth-coded rather than pure romance-coded."
+      },
+      {
+        "question": "What does 👐 mean from a guy?",
+        "answer": "From a guy or anyone, 👐 carries the same openness read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 👐 mean at work?",
+        "answer": "In Slack, 👐 reads as the 'nothing to hide' tag when admitting a small mistake. Pair with a sentence about the issue so the channel stays useful."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "nothing up my sleeve 👐",
+      "interpretation": "Friend openness-coded share. Mirror with another 👐 or 🤗 so the openness chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "open arms for you 👐",
+      "interpretation": "Dating-coded welcoming share. Mirror with 👐 or 🤗 so the warm welcoming chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "I give up 👐",
+      "interpretation": "Public adult-coded openness share. Mirror with another 👐 or 🤷 so the openness-default chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you all 👐",
+      "interpretation": "Family-coded welcoming share. Mirror with another 👐 or 🫶 so the family-welcoming chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "all good here 👐",
+      "interpretation": "Work-coded openness tag. Mirror with another 🙏 or a sentence so the channel stays useful."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
