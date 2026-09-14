@@ -22,7 +22,12 @@
       "example": "Feeling 🗻",
       "riskLevel": "LOW"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood 🗻", "riskLevel": "LOW" },
+    {
+      "context": "IRONIC",
+      "meaning": "Ironic usage.",
+      "example": "Mood 🗻",
+      "riskLevel": "LOW"
+    },
     {
       "context": "WORK",
       "meaning": "Work context.",
@@ -31,17 +36,96 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Common usage." },
-    { "platform": "INSTAGRAM", "note": "Popular posts." },
-    { "platform": "TIKTOK", "note": "Trending." }
+    {
+      "platform": "INSTAGRAM",
+      "note": "Sticker on Japan-aesthetic captions and travel-coded story overlays; the snow-capped-mountain fits adult-coded travel content."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "Reply to Japan-travel and travel-coded tweets; reads as the universal Mount Fuji default across adult-coded audiences."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Comment-section reaction to Japan-travel-coded content; pairs with 'Japan trip' and travel-coded clip reactions."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Server reaction to Japan-travel-coded content; the snow-capped-mountain is the default 'Mount Fuji' tag in adult-coded contexts."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Gen Z usage." },
-    { "generation": "MILLENNIAL", "note": "Millennial usage." },
-    { "generation": "BOOMER", "note": "Boomer interpretation." }
+    {
+      "generation": "GEN_Z",
+      "note": "Uses 🗻 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Reads 🗻 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends 🗻 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Uses 🗻 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🗻 Mount Fuji Emoji Meaning",
-  "seoDescription": "Learn what the Mount Fuji emoji 🗻 really means."
+  "seoDescription": "Learn what the Mount Fuji emoji 🗻 really means.",
+  "longForm": {
+    "overview": "The 🗻 Mount Fuji emoji was added in Unicode 6 (2010) and is drawn as a snow-capped Japanese Mount Fuji mountain with a stylized outline and visible cloud or snow details. The visual cue reads instantly as Mount Fuji, the visible-Japanese-landmark default, or the travel-coded Japan tag. By 2026 🗻 has become the go-to emoji for the Mount-Fuji-coded reaction, the visible-Japanese-landmark default, and the travel-coded Japan tag.\n\nIn modern chat 🗻 does very specific work. People send it as a literal Mount Fuji reference, as the visible Japanese-landmark default, or as the travel-coded Japan tag. The snow-capped-mountain is the visual cue that the read is Japan-travel-coded. Writers should pick 🗻 when the read is Mount Fuji or Japan-travel, and avoid it when the read is generic-mountain-only — 🏔️ fits better there.",
+    "howPeopleUseIt": "🗻 lands on a friend's 'Japan trip' message, in a work channel where someone is signing off with travel-coded content, and in a dating-app DM where the sender is sending Japan-travel content. The snow-capped-mountain anchors the read.\n\nIn close-friends chats 🗻 reads as the universal Japan-landmark default. On X the emoji punctuates Japan-travel and travel-coded tweets. The emoji pairs with 🇯🇵 for the layered Japan stack and with ✈️ for the layered travel pair stack.",
+    "whenNotToUse": "Skip 🗻 in any context where the read is generic-mountain-only — 🏔️ fits better. Avoid 🗻 in work channels where the Japan-travel read lands as off-topic. Pick ✈️ when the read is travel-only.",
+    "howToReply": "If a friend sends 🗻 on a Japan-travel message, mirror with another 🗻 or 🇯🇵 to match the travel energy. The Mount-Fuji chain reads as solidarity.\n\nIf 🗻 lands as the Japan-landmark default, reply with another 🗻 or 🇯🇵. And if you want to send 🗻 yourself, pair it with the moment so the Japan-travel-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🗻 mean in text?",
+        "answer": "🗻 means Mount Fuji, Japanese-landmark default, or travel-coded Japan tag. The snow-capped-mountain is the visual cue that the read is Japan-travel-coded."
+      },
+      {
+        "question": "Is 🗻 flirty?",
+        "answer": "Sometimes. 🗻 reads as Japan-travel-coded flirty in a dating thread combined with 'let's go to Japan' content."
+      },
+      {
+        "question": "What does 🗻 mean from a guy?",
+        "answer": "From a guy or anyone, 🗻 carries the same Japan-travel read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🗻 mean on Instagram?",
+        "answer": "On Instagram, 🗻 is the default sticker on Japan-aesthetic-coded captions and travel-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "Japan trip 🗻",
+      "interpretation": "Friend Japan-travel share. Mirror with another 🗻 or 🇯🇵 so the travel chain reads back."
+    },
+    {
+      "setting": "dating",
+      "message": "let's go to Japan 🗻",
+      "interpretation": "Dating-coded flirty share. Mirror with 🗻 or 🇯🇵 so the warm chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "Mount Fuji day 🗻",
+      "interpretation": "Public adult-coded Japan share. Mirror with another 🗻 or 🇯🇵 so the Japan chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "love you grandma 🗻",
+      "interpretation": "Family-coded warm share. Mirror with 🗻 or 🇯🇵 so the family-coded chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team Japan meeting 🗻",
+      "interpretation": "Work-coded Japan-travel share. Mirror with a clarifying sentence — 🗻 can land as off-topic in work channels."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
