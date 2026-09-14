@@ -1,58 +1,127 @@
 {
-  "unicode": "2640",
+  "unicode": "U+2640",
   "slug": "female-sign-emoji",
   "character": "♀",
   "name": "Female Sign",
   "shortName": "female sign emoji",
   "category": "symbols",
-  "subcategory": "gender",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Female symbol.",
-  "tldr": "Represents female.",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Female sign.",
+  "tldr": "Female-coded, women's, or 'she'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Female gender symbol.",
-      "example": "Women power ♀",
+      "meaning": "A female sign.",
+      "example": "women ♀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Femininity or women.",
-      "example": "Girls rule ♀",
+      "meaning": "Female-coded or 'she'.",
+      "example": "she ♀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Female-coded affection.",
+      "example": "her ♀",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Women's coded signal.",
+      "example": "women's team ♀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about female sign."
+      "note": "Staple of female-coded tweets and 'she' reactions; reads as 'women's' rather than literal sign."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in female-coded captions and women's-overlay content; pairs with ♂ for the gender stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to women's clips and 'she' videos; reads as 'female-coded.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in female channels and women's-coded servers; reads as 'women's team.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ♀ in casual contexts."
+      "note": "Uses ♀ for female-coded affection and self-aware women's reactions; the 'she' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ♀ across platforms."
+      "note": "Familiar with ♀ across platforms; reads as 'female' or 'women's-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use ♀ literally."
+      "note": "May use ♀ literally as female sign; the cultural layer of gender-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "♀ Female Sign Emoji Meaning - What Does ♀ Really Mean?",
-  "seoDescription": "Learn what the female sign emoji ♀ really means in texts and social media."
+  "seoDescription": "Learn what the female sign emoji ♀ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ♀ Female Sign emoji was added in Unicode 6 (2010) and has been a default for female-coded reactions ever since. The circle with downward cross is the visual shorthand for women's, female-coded affection, and 'she' self-aware gender. In 2026 ♀ is the default emoji for female captions, women's reactions, and 'her' drops.\n\nIn real-world chat ♀ does very specific work. People send it in female-coded captions, as a women's affection signal, or as the visual equivalent of 'she.' The sign carries both literal female and self-aware-women's. Writers should pick ♀ when the message is about female-coded energy, and avoid it when male-coded content is being described — that's ♂ territory. The sign has been a fixture of female-coded captions since Unicode 6 and continues to land as the she-and-women's default in 2026 chats across platforms.",
+    "howPeopleUseIt": "♀ shows up in female captions, in 'she' reactions, and in women's-coded posts. People send it during a female-coded share, as a date-coded opener, or as a work women's-team signal. The emoji pairs naturally with ♂ for the gender stack and with 👩 for the women stack.\n\nIn close-friends chats ♀ reads as 'she.' In dating-app messages it can land as a female-coded affection signal. In public posts it is the women's-coded and female default.",
+    "whenNotToUse": "Skip ♀ in any context where male-coded content is being described — ♂ is the male counterpart. Avoid it in contexts where the sender wants to be subtle about the women's read — the bold sign is too obvious.\n\nAlso avoid ♀ in professional contexts where the women's-team read lands as 'girls only' rather than inclusive team.",
+    "howToReply": "Mirror ♀ with another ♀ if you are matching the female energy, or pair with 👩 for the women stack. If the sender is signaling women's-coded, mirror with ♀ or ♂ and a sentence that engages. If the sender is using ♀ as a date-coded opener, mirror with ♀ or ❤️ and a follow-up.\n\nIf ♀ lands as a 'women's team' reaction, mirror with ♀ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ♀ mean in text?",
+        "answer": "♀ means female-coded, women's, or 'she.' The sign is the visual cue for female-coded affection."
+      },
+      {
+        "question": "What does ♀ mean from a guy?",
+        "answer": "From a guy, ♀ reads as a female-coded affection signal or 'her' coded humor. The sign is firm rather than coded."
+      },
+      {
+        "question": "What does ♀ mean on Instagram?",
+        "answer": "On Instagram, ♀ is the default for female-coded aesthetic captions and women's-overlay content."
+      },
+      {
+        "question": "When should I use ♀?",
+        "answer": "Use ♀ for female-coded reactions, women's content, or 'she' posts. Avoid it when male-coded content is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "she ♀",
+      "interpretation": "Friend signaling female vibes. Mirror with ♀ or 👩."
+    },
+    {
+      "setting": "dating",
+      "message": "her ♀",
+      "interpretation": "Female-coded affection. Mirror with ♀ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "women's team ♀",
+      "interpretation": "Work-coded female share. Reply with ♀ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "she sunday ♀",
+      "interpretation": "Family-coded female share. Mirror with ♀ or ♂."
+    },
+    {
+      "setting": "social",
+      "message": "female vibes ♀",
+      "interpretation": "Public women's post. Mirror with ♀ or 🙌."
+    }
+  ]
 }

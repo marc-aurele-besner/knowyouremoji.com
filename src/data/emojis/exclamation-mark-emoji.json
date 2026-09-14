@@ -1,58 +1,127 @@
 {
-  "unicode": "2757",
+  "unicode": "U+2757",
   "slug": "exclamation-mark-emoji",
   "character": "❗",
   "name": "Exclamation Mark",
   "shortName": "exclamation mark emoji",
   "category": "symbols",
-  "subcategory": "other-symbol",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Exclamation.",
-  "tldr": "Represents alert.",
+  "subcategory": "Symbol",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "Exclamation mark.",
+  "tldr": "Alert-coded, important, or 'urgent'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Important notice.",
-      "example": "Attention ❗",
+      "meaning": "An exclamation mark.",
+      "example": "important ❗",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Emphasis.",
-      "example": "Wow ❗",
+      "meaning": "Alert-coded or 'urgent'.",
+      "example": "urgent ❗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Urgent-coded affection.",
+      "example": "important ❗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Important or alert-coded.",
+      "example": "alert ❗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about exclamation mark."
+      "note": "Staple of alert-coded tweets and 'urgent' reactions; reads as 'important' rather than literal exclamation."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in alert-coded captions and important-story overlays; pairs with ❓ for the question stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to urgent clips and 'alert' videos; reads as 'important.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in alert channels and important-coded servers; reads as 'urgent.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ❗ in casual contexts."
+      "note": "Uses ❗ for alert-coded affection and self-aware urgent reactions; the 'important' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ❗ across platforms."
+      "note": "Familiar with ❗ across platforms; reads as 'exclamation' or 'alert-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use ❗ literally."
+      "note": "May use ❗ literally as exclamation; the cultural layer of alert-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "❗ Exclamation Mark Emoji Meaning - What Does ❗ Really Mean?",
-  "seoDescription": "Learn what the exclamation mark emoji ❗ really means in texts and social media."
+  "seoDescription": "Learn what the exclamation mark emoji ❗ really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The ❗ Exclamation Mark emoji was added in Unicode 6 (2010) and has been a default for alert-coded reactions ever since. The bold red exclamation mark is the visual shorthand for important, alert-coded affection, and 'urgent' self-aware priority. In 2026 ❗ is the default emoji for alert captions, important reactions, and 'urgent' drops.\n\nIn real-world chat ❗ does very specific work. People send it in alert-coded captions, as an important affection signal, or as the visual equivalent of 'urgent.' The exclamation carries both literal ! and self-aware-alert. Writers should pick ❗ when the message is about alert-coded energy, and avoid it when a question is being asked — that's ❓ territory. The exclamation has been a fixture of alert-coded captions since Unicode 6 and continues to land as the urgent-and-important default in 2026 chats across platforms.",
+    "howPeopleUseIt": "❗ shows up in alert captions, in 'urgent' reactions, and in important-coded posts. People send it during an alert-coded share, as a date-coded opener, or as a work important signal. The emoji pairs naturally with ❓ for the question stack and with ⚠ for the warning stack.\n\nIn close-friends chats ❗ reads as 'important.' In dating-app messages it can land as an urgent-coded affection signal. In public posts it is the alert-coded and important default.",
+    "whenNotToUse": "Skip ❗ in any context where a question is being asked — ❓ is the question counterpart. Avoid it in contexts where the sender wants to be subtle about the alert read — the bold exclamation is too loud.\n\nAlso avoid ❗ in professional contexts where the urgent read lands as spam-coded rather than actually important.",
+    "howToReply": "Mirror ❗ with another ❗ if you are matching the alert energy, or pair with ⚠ for the warning stack. If the sender is signaling urgent-coded, mirror with ❗ or ❓ and a sentence that engages. If the sender is using ❗ as a date-coded opener, mirror with ❗ or ❤️ and a follow-up.\n\nIf ❗ lands as a 'alert' reaction, mirror with ❗ or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does ❗ mean in text?",
+        "answer": "❗ means alert-coded, important, or 'urgent.' The exclamation is the visual cue for alert-coded affection."
+      },
+      {
+        "question": "What does ❗ mean from a guy?",
+        "answer": "From a guy, ❗ reads as an urgent-coded affection signal or 'important' coded humor. The exclamation is bold rather than coded."
+      },
+      {
+        "question": "What does ❗ mean on Instagram?",
+        "answer": "On Instagram, ❗ is the default for alert-coded aesthetic captions and important-overlay content."
+      },
+      {
+        "question": "When should I use ❗?",
+        "answer": "Use ❗ for important, alert-coded reactions, or 'urgent' posts. Avoid it when a question is being asked."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "urgent ❗",
+      "interpretation": "Friend signaling alert vibes. Mirror with ❗ or ⚠."
+    },
+    {
+      "setting": "dating",
+      "message": "important ❗",
+      "interpretation": "Urgent-coded affection. Mirror with ❗ or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "alert ❗",
+      "interpretation": "Work-coded alert share. Reply with ❗ or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "urgent sunday ❗",
+      "interpretation": "Family-coded exclamation share. Mirror with ❗ or ⚠."
+    },
+    {
+      "setting": "social",
+      "message": "alert vibes ❗",
+      "interpretation": "Public important post. Mirror with ❗ or 🙌."
+    }
+  ]
 }

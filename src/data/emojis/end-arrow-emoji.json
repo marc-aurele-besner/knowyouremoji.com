@@ -1,58 +1,127 @@
 {
-  "unicode": "1F51A",
+  "unicode": "U+1F51A",
   "slug": "end-arrow-emoji",
   "character": "🔚",
   "name": "End Arrow",
   "shortName": "end arrow emoji",
   "category": "symbols",
-  "subcategory": "arrow",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "End button.",
-  "tldr": "Represents end.",
+  "subcategory": "Arrow",
+  "unicodeVersion": "6.0",
+  "baseMeaning": "End arrow.",
+  "tldr": "End-coded, 'the end', or 'done'.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Jump to end.",
-      "example": "Go to end 🔚",
+      "meaning": "An end arrow.",
+      "example": "the end 🔚",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "The end.",
-      "example": "Thats it 🔚",
+      "meaning": "End-coded or 'done'.",
+      "example": "done 🔚",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Done-coded affection.",
+      "example": "we're done 🔚",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Project-ended signal.",
+      "example": "project ended 🔚",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about end arrow."
+      "note": "Staple of end-coded tweets and 'done' reactions; reads as 'the end' rather than literal arrow."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in end-coded captions and done-story overlays; pairs with ⏭ for the skip stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to done clips and 'the end' videos; reads as 'done.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in end channels and done-coded servers; reads as 'project ended.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🔚 in casual contexts."
+      "note": "Uses 🔚 for end-coded affection and self-aware done reactions; the 'the end' read is dominant."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🔚 across platforms."
+      "note": "Familiar with 🔚 across platforms; reads as 'end' or 'done-coded.'"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🔚 literally."
+      "note": "May use 🔚 literally as arrow; the cultural layer of end-coding is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🔚 End Arrow Emoji Meaning - What Does 🔚 Really Mean?",
-  "seoDescription": "Learn what the end arrow emoji 🔚 really means in texts and social media."
+  "seoDescription": "Learn what the end arrow emoji 🔚 really means in texts and social media.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🔚 End Arrow emoji was added in Unicode 6 (2010) and has been a default for end-coded reactions ever since. The bold END arrow is the visual shorthand for done, end-coded affection, and 'the end' self-aware closure. In 2026 🔚 is the default emoji for end captions, done reactions, and 'project ended' drops.\n\nIn real-world chat 🔚 does very specific work. People send it in end-coded captions, as a done affection signal, or as the visual equivalent of 'the end.' The arrow carries both literal end and self-aware-closure. Writers should pick 🔚 when the message is about end-coded energy, and avoid it when continuation is being described — that's ⏩ territory. The arrow has been a fixture of end-coded captions since Unicode 6 and continues to land as the done-and-project-ended default in 2026 chats across platforms.",
+    "howPeopleUseIt": "🔚 shows up in end captions, in 'done' reactions, and in closure-coded posts. People send it during an end-coded share, as a date-coded opener, or as a work project-ended signal. The emoji pairs naturally with ⏭ for the skip stack and with 🏁 for the finish-line stack.\n\nIn close-friends chats 🔚 reads as 'the end.' In dating-app messages it can land as a done-coded affection signal. In public posts it is the end-coded and closure default.",
+    "whenNotToUse": "Skip 🔚 in any context where continuation is being described — ⏩ is the forward counterpart. Avoid it in contexts where the sender wants to be subtle about the end read — the bold END is too obvious.\n\nAlso avoid 🔚 in professional contexts where the end read lands as 'fired' rather than 'project-complete.'",
+    "howToReply": "Mirror 🔚 with another 🔚 if you are matching the end energy, or pair with 🏁 for the finish-line stack. If the sender is signaling done-coded, mirror with 🔚 or ✅ and a sentence that engages. If the sender is using 🔚 as a date-coded opener, mirror with 🔚 or ❤️ and a follow-up.\n\nIf 🔚 lands as a 'project ended' reaction, mirror with 🔚 or 🙌 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🔚 mean in text?",
+        "answer": "🔚 means end-coded, 'the end,' or 'done.' The arrow is the visual cue for end-coded affection."
+      },
+      {
+        "question": "What does 🔚 mean from a guy?",
+        "answer": "From a guy, 🔚 reads as an end-coded affection signal or 'we're done' coded humor. The arrow is firm rather than coded."
+      },
+      {
+        "question": "What does 🔚 mean on Instagram?",
+        "answer": "On Instagram, 🔚 is the default for end-coded aesthetic captions and done-overlay content."
+      },
+      {
+        "question": "When should I use 🔚?",
+        "answer": "Use 🔚 for ending, done-coded reactions, or 'the end' posts. Avoid it when continuation is being described."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "done 🔚",
+      "interpretation": "Friend signaling end vibes. Mirror with 🔚 or ✅."
+    },
+    {
+      "setting": "dating",
+      "message": "we're done 🔚",
+      "interpretation": "Done-coded affection. Mirror with 🔚 or ❤️ to engage."
+    },
+    {
+      "setting": "work",
+      "message": "project ended 🔚",
+      "interpretation": "Work-coded done share. Reply with 🔚 or a sentence acknowledging."
+    },
+    {
+      "setting": "family",
+      "message": "end sunday 🔚",
+      "interpretation": "Family-coded end share. Mirror with 🔚 or 🏁."
+    },
+    {
+      "setting": "social",
+      "message": "the end vibes 🔚",
+      "interpretation": "Public closure post. Mirror with 🔚 or 🙌."
+    }
+  ]
 }
