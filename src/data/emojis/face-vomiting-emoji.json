@@ -21,20 +21,36 @@
       "meaning": "Disgusted.",
       "example": "Thats gross 🤮",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Strong reaction to something a partner said.",
+      "example": "you really just said that 🤮",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing mild disgust.",
+      "example": "this Monday weather 🤮",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about face vomiting."
+      "note": "Used for adult-coded disgust and grossed-out-coded tweets. The green vomit and squinted eyes are the visible 'I cannot even' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in disgust-coded stories and aesthetic-coded grossed-out shares. The green vomit reads as the visible gross default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Default comment-section reaction to adult-coded gross clips. The green vomit pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal disgust default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to gross-coded content. The green vomit and squinted eyes are the default 'absolutely not' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -54,5 +70,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤮 Face Vomiting Emoji Meaning - What Does 🤮 Really Mean?",
-  "seoDescription": "Learn what the face vomiting emoji 🤮 really means in texts and social media."
+  "seoDescription": "Learn what the face vomiting emoji 🤮 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🤮 Face Vomiting emoji was added in Unicode 10 (2017) and is drawn as a green, sickly face with squinted eyes and a wide open mouth emitting a stream of green vomit. The visual cue reads instantly as disgusted-coded reaction, grossed-out default, or the visible 'absolutely not' tag. By 2026 🤮 has become the go-to emoji for the disgusted-coded reaction, the visible grossed-out default, and the strong-reaction-coded reaction in close-friends and family chats.\n\nIn modern chat 🤮 does very specific work. People send it as a literal disgusted-coded reaction, as the visible 'I cannot even' tag, or as the grossed-out-coded default. The green vomit and squinted eyes are the visual cue that the read is disgust-coded. Writers should pick 🤮 when the read is visible disgust or 'that is gross' energy, and avoid it when the read is mild dislike — 🤨 fits better there.",
+    "howPeopleUseIt": "🤮 lands on a friend's gross-story message, in a work channel where someone is signaling disgust-coded energy, and in a dating-app DM where the sender is signaling strong reaction. The green vomit and squinted eyes anchor the read.\n\nIn close-friends chats 🤮 reads as the universal disgusted default and the visible 'absolutely not' tag. On X the emoji punctuates disgust-coded and gross tweets. The emoji pairs with 🤢 for the layered gross-and-nauseous stack and with 🙄 for the layered gross-and-eye-roll stack.",
+    "whenNotToUse": "Skip 🤮 in any context where the read is mild dislike only. The green vomit implies loud-disgust-coded energy, not quiet eye-roll. Avoid 🤮 in casual contexts where the disgust-coded read lands as over-the-top drama.",
+    "howToReply": "If a friend sends 🤮 on a disgust-coded message, mirror with another 🤮 or 🤢 to send matching energy. The gross chain reads as solidarity.\n\nIf 🤮 lands as the grossed-out default, reply with another 🤮 or 🙄. And if you want to send 🤮 yourself, pair it with the moment so the disgust-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🤮 mean in text?",
+        "answer": "🤮 means disgust-coded reaction, grossed-out energy, or the visible 'absolutely not' reaction. The green vomit and squinted eyes are the visual cue that the read is disgust-coded."
+      },
+      {
+        "question": "Is 🤮 flirty?",
+        "answer": "Rarely. 🤮 usually reads as disgusted-coded rather than flirty; in a dating thread it can read as 'I cannot believe you just said that' tag content."
+      },
+      {
+        "question": "What does 🤮 mean from a girl?",
+        "answer": "From a girl or anyone, 🤮 carries the same disgust-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🤮 mean on TikTok?",
+        "answer": "On TikTok, 🤮 is the default comment reaction to gross-coded and disgusted-coded clips."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "that date was 🤮",
+      "interpretation": "Friend disgust share. Mirror with another 🤮 or 🤢 so the gross chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "the leftover lunch smells 🤮",
+      "interpretation": "Work-coded gross share. Mirror with a clarifying sentence — 🤮 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "your ex's music taste 🤮",
+      "interpretation": "Dating-coded disgusted share. Mirror with 🤮 or 💬 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "the fridge situation is 🤮",
+      "interpretation": "Family-coded gross share. Mirror with 🤮 or 🧹 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "this news cycle 🤮",
+      "interpretation": "Public adult-coded disgust share. Mirror with another 🤮 or 📰 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
