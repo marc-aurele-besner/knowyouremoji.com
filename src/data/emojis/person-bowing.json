@@ -8,59 +8,63 @@
   "subcategory": "gesture",
   "unicodeVersion": "13.0",
   "baseMeaning": "Person Bowing emoji.",
-  "tldr": "Represents person bowing.",
+  "tldr": "Deep apology, gratitude, or formal respect.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents person bowing.",
-      "example": "Look at this person bowing 🙇",
+      "meaning": "Bowing as a gesture of respect or apology.",
+      "example": "I am so sorry 🙇",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a person bowing.",
-      "example": "They're such a person bowing 🙇",
+      "meaning": "Sincere apology or gratitude.",
+      "example": "thanks for the save 🙇",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional context for person bowing.",
-      "example": "Meeting with the team 🙇",
+      "meaning": "Formal apology in a professional context.",
+      "example": "Apologies for the delay 🙇",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing person bowing.",
-      "example": "Sure, I'm totally a person bowing 🙇",
+      "meaning": "Mock apology or performative deference.",
+      "example": "sorry not sorry 🙇",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person bowing."
+      "note": "Apology-and-thanks reaction; reads as 'sorry' or 'much obliged' in casual threads."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Caption closer for gratitude posts; pairs with 🙏 for the formal apology stack."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Family-coded apology emoji; common as a soft 'sorry' in family chats."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Less common than on text platforms; appears in fan-thanks and creator apologies."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🙇 frequently in casual chat."
+      "note": "Uses 🙇 for sincere apology and ironic 'sorry not sorry' alike."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🙇 across platforms."
+      "note": "Familiar across platforms as a default 'deep apology' gesture."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🙇 literally."
+      "note": "May use 🙇 literally to mean a bow rather than an apology."
     }
   ],
   "warnings": [],
@@ -73,5 +77,58 @@
     "person-bowing-medium",
     "person-bowing-medium-dark",
     "person-bowing-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🙇 person bowing emoji is the cartoon version of a deep bow — head down, hands forward, full-body deference. In Asian cultures the gesture carries literal respect; in English-language chat it has been adopted as the 'deep apology' emoji, the visual equivalent of saying 'I am very sorry' or 'I am very grateful.' The posture is unmistakable: this is not a casual sorry, it is a sincere one.\n\nIn real-world chat 🙇 lives in the apology-and-thanks lane. People send it after a friend goes out of their way for them, after a genuine mistake, or as a 'much obliged' closer. The gesture is stronger than 🙏, which can read as 'thanks' or 'please,' and stronger than a plain 'sorry' text. Writers should pick 🙇 when the apology or gratitude is genuinely deep, and avoid it when a lighter emoji would land cleaner.",
+    "howPeopleUseIt": "🙇 shows up at the end of sincere apologies, in gratitude captions, and as the 'sorry, I messed up' closer. People send it after a friend covers for them, after a public mistake, or as a soft 'I am very grateful' after a thoughtful gift. The emoji pairs naturally with 🙏 for the formal apology stack and with ❤️ for the gratitude-plus-love read.\n\nIn close-friends chats 🙇 can read as 'I owe you big time.' In dating-app messages it can land as a sweet 'thank you for choosing me.' In work channels it is the formal apology for a missed deadline or a public correction.",
+    "whenNotToUse": "Skip 🙇 in any context where the apology is minor or where the recipient expects a casual sorry. The deep bow reads as more dramatic than the moment warrants, which can feel performative. Avoid it in professional contexts where the recipient will read it as groveling rather than apologizing.\n\nAlso avoid 🙇 in ironic contexts where the sender genuinely needs to apologize. The gesture is too sincere for sarcasm.",
+    "howToReply": "Mirror 🙇 with another 🙇 if you are accepting the apology, or pair with 🙏 for the forgiveness stack. If the sender is signaling gratitude, mirror with 🙇 or ❤️ and a sentence that affirms the thanks. If the sender is using 🙇 as a 'sorry not sorry' ironic closer, mirror with 🙇 and a sentence of agreement.\n\nIf 🙇 lands as a deep apology and you want to forgive, send a softer emoji like 🤗 or 😊 with a sentence that closes the loop.",
+    "faqs": [
+      {
+        "question": "What does 🙇 mean in text?",
+        "answer": "🙇 means deep apology, sincere gratitude, or formal respect. The full-body bow is stronger than a casual 'sorry.'"
+      },
+      {
+        "question": "What is the difference between 🙇 and 🙏?",
+        "answer": "🙏 is hands together (prayer or please/thanks); 🙇 is a full-body bow (deep apology or formal respect). The posture changes the read."
+      },
+      {
+        "question": "Is 🙇 sincere?",
+        "answer": "🙇 reads as sincere by default — the deep bow implies genuine apology or gratitude. In ironic contexts it can read as 'sorry not sorry.'"
+      },
+      {
+        "question": "When should I use 🙇?",
+        "answer": "Use 🙇 when you want to land a deep apology or strong gratitude. Avoid it for minor mistakes or casual thank-yous where 🙏 would be cleaner."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "thank you so much for today 🙇",
+      "interpretation": "Sincere gratitude to a friend. Mirror with 🙇 or ❤️ to return the warmth."
+    },
+    {
+      "setting": "dating",
+      "message": "I'm really sorry I forgot 🙇",
+      "interpretation": "Sincere apology in a relationship. Reply with forgiveness and a sentence that closes the loop."
+    },
+    {
+      "setting": "work",
+      "message": "Apologies for the late reply 🙇",
+      "interpretation": "Formal work apology. Reply with 👍 or a sentence that accepts the apology."
+    },
+    {
+      "setting": "family",
+      "message": "sorry mom 🙇",
+      "interpretation": "Family-coded apology. Mirror with ❤️ or a sentence that forgives."
+    },
+    {
+      "setting": "social",
+      "message": "thanks for the feature 🙇",
+      "interpretation": "Public creator thanks. Mirror with 🙇 or 🙏."
+    }
   ]
 }

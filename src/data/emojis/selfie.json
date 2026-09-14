@@ -38,40 +38,90 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Photo sharing."
+      "note": "Profile-pic announcement emoji; reads as 'new photo of me' when paired with a selfie."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "The selfie platform."
+      "note": "The selfie platform default; appears under selfies and 'look at my fit' captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Video selfie content."
+      "note": "Video-selfie content default; pairs with 📸 for the photo-op stack."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Less common than on visual platforms; appears in profile-update channels."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Natural behavior."
+      "note": "Natural behavior; the selfie emoji is just confirming what is already obvious."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Selfie culture."
+      "note": "Selfie culture default; commonly used as a caption closer for photo posts."
     },
     {
       "generation": "BOOMER",
-      "note": "Taking a photo of yourself."
+      "note": "Taking a photo of yourself; the cultural weight of the emoji is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤳 Selfie Emoji Meaning",
   "seoDescription": "Learn what the Selfie emoji 🤳 really means.",
-  "skinToneVariations": [
-    "selfie-light",
-    "selfie-medium-light",
-    "selfie-medium",
-    "selfie-medium-dark",
-    "selfie-dark"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🤳 selfie emoji was added in Unicode 9 (2016), which is late for such a culturally central act. The delay reflects how thoroughly selfies had become part of phone behavior — there was no emoji because users just did it. Once the emoji landed, it immediately became the default closer for photo posts, profile-pic announcements, and 'look at me' captions.\n\nIn real-world chat 🤳 does very specific work. People send it after taking a photo, as a caption for a selfie, or as a meme about documenting the moment. The hand-on-phone image is unmistakable. Writers should pick 🤳 when the message is about photo-taking or self-documentation, and avoid it when a more specific photo emoji like 📸 would land cleaner.",
+    "howPeopleUseIt": "🤳 shows up as the caption on a selfie, as a profile-pic announcement, and as a meme about documenting minor moments. People send it after a good hair day, after a fit check, or after a coffee that needs photographing. The emoji pairs naturally with 📸 for the photo-op stack and with 💁 for the 'check this out' read.\n\nIn close-friends chats 🤳 is the 'I took a million photos today' closer. In dating-app messages it can land as a flirty 'look at me' — the photo itself does the work. In work channels 🤳 is the headshot-needed signal.",
+    "whenNotToUse": "Skip 🤳 in any context where the sender does not want to call attention to themselves — a sensitive announcement, a moment of grief, a serious update. The emoji is performative. Avoid it in professional contexts where the recipient expects a serious tone and the selfie emoji reads as inappropriate.\n\nAlso avoid 🤳 in ironic contexts where the sender is genuinely uncomfortable being photographed. The emoji carries a confidence the sender may not feel.",
+    "howToReply": "Mirror 🤳 with another 🤳 if you are matching the photo energy, or pair with 📸 for the camera-stack. If the sender is signaling a profile-pic change, send ❤️ or 🔥 to react to the new photo. If the sender is sending 🤳 as a meme about over-documentation, mirror with 🤳 and a sentence of agreement.\n\nIf 🤳 lands in a flirty context (a dating-app photo), respond to the photo itself with a sentence or an attraction emoji like 😍 or 🔥.",
+    "faqs": [
+      {
+        "question": "What does 🤳 mean in text?",
+        "answer": "🤳 means selfie, photo-op, or self-documentation. The hand-on-phone image is the visual cue."
+      },
+      {
+        "question": "Is 🤳 flirty?",
+        "answer": "🤳 can read as flirty when sent with a selfie — it is the visual equivalent of 'look at me.' In other contexts it is just photo-talk."
+      },
+      {
+        "question": "What is the difference between 🤳 and 📸?",
+        "answer": "📸 is a camera (the tool); 🤳 is a selfie (the act). The emoji you pick depends on whether you are celebrating the camera or the photo."
+      },
+      {
+        "question": "When should I use 🤳?",
+        "answer": "Use 🤳 as a caption for a selfie, as a profile-pic announcement, or as a meme about documenting the moment. Avoid it in serious contexts."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "new profile pic day 🤳",
+      "interpretation": "Profile-pic announcement in a friend group. Reply with a reaction to the new photo."
+    },
+    {
+      "setting": "dating",
+      "message": "first pic of summer 🤳",
+      "interpretation": "Flirty photo share in a dating context. Reply to the photo, not the emoji."
+    },
+    {
+      "setting": "work",
+      "message": "need a headshot for the team page 🤳",
+      "interpretation": "Work request for a headshot. Reply with a sentence asking for specs or confirming."
+    },
+    {
+      "setting": "family",
+      "message": "look at grandma's fit 🤳",
+      "interpretation": "Family-coded photo share. Mirror with ❤️ or a sentence celebrating the look."
+    },
+    {
+      "setting": "social",
+      "message": "had to capture this 🤳",
+      "interpretation": "Public photo-op reaction. Mirror with 📸 or 🤳."
+    }
   ]
 }

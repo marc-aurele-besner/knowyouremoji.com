@@ -3,75 +3,125 @@
   "slug": "person-facepalming",
   "character": "🤦",
   "name": "Person Facepalming",
-  "shortName": "person facepalming",
+  "shortName": "face palm",
   "category": "people",
-  "subcategory": "gesture",
-  "unicodeVersion": "13.0",
-  "baseMeaning": "Person Facepalming emoji.",
-  "tldr": "Represents person facepalming.",
+  "subcategory": "person-gesture",
+  "unicodeVersion": "9.0",
+  "baseMeaning": "A person facepalming.",
+  "tldr": "Are you serious?! Pure exasperation.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents person facepalming.",
-      "example": "Look at this person facepalming 🤦",
+      "meaning": "A facepalm gesture.",
+      "example": "Can't believe it 🤦",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a person facepalming.",
-      "example": "They're such a person facepalming 🤦",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Professional context for person facepalming.",
-      "example": "Meeting with the team 🤦",
+      "meaning": "Exasperation or disbelief.",
+      "example": "Why 🤦",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing person facepalming.",
-      "example": "Sure, I'm totally a person facepalming 🤦",
+      "meaning": "Self-deprecating disbelief.",
+      "example": "Me again 🤦",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Self-aware disbelief reaction to a take.",
+      "example": "Wow, really 🤦",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person facepalming."
+      "note": "Staple of exasperation-coded replies; reads as 'I cannot believe this just happened.'"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in self-deprecating captions and story replies; pairs with 😅 for the awkward stack."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Comment-section reaction to bad takes and self-aware content; reads as 'I am facepalming at myself.'"
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Used in chat reactions to bot-moves and bad jokes; reads as 'wow, really?'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤦 frequently in casual chat."
+      "note": "Self-deprecating exasperation default; 'me at my own bad take' is the common read."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤦 across platforms."
+      "note": "Classic exasperation default; widely used as a reply to bad takes and work mishaps."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤦 literally."
+      "note": "Reads as the literal facepalm gesture; the self-deprecating layer is sometimes missed."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🤦 Person Facepalming Emoji Meaning - What Does 🤦 Really Mean?",
-  "seoDescription": "Learn what the person facepalming emoji 🤦 really means in texts and social media. Discover all its uses and interpretations.",
-  "skinToneVariations": [
-    "person-facepalming-light",
-    "person-facepalming-medium-light",
-    "person-facepalming-medium",
-    "person-facepalming-medium-dark",
-    "person-facepalming-dark"
+  "seoTitle": "🤦 Person Facepalming Emoji Meaning",
+  "seoDescription": "Learn what the person facepalming emoji 🤦 really means.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 🤦 person facepalming emoji was added in Unicode 9 (2016) and quickly became the universal sigh-at-the-forehead reaction. The facepalm gesture is the visual shorthand for disbelief, exasperation, and self-aware cringe. In 2026 🤦 is the default emoji for 'I cannot believe that just happened,' 'why would you say that,' and self-deprecating content.\n\nIn real-world chat 🤦 does very specific work. People send it as a reaction to a bad take, in self-deprecating captions about their own mistakes, or as the visual signal that something is so absurd the only response is a hand-on-forehead. The gesture carries both disbelief and humor. Writers should pick 🤦 when the message is about disbelief or self-deprecating humor, and avoid it in contexts where the sender actually wants to express serious criticism — the facepalm is too playful.",
+    "howPeopleUseIt": "🤦 shows up in reaction replies, in self-deprecating captions, and in exasperation-coded responses. People send it after a friend's bad take, after their own typo, or as a 'why' reaction to a botched plan. The emoji pairs naturally with 😅 for the awkward-exasperation stack and with 🙄 for the eye-roll facepalm read.\n\nIn close-friends chats 🤦 reads as 'I cannot believe you just said that.' In dating-app messages it can land as a soft 'wow' reaction. In public posts it is the self-deprecating and disbelief-coded default.",
+    "whenNotToUse": "Skip 🤦 in any context where the sender actually wants to express serious criticism or hurt. The facepalm reads as exasperation, not anger. Avoid it in contexts where the sender wants to be subtle about their displeasure — the gesture is too obvious.\n\nAlso avoid 🤦 in ironic contexts where the sender is not actually facepalming. The gesture implies real disbelief.",
+    "howToReply": "Mirror 🤦 with another 🤦 if you are matching the exasperation energy, or pair with 🙄 for the eye-roll stack. If the sender is signaling self-deprecation, mirror with 🤦 and a sentence of solidarity. If the sender is using 🤦 as a reaction to a bad take, mirror with 🤦 and a follow-up.\n\nIf 🤦 lands as a self-deprecating caption, mirror with 🤦 or 😅 to match the energy.",
+    "faqs": [
+      {
+        "question": "What does 🤦 mean in text?",
+        "answer": "🤦 means exasperation, disbelief, or self-deprecating humor. The facepalm is the visual cue for 'are you serious?' energy."
+      },
+      {
+        "question": "What does 🤦 mean from a guy?",
+        "answer": "From a guy, 🤦 reads as an exasperation reaction or self-deprecating acknowledgment. The gesture is playful rather than hostile."
+      },
+      {
+        "question": "What does 🤦 mean on Instagram?",
+        "answer": "On Instagram, 🤦 is the default for self-deprecating captions and story reactions to bad takes."
+      },
+      {
+        "question": "When should I use 🤦?",
+        "answer": "Use 🤦 for disbelief reactions, self-deprecating humor, or exasperation-coded responses. Avoid it when serious criticism is needed."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "i forgot my keys again 🤦",
+      "interpretation": "Friend sharing self-deprecating mishap. Mirror with 🤦 or 😅 and a sentence of solidarity."
+    },
+    {
+      "setting": "dating",
+      "message": "you forgot the reservation 🤦",
+      "interpretation": "Soft exasperated reaction. Mirror with 🤦 or 😬 and a sentence acknowledging."
+    },
+    {
+      "setting": "work",
+      "message": "the file got deleted again 🤦",
+      "interpretation": "Work-coded exasperation. Mirror with 🤦 or commiserate."
+    },
+    {
+      "setting": "family",
+      "message": "dad jokes at brunch 🤦",
+      "interpretation": "Family-coded exasperation. Mirror with 🤦 or 😂."
+    },
+    {
+      "setting": "social",
+      "message": "me at my own bad take 🤦",
+      "interpretation": "Public self-deprecating post. Mirror with 🤦 or 😅."
+    }
   ]
 }

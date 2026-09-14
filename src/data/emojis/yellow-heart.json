@@ -36,17 +36,92 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Used for positivity and sunshine vibes." },
-    { "platform": "INSTAGRAM", "note": "Common in friendship posts." },
-    { "platform": "TIKTOK", "note": "Often used for wholesome content." }
+    {
+      "platform": "TWITTER",
+      "note": "Sunshine-coded positivity emoji; pairs with 🌞 for wholesome content and self-care posts."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Default friendship heart on posts about best friends, summer, and gratitude; rarely used for romance."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Wholesome content reaction; the 'you made my day' face when paired with a comment."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Common in friend-group servers and wholesome channel reactions; lighter than the red heart."
+    }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Snapchat best friend emoji." },
-    { "generation": "MILLENNIAL", "note": "Happy friendship symbol." },
-    { "generation": "BOOMER", "note": "Just a heart." }
+    {
+      "generation": "GEN_Z",
+      "note": "Snapchat's best-friend emoji by default; reads as platonic by design."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Happy friendship symbol; rarely used for romance once Snapchat popularized the best-friend association."
+    },
+    {
+      "generation": "BOOMER",
+      "note": "Reads as a positive heart without the specific best-friend subtext."
+    }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "💛 Yellow Heart Emoji Meaning",
-  "seoDescription": "Learn what the Yellow Heart emoji 💛 really means."
+  "seoDescription": "Learn what the Yellow Heart emoji 💛 really means.",
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14",
+  "longForm": {
+    "overview": "The 💛 yellow heart is the friendship heart. It was added in Unicode 6 (2010) as a color alternative to ❤️, but its modern meaning was cemented by Snapchat, which used 💛 to mark someone's #1 best friend. That association has stuck: in 2026 💛 almost always reads as platonic, friendly, or wholesome — the heart you send a best friend, a sibling, or a coworker you genuinely like.\n\nIn real-world chat 💛 is the safest heart to send when the relationship is friendship. It signals warmth without the romantic charge of ❤️ or the envy of 💚. It is also the default emoji for 'sunshine' content — gratitude posts, summer captions, and self-care updates. Writers should pick 💛 when the relationship is platonic or when the message is about happiness rather than love.",
+    "howPeopleUseIt": "💛 shows up at the end of best-friend posts, in summer captions, and as a softer alternative to ❤️ in non-romantic contexts. People send it after a friend does them a favor, after a sunny day, or when they want to express gratitude without sounding too heavy. The emoji pairs naturally with 🌞 for sunshine content and 🤗 for warm hugs.\n\nIn close-friends stories 💛 is the default heart for shoutouts to best friends. In dating apps 💛 sometimes appears in the early 'let's see where this goes' phase — a way to say 'I like you' without the red-heart weight. In family chats 💛 is the soft, all-ages-appropriate heart.",
+    "whenNotToUse": "Skip 💛 in a romantic context where the partner expects ❤️. Sending 💛 where ❤️ would land can read as a downgrade signal in established relationships, even if the sender means it as 'still warm.' Avoid it in any situation where the recipient expects a romantic heart and might read yellow as 'just friends.'\n\nAlso avoid 💛 in ironic contexts — the color reads as earnest and wholesome, so sarcasm or dark humor with 💛 lands flat.",
+    "howToReply": "Mirror 💛 with another 💛 if you want to keep the friendship register, or pair with 🤗 for a wholesome hug. If the sender is thanking you or celebrating a friendship milestone, send a short sentence alongside the mirror ('love you too' or 'always').\n\nIf 💛 lands in early dating and you want to signal romantic interest, escalate to ❤️ with a follow-up — the color shift matters. If you want to keep the friendship register, mirror with 💛 and a sentence that anchors the platonic read.",
+    "faqs": [
+      {
+        "question": "What does 💛 mean from a guy?",
+        "answer": "From a guy, 💛 almost always means friendship or platonic warmth. In early dating it can read as soft interest; in established relationships it reads as 'good friend.'"
+      },
+      {
+        "question": "What does 💛 mean from a girl?",
+        "answer": "From a girl, 💛 is the friendship heart by default — Snapchat's best-friend association has made yellow the platonic color."
+      },
+      {
+        "question": "Is 💛 flirty?",
+        "answer": "💛 is rarely flirty. It reads as friendship in most contexts. In early dating it can signal soft interest, but the default read is platonic."
+      },
+      {
+        "question": "What is the difference between 💛 and ❤️?",
+        "answer": "❤️ is the romantic heart; 💛 is the friendship heart. The Snapchat best-friend association has cemented yellow as platonic."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy birthday to my favorite human 💛",
+      "interpretation": "Best-friend birthday shoutout. Mirror with 💛 or a follow-up warm sentence."
+    },
+    {
+      "setting": "dating",
+      "message": "I had fun tonight 💛",
+      "interpretation": "Soft post-date signal, possibly early interest. Mirror with 💛 or escalate to ❤️ if you want to send a stronger signal."
+    },
+    {
+      "setting": "work",
+      "message": "thanks for covering my shift 💛",
+      "interpretation": "Friendly coworker thank-you. Mirror with 💛 or 👍 and a sentence like 'appreciate it.'"
+    },
+    {
+      "setting": "family",
+      "message": "love you mom 💛",
+      "interpretation": "Family warmth. Mirror with ❤️ or 💛 and a follow-up."
+    },
+    {
+      "setting": "social",
+      "message": "first day of summer 💛",
+      "interpretation": "Seasonal celebration post. Mirror with 💛 or 🌞."
+    }
+  ]
 }
