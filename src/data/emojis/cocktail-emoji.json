@@ -38,15 +38,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about cocktail glass."
+      "note": "Used in posts about cocktail glass. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Popular in captions and stories. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Common in comments and reactions. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to cocktail-coded content; the triangular martini glass with garnish is the default 'happy hour' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -66,5 +70,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍸 Cocktail Glass Emoji Meaning - What Does 🍸 Really Mean?",
-  "seoDescription": "Learn what the cocktail glass emoji 🍸 really means in texts and social media."
+  "seoDescription": "Learn what the cocktail glass emoji 🍸 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🍸 Cocktail Glass emoji was added in Unicode 6 (2010) and is drawn as a triangular martini glass with a small olive or garnish on a stick. The visual cue reads instantly as cocktail-coded reference, martini default, or the visible 'happy hour' tag. By 2026 🍸 has become the go-to emoji for the cocktail-glass reaction, the visible martini default, and the happy-hour-coded reaction in close-friends and family chats.\n\nIn modern chat 🍸 does very specific work. People send it as a literal cocktail glass reference, as the visible 'happy hour' tag, or as the cocktail-coded default. The triangular martini glass with garnish is the visual cue that the read is cocktail-glass-coded. Writers should pick 🍸 when the read is martini or visible 'happy hour' energy, and avoid it when the read is champagne bottle — 🍾 fits better there.",
+    "howPeopleUseIt": "🍸 lands on a friend's 'happy hour' message, in a work channel where someone is signaling cocktail-coded energy, and in a dating-app DM where the sender is signaling 'drinks soon'. The triangular martini glass with garnish anchors the read.\n\nIn close-friends chats 🍸 reads as the universal cocktail-glass default and the visible 'happy hour' tag. On X the emoji punctuates drink-coded and cocktail-coded tweets. The emoji pairs with 🍾 for the layered glass-and-bottle stack and with 🍷 for the layered cocktail-and-wine pair stack.",
+    "whenNotToUse": "Skip 🍸 in any context where the read is champagne bottle. The glass shape implies cocktail, not bottle. Avoid 🍸 in sober contexts where the alcohol-coded read lands as insensitive.",
+    "howToReply": "If a friend sends 🍸 on a drink-coded message, mirror with another 🍸 or 🍷 to match the energy. The cocktail chain reads as solidarity.\n\nIf 🍸 lands as the happy-hour-coded default, reply with another 🍸 or 🫒. And if you want to send 🍸 yourself, pair it with the moment so the cocktail-glass-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🍸 mean in text?",
+        "answer": "🍸 means cocktail-glass-coded reference, visible happy-hour energy, or the cocktail-coded reaction. The triangular martini glass with garnish is the visual cue that the read is cocktail-glass-coded."
+      },
+      {
+        "question": "Is 🍸 flirty?",
+        "answer": "Yes. 🍸 is one of the most flirty-coded emojis in the standard set. In a dating thread it reads as visible 'drinks sometime?' energy."
+      },
+      {
+        "question": "What does 🍸 mean from a girl?",
+        "answer": "From a girl or anyone, 🍸 carries the same cocktail-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🍸 mean on Instagram?",
+        "answer": "On Instagram, 🍸 is the default sticker on happy-hour-coded captions and drink-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "happy hour starts now 🍸",
+      "interpretation": "Friend drink share. Mirror with another 🍸 or 🍷 so the cocktail chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team drinks tonight 🍸",
+      "interpretation": "Work-coded drink share. Mirror with a clarifying sentence — 🍸 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "drinks this weekend 🍸",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🍸 or 🍷 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "mom and dad date night 🍸",
+      "interpretation": "Family-coded drink share. Mirror with 🍸 or 🍷 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "happy hour era 🍸",
+      "interpretation": "Public adult-coded drink share. Mirror with another 🍸 or 🍷 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

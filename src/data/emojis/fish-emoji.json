@@ -26,15 +26,19 @@
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about fish."
+      "note": "Used in posts about fish. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Popular in captions and stories. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Common in comments and reactions. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to fish-coded content; the side-view fish with fins and tail are the default 'just a fish' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -54,5 +58,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🐟 Fish Emoji Meaning - What Does 🐟 Really Mean?",
-  "seoDescription": "Learn what the fish emoji 🐟 really means in texts and social media."
+  "seoDescription": "Learn what the fish emoji 🐟 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🐟 Fish emoji was added in Unicode 6 (2010) and is drawn as a side-view fish with scales, fins, and a tail, often colored in pink or blue. The visual cue reads instantly as fish-coded reference, generic-fish default, or the visible 'just a fish' tag. By 2026 🐟 has become the go-to emoji for the generic-fish reaction, the visible fish default, and the seafood-coded reaction in close-friends and family chats.\n\nIn modern chat 🐟 does very specific work. People send it as a literal fish reference, as the visible 'just a fish' tag, or as the seafood-coded default. The side-view fish with fins and tail are the visual cue that the read is generic-fish-coded. Writers should pick 🐟 when the read is general fish or visible seafood energy, and avoid it when the read is blowfish — 🐡 fits better there.",
+    "howPeopleUseIt": "🐟 lands on a friend's fishing-trip message, in a work channel where someone is signaling seafood-coded energy, and in a dating-app DM where the sender is signaling 'something fishy'. The side-view fish with fins and tail anchor the read.\n\nIn close-friends chats 🐟 reads as the universal generic-fish default and the visible 'just a fish' tag. On X the emoji punctuates seafood-coded and fish-coded tweets. The emoji pairs with 🐠 for the layered tropical-fish pair stack and with 🎣 for the layered fish-and-rod stack.",
+    "whenNotToUse": "Skip 🐟 in any context where the read is blowfish specifically. The generic fish shape implies not-blowfish. Avoid 🐟 in formal contexts where the seafood-coded read lands as out-of-place.",
+    "howToReply": "If a friend sends 🐟 on a seafood-coded message, mirror with another 🐟 or 🎣 to match the energy. The fish chain reads as solidarity.\n\nIf 🐟 lands as the generic-fish-coded default, reply with another 🐟 or 🐡. And if you want to send 🐟 yourself, pair it with the moment so the fish-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🐟 mean in text?",
+        "answer": "🐟 means fish-coded reference, visible generic-fish energy, or the seafood-coded reaction. The side-view fish with fins and tail are the visual cue that the read is generic-fish-coded."
+      },
+      {
+        "question": "Is 🐟 flirty?",
+        "answer": "Sometimes. 🐟 reads as flirty-coded in a dating thread combined with 'something fishy is going on' content."
+      },
+      {
+        "question": "What does 🐟 mean from a girl?",
+        "answer": "From a girl or anyone, 🐟 carries the same fish-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🐟 mean on Instagram?",
+        "answer": "On Instagram, 🐟 is the default sticker on fishing-coded captions and seafood-coded story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "caught a big one 🐟",
+      "interpretation": "Friend fish share. Mirror with another 🐟 or 🎣 so the fishing chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "seafood lunch 🐟",
+      "interpretation": "Work-coded food share. Mirror with a clarifying sentence — 🐟 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "something fishy about you 🐟",
+      "interpretation": "Dating-coded flirty-coded share. Mirror with 🐟 or 👀 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "pet fish update 🐟",
+      "interpretation": "Family-coded fish share. Mirror with 🐟 or 🐠 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "fishing era 🐟",
+      "interpretation": "Public adult-coded fish share. Mirror with another 🐟 or 🎣 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
