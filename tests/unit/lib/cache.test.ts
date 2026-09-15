@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, spyOn } from 'bun:test';
+import { describe, it, expect, beforeEach, afterEach, spyOn, mock } from 'bun:test';
 import {
   getRedisClient,
   cacheGet,
@@ -31,6 +31,30 @@ function restoreEnv() {
   }
 }
 
+// @upstash/redis with autoPipelining enabled (default) returns a Proxy from its
+// constructor. Method overrides on the Proxy do not intercept the underlying
+// SDK methods, so we mock `fetch` to simulate Redis failures deterministically.
+let originalFetch: typeof fetch;
+let fetchMock: ((input: any, init?: any) => Promise<any>) | null = null;
+
+function installFetchMock(behavior: 'throw' | 'ok' = 'throw') {
+  if (!originalFetch) originalFetch = globalThis.fetch;
+  fetchMock = async () => {
+    if (behavior === 'throw') {
+      throw new Error('Redis connection failed');
+    }
+    return new Response(JSON.stringify({ result: null }), { status: 200 });
+  };
+  globalThis.fetch = fetchMock as unknown as typeof fetch;
+}
+
+function restoreFetch() {
+  if (originalFetch) {
+    globalThis.fetch = originalFetch;
+    fetchMock = null;
+  }
+}
+
 describe('cache module', () => {
   beforeEach(() => {
     saveEnv();
@@ -40,6 +64,7 @@ describe('cache module', () => {
 
   afterEach(() => {
     restoreEnv();
+    restoreFetch();
   });
 
   describe('isRedisConfigured', () => {
@@ -234,27 +259,19 @@ describe('cache module', () => {
 
   describe('cacheGet error handling', () => {
     it('should return null and log error when Redis call fails', async () => {
-      // Set valid env vars to create the client, then mock get to throw
       process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
       process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
 
-      // Get the client to initialize it
       const client = getRedisClient();
       expect(client).not.toBeNull();
 
-      // Mock the get method to throw
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const originalGet = client!.get.bind(client);
-      client!.get = async () => {
-        throw new Error('Redis connection failed');
-      };
+      installFetchMock('throw');
 
       const result = await cacheGet('test-key');
       expect(result).toBeNull();
       expect(consoleSpy).toHaveBeenCalled();
 
-      // Restore
-      client!.get = originalGet;
       consoleSpy.mockRestore();
     });
   });
@@ -268,16 +285,12 @@ describe('cache module', () => {
       expect(client).not.toBeNull();
 
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const originalSet = client!.set.bind(client);
-      client!.set = async () => {
-        throw new Error('Redis connection failed');
-      };
+      installFetchMock('throw');
 
       const result = await cacheSet('test-key', { data: 'test' }, 3600);
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
-      client!.set = originalSet;
       consoleSpy.mockRestore();
     });
 
@@ -289,16 +302,12 @@ describe('cache module', () => {
       expect(client).not.toBeNull();
 
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const originalSet = client!.set.bind(client);
-      client!.set = async () => {
-        throw new Error('Redis connection failed');
-      };
+      installFetchMock('throw');
 
       const result = await cacheSet('test-key', { data: 'test' });
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
-      client!.set = originalSet;
       consoleSpy.mockRestore();
     });
   });
@@ -312,16 +321,12 @@ describe('cache module', () => {
       expect(client).not.toBeNull();
 
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
-      const originalDel = client!.del.bind(client);
-      client!.del = async () => {
-        throw new Error('Redis connection failed');
-      };
+      installFetchMock('throw');
 
       const result = await cacheDelete('test-key');
       expect(result).toBe(false);
       expect(consoleSpy).toHaveBeenCalled();
 
-      client!.del = originalDel;
       consoleSpy.mockRestore();
     });
   });
