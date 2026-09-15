@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-concerned",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Exhausted face.",
-  "tldr": "Represents exhaustion.",
+  "baseMeaning": "A tired face with a wide open mouth and tightly shut eyes.",
+  "tldr": "Exhausted, dramatic-tired, frustration-coded yawn.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Very tired.",
+      "meaning": "Very tired, exhausted.",
       "example": "So exhausted 😫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dramatic tiredness.",
+      "meaning": "Dramatic tiredness, 'done' reaction, frustration-coded exhaustion.",
       "example": "Done 😫",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Self-aware 'this is too much' reaction in team channels.",
+      "example": "too much today 😫",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Flirty 'I cannot deal with you' reaction.",
+      "example": "you are too much 😫",
+      "interpretation": "Flirty exhaustion read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😫 as the dramatic-tired reaction — work-safe on its own but reads as performative-exhausted when paired with 'too much today.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😫 as the literal exhausted face and as the dramatic-tired closer; the wide-open-mouth read carries the visible-yell-of-tired."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about tired face."
+      "note": "Staple of 'I am so done' tweet reactions and dramatic-tired closers; the wide-open-mouth read carries the visible-exhausted."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😫 as the default dramatic-tired reaction in late-night channels; the wide-open-mouth read is universally read as exhausted."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😫 in casual contexts."
+      "note": "Sends 😫 as the 'I am so done' reaction and as the dramatic-tired closer; pairs with 😩 for the parallel-weary read."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😫 across platforms."
+      "note": "Reads 😫 as the literal exhausted face and as the dramatic-tired reaction; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😫 as the literal tired face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😫 literally."
+      "note": "Sends 😫 as a straightforward tired face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😫 Tired Face Emoji Meaning - What Does 😫 Really Mean?",
-  "seoDescription": "Learn what the tired face emoji 😫 really means in texts and social media."
+  "seoDescription": "Learn what the tired face emoji 😫 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😫 Tired Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with a wide, open mouth in a yell-of-tired shape, two tightly scrunched, closed eyes, and eyebrows pulled together in exhaustion. The wide-open mouth and scrunched eyes are the visual shorthand for being literally exhausted, dramatic-tired energy, and the frustration-coded 'I am done' closer. By 2026 😫 has become the default emoji for dramatic-tired reactions, end-of-day closers, and the visible-yell-of-tired stamp on a friend's share.\n\nIn real-world chat 😫 does very specific work. People send it as a literal exhausted reaction, as the dramatic 'I cannot deal with this' closer, or as the visible-yell-of-tired stamp when something has been too much. The wide-open mouth is louder than the scrunched eyes — 😫 is the visual cue for visible dramatic exhaustion, not just tired. Writers should pick 😫 when the moment calls for visible dramatic-tired energy, and avoid it when the recipient expects a calmer register.",
+    "howPeopleUseIt": "😫 shows up at the end of dramatic-tired messages, as the 'I cannot deal with this' reaction when something is too much, and as the visible-yell-of-tired closer in close-friends chats. People send it after a work sprint finally ends, after a friend's questionable take finally lands, or after a partner's playful roast goes too far.\n\nIn close-friends chats 😫 reads as the universal 'I am done' closer. In dating-app conversations it lands as a flirty exhausted reaction. The emoji pairs naturally with 😩 for the parallel-weary read and with 💀 for the layered-dead stack.",
+    "whenNotToUse": "Skip 😫 in any context where the recipient expects sincerity — a family member reaching out after a loss, a partner in a tender conversation, a friend opening up about something hard. The dramatic-tired read can feel dismissive in those moments.\n\nAlso avoid 😫 in work channels where a serious issue is being discussed; reach for a sentence instead. The dramatic-tired register can come back to bite you when the issue is real.",
+    "howToReply": "Mirror 😫 with another 😫 if you want to match the dramatic-tired energy, or upgrade to 😩 for a more weary parallel. If the sender is using 😫 in a flirty moment, mirror with 😫 or a flirty follow-up sentence.\n\nIf 😫 arrives as the literal-exhausted reaction, mirror with empathy and a sentence that asks how to help. And if the sender is using 😫 in a work channel, mirror with 😫 or a sentence that acknowledges the load.",
+    "faqs": [
+      {
+        "question": "What does 😫 mean in text?",
+        "answer": "😫 means exhausted, dramatic-tired, or the 'I cannot deal with this' reaction. The wide-open mouth is the visual cue for visible dramatic exhaustion."
+      },
+      {
+        "question": "What is the difference between 😫 and 😩?",
+        "answer": "😫 has a wide-open mouth and tightly scrunched eyes for the dramatic-tired register; 😩 has a wide-open mouth and tightly scrunched eyes too, but 😩 is read as weary while 😫 is read as frustrated-tired."
+      },
+      {
+        "question": "Is 😫 flirty?",
+        "answer": "Not inherently. 😫 reads as exhausted or dramatic-tired; in an established dating conversation it can land as flirty-exhausted."
+      },
+      {
+        "question": "What does 😫 mean on Slack?",
+        "answer": "On Slack 😫 is the dramatic-tired reaction — work-safe on its own but reads as performative-exhausted when paired with 'too much today.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "this week has been too much 😫",
+      "interpretation": "Friend at the dramatic-tired register. Mirror with 😫 or follow up with empathy."
+    },
+    {
+      "setting": "dating",
+      "message": "you are too much 😫",
+      "interpretation": "Flirty exhausted reaction. Mirror with 😫 or a flirty follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "too much today 😫",
+      "interpretation": "Work-channel exhausted reaction. Reply with a sentence that acknowledges the load."
+    },
+    {
+      "setting": "family",
+      "message": "I cannot even 😫",
+      "interpretation": "Family warmth at a tired moment. Reply with empathy and a sentence that supports."
+    },
+    {
+      "setting": "social",
+      "message": "this week 😫",
+      "interpretation": "Public dramatic-tired reaction. Mirror with 😫 or 😩 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

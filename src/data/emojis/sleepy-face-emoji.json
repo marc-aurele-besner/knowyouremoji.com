@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-sleepy",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Sleepy bubble.",
-  "tldr": "Represents tiredness.",
+  "baseMeaning": "A sleepy face with closed eyes and a small bubble from the nose.",
+  "tldr": "Sleepy, need-sleep, exhausted-tired energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Very sleepy.",
+      "meaning": "Very sleepy, need sleep.",
       "example": "So tired 😪",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Need sleep.",
+      "meaning": "Zonked, out-coded, ready-for-bed reaction.",
       "example": "Zonked 😪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "End-of-day tired reaction in team channels.",
+      "example": "ready for bed 😪",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Soft 'I am falling asleep on you' reaction.",
+      "example": "I am fading 😪",
+      "interpretation": "Flirty sleepy read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😪 as the end-of-day tired reaction — work-safe on its own but reads as performative-exhausted when paired with 'ready for bed.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😪 as the literal sleepy face and as the visible-need-sleep closer; the bubble-nose read carries the literal tired."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about sleepy face."
+      "note": "Staple of 'I need sleep' tweet reactions and end-of-day closers; the bubble-nose read carries the visible-need-sleep."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😪 as the default sleepy reaction in late-night channels; the bubble-nose read is universally read as tired."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😪 in casual contexts."
+      "note": "Sends 😪 as the literal 'I am tired' reaction and as the end-of-day closer; the bubble-nose register is alive across close-friends chats."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😪 across platforms."
+      "note": "Reads 😪 as the literal-sleepy face and as the end-of-day tired reaction; both registers are alive across platforms."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😪 as the literal sleepy face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😪 literally."
+      "note": "Sends 😪 as a straightforward sleepy face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😪 Sleepy Face Emoji Meaning - What Does 😪 Really Mean?",
-  "seoDescription": "Learn what the sleepy face emoji 😪 really means in texts and social media."
+  "seoDescription": "Learn what the sleepy face emoji 😪 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😪 Sleepy Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with two closed, slightly scrunched eyes, a small frown, and a tiny blue bubble rising from the nose. The closed eyes and the bubble are the visual shorthand for being literally sleepy, the 'I need sleep' reaction, and the end-of-day tired closer. By 2026 😪 has become the default emoji for sleepy-coded reactions, end-of-day closers, and the visible-need-sleep stamp on a friend's late-night message.\n\nIn real-world chat 😪 does very specific work. People send it as a literal sleepy face, as the 'I need sleep' reaction after a long day, or as the soft 'I am falling asleep on you' closer in close-friends chats. The bubble is louder than the frown — 😪 is the visual cue for visible need-sleep, not just a tired expression. Writers should pick 😪 when the moment calls for visible sleepiness or end-of-day tired energy, and avoid it when the recipient expects a more engaged reaction.",
+    "howPeopleUseIt": "😪 shows up at the end of end-of-day messages, as the 'I need sleep' reaction after a long day, and as the soft 'I am fading' closer in dating-app or close-friends chats. People send it after a work sprint finally ends, after a partner's bedtime text lands, or after a friend's late-night share.\n\nIn close-friends chats 😪 reads as the universal 'I am tired' closer. In dating-app conversations it lands as a flirty sleepy reaction. The emoji pairs naturally with 💤 for the layered-sleepy stack and with 😴 for the parallel-asleep read.",
+    "whenNotToUse": "Skip 😪 in any context where the recipient expects engagement — a friend sharing genuinely hard news, a partner in a tender conversation, a coworker raising a real concern. The sleepy register can feel dismissive in those moments.\n\nAlso avoid 😪 in work channels where a serious issue is being discussed; reach for a sentence instead. The end-of-day tired register can come back to bite you when the issue is real.",
+    "howToReply": "Mirror 😪 with another 😪 if you want to match the sleepy energy, or pair with 💤 for the layered-sleepy stack. If the sender is using 😪 in a flirty moment, mirror with 😪 or a soft follow-up sentence.\n\nIf 😪 arrives as the literal 'I am tired' reaction, mirror with empathy and a sentence that asks if they need anything. And if the sender is using 😪 in a work channel, mirror with 😪 or a sentence that suggests wrapping up.",
+    "faqs": [
+      {
+        "question": "What does 😪 mean in text?",
+        "answer": "😪 means sleepy, 'I need sleep,' or the end-of-day tired reaction. The bubble from the nose is the visual cue for visible need-sleep."
+      },
+      {
+        "question": "What is the difference between 😪 and 😴?",
+        "answer": "😪 has closed eyes and a small bubble from the nose for the 'I need sleep' register; 😴 has closed eyes and a 'Z' coming out for the 'I am asleep' register. 😪 reads as tired; 😴 reads as actually asleep."
+      },
+      {
+        "question": "Is 😪 flirty?",
+        "answer": "Not inherently. 😪 reads as tired or sleepy; in an established dating conversation it can land as a soft flirty sleepy reaction."
+      },
+      {
+        "question": "What does 😪 mean on Slack?",
+        "answer": "On Slack 😪 is the end-of-day tired reaction — work-safe on its own but reads as performative-exhausted when paired with 'ready for bed.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I am fading 😪",
+      "interpretation": "Friend at the sleepy register. Mirror with 😪 or 'rest up' to engage."
+    },
+    {
+      "setting": "dating",
+      "message": "falling asleep on you 😪",
+      "interpretation": "Flirty sleepy reaction. Mirror with 😪 or a soft follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "ready for bed 😪",
+      "interpretation": "Work-channel end-of-day reaction. Mirror with 😪 or 'go rest' to engage lightly."
+    },
+    {
+      "setting": "family",
+      "message": "long day 😪",
+      "interpretation": "Family warmth at an end-of-day share. Mirror with 😪 or 'rest up' to acknowledge."
+    },
+    {
+      "setting": "social",
+      "message": "this thread is too long 😪",
+      "interpretation": "Public sleepy reaction. Mirror with 😪 or 💤 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

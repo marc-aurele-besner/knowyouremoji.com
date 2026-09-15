@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-concerned",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Hushed expression.",
-  "tldr": "Represents quiet surprise.",
+  "baseMeaning": "A face with wide eyes and a small, open mouth.",
+  "tldr": "Quiet surprise, hushed reaction, mild shock.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Quietly surprised.",
+      "meaning": "Quietly surprised, hushed pause.",
       "example": "Oh 😯",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Mild shock.",
+      "meaning": "Mild shock, taken-aback reaction.",
       "example": "Hmm 😯",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Surprised but not yet convinced reaction in team channels.",
+      "example": "Wait, really? 😯",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Mildly surprised flirty reaction.",
+      "example": "Oh wow 😯",
+      "interpretation": "Flirty surprise read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😯 as the hushed-surprise reaction — milder than 😱 but louder than 😐; appears in casual team channels as the default 'wait, what' reaction."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😯 as the quiet surprise closer; the wide-eyes-and-small-mouth read carries visible surprise without the dramatic-shock register."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about hushed face."
+      "note": "Staple of quote-tweet hushed reactions and 'wait, really?' replies; pairs with 🤔 for the layered-shocked-and-processing stack."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😯 as the default hushed-surprise reaction in meme channels; the wide-eyes read is universally read as mild shock."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😯 in casual contexts."
+      "note": "Sends 😯 as the hushed-surprise closer and as the 'wait, what' reaction; the mild-shock register is alive across close-friends chats."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😯 across platforms."
+      "note": "Reads 😯 as the visible-mild-surprise closer across platforms; the slang register is alive but less often paired with 'oh.'"
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😯 as the literal mild-shock face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😯 literally."
+      "note": "Sends 😯 as a straightforward mild-surprise face; the slang register is rarely used in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😯 Hushed Face Emoji Meaning - What Does 😯 Really Mean?",
-  "seoDescription": "Learn what the hushed face emoji 😯 really means in texts and social media."
+  "seoDescription": "Learn what the hushed face emoji 😯 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😯 Hushed Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with two wide oval eyes, raised eyebrows, and a small, perfectly round open mouth. The wide eyes and small round mouth are the visual shorthand for quiet surprise, hushed reaction, and the mild-shock 'wait, what' tag. By 2026 😯 has become the default emoji for hushed reactions, mildly-shocked quotes, and the visible 'oh' closer at the end of a friend's unexpected reveal.\n\nIn real-world chat 😯 does very specific work. People send it as a literal mild-shock reaction, as the hushed-surprise closer after something they did not see coming, or as the visible 'wait, really?' tag on a friend's unexpected share. The wide eyes are louder than the small mouth — 😯 is the visual cue for visible surprise without the full dramatic-shock register. Writers should pick 😯 when the surprise is genuine but mild, and avoid it when the moment calls for louder shock or understated calm.",
+    "howPeopleUseIt": "😯 shows up at the end of mildly-surprising messages, as the hushed 'wait, really?' reaction to a friend's reveal, and as the visible-oh closer after something the sender did not see coming. People send it after a coworker shares unexpected news, after a partner reveals a surprise, or after a friend's plot twist finally lands.\n\nIn close-friends chats 😯 reads as the universal 'oh, wow' closer. In dating-app conversations it lands as a flirty surprise reaction. The emoji pairs naturally with 🤔 for the layered-shocked-and-processing stack and with 😮 for the parallel-surprised read.",
+    "whenNotToUse": "Skip 😯 in any context where the recipient expects a stronger reaction — a genuine plot twist in a story, a friend's major life reveal, or a partner sharing something that warrants more than mild shock. The wide-eyes-but-small-mouth read can feel muted in those moments.\n\nAlso avoid 😯 as a reaction to genuinely bad news; reach for 😟 or 😢 for sympathy-coded warmth. And avoid 😯 in work channels where a serious issue is being discussed.",
+    "howToReply": "Mirror 😯 with another 😯 if you want to match the hushed surprise, or upgrade to 😱 for an even louder shocked read. If the sender is using 😯 in a flirty moment, mirror with 😯 or a follow-up sentence that engages with the surprise.\n\nIf 😯 arrives as the universal 'wait, what' closer, mirror with 😯 or with a sentence that keeps the surprise going. And if the sender is using 😯 in a work channel, mirror with 😯 or a sentence that asks a follow-up question.",
+    "faqs": [
+      {
+        "question": "What does 😯 mean in text?",
+        "answer": "😯 means quiet surprise, hushed reaction, or the visible 'wait, what' tag. The wide eyes and small mouth are the visual cue for mild shock without the dramatic register."
+      },
+      {
+        "question": "What is the difference between 😯 and 😱?",
+        "answer": "😯 has wide eyes and a small round mouth for the mild-shock register; 😱 has hands on the face and a wide scream mouth. 😯 reads as quiet surprise; 😱 reads as dramatic shock."
+      },
+      {
+        "question": "Is 😯 flirty?",
+        "answer": "Not inherently. 😯 reads as mild surprise and hushed reaction, but not as a romantic signal. In an established dating conversation it can land as flirty-shock."
+      },
+      {
+        "question": "What does 😯 mean on Slack?",
+        "answer": "On Slack 😯 is the hushed-surprise reaction — milder than 😱 but louder than 😐; appears in casual team channels as the default 'wait, what' reaction."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "wait, really? 😯",
+      "interpretation": "Friend at the hushed-surprise register. Mirror with 😯 or follow up with a clarifying question."
+    },
+    {
+      "setting": "dating",
+      "message": "oh wow 😯",
+      "interpretation": "Flirty mild-shock reaction. Mirror with 😯 or a follow-up sentence that engages with the surprise."
+    },
+    {
+      "setting": "work",
+      "message": "Hmm, interesting 😯",
+      "interpretation": "Work-channel hushed-surprise reaction. Reply with a sentence that follows up on the surprise."
+    },
+    {
+      "setting": "family",
+      "message": "did not see that coming 😯",
+      "interpretation": "Family warmth at a shared surprise. Mirror with 😯 or 'tell me more' to engage."
+    },
+    {
+      "setting": "social",
+      "message": "this news 😯",
+      "interpretation": "Public hushed-shock reaction. Mirror with 😯 or 🤔 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

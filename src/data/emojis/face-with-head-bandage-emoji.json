@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-unwell",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Injured face.",
-  "tldr": "Represents injury.",
+  "baseMeaning": "A face with a white bandage wrapped around the head.",
+  "tldr": "Injured, hurt feelings, ouch-coded reaction.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Head injury.",
+      "meaning": "Head injury, hurt physically.",
       "example": "Got hurt 🤕",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Wounded or hurt feelings.",
+      "meaning": "Wounded feelings, 'that hit hard' reaction.",
       "example": "That hit hard 🤕",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Self-aware 'I am taking a hit on this' reaction in team channels.",
+      "example": "Taking one for the team 🤕",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Flirty 'you hurt me' reaction to a playful jab.",
+      "example": "you got me 🤕",
+      "interpretation": "Flirty hurt-feelings read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 🤕 as the playful hurt-feelings reaction — work-safe on its own but reads as performative-wounded when paired with 'taking one for the team.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 🤕 as the literal injury face and as the playful hurt-feelings closer; the bandage read carries the visible-ouch."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about face with head-bandage."
+      "note": "Staple of 'I am wounded' tweet reactions and 'that hurt me' replies; the bandage read carries the visible-ouch."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 🤕 as the default playful-wounded reaction in meme channels; the bandage read carries the visible-ouch."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤕 in casual contexts."
+      "note": "Sends 🤕 as the playful 'that hurt me' reaction and as the visible-ouch closer; pairs with 💀 for the layered-dead-from-the-jab stack."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤕 across platforms."
+      "note": "Reads 🤕 as the literal-injury face and as the playful hurt-feelings closer; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 🤕 as the literal injured face; the playful hurt-feelings slang layer is sometimes missed in older registers."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤕 literally."
+      "note": "Sends 🤕 as a straightforward injured face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤕 Face with Head-Bandage Emoji Meaning - What Does 🤕 Really Mean?",
-  "seoDescription": "Learn what the face with head-bandage emoji 🤕 really means in texts and social media."
+  "seoDescription": "Learn what the face with head-bandage emoji 🤕 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🤕 Face with Head-Bandage emoji was added in Unicode 8 (2015) and is drawn as a yellow round face with a pained, frowning expression and a white bandage wrapped around the head. The bandage and the frown are the visual shorthand for literal injury, hurt feelings, the playful 'that hit hard' reaction, and the self-aware 'I am taking a hit' closer. By 2026 🤕 has become the default emoji for injured-coded reactions, playful hurt-feelings closers, and the visible-ouch stamp on a friend's playful jab.\n\nIn real-world chat 🤕 does very specific work. People send it as a literal injury face, as the playful 'that hurt me' reaction to a friend's jab, or as the self-aware 'I am taking one for the team' closer in work channels. The bandage is louder than the frown — 🤕 is the visual cue for visible hurt, real or performed. Writers should pick 🤕 when the moment calls for visible injury or playful hurt-feelings, and avoid it when the recipient expects a sincere engagement.",
+    "howPeopleUseIt": "🤕 shows up at the end of playful hurt-feelings messages, as the literal injury reaction when someone is genuinely hurt, and as the self-aware 'I am taking one for the team' closer in work channels. People send it after a friend's well-aimed jab, after a coworker takes the blame, or after a partner's playful roast finally lands.\n\nIn close-friends chats 🤕 reads as the universal 'you got me' closer. In work channels it lands as the self-aware hurt reaction. The emoji pairs naturally with 💀 for the layered-dead-from-the-jab stack and with 😩 for the parallel-weary read.",
+    "whenNotToUse": "Skip 🤕 in any context where the recipient expects sincere engagement — a friend sharing genuinely hard news, a partner in a tender conversation, a family member reaching out after a loss. The playful-ouch register can feel dismissive in those moments.\n\nAlso avoid 🤕 as a way to soften a serious work critique; reach for a sentence instead. The self-aware-wounded register can come back to bite you when the issue is real.",
+    "howToReply": "Mirror 🤕 with another 🤕 if you want to match the playful-ouch energy, or pair with 💀 for the layered-dead-from-the-jab stack. If the sender is using 🤕 in a flirty moment, mirror with 🤕 or a flirty follow-up sentence.\n\nIf 🤕 arrives as the literal-injury reaction, mirror with empathy and a sentence that asks how to help. And if the sender is using 🤕 in a work channel, mirror with 🤕 or a sentence that supports.",
+    "faqs": [
+      {
+        "question": "What does 🤕 mean in text?",
+        "answer": "🤕 means injured, hurt feelings, or the playful 'that hit hard' reaction. The bandage is the visual cue for visible hurt, real or performed."
+      },
+      {
+        "question": "Is 🤕 passive-aggressive?",
+        "answer": "Not inherently. 🤕 reads as playful hurt-feelings or literal injury; in close-friends chats it stays in the light register."
+      },
+      {
+        "question": "What is the difference between 🤕 and 😢?",
+        "answer": "🤕 has a bandage and a frown for the playful-ouch register; 😢 has tears streaming down for the literal sad register. 🤕 reads as hurt-feelings; 😢 reads as genuine crying."
+      },
+      {
+        "question": "What does 🤕 mean on Slack?",
+        "answer": "On Slack 🤕 is the playful hurt-feelings reaction — work-safe on its own but reads as performative-wounded when paired with 'taking one for the team.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "that joke hit hard 🤕",
+      "interpretation": "Friend at the playful-wounded register. Mirror with 🤕 or 'sorry, not sorry' to engage."
+    },
+    {
+      "setting": "dating",
+      "message": "you got me 🤕",
+      "interpretation": "Flirty hurt-feelings reaction. Mirror with 🤕 or a flirty follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "Taking one for the team 🤕",
+      "interpretation": "Work-channel self-aware wounded reaction. Reply with a sentence that acknowledges the hit."
+    },
+    {
+      "setting": "family",
+      "message": "fell in the kitchen again 🤕",
+      "interpretation": "Family warmth at a literal injury. Reply with empathy and a sentence that asks how to help."
+    },
+    {
+      "setting": "social",
+      "message": "this roast 🤕",
+      "interpretation": "Public playful-wounded reaction. Mirror with 🤕 or 💀 to engage with the joke."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

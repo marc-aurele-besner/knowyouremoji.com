@@ -7,52 +7,131 @@
   "category": "people",
   "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Eye roll.",
-  "tldr": "Represents exasperation.",
+  "baseMeaning": "A face with eyes rolled upward in exasperation.",
+  "tldr": "Eye-roll, exasperation, done-with-it energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Rolling eyes.",
+      "meaning": "Rolling eyes in exasperation or disbelief.",
       "example": "Whatever 🙄",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Annoyance or disbelief.",
+      "meaning": "'Here we go again' or visible annoyance tag.",
       "example": "Here we go again 🙄",
-      "riskLevel": "LOW"
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Visible disdain sent as a softener on a criticism.",
+      "example": "Sure, that sounds great 🙄",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Skeptical reaction in a team channel.",
+      "example": "Sure, I will 'try' 🙄",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 🙄 as the skeptical or sarcastic reaction — work-safe on its own but can read as passive-aggressive when paired with quotes around words."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 🙄 as the exasperation closer; the rolled-up eyes read as 'I am done with this conversation.'"
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about face with rolling eyes."
+      "note": "Staple of exasperated-tweet reactions and skeptical quote-tweets; the rolled-up eyes read as visible sarcasm in public."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 🙄 as the default skeptical reaction in meme channels; the rolled-up eyes read as universally sarcastic."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🙄 in casual contexts."
+      "note": "Sends 🙄 as the visible-sarcasm tag and as the exasperated closer; pairs with 💅 for the layered-sassy stack."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🙄 across platforms."
+      "note": "Reads 🙄 as the work-safe sarcasm closer; the visible-eye-roll register is alive across close-friends and professional channels."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 🙄 as the literal exasperation reaction; the slang sarcasm layer is sometimes missed in older registers."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🙄 literally."
+      "note": "Sends 🙄 as a literal exasperated face; the sarcastic register is less familiar but the visual cue still reads as eye-roll."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Can read as passive-aggressive",
+      "description": "🙄 paired with quotation marks around words can read as visible disdain in work channels; use carefully in professional contexts.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🙄 Face with Rolling Eyes Emoji Meaning - What Does 🙄 Really Mean?",
-  "seoDescription": "Learn what the face with rolling eyes emoji 🙄 really means in texts and social media."
+  "seoDescription": "Learn what the face with rolling eyes emoji 🙄 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🙄 Face with Rolling Eyes emoji was added in Unicode 8 (2015) and is drawn as a yellow round face with two eyes rolled upward toward the top of the head and a flat, pursed mouth. The rolled-up eyes are the visual shorthand for exasperation, 'here we go again' energy, and the visible sarcasm tag that softens a criticism. By 2026 🙄 has become the default emoji for done-with-it reactions, passive-aggressive softeners, and the visible-disbelief stamp on something everyone can see through.\n\nIn real-world chat 🙄 does very specific work. People send it as a literal exasperation reaction, as the sarcastic softener on a criticism they do not want to type out plainly, or as the 'sure, sounds great' closer when they do not mean it. The rolled-up eyes are louder than the flat mouth — 🙄 is the visual cue for visible disdain. Writers should pick 🙄 when the exasperation is real or the sarcasm is the point, and avoid it when the recipient expects a sincere reaction.",
+    "howPeopleUseIt": "🙄 shows up at the end of exasperated messages, as the softener on a criticism the sender does not want to type plainly, and as the closer after something everyone can see through. People send it after a partner makes the same joke for the tenth time, after a coworker suggests the obviously-flawed plan, or after a public figure does the predictable thing.\n\nIn close-friends chats 🙄 reads as the universal 'I am done' closer. In work channels it lands as the skeptical reaction. On X the emoji punctuates quote-tweet exasperation. The emoji pairs with 💅 for the layered-sassy stack and with 😒 for the parallel-annoyed read.",
+    "whenNotToUse": "Skip 🙄 in any context where the recipient expects sincerity — a family member asking a real question, a friend sharing genuinely hard news, a partner opening up about something tender. The rolled-up eyes read as dismissive in those moments.\n\nAlso avoid 🙄 as a way to soften a serious work critique; reach for a sentence instead. The visible-eye-roll register can come back to bite you in a shared channel.",
+    "howToReply": "Mirror 🙄 with another 🙄 if you want to match the exasperation, or upgrade to 😒 for a more serious-annoyed parallel. If the sender is using 🙄 in a sarcastic moment, mirror with 🙄 or a sentence that acknowledges the sarcasm.\n\nIf 🙄 arrives as the 'sure, sounds great' passive-aggressive softener, do not engage with another emoji — address the underlying issue with a sentence. And if you want to send 🙄 yourself, know it reads as visible disdain; pair with caution.",
+    "faqs": [
+      {
+        "question": "What does 🙄 mean in text?",
+        "answer": "🙄 means exasperation, 'here we go again' energy, or visible sarcasm. The rolled-up eyes are the visual cue that the sender is done with the conversation."
+      },
+      {
+        "question": "Is 🙄 passive-aggressive?",
+        "answer": "It can be. 🙄 paired with quotation marks around words ('sure, I will 'try' 🙄') reads as passive-aggressive in work channels; use carefully in professional contexts."
+      },
+      {
+        "question": "What is the difference between 🙄 and 😒?",
+        "answer": "🙄 has eyes rolled upward; 😒 has eyes looking to the side with a frown. 🙄 reads as visible sarcasm; 😒 reads as annoyed or contempt."
+      },
+      {
+        "question": "What does 🙄 mean on Slack?",
+        "answer": "On Slack 🙄 is the skeptical or sarcastic reaction — work-safe on its own but can read as passive-aggressive when paired with quotes around words."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "lol here we go again 🙄",
+      "interpretation": "Friend exasperated at a recurring joke. Mirror with 🙄 or 😒 to match the energy."
+    },
+    {
+      "setting": "dating",
+      "message": "sure, that sounds great 🙄",
+      "interpretation": "Partner-visible sarcasm. Address the underlying issue with a sentence, not another emoji."
+    },
+    {
+      "setting": "work",
+      "message": "Sure, I will 'try' 🙄",
+      "interpretation": "Work-channel passive-aggressive softener. Address the issue with a sentence rather than mirroring the sarcasm."
+    },
+    {
+      "setting": "family",
+      "message": "mom, classic 🙄",
+      "interpretation": "Family warmth at a familiar pattern. Mirror with 🙄 or 'love you' to acknowledge."
+    },
+    {
+      "setting": "social",
+      "message": "the audacity 🙄",
+      "interpretation": "Public exasperation reaction. Mirror with 🙄 or 😒 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

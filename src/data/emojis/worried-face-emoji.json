@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-concerned",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Worried expression.",
-  "tldr": "Represents worry.",
+  "baseMeaning": "A worried face with a small frown and slightly raised eyebrows.",
+  "tldr": "Worried, concerned, hope-everything-is-okay energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Feeling worried.",
+      "meaning": "Feeling worried, concerned.",
       "example": "Im worried 😟",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Concerned.",
+      "meaning": "Concerned tag, hope-everything-is-okay closer.",
       "example": "Hope everything is ok 😟",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Concerned check-in reaction in team channels.",
+      "example": "hope that fix lands 😟",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Soft 'I am worried about you' reaction.",
+      "example": "are you ok? 😟",
+      "interpretation": "Flirty concern read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😟 as the concerned check-in reaction — work-safe on its own but reads as performative-worry when paired with 'hope that fix lands.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😟 as the literal worried face and as the concerned check-in reaction; the small-frown-and-raised-brows read carries the visible-worry."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about worried face."
+      "note": "Staple of 'I am concerned' tweet reactions and check-in closers; the small-frown-and-raised-brows read carries the visible-worry."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😟 as the default concerned reaction in close-friends servers; the small-frown read is universally read as 'I am worried.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😟 in casual contexts."
+      "note": "Sends 😟 as the concerned check-in reaction and as the hope-everything-is-okay closer; pairs with 🥺 for the layered-worried-and-pleading read."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😟 across platforms."
+      "note": "Reads 😟 as the literal worried face and as the concerned reaction; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😟 as the literal worried face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😟 literally."
+      "note": "Sends 😟 as a straightforward worried face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😟 Worried Face Emoji Meaning - What Does 😟 Really Mean?",
-  "seoDescription": "Learn what the worried face emoji 😟 really means in texts and social media."
+  "seoDescription": "Learn what the worried face emoji 😟 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😟 Worried Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with a small frown, two oval eyes, and slightly raised eyebrows pulled together in concern. The small frown and the concern-brows are the visual shorthand for being literally worried, the 'I hope everything is okay' reaction, and the visible-concern stamp at the end of a friend's share. By 2026 😟 has become the default emoji for worried reactions, check-in closers, and the visible-concern tag in close-friends chats.\n\nIn real-world chat 😟 does very specific work. People send it as a literal worried face, as the concerned check-in reaction after a friend goes quiet, or as the visible-concern stamp when something seems off. The small frown is louder than the raised brows — 😟 is the visual cue for visible worry, but in a softer register than 😨 or 😰. Writers should pick 😟 when the moment calls for visible concern or hope-everything-is-okay energy, and avoid it when the recipient expects a stronger reaction.",
+    "howPeopleUseIt": "😟 shows up at the end of concerned messages, as the 'I hope everything is okay' reaction after a friend goes quiet, and as the visible-concern stamp when something seems off. People send it after a friend's share that hints at trouble, after a partner's tone shifts, or after a tender moment that requires a worried-coded emoji.\n\nIn close-friends chats 😟 reads as the universal 'I am worried' closer. In dating-app conversations it lands as a flirty soft-concern reaction. The emoji pairs naturally with 🥺 for the layered-worried-and-pleading read and with 🙏 for the parallel-hope-coded read.",
+    "whenNotToUse": "Skip 😟 in any context where the recipient expects a stronger reaction — a friend sharing genuinely bad news, a partner in a serious talk about loss, a family member reaching out after a death. The small-frown read can feel muted in those moments; reach for 😨 or 😰 for the more dramatic worry register.\n\nAlso avoid 😟 as a way to soften a critique; reach for a sentence instead. The visible-concern register can read as passive-aggressive when the situation does not warrant it.",
+    "howToReply": "Mirror 😟 with another 😟 if you want to match the concerned energy, or upgrade to 🥺 for a more pleading parallel. If the sender is using 😟 in a tender moment, mirror with 😟 or a soft follow-up sentence.\n\nIf 😟 arrives as the literal-worried reaction, mirror with empathy and a sentence that asks how to help. And if the sender is using 😟 in a work channel, mirror with 😟 or a sentence that acknowledges the concern.",
+    "faqs": [
+      {
+        "question": "What does 😟 mean in text?",
+        "answer": "😟 means worried, concerned, or the 'I hope everything is okay' reaction. The small frown and raised brows are the visual cue for visible softer-worry."
+      },
+      {
+        "question": "What is the difference between 😟 and 😰?",
+        "answer": "😟 has a small frown and raised brows for the softer-worry register; 😰 has a sweat-drop and an open mouth for the more dramatic worry register. 😟 reads as hope-everything-is-okay; 😰 reads as visibly-stressed."
+      },
+      {
+        "question": "Is 😟 flirty?",
+        "answer": "Not inherently. 😟 reads as worried or concerned; in an established dating conversation it can land as flirty soft-concern."
+      },
+      {
+        "question": "What does 😟 mean on Slack?",
+        "answer": "On Slack 😟 is the concerned check-in reaction — work-safe on its own but reads as performative-worry when paired with 'hope that fix lands.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "you ok? 😟",
+      "interpretation": "Friend at the concerned check-in register. Reply with a follow-up sentence that addresses the worry."
+    },
+    {
+      "setting": "dating",
+      "message": "are you ok? 😟",
+      "interpretation": "Flirty soft-concern reaction. Mirror with 😟 or a soft follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "hope that fix lands 😟",
+      "interpretation": "Work-channel concerned reaction. Reply with a sentence that acknowledges and pivots."
+    },
+    {
+      "setting": "family",
+      "message": "call me when you can 😟",
+      "interpretation": "Family warmth at a concerned-coded moment. Reply with empathy and a sentence that supports."
+    },
+    {
+      "setting": "social",
+      "message": "this news 😟",
+      "interpretation": "Public concerned reaction. Mirror with 😟 or 🥺 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
