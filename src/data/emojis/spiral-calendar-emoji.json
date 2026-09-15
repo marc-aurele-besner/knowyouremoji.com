@@ -18,19 +18,39 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Schedule it",
+      "meaning": "Schedule it or date it",
       "example": "On my 🗓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Mark-the-date-coded reaction to a romantic milestone.",
+      "example": "save the date 🗓",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing looking forward to something.",
+      "example": "counting down 🗓",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for schedule-coded and adult-coded countdown tweets. The spiral calendar is the visible 'mark the date' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in milestone-coded stories and aesthetic-coded planner shares. The spiral calendar reads as the visible countdown default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded countdown clips. The spiral calendar pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal save-the-date default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to milestone-coded content. The spiral calendar is the default 'save the date' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🗓 literally for planning or appointment references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🗓 Spiral Calendar Emoji Meaning - What Does 🗓 Really Mean?",
-  "seoDescription": "Learn what the spiral calendar emoji 🗓 really means in texts and social media."
+  "seoDescription": "Learn what the spiral calendar emoji 🗓 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🗓 Spiral Calendar emoji was added in Unicode 7 (2014) and is drawn as a tear-off desktop calendar with a spiral binding at the top and a date visible on the front page. The visual cue reads instantly as schedule-coded reference, milestone default, or the visible 'mark the date' tag. By 2026 🗓 has become the go-to emoji for the planning-coded reaction, the visible countdown default, and the milestone-coded reaction in close-friends and group chats.\n\nIn modern chat 🗓 does very specific work. People send it as a literal date-coded reference, as the visible 'I am planning this' tag, or as the milestone-coded default. The tear-off calendar with spiral binding is the visual cue that the read is schedule or milestone. Writers should pick 🗓 when the read is date or visible 'save the date' energy, and avoid it when the read is full-on event — 📅 fits better there.",
+    "howPeopleUseIt": "🗓 lands on a friend's milestone message, in a work channel where someone is signaling schedule-coded energy, and in a dating-app DM where the sender is signaling flirty save-the-date. The tear-off calendar with spiral binding anchors the read.\n\nIn close-friends chats 🗓 reads as the universal save-the-date default and the visible 'mark your calendar' tag. On X the emoji punctuates milestone-coded and countdown tweets. The emoji pairs with 📅 for the layered spiral-and-date-calendar stack and with ⏰ for the layered spiral-and-alarm stack.",
+    "whenNotToUse": "Skip 🗓 in any context where the read is supposed to be relaxed. The calendar implies date, not relaxed. Avoid 🗓 in casual contexts where the planning-coded read lands as Type-A.",
+    "howToReply": "If a friend sends 🗓 on a milestone-coded message, mirror with another 🗓 or 📅 to send matching energy. The date chain reads as solidarity.\n\nIf 🗓 lands as the countdown default, reply with another 🗓 or ⏰. And if you want to send 🗓 yourself, pair it with the moment so the schedule-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🗓 mean in text?",
+        "answer": "🗓 means schedule-coded reference, milestone energy, or the visible 'save the date' reaction. The tear-off calendar with spiral binding is the visual cue that the read is planning."
+      },
+      {
+        "question": "Is 🗓 flirty?",
+        "answer": "Sometimes. 🗓 reads as flirty-coded in a dating thread combined with 'save the date' tag content as romantic milestone nod."
+      },
+      {
+        "question": "What does 🗓 mean from a girl?",
+        "answer": "From a girl or anyone, 🗓 carries the same schedule-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🗓 mean on Instagram?",
+        "answer": "On Instagram, 🗓 is the default sticker on milestone-coded captions and aesthetic-coded countdown story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "save the date 🗓",
+      "interpretation": "Friend milestone share. Mirror with another 🗓 or 📅 so the countdown chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team offsite, mark your 🗓",
+      "interpretation": "Work-coded schedule share. Mirror with a clarifying sentence — 🗓 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "save the date for our anniversary 🗓",
+      "interpretation": "Dating-coded flirty share. Mirror with 🗓 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "school starts next week 🗓",
+      "interpretation": "Family-coded milestone share. Mirror with 🗓 or 📚 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "launch day coming 🗓",
+      "interpretation": "Public adult-coded milestone share. Mirror with another 🗓 or 🎉 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

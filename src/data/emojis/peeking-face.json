@@ -36,9 +36,22 @@
     }
   ],
   "platformNotes": [
-    { "platform": "TWITTER", "note": "Shy reactions." },
-    { "platform": "INSTAGRAM", "note": "Curious content." },
-    { "platform": "TIKTOK", "note": "Can't look away." }
+    {
+      "platform": "TWITTER",
+      "note": "Used for shy-coded and adult-coded curiosity-coded tweets. The fingers and peeking eye are the visible 'I cannot look away' default across close-friends replies."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "Common in curiosity-coded stories and aesthetic-coded shy shares. The peeking eye reads as the visible shy default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded cringe clips. The peeking eye pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal shy-coded default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to curiosity-coded content. The fingers and peeking eye are the default 'I am too shy to look' tag among close-friends groups."
+    }
   ],
   "generationalNotes": [
     { "generation": "GEN_Z", "note": "Shy energy." },
@@ -48,5 +61,58 @@
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫣 Peeking Face Emoji Meaning - What Does 🫣 Really Mean?",
-  "seoDescription": "Learn what the peeking face emoji 🫣 really means. Shy or curious vibes. Complete context guide."
+  "seoDescription": "Learn what the peeking face emoji 🫣 really means. Shy or curious vibes. Complete context guide.",
+  "longForm": {
+    "overview": "The 🫣 Face with Peeking Eye emoji was added in Unicode 14 (2021) and is drawn as a yellow face with one eye peeking through spread fingers held in front of it, in a classic 'covering-eyes-but-peeking-through' pose. The visual cue reads instantly as shy-coded reaction, curious-but-hiding default, or the visible 'I cannot look away' tag. By 2026 🫣 has become the go-to emoji for the shy-coded reaction, the visible curiosity default, and the cringe-watching-coded reaction in close-friends and family chats.\n\nIn modern chat 🫣 does very specific work. People send it as a literal shy-coded reaction, as the visible 'I am hiding but curious' tag, or as the cringe-watching-coded default. The fingers and peeking eye are the visual cue that the read is shy-coded. Writers should pick 🫣 when the read is shy curiosity or visible 'I cannot look away' energy, and avoid it when the read is full-on hiding — 🙈 fits better there.",
+    "howPeopleUseIt": "🫣 lands on a friend's spoiler message, in a work channel where someone is signaling shy-coded energy, and in a dating-app DM where the sender is signaling shy interest. The fingers and peeking eye anchor the read.\n\nIn close-friends chats 🫣 reads as the universal shy default and the visible 'I am hiding but curious' tag. On X the emoji punctuates shy-coded and curiosity-coded tweets. The emoji pairs with 🙈 for the layered see-no-evil-and-peek stack and with 😳 for the layered shy-and-blushing stack.",
+    "whenNotToUse": "Skip 🫣 in any context where the read is fully embarrassed. The peeking eye implies shy-curious-coded energy, not full-on hiding. Avoid 🫣 in casual contexts where the cringe-watching-coded read lands as overly dramatic.",
+    "howToReply": "If a friend sends 🫣 on a shy-coded message, mirror with another 🫣 or 🙈 to match the energy. The shy chain reads as solidarity.\n\nIf 🫣 lands as the curiosity-coded default, reply with another 🫣 or 😳. And if you want to send 🫣 yourself, pair it with the moment so the shy-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫣 mean in text?",
+        "answer": "🫣 means shy-coded reaction, curious-but-hiding energy, or the visible 'I cannot look away' reaction. The fingers and peeking eye are the visual cue that the read is shy-coded."
+      },
+      {
+        "question": "Is 🫣 flirty?",
+        "answer": "Sometimes. 🫣 reads as flirty-coded in a dating thread combined with 'too shy to look at you' tag content."
+      },
+      {
+        "question": "What does 🫣 mean from a girl?",
+        "answer": "From a girl or anyone, 🫣 carries the same shy-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫣 mean on TikTok?",
+        "answer": "On TikTok, 🫣 is the default comment reaction to cringe-coded clips and shy-coded reveals."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "do not show me the screenshot 🫣",
+      "interpretation": "Friend shy share. Mirror with another 🫣 or 🙈 so the solidarity chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "I am afraid to look at the bug report 🫣",
+      "interpretation": "Work-coded shy share. Mirror with a clarifying sentence — 🫣 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "I am nervous about tomorrow 🫣",
+      "interpretation": "Dating-coded shy share. Mirror with 🫣 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "I cannot watch uncle's speech 🫣",
+      "interpretation": "Family-coded shy share. Mirror with 🫣 or 🙈 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "this thread is unhinged 🫣",
+      "interpretation": "Public adult-coded curious share. Mirror with another 🫣 or 😳 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

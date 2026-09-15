@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Hindu/Buddhist sacred sound",
+      "meaning": "Hindu and Buddhist sacred sound",
       "example": "Meditation 🕉",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Spiritual practice",
+      "meaning": "Spiritual practice or yoga-coded",
       "example": "Yoga vibes 🕉",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Sacred-coded reaction to a romantic spiritual moment.",
+      "example": "om together 🕉",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing spiritual practice or zen mood.",
+      "example": "all 🕉 brain",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for spiritual-coded and adult-coded yoga tweets. The om is the visible 'sacred sound' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in wellness-coded stories and aesthetic-coded meditation shares. The om reads as the visible spiritual default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded yoga clips. The om pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal zen default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to spiritual-coded content. The om is the default 'sacred sound' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🕉 literally for Hindu or yoga references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🕉 Om Emoji Meaning - What Does 🕉 Really Mean?",
-  "seoDescription": "Learn what the om emoji 🕉 really means in texts and social media."
+  "seoDescription": "Learn what the om emoji 🕉 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🕉 Om emoji was added in Unicode 7 (2014) and is drawn as an orange Devanagari om character with a red bindu and small curl above. The visual cue reads instantly as Hindu-coded reference, sacred default, or the visible 'spiritual practice' tag. By 2026 🕉 has become the go-to emoji for the wellness-coded reaction, the visible meditation default, and the yoga-coded reaction in close-friends and group chats.\n\nIn modern chat 🕉 does very specific work. People send it as a literal religious-coded reference, as the visible 'I am meditating' tag, or as the zen-coded default. The Devanagari om character is the visual cue that the read is sacred or zen. Writers should pick 🕉 when the read is meditation or visible 'in the flow' energy, and avoid it when the read is full-on praying hands — 🙏 fits better there.",
+    "howPeopleUseIt": "🕉 lands on a friend's meditation-coded message, in a work channel where someone is signaling yoga energy, and in a group chat where the sender is signaling 'om'. The Devanagari om character anchors the read.\n\nIn close-friends chats 🕉 reads as the universal zen default and the visible 'meditation' tag. On X the emoji punctuates wellness-coded and zen tweets. The emoji pairs with 🙏 for the layered om-and-praying-hands stack and with 🧘 for the layered om-and-meditation stack.",
+    "whenNotToUse": "Skip 🕉 in any context where the read is supposed to be casual. The om implies sacred, not casual. Avoid 🕉 in everyday contexts where the wellness-coded read lands as off-topic.",
+    "howToReply": "If a friend sends 🕉 on a meditation-coded message, mirror with another 🕉 or 🧘 to send matching energy. The zen chain reads as solidarity.\n\nIf 🕉 lands as the yoga default, reply with another 🕉 or 🙏. And if you want to send 🕉 yourself, pair it with the moment so the spiritual-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🕉 mean in text?",
+        "answer": "🕉 means religious-coded reference, meditation energy, or the visible 'om' reaction. The Devanagari om character is the visual cue that the read is sacred or zen."
+      },
+      {
+        "question": "Is 🕉 flirty?",
+        "answer": "Sometimes. 🕉 reads as flirty-coded in a dating thread combined with 'meditation together' tag content as romantic spiritual nod."
+      },
+      {
+        "question": "What does 🕉 mean from a girl?",
+        "answer": "From a girl or anyone, 🕉 carries the same religious-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🕉 mean on Instagram?",
+        "answer": "On Instagram, 🕉 is the default sticker on wellness-coded captions and aesthetic-coded yoga-pose story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "morning meditation 🕉",
+      "interpretation": "Friend zen share. Mirror with another 🕉 or 🧘 so the meditation chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "mindful hour 🕉",
+      "interpretation": "Work-coded zen share. Mirror with a clarifying sentence — 🕉 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "om together 🕉",
+      "interpretation": "Dating-coded flirty share. Mirror with 🕉 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "yoga with mom 🕉",
+      "interpretation": "Family-coded zen share. Mirror with 🕉 or 🧘 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "all zen brain 🕉",
+      "interpretation": "Public adult-coded zen share. Mirror with another 🕉 or 🙏 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

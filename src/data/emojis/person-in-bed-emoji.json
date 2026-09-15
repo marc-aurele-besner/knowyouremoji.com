@@ -1,58 +1,127 @@
 {
-  "unicode": "1F6CC",
+  "unicode": "U+1F6CC",
   "slug": "person-in-bed-emoji",
   "character": "🛌",
   "name": "Person in Bed",
   "shortName": "person in bed emoji",
-  "category": "people",
-  "subcategory": "person-activity",
+  "category": "People & Body",
+  "subcategory": "Person in Bed / Activity",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A person sleeping.",
-  "tldr": "Represents sleep.",
+  "baseMeaning": "Person sleeping in bed",
+  "tldr": "Bedtime",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sleeping in bed.",
-      "example": "Bedtime 🛌",
+      "meaning": "Sleeping or bedtime",
+      "example": "Out like 🛌",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Rest or tired.",
-      "example": "Need sleep 🛌",
+      "meaning": "Cozy or winding down",
+      "example": "In bed 🛌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Cuddle-coded or shacking-up-coded reaction.",
+      "example": "come 🛌",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Calling out a friend being in bed all day.",
+      "example": "lazy sunday 🛌",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person in bed."
+      "note": "Used for bedtime-coded and adult-coded sleep tweets. The person in bed is the visible 'goodnight' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in self-care-coded stories and aesthetic-coded bedtime shares. The person in bed reads as the visible sleepy default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Default comment-section reaction to adult-coded bedtime clips. The person in bed pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal bedtime default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to bedtime-coded content. The person in bed is the default 'goodnight' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🛌 in casual contexts."
+      "note": "Used in various creative contexts"
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🛌 across platforms."
+      "note": "Straightforward usage"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🛌 literally."
+      "note": "May use 🛌 literally for bedtime."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🛌 Person in Bed Emoji Meaning - What Does 🛌 Really Mean?",
-  "seoDescription": "Learn what the person in bed emoji 🛌 really means in texts and social media."
+  "seoDescription": "Learn what the person in bed emoji 🛌 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🛌 Person in Bed emoji was added in Unicode 7 (2014) and is drawn as a person in bed, head on pillow, with blanket up to their chest, sleeping. The visual cue reads instantly as bedtime-coded reference, cozy default, or the visible 'goodnight' tag. By 2026 🛌 has become the go-to emoji for the sleep-coded reaction, the visible bedtime default, and the lazy-day-coded reaction in close-friends and family chats.\n\nIn modern chat 🛌 does very specific work. People send it as a literal sleep-coded reference, as the visible 'goodnight' tag, or as the lazy-day-coded default. The bed with sleeping person is the visual cue that the read is sleepy or settling in. Writers should pick 🛌 when the read is bedtime or visible 'I am off to sleep' energy, and avoid it when the read is full-on awake in bed — 🛏️ fits better there.",
+    "howPeopleUseIt": "🛌 lands on a friend's goodnight message, in a work channel where someone is signaling bedtime-coded energy, and in a dating-app DM where the sender is signaling flirty goodnight. The bed with sleeping person anchors the read.\n\nIn close-friends chats 🛌 reads as the universal goodnight default and the visible 'I am off to bed' tag. On X the emoji punctuates sleep-coded and bedtime tweets. The emoji pairs with 😴 for the layered person-in-bed-and-sleepy stack and with 🌙 for the layered person-in-bed-and-moon stack.",
+    "whenNotToUse": "Skip 🛌 in any context where the read is awake and just lounging. The sleeping person implies sleep, not just present in bed. Avoid 🛌 in casual contexts where the sleepy-coded read lands as low-energy.",
+    "howToReply": "If a friend sends 🛌 on a bedtime-coded message, mirror with another 🛌 or 😴 to send matching energy. The sleep chain reads as solidarity.\n\nIf 🛌 lands as the cozy default, reply with another 🛌 or 🌙. And if you want to send 🛌 yourself, pair it with the moment so the bedtime-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🛌 mean in text?",
+        "answer": "🛌 means bedtime-coded reference, sleepy energy, or the visible 'goodnight' reaction. The bed with sleeping person is the visual cue that the read is sleep-coded."
+      },
+      {
+        "question": "Is 🛌 flirty?",
+        "answer": "Sometimes. 🛌 reads as flirty-coded in a dating thread combined with 'come over and snuggle' tag content."
+      },
+      {
+        "question": "What does 🛌 mean from a girl?",
+        "answer": "From a girl or anyone, 🛌 carries the same bedtime-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🛌 mean on Instagram?",
+        "answer": "On Instagram, 🛌 is the default sticker on bedtime-coded captions and aesthetic-coded goodnight story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "goodnight everyone 🛌",
+      "interpretation": "Friend bedtime share. Mirror with another 🛌 or 😴 so the sleep chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "out of office and 🛌",
+      "interpretation": "Work-coded bedtime share. Mirror with a clarifying sentence — 🛌 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "wish you were here 🛌",
+      "interpretation": "Dating-coded flirty share. Mirror with 🛌 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "kids in bed finally 🛌",
+      "interpretation": "Family-coded bedtime share. Mirror with 🛌 or 😴 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "lazy sunday all day 🛌",
+      "interpretation": "Public adult-coded lazy share. Mirror with another 🛌 or 🍵 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

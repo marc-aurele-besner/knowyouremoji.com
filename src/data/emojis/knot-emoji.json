@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Knot",
+      "meaning": "Tied knot",
       "example": "Tied a 🪢",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Complicated",
+      "meaning": "Complicated or tied up",
       "example": "All in a 🪢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Tied-coded reaction to a romantic commitment.",
+      "example": "tied together 🪢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing being tangled or complicated-coded.",
+      "example": "all 🪢 energy",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for craft-coded and adult-coded tied tweets. The knot is the visible 'tangled' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in craft-coded stories and aesthetic-coded rope shares. The knot reads as the visible tied default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded craft clips. The knot pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal tie default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to tangled-coded content. The knot is the default 'all tied up' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🪢 literally for rope or sailing references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🪢 Knot Emoji Meaning - What Does 🪢 Really Mean?",
-  "seoDescription": "Learn what the knot emoji 🪢 really means in texts and social media."
+  "seoDescription": "Learn what the knot emoji 🪢 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🪢 Knot emoji was added in Unicode 13 (2020) and is drawn as a coiled rope tied into a complex decorative knot with multiple loops. The visual cue reads instantly as craft-coded reference, tied default, or the visible 'all tangled' tag. By 2026 🪢 has become the go-to emoji for the tangled-coded reaction, the visible tying default, and the wedding-coded reaction in close-friends and group chats.\n\nIn modern chat 🪢 does very specific work. People send it as a literal craft-coded reference, as the visible 'knotted together' tag, or as the tangled-coded default. The coiled rope with multiple loops is the visual cue that the read is tied or complicated. Writers should pick 🪢 when the read is commitment or visible 'tied up' energy, and avoid it when the read is full-on rope — 🪢 is the same; this is the right default.",
+    "howPeopleUseIt": "🪢 lands on a friend's tangled-coded message, in a work channel where someone is signaling craft-coded energy, and in a group chat where the sender is signaling 'tied together'. The coiled rope anchors the read.\n\nIn close-friends chats 🪢 reads as the universal tied default and the visible 'tied together' tag. On X the emoji punctuates craft-coded and tangled tweets. The emoji pairs with ⛓ for the layered knot-and-chain stack and with 🧵 for the layered knot-and-thread stack.",
+    "whenNotToUse": "Skip 🪢 in any context where the read is supposed to be loose. The knot implies tied, not loose. Avoid 🪢 in casual contexts where the tangled-coded read lands as overdone.",
+    "howToReply": "If a friend sends 🪢 on a tied-coded message, mirror with another 🪢 or 🧵 to send matching energy. The tangled chain reads as solidarity.\n\nIf 🪢 lands as the wedding default, reply with another 🪢 or 💍. And if you want to send 🪢 yourself, pair it with the moment so the craft-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🪢 mean in text?",
+        "answer": "🪢 means craft-coded reference, tied energy, or the visible 'tied together' reaction. The coiled rope with multiple loops is the visual cue that the read is tied or tangled."
+      },
+      {
+        "question": "Is 🪢 flirty?",
+        "answer": "Sometimes. 🪢 reads as flirty-coded in a dating thread combined with 'tied together' tag content as romantic commitment nod."
+      },
+      {
+        "question": "What does 🪢 mean from a girl?",
+        "answer": "From a girl or anyone, 🪢 carries the same craft-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🪢 mean on Instagram?",
+        "answer": "On Instagram, 🪢 is the default sticker on craft-coded captions and aesthetic-coded wedding-knot story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "all tied up 🪢",
+      "interpretation": "Friend tangled share. Mirror with another 🪢 or 🧵 so the tied chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "schedules all in a 🪢",
+      "interpretation": "Work-coded tangled share. Mirror with a clarifying sentence — 🪢 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "tied together forever 🪢",
+      "interpretation": "Dating-coded flirty share. Mirror with 🪢 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "wedding knots 🪢",
+      "interpretation": "Family-coded craft share. Mirror with 🪢 or 💍 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "all knot energy 🪢",
+      "interpretation": "Public adult-coded tangled share. Mirror with another 🪢 or 🧵 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

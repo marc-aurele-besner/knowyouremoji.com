@@ -1,58 +1,127 @@
 {
-  "unicode": "1F445",
+  "unicode": "U+1F445",
   "slug": "tongue-emoji",
   "character": "👅",
   "name": "Tongue",
   "shortName": "tongue emoji",
-  "category": "people",
-  "subcategory": "body-parts",
+  "category": "People & Body",
+  "subcategory": "Body Parts",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Human tongue.",
-  "tldr": "Represents tongue.",
+  "baseMeaning": "Tongue sticking out",
+  "tldr": "Tongue out",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Sticking out tongue.",
-      "example": "Yummy 👅",
+      "meaning": "Tongue sticking out",
+      "example": "Yum 👅",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Playful or suggestive.",
-      "example": "Tasty 👅",
+      "meaning": "Playful, teasing, or joking",
+      "example": "Just kidding 👅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Teasing-coded flirty tag or kiss-coded reaction.",
+      "example": "silly you 👅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing playful naughtiness or a tease.",
+      "example": "cheeky 👅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about tongue."
+      "note": "Used for playful-coded and adult-coded teasing tweets. The tongue is the visible 'silly' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in playful-coded stories and aesthetic-coded tongue-out shares. The tongue reads as the visible silly default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Default comment-section reaction to adult-coded flirty clips. The tongue pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal cheeky default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to playful-coded content. The tongue is the default 'just kidding' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 👅 in casual contexts."
+      "note": "Used in various creative contexts"
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 👅 across platforms."
+      "note": "Straightforward usage"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 👅 literally."
+      "note": "May use 👅 literally for food reactions."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "👅 Tongue Emoji Meaning - What Does 👅 Really Mean?",
-  "seoDescription": "Learn what the tongue emoji 👅 really means in texts and social media."
+  "seoDescription": "Learn what the tongue emoji 👅 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 👅 Tongue emoji was added in Unicode 6 (2010) and is drawn as a single red tongue sticking out, mouth implied behind. The visual cue reads instantly as playful-coded reference, silly default, or the visible 'just kidding' tag. By 2026 👅 has become the go-to emoji for the cheeky-coded reaction, the visible playful default, and the teasing-coded reaction in close-friends and dating chats.\n\nIn modern chat 👅 does very specific work. People send it as a literal tongue-out reference, as the visible 'just kidding' tag, or as the flirty-coded default. The red tongue sticking out is the visual cue that the read is playful or teasing. Writers should pick 👅 when the read is silly or visible 'naughty' energy, and avoid it when the read is full-on food 🍽️ fits better there.",
+    "howPeopleUseIt": "👅 lands on a friend's silly-coded message, in a work channel where someone is signaling playful-coded energy, and in a dating-app DM where the sender is signaling flirty tease. The red tongue sticking out anchors the read.\n\nIn close-friends chats 👅 reads as the universal cheeky default and the visible 'silly' tag. On X the emoji punctuates playful-coded and teasing tweets. The emoji pairs with 😜 for the layered tongue-and-winking-face stack and with 😝 for the layered tongue-and-squinting-face stack.",
+    "whenNotToUse": "Skip 👅 in any context where the read is supposed to be formal. The tongue implies playful or flirty, not professional. Avoid 👅 in casual contexts where the teasing-coded read lands as mean.",
+    "howToReply": "If a friend sends 👅 on a playful-coded message, mirror with another 👅 or 😜 to send matching energy. The tease chain reads as solidarity.\n\nIf 👅 lands as the flirty default, reply with another 👅 or 😘. And if you want to send 👅 yourself, pair it with the moment so the playful-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 👅 mean in text?",
+        "answer": "👅 means playful-coded reference, cheeky energy, or the visible 'just kidding' reaction. The red tongue sticking out is the visual cue that the read is silly or teasing."
+      },
+      {
+        "question": "Is 👅 flirty?",
+        "answer": "Yes. 👅 reads as flirty-coded in a dating thread as a kiss-coded tag or playful tease."
+      },
+      {
+        "question": "What does 👅 mean from a girl?",
+        "answer": "From a girl or anyone, 👅 carries the same playful-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 👅 mean on Instagram?",
+        "answer": "On Instagram, 👅 is the default sticker on playful-coded captions and aesthetic-coded silly story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "just kidding 👅",
+      "interpretation": "Friend playful share. Mirror with another 👅 or 😜 so the silly chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "cheeky monday energy 👅",
+      "interpretation": "Work-coded playful share. Mirror with a clarifying sentence — 👅 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "you are so silly 👅",
+      "interpretation": "Dating-coded flirty share. Mirror with 👅 or 😘 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "rascal 👅",
+      "interpretation": "Family-coded playful share. Mirror with 👅 or 😜 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "cheeky vibes 👅",
+      "interpretation": "Public adult-coded flirty share. Mirror with another 👅 or 😜 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

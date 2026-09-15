@@ -18,19 +18,39 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Ready to eat",
+      "meaning": "Ready to eat or restaurant-coded",
       "example": "🍴 time",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Dinner-coded reaction to a meal with a partner.",
+      "example": "dinner 🍴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing being hungry or restaurant-coded.",
+      "example": "all 🍴 energy",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for food-coded and adult-coded meal tweets. The fork and knife are the visible 'ready to eat' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in food-coded stories and aesthetic-coded restaurant shares. The fork and knife read as the visible restaurant default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded food clips. The fork and knife pair with visual-cue-coded clip reactions; Gen Z reads it as the universal meal default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to meal-coded content. The fork and knife are the default 'eating out' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🍴 literally for restaurant or dinner references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🍴 Fork and Knife Emoji Meaning - What Does 🍴 Really Mean?",
-  "seoDescription": "Learn what the fork and knife emoji 🍴 really means in texts and social media."
+  "seoDescription": "Learn what the fork and knife emoji 🍴 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🍴 Fork and Knife emoji was added in Unicode 7 (2014) and is drawn as a silver fork on the left and a silver knife on the right, viewed from above with no plate. The visual cue reads instantly as food-coded reference, restaurant default, or the visible 'dinner is on' tag. By 2026 🍴 has become the go-to emoji for the food-coded reaction, the visible restaurant default, and the dating-coded reaction in close-friends and group chats.\n\nIn modern chat 🍴 does very specific work. People send it as a literal food-coded reference, as the visible 'eating out' tag, or as the restaurant-coded default. The fork and knife alone are the visual cue that the read is casual meal or restaurant. Writers should pick 🍴 when the read is food-coded or visible 'eat out' energy, and avoid it when the read is full-on plate — 🍽 fits better there.",
+    "howPeopleUseIt": "🍴 lands on a friend's restaurant-coded message, in a work channel where someone is signaling food-coded energy, and in a group chat where the sender is signaling 'eating out'. The fork and knife anchor the read.\n\nIn close-friends chats 🍴 reads as the universal restaurant default and the visible 'dinner' tag. On X the emoji punctuates food-coded and restaurant tweets. The emoji pairs with 🍽 for the layered fork-knife-and-plate stack and with 🍔 for the layered restaurant-and-burger stack.",
+    "whenNotToUse": "Skip 🍴 in any context where the read is supposed to be fancy. The fork and knife alone imply casual, not fancy. Avoid 🍴 in elegant contexts where the casual-coded read lands as too plain.",
+    "howToReply": "If a friend sends 🍴 on a food-coded message, mirror with another 🍴 or 🍔 to send matching energy. The restaurant chain reads as solidarity.\n\nIf 🍴 lands as the date-night default, reply with another 🍴 or 🍷. And if you want to send 🍴 yourself, pair it with the moment so the meal-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🍴 mean in text?",
+        "answer": "🍴 means food-coded reference, restaurant energy, or the visible 'ready to eat' reaction. The fork and knife are the visual cue that the read is casual meal or restaurant."
+      },
+      {
+        "question": "Is 🍴 flirty?",
+        "answer": "Sometimes. 🍴 reads as flirty-coded in a dating thread combined with 'dinner together' tag content as casual meal invite."
+      },
+      {
+        "question": "What does 🍴 mean from a girl?",
+        "answer": "From a girl or anyone, 🍴 carries the same food-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🍴 mean on Instagram?",
+        "answer": "On Instagram, 🍴 is the default sticker on food-coded captions and aesthetic-coded restaurant review story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "let's eat 🍴",
+      "interpretation": "Friend restaurant share. Mirror with another 🍴 or 🍔 so the meal chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "team lunch 🍴",
+      "interpretation": "Work-coded meal share. Mirror with a clarifying sentence — 🍴 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "dinner tonight 🍴",
+      "interpretation": "Dating-coded flirty share. Mirror with 🍴 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "sunday brunch 🍴",
+      "interpretation": "Family-coded meal share. Mirror with 🍴 or 🥞 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "eating out 🍴",
+      "interpretation": "Public adult-coded restaurant share. Mirror with another 🍴 or 🍔 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

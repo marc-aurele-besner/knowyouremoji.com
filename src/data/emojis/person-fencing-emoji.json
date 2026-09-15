@@ -1,58 +1,127 @@
 {
-  "unicode": "1F93A",
+  "unicode": "U+1F93A",
   "slug": "person-fencing-emoji",
   "character": "🤺",
   "name": "Person Fencing",
   "shortName": "person fencing emoji",
-  "category": "people",
-  "subcategory": "person-activity",
+  "category": "People & Body",
+  "subcategory": "Person Activity",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A person fencing.",
-  "tldr": "Represents fencing.",
+  "baseMeaning": "Person fencing with a sword",
+  "tldr": "Fencer",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Fencing sport.",
-      "example": "En garde 🤺",
+      "meaning": "Fencing sport",
+      "example": "Match 🤺",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dueling or competing.",
-      "example": "Challenge accepted 🤺",
+      "meaning": "Friendly argument or sparring",
+      "example": "Argument 🤺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Playful-coded sparring tag as banter or flirt.",
+      "example": "debate you 🤺",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing an argument or beef.",
+      "example": "verge beef 🤺",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Used in posts about person fencing."
+      "note": "Used for sport-coded and adult-coded beef tweets. The fencer is the visible 'engage' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
+      "note": "Common in sport-coded stories and aesthetic-coded fencing shares. The fencer reads as the visible sport default on story overlays and reply captions."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "note": "Default comment-section reaction to adult-coded beef clips. The fencer pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal engage default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to sport-coded content. The fencer is the default 'challenge accepted' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤺 in casual contexts."
+      "note": "Used in various creative contexts"
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤺 across platforms."
+      "note": "Straightforward usage"
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤺 literally."
+      "note": "May use 🤺 literally for sport references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🤺 Person Fencing Emoji Meaning - What Does 🤺 Really Mean?",
-  "seoDescription": "Learn what the person fencing emoji 🤺 really means in texts and social media."
+  "seoDescription": "Learn what the person fencing emoji 🤺 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🤺 Person Fencing emoji was added in Unicode 9 (2016) and is drawn as a person in fencing gear with a sword, in the lunge position. The visual cue reads instantly as sport-coded reference, sparring default, or the visible 'en garde' tag. By 2026 🤺 has become the go-to emoji for the fencing-coded reaction, the visible sparring default, and the playful-beef-coded reaction in close-friends and group chats.\n\nIn modern chat 🤺 does very specific work. People send it as a literal fencing-coded reference, as the visible 'I am sparring' tag, or as the playful-beef-coded default. The lunge with sword is the visual cue that the read is sport or friendly rivalry. Writers should pick 🤺 when the read is friendly banter or visible 'sparring' energy, and avoid it when the read is full-on fight — 🤼 fits better there.",
+    "howPeopleUseIt": "🤺 lands on a friend's argument-coded message, in a work channel where someone is signaling fencing-coded energy, and in a group chat where the sender is signaling challenge accepted. The lunge with sword anchors the read.\n\nIn close-friends chats 🤺 reads as the universal sparring default and the visible 'en garde' tag. On X the emoji punctuates sport-coded and playful-beef tweets. The emoji pairs with 🤼 for the layered fencing-and-wrestler stack and with ⚔️ for the layered fencing-and-crossed-swords stack.",
+    "whenNotToUse": "Skip 🤺 in any context where the read is supposed to be gentle. The fencing gesture implies competition, not cozy. Avoid 🤺 in casual contexts where the sport-coded read lands as overly competitive.",
+    "howToReply": "If a friend sends 🤺 on a fencing-coded message, mirror with another 🤺 or ⚔️ to send matching energy. The sparring chain reads as solidarity.\n\nIf 🤺 lands as the playful-beef default, reply with another 🤺 or 🤼. And if you want to send 🤺 yourself, pair it with the moment so the fencing-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🤺 mean in text?",
+        "answer": "🤺 means fencing-coded reference, sparring energy, or the visible 'en garde' reaction. The lunge with sword is the visual cue that the read is sport-coded."
+      },
+      {
+        "question": "Is 🤺 flirty?",
+        "answer": "Sometimes. 🤺 reads as flirty-coded in a dating thread combined with 'challenge you' tag content as playful banter."
+      },
+      {
+        "question": "What does 🤺 mean from a girl?",
+        "answer": "From a girl or anyone, 🤺 carries the same fencing-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🤺 mean on TikTok?",
+        "answer": "On TikTok, 🤺 is the default comment reaction to beef-coded and playful sparring clips."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "match me 🤺",
+      "interpretation": "Friend fencing-coded share. Mirror with another 🤺 or ⚔️ so the sparring chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "project beef 🤺",
+      "interpretation": "Work-coded sparring share. Mirror with a clarifying sentence — 🤺 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "debate you on a date 🤺",
+      "interpretation": "Dating-coded flirty share. Mirror with 🤺 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "cousin and i always 🤺",
+      "interpretation": "Family-coded friendly rivalry share. Mirror with 🤺 or 🤼 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "twitter beef 🤺",
+      "interpretation": "Public adult-coded sparring share. Mirror with another 🤺 or 💬 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

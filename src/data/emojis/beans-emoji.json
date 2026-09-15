@@ -18,19 +18,39 @@
     },
     {
       "context": "SLANG",
-      "meaning": "Spilling beans",
+      "meaning": "Spilling beans or secrets",
       "example": "Don't spill the 🫘",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Trust-coded reaction to a romantic secret-keeping joke.",
+      "example": "spill the 🫘",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing being a 'magic bean' or full of surprises.",
+      "example": "magic 🫘 moment",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for gossip-coded and adult-coded spill tweets. The beans are the visible 'spill the beans' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in food-coded stories and aesthetic-coded bean shares. The beans read as the visible spill default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded secret clips. The beans pair with visual-cue-coded clip reactions; Gen Z reads it as the universal spill default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to gossip-coded content. The beans are the default 'spill' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🫘 literally for food or recipe references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🫘 Beans Emoji Meaning - What Does 🫘 Really Mean?",
-  "seoDescription": "Learn what the beans emoji 🫘 really means in texts and social media."
+  "seoDescription": "Learn what the beans emoji 🫘 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🫘 Beans emoji was added in Unicode 14 (2021) and is drawn as a pile of three red kidney beans with visible curves and slight sheen. The visual cue reads instantly as food-coded reference, spill default, or the visible 'spill the beans' tag. By 2026 🫘 has become the go-to emoji for the gossip-coded reaction, the visible spill default, and the magic-coded reaction in close-friends and group chats.\n\nIn modern chat 🫘 does very specific work. People send it as a literal food-coded reference, as the visible 'spill the beans' tag, or as the magic-coded default. The pile of red beans is the visual cue that the read is spill or food. Writers should pick 🫘 when the read is gossip or visible 'spill the beans' energy, and avoid it when the read is full-on coffee bean — ☕ fits better there.",
+    "howPeopleUseIt": "🫘 lands on a friend's gossip-coded message, in a work channel where someone is signaling spill-coded energy, and in a group chat where the sender is signaling 'magic beans'. The pile of red beans anchors the read.\n\nIn close-friends chats 🫘 reads as the universal spill default and the visible 'spill the beans' tag. On X the emoji punctuates gossip-coded and secret tweets. The emoji pairs with 🫗 for the layered beans-and-pour stack and with 🍵 for the layered beans-and-tea-cup stack.",
+    "whenNotToUse": "Skip 🫘 in any context where the read is supposed to be quiet. The beans imply spill, not quiet. Avoid 🫘 in professional contexts where the gossip-coded read lands as off-topic.",
+    "howToReply": "If a friend sends 🫘 on a spill-coded message, mirror with another 🫘 or 🫗 to send matching energy. The gossip chain reads as solidarity.\n\nIf 🫘 lands as the food default, reply with another 🫘 or 🥣. And if you want to send 🫘 yourself, pair it with the moment so the spill-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🫘 mean in text?",
+        "answer": "🫘 means food-coded reference, spill energy, or the visible 'spill the beans' reaction. The pile of red beans is the visual cue that the read is gossip or food."
+      },
+      {
+        "question": "Is 🫘 flirty?",
+        "answer": "Sometimes. 🫘 reads as flirty-coded in a dating thread combined with 'spill the beans' tag content as playful secret-keeping joke."
+      },
+      {
+        "question": "What does 🫘 mean from a girl?",
+        "answer": "From a girl or anyone, 🫘 carries the same spill-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🫘 mean on Instagram?",
+        "answer": "On Instagram, 🫘 is the default sticker on food-coded captions and aesthetic-coded bean-recipe story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "spill the 🫘",
+      "interpretation": "Friend gossip share. Mirror with another 🫘 or 🫗 so the spill chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "release the 🫘",
+      "interpretation": "Work-coded gossip share. Mirror with a clarifying sentence — 🫘 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "tell me everything 🫘",
+      "interpretation": "Dating-coded flirty share. Mirror with 🫘 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "magic 🫘 from grandma",
+      "interpretation": "Family-coded food share. Mirror with 🫘 or 🍲 so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "all the secrets 🫘",
+      "interpretation": "Public adult-coded gossip share. Mirror with another 🫘 or 🫗 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

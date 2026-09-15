@@ -12,25 +12,45 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Crutch",
+      "meaning": "Walking crutch",
       "example": "Using a 🩼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Support or dependency",
+      "meaning": "Emotional support or dependency",
       "example": "🩼 for now",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Support-coded reaction to leaning on a partner.",
+      "example": "you are my 🩼",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "Dramatizing emotional dependency or low battery.",
+      "example": "running on 🩼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Renders consistently across the platform"
+      "note": "Used for support-coded and adult-coded recovery tweets. The crutch is the visible 'I am leaning on something' default across close-friends replies."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stories and posts"
+      "note": "Common in recovery-coded stories and aesthetic-coded injury-share stories. The crutch reads as the visible mobility default on story overlays and reply captions."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "Default comment-section reaction to adult-coded recovery clips. The crutch pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal dependency default."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "Group-chat reaction to support-coded content. The crutch is the default 'leaning on this' tag among close-friends groups."
     }
   ],
   "generationalNotes": [
@@ -41,10 +61,67 @@
     {
       "generation": "MILLENNIAL",
       "note": "Straightforward usage"
+    },
+    {
+      "generation": "BOOMER",
+      "note": "May use 🩼 literally for mobility or recovery references."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "🩼 Crutch Emoji Meaning - What Does 🩼 Really Mean?",
-  "seoDescription": "Learn what the crutch emoji 🩼 really means in texts and social media."
+  "seoDescription": "Learn what the crutch emoji 🩼 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 🩼 Crutch emoji was added in Unicode 14 (2021) and is drawn as a single wooden crutch with an underarm support and visible grip handle. The visual cue reads instantly as recovery-coded reference, mobility-aid default, or the visible 'I am leaning on something' tag. By 2026 🩼 has become the go-to emoji for the recovery-coded reaction, the visible support default, and the dependency-coded reaction in close-friends and group chats.\n\nIn modern chat 🩼 does very specific work. People send it as a literal mobility-coded reference, as the visible 'I am using a crutch' tag, or as the support-coded default. The wooden crutch with underarm support is the visual cue that the read is recovery or dependence. Writers should pick 🩼 when the read is support or visible 'leaning on something' energy, and avoid it when the read is full-on wheelchair — ♿ fits better there.",
+    "howPeopleUseIt": "🩼 lands on a friend's recovery message, in a work channel where someone is signaling support-coded energy, and in a group chat where the sender is signaling 'I am leaning on it'. The wooden crutch anchors the read.\n\nIn close-friends chats 🩼 reads as the universal recovery default and the visible 'mobility aid' tag. On X the emoji punctuates support-coded and recovery tweets. The emoji pairs with 🏥 for the layered crutch-and-hospital stack and with ❤️ for the layered crutch-and-love stack.",
+    "whenNotToUse": "Skip 🩼 in any context where the read is supposed to be casual. The crutch implies dependency, not casual. Avoid 🩼 in casual contexts where the recovery-coded read lands as off-topic.",
+    "howToReply": "If a friend sends 🩼 on a recovery-coded message, mirror with another 🩼 or 🏥 to send matching energy. The support chain reads as solidarity.\n\nIf 🩼 lands as the dependency default, reply with another 🩼 or 🤝. And if you want to send 🩼 yourself, pair it with the moment so the support-coded read is clear.",
+    "faqs": [
+      {
+        "question": "What does 🩼 mean in text?",
+        "answer": "🩼 means recovery-coded reference, mobility energy, or the visible 'I am using a crutch' reaction. The wooden crutch with underarm support is the visual cue that the read is support or dependency."
+      },
+      {
+        "question": "Is 🩼 flirty?",
+        "answer": "Sometimes. 🩼 reads as flirty-coded in a dating thread combined with 'you are my crutch' tag content as romantic dependency."
+      },
+      {
+        "question": "What does 🩼 mean from a girl?",
+        "answer": "From a girl or anyone, 🩼 carries the same support-coded read. There is no gendered meaning; the emoji works the same regardless."
+      },
+      {
+        "question": "What does 🩼 mean on Instagram?",
+        "answer": "On Instagram, 🩼 is the default sticker on recovery-coded captions and aesthetic-coded injury recovery story overlays."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "ankle sprain, on crutches 🩼",
+      "interpretation": "Friend recovery share. Mirror with another 🩼 or 🏥 so the support chain reads back."
+    },
+    {
+      "setting": "work",
+      "message": "WFM and limping 🩼",
+      "interpretation": "Work-coded support share. Mirror with a clarifying sentence — 🩼 can land as off-topic in work channels."
+    },
+    {
+      "setting": "dating",
+      "message": "you are my crutch 🩼",
+      "interpretation": "Dating-coded flirty share. Mirror with 🩼 or 🥰 so the warm chain reads back."
+    },
+    {
+      "setting": "family",
+      "message": "mom is on the mend 🩼",
+      "interpretation": "Family-coded recovery share. Mirror with 🩼 or ❤️ so the family-coded chain reads back."
+    },
+    {
+      "setting": "social",
+      "message": "running on emotional crutches 🩼",
+      "interpretation": "Public adult-coded dependency share. Mirror with another 🩼 or 🫂 so the solidarity chain reads back."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
