@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-concerned",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Sad crying face.",
-  "tldr": "Represents sadness.",
+  "baseMeaning": "A face with a single tear rolling down.",
+  "tldr": "Sad, single-tear, soft-crying energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Shedding a tear.",
+      "meaning": "Shedding a tear, sad moment.",
       "example": "So sad 😢",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Disappointed.",
+      "meaning": "Disappointed, missed-it reaction, soft-disappointment tag.",
       "example": "Missed it 😢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Mildly disappointed reaction in team channels.",
+      "example": "we missed the deadline 😢",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Soft 'I miss you' reaction in close-friends chats.",
+      "example": "I miss you 😢",
+      "interpretation": "Flirty soft-missing read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😢 as the soft-disappointment reaction — work-safe on its own but reads as performative-sad when paired with 'we missed the deadline.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😢 as the literal sad face and as the soft-miss-you reaction; the single-tear read carries the visible-soft-crying."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about crying face."
+      "note": "Staple of 'I am sad' tweet reactions and soft-disappointment closers; the single-tear read carries the visible-soft-crying."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😢 as the default soft-sad reaction in close-friends servers; the single-tear read is universally read as 'I am hurt.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😢 in casual contexts."
+      "note": "Sends 😢 as the soft-sad reaction and as the soft-miss-you reaction; pairs with 😭 for the layered-crying stack."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😢 across platforms."
+      "note": "Reads 😢 as the literal sad face and as the soft-disappointment reaction; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😢 as the literal sad face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😢 literally."
+      "note": "Sends 😢 as a straightforward sad face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😢 Crying Face Emoji Meaning - What Does 😢 Really Mean?",
-  "seoDescription": "Learn what the crying face emoji 😢 really means in texts and social media."
+  "seoDescription": "Learn what the crying face emoji 😢 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😢 Crying Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with a sad, downturned mouth and a single tear rolling down from one eye. The single tear is the visual shorthand for being literally sad, soft-disappointment energy, the 'I miss you' reaction, and the soft-crying closer at the end of a tender message. By 2026 😢 has become the default emoji for soft-sad reactions, 'I miss you' closers, and the visible-soft-crying stamp on a friend's tender share.\n\nIn real-world chat 😢 does very specific work. People send it as a literal sad face, as the soft 'I miss you' reaction to a partner or friend, or as the visible-soft-crying stamp on a tender share. The single tear is louder than the frown — 😢 is the visual cue for visible sadness, but in a soft rather than dramatic register. Writers should pick 😢 when the moment calls for visible sadness or soft-missing, and avoid it when the recipient expects a more dramatic reaction.",
+    "howPeopleUseIt": "😢 shows up at the end of sad messages, as the soft 'I miss you' reaction when a partner is away, and as the visible-soft-crying stamp on a tender share. People send it after a friend shares hard news, after a partner goes on a trip, or after a tender moment that requires a tear-coded emoji.\n\nIn close-friends chats 😢 reads as the universal 'I am sad' closer. In dating-app conversations it lands as a flirty soft-missing reaction. The emoji pairs naturally with 😭 for the layered-crying stack and with 💔 for the parallel-broken-heart read.",
+    "whenNotToUse": "Skip 😢 in any context where the recipient expects a more dramatic reaction — a friend sharing genuinely devastating news, a partner in a serious talk about loss, a family member reaching out after a death. The single-tear read can feel muted in those moments; reach for 😭 for the dramatic-crying register.\n\nAlso avoid 😢 as a way to soften a critique; reach for a sentence instead. The visible-sadness register can feel manipulative when the situation does not warrant it.",
+    "howToReply": "Mirror 😢 with another 😢 if you want to match the soft-sad energy, or upgrade to 😭 for a more dramatic-crying parallel. If the sender is using 😢 in a tender moment, mirror with 😢 or a soft follow-up sentence.\n\nIf 😢 arrives as the literal-sad reaction, mirror with empathy and a sentence that asks how to help. And if the sender is using 😢 in a work channel, mirror with empathy or a sentence that acknowledges the disappointment.",
+    "faqs": [
+      {
+        "question": "What does 😢 mean in text?",
+        "answer": "😢 means sad, soft-crying, or the 'I miss you' reaction. The single tear is the visual cue for visible soft-sadness."
+      },
+      {
+        "question": "What is the difference between 😢 and 😭?",
+        "answer": "😢 has a single tear rolling down with a frown for the soft-sad register; 😭 has multiple tears streaming with a louder wail-mouth for the dramatic-crying register. 😢 reads as tender sadness; 😭 reads as dramatic crying."
+      },
+      {
+        "question": "Is 😢 flirty?",
+        "answer": "Not inherently. 😢 reads as sad or soft-missing; in an established dating conversation it can land as flirty soft-missing."
+      },
+      {
+        "question": "What does 😢 mean on Slack?",
+        "answer": "On Slack 😢 is the soft-disappointment reaction — work-safe on its own but reads as performative-sad when paired with 'we missed the deadline.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I miss her 😢",
+      "interpretation": "Friend at the soft-sad register. Mirror with 😢 or follow up with empathy."
+    },
+    {
+      "setting": "dating",
+      "message": "wish you were here 😢",
+      "interpretation": "Flirty soft-missing reaction. Mirror with 😢 or a soft follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "we missed the deadline 😢",
+      "interpretation": "Work-channel soft-disappointment reaction. Reply with a sentence that acknowledges and pivots."
+    },
+    {
+      "setting": "family",
+      "message": "I miss home 😢",
+      "interpretation": "Family warmth at a tender moment. Reply with empathy and a sentence that supports."
+    },
+    {
+      "setting": "social",
+      "message": "this movie 😢",
+      "interpretation": "Public soft-sad reaction. Mirror with 😢 or 😭 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

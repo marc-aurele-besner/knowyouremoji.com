@@ -7,52 +7,132 @@
   "category": "people",
   "subcategory": "hand-single-finger",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Finger pointing up.",
-  "tldr": "Represents pointing up.",
+  "baseMeaning": "A hand with the index finger pointing upward.",
+  "tldr": "Pointing up, attention-coded, 'actually' tag.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pointing upward.",
+      "meaning": "Pointing upward, attention-coded.",
       "example": "One moment ☝",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Making a point or wait.",
+      "meaning": "Making a point, 'actually' tag, wait-coded correction.",
       "example": "Actually ☝",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Adding a quick point in team channels.",
+      "example": "Quick note ☝",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Soft 'wait, actually' reaction.",
+      "example": "actually, yes ☝",
+      "interpretation": "Flirty wait-coded read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats ☝ as the quick-add-note reaction — work-appropriate when used to flag a follow-up; can read as condescending when paired with 'actually.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands ☝ as the literal pointing-up closer and as the 'wait, actually' reaction; the index-finger read carries the visible-attention."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about index pointing up."
+      "note": "Staple of 'actually, no' tweet reactions and adding-a-point replies; the index-finger read carries the visible-wait-coded."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses ☝ as the default wait-coded reaction in close-friends servers; the index-finger read is universally read as 'actually.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses ☝ in casual contexts."
+      "note": "Sends ☝ as the 'actually' tag and as the wait-coded reaction; pairs with ❗ for the layered-wait-and-exclamation stack."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with ☝ across platforms."
+      "note": "Reads ☝ as the literal pointing-up gesture and as the 'actually' reaction; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses ☝ as the literal pointing finger; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use ☝ literally."
+      "note": "Sends ☝ as a literal pointing-up gesture; the slang register is less familiar in older channels."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Can read as condescending",
+      "description": "☝ paired with 'actually' can read as condescending in work channels; use carefully when correcting a coworker or senior colleague.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "☝ Index Pointing Up Emoji Meaning - What Does ☝ Really Mean?",
-  "seoDescription": "Learn what the index pointing up emoji ☝ really means in texts and social media."
+  "seoDescription": "Learn what the index pointing up emoji ☝ really means in texts and social media.",
+  "longForm": {
+    "overview": "The ☝ Index Pointing Up emoji was added in Unicode 1 (1993) and is drawn as a yellow hand with the index finger extended upward and the other fingers curled into a fist. The index finger and the upward-point are the visual shorthand for the literal pointing-up gesture, the attention-coded 'one moment' tag, the 'actually' wait-coded reaction, and the visible-flag-a-point stamp. By 2026 ☝ has become the default emoji for wait-coded reactions, 'actually' corrections, and the visible-pointing-up tag in close-friends chats.\n\nIn real-world chat ☝ does very specific work. People send it as a literal pointing-up gesture, as the 'actually, wait' reaction when adding a quick point, or as the visible-flag-a-follow-up closer in work channels. The index finger is louder than the curled fist — ☝ is the visual cue for visible attention, not just a hand gesture. Writers should pick ☝ when the moment calls for wait-coded correction or attention-flag, and avoid it when the recipient expects a more conversational register.",
+    "howPeopleUseIt": "☝ shows up at the end of wait-coded messages, as the 'actually' tag when adding a quick correction, and as the visible-flag-a-follow-up closer in work channels. People send it after a friend makes a small error, after a partner's quick-add point, or after a coworker needs to flag a detail.\n\nIn close-friends chats ☝ reads as the universal 'actually' tag. In work channels it lands as the quick-add-note reaction. The emoji pairs naturally with ❗ for the layered-wait-and-exclamation stack and with 👆 for the parallel-upward-pointing read.",
+    "whenNotToUse": "Skip ☝ in any context where the recipient expects a sincere engagement — a friend sharing hard news, a partner in a tender conversation, a family member reaching out. The wait-coded register can feel dismissive in those moments.\n\nAlso avoid ☝ when correcting a senior colleague in a shared channel; reach for a sentence instead. The visible-condescending register can come back to bite you when the audience reads it as 'actually, you are wrong.'",
+    "howToReply": "Mirror ☝ with another ☝ if you want to match the wait-coded energy, or upgrade to ❗ for a more attention-coded parallel. If the sender is using ☝ in a flirty moment, mirror with ☝ or a flirty follow-up sentence.\n\nIf ☝ arrives as the literal pointing-up reaction, mirror with a sentence that engages with the point. And if the sender is using ☝ in a work channel, mirror with ☝ or a sentence that acknowledges the add.",
+    "faqs": [
+      {
+        "question": "What does ☝ mean in text?",
+        "answer": "☝ means pointing up, 'actually' tag, or wait-coded correction. The index finger is the visual cue for visible attention."
+      },
+      {
+        "question": "Is ☝ condescending?",
+        "answer": "It can be. ☝ paired with 'actually' can read as condescending in work channels; use carefully when correcting a coworker or senior colleague."
+      },
+      {
+        "question": "What is the difference between ☝ and 👆?",
+        "answer": "☝ is the index finger pointing up with skin-tone variation; 👆 is the backhand pointing up. Both read as wait-coded attention, with slight stylistic differences."
+      },
+      {
+        "question": "What does ☝ mean on Slack?",
+        "answer": "On Slack ☝ is the quick-add-note reaction — work-appropriate when used to flag a follow-up; can read as condescending when paired with 'actually.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "actually, yes ☝",
+      "interpretation": "Friend at the wait-coded register. Mirror with ☝ or follow up with the correct info."
+    },
+    {
+      "setting": "dating",
+      "message": "wait, one more thing ☝",
+      "interpretation": "Flirty wait-coded reaction. Mirror with ☝ or a flirty follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "Quick note ☝",
+      "interpretation": "Work-channel add-a-point reaction. Reply with a sentence that acknowledges the add."
+    },
+    {
+      "setting": "family",
+      "message": "wait, actually ☝",
+      "interpretation": "Family warmth at a wait-coded moment. Mirror with ☝ or 'tell me' to acknowledge."
+    },
+    {
+      "setting": "social",
+      "message": "actually, no ☝",
+      "interpretation": "Public wait-coded reaction. Mirror with ☝ or ❗ to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

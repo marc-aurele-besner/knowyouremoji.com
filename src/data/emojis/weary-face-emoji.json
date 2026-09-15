@@ -7,52 +7,126 @@
   "category": "people",
   "subcategory": "face-concerned",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Weary expression.",
-  "tldr": "Represents exhaustion.",
+  "baseMeaning": "A weary face with tightly closed eyes and a wide open mouth.",
+  "tldr": "Weary, can't-anymore energy, dramatic-exhausted sigh.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "So tired.",
+      "meaning": "So tired, visibly exhausted.",
       "example": "Exhausted 😩",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dramatic tiredness.",
+      "meaning": "Dramatic-tired, 'I can't anymore' energy, frustrated-sigh reaction.",
       "example": "I cant anymore 😩",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Self-aware 'we are cooked' reaction in team channels.",
+      "example": "this sprint is killing me 😩",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "DATING",
+      "meaning": "Flirty 'I cannot deal with you' reaction.",
+      "example": "you are too much 😩",
+      "interpretation": "Flirty weary read.",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😩 as the dramatic-weary reaction — work-safe on its own but reads as performative-exhausted when paired with 'this sprint is killing me.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😩 as the literal weary face and as the dramatic-sigh closer; the wide-open-mouth read carries the visible-frustration-sigh."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about weary face."
+      "note": "Staple of 'I cannot anymore' tweet reactions and dramatic-weary closers; the wide-open-mouth read carries the visible-sigh."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😩 as the default dramatic-weary reaction in late-night channels; the wide-open-mouth read is universally read as 'I am done.'"
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😩 in casual contexts."
+      "note": "Sends 😩 as the 'I cannot anymore' reaction and as the dramatic-weary closer; pairs with 😫 for the parallel-tired read."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😩 across platforms."
+      "note": "Reads 😩 as the literal weary face and as the dramatic-tired reaction; both registers are alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😩 as the literal tired face; the slang register is sometimes missed in older channels."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😩 literally."
+      "note": "Sends 😩 as a straightforward weary face; the slang register is less familiar in older channels."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
   "seoTitle": "😩 Weary Face Emoji Meaning - What Does 😩 Really Mean?",
-  "seoDescription": "Learn what the weary face emoji 😩 really means in texts and social media."
+  "seoDescription": "Learn what the weary face emoji 😩 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😩 Weary Face emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with two tightly closed eyes, eyebrows pulled together in frustration, and a wide, open mouth in a sigh-of-exhaustion shape. The closed eyes and the wide-open mouth are the visual shorthand for being literally weary, dramatic-tired 'I cannot anymore' energy, and the frustrated-sigh reaction. By 2026 😩 has become the default emoji for dramatic-weary reactions, end-of-day closers, and the visible-sigh stamp on a friend's share.\n\nIn real-world chat 😩 does very specific work. People send it as a literal weary reaction, as the dramatic 'I cannot deal with this' closer, or as the visible-sigh stamp when something has been too much. The wide-open mouth is louder than the closed eyes — 😩 is the visual cue for visible dramatic-weary, not just tired. Writers should pick 😩 when the moment calls for visible dramatic-weary energy, and avoid it when the recipient expects a calmer register.",
+    "howPeopleUseIt": "😩 shows up at the end of dramatic-weary messages, as the 'I cannot deal with this' reaction when something is too much, and as the visible-sigh closer in close-friends chats. People send it after a work sprint finally ends, after a friend's questionable take finally lands, or after a partner's playful roast goes too far.\n\nIn close-friends chats 😩 reads as the universal 'I cannot anymore' closer. In dating-app conversations it lands as a flirty weary reaction. The emoji pairs naturally with 😫 for the parallel-tired read and with 💀 for the layered-dead stack.",
+    "whenNotToUse": "Skip 😩 in any context where the recipient expects sincerity — a family member reaching out after a loss, a partner in a tender conversation, a friend opening up about something hard. The dramatic-weary read can feel dismissive in those moments.\n\nAlso avoid 😩 in work channels where a serious issue is being discussed; reach for a sentence instead. The dramatic-weary register can come back to bite you when the issue is real.",
+    "howToReply": "Mirror 😩 with another 😩 if you want to match the dramatic-weary energy, or pair with 😫 for the parallel-tired read. If the sender is using 😩 in a flirty moment, mirror with 😩 or a flirty follow-up sentence.\n\nIf 😩 arrives as the literal-weary reaction, mirror with empathy and a sentence that asks how to help. And if the sender is using 😩 in a work channel, mirror with 😩 or a sentence that acknowledges the load.",
+    "faqs": [
+      {
+        "question": "What does 😩 mean in text?",
+        "answer": "😩 means weary, dramatic-tired, or the 'I cannot anymore' reaction. The wide-open mouth is the visual cue for visible dramatic-weary."
+      },
+      {
+        "question": "What is the difference between 😩 and 😫?",
+        "answer": "😩 has a wide-open mouth with closed eyes for the weary-sigh register; 😫 has a wide-open mouth with closed eyes for the frustrated-tired register. 😩 reads as sigh-of-exhaustion; 😫 reads as frustration-tired."
+      },
+      {
+        "question": "Is 😩 flirty?",
+        "answer": "Not inherently. 😩 reads as weary or dramatic-tired; in an established dating conversation it can land as flirty-weary."
+      },
+      {
+        "question": "What does 😩 mean on Slack?",
+        "answer": "On Slack 😩 is the dramatic-weary reaction — work-safe on its own but reads as performative-exhausted when paired with 'this sprint is killing me.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I cannot anymore 😩",
+      "interpretation": "Friend at the dramatic-weary register. Mirror with 😩 or follow up with empathy."
+    },
+    {
+      "setting": "dating",
+      "message": "you are too much 😩",
+      "interpretation": "Flirty weary reaction. Mirror with 😩 or a flirty follow-up sentence."
+    },
+    {
+      "setting": "work",
+      "message": "this sprint is killing me 😩",
+      "interpretation": "Work-channel dramatic-weary reaction. Reply with a sentence that acknowledges the load."
+    },
+    {
+      "setting": "family",
+      "message": "long week 😩",
+      "interpretation": "Family warmth at a tired moment. Reply with empathy and a sentence that supports."
+    },
+    {
+      "setting": "social",
+      "message": "this thread 😩",
+      "interpretation": "Public dramatic-weary reaction. Mirror with 😩 or 😫 to engage."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }

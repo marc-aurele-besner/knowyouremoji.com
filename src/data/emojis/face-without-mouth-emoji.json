@@ -7,52 +7,131 @@
   "category": "people",
   "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Mouthless face.",
-  "tldr": "Represents speechless.",
+  "baseMeaning": "A face with two eyes and no mouth visible.",
+  "tldr": "Speechless, awkward pause, no-words energy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Speechless.",
+      "meaning": "Speechless, no words available.",
       "example": "No words 😶",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Awkward silence.",
+      "meaning": "Awkward silence, the '...' reaction.",
       "example": "... 😶",
-      "riskLevel": "LOW"
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "Visible silence sent as a softener on a criticism the sender does not want to type.",
+      "example": "Interesting choice 😶",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "Skeptical or stunned silence in team channels.",
+      "example": "...okay 😶",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "Slack treats 😶 as the speechless closer — work-safe on its own but reads as passive-aggressive when paired with 'interesting choice' or 'okay.'"
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "iMessage lands 😶 as the awkward-silence closer; the missing mouth read carries the literal 'I cannot speak' while the eyes carry the silent reaction."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used in posts about face without mouth."
+      "note": "Staple of awkward-silence quote-tweets and 'I have no words' reactions; the missing-mouth read carries visible silence in public."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Popular in captions and stories."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Common in comments and reactions."
+      "platform": "DISCORD",
+      "note": "Discord uses 😶 as the default awkward-silence reaction in meme channels; the missing-mouth read carries the visible no-words energy."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😶 in casual contexts."
+      "note": "Sends 😶 as the awkward-silence closer and as the 'I cannot speak' reaction; pairs with 🤐 for the layered-silent stack."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 😶 across platforms."
+      "note": "Reads 😶 as the speechless closer across platforms; the awkward-silence register is alive in close-friends chats."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Uses 😶 as the literal speechless face; the slang awkward-silence layer is sometimes missed in older registers."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 😶 literally."
+      "note": "Sends 😶 as a straightforward speechless face; the passive-aggressive register is less familiar in older channels."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Can read as passive-aggressive",
+      "description": "😶 paired with 'interesting choice' or 'okay' can read as visible disdain in work channels; use carefully in professional contexts.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "😶 Face Without Mouth Emoji Meaning - What Does 😶 Really Mean?",
-  "seoDescription": "Learn what the face without mouth emoji 😶 really means in texts and social media."
+  "seoDescription": "Learn what the face without mouth emoji 😶 really means in texts and social media.",
+  "longForm": {
+    "overview": "The 😶 Face Without Mouth emoji was added in Unicode 6 (2010) and is drawn as a yellow round face with two oval eyes and no visible mouth — the entire mouth area is blank. The missing-mouth read is the visual shorthand for literal speechlessness, awkward silence, the '...' reaction, and the passive-aggressive softener sent when the sender has thoughts but does not want to type them out. By 2026 😶 has become the default emoji for the silent reaction, the awkward pause, and the visible 'I have nothing to say' stamp on a friend's questionable post.\n\nIn real-world chat 😶 does very specific work. People send it as a literal speechless reaction, as the awkward-silence closer after something uncomfortable, or as the passive-aggressive softener on a critique the sender does not want to type plainly. The missing mouth is louder than the eyes — 😶 is the visual cue for visible silence. Writers should pick 😶 when the reaction is genuinely speechless or the awkward-pause is the point, and avoid it when the recipient expects a sincere engagement.",
+    "howPeopleUseIt": "😶 shows up at the end of messages when the sender has run out of words, as the awkward-silence closer after something uncomfortable, and as the passive-aggressive softener on a critique the sender does not want to type. People send it after a friend's questionable take, after a partner makes the same joke for the tenth time, or after a coworker suggests the obviously-flawed plan.\n\nIn close-friends chats 😶 reads as the universal 'I have nothing' closer. In work channels it lands as the skeptical silence. The emoji pairs with 🤐 for the layered-silent stack and with 😐 for the parallel-unimpressed read.",
+    "whenNotToUse": "Skip 😶 in any context where the recipient expects engagement — a friend sharing genuinely hard news, a partner in a tender conversation, a family member reaching out. The visible-silence read can feel dismissive in those moments.\n\nAlso avoid 😶 as a way to soften a serious work critique; reach for a sentence instead. The visible-silence register can come back to bite you in a shared channel.",
+    "howToReply": "Mirror 😶 with another 😶 if you want to match the silence, or upgrade to 🤐 for a more obvious-silent parallel. If the sender is using 😶 in a passive-aggressive moment, do not mirror — address the underlying issue with a sentence.\n\nIf 😶 arrives as the literal 'no words' reaction, mirror with 😶 or with a sentence that fills the silence. And if you want to send 😶 yourself, know it reads as visible silence; pair with caution.",
+    "faqs": [
+      {
+        "question": "What does 😶 mean in text?",
+        "answer": "😶 means speechless, awkward silence, or the visible 'I have nothing to say' reaction. The missing mouth is the visual cue for the silent pause."
+      },
+      {
+        "question": "Is 😶 passive-aggressive?",
+        "answer": "It can be. 😶 paired with 'interesting choice' or 'okay' can read as passive-aggressive in work channels; use carefully in professional contexts."
+      },
+      {
+        "question": "What is the difference between 😶 and 😐?",
+        "answer": "😶 has a missing mouth; 😐 has a flat-line mouth. 😶 reads as speechless or awkward silence; 😐 reads as unimpressed or neutral."
+      },
+      {
+        "question": "What does 😶 mean on Slack?",
+        "answer": "On Slack 😶 is the speechless closer — work-safe on its own but reads as passive-aggressive when paired with 'interesting choice' or 'okay.'"
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "I cannot even 😶",
+      "interpretation": "Friend speechless at something. Reply with a sentence that engages, not just an emoji-mirror."
+    },
+    {
+      "setting": "dating",
+      "message": "... 😶",
+      "interpretation": "Awkward silence reaction. Reply with a sentence that addresses the silence."
+    },
+    {
+      "setting": "work",
+      "message": "...okay 😶",
+      "interpretation": "Work-channel passive-aggressive softener. Address the underlying issue with a sentence, not another emoji."
+    },
+    {
+      "setting": "family",
+      "message": "interesting choice mom 😶",
+      "interpretation": "Family warmth at a familiar pattern. Mirror with 😶 or 'love you' to acknowledge."
+    },
+    {
+      "setting": "social",
+      "message": "no words 😶",
+      "interpretation": "Public speechless reaction. Mirror with 😶 or 🤐 to engage with the energy."
+    }
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-14"
 }
