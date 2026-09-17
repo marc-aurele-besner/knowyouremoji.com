@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getComboBySlug } from '@/lib/combo-data';
 
-export const runtime = 'edge';
-
 interface RouteParams {
   params: Promise<{ slug: string }>;
 }

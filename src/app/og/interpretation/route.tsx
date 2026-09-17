@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { decodeInterpretation } from '@/lib/share-encoding';
 
-export const runtime = 'edge';
-
 function getToneColor(tone: 'positive' | 'neutral' | 'negative'): string {
   switch (tone) {
     case 'positive':
