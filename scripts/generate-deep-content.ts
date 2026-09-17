@@ -1,15 +1,18 @@
 #!/usr/bin/env bun
 /**
- * Generate deep-tier long-form content for batch 16 candidates.
+ * Generate deep-tier long-form content for batch N candidates.
  * Each emoji gets an overview, how-people-use-it, when-not-to-use-it, how-to-reply,
  * FAQs (5), conversation examples (5 across settings), and platform notes (5).
+ *
+ * Usage: bun run scripts/generate-deep-content.ts "<commit name>" [batch-N]
+ *        (the batch-N arg defaults to batch-16 for backward compatibility)
  */
 import fs from 'fs';
 import path from 'path';
 
-const plan = JSON.parse(
-  fs.readFileSync(path.join(process.cwd(), 'scripts', 'batch-16-plan.json'), 'utf-8')
-);
+const batchArg = process.argv[3] || 'batch-16';
+const planFile = path.join(process.cwd(), 'scripts', `${batchArg}-plan.json`);
+const plan = JSON.parse(fs.readFileSync(planFile, 'utf-8'));
 const emojisDir = path.join(process.cwd(), 'src', 'data', 'emojis');
 
 interface EmojiData {
@@ -493,17 +496,28 @@ const categoryKnowledge: Record<
   },
 };
 
-// Map subcategory to archetype
+// Map subcategory to archetype (case-insensitive to handle mixed-case data like
+// "Hand Gesture" vs "hand-gesture" — both refer to the same family).
 function archetypeForSubcategory(sub: string): string {
-  if (sub.includes('fantasy')) return 'person-fantasy';
-  if (sub.includes('sport')) return 'person-sport';
-  if (sub.includes('gesture')) return 'person-gesture';
-  if (sub === 'hand-gesture' || sub === 'hand') return 'hand-gesture';
-  if (sub.includes('body-part')) return 'body-parts';
-  if (sub.includes('hand-fingers')) return 'hand-fingers-partial';
-  if (sub.includes('role')) return 'person-role';
-  if (sub === 'person') return 'person';
-  if (sub.includes('flag') || sub.includes('country')) return 'country-flag';
+  const lc = sub.toLowerCase();
+  if (lc.includes('fantasy')) return 'person-fantasy';
+  if (lc.includes('sport')) return 'person-sport';
+  if (
+    lc === 'hand-gesture' ||
+    lc === 'hand' ||
+    lc === 'hands' ||
+    lc === 'hand-fingers-closed' ||
+    lc === 'hand-fingers-open' ||
+    lc === 'hand-single-finger' ||
+    lc === 'hand-prop'
+  )
+    return 'hand-gesture';
+  if (lc.includes('gesture')) return 'person-gesture';
+  if (lc.includes('body-part')) return 'body-parts';
+  if (lc.includes('hand-fingers')) return 'hand-fingers-partial';
+  if (lc.includes('role')) return 'person-role';
+  if (lc === 'person' || lc === 'family') return 'person';
+  if (lc.includes('flag') || lc.includes('country')) return 'country-flag';
   return 'person'; // fallback
 }
 
