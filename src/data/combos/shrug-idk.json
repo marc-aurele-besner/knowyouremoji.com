@@ -1,10 +1,10 @@
 {
   "slug": "shrug-idk",
   "combo": "🤷❓",
-  "emojis": ["person-shrugging"],
+  "emojis": ["person-shrugging", "question-mark"],
   "name": "IDK Shrug",
   "description": "Shrugging person with question mark emphasizing uncertainty.",
-  "meaning": "Used when genuinely not knowing something or expressing confusion about a situation.",
+  "meaning": "Used when genuinely not knowing something or expressing confusion about a situation. The combo works as a low-effort way to signal that you do not have an answer and have no plans to invent one. Frequent in group chats when plans fall apart and nobody owns the decision, and in dating chats as a playful 'beats me' opener.",
   "examples": [
     "Why did they do that 🤷❓",
     "🤷❓ your guess is as good as mine",
@@ -16,6 +16,57 @@
   "relatedCombos": [],
   "tags": ["confused", "uncertain", "idk", "clueless", "question"],
   "popularity": 72,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "🤷❓ stacks the shrug person with the red question mark to make the 'I genuinely do not know' beat louder than either emoji alone can manage. The shrug covers the body language — palms turned up, shoulders raised — while the question mark turns that gesture into an explicit 'why?' or 'how?' pointing at whatever is confusing. The combo lands as the maximum possible uncertainty signal, and on TikTok, iMessage, and Twitter it reads as playful helplessness when a friend asks something you truly cannot answer.\n\nA single 🤷 can feel dismissive on its own and a single ❓ can feel too clinical or academic; the two together carry both beats at once without forcing the writer to pick one. In group chats 🤷❓ shows up when plans fall apart, when nobody knows whose turn it is, or when a logistical question genuinely has no answer. It also works as a soft 'no idea, sorry' reply to a question you do not want to engage with seriously, which is why it travels well in dating chats and work Slacks with equal ease. Reach for 🤷❓ when the read should be honestly uncertain, and skip it when the answer is actually known but uncomfortable.",
+    "howPeopleUseIt": "🤷❓ arrives as a stand-alone reaction to a question the sender truly cannot answer, and as a beat inside a sentence that explains why they cannot help. It is the default group-chat reply when a friend asks 'where should we eat?' and nobody has a strong opinion, or when a coworker asks a process question that nobody on the team owns. The combo also travels well as a one-word caption under a screenshot of confusing instructions or a cryptic email, where the shrug covers 'no clue what they mean' and the question mark covers 'why on earth was this written this way.'\n\nIn dating chats 🤷❓ works as a low-stakes opener when a match asks something you want to answer playfully, and in family group chats it shows up when an older relative explains a new app and nobody is following. The combo rarely gets read as mean because both emojis are unambiguously clueless rather than annoyed.",
+    "whenNotToUse": "Skip 🤷❓ when you actually do know the answer and just do not feel like sharing — the shrug reads as honest confusion, and sending it when you have information will land as evasive or smug. Avoid it in customer-support conversations where the recipient needs an actual answer; a 'shrug IDK' response to a billing question reads as dismissive and will hurt trust. Skip it when someone has shared a vulnerability and you are reaching for a deflection, because the clueless beat will land as cold rather than playful.\n\nAlso avoid pairing 🤷❓ with passive-aggressive follow-up text. The combo is most useful when the sender is genuinely uncertain, and it stops working the moment the tone shifts to 'I am not telling you.' If you want to deflect without lying, a single 😅 or 🙃 keeps the same playful energy without claiming ignorance.",
+    "howToReply": "If someone sends you 🤷❓ and you actually have an answer, the move is to share it directly with a follow-up question or a clarifying emoji so they can pivot. If you want to mirror the playful energy, send another 🤷❓ or a 😂 to keep the 'nobody knows' bit going. If the shrug landed on something serious and you want to bring the conversation back to literal mode, ask a direct question like 'wait, do you want me to look into it?' so the other person can answer without the shrug covering for them.\n\nIf you sent 🤷❓ yourself and you realize later that you did know the answer, you can recover with 'okay wait, I think I do actually' and move the chat forward. Most readers will not hold a single shrug against you if the follow-up shows you tried.",
+    "faqs": [
+      {
+        "question": "What does 🤷❓ mean?",
+        "answer": "🤷❓ means the sender genuinely does not know the answer. The shrug covers 'no clue' body language and the question mark turns the gesture into an explicit 'why?' or 'how?'"
+      },
+      {
+        "question": "Is 🤷❓ rude?",
+        "answer": "🤷❓ is not rude on its own. It only reads as dismissive when the sender actually had information they withheld, or when it lands in a customer-support or HR context."
+      },
+      {
+        "question": "What does 🤷❓ mean from a guy?",
+        "answer": "From a guy, 🤷❓ means he genuinely does not know or does not want to commit to an answer. The read is the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 🤷❓ mean on TikTok?",
+        "answer": "On TikTok 🤷❓ in the comments means the viewer did not understand the video and wants the poster to explain. Creators often pair the combo with a 'wait what' caption."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "bro where are we eating 🤷❓",
+      "interpretation": "Friend group logistics. Mirror with a suggestion or another shrug if you genuinely have no opinion."
+    },
+    {
+      "setting": "dating",
+      "message": "where did you grow up? 🤷❓ actually you go first",
+      "interpretation": "Playful get-to-know-you opener. Reply with your own answer to keep the energy reciprocal."
+    },
+    {
+      "setting": "work",
+      "message": "who owns the q3 forecast file 🤷❓",
+      "interpretation": "Slack question nobody can answer. Reply with a guess and a colleague tag if you have one."
+    },
+    {
+      "setting": "family",
+      "message": "Dad how do I set up the printer 🤷❓",
+      "interpretation": "Family ask for help. Reply with steps or a screenshot rather than another shrug."
+    },
+    {
+      "setting": "social",
+      "message": "wait why did they cancel the show 🤷❓",
+      "interpretation": "Group chat reaction to breaking news. Mirror with a guess or follow with a link."
+    }
+  ]
 }

@@ -1,10 +1,10 @@
 {
   "slug": "smile-happy",
   "combo": "😊🌸",
-  "emojis": ["smiling-face-with-smiling-eyes"],
+  "emojis": ["smiling-face-with-smiling-eyes", "cherry-blossom"],
   "name": "Soft Happy",
   "description": "Smiling face with a flower for soft, gentle happiness.",
-  "meaning": "Used to express gentle happiness, contentment, or soft positive vibes.",
+  "meaning": "Used to express gentle happiness, contentment, or soft positive vibes. The combo is a low-key alternative to louder excitement emojis like 🥳 or 🤩, and lands as a sincere 'this moment is quietly lovely' signal. Works well under a friend's good news, a soft sunset photo, or a fresh bouquet on a slow Sunday.",
   "examples": ["Having a good day 😊🌸", "😊🌸 this made me happy", "Spring vibes 😊🌸"],
   "category": "emotion",
   "seoTitle": "😊🌸 Smile Happy Combo Meaning",
@@ -12,6 +12,57 @@
   "relatedCombos": [],
   "tags": ["happy", "soft", "gentle", "content", "peaceful"],
   "popularity": 72,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "😊🌸 stacks the smiling face with closed eyes and the cherry blossom to make the 'soft, gentle, content' beat louder than either emoji alone can manage. The smile covers warmth and the blossom adds the springtime, feminine-coded softness that has lived in chat culture for years. Together the combo lands as a sincere 'this moment is quietly lovely' signal, the kind of reaction people send on a slow Sunday, a fresh bouquet, a new baby photo, or a friend's wedding announcement.\n\nThe combo also works as a softer alternative to louder excitement emojis like 🥳 or 🤩. A friend who sends 🥳 is celebrating loudly; a friend who sends 😊🌸 is sitting with the moment. The combo is popular in Korean, Japanese, and East Asian chat culture where blossom imagery carries seasonal warmth, and it travels well in Western group chats as a low-key 'this made me smile.' Reach for 😊🌸 when the read should be quiet and warm, and avoid it when the moment is genuinely huge and calls for the louder stack.",
+    "howPeopleUseIt": "😊🌸 arrives as a stand-alone reaction to a friend's good news, as a beat inside a sentence about a small win, or as a caption under a photo of something pretty — a garden, a coffee, a baby, a wedding. The combo is the default softness emoji stack in friend group chats when someone shares a personal milestone and the group wants to acknowledge it without overwhelming the moment. The blossom adds a feminine-coded softness that makes it land as more heartfelt than a single 😊 alone.\n\nIn dating chats 😊🌸 shows up after a sweet text from a partner, on a compliments thread, or under a photo someone shared that the sender found genuinely pretty. In family chats it lands under a grandkid photo or a seasonal update. The combo is rarely sarcastic because both emojis are unambiguously warm, which makes it a safe bet when you want to come across as sincere.",
+    "whenNotToUse": "Skip 😊🌸 in cold work channels where the relationship does not justify the warmth — a 😊🌸 from a brand account under a complaint reply reads as tone deaf. Avoid it in customer-facing comms where the soft-coded blossom can read as performative. And do not default to 😊🌸 when a louder reaction (🥳, 🙌, 👏) would do the same job without the gentle undercurrent.\n\nAlso avoid 😊🌸 when the content is not actually lovely — the combo reads as sincere, so sending it on a coworker's bad presentation will land as mockery rather than warmth. When in doubt, send a neutral 🙌 or a sentence that acknowledges the effort without picking a side on whether the work was any good.",
+    "howToReply": "If someone sends you 😊🌸 and you want to keep the warmth, mirror with another 😊🌸 or a sentence like 'so happy for you' to land as more sincere. A single 😊 also works as a softer agreement if you want to register support without the full blossom energy.\n\nIf you receive 😊🌸 on your own post, treat it as a clean win and reply with a 'thank you' and a sentence about what you shared. If the combo landed from a contact where the read feels more intimate than you wanted, you can pull back with a neutral 👍 so the message registers as friendly rather than soft-coded romantic.",
+    "faqs": [
+      {
+        "question": "What does 😊🌸 mean?",
+        "answer": "😊🌸 means the sender feels soft, warm, and content. The smile covers 'this made me happy' and the blossom adds a gentle seasonal softness."
+      },
+      {
+        "question": "Is 😊🌸 flirty?",
+        "answer": "😊🌸 is rarely flirty. The combo lands as warmth and gentle appreciation rather than flirtation; the surrounding message gives more context than the combo itself."
+      },
+      {
+        "question": "What does 😊🌸 mean from a girl?",
+        "answer": "From a girl, 😊🌸 means she is feeling soft and warm about the moment. There is no universal 'flirty' meaning; the read depends on who is sending it and what they are reacting to."
+      },
+      {
+        "question": "What does 😊🌸 mean on Instagram?",
+        "answer": "On Instagram 😊🌸 is the gentle admiration reaction. It lands softer than a heart-shaped like and signals a quiet emotional response to the post."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "first day of spring 😊🌸",
+      "interpretation": "Friend group seasonal share. Mirror with another blossom or a sentence about the season."
+    },
+    {
+      "setting": "dating",
+      "message": "you remembered my favorite flower 😊🌸",
+      "interpretation": "Romantic warmth from a partner. Mirror with another 😊🌸 or a sweet sentence."
+    },
+    {
+      "setting": "family",
+      "message": "first bloom in the garden 😊🌸",
+      "interpretation": "Family group share of a small win. Mirror with another blossom or a sentence about the garden."
+    },
+    {
+      "setting": "social",
+      "message": "this morning coffee is unreal 😊🌸",
+      "interpretation": "Group chat appreciation of a small moment. Mirror with another blossom or a sentence about the scene."
+    },
+    {
+      "setting": "work",
+      "message": "client loved the spring campaign 😊🌸",
+      "interpretation": "Friendly team celebration. Save the blossom combo for tight collaborators; use a softer 🙌 in wide channels."
+    }
+  ]
 }

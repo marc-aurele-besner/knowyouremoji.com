@@ -4,7 +4,7 @@
   "emojis": ["eyes", "eyes"],
   "name": "Shifty Eyes",
   "description": "A face made with emojis showing suspicious or flirty sidelong glances, often used for gossip or intrigue.",
-  "meaning": "Used to express interest, suspicion, or that something tea-worthy is happening. Can be flirty or gossipy depending on context.",
+  "meaning": "Used to express interest, suspicion, or that something tea-worthy is happening. Can be flirty or gossipy depending on context. It is the emoji shorthand for spicy, juicy, or gossipy content that deserves a closer look.",
   "examples": [
     "Did you see what she posted 👀👄👀",
     "👀👄👀 tell me more",
@@ -16,6 +16,57 @@
   "relatedCombos": [],
   "tags": ["gossip", "flirty", "suspicious", "interested", "tea"],
   "popularity": 75,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "👀👄👀 is the universal signal for 'I see something juicy and I want more.' The eyes bookend the lips to literally frame a face that is looking at you sideways while biting its lip — a pose borrowed straight from the gossip archetype. On TikTok, Twitter, and Instagram the combo lands as the cue for tea, romance, or any moment where the sender wants the recipient to lean in. Single 👀 has become shorthand for 'I'm watching' or 'suspicious,' and adding the mouth in the middle transforms it into a glance-plus-stare stack that reads as playful rather than creepy.\n\nThe key to 👀👄👀 is that it almost always asks for follow-up. The sender is signalling that whatever they just linked, named, or hinted at deserves attention, and the closed-loop framing of eyes-lips-eyes feels like a wink across the chat. Use it when you want to amplify intrigue without typing a full sentence, and brace for the inevitable 'tell me more' reply that follows. It can land flirty when paired with a crush's name, gossipy when paired with a friend's latest drama, or simply curious when paired with a piece of news worth a second look.",
+    "howPeopleUseIt": "👀👄👀 shows up at the start of a thread as a flag, mid-thread as a reaction, and at the end of a sentence as a beat. Group chats lean on it when someone is about to share a screenshot, and dating app conversations use it to flirt without typing anything explicit. The combo also performs well as a stand-alone reply when the post itself is the punchline — a thirst trap, a cryptic story post, or a friend's photo where the vibe is obviously a little spicy.\n\nIn stan Twitter and stan TikTok 👀👄👀 lives under celebrity posts as a 'we noticed' cosign. In friend group chats it lands beside the words 'wait, did you see…' to set up a piece of gossip. It also travels well into DMs as a low-effort opener when you want to start a flirty thread without committing to a full sentence.",
+    "whenNotToUse": "Skip 👀👄👀 in serious work channels, in customer-support threads, or when the recipient has just shared bad news. The combo reads as performative and unserious, and it will not land well in any setting where the conversation calls for actual concern. Avoid pairing it with topics like grief, illness, layoffs, or family conflict, where the joke can read as cruel regardless of intent.\n\nAlso avoid 👀👄👀 when the surrounding message is already explicit. The combo flirts best through implication, and stacking it on a message that has nothing left to imply makes it land as awkward. If you have already said exactly what you mean, the eyes-lips-eyes stack adds nothing and can feel like a wink at nothing.",
+    "howToReply": "If you want to keep the gossip going, mirror 👀👄👀 or escalate with a single 👀 plus a sentence that feeds the bit. If you want to slow the moment down, reply with a neutral 'lol what's up' or a softer 🙂 that acknowledges the vibe without inviting a long thread.\n\nWhen the combo lands on something you shared, treat it as a sign the content landed and reply with the story it is fishing for. If the 👀👄👀 comes from a contact where the flirty read is unwelcome, a dry 'haha what' or a topic change resets the thread back to friendly. In dating contexts a single 👀 or 🙈 back invites more flirting without having to overcommit.",
+    "faqs": [
+      {
+        "question": "What does 👀👄👀 mean?",
+        "answer": "👀👄👀 means 'I see something juicy and I want more.' It frames the eyes around a mouth to imitate a sidelong, lip-biting stare — the universal pose for gossip, intrigue, or flirty attention."
+      },
+      {
+        "question": "Is 👀👄👀 flirty?",
+        "answer": "It can be. In a dating context 👀👄👀 reads as flirty, especially when paired with a compliment or a crush's name. In a friend group chat it usually reads as gossipy or curious rather than romantic."
+      },
+      {
+        "question": "What does 👀👄👀 mean from a guy?",
+        "answer": "From a guy 👀👄👀 means the sender thinks the content is interesting, suspicious, or attractive depending on context. There is no gender-specific meaning — the read comes from what they are reacting to and how the message is worded."
+      },
+      {
+        "question": "What does 👀👄👀 mean on TikTok?",
+        "answer": "On TikTok 👀👄👀 in the comments means the viewer is hooked and wants context. It is a common opener for duet requests, for 'tell me your story' threads, and for spicy videos that promise a part two."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "did you see what she posted 👀👄👀",
+      "interpretation": "Friend flagging gossip. Mirror with 👀👄👀 or a 'tell me everything' to keep the thread going."
+    },
+    {
+      "setting": "dating",
+      "message": "you in that photo last night 👀👄👀",
+      "interpretation": "Flirty opener from a date. Mirror with a softer compliment or a 🙈 to invite more without overcommitting."
+    },
+    {
+      "setting": "social",
+      "message": "wait that rumor about them 👀👄👀",
+      "interpretation": "Group chat reacting to celebrity gossip. Mirror with 👀 or a quote-tweet to keep the thread moving."
+    },
+    {
+      "setting": "work",
+      "message": "the all-hands got moved again 👀👄👀",
+      "interpretation": "Office curiosity about a schedule change. Mirror with a sentence in a tight team chat; avoid the combo in a wide org channel."
+    },
+    {
+      "setting": "family",
+      "message": "Aunt Linda just got a new haircut 👀👄👀",
+      "interpretation": "Family group raising eyebrows. Mirror with a softer reaction or a supportive comment so the bit does not turn mean."
+    }
+  ]
 }
