@@ -12,55 +12,67 @@
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a teacher.",
-      "example": "My teacher 🧑‍🏫",
+      "meaning": "Represents the teacher cue.",
+      "example": "the teacher 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Teaching moment or lesson.",
-      "example": "Let me teach you 🧑‍🏫",
+      "meaning": "teacher-coded moment or teacher-coded reveal.",
+      "example": "teacher mode 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Know-it-all behavior.",
-      "example": "Thanks for the lesson 🧑‍🏫",
+      "context": "DATING",
+      "meaning": "teacher-coded flirty tag or partner-coded moment.",
+      "example": "teacher partner plan 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Education context.",
-      "example": "Faculty meeting 🧑‍🏫",
+      "meaning": "teacher-coded work moment or team energy.",
+      "example": "teacher sprint 🧑‍🏫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "TWITTER",
-      "note": "Education content."
+      "note": "🧑‍🏫 lands on teacher-coded threads, teacher-tagged person-role posts, and 'teacher-coded' reveals where the teacher cue reads as modern-coded flex."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Teacher life."
+      "note": "🧑‍🏫 is a staple of modern-coded flat-lays, teacher-canvas story backgrounds, and modern-coded profile accents; the teacher cue anchors the visual."
     },
     {
       "platform": "TIKTOK",
-      "note": "Teacher TikTok."
+      "note": "🧑‍🏫 travels in modern-coded transitions, teacher reaction reveals, and 'teacher-coded' listicle content where the teacher cue signals modern-coded energy."
+    },
+    {
+      "platform": "SLACK",
+      "note": "🧑‍🏫 threads through modern-coded reactions, teacher markers, and 'teacher-coded' bullets in work channels where the teacher cue fits the register."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "🧑‍🏫 is an active reaction in modern-coded teacher channels, server-coded teacher markers, and 'teacher-coded' reveals where the teacher cue matches the modern-coded register."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Teacher vibes."
+      "note": "Reaches for 🧑‍🏫 on modern-coded teacher threads, teacher-coded reveals, and 'teacher-coded' moments where the teacher cue matches the modern-coded register."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Educator."
+      "note": "Uses it on modern-coded tags, nostalgia-coded teacher moments, and teacher-coded reveals where the universal teacher cue fits."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Sends it on family-coded teacher messages and teacher reveals, treating the teacher as literal modern-coded energy."
     },
     {
       "generation": "BOOMER",
-      "note": "Teacher."
+      "note": "Reads it as a literal teacher and uses it on modern-coded tags without parsing the modern teacher-coded subtext."
     }
   ],
   "warnings": [],
@@ -73,5 +85,58 @@
     "teacher-medium",
     "teacher-medium-dark",
     "teacher-dark"
+  ],
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "Teacher is the emoji of role-coded profession reveal - the career tradition, the role cue, and the universal \"this is my profession\" tag. Where 💼 reads as briefcase-coded work energy and 🧑 reads as person-coded identity energy, Teacher captures the moment when the sender wants to communicate role-coded profession energy - a \"teacher\" role tag or a career-coded reveal.\n\nThe role cue borrows from profession tradition and the modern role-coded aesthetic, which is exactly why the emoji reads as role-coded rather than literal.\n\nWhat separates Teacher from the rest of the role family is the specific teacher register. The emoji is not saying 'generic role' (💼). It is saying 'teacher-coded teacher,' which carries a specific profession, career, or role specificity.\n\nIn real-world usage 🧑‍🏫 Teacher lives in the spaces where the sender wants to communicate role energy. A partner sends it on a \"teacher\" moment. A friend sends it on a \"role\" reveal. A coworker sends it on a \"teacher\" tag. The teacher cue is what makes the emoji feel role-coded - it is not just 'a moment,' it is 'teacher-coded energy.'\n\nIn dating 🧑‍🏫 Teacher works as a soft-coded teacher tag, where the teacher cue signals profession. In work threads 🧑‍🏫 Teacher lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🏫 feels.",
+    "howPeopleUseIt": "🧑‍🏫 Teacher shows up as the closer on a \"teacher moment\", the punctuation on a \"role\" reveal, and the softener on a \"teacher-coded\" tag. It pairs naturally with sentences that name the role energy - 'teacher,' 'profession,' 'teacher-coded' - and sits beautifully on profession reveals, role-coded tags, career moments, and appreciation shares.\n\nIn group chats 🧑‍🏫 Teacher anchors 'teacher moment' threads, role reveals, and 'teacher' tags where the teacher cue matches the register. On Instagram it lands on role flat-lays and role stories. On TikTok it travels in role transitions and 'teacher' reaction content.\n\nThe emoji also works in dating contexts. A 'teacher 🧑‍🏫' partner message uses the teacher cue to communicate role romance. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🏫 feels.",
+    "whenNotToUse": "Skip Teacher in sympathy, condolence, or break-up contexts. The role-coded profession cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Teacher in casual contexts where the role energy feels too formal. A simpler emoji or a sentence keeps the message grounded.\n\nSkip Teacher when you want to communicate identity beyond profession. The role register is too career-coded for personal moments; use 🧑 or a sentence when the moment needs the whole person.",
+    "howToReply": "If someone sends Teacher, the cleanest mirror is another Teacher, 👏, or a sentence that joins the role energy. If the role cue feels too profession-coded, reply with a softer emoji (🙌 or 🫶) that signals appreciation without matching the role volume.\n\nWhen Teacher lands as a profession-coded flex, mirror with another Teacher, a clap emoji, or a sentence that escalates the appreciation. When it arrives as a work-coded reveal, mirror with another Teacher, a sentence that joins the celebration, or a heart emoji that fits.",
+    "faqs": [
+      {
+        "question": "What does Teacher mean in chat?",
+        "answer": "Teacher is the role-coded profession reveal - it borrows from career tradition and signals a profession reveal, role-coded tag, or career-coded moment. The role cue is what makes the read feel role-coded rather than literal."
+      },
+      {
+        "question": "Is Teacher flirty?",
+        "answer": "Sometimes. In a dating thread Teacher can read as playful-coded romance - a \"what's your dream job\" tag or a role-coded flirty hint. On its own it reads more role than romantic."
+      },
+      {
+        "question": "What does Teacher mean from a coworker?",
+        "answer": "From a coworker, Teacher signals a role-coded share or a profession-coded moment. The role cue reads as career-coded rather than literal, so it tends to land on work coded messages, profession tags, and \"look at my job\" reveals."
+      },
+      {
+        "question": "When should I use Teacher?",
+        "answer": "Use Teacher for appreciation moments, role-coded reveals, or profession tags. Avoid it when you want to communicate identity beyond profession - the role cue is too career-coded for personal moments."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "dating",
+      "message": "teacher with the partner plan, full role energy 🧑‍🏫",
+      "interpretation": "Partner role romance. Mirror with another 🧑‍🏫, a heart emoji, or a sentence that escalates the romance."
+    },
+    {
+      "setting": "social",
+      "message": "cannot handle this whole thread, the teacher chaos 🧑‍🏫",
+      "interpretation": "Public role flex. Mirror with another 🧑‍🏫, a sentence that joins the energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "family",
+      "message": "teacher with the family, full role energy 🧑‍🏫",
+      "interpretation": "Family role reveal. Mirror with another 🧑‍🏫, a sentence that joins the family warmth, or a heart emoji that matches."
+    },
+    {
+      "setting": "friends",
+      "message": "teacher today, full role energy 🧑‍🏫",
+      "interpretation": "Friend role reveal. Mirror with another 🧑‍🏫, a sentence that joins the energy, or a heart emoji that matches."
+    },
+    {
+      "setting": "work",
+      "message": "teacher sprint today, full role energy 🧑‍🏫",
+      "interpretation": "Work role moment. Mirror with another 🧑‍🏫, a sentence that joins the team energy, or a heart emoji that matches."
+    }
   ]
 }

@@ -1,0 +1,2522 @@
+{
+  "country flags (Americas & Western Europe)": [
+    {
+      "slug": "flag-finland",
+      "name": "Flag: Finland",
+      "character": "🇫🇮",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-finland.json",
+      "shortName": "flag finland"
+    },
+    {
+      "slug": "curacao-flag-emoji",
+      "name": "Curacao Flag",
+      "character": "🇨🇼",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "curacao-flag-emoji.json",
+      "shortName": "CW flag"
+    },
+    {
+      "slug": "flag-argentina",
+      "name": "Flag: Argentina",
+      "character": "🇦🇷",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-argentina.json",
+      "shortName": "flag argentina"
+    },
+    {
+      "slug": "antigua-and-barbuda-flag-emoji",
+      "name": "Antigua and Barbuda Flag",
+      "character": "🇦🇬",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "antigua-and-barbuda-flag-emoji.json",
+      "shortName": "AG flag"
+    },
+    {
+      "slug": "iceland-flag-emoji",
+      "name": "Iceland Flag",
+      "character": "🇮🇸",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "iceland-flag-emoji.json",
+      "shortName": "IS flag"
+    },
+    {
+      "slug": "haiti-flag-emoji",
+      "name": "Haiti Flag",
+      "character": "🇭🇹",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "haiti-flag-emoji.json",
+      "shortName": "HT flag"
+    },
+    {
+      "slug": "aruba-flag-emoji",
+      "name": "Aruba Flag",
+      "character": "🇦🇼",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "aruba-flag-emoji.json",
+      "shortName": "AW flag"
+    },
+    {
+      "slug": "el-salvador-flag-emoji",
+      "name": "El Salvador Flag",
+      "character": "🇸🇻",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "el-salvador-flag-emoji.json",
+      "shortName": "SV flag"
+    },
+    {
+      "slug": "puerto-rico-flag-emoji",
+      "name": "Puerto Rico Flag",
+      "character": "🇵🇷",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "puerto-rico-flag-emoji.json",
+      "shortName": "PR flag"
+    },
+    {
+      "slug": "flag-peru-emoji",
+      "name": "Flag Peru",
+      "character": "🇵🇪",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-peru-emoji.json",
+      "shortName": "flag peru emoji"
+    },
+    {
+      "slug": "sint-maarten-flag-emoji",
+      "name": "Sint Maarten Flag",
+      "character": "🇸🇽",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "sint-maarten-flag-emoji.json",
+      "shortName": "SX flag"
+    },
+    {
+      "slug": "guatemala-flag-emoji",
+      "name": "Guatemala Flag",
+      "character": "🇬🇹",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "guatemala-flag-emoji.json",
+      "shortName": "GT flag"
+    },
+    {
+      "slug": "grenada-flag-emoji",
+      "name": "Grenada Flag",
+      "character": "🇬🇩",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "grenada-flag-emoji.json",
+      "shortName": "GD flag"
+    },
+    {
+      "slug": "monaco-flag-emoji",
+      "name": "Monaco Flag",
+      "character": "🇲🇨",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "monaco-flag-emoji.json",
+      "shortName": "MC flag"
+    },
+    {
+      "slug": "flag-jamaica",
+      "name": "Flag: Jamaica",
+      "character": "🇯🇲",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-jamaica.json",
+      "shortName": "flag jamaica"
+    },
+    {
+      "slug": "trinidad-and-tobago-flag-emoji",
+      "name": "Trinidad and Tobago Flag",
+      "character": "🇹🇹",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "trinidad-and-tobago-flag-emoji.json",
+      "shortName": "TT flag"
+    },
+    {
+      "slug": "liechtenstein-flag-emoji",
+      "name": "Liechtenstein Flag",
+      "character": "🇱🇮",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "liechtenstein-flag-emoji.json",
+      "shortName": "LI flag"
+    },
+    {
+      "slug": "uruguay-flag-emoji",
+      "name": "Uruguay Flag",
+      "character": "🇺🇾",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "uruguay-flag-emoji.json",
+      "shortName": "UY flag"
+    },
+    {
+      "slug": "flag-panama",
+      "name": "Flag: Panama",
+      "character": "🇵🇦",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-panama.json",
+      "shortName": "flag panama"
+    },
+    {
+      "slug": "flag-sweden-emoji",
+      "name": "Flag Sweden",
+      "character": "🇸🇪",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-sweden-emoji.json",
+      "shortName": "flag sweden emoji"
+    },
+    {
+      "slug": "saint-vincent-and-the-grenadines-flag-emoji",
+      "name": "Saint Vincent and the Grenadines Flag",
+      "character": "🇻🇨",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "saint-vincent-and-the-grenadines-flag-emoji.json",
+      "shortName": "VC flag"
+    },
+    {
+      "slug": "flag-norway-emoji",
+      "name": "Flag Norway",
+      "character": "🇳🇴",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-norway-emoji.json",
+      "shortName": "flag norway emoji"
+    },
+    {
+      "slug": "honduras-flag-emoji",
+      "name": "Honduras Flag",
+      "character": "🇭🇳",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "honduras-flag-emoji.json",
+      "shortName": "HN flag"
+    },
+    {
+      "slug": "flag-spain",
+      "name": "Flag: Spain",
+      "character": "🇪🇸",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-spain.json",
+      "shortName": "flag-spain"
+    },
+    {
+      "slug": "paraguay-flag-emoji",
+      "name": "Paraguay Flag",
+      "character": "🇵🇾",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "paraguay-flag-emoji.json",
+      "shortName": "PY flag"
+    }
+  ],
+  "country flags (Eastern Europe & Asia)": [
+    {
+      "slug": "pakistan-flag-emoji",
+      "name": "Pakistan Flag",
+      "character": "🇵🇰",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "pakistan-flag-emoji.json",
+      "shortName": "PK flag"
+    },
+    {
+      "slug": "flag-thailand-emoji",
+      "name": "Flag Thailand",
+      "character": "🇹🇭",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-thailand-emoji.json",
+      "shortName": "flag thailand emoji"
+    },
+    {
+      "slug": "flag-ukraine-emoji",
+      "name": "Flag Ukraine",
+      "character": "🇺🇦",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-ukraine-emoji.json",
+      "shortName": "flag ukraine emoji"
+    },
+    {
+      "slug": "japan-flag-emoji",
+      "name": "Japan Flag",
+      "character": "🇯🇵",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "japan-flag-emoji.json",
+      "shortName": "japan flag emoji"
+    },
+    {
+      "slug": "qatar-flag-emoji",
+      "name": "Qatar Flag",
+      "character": "🇶🇦",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "qatar-flag-emoji.json",
+      "shortName": "QA flag"
+    },
+    {
+      "slug": "georgia-flag-emoji",
+      "name": "Georgia Flag",
+      "character": "🇬🇪",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "georgia-flag-emoji.json",
+      "shortName": "GE flag"
+    },
+    {
+      "slug": "afghanistan-flag-emoji",
+      "name": "Afghanistan Flag",
+      "character": "🇦🇫",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "afghanistan-flag-emoji.json",
+      "shortName": "AF flag"
+    },
+    {
+      "slug": "united-arab-emirates-flag-emoji",
+      "name": "United Arab Emirates Flag",
+      "character": "🇦🇪",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "united-arab-emirates-flag-emoji.json",
+      "shortName": "AE flag"
+    },
+    {
+      "slug": "lebanon-flag-emoji",
+      "name": "Lebanon Flag",
+      "character": "🇱🇧",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "lebanon-flag-emoji.json",
+      "shortName": "LB flag"
+    },
+    {
+      "slug": "flag-poland-emoji",
+      "name": "Flag Poland",
+      "character": "🇵🇱",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-poland-emoji.json",
+      "shortName": "flag poland emoji"
+    },
+    {
+      "slug": "singapore-flag-emoji",
+      "name": "Singapore Flag",
+      "character": "🇸🇬",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "singapore-flag-emoji.json",
+      "shortName": "SG flag"
+    },
+    {
+      "slug": "uzbekistan-flag-emoji",
+      "name": "Uzbekistan Flag",
+      "character": "🇺🇿",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "uzbekistan-flag-emoji.json",
+      "shortName": "UZ flag"
+    },
+    {
+      "slug": "slovenia-flag-emoji",
+      "name": "Slovenia Flag",
+      "character": "🇸🇮",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "slovenia-flag-emoji.json",
+      "shortName": "SI flag"
+    },
+    {
+      "slug": "flag-slovakia-emoji",
+      "name": "Flag Slovakia",
+      "character": "🇸🇰",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-slovakia-emoji.json",
+      "shortName": "flag slovakia emoji"
+    },
+    {
+      "slug": "south-sudan-flag-emoji",
+      "name": "South Sudan Flag",
+      "character": "🇸🇸",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "south-sudan-flag-emoji.json",
+      "shortName": "SS flag"
+    },
+    {
+      "slug": "romania-flag-emoji",
+      "name": "Romania Flag",
+      "character": "🇷🇴",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "romania-flag-emoji.json",
+      "shortName": "RO flag"
+    },
+    {
+      "slug": "iraq-flag-emoji",
+      "name": "Iraq Flag",
+      "character": "🇮🇶",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "iraq-flag-emoji.json",
+      "shortName": "IQ flag"
+    },
+    {
+      "slug": "nepal-flag-emoji",
+      "name": "Nepal Flag",
+      "character": "🇳🇵",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "nepal-flag-emoji.json",
+      "shortName": "NP flag"
+    },
+    {
+      "slug": "flag-turkey-emoji",
+      "name": "Flag Turkey",
+      "character": "🇹🇷",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-turkey-emoji.json",
+      "shortName": "flag turkey emoji"
+    },
+    {
+      "slug": "kuwait-flag-emoji",
+      "name": "Kuwait Flag",
+      "character": "🇰🇼",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "kuwait-flag-emoji.json",
+      "shortName": "KW flag"
+    },
+    {
+      "slug": "sri-lanka-flag-emoji",
+      "name": "Sri Lanka Flag",
+      "character": "🇱🇰",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "sri-lanka-flag-emoji.json",
+      "shortName": "LK flag"
+    },
+    {
+      "slug": "flag-albania",
+      "name": "Flag: Albania",
+      "character": "🇦🇱",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-albania.json",
+      "shortName": "flag albania"
+    },
+    {
+      "slug": "north-macedonia-flag-emoji",
+      "name": "North Macedonia Flag",
+      "character": "🇲🇰",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "north-macedonia-flag-emoji.json",
+      "shortName": "MK flag"
+    },
+    {
+      "slug": "czech-republic-flag-emoji",
+      "name": "Czech Republic Flag",
+      "character": "🇨🇿",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "czech-republic-flag-emoji.json",
+      "shortName": "CZ flag"
+    },
+    {
+      "slug": "laos-flag-emoji",
+      "name": "Laos Flag",
+      "character": "🇱🇦",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "laos-flag-emoji.json",
+      "shortName": "LA flag"
+    }
+  ],
+  "country flags (Africa long-tail & Oceania)": [
+    {
+      "slug": "flag-cameroon",
+      "name": "Flag: Cameroon",
+      "character": "🇨🇲",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-cameroon.json",
+      "shortName": "flag cameroon"
+    },
+    {
+      "slug": "papua-new-guinea-flag-emoji",
+      "name": "Papua New Guinea Flag",
+      "character": "🇵🇬",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "papua-new-guinea-flag-emoji.json",
+      "shortName": "PG flag"
+    },
+    {
+      "slug": "uganda-flag-emoji",
+      "name": "Uganda Flag",
+      "character": "🇺🇬",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "uganda-flag-emoji.json",
+      "shortName": "UG flag"
+    },
+    {
+      "slug": "flag-kenya",
+      "name": "Flag: Kenya",
+      "character": "🇰🇪",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-kenya.json",
+      "shortName": "flag kenya"
+    },
+    {
+      "slug": "algeria-flag-emoji",
+      "name": "Algeria Flag",
+      "character": "🇩🇿",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "algeria-flag-emoji.json",
+      "shortName": "DZ flag"
+    },
+    {
+      "slug": "equatorial-guinea-flag-emoji",
+      "name": "Equatorial Guinea Flag",
+      "character": "🇬🇶",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "equatorial-guinea-flag-emoji.json",
+      "shortName": "GQ flag"
+    },
+    {
+      "slug": "american-samoa-flag-emoji",
+      "name": "American Samoa Flag",
+      "character": "🇦🇸",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "american-samoa-flag-emoji.json",
+      "shortName": "AS flag"
+    },
+    {
+      "slug": "marshall-islands-flag-emoji",
+      "name": "Marshall Islands Flag",
+      "character": "🇲🇭",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "marshall-islands-flag-emoji.json",
+      "shortName": "MH flag"
+    },
+    {
+      "slug": "vanuatu-flag-emoji",
+      "name": "Vanuatu Flag",
+      "character": "🇻🇺",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "vanuatu-flag-emoji.json",
+      "shortName": "VU flag"
+    },
+    {
+      "slug": "flag-ethiopia",
+      "name": "Flag: Ethiopia",
+      "character": "🇪🇹",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-ethiopia.json",
+      "shortName": "flag ethiopia"
+    },
+    {
+      "slug": "tunisia-flag-emoji",
+      "name": "Tunisia Flag",
+      "character": "🇹🇳",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "tunisia-flag-emoji.json",
+      "shortName": "TN flag"
+    },
+    {
+      "slug": "gambia-flag-emoji",
+      "name": "Gambia Flag",
+      "character": "🇬🇲",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "gambia-flag-emoji.json",
+      "shortName": "GM flag"
+    },
+    {
+      "slug": "fiji-flag-emoji",
+      "name": "Fiji Flag",
+      "character": "🇫🇯",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "fiji-flag-emoji.json",
+      "shortName": "FJ flag"
+    },
+    {
+      "slug": "burkina-faso-flag-emoji",
+      "name": "Burkina Faso Flag",
+      "character": "🇧🇫",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "burkina-faso-flag-emoji.json",
+      "shortName": "BF flag"
+    },
+    {
+      "slug": "flag-south-africa-emoji",
+      "name": "Flag South Africa",
+      "character": "🇿🇦",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-south-africa-emoji.json",
+      "shortName": "flag south africa emoji"
+    },
+    {
+      "slug": "mali-flag-emoji",
+      "name": "Mali Flag",
+      "character": "🇲🇱",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "mali-flag-emoji.json",
+      "shortName": "ML flag"
+    },
+    {
+      "slug": "samoa-flag-emoji",
+      "name": "Samoa Flag",
+      "character": "🇼🇸",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "samoa-flag-emoji.json",
+      "shortName": "WS flag"
+    },
+    {
+      "slug": "burundi-flag-emoji",
+      "name": "Burundi Flag",
+      "character": "🇧🇮",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "burundi-flag-emoji.json",
+      "shortName": "BI flag"
+    },
+    {
+      "slug": "namibia-flag-emoji",
+      "name": "Namibia Flag",
+      "character": "🇳🇦",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "namibia-flag-emoji.json",
+      "shortName": "NA flag"
+    },
+    {
+      "slug": "congo-dr-flag-emoji",
+      "name": "Congo DR Flag",
+      "character": "🇨🇩",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "congo-dr-flag-emoji.json",
+      "shortName": "CD flag"
+    },
+    {
+      "slug": "palau-flag-emoji",
+      "name": "Palau Flag",
+      "character": "🇵🇼",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "palau-flag-emoji.json",
+      "shortName": "PW flag"
+    },
+    {
+      "slug": "libya-flag-emoji",
+      "name": "Libya Flag",
+      "character": "🇱🇾",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "libya-flag-emoji.json",
+      "shortName": "LY flag"
+    },
+    {
+      "slug": "flag-angola",
+      "name": "Flag: Angola",
+      "character": "🇦🇴",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-angola.json",
+      "shortName": "flag angola"
+    },
+    {
+      "slug": "ghana-flag-emoji",
+      "name": "Ghana Flag",
+      "character": "🇬🇭",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "ghana-flag-emoji.json",
+      "shortName": "GH flag"
+    },
+    {
+      "slug": "mauritania-flag-emoji",
+      "name": "Mauritania Flag",
+      "character": "🇲🇷",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "mauritania-flag-emoji.json",
+      "shortName": "MR flag"
+    }
+  ],
+  "symbols (status, arrows, alphanumeric & Japanese)": [
+    {
+      "slug": "registered-emoji",
+      "name": "Registered",
+      "character": "®️",
+      "category": "symbols",
+      "subcategory": "other-symbol",
+      "contentTier": "unset",
+      "filename": "registered-emoji.json",
+      "shortName": "registered emoji"
+    },
+    {
+      "slug": "japanese-no-vacancy-button-emoji",
+      "name": "Japanese No Vacancy Button",
+      "character": "🈵",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-no-vacancy-button-emoji.json",
+      "shortName": "japanese no vacancy button emoji"
+    },
+    {
+      "slug": "left-arrow-curving-right-emoji",
+      "name": "Left Arrow Curving Right",
+      "character": "↪",
+      "category": "symbols",
+      "subcategory": "arrow",
+      "contentTier": "unset",
+      "filename": "left-arrow-curving-right-emoji.json",
+      "shortName": "left arrow curving right emoji"
+    },
+    {
+      "slug": "japanese-not-free",
+      "name": "Japanese Not Free of Charge Button",
+      "character": "🈶",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-not-free.json",
+      "shortName": "japanese not free"
+    },
+    {
+      "slug": "universal-recycling-emoji",
+      "name": "Universal Recycling",
+      "character": "♲",
+      "category": "symbols",
+      "subcategory": "other-symbol",
+      "contentTier": "unset",
+      "filename": "universal-recycling-emoji.json",
+      "shortName": "universal recycling emoji"
+    },
+    {
+      "slug": "sos-button-emoji",
+      "name": "SOS Button",
+      "character": "🆘",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "sos-button-emoji.json",
+      "shortName": "sos button emoji"
+    },
+    {
+      "slug": "recycling-symbol",
+      "name": "Recycling Symbol",
+      "character": "♻️",
+      "category": "symbols",
+      "subcategory": "other-symbol",
+      "contentTier": "unset",
+      "filename": "recycling-symbol.json",
+      "shortName": "recycling symbol"
+    },
+    {
+      "slug": "japanese-service-charge-button-emoji",
+      "name": "Japanese Service Charge Button",
+      "character": "🈂",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-service-charge-button-emoji.json",
+      "shortName": "japanese service charge button emoji"
+    },
+    {
+      "slug": "japanese-monthly-amount-button-emoji",
+      "name": "Japanese Monthly Amount Button",
+      "character": "🈷",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-monthly-amount-button-emoji.json",
+      "shortName": "japanese monthly amount button emoji"
+    },
+    {
+      "slug": "japanese-passing-grade",
+      "name": "Japanese Passing Grade Button",
+      "character": "🈴",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-passing-grade.json",
+      "shortName": "japanese passing grade"
+    },
+    {
+      "slug": "japanese-vacancy-button-emoji",
+      "name": "Japanese Vacancy Button",
+      "character": "🈳",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-vacancy-button-emoji.json",
+      "shortName": "japanese vacancy button emoji"
+    },
+    {
+      "slug": "right-arrow-curving-left-emoji",
+      "name": "Right Arrow Curving Left",
+      "character": "↩",
+      "category": "symbols",
+      "subcategory": "arrow",
+      "contentTier": "unset",
+      "filename": "right-arrow-curving-left-emoji.json",
+      "shortName": "right arrow curving left emoji"
+    },
+    {
+      "slug": "japanese-here",
+      "name": "Japanese Here Button",
+      "character": "🈁",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-here.json",
+      "shortName": "japanese here"
+    },
+    {
+      "slug": "trident-emblem-emoji",
+      "name": "Trident Emblem",
+      "character": "🔱",
+      "category": "symbols",
+      "subcategory": "other-symbol",
+      "contentTier": "unset",
+      "filename": "trident-emblem-emoji.json",
+      "shortName": "trident emblem emoji"
+    },
+    {
+      "slug": "information",
+      "name": "Information",
+      "character": "ℹ️",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "information.json",
+      "shortName": "information"
+    },
+    {
+      "slug": "japanese-acceptable-button-emoji",
+      "name": "Japanese Acceptable Button",
+      "character": "🉑",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-acceptable-button-emoji.json",
+      "shortName": "japanese acceptable button emoji"
+    },
+    {
+      "slug": "japanese-prohibited",
+      "name": "Japanese Prohibited Button",
+      "character": "🈲",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-prohibited.json",
+      "shortName": "japanese prohibited"
+    },
+    {
+      "slug": "part-alternation-mark-emoji",
+      "name": "Part Alternation Mark",
+      "character": "〽️",
+      "category": "symbols",
+      "subcategory": "other-symbol",
+      "contentTier": "unset",
+      "filename": "part-alternation-mark-emoji.json",
+      "shortName": "part alternation mark emoji"
+    },
+    {
+      "slug": "up-button-emoji",
+      "name": "Up Button",
+      "character": "🆙",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "up-button-emoji.json",
+      "shortName": "up button emoji"
+    },
+    {
+      "slug": "japanese-reserved",
+      "name": "Japanese Reserved Button",
+      "character": "🈯",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-reserved.json",
+      "shortName": "japanese reserved"
+    },
+    {
+      "slug": "vs-button-emoji",
+      "name": "VS Button",
+      "character": "🆚",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "vs-button-emoji.json",
+      "shortName": "vs button emoji"
+    },
+    {
+      "slug": "o-button",
+      "name": "O Button (Blood Type)",
+      "character": "🅾️",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "o-button.json",
+      "shortName": "o button"
+    },
+    {
+      "slug": "japanese-free-of-charge",
+      "name": "Japanese Free of Charge Button",
+      "character": "🈚",
+      "category": "symbols",
+      "subcategory": "alphanum",
+      "contentTier": "unset",
+      "filename": "japanese-free-of-charge.json",
+      "shortName": "japanese free of charge"
+    },
+    {
+      "slug": "kiribati-flag-emoji",
+      "name": "Kiribati Flag",
+      "character": "🇰🇮",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "kiribati-flag-emoji.json",
+      "shortName": "KI flag"
+    },
+    {
+      "slug": "flag-czechia",
+      "name": "Flag: Czechia",
+      "character": "🇨🇿",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-czechia.json",
+      "shortName": "flag czechia"
+    }
+  ],
+  "objects (money, mail, office, science & household)": [
+    {
+      "slug": "syringe-emoji",
+      "name": "Syringe",
+      "character": "💉",
+      "category": "objects",
+      "subcategory": "medical",
+      "contentTier": "unset",
+      "filename": "syringe-emoji.json",
+      "shortName": "syringe emoji"
+    },
+    {
+      "slug": "linked-paperclips",
+      "name": "Linked Paperclips",
+      "character": "🖇️",
+      "category": "objects",
+      "subcategory": "office",
+      "contentTier": "unset",
+      "filename": "linked-paperclips.json",
+      "shortName": "linked"
+    },
+    {
+      "slug": "straight-ruler-emoji",
+      "name": "Straight Ruler",
+      "character": "📏",
+      "category": "objects",
+      "subcategory": "office",
+      "contentTier": "unset",
+      "filename": "straight-ruler-emoji.json",
+      "shortName": "straight ruler emoji"
+    },
+    {
+      "slug": "wastebasket-emoji",
+      "name": "Wastebasket",
+      "character": "🗑️",
+      "category": "objects",
+      "subcategory": "office",
+      "contentTier": "unset",
+      "filename": "wastebasket-emoji.json",
+      "shortName": "wastebasket emoji"
+    },
+    {
+      "slug": "euro-banknote-emoji",
+      "name": "Euro Banknote",
+      "character": "💶",
+      "category": "objects",
+      "subcategory": "money",
+      "contentTier": "unset",
+      "filename": "euro-banknote-emoji.json",
+      "shortName": "euro banknote emoji"
+    },
+    {
+      "slug": "roll-of-paper-emoji",
+      "name": "Roll of Paper",
+      "character": "🧻",
+      "category": "objects",
+      "subcategory": "household",
+      "contentTier": "unset",
+      "filename": "roll-of-paper-emoji.json",
+      "shortName": "roll of paper emoji"
+    },
+    {
+      "slug": "magnifying-left",
+      "name": "Magnifying Glass Left",
+      "character": "🔍",
+      "category": "objects",
+      "subcategory": "light-video",
+      "contentTier": "unset",
+      "filename": "magnifying-left.json",
+      "shortName": "magnifying left"
+    },
+    {
+      "slug": "money-with-wings-emoji",
+      "name": "Money with Wings",
+      "character": "💸",
+      "category": "objects",
+      "subcategory": "money",
+      "contentTier": "unset",
+      "filename": "money-with-wings-emoji.json",
+      "shortName": "money with wings emoji"
+    },
+    {
+      "slug": "page-curl",
+      "name": "Page with Curl",
+      "character": "📃",
+      "category": "objects",
+      "subcategory": "book-paper",
+      "contentTier": "unset",
+      "filename": "page-curl.json",
+      "shortName": "page curl"
+    },
+    {
+      "slug": "page-facing-up-emoji",
+      "name": "Page Facing Up",
+      "character": "📄",
+      "category": "objects",
+      "subcategory": "book-paper",
+      "contentTier": "unset",
+      "filename": "page-facing-up-emoji.json",
+      "shortName": "page facing up emoji"
+    },
+    {
+      "slug": "incoming-envelope-emoji",
+      "name": "Incoming Envelope",
+      "character": "📨",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "incoming-envelope-emoji.json",
+      "shortName": "incoming envelope emoji"
+    },
+    {
+      "slug": "diya",
+      "name": "Diya Lamp",
+      "character": "🪔",
+      "category": "objects",
+      "subcategory": "light-video",
+      "contentTier": "unset",
+      "filename": "diya.json",
+      "shortName": "diya"
+    },
+    {
+      "slug": "wrench-emoji",
+      "name": "Wrench",
+      "character": "🔧",
+      "category": "objects",
+      "subcategory": "tool",
+      "contentTier": "unset",
+      "filename": "wrench-emoji.json",
+      "shortName": "wrench emoji"
+    },
+    {
+      "slug": "video-camera-emoji",
+      "name": "Video Camera",
+      "character": "📹",
+      "category": "Objects",
+      "subcategory": "Light & Video",
+      "contentTier": "unset",
+      "filename": "video-camera-emoji.json",
+      "shortName": "video camera emoji"
+    },
+    {
+      "slug": "outbox",
+      "name": "Outbox Tray",
+      "character": "📤",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "outbox.json",
+      "shortName": "outbox"
+    },
+    {
+      "slug": "test-tube-emoji",
+      "name": "Test Tube",
+      "character": "🧪",
+      "category": "objects",
+      "subcategory": "science",
+      "contentTier": "unset",
+      "filename": "test-tube-emoji.json",
+      "shortName": "test tube emoji"
+    },
+    {
+      "slug": "mailbox-open-flag-up",
+      "name": "Open Mailbox with Raised Flag",
+      "character": "📬",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "mailbox-open-flag-up.json",
+      "shortName": "mailbox open flag up"
+    },
+    {
+      "slug": "mailbox-closed-flag-down",
+      "name": "Closed Mailbox with Lowered Flag",
+      "character": "📪",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "mailbox-closed-flag-down.json",
+      "shortName": "mailbox closed flag down"
+    },
+    {
+      "slug": "closed-mailbox-with-raised-flag-emoji",
+      "name": "Closed Mailbox with Raised Flag",
+      "character": "📫",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "closed-mailbox-with-raised-flag-emoji.json",
+      "shortName": "closed mailbox with raised flag emoji"
+    },
+    {
+      "slug": "orange-book",
+      "name": "Orange Book",
+      "character": "📙",
+      "category": "objects",
+      "subcategory": "book-paper",
+      "contentTier": "unset",
+      "filename": "orange-book.json",
+      "shortName": "orange book"
+    },
+    {
+      "slug": "mailbox-open-flag-down",
+      "name": "Open Mailbox with Lowered Flag",
+      "character": "📭",
+      "category": "objects",
+      "subcategory": "mail",
+      "contentTier": "unset",
+      "filename": "mailbox-open-flag-down.json",
+      "shortName": "mailbox open flag down"
+    },
+    {
+      "slug": "scroll-emoji",
+      "name": "Scroll",
+      "character": "📜",
+      "category": "objects",
+      "subcategory": "book-paper",
+      "contentTier": "unset",
+      "filename": "scroll-emoji.json",
+      "shortName": "scroll emoji"
+    },
+    {
+      "slug": "open-file-folder",
+      "name": "Open File Folder",
+      "character": "📂",
+      "category": "objects",
+      "subcategory": "office",
+      "contentTier": "unset",
+      "filename": "open-file-folder.json",
+      "shortName": "open file folder"
+    },
+    {
+      "slug": "triangular-ruler-emoji",
+      "name": "Triangular Ruler",
+      "character": "📐",
+      "category": "objects",
+      "subcategory": "office",
+      "contentTier": "unset",
+      "filename": "triangular-ruler-emoji.json",
+      "shortName": "triangular ruler emoji"
+    },
+    {
+      "slug": "yen-banknote",
+      "name": "Yen Banknote",
+      "character": "💴",
+      "category": "objects",
+      "subcategory": "money",
+      "contentTier": "unset",
+      "filename": "yen-banknote.json",
+      "shortName": "yen banknote"
+    }
+  ],
+  "travel & places (transport, buildings & time)": [
+    {
+      "slug": "twelve-oclock",
+      "name": "Twelve Oclock",
+      "character": "🕛",
+      "category": "travel",
+      "subcategory": "time",
+      "contentTier": "unset",
+      "filename": "twelve-oclock.json",
+      "shortName": "12"
+    },
+    {
+      "slug": "passenger-ship",
+      "name": "Passenger Ship",
+      "character": "🛳️",
+      "category": "travel",
+      "subcategory": "transport-water",
+      "contentTier": "unset",
+      "filename": "passenger-ship.json",
+      "shortName": "cruise"
+    },
+    {
+      "slug": "globe-europe-africa-emoji",
+      "name": "Globe Europe Africa",
+      "character": "🌍",
+      "category": "Travel & Places",
+      "subcategory": "Place Map",
+      "contentTier": "unset",
+      "filename": "globe-europe-africa-emoji.json",
+      "shortName": "globe europe africa emoji"
+    },
+    {
+      "slug": "office-building-emoji",
+      "name": "Office Building",
+      "character": "🏢",
+      "category": "travel",
+      "subcategory": "place-building",
+      "contentTier": "unset",
+      "filename": "office-building-emoji.json",
+      "shortName": "office building emoji"
+    },
+    {
+      "slug": "twelve-thirty-emoji",
+      "name": "Twelve Thirty",
+      "character": "🕧",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "twelve-thirty-emoji.json",
+      "shortName": "twelve thirty emoji"
+    },
+    {
+      "slug": "motorized-wheelchair-emoji",
+      "name": "Motorized Wheelchair",
+      "character": "🦼",
+      "category": "travel",
+      "subcategory": "transport-ground",
+      "contentTier": "unset",
+      "filename": "motorized-wheelchair-emoji.json",
+      "shortName": "motorized wheelchair emoji"
+    },
+    {
+      "slug": "tractor",
+      "name": "Tractor",
+      "character": "🚜",
+      "category": "travel",
+      "subcategory": "transport-ground",
+      "contentTier": "unset",
+      "filename": "tractor.json",
+      "shortName": "tractor"
+    },
+    {
+      "slug": "seven-oclock-emoji",
+      "name": "Seven Oclock",
+      "character": "🕖",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "seven-oclock-emoji.json",
+      "shortName": "seven oclock emoji"
+    },
+    {
+      "slug": "ten-oclock-emoji",
+      "name": "Ten Oclock",
+      "character": "🕙",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "ten-oclock-emoji.json",
+      "shortName": "ten oclock emoji"
+    },
+    {
+      "slug": "eight-thirty-emoji",
+      "name": "Eight Thirty",
+      "character": "🕣",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "eight-thirty-emoji.json",
+      "shortName": "eight thirty emoji"
+    },
+    {
+      "slug": "derelict-house",
+      "name": "Derelict House",
+      "character": "🏚️",
+      "category": "travel",
+      "subcategory": "place-building",
+      "contentTier": "unset",
+      "filename": "derelict-house.json",
+      "shortName": "derelict house"
+    },
+    {
+      "slug": "sun-behind-cloud-emoji",
+      "name": "Sun Behind Cloud",
+      "character": "⛅",
+      "category": "travel",
+      "subcategory": "sky-weather",
+      "contentTier": "unset",
+      "filename": "sun-behind-cloud-emoji.json",
+      "shortName": "sun behind cloud emoji"
+    },
+    {
+      "slug": "sport-utility",
+      "name": "Sport Utility Vehicle",
+      "character": "🚙",
+      "category": "travel",
+      "subcategory": "transport-ground",
+      "contentTier": "unset",
+      "filename": "sport-utility.json",
+      "shortName": "suv"
+    },
+    {
+      "slug": "kaaba",
+      "name": "Kaaba",
+      "character": "🕋",
+      "category": "travel",
+      "subcategory": "place-religious",
+      "contentTier": "unset",
+      "filename": "kaaba.json",
+      "shortName": "kaaba"
+    },
+    {
+      "slug": "two-oclock-emoji",
+      "name": "Two Oclock",
+      "character": "🕑",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "two-oclock-emoji.json",
+      "shortName": "two oclock emoji"
+    },
+    {
+      "slug": "seat",
+      "name": "Seat",
+      "character": "💺",
+      "category": "travel",
+      "subcategory": "transport-air",
+      "contentTier": "unset",
+      "filename": "seat.json",
+      "shortName": "seat"
+    },
+    {
+      "slug": "two-thirty-emoji",
+      "name": "Two Thirty",
+      "character": "🕝",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "two-thirty-emoji.json",
+      "shortName": "two thirty emoji"
+    },
+    {
+      "slug": "synagogue",
+      "name": "Synagogue",
+      "character": "🕍",
+      "category": "travel",
+      "subcategory": "place-religious",
+      "contentTier": "unset",
+      "filename": "synagogue.json",
+      "shortName": "synagogue"
+    },
+    {
+      "slug": "ring-buoy-symbol-emoji",
+      "name": "Ring Buoy Symbol",
+      "character": "🛟",
+      "category": "Travel & Places",
+      "subcategory": "Transport Water",
+      "contentTier": "unset",
+      "filename": "ring-buoy-symbol-emoji.json",
+      "shortName": "ring buoy symbol emoji"
+    },
+    {
+      "slug": "police-light",
+      "name": "Police Car Light",
+      "character": "🚨",
+      "category": "travel",
+      "subcategory": "transport-ground",
+      "contentTier": "unset",
+      "filename": "police-light.json",
+      "shortName": "siren"
+    },
+    {
+      "slug": "timer",
+      "name": "Timer Clock",
+      "character": "⏲️",
+      "category": "travel",
+      "subcategory": "time",
+      "contentTier": "unset",
+      "filename": "timer.json",
+      "shortName": "timer"
+    },
+    {
+      "slug": "statue-of-liberty-emoji",
+      "name": "Statue of Liberty",
+      "character": "🗽",
+      "category": "travel",
+      "subcategory": "place-building",
+      "contentTier": "unset",
+      "filename": "statue-of-liberty-emoji.json",
+      "shortName": "statue of liberty emoji"
+    },
+    {
+      "slug": "oncoming-police",
+      "name": "Oncoming Police Car",
+      "character": "🚔",
+      "category": "travel",
+      "subcategory": "transport-ground",
+      "contentTier": "unset",
+      "filename": "oncoming-police.json",
+      "shortName": "police"
+    },
+    {
+      "slug": "one-thirty-emoji",
+      "name": "One Thirty",
+      "character": "🕜",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "one-thirty-emoji.json",
+      "shortName": "one thirty emoji"
+    },
+    {
+      "slug": "eleven-oclock-emoji",
+      "name": "Eleven Oclock",
+      "character": "🕚",
+      "category": "Travel & Places",
+      "subcategory": "Time",
+      "contentTier": "unset",
+      "filename": "eleven-oclock-emoji.json",
+      "shortName": "eleven oclock emoji"
+    }
+  ],
+  "activities & nature (sport, game, craft, weather, plant)": [
+    {
+      "slug": "playground-slide",
+      "name": "Playground Slide",
+      "character": "🛝",
+      "category": "activities",
+      "subcategory": "game",
+      "contentTier": "unset",
+      "filename": "playground-slide.json",
+      "shortName": "playground slide"
+    },
+    {
+      "slug": "person-swimming-medium-dark",
+      "name": "Person Swimming: Medium-Dark Skin Tone",
+      "character": "🏊🏾",
+      "category": "people",
+      "subcategory": "person-sport",
+      "contentTier": "unset",
+      "filename": "person-swimming-medium-dark.json",
+      "shortName": "swimming medium-dark"
+    },
+    {
+      "slug": "thread",
+      "name": "Thread",
+      "character": "🧵",
+      "category": "activities",
+      "subcategory": "arts-crafts",
+      "contentTier": "unset",
+      "filename": "thread.json",
+      "shortName": "thread"
+    },
+    {
+      "slug": "woman-and-man-holding-hands-emoji",
+      "name": "Woman and Man Holding Hands",
+      "character": "👫",
+      "category": "people",
+      "subcategory": "family",
+      "contentTier": "unset",
+      "filename": "woman-and-man-holding-hands-emoji.json",
+      "shortName": "woman and man holding hands emoji"
+    },
+    {
+      "slug": "snowman-without-snow",
+      "name": "Snowman Without Snow",
+      "character": "⛄",
+      "category": "nature",
+      "subcategory": "sky-weather",
+      "contentTier": "unset",
+      "filename": "snowman-without-snow.json",
+      "shortName": "snowman without snow"
+    },
+    {
+      "slug": "mahjong",
+      "name": "Mahjong Red Dragon",
+      "character": "🀄",
+      "category": "activities",
+      "subcategory": "game",
+      "contentTier": "unset",
+      "filename": "mahjong.json",
+      "shortName": "mahjong"
+    },
+    {
+      "slug": "flag-in-hole-emoji",
+      "name": "Flag in Hole",
+      "character": "⛳",
+      "category": "activities",
+      "subcategory": "sport",
+      "contentTier": "unset",
+      "filename": "flag-in-hole-emoji.json",
+      "shortName": "flag in hole emoji"
+    },
+    {
+      "slug": "rock",
+      "name": "Rock",
+      "character": "🪨",
+      "category": "nature",
+      "subcategory": "plant-other",
+      "contentTier": "unset",
+      "filename": "rock.json",
+      "shortName": "rock"
+    },
+    {
+      "slug": "person-swimming-light",
+      "name": "Person Swimming: Light Skin Tone",
+      "character": "🏊🏻",
+      "category": "people",
+      "subcategory": "person-sport",
+      "contentTier": "unset",
+      "filename": "person-swimming-light.json",
+      "shortName": "swimming light"
+    },
+    {
+      "slug": "moon-viewing-ceremony-emoji",
+      "name": "Moon Viewing Ceremony",
+      "character": "🎑",
+      "category": "activities",
+      "subcategory": "event",
+      "contentTier": "unset",
+      "filename": "moon-viewing-ceremony-emoji.json",
+      "shortName": "moon viewing ceremony emoji"
+    },
+    {
+      "slug": "thermometer",
+      "name": "Thermometer",
+      "character": "🌡️",
+      "category": "sky-weather",
+      "subcategory": "weather",
+      "contentTier": "unset",
+      "filename": "thermometer.json",
+      "shortName": "temp"
+    },
+    {
+      "slug": "third-place",
+      "name": "3rd Place Medal",
+      "character": "🥉",
+      "category": "activities",
+      "subcategory": "award-medal",
+      "contentTier": "unset",
+      "filename": "third-place.json",
+      "shortName": "bronze"
+    },
+    {
+      "slug": "person-swimming-dark",
+      "name": "Person Swimming: Dark Skin Tone",
+      "character": "🏊🏿",
+      "category": "people",
+      "subcategory": "person-sport",
+      "contentTier": "unset",
+      "filename": "person-swimming-dark.json",
+      "shortName": "swimming dark"
+    },
+    {
+      "slug": "knot",
+      "name": "Knot",
+      "character": "🪢",
+      "category": "activities",
+      "subcategory": "arts-crafts",
+      "contentTier": "unset",
+      "filename": "knot.json",
+      "shortName": "knot"
+    },
+    {
+      "slug": "swimming",
+      "name": "Person Swimming",
+      "character": "🏊",
+      "category": "activities",
+      "subcategory": "sport",
+      "contentTier": "unset",
+      "filename": "swimming.json",
+      "shortName": "swimming"
+    },
+    {
+      "slug": "yo-yo-emoji",
+      "name": "Yo-Yo",
+      "character": "🪀",
+      "category": "activities",
+      "subcategory": "game",
+      "contentTier": "unset",
+      "filename": "yo-yo-emoji.json",
+      "shortName": "yo yo emoji"
+    },
+    {
+      "slug": "mouth",
+      "name": "Mouth",
+      "character": "👄",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "mouth.json",
+      "shortName": "mouth"
+    },
+    {
+      "slug": "wood",
+      "name": "Wood",
+      "character": "🪵",
+      "category": "nature",
+      "subcategory": "plant-other",
+      "contentTier": "unset",
+      "filename": "wood.json",
+      "shortName": "wood"
+    },
+    {
+      "slug": "vulcan-salute",
+      "name": "Vulcan Salute",
+      "character": "🖖",
+      "category": "people",
+      "subcategory": "hand-gesture",
+      "contentTier": "unset",
+      "filename": "vulcan-salute.json",
+      "shortName": "vulcan"
+    },
+    {
+      "slug": "selfie-emoji",
+      "name": "Selfie",
+      "character": "🤳",
+      "category": "people",
+      "subcategory": "hand-prop",
+      "contentTier": "unset",
+      "filename": "selfie-emoji.json",
+      "shortName": "selfie emoji"
+    },
+    {
+      "slug": "couple-with-heart",
+      "name": "Couple with Heart",
+      "character": "💑",
+      "category": "people",
+      "subcategory": "family",
+      "contentTier": "unset",
+      "filename": "couple-with-heart.json",
+      "shortName": "couple-heart-emoji"
+    },
+    {
+      "slug": "women-holding-hands-emoji",
+      "name": "Women Holding Hands",
+      "character": "👭",
+      "category": "people",
+      "subcategory": "family",
+      "contentTier": "unset",
+      "filename": "women-holding-hands-emoji.json",
+      "shortName": "women holding hands emoji"
+    },
+    {
+      "slug": "sauna",
+      "name": "Person in Steamy Room",
+      "character": "🧖",
+      "category": "activities",
+      "subcategory": "sport",
+      "contentTier": "unset",
+      "filename": "sauna.json",
+      "shortName": "sauna"
+    },
+    {
+      "slug": "snowman-no-snow",
+      "name": "Snowman",
+      "character": "☃️",
+      "category": "sky-weather",
+      "subcategory": "weather",
+      "contentTier": "unset",
+      "filename": "snowman-no-snow.json",
+      "shortName": "snowman"
+    },
+    {
+      "slug": "one-piece",
+      "name": "One-Piece Swimsuit",
+      "character": "🩱",
+      "category": "objects",
+      "subcategory": "clothing",
+      "contentTier": "unset",
+      "filename": "one-piece.json",
+      "shortName": "swimsuit"
+    }
+  ],
+  "people (skin tone family, nail-polish, gesture, swimming, biking)": [
+    {
+      "slug": "leftwards-pushing-hand-light-skin-tone-emoji",
+      "name": "Leftwards Pushing Hand: Light Skin Tone",
+      "character": "🫷",
+      "category": "People & Body",
+      "subcategory": "Hand Gesture",
+      "contentTier": "unset",
+      "filename": "leftwards-pushing-hand-light-skin-tone-emoji.json",
+      "shortName": "leftwards-pushing-hand light"
+    },
+    {
+      "slug": "person-biking-medium-light",
+      "name": "Person Biking: Medium-Light Skin Tone",
+      "character": "🚴🏼",
+      "category": "people",
+      "subcategory": "person-sport",
+      "contentTier": "unset",
+      "filename": "person-biking-medium-light.json",
+      "shortName": "biking medium-light"
+    },
+    {
+      "slug": "teacher",
+      "name": "Teacher",
+      "character": "🧑‍🏫",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "teacher.json",
+      "shortName": "teacher"
+    },
+    {
+      "slug": "person-pouting-medium-skin-tone-emoji",
+      "name": "Person Pouting: Medium Skin Tone",
+      "character": "🙎",
+      "category": "People & Body",
+      "subcategory": "Person Gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-medium-skin-tone-emoji.json",
+      "shortName": "person-pouting medium"
+    },
+    {
+      "slug": "family-woman-woman-girl-girl-emoji",
+      "name": "Family: Woman, Woman, Girl, Girl",
+      "character": "👩‍👩‍👧‍👧",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-woman-girl-girl-emoji.json",
+      "shortName": "family WWGG"
+    },
+    {
+      "slug": "family-woman-boy-boy-emoji",
+      "name": "Family: Woman, Boy, Boy",
+      "character": "👩‍👦‍👦",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-boy-boy-emoji.json",
+      "shortName": "family WBB"
+    },
+    {
+      "slug": "technologist",
+      "name": "Technologist",
+      "character": "🧑‍💻",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "technologist.json",
+      "shortName": "coder"
+    },
+    {
+      "slug": "person-pouting-medium-light",
+      "name": "Person Pouting: Medium-Light Skin Tone",
+      "character": "🙎🏼",
+      "category": "people",
+      "subcategory": "gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-medium-light.json",
+      "shortName": "person pouting medium-light"
+    },
+    {
+      "slug": "person-pouting-medium-dark",
+      "name": "Person Pouting: Medium-Dark Skin Tone",
+      "character": "🙎🏾",
+      "category": "people",
+      "subcategory": "gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-medium-dark.json",
+      "shortName": "person pouting medium-dark"
+    },
+    {
+      "slug": "family-woman-girl-boy-emoji",
+      "name": "Family: Woman, Girl, Boy",
+      "character": "👩‍👧‍👦",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-girl-boy-emoji.json",
+      "shortName": "family WGB"
+    },
+    {
+      "slug": "right-facing-fist-emoji",
+      "name": "Right-Facing Fist",
+      "character": "🤜",
+      "category": "people",
+      "subcategory": "hand-fingers-closed",
+      "contentTier": "unset",
+      "filename": "right-facing-fist-emoji.json",
+      "shortName": "right-facing fist emoji"
+    },
+    {
+      "slug": "person-pouting-medium",
+      "name": "Person Pouting: Medium Skin Tone",
+      "character": "🙎🏽",
+      "category": "people",
+      "subcategory": "gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-medium.json",
+      "shortName": "person pouting medium"
+    },
+    {
+      "slug": "person-biking-medium",
+      "name": "Person Biking: Medium Skin Tone",
+      "character": "🚴🏽",
+      "category": "people",
+      "subcategory": "person-sport",
+      "contentTier": "unset",
+      "filename": "person-biking-medium.json",
+      "shortName": "biking medium"
+    },
+    {
+      "slug": "punch-fist",
+      "name": "Oncoming Fist",
+      "character": "👊",
+      "category": "people",
+      "subcategory": "hands",
+      "contentTier": "unset",
+      "filename": "punch-fist.json",
+      "shortName": "punch"
+    },
+    {
+      "slug": "family-woman-woman-girl-emoji",
+      "name": "Family: Woman, Woman, Girl",
+      "character": "👩‍👩‍👧",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-woman-girl-emoji.json",
+      "shortName": "family WWG"
+    },
+    {
+      "slug": "nose-emoji",
+      "name": "Nose",
+      "character": "👃",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "nose-emoji.json",
+      "shortName": "nose emoji"
+    },
+    {
+      "slug": "singer",
+      "name": "Singer",
+      "character": "🧑‍🎤",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "singer.json",
+      "shortName": "singer"
+    },
+    {
+      "slug": "woman-technologist-emoji",
+      "name": "Woman Technologist",
+      "character": "👩‍💻",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "woman-technologist-emoji.json",
+      "shortName": "woman technologist emoji"
+    },
+    {
+      "slug": "family-woman-boy-emoji",
+      "name": "Family: Woman, Boy",
+      "character": "👩‍👦",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-boy-emoji.json",
+      "shortName": "family WB"
+    },
+    {
+      "slug": "family-woman-girl-girl-emoji",
+      "name": "Family: Woman, Girl, Girl",
+      "character": "👩‍👧‍👧",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-girl-girl-emoji.json",
+      "shortName": "family WGG"
+    },
+    {
+      "slug": "family-woman-woman-boy-boy-emoji",
+      "name": "Family: Woman, Woman, Boy, Boy",
+      "character": "👩‍👩‍👦‍👦",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-woman-boy-boy-emoji.json",
+      "shortName": "family WWBB"
+    },
+    {
+      "slug": "woman-with-headscarf-emoji",
+      "name": "Woman with Headscarf",
+      "character": "🧕",
+      "category": "People & Body",
+      "subcategory": "Person Role",
+      "contentTier": "unset",
+      "filename": "woman-with-headscarf-emoji.json",
+      "shortName": "woman with headscarf emoji"
+    },
+    {
+      "slug": "woman-zombie-emoji",
+      "name": "Woman Zombie",
+      "character": "🧟‍♀️",
+      "category": "People & Body",
+      "subcategory": "Person Role",
+      "contentTier": "unset",
+      "filename": "woman-zombie-emoji.json",
+      "shortName": "woman zombie emoji"
+    },
+    {
+      "slug": "family-woman-woman-boy-emoji",
+      "name": "Family: Woman, Woman, Boy",
+      "character": "👩‍👩‍👦",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-woman-boy-emoji.json",
+      "shortName": "family WWB"
+    },
+    {
+      "slug": "person-pouting-dark",
+      "name": "Person Pouting: Dark Skin Tone",
+      "character": "🙎🏿",
+      "category": "people",
+      "subcategory": "gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-dark.json",
+      "shortName": "person pouting dark"
+    }
+  ],
+  "people (skin tone veil, fist, swimmers, body parts long-tail)": [
+    {
+      "slug": "nail-polish-medium-light-skin-tone-emoji",
+      "name": "Nail Polish: Medium-Light Skin Tone",
+      "character": "💅",
+      "category": "People & Body",
+      "subcategory": "Hand Gesture",
+      "contentTier": "unset",
+      "filename": "nail-polish-medium-light-skin-tone-emoji.json",
+      "shortName": "nail-polish medium-light"
+    },
+    {
+      "slug": "person-gesturing-no-light",
+      "name": "Person Gesturing No: Light Skin Tone",
+      "character": "🙅🏻",
+      "category": "people",
+      "subcategory": "person-gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-light.json",
+      "shortName": "no-gesture light"
+    },
+    {
+      "slug": "scientist",
+      "name": "Scientist",
+      "character": "🧑‍🔬",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "scientist.json",
+      "shortName": "scientist"
+    },
+    {
+      "slug": "person-gesturing-no-dark-skin-tone-emoji",
+      "name": "Person Gesturing No: Dark Skin Tone",
+      "character": "🙅",
+      "category": "People & Body",
+      "subcategory": "Person Gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-dark-skin-tone-emoji.json",
+      "shortName": "person-gesturing-no dark"
+    },
+    {
+      "slug": "veil-person-medium-dark",
+      "name": "Person with Veil: Medium-Dark Skin Tone",
+      "character": "👰🏾",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "veil-person-medium-dark.json",
+      "shortName": "veil person medium-dark"
+    },
+    {
+      "slug": "person-gesturing-no-medium",
+      "name": "Person Gesturing No: Medium Skin Tone",
+      "character": "🙅🏽",
+      "category": "people",
+      "subcategory": "person-gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-medium.json",
+      "shortName": "no-gesture medium"
+    },
+    {
+      "slug": "nail-polish-dark",
+      "name": "Nail Polish: Dark Skin Tone",
+      "character": "💅🏿",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "nail-polish-dark.json",
+      "shortName": "nails dark"
+    },
+    {
+      "slug": "veil-person-medium-light",
+      "name": "Person with Veil: Medium-Light Skin Tone",
+      "character": "👰🏼",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "veil-person-medium-light.json",
+      "shortName": "veil person medium-light"
+    },
+    {
+      "slug": "nail-polish-medium-light",
+      "name": "Nail Polish: Medium-Light Skin Tone",
+      "character": "💅🏼",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "nail-polish-medium-light.json",
+      "shortName": "nails medium-light"
+    },
+    {
+      "slug": "pregnant-man-emoji",
+      "name": "Pregnant Man",
+      "character": "🫃",
+      "category": "People & Body",
+      "subcategory": "Person",
+      "contentTier": "unset",
+      "filename": "pregnant-man-emoji.json",
+      "shortName": "pregnant man emoji"
+    },
+    {
+      "slug": "nail-polish-medium",
+      "name": "Nail Polish: Medium Skin Tone",
+      "character": "💅🏽",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "nail-polish-medium.json",
+      "shortName": "nails medium"
+    },
+    {
+      "slug": "veil-person-dark",
+      "name": "Person with Veil: Dark Skin Tone",
+      "character": "👰🏿",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "veil-person-dark.json",
+      "shortName": "veil person dark"
+    },
+    {
+      "slug": "woman-vampire-emoji",
+      "name": "Woman Vampire",
+      "character": "🧛‍♀️",
+      "category": "People & Body",
+      "subcategory": "Person Role",
+      "contentTier": "unset",
+      "filename": "woman-vampire-emoji.json",
+      "shortName": "woman vampire emoji"
+    },
+    {
+      "slug": "person-gesturing-no-medium-light",
+      "name": "Person Gesturing No: Medium-Light Skin Tone",
+      "character": "🙅🏼",
+      "category": "people",
+      "subcategory": "person-gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-medium-light.json",
+      "shortName": "no-gesture medium-light"
+    },
+    {
+      "slug": "palms-up-together-medium-light-skin-tone-emoji",
+      "name": "Palms Up Together: Medium-Light Skin Tone",
+      "character": "🤲",
+      "category": "People & Body",
+      "subcategory": "Hand Gesture",
+      "contentTier": "unset",
+      "filename": "palms-up-together-medium-light-skin-tone-emoji.json",
+      "shortName": "palms-up-together medium-light"
+    },
+    {
+      "slug": "person-gesturing-no-medium-dark",
+      "name": "Person Gesturing No: Medium-Dark Skin Tone",
+      "character": "🙅🏾",
+      "category": "people",
+      "subcategory": "person-gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-medium-dark.json",
+      "shortName": "no-gesture medium-dark"
+    },
+    {
+      "slug": "pregnant-woman-emoji",
+      "name": "Pregnant Woman",
+      "character": "🤰",
+      "category": "people",
+      "subcategory": "person-role",
+      "contentTier": "unset",
+      "filename": "pregnant-woman-emoji.json",
+      "shortName": "pregnant woman emoji"
+    },
+    {
+      "slug": "person-gesturing-no-dark",
+      "name": "Person Gesturing No: Dark Skin Tone",
+      "character": "🙅🏿",
+      "category": "people",
+      "subcategory": "person-gesture",
+      "contentTier": "unset",
+      "filename": "person-gesturing-no-dark.json",
+      "shortName": "no-gesture dark"
+    },
+    {
+      "slug": "family-woman-girl-emoji",
+      "name": "Family: Woman, Girl",
+      "character": "👩‍👧",
+      "category": "People & Body",
+      "subcategory": "Family",
+      "contentTier": "unset",
+      "filename": "family-woman-girl-emoji.json",
+      "shortName": "family WG"
+    },
+    {
+      "slug": "person-pouting-light",
+      "name": "Person Pouting: Light Skin Tone",
+      "character": "🙎🏻",
+      "category": "people",
+      "subcategory": "gesture",
+      "contentTier": "unset",
+      "filename": "person-pouting-light.json",
+      "shortName": "person pouting light"
+    },
+    {
+      "slug": "nail-polish-medium-dark",
+      "name": "Nail Polish: Medium-Dark Skin Tone",
+      "character": "💅🏾",
+      "category": "people",
+      "subcategory": "body-parts",
+      "contentTier": "unset",
+      "filename": "nail-polish-medium-dark.json",
+      "shortName": "nails medium-dark"
+    },
+    {
+      "slug": "pick-emoji",
+      "name": "Pick",
+      "character": "⛏️",
+      "category": "objects",
+      "subcategory": "tool",
+      "contentTier": "unset",
+      "filename": "pick-emoji.json",
+      "shortName": "pick emoji"
+    },
+    {
+      "slug": "water-gun",
+      "name": "Water Gun",
+      "character": "🔫",
+      "category": "objects",
+      "subcategory": "tool",
+      "contentTier": "unset",
+      "filename": "water-gun.json",
+      "shortName": "squirt"
+    },
+    {
+      "slug": "unlocked-emoji",
+      "name": "Unlocked",
+      "character": "🔓",
+      "category": "objects",
+      "subcategory": "lock",
+      "contentTier": "unset",
+      "filename": "unlocked-emoji.json",
+      "shortName": "unlocked emoji"
+    },
+    {
+      "slug": "link",
+      "name": "Link",
+      "character": "🔗",
+      "category": "objects",
+      "subcategory": "tool",
+      "contentTier": "unset",
+      "filename": "link.json",
+      "shortName": "connect"
+    }
+  ],
+  "remaining unset (flags long-tail, symbols, food-drink & misc)": [
+    {
+      "slug": "northern-mariana-islands-flag-emoji",
+      "name": "Northern Mariana Islands Flag",
+      "character": "🇲🇵",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "northern-mariana-islands-flag-emoji.json",
+      "shortName": "MP flag"
+    },
+    {
+      "slug": "rainbow-flag-emoji",
+      "name": "Rainbow Flag",
+      "character": "🏳️‍🌈",
+      "category": "flags",
+      "subcategory": "flag",
+      "contentTier": "unset",
+      "filename": "rainbow-flag-emoji.json",
+      "shortName": "rainbow flag emoji"
+    },
+    {
+      "slug": "jersey-flag-emoji",
+      "name": "Jersey Flag",
+      "character": "🇯🇪",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "jersey-flag-emoji.json",
+      "shortName": "JE flag"
+    },
+    {
+      "slug": "malta-flag-emoji",
+      "name": "Malta Flag",
+      "character": "🇲🇹",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "malta-flag-emoji.json",
+      "shortName": "MT flag"
+    },
+    {
+      "slug": "greenland-flag-emoji",
+      "name": "Greenland Flag",
+      "character": "🇬🇱",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "greenland-flag-emoji.json",
+      "shortName": "GL flag"
+    },
+    {
+      "slug": "sierra-leone-flag-emoji",
+      "name": "Sierra Leone Flag",
+      "character": "🇸🇱",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "sierra-leone-flag-emoji.json",
+      "shortName": "SL flag"
+    },
+    {
+      "slug": "wing",
+      "name": "Wing",
+      "character": "🪽",
+      "category": "animals",
+      "subcategory": "animal-bird",
+      "contentTier": "unset",
+      "filename": "wing.json",
+      "shortName": "wing"
+    },
+    {
+      "slug": "central-african-republic-flag-emoji",
+      "name": "Central African Republic Flag",
+      "character": "🇨🇫",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "central-african-republic-flag-emoji.json",
+      "shortName": "CF flag"
+    },
+    {
+      "slug": "bangladesh-flag-emoji",
+      "name": "Bangladesh Flag",
+      "character": "🇧🇩",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "bangladesh-flag-emoji.json",
+      "shortName": "BD flag"
+    },
+    {
+      "slug": "white-flag-emoji",
+      "name": "White Flag",
+      "character": "🏳️",
+      "category": "flags",
+      "subcategory": "flag",
+      "contentTier": "unset",
+      "filename": "white-flag-emoji.json",
+      "shortName": "white flag emoji"
+    },
+    {
+      "slug": "sao-tome-and-principe-flag-emoji",
+      "name": "Sao Tome and Principe Flag",
+      "character": "🇸🇹",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "sao-tome-and-principe-flag-emoji.json",
+      "shortName": "ST flag"
+    },
+    {
+      "slug": "isle-of-man-flag-emoji",
+      "name": "Isle of Man Flag",
+      "character": "🇮🇲",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "isle-of-man-flag-emoji.json",
+      "shortName": "IM flag"
+    },
+    {
+      "slug": "north-korea-flag-emoji",
+      "name": "North Korea Flag",
+      "character": "🇰🇵",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "north-korea-flag-emoji.json",
+      "shortName": "KP flag"
+    },
+    {
+      "slug": "new-zealand-flag-emoji",
+      "name": "New Zealand Flag",
+      "character": "🇳🇿",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "new-zealand-flag-emoji.json",
+      "shortName": "NZ flag"
+    },
+    {
+      "slug": "guam-flag-emoji",
+      "name": "Guam Flag",
+      "character": "🇬🇺",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "guam-flag-emoji.json",
+      "shortName": "GU flag"
+    },
+    {
+      "slug": "flag-croatia",
+      "name": "Flag: Croatia",
+      "character": "🇭🇷",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-croatia.json",
+      "shortName": "flag croatia"
+    },
+    {
+      "slug": "flag-taiwan",
+      "name": "Flag: Taiwan",
+      "character": "🇹🇼",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-taiwan.json",
+      "shortName": "flag taiwan"
+    },
+    {
+      "slug": "cayman-islands-flag-emoji",
+      "name": "Cayman Islands Flag",
+      "character": "🇰🇾",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "cayman-islands-flag-emoji.json",
+      "shortName": "KY flag"
+    },
+    {
+      "slug": "moldova-flag-emoji",
+      "name": "Moldova Flag",
+      "character": "🇲🇩",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "moldova-flag-emoji.json",
+      "shortName": "MD flag"
+    },
+    {
+      "slug": "tuvalu-flag-emoji",
+      "name": "Tuvalu Flag",
+      "character": "🇹🇻",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "tuvalu-flag-emoji.json",
+      "shortName": "TV flag"
+    },
+    {
+      "slug": "san-marino-flag-emoji",
+      "name": "San Marino Flag",
+      "character": "🇸🇲",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "san-marino-flag-emoji.json",
+      "shortName": "SM flag"
+    },
+    {
+      "slug": "triangular-flag-emoji",
+      "name": "Triangular Flag",
+      "character": "🚩",
+      "category": "flags",
+      "subcategory": "flag",
+      "contentTier": "unset",
+      "filename": "triangular-flag-emoji.json",
+      "shortName": "triangular flag emoji"
+    },
+    {
+      "slug": "jordan-flag-emoji",
+      "name": "Jordan Flag",
+      "character": "🇯🇴",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "jordan-flag-emoji.json",
+      "shortName": "JO flag"
+    },
+    {
+      "slug": "hong-kong-flag-emoji",
+      "name": "Hong Kong Flag",
+      "character": "🇭🇰",
+      "category": "Flags",
+      "subcategory": "Country Flag",
+      "contentTier": "unset",
+      "filename": "hong-kong-flag-emoji.json",
+      "shortName": "HK flag"
+    },
+    {
+      "slug": "flag-philippines-emoji",
+      "name": "Flag Philippines",
+      "character": "🇵🇭",
+      "category": "flags",
+      "subcategory": "country-flag",
+      "contentTier": "unset",
+      "filename": "flag-philippines-emoji.json",
+      "shortName": "flag philippines emoji"
+    }
+  ]
+}
