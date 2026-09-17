@@ -1,8 +1,6 @@
 import { ImageResponse } from 'next/og';
 import { getEmojiBySlug, getCategoryDisplayName } from '@/lib/emoji-data';
 
-export const runtime = 'edge';
-
 interface RouteParams {
   params: Promise<{ slug: string }>;
 }

@@ -3,6 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import type { Emoji } from '@/types/emoji';
 
+// This route writes to the filesystem, so it requires the Node.js runtime.
+export const runtime = 'nodejs';
+
 export async function POST(request: NextRequest) {
   try {
     const emoji: Emoji = await request.json();
