@@ -4,7 +4,7 @@
   "emojis": ["thinking", "eyes"],
   "name": "Suspicious Thinking",
   "description": "Combining the thinking face with watching eyes to show skepticism or that something seems off.",
-  "meaning": "Used when something seems suspicious or doesn't add up. Implies careful scrutiny and doubt about what's being observed.",
+  "meaning": "Used when something seems suspicious or doesn't add up. Implies careful scrutiny and doubt about what's being observed. Most often lands in friend groups, dating chats, and stan Twitter when the sender is clocking a story that does not quite match.",
   "examples": [
     "Your story doesn't match up 🤔👀",
     "🤔👀 interesting timing",
@@ -16,6 +16,57 @@
   "relatedCombos": ["eyes-lips-eyes"],
   "tags": ["suspicious", "skeptical", "doubt", "watching", "scrutiny"],
   "popularity": 76,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "🤔👀 is the skeptical-scrutiny combo. The thinking face already reads as 'I am evaluating this,' and the watching eyes add a 'and I have noticed something' beat that turns the reaction from generic curiosity into specific suspicion. On Twitter, group chats, and TikTok comments the combo reads as the sender clocking something that does not quite add up and announcing that they are paying attention to it.\n\nThe combo also functions as a soft call-out. Posting 🤔👀 under a friend's suspicious timing, a partner's convenient story, or a public figure's odd statement registers as 'I am watching you, and I see it.' It is louder than a single 🤔, which can feel neutral, and stronger than a single 👀, which can feel innocent. Stacked together the two emojis make the scrutiny unmistakable, which is the point — the sender wants the other party to feel seen.",
+    "howPeopleUseIt": "🤔👀 arrives when a friend's story does not match, when a public statement lands suspiciously, or when someone in the chat is hiding something obvious. It is common in friend groups during gossip threads, in dating chats when a partner's explanation feels off, and in stan Twitter when a celebrity's timing looks coordinated. The combo is the emoji version of squinting at someone over the top of your glasses.",
+    "whenNotToUse": "Skip 🤔👀 when you actually trust the other person and just want to ask a question — the skepticism will read as an accusation. Avoid it on serious or vulnerable disclosures where the scrutiny framing can feel like an attack, and skip it in professional comms where the call-out reads as hostile. Also avoid 🤔👀 on genuinely painful news where the doubt framing lands as cold.",
+    "howToReply": "Mirror 🤔👀 with another 🤔👀 if you want to keep the scrutiny going, or defuse with a softer 'okay, fair question' line that acknowledges the suspicion without escalating. A neutral 🧐 or 😐 also works as a softer skepticism beat. If the combo landed on something you shared and you want to clear it up, a direct explanation closes the bit without leaving the room guessing.",
+    "faqs": [
+      {
+        "question": "What does 🤔👀 mean?",
+        "answer": "🤔👀 means the sender is thinking and watching, usually because something seems off. The thinking face signals evaluation and the eyes signal 'I have noticed.'"
+      },
+      {
+        "question": "Is 🤔👀 flirty?",
+        "answer": "It can read as flirtatious in early dating when paired with a teasing or bold message. In most contexts it is skepticism, not romance."
+      },
+      {
+        "question": "What does 🤔👀 mean from a girl?",
+        "answer": "From anyone, 🤔👀 is doubt-and-watch energy. There is no universal gendered read; the combo is about the sender scrutinizing a moment, not who is sending it."
+      },
+      {
+        "question": "What does 🤔👀 mean on TikTok?",
+        "answer": "On TikTok 🤔👀 usually sits in the comments under a creator's suspicious claim or convenient timing. The audience reads it as the comment section clocking something."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "you said you were busy but 🤔👀",
+      "interpretation": "Friend calling out a suspicious story. Mirror with 🤔👀 or fess up with a quick explanation to defuse the bit."
+    },
+    {
+      "setting": "dating",
+      "message": "you liked her post already 🤔👀",
+      "interpretation": "Partner clocking a possible slip. Mirror with 🤔👀 or give a clear, calm explanation to close the bit."
+    },
+    {
+      "setting": "work",
+      "message": "the deadline just moved up again 🤔👀",
+      "interpretation": "Tight team chat noticing a suspicious pattern. Mirror with 🤔👀 privately; raise the concern directly with leadership in a separate message."
+    },
+    {
+      "setting": "social",
+      "message": "the brand posted exactly when the drama started 🤔👀",
+      "interpretation": "Stan Twitter noticing coordinated timing. Mirror with 🤔👀 or quote-tweet to escalate the call-out."
+    },
+    {
+      "setting": "family",
+      "message": "who finished the milk 🤔👥",
+      "interpretation": "Family group bit tracking down a missing item. Mirror with 🤔👀 or confess if you are the culprit."
+    }
+  ]
 }

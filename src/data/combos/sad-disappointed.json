@@ -1,10 +1,10 @@
 {
   "slug": "sad-disappointed",
   "combo": "😔😞",
-  "emojis": ["pensive"],
+  "emojis": ["pensive", "disappointed-face"],
   "name": "Deeply Disappointed",
   "description": "Two sad faces together expressing deep disappointment or melancholy.",
-  "meaning": "Used when feeling genuinely sad or deeply disappointed about something. Sincere sadness, not ironic.",
+  "meaning": "Used when feeling genuinely sad or deeply disappointed about something. Sincere sadness, not ironic. The combo is the default reaction when a plan falls apart, when a hope does not land, or when a friend lets you down. Lands well under a screenshot of bad news, in a friend group chat when plans got canceled, and in dating conversations when a partner has to share unwelcome news.",
   "examples": [
     "They canceled again 😔😞",
     "I really thought this time 😔😞",
@@ -16,6 +16,57 @@
   "relatedCombos": ["sob-broken-heart"],
   "tags": ["sad", "disappointed", "melancholy", "genuine", "letdown"],
   "popularity": 70,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "😔😞 stacks the pensive face with the disappointed face to make the 'I am genuinely let down' beat louder than either emoji alone can manage. The pensive face covers quiet sadness with closed eyes and a downturned mouth; the disappointed face adds the heavier 'I expected better' undercurrent that the pensive alone cannot carry. Together the combo lands as a sincere signal that the sender is hurt, not just annoyed, and the read travels well across age groups because the imagery is universal.\n\nThe combo is the default reaction when a plan falls apart, when a hope does not land, or when a friend lets you down. On Instagram, TikTok, and iMessage 😔😞 arrives under a screenshot of bad news, in a friend group chat when the group wanted something and did not get it, and in dating conversations when a partner has to deliver unwelcome news. Reach for the combo when the read should be sincerely sad, and avoid it when the moment is mildly frustrating or when the recipient will read the sadness as a guilt trip.",
+    "howPeopleUseIt": "😔😞 arrives as a stand-alone reaction to a letdown, as a beat inside a longer 'I had hoped' message, or as a soft reply when the sender does not have the words to explain. The combo is the standard disappointment stack in family group chats when an event gets canceled, in dating conversations when a partner has to share bad news, and in friend groups when the group expected something and did not get it. The disappointed face adds the 'I expected better' weight that lets the sender be sad without having to explain why.\n\nIn work contexts 😔😞 shows up in a tight team Slack when a project falls through, and on Twitter it lands under a public statement that disappointed the sender. The combo is rarely sarcastic because both emojis are unambiguously sad, which makes it a safe bet when you want to come across as genuinely hurt.",
+    "whenNotToUse": "Skip 😔😞 in casual conversations where the disappointment read will land as overkill — sending 😔😞 when a friend is mildly late to a call reads as guilt-trippy. Avoid the combo in customer-support or HR contexts where 'I am let down' reads as over-the-top. And do not default to 😔😞 when the recipient did something they could not control; the disappointment will land as unfair.\n\nAlso avoid 😔😞 when the sender is actually angry. Anger emojis like 😤 or 😡 will land as more honest than the sad combo when the sender is furious. When in doubt, send a sentence that names what is bothering you rather than a combo that lets the recipient guess.",
+    "howToReply": "If someone sends you 😔😞 and you want to acknowledge the sadness, mirror with a soft 'I am sorry' or a sentence that names what is making them sad. A single 😔 also works as a softer agreement if you want to register support without the doubled weight. If the combo landed on something you did and you want to make it right, ask 'what can I do?' rather than mirroring the sadness.\n\nIf the 😔😞 landed on something you shared and it feels like a brush-off, you can ask 'too much?' and most people will clarify that they meant it as a sad reaction. If you sent 😔😞 and the recipient took it as a guilt trip, you can clarify with 'I just feel let down, not blaming you' to reset the read.",
+    "faqs": [
+      {
+        "question": "What does 😔😞 mean?",
+        "answer": "😔😞 means the sender is genuinely sad or let down. The pensive face covers quiet sadness and the disappointed face adds the 'I expected better' weight."
+      },
+      {
+        "question": "Is 😔😞 passive-aggressive?",
+        "answer": "😔😞 can read as passive-aggressive when the sender is actually angry and using the sad combo as cover. It lands as sincere sadness when paired with a sentence that names what is wrong."
+      },
+      {
+        "question": "What does 😔😞 mean from a girl?",
+        "answer": "From a girl, 😔😞 means she is genuinely hurt or disappointed. The read is the same regardless of who is sending it; the surrounding message gives more context than the combo."
+      },
+      {
+        "question": "What does 😔😞 mean on Instagram?",
+        "answer": "On Instagram 😔😞 on a story reaction means the viewer was genuinely let down by the post. The combo lands as sincere sadness rather than casual frustration."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "they canceled the trip again 😔😞",
+      "interpretation": "Friend group share of a letdown. Mirror with a sentence about how the group feels or a softer sad emoji."
+    },
+    {
+      "setting": "dating",
+      "message": "I really thought this time 😔😞",
+      "interpretation": "Partner share of a personal letdown. Mirror with 'I am here for you' or a soft heart to land as supportive."
+    },
+    {
+      "setting": "family",
+      "message": "we cannot come home for the holidays 😔😞",
+      "interpretation": "Family share of a hard constraint. Mirror with 'we miss you' or a soft hug emoji to keep the warmth."
+    },
+    {
+      "setting": "work",
+      "message": "the proposal did not land 😔😞",
+      "interpretation": "Slack debrief on a tough work outcome. Mirror with a sentence about the next step rather than another sad combo."
+    },
+    {
+      "setting": "social",
+      "message": "they canceled the show 😔😞",
+      "interpretation": "Group chat reaction to a fan disappointment. Mirror with another sad combo or a sentence about how the group feels."
+    }
+  ]
 }

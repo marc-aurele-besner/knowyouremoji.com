@@ -1,10 +1,10 @@
 {
   "slug": "skull-crossbones-danger",
   "combo": "☠️⚠️",
-  "emojis": ["skull-and-crossbones"],
+  "emojis": ["skull-and-crossbones", "warning"],
   "name": "Deadly Warning",
   "description": "Skull and crossbones with warning sign for serious danger warnings.",
-  "meaning": "Used to warn about something seriously dangerous or risky. Not joking around.",
+  "meaning": "Used to warn about something seriously dangerous or risky. Not joking around. The combo is the maximum danger signal and lands as a serious warning about a sketchy recipe, a dangerous life hack, or a public-safety alert. The skull covers the death-and-danger symbolism and the warning sign adds the modern hazard-tape beat.",
   "examples": ["Don't eat that 💀⚠️", "☠️⚠️ proceed with caution", "That mix ☠️⚠️"],
   "category": "reaction",
   "seoTitle": "☠️⚠️ Skull Danger Combo Meaning",
@@ -12,6 +12,57 @@
   "relatedCombos": [],
   "tags": ["danger", "warning", "serious", "caution", "risk"],
   "popularity": 68,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "☠️⚠️ stacks the skull-and-crossbones with the warning sign to make the 'this is genuinely dangerous' beat louder than either emoji alone can manage. The skull covers the death-and-danger symbolism that has lived on poison labels and pirate flags for centuries; the warning sign adds the modern hazard-tape beat that turns the skull into an explicit alert. Together the combo lands as the maximum possible danger signal, and on TikTok, Twitter, and Discord it reads as a serious warning about something risky.\n\nThe combo is the default reaction to a dangerous life hack, a sketchy recipe, or a public-safety alert. A single ☠️ can feel like a meme; a single ⚠️ can feel like a weather alert. The two together cross both registers and land as 'this is actually hazardous.' Reach for ☠️⚠️ when the warning is sincere or when the joke is about real risk, and avoid it when the situation is mildly inconvenient or when the recipient will read the danger beat as over-the-top.",
+    "howPeopleUseIt": "☠️⚠️ arrives as a stand-alone caption under a screenshot of a dangerous recipe, as a beat inside a longer 'do not try this' message, or as a public-safety style alert in a group chat. The combo is the standard warning stack on Twitter when someone is calling out a dangerous trend, on TikTok when a creator is debunking a risky life hack, and on Discord when a moderator is flagging a sketchy link. The skull-and-crossbones adds the mortality beat that the warning sign alone cannot carry.\n\nIn dating chats ☠️⚠️ shows up as a playful warning about a partner's cooking, their driving, or their movie taste. In family chats it lands as a joke about a relative's DIY project. The combo is most useful as a joke about real risk, where the sender wants to land as both funny and genuinely warning.",
+    "whenNotToUse": "Skip ☠️⚠️ in casual conversations where the danger beat will land as overkill — sending ☠️⚠️ when a friend mentions a minor inconvenience reads as dramatic. Avoid the combo in customer-support or HR contexts where 'this is dangerous' reads as over-the-top or legally risky. And do not default to ☠️⚠️ when the situation is actually safe; the combo will land as alarmist.\n\nAlso avoid ☠️⚠️ when the recipient is sharing something sensitive and you want to land as supportive. The death-and-danger beat will read as cold rather than helpful. When in doubt, send a sentence that names the actual concern rather than a combo that lets the recipient guess.",
+    "howToReply": "If someone sends you ☠️⚠️ and you want to keep the warning energy, mirror with another ☠️⚠️ or a sentence like 'stay safe' to land as more sincere. A single ⚠️ also works as a softer agreement if you want to register the warning without the doubled death beat.\n\nIf the ☠️⚠️ landed on something you shared and it feels like a brush-off, you can ask 'too much?' and most people will clarify that they meant it as a strong warning. If you sent ☠️⚠️ and the recipient took it literally, you can recover with 'I mean it as a joke, but seriously be careful' to reset the read.",
+    "faqs": [
+      {
+        "question": "What does ☠️⚠️ mean?",
+        "answer": "☠️⚠️ means the sender is warning about something genuinely dangerous. The skull covers the death-and-danger symbolism and the warning sign adds the hazard-tape alert."
+      },
+      {
+        "question": "Is ☠️⚠️ a joke?",
+        "answer": "☠️⚠️ is most often a joke about real risk, not a sincere threat. It only reads as sincere when paired with an actual warning message about something hazardous."
+      },
+      {
+        "question": "What does ☠️⚠️ mean on TikTok?",
+        "answer": "On TikTok ☠️⚠️ in the comments means the viewer is warning other viewers about the content. Creators often use the combo as a 'do not try this at home' marker."
+      },
+      {
+        "question": "What does ☠️⚠️ mean from a guy?",
+        "answer": "From a guy, ☠️⚠️ means he is warning about a real risk or making a joke about one. The read is the same regardless of who is sending it."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "do not mix those two cleaners ☠️⚠️",
+      "interpretation": "Friend warning about a real risk. Mirror with a sentence that confirms you heard them or a softer warning emoji."
+    },
+    {
+      "setting": "dating",
+      "message": "your driving in the snow ☠️⚠️",
+      "interpretation": "Playful partner warning. Mirror with a sentence about the drive or a soft heart to keep the warmth."
+    },
+    {
+      "setting": "family",
+      "message": "Dad is fixing the roof again ☠️⚠️",
+      "interpretation": "Family joke about a parent's risky DIY. Mirror with another warning combo or a sentence about safety."
+    },
+    {
+      "setting": "social",
+      "message": "this life hack is genuinely dangerous ☠️⚠️",
+      "interpretation": "Group chat warning about a viral trend. Mirror with a sentence that confirms the warning or a softer emoji."
+    },
+    {
+      "setting": "work",
+      "message": "this new endpoint is exposed ☠️⚠️",
+      "interpretation": "Slack warning about a security risk. Mirror with a sentence about the fix in a tight team; avoid in wider channels."
+    }
+  ]
 }

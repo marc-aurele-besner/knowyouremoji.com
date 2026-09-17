@@ -1,10 +1,10 @@
 {
   "slug": "sleep-tired",
   "combo": "😴💤",
-  "emojis": ["sleeping"],
+  "emojis": ["sleeping", "zzz"],
   "name": "Exhausted Sleep",
   "description": "Sleeping face with ZZZs to emphasize being extremely tired or ready to sleep.",
-  "meaning": "Used to express being very tired, about to fall asleep, or finding something boring enough to sleep through.",
+  "meaning": "Used to express being very tired, about to fall asleep, or finding something boring enough to sleep through. The combo lands as a sincere 'I am out' signal in late-night chats, and as a sarcastic jab when a friend explains something nobody asked for. The ZZZ turns the sleeping face into a louder goodnight.",
   "examples": ["After that meeting 😴💤", "😴💤 goodnight everyone", "This lecture 😴💤"],
   "category": "emotion",
   "seoTitle": "😴💤 Sleep Tired Combo Meaning",
@@ -12,6 +12,57 @@
   "relatedCombos": ["weary-sob"],
   "tags": ["tired", "sleepy", "exhausted", "boring", "rest"],
   "popularity": 72,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "😴💤 stacks the sleeping face with the ZZZ emoji to make the 'I am so tired I could pass out' beat louder than either emoji alone can manage. The sleeping face covers the actual 'eyes closed' rest pose and the ZZZ adds the cartoonish 'asleep' trope that has lived in comics for a century. Together the combo lands as a sincere signal that the sender is drained, ready for bed, or about to crash — not a joke, not a bit.\n\nThe combo also works as a soft way to bow out of a conversation that has run past your bedtime. A friend who keeps texting at 1 a.m. will read 😴💤 as 'I love you but I am gone.' On the flip side, 😴💤 on a movie, a lecture, or a meeting signals that the content was boring enough to put the sender to sleep — that sarcastic read is the one most people reach for on TikTok and Twitter. Reach for the combo when the message should be honest exhaustion or pointed boredom, and avoid it when you want to engage further with the topic.",
+    "howPeopleUseIt": "😴💤 arrives as a stand-alone 'goodnight' in the family group chat, as a beat inside a longer 'today was a lot' message, or as a reply to a friend's late-night text. It is the default exhaustion emoji stack on Slack when a deadline has been hit, on Discord after a long gaming session, and on WhatsApp when the household is finally winding down. The ZZZ turns the sleeping face into a louder 'I am out' signal that nobody misreads as still being awake.\n\nIn sarcastic mode 😴💤 lands under a screenshot of a boring presentation, a dry lecture, or a long email thread, where the combo reads as 'this put me to sleep.' It also shows up as a friendly jab when a friend explains something nobody asked for — 😴💤 teases them without making them feel attacked. Both reads travel well across age groups because the imagery is universal.",
+    "whenNotToUse": "Skip 😴💤 in early dating conversations where the read could land as 'I am uninterested in you' rather than 'I am tired in general.' The combo is fine as a stand-alone goodnight after a few dates, but during a first conversation it can kill momentum. Also avoid it in HR or performance review contexts, where 'this meeting put me to sleep' is technically funny but professionally risky.\n\nAvoid 😴💤 when the sender is sharing bad news and you want to signal that you are paying attention — the exhaustion read will land as 'I do not care.' A simple 'oh no' or a soft emoji like 😔 will read as more present. And do not send 😴💤 to someone who has just told you they could not sleep; the combo will land as tone deaf.",
+    "howToReply": "If someone sends you 😴💤 as a goodnight, the move is to mirror with a softer goodnight emoji like 🌙 or to send a sentence like 'sleep well, talk tomorrow.' If the combo lands as a sarcastic comment on something you shared — a long meeting, a dry class — you can reply with 'fair' or with 😅 to keep the joke rolling. If the sender is in a group chat and you are the one who kept the conversation going, 😴💤 is your cue to let them rest.\n\nIf you sent 😴💤 as sarcasm and the recipient took it literally, you can clarify with 'I meant boring in a loving way' or 'this put me to sleep.' Most people will catch the joke on the second pass.",
+    "faqs": [
+      {
+        "question": "What does 😴💤 mean?",
+        "answer": "😴💤 means the sender is exhausted, ready for sleep, or found something boring enough to fall asleep through. The ZZZ turns the sleeping face into a louder 'I am out' signal."
+      },
+      {
+        "question": "Is 😴💤 rude?",
+        "answer": "😴💤 is not rude when used sincerely as a goodnight. It only reads as rude when it lands on something someone worked hard on, or in a professional context where the recipient might take it literally."
+      },
+      {
+        "question": "What does 😴💤 mean on Snapchat?",
+        "answer": "On Snapchat 😴💤 on a story means the viewer is winding down for the night. The combo also travels well on the chat side as a 'goodnight' sticker-equivalent."
+      },
+      {
+        "question": "What does 😴💤 mean from a girl?",
+        "answer": "From a girl, 😴💤 means she is either genuinely tired or signaling goodnight. The read is the same regardless of who is sending it; the surrounding message gives more context than the combo itself."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "goodnight y'all 😴💤",
+      "interpretation": "Friend group goodnight. Mirror with a softer goodnight emoji or a sentence to close the night warmly."
+    },
+    {
+      "setting": "work",
+      "message": "after that 3-hour sync 😴💤",
+      "interpretation": "Slack debrief after a long meeting. Reply with a sentence about the meeting or a relatable emoji."
+    },
+    {
+      "setting": "family",
+      "message": "tell grandpa goodnight 😴💤",
+      "interpretation": "Family handoff on a bedtime routine. Mirror with 'love you grandpa' to keep the warmth."
+    },
+    {
+      "setting": "dating",
+      "message": "I should sleep 😴💤",
+      "interpretation": "Soft goodnight from a date. Reply with 'goodnight' or a heart to keep the warmth going."
+    },
+    {
+      "setting": "social",
+      "message": "this lecture is unreal 😴💤",
+      "interpretation": "Group chat joke about a boring class. Mirror with a louder 'same' or a sarcastic face."
+    }
+  ]
 }

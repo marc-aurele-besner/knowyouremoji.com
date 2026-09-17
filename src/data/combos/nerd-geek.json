@@ -1,10 +1,10 @@
 {
   "slug": "nerd-geek",
   "combo": "🤓📚",
-  "emojis": ["nerd-face"],
+  "emojis": ["nerd-face", "books"],
   "name": "Studious Nerd",
   "description": "Nerd face with books representing studying, academic achievement, or geeky enthusiasm.",
-  "meaning": "Used when studying, geeking out about a topic, or embracing one's inner nerd with pride.",
+  "meaning": "Used when studying, geeking out about a topic, or embracing one's inner nerd with pride. The combo is the default opener for 'actually, fun fact' threads on Twitter and the standard study-mode caption on TikTok finals-week content. The nerd face covers self-deprecating affection for learning and the books add the 'I have receipts' weight.",
   "examples": ["Finals week 🤓📚", "🤓📚 actually, fun fact", "Time to research 🤓📚"],
   "category": "work",
   "seoTitle": "🤓📚 Nerd Books Combo Meaning",
@@ -12,6 +12,57 @@
   "relatedCombos": [],
   "tags": ["nerd", "studying", "academic", "geek", "knowledge"],
   "popularity": 71,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "🤓📚 stacks the nerd face with the books emoji to make the 'I am deep in study or research mode' beat louder than either emoji alone can manage. The nerd face covers the thick-glasses, pocket-protector 'I love this topic' stereotype and the books add the academic weight that signals the sender is about to teach you something. Together the combo lands as a sincere signal that the sender is studying, geeking out, or about to deliver a fun fact nobody asked for.\n\nThe combo is the default opening for 'actually, fun fact' threads on Twitter, the standard study-mode caption on TikTok finals-week content, and the friendly boast on LinkedIn when someone finishes a course. 🤓📚 carries both the affection for learning and the explicit 'I have sources' beat, so it works as a low-key flex without sounding arrogant. Reach for the combo when the sender is genuinely leaning into knowledge mode, and avoid it when the message should be casual or when the academic tone would land as condescending.",
+    "howPeopleUseIt": "🤓📚 arrives as a stand-alone opener to a thread of trivia, as a beat inside a longer 'let me explain' message, or as a caption under a stack of textbooks. The combo is the standard signal on Twitter when someone is about to deliver a long-form thread, on TikTok when a student is mid-finals, and on Slack when a coworker is diving into a deep research question. The books add the 'I have receipts' weight that lets the sender nerd out without sounding like they are mansplaining.\n\nIn family chats 🤓📚 shows up when a kid finishes an exam or a parent shares a curious fact. In dating chats it lands when a partner is sharing a hobby they love, like a 'fun fact about orchids' message. The combo is rarely sarcastic and rarely reads as condescending because the nerd face itself is self-deprecating — the sender is acknowledging they are geeking out and inviting the reader in.",
+    "whenNotToUse": "Skip 🤓📚 in casual conversations where the academic beat will land as overkill — sending 🤓📚 under a friend's casual question reads as condescending even when you mean well. Avoid it when the recipient has not asked for a long answer; the combo reads as 'I am about to lecture you' and that lands poorly in tight friendships. Also avoid the combo in customer-support or HR contexts where 'let me explain' reads as a brush-off.\n\nAlso avoid 🤓📚 when the sender is actually mocking the recipient rather than themselves. The nerd face reads as self-deprecating only when paired with genuine enthusiasm; paired with sarcasm it lands as mean. When you want to tease a friend for over-explaining, a single 🙃 or 😂 is a softer alternative that does not turn the joke into a put-down.",
+    "howToReply": "If someone sends you 🤓📚 and you want the trivia, mirror with 'go on' or a single 📚 to invite the thread. If the nerd energy is not what you wanted in that moment, a soft 🙃 or a 'haha okay professor' will signal you want the conversation to stay casual. If the combo landed on a shared win like 'I passed the exam,' mirror with another 🤓📚 or a sentence like 'congrats, nerd' to keep the playful warmth.\n\nIf you sent 🤓📚 and the recipient clearly did not want the long answer, you can recover with 'okay okay I'll stop' and pivot to a lighter topic. Most readers will accept the apology because the nerd face signals self-awareness.",
+    "faqs": [
+      {
+        "question": "What does 🤓📚 mean?",
+        "answer": "🤓📚 means the sender is in study or research mode, or about to deliver a fun fact. The nerd face covers the geeky self-deprecation and the books add the academic weight."
+      },
+      {
+        "question": "Is 🤓📚 condescending?",
+        "answer": "🤓📚 is not condescending when the sender is the one geeking out. It only reads as condescending when paired with a put-down, or when the recipient did not ask for an explanation."
+      },
+      {
+        "question": "What does 🤓📚 mean from a guy?",
+        "answer": "From a guy, 🤓📚 means he is leaning into his inner nerd with pride. The read is the same regardless of who is sending it."
+      },
+      {
+        "question": "What does 🤓📚 mean on TikTok?",
+        "answer": "On TikTok 🤓📚 means the creator is mid-study or about to share a deep dive. The combo signals 'geek mode on' and viewers lean in for the trivia."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "okay actually 🤓📚",
+      "interpretation": "Friend about to deliver a fun fact. Reply with 'go on' or a 📚 to invite the thread."
+    },
+    {
+      "setting": "work",
+      "message": "spent the morning on the report 🤓📚",
+      "interpretation": "Slack update from a coworker deep in research. Mirror with a question or a sentence about the findings."
+    },
+    {
+      "setting": "dating",
+      "message": "I made you a playlist, also fun fact 🤓📚",
+      "interpretation": "Playful partner share with extra trivia. Mirror with a sentence about the playlist to keep the warmth."
+    },
+    {
+      "setting": "family",
+      "message": "got an A on the exam 🤓📚",
+      "interpretation": "Family celebration of a kid's win. Mirror with another nerd combo or 'so proud of you.'"
+    },
+    {
+      "setting": "social",
+      "message": "we need to talk about this 🤓📚 thread",
+      "interpretation": "Group chat invite to a long-form Twitter thread. Reply with a reaction or a quote-tweet of the thread."
+    }
+  ]
 }

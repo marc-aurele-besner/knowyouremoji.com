@@ -4,7 +4,7 @@
   "emojis": ["waving-hand", "smiling-face-with-smiling-eyes"],
   "name": "Friendly Hello",
   "description": "Waving hand with a smile for a warm, friendly greeting.",
-  "meaning": "Used as a friendly hello or to greet someone warmly. Casual and welcoming energy.",
+  "meaning": "Used as a friendly hello or to greet someone warmly. Casual and welcoming energy. The combo is the cleanest possible greeting pairing — a wave stacked with a smile turns a polite acknowledgment into a warm, genuine hello. Use it for first-contact messages and casual sign-offs in friendly chats.",
   "examples": ["Hey there 👋😊", "👋😊 nice to meet you", "Good morning everyone 👋😊"],
   "category": "reaction",
   "seoTitle": "👋😊 Wave Hello Combo Meaning",
@@ -12,6 +12,57 @@
   "relatedCombos": [],
   "tags": ["greeting", "hello", "friendly", "welcome", "casual"],
   "popularity": 75,
-  "contentTier": "thin",
-  "contentUpdatedAt": "2026-08-14"
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-09-17",
+  "longForm": {
+    "overview": "👋😊 is the cleanest possible greeting emoji pairing — a wave and a smiling face stacked together as the friendliest possible hello. The wave alone is the universal 'hi' or 'goodbye' beat, and adding a smiling face with smiling eyes turns the wave from a polite acknowledgement into a warm, genuine greeting. It is the combo you send at the start of a new chat, in a Slack channel on your first day, or as a low-stakes open in a work email.\n\n👋😊 leans approachable in a way that 👋 alone does not. The hand emoji can read as dismissive if it is the only thing in the message, and a single 😊 can feel flat or performative. Stacked together they form a beat that feels like you actually want to be talking to the recipient. Use it for first-contact hellos, casual sign-offs in group chats, and any time you want a message to land as friendly without being saccharine.",
+    "howPeopleUseIt": "👋😊 arrives at the top of a first message ('Hey there, 👋😊') and as the punctuation at the end of a sign-off ('See you tomorrow, 👋😊'). It is the standard opener for new Slack workspaces, new Discord servers, and new iMessage threads where the relationship is friendly but still forming. Creators often post 👋😊 in a story as a low-effort greeting to followers, and customer-facing accounts use it as a friendly hello under replies.\n\nThe combo also works in family group chats when someone wants to announce their arrival ('just landed 👋😊') or when an older relative has finally learned how to use emoji and is making the most of it. 👋😊 is the safest possible opener — it reads as warm, it commits to nothing, and it gives the recipient room to set the tone of the reply.",
+    "whenNotToUse": "Skip 👋😊 in any context where casual friendliness is wrong for the room. Sending 👋😊 to a customer-support inbox, to an HR complaint thread, or to anyone in a moment of grief will read as tone deaf. Avoid it as the entire content of a message — 👋😊 alone in a Slack channel can come across as low effort or as a filler that says nothing.\n\nAlso avoid 👋😊 when the recipient knows you already. A friend you text every day does not need a wave-and-smile opener; it lands as performative. Save the combo for first-contact moments, for greetings that need to bridge a silence, or for sign-offs where you want to leave the conversation warm.",
+    "howToReply": "Mirror 👋😊 when you want to match the friendly tone back, especially in a new chat. A simple 'hey, good to see you 👋😊' or 'hi! how's it going?' keeps the door open. If you are on the receiving end of 👋😊 in a work channel and you do not know the sender well, a sentence about who you are and why you are reaching out is the most useful follow-up.\n\nIf 👋😊 lands as a sign-off and you want to keep the thread alive, reply with a question ('anything fun this weekend?') so the conversation does not die at the wave. If the combo came from a contact you are not expecting to hear from, it is fine to reply with a single 👋 or a 'hey, what's up' before deciding how much energy to invest.",
+    "faqs": [
+      {
+        "question": "What does 👋😊 mean?",
+        "answer": "👋😊 means a warm, friendly hello or goodbye. The wave emoji carries the 'hi/bye' beat and the smiling face with smiling eyes adds genuine warmth, turning a polite wave into a friendly greeting."
+      },
+      {
+        "question": "Is 👋😊 flirty?",
+        "answer": "Usually no — 👋😊 reads as friendly rather than flirty. In a dating context it can land as the start of a flirtation, but the combo itself is more about warmth than romance."
+      },
+      {
+        "question": "What does 👋😊 mean from a girl?",
+        "answer": "From a girl 👋😊 means the sender is sending a warm hello or goodbye. There is no universal flirty meaning; the read depends on context and on what the rest of the message is about."
+      },
+      {
+        "question": "What does 👋😊 mean at work?",
+        "answer": "In a work thread 👋😊 is a friendly opener or sign-off that signals approachability. It works well in introductions, in onboarding messages, and in cross-team threads where the relationship is still forming."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "Hey team, joining the design channel today 👋😊",
+      "interpretation": "New teammate introducing themselves. Mirror with 👋😊 or a sentence welcoming them in."
+    },
+    {
+      "setting": "social",
+      "message": "what's up everyone 👋😊",
+      "interpretation": "Group chat drop-in. Mirror with a wave back or a sentence about what is going on in the chat."
+    },
+    {
+      "setting": "family",
+      "message": "made it to the airport, see you in an hour 👋😊",
+      "interpretation": "Travel update for family. Mirror with a heart or a sentence about the visit."
+    },
+    {
+      "setting": "friends",
+      "message": "yo long time, you around this weekend? 👋😊",
+      "interpretation": "Friend reaching out after a while. Mirror with a wave back or a sentence about availability."
+    },
+    {
+      "setting": "dating",
+      "message": "good morning, hope your day is great 👋😊",
+      "interpretation": "Early dating morning check-in. Mirror with a warm reply or a flirty line that keeps the energy moving."
+    }
+  ]
 }
