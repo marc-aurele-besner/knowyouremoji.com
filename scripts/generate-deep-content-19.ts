@@ -59,7 +59,7 @@ function cleanName(e: EmojiData): string {
         .replace(/\.json$/, '')
         .replace(/-/g, ' ');
     }
-    return clean.replace(/\b\w/g, (c) => c.toUpperCase());
+    return clean.replace(/\b\w/g, (c: string) => c.toUpperCase());
   }
   // For people with skin tones, strip the ": Skin Tone" suffix.
   const stripped = name
@@ -182,9 +182,6 @@ function countryAdj(country: string): string {
     yemen: 'Yemeni-coded',
     syria: 'Syrian-coded',
     oman: 'Omani-coded',
-    samoa: 'Samoan-coded',
-    tonga: 'Tongan-coded',
-    fiji: 'Fijian-coded',
     palau: 'Palauan-coded',
     nauru: 'Nauruan-coded',
     kiribati: 'I-Kiribati-coded',
@@ -849,7 +846,7 @@ function archetypeForEmoji(e: EmojiData): Archetype {
         .replace(/-emoji\.json$/, '')
         .replace(/\.json$/, '')
         .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase());
+        .replace(/\b\w/g, (c: string) => c.toUpperCase());
     }
     return buildCountryFlagArchetype(country);
   }
@@ -936,41 +933,6 @@ function buildHowToReply(arch: Archetype): string {
 
 function buildFaqs(arch: Archetype): { question: string; answer: string }[] {
   return arch.faqVariants.map((f) => ({ question: f.q, answer: f.a }));
-}
-
-function buildConversationExamples(
-  e: EmojiData
-): { setting: string; message: string; interpretation: string }[] {
-  const settings = [
-    {
-      setting: 'dating',
-      message: `${e.character} ${e.name.toLowerCase()} with the partner plan, full ${arch.register.replace('-coded', '')} energy`,
-      interpretation: `Partner ${arch.register.replace('-coded', '')} romance. Mirror with another ${e.character}, a heart emoji, or a sentence that escalates the romance.`,
-    },
-    {
-      setting: 'social',
-      message: `cannot handle this whole thread, the ${arch.cue} chaos ${e.character}`,
-      interpretation: `Public ${arch.register.replace('-coded', '')} flex. Mirror with another ${e.character}, a sentence that joins the ${arch.register.replace('-coded', '')} energy, or a heart emoji that matches.`,
-    },
-    {
-      setting: 'family',
-      message: `${e.character} ${e.name.toLowerCase()} with the family, full ${arch.register.replace('-coded', '')} energy`,
-      interpretation: `Family ${arch.register.replace('-coded', '')} reveal. Mirror with another ${e.character}, a sentence that joins the family warmth, or a heart emoji that matches.`,
-    },
-    {
-      setting: 'friends',
-      message: `${arch.cue} today, full ${arch.register.replace('-coded', '')} energy ${e.character}`,
-      interpretation: `Friend ${arch.register.replace('-coded', '')} reveal. Mirror with another ${e.character}, a sentence that joins the ${arch.register.replace('-coded', '')} energy, or a heart emoji that matches.`,
-    },
-    {
-      setting: 'work',
-      message: `${arch.cue} coded sprint today, full ${arch.register.replace('-coded', '')} energy ${e.character}`,
-      interpretation: `Work ${arch.register.replace('-coded', '')} moment. Mirror with another ${e.character}, a sentence that joins the team energy, or a heart emoji that matches.`,
-    },
-  ];
-
-  // The reference to `arch` inside is captured via closure of `buildConversationExamples` but `arch` is not in scope; fix below.
-  return settings;
 }
 
 function buildPlatformNotes(e: EmojiData): { platform: string; note: string }[] {
