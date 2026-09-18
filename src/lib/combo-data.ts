@@ -8,19 +8,34 @@
 import type { EmojiCombo, EmojiComboSummary, EmojiComboCategoryName } from '@/types/combo';
 import type { EmojiSlug } from '@/types/emoji';
 
-// Import Node.js fs for SSG/SSR context
-import fs from 'fs';
-import path from 'path';
+// Static glob import — Turbopack/Webpack analyze the pattern at build time and
+// resolve it to a fixed set of imports. No dynamic filesystem scan, so no
+// "overly broad patterns" warnings.
+//
+// In environments without `import.meta.glob` (e.g. Bun's test runner) the
+// call returns an empty record and `tests/setup.ts` injects the data via
+// `__setComboCacheForTesting` instead.
+type ComboGlobFn = (
+  pattern: string | readonly string[],
+  options: { eager: true }
+) => Record<string, unknown>;
+
+const comboGlob =
+  typeof (import.meta as { glob?: ComboGlobFn }).glob === 'function'
+    ? ((import.meta as { glob: ComboGlobFn }).glob('../data/combos/*.json', {
+        eager: true,
+      }) as Record<string, { default: EmojiCombo } | EmojiCombo>)
+    : ({} as Record<string, { default: EmojiCombo } | EmojiCombo>);
 
 // Cache for loaded combos
 let comboCache: EmojiCombo[] | null = null;
 
 /**
- * Get the path to the combos data directory
+ * Test hook: a synchronous filesystem loader used as a fallback when
+ * `import.meta.glob` is unavailable (e.g. Bun's test runtime). Registered
+ * by `tests/setup.ts`. Never invoked in production builds.
  */
-function getCombosDir(): string {
-  return path.join(process.cwd(), 'src', 'data', 'combos');
-}
+let fsLoader: (() => EmojiCombo[]) | null = null;
 
 /**
  * Load all combo data from JSON files
@@ -31,21 +46,14 @@ function loadCombos(): EmojiCombo[] {
     return comboCache;
   }
 
-  const combosDir = getCombosDir();
-
-  // Check if directory exists
-  if (!fs.existsSync(combosDir)) {
+  const entries = Object.values(comboGlob);
+  if (entries.length > 0) {
+    comboCache = entries.map((mod) => ('default' in mod ? mod.default : (mod as EmojiCombo)));
+  } else if (fsLoader) {
+    comboCache = fsLoader();
+  } else {
     comboCache = [];
-    return comboCache;
   }
-
-  const files = fs.readdirSync(combosDir).filter((file) => file.endsWith('.json'));
-
-  comboCache = files.map((file) => {
-    const filePath = path.join(combosDir, file);
-    const content = fs.readFileSync(filePath, 'utf-8');
-    return JSON.parse(content) as EmojiCombo;
-  });
 
   return comboCache;
 }
@@ -346,4 +354,26 @@ export function getAllComboCategoryInfo(): ComboCategoryInfo[] {
  */
 export function clearComboCache(): void {
   comboCache = null;
+}
+
+/**
+ * Inject pre-loaded combo data into the cache.
+ *
+ * @internal Used by `tests/setup.ts` to populate the cache when
+ * `import.meta.glob` is unavailable (e.g. Bun's test runtime).
+ * Do not call from application code.
+ */
+export function __setComboCacheForTesting(data: EmojiCombo[]): void {
+  comboCache = data;
+}
+
+/**
+ * Register a synchronous filesystem loader that returns the full combo
+ * dataset. Used by `tests/setup.ts` to seed the loader's cache after
+ * `clearComboCache()` is called in test isolation.
+ *
+ * @internal Do not call from application code.
+ */
+export function __setComboFsLoaderForTesting(loader: () => EmojiCombo[]): void {
+  fsLoader = loader;
 }

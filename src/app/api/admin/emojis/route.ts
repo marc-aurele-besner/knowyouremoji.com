@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { getAllEmojis } from '@/lib/emoji-data';
 import type { Emoji } from '@/types/emoji';
+
+// This route writes to the filesystem, so it requires the Node.js runtime.
+export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {
@@ -35,14 +39,11 @@ export async function POST(request: NextRequest) {
 
 export async function GET() {
   try {
-    const emojisDir = path.join(process.cwd(), 'src', 'data', 'emojis');
-    const files = fs.readdirSync(emojisDir).filter((file) => file.endsWith('.json'));
-
-    const emojis = files.map((file) => {
-      const filePath = path.join(emojisDir, file);
-      const content = fs.readFileSync(filePath, 'utf-8');
-      return JSON.parse(content) as Emoji;
-    });
+    // Reuse the static data loader instead of scanning the emojis directory at
+    // request time. The loader resolves JSON at build time (no fs.readdirSync
+    // here), which keeps the bundler from emitting "overly broad patterns"
+    // warnings for this route.
+    const emojis = getAllEmojis();
 
     return NextResponse.json({ emojis });
   } catch (error) {
