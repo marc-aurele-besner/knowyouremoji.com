@@ -233,10 +233,12 @@ describe('HomePage', () => {
   });
 
   describe('generateMetadata', () => {
-    test('returns metadata with correct title', () => {
+    test('uses an absolute title to avoid repeating the site name from the root template', () => {
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
+      expect(metadata.title).toEqual({
+        absolute: 'KnowYourEmoji - Decode What Emojis Really Mean',
+      });
     });
 
     test('returns metadata with correct description', () => {

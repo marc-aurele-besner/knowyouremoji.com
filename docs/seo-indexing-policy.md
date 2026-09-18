@@ -28,7 +28,8 @@ relevant route files plus the Next.js `sitemap.ts` and `robots.ts` shims.
 | Compare pages                                                                                 | `index, follow`               | self                 | yes (0.6)      |
 | Guides index + per-guide pages                                                                | `index, follow`               | self                 | yes (0.85–0.9) |
 | Homepage, About, Contact, Pricing, Privacy, Terms, Search, `/emoji`, `/combo`, `/interpreter` | `index, follow`               | self                 | yes (0.6–1.0)  |
-| `/api/`, `/dashboard`, `/admin`, `/login`, `/register`, `/forgot-password`, `/reset-password` | n/a (blocked in `robots.txt`) | n/a                  | no             |
+| `/api/`, `/dashboard`, `/admin`                                                               | n/a (blocked in `robots.txt`) | n/a                  | no             |
+| `/login`, `/register`, `/forgot-password`, `/reset-password`                                  | `noindex, follow` (crawlable) | self                 | no             |
 
 All pages remain reachable for users regardless of `noindex`. We only opt
 pages out of Google Search when they do not carry original editorial value.
@@ -40,11 +41,14 @@ pages out of Google Search when they do not carry original editorial value.
    Google to crawl a page we don't want indexed.
 2. **The `robots.txt` disallow list must cover every private surface**
    (API, authenticated areas, admin). Per-page `robots: { index: false }`
-   stays in place as a belt-and-suspenders complement.
+   stays in place as a complement. Public auth pages remain crawlable so
+   search engines can see their `noindex` tags; a robots.txt block alone
+   does not prevent a URL from appearing in search results.
 3. **`lastModified` must be content-derived**, not "always now". For
    emoji and combo pages we prefer `contentUpdatedAt`; for guides we use
-   `updatedAt || publishedAt`. Trust pages / hub pages use build time,
-   which is fine because they change rarely.
+   `updatedAt || publishedAt`. Omit `lastModified` when the date is missing
+   or invalid, including undated trust, hub, and comparison pages. Build time
+   does not indicate an editorial update.
 4. **Deep editorial content outranks stub directories.** Priority is a
    soft signal but keeps the intent visible: deep emoji / deep combo
    (0.85) > standard (0.75) > category / combo-category / facet hubs
@@ -108,14 +112,15 @@ would throw away legitimate long-tail traffic and break the sitemap.
   (emoji), `getComboIndexingDecision`, `resolveContentTier`,
   `resolveComboContentTier`, `decisionToRobots`.
 - `src/lib/sitemap-entries.ts` — builds sitemap entries with the per-surface
-  rules: filters `noindex` URLs, surfaces trust / hub / facet pages, picks
+  rules: filters `noindex` URLs and unsupported category labels (404 routes),
+  surfaces trust / hub / facet pages, picks
   content-derived `lastModified`, applies priority differentiation.
 - `src/app/emoji/[slug]/page.tsx` — applies the decision via `generateMetadata`.
 - `src/app/combo/[slug]/page.tsx` — applies the combo decision via
   `generateMetadata`.
 - `src/app/sitemap.ts` — thin wrapper that calls `buildSitemap()`.
-- `src/app/robots.ts` — disallows `/api/`, `/dashboard`, `/admin`, plus
-  the auth routes under `(auth)/`.
+- `src/app/robots.ts` — disallows `/api/`, `/dashboard`, and `/admin`.
+  Public auth routes under `(auth)/` are crawlable with `noindex` metadata.
 
 If you add a new route that emits a public page:
 
@@ -149,3 +154,23 @@ sitemap and indexing change happens at the same time. That is the correct
 end state for AdSense quality, but it is a large indexing delta. Prefer
 omitting a page from the sitemap immediately and ship the `noindex` change
 in the same PR so the signals stay aligned.
+
+## Crawler guidance
+
+The emoji and combo catalogs load JSON through cached server-side filesystem
+reads, as the guide and comparison loaders do. Keep the `.json` suffix literal
+in read paths so Next.js can trace the data files into deployment bundles.
+Tests use these same loaders without injecting a replacement catalog.
+
+After `bun run build`, run `bun run scripts/check-seo-build.ts` (also enforced
+in CI). It checks that the production catalogs are populated, the generated
+sitemap matches the indexing policy, its pages were prerendered, the homepage
+has crawlable emoji links and valid preview metadata, and auth pages remain
+crawlable with `noindex`. This catches production-only data-loading failures
+that metadata unit tests cannot detect.
+
+- [Google: build and submit a sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap):
+  include canonical, indexable URLs and only accurate modification dates.
+  Combo eligibility uses the same inferred content tiers as page metadata.
+- [Google: block indexing with noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing):
+  crawlers need access to a page to read its noindex directive.

@@ -7,54 +7,29 @@
 
 import type { Emoji, EmojiSummary } from '@/types/emoji';
 
-// Static glob import — Turbopack/Webpack analyze the pattern at build time and
-// resolve it to a fixed set of imports. No dynamic filesystem scan, so no
-// "overly broad patterns" warnings. The exclusion (`!*-emoji.json`) drops the
-// older duplicate-naming files so each emoji is loaded once.
-//
-// In environments without `import.meta.glob` (e.g. Bun's test runner) the
-// call returns an empty record and `tests/setup.ts` injects the data via
-// `__setEmojiCacheForTesting` instead.
-type EmojiGlobFn = (
-  pattern: string | readonly string[],
-  options: { eager: true }
-) => Record<string, unknown>;
+// Read the catalog on the server in both production and tests. Next.js does
+// not implement import.meta.glob; silently falling back to an empty catalog
+// removes detail pages, internal links, and their sitemap entries.
+import fs from 'fs';
+import path from 'path';
 
-const emojiGlob =
-  typeof (import.meta as { glob?: EmojiGlobFn }).glob === 'function'
-    ? ((import.meta as { glob: EmojiGlobFn }).glob(
-        ['../data/emojis/*.json', '!../data/emojis/*-emoji.json'],
-        { eager: true }
-      ) as Record<string, { default: Emoji } | Emoji>)
-    : ({} as Record<string, { default: Emoji } | Emoji>);
-
-// Cache for loaded emojis
 let emojiCache: Emoji[] | null = null;
 
-/**
- * Test hook: a synchronous filesystem loader used as a fallback when
- * `import.meta.glob` is unavailable (e.g. Bun's test runtime). Registered
- * by `tests/setup.ts`. Never invoked in production builds.
- */
-let fsLoader: (() => Emoji[]) | null = null;
-
-/**
- * Load all emoji data from JSON files
- * Results are cached after first load
- */
 function loadEmojis(): Emoji[] {
-  if (emojiCache !== null) {
+  if (emojiCache !== null) return emojiCache;
+
+  const directory = path.join(process.cwd(), 'src', 'data', 'emojis');
+  if (!fs.existsSync(directory)) {
+    emojiCache = [];
     return emojiCache;
   }
 
-  const entries = Object.values(emojiGlob);
-  if (entries.length > 0) {
-    emojiCache = entries.map((mod) => ('default' in mod ? mod.default : (mod as Emoji)));
-  } else if (fsLoader) {
-    emojiCache = fsLoader();
-  } else {
-    emojiCache = [];
-  }
+  emojiCache = fs
+    .readdirSync(directory)
+    .filter((name) => name.endsWith('.json') && !name.endsWith('-emoji.json'))
+    .sort()
+    .map((name) => name.slice(0, -5))
+    .map((slug) => JSON.parse(fs.readFileSync(`${directory}/${slug}.json`, 'utf-8')) as Emoji);
 
   return emojiCache;
 }
@@ -171,28 +146,6 @@ export function getRelatedEmojis(slug: string, limit: number = 6): EmojiSummary[
  */
 export function clearEmojiCache(): void {
   emojiCache = null;
-}
-
-/**
- * Inject pre-loaded emoji data into the cache.
- *
- * @internal Used by `tests/setup.ts` to populate the cache when
- * `import.meta.glob` is unavailable (e.g. Bun's test runtime).
- * Do not call from application code.
- */
-export function __setEmojiCacheForTesting(data: Emoji[]): void {
-  emojiCache = data;
-}
-
-/**
- * Register a synchronous filesystem loader that returns the full emoji
- * dataset. Used by `tests/setup.ts` to seed the loader's cache after
- * `clearEmojiCache()` is called in test isolation.
- *
- * @internal Do not call from application code.
- */
-export function __setEmojiFsLoaderForTesting(loader: () => Emoji[]): void {
-  fsLoader = loader;
 }
 
 // ============================================

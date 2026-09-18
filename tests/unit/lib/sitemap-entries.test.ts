@@ -69,6 +69,7 @@ const mockCombos: EmojiCombo[] = [
     seoTitle: 'Skull Laughing Combo',
     seoDescription: 'Skull laughing combo meaning',
     contentUpdatedAt: '2026-08-02T00:00:00.000Z',
+    contentTier: 'standard',
   },
   {
     slug: 'thin-combo',
@@ -183,6 +184,14 @@ describe('sitemap-entries', () => {
   });
 
   describe('buildEmojiSitemapEntries', () => {
+    test.each([undefined, 'not-a-date'])('omits unknown or invalid dates (%s)', async (date) => {
+      getAllEmojisSpy.mockReturnValue([{ ...mockEmojis[0], contentUpdatedAt: date }]);
+      const { buildEmojiSitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const entries = buildEmojiSitemapEntries();
+      expect(entries).toHaveLength(1);
+      expect(entries[0]).not.toHaveProperty('lastModified');
+    });
+
     test('excludes skin-tone variant emojis', async () => {
       const { buildEmojiSitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildEmojiSitemapEntries();
@@ -208,6 +217,45 @@ describe('sitemap-entries', () => {
   });
 
   describe('buildComboSitemapEntries', () => {
+    test('matches page indexing for inferred tiers and editorial overrides', async () => {
+      const { getComboIndexingDecision } = await import('../../../src/lib/seo-policy');
+      const { buildComboSitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const base = { ...mockCombos[0], contentTier: undefined };
+      const combos: EmojiCombo[] = [
+        { ...base, slug: 'unclassified-stub' },
+        { ...base, slug: 'empty-long-form', longForm: {} },
+        { ...base, slug: 'inferred-deep', longForm: { overview: 'Original editorial overview.' } },
+        {
+          ...base,
+          slug: 'inferred-standard',
+          conversationExamples: [
+            {
+              setting: 'friends',
+              message: 'That joke 💀😂',
+              interpretation: 'Laughing with friends.',
+            },
+          ],
+        },
+        { ...base, slug: 'explicit-standard', contentTier: 'standard' },
+        { ...base, slug: 'explicit-deep', contentTier: 'deep' },
+        {
+          ...base,
+          slug: 'explicit-thin',
+          contentTier: 'thin',
+          longForm: { overview: 'Draft content.' },
+        },
+      ];
+      getAllCombosSpy.mockReturnValue(combos);
+      const entries = buildComboSitemapEntries();
+      expect(entries).toHaveLength(4);
+      for (const combo of combos) {
+        const entry = entries.find(({ url }) => url.endsWith(`/combo/${combo.slug}`));
+        expect(Boolean(entry)).toBe(getComboIndexingDecision(combo, `/combo/${combo.slug}`).index);
+      }
+      expect(entries.find(({ url }) => url.endsWith('/inferred-deep'))?.priority).toBe(0.85);
+      expect(entries.find(({ url }) => url.endsWith('/inferred-standard'))?.priority).toBe(0.75);
+    });
+
     test('excludes thin-tier combos', async () => {
       const { buildComboSitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildComboSitemapEntries();
@@ -225,6 +273,14 @@ describe('sitemap-entries', () => {
   });
 
   describe('buildCategorySitemapEntries', () => {
+    test('excludes unsupported category labels whose routes return 404', async () => {
+      getAllCategoriesSpy.mockReturnValue(['faces', 'People & Body', 'smileys-emotion']);
+      const { buildCategorySitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const entries = buildCategorySitemapEntries();
+      expect(entries).toHaveLength(1);
+      expect(entries[0].url).toEndWith('/emoji/category/faces');
+    });
+
     test('emits one entry per emoji category', async () => {
       const { buildCategorySitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildCategorySitemapEntries();
@@ -235,6 +291,14 @@ describe('sitemap-entries', () => {
   });
 
   describe('buildComboCategorySitemapEntries', () => {
+    test('excludes unsupported combo categories whose routes return 404', async () => {
+      getAllComboCategoriesSpy.mockReturnValue(['humor', 'unsupported']);
+      const { buildComboCategorySitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const entries = buildComboCategorySitemapEntries();
+      expect(entries).toHaveLength(1);
+      expect(entries[0].url).toEndWith('/combo/category/humor');
+    });
+
     test('emits one entry per combo category', async () => {
       const { buildComboCategorySitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildComboCategorySitemapEntries();

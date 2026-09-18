@@ -18,7 +18,7 @@ export function generateMetadata(): Metadata {
   const pageUrl = `${env.appUrl}/`;
 
   return {
-    title: `${env.appName} - Decode What Emojis Really Mean`,
+    title: { absolute: `${env.appName} - Decode What Emojis Really Mean` },
     description: defaultDescription,
     keywords: [
       'emoji meaning',
@@ -46,9 +46,7 @@ export function generateMetadata(): Metadata {
       description: defaultDescription,
       images: [
         {
-          url: `${env.appUrl}/og-image.png`,
-          width: 1200,
-          height: 630,
+          url: `${env.appUrl}/logo.png`,
           alt: `${env.appName} - Decode What Emojis Really Mean`,
         },
       ],
@@ -57,7 +55,7 @@ export function generateMetadata(): Metadata {
       card: 'summary_large_image',
       title: `${env.appName} - Decode What Emojis Really Mean`,
       description: defaultDescription,
-      images: [`${env.appUrl}/og-image.png`],
+      images: [`${env.appUrl}/logo.png`],
     },
     robots: {
       index: true,

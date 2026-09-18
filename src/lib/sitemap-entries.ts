@@ -20,12 +20,12 @@
 import type { MetadataRoute } from 'next';
 import type { Emoji, ContentTier } from '@/types/emoji';
 import type { EmojiCombo } from '@/types/combo';
-import { getAllEmojis, getAllCategories } from '@/lib/emoji-data';
-import { getAllCombos, getAllComboCategories } from '@/lib/combo-data';
+import { getAllEmojis, getAllCategories, isValidCategory } from '@/lib/emoji-data';
+import { getAllCombos, getAllComboCategories, isValidComboCategory } from '@/lib/combo-data';
 import { getAllPlatforms, getAllGenerations, getPageableContextTypes } from '@/lib/emoji-data';
 import { getAllComparisons } from '@/lib/comparison-data';
 import { getPublishedGuideSummaries } from '@/lib/guide-data';
-import { resolveContentTier } from '@/lib/seo-policy';
+import { resolveContentTier, resolveComboContentTier } from '@/lib/seo-policy';
 import { getSiteUrl } from '@/lib/metadata';
 
 /**
@@ -81,9 +81,8 @@ export type SitemapChangeFrequency =
   | 'never';
 
 /**
- * Build a single `MetadataRoute.Sitemap` entry with a real date. Falls
- * back to `fallback` when `isoDate` is missing or invalid, so we never
- * ship `Invalid Date`.
+ * Only emit lastModified when an editorial date is available and valid.
+ * Build time is not evidence that the page content changed.
  */
 function buildEntry(
   url: string,
@@ -91,17 +90,15 @@ function buildEntry(
   options: {
     changeFrequency?: SitemapChangeFrequency;
     priority?: number;
-    fallback?: Date;
   } = {}
 ): MetadataRoute.Sitemap[number] {
-  let lastModified: Date = options.fallback ?? new Date();
+  const entry: MetadataRoute.Sitemap[number] = { url };
   if (isoDate) {
     const parsed = new Date(isoDate);
     if (!Number.isNaN(parsed.getTime())) {
-      lastModified = parsed;
+      entry.lastModified = parsed;
     }
   }
-  const entry: MetadataRoute.Sitemap[number] = { url, lastModified };
   if (options.changeFrequency) entry.changeFrequency = options.changeFrequency;
   if (options.priority !== undefined) entry.priority = options.priority;
   return entry;
@@ -111,19 +108,16 @@ function buildEntry(
  * Build the static-page entries that always appear in the sitemap
  * (homepage, trust pages, hubs, search, guides index).
  *
- * `lastModified` for the homepage is intentionally `now` so it shows
- * crawl recency. Trust/legal pages move slowly.
+ * Omit lastModified where no content-maintained date is available.
  */
 export function buildStaticSitemapEntries(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const now = new Date();
 
   return [
     // Homepage — daily crawl hint.
     buildEntry(`${baseUrl}/`, undefined, {
       changeFrequency: 'daily',
       priority: SITEMAP_PRIORITIES.HOMEPAGE,
-      fallback: now,
     }),
     // Interpreter — core tool surface, refresh weekly.
     buildEntry(`${baseUrl}/interpreter`, undefined, {
@@ -203,9 +197,9 @@ export function buildComboSitemapEntries(): MetadataRoute.Sitemap {
   const combos = getAllCombos();
 
   return combos
-    .filter((combo: EmojiCombo) => combo.contentTier !== 'thin')
+    .filter((combo: EmojiCombo) => resolveComboContentTier(combo) !== 'thin')
     .map((combo: EmojiCombo) => {
-      const tier = combo.contentTier ?? 'standard';
+      const tier = resolveComboContentTier(combo);
       const priority =
         tier === 'deep' ? SITEMAP_PRIORITIES.DEEP_COMBO : SITEMAP_PRIORITIES.STANDARD_COMBO;
       return buildEntry(`${baseUrl}/combo/${combo.slug}`, combo.contentUpdatedAt, {
@@ -220,7 +214,7 @@ export function buildComboSitemapEntries(): MetadataRoute.Sitemap {
  */
 export function buildCategorySitemapEntries(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const categories = getAllCategories();
+  const categories = getAllCategories().filter(isValidCategory);
 
   return categories.map((category: string) =>
     buildEntry(`${baseUrl}/emoji/category/${category}`, undefined, {
@@ -235,7 +229,7 @@ export function buildCategorySitemapEntries(): MetadataRoute.Sitemap {
  */
 export function buildComboCategorySitemapEntries(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const categories = getAllComboCategories();
+  const categories = getAllComboCategories().filter(isValidComboCategory);
 
   return categories.map((category: string) =>
     buildEntry(`${baseUrl}/combo/category/${category}`, undefined, {
