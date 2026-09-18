@@ -40,3 +40,6 @@ jobs:
 
       - name: Build
         run: bunx next build
+
+      - name: Verify production SEO output
+        run: bun run scripts/check-seo-build.ts

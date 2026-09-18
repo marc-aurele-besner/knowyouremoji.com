@@ -7,50 +7,6 @@
 // @testing-library/jest-dom v7.0.0 — before that, jest-dom did not pull in
 // @testing-library/dom at all, so the load order didn't matter.
 
-import fs from 'fs';
-
-// `import path from 'path'` would shadow the local `const path = require('path')`
-// further down in this file, so alias the import to `nodePath` here.
-import nodePath from 'path';
-
-import type { Emoji } from '@/types/emoji';
-import type { EmojiCombo } from '@/types/combo';
-
-import { __setEmojiCacheForTesting, __setEmojiFsLoaderForTesting } from '@/lib/emoji-data';
-import { __setComboCacheForTesting, __setComboFsLoaderForTesting } from '@/lib/combo-data';
-
-/**
- * Reads every JSON file in `dir` and parses it as `T`. Filters out files
- * matching the optional `fileFilter` predicate (e.g. to skip duplicate-naming
- * files). Mirrors what `import.meta.glob` would resolve at build time.
- */
-function loadJsonDir<T>(dir: string, fileFilter: (name: string) => boolean = () => true): T[] {
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((name) => name.endsWith('.json') && fileFilter(name))
-    .map((name) => JSON.parse(fs.readFileSync(nodePath.join(dir, name), 'utf-8')) as T);
-}
-
-const emojisDir = nodePath.join(process.cwd(), 'src', 'data', 'emojis');
-const combosDir = nodePath.join(process.cwd(), 'src', 'data', 'combos');
-
-// Prime the data loader caches before any test code runs. The data loaders use
-// `import.meta.glob` for production builds (Turbopack resolves the pattern
-// statically), but Bun's test runner doesn't implement `import.meta.glob`, so
-// these hooks inject the parsed data at preload time.
-//
-// We also register a synchronous filesystem loader so that tests which call
-// `clearEmojiCache()` / `clearComboCache()` in `beforeEach` can reload real
-// data on the next `getAllEmojis()` / `getAllCombos()` call.
-__setEmojiCacheForTesting(loadJsonDir<Emoji>(emojisDir, (name) => !name.endsWith('-emoji.json')));
-__setComboCacheForTesting(loadJsonDir<EmojiCombo>(combosDir));
-
-__setEmojiFsLoaderForTesting(() =>
-  loadJsonDir<Emoji>(emojisDir, (name) => !name.endsWith('-emoji.json'))
-);
-__setComboFsLoaderForTesting(() => loadJsonDir<EmojiCombo>(combosDir));
-
 import './setup-dom';
 
 // Bun's test runner loads @testing-library/dom before any preload runs, which

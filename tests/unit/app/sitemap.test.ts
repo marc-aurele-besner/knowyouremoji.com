@@ -110,6 +110,7 @@ const mockCombos: EmojiCombo[] = [
     seoTitle: '💀😂 Skull Laughing Combo Meaning',
     seoDescription: 'What does 💀😂 mean?',
     contentUpdatedAt: '2026-08-02T00:00:00.000Z',
+    contentTier: 'standard',
   },
   {
     slug: 'thin-combo',
@@ -342,13 +343,20 @@ describe('sitemap', () => {
       expect(compare).toBeDefined();
     });
 
-    it('should have lastModified dates on all entries', async () => {
+    it('should only include lastModified for content with editorial dates', async () => {
       const { default: sitemap } = await import('../../../src/app/sitemap');
       const result = await sitemap();
 
       result.forEach((entry) => {
-        expect(entry.lastModified).toBeDefined();
-        expect(entry.lastModified instanceof Date).toBe(true);
+        const hasEditorialDate =
+          entry.url.endsWith('/emoji/skull') ||
+          entry.url.endsWith('/combo/skull-laughing') ||
+          entry.url.endsWith('/guides/what-does-skull-mean-in-texting');
+        if (hasEditorialDate) {
+          expect(entry.lastModified).toBeInstanceOf(Date);
+        } else {
+          expect(entry).not.toHaveProperty('lastModified');
+        }
       });
     });
 

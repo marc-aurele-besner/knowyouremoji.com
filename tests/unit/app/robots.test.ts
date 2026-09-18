@@ -76,7 +76,7 @@ describe('robots', () => {
       expect(disallowPaths).toContain('/api/');
     });
 
-    it('should disallow crawling of private app areas (dashboard/admin/auth)', async () => {
+    it('should disallow crawling of private app areas (dashboard/admin)', async () => {
       const { default: robots } = await import('../../../src/app/robots');
       const result = robots();
 
@@ -93,8 +93,10 @@ describe('robots', () => {
 
       expect(disallowPaths).toContain('/dashboard');
       expect(disallowPaths).toContain('/admin');
-      expect(disallowPaths).toContain('/login');
-      expect(disallowPaths).toContain('/register');
+      // These pages must be crawlable for their noindex metadata to work.
+      for (const path of ['/login', '/register', '/forgot-password', '/reset-password']) {
+        expect(disallowPaths).not.toContain(path);
+      }
     });
 
     it('should use correct base URL from metadata', async () => {
