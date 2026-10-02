@@ -32,13 +32,9 @@ const mockCheckoutSessionsCreate = mock(() =>
   Promise.resolve({ url: 'https://checkout.stripe.com/session/test_456' })
 );
 
-const mockCustomersList = mock(() =>
-  Promise.resolve({ data: [{ id: 'cus_existing_123' }] })
-);
+const mockCustomersList = mock(() => Promise.resolve({ data: [{ id: 'cus_existing_123' }] }));
 
-const mockCustomersCreate = mock(() =>
-  Promise.resolve({ id: 'cus_new_456' })
-);
+const mockCustomersCreate = mock(() => Promise.resolve({ id: 'cus_new_456' }));
 
 const mockGetStripe = mock(() => ({
   checkout: {
@@ -144,9 +140,7 @@ describe('POST /api/checkout', () => {
     mockCustomersList.mockImplementation(() =>
       Promise.resolve({ data: [{ id: 'cus_existing_123' }] })
     );
-    mockCustomersCreate.mockImplementation(() =>
-      Promise.resolve({ id: 'cus_new_456' })
-    );
+    mockCustomersCreate.mockImplementation(() => Promise.resolve({ id: 'cus_new_456' }));
   });
 
   afterEach(() => {
@@ -213,7 +207,7 @@ describe('POST /api/checkout', () => {
     expect(body.url).toBe('https://checkout.stripe.com/session/test_456');
     expect(mockCheckoutSessionsCreate).toHaveBeenCalledWith({
       customer: 'cus_test_123',
-      payment_method_types: ['card'],
+      allowed_payment_method_types: ['card'],
       line_items: [{ price: 'price_test_pro', quantity: 1 }],
       mode: 'subscription',
       subscription_data: { trial_period_days: 7 },
@@ -242,9 +236,7 @@ describe('POST /api/checkout', () => {
 
   it('creates new Stripe customer when none exists', async () => {
     mockGetUserSubscription.mockImplementation((() => Promise.resolve(null)) as never);
-    mockCustomersList.mockImplementation(() =>
-      Promise.resolve({ data: [] })
-    );
+    mockCustomersList.mockImplementation(() => Promise.resolve({ data: [] }));
 
     const res = await POST();
     expect(res.status).toBe(200);

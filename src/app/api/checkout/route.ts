@@ -79,7 +79,7 @@ export async function POST() {
     // Create checkout session with 7-day trial
     const checkoutSession = await stripe.checkout.sessions.create({
       customer: customerId,
-      payment_method_types: ['card'],
+      allowed_payment_method_types: ['card'],
       line_items: [
         {
           price: stripePriceId,
