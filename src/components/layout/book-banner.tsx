@@ -1,18 +1,15 @@
 'use client';
 
+import { useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { engagementEvents } from '@/lib/analytics';
+import { BOOK_BANNERS, BOOK_URL } from '@/lib/book-banners';
 
-export const BOOK_URL = 'https://www.amazon.com/dp/B0HN32NYYX';
+export { BOOK_BANNERS, BOOK_URL };
 
 const BOOK_ALT = "The Parent's Guide to Decoding Your Teen's Texts by Claire Vance — buy on Amazon";
-
-export const BOOK_BANNERS = [
-  { src: '/books-images/book-cover-01.png', width: 2480, height: 618 },
-  { src: '/books-images/book-cover-02.png', width: 2479, height: 620 },
-] as const;
 
 // Routes where a promo banner would get in the way (account and admin flows).
 const HIDDEN_PREFIXES = [
@@ -37,18 +34,36 @@ export function pickBookBanner(pathname: string) {
   return BOOK_BANNERS[Math.abs(hash) % BOOK_BANNERS.length];
 }
 
+// Best-effort: persists one row per view/click in the database.
+export function recordBookBannerEvent(type: 'view' | 'click', banner: string, path: string) {
+  fetch('/api/book-banner/event', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ type, banner, path }),
+    keepalive: true,
+  }).catch(() => {
+    // Silently ignore — banner tracking is best-effort
+  });
+}
+
 export interface BookBannerProps {
   className?: string;
 }
 
 function BookBanner({ className }: BookBannerProps) {
   const pathname = usePathname() ?? '/';
+  const hidden = isBookBannerHidden(pathname);
+  const banner = pickBookBanner(pathname);
 
-  if (isBookBannerHidden(pathname)) {
+  useEffect(() => {
+    if (!hidden) {
+      recordBookBannerEvent('view', banner.id, pathname);
+    }
+  }, [hidden, banner.id, pathname]);
+
+  if (hidden) {
     return null;
   }
-
-  const banner = pickBookBanner(pathname);
 
   return (
     <aside aria-label="Featured book" className={cn('container mx-auto px-4 py-8', className)}>
@@ -56,7 +71,10 @@ function BookBanner({ className }: BookBannerProps) {
         href={BOOK_URL}
         target="_blank"
         rel="sponsored noopener noreferrer"
-        onClick={() => engagementEvents.externalLinkClick(BOOK_URL, 'Book banner')}
+        onClick={() => {
+          engagementEvents.externalLinkClick(BOOK_URL, 'Book banner');
+          recordBookBannerEvent('click', banner.id, pathname);
+        }}
         className="block overflow-hidden rounded-xl shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:ring-gray-800"
       >
         <Image

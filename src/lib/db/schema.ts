@@ -1,4 +1,14 @@
-import { pgTable, text, timestamp, integer, uuid, bigint, primaryKey } from 'drizzle-orm/pg-core';
+import {
+  pgTable,
+  text,
+  timestamp,
+  integer,
+  uuid,
+  bigint,
+  bigserial,
+  primaryKey,
+  index,
+} from 'drizzle-orm/pg-core';
 
 // ============================================
 // NextAuth Standard Tables
@@ -92,6 +102,19 @@ export const emojiPageViews = pgTable('emoji_page_views', {
   viewCount: bigint('view_count', { mode: 'number' }).notNull().default(0),
   updatedAt: timestamp('updated_at', { mode: 'date' }).defaultNow().notNull(),
 });
+
+// One row per book banner view or click: see migrations/007_create_book_banner_events.sql
+export const bookBannerEvents = pgTable(
+  'book_banner_events',
+  {
+    id: bigserial('id', { mode: 'number' }).primaryKey(),
+    eventType: text('event_type').notNull(),
+    banner: text('banner').notNull(),
+    pagePath: text('page_path').notNull(),
+    createdAt: timestamp('created_at', { mode: 'date' }).defaultNow().notNull(),
+  },
+  (table) => [index('book_banner_events_created_at_idx').on(table.createdAt)]
+);
 
 // ============================================
 // Profiles (extends Supabase Auth)
