@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getEmojiSummaries, getEmojiCount, getAllCategoryInfo } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
 import { Card, CardContent } from '@/components/ui/card';
+import { BookBanner } from '@/components/layout/book-banner';
 
 /**
  * Generate metadata for the emoji browse page
@@ -80,6 +81,10 @@ export default function EmojiBrowsePage() {
           </div>
         </div>
       </section>
+
+      <div className="container mx-auto px-4 max-w-6xl pt-10">
+        <BookBanner variant="wide" />
+      </div>
 
       {/* Emojis by Category */}
       {emojisByCategory.map((category) => (

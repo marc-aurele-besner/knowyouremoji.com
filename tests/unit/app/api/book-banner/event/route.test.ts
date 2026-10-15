@@ -54,7 +54,7 @@ describe('POST /api/book-banner/event', () => {
 
   it.each([
     ['unknown event type', { ...validEvent, type: 'hover' }],
-    ['unknown banner', { ...validEvent, banner: 'book-cover-01' }],
+    ['unknown banner', { ...validEvent, banner: 'book-cover-99' }],
     ['relative path', { ...validEvent, path: 'emoji/fire' }],
     ['overlong path', { ...validEvent, path: `/${'a'.repeat(600)}` }],
     ['missing fields', {}],

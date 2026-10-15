@@ -4,6 +4,7 @@ import { GuidesIndexList } from '@/components/guides/guides-index-list';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { getEnv } from '@/lib/env';
+import { BookBanner } from '@/components/layout/book-banner';
 
 const siteDescription =
   'Editorial dispatches on what emojis actually mean — research from group chats, dating apps, and Slack threads. Long-form, original, frequently updated.';
@@ -89,6 +90,7 @@ export default function GuidesIndexPage() {
         {/* Editorial index — featured spread + dispatch rows. */}
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 max-w-6xl">
+            <BookBanner variant="wide" className="mb-12 md:mb-16" />
             <GuidesIndexList guides={summaries} />
           </div>
         </section>

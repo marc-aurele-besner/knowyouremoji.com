@@ -21,7 +21,9 @@ import {
   BookBanner,
   BOOK_URL,
   BOOK_BANNERS,
+  BOOK_WIDE_BANNERS,
   pickBookBanner,
+  pickWideBookBanner,
   recordBookBannerEvent,
 } from '@/components/layout/book-banner';
 
@@ -94,6 +96,79 @@ describe('BookBanner', () => {
     mockPathname = null;
     render(<BookBanner />);
     expect(screen.getByRole('link')).toBeInTheDocument();
+  });
+});
+
+describe('BookBanner wide variant', () => {
+  const originalMatchMedia = window.matchMedia;
+  const setViewportWide = (matches: boolean) => {
+    window.matchMedia = ((query: string) => ({
+      matches,
+      media: query,
+    })) as typeof window.matchMedia;
+  };
+
+  afterEach(() => {
+    window.matchMedia = originalMatchMedia;
+  });
+
+  it('renders the full-width image plus the card fallback for small screens', () => {
+    mockPathname = '/';
+    render(<BookBanner variant="wide" />);
+    const links = screen.getAllByRole('link');
+    expect(links).toHaveLength(2);
+    links.forEach((link) => expect(link).toHaveAttribute('href', BOOK_URL));
+    expect(links[0]).toHaveClass('hidden', 'md:block');
+    expect(links[1]).toHaveClass('md:hidden');
+    expect(links[0]).toHaveAccessibleName(
+      "The Parent's Guide to Decoding Your Teen's Texts by Claire Vance — buy on Amazon"
+    );
+    const image = links[0].querySelector('img');
+    expect(decodeURIComponent(image?.getAttribute('src') ?? '')).toContain(
+      pickWideBookBanner('/').src
+    );
+  });
+
+  it('does not hide the card in the inline variant', () => {
+    render(<BookBanner />);
+    expect(screen.getByRole('link')).not.toHaveClass('md:hidden');
+  });
+
+  it('records the image variant id on wide screens', () => {
+    setViewportWide(true);
+    mockPathname = '/emoji';
+    render(<BookBanner variant="wide" />);
+    fireEvent.click(screen.getAllByRole('link')[0]);
+    const id = pickWideBookBanner('/emoji').id;
+    expect(sentEvents().map((e) => e.body)).toEqual([
+      { type: 'view', banner: id, path: '/emoji' },
+      { type: 'click', banner: id, path: '/emoji' },
+    ]);
+  });
+
+  it('records the card id on small screens', () => {
+    setViewportWide(false);
+    mockPathname = '/emoji';
+    render(<BookBanner variant="wide" />);
+    fireEvent.click(screen.getAllByRole('link')[1]);
+    const id = pickBookBanner('/emoji').id;
+    expect(sentEvents().map((e) => e.body)).toEqual([
+      { type: 'view', banner: id, path: '/emoji' },
+      { type: 'click', banner: id, path: '/emoji' },
+    ]);
+  });
+
+  it('treats the viewport as wide when matchMedia is unavailable', () => {
+    Reflect.deleteProperty(window, 'matchMedia');
+    mockPathname = '/combo';
+    render(<BookBanner variant="wide" />);
+    expect(sentEvents()[0].body.banner).toBe(pickWideBookBanner('/combo').id);
+  });
+
+  it('uses both image variants across paths', () => {
+    const paths = ['/', '/a', '/b', '/emoji', '/combo', '/guides', '/interpreter'];
+    const picked = new Set(paths.map((p) => pickWideBookBanner(p).id));
+    expect(picked).toEqual(new Set(BOOK_WIDE_BANNERS.map((b) => b.id)));
   });
 });
 

@@ -7,6 +7,7 @@ import {
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { BookBanner } from '@/components/layout/book-banner';
 
 /**
  * Category display names
@@ -97,6 +98,10 @@ export default function ComboBrowsePage() {
           </div>
         </div>
       </section>
+
+      <div className="container mx-auto px-4 max-w-6xl pt-10">
+        <BookBanner variant="wide" />
+      </div>
 
       {/* All Combos Grid */}
       {combosByCategory.length > 0 ? (
