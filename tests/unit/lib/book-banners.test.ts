@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'bun:test';
-import { BOOK_BANNERS, BOOK_BANNER_IDS, BOOK_URL } from '@/lib/book-banners';
+import { BOOK_BANNERS, BOOK_BANNER_IDS, BOOK_COVER, BOOK_URL } from '@/lib/book-banners';
 
 describe('book-banners', () => {
   it('links to the book on Amazon', () => {
@@ -11,9 +11,14 @@ describe('book-banners', () => {
     expect(new Set(BOOK_BANNER_IDS).size).toBe(BOOK_BANNERS.length);
   });
 
-  it('serves every banner from public/books-images', () => {
+  it('gives every banner a headline', () => {
     for (const banner of BOOK_BANNERS) {
-      expect(banner.src).toBe(`/books-images/${banner.id}.png`);
+      expect(banner.headline.length).toBeGreaterThan(0);
     }
+  });
+
+  it('serves the cover thumbnail from public/books-images', async () => {
+    expect(BOOK_COVER.src).toBe('/books-images/book-cover-thumb.png');
+    expect(await Bun.file(`public${BOOK_COVER.src}`).exists()).toBe(true);
   });
 });

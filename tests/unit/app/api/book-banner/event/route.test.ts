@@ -18,7 +18,7 @@ function makeRequest(body: unknown) {
   });
 }
 
-const validEvent = { type: 'view', banner: 'book-cover-01', path: '/emoji/fire' };
+const validEvent = { type: 'view', banner: 'card-texting-in-code', path: '/emoji/fire' };
 
 describe('POST /api/book-banner/event', () => {
   afterEach(() => {
@@ -41,20 +41,20 @@ describe('POST /api/book-banner/event', () => {
     expect(mockSql).toHaveBeenCalledTimes(1);
     const [strings, ...values] = mockSql.mock.calls[0] as [TemplateStringsArray, ...unknown[]];
     expect(strings.join('?')).toContain('INSERT INTO book_banner_events');
-    expect(values).toEqual(['view', 'book-cover-01', '/emoji/fire']);
+    expect(values).toEqual(['view', 'card-texting-in-code', '/emoji/fire']);
   });
 
   it('records a click event', async () => {
     process.env.DATABASE_URL = 'postgresql://test';
-    const res = await POST(makeRequest({ ...validEvent, type: 'click', banner: 'book-cover-02' }));
+    const res = await POST(makeRequest({ ...validEvent, type: 'click', banner: 'card-ts-pmo' }));
     expect(res.status).toBe(200);
     const [, ...values] = mockSql.mock.calls[0] as [TemplateStringsArray, ...unknown[]];
-    expect(values).toEqual(['click', 'book-cover-02', '/emoji/fire']);
+    expect(values).toEqual(['click', 'card-ts-pmo', '/emoji/fire']);
   });
 
   it.each([
     ['unknown event type', { ...validEvent, type: 'hover' }],
-    ['unknown banner', { ...validEvent, banner: 'book-cover-99' }],
+    ['unknown banner', { ...validEvent, banner: 'book-cover-01' }],
     ['relative path', { ...validEvent, path: 'emoji/fire' }],
     ['overlong path', { ...validEvent, path: `/${'a'.repeat(600)}` }],
     ['missing fields', {}],

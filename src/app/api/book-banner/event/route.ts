@@ -28,7 +28,7 @@ function isPagePath(value: unknown): value is string {
 /**
  * POST /api/book-banner/event
  * Records a single book banner view or click in Neon.
- * Body: { "type": "view" | "click", "banner": "book-cover-01", "path": "/emoji/fire" }
+ * Body: { "type": "view" | "click", "banner": "card-ts-pmo", "path": "/emoji/fire" }
  */
 export async function POST(request: NextRequest) {
   const sql = getNeonSql();

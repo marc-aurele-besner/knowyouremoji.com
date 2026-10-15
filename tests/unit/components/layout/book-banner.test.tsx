@@ -2,6 +2,7 @@ import { describe, it, expect, afterEach, beforeEach, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 
 const originalFetch = globalThis.fetch;
+const originalIntersectionObserver = globalThis.IntersectionObserver;
 const mockFetch = mock(async (..._args: unknown[]) => new Response('{"ok":true}'));
 
 let mockPathname: string | null = '/';
@@ -20,7 +21,6 @@ import {
   BookBanner,
   BOOK_URL,
   BOOK_BANNERS,
-  isBookBannerHidden,
   pickBookBanner,
   recordBookBannerEvent,
 } from '@/components/layout/book-banner';
@@ -39,11 +39,14 @@ beforeEach(() => {
   mockFetch.mockClear();
   mockFetch.mockImplementation(async () => new Response('{"ok":true}'));
   globalThis.fetch = mockFetch as unknown as typeof fetch;
+  // Without IntersectionObserver the banner records its view immediately.
+  Reflect.deleteProperty(globalThis, 'IntersectionObserver');
 });
 
 afterEach(() => {
   cleanup();
   globalThis.fetch = originalFetch;
+  globalThis.IntersectionObserver = originalIntersectionObserver;
 });
 
 describe('BookBanner', () => {
@@ -56,9 +59,13 @@ describe('BookBanner', () => {
     expect(link.getAttribute('rel')).toContain('noopener');
   });
 
-  it('renders the banner image with alt text', () => {
+  it('renders the book title and a headline variant', () => {
+    mockPathname = '/emoji/skull';
     render(<BookBanner />);
-    expect(screen.getByAltText(/Parent's Guide to Decoding Your Teen's Texts/)).toBeInTheDocument();
+    expect(
+      screen.getByText("The Parent's Guide to Decoding Your Teen's Texts")
+    ).toBeInTheDocument();
+    expect(screen.getByText(pickBookBanner('/emoji/skull').headline)).toBeInTheDocument();
   });
 
   it('is labelled as a featured book region', () => {
@@ -87,15 +94,6 @@ describe('BookBanner', () => {
     mockPathname = null;
     render(<BookBanner />);
     expect(screen.getByRole('link')).toBeInTheDocument();
-  });
-
-  it('renders nothing on dashboard and auth pages', () => {
-    for (const path of ['/dashboard', '/dashboard/history', '/admin/emojis', '/login']) {
-      mockPathname = path;
-      const { container } = render(<BookBanner />);
-      expect(container).toBeEmptyDOMElement();
-      cleanup();
-    }
   });
 });
 
@@ -130,34 +128,43 @@ describe('BookBanner event tracking', () => {
     expect(sentEvents().map((e) => e.body.path)).toEqual(['/emoji', '/combo']);
   });
 
-  it('does not record anything on hidden routes', () => {
-    mockPathname = '/dashboard';
+  it('waits until the banner is on screen before recording a view', () => {
+    const observers: {
+      callback: IntersectionObserverCallback;
+      disconnect: ReturnType<typeof mock>;
+    }[] = [];
+    class MockIntersectionObserver {
+      disconnect = mock(() => {});
+      constructor(public callback: IntersectionObserverCallback) {
+        observers.push(this);
+      }
+      observe() {}
+    }
+    globalThis.IntersectionObserver =
+      MockIntersectionObserver as unknown as typeof IntersectionObserver;
+    mockPathname = '/guides/x';
     render(<BookBanner />);
     expect(mockFetch).not.toHaveBeenCalled();
+
+    const [observer] = observers;
+    const fire = (isIntersecting: boolean) =>
+      observer.callback(
+        [{ isIntersecting } as IntersectionObserverEntry],
+        observer as unknown as IntersectionObserver
+      );
+    fire(false);
+    expect(mockFetch).not.toHaveBeenCalled();
+    fire(true);
+    expect(sentEvents().map((e) => e.body.type)).toEqual(['view']);
+    expect(observer.disconnect).toHaveBeenCalled();
   });
 
   it('swallows network errors', async () => {
     mockFetch.mockImplementation(async () => {
       throw new Error('offline');
     });
-    expect(() => recordBookBannerEvent('view', 'book-cover-01', '/')).not.toThrow();
+    expect(() => recordBookBannerEvent('view', 'card-ts-pmo', '/')).not.toThrow();
     await Promise.resolve();
-  });
-});
-
-describe('isBookBannerHidden', () => {
-  it('hides on account and admin routes', () => {
-    expect(isBookBannerHidden('/dashboard')).toBe(true);
-    expect(isBookBannerHidden('/dashboard/settings')).toBe(true);
-    expect(isBookBannerHidden('/register')).toBe(true);
-    expect(isBookBannerHidden('/reset-password')).toBe(true);
-  });
-
-  it('shows on content routes', () => {
-    expect(isBookBannerHidden('/')).toBe(false);
-    expect(isBookBannerHidden('/emoji/skull')).toBe(false);
-    expect(isBookBannerHidden('/guides/some-guide')).toBe(false);
-    expect(isBookBannerHidden('/dashboards-are-cool')).toBe(false);
   });
 });
 
@@ -168,9 +175,9 @@ describe('pickBookBanner', () => {
 
   it('returns one of the available banners', () => {
     const paths = ['/', '/a', '/b', '/emoji', '/combo', '/guides', '/interpreter'];
-    const picked = new Set(paths.map((p) => pickBookBanner(p).src));
+    const picked = new Set(paths.map((p) => pickBookBanner(p).id));
     for (const src of picked) {
-      expect(BOOK_BANNERS.some((b) => b.src === src)).toBe(true);
+      expect(BOOK_BANNERS.some((b) => b.id === src)).toBe(true);
     }
     expect(picked.size).toBe(BOOK_BANNERS.length);
   });

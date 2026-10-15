@@ -1,31 +1,17 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { engagementEvents } from '@/lib/analytics';
-import { BOOK_BANNERS, BOOK_URL } from '@/lib/book-banners';
+import { BOOK_BANNERS, BOOK_COVER, BOOK_URL } from '@/lib/book-banners';
 
 export { BOOK_BANNERS, BOOK_URL };
 
-const BOOK_ALT = "The Parent's Guide to Decoding Your Teen's Texts by Claire Vance — buy on Amazon";
+const BOOK_TITLE = "The Parent's Guide to Decoding Your Teen's Texts";
 
-// Routes where a promo banner would get in the way (account and admin flows).
-const HIDDEN_PREFIXES = [
-  '/dashboard',
-  '/admin',
-  '/login',
-  '/register',
-  '/forgot-password',
-  '/reset-password',
-];
-
-export function isBookBannerHidden(pathname: string): boolean {
-  return HIDDEN_PREFIXES.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
-}
-
-// Deterministic per path so server and client render the same banner.
+// Deterministic per path so server and client render the same headline.
 export function pickBookBanner(pathname: string) {
   let hash = 0;
   for (let i = 0; i < pathname.length; i++) {
@@ -50,23 +36,37 @@ export interface BookBannerProps {
   className?: string;
 }
 
+/**
+ * Compact inline promo for the book. Placed inside page content (not the
+ * layout), and only counts a view once at least half of it is on screen.
+ */
 function BookBanner({ className }: BookBannerProps) {
   const pathname = usePathname() ?? '/';
-  const hidden = isBookBannerHidden(pathname);
   const banner = pickBookBanner(pathname);
+  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (!hidden) {
+    const node = ref.current;
+    if (!node || typeof IntersectionObserver === 'undefined') {
       recordBookBannerEvent('view', banner.id, pathname);
+      return;
     }
-  }, [hidden, banner.id, pathname]);
 
-  if (hidden) {
-    return null;
-  }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          recordBookBannerEvent('view', banner.id, pathname);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [banner.id, pathname]);
 
   return (
-    <aside aria-label="Featured book" className={cn('container mx-auto px-4 py-8', className)}>
+    <aside ref={ref} aria-label="Featured book" className={cn('not-prose', className)}>
       <a
         href={BOOK_URL}
         target="_blank"
@@ -75,16 +75,36 @@ function BookBanner({ className }: BookBannerProps) {
           engagementEvents.externalLinkClick(BOOK_URL, 'Book banner');
           recordBookBannerEvent('click', banner.id, pathname);
         }}
-        className="block overflow-hidden rounded-xl shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 dark:ring-gray-800"
+        className="group flex items-center gap-4 rounded-xl border border-amber-200 bg-amber-50/70 p-3 transition hover:border-amber-400 hover:bg-amber-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 sm:p-4 dark:border-amber-900/60 dark:bg-amber-950/20 dark:hover:border-amber-700 dark:hover:bg-amber-950/40"
       >
         <Image
-          src={banner.src}
-          alt={BOOK_ALT}
-          width={banner.width}
-          height={banner.height}
-          sizes="(min-width: 1536px) 1504px, (min-width: 1280px) 1248px, (min-width: 1024px) 992px, 100vw"
-          className="h-auto w-full"
+          src={BOOK_COVER.src}
+          alt=""
+          width={BOOK_COVER.width}
+          height={BOOK_COVER.height}
+          sizes="80px"
+          className="h-auto w-14 shrink-0 rounded-sm shadow-md transition group-hover:-rotate-2 sm:w-16"
         />
+        <div className="min-w-0 flex-1">
+          <p className="text-xs font-medium uppercase tracking-wide text-amber-700 dark:text-amber-400">
+            New book · 2027 edition
+          </p>
+          <p className="mt-0.5 font-semibold text-gray-900 sm:text-lg dark:text-white">
+            {banner.headline}
+          </p>
+          <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-400">
+            <span className="italic">{BOOK_TITLE}</span> by Claire Vance.{' '}
+            <span className="font-medium text-amber-700 underline-offset-2 group-hover:underline sm:hidden dark:text-amber-400">
+              Get it on Amazon →
+            </span>
+          </p>
+        </div>
+        <span
+          aria-hidden="true"
+          className="hidden shrink-0 rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition group-hover:bg-amber-600 sm:inline-flex dark:bg-white dark:text-gray-900 dark:group-hover:bg-amber-400"
+        >
+          Get it on Amazon →
+        </span>
       </a>
     </aside>
   );
