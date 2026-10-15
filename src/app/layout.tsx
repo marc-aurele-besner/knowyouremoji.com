@@ -7,6 +7,7 @@ import { PostHogProvider } from '@/components/analytics/posthog';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
+import { BookBanner } from '@/components/layout/book-banner';
 import { ServiceWorkerRegister } from '@/components/pwa/service-worker-register';
 import { SessionProvider } from 'next-auth/react';
 
@@ -48,6 +49,7 @@ export default function RootLayout({
               <div className="flex min-h-screen flex-col">
                 <Header />
                 <main className="flex-1">{children}</main>
+                <BookBanner />
                 <Footer />
               </div>
             </ThemeProvider>
