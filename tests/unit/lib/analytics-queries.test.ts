@@ -272,4 +272,81 @@ describe('analytics-queries', () => {
       expect(result).toEqual([]);
     });
   });
+
+  describe('getBookBannerStats', () => {
+    const bookBannerSqlImpl = async (strings: TemplateStringsArray): Promise<unknown[]> => {
+      const query = strings.join('?');
+      if (query.includes('generate_series')) {
+        return [
+          { day: '2026-10-14', views: '40', clicks: '2' },
+          { day: new Date('2026-10-15T00:00:00Z'), views: 10, clicks: null },
+        ];
+      }
+      if (query.includes('GROUP BY banner')) {
+        return [
+          { banner: 'book-cover-01', views: '700', clicks: '21' },
+          { banner: 'book-cover-02', views: '500', clicks: '15' },
+        ];
+      }
+      return [];
+    };
+
+    it('returns empty stats when DATABASE_URL is unset', async () => {
+      const { getBookBannerStats } = await import('@/lib/analytics-queries');
+      const result = await getBookBannerStats();
+      expect(result).toEqual({ totals: { views: 0, clicks: 0 }, daily: [], byBanner: [] });
+      expect(mockSql).not.toHaveBeenCalled();
+    });
+
+    it('returns empty stats for a non-positive window', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      const { getBookBannerStats } = await import('@/lib/analytics-queries');
+      const result = await getBookBannerStats(0);
+      expect(result.daily).toEqual([]);
+      expect(mockSql).not.toHaveBeenCalled();
+    });
+
+    it('returns daily series, per-banner counts, and totals', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      mockSql.mockImplementation(bookBannerSqlImpl);
+      const { getBookBannerStats } = await import('@/lib/analytics-queries');
+      const result = await getBookBannerStats(2);
+      expect(result.daily).toEqual([
+        { day: '2026-10-14', views: 40, clicks: 2 },
+        { day: '2026-10-15', views: 10, clicks: 0 },
+      ]);
+      expect(result.byBanner).toEqual([
+        { banner: 'book-cover-01', views: 700, clicks: 21 },
+        { banner: 'book-cover-02', views: 500, clicks: 15 },
+      ]);
+      expect(result.totals).toEqual({ views: 1200, clicks: 36 });
+    });
+
+    it('passes the window size to the daily query', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      mockSql.mockImplementation(bookBannerSqlImpl);
+      const { getBookBannerStats } = await import('@/lib/analytics-queries');
+      await getBookBannerStats(30);
+      const dailyCall = mockSql.mock.calls.find((call) =>
+        (call[0] as TemplateStringsArray).join('?').includes('generate_series')
+      ) as unknown[] | undefined;
+      expect(dailyCall?.slice(1)).toEqual([29]);
+    });
+
+    it('returns empty stats when Neon throws', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      const origErr = console.error;
+      console.error = () => {};
+      mockSql.mockImplementation(async () => {
+        throw new Error('boom');
+      });
+      try {
+        const { getBookBannerStats } = await import('@/lib/analytics-queries');
+        const result = await getBookBannerStats();
+        expect(result).toEqual({ totals: { views: 0, clicks: 0 }, daily: [], byBanner: [] });
+      } finally {
+        console.error = origErr;
+      }
+    });
+  });
 });
