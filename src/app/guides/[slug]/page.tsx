@@ -14,6 +14,7 @@ import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { GuideCard } from '@/components/guides/guide-card';
 import { ReadingProgress } from '@/components/guides/reading-progress';
 import { ShareSection } from '@/components/share/share-section';
+import { BookBanner } from '@/components/layout/book-banner';
 import { Badge } from '@/components/ui/badge';
 import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getComboBySlug } from '@/lib/combo-data';
@@ -192,6 +193,10 @@ export default async function GuidePage({ params }: GuidePageProps) {
         >
           <div dangerouslySetInnerHTML={{ __html: guide.html }} />
         </article>
+
+        <div className="container mx-auto px-4 max-w-3xl mt-10">
+          <BookBanner />
+        </div>
 
         <p className="guides-divider" aria-hidden="true">
           ✦&nbsp;✦&nbsp;✦

@@ -304,3 +304,118 @@ export async function getAllEmojiViewCounts(
     }));
   }
 }
+
+const DEFAULT_BOOK_BANNER_DAYS = 30;
+
+/**
+ * Views and clicks for a single day (UTC) or banner.
+ */
+export interface BookBannerCounts {
+  views: number;
+  clicks: number;
+}
+
+export interface BookBannerDailyEntry extends BookBannerCounts {
+  /** UTC day, formatted YYYY-MM-DD */
+  day: string;
+}
+
+export interface BookBannerVariantEntry extends BookBannerCounts {
+  banner: string;
+}
+
+export interface BookBannerStats {
+  /** All-time totals across every banner */
+  totals: BookBannerCounts;
+  /** One entry per day in the trailing window, oldest first, zero-filled */
+  daily: BookBannerDailyEntry[];
+  /** All-time counts per banner variant */
+  byBanner: BookBannerVariantEntry[];
+}
+
+interface RawBookBannerDailyRow {
+  day: string | Date;
+  views: string | number | null;
+  clicks: string | number | null;
+}
+
+interface RawBookBannerVariantRow {
+  banner: string;
+  views: string | number | null;
+  clicks: string | number | null;
+}
+
+function toDay(value: string | Date): string {
+  return (value instanceof Date ? value.toISOString() : String(value)).slice(0, 10);
+}
+
+/**
+ * Book banner views and clicks over time, from the `book_banner_events` log.
+ *
+ * Returns empty stats when the database is unavailable.
+ *
+ * @param days Size of the trailing daily window (including today).
+ */
+export async function getBookBannerStats(
+  days: number = DEFAULT_BOOK_BANNER_DAYS
+): Promise<BookBannerStats> {
+  const empty: BookBannerStats = { totals: { views: 0, clicks: 0 }, daily: [], byBanner: [] };
+  if (days <= 0) return empty;
+
+  const sql = getNeonSql();
+  if (!sql) return empty;
+
+  try {
+    const [dailyRows, bannerRows] = (await Promise.all([
+      sql`
+        WITH days AS (
+          SELECT generate_series(
+            (now() AT TIME ZONE 'UTC')::date - ${days - 1}::int,
+            (now() AT TIME ZONE 'UTC')::date,
+            INTERVAL '1 day'
+          )::date AS day
+        )
+        SELECT
+          to_char(days.day, 'YYYY-MM-DD') AS day,
+          COUNT(e.id) FILTER (WHERE e.event_type = 'view')::bigint AS views,
+          COUNT(e.id) FILTER (WHERE e.event_type = 'click')::bigint AS clicks
+        FROM days
+        LEFT JOIN book_banner_events e
+          ON (e.created_at AT TIME ZONE 'UTC')::date = days.day
+        GROUP BY days.day
+        ORDER BY days.day ASC
+      `,
+      sql`
+        SELECT
+          banner,
+          COUNT(*) FILTER (WHERE event_type = 'view')::bigint AS views,
+          COUNT(*) FILTER (WHERE event_type = 'click')::bigint AS clicks
+        FROM book_banner_events
+        GROUP BY banner
+        ORDER BY banner ASC
+      `,
+    ])) as [RawBookBannerDailyRow[], RawBookBannerVariantRow[]];
+
+    const byBanner = bannerRows.map((row) => ({
+      banner: row.banner,
+      views: asNumber(row.views),
+      clicks: asNumber(row.clicks),
+    }));
+
+    return {
+      totals: byBanner.reduce(
+        (acc, row) => ({ views: acc.views + row.views, clicks: acc.clicks + row.clicks }),
+        { views: 0, clicks: 0 }
+      ),
+      daily: dailyRows.map((row) => ({
+        day: toDay(row.day),
+        views: asNumber(row.views),
+        clicks: asNumber(row.clicks),
+      })),
+      byBanner,
+    };
+  } catch (err) {
+    console.error('[analytics-queries] Failed to load book banner stats:', err);
+    return empty;
+  }
+}

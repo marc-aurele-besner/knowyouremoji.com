@@ -26,15 +26,21 @@ describe('Layout Components barrel export (index.ts)', () => {
     });
   });
 
+  describe('BookBanner exports', () => {
+    it('exports BookBanner component', () => {
+      expect(layoutComponents.BookBanner).toBeDefined();
+    });
+  });
+
   describe('all exports are valid', () => {
-    it('exports the correct number of items (4 components)', () => {
+    it('exports the correct number of items (5 components)', () => {
       const exportedKeys = Object.keys(layoutComponents);
-      // Header, Footer, MobileNav, Breadcrumbs = 4 components
-      expect(exportedKeys.length).toBe(4);
+      // Header, Footer, MobileNav, Breadcrumbs, BookBanner = 5 components
+      expect(exportedKeys.length).toBe(5);
     });
 
     it('all component exports are valid React components', () => {
-      const componentNames = ['Header', 'Footer', 'MobileNav', 'Breadcrumbs'];
+      const componentNames = ['Header', 'Footer', 'MobileNav', 'Breadcrumbs', 'BookBanner'];
       componentNames.forEach((name) => {
         const component = layoutComponents[name as keyof typeof layoutComponents];
         // React components can be functions or objects (forwardRef returns an object)

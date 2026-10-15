@@ -5,6 +5,7 @@ import { getPublishedGuideCount } from '@/lib/guide-data';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { GuideCard } from '@/components/guides/guide-card';
+import { BookBanner } from '@/components/layout/book-banner';
 import type { EmojiSummary } from '@/types/emoji';
 import type { EmojiComboSummary } from '@/types/combo';
 import type { GuideSummary } from '@/types/guide';
@@ -178,6 +179,12 @@ export function HomePageContent({
               {item.character}
             </Link>
           ))}
+        </div>
+      </div>
+
+      <div className="bg-white dark:bg-gray-900 pt-12 md:pt-16">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <BookBanner variant="wide" />
         </div>
       </div>
 

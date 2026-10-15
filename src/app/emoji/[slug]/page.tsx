@@ -19,6 +19,7 @@ import { PlatformIcon } from '@/components/emoji/platform-icon';
 import { EmojiLongFormSection } from '@/components/emoji/emoji-long-form-section';
 import { EmojiConversationExamplesSection } from '@/components/emoji/emoji-conversation-examples-section';
 import { ShareSection } from '@/components/share/share-section';
+import { BookBanner } from '@/components/layout/book-banner';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { ShareMeaningButton } from '@/components/share/share-meaning-button';
 import { EmojiViewTracker } from '@/components/emoji/emoji-view-tracker';
@@ -281,6 +282,8 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             </CardContent>
           </Card>
         </section>
+
+        <BookBanner className="mb-8" />
 
         {/* Long-form article sections (CONTENT-P1-001) — only render when present */}
         {emoji.longForm && <EmojiLongFormSection longForm={emoji.longForm} />}

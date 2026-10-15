@@ -5,6 +5,7 @@ import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getComboIndexingDecision } from '@/lib/seo-policy';
 import { ShareSection } from '@/components/share/share-section';
+import { BookBanner } from '@/components/layout/book-banner';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
@@ -196,6 +197,8 @@ export default async function ComboPage({ params }: ComboPageProps) {
             </CardContent>
           </Card>
         </section>
+
+        <BookBanner className="mb-8" />
 
         {/* Description Section */}
         <section className="mb-8">

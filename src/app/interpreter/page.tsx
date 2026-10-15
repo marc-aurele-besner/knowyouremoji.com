@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BookBanner } from '@/components/layout/book-banner';
 import { InterpreterClient } from '@/components/interpreter/interpreter-client';
 import { SharedResultSection } from '@/components/interpreter/shared-result-section';
 import { decodeInterpretation } from '@/lib/share-encoding';
@@ -116,6 +117,8 @@ export default async function InterpreterPage({ searchParams }: InterpreterPageP
           <InterpreterClient />
         </section>
       )}
+
+      <BookBanner className="mt-8" />
     </main>
   );
 }
