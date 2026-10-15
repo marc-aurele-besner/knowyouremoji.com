@@ -1,6 +1,9 @@
 import { describe, it, expect, afterEach, beforeEach, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 
+const originalFetch = globalThis.fetch;
+const mockFetch = mock(async (..._args: unknown[]) => new Response('{"ok":true}'));
+
 let mockPathname: string | null = '/';
 mock.module('next/navigation', () => ({
   usePathname: () => mockPathname,
@@ -19,15 +22,28 @@ import {
   BOOK_BANNERS,
   isBookBannerHidden,
   pickBookBanner,
+  recordBookBannerEvent,
 } from '@/components/layout/book-banner';
+
+function sentEvents() {
+  return mockFetch.mock.calls.map(([url, init]) => ({
+    url,
+    body: JSON.parse((init as RequestInit).body as string),
+    keepalive: (init as RequestInit).keepalive,
+  }));
+}
 
 beforeEach(() => {
   mockPathname = '/';
   mockExternalLinkClick.mockClear();
+  mockFetch.mockClear();
+  mockFetch.mockImplementation(async () => new Response('{"ok":true}'));
+  globalThis.fetch = mockFetch as unknown as typeof fetch;
 });
 
 afterEach(() => {
   cleanup();
+  globalThis.fetch = originalFetch;
 });
 
 describe('BookBanner', () => {
@@ -80,6 +96,52 @@ describe('BookBanner', () => {
       expect(container).toBeEmptyDOMElement();
       cleanup();
     }
+  });
+});
+
+describe('BookBanner event tracking', () => {
+  it('records a view when rendered', () => {
+    mockPathname = '/emoji/skull';
+    render(<BookBanner />);
+    expect(sentEvents()).toEqual([
+      {
+        url: '/api/book-banner/event',
+        body: { type: 'view', banner: pickBookBanner('/emoji/skull').id, path: '/emoji/skull' },
+        keepalive: true,
+      },
+    ]);
+  });
+
+  it('records a click when the banner is clicked', () => {
+    mockPathname = '/guides';
+    render(<BookBanner />);
+    fireEvent.click(screen.getByRole('link'));
+    expect(sentEvents().map((e) => e.body)).toEqual([
+      { type: 'view', banner: pickBookBanner('/guides').id, path: '/guides' },
+      { type: 'click', banner: pickBookBanner('/guides').id, path: '/guides' },
+    ]);
+  });
+
+  it('records a new view when the path changes', () => {
+    mockPathname = '/emoji';
+    const { rerender } = render(<BookBanner />);
+    mockPathname = '/combo';
+    rerender(<BookBanner />);
+    expect(sentEvents().map((e) => e.body.path)).toEqual(['/emoji', '/combo']);
+  });
+
+  it('does not record anything on hidden routes', () => {
+    mockPathname = '/dashboard';
+    render(<BookBanner />);
+    expect(mockFetch).not.toHaveBeenCalled();
+  });
+
+  it('swallows network errors', async () => {
+    mockFetch.mockImplementation(async () => {
+      throw new Error('offline');
+    });
+    expect(() => recordBookBannerEvent('view', 'book-cover-01', '/')).not.toThrow();
+    await Promise.resolve();
   });
 });
 
