@@ -1,5 +1,6 @@
-import { describe, test, expect, afterEach } from 'bun:test';
+import { describe, test, expect, afterEach, spyOn } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
+import * as comboData from '@/lib/combo-data';
 import ComboBrowsePage, { generateMetadata } from '@/app/combo/page';
 
 afterEach(() => {
@@ -70,6 +71,33 @@ describe('ComboBrowsePage', () => {
       const metadata = generateMetadata();
       expect(metadata.openGraph?.title).toBeDefined();
       expect(metadata.openGraph?.description).toBeDefined();
+    });
+  });
+
+  describe('Empty state', () => {
+    let getAllComboCategoriesSpy: ReturnType<typeof spyOn> | undefined;
+
+    afterEach(() => {
+      getAllComboCategoriesSpy?.mockRestore();
+      getAllComboCategoriesSpy = undefined;
+    });
+
+    test('renders the empty-state message when no combo categories exist', () => {
+      getAllComboCategoriesSpy = spyOn(comboData, 'getAllComboCategories').mockReturnValue([]);
+
+      render(<ComboBrowsePage />);
+
+      expect(screen.getByText(/no emoji combos available yet/i)).toBeInTheDocument();
+      // No category sections are rendered in the empty state
+      expect(screen.queryAllByRole('heading', { level: 2 })).toHaveLength(0);
+    });
+
+    test('still renders the hero section in the empty state', () => {
+      getAllComboCategoriesSpy = spyOn(comboData, 'getAllComboCategories').mockReturnValue([]);
+
+      render(<ComboBrowsePage />);
+
+      expect(screen.getByRole('heading', { level: 1, name: /emoji combos/i })).toBeInTheDocument();
     });
   });
 

@@ -13,7 +13,11 @@ import { OpenAIError, resetClients } from '../../../src/lib/openai';
 import { clearCache } from '../../../src/lib/cache';
 
 // Save/restore only the env vars this test file touches
-const TESTED_KEYS = ['OPENROUTER_API_KEY', 'UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'] as const;
+const TESTED_KEYS = [
+  'OPENROUTER_API_KEY',
+  'UPSTASH_REDIS_REST_URL',
+  'UPSTASH_REDIS_REST_TOKEN',
+] as const;
 const savedEnv: Record<string, string | undefined> = {};
 
 function saveEnv() {

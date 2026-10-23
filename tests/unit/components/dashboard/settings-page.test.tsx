@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock, beforeEach, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
 // Mock next-auth/react
@@ -489,5 +489,43 @@ describe('SettingsPage', () => {
     await waitFor(() => {
       expect(screen.getByText(/failed to delete account/i)).toBeInTheDocument();
     });
+  });
+
+  it('handles profile fetch failure gracefully', async () => {
+    mockFetch.mockImplementation(((url: string) => {
+      if (url === '/api/auth/profile') {
+        return Promise.reject(new Error('Network error'));
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ displayName: 'Test User' }),
+      });
+    }) as never);
+    await act(async () => {
+      render(<SettingsPage />);
+    });
+    await waitFor(() => {
+      expect(mockFetch).toHaveBeenCalledWith('/api/auth/profile');
+    });
+    expect(screen.getByRole('heading', { name: /^settings$/i })).toBeInTheDocument();
+    expect(screen.queryByText(/member since/i)).not.toBeInTheDocument();
+  });
+
+  it('falls back to the raw member-since date when formatting throws', async () => {
+    const toLocaleDateString = spyOn(Date.prototype, 'toLocaleDateString').mockImplementation(
+      () => {
+        throw new RangeError('Invalid time value');
+      }
+    );
+    try {
+      await act(async () => {
+        render(<SettingsPage />);
+      });
+      await waitFor(() => {
+        expect(screen.getByText(/member since/i)).toHaveTextContent('2026-01-15T10:00:00.000Z');
+      });
+    } finally {
+      toLocaleDateString.mockRestore();
+    }
   });
 });

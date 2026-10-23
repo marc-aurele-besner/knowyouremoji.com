@@ -11,15 +11,16 @@
 import { spawn } from 'bun';
 
 const COVERAGE_THRESHOLD = {
-  // Function coverage threshold is 99.3% to accommodate third-party SDK integration code,
-  // SSR-specific callbacks (e.g., useSyncExternalStore), and Drizzle ORM schema callbacks
-  // (e.g., .references() foreign key arrows, composite key builders) that are evaluated
-  // at module load time and cannot be unit tested without actual service/hydration setup.
-  functions: 99.3,
-  // Line coverage threshold is 99.4% to accommodate third-party SDK integration code
-  // (e.g., Sentry SDK calls, Google Analytics) that cannot be unit tested without
-  // actual service setup. These lines are tested via integration/E2E tests in production.
-  lines: 99.4,
+  // Function coverage threshold is 99.8%. The Drizzle ORM schema callbacks
+  // (e.g., .references() foreign key arrows, composite key builders) that used
+  // to sit uncovered are now exercised through getTableConfig(), and the
+  // third-party SDK integration code is stubbed at the network boundary.
+  functions: 99.8,
+  // Line coverage threshold is 99.8%. The remaining uncovered lines are
+  // unreachable-by-design branches: a module-private default parameter that
+  // every call site passes explicitly, and a dynamic import that can only
+  // fail by breaking the module registry for the whole test run.
+  lines: 99.8,
 };
 
 interface CoverageResult {

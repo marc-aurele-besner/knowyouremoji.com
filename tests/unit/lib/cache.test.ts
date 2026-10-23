@@ -37,13 +37,30 @@ function restoreEnv() {
 let originalFetch: typeof fetch;
 let fetchMock: ((input: any, init?: any) => Promise<any>) | null = null;
 
+// The Upstash SDK pipelines commands, so a successful response body is an array
+// with one entry per pipelined command. Values are base64 encoded, matching the
+// `Upstash-Encoding: base64` header the SDK sends.
+function successResult(command: string[]): { result: unknown } {
+  switch (command[0]?.toUpperCase()) {
+    case 'SET':
+      return { result: 'OK' };
+    case 'DEL':
+      return { result: 1 };
+    case 'GET':
+      return { result: Buffer.from(JSON.stringify({ cached: 'yes' })).toString('base64') };
+    default:
+      return { result: null };
+  }
+}
+
 function installFetchMock(behavior: 'throw' | 'ok' = 'throw') {
   if (!originalFetch) originalFetch = globalThis.fetch;
-  fetchMock = async () => {
+  fetchMock = async (_input: unknown, init?: { body?: string }) => {
     if (behavior === 'throw') {
       throw new Error('Redis connection failed');
     }
-    return new Response(JSON.stringify({ result: null }), { status: 200 });
+    const commands = JSON.parse(init?.body ?? '[]') as string[][];
+    return new Response(JSON.stringify(commands.map(successResult)), { status: 200 });
   };
   globalThis.fetch = fetchMock as unknown as typeof fetch;
 }
@@ -163,6 +180,20 @@ describe('cache module', () => {
       const result = await cacheGet('test-key');
       expect(result).toBeNull();
     });
+
+    it('should return the cached value when Redis responds successfully', async () => {
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
+
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      installFetchMock('ok');
+
+      const result = await cacheGet('test-key');
+      expect(result).toEqual({ cached: 'yes' });
+      expect(consoleSpy).not.toHaveBeenCalled();
+
+      consoleSpy.mockRestore();
+    });
   });
 
   describe('cacheSet', () => {
@@ -172,6 +203,34 @@ describe('cache module', () => {
       const result = await cacheSet('test-key', { data: 'test' });
       expect(result).toBe(false);
     });
+
+    it('should return true when the value is stored with a TTL', async () => {
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
+
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      installFetchMock('ok');
+
+      const result = await cacheSet('test-key', { data: 'test' }, 3600);
+      expect(result).toBe(true);
+      expect(consoleSpy).not.toHaveBeenCalled();
+
+      consoleSpy.mockRestore();
+    });
+
+    it('should return true when the value is stored without a TTL', async () => {
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
+
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      installFetchMock('ok');
+
+      const result = await cacheSet('test-key', { data: 'test' });
+      expect(result).toBe(true);
+      expect(consoleSpy).not.toHaveBeenCalled();
+
+      consoleSpy.mockRestore();
+    });
   });
 
   describe('cacheDelete', () => {
@@ -180,6 +239,20 @@ describe('cache module', () => {
       delete process.env.UPSTASH_REDIS_REST_TOKEN;
       const result = await cacheDelete('test-key');
       expect(result).toBe(false);
+    });
+
+    it('should return true when the key is deleted successfully', async () => {
+      process.env.UPSTASH_REDIS_REST_URL = 'https://test.upstash.io';
+      process.env.UPSTASH_REDIS_REST_TOKEN = 'test-token';
+
+      const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
+      installFetchMock('ok');
+
+      const result = await cacheDelete('test-key');
+      expect(result).toBe(true);
+      expect(consoleSpy).not.toHaveBeenCalled();
+
+      consoleSpy.mockRestore();
     });
   });
 

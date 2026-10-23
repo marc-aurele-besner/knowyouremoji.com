@@ -276,6 +276,28 @@ describe('LoginForm', () => {
       });
     });
 
+    it('rejects an email without a fully-qualified domain and shows the error', async () => {
+      render(<LoginForm />);
+      fireEvent.click(screen.getByRole('button', { name: /sign in with magic link instead/i }));
+
+      await waitFor(() => {
+        expect(screen.getByRole('button', { name: /send magic link/i })).toBeInTheDocument();
+      });
+
+      // "foo@bar" satisfies the browser's built-in email validation, so the
+      // form submits, but the form requires a dotted domain and rejects it.
+      fireEvent.change(screen.getByLabelText(/email/i), {
+        target: { value: 'foo@bar' },
+      });
+      fireEvent.click(screen.getByRole('button', { name: /send magic link/i }));
+
+      await waitFor(() => {
+        expect(screen.getByText('Invalid email format')).toBeInTheDocument();
+      });
+
+      expect(mockFetch).not.toHaveBeenCalled();
+    });
+
     it('shows error when magic link fetch returns non-ok', async () => {
       mockFetch.mockResolvedValueOnce({
         ok: false,

@@ -1,9 +1,12 @@
-import { describe, it, expect, beforeEach } from 'bun:test';
+import { describe, it, expect, beforeEach, spyOn } from 'bun:test';
 import {
   parseGuideFrontmatter,
   _buildGuideFromFrontmatter,
   deriveSeoTitle,
+  getAllGuides,
+  clearGuideCache,
 } from '../../../src/lib/guide-data';
+import fs from 'fs';
 
 describe('guide-data', () => {
   describe('parseGuideFrontmatter', () => {
@@ -139,6 +142,53 @@ body`;
       expect(data.relatedEmojis).toEqual(['fire', 'sparkles', 'thumbs-up']);
       expect(data.relatedCombos).toEqual(['fire-100', 'fire-heart', 'party-fire']);
     });
+
+    it('continues an inline list that is not closed on the same line', () => {
+      const source = `---
+platforms: [imessage, whatsapp
+  , slack]
+---
+
+body`;
+      const { data } = parseGuideFrontmatter(source);
+      expect(data.platforms).toEqual(['imessage', 'whatsapp', 'slack']);
+    });
+
+    it('keeps collecting a multi-line list across blank lines', () => {
+      const source = `---
+tags: [gen-z,
+
+  slang]
+---
+
+body`;
+      const { data } = parseGuideFrontmatter(source);
+      expect(data.tags).toEqual(['gen-z', 'slang']);
+    });
+
+    it('keeps an intentionally empty value when the next line is not a list', () => {
+      const source = `---
+heroEmoji:
+title: What does 💀 mean?
+---
+
+body`;
+      const { data } = parseGuideFrontmatter(source);
+      expect(data.heroEmoji).toBe('');
+      expect(data.title).toBe('What does 💀 mean?');
+    });
+
+    it('leaves an unterminated list as a plain string value', () => {
+      const source = `---
+tags: [gen-z
+relatedEmojis: skull
+---
+
+body`;
+      const { data } = parseGuideFrontmatter(source);
+      expect(data.tags).toBe('[gen-z');
+      expect(data.relatedEmojis).toBe('skull');
+    });
   });
 
   describe('deriveSeoTitle', () => {
@@ -176,6 +226,38 @@ Just body, no headings here.`;
       const guide = _buildGuideFromFrontmatter(data, body, 'whatever' as never);
       const title = deriveSeoTitle(guide);
       expect(title).toBe('Frontmatter title');
+    });
+  });
+
+  describe('loader resilience', () => {
+    beforeEach(() => {
+      clearGuideCache();
+    });
+
+    it('returns an empty list when the guides directory does not exist', () => {
+      const existsSyncSpy = spyOn(fs, 'existsSync').mockReturnValue(false);
+      try {
+        expect(getAllGuides()).toEqual([]);
+      } finally {
+        existsSyncSpy.mockRestore();
+        clearGuideCache();
+      }
+    });
+
+    it('skips files that fail to parse and reports the failure', () => {
+      const readdirSyncSpy = spyOn(fs, 'readdirSync').mockReturnValue(['broken.md'] as never);
+      const readFileSyncSpy = spyOn(fs, 'readFileSync').mockReturnValue('no frontmatter here');
+      const consoleErrorSpy = spyOn(console, 'error').mockImplementation(() => {});
+      try {
+        expect(getAllGuides()).toEqual([]);
+        expect(consoleErrorSpy).toHaveBeenCalledTimes(1);
+        expect(consoleErrorSpy.mock.calls[0][0]).toContain('[guides] Failed to load "broken.md"');
+      } finally {
+        consoleErrorSpy.mockRestore();
+        readFileSyncSpy.mockRestore();
+        readdirSyncSpy.mockRestore();
+        clearGuideCache();
+      }
     });
   });
 });

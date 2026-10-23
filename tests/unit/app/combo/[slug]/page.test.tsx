@@ -443,6 +443,38 @@ describe('ComboPage', () => {
       expect(emojiPageLinks.length).toBeGreaterThan(0);
     });
 
+    test('renders conversation examples when present', async () => {
+      const comboWithConversations: EmojiCombo = {
+        ...mockCombo,
+        conversationExamples: [
+          {
+            setting: 'friends',
+            message: 'that 💀😂 moment at the office',
+            interpretation: 'You are laughing about something absurd a friend just did.',
+          },
+          {
+            setting: 'work',
+            message: 'I cannot 💀😂 with this ticket',
+            interpretation: 'You are overwhelmed but amused by the work ticket.',
+          },
+        ],
+      };
+      mockGetComboBySlug.mockImplementation(() => comboWithConversations);
+      mockGetRelatedCombos.mockImplementation(() => []);
+
+      const page = await ComboPage({ params: Promise.resolve({ slug: 'skull-laughing' }) });
+      render(page);
+
+      expect(
+        screen.getByRole('heading', { name: 'Real Conversation Examples', level: 2 })
+      ).toBeInTheDocument();
+      expect(screen.getAllByTestId('combo-conversation-example')).toHaveLength(2);
+      expect(screen.getByText(/that 💀😂 moment at the office/)).toBeInTheDocument();
+      expect(
+        screen.getByText('You are laughing about something absurd a friend just did.')
+      ).toBeInTheDocument();
+    });
+
     test('renders JSON-LD structured data', async () => {
       mockGetComboBySlug.mockImplementation(() => mockCombo);
       mockGetRelatedCombos.mockImplementation(() => []);

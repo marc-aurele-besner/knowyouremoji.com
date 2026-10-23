@@ -11,7 +11,11 @@ import {
   getToneTypeInfo,
   isValidResponseToneType,
 } from '../../../src/lib/response-tones';
-import type { InterpretationMetrics, ResponseToneType } from '../../../src/types';
+import type {
+  InterpretationMetrics,
+  ResponseToneType,
+  ResponseToneTypeInfo,
+} from '../../../src/types';
 
 describe('response-tones', () => {
   describe('RESPONSE_TONE_TYPES constant', () => {
@@ -332,6 +336,31 @@ describe('response-tones', () => {
       const reasoning = generateToneReasoning('MATCHING', negativeMetrics);
       expect(typeof reasoning).toBe('string');
       expect(reasoning.length).toBeGreaterThan(0);
+    });
+
+    it('should fall back to the tone description for a tone outside the built-in set', () => {
+      // The switch has a `default:` branch for tones that are not part of
+      // `ALL_RESPONSE_TONE_TYPES`. Register a custom tone (non-enumerable so
+      // the registry shape stays intact) to reach that fallback.
+      const registry = RESPONSE_TONE_TYPES as unknown as Record<string, ResponseToneTypeInfo>;
+      Object.defineProperty(registry, 'CUSTOM', {
+        value: {
+          type: 'CUSTOM' as ResponseToneType,
+          label: 'Custom & Novel',
+          description: 'A tone that is not part of the built-in set.',
+          icon: '🧪',
+        },
+        configurable: true,
+        enumerable: false,
+        writable: true,
+      });
+
+      try {
+        const reasoning = generateToneReasoning('CUSTOM' as ResponseToneType, baseMetrics);
+        expect(reasoning).toBe('A tone that is not part of the built-in set.');
+      } finally {
+        delete registry.CUSTOM;
+      }
     });
   });
 

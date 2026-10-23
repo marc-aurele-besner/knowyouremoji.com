@@ -89,7 +89,7 @@ bun run validate:emojis
 
 ## Testing Requirements
 
-**99.4%+ line coverage and 99.5%+ function coverage are mandatory.** CI blocks merges if coverage drops below threshold. The slight allowance (vs 100%) accommodates third-party SDK integration code and SSR-specific callbacks (e.g., useSyncExternalStore) that cannot be unit tested without actual service/hydration setup.
+**99.8%+ line coverage and 99.8%+ function coverage are mandatory.** CI blocks merges if coverage drops below threshold. The slight allowance (vs 100%) accommodates the handful of unreachable-by-design branches that remain (a module-private default parameter every call site passes explicitly, and a dynamic import that can only fail by breaking the module registry for the whole test run).
 
 - Unit tests: `tests/unit/` - Use `bun:test` with Jest-compatible syntax
 - Component tests: Use `@testing-library/react`

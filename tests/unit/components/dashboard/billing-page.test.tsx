@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock, beforeEach, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
 const mockUseSession = mock(() => ({
@@ -592,5 +592,25 @@ describe('BillingPage', () => {
     });
     const pulseElements = document.querySelectorAll('.animate-pulse');
     expect(pulseElements.length).toBeGreaterThan(0);
+  });
+
+  it('falls back to the raw billing date when formatting fails', async () => {
+    const toLocaleDateString = spyOn(Date.prototype, 'toLocaleDateString').mockImplementation(
+      () => {
+        throw new RangeError('Invalid time value');
+      }
+    );
+    try {
+      await act(async () => {
+        render(<BillingPage />);
+      });
+      await waitFor(() => {
+        expect(screen.getByText(/next billing date/i)).toHaveTextContent(
+          '2026-06-01T00:00:00.000Z'
+        );
+      });
+    } finally {
+      toLocaleDateString.mockRestore();
+    }
   });
 });

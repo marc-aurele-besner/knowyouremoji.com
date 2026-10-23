@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, beforeEach, mock } from 'bun:test';
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent, waitFor } from '@testing-library/react';
 import { ShareableCard } from '@/components/share/shareable-card';
 import type { SharedInterpretation } from '@/lib/share-encoding';
 
@@ -192,6 +192,27 @@ describe('ShareableCard', () => {
       expect(copiedText).toContain(mockData.message);
       expect(copiedText).toContain(mockData.interpretation);
       expect(copiedText).toContain('knowyouremoji.com');
+    });
+
+    it('keeps the card rendered when the clipboard write fails', async () => {
+      const mockWriteText = mock(() => Promise.reject(new Error('Clipboard unavailable')));
+      Object.defineProperty(navigator, 'clipboard', {
+        value: { writeText: mockWriteText },
+        writable: true,
+        configurable: true,
+      });
+
+      render(<ShareableCard {...defaultProps} />);
+      const copyButton = screen.getByRole('button', { name: /copy interpretation as text/i });
+      fireEvent.click(copyButton);
+
+      // The failed clipboard write is swallowed by the component
+      await waitFor(() => {
+        expect(mockWriteText).toHaveBeenCalled();
+      });
+
+      expect(screen.getByTestId('shareable-card')).toBeInTheDocument();
+      expect(copyButton).toBeInTheDocument();
     });
   });
 

@@ -1,6 +1,7 @@
-import { describe, it, expect, mock, afterEach, beforeEach } from 'bun:test';
+import { describe, it, expect, mock, spyOn, afterEach, beforeEach } from 'bun:test';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { EmojiCopyButton } from '@/components/emoji/emoji-copy-button';
+import { emojiEvents } from '@/lib/analytics';
 
 // Mock clipboard API
 const mockWriteText = mock(() => Promise.resolve());
@@ -291,6 +292,36 @@ describe('EmojiCopyButton', () => {
       const ref = { current: null as HTMLButtonElement | null };
       render(<EmojiCopyButton emoji="😀" ref={ref} />);
       expect(ref.current).toBeInstanceOf(HTMLButtonElement);
+    });
+  });
+
+  describe('analytics tracking', () => {
+    it('tracks a copy event when a slug is provided', async () => {
+      const copySpy = spyOn(emojiEvents, 'copy').mockImplementation(() => {});
+
+      render(<EmojiCopyButton emoji="😀" slug="grinning-face" />);
+      fireEvent.click(screen.getByRole('button'));
+
+      await waitFor(() => {
+        expect(copySpy).toHaveBeenCalledWith('😀', 'grinning-face');
+      });
+
+      copySpy.mockRestore();
+    });
+
+    it('does not track a copy event when no slug is provided', async () => {
+      const copySpy = spyOn(emojiEvents, 'copy').mockImplementation(() => {});
+
+      render(<EmojiCopyButton emoji="😀" />);
+      fireEvent.click(screen.getByRole('button'));
+
+      await waitFor(() => {
+        expect(mockWriteText).toHaveBeenCalledWith('😀');
+      });
+
+      expect(copySpy).not.toHaveBeenCalled();
+
+      copySpy.mockRestore();
     });
   });
 

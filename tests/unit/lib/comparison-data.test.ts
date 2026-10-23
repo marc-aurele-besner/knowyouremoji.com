@@ -1,4 +1,5 @@
-import { describe, expect, test, beforeEach } from 'bun:test';
+import { describe, expect, test, beforeEach, spyOn } from 'bun:test';
+import fs from 'fs';
 import {
   clearComparisonCache,
   getAllComparisons,
@@ -83,6 +84,30 @@ describe('comparison-data', () => {
       clearComparisonCache();
       const after = getAllComparisons();
       expect(after.length).toBe(before.length);
+    });
+  });
+
+  describe('loadComparisons fallbacks', () => {
+    test('returns an empty array when the comparisons directory does not exist', () => {
+      clearComparisonCache();
+      const existsSpy = spyOn(fs, 'existsSync').mockReturnValue(false);
+      try {
+        expect(getAllComparisons()).toEqual([]);
+      } finally {
+        existsSpy.mockRestore();
+      }
+    });
+
+    test('returns an empty array when the index file does not exist', () => {
+      clearComparisonCache();
+      const existsSpy = spyOn(fs, 'existsSync').mockImplementation(
+        (target) => !String(target).endsWith('index.json')
+      );
+      try {
+        expect(getAllComparisons()).toEqual([]);
+      } finally {
+        existsSpy.mockRestore();
+      }
     });
   });
 });

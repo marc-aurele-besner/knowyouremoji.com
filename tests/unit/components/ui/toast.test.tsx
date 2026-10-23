@@ -1,5 +1,6 @@
-import { describe, it, expect, afterEach } from 'bun:test';
-import { render, screen, waitFor, cleanup } from '@testing-library/react';
+import { describe, it, expect, afterEach, spyOn } from 'bun:test';
+import { render, screen, waitFor, cleanup, act } from '@testing-library/react';
+import * as React from 'react';
 import {
   Toast,
   ToastProvider,
@@ -410,5 +411,98 @@ describe('useToast hook', () => {
       </ToastProvider>
     );
     expect(() => unmount()).not.toThrow();
+  });
+});
+
+// The hook registers its toast listener from a useState initializer and returns
+// the matching cleanup. React never calls a function returned by a useState
+// initializer, so these tests capture the initializer result to drive the
+// cleanup and the auto-dismiss timer explicitly.
+describe('toast listener lifecycle', () => {
+  function Consumer({ onToasts }: { onToasts?: (toasts: unknown[]) => void }) {
+    const { toasts } = useToast();
+    onToasts?.(toasts);
+    return (
+      <div>
+        {toasts.map((t) => (
+          <div key={t.id}>{t.title}</div>
+        ))}
+      </div>
+    );
+  }
+
+  it('stops delivering toasts once the registered cleanup runs', async () => {
+    const cleanups: Array<() => void> = [];
+    const originalUseState = React.useState;
+    const useStateSpy = spyOn(React, 'useState').mockImplementation(((initializer: unknown) => {
+      if (typeof initializer !== 'function') {
+        return originalUseState(initializer as never);
+      }
+      const wrapped = () => {
+        const value = (initializer as () => unknown)();
+        if (typeof value === 'function') {
+          cleanups.push(value as () => void);
+        }
+        return value;
+      };
+      return originalUseState(wrapped as never);
+    }) as unknown as typeof React.useState);
+
+    const toastCounts: number[] = [];
+
+    try {
+      render(<Consumer onToasts={(toasts) => toastCounts.push(toasts.length)} />);
+    } finally {
+      useStateSpy.mockRestore();
+    }
+
+    // The hook registered a listener together with its cleanup
+    expect(cleanups.length).toBeGreaterThan(0);
+
+    // While the listener is registered the toast reaches the consumer
+    await act(async () => {
+      toast({ title: 'Delivered' });
+    });
+    expect(toastCounts[toastCounts.length - 1]).toBe(1);
+
+    // Running the cleanup unregisters the listener
+    cleanups.forEach((cleanup) => cleanup());
+
+    await act(async () => {
+      toast({ title: 'Ignored' });
+    });
+    expect(toastCounts[toastCounts.length - 1]).toBe(1);
+  });
+
+  it('removes the toast once the auto-dismiss timer fires', async () => {
+    const realSetTimeout = globalThis.setTimeout;
+
+    // Shorten long delays (the 5s auto-dismiss) so the test does not have to
+    // wait for the real timer to expire.
+    const setTimeoutSpy = spyOn(globalThis, 'setTimeout').mockImplementation(((
+      handler: (...args: unknown[]) => void,
+      delay?: number,
+      ...args: unknown[]
+    ) => {
+      const effectiveDelay = typeof delay === 'number' && delay > 1000 ? 10 : delay;
+      return realSetTimeout(handler, effectiveDelay, ...args);
+    }) as unknown as typeof setTimeout);
+
+    try {
+      render(<Consumer />);
+      await act(async () => {
+        toast({ title: 'Auto dismiss' });
+      });
+    } finally {
+      setTimeoutSpy.mockRestore();
+    }
+
+    expect(screen.getByText('Auto dismiss')).toBeInTheDocument();
+
+    await act(async () => {
+      await new Promise((resolve) => realSetTimeout(resolve, 50));
+    });
+
+    expect(screen.queryByText('Auto dismiss')).not.toBeInTheDocument();
   });
 });
