@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach } from 'bun:test';
+import { describe, it, expect, afterEach, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent, within } from '@testing-library/react';
 import {
   AdminAnalyticsDashboard,
@@ -10,6 +10,14 @@ const summaries = [
   { slug: 'heart', character: '❤️', name: 'Red Heart', category: 'symbols', tldr: 'love' },
   { slug: 'smile', character: '😀', name: 'Grinning Face', category: 'faces', tldr: 'happy' },
 ];
+
+const manySummaries = Array.from({ length: 60 }, (_, index) => ({
+  slug: `emoji-${index}`,
+  character: '😀',
+  name: `Emoji ${index}`,
+  category: 'faces',
+  tldr: 'many',
+}));
 
 function buildProps(
   overrides: Partial<AdminAnalyticsDashboardProps> = {}
@@ -47,6 +55,13 @@ function buildProps(
 afterEach(() => {
   cleanup();
 });
+
+function getAllEmojiNames(): string[] {
+  const heading = screen.getByRole('heading', { name: /^all emojis$/i });
+  const section = heading.closest('section');
+  const rows = within(section as HTMLElement).getAllByRole('row');
+  return rows.slice(1).map((row) => within(row).getByRole('link').textContent ?? '');
+}
 
 describe('AdminAnalyticsDashboard', () => {
   it('renders the analytics heading', () => {
@@ -166,5 +181,79 @@ describe('AdminAnalyticsDashboard', () => {
       />
     );
     expect(screen.getByText(/no views recorded yet/i)).toBeInTheDocument();
+  });
+
+  it('sorts the all-emojis table by name ascending', () => {
+    render(<AdminAnalyticsDashboard {...buildProps()} />);
+    const ascButton = screen.getByRole('button', { name: /a\s*→\s*z/i });
+    fireEvent.click(ascButton);
+    expect(ascButton).toHaveAttribute('aria-pressed', 'true');
+    expect(getAllEmojiNames()).toEqual(['Fire', 'Grinning Face', 'Red Heart']);
+  });
+
+  it('sorts the all-emojis table by name descending', () => {
+    render(<AdminAnalyticsDashboard {...buildProps()} />);
+    const descButton = screen.getByRole('button', { name: /z\s*→\s*a/i });
+    fireEvent.click(descButton);
+    expect(descButton).toHaveAttribute('aria-pressed', 'true');
+    expect(getAllEmojiNames()).toEqual(['Red Heart', 'Grinning Face', 'Fire']);
+  });
+
+  it('reports 0% coverage when the catalog is empty', () => {
+    render(
+      <AdminAnalyticsDashboard
+        {...buildProps({
+          overview: {
+            ...buildProps().overview,
+            catalogSize: 0,
+            trackedEmojis: 0,
+          },
+        })}
+      />
+    );
+    expect(screen.getByText(/0% have recorded views/i)).toBeInTheDocument();
+    expect(screen.getByTestId('coverage-bar')).toHaveStyle({ width: '0%' });
+  });
+
+  it('shows the empty state when there are no least-viewed emojis', () => {
+    render(<AdminAnalyticsDashboard {...buildProps({ leastViewed: [] })} />);
+    expect(screen.getByText(/no tracked emojis with low traffic yet/i)).toBeInTheDocument();
+  });
+
+  it('shows a truncation notice when more than 50 emojis are listed', () => {
+    render(
+      <AdminAnalyticsDashboard
+        {...buildProps({
+          allEmojis: manySummaries.map((emoji) => ({
+            slug: emoji.slug,
+            views: 0,
+            lastViewedAt: null,
+            emoji,
+          })),
+        })}
+      />
+    );
+    expect(screen.getByText(/showing the first 50 results/i)).toBeInTheDocument();
+  });
+
+  it('falls back to the raw timestamp when the date cannot be formatted', () => {
+    const toLocaleString = spyOn(Date.prototype, 'toLocaleString').mockImplementation(() => {
+      throw new RangeError('Invalid time value');
+    });
+    try {
+      render(
+        <AdminAnalyticsDashboard
+          {...buildProps({
+            overview: {
+              ...buildProps().overview,
+              lastUpdatedAt: '2020-01-01T00:00:00.000Z',
+            },
+          })}
+        />
+      );
+      expect(screen.getByText(/last view recorded/i)).toHaveTextContent('2020-01-01T00:00:00.000Z');
+    } finally {
+      toLocaleString.mockRestore();
+    }
   });
 });

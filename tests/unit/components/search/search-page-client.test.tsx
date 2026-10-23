@@ -2,7 +2,7 @@ import { describe, it, expect, afterEach } from 'bun:test';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
 import { SearchPageClient } from '@/components/search/search-page-client';
 import type { EmojiSummary } from '@/types/emoji';
-import type { EmojiComboSummary } from '@/types/combo';
+import type { EmojiComboCategoryName, EmojiComboSummary } from '@/types/combo';
 
 // Sample emoji data for testing
 const mockEmojis: EmojiSummary[] = [
@@ -51,6 +51,17 @@ const mockCombos: EmojiComboSummary[] = [
     name: 'Fire Hundred',
     meaning: 'Absolutely perfect, totally on point',
     category: 'celebration',
+  },
+];
+
+// A combo whose category has no entry in the component display-name map
+const mockCombosWithUnknownCategory: EmojiComboSummary[] = [
+  {
+    slug: 'unknown-category-combo',
+    combo: '🐶🐱',
+    name: 'Dog Cat',
+    meaning: 'A combo whose category has no display name',
+    category: 'animals' as unknown as EmojiComboCategoryName,
   },
 ];
 
@@ -318,6 +329,20 @@ describe('SearchPageClient', () => {
           expect(screen.getByText(emoji.character)).toBeInTheDocument();
         });
       });
+    });
+
+    it('capitalises the category name when no display name is mapped', () => {
+      render(
+        <SearchPageClient
+          emojis={mockEmojis}
+          combos={mockCombosWithUnknownCategory}
+          initialTab="combos"
+        />
+      );
+
+      const categorySelect = screen.getByRole('combobox', { name: /filter combos by category/i });
+      expect(categorySelect).toBeInTheDocument();
+      expect(screen.getByRole('option', { name: 'Animals' })).toBeInTheDocument();
     });
   });
 

@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, mock } from 'bun:test';
+import { describe, it, expect, afterEach, mock, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 
 mock.module('next-auth/react', () => ({
@@ -88,5 +88,19 @@ describe('HistoryDetailView', () => {
 
   it('has displayName set', () => {
     expect(HistoryDetailView.displayName).toBe('HistoryDetailView');
+  });
+
+  it('falls back to the raw date when formatting throws', () => {
+    const toLocaleDateString = spyOn(Date.prototype, 'toLocaleDateString').mockImplementation(
+      () => {
+        throw new RangeError('Invalid time value');
+      }
+    );
+    try {
+      render(<HistoryDetailView entry={sampleEntry} onClose={() => {}} />);
+      expect(screen.getByText('2026-04-01T10:00:00Z')).toBeInTheDocument();
+    } finally {
+      toLocaleDateString.mockRestore();
+    }
   });
 });

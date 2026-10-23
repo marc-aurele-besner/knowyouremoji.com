@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, waitFor } from '@testing-library/react';
 
 // Save original env values
 const originalPosthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY;
@@ -93,6 +93,34 @@ describe('PostHogProvider', () => {
       );
 
       expect(getByTestId('child').textContent).toBe('Child content');
+    });
+
+    it('initializes PostHog with the configured key outside the test environment', async () => {
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'production';
+      process.env.NEXT_PUBLIC_POSTHOG_KEY = 'phc_prod123';
+      process.env.NEXT_PUBLIC_POSTHOG_HOST = 'https://app.posthog.com';
+
+      const { PostHogProvider } = await import('@/components/analytics/posthog');
+      const posthog = (await import('posthog-js')).default;
+      const initMock = posthog.init as unknown as { mockClear: () => void };
+      initMock.mockClear();
+
+      render(
+        <PostHogProvider>
+          <div data-testid="child">Child content</div>
+        </PostHogProvider>
+      );
+
+      await waitFor(() => {
+        expect(posthog.init).toHaveBeenCalledWith('phc_prod123', {
+          api_host: 'https://app.posthog.com',
+          person_profiles: 'identified_only',
+          capture_pageview: true,
+          capture_pageleave: true,
+          autocapture: true,
+          persistence: 'localStorage+cookie',
+        });
+      });
     });
   });
 });

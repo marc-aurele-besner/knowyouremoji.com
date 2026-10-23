@@ -1,12 +1,14 @@
-import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock, beforeEach, spyOn } from 'bun:test';
 import { render, screen, cleanup, fireEvent, waitFor, act } from '@testing-library/react';
 
 // Mock next-auth/react
+const mockUseSession = mock(() => ({
+  data: { user: { id: 'user-1', email: 'test@example.com' } },
+  status: 'authenticated' as const,
+}));
+
 mock.module('next-auth/react', () => ({
-  useSession: () => ({
-    data: { user: { id: 'user-1', email: 'test@example.com' } },
-    status: 'authenticated' as const,
-  }),
+  useSession: mockUseSession,
 }));
 
 mock.module('next/navigation', () => ({
@@ -75,6 +77,10 @@ globalThis.fetch = mockFetch as never;
 const { HistoryPage } = await import('@/components/dashboard/history-page');
 
 beforeEach(() => {
+  mockUseSession.mockReturnValue({
+    data: { user: { id: 'user-1', email: 'test@example.com' } },
+    status: 'authenticated' as const,
+  } as never);
   mockFetch.mockImplementation(() =>
     Promise.resolve({
       ok: true,
@@ -452,5 +458,44 @@ describe('HistoryPage', () => {
 
   it('has displayName set', () => {
     expect(HistoryPage.displayName).toBe('HistoryPage');
+  });
+
+  it('shows the sign-in prompt when unauthenticated', async () => {
+    mockUseSession.mockReturnValue({
+      data: null,
+      status: 'unauthenticated' as const,
+    } as never);
+    await act(async () => {
+      render(<HistoryPage />);
+    });
+    expect(screen.getByText(/history not available/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/sign in to save and view your interpretation history/i)
+    ).toBeInTheDocument();
+    expect(mockFetch).not.toHaveBeenCalled();
+  });
+
+  it('falls back to the raw date when formatting throws', async () => {
+    mockFetch.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({ data: sampleEntries, hasMore: false }),
+      } as never)
+    );
+    const toLocaleDateString = spyOn(Date.prototype, 'toLocaleDateString').mockImplementation(
+      () => {
+        throw new RangeError('Invalid time value');
+      }
+    );
+    try {
+      await act(async () => {
+        render(<HistoryPage />);
+      });
+      await waitFor(() => {
+        expect(screen.getByText('2026-04-01T10:00:00Z')).toBeInTheDocument();
+      });
+    } finally {
+      toLocaleDateString.mockRestore();
+    }
   });
 });

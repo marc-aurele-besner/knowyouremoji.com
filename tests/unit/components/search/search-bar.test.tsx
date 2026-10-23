@@ -45,6 +45,8 @@ beforeEach(() => {
 
 afterEach(() => {
   cleanup();
+  // Restore the shared fetch mock: individual tests may swap it out.
+  global.fetch = mockFetch as unknown as typeof fetch;
 });
 
 describe('SearchBar', () => {
@@ -183,6 +185,27 @@ describe('SearchBar', () => {
       });
 
       // Dropdown should be closed and results cleared
+      expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+    });
+  });
+
+  describe('error handling', () => {
+    it('clears results and keeps the dropdown closed when the search request fails', async () => {
+      const failingFetch = mock(() => Promise.reject(new Error('Network error')));
+      global.fetch = failingFetch as unknown as typeof fetch;
+
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+
+      await waitFor(() => {
+        expect(failingFetch).toHaveBeenCalled();
+      });
+
+      // The failed search leaves the dropdown closed and no results rendered
       expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
     });
   });

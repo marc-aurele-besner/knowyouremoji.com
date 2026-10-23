@@ -1,4 +1,4 @@
-import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock, beforeEach, spyOn } from 'bun:test';
 import { render, screen, cleanup, waitFor, act } from '@testing-library/react';
 
 // Mock next-auth/react
@@ -381,5 +381,23 @@ describe('ProfilePage', () => {
       expect(screen.getByText('Test User')).toBeInTheDocument();
     });
     expect(screen.queryByText(/member since/i)).not.toBeInTheDocument();
+  });
+
+  it('falls back to the raw member-since date when formatting throws', async () => {
+    const toLocaleDateString = spyOn(Date.prototype, 'toLocaleDateString').mockImplementation(
+      () => {
+        throw new RangeError('Invalid time value');
+      }
+    );
+    try {
+      await act(async () => {
+        render(<ProfilePage />);
+      });
+      await waitFor(() => {
+        expect(screen.getByText(/member since/i)).toHaveTextContent('2026-01-15T10:00:00.000Z');
+      });
+    } finally {
+      toLocaleDateString.mockRestore();
+    }
   });
 });
