@@ -156,6 +156,32 @@ describe('InterpreterPage', () => {
     const main = screen.getByRole('main');
     expect(main).toHaveClass('max-w-4xl');
   });
+
+  it('renders the shared result section when a shared result is present', async () => {
+    const { encodeInterpretation } = await import('@/lib/share-encoding');
+    const { createInterpretationResult } = await import('../../../utils');
+    const encoded = encodeInterpretation(
+      createInterpretationResult({
+        message: 'Shared message 😊',
+        interpretation: 'A shared interpretation of the message.',
+        metrics: {
+          overallTone: 'positive',
+          sarcasmProbability: 5,
+          passiveAggressionProbability: 2,
+          confidence: 90,
+        },
+      })
+    );
+
+    const page = await InterpreterPage({ searchParams: Promise.resolve({ r: encoded }) });
+    render(page);
+
+    // The shared result card replaces the plain interpreter form section
+    expect(screen.getByTestId('shareable-card')).toBeInTheDocument();
+    expect(screen.getByText('Shared Result')).toBeInTheDocument();
+    expect(screen.getByText(/Shared message 😊/)).toBeInTheDocument();
+    expect(screen.queryByTestId('interpreter-form-section')).not.toBeInTheDocument();
+  });
 });
 
 describe('generateMetadata', () => {

@@ -239,6 +239,69 @@ describe('Stripe webhook handler', () => {
       expect(response.status).toBe(200);
     });
 
+    it('should fall back to a 7-day trial when Stripe omits trial_end', async () => {
+      mockGetEnv.mockReturnValue({
+        appUrl: 'http://localhost:3000',
+        stripeSecretKey: 'sk_test_123',
+        stripeWebhookSecret: 'wh_secret_test',
+      });
+
+      // No trial_end on the Stripe subscription → the webhook derives the
+      // trial end date from TRIAL_DAYS instead of the Stripe timestamp.
+      mockStripeInstance.subscriptions.retrieve.mockResolvedValue({});
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      let insertedValues: any;
+      const valuesMock = mock((values: any) => {
+        insertedValues = values;
+        return Promise.resolve({});
+      });
+      const insertMock = mock(() => ({ values: valuesMock }));
+
+      const limitMock = mock(() => Promise.resolve([]));
+      const whereMock = mock(() => ({ limit: limitMock }));
+      const fromMock = mock(() => ({ where: whereMock }));
+      const selectMock = mock(() => ({ from: fromMock }));
+
+      const mockDb = {
+        select: selectMock,
+        insert: insertMock,
+      };
+      mockGetDb.mockReturnValue(mockDb);
+
+      const mockEvent = {
+        type: 'checkout.session.completed',
+        data: {
+          object: {
+            mode: 'subscription',
+            metadata: { userId: 'user-123' },
+            subscription: 'sub_test123',
+            customer: 'cus_test123',
+          },
+        },
+      };
+
+      mockStripeInstance.webhooks.constructEvent.mockReturnValue(mockEvent);
+
+      const request = new Request('http://localhost/api/webhooks/stripe', {
+        method: 'POST',
+        headers: {
+          'stripe-signature': 'sig_test',
+        },
+        body: JSON.stringify(mockEvent),
+      });
+
+      const response = await POST(request);
+      expect(response.status).toBe(200);
+
+      // Trial end date is TRIAL_DAYS (7 days) from now, and there is no
+      // current period end because Stripe did not report one.
+      const expectedTrialEnd = Date.now() + 7 * 24 * 60 * 60 * 1000;
+      expect(insertedValues.trialEndsAt.getTime()).toBeGreaterThan(expectedTrialEnd - 60_000);
+      expect(insertedValues.trialEndsAt.getTime()).toBeLessThan(expectedTrialEnd + 60_000);
+      expect(insertedValues.currentPeriodEnd).toBeNull();
+    });
+
     it('should handle checkout.session.completed with db update for existing subscription', async () => {
       mockGetEnv.mockReturnValue({
         appUrl: 'http://localhost:3000',
