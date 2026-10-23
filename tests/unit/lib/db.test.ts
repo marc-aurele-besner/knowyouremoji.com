@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
+import { getTableConfig } from 'drizzle-orm/pg-core';
 import { isDatabaseConfigured, clearDb } from '../../../src/lib/db';
 import {
   users,
@@ -8,7 +9,20 @@ import {
   interpretations,
   emojiPageViews,
   subscriptions,
+  bookBannerEvents,
 } from '../../../src/lib/db/schema';
+
+// Several test files register a process-global `mock.module('@/lib/db', ...)`
+// that replaces `getDb` for every importer in the run. Importing the module
+// through a distinct specifier yields a pristine instance of the real module,
+// so the production implementation is the one exercised here.
+const PRISTINE_DB_SPECIFIER: string = '../../../src/lib/db/index.ts?pristine=1';
+
+type DbModule = typeof import('../../../src/lib/db');
+
+async function loadPristineDb(): Promise<DbModule> {
+  return (await import(PRISTINE_DB_SPECIFIER)) as DbModule;
+}
 
 // Save/restore only the env vars this test file touches
 const TESTED_KEYS = ['DATABASE_URL'] as const;
@@ -65,6 +79,36 @@ describe('db module', () => {
       expect(() => clearDb()).not.toThrow();
     });
   });
+
+  describe('getDb', () => {
+    it('should return null when DATABASE_URL is not set', async () => {
+      delete process.env.DATABASE_URL;
+      const pristine = await loadPristineDb();
+      pristine.clearDb();
+      expect(pristine.getDb()).toBeNull();
+      pristine.clearDb();
+    });
+
+    it('should build a drizzle instance when DATABASE_URL is set', async () => {
+      process.env.DATABASE_URL = 'postgresql://user:pass@localhost:5432/db';
+      const pristine = await loadPristineDb();
+      pristine.clearDb();
+      const db = pristine.getDb();
+      expect(db).not.toBeNull();
+      pristine.clearDb();
+    });
+
+    it('should return the cached instance on subsequent calls', async () => {
+      process.env.DATABASE_URL = 'postgresql://user:pass@localhost:5432/db';
+      const pristine = await loadPristineDb();
+      pristine.clearDb();
+      const first = pristine.getDb();
+      const second = pristine.getDb();
+      expect(first).not.toBeNull();
+      expect(second).toBe(first);
+      pristine.clearDb();
+    });
+  });
 });
 
 describe('db schema', () => {
@@ -95,6 +139,10 @@ describe('db schema', () => {
 
     it('should export subscriptions table', () => {
       expect(subscriptions).toBeDefined();
+    });
+
+    it('should export bookBannerEvents table', () => {
+      expect(bookBannerEvents).toBeDefined();
     });
   });
 
@@ -163,6 +211,14 @@ describe('db schema', () => {
       expect(emojiPageViews.viewCount).toBeDefined();
       expect(emojiPageViews.updatedAt).toBeDefined();
     });
+
+    it('should have required columns on bookBannerEvents table', () => {
+      expect(bookBannerEvents.id).toBeDefined();
+      expect(bookBannerEvents.eventType).toBeDefined();
+      expect(bookBannerEvents.banner).toBeDefined();
+      expect(bookBannerEvents.pagePath).toBeDefined();
+      expect(bookBannerEvents.createdAt).toBeDefined();
+    });
   });
 
   describe('table extra config', () => {
@@ -185,6 +241,39 @@ describe('db schema', () => {
         expect(result).toBeDefined();
       } else {
         expect(verificationTokens).toBeDefined();
+      }
+    });
+
+    it('should have created_at index config on bookBannerEvents', () => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const tableConfig = (bookBannerEvents as any)[Symbol.for('drizzle:ExtraConfigBuilder')];
+      if (typeof tableConfig === 'function') {
+        // Index builders expect the "extra config" column variants, which carry
+        // the per-column index configuration used by `.on()`.
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const extraConfigColumns = (bookBannerEvents as any)[
+          Symbol.for('drizzle:ExtraConfigColumns')
+        ];
+        const result = tableConfig(extraConfigColumns) as { config: { name: string } }[];
+        expect(result).toHaveLength(1);
+        expect(result[0]?.config.name).toBe('book_banner_events_created_at_idx');
+      } else {
+        expect(bookBannerEvents).toBeDefined();
+      }
+    });
+  });
+
+  describe('foreign key references', () => {
+    it('should point every user foreign key at users.id', () => {
+      for (const table of [accounts, sessions, interpretations, subscriptions]) {
+        const foreignKeys = getTableConfig(table).foreignKeys;
+        expect(foreignKeys.length).toBeGreaterThan(0);
+
+        for (const foreignKey of foreignKeys) {
+          const reference = foreignKey.reference();
+          expect(reference.foreignColumns).toEqual([users.id]);
+          expect(reference.foreignTable).toBe(users);
+        }
       }
     });
   });

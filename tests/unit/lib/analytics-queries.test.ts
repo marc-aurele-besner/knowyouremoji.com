@@ -114,6 +114,45 @@ describe('analytics-queries', () => {
       }
     });
 
+    it('returns zeroed values when the query returns no rows', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      mockSql.mockImplementation(async () => []);
+      const { getAnalyticsOverview } = await import('@/lib/analytics-queries');
+      const result = await getAnalyticsOverview(sampleSummaries);
+      expect(result.totalViews).toBe(0);
+      expect(result.trackedEmojis).toBe(0);
+      expect(result.catalogSize).toBe(sampleSummaries.length);
+      expect(result.topSlug).toBeNull();
+      expect(result.topViews).toBe(0);
+      expect(result.viewsLast7Days).toBe(0);
+      expect(result.viewsLast30Days).toBe(0);
+      expect(result.lastUpdatedAt).toBeNull();
+    });
+
+    it('normalizes a string last_updated_at into an ISO timestamp', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      mockSql.mockImplementation(async (strings) => {
+        const head = strings[0] ?? '';
+        if (head.includes('SUM(view_count)')) {
+          return [
+            {
+              total_views: '7',
+              tracked: '1',
+              top_slug: 'fire',
+              top_views: '7',
+              last_updated_at: '2026-08-01T12:00:00Z',
+              views_last_7: '7',
+              views_last_30: '7',
+            },
+          ];
+        }
+        return [];
+      });
+      const { getAnalyticsOverview } = await import('@/lib/analytics-queries');
+      const result = await getAnalyticsOverview(sampleSummaries);
+      expect(result.lastUpdatedAt).toBe('2026-08-01T12:00:00.000Z');
+    });
+
     it('rejects invalid top slug', async () => {
       process.env.DATABASE_URL = 'postgresql://test';
       mockSql.mockImplementation(async (strings) => {
@@ -186,6 +225,21 @@ describe('analytics-queries', () => {
       expect(result[0]?.slug).toBe('fire');
     });
 
+    it('normalizes string updated_at values into ISO timestamps', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      mockSql.mockImplementation(async (strings) => {
+        const head = strings[0] ?? '';
+        if (head.includes('ORDER BY view_count DESC')) {
+          return [{ slug: 'fire', view_count: '5', updated_at: '2026-08-01T12:00:00Z' }];
+        }
+        return [];
+      });
+      const { getTopEmojisByViews } = await import('@/lib/analytics-queries');
+      const result = await getTopEmojisByViews(5, sampleSummaries);
+      expect(result).toHaveLength(1);
+      expect(result[0]?.lastViewedAt).toBe('2026-08-01T12:00:00.000Z');
+    });
+
     it('returns empty array when Neon throws', async () => {
       process.env.DATABASE_URL = 'postgresql://test';
       const origErr = console.error;
@@ -222,6 +276,22 @@ describe('analytics-queries', () => {
       Reflect.deleteProperty(process.env, 'DATABASE_URL');
       const { getLeastViewedTrackedEmojis } = await import('@/lib/analytics-queries');
       expect(await getLeastViewedTrackedEmojis(5, sampleSummaries)).toEqual([]);
+    });
+
+    it('returns empty array when Neon throws', async () => {
+      process.env.DATABASE_URL = 'postgresql://test';
+      const origErr = console.error;
+      console.error = () => {};
+      mockSql.mockImplementation(async () => {
+        throw new Error('boom');
+      });
+      try {
+        const { getLeastViewedTrackedEmojis } = await import('@/lib/analytics-queries');
+        const result = await getLeastViewedTrackedEmojis(5, sampleSummaries);
+        expect(result).toEqual([]);
+      } finally {
+        console.error = origErr;
+      }
     });
   });
 

@@ -1,4 +1,4 @@
-import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
+import { describe, it, expect, mock, spyOn, beforeEach, afterEach } from 'bun:test';
 import {
   emojiEvents,
   comboEvents,
@@ -339,6 +339,34 @@ describe('analytics', () => {
 
       // Reset mock
       mockPostHogCapture.mockImplementation(() => {});
+    });
+
+    it('logs a debug message when posthog.capture throws in development', async () => {
+      const originalNodeEnv = process.env.NODE_ENV;
+      (process.env as Record<string, string | undefined>).NODE_ENV = 'development';
+
+      const debugSpy = spyOn(console, 'debug').mockImplementation(() => {});
+      mockPostHogCapture.mockImplementation(() => {
+        throw new Error('PostHog not loaded');
+      });
+
+      try {
+        emojiEvents.copy('🔥', 'fire');
+        await waitForPostHog();
+
+        expect(debugSpy).toHaveBeenCalledWith('[PostHog] emoji_copy', {
+          emoji: '🔥',
+          slug: 'fire',
+        });
+      } finally {
+        debugSpy.mockRestore();
+        mockPostHogCapture.mockImplementation(() => {});
+        if (originalNodeEnv === undefined) {
+          Reflect.deleteProperty(process.env, 'NODE_ENV');
+        } else {
+          (process.env as Record<string, string | undefined>).NODE_ENV = originalNodeEnv;
+        }
+      }
     });
 
     it('sends upgrade click event to PostHog', async () => {
