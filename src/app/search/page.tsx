@@ -47,25 +47,17 @@ export default function SearchPage() {
   const comboCount = getComboCount();
 
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-amber-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Search Emojis & Combos
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Find context-aware meanings for {emojiCount} emojis and {comboCount} emoji combos
-          </p>
-        </div>
-      </section>
+    <div className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <header className="mb-7">
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+          Search Emojis & Combos
+        </h1>
+        <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
+          Find context-aware meanings for {emojiCount} emojis and {comboCount} emoji combos
+        </p>
+      </header>
 
-      {/* Search Section */}
-      <section className="py-8 md:py-12">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <SearchPageClient emojis={emojiSummaries} combos={comboSummaries} />
-        </div>
-      </section>
+      <SearchPageClient emojis={emojiSummaries} combos={comboSummaries} />
     </div>
   );
 }

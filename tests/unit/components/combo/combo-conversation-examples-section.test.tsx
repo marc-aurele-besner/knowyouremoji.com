@@ -34,7 +34,7 @@ describe('ComboConversationExamplesSection', () => {
     expect(screen.getAllByTestId('combo-conversation-example')).toHaveLength(2);
   });
 
-  it('renders the conversation message as a blockquote', () => {
+  it('renders the conversation message as a chat bubble', () => {
     render(<ComboConversationExamplesSection examples={examples} />);
     expect(
       screen.getByText(/bro that tiktok of the cat falling into the pool 💀😂/)

@@ -261,7 +261,7 @@ describe('SearchResults', () => {
       );
 
       const options = screen.getAllByRole('option');
-      expect(options[0]).toHaveClass('bg-amber-50');
+      expect(options[0]).toHaveClass('bg-muted');
     });
 
     it('does not apply selected styling to non-active items', () => {
@@ -278,8 +278,8 @@ describe('SearchResults', () => {
       );
 
       const options = screen.getAllByRole('option');
-      expect(options[1]).not.toHaveClass('bg-amber-50');
-      expect(options[2]).not.toHaveClass('bg-amber-50');
+      expect(options[1]).not.toHaveClass('bg-muted');
+      expect(options[2]).not.toHaveClass('bg-muted');
     });
   });
 

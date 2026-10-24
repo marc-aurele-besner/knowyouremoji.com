@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { getEnv } from '@/lib/env';
 
@@ -135,328 +134,234 @@ const whoWeAre = [
   },
 ];
 
+const howItWorks = [
+  {
+    emoji: '🔍',
+    title: 'Browse or Search',
+    description:
+      'Explore our emoji database or search for specific emojis. Each emoji page includes detailed context-aware meanings.',
+  },
+  {
+    emoji: '💬',
+    title: 'Use the Interpreter',
+    description:
+      'Paste any message with emojis into our AI-powered interpreter. It analyzes the context and explains what the emojis likely mean.',
+  },
+  {
+    emoji: '🤝',
+    title: 'Communicate Better',
+    description:
+      'Armed with understanding, respond with confidence. No more second-guessing what that message really meant.',
+  },
+];
+
+const trustSignals = [
+  {
+    emoji: '🎯',
+    label: 'Target',
+    title: 'Accurate',
+    description:
+      'Our interpretations are based on real-world usage, cultural research, and AI analysis.',
+  },
+  {
+    emoji: '🔄',
+    label: 'Refresh',
+    title: 'Up-to-date',
+    description:
+      'Emoji meanings evolve. We continuously update our database to reflect current usage.',
+  },
+  {
+    emoji: '🔒',
+    label: 'Lock',
+    title: 'Privacy-first',
+    description: "We don't store your interpreted messages. Your conversations stay private.",
+  },
+  {
+    emoji: '🎁',
+    label: 'Gift',
+    title: 'Free to Use',
+    description: 'Access emoji meanings and use the interpreter without signing up or paying.',
+  },
+];
+
+const sectionTitle = 'text-2xl font-semibold tracking-tight md:text-[28px]';
+const cardClass = 'rounded-2xl border border-card-border bg-card p-5';
+
 /**
  * About page for KnowYourEmoji.com
  *
  * Includes:
  * - Mission statement explaining our purpose
+ * - How it works
  * - Methodology (the "not just Unicode" section)
  * - Editorial standards
- * - Who operates the site
  * - Trust signals section for credibility
+ * - Who operates the site
  * - CTA to try the interpreter
  */
 export default function AboutPage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
-      <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+    <main className="container mx-auto max-w-5xl px-4 pb-16 pt-10">
+      <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            About KnowYourEmoji
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
-            We explain what emojis actually mean in real conversations — not just what the Unicode
-            Consortium named them.
-          </p>
-        </div>
-      </section>
+      {/* Header Section */}
+      <header>
+        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-primary-700">
+          About KnowYourEmoji
+        </p>
+        <h1 className="mt-2.5 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
+          We explain what emojis <em className="accent-serif">actually</em> mean in real
+          conversations.
+        </h1>
+        <p className="mt-4 max-w-2xl text-[17px] text-muted-foreground">
+          Not just what the Unicode Consortium named them.
+        </p>
+      </header>
 
       {/* Mission Section */}
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="mission-section">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
-            Our mission
-          </h2>
-          <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Emojis have become an essential part of modern communication. But their meanings
-              aren&apos;t always obvious. A single emoji can mean completely different things
-              depending on who sends it, the context, and even which platform you&apos;re using.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              Our mission is simple: to bridge the emoji communication gap. We help you understand
-              the real meanings behind emojis, so you can communicate with confidence and avoid
-              misunderstandings.
-            </p>
-            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-              Whether you&apos;re decoding a message from a Gen Z colleague, understanding platform
-              differences, or just curious about that emoji someone sent you - we&apos;re here to
-              help.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Methodology Section */}
-      <section
-        id="methodology"
-        className="py-16 bg-gray-50 dark:bg-gray-800 scroll-mt-20"
-        data-testid="methodology-section"
-      >
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
-              Methodology
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              How we decide what an emoji means
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-              Emoji meaning is not the same as the Unicode definition. Here is the process we use
-              for every entry on the site.
-            </p>
-          </div>
-          <ol className="grid md:grid-cols-2 gap-6 list-none [counter-reset:step]">
-            {methodologySteps.map((step, index) => (
-              <li
-                key={step.title}
-                className="relative bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
-              >
-                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-amber-500 text-white font-bold flex items-center justify-center shadow-md">
-                  {index + 1}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 mt-2">
-                  {step.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  {step.description}
-                </p>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-10 text-sm text-gray-500 dark:text-gray-400 text-center max-w-3xl mx-auto">
-            Pages without original research — older entries that are still anchored to the Unicode
-            description — are clearly marked as thin content and de-emphasized in search while we
-            expand our editorial coverage.
+      <section className="mt-14" data-testid="mission-section">
+        <p className="eyebrow">Our mission</p>
+        <div className="mt-3 max-w-[720px] space-y-4 text-[17px] leading-[1.7]">
+          <p>
+            Emojis have become an essential part of modern communication. But their meanings
+            aren&apos;t always obvious. A single emoji can mean completely different things
+            depending on who sends it, the context, and even which platform you&apos;re using.
           </p>
-        </div>
-      </section>
-
-      {/* Editorial Standards Section */}
-      <section
-        className="py-16 bg-white dark:bg-gray-900"
-        data-testid="editorial-standards-section"
-      >
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
-              Editorial Standards
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              What we publish
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
-              We hold every entry on the site to the same four standards. Anything that does not
-              meet them is rewritten, not quietly shipped.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {editorialPillars.map((pillar) => (
-              <Card key={pillar.title}>
-                <CardHeader>
-                  <CardTitle className="text-lg">{pillar.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {pillar.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Who operates the site */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="who-section">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-12">
-            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-amber-600 dark:text-amber-400 mb-3">
-              Who we are
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Who runs KnowYourEmoji
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {whoWeAre.map((item) => (
-              <div
-                key={item.title}
-                className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
-              >
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-10 text-center text-gray-600 dark:text-gray-300">
-            Questions, corrections, or partnership ideas?{' '}
-            <Link
-              href="/contact"
-              className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-            >
-              Contact us
-            </Link>
-            .
+          <p>
+            Our mission is simple: to bridge the emoji communication gap. We help you understand the
+            real meanings behind emojis, so you can communicate with confidence and avoid
+            misunderstandings.
+          </p>
+          <p>
+            Whether you&apos;re decoding a message from a Gen Z colleague, understanding platform
+            differences, or just curious about that emoji someone sent you - we&apos;re here to
+            help.
           </p>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="how-it-works-section">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            How It Works
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Step 1 */}
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl">1</span>
-                </div>
-                <CardTitle>Browse or Search</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Explore our emoji database or search for specific emojis. Each emoji page includes
-                  detailed context-aware meanings.
-                </p>
-              </CardContent>
-            </Card>
+      <section className="mt-14" data-testid="how-it-works-section">
+        <h2 className={sectionTitle}>How It Works</h2>
+        <div className="mt-5 grid gap-3 md:grid-cols-3">
+          {howItWorks.map((step) => (
+            <div key={step.title} className={cardClass}>
+              <span className="emoji-display text-[28px] leading-none" aria-hidden="true">
+                {step.emoji}
+              </span>
+              <h3 className="mb-1.5 mt-3 text-[17px] font-semibold">{step.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-            {/* Step 2 */}
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl">2</span>
-                </div>
-                <CardTitle>Use the Interpreter</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Paste any message with emojis into our AI-powered interpreter. It analyzes the
-                  context and explains what the emojis likely mean.
-                </p>
-              </CardContent>
-            </Card>
+      {/* Methodology Section */}
+      <section id="methodology" className="mt-14 scroll-mt-24" data-testid="methodology-section">
+        <p className="eyebrow">Methodology</p>
+        <h2 className={`${sectionTitle} mt-2`}>How we decide what an emoji means</h2>
+        <p className="mt-2 max-w-[680px] text-muted-foreground">
+          Emoji meaning is not the same as the Unicode definition. Here is the process we use for
+          every entry on the site.
+        </p>
+        <ol className="mt-5 grid list-none gap-3 md:grid-cols-2">
+          {methodologySteps.map((step, index) => (
+            <li key={step.title} className={cardClass}>
+              <span className="font-mono text-sm text-muted-foreground">0{index + 1}</span>
+              <h3 className="mb-1.5 mt-2 text-[17px] font-semibold">{step.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
+            </li>
+          ))}
+        </ol>
+        <p className="mt-5 max-w-[680px] text-sm text-muted-foreground">
+          Pages without original research — older entries that are still anchored to the Unicode
+          description — are clearly marked as thin content and de-emphasized in search while we
+          expand our editorial coverage.
+        </p>
+      </section>
 
-            {/* Step 3 */}
-            <Card>
-              <CardHeader>
-                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl">3</span>
-                </div>
-                <CardTitle>Communicate Better</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Armed with understanding, respond with confidence. No more second-guessing what
-                  that message really meant.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+      {/* Editorial Standards Section */}
+      <section className="mt-14" data-testid="editorial-standards-section">
+        <p className="eyebrow">Editorial Standards</p>
+        <h2 className={`${sectionTitle} mt-2`}>What we publish</h2>
+        <p className="mt-2 max-w-[680px] text-muted-foreground">
+          We hold every entry on the site to the same four standards. Anything that does not meet
+          them is rewritten, not quietly shipped.
+        </p>
+        <div className="mt-5 grid gap-3 md:grid-cols-2">
+          {editorialPillars.map((pillar, index) => (
+            <div key={pillar.title} className={cardClass}>
+              <span className="font-mono text-sm text-muted-foreground">0{index + 1}</span>
+              <h3 className="mb-1.5 mt-2 text-[17px] font-semibold">{pillar.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{pillar.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Trust Signals Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="trust-section">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Why Trust Us
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Accurate */}
-            <div className="text-center">
-              <div className="text-4xl mb-4">
-                <span role="img" aria-label="Target">
-                  🎯
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Accurate</h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Our interpretations are based on real-world usage, cultural research, and AI
-                analysis.
-              </p>
+      <section className="mt-14" data-testid="trust-section">
+        <h2 className={sectionTitle}>Why Trust Us</h2>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {trustSignals.map((signal) => (
+            <div key={signal.title} className={cardClass}>
+              <span className="text-[28px] leading-none" role="img" aria-label={signal.label}>
+                {signal.emoji}
+              </span>
+              <h3 className="mb-1.5 mt-3 text-[17px] font-semibold">{signal.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{signal.description}</p>
             </div>
-
-            {/* Up-to-date */}
-            <div className="text-center">
-              <div className="text-4xl mb-4">
-                <span role="img" aria-label="Refresh">
-                  🔄
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Up-to-date
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Emoji meanings evolve. We continuously update our database to reflect current usage.
-              </p>
-            </div>
-
-            {/* Privacy-focused */}
-            <div className="text-center">
-              <div className="text-4xl mb-4">
-                <span role="img" aria-label="Lock">
-                  🔒
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Privacy-first
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                We don&apos;t store your interpreted messages. Your conversations stay private.
-              </p>
-            </div>
-
-            {/* Free to use */}
-            <div className="text-center">
-              <div className="text-4xl mb-4">
-                <span role="img" aria-label="Gift">
-                  🎁
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Free to Use
-              </h3>
-              <p className="text-gray-600 dark:text-gray-300">
-                Access emoji meanings and use the interpreter without signing up or paying.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
+      {/* Who operates the site */}
+      <section className="mt-14" data-testid="who-section">
+        <p className="eyebrow">Who we are</p>
+        <h2 className={`${sectionTitle} mt-2`}>Who runs KnowYourEmoji</h2>
+        <div className="mt-5 grid gap-3 md:grid-cols-3">
+          {whoWeAre.map((item) => (
+            <div key={item.title} className={cardClass}>
+              <h3 className="mb-1.5 text-[17px] font-semibold">{item.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+            </div>
+          ))}
+        </div>
+        <p className="mt-5 text-muted-foreground">
+          Questions, corrections, or partnership ideas?{' '}
+          <Link
+            href="/contact"
+            className="font-medium text-foreground underline decoration-card-border underline-offset-4 hover:decoration-foreground"
+          >
+            Contact us
+          </Link>
+          .
+        </p>
+      </section>
+
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 dark:bg-blue-800">
-        <div className="container mx-auto px-4 text-center max-w-2xl">
-          <h2 className="text-3xl font-bold text-white mb-4">Ready to Decode Your Messages?</h2>
-          <p className="text-blue-100 mb-8">
+      <section className="mt-16 flex flex-wrap items-center justify-between gap-6 rounded-3xl bg-foreground p-7 text-background md:p-12">
+        <div>
+          <h2 className="text-3xl font-semibold tracking-tight md:text-[34px]">
+            Ready to Decode Your Messages?
+          </h2>
+          <p className="mt-1.5 max-w-xl opacity-75">
             Try our AI-powered emoji interpreter and finally understand what those emojis really
             mean.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/interpreter">Try the Interpreter</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10"
-            >
-              <Link href="/emoji">Browse All Emojis</Link>
-            </Button>
-          </div>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <Button asChild size="lg" variant="brand">
+            <Link href="/interpreter">Try the Interpreter</Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-background/30 bg-transparent text-background hover:bg-background/10"
+          >
+            <Link href="/emoji">Browse All Emojis</Link>
+          </Button>
         </div>
       </section>
     </main>

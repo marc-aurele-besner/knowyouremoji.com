@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { getEnv } from '@/lib/env';
@@ -99,6 +98,11 @@ const contactReasons = [
 const githubIssueUrl =
   'https://github.com/marc-aurele-besner/knowyouremoji.com/issues/new?labels=content%2Cfeedback';
 
+const cardClass = 'rounded-2xl border border-card-border bg-card p-6 md:p-7';
+const labelClass = 'mb-1.5 block text-sm font-medium';
+const linkClass =
+  'font-medium text-foreground underline decoration-card-border underline-offset-4 hover:decoration-foreground';
+
 /**
  * Contact page for KnowYourEmoji.com
  *
@@ -110,214 +114,182 @@ const githubIssueUrl =
  */
 export default function ContactPage() {
   return (
-    <main className="min-h-screen">
-      <section className="bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+    <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Contact KnowYourEmoji
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
-            We&apos;re a small team that reads every message. Tell us what you spotted, what we got
-            wrong, or what we should publish next.
-          </p>
-        </div>
-      </section>
+      <header className="mb-8">
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Contact KnowYourEmoji</h1>
+        <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
+          We&apos;re a small team that reads every message. Tell us what you spotted, what we got
+          wrong, or what we should publish next.
+        </p>
+      </header>
 
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="contact-channels-section">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card data-testid="contact-channel-github">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <span className="text-3xl" aria-hidden="true">
-                    🐙
-                  </span>
-                  GitHub Issues (preferred)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600 dark:text-gray-300">
-                  For content corrections, bug reports, and feature requests. Public and tracked, so
-                  other readers and contributors can follow along.
-                </p>
-                <Button asChild>
-                  <a href={githubIssueUrl} target="_blank" rel="noopener noreferrer">
-                    Open an issue on GitHub
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card data-testid="contact-channel-email">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <span className="text-3xl" aria-hidden="true">
-                    📬
-                  </span>
-                  Email
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-gray-600 dark:text-gray-300">
-                  For private matters: partnerships, press, sensitive content takedowns, or anything
-                  you don&apos;t want to file publicly.
-                </p>
-                <p className="text-gray-900 dark:text-white font-medium break-all">
-                  <a
-                    href="mailto:hello@knowyouremoji.com"
-                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    hello@knowyouremoji.com
-                  </a>
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
-                  We typically reply within 3 business days. There is no human on chat support.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="contact-reasons-section">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">
-            What can we help with?
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
-            {contactReasons.map((reason) => (
-              <div
-                key={reason.title}
-                className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700"
-              >
-                <div className="text-3xl mb-3" aria-hidden="true">
-                  {reason.emoji}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  {reason.title}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                  {reason.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="contact-form-section">
-        <div className="container mx-auto px-4 max-w-2xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 text-center">
-            Send a quick message
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-            This form opens your email client with our address pre-filled. Nothing is sent from this
-            site.
-          </p>
-          <form
-            action="mailto:hello@knowyouremoji.com"
-            method="post"
-            encType="text/plain"
-            className="space-y-4"
-          >
-            <div>
-              <label
-                htmlFor="contact-name"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >
-                Your name
-              </label>
-              <Input id="contact-name" name="name" type="text" placeholder="Jane Doe" />
-            </div>
-            <div>
-              <label
-                htmlFor="contact-email"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >
-                Your email
-              </label>
-              <Input
-                id="contact-email"
-                name="email"
-                type="email"
-                required
-                placeholder="jane@example.com"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="contact-topic"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >
-                Topic
-              </label>
-              <Input
-                id="contact-topic"
-                name="topic"
-                type="text"
-                placeholder="Suggestion for 💀 meaning"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="contact-message"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-              >
-                Message
-              </label>
-              <textarea
-                id="contact-message"
-                name="message"
-                rows={5}
-                required
-                placeholder="Tell us what's wrong, what's missing, or what we should publish next."
-                className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-amber-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder:text-gray-500"
-              />
-            </div>
-            <Button type="submit" className="w-full">
-              Open email client
-            </Button>
-            <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
-              We&apos;ll reply within 3 business days. For urgent takedown requests, email directly
-              with the word &quot;takedown&quot; in the subject line.
+      <div
+        className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-10"
+        data-testid="contact-channels-section"
+      >
+        <div className="flex flex-col gap-4">
+          <section className={cardClass} data-testid="contact-channel-github">
+            <h2 className="flex flex-wrap items-center gap-2 text-xl font-semibold">
+              GitHub Issues
+              <span className="rounded-full bg-success-background px-2.5 py-0.5 text-[11.5px] font-semibold text-success">
+                Preferred
+              </span>
+            </h2>
+            <p className="mb-4 mt-2 text-[14.5px] leading-relaxed text-muted-foreground">
+              For content corrections, bug reports, and feature requests. Public and tracked, so
+              other readers and contributors can follow along.
             </p>
-          </form>
-        </div>
-      </section>
+            <Button asChild variant="secondary">
+              <a href={githubIssueUrl} target="_blank" rel="noopener noreferrer">
+                Open an issue on GitHub
+                <span aria-hidden="true" className="ml-1.5">
+                  ↗
+                </span>
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            </Button>
+          </section>
 
-      <section className="py-16 bg-gray-50 dark:bg-gray-800" data-testid="contact-policy-section">
-        <div className="container mx-auto px-4 max-w-4xl prose prose-lg dark:prose-invert">
-          <h2>How we handle messages</h2>
-          <ul>
-            <li>
-              <strong>3 business days</strong> is our typical response window. We&apos;re a small
-              team, so replies sometimes take longer during launches.
-            </li>
-            <li>
-              <strong>Privacy:</strong> we only use what you send to reply. See our{' '}
-              <Link
-                href="/privacy"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-              >
-                Privacy Policy
-              </Link>{' '}
-              for details.
-            </li>
-            <li>
-              <strong>Editorial standards:</strong> read our{' '}
-              <Link
-                href="/about#methodology"
-                className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-              >
-                methodology
-              </Link>{' '}
-              to see how we research emoji meanings before suggesting a change.
-            </li>
-          </ul>
+          <section className={cardClass} data-testid="contact-form-section">
+            <h2 className="text-xl font-semibold">Send a quick message</h2>
+            <p className="mb-5 mt-1.5 text-sm leading-relaxed text-muted-foreground">
+              This form opens your email client with our address pre-filled. Nothing is sent from
+              this site.
+            </p>
+            <form
+              action="mailto:hello@knowyouremoji.com"
+              method="post"
+              encType="text/plain"
+              className="flex flex-col gap-4"
+            >
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label htmlFor="contact-name" className={labelClass}>
+                    Your name
+                  </label>
+                  <Input id="contact-name" name="name" type="text" placeholder="Jane Doe" />
+                </div>
+                <div>
+                  <label htmlFor="contact-email" className={labelClass}>
+                    Your email
+                  </label>
+                  <Input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="jane@example.com"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="contact-topic" className={labelClass}>
+                  Topic
+                </label>
+                <Input
+                  id="contact-topic"
+                  name="topic"
+                  type="text"
+                  placeholder="Suggestion for 💀 meaning"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-message" className={labelClass}>
+                  Message
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows={5}
+                  required
+                  placeholder="Tell us what's wrong, what's missing, or what we should publish next."
+                  className="w-full rounded-xl border border-card-border bg-card px-3.5 py-2.5 text-[15px] text-foreground placeholder:text-gray-400 transition-[border-color,box-shadow] focus-visible:border-primary-500 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-primary-500/25 dark:placeholder:text-gray-500"
+                />
+              </div>
+              <Button type="submit" size="lg" className="w-full sm:w-auto sm:self-start">
+                Open email client
+              </Button>
+              <p className="text-xs text-muted-foreground">
+                We&apos;ll reply within 3 business days. For urgent takedown requests, email
+                directly with the word &quot;takedown&quot; in the subject line.
+              </p>
+            </form>
+          </section>
         </div>
-      </section>
+
+        <aside className="flex flex-col gap-4 lg:sticky lg:top-24">
+          <section
+            className="rounded-2xl border border-card-border bg-card p-5"
+            data-testid="contact-channel-email"
+          >
+            <h2 className="text-base font-semibold">Email</h2>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+              For private matters: partnerships, press, sensitive content takedowns, or anything you
+              don&apos;t want to file publicly.
+            </p>
+            <p className="mt-3 break-all text-sm">
+              <a href="mailto:hello@knowyouremoji.com" className={linkClass}>
+                hello@knowyouremoji.com
+              </a>
+            </p>
+            <p className="mt-3 text-xs text-muted-foreground">
+              We typically reply within 3 business days. There is no human on chat support.
+            </p>
+          </section>
+
+          <section
+            className="rounded-2xl border border-card-border bg-card p-5"
+            data-testid="contact-policy-section"
+          >
+            <h2 className="text-base font-semibold">How we handle messages</h2>
+            <ul className="mt-3 flex flex-col gap-2.5 text-sm leading-relaxed text-muted-foreground">
+              <li>
+                <strong className="text-foreground">3 business days</strong> is our typical response
+                window. We&apos;re a small team, so replies sometimes take longer during launches.
+              </li>
+              <li>
+                <strong className="text-foreground">Privacy:</strong> we only use what you send to
+                reply. See our{' '}
+                <Link href="/privacy" className={linkClass}>
+                  Privacy Policy
+                </Link>{' '}
+                for details.
+              </li>
+              <li>
+                <strong className="text-foreground">Editorial standards:</strong> read our{' '}
+                <Link href="/about#methodology" className={linkClass}>
+                  methodology
+                </Link>{' '}
+                to see how we research emoji meanings before suggesting a change.
+              </li>
+            </ul>
+          </section>
+
+          <section
+            className="rounded-2xl border border-card-border bg-card p-5"
+            data-testid="contact-reasons-section"
+          >
+            <h2 className="text-base font-semibold">What can we help with?</h2>
+            <ul className="mt-3 flex flex-col gap-3.5">
+              {contactReasons.map((reason) => (
+                <li key={reason.title} className="flex gap-3">
+                  <span className="emoji-display text-xl leading-6" aria-hidden="true">
+                    {reason.emoji}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-semibold">{reason.title}</h3>
+                    <p className="mt-0.5 text-[13px] leading-relaxed text-muted-foreground">
+                      {reason.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </aside>
+      </div>
     </main>
   );
 }

@@ -7,8 +7,6 @@ import { decisionToRobots, getComboIndexingDecision } from '@/lib/seo-policy';
 import { ShareSection } from '@/components/share/share-section';
 import { BookBanner } from '@/components/layout/book-banner';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { ComboHeader } from '@/components/combo/combo-header';
 import { ComboJsonLd } from '@/components/seo/combo-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
@@ -17,6 +15,7 @@ import { RelatedCombosSection } from '@/components/combo/related-combos-section'
 import { ComboLongFormSection } from '@/components/combo/combo-long-form-section';
 import { ComboConversationExamplesSection } from '@/components/combo/combo-conversation-examples-section';
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
 interface ComboPageProps {
   params: Promise<{ slug: string }>;
@@ -114,13 +113,20 @@ function EmojiLinkCard({ emoji }: { emoji: EmojiLinkInfo }) {
   return (
     <Link
       href={`/emoji/${emoji.slug}`}
-      className="inline-flex items-center gap-2 px-3 py-2 rounded-md border bg-card hover:border-primary hover:shadow-md transition-all text-sm"
+      className="flex min-h-[132px] flex-col gap-2 rounded-2xl border border-card-border bg-card p-4 text-foreground transition-[border-color,box-shadow] hover:border-primary-500/60 hover:shadow-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
       aria-label={`${emoji.name} emoji`}
     >
-      <span className="text-xl">{emoji.character}</span>
-      <span className="text-gray-700 dark:text-gray-300">{emoji.name}</span>
+      <span className="emoji-display text-[40px] leading-none" aria-hidden="true">
+        {emoji.character}
+      </span>
+      <span className="truncate text-[14.5px] font-semibold">{emoji.name}</span>
     </Link>
   );
+}
+
+/** Section heading used for every block on the combo detail page. */
+function SectionTitle({ children }: { children: ReactNode }) {
+  return <h2 className="mb-4 text-2xl font-semibold tracking-tight">{children}</h2>;
 }
 
 /**
@@ -166,57 +172,45 @@ export default async function ComboPage({ params }: ComboPageProps) {
       <ComboJsonLd combo={combo} appUrl={env.appUrl} appName={env.appName} />
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
+      <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
         {/* Breadcrumb navigation */}
-        <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+        <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
-        {/* Header Section */}
-        <ComboHeader combo={combo} className="mb-8" />
-
-        {/* Share Section */}
-        <ShareSection
-          url={`${env.appUrl}/combo/${combo.slug}`}
-          title={`${combo.combo} ${combo.name} - see what it really means!`}
-          description={combo.meaning}
-          hashtags={['emoji', 'emojicombo']}
-          contentType="combo"
-          className="mb-8"
+        {/* Hero: combo tile, name, badges, copy + share, meaning panel */}
+        <ComboHeader
+          combo={combo}
+          actions={
+            <ShareSection
+              url={`${env.appUrl}/combo/${combo.slug}`}
+              title={`${combo.combo} ${combo.name} - see what it really means!`}
+              description={combo.meaning}
+              hashtags={['emoji', 'emojicombo']}
+              contentType="combo"
+            />
+          }
+          meaningAction={<CopySectionButton text={combo.meaning} contentType="combo-meaning" />}
         />
 
-        {/* Meaning Section */}
-        <section className="mb-8">
-          <Card>
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-lg">Meaning</CardTitle>
-                <CopySectionButton text={combo.meaning} contentType="combo-meaning" />
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 dark:text-gray-300">{combo.meaning}</p>
-            </CardContent>
-          </Card>
+        <section className="mt-14">
+          <BookBanner />
         </section>
 
-        <BookBanner className="mb-8" />
-
         {/* Description Section */}
-        <section className="mb-8">
-          <Card>
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-lg">Description</CardTitle>
-                <CopySectionButton text={combo.description} contentType="combo-description" />
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 dark:text-gray-300">{combo.description}</p>
-            </CardContent>
-          </Card>
+        <section className="mt-14 max-w-[720px]">
+          <div className="mb-4 flex items-center justify-between gap-3">
+            <h2 className="text-2xl font-semibold tracking-tight">What it says</h2>
+            <CopySectionButton text={combo.description} contentType="combo-description" />
+          </div>
+          <p className="text-[17px] leading-[1.7] text-foreground">{combo.description}</p>
         </section>
 
         {/* Long-Form Content (CONTENT-P1-001) */}
-        {combo.longForm && <ComboLongFormSection longForm={combo.longForm} />}
+        {combo.longForm && (
+          <ComboLongFormSection
+            longForm={combo.longForm}
+            className="mt-14 max-w-[720px] text-[17px] leading-[1.7]"
+          />
+        )}
 
         {/* Conversation Examples (CONTENT-P1-001) */}
         {combo.conversationExamples && combo.conversationExamples.length > 0 && (
@@ -225,50 +219,31 @@ export default async function ComboPage({ params }: ComboPageProps) {
 
         {/* Examples Section */}
         {combo.examples.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Examples
-            </h2>
-            <div className="space-y-3">
+          <section className="mt-14">
+            <SectionTitle>Examples</SectionTitle>
+            <ul className="flex flex-col gap-2">
               {combo.examples.map((example, index) => (
-                <Card key={index}>
-                  <CardContent className="pt-4">
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="text-gray-700 dark:text-gray-300 italic">
-                        &ldquo;{example}&rdquo;
-                      </p>
-                      <CopySectionButton text={example} contentType="combo-example" />
-                    </div>
-                  </CardContent>
-                </Card>
+                <li
+                  key={index}
+                  className="flex items-center justify-between gap-3 rounded-2xl border border-card-border bg-card px-4 py-3.5"
+                >
+                  <p className="min-w-0 rounded-2xl rounded-bl-sm bg-muted px-3 py-2 text-sm leading-normal text-foreground">
+                    {example}
+                  </p>
+                  <CopySectionButton text={example} contentType="combo-example" />
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
         {/* Emojis in this Combo Section */}
         {emojiLinks.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Emojis in this Combo
-            </h2>
-            <div className="flex flex-wrap gap-2">
+          <section className="mt-14">
+            <SectionTitle>Emojis in this Combo</SectionTitle>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-[repeat(auto-fill,minmax(168px,1fr))]">
               {emojiLinks.map((emoji) => (
                 <EmojiLinkCard key={emoji.slug} emoji={emoji} />
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Tags Section */}
-        {combo.tags && combo.tags.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Tags</h2>
-            <div className="flex flex-wrap gap-2">
-              {combo.tags.map((tag) => (
-                <Badge key={tag} variant="outline">
-                  {tag}
-                </Badge>
               ))}
             </div>
           </section>

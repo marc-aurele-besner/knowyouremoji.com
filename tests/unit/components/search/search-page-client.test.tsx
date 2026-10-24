@@ -479,4 +479,43 @@ describe('SearchPageClient', () => {
       });
     });
   });
+  describe('popular searches and empty state', () => {
+    it('shows popular search chips while the query is empty', () => {
+      render(<SearchPageClient emojis={mockEmojis} combos={mockCombos} />);
+      const popular = screen.getByTestId('popular-searches');
+      expect(popular).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'skull' })).toBeInTheDocument();
+    });
+
+    it('applies a popular search to both tabs and hides the chips', async () => {
+      render(<SearchPageClient emojis={mockEmojis} combos={mockCombos} />);
+      fireEvent.click(screen.getByRole('button', { name: 'skull' }));
+
+      await waitFor(() => {
+        expect(screen.getByRole('searchbox')).toHaveValue('skull');
+        expect(screen.queryByTestId('popular-searches')).toBeNull();
+        expect(screen.getByRole('tab', { name: /emojis \(1\)/i })).toBeInTheDocument();
+        expect(screen.getByRole('tab', { name: /combos \(1\)/i })).toBeInTheDocument();
+      });
+    });
+
+    it('offers to decode an unmatched query as a message', async () => {
+      render(<SearchPageClient emojis={mockEmojis} combos={mockCombos} />);
+      fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'sure, whatever 🙂' } });
+
+      await waitFor(() => {
+        const link = screen.getByRole('link', { name: /decode it as a message instead/i });
+        expect(link).toHaveAttribute(
+          'href',
+          `/interpreter?m=${encodeURIComponent('sure, whatever 🙂')}`
+        );
+      });
+    });
+
+    it('does not offer the interpreter link when the query is empty', async () => {
+      render(<SearchPageClient emojis={[]} combos={mockCombos} />);
+      expect(screen.getByTestId('no-emoji-results')).toBeInTheDocument();
+      expect(screen.queryByRole('link', { name: /decode it as a message instead/i })).toBeNull();
+    });
+  });
 });

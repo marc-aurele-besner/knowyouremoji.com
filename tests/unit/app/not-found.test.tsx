@@ -1,5 +1,5 @@
 import { describe, expect, test, afterEach } from 'bun:test';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import NotFound from '@/app/not-found';
 
 describe('Global NotFound (404 Page)', () => {
@@ -10,7 +10,9 @@ describe('Global NotFound (404 Page)', () => {
   test('renders 404 heading', () => {
     render(<NotFound />);
 
-    expect(screen.getByRole('heading', { name: /page not found/i })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { level: 1, name: /this page melted away/i })
+    ).toBeInTheDocument();
   });
 
   test('displays 404 status prominently', () => {
@@ -22,14 +24,14 @@ describe('Global NotFound (404 Page)', () => {
   test('displays helpful message', () => {
     render(<NotFound />);
 
-    expect(screen.getByText(/the page you're looking for doesn't exist/i)).toBeInTheDocument();
+    expect(screen.getByText(/we couldn't find what you were looking for/i)).toBeInTheDocument();
   });
 
   test('displays a friendly emoji', () => {
     render(<NotFound />);
 
-    // Should show a confused/shrug emoji
-    expect(screen.getByRole('img', { name: /confused/i })).toBeInTheDocument();
+    // Should show the melting face emoji
+    expect(screen.getByRole('img', { name: /melting face/i })).toBeInTheDocument();
   });
 
   test('includes link to homepage', () => {
@@ -43,7 +45,7 @@ describe('Global NotFound (404 Page)', () => {
   test('includes link to interpreter', () => {
     render(<NotFound />);
 
-    const interpreterLink = screen.getByRole('link', { name: /try the interpreter/i });
+    const interpreterLink = screen.getByRole('link', { name: /open interpreter/i });
     expect(interpreterLink).toBeInTheDocument();
     expect(interpreterLink).toHaveAttribute('href', '/interpreter');
   });
@@ -62,38 +64,25 @@ describe('Global NotFound (404 Page)', () => {
     expect(searchInput).toHaveAttribute('placeholder', expect.stringContaining('Search'));
   });
 
-  test('displays emoji grid when emojis are available', () => {
+  test('shows no result grid until the visitor searches', () => {
     render(<NotFound />);
 
-    // Should display emoji results
+    expect(screen.queryByRole('list', { name: /emoji results/i })).toBeNull();
+  });
+
+  test('displays emoji grid once the visitor searches', () => {
+    render(<NotFound />);
+
+    fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'skull' } });
     expect(screen.getByRole('list', { name: /emoji results/i })).toBeInTheDocument();
   });
 
-  test('displays quick links section', () => {
+  test('displays popular emoji chips linking to emoji pages', () => {
     render(<NotFound />);
 
-    // Should have quick links to common pages
-    expect(screen.getByRole('heading', { name: /popular pages/i })).toBeInTheDocument();
-  });
-
-  test('includes homepage card in popular pages', () => {
-    render(<NotFound />);
-
-    expect(screen.getByText('Homepage')).toBeInTheDocument();
-    expect(screen.getByText('Browse all emojis')).toBeInTheDocument();
-  });
-
-  test('includes interpreter card in popular pages', () => {
-    render(<NotFound />);
-
-    expect(screen.getByText('Interpreter')).toBeInTheDocument();
-    expect(screen.getByText('Decode emoji messages')).toBeInTheDocument();
-  });
-
-  test('includes about card in popular pages', () => {
-    render(<NotFound />);
-
-    expect(screen.getByText('About')).toBeInTheDocument();
-    expect(screen.getByText('Learn about us')).toBeInTheDocument();
+    const nav = screen.getByRole('navigation', { name: /popular emojis/i });
+    const links = nav.querySelectorAll('a');
+    expect(links.length).toBeGreaterThan(0);
+    expect(nav.querySelector('a[href="/emoji/skull"]')).not.toBeNull();
   });
 });

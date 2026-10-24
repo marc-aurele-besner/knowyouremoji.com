@@ -1,26 +1,14 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getComboCount,
   getAllComboCategories,
   getComboSummariesByCategory,
+  getComboCategoryDisplayName,
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { BookBanner } from '@/components/layout/book-banner';
-
-/**
- * Category display names
- */
-const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
-  flirting: 'Flirting & Romance',
-  friendship: 'Friendship',
-  celebration: 'Celebration',
-  emotions: 'Emotions',
-  reactions: 'Reactions',
-  humor: 'Humor',
-  other: 'Other',
-};
+import { ComboBrowser } from '@/components/combo/combo-browser';
+import { ComboCategoryChips } from '@/components/combo/combo-category-chips';
 
 /**
  * Generate metadata for the combo browse page
@@ -55,7 +43,8 @@ export function generateMetadata(): Metadata {
 }
 
 /**
- * Combo browse page - displays all emoji combos organized by category
+ * Combo browse page - displays all emoji combos organized by category,
+ * with client-side search and an A–Z sort layered on top.
  */
 export default function ComboBrowsePage() {
   const comboCount = getComboCount();
@@ -64,93 +53,46 @@ export default function ComboBrowsePage() {
   // Group combos by category with display names
   const combosByCategory = categories.map((category) => ({
     slug: category,
-    displayName: CATEGORY_DISPLAY_NAMES[category] || category,
+    displayName: getComboCategoryDisplayName(category),
     combos: getComboSummariesByCategory(category),
   }));
 
   return (
-    <div className="bg-white dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-amber-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Emoji Combos
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Discover {comboCount} emoji combination meanings and what they really mean in texts
-          </p>
-        </div>
-      </section>
+    <div className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <header className="mb-7">
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Emoji combos</h1>
+        <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
+          Discover {comboCount} emoji combination meanings and what they really mean in texts
+        </p>
+      </header>
 
-      {/* Category Navigation */}
-      <section className="py-8 border-b dark:border-gray-800 sticky top-16 bg-white/95 dark:bg-gray-900/95 backdrop-blur z-40">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {combosByCategory.map((category) => (
-              <a
-                key={category.slug}
-                href={`#${category.slug}`}
-                className="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 hover:bg-amber-100 text-gray-700 hover:text-amber-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400 transition-colors"
-              >
-                {category.displayName} ({category.combos.length})
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <div className="container mx-auto px-4 max-w-6xl pt-10">
-        <BookBanner variant="wide" />
-      </div>
-
-      {/* All Combos Grid */}
       {combosByCategory.length > 0 ? (
-        combosByCategory.map((category) => (
-          <section
-            key={category.slug}
-            id={category.slug}
-            className="py-12 border-b dark:border-gray-800 last:border-b-0"
-          >
-            <div className="container mx-auto px-4 max-w-6xl">
-              <div className="mb-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {category.displayName}
-                </h2>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                  {category.combos.length} combos
-                </p>
-              </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                {category.combos.map((combo) => (
-                  <Link
-                    key={combo.slug}
-                    href={`/combo/${combo.slug}`}
-                    className="block"
-                    aria-label={combo.name}
-                  >
-                    <Card className="hover:shadow-lg hover:scale-105 hover:border-amber-500 transition-all duration-200 h-full">
-                      <CardHeader className="text-center pb-2">
-                        <span className="text-4xl mb-2 block">{combo.combo}</span>
-                        <CardTitle className="text-base">{combo.name}</CardTitle>
-                      </CardHeader>
-                      <CardContent className="pt-0">
-                        <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-2">
-                          {combo.meaning}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        ))
+        <ComboBrowser
+          groups={combosByCategory}
+          filters={
+            <>
+              <ComboCategoryChips
+                totalCount={comboCount}
+                categories={combosByCategory.map((category) => ({
+                  slug: category.slug,
+                  displayName: category.displayName,
+                  comboCount: category.combos.length,
+                }))}
+              />
+              <BookBanner variant="wide" className="mt-8" />
+            </>
+          }
+        />
       ) : (
-        <section className="py-16">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-500 dark:text-gray-400">No emoji combos available yet.</p>
-          </div>
-        </section>
+        <div className="flex flex-col items-center gap-2.5 rounded-2xl border border-dashed border-card-border px-6 py-12 text-center text-muted-foreground">
+          <span className="text-4xl" aria-hidden="true">
+            🧩
+          </span>
+          <p className="text-[17px] font-semibold text-foreground">
+            No emoji combos available yet.
+          </p>
+          <p className="text-sm">Check back soon — new combos are added regularly.</p>
+        </div>
       )}
     </div>
   );

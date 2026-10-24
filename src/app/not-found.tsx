@@ -1,8 +1,17 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 import { NotFoundSearch } from '@/components/not-found/not-found-search';
 import { getEmojiSummaries } from '@/lib/emoji-data';
+
+/** Emojis offered as quick links when a page can't be found. */
+const POPULAR_EMOJI_SLUGS = [
+  'skull',
+  'loudly-crying-face',
+  'face-with-tears-of-joy',
+  'fire',
+  'red-heart',
+  'sparkles',
+];
 
 /**
  * Global 404 page with search functionality
@@ -10,78 +19,65 @@ import { getEmojiSummaries } from '@/lib/emoji-data';
  */
 export default function NotFound() {
   const emojis = getEmojiSummaries();
+  const popularEmojis = POPULAR_EMOJI_SLUGS.map((slug) =>
+    emojis.find((emoji) => emoji.slug === slug)
+  ).filter((emoji) => emoji !== undefined);
 
   return (
-    <main className="container mx-auto px-4 py-16 max-w-4xl">
+    <main className="container mx-auto max-w-3xl px-4 pb-16 pt-16 md:pt-20">
       {/* 404 Hero Section */}
-      <div className="text-center mb-12">
-        {/* Confused emoji */}
-        <div className="text-6xl md:text-8xl mb-4" role="img" aria-label="Confused face">
-          🤷
+      <div className="mb-10 text-center">
+        <div
+          className="emoji-display text-8xl leading-none md:text-[96px]"
+          role="img"
+          aria-label="Melting face"
+        >
+          🫠
         </div>
 
         {/* 404 Status */}
-        <p className="text-6xl md:text-8xl font-bold text-gray-200 dark:text-gray-700 mb-4">404</p>
+        <p className="eyebrow mt-6">404</p>
 
         {/* Heading */}
-        <h1 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-gray-100">
-          Page Not Found
+        <h1 className="mt-2 text-4xl font-semibold tracking-tight md:text-5xl">
+          This page melted away
         </h1>
 
         {/* Description */}
-        <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg max-w-xl mx-auto">
-          The page you&apos;re looking for doesn&apos;t exist. But don&apos;t worry, you can search
-          for emojis or explore our popular pages below.
+        <p className="mx-auto mt-3 max-w-xl text-[17px] text-muted-foreground">
+          We couldn&apos;t find what you were looking for. Try a search instead.
         </p>
-
-        {/* Navigation options */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button asChild variant="primary" size="lg">
-            <Link href="/">Go Home</Link>
-          </Button>
-          <Button asChild variant="secondary" size="lg">
-            <Link href="/interpreter">Try the Interpreter</Link>
-          </Button>
-        </div>
       </div>
 
       {/* Search Section */}
-      <NotFoundSearch emojis={emojis} />
+      <NotFoundSearch emojis={emojis} showInitialResults={false} />
 
-      {/* Popular Pages Section */}
-      <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
-        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4 text-center">
-          Popular Pages
-        </h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <Link href="/" className="block">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <span className="text-3xl mb-2 block">🏠</span>
-                <p className="font-medium text-gray-900 dark:text-white">Homepage</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Browse all emojis</p>
-              </CardContent>
-            </Card>
-          </Link>
-          <Link href="/interpreter" className="block">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <span className="text-3xl mb-2 block">🤖</span>
-                <p className="font-medium text-gray-900 dark:text-white">Interpreter</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Decode emoji messages</p>
-              </CardContent>
-            </Card>
-          </Link>
-          <Link href="/about" className="block">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6 text-center">
-                <span className="text-3xl mb-2 block">ℹ️</span>
-                <p className="font-medium text-gray-900 dark:text-white">About</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Learn about us</p>
-              </CardContent>
-            </Card>
-          </Link>
-        </div>
+      {/* Popular emoji chips */}
+      {popularEmojis.length > 0 && (
+        <nav aria-label="Popular emojis" className="mt-8 flex flex-wrap justify-center gap-2">
+          {popularEmojis.map((emoji) => (
+            <Link
+              key={emoji.slug}
+              href={`/emoji/${emoji.slug}`}
+              className="inline-flex min-h-10 items-center gap-1.5 rounded-full border border-card-border bg-card px-3.5 text-sm text-foreground transition-colors hover:border-gray-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+            >
+              <span className="emoji-display" aria-hidden="true">
+                {emoji.character}
+              </span>
+              {emoji.name}
+            </Link>
+          ))}
+        </nav>
+      )}
+
+      {/* Navigation options */}
+      <div className="mt-8 flex flex-wrap justify-center gap-2">
+        <Button asChild variant="primary" size="lg">
+          <Link href="/">Go home</Link>
+        </Button>
+        <Button asChild variant="secondary" size="lg">
+          <Link href="/interpreter">Open interpreter</Link>
+        </Button>
       </div>
     </main>
   );

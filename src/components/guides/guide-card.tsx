@@ -7,8 +7,7 @@
  */
 
 import Link from 'next/link';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 import type { GuideSummary } from '@/types/guide';
 
 export interface GuideCardProps {
@@ -16,6 +15,8 @@ export interface GuideCardProps {
   guide: GuideSummary;
   /** Optional className passthrough for layout tweaks. */
   className?: string;
+  /** Test id on the card link (defaults to `guide-card`). */
+  testId?: string;
 }
 
 /**
@@ -33,53 +34,39 @@ function formatDate(iso: string): string {
 }
 
 /**
- * Single guide preview card. Keeps markup consistent with the combo and
- * emoji cards so the visual rhythm of the homepage and index pages stays
- * familiar to returning readers.
+ * Single guide preview card: hero emoji, serif headline, clamped dek and a
+ * date · reading-time · tag line. The whole card is one link.
  */
-export function GuideCard({ guide, className }: GuideCardProps) {
+export function GuideCard({ guide, className, testId = 'guide-card' }: GuideCardProps) {
+  const tag = guide.tags[0];
   return (
     <Link
       href={`/guides/${guide.slug}`}
-      className={`block group ${className ?? ''}`.trim()}
       aria-label={guide.title}
+      data-testid={testId}
+      data-slug={guide.slug}
+      className={cn(
+        'flex h-full flex-col gap-2.5 rounded-2xl border border-card-border bg-card p-[22px] text-foreground',
+        'transition-[border-color,box-shadow] duration-150 hover:border-primary-500/60 hover:shadow-soft',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
+        className
+      )}
     >
-      <Card
-        data-testid="guide-card"
-        className="h-full emoji-card-hover border-2 border-transparent hover:border-amber-400 dark:hover:border-amber-500 transition-colors"
-      >
-        <CardHeader className="pb-2">
-          <div className="flex items-start gap-3">
-            {guide.heroEmoji && (
-              <span className="text-3xl group-hover:animate-wiggle inline-block">
-                {guide.heroEmoji}
-              </span>
-            )}
-            <div className="flex-1 min-w-0">
-              <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors leading-tight">
-                {guide.title}
-              </h3>
-              <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-                {formatDate(guide.publishedAt)} · {guide.readingTimeMinutes} min read
-              </p>
-            </div>
-          </div>
-        </CardHeader>
-        <CardContent>
-          <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
-            {guide.description}
-          </p>
-          {guide.tags.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {guide.tags.slice(0, 3).map((tag) => (
-                <Badge key={tag} variant="outline" className="text-xs">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </CardContent>
-      </Card>
+      {guide.heroEmoji && (
+        <span className="emoji-display text-[30px] leading-none" aria-hidden="true">
+          {guide.heroEmoji}
+        </span>
+      )}
+      <h3 className="font-serif text-2xl font-normal leading-[1.15] tracking-[-0.005em]">
+        {guide.title}
+      </h3>
+      <p className="line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+        {guide.description}
+      </p>
+      <p className="mt-auto pt-1 text-[13px] text-muted-foreground">
+        {formatDate(guide.publishedAt)} · {guide.readingTimeMinutes} min read
+        {tag ? ` · ${tag}` : ''}
+      </p>
     </Link>
   );
 }

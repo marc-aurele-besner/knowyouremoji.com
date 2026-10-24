@@ -145,7 +145,7 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
     <div ref={containerRef} className={cn('relative', className)}>
       <div className="relative">
         <svg
-          className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400 dark:text-gray-500"
+          className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="2"
@@ -173,16 +173,14 @@ function SearchBar({ className, placeholder = 'Search emojis...' }: SearchBarPro
           aria-controls={isOpen ? 'search-results' : undefined}
           aria-activedescendant={selectedIndex >= 0 ? `search-result-${selectedIndex}` : undefined}
           className={cn(
-            'h-9 w-full rounded-md border border-gray-300 bg-white pl-9 pr-3 text-sm',
-            'placeholder:text-gray-400',
-            'focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2',
-            'dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder:text-gray-500',
-            'dark:focus:ring-offset-gray-900'
+            'h-10 w-full rounded-full border border-card-border bg-card pl-9 pr-9 text-sm text-foreground',
+            'placeholder:text-muted-foreground',
+            'transition-[border-color,box-shadow] focus:outline-none focus-visible:border-primary-500 focus-visible:ring-[3px] focus-visible:ring-primary-500/25'
           )}
         />
         {isLoading && (
           <div className="absolute right-3 top-1/2 -translate-y-1/2">
-            <div className="h-4 w-4 animate-spin rounded-full border-2 border-gray-300 border-t-amber-500" />
+            <div className="h-4 w-4 animate-spin rounded-full border-2 border-card-border border-t-primary-500" />
           </div>
         )}
       </div>
