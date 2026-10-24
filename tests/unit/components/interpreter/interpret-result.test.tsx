@@ -307,7 +307,9 @@ describe('InterpretResult', () => {
 
     it('renders share section', () => {
       render(<InterpretResult result={mockResult} />);
-      expect(screen.getByText('Share')).toBeInTheDocument();
+      // Match the share button group rather than the "Share" text: the device-share button
+      // is also labelled "Share" wherever navigator.share exists.
+      expect(screen.getByLabelText('Share options')).toBeInTheDocument();
     });
   });
 

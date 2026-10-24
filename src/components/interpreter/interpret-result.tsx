@@ -283,6 +283,7 @@ export function InterpretResult({
           title={`Emoji Interpretation: "${result.message.slice(0, 50)}${result.message.length > 50 ? '...' : ''}"`}
           description={result.interpretation.slice(0, 200)}
           contentType="interpretation"
+          showLabel={false}
         />
         {onReset && (
           <Button variant="ghost" size="sm" onClick={onReset} className="ml-auto">
