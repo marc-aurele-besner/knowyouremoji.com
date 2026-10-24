@@ -9,3 +9,6 @@ export type { ShareMeaningButtonProps } from './share-meaning-button';
 
 export { ShareableCard } from './shareable-card';
 export type { ShareableCardProps } from './shareable-card';
+
+export { ShareCardDialog } from './share-card-dialog';
+export type { ShareCardDialogProps } from './share-card-dialog';

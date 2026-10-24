@@ -17,6 +17,8 @@ export interface ShareSectionProps {
   contentType?: string;
   /** Additional className */
   className?: string;
+  /** Show the small "Share" label before the buttons (default true) */
+  showLabel?: boolean;
 }
 
 /**
@@ -31,6 +33,7 @@ export function ShareSection({
   hashtags,
   contentType,
   className,
+  showLabel = true,
 }: ShareSectionProps) {
   const desktopPlatforms: SharePlatform[] = ['twitter', 'facebook', 'whatsapp', 'copy', 'email'];
   const mobilePlatforms: SharePlatform[] = ['native', 'twitter', 'copy'];
@@ -46,8 +49,8 @@ export function ShareSection({
   }, []);
 
   return (
-    <div className={cn('flex items-center gap-3', className)}>
-      <span className="text-sm font-medium text-gray-500 dark:text-gray-400">Share</span>
+    <div className={cn('flex flex-wrap items-center gap-3', className)}>
+      {showLabel && <span className="eyebrow">Share</span>}
       <ShareButtons
         url={url}
         title={title}
@@ -55,8 +58,8 @@ export function ShareSection({
         platforms={platforms}
         hashtags={hashtags}
         size="sm"
-        variant="ghost"
-        showLabels={false}
+        variant="outline"
+        showLabels
         contentType={contentType}
       />
     </div>

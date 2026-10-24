@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
  */
 export default function CategoryNotFound() {
   return (
-    <main className="container mx-auto px-4 py-16 max-w-2xl text-center">
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+    <main className="container mx-auto max-w-2xl px-4 py-20 text-center">
+      <h1 className="mb-4 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
         Category Not Found
       </h1>
       <p className="text-lg text-muted-foreground mb-8">

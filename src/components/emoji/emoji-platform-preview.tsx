@@ -74,63 +74,67 @@ export function EmojiPlatformPreview({
   unicodeVersion,
   className,
 }: EmojiPlatformPreviewProps) {
+  const tile =
+    'flex min-w-0 flex-[1_1_96px] flex-col items-center justify-center gap-2 rounded-2xl border border-card-border bg-card px-2 py-3.5 text-xs text-muted-foreground';
+
   return (
-    <section className={cn('my-8', className)} aria-labelledby="platforms-heading" role="region">
+    <section className={cn('mt-14', className)} aria-labelledby="platforms-heading" role="region">
       <h2
         id="platforms-heading"
-        className="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100"
+        className="mb-1.5 text-lg font-semibold tracking-tight text-foreground"
       >
         How {character} looks across platforms
       </h2>
 
-      <p className="text-muted-foreground mb-6">
-        This emoji was introduced in Unicode {unicodeVersion}. Different platforms may display it
-        differently.
+      <p className="mb-4 text-sm text-muted-foreground">
+        Introduced in Unicode {unicodeVersion}. Each platform draws its own artwork, so it can look
+        slightly different on other devices.
       </p>
 
-      {/* Native device preview */}
-      <div className="bg-muted/50 rounded-lg p-4 mb-6">
-        <p className="text-sm text-muted-foreground mb-2">On your device:</p>
-        <span
-          data-testid="native-preview"
-          className="text-6xl select-none"
-          role="img"
-          aria-label={`${character} on your device`}
-        >
-          {character}
-        </span>
-      </div>
+      <div data-testid="platform-grid" className="flex flex-wrap gap-3">
+        {/* Native device preview */}
+        <div className={tile}>
+          <span
+            data-testid="native-preview"
+            className="emoji-display text-[40px] select-none"
+            role="img"
+            aria-label={`${character} on your device`}
+          >
+            {character}
+          </span>
+          On your device
+        </div>
 
-      {/* Platform grid */}
-      {platformEmojis.length > 0 ? (
-        <div
-          data-testid="platform-grid"
-          className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4"
-        >
-          {platformEmojis.map(({ platform, imageUrl, version }) => (
-            <div
-              key={platform}
-              className="flex flex-col items-center p-3 border border-gray-200 dark:border-gray-700 rounded-lg"
-            >
+        {platformEmojis.length > 0 ? (
+          platformEmojis.map(({ platform, imageUrl, version }) => (
+            <div key={platform} className={tile}>
               <OptimizedImage
                 src={imageUrl}
                 alt={`${character} on ${platformLabels[platform]}`}
-                width={48}
-                height={48}
-                className="mb-2"
+                width={40}
+                height={40}
               />
-              <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                {platformLabels[platform]}
-              </span>
-              {version && <span className="text-xs text-muted-foreground">{version}</span>}
+              <span className="font-medium text-foreground">{platformLabels[platform]}</span>
+              {version && <span>{version}</span>}
             </div>
-          ))}
-        </div>
-      ) : (
-        <p className="text-center text-gray-500 dark:text-gray-400 py-4">
-          No platform-specific images available for this emoji.
-        </p>
-      )}
+          ))
+        ) : (
+          <>
+            <div className={tile}>
+              <span className="rounded-2xl rounded-bl-sm bg-muted px-3 py-2 text-sm text-foreground">
+                lol {character}
+              </span>
+              In a message
+            </div>
+            <div className={tile}>
+              <span className="whitespace-nowrap text-sm text-foreground">
+                inline <span className="emoji-display">{character}</span> text
+              </span>
+              Inline size
+            </div>
+          </>
+        )}
+      </div>
     </section>
   );
 }

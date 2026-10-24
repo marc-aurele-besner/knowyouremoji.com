@@ -8,25 +8,32 @@ import {
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getIndexingDecision } from '@/lib/seo-policy';
+import { getAllComparisons } from '@/lib/comparison-data';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { RelatedEmojisSection } from '@/components/emoji/related-emojis-section';
 import { EmojiCombosSection } from '@/components/emoji/emoji-combos-section';
-import { CategoryLink } from '@/components/emoji/category-link';
-import { PlatformIcon } from '@/components/emoji/platform-icon';
 import { EmojiLongFormSection } from '@/components/emoji/emoji-long-form-section';
 import { EmojiConversationExamplesSection } from '@/components/emoji/emoji-conversation-examples-section';
+import { EmojiPlatformPreview } from '@/components/emoji/emoji-platform-preview';
+import { EmojiTLDR } from '@/components/emoji/emoji-tldr';
+import { CopyTextButton } from '@/components/emoji/copy-text-button';
+import { EmojiSectionNav, type EmojiSectionNavItem } from '@/components/emoji/emoji-section-nav';
+import {
+  ContextMeaningCards,
+  DetailSection,
+  EmojiWarningRows,
+  GenerationalNotesGrid,
+  PlatformNotesList,
+} from '@/components/emoji/emoji-detail-sections';
 import { ShareSection } from '@/components/share/share-section';
-import { BookBanner } from '@/components/layout/book-banner';
-import { CopySectionButton } from '@/components/ui/copy-section-button';
+import { ShareCardDialog } from '@/components/share/share-card-dialog';
 import { ShareMeaningButton } from '@/components/share/share-meaning-button';
+import { BookBanner } from '@/components/layout/book-banner';
 import { EmojiViewTracker } from '@/components/emoji/emoji-view-tracker';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import type { Metadata } from 'next';
-import type { ContextMeaning, PlatformNote, GenerationalNote, EmojiWarning } from '@/types/emoji';
 
 interface EmojiPageProps {
   params: Promise<{ slug: string }>;
@@ -114,83 +121,6 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
 }
 
 /**
- * Risk level badge variant mapping
- */
-function getRiskBadgeVariant(
-  riskLevel: string
-): 'default' | 'secondary' | 'destructive' | 'outline' {
-  switch (riskLevel) {
-    case 'HIGH':
-      return 'destructive';
-    case 'MEDIUM':
-      return 'secondary';
-    default:
-      return 'outline';
-  }
-}
-
-/**
- * Warning severity badge variant mapping
- */
-function getSeverityBadgeVariant(
-  severity: string
-): 'default' | 'secondary' | 'destructive' | 'outline' {
-  switch (severity) {
-    case 'HIGH':
-      return 'destructive';
-    case 'MEDIUM':
-      return 'secondary';
-    default:
-      return 'outline';
-  }
-}
-
-/**
- * Context type label mapping
- */
-function getContextLabel(context: string): string {
-  const labels: Record<string, string> = {
-    LITERAL: 'Literal',
-    SLANG: 'Slang',
-    IRONIC: 'Ironic',
-    PASSIVE_AGGRESSIVE: 'Passive-Aggressive',
-    DATING: 'Dating',
-    WORK: 'Work',
-    RED_FLAG: 'Red Flag',
-  };
-  return labels[context] || context;
-}
-
-/**
- * Platform label mapping
- */
-function getPlatformLabel(platform: string): string {
-  const labels: Record<string, string> = {
-    IMESSAGE: 'iMessage',
-    INSTAGRAM: 'Instagram',
-    TIKTOK: 'TikTok',
-    WHATSAPP: 'WhatsApp',
-    SLACK: 'Slack',
-    DISCORD: 'Discord',
-    TWITTER: 'Twitter/X',
-  };
-  return labels[platform] || platform;
-}
-
-/**
- * Generation label mapping
- */
-function getGenerationLabel(generation: string): string {
-  const labels: Record<string, string> = {
-    GEN_Z: 'Gen Z',
-    MILLENNIAL: 'Millennial',
-    GEN_X: 'Gen X',
-    BOOMER: 'Boomer',
-  };
-  return labels[generation] || generation;
-}
-
-/**
  * Emoji detail page component
  */
 export default async function EmojiPage({ params }: EmojiPageProps) {
@@ -227,6 +157,32 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
     { name: `${emoji.character} ${emoji.name}` },
   ];
 
+  // Curated comparison featuring this emoji (only link to pages that exist)
+  const comparison = getAllComparisons().find(
+    (c) => c.emoji1Slug === emoji.slug || c.emoji2Slug === emoji.slug
+  );
+  const compareHref = comparison
+    ? `/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`
+    : undefined;
+
+  const pageUrl = `${env.appUrl}/emoji/${emoji.slug}`;
+  const hasWarnings = emoji.warnings.length > 0;
+  const hasContexts = emoji.contextMeanings.length > 0;
+  const hasPlatformNotes = emoji.platformNotes.length > 0;
+  const hasGenerationalNotes = emoji.generationalNotes.length > 0;
+  const hasConversationExamples = (emoji.conversationExamples?.length ?? 0) > 0;
+  const hasRelated = combosWithEmoji.length > 0 || relatedEmojis.length > 0;
+
+  // In-page navigation: every group stays rendered in the DOM; the nav only
+  // lists groups that have content.
+  const navSections: EmojiSectionNavItem[] = [
+    ...(hasContexts || hasWarnings ? [{ id: 'meaning', label: 'Meaning' }] : []),
+    { id: 'platforms', label: 'Platforms & generations' },
+    ...(hasConversationExamples ? [{ id: 'examples', label: 'Examples' }] : []),
+    ...(emoji.longForm ? [{ id: 'deep-dive', label: 'Deep dive' }] : []),
+    ...(hasRelated ? [{ id: 'related', label: 'Related' }] : []),
+  ];
+
   return (
     <>
       <EmojiViewTracker slug={slug} />
@@ -234,11 +190,11 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
       <EmojiJsonLd emoji={emoji} appUrl={env.appUrl} appName={env.appName} />
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-4xl">
+      <main className="container mx-auto max-w-6xl px-4 pb-20 pt-8 md:pt-10">
         {/* Breadcrumb navigation */}
-        <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+        <Breadcrumbs items={breadcrumbItems} className="mb-6 text-[13px]" />
 
-        {/* Header with emoji character, name, and copy button */}
+        {/* Hero: emoji tile, name, metadata badges, actions */}
         <EmojiHeader
           emoji={{
             character: emoji.character,
@@ -246,210 +202,132 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             unicode: emoji.unicode,
             shortcodes: [`:${emoji.shortName}:`],
             slug: emoji.slug,
+            category: emoji.category,
+            categoryName: categoryDisplayName,
+            unicodeVersion: emoji.unicodeVersion,
+            subcategory: emoji.subcategory,
+            updatedAt: emoji.contentUpdatedAt,
           }}
+          compareHref={compareHref}
+          actions={
+            <ShareCardDialog
+              character={emoji.character}
+              name={emoji.name}
+              tldr={emoji.tldr}
+              url={pageUrl}
+              imageUrl={`${env.appUrl}/og/emoji/${emoji.slug}.png`}
+              imageFileName={`${emoji.slug}-meaning.png`}
+            />
+          }
         />
 
-        {/* Share Section */}
-        <ShareSection
-          url={`${env.appUrl}/emoji/${emoji.slug}`}
-          title={`Check out what ${emoji.character} really means!`}
-          description={emoji.tldr}
-          hashtags={['emoji', emoji.shortName]}
-          contentType="emoji"
-          className="mb-8"
+        {/* TL;DR */}
+        <EmojiTLDR
+          tldr={emoji.tldr}
+          className="mt-7"
+          actions={
+            <>
+              <CopyTextButton text={emoji.tldr} contentType="tldr" ariaLabel="Copy TL;DR" />
+              <ShareMeaningButton
+                emoji={emoji.character}
+                context="TL;DR"
+                meaning={emoji.tldr}
+                slug={emoji.slug}
+                index={-1}
+              />
+            </>
+          }
         />
 
-        {/* TL;DR Section */}
-        <section className="mb-8">
-          <Card>
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle className="text-lg">TL;DR</CardTitle>
-                <div className="flex items-center gap-1">
-                  <CopySectionButton text={emoji.tldr} contentType="tldr" />
-                  <ShareMeaningButton
-                    emoji={emoji.character}
-                    context="TL;DR"
-                    meaning={emoji.tldr}
-                    slug={emoji.slug}
-                    index={-1}
-                  />
-                </div>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 dark:text-gray-300">{emoji.tldr}</p>
-            </CardContent>
-          </Card>
+        <BookBanner className="mt-7" />
+
+        {/* Sticky in-page section navigation (anchor links + scroll-spy) */}
+        <EmojiSectionNav sections={navSections} className="mt-8" />
+
+        {/* Meaning: context meanings + warnings */}
+        {(hasContexts || hasWarnings) && (
+          <div id="meaning" className="scroll-mt-32">
+            {hasContexts && (
+              <DetailSection id="context-meanings" title="What it means in context">
+                <ContextMeaningCards
+                  meanings={emoji.contextMeanings}
+                  character={emoji.character}
+                  slug={emoji.slug}
+                />
+              </DetailSection>
+            )}
+            {hasWarnings && <EmojiWarningRows warnings={emoji.warnings} />}
+          </div>
+        )}
+
+        {/* Platforms & generations */}
+        <div id="platforms" className="scroll-mt-32">
+          {hasPlatformNotes && (
+            <DetailSection id="platform-notes" title="Platform differences">
+              <PlatformNotesList notes={emoji.platformNotes} />
+            </DetailSection>
+          )}
+          {hasGenerationalNotes && (
+            <DetailSection id="generational-notes" title="Generational differences">
+              <GenerationalNotesGrid notes={emoji.generationalNotes} />
+            </DetailSection>
+          )}
+          <EmojiPlatformPreview
+            character={emoji.character}
+            platformEmojis={[]}
+            unicodeVersion={emoji.unicodeVersion}
+          />
+        </div>
+
+        {/* Examples */}
+        {hasConversationExamples && (
+          <div id="examples" className="scroll-mt-32">
+            <EmojiConversationExamplesSection examples={emoji.conversationExamples!} />
+          </div>
+        )}
+
+        {/* Deep dive: long-form article + FAQ */}
+        {emoji.longForm && (
+          <div id="deep-dive" className="scroll-mt-32">
+            <DetailSection id="long-read" title="The long read">
+              <EmojiLongFormSection longForm={emoji.longForm} />
+            </DetailSection>
+          </div>
+        )}
+
+        {/* Related: combos + related emojis */}
+        {hasRelated && (
+          <div id="related" className="scroll-mt-32">
+            {combosWithEmoji.length > 0 && (
+              <EmojiCombosSection
+                combos={combosWithEmoji}
+                title={`Combos with ${emoji.character}`}
+              />
+            )}
+            {relatedEmojis.length > 0 && <RelatedEmojisSection emojis={relatedEmojis} />}
+          </div>
+        )}
+
+        {/* Share */}
+        <section
+          aria-labelledby="share-heading"
+          className="mt-14 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-card-border bg-card p-5"
+        >
+          <div>
+            <h2 id="share-heading" className="font-semibold text-foreground">
+              Share this meaning
+            </h2>
+            <p className="text-sm text-muted-foreground">Help a friend decode it.</p>
+          </div>
+          <ShareSection
+            url={pageUrl}
+            title={`Check out what ${emoji.character} really means!`}
+            description={emoji.tldr}
+            hashtags={['emoji', emoji.shortName]}
+            contentType="emoji"
+            showLabel={false}
+          />
         </section>
-
-        <BookBanner className="mb-8" />
-
-        {/* Long-form article sections (CONTENT-P1-001) — only render when present */}
-        {emoji.longForm && <EmojiLongFormSection longForm={emoji.longForm} />}
-
-        {/* Context Meanings Section */}
-        {emoji.contextMeanings.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Context Meanings
-            </h2>
-            <div className="space-y-4">
-              {emoji.contextMeanings.map((ctx: ContextMeaning, index: number) => (
-                <Card key={index} id={`context-${index}`}>
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <Badge variant="default">{getContextLabel(ctx.context)}</Badge>
-                        <Badge variant={getRiskBadgeVariant(ctx.riskLevel)}>
-                          {ctx.riskLevel} Risk
-                        </Badge>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <CopySectionButton
-                          text={`${ctx.meaning}\nExample: "${ctx.example}"`}
-                          contentType="context-meaning"
-                        />
-                        <ShareMeaningButton
-                          emoji={emoji.character}
-                          context={getContextLabel(ctx.context)}
-                          meaning={ctx.meaning}
-                          slug={emoji.slug}
-                          index={index}
-                        />
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 dark:text-gray-300 mb-2">{ctx.meaning}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                      Example: &ldquo;{ctx.example}&rdquo;
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Platform Notes Section */}
-        {emoji.platformNotes.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Platform Notes
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              {emoji.platformNotes.map((note: PlatformNote, index: number) => (
-                <Card key={index}>
-                  <CardHeader className="pb-2">
-                    <Badge variant="secondary" className="w-fit gap-1.5">
-                      <PlatformIcon platform={note.platform} className="w-3.5 h-3.5" />
-                      {getPlatformLabel(note.platform)}
-                    </Badge>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="flex items-start justify-between gap-2">
-                      <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
-                      <CopySectionButton text={note.note} contentType="platform-note" />
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Generational Notes Section */}
-        {emoji.generationalNotes.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Generational Differences
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              {emoji.generationalNotes.map((note: GenerationalNote, index: number) => (
-                <Card key={index}>
-                  <CardHeader className="pb-2">
-                    <Badge variant="outline">{getGenerationLabel(note.generation)}</Badge>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 dark:text-gray-300">{note.note}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Conversation Examples (CONTENT-P1-001) */}
-        {emoji.conversationExamples && emoji.conversationExamples.length > 0 && (
-          <EmojiConversationExamplesSection examples={emoji.conversationExamples} />
-        )}
-
-        {/* Warnings Section */}
-        {emoji.warnings.length > 0 && (
-          <section className="mb-8">
-            <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-              Warnings
-            </h2>
-            <div className="space-y-4">
-              {emoji.warnings.map((warning: EmojiWarning, index: number) => (
-                <Card key={index} className="border-yellow-200 dark:border-yellow-800">
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-yellow-500">⚠️</span>
-                      <CardTitle className="text-base">{warning.title}</CardTitle>
-                      <Badge variant={getSeverityBadgeVariant(warning.severity)}>
-                        {warning.severity}
-                      </Badge>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 dark:text-gray-300">{warning.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* Unicode Info Section */}
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">
-            Technical Details
-          </h2>
-          <Card>
-            <CardContent className="pt-6">
-              <dl className="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <dt className="font-medium text-gray-500 dark:text-gray-400">Unicode</dt>
-                  <dd className="text-gray-900 dark:text-gray-100">U+{emoji.unicode}</dd>
-                </div>
-                <div>
-                  <dt className="font-medium text-gray-500 dark:text-gray-400">Version</dt>
-                  <dd className="text-gray-900 dark:text-gray-100">{emoji.unicodeVersion}</dd>
-                </div>
-                <div>
-                  <dt className="font-medium text-gray-500 dark:text-gray-400">Category</dt>
-                  <dd className="text-gray-900 dark:text-gray-100">
-                    <CategoryLink category={emoji.category} />
-                  </dd>
-                </div>
-                {emoji.subcategory && (
-                  <div>
-                    <dt className="font-medium text-gray-500 dark:text-gray-400">Subcategory</dt>
-                    <dd className="text-gray-900 dark:text-gray-100">{emoji.subcategory}</dd>
-                  </div>
-                )}
-              </dl>
-            </CardContent>
-          </Card>
-        </section>
-
-        {/* Combos with this Emoji Section */}
-        {combosWithEmoji.length > 0 && <EmojiCombosSection combos={combosWithEmoji} />}
-
-        {/* Related Emojis Section */}
-        {relatedEmojis.length > 0 && <RelatedEmojisSection emojis={relatedEmojis} />}
       </main>
     </>
   );

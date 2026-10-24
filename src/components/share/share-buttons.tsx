@@ -4,6 +4,14 @@ import { useState, useCallback } from 'react';
 import { Button, ButtonProps } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { shareEvents } from '@/lib/analytics';
+import {
+  ChatIcon,
+  CheckIcon,
+  CopyIcon,
+  FacebookIcon,
+  MailIcon,
+  ShareIcon,
+} from '@/components/emoji/emoji-icons';
 
 export type SharePlatform = 'twitter' | 'facebook' | 'copy' | 'native' | 'whatsapp' | 'email';
 
@@ -160,7 +168,11 @@ export function ShareButtons({
     <div
       role="group"
       aria-label="Share options"
-      className={cn('flex gap-2', direction === 'vertical' ? 'flex-col' : 'flex-row', className)}
+      className={cn(
+        'flex flex-wrap gap-2',
+        direction === 'vertical' ? 'flex-col' : 'flex-row',
+        className
+      )}
     >
       {platforms.includes('twitter') && (
         <Button
@@ -169,7 +181,9 @@ export function ShareButtons({
           onClick={handleTwitterShare}
           aria-label="Share on Twitter"
         >
-          <span className={showLabels ? 'mr-2' : ''}>𝕏</span>
+          <span aria-hidden="true" className="text-base leading-none">
+            𝕏
+          </span>
           {showLabels && 'Twitter'}
         </Button>
       )}
@@ -181,7 +195,7 @@ export function ShareButtons({
           onClick={handleFacebookShare}
           aria-label="Share on Facebook"
         >
-          <span className={showLabels ? 'mr-2' : ''}>📘</span>
+          <FacebookIcon />
           {showLabels && 'Facebook'}
         </Button>
       )}
@@ -193,7 +207,7 @@ export function ShareButtons({
           onClick={handleCopyLink}
           aria-label={copied ? 'Copied!' : 'Copy link'}
         >
-          <span className={showLabels ? 'mr-2' : ''}>{copied ? '✓' : '🔗'}</span>
+          {copied ? <CheckIcon /> : <CopyIcon />}
           {showLabels && (copied ? 'Copied!' : 'Copy Link')}
         </Button>
       )}
@@ -205,7 +219,7 @@ export function ShareButtons({
           onClick={handleNativeShare}
           aria-label="Share via device"
         >
-          <span className={showLabels ? 'mr-2' : ''}>📤</span>
+          <ShareIcon />
           {showLabels && 'Share'}
         </Button>
       )}
@@ -217,7 +231,7 @@ export function ShareButtons({
           onClick={handleWhatsAppShare}
           aria-label="Share on WhatsApp"
         >
-          <span className={showLabels ? 'mr-2' : ''}>💬</span>
+          <ChatIcon />
           {showLabels && 'WhatsApp'}
         </Button>
       )}
@@ -229,7 +243,7 @@ export function ShareButtons({
           onClick={handleEmailShare}
           aria-label="Share via email"
         >
-          <span className={showLabels ? 'mr-2' : ''}>📧</span>
+          <MailIcon />
           {showLabels && 'Email'}
         </Button>
       )}

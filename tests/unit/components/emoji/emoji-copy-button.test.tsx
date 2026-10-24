@@ -41,13 +41,13 @@ describe('EmojiCopyButton', () => {
 
     it('renders copy icon by default', () => {
       render(<EmojiCopyButton emoji="😀" />);
-      expect(screen.getByRole('button')).toHaveTextContent('📋');
+      expect(screen.getByTestId('copy-button-copy-icon')).toBeInTheDocument();
     });
 
     it('renders only icon when showLabel is false', () => {
       render(<EmojiCopyButton emoji="😀" showLabel={false} />);
       const button = screen.getByRole('button');
-      expect(button).toHaveTextContent('📋');
+      expect(screen.getByTestId('copy-button-copy-icon')).toBeInTheDocument();
       expect(button).not.toHaveTextContent('Copy Emoji');
     });
   });
@@ -156,7 +156,7 @@ describe('EmojiCopyButton', () => {
       fireEvent.click(button);
 
       await waitFor(() => {
-        expect(button).toHaveTextContent('✓');
+        expect(screen.getByTestId('copy-button-check-icon')).toBeInTheDocument();
       });
     });
 

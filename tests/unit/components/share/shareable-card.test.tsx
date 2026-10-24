@@ -169,7 +169,7 @@ describe('ShareableCard', () => {
     it('renders share section', () => {
       render(<ShareableCard {...defaultProps} />);
       expect(screen.getByTestId('shareable-card-actions')).toBeInTheDocument();
-      expect(screen.getByText('Share')).toBeInTheDocument();
+      expect(screen.getAllByText('Share').length).toBeGreaterThan(0);
     });
 
     it('copies text to clipboard when copy button is clicked', async () => {

@@ -1,9 +1,23 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getEmojiSummaries, getEmojiCount, getAllCategoryInfo } from '@/lib/emoji-data';
+import {
+  getEmojiSummaries,
+  getEmojiCount,
+  getAllCategoryInfo,
+  getAllContextInfo,
+  getAllGenerationInfo,
+  getAllPlatformInfo,
+  isValidCategory,
+} from '@/lib/emoji-data';
+import { getAllComparisons } from '@/lib/comparison-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { BookBanner } from '@/components/layout/book-banner';
+import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { EmojiBrowser } from '@/components/emoji/emoji-browser';
+import { SwapIcon } from '@/components/emoji/emoji-icons';
+import { GENERATION_YEARS } from '@/components/emoji/emoji-labels';
+import { cn } from '@/lib/utils';
 
 /**
  * Generate metadata for the emoji browse page
@@ -37,101 +51,123 @@ export function generateMetadata(): Metadata {
   };
 }
 
+const numberFormat = new Intl.NumberFormat('en-US');
+
+const HUB_CARD = cn(
+  'flex h-full flex-col gap-1 rounded-2xl border border-card-border bg-card px-[18px] py-4 text-foreground transition-colors hover:border-primary-500',
+  'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500'
+);
+
+interface HubLink {
+  href: string;
+  title: string;
+  meta: string;
+}
+
+function HubGrid({ items }: { items: HubLink[] }) {
+  return (
+    <ul className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,210px),1fr))] gap-3">
+      {items.map((item) => (
+        <li key={item.href}>
+          <Link href={item.href} className={HUB_CARD}>
+            <span className="text-[15px] font-semibold">{item.title}</span>
+            <span className="text-[13px] text-muted-foreground">{item.meta}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 /**
- * Emoji browse page - displays all emojis organized by category
+ * Emoji browse page - searchable, filterable grid of every emoji plus links
+ * to the category / context / generation / platform hubs
  */
 export default function EmojiBrowsePage() {
   const emojiSummaries = getEmojiSummaries();
   const emojiCount = getEmojiCount();
   const categories = getAllCategoryInfo();
+  const comparison = getAllComparisons()[0];
 
-  // Group emojis by category
-  const emojisByCategory = categories.map((category) => ({
-    ...category,
-    emojis: emojiSummaries.filter((emoji) => emoji.category === category.slug),
-  }));
+  const categoryHubs: HubLink[] = categories
+    .filter((category) => isValidCategory(category.slug))
+    .map((category) => ({
+      href: `/emoji/category/${category.slug}`,
+      title: category.displayName,
+      meta: `${numberFormat.format(category.emojiCount)} emojis`,
+    }));
+
+  const otherHubs: HubLink[] = [
+    ...getAllContextInfo().map((info) => ({
+      href: `/emoji/context/${info.slug}`,
+      title: info.displayName,
+      meta: `${numberFormat.format(info.emojiCount)} emojis`,
+    })),
+    ...getAllGenerationInfo().map((info) => ({
+      href: `/emoji/generation/${info.slug}`,
+      title: info.displayName,
+      meta: GENERATION_YEARS[info.slug],
+    })),
+    ...getAllPlatformInfo().map((info) => ({
+      href: `/emoji/platform/${info.slug}`,
+      title: info.displayName,
+      meta: `${numberFormat.format(info.emojiCount)} notes`,
+    })),
+  ];
 
   return (
-    <div className="bg-white dark:bg-gray-900">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-amber-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Browse All Emojis
+    <div className="container mx-auto max-w-6xl px-4 pb-20 pt-8 md:pt-10">
+      <Breadcrumbs
+        items={[{ label: 'Home', href: '/' }, { label: 'Emojis' }]}
+        className="mb-5 text-[13px]"
+      />
+
+      {/* Page head */}
+      <header className="mb-7 flex flex-wrap items-end justify-between gap-5">
+        <div>
+          <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
+            Browse <span className="accent-serif">all</span> emojis
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Explore {emojiCount} emoji meanings with context-aware interpretations
+          <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
+            Explore {numberFormat.format(emojiCount)} emoji meanings with context-aware
+            interpretations — explained the way people actually use them.
           </p>
         </div>
-      </section>
+        {comparison && (
+          <Button asChild variant="outline">
+            <Link href={`/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`}>
+              <SwapIcon />
+              Compare two emojis
+            </Link>
+          </Button>
+        )}
+      </header>
 
-      {/* Category Navigation */}
-      <section className="py-8 border-b dark:border-gray-800 sticky top-16 bg-white/95 dark:bg-gray-900/95 backdrop-blur z-40">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {categories.map((category) => (
-              <a
-                key={category.slug}
-                href={`#${category.slug}`}
-                className="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 hover:bg-amber-100 text-gray-700 hover:text-amber-700 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-amber-900/30 dark:hover:text-amber-400 transition-colors"
-              >
-                {category.displayName} ({category.emojiCount})
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <EmojiBrowser emojis={emojiSummaries} categories={categories} />
 
-      <div className="container mx-auto px-4 max-w-6xl pt-10">
+      <div className="mt-14">
         <BookBanner variant="wide" />
       </div>
 
-      {/* Emojis by Category */}
-      {emojisByCategory.map((category) => (
-        <section
-          key={category.slug}
-          id={category.slug}
-          className="py-12 border-b dark:border-gray-800 last:border-b-0"
+      <section aria-labelledby="browse-categories-heading" className="mt-14">
+        <h2
+          id="browse-categories-heading"
+          className="mb-5 text-2xl font-semibold tracking-tight text-foreground md:text-[28px]"
         >
-          <div className="container mx-auto px-4 max-w-6xl">
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  {category.displayName}
-                </h2>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
-                  {category.emojiCount} emojis
-                </p>
-              </div>
-              <Link
-                href={`/emoji/category/${category.slug}`}
-                className="text-amber-600 hover:text-amber-700 dark:text-amber-400 dark:hover:text-amber-300 text-sm font-medium"
-              >
-                View all →
-              </Link>
-            </div>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
-              {category.emojis.map((emoji) => (
-                <Link
-                  key={emoji.slug}
-                  href={`/emoji/${emoji.slug}`}
-                  className="block"
-                  aria-label={emoji.name}
-                >
-                  <Card className="text-center hover:shadow-lg hover:scale-105 hover:border-amber-500 transition-all duration-200">
-                    <CardContent className="py-4 px-2">
-                      <span className="text-4xl block mb-1">{emoji.character}</span>
-                      <p className="font-medium text-gray-900 dark:text-white text-xs truncate">
-                        {emoji.name}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
+          Browse by category
+        </h2>
+        <HubGrid items={categoryHubs} />
+      </section>
+
+      <section aria-labelledby="browse-hubs-heading" className="mt-14">
+        <h2
+          id="browse-hubs-heading"
+          className="mb-5 text-2xl font-semibold tracking-tight text-foreground md:text-[28px]"
+        >
+          Browse by context, generation or platform
+        </h2>
+        <HubGrid items={otherHubs} />
+      </section>
     </div>
   );
 }

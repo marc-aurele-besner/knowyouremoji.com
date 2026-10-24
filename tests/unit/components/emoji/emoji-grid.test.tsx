@@ -137,10 +137,15 @@ describe('EmojiGrid', () => {
     it('uses default responsive columns when no columns prop provided', () => {
       render(<EmojiGrid emojis={mockEmojis} />);
       const list = screen.getByRole('list');
-      expect(list).toHaveClass('grid-cols-2');
-      expect(list).toHaveClass('sm:grid-cols-3');
-      expect(list).toHaveClass('md:grid-cols-4');
-      expect(list).toHaveClass('lg:grid-cols-5');
+      expect(list).toHaveClass('grid-cols-[repeat(auto-fill,minmax(150px,1fr))]');
+      expect(list).toHaveClass('sm:grid-cols-[repeat(auto-fill,minmax(168px,1fr))]');
+    });
+
+    it('uses a denser auto-fill grid in compact mode', () => {
+      render(<EmojiGrid emojis={mockEmojis} compact />);
+      expect(screen.getByRole('list')).toHaveClass(
+        'grid-cols-[repeat(auto-fill,minmax(96px,1fr))]'
+      );
     });
 
     it('allows custom columns configuration', () => {
@@ -268,23 +273,16 @@ describe('EmojiGrid', () => {
     });
   });
 
-  describe('dark mode support', () => {
-    it('has dark mode classes for hover background', () => {
+  describe('theme tokens', () => {
+    it('uses card surface tokens that adapt to dark mode', () => {
       render(<EmojiGrid emojis={singleEmoji} />);
       const link = screen.getByRole('link', { name: /fire/i });
-      expect(link).toHaveClass('dark:bg-gray-800/50');
+      expect(link).toHaveClass('bg-card', 'border-card-border', 'rounded-2xl');
     });
 
-    it('has dark mode classes for border', () => {
+    it('uses foreground text for the name', () => {
       render(<EmojiGrid emojis={singleEmoji} />);
-      const link = screen.getByRole('link', { name: /fire/i });
-      expect(link).toHaveClass('dark:border-gray-700');
-    });
-
-    it('has dark mode classes for text', () => {
-      render(<EmojiGrid emojis={singleEmoji} />);
-      const nameElement = screen.getByText('Fire');
-      expect(nameElement).toHaveClass('dark:text-gray-100');
+      expect(screen.getByText('Fire')).toHaveClass('text-foreground');
     });
   });
 
@@ -292,7 +290,7 @@ describe('EmojiGrid', () => {
     it('uses smaller padding in compact mode', () => {
       render(<EmojiGrid emojis={singleEmoji} compact />);
       const link = screen.getByRole('link', { name: /fire/i });
-      expect(link).toHaveClass('p-2');
+      expect(link).toHaveClass('px-2', 'py-3.5', 'text-center');
     });
 
     it('uses normal padding by default', () => {
@@ -303,14 +301,26 @@ describe('EmojiGrid', () => {
 
     it('uses smaller emoji size in compact mode', () => {
       render(<EmojiGrid emojis={singleEmoji} compact />);
-      const emojiChar = screen.getByText('🔥');
-      expect(emojiChar).toHaveClass('text-2xl');
+      expect(screen.getByText('🔥')).toHaveClass('text-[32px]');
     });
 
     it('uses larger emoji size by default', () => {
       render(<EmojiGrid emojis={singleEmoji} />);
-      const emojiChar = screen.getByText('🔥');
-      expect(emojiChar).toHaveClass('text-4xl');
+      expect(screen.getByText('🔥')).toHaveClass('text-[40px]');
+    });
+
+    it('never shows the tldr in compact mode', () => {
+      render(<EmojiGrid emojis={singleEmoji} compact showTldr />);
+      expect(screen.queryByText('Hot, cool, or exciting')).not.toBeInTheDocument();
+    });
+  });
+
+  describe('quick view', () => {
+    it('renders the same real links when quickView is enabled', () => {
+      render(<EmojiGrid emojis={mockEmojis} quickView showTldr />);
+      expect(screen.getByRole('list', { name: 'Emoji grid' })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Fire' })).toHaveAttribute('href', '/emoji/fire');
+      expect(screen.getByText('Hot, cool, or exciting')).toBeInTheDocument();
     });
   });
 

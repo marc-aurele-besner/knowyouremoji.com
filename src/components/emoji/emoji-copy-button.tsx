@@ -4,6 +4,7 @@ import { useState, useCallback, forwardRef } from 'react';
 import { Button, ButtonProps } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { emojiEvents } from '@/lib/analytics';
+import { CheckIcon, CopyIcon } from '@/components/emoji/emoji-icons';
 
 export interface EmojiCopyButtonProps extends Omit<
   ButtonProps,
@@ -85,7 +86,11 @@ const EmojiCopyButton = forwardRef<HTMLButtonElement, EmojiCopyButtonProps>(
     }, [emoji, slug, resetDelay, onCopy, onCopyError, disabled]);
 
     const displayLabel = copied ? 'Copied!' : label;
-    const icon = copied ? '✓' : '📋';
+    const icon = copied ? (
+      <CheckIcon data-testid="copy-button-check-icon" />
+    ) : (
+      <CopyIcon data-testid="copy-button-copy-icon" />
+    );
 
     return (
       <Button
@@ -97,7 +102,7 @@ const EmojiCopyButton = forwardRef<HTMLButtonElement, EmojiCopyButtonProps>(
         className={cn(className)}
         {...props}
       >
-        <span className={showLabel ? 'mr-2' : ''}>{icon}</span>
+        {icon}
         {showLabel && displayLabel}
       </Button>
     );

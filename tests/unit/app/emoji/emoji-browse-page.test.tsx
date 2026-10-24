@@ -1,6 +1,7 @@
 import { describe, test, expect, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import EmojiBrowsePage, { generateMetadata } from '@/app/emoji/page';
+import { getAllComparisons } from '@/lib/comparison-data';
 
 afterEach(() => {
   cleanup();
@@ -53,6 +54,48 @@ describe('EmojiBrowsePage', () => {
       // Should have category section headings
       const h2s = screen.getAllByRole('heading', { level: 2 });
       expect(h2s.length).toBeGreaterThan(0);
+    });
+  });
+
+  describe('Browse tools', () => {
+    test('renders the search field, view toggle and category filters', () => {
+      render(<EmojiBrowsePage />);
+      expect(screen.getByRole('searchbox', { name: 'Search emojis' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Dense' })).toHaveAttribute(
+        'aria-pressed',
+        'false'
+      );
+      expect(screen.getByRole('button', { name: 'All categories' })).toHaveAttribute(
+        'aria-pressed',
+        'true'
+      );
+    });
+
+    test('links to every hub type', () => {
+      render(<EmojiBrowsePage />);
+      const hrefs = screen.getAllByRole('link').map((link) => link.getAttribute('href') ?? '');
+      expect(hrefs.some((href) => href.startsWith('/emoji/category/'))).toBe(true);
+      expect(hrefs.some((href) => href.startsWith('/emoji/context/'))).toBe(true);
+      expect(hrefs.some((href) => href.startsWith('/emoji/generation/'))).toBe(true);
+      expect(hrefs.some((href) => href.startsWith('/emoji/platform/'))).toBe(true);
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Browse by context, generation or platform' })
+      ).toBeInTheDocument();
+    });
+
+    test('links to a comparison when curated comparisons exist', () => {
+      render(<EmojiBrowsePage />);
+      const comparison = getAllComparisons()[0];
+      const link = screen.queryByRole('link', { name: /compare two emojis/i });
+      if (comparison) {
+        expect(link).toHaveAttribute(
+          'href',
+          `/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`
+        );
+      } else {
+        // The comparison cache can be emptied by other test files sharing the process
+        expect(link).toBeNull();
+      }
     });
   });
 

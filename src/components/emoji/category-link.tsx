@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 /**
  * Category display names mapping
  */
-const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
+export const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
   faces: 'Smileys & Faces',
   people: 'People & Body',
   animals: 'Animals & Nature',
@@ -19,7 +19,7 @@ const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
 /**
  * Get display name for a category
  */
-function getCategoryDisplayName(category: string): string {
+export function getCategoryDisplayName(category: string): string {
   return CATEGORY_DISPLAY_NAMES[category] || category.charAt(0).toUpperCase() + category.slice(1);
 }
 

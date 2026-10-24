@@ -119,7 +119,7 @@ describe('EmojiHeader', () => {
       // Wait for the copied state to revert
       await waitFor(
         () => {
-          expect(screen.getByText(/copy emoji/i)).toBeInTheDocument();
+          expect(screen.getByText('Copy 😀')).toBeInTheDocument();
         },
         { timeout: 3000 }
       );
@@ -134,10 +134,62 @@ describe('EmojiHeader', () => {
       expect(emojiElement.className).toMatch(/text-(6xl|7xl|8xl)/);
     });
 
-    it('applies centered layout classes', () => {
+    it('lays out the emoji tile next to the title (wrapping on small screens)', () => {
       render(<EmojiHeader emoji={mockEmoji} />);
       const header = screen.getByRole('banner');
-      expect(header).toHaveClass('text-center');
+      expect(header).toHaveClass('flex', 'flex-wrap');
+      const tile = screen.getByRole('img', { name: 'Grinning Face' }).parentElement;
+      expect(tile).toHaveClass('bg-primary-50', 'rounded-[28px]');
+    });
+  });
+
+  describe('metadata and actions', () => {
+    const fullEmoji = {
+      ...mockEmoji,
+      slug: 'grinning-face',
+      category: 'faces',
+      categoryName: 'Smileys & Faces',
+      unicodeVersion: '6.1',
+      subcategory: 'face-smiling',
+      updatedAt: '2026-08-12',
+    };
+
+    it('renders monospace metadata badges with a category link', () => {
+      render(<EmojiHeader emoji={fullEmoji} />);
+      const list = screen.getByRole('list', { name: 'Emoji details' });
+      expect(list).toHaveTextContent('Unicode 6.1');
+      expect(list).toHaveTextContent('face-smiling');
+      expect(list).toHaveTextContent('Updated 2026-08-12');
+      expect(screen.getByRole('link', { name: 'Smileys & Faces' })).toHaveAttribute(
+        'href',
+        '/emoji/category/faces'
+      );
+    });
+
+    it('falls back to the category slug when no display name is given', () => {
+      render(<EmojiHeader emoji={{ ...mockEmoji, category: 'faces' }} />);
+      expect(screen.getByRole('link', { name: 'faces' })).toBeInTheDocument();
+    });
+
+    it('omits optional badges when data is missing', () => {
+      render(<EmojiHeader emoji={mockEmoji} />);
+      const list = screen.getByRole('list', { name: 'Emoji details' });
+      expect(list).not.toHaveTextContent('Unicode');
+      expect(list).not.toHaveTextContent('Updated');
+      expect(screen.queryByRole('link')).not.toBeInTheDocument();
+    });
+
+    it('renders a compare link when compareHref is provided', () => {
+      render(<EmojiHeader emoji={fullEmoji} compareHref="/compare/a/b" />);
+      expect(screen.getByRole('link', { name: /compare/i })).toHaveAttribute(
+        'href',
+        '/compare/a/b'
+      );
+    });
+
+    it('renders extra actions', () => {
+      render(<EmojiHeader emoji={fullEmoji} actions={<button type="button">Share</button>} />);
+      expect(screen.getByRole('button', { name: 'Share' })).toBeInTheDocument();
     });
   });
 

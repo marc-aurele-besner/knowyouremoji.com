@@ -78,7 +78,7 @@ describe('EmojiTLDR', () => {
     it('has rounded styling', () => {
       render(<EmojiTLDR tldr={mockTldr} />);
       const aside = screen.getByRole('complementary');
-      expect(aside).toHaveClass('rounded-lg');
+      expect(aside).toHaveClass('rounded-2xl');
     });
 
     it('has padding for card appearance', () => {
@@ -87,10 +87,15 @@ describe('EmojiTLDR', () => {
       expect(aside.className).toMatch(/p-/);
     });
 
-    it('has border styling', () => {
+    it('uses the muted panel surface', () => {
       render(<EmojiTLDR tldr={mockTldr} />);
       const aside = screen.getByRole('complementary');
-      expect(aside.className).toMatch(/border/);
+      expect(aside).toHaveClass('bg-muted');
+    });
+
+    it('renders optional actions', () => {
+      render(<EmojiTLDR tldr={mockTldr} actions={<button type="button">Copy TL;DR</button>} />);
+      expect(screen.getByRole('button', { name: 'Copy TL;DR' })).toBeInTheDocument();
     });
   });
 

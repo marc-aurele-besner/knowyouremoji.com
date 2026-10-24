@@ -254,7 +254,7 @@ describe('CategoryPage component', () => {
     render(page);
 
     // Check for emoji detail links
-    const skullLink = screen.getByRole('link', { name: /skull emoji/i });
+    const skullLink = screen.getByRole('link', { name: 'Skull' });
     expect(skullLink).toHaveAttribute('href', '/emoji/skull');
   });
 

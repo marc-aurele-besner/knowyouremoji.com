@@ -59,3 +59,38 @@ export {
 
 // Navigation component
 export { CategoryLink, type CategoryLinkProps } from './category-link';
+
+// Redesign building blocks
+export { EmojiCard, emojiGridClass, type EmojiCardProps, type EmojiCardData } from './emoji-card';
+export {
+  EmojiQuickViewDrawer,
+  EmojiQuickViewGrid,
+  isModifiedClick,
+  type EmojiQuickViewDrawerProps,
+  type EmojiQuickViewGridProps,
+  type QuickViewEmoji,
+  type QuickViewContext,
+} from './emoji-quick-view';
+export { EmojiBrowser, type EmojiBrowserProps, type EmojiBrowserCategory } from './emoji-browser';
+export {
+  EmojiHubPage,
+  pickHubHighlights,
+  type EmojiHubPageProps,
+  type EmojiHubSibling,
+  type EmojiHubHighlight,
+} from './emoji-hub-page';
+export {
+  EmojiSectionNav,
+  type EmojiSectionNavProps,
+  type EmojiSectionNavItem,
+} from './emoji-section-nav';
+export {
+  DetailSection,
+  ContextMeaningCards,
+  EmojiWarningRows,
+  PlatformNotesList,
+  GenerationalNotesGrid,
+  type DetailSectionProps,
+  type ContextMeaningCardsProps,
+} from './emoji-detail-sections';
+export { CopyTextButton, type CopyTextButtonProps } from './copy-text-button';

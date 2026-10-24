@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { emojiEvents } from '@/lib/analytics';
+import { DownloadIcon } from '@/components/emoji/emoji-icons';
 
 /**
  * Props for the EmojiDownloadButton component
@@ -75,12 +76,13 @@ export function EmojiDownloadButton({
       onClick={handleDownload}
       variant="outline"
       size="md"
+      title="Download as PNG"
       aria-label={downloading ? 'Downloading...' : 'Download emoji as image'}
       className={className}
       disabled={downloading}
     >
-      <span className="mr-2">{downloading ? '...' : '\u2B07'}</span>
-      {downloading ? 'Downloading...' : 'Download Image'}
+      <DownloadIcon />
+      {downloading ? 'Downloading...' : 'PNG'}
     </Button>
   );
 }

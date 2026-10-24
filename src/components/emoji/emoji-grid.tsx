@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { EmojiCard, emojiGridClass } from '@/components/emoji/emoji-card';
+import { EmojiQuickViewRegion, type QuickViewEmoji } from '@/components/emoji/emoji-quick-view';
 import type { EmojiSummary } from '@/types/emoji';
 
 /**
@@ -21,7 +22,7 @@ export interface EmojiGridColumns {
  */
 export interface EmojiGridProps {
   /** Array of emojis to display in the grid */
-  emojis: EmojiSummary[];
+  emojis: EmojiSummary[] | QuickViewEmoji[];
   /** Whether to show the tldr description for each emoji */
   showTldr?: boolean;
   /** Column configuration - number for fixed columns, object for responsive */
@@ -34,6 +35,11 @@ export interface EmojiGridProps {
   skeletonCount?: number;
   /** Aria label for the grid */
   ariaLabel?: string;
+  /**
+   * Open a quick-view drawer on plain click (cards remain real links for
+   * modifier/middle clicks and no-JS).
+   */
+  quickView?: boolean;
   /** Additional CSS class names */
   className?: string;
 }
@@ -41,7 +47,10 @@ export interface EmojiGridProps {
 /**
  * Get grid column classes based on columns prop
  */
-function getColumnClasses(columns?: number | EmojiGridColumns): string {
+function getColumnClasses(
+  columns: number | EmojiGridColumns | undefined,
+  compact: boolean
+): string {
   if (typeof columns === 'number') {
     return `grid-cols-${columns}`;
   }
@@ -56,8 +65,8 @@ function getColumnClasses(columns?: number | EmojiGridColumns): string {
     );
   }
 
-  // Default responsive columns
-  return 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5';
+  // Default: responsive auto-fill grid (cards ≥150px, dense ≥96px)
+  return emojiGridClass(compact);
 }
 
 /**
@@ -68,77 +77,21 @@ function EmojiGridSkeleton({ compact }: { compact?: boolean }) {
     <div
       data-testid="emoji-grid-skeleton"
       className={cn(
-        'flex flex-col items-center rounded-lg border border-gray-200 dark:border-gray-700 animate-pulse',
-        compact ? 'p-2' : 'p-4'
+        'flex flex-col gap-2 rounded-2xl border border-card-border bg-card animate-pulse',
+        compact ? 'items-center px-2 py-3.5' : 'min-h-[150px] p-4'
       )}
     >
-      <div
-        className={cn('bg-gray-200 dark:bg-gray-700 rounded', compact ? 'w-8 h-8' : 'w-12 h-12')}
-      />
-      <div
-        className={cn('bg-gray-200 dark:bg-gray-700 rounded w-16 h-4', compact ? 'mt-1' : 'mt-2')}
-      />
+      <div className={cn('rounded-lg bg-muted', compact ? 'h-8 w-8' : 'h-10 w-10')} />
+      <div className="h-4 w-16 rounded bg-muted" />
     </div>
   );
 }
 
 /**
- * Individual emoji card component
- */
-function EmojiCard({
-  emoji,
-  showTldr,
-  compact,
-}: {
-  emoji: EmojiSummary;
-  showTldr?: boolean;
-  compact?: boolean;
-}) {
-  return (
-    <Link
-      href={`/emoji/${emoji.slug}`}
-      className={cn(
-        'group flex flex-col items-center rounded-xl border border-gray-200 dark:border-gray-700 emoji-card-hover bg-white dark:bg-gray-800/50',
-        compact ? 'p-2' : 'p-4'
-      )}
-      aria-label={emoji.name}
-    >
-      <span
-        className={cn(
-          'emoji-char inline-block group-hover:animate-wiggle',
-          compact ? 'text-2xl' : 'text-4xl'
-        )}
-        role="img"
-        aria-hidden="true"
-      >
-        {emoji.character}
-      </span>
-      <span
-        className={cn(
-          'text-center font-medium text-gray-700 dark:text-gray-100 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors',
-          compact ? 'mt-1 text-xs' : 'mt-2 text-sm'
-        )}
-      >
-        {emoji.name}
-      </span>
-      {showTldr && (
-        <span
-          className={cn(
-            'text-center text-gray-500 dark:text-gray-400 line-clamp-2',
-            compact ? 'mt-1 text-xs' : 'mt-1 text-xs'
-          )}
-        >
-          {emoji.tldr}
-        </span>
-      )}
-    </Link>
-  );
-}
-
-/**
- * EmojiGrid displays a responsive grid of emoji cards.
+ * EmojiGrid displays a responsive grid of emoji cards (`.ecard`).
  * Each card links to the emoji's detail page and shows the
- * emoji character and name. Optionally displays the tldr description.
+ * emoji character and name. Optionally displays the tldr description
+ * and opens a quick-view drawer on plain click (`quickView`).
  *
  * @example
  * ```tsx
@@ -169,9 +122,10 @@ export function EmojiGrid({
   loading = false,
   skeletonCount = 8,
   ariaLabel = 'Emoji grid',
+  quickView = false,
   className,
 }: EmojiGridProps) {
-  const columnClasses = getColumnClasses(columns);
+  const columnClasses = getColumnClasses(columns, compact);
 
   // Loading state
   if (loading) {
@@ -191,13 +145,17 @@ export function EmojiGrid({
     return null;
   }
 
-  return (
+  const list = (
     <ul role="list" aria-label={ariaLabel} className={cn('grid gap-3', columnClasses, className)}>
       {emojis.map((emoji) => (
         <li key={emoji.slug}>
-          <EmojiCard emoji={emoji} showTldr={showTldr} compact={compact} />
+          <EmojiCard emoji={emoji} showTldr={showTldr} compact={compact} quickView={quickView} />
         </li>
       ))}
     </ul>
   );
+
+  // Quick view: the grid stays server-rendered; a small client region
+  // delegates clicks to open the drawer.
+  return quickView ? <EmojiQuickViewRegion>{list}</EmojiQuickViewRegion> : list;
 }
