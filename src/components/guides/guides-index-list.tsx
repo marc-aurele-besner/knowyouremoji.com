@@ -32,11 +32,6 @@ function formatDate(iso: string): string {
 function FeaturedGuide({ guide }: { guide: GuideSummary }) {
   return (
     <article className="flex flex-wrap items-center gap-6 rounded-2xl border border-card-border bg-card p-6 md:gap-8 md:p-8">
-      {guide.heroEmoji && (
-        <span className="emoji-display text-6xl leading-none md:text-[72px]" aria-hidden="true">
-          {guide.heroEmoji}
-        </span>
-      )}
       <div className="min-w-0 flex-1 basis-64">
         <p className="text-xs font-semibold uppercase tracking-[0.1em] text-primary-700">
           Latest{guide.tags[0] ? ` · ${guide.tags[0]}` : ''}

@@ -52,11 +52,6 @@ export function GuideCard({ guide, className, testId = 'guide-card' }: GuideCard
         className
       )}
     >
-      {guide.heroEmoji && (
-        <span className="emoji-display text-[30px] leading-none" aria-hidden="true">
-          {guide.heroEmoji}
-        </span>
-      )}
       <h3 className="font-serif text-2xl font-normal leading-[1.15] tracking-[-0.005em]">
         {guide.title}
       </h3>

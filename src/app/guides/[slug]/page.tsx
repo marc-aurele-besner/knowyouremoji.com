@@ -135,18 +135,8 @@ export default async function GuidePage({ params }: GuidePageProps) {
 
         {/* Article header — editorial serif headline, lede and byline. */}
         <header className="mb-10 max-w-[820px]">
-          {guide.heroEmoji && (
-            <div
-              className="emoji-display text-[56px] leading-none"
-              aria-hidden="true"
-              data-testid="guide-hero-stamp"
-            >
-              {guide.heroEmoji}
-            </div>
-          )}
-
           <h1
-            className="mt-4 font-serif text-4xl font-normal leading-[1.05] tracking-[-0.01em] md:text-[52px]"
+            className="font-serif text-4xl font-normal leading-[1.05] tracking-[-0.01em] md:text-[52px]"
             data-testid="guide-title"
           >
             {guide.title}
