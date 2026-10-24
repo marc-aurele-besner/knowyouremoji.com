@@ -24,8 +24,8 @@ describe('Badge', () => {
     it('applies default variant classes', () => {
       render(<Badge data-testid="badge">Default</Badge>);
       const badge = screen.getByTestId('badge');
-      expect(badge).toHaveClass('bg-blue-100');
-      expect(badge).toHaveClass('text-blue-800');
+      expect(badge).toHaveClass('bg-primary-50');
+      expect(badge).toHaveClass('text-primary-700');
     });
 
     it('applies secondary variant classes', () => {
@@ -35,8 +35,8 @@ describe('Badge', () => {
         </Badge>
       );
       const badge = screen.getByTestId('badge');
-      expect(badge).toHaveClass('bg-gray-100');
-      expect(badge).toHaveClass('text-gray-800');
+      expect(badge).toHaveClass('bg-muted');
+      expect(badge).toHaveClass('text-muted-foreground');
     });
 
     it('applies success variant classes', () => {
@@ -46,8 +46,8 @@ describe('Badge', () => {
         </Badge>
       );
       const badge = screen.getByTestId('badge');
-      expect(badge).toHaveClass('bg-green-100');
-      expect(badge).toHaveClass('text-green-800');
+      expect(badge).toHaveClass('bg-success-background');
+      expect(badge).toHaveClass('text-success');
     });
 
     it('applies warning variant classes', () => {
@@ -57,8 +57,8 @@ describe('Badge', () => {
         </Badge>
       );
       const badge = screen.getByTestId('badge');
-      expect(badge).toHaveClass('bg-yellow-100');
-      expect(badge).toHaveClass('text-yellow-800');
+      expect(badge).toHaveClass('ring-primary-500/30');
+      expect(badge).toHaveClass('text-primary-700');
     });
 
     it('applies destructive variant classes', () => {
@@ -68,8 +68,8 @@ describe('Badge', () => {
         </Badge>
       );
       const badge = screen.getByTestId('badge');
-      expect(badge).toHaveClass('bg-red-100');
-      expect(badge).toHaveClass('text-red-800');
+      expect(badge).toHaveClass('bg-danger-background');
+      expect(badge).toHaveClass('text-danger');
     });
 
     it('applies outline variant classes', () => {
@@ -80,7 +80,7 @@ describe('Badge', () => {
       );
       const badge = screen.getByTestId('badge');
       expect(badge).toHaveClass('border');
-      expect(badge).toHaveClass('text-gray-700');
+      expect(badge).toHaveClass('text-muted-foreground');
     });
   });
 

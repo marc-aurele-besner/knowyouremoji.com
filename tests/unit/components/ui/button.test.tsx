@@ -44,25 +44,31 @@ describe('Button', () => {
     it('applies primary variant classes by default', () => {
       render(<Button>Primary</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('from-amber-500');
+      expect(button).toHaveClass('bg-foreground');
     });
 
     it('applies secondary variant classes', () => {
       render(<Button variant="secondary">Secondary</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('bg-gray-200');
+      expect(button).toHaveClass('bg-muted');
     });
 
     it('applies ghost variant classes', () => {
       render(<Button variant="ghost">Ghost</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('hover:bg-gray-100');
+      expect(button).toHaveClass('hover:bg-muted');
+    });
+
+    it('applies brand variant classes', () => {
+      render(<Button variant="brand">Upgrade</Button>);
+      const button = screen.getByRole('button');
+      expect(button).toHaveClass('bg-primary-500');
     });
 
     it('applies destructive variant classes', () => {
       render(<Button variant="destructive">Delete</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('bg-red-600');
+      expect(button).toHaveClass('bg-danger-background');
     });
 
     it('applies outline variant classes', () => {
@@ -76,7 +82,7 @@ describe('Button', () => {
     it('applies sm size classes', () => {
       render(<Button size="sm">Small</Button>);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('h-8');
+      expect(button).toHaveClass('h-9');
     });
 
     it('applies md size classes by default', () => {
@@ -130,6 +136,6 @@ describe('Button', () => {
     );
     const link = screen.getByRole('link');
     expect(link).toHaveAttribute('href', '/test');
-    expect(link).toHaveClass('from-amber-500');
+    expect(link).toHaveClass('bg-foreground');
   });
 });

@@ -93,7 +93,7 @@ describe('ThemeSwitcher', () => {
   it('applies ghost variant to button', () => {
     render(<ThemeSwitcher />);
     const button = screen.getByRole('button');
-    expect(button).toHaveClass('hover:bg-gray-100');
+    expect(button).toHaveClass('hover:bg-muted');
   });
 
   it('renders placeholder button when not mounted', () => {

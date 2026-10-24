@@ -134,9 +134,9 @@ describe('SelectTrigger', () => {
 
     const trigger = screen.getByTestId('trigger');
     expect(trigger).toHaveClass('flex');
-    expect(trigger).toHaveClass('h-10');
+    expect(trigger).toHaveClass('h-11');
     expect(trigger).toHaveClass('w-full');
-    expect(trigger).toHaveClass('rounded-md');
+    expect(trigger).toHaveClass('rounded-xl');
     expect(trigger).toHaveClass('border');
   });
 

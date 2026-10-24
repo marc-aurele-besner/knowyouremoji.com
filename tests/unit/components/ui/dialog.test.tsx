@@ -127,8 +127,8 @@ describe('DialogContent', () => {
     await waitFor(() => {
       const content = screen.getByTestId('dialog-content');
       expect(content).toHaveClass('fixed');
-      expect(content).toHaveClass('bg-white');
-      expect(content).toHaveClass('rounded-lg');
+      expect(content).toHaveClass('bg-card');
+      expect(content).toHaveClass('rounded-2xl');
     });
   });
 
@@ -245,7 +245,7 @@ describe('DialogDescription', () => {
     await waitFor(() => {
       const desc = screen.getByTestId('desc');
       expect(desc).toHaveClass('text-sm');
-      expect(desc).toHaveClass('text-gray-500');
+      expect(desc).toHaveClass('text-muted-foreground');
     });
   });
 });

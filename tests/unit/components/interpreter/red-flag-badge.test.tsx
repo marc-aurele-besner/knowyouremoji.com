@@ -94,19 +94,19 @@ describe('RedFlagBadge', () => {
     it('uses destructive variant badge for high severity', () => {
       render(<RedFlagBadge flag={mockFlag} />);
       const severityBadge = screen.getByTestId('severity-badge');
-      expect(severityBadge).toHaveClass('bg-red-100');
+      expect(severityBadge).toHaveClass('bg-danger-background');
     });
 
     it('uses warning variant badge for medium severity', () => {
       render(<RedFlagBadge flag={mockFlagMedium} />);
       const severityBadge = screen.getByTestId('severity-badge');
-      expect(severityBadge).toHaveClass('bg-yellow-100');
+      expect(severityBadge).toHaveClass('ring-primary-500/30');
     });
 
     it('uses secondary variant badge for low severity', () => {
       render(<RedFlagBadge flag={mockFlagLow} />);
       const severityBadge = screen.getByTestId('severity-badge');
-      expect(severityBadge).toHaveClass('bg-gray-100');
+      expect(severityBadge).toHaveClass('bg-muted');
     });
   });
 
