@@ -81,8 +81,9 @@ describe('Footer', () => {
 
   it('has section headings for link groups', () => {
     render(<Footer />);
-    expect(screen.getByText('Navigation')).toBeInTheDocument();
-    expect(screen.getByText('Legal')).toBeInTheDocument();
+    expect(screen.getByText('Explore')).toBeInTheDocument();
+    expect(screen.getByText('Tools')).toBeInTheDocument();
+    expect(screen.getByText('Company')).toBeInTheDocument();
   });
 
   it('has displayName set', () => {

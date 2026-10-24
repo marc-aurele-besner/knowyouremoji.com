@@ -31,3 +31,41 @@ export const FOOTER_LEGAL_LINKS: NavLink[] = [
   { label: 'Privacy', href: '/privacy' },
   { label: 'Terms', href: '/terms' },
 ];
+
+export interface NavLinkGroup {
+  /** Column heading */
+  title: string;
+  links: NavLink[];
+}
+
+/**
+ * Footer link columns. Each label is unique across the footer so links stay
+ * unambiguous for screen readers and tests.
+ */
+export const FOOTER_LINK_GROUPS: NavLinkGroup[] = [
+  {
+    title: 'Explore',
+    links: [
+      { label: 'Emojis', href: '/emoji' },
+      { label: 'Combos', href: '/combo' },
+      { label: 'Guides', href: '/guides' },
+      { label: 'Search', href: '/search' },
+    ],
+  },
+  {
+    title: 'Tools',
+    links: [
+      { label: 'Interpreter', href: '/interpreter' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Dashboard', href: '/dashboard' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { label: 'About', href: '/about' },
+      { label: 'Contact', href: '/contact' },
+      ...FOOTER_LEGAL_LINKS,
+    ],
+  },
+];

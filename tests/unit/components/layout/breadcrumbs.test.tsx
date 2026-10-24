@@ -83,13 +83,13 @@ describe('Breadcrumbs', () => {
   it('has appropriate styling for interactive items', () => {
     render(<Breadcrumbs items={defaultItems} />);
     const homeLink = screen.getByRole('link', { name: 'Home' });
-    expect(homeLink).toHaveClass('hover:text-blue-600');
+    expect(homeLink).toHaveClass('hover:text-foreground');
   });
 
   it('has muted styling for current/last item', () => {
     render(<Breadcrumbs items={defaultItems} />);
     const lastItem = screen.getByText('😀 Grinning Face');
-    expect(lastItem).toHaveClass('text-gray-500');
+    expect(lastItem).toHaveClass('text-foreground');
   });
 
   it('has displayName set', () => {
