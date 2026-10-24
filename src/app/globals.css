@@ -216,7 +216,18 @@
 }
 
 @layer base {
+  /*
+   * next/font sets --font-geist-* and --font-instrument-serif on <body>, so the
+   * font stacks that reference them must be (re)declared there too: declared on
+   * :root they resolve before those variables exist and fall back to system fonts.
+   */
   body {
+    --font-sans: var(--font-geist-sans), 'Inter', system-ui, sans-serif;
+    --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+    --font-serif:
+      var(--font-instrument-serif), 'Iowan Old Style', 'Palatino Linotype', 'Palatino', 'Georgia',
+      serif;
+    font-family: var(--font-sans);
     @apply bg-background text-foreground antialiased;
   }
 }
@@ -636,7 +647,7 @@
     letter-spacing: 0.22em;
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--primary-600);
+    color: var(--primary-700);
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
@@ -647,7 +658,7 @@
     display: inline-block;
     width: 1.25rem;
     height: 1px;
-    background: var(--primary-600);
+    background: var(--primary-700);
   }
 
   /* Mono metadata — used for date, author, reading time. */
@@ -676,11 +687,11 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-500) 0%, var(--primary-600) 100%);
+    background: var(--primary-500);
     transform-origin: 0 50%;
+    transform: scaleX(0);
     z-index: 60;
     pointer-events: none;
-    box-shadow: 0 0 12px rgba(245, 158, 11, 0.35);
   }
 
   /* Editorial divider — perforated dashed line. */
@@ -689,7 +700,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    color: var(--primary-600);
+    color: var(--primary-700);
     margin: 2.5rem 0;
     font-size: 0.75rem;
     letter-spacing: 0.5em;
@@ -712,7 +723,7 @@
     float: left;
     line-height: 0.82;
     margin: 0.05em 0.14em -0.08em 0;
-    color: var(--primary-600);
+    color: var(--primary-700);
     font-style: normal;
     font-weight: 400;
   }
@@ -739,11 +750,12 @@
     font-size: clamp(1.6rem, 1.4vw + 1rem, 2.1rem);
     margin: 2.75rem 0 1rem;
     line-height: 1.15;
+    scroll-margin-top: 6rem;
   }
 
   .guides-article h2::before {
     content: '§';
-    color: var(--primary-600);
+    color: var(--primary-700);
     font-family: var(--font-mono);
     font-style: normal;
     font-size: 0.6em;
@@ -762,14 +774,14 @@
   }
 
   .guides-article a {
-    color: var(--primary-600);
+    color: var(--primary-700);
     text-decoration: none;
-    border-bottom: 1px solid rgba(217, 119, 6, 0.4);
+    border-bottom: 1px solid color-mix(in srgb, var(--primary-700) 40%, transparent);
     transition: border-color 160ms ease;
   }
 
   .guides-article a:hover {
-    border-bottom-color: var(--primary-600);
+    border-bottom-color: var(--primary-700);
   }
 
   .guides-article strong {
@@ -788,7 +800,7 @@
     background: var(--muted-background);
     border: 1px solid var(--card-border);
     padding: 0.1em 0.4em;
-    color: var(--primary-600);
+    color: var(--primary-700);
   }
 
   .guides-article pre {
@@ -799,7 +811,7 @@
   }
 
   .guides-article blockquote {
-    border-left: 2px solid var(--primary-600);
+    border-left: 2px solid var(--primary-500);
     padding: 0.25rem 0 0.25rem 1.25rem;
     margin: 1.75rem 0;
     font-family: var(--font-serif);
@@ -824,7 +836,7 @@
     content: '—';
     position: absolute;
     left: 0;
-    color: var(--primary-600);
+    color: var(--primary-700);
     font-family: var(--font-mono);
   }
 
@@ -844,7 +856,7 @@
     content: counter(guides-ol, decimal-leading-zero);
     position: absolute;
     left: 0;
-    color: var(--primary-600);
+    color: var(--primary-700);
     font-family: var(--font-mono);
     font-size: 0.85em;
   }
