@@ -137,19 +137,19 @@ describe('InterpretResult', () => {
     it('applies correct styling for positive tone', () => {
       render(<InterpretResult result={mockResult} />);
       const badge = screen.getByTestId('tone-badge');
-      expect(badge).toHaveClass('bg-green-100');
+      expect(badge).toHaveClass('bg-success-background');
     });
 
     it('applies correct styling for negative tone', () => {
       render(<InterpretResult result={mockResultWithRedFlags} />);
       const badge = screen.getByTestId('tone-badge');
-      expect(badge).toHaveClass('bg-red-100');
+      expect(badge).toHaveClass('bg-danger-background');
     });
 
     it('applies correct styling for neutral tone', () => {
       render(<InterpretResult result={mockResultNeutralTone} />);
       const badge = screen.getByTestId('tone-badge');
-      expect(badge).toHaveClass('bg-gray-100');
+      expect(badge).toHaveClass('bg-primary-50');
     });
   });
 
@@ -178,10 +178,9 @@ describe('InterpretResult', () => {
       render(<InterpretResult result={mockResultWithRedFlags} />);
       const sarcasmMeter = screen.getByTestId('sarcasm-meter');
       const paMeter = screen.getByTestId('passive-aggression-meter');
-      // Both values are in the high zone (>60) so both should be red
-      // sarcasmProbability: 65, passiveAggressionProbability: 75
-      expect(sarcasmMeter).toHaveClass('bg-red-100');
-      expect(paMeter).toHaveClass('bg-red-100');
+      // sarcasmProbability: 65 is in the high zone; passive-aggression 75 crosses the red threshold
+      expect(sarcasmMeter).toHaveAttribute('data-color-zone', 'high');
+      expect(paMeter).toHaveAttribute('data-danger', 'true');
     });
 
     it('displays confidence level', () => {
@@ -194,6 +193,7 @@ describe('InterpretResult', () => {
     it('does not render red flags section when none present', () => {
       render(<InterpretResult result={mockResult} />);
       expect(screen.queryByTestId('red-flags-section')).not.toBeInTheDocument();
+      expect(screen.getByTestId('no-red-flags')).toHaveTextContent('No red flags spotted.');
     });
 
     it('renders red flags section when present', () => {
@@ -217,9 +217,9 @@ describe('InterpretResult', () => {
       render(<InterpretResult result={mockResultWithRedFlags} />);
       const redFlags = screen.getAllByTestId('red-flag-badge');
       // First flag is medium severity
-      expect(redFlags[0]).toHaveClass('border-yellow-500');
+      expect(redFlags[0]).toHaveAttribute('data-severity', 'medium');
       // Second flag is low severity
-      expect(redFlags[1]).toHaveClass('border-blue-500');
+      expect(redFlags[1]).toHaveAttribute('data-severity', 'low');
     });
   });
 
@@ -307,7 +307,9 @@ describe('InterpretResult', () => {
 
     it('renders share section', () => {
       render(<InterpretResult result={mockResult} />);
-      expect(screen.getByText('Share')).toBeInTheDocument();
+      // Match the share button group rather than the "Share" text: the device-share button
+      // is also labelled "Share" wherever navigator.share exists.
+      expect(screen.getByLabelText('Share options')).toBeInTheDocument();
     });
   });
 
@@ -433,7 +435,46 @@ describe('InterpretResult', () => {
       };
       render(<InterpretResult result={highSeverityResult} />);
       const redFlag = screen.getByTestId('red-flag-badge');
-      expect(redFlag).toHaveClass('border-red-500');
+      expect(redFlag).toHaveAttribute('data-severity', 'high');
+    });
+  });
+
+  describe('stat tiles and extras', () => {
+    it('renders the overall tone and confidence tiles', () => {
+      render(<InterpretResult result={mockResult} />);
+      expect(screen.getByTestId('tone-tile')).toHaveTextContent('Positive');
+      expect(screen.getByTestId('confidence-meter')).toHaveTextContent('85%');
+    });
+
+    it('shows the context line when provided', () => {
+      render(<InterpretResult result={mockResult} meta="iMessage · Friend" />);
+      expect(screen.getByText('iMessage · Friend')).toBeInTheDocument();
+    });
+
+    it('offers a new message action when onReset is provided', () => {
+      const onReset = mock(() => {});
+      render(<InterpretResult result={mockResult} onReset={onReset} />);
+      fireEvent.click(screen.getByRole('button', { name: /new message/i }));
+      expect(onReset).toHaveBeenCalled();
+    });
+
+    it('renders reply tone suggestions when the result includes them', () => {
+      render(
+        <InterpretResult
+          result={{
+            ...mockResult,
+            suggestedTones: [
+              {
+                tone: 'PLAYFUL',
+                reasoning: 'Keep it light.',
+                examples: ['Doing great, you?'],
+                confidence: 90,
+              },
+            ],
+          }}
+        />
+      );
+      expect(screen.getByTestId('tone-suggestions-section')).toBeInTheDocument();
     });
   });
 });

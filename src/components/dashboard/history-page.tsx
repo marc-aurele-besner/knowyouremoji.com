@@ -2,8 +2,10 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { useSession } from 'next-auth/react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { DashboardPageHeader, EmptyState, SkeletonRows, formErrorClass } from './dashboard-ui';
 import { HistoryDetailView } from './history-detail-view';
 
 /**
@@ -113,136 +115,104 @@ function HistoryPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Interpretation History</h1>
-        <p className="mt-1 text-gray-500 dark:text-gray-400">
-          View your past emoji interpretations.
-        </p>
-      </div>
+      <DashboardPageHeader
+        title="Interpretation History"
+        description="View your past emoji interpretations."
+      />
 
       {!isAuthenticated && status !== 'loading' && (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <div className="text-4xl mb-4">🔒</div>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              History Not Available
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Sign in to save and view your interpretation history.
-            </p>
-          </CardContent>
-        </Card>
+        <EmptyState
+          emoji="🔒"
+          title="History Not Available"
+          description="Sign in to save and view your interpretation history."
+          action={
+            <>
+              <Button asChild>
+                <Link href="/login">Sign in</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link href="/register">Create account</Link>
+              </Button>
+            </>
+          }
+        />
       )}
 
       {isAuthenticated && error && (
-        <div
-          className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
-          role="alert"
-        >
+        <div className={formErrorClass} role="alert">
           {error}
         </div>
       )}
 
-      {isAuthenticated && isLoading && (
-        <div className="space-y-4">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <Card key={i}>
-              <CardContent className="py-4">
-                <div className="animate-pulse space-y-3">
-                  <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
-                  <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full" />
-                  <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-1/4" />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      )}
+      {isAuthenticated && isLoading && <SkeletonRows count={3} />}
 
       {isAuthenticated && !isLoading && !error && entries.length === 0 && (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <div className="text-4xl mb-4">📭</div>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              No Interpretations Yet
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Your interpretation history will appear here once you start using the interpreter.
-            </p>
-          </CardContent>
-        </Card>
+        <EmptyState
+          emoji="🗂️"
+          title="No Interpretations Yet"
+          description="Your interpretation history will appear here once you start using the interpreter."
+          action={
+            <Button asChild>
+              <Link href="/interpreter">Get started →</Link>
+            </Button>
+          }
+        />
       )}
 
       {isAuthenticated && !isLoading && !error && entries.length > 0 && (
         <>
-          <div className="space-y-4">
-            {entries.map((entry) =>
-              expandedId === entry.id ? (
-                <HistoryDetailView
-                  key={entry.id}
-                  entry={entry}
-                  onClose={() => setExpandedId(null)}
-                />
-              ) : (
-                <Card
-                  key={entry.id}
-                  className="hover:shadow-md transition-shadow cursor-pointer"
-                  onClick={() => setExpandedId(entry.id)}
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`View details for interpretation: ${entry.message}`}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      setExpandedId(entry.id);
-                    }
-                  }}
-                >
-                  <CardHeader className="pb-2">
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        {formatDate(entry.created_at)}
-                      </CardTitle>
-                      <span className="text-xs text-gray-400 dark:text-gray-500">
-                        {entry.emoji_count} emoji{entry.emoji_count !== 1 ? 's' : ''}
+          <ul className="divide-y divide-card-border overflow-hidden rounded-2xl border border-card-border bg-card">
+            {entries.map((entry) => (
+              <li key={entry.id}>
+                {expandedId === entry.id ? (
+                  <HistoryDetailView entry={entry} onClose={() => setExpandedId(null)} />
+                ) : (
+                  <button
+                    type="button"
+                    className="grid w-full grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-1 px-4 py-3.5 text-left transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary-500 sm:grid-cols-[minmax(0,1fr)_auto_auto_auto]"
+                    onClick={() => setExpandedId(entry.id)}
+                    aria-label={`View details for interpretation: ${entry.message}`}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setExpandedId(entry.id);
+                      }
+                    }}
+                  >
+                    <span className="min-w-0">
+                      <span className="block truncate text-[14.5px] font-medium text-foreground">
+                        {entry.message}
                       </span>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm font-medium text-gray-900 dark:text-white mb-2">
-                      {entry.message}
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
-                      {entry.interpretation}
-                    </p>
-                  </CardContent>
-                </Card>
-              )
-            )}
-          </div>
+                      <span className="block truncate text-[13px] text-muted-foreground">
+                        {entry.interpretation}
+                      </span>
+                    </span>
+                    <span className="hidden sm:block">
+                      <Badge variant="secondary">
+                        {entry.emoji_count} emoji{entry.emoji_count !== 1 ? 's' : ''}
+                      </Badge>
+                    </span>
+                    <span className="col-start-1 row-start-2 text-[13px] text-muted-foreground sm:col-start-auto sm:row-start-auto">
+                      {formatDate(entry.created_at)}
+                    </span>
+                    <span
+                      className="row-span-2 text-sm font-medium text-muted-foreground sm:row-span-1"
+                      aria-hidden="true"
+                    >
+                      View →
+                    </span>
+                  </button>
+                )}
+              </li>
+            ))}
+          </ul>
 
           {/* Load More / Infinite Scroll */}
           <div ref={sentinelRef} aria-hidden="true" />
-          {isLoadingMore && (
-            <div className="flex justify-center pt-4">
-              <div className="space-y-4 w-full">
-                {Array.from({ length: 2 }).map((_, i) => (
-                  <Card key={`loading-more-${i}`}>
-                    <CardContent className="py-4">
-                      <div className="animate-pulse space-y-3">
-                        <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4" />
-                        <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full" />
-                        <div className="h-3 bg-gray-200 dark:bg-gray-700 rounded w-1/4" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          )}
+          {isLoadingMore && <SkeletonRows count={2} />}
           {hasMore && !isLoadingMore && (
-            <div className="flex justify-center pt-4">
-              <Button variant="outline" size="sm" onClick={handleLoadMore}>
+            <div className="flex justify-center pt-2">
+              <Button variant="outline" onClick={handleLoadMore}>
                 Load More
               </Button>
             </div>

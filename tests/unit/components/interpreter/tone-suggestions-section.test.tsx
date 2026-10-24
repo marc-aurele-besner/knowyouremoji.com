@@ -30,7 +30,7 @@ describe('ToneSuggestionsSection', () => {
           interpretationId={defaultInterpretationId}
         />
       );
-      expect(screen.getByText('Suggested Response Tones')).toBeInTheDocument();
+      expect(screen.getByText('How to reply')).toBeInTheDocument();
     });
 
     it('displays the suggestion count', () => {

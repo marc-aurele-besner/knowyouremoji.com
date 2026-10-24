@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 /**
@@ -8,6 +9,8 @@ export interface EmojiTLDRProps {
   tldr: string;
   /** The heading level (h2, h3, h4) for proper document hierarchy */
   headingLevel?: 2 | 3 | 4;
+  /** Optional action buttons (copy, share) shown at the end of the panel */
+  actions?: ReactNode;
   /** Additional CSS class names */
   className?: string;
 }
@@ -23,7 +26,7 @@ export interface EmojiTLDRProps {
  * />
  * ```
  */
-export function EmojiTLDR({ tldr, headingLevel = 2, className }: EmojiTLDRProps) {
+export function EmojiTLDR({ tldr, headingLevel = 2, actions, className }: EmojiTLDRProps) {
   const headingId = 'emoji-tldr-heading';
 
   const HeadingTag = `h${headingLevel}` as const;
@@ -31,21 +34,15 @@ export function EmojiTLDR({ tldr, headingLevel = 2, className }: EmojiTLDRProps)
   return (
     <aside
       aria-labelledby={headingId}
-      className={cn(
-        'bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800',
-        'rounded-lg p-4 md:p-6',
-        className
-      )}
+      className={cn('flex items-start gap-3 rounded-2xl bg-muted p-5 md:px-[22px]', className)}
     >
-      <HeadingTag
-        id={headingId}
-        className="text-sm font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-2"
-      >
-        TL;DR
-      </HeadingTag>
-      <p className="text-gray-900 dark:text-gray-100 text-base md:text-lg leading-relaxed">
-        {tldr}
-      </p>
+      <div className="min-w-0 flex-1">
+        <HeadingTag id={headingId} className="eyebrow mb-1.5">
+          TL;DR
+        </HeadingTag>
+        <p className="text-base leading-relaxed text-foreground md:text-lg">{tldr}</p>
+      </div>
+      {actions && <div className="flex flex-none items-center gap-1">{actions}</div>}
     </aside>
   );
 }

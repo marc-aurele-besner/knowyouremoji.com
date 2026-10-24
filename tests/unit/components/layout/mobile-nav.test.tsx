@@ -3,12 +3,25 @@ import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import { MobileNav } from '@/components/layout/mobile-nav';
 
 // Mock next/navigation for SearchBar
+const pathnameState = { current: '/emoji' as string | null };
 mock.module('next/navigation', () => ({
   useRouter: () => ({
     push: mock(() => {}),
     replace: mock(() => {}),
     prefetch: mock(() => {}),
   }),
+  usePathname: () => pathnameState.current,
+}));
+
+// Controllable session for the account area
+type MockSession = { data: { user: { name?: string; email?: string } } | null; status: string };
+const sessionState: { current: MockSession } = {
+  current: { data: null, status: 'unauthenticated' },
+};
+const signOutMock = mock(() => Promise.resolve());
+mock.module('next-auth/react', () => ({
+  useSession: () => sessionState.current,
+  signOut: signOutMock,
 }));
 
 // Mock fetch for SearchBar
@@ -20,6 +33,8 @@ global.fetch = mock(() =>
 
 afterEach(() => {
   cleanup();
+  sessionState.current = { data: null, status: 'unauthenticated' };
+  pathnameState.current = '/emoji';
 });
 
 describe('MobileNav', () => {
@@ -130,5 +145,35 @@ describe('MobileNav', () => {
     render(<MobileNav {...defaultProps} />);
     // Search bar should be present in mobile nav
     expect(screen.getByRole('combobox')).toBeInTheDocument();
+  });
+
+  it('closes on Escape', () => {
+    const onClose = mock(() => {});
+    render(<MobileNav isOpen onClose={onClose} />);
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(onClose).toHaveBeenCalled();
+  });
+
+  it('ignores other keys', () => {
+    const onClose = mock(() => {});
+    render(<MobileNav isOpen onClose={onClose} />);
+    fireEvent.keyDown(document, { key: 'a' });
+    expect(onClose).not.toHaveBeenCalled();
+  });
+
+  it('shows sign in links for guests', () => {
+    render(<MobileNav {...defaultProps} />);
+    expect(screen.getByRole('link', { name: 'Sign in' })).toHaveAttribute('href', '/login');
+    expect(screen.getByRole('link', { name: 'Get started' })).toHaveAttribute('href', '/register');
+  });
+
+  it('shows dashboard and sign out for signed-in users', () => {
+    sessionState.current = { data: { user: { name: 'Jo' } }, status: 'authenticated' };
+    const onClose = mock(() => {});
+    render(<MobileNav isOpen onClose={onClose} />);
+    expect(screen.getByRole('link', { name: 'Dashboard' })).toHaveAttribute('href', '/dashboard');
+    fireEvent.click(screen.getByRole('button', { name: 'Sign out' }));
+    expect(onClose).toHaveBeenCalled();
+    expect(signOutMock).toHaveBeenCalledWith({ callbackUrl: '/' });
   });
 });

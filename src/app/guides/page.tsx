@@ -67,33 +67,29 @@ export default function GuidesIndexPage() {
     <>
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <div className="guides-page" data-testid="guides-index">
-        {/* Hero — amber gradient on light, gray on dark. */}
-        <section className="bg-gradient-to-b from-amber-50 via-amber-50/40 to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 border-b border-amber-100/60 dark:border-gray-800">
-          <div className="container mx-auto px-4 max-w-6xl pt-8 pb-16 md:pb-20">
-            <Breadcrumbs items={breadcrumbItems} className="mb-8" />
+      <div
+        className="guides-page container mx-auto max-w-6xl px-4 pb-16 pt-10"
+        data-testid="guides-index"
+      >
+        <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
-            <div className="max-w-3xl">
-              <span className="guides-eyebrow">Editorial</span>
-              <h1
-                className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight"
-                data-testid="guides-masthead"
-              >
-                Emoji Guides
-              </h1>
-              <p className="guides-lede mt-6">{siteDescription}</p>
-              <p className="guides-meta mt-6">{formatIssueLine(total)}</p>
-            </div>
-          </div>
-        </section>
+        <header className="mb-10 max-w-3xl">
+          <p className="eyebrow">Editorial</p>
+          <h1
+            className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl"
+            data-testid="guides-masthead"
+          >
+            Emoji Guides
+          </h1>
+          <p className="mt-3 text-[17px] leading-relaxed text-muted-foreground">
+            {siteDescription}
+          </p>
+          <p className="guides-meta mt-4">{formatIssueLine(total)}</p>
+        </header>
 
-        {/* Editorial index — featured spread + dispatch rows. */}
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4 max-w-6xl">
-            <BookBanner variant="wide" className="mb-12 md:mb-16" />
-            <GuidesIndexList guides={summaries} />
-          </div>
-        </section>
+        <GuidesIndexList guides={summaries} />
+
+        <BookBanner variant="wide" className="mt-14" />
       </div>
     </>
   );

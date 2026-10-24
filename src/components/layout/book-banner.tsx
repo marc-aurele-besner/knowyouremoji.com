@@ -104,7 +104,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
         <a
           {...linkProps(wide.id)}
           aria-label={`${BOOK_TITLE} by Claire Vance — buy on Amazon`}
-          className="hidden overflow-hidden rounded-xl shadow-sm ring-1 ring-gray-200 transition hover:shadow-md hover:ring-amber-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 md:block dark:ring-gray-800"
+          className="hidden overflow-hidden rounded-2xl ring-1 ring-card-border transition hover:shadow-soft hover:ring-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 md:block"
         >
           <Image
             src={wide.src}
@@ -119,7 +119,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
       <a
         {...linkProps(card.id)}
         className={cn(
-          'group flex items-center gap-4 rounded-xl border border-amber-200 bg-amber-50/70 p-3 transition hover:border-amber-400 hover:bg-amber-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 sm:p-4 dark:border-amber-900/60 dark:bg-amber-950/20 dark:hover:border-amber-700 dark:hover:bg-amber-950/40',
+          'group flex items-center gap-4 rounded-2xl border border-card-border bg-card p-4 transition hover:border-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 sm:gap-5 sm:px-[22px] sm:py-5',
           wide && 'md:hidden'
         )}
       >
@@ -129,25 +129,23 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
           width={BOOK_COVER.width}
           height={BOOK_COVER.height}
           sizes="80px"
-          className="h-auto w-14 shrink-0 rounded-sm shadow-md transition group-hover:-rotate-2 sm:w-16"
+          className="h-auto w-14 shrink-0 rounded-md shadow-soft"
         />
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-medium uppercase tracking-wide text-amber-700 dark:text-amber-400">
-            New book · 2027 edition
+          <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-muted-foreground">
+            New book · 2027 edition · Sponsored
           </p>
-          <p className="mt-0.5 font-semibold text-gray-900 sm:text-lg dark:text-white">
-            {card.headline}
-          </p>
-          <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-1 text-[15px] font-semibold text-primary-700">{card.headline}</p>
+          <p className="mt-0.5 text-[13.5px] text-muted-foreground">
             <span className="italic">{BOOK_TITLE}</span> by Claire Vance.{' '}
-            <span className="font-medium text-amber-700 underline-offset-2 group-hover:underline sm:hidden dark:text-amber-400">
+            <span className="font-medium text-primary-700 underline-offset-2 group-hover:underline sm:hidden">
               Get it on Amazon →
             </span>
           </p>
         </div>
         <span
           aria-hidden="true"
-          className="hidden shrink-0 rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition group-hover:bg-amber-600 sm:inline-flex dark:bg-white dark:text-gray-900 dark:group-hover:bg-amber-400"
+          className="hidden h-9 shrink-0 items-center rounded-full border border-card-border bg-card px-3.5 text-sm font-medium text-foreground transition group-hover:border-foreground sm:inline-flex"
         >
           Get it on Amazon →
         </span>

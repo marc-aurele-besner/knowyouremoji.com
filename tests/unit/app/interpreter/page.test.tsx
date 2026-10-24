@@ -59,7 +59,7 @@ afterEach(() => {
   cleanup();
 });
 
-const defaultSearchParams = Promise.resolve({} as { r?: string });
+const defaultSearchParams = Promise.resolve({} as { r?: string; m?: string | string[] });
 
 describe('InterpreterPage', () => {
   it('renders the main heading', async () => {
@@ -107,7 +107,8 @@ describe('InterpreterPage', () => {
     const page = await InterpreterPage({ searchParams: defaultSearchParams });
     render(page);
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveClass('font-bold');
+    expect(heading).toHaveClass('font-semibold');
+    expect(heading.querySelector('.accent-serif')).toHaveTextContent('interpreter');
   });
 
   it('renders the interpreter form section', async () => {
@@ -155,6 +156,25 @@ describe('InterpreterPage', () => {
     render(page);
     const main = screen.getByRole('main');
     expect(main).toHaveClass('max-w-4xl');
+  });
+
+  it('prefills the message from the m search param without submitting', async () => {
+    const page = await InterpreterPage({
+      searchParams: Promise.resolve({ m: 'ok sure 🙂' }),
+    });
+    render(page);
+    expect(screen.getByRole('textbox', { name: /message/i })).toHaveValue('ok sure 🙂');
+    expect(screen.queryByTestId('streaming-result')).not.toBeInTheDocument();
+  });
+
+  it('uses the first m value and trims overly long prefills', async () => {
+    const long = `${'a'.repeat(1200)} 🙂`;
+    const page = await InterpreterPage({
+      searchParams: Promise.resolve({ m: [long, 'second'] }),
+    });
+    render(page);
+    const textarea = screen.getByRole('textbox', { name: /message/i }) as HTMLTextAreaElement;
+    expect(textarea.value).toHaveLength(1000);
   });
 
   it('renders the shared result section when a shared result is present', async () => {

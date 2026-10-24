@@ -54,17 +54,17 @@ export function ToneSuggestionsSection({
   }
 
   return (
-    <section data-testid="tone-suggestions-section" className={cn('space-y-4', className)}>
+    <section data-testid="tone-suggestions-section" className={cn('space-y-3', className)}>
       <div className="flex items-center gap-2">
-        <h3 className="text-lg font-semibold">Suggested Response Tones</h3>
-        <span className="text-sm text-gray-500">({suggestions.length} suggestions)</span>
+        <h3 className="text-base font-semibold text-foreground">How to reply</h3>
+        <span className="text-sm text-muted-foreground">({suggestions.length} suggestions)</span>
       </div>
 
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-muted-foreground">
         Based on our analysis, here are some recommended ways you could respond:
       </p>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
         {suggestions.map((suggestion, index) => (
           <ToneSuggestionCard
             key={suggestion.tone}
@@ -82,7 +82,7 @@ export function ToneSuggestionsSection({
       </div>
 
       {isRatingEnabled && (
-        <p className="text-xs text-gray-400 text-center">
+        <p className="text-center text-xs text-muted-foreground">
           Rating suggestions helps us improve recommendations for you.
         </p>
       )}

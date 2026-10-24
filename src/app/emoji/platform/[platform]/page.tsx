@@ -1,10 +1,14 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { getAllPlatforms, getEmojiSummariesByPlatform, getPlatformInfo } from '@/lib/emoji-data';
+import {
+  getAllPlatforms,
+  getEmojiSummariesByPlatform,
+  getEmojisWithPlatformNotes,
+  getPlatformInfo,
+  getPlatformDisplayName,
+} from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardContent } from '@/components/ui/card';
-import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 
 interface PlatformPageProps {
@@ -85,6 +89,21 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
   const emojis = getEmojiSummariesByPlatform(platformInfo.slug);
   const env = getEnv();
 
+  const highlights = pickHubHighlights(getEmojisWithPlatformNotes(platformInfo.slug)).map(
+    (emoji) => ({
+      slug: emoji.slug,
+      character: emoji.character,
+      name: emoji.name,
+      text: emoji.platformNotes.find((n) => n.platform === platformInfo.slug)!.note,
+    })
+  );
+
+  const siblings = getAllPlatforms().map((p) => ({
+    label: getPlatformDisplayName(p),
+    href: `/emoji/platform/${p}`,
+    active: p === platformInfo.slug,
+  }));
+
   // Breadcrumb items for navigation
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
@@ -104,54 +123,19 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Platform Header */}
-        <header className="mb-8">
-          {/* Breadcrumb navigation */}
-          <Breadcrumbs items={breadcrumbItems} className="mb-4" />
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            {platformInfo.displayName} Emoji Meanings
-          </h1>
-          <p className="text-lg text-muted-foreground">{platformInfo.description}</p>
-          <p className="text-sm text-muted-foreground mt-2">
-            {platformInfo.emojiCount} emoji{platformInfo.emojiCount !== 1 ? 's' : ''} with{' '}
-            {platformInfo.displayName}-specific notes
-          </p>
-        </header>
-
-        {/* Emoji Grid */}
-        {emojis.length > 0 ? (
-          <section aria-labelledby="emojis-heading">
-            <h2 id="emojis-heading" className="sr-only">
-              {platformInfo.displayName} Emoji Meanings
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              {emojis.map((emoji) => (
-                <Link
-                  key={emoji.slug}
-                  href={`/emoji/${emoji.slug}`}
-                  className="block"
-                  aria-label={`${emoji.name} emoji`}
-                >
-                  <Card className="h-full hover:border-primary hover:shadow-md transition-all">
-                    <CardContent className="p-4 text-center">
-                      <span className="text-4xl block mb-2">{emoji.character}</span>
-                      <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 line-clamp-1">
-                        {emoji.name}
-                      </h3>
-                      <p className="text-xs text-muted-foreground line-clamp-2">{emoji.tldr}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ) : (
-          <p className="text-center text-muted-foreground py-8">
-            No emojis with platform notes found.
-          </p>
-        )}
-      </main>
+      <EmojiHubPage
+        breadcrumbs={breadcrumbItems}
+        title={`${platformInfo.displayName} Emoji Meanings`}
+        description={platformInfo.description}
+        countLabel={`${platformInfo.emojiCount} emoji${platformInfo.emojiCount !== 1 ? 's' : ''} with ${platformInfo.displayName}-specific notes`}
+        siblings={siblings}
+        siblingsLabel="Other platforms"
+        highlights={highlights}
+        highlightsTitle={`Notable on ${platformInfo.displayName}`}
+        emojis={emojis}
+        gridHeading={`${platformInfo.displayName} Emoji Meanings`}
+        emptyTitle="No emojis with platform notes found."
+      />
     </>
   );
 }

@@ -177,11 +177,16 @@ describe('UpgradePrompt', () => {
       expect(screen.getByRole('heading', { level: 3 })).toBeInTheDocument();
     });
 
-    it('should have accessible link', () => {
+    it('should have accessible links', () => {
       render(<UpgradePrompt />);
 
-      const link = screen.getByRole('link');
-      expect(link).toHaveAccessibleName();
+      const links = screen.getAllByRole('link');
+      expect(links).toHaveLength(2);
+      links.forEach((link) => expect(link).toHaveAccessibleName());
+      expect(screen.getByRole('link', { name: /browse emojis/i })).toHaveAttribute(
+        'href',
+        '/emoji'
+      );
     });
   });
 

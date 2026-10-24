@@ -18,7 +18,7 @@ test.describe('Interpreter Flow', () => {
 
     test('should navigate to interpreter from homepage CTA', async ({ page }) => {
       await page.goto('/');
-      const interpreterLink = page.locator('a:has-text("Interpret a Message")');
+      const interpreterLink = page.locator('a:has-text("Open the interpreter")');
       await interpreterLink.waitFor({ state: 'visible' });
       await Promise.all([page.waitForURL('/interpreter'), interpreterLink.click()]);
     });
@@ -113,14 +113,14 @@ test.describe('Interpreter Flow', () => {
       await page.goto('/interpreter');
       const contextLabel = page.locator('label#context-label');
       await expect(contextLabel).toBeVisible();
-      await expect(contextLabel).toHaveText('Relationship context');
+      await expect(contextLabel).toHaveText('Who sent it?');
     });
 
     test('should display submit button', async ({ page }) => {
       await page.goto('/interpreter');
       const submitButton = page.locator('button[type="submit"]');
       await expect(submitButton).toBeVisible();
-      await expect(submitButton).toHaveText('Interpret Message');
+      await expect(submitButton).toHaveText('Interpret message');
     });
 
     test('should display usage counter', async ({ page }) => {
@@ -157,10 +157,12 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hello world, this is a test message without emojis');
 
       // Select platform and context
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Try to submit
       const submitButton = page.locator('button[type="submit"]');
@@ -179,7 +181,10 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hello 👋 how are you doing today?');
 
       // Select context but not platform
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Try to submit
       const submitButton = page.locator('button[type="submit"]');
@@ -198,8 +203,7 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hello 👋 how are you doing today?');
 
       // Select platform but not context
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Try to submit
       const submitButton = page.locator('button[type="submit"]');
@@ -258,11 +262,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context (first radio option - Romantic Partner)
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -296,11 +302,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -332,11 +340,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -364,11 +374,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -396,11 +408,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -435,11 +449,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');
@@ -478,11 +494,13 @@ test.describe('Interpreter Flow', () => {
       await textarea.fill('Hey! 👋 How are you doing today? 😊');
 
       // Select platform
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
       // Select context
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       // Submit the form
       const submitButton = page.locator('button[type="submit"]');

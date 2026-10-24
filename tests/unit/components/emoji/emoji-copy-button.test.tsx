@@ -41,13 +41,13 @@ describe('EmojiCopyButton', () => {
 
     it('renders copy icon by default', () => {
       render(<EmojiCopyButton emoji="😀" />);
-      expect(screen.getByRole('button')).toHaveTextContent('📋');
+      expect(screen.getByTestId('copy-button-copy-icon')).toBeInTheDocument();
     });
 
     it('renders only icon when showLabel is false', () => {
       render(<EmojiCopyButton emoji="😀" showLabel={false} />);
       const button = screen.getByRole('button');
-      expect(button).toHaveTextContent('📋');
+      expect(screen.getByTestId('copy-button-copy-icon')).toBeInTheDocument();
       expect(button).not.toHaveTextContent('Copy Emoji');
     });
   });
@@ -156,7 +156,7 @@ describe('EmojiCopyButton', () => {
       fireEvent.click(button);
 
       await waitFor(() => {
-        expect(button).toHaveTextContent('✓');
+        expect(screen.getByTestId('copy-button-check-icon')).toBeInTheDocument();
       });
     });
 
@@ -215,7 +215,7 @@ describe('EmojiCopyButton', () => {
     it('applies primary variant by default', () => {
       render(<EmojiCopyButton emoji="😀" />);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('from-amber-500');
+      expect(button).toHaveClass('bg-foreground');
     });
 
     it('applies secondary variant when copied', async () => {
@@ -225,7 +225,7 @@ describe('EmojiCopyButton', () => {
       fireEvent.click(button);
 
       await waitFor(() => {
-        expect(button).toHaveClass('bg-gray-200');
+        expect(button).toHaveClass('bg-muted');
       });
     });
 
@@ -246,7 +246,7 @@ describe('EmojiCopyButton', () => {
     it('applies sm size', () => {
       render(<EmojiCopyButton emoji="😀" size="sm" />);
       const button = screen.getByRole('button');
-      expect(button).toHaveClass('h-8');
+      expect(button).toHaveClass('h-9');
     });
 
     it('applies lg size', () => {

@@ -92,16 +92,14 @@ export function RedFlagSection({
       className={cn('animate-fadeIn', className)}
     >
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold flex items-center gap-2">
-          <span className="text-red-500" aria-hidden="true">
-            ⚠️
-          </span>
-          Red Flags
+      <div className="mb-3 flex items-center justify-between">
+        <h3 className="flex items-center gap-2 text-base font-semibold text-foreground">
+          <span aria-hidden="true">⚠️</span>
+          Red flags
           <span
             data-testid="flag-count"
             aria-label={flagCountLabel}
-            className="inline-flex items-center justify-center bg-red-100 text-red-800 text-xs font-bold rounded-full w-6 h-6"
+            className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-danger-background text-xs font-bold text-danger"
           >
             {flags.length}
           </span>
@@ -112,7 +110,7 @@ export function RedFlagSection({
               type="button"
               onClick={handleExpandAll}
               aria-label="Expand all red flags"
-              className="text-sm text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
+              className="rounded px-2 py-1 text-sm text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
             >
               Expand all
             </button>
@@ -132,23 +130,23 @@ export function RedFlagSection({
       {flags.length > 1 && (
         <div
           data-testid="severity-summary"
-          className="flex items-center gap-3 mb-4 text-sm text-gray-600"
+          className="mb-3 flex items-center gap-3 text-sm text-muted-foreground"
         >
           {severityCounts.high > 0 && (
             <span className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-red-500" aria-hidden="true" />
+              <span className="w-2 h-2 rounded-full bg-danger" aria-hidden="true" />
               {severityCounts.high} High
             </span>
           )}
           {severityCounts.medium > 0 && (
             <span className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-yellow-500" aria-hidden="true" />
+              <span className="w-2 h-2 rounded-full bg-primary-500" aria-hidden="true" />
               {severityCounts.medium} Medium
             </span>
           )}
           {severityCounts.low > 0 && (
             <span className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-blue-500" aria-hidden="true" />
+              <span className="w-2 h-2 rounded-full bg-secondary-500" aria-hidden="true" />
               {severityCounts.low} Low
             </span>
           )}
@@ -158,7 +156,7 @@ export function RedFlagSection({
       {/* Flags Container */}
       <div
         data-testid="flags-container"
-        className={cn('flex gap-3', compact ? 'flex-row flex-wrap' : 'flex-col space-y-3')}
+        className={cn('flex gap-2', compact ? 'flex-row flex-wrap' : 'flex-col')}
       >
         {sortedFlags.map((flag, index) => (
           <RedFlagBadge
@@ -175,9 +173,9 @@ export function RedFlagSection({
       {shouldShowResources && (
         <div
           data-testid="resources-section"
-          className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200"
+          className="mt-4 rounded-xl border border-card-border bg-muted p-4"
         >
-          <h4 className="font-medium text-gray-900 mb-3">Helpful Resources</h4>
+          <h4 className="mb-2 text-sm font-semibold text-foreground">Helpful Resources</h4>
           <ul className="space-y-2">
             {HELPFUL_RESOURCES.map((resource) => (
               <li key={resource.url}>
@@ -185,7 +183,7 @@ export function RedFlagSection({
                   href={resource.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-blue-600 hover:text-blue-800 hover:underline"
+                  className="text-sm text-primary-700 underline-offset-2 hover:underline"
                 >
                   {resource.title} →
                 </a>

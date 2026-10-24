@@ -89,32 +89,46 @@ export async function generateMetadata({ searchParams }: MetadataProps): Promise
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Interpreter' }];
 
+/** Longest message the interpreter accepts; longer prefills are trimmed. */
+const MAX_PREFILL_LENGTH = 1000;
+
 interface InterpreterPageProps {
-  searchParams: Promise<{ r?: string }>;
+  searchParams: Promise<{ r?: string; m?: string | string[] }>;
+}
+
+function PageHeading() {
+  return (
+    <>
+      <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
+        Emoji <em className="accent-serif">interpreter</em>
+      </h1>
+      <p className="mt-3 text-base leading-relaxed text-muted-foreground md:text-lg">
+        Paste a message with emojis and we&apos;ll decode what they really mean — tone, sarcasm,
+        passive-aggression and red flags.
+      </p>
+    </>
+  );
 }
 
 export default async function InterpreterPage({ searchParams }: InterpreterPageProps) {
-  const { r: sharedResult } = await searchParams;
+  const { r: sharedResult, m } = await searchParams;
+  const rawPrefill = Array.isArray(m) ? m[0] : m;
+  const initialMessage = rawPrefill ? rawPrefill.slice(0, MAX_PREFILL_LENGTH) : undefined;
 
   return (
-    <main className="container mx-auto px-4 py-8 max-w-4xl">
+    <main className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
       <Breadcrumbs items={breadcrumbItems} className="mb-6" />
 
-      <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Emoji Interpreter</h1>
-        <p className="text-xl text-gray-600 dark:text-gray-400">
-          Paste a message with emojis and we&apos;ll decode what they really mean.
-        </p>
-      </section>
-
       {sharedResult ? (
-        <SharedResultSection encodedResult={sharedResult} />
+        <>
+          <section className="mb-8">
+            <PageHeading />
+          </section>
+          <SharedResultSection encodedResult={sharedResult} />
+        </>
       ) : (
-        <section
-          data-testid="interpreter-form-section"
-          className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800"
-        >
-          <InterpreterClient />
+        <section data-testid="interpreter-form-section">
+          <InterpreterClient header={<PageHeading />} initialMessage={initialMessage} />
         </section>
       )}
 

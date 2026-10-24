@@ -1,99 +1,44 @@
 import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
 
 /**
  * Loading skeleton for the emoji detail page
- * Displays placeholder content while the page data is loading
+ * Mirrors the hero / TL;DR / section layout while the page data is loading
  */
 export default function Loading() {
   return (
     <main
-      className="container mx-auto px-4 py-8 max-w-4xl"
+      className="container mx-auto max-w-6xl px-4 pb-20 pt-8 md:pt-10"
       role="status"
       aria-label="Loading emoji details"
     >
-      {/* Header Skeleton */}
-      <header className="flex flex-col items-center text-center py-8 px-4">
-        {/* Emoji Character Skeleton */}
+      {/* Breadcrumb skeleton */}
+      <Skeleton className="mb-6 h-3.5 w-60" data-testid="skeleton" />
+
+      {/* Hero skeleton */}
+      <header className="flex flex-wrap items-center gap-6 md:gap-7">
         <Skeleton
-          className="w-24 h-24 md:w-32 md:h-32 rounded-full mb-4"
+          className="h-28 w-28 rounded-[28px] md:h-[132px] md:w-[132px]"
           data-testid="emoji-skeleton"
         />
-
-        {/* Title Skeleton */}
-        <Skeleton className="h-8 w-48 mb-4" data-testid="title-skeleton" />
-
-        {/* Copy Button Skeleton */}
-        <Skeleton className="h-10 w-32 mb-6" data-testid="skeleton" />
-
-        {/* Unicode Info Skeleton */}
-        <Skeleton className="h-20 w-64" data-testid="skeleton" />
+        <div className="flex min-w-0 flex-1 basis-72 flex-col gap-3">
+          <Skeleton className="h-12 w-1/2" data-testid="title-skeleton" />
+          <Skeleton className="h-5 w-1/3" data-testid="skeleton" />
+          <div className="flex gap-2">
+            <Skeleton className="h-10 w-28 rounded-full" data-testid="skeleton" />
+            <Skeleton className="h-10 w-20 rounded-full" data-testid="skeleton" />
+          </div>
+        </div>
       </header>
 
-      {/* TL;DR Section Skeleton */}
-      <section className="mb-8">
-        <Card>
-          <CardHeader>
-            <Skeleton className="h-6 w-16" data-testid="tldr-skeleton" />
-          </CardHeader>
-          <CardContent>
-            <Skeleton className="h-4 w-full mb-2" data-testid="skeleton" />
-            <Skeleton className="h-4 w-3/4" data-testid="skeleton" />
-          </CardContent>
-        </Card>
-      </section>
+      {/* TL;DR skeleton */}
+      <Skeleton className="mt-7 h-24 w-full rounded-2xl" data-testid="tldr-skeleton" />
 
-      {/* Context Meanings Section Skeleton */}
-      <section className="mb-8" data-testid="content-skeleton">
-        <Skeleton className="h-7 w-40 mb-4" data-testid="skeleton" />
-        <div className="space-y-4">
-          {[1, 2].map((i) => (
-            <Card key={i}>
-              <CardHeader className="pb-2">
-                <div className="flex items-center gap-2">
-                  <Skeleton className="h-6 w-20" data-testid="skeleton" />
-                  <Skeleton className="h-6 w-24" data-testid="skeleton" />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <Skeleton className="h-4 w-full mb-2" data-testid="skeleton" />
-                <Skeleton className="h-4 w-2/3" data-testid="skeleton" />
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Platform Notes Section Skeleton */}
-      <section className="mb-8">
-        <Skeleton className="h-7 w-36 mb-4" data-testid="skeleton" />
-        <div className="grid gap-4 md:grid-cols-2">
-          {[1, 2].map((i) => (
-            <Card key={i}>
-              <CardHeader className="pb-2">
-                <Skeleton className="h-6 w-24" data-testid="skeleton" />
-              </CardHeader>
-              <CardContent>
-                <Skeleton className="h-4 w-full" data-testid="skeleton" />
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
-      {/* Generational Notes Section Skeleton */}
-      <section className="mb-8">
-        <Skeleton className="h-7 w-52 mb-4" data-testid="skeleton" />
-        <div className="grid gap-4 md:grid-cols-2">
-          {[1, 2].map((i) => (
-            <Card key={i}>
-              <CardHeader className="pb-2">
-                <Skeleton className="h-6 w-20" data-testid="skeleton" />
-              </CardHeader>
-              <CardContent>
-                <Skeleton className="h-4 w-full" data-testid="skeleton" />
-              </CardContent>
-            </Card>
+      {/* Section cards skeleton */}
+      <section className="mt-14" data-testid="content-skeleton">
+        <Skeleton className="mb-5 h-7 w-64" data-testid="skeleton" />
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-3">
+          {[1, 2, 3].map((i) => (
+            <Skeleton key={i} className="h-40 rounded-2xl" data-testid="skeleton" />
           ))}
         </div>
       </section>

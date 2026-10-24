@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, afterEach, beforeEach } from 'bun:test';
 import { render, screen, fireEvent, waitFor, cleanup } from '@testing-library/react';
-import { InterpreterForm } from '@/components/interpreter/interpreter-form';
+import { InterpreterForm, countEmojis } from '@/components/interpreter/interpreter-form';
 
 afterEach(() => {
   cleanup();
@@ -19,9 +19,9 @@ describe('InterpreterForm', () => {
       expect(screen.getByRole('textbox', { name: /message/i })).toBeInTheDocument();
     });
 
-    it('renders PlatformSelector', () => {
+    it('renders PlatformSelector as option cards', () => {
       render(<InterpreterForm onSubmit={mockOnSubmit} />);
-      expect(screen.getByRole('combobox')).toBeInTheDocument();
+      expect(screen.getByRole('radiogroup', { name: /platform/i })).toBeInTheDocument();
     });
 
     it('renders ContextSelector', () => {
@@ -69,7 +69,7 @@ describe('InterpreterForm', () => {
       fireEvent.change(textarea, { target: { value: longMessage } });
 
       const counter = screen.getByTestId('char-counter');
-      expect(counter).toHaveClass('text-yellow-600');
+      expect(counter).toHaveClass('text-primary-700');
     });
 
     it('shows error color when at limit', async () => {
@@ -81,7 +81,7 @@ describe('InterpreterForm', () => {
       fireEvent.change(textarea, { target: { value: maxMessage } });
 
       const counter = screen.getByTestId('char-counter');
-      expect(counter).toHaveClass('text-red-600');
+      expect(counter).toHaveClass('text-danger');
     });
   });
 
@@ -151,8 +151,6 @@ describe('InterpreterForm', () => {
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
 
       // Select a platform
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -196,8 +194,6 @@ describe('InterpreterForm', () => {
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
 
       // Select platform
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -227,9 +223,6 @@ describe('InterpreterForm', () => {
 
       // Fill in valid form
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
-
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -255,9 +248,6 @@ describe('InterpreterForm', () => {
 
       // Fill in valid form
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
-
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -283,9 +273,6 @@ describe('InterpreterForm', () => {
 
       // Fill in valid form
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
-
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -308,9 +295,6 @@ describe('InterpreterForm', () => {
 
       // Fill in valid form
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
-
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -333,9 +317,6 @@ describe('InterpreterForm', () => {
 
       // Fill in valid form
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
-
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });
@@ -357,7 +338,6 @@ describe('InterpreterForm', () => {
       render(<InterpreterForm onSubmit={mockOnSubmit} disabled />);
 
       expect(screen.getByRole('textbox', { name: /message/i })).toBeDisabled();
-      expect(screen.getByRole('combobox')).toBeDisabled();
       expect(screen.getByRole('button', { name: /interpret/i })).toBeDisabled();
 
       const radios = screen.getAllByRole('radio');
@@ -378,7 +358,7 @@ describe('InterpreterForm', () => {
       render(<InterpreterForm onSubmit={mockOnSubmit} />);
 
       expect(screen.getByRole('textbox', { name: /message/i })).toBeInTheDocument();
-      expect(screen.getByRole('combobox')).toBeInTheDocument();
+      expect(screen.getByRole('radiogroup', { name: /platform/i })).toBeInTheDocument();
       expect(screen.getByRole('radiogroup', { name: /relationship/i })).toBeInTheDocument();
     });
 
@@ -393,7 +373,7 @@ describe('InterpreterForm', () => {
       await waitFor(() => {
         const errorMessage = screen.getByText(/at least 10 characters/i);
         expect(errorMessage).toHaveAttribute('id');
-        expect(textarea).toHaveAttribute('aria-describedby', errorMessage.id);
+        expect(textarea.getAttribute('aria-describedby')).toContain(errorMessage.id);
       });
     });
 
@@ -421,13 +401,52 @@ describe('InterpreterForm', () => {
 
     it('accepts initial platform value', () => {
       render(<InterpreterForm onSubmit={mockOnSubmit} initialPlatform="SLACK" />);
-      expect(screen.getByRole('combobox')).toHaveTextContent('Slack');
+      expect(screen.getByRole('radio', { name: /slack/i })).toHaveAttribute('aria-checked', 'true');
     });
 
     it('accepts initial context value', () => {
       render(<InterpreterForm onSubmit={mockOnSubmit} initialContext="COWORKER" />);
       const coworkerRadio = screen.getByRole('radio', { name: /coworker/i });
       expect(coworkerRadio).toHaveAttribute('aria-checked', 'true');
+    });
+  });
+
+  describe('emoji count', () => {
+    it('shows a hint when there are no emojis yet', () => {
+      render(<InterpreterForm onSubmit={mockOnSubmit} />);
+      expect(screen.getByTestId('emoji-count')).toHaveTextContent('No emojis yet');
+    });
+
+    it('counts emojis live as the user types', () => {
+      render(<InterpreterForm onSubmit={mockOnSubmit} />);
+      const textarea = screen.getByRole('textbox', { name: /message/i });
+      fireEvent.change(textarea, { target: { value: 'sure 🙂' } });
+      expect(screen.getByTestId('emoji-count')).toHaveTextContent('1 emoji detected');
+      fireEvent.change(textarea, { target: { value: 'sure 🙂✨ 👩‍💻' } });
+      expect(screen.getByTestId('emoji-count')).toHaveTextContent('3 emojis detected');
+    });
+
+    it('exports a grapheme-aware emoji counter', () => {
+      expect(countEmojis('')).toBe(0);
+      expect(countEmojis('🇫🇷 👍🏽 ❤️')).toBe(3);
+    });
+  });
+
+  describe('streaming toggle', () => {
+    it('is hidden unless a change handler is provided', () => {
+      render(<InterpreterForm onSubmit={mockOnSubmit} />);
+      expect(screen.queryByRole('checkbox')).not.toBeInTheDocument();
+    });
+
+    it('reflects and reports the streaming preference', () => {
+      const onStreamingChange = mock(() => {});
+      render(
+        <InterpreterForm onSubmit={mockOnSubmit} streaming onStreamingChange={onStreamingChange} />
+      );
+      const toggle = screen.getByRole('checkbox', { name: /stream the answer/i });
+      expect(toggle).toBeChecked();
+      fireEvent.click(toggle);
+      expect(onStreamingChange).toHaveBeenCalledWith(false);
     });
   });
 });

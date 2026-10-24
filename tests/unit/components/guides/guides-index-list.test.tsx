@@ -1,7 +1,7 @@
 /**
  * Component tests for the editorial /guides index list.
  *
- * Verifies the featured-spread + dispatch-rows composition and the empty
+ * Verifies the featured-card + guide-card grid composition and the empty
  * state. Server component rendered through @testing-library/react (the
  * list has no client hooks).
  */
@@ -46,12 +46,24 @@ describe('GuidesIndexList', () => {
     // Featured guide pulls hero emoji onto the page.
     expect(container.textContent).toContain('💀');
 
-    // Heading at the section boundary ("The dispatches").
-    expect(container.textContent).toContain('The dispatches');
-    expect(container.textContent).toContain('Read the dispatch');
+    // Heading at the section boundary + featured kicker and read link.
+    expect(container.textContent).toContain('All guides');
+    expect(container.textContent).toContain('Latest · gen-z');
+    expect(container.textContent).toContain('Read the guide');
   });
 
-  it('renders one dispatch row per non-featured guide with a padded serial', () => {
+  it('renders the featured card without emoji or tag kicker when absent', () => {
+    const { container } = render(
+      <GuidesIndexList
+        guides={[makeGuide({ slug: 'plain', title: 'Plain guide', heroEmoji: '', tags: [] })]}
+      />
+    );
+    expect(container.textContent).not.toContain('💀');
+    expect(container.textContent).toContain('Latest');
+    expect(container.textContent).not.toContain('Latest ·');
+  });
+
+  it('renders one guide card per non-featured guide', () => {
     const guides = [
       makeGuide({ slug: 'featured' }),
       makeGuide({ slug: 'second', title: 'Second guide' }),
@@ -66,30 +78,28 @@ describe('GuidesIndexList', () => {
     expect(rows[0].getAttribute('data-slug')).toBe('second');
     expect(rows[1].getAttribute('data-slug')).toBe('third');
 
-    // Zero-padded serial numbers: № 002, № 003.
-    expect(container.textContent).toContain('№');
-    expect(container.textContent).toContain('002');
-    expect(container.textContent).toContain('003');
+    // Cards carry serif titles and a "N more" count.
+    expect(container.textContent).toContain('Second guide');
+    expect(container.textContent).toContain('2 more');
   });
 
-  it('truncates long descriptions in dispatch rows', () => {
+  it('clamps long descriptions in guide cards', () => {
     const longDescription = `${'a'.repeat(220)} extra padding to exceed truncation length`;
     const guides = [
       makeGuide({ slug: 'featured' }),
       makeGuide({ slug: 'second', description: longDescription }),
     ];
-    const { container } = render(<GuidesIndexList guides={guides} />);
+    const { getByText } = render(<GuidesIndexList guides={guides} />);
 
-    // Ellipsis indicates truncation; full description should not appear.
-    expect(container.textContent).toContain('…');
-    expect(container.textContent).not.toContain('extra padding to exceed truncation length');
+    // Full description stays in the DOM (SEO) but is visually clamped.
+    expect(getByText(longDescription).className).toContain('line-clamp-3');
   });
 
   it('renders a friendly empty state when no guides are passed', () => {
     const { getByTestId, container } = render(<GuidesIndexList guides={[]} />);
 
     expect(getByTestId('guides-empty')).toBeTruthy();
-    expect(container.textContent).toContain('No dispatches yet.');
+    expect(container.textContent).toContain('No guides yet.');
     // Featured/row testids should not appear in the empty branch.
     expect(container.querySelector('[data-testid="guides-featured-title"]')).toBeNull();
     expect(container.querySelector('[data-testid="guides-dispatch-row"]')).toBeNull();
@@ -100,6 +110,6 @@ describe('GuidesIndexList', () => {
 
     expect(container.querySelector('[data-testid="guides-featured-title"]')).toBeTruthy();
     expect(container.querySelector('[data-testid="guides-dispatch-row"]')).toBeNull();
-    expect(container.textContent).not.toContain('The dispatches');
+    expect(container.textContent).not.toContain('All guides');
   });
 });

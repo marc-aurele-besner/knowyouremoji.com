@@ -260,7 +260,7 @@ describe('ShareButtons', () => {
     it('applies sm size when specified', () => {
       render(<ShareButtons {...defaultProps} size="sm" />);
       const twitterButton = screen.getByRole('button', { name: /share on twitter/i });
-      expect(twitterButton).toHaveClass('h-8');
+      expect(twitterButton).toHaveClass('h-9');
     });
 
     it('applies lg size when specified', () => {
@@ -280,7 +280,7 @@ describe('ShareButtons', () => {
     it('applies ghost variant by default', () => {
       render(<ShareButtons {...defaultProps} />);
       const twitterButton = screen.getByRole('button', { name: /share on twitter/i });
-      expect(twitterButton).toHaveClass('hover:bg-gray-100');
+      expect(twitterButton).toHaveClass('hover:bg-muted');
     });
 
     it('applies outline variant when specified', () => {
@@ -292,7 +292,7 @@ describe('ShareButtons', () => {
     it('applies secondary variant when specified', () => {
       render(<ShareButtons {...defaultProps} variant="secondary" />);
       const twitterButton = screen.getByRole('button', { name: /share on twitter/i });
-      expect(twitterButton).toHaveClass('bg-gray-200');
+      expect(twitterButton).toHaveClass('bg-muted');
     });
   });
 

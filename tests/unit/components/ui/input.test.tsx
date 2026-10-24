@@ -28,9 +28,9 @@ describe('Input', () => {
     render(<Input data-testid="input" />);
     const input = screen.getByTestId('input');
     expect(input).toHaveClass('flex');
-    expect(input).toHaveClass('h-10');
+    expect(input).toHaveClass('h-11');
     expect(input).toHaveClass('w-full');
-    expect(input).toHaveClass('rounded-md');
+    expect(input).toHaveClass('rounded-xl');
     expect(input).toHaveClass('border');
   });
 
@@ -42,8 +42,8 @@ describe('Input', () => {
   it('applies error styling when error prop is true', () => {
     render(<Input error data-testid="input" />);
     const input = screen.getByTestId('input');
-    expect(input).toHaveClass('border-red-500');
-    expect(input).toHaveClass('focus-visible:ring-red-500');
+    expect(input).toHaveClass('border-danger');
+    expect(input).toHaveClass('focus-visible:ring-danger/25');
   });
 
   it('is disabled when disabled prop is true', () => {

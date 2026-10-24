@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { CheckoutButton } from '@/components/checkout';
 import { getEnv } from '@/lib/env';
 
@@ -72,11 +70,74 @@ export function generateMetadata(): Metadata {
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Pricing' }];
 
+const freeFeatures = [
+  '3 interpretations per day',
+  'Browse emoji database',
+  'Context-aware meanings',
+  'Platform differences',
+];
+
+const proFeatures = [
+  'Unlimited interpretations',
+  'Priority AI processing',
+  'Interpretation history',
+  'Save favorite interpretations',
+  'No ads',
+];
+
+/** Feature comparison rows: `true` = included, `false` = not included, string = value. */
+const comparisonRows: { feature: string; free: boolean | string; pro: boolean | string }[] = [
+  { feature: 'Daily interpretations', free: '3', pro: 'Unlimited' },
+  { feature: 'Emoji database access', free: true, pro: true },
+  { feature: 'Context-aware meanings', free: true, pro: true },
+  { feature: 'Platform differences', free: true, pro: true },
+  { feature: 'Priority AI processing', free: false, pro: true },
+  { feature: 'Interpretation history', free: false, pro: true },
+  { feature: 'Save favorites', free: false, pro: true },
+  { feature: 'Ad-free experience', free: false, pro: true },
+];
+
+const phase2Features = [
+  {
+    emoji: '👤',
+    label: 'Person',
+    title: 'User Accounts',
+    description: 'Sign in to save your preferences and interpretation history',
+  },
+  {
+    emoji: '👥',
+    label: 'Team',
+    title: 'Team Plans',
+    description: 'Collaborate with your team and share interpretations',
+  },
+  {
+    emoji: '📊',
+    label: 'Chart',
+    title: 'Analytics',
+    description: 'Track emoji trends and usage patterns across your communications',
+  },
+];
+
+const checkIcon = (
+  <svg
+    className="mt-0.5 h-4 w-4 shrink-0 text-success"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <polyline points="20 6 9 17 4 12" />
+  </svg>
+);
+
 /**
  * Pricing page for KnowYourEmoji.com
  *
  * Includes:
- * - Hero section with page title
+ * - Centered header with eyebrow
  * - Pricing tiers (Free and Pro)
  * - Feature comparison table
  * - Coming soon teaser for Phase 2 features
@@ -84,252 +145,174 @@ const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Pricing' }];
  */
 export default function PricingPage() {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
-      <section className="bg-gradient-to-b from-amber-50 to-white dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Breadcrumbs items={breadcrumbItems} className="mb-6" />
+    <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Simple, Transparent Pricing
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto">
-            Get started for free. Upgrade when you need more.
-          </p>
-        </div>
-      </section>
+      {/* Header Section */}
+      <header className="mb-10 text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-primary-700">Pricing</p>
+        <h1 className="mt-2.5 text-4xl font-semibold tracking-tight md:text-5xl">
+          Simple, Transparent Pricing
+        </h1>
+        <p className="mx-auto mt-2.5 max-w-2xl text-[17px] text-muted-foreground">
+          Get started for free. Upgrade when you need more.
+        </p>
+      </header>
 
       {/* Pricing Tiers Section */}
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="pricing-tiers-section">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Free Tier */}
-            <Card className="relative">
-              <CardHeader>
-                <CardTitle className="text-2xl">Free</CardTitle>
-                <CardDescription>Perfect for casual users</CardDescription>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold text-gray-900 dark:text-white">$0</span>
-                  <span className="text-gray-600 dark:text-gray-400">/month</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">
-                      3 interpretations per day
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">Browse emoji database</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">Context-aware meanings</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">Platform differences</span>
-                  </li>
-                </ul>
-                <Button asChild className="w-full" variant="outline">
-                  <Link href="/interpreter">Get Started Free</Link>
-                </Button>
-              </CardContent>
-            </Card>
+      <section
+        aria-label="Plans"
+        className="mx-auto grid max-w-[880px] gap-5 md:grid-cols-2"
+        data-testid="pricing-tiers-section"
+      >
+        {/* Free Tier */}
+        <div className="flex flex-col gap-5 rounded-[22px] border border-card-border bg-card p-7">
+          <div>
+            <h2 className="text-xl font-semibold">Free</h2>
+            <p className="mt-1 text-sm text-muted-foreground">Perfect for casual users</p>
+          </div>
+          <p className="text-5xl font-semibold tracking-tight">
+            $0<span className="text-[15px] font-normal text-muted-foreground">/month</span>
+          </p>
+          <ul className="flex flex-col gap-2.5 text-[14.5px]">
+            {freeFeatures.map((feature) => (
+              <li key={feature} className="flex gap-2.5">
+                {checkIcon}
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <Button asChild className="mt-auto w-full" variant="secondary" size="lg">
+            <Link href="/interpreter">Get Started Free</Link>
+          </Button>
+        </div>
 
-            {/* Pro Tier */}
-            <Card className="relative border-amber-500 dark:border-amber-400">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                <Badge variant="warning">Most Popular</Badge>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-2xl">Pro</CardTitle>
-                <CardDescription>For power users and professionals</CardDescription>
-                <div className="mt-4">
-                  <span className="text-4xl font-bold text-gray-900 dark:text-white">$9</span>
-                  <span className="text-gray-600 dark:text-gray-400">/month</span>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">
-                      Unlimited interpretations
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">Priority AI processing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">Interpretation history</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">
-                      Save favorite interpretations
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-green-500 mt-0.5">✓</span>
-                    <span className="text-gray-600 dark:text-gray-300">No ads</span>
-                  </li>
-                </ul>
-                <CheckoutButton className="w-full">Start 7-Day Free Trial</CheckoutButton>
-              </CardContent>
-            </Card>
+        {/* Pro Tier */}
+        <div className="flex flex-col gap-5 rounded-[22px] border border-foreground bg-card p-7 shadow-soft">
+          <div>
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="text-xl font-semibold">Pro</h2>
+              <span className="rounded-full bg-foreground px-2.5 py-1 text-[11.5px] font-semibold text-background">
+                Most Popular
+              </span>
+            </div>
+            <p className="mt-1 text-sm text-muted-foreground">For power users and professionals</p>
+          </div>
+          <p className="text-5xl font-semibold tracking-tight">
+            $9<span className="text-[15px] font-normal text-muted-foreground">/month</span>
+          </p>
+          <ul className="flex flex-col gap-2.5 text-[14.5px]">
+            {proFeatures.map((feature) => (
+              <li key={feature} className="flex gap-2.5">
+                {checkIcon}
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-auto">
+            <CheckoutButton className="w-full" variant="brand" size="lg">
+              Start 7-Day Free Trial
+            </CheckoutButton>
           </div>
         </div>
       </section>
 
       {/* Feature Comparison Section */}
-      <section
-        className="py-16 bg-gray-50 dark:bg-gray-800"
-        data-testid="feature-comparison-section"
-      >
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Feature Comparison
-          </h2>
+      <section className="mt-14" data-testid="feature-comparison-section">
+        <h2 className="mb-5 text-center text-2xl font-semibold tracking-tight md:text-[28px]">
+          Feature Comparison
+        </h2>
 
-          <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <th className="text-left p-4 text-gray-900 dark:text-white font-semibold">
-                    Feature
+        <div className="mx-auto max-w-[880px] overflow-x-auto rounded-2xl border border-card-border bg-card">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-card-border">
+                <th scope="col" className="p-4 text-left font-semibold">
+                  Feature
+                </th>
+                <th scope="col" className="p-4 text-center font-semibold">
+                  Free
+                </th>
+                <th scope="col" className="p-4 text-center font-semibold">
+                  Pro
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {comparisonRows.map((row) => (
+                <tr key={row.feature} className="border-b border-card-border last:border-b-0">
+                  <th scope="row" className="p-4 text-left font-normal text-muted-foreground">
+                    {row.feature}
                   </th>
-                  <th className="text-center p-4 text-gray-900 dark:text-white font-semibold">
-                    Free
-                  </th>
-                  <th className="text-center p-4 text-gray-900 dark:text-white font-semibold">
-                    Pro
-                  </th>
+                  {[row.free, row.pro].map((value, index) => (
+                    <td key={index} className="p-4 text-center">
+                      {value === true ? (
+                        <span className="font-bold text-success">
+                          <span aria-hidden="true">✓</span>
+                          <span className="sr-only">Included</span>
+                        </span>
+                      ) : value === false ? (
+                        <span className="text-muted-foreground">
+                          <span aria-hidden="true">—</span>
+                          <span className="sr-only">Not included</span>
+                        </span>
+                      ) : (
+                        value
+                      )}
+                    </td>
+                  ))}
                 </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Daily interpretations</td>
-                  <td className="p-4 text-center text-gray-600 dark:text-gray-300">3</td>
-                  <td className="p-4 text-center text-gray-600 dark:text-gray-300">Unlimited</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Emoji database access</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Context-aware meanings</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Platform differences</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Priority AI processing</td>
-                  <td className="p-4 text-center text-gray-400">-</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Interpretation history</td>
-                  <td className="p-4 text-center text-gray-400">-</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Save favorites</td>
-                  <td className="p-4 text-center text-gray-400">-</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-                <tr>
-                  <td className="p-4 text-gray-600 dark:text-gray-300">Ad-free experience</td>
-                  <td className="p-4 text-center text-gray-400">-</td>
-                  <td className="p-4 text-center text-green-500">✓</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
       {/* Phase 2 Teaser Section */}
-      <section className="py-16 bg-white dark:bg-gray-900" data-testid="phase2-teaser-section">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <Badge variant="secondary" className="mb-4">
+      <section
+        className="mt-16 rounded-3xl bg-foreground p-7 text-background md:p-12"
+        data-testid="phase2-teaser-section"
+      >
+        <div className="max-w-2xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.1em] text-primary-500">
             Phase 2
-          </Badge>
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          </p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight md:text-[34px]">
             More Features Coming Soon
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="mt-2 opacity-75">
             We&apos;re working hard to bring you even more powerful features. Stay tuned for user
             accounts, team plans, and advanced analytics.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-3xl mb-3">
-                <span role="img" aria-label="Person">
-                  👤
-                </span>
-              </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">User Accounts</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Sign in to save your preferences and interpretation history
-              </p>
+        </div>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {phase2Features.map((feature) => (
+            <div key={feature.title} className="rounded-2xl border border-background/15 p-5">
+              <span className="text-3xl" role="img" aria-label={feature.label}>
+                {feature.emoji}
+              </span>
+              <h3 className="mt-3 font-semibold">{feature.title}</h3>
+              <p className="mt-1 text-sm opacity-75">{feature.description}</p>
             </div>
-            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-3xl mb-3">
-                <span role="img" aria-label="Team">
-                  👥
-                </span>
-              </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Team Plans</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Collaborate with your team and share interpretations
-              </p>
-            </div>
-            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
-              <div className="text-3xl mb-3">
-                <span role="img" aria-label="Chart">
-                  📊
-                </span>
-              </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Analytics</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                Track emoji trends and usage patterns across your communications
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-amber-600 dark:bg-amber-700">
-        <div className="container mx-auto px-4 text-center max-w-2xl">
-          <h2 className="text-3xl font-bold text-white mb-4">Start Interpreting Today</h2>
-          <p className="text-amber-100 mb-8">
-            Try our AI-powered emoji interpreter for free. No sign-up required.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
-              <Link href="/interpreter">Try the Interpreter</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white/10"
-            >
-              <Link href="/emoji">Browse All Emojis</Link>
-            </Button>
-          </div>
+      <section className="mt-16 text-center">
+        <h2 className="text-2xl font-semibold tracking-tight md:text-[28px]">
+          Start Interpreting Today
+        </h2>
+        <p className="mx-auto mt-2 max-w-xl text-muted-foreground">
+          Try our AI-powered emoji interpreter for free. No sign-up required.
+        </p>
+        <div className="mt-6 flex flex-col justify-center gap-2 sm:flex-row">
+          <Button asChild size="lg" variant="brand">
+            <Link href="/interpreter">Try the Interpreter</Link>
+          </Button>
+          <Button asChild size="lg" variant="secondary">
+            <Link href="/emoji">Browse All Emojis</Link>
+          </Button>
         </div>
       </section>
     </main>

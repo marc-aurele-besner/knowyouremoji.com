@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import { ComboCard } from '@/components/combo/combo-card';
 
 /**
  * Related combo data for display
@@ -26,25 +26,6 @@ export interface RelatedCombosSectionProps {
   combos: RelatedCombo[];
   /** Additional CSS class names */
   className?: string;
-}
-
-/**
- * Link icon component
- */
-function LinkIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      data-testid="link-icon"
-      className={cn('w-6 h-6', className)}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      strokeWidth={2}
-    >
-      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-    </svg>
-  );
 }
 
 /**
@@ -84,29 +65,6 @@ function ChevronUpIcon({ className }: { className?: string }) {
 }
 
 /**
- * Individual related combo card component
- */
-function RelatedComboCard({ combo }: { combo: RelatedCombo }) {
-  return (
-    <Link
-      href={`/combo/${combo.slug}`}
-      className="block border rounded-lg p-4 bg-card dark:bg-card hover:border-primary hover:shadow-md transition-all"
-      aria-label={`${combo.name} combo`}
-    >
-      <div className="flex items-start gap-4">
-        <span className="text-3xl shrink-0">{combo.combo}</span>
-        <div className="min-w-0 flex-1">
-          <h3 className="font-semibold text-gray-900 dark:text-gray-100 text-sm mb-1">
-            {combo.name}
-          </h3>
-          <p className="text-xs text-muted-foreground line-clamp-2">{combo.meaning}</p>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-/**
  * RelatedCombosSection displays combos related to the current combo
  * at the bottom of combo detail pages. Combos are displayed as clickable
  * cards that link to their respective detail pages.
@@ -134,29 +92,28 @@ export function RelatedCombosSection({ combos, className }: RelatedCombosSection
 
   return (
     <section
-      className={cn('my-8', className)}
+      className={cn('mt-14', className)}
       aria-labelledby="related-combos-heading"
       role="region"
     >
       <button
         onClick={toggleExpand}
-        className="flex items-center justify-between w-full text-left mb-4"
+        className="mb-4 flex min-h-11 w-full items-center justify-between gap-3 rounded-xl text-left text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
         aria-expanded={expanded}
       >
         <h2
           id="related-combos-heading"
-          className="text-2xl font-bold flex items-center gap-2 text-gray-900 dark:text-gray-100"
+          className="text-2xl font-semibold tracking-tight text-foreground"
         >
-          <LinkIcon />
           Related Combos
         </h2>
         {expanded ? <ChevronUpIcon /> : <ChevronDownIcon />}
       </button>
 
       {expanded && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]">
           {combos.map((combo) => (
-            <RelatedComboCard key={combo.slug} combo={combo} />
+            <ComboCard key={combo.slug} combo={combo} ariaLabel={`${combo.name} combo`} />
           ))}
         </div>
       )}

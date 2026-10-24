@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach, mock, beforeEach } from 'bun:test';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, screen, cleanup, waitFor } from '@testing-library/react';
 import { DashboardHome } from '@/components/dashboard/dashboard-home';
 
 // Mock useRateLimit hook
@@ -24,7 +24,16 @@ mock.module('next/navigation', () => ({
   }),
 }));
 
+type FetchResult = { ok: boolean; json: () => Promise<unknown> };
+let fetchImpl: () => Promise<FetchResult> = () =>
+  Promise.resolve({ ok: true, json: () => Promise.resolve({ data: [], hasMore: false }) });
+const mockFetch = mock(() => fetchImpl());
+globalThis.fetch = mockFetch as never;
+
 beforeEach(() => {
+  globalThis.fetch = mockFetch as never;
+  fetchImpl = () =>
+    Promise.resolve({ ok: true, json: () => Promise.resolve({ data: [], hasMore: false }) });
   mockRateLimit.used = 1;
   mockRateLimit.remaining = 2;
   mockRateLimit.maxUses = 3;
@@ -116,13 +125,101 @@ describe('DashboardHome', () => {
     expect(screen.getByText(/find emojis and combos/i)).toBeInTheDocument();
   });
 
-  it('quick action links have correct hrefs', () => {
+  it('quick action hub cards link to the right pages', () => {
     render(<DashboardHome />);
-    const links = screen.getAllByRole('link', { name: /get started/i });
-    const hrefs = links.map((l) => l.getAttribute('href'));
-    expect(hrefs).toContain('/interpreter');
-    expect(hrefs).toContain('/emoji');
-    expect(hrefs).toContain('/search');
+    expect(screen.getByRole('link', { name: /interpret a message/i })).toHaveAttribute(
+      'href',
+      '/interpreter'
+    );
+    expect(screen.getByRole('link', { name: /browse emojis/i })).toHaveAttribute('href', '/emoji');
+    expect(screen.getByRole('link', { name: /^search/i })).toHaveAttribute('href', '/search');
+    expect(screen.getByRole('link', { name: /revisit past interpretations/i })).toHaveAttribute(
+      'href',
+      '/dashboard/history'
+    );
+  });
+
+  describe('recent interpretations', () => {
+    it('shows a loading skeleton, then the empty state when there is no history', async () => {
+      render(<DashboardHome />);
+      expect(screen.getByTestId('recent-loading')).toBeInTheDocument();
+      await waitFor(() => {
+        expect(screen.getByText(/no interpretations yet/i)).toBeInTheDocument();
+      });
+      expect(mockFetch).toHaveBeenCalledWith('/api/interpretations?page=0');
+      expect(screen.getByRole('link', { name: /open the interpreter/i })).toHaveAttribute(
+        'href',
+        '/interpreter'
+      );
+    });
+
+    it('lists up to three recent interpretations', async () => {
+      const entry = (id: string, count: number, date: string) => ({
+        id,
+        message: `Message ${id}`,
+        interpretation: 'x',
+        emoji_count: count,
+        created_at: date,
+      });
+      fetchImpl = () =>
+        Promise.resolve({
+          ok: true,
+          json: () =>
+            Promise.resolve({
+              data: [
+                entry('a', 1, '2026-03-01T10:00:00.000Z'),
+                entry('b', 2, 'not-a-date'),
+                entry('c', 3, '2026-03-03T10:00:00.000Z'),
+                entry('d', 4, '2026-03-04T10:00:00.000Z'),
+              ],
+              hasMore: false,
+            }),
+        });
+      render(<DashboardHome />);
+      await waitFor(() => {
+        expect(screen.getByText('Message a')).toBeInTheDocument();
+      });
+      expect(screen.getByText('Message c')).toBeInTheDocument();
+      expect(screen.queryByText('Message d')).not.toBeInTheDocument();
+      expect(screen.getByText('1 emoji')).toBeInTheDocument();
+      expect(screen.getByText('2 emojis')).toBeInTheDocument();
+      expect(screen.getByText('not-a-date')).toBeInTheDocument();
+      expect(screen.getByText('Mar 1, 2026')).toBeInTheDocument();
+    });
+
+    it('falls back to the empty state when the request fails', async () => {
+      fetchImpl = () => Promise.resolve({ ok: false, json: () => Promise.resolve({}) });
+      render(<DashboardHome />);
+      await waitFor(() => {
+        expect(screen.getByText(/no interpretations yet/i)).toBeInTheDocument();
+      });
+    });
+
+    it('falls back to the empty state when the payload has no data', async () => {
+      fetchImpl = () => Promise.resolve({ ok: true, json: () => Promise.resolve({}) });
+      render(<DashboardHome />);
+      await waitFor(() => {
+        expect(screen.getByText(/no interpretations yet/i)).toBeInTheDocument();
+      });
+    });
+
+    it('falls back to the empty state when fetch throws', async () => {
+      fetchImpl = () => Promise.reject(new Error('offline'));
+      render(<DashboardHome />);
+      await waitFor(() => {
+        expect(screen.getByText(/no interpretations yet/i)).toBeInTheDocument();
+      });
+    });
+
+    it('ignores a response that resolves after unmount', async () => {
+      let resolve: (value: FetchResult) => void = () => {};
+      fetchImpl = () => new Promise<FetchResult>((r) => (resolve = r));
+      const { unmount } = render(<DashboardHome />);
+      unmount();
+      resolve({ ok: true, json: () => Promise.resolve({ data: [] }) });
+      await new Promise((r) => setTimeout(r, 0));
+      expect(screen.queryByText(/no interpretations yet/i)).not.toBeInTheDocument();
+    });
   });
 
   it('has displayName set', () => {

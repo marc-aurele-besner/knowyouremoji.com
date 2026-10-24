@@ -46,9 +46,9 @@ describe('UsageCounter', () => {
       expect(screen.getByText(/2 of 3/)).toBeInTheDocument();
     });
 
-    it('displays "free uses remaining" text', () => {
+    it('displays "free interpretations left today" text', () => {
       render(<UsageCounter remaining={2} max={3} />);
-      expect(screen.getByText(/free uses remaining/i)).toBeInTheDocument();
+      expect(screen.getByText(/free interpretations left today/i)).toBeInTheDocument();
     });
 
     it('shows full remaining count when no uses recorded', () => {
@@ -71,25 +71,25 @@ describe('UsageCounter', () => {
     it('applies warning style when low on uses (1 remaining)', () => {
       render(<UsageCounter remaining={1} max={3} />);
       const counter = screen.getByTestId('usage-counter');
-      expect(counter).toHaveClass('text-yellow-600');
+      expect(counter).toHaveClass('text-primary-700');
     });
 
     it('applies error style when no uses remaining', () => {
       render(<UsageCounter remaining={0} max={3} />);
       const counter = screen.getByTestId('usage-counter');
-      expect(counter).toHaveClass('text-red-600');
+      expect(counter).toHaveClass('text-danger');
     });
 
     it('applies default style when uses are available', () => {
       render(<UsageCounter remaining={3} max={3} />);
       const counter = screen.getByTestId('usage-counter');
-      expect(counter).toHaveClass('text-gray-600');
+      expect(counter).toHaveClass('text-muted-foreground');
     });
 
     it('applies warning style at exactly 1 remaining', () => {
       render(<UsageCounter remaining={1} max={5} />);
       const counter = screen.getByTestId('usage-counter');
-      expect(counter).toHaveClass('text-yellow-600');
+      expect(counter).toHaveClass('text-primary-700');
     });
   });
 
@@ -102,20 +102,20 @@ describe('UsageCounter', () => {
     it('has aria-label describing the usage status', () => {
       render(<UsageCounter remaining={2} max={3} />);
       const status = screen.getByRole('status');
-      expect(status).toHaveAttribute('aria-label', '2 of 3 free uses remaining');
+      expect(status).toHaveAttribute('aria-label', '2 of 3 free interpretations left today');
     });
 
     it('updates aria-label when remaining changes', () => {
       const { rerender } = render(<UsageCounter remaining={2} max={3} />);
       expect(screen.getByRole('status')).toHaveAttribute(
         'aria-label',
-        '2 of 3 free uses remaining'
+        '2 of 3 free interpretations left today'
       );
 
       rerender(<UsageCounter remaining={1} max={3} />);
       expect(screen.getByRole('status')).toHaveAttribute(
         'aria-label',
-        '1 of 3 free uses remaining'
+        '1 of 3 free interpretations left today'
       );
     });
 
@@ -137,7 +137,7 @@ describe('UsageCounter', () => {
       render(<UsageCounter remaining={2} max={3} className="my-custom-class" />);
       const counter = screen.getByTestId('usage-counter');
       expect(counter).toHaveClass('my-custom-class');
-      expect(counter).toHaveClass('text-sm');
+      expect(counter).toHaveClass('inline-flex');
     });
   });
 
@@ -147,27 +147,42 @@ describe('UsageCounter', () => {
       expect(screen.getByText('2/3')).toBeInTheDocument();
     });
 
-    it('does not show "free uses remaining" in compact mode', () => {
+    it('does not show the long label in compact mode', () => {
       render(<UsageCounter remaining={2} max={3} variant="compact" />);
-      expect(screen.queryByText(/free uses remaining/i)).not.toBeInTheDocument();
+      expect(screen.queryByText(/free interpretations left today/i)).not.toBeInTheDocument();
     });
 
     it('still applies color styles in compact mode', () => {
       render(<UsageCounter remaining={0} max={3} variant="compact" />);
       const counter = screen.getByTestId('usage-counter');
-      expect(counter).toHaveClass('text-red-600');
+      expect(counter).toHaveClass('text-danger');
     });
   });
 
   describe('default variant', () => {
     it('uses default variant when not specified', () => {
       render(<UsageCounter remaining={2} max={3} />);
-      expect(screen.getByText(/free uses remaining/i)).toBeInTheDocument();
+      expect(screen.getByText(/free interpretations left today/i)).toBeInTheDocument();
     });
 
     it('explicitly uses default variant', () => {
       render(<UsageCounter remaining={2} max={3} variant="default" />);
-      expect(screen.getByText(/free uses remaining/i)).toBeInTheDocument();
+      expect(screen.getByText(/free interpretations left today/i)).toBeInTheDocument();
+    });
+  });
+
+  describe('pips', () => {
+    it('draws one pip per daily use and fills the remaining ones', () => {
+      render(<UsageCounter remaining={2} max={3} />);
+      const pips = screen.getByTestId('usage-pips').querySelectorAll('i');
+      expect(pips).toHaveLength(3);
+      expect(pips[0]).toHaveClass('bg-primary-500');
+      expect(pips[2]).toHaveClass('bg-card-border');
+    });
+
+    it('omits pips for large allowances', () => {
+      render(<UsageCounter remaining={999} max={1000} />);
+      expect(screen.queryByTestId('usage-pips')).not.toBeInTheDocument();
     });
   });
 

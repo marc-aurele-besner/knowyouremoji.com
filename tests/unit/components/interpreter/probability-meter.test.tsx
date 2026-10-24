@@ -69,19 +69,19 @@ describe('ProbabilityMeter', () => {
     it('applies correct visual styling for low zone', () => {
       render(<ProbabilityMeter value={20} label="Test" />);
       const fill = screen.getByTestId('probability-meter-fill');
-      expect(fill).toHaveClass('bg-green-500');
+      expect(fill).toHaveClass('bg-success');
     });
 
     it('applies correct visual styling for medium zone', () => {
       render(<ProbabilityMeter value={50} label="Test" />);
       const fill = screen.getByTestId('probability-meter-fill');
-      expect(fill).toHaveClass('bg-yellow-500');
+      expect(fill).toHaveClass('bg-primary-500');
     });
 
     it('applies correct visual styling for high zone', () => {
       render(<ProbabilityMeter value={80} label="Test" />);
       const fill = screen.getByTestId('probability-meter-fill');
-      expect(fill).toHaveClass('bg-red-500');
+      expect(fill).toHaveClass('bg-danger');
     });
   });
 
@@ -104,16 +104,16 @@ describe('ProbabilityMeter', () => {
       expect(meter).toHaveAttribute('data-color-scheme', 'neutral');
     });
 
-    it('uses blue colors for neutral scheme', () => {
+    it('uses amber for neutral scheme', () => {
       render(<ProbabilityMeter value={50} label="Test" colorScheme="neutral" />);
       const fill = screen.getByTestId('probability-meter-fill');
-      expect(fill).toHaveClass('bg-blue-500');
+      expect(fill).toHaveClass('bg-primary-500');
     });
 
-    it('uses orange colors for warning scheme', () => {
+    it('uses deeper amber for warning scheme', () => {
       render(<ProbabilityMeter value={50} label="Test" colorScheme="warning" />);
       const fill = screen.getByTestId('probability-meter-fill');
-      expect(fill).toHaveClass('bg-orange-500');
+      expect(fill).toHaveClass('bg-primary-600');
     });
   });
 
@@ -261,7 +261,7 @@ describe('ProbabilityMeter', () => {
     it('displays label above meter', () => {
       render(<ProbabilityMeter value={50} label="Test Label" />);
       const label = screen.getByText('Test Label');
-      expect(label).toHaveClass('text-sm');
+      expect(label).toHaveClass('text-xs');
     });
   });
 
@@ -286,35 +286,26 @@ describe('ProbabilityMeter', () => {
     });
   });
 
-  describe('background color styling', () => {
-    it('applies green background for low zone', () => {
-      render(<ProbabilityMeter value={20} label="Test" />);
-      const meter = screen.getByTestId('probability-meter');
-      expect(meter).toHaveClass('bg-green-100');
-    });
-
-    it('applies yellow background for medium zone', () => {
-      render(<ProbabilityMeter value={50} label="Test" />);
-      const meter = screen.getByTestId('probability-meter');
-      expect(meter).toHaveClass('bg-yellow-100');
-    });
-
-    it('applies red background for high zone', () => {
+  describe('stat tile styling', () => {
+    it('renders as a bordered card tile regardless of zone', () => {
       render(<ProbabilityMeter value={80} label="Test" />);
       const meter = screen.getByTestId('probability-meter');
-      expect(meter).toHaveClass('bg-red-100');
+      expect(meter).toHaveClass('border', 'border-card-border', 'bg-card');
+      expect(meter).toHaveAttribute('data-color-zone', 'high');
+    });
+  });
+
+  describe('danger threshold', () => {
+    it('uses amber below the threshold', () => {
+      render(<ProbabilityMeter value={44} label="Test" dangerThreshold={45} />);
+      expect(screen.getByTestId('probability-meter-fill')).toHaveClass('bg-primary-500');
+      expect(screen.getByTestId('probability-meter')).not.toHaveAttribute('data-danger');
     });
 
-    it('applies blue background for neutral scheme', () => {
-      render(<ProbabilityMeter value={50} label="Test" colorScheme="neutral" />);
-      const meter = screen.getByTestId('probability-meter');
-      expect(meter).toHaveClass('bg-blue-100');
-    });
-
-    it('applies orange background for warning scheme', () => {
-      render(<ProbabilityMeter value={50} label="Test" colorScheme="warning" />);
-      const meter = screen.getByTestId('probability-meter');
-      expect(meter).toHaveClass('bg-orange-100');
+    it('turns red at or above the threshold', () => {
+      render(<ProbabilityMeter value={45} label="Test" dangerThreshold={45} />);
+      expect(screen.getByTestId('probability-meter-fill')).toHaveClass('bg-danger');
+      expect(screen.getByTestId('probability-meter')).toHaveAttribute('data-danger', 'true');
     });
   });
 });

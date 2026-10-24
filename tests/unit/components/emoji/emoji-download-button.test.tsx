@@ -62,9 +62,9 @@ describe('EmojiDownloadButton', () => {
       expect(screen.getByRole('button', { name: /download emoji as image/i })).toBeInTheDocument();
     });
 
-    it('displays "Download Image" text', () => {
+    it('displays "PNG" text', () => {
       render(<EmojiDownloadButton character="😀" name="Grinning Face" />);
-      expect(screen.getByText('Download Image')).toBeInTheDocument();
+      expect(screen.getByText('PNG')).toBeInTheDocument();
     });
 
     it('applies custom className', () => {

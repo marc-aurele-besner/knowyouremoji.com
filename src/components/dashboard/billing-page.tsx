@@ -2,10 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
+import {
+  DashboardPageHeader,
+  EmptyState,
+  SectionCard,
+  SkeletonRows,
+  formErrorClass,
+  formOkClass,
+} from './dashboard-ui';
 
 interface SubscriptionData {
   status: string;
@@ -150,177 +157,135 @@ function BillingPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Billing</h1>
-        <p className="mt-1 text-gray-500 dark:text-gray-400">
-          Manage your subscription, payment method, and billing details.
-        </p>
-      </div>
+      <DashboardPageHeader
+        title="Billing"
+        description="Manage your subscription, payment method, and billing details."
+      />
 
       {!isAuthenticated && !isLoading && (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <div className="text-4xl mb-4">🔒</div>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              Billing Not Available
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Sign in to manage your billing and subscription.
-            </p>
-          </CardContent>
-        </Card>
+        <EmptyState
+          emoji="🔒"
+          title="Billing Not Available"
+          description="Sign in to manage your billing and subscription."
+          action={
+            <Button asChild>
+              <Link href="/login">Sign in</Link>
+            </Button>
+          }
+        />
       )}
 
       {isAuthenticated && error && (
-        <div
-          className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
-          role="alert"
-        >
+        <div className={formErrorClass} role="alert">
           {error}
         </div>
       )}
 
       {isAuthenticated && cancelSuccess && (
-        <div
-          className="p-4 text-sm text-green-600 bg-green-50 dark:bg-green-900/20 dark:text-green-400 rounded-lg"
-          role="status"
-        >
+        <div className={formOkClass} role="status">
           Your subscription has been canceled. You will retain access until the end of your current
           billing period.
         </div>
       )}
 
-      {(isLoading || (isAuthenticated && isLoadingSubscription)) && (
-        <div className="space-y-4">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <Card key={i}>
-              <CardContent className="py-6">
-                <div className="animate-pulse space-y-4">
-                  <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/4" />
-                  <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/2" />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      )}
+      {(isLoading || (isAuthenticated && isLoadingSubscription)) && <SkeletonRows count={3} />}
 
       {isAuthenticated && !isLoadingSubscription && (
-        <>
+        <div className="max-w-2xl space-y-4">
           {/* Current Plan */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Current Plan</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <p className="font-medium text-gray-900 dark:text-white">
-                      {getPlanLabel(subscription?.plan ?? 'free')}
-                    </p>
-                    {getStatusBadge(subscription?.status ?? 'free')}
-                  </div>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                    {getPlanDescription(subscription?.plan ?? 'free')}
-                  </p>
+          <section className="rounded-2xl border border-card-border bg-card p-6 md:p-7">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <span className="eyebrow">Current Plan</span>
+                <div className="mt-1.5 flex flex-wrap items-center gap-2">
+                  <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+                    {getPlanLabel(subscription?.plan ?? 'free')}
+                  </h2>
+                  {getStatusBadge(subscription?.status ?? 'free')}
                 </div>
-                {isFree && (
-                  <Button variant="primary" asChild>
-                    <Link href="/pricing">Upgrade to Pro</Link>
-                  </Button>
-                )}
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {getPlanDescription(subscription?.plan ?? 'free')}
+                </p>
               </div>
-
-              {subscription?.currentPeriodEnd && (
-                <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {isCanceled
-                      ? `Access until ${formatDate(subscription.currentPeriodEnd)}`
-                      : `Next billing date: ${formatDate(subscription.currentPeriodEnd)}`}
-                  </p>
-                </div>
+              {isFree && (
+                <Button variant="brand" asChild>
+                  <Link href="/pricing">Upgrade to Pro</Link>
+                </Button>
               )}
-            </CardContent>
-          </Card>
+            </div>
+
+            {subscription?.currentPeriodEnd && (
+              <p className="mt-4 border-t border-card-border pt-4 text-sm text-muted-foreground">
+                {isCanceled
+                  ? `Access until ${formatDate(subscription.currentPeriodEnd)}`
+                  : `Next billing date: ${formatDate(subscription.currentPeriodEnd)}`}
+              </p>
+            )}
+          </section>
 
           {/* Payment Method */}
           {hasStripeSubscription && (
-            <Card>
-              <CardHeader>
-                <CardTitle>Payment Method</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Manage your payment method through the Stripe billing portal.
-                  </p>
-                  <Button
-                    variant="outline"
-                    onClick={handleManagePayment}
-                    loading={isRedirectingToPortal}
-                    disabled={isRedirectingToPortal}
-                  >
-                    {isRedirectingToPortal ? 'Redirecting...' : 'Update Payment Method'}
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            <section className="rounded-2xl border border-card-border bg-card p-6 md:p-7">
+              <h2 className="eyebrow">Payment Method</h2>
+              <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+                <p className="flex items-center gap-2.5 text-sm text-muted-foreground">
+                  <span className="emoji-display text-xl" aria-hidden="true">
+                    💳
+                  </span>
+                  Manage your payment method through the Stripe billing portal.
+                </p>
+                <Button
+                  onClick={handleManagePayment}
+                  loading={isRedirectingToPortal}
+                  disabled={isRedirectingToPortal}
+                >
+                  {isRedirectingToPortal ? 'Redirecting...' : 'Update Payment Method'}
+                </Button>
+              </div>
+            </section>
           )}
 
           {/* Cancel Subscription */}
           {isActive && hasStripeSubscription && (
-            <Card className="border-red-200 dark:border-red-800">
-              <CardHeader>
-                <CardTitle className="text-red-600 dark:text-red-400">
-                  Cancel Subscription
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {!showCancelConfirm ? (
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">
-                        Cancel your subscription. You will retain access until the end of your
-                        current billing period.
-                      </p>
-                    </div>
-                    <Button variant="destructive" onClick={() => setShowCancelConfirm(true)}>
-                      Cancel Subscription
+            <SectionCard title="Cancel Subscription" tone="danger">
+              {!showCancelConfirm ? (
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="max-w-md text-sm text-muted-foreground">
+                    Cancel your subscription. You will retain access until the end of your current
+                    billing period.
+                  </p>
+                  <Button variant="destructive" onClick={() => setShowCancelConfirm(true)}>
+                    Cancel Subscription
+                  </Button>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  <div className={formErrorClass} role="alert">
+                    Are you sure you want to cancel your subscription? You will lose access to Pro
+                    features at the end of your current billing period.
+                  </div>
+                  <div className="flex flex-wrap gap-3">
+                    <Button
+                      variant="destructive"
+                      onClick={handleCancelSubscription}
+                      loading={isCanceling}
+                      disabled={isCanceling}
+                    >
+                      {isCanceling ? 'Canceling...' : 'Confirm Cancellation'}
+                    </Button>
+                    <Button
+                      variant="outline"
+                      onClick={() => setShowCancelConfirm(false)}
+                      disabled={isCanceling}
+                    >
+                      Keep Subscription
                     </Button>
                   </div>
-                ) : (
-                  <div className="space-y-4">
-                    <div
-                      className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
-                      role="alert"
-                    >
-                      Are you sure you want to cancel your subscription? You will lose access to Pro
-                      features at the end of your current billing period.
-                    </div>
-                    <div className="flex gap-3">
-                      <Button
-                        variant="destructive"
-                        onClick={handleCancelSubscription}
-                        loading={isCanceling}
-                        disabled={isCanceling}
-                      >
-                        {isCanceling ? 'Canceling...' : 'Confirm Cancellation'}
-                      </Button>
-                      <Button
-                        variant="outline"
-                        onClick={() => setShowCancelConfirm(false)}
-                        disabled={isCanceling}
-                      >
-                        Keep Subscription
-                      </Button>
-                    </div>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
+                </div>
+              )}
+            </SectionCard>
           )}
-        </>
+        </div>
       )}
     </div>
   );

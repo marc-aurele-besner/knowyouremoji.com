@@ -1,14 +1,14 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getAllGenerations,
   getEmojiSummariesByGeneration,
+  getEmojisWithGenerationNotes,
   getGenerationInfo,
+  getGenerationDisplayName,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardContent } from '@/components/ui/card';
-import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 
 interface GenerationPageProps {
@@ -89,6 +89,21 @@ export default async function GenerationPage({ params }: GenerationPageProps) {
   const emojis = getEmojiSummariesByGeneration(generationInfo.slug);
   const env = getEnv();
 
+  const highlights = pickHubHighlights(getEmojisWithGenerationNotes(generationInfo.slug)).map(
+    (emoji) => ({
+      slug: emoji.slug,
+      character: emoji.character,
+      name: emoji.name,
+      text: emoji.generationalNotes.find((n) => n.generation === generationInfo.slug)!.note,
+    })
+  );
+
+  const siblings = getAllGenerations().map((gen) => ({
+    label: getGenerationDisplayName(gen),
+    href: `/emoji/generation/${gen}`,
+    active: gen === generationInfo.slug,
+  }));
+
   // Breadcrumb items for navigation
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
@@ -108,54 +123,19 @@ export default async function GenerationPage({ params }: GenerationPageProps) {
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Generation Header */}
-        <header className="mb-8">
-          {/* Breadcrumb navigation */}
-          <Breadcrumbs items={breadcrumbItems} className="mb-4" />
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            {generationInfo.displayName} Emoji Meanings
-          </h1>
-          <p className="text-lg text-muted-foreground">{generationInfo.description}</p>
-          <p className="text-sm text-muted-foreground mt-2">
-            {generationInfo.emojiCount} emoji{generationInfo.emojiCount !== 1 ? 's' : ''} with{' '}
-            {generationInfo.displayName}-specific notes
-          </p>
-        </header>
-
-        {/* Emoji Grid */}
-        {emojis.length > 0 ? (
-          <section aria-labelledby="emojis-heading">
-            <h2 id="emojis-heading" className="sr-only">
-              {generationInfo.displayName} Emoji Meanings
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              {emojis.map((emoji) => (
-                <Link
-                  key={emoji.slug}
-                  href={`/emoji/${emoji.slug}`}
-                  className="block"
-                  aria-label={`${emoji.name} emoji`}
-                >
-                  <Card className="h-full hover:border-primary hover:shadow-md transition-all">
-                    <CardContent className="p-4 text-center">
-                      <span className="text-4xl block mb-2">{emoji.character}</span>
-                      <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 line-clamp-1">
-                        {emoji.name}
-                      </h3>
-                      <p className="text-xs text-muted-foreground line-clamp-2">{emoji.tldr}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ) : (
-          <p className="text-center text-muted-foreground py-8">
-            No emojis with generational notes found.
-          </p>
-        )}
-      </main>
+      <EmojiHubPage
+        breadcrumbs={breadcrumbItems}
+        title={`${generationInfo.displayName} Emoji Meanings`}
+        description={generationInfo.description}
+        countLabel={`${generationInfo.emojiCount} emoji${generationInfo.emojiCount !== 1 ? 's' : ''} with ${generationInfo.displayName}-specific notes`}
+        siblings={siblings}
+        siblingsLabel="Other generations"
+        highlights={highlights}
+        highlightsTitle={`How ${generationInfo.displayName} reads them`}
+        emojis={emojis}
+        gridHeading={`${generationInfo.displayName} Emoji Meanings`}
+        emptyTitle="No emojis with generational notes found."
+      />
     </>
   );
 }

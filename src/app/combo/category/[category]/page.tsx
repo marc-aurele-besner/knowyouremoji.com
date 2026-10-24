@@ -1,12 +1,14 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import {
   getAllComboCategories,
+  getAllComboCategoryInfo,
   getComboCategoryInfo,
+  getComboCount,
   getComboSummariesByCategory,
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardContent } from '@/components/ui/card';
+import { ComboCard } from '@/components/combo/combo-card';
+import { ComboCategoryChips } from '@/components/combo/combo-category-chips';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import type { Metadata } from 'next';
@@ -108,20 +110,29 @@ export default async function ComboCategoryPage({ params }: ComboCategoryPagePro
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
+      <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
         {/* Category Header */}
-        <header className="mb-8">
+        <header className="mb-7">
           {/* Breadcrumb navigation */}
-          <Breadcrumbs items={breadcrumbItems} className="mb-4" />
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+          <Breadcrumbs items={breadcrumbItems} className="mb-5" />
+          <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
             {categoryInfo.displayName} Emoji Combos
           </h1>
-          <p className="text-lg text-muted-foreground">{categoryInfo.description}</p>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
+            {categoryInfo.description}
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
             {categoryInfo.comboCount} combo{categoryInfo.comboCount !== 1 ? 's' : ''} in this
             category
           </p>
         </header>
+
+        <ComboCategoryChips
+          className="mb-8"
+          activeSlug={categoryInfo.slug}
+          totalCount={getComboCount()}
+          categories={getAllComboCategoryInfo()}
+        />
 
         {/* Combo Grid */}
         {combos.length > 0 ? (
@@ -129,31 +140,21 @@ export default async function ComboCategoryPage({ params }: ComboCategoryPagePro
             <h2 id="combos-heading" className="sr-only">
               {categoryInfo.displayName} Emoji Combos
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3">
               {combos.map((combo) => (
-                <Link
-                  key={combo.slug}
-                  href={`/combo/${combo.slug}`}
-                  className="block"
-                  aria-label={`${combo.name} emoji combo`}
-                >
-                  <Card className="h-full hover:border-primary hover:shadow-md transition-all">
-                    <CardContent className="p-4 text-center">
-                      <span className="text-4xl block mb-2">{combo.combo}</span>
-                      <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 line-clamp-1">
-                        {combo.name}
-                      </h3>
-                      <p className="text-xs text-muted-foreground line-clamp-2">{combo.meaning}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
+                <ComboCard key={combo.slug} combo={combo} ariaLabel={`${combo.name} emoji combo`} />
               ))}
             </div>
           </section>
         ) : (
-          <p className="text-center text-muted-foreground py-8">
-            No combos found in this category yet.
-          </p>
+          <div className="flex flex-col items-center gap-2.5 rounded-2xl border border-dashed border-card-border px-6 py-12 text-center text-muted-foreground">
+            <span className="text-4xl" aria-hidden="true">
+              🧩
+            </span>
+            <p className="text-[17px] font-semibold text-foreground">
+              No combos found in this category yet.
+            </p>
+          </div>
         )}
       </main>
     </>

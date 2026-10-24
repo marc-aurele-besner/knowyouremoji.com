@@ -58,7 +58,7 @@ describe('EmojiPlatformPreview', () => {
 
     it('renders native device preview section', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
-      expect(screen.getByText('On your device:')).toBeInTheDocument();
+      expect(screen.getByText('On your device')).toBeInTheDocument();
     });
 
     it('displays the emoji character in native preview', () => {
@@ -141,16 +141,14 @@ describe('EmojiPlatformPreview', () => {
     it('renders grid container with responsive classes', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
       const gridContainer = screen.getByTestId('platform-grid');
-      expect(gridContainer).toHaveClass('grid');
-      expect(gridContainer).toHaveClass('grid-cols-3');
-      expect(gridContainer).toHaveClass('sm:grid-cols-4');
-      expect(gridContainer).toHaveClass('md:grid-cols-5');
+      expect(gridContainer).toHaveClass('flex', 'flex-wrap', 'gap-3');
     });
 
     it('platform cards are rendered within grid', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
       const gridContainer = screen.getByTestId('platform-grid');
-      expect(gridContainer.children.length).toBe(5);
+      // Native preview tile + one tile per platform
+      expect(gridContainer.children.length).toBe(6);
     });
   });
 
@@ -158,8 +156,11 @@ describe('EmojiPlatformPreview', () => {
     it('handles empty platformEmojis array', () => {
       render(<EmojiPlatformPreview {...defaultProps} platformEmojis={[]} />);
       // Should still render section and native preview
-      expect(screen.getByText('On your device:')).toBeInTheDocument();
-      expect(screen.getByText(/No platform-specific images available/)).toBeInTheDocument();
+      expect(screen.getByText('On your device')).toBeInTheDocument();
+      // Falls back to honest native renderings instead of vendor artwork
+      expect(screen.getByText('In a message')).toBeInTheDocument();
+      expect(screen.getByText('Inline size')).toBeInTheDocument();
+      expect(screen.getByTestId('platform-grid').querySelectorAll('img')).toHaveLength(0);
     });
 
     it('handles single platform emoji', () => {
@@ -218,8 +219,8 @@ describe('EmojiPlatformPreview', () => {
       const images = screen.getByTestId('platform-grid').querySelectorAll('img');
       expect(images.length).toBeGreaterThan(0);
       for (const img of images) {
-        expect(img.getAttribute('width')).toBe('48');
-        expect(img.getAttribute('height')).toBe('48');
+        expect(img.getAttribute('width')).toBe('40');
+        expect(img.getAttribute('height')).toBe('40');
       }
     });
   });
@@ -234,21 +235,19 @@ describe('EmojiPlatformPreview', () => {
     it('has default spacing classes', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
       const section = screen.getByRole('region');
-      expect(section).toHaveClass('my-8');
+      expect(section).toHaveClass('mt-14');
     });
 
     it('native preview has highlighted styling', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
       const nativeContainer = screen.getByTestId('native-preview').parentElement;
-      expect(nativeContainer).toHaveClass('bg-muted/50');
-      expect(nativeContainer).toHaveClass('rounded-lg');
+      expect(nativeContainer).toHaveClass('bg-card', 'rounded-2xl');
     });
 
     it('platform cards have border styling', () => {
       render(<EmojiPlatformPreview {...defaultProps} />);
       const appleCard = screen.getByText('Apple').closest('div');
-      expect(appleCard).toHaveClass('border');
-      expect(appleCard).toHaveClass('rounded-lg');
+      expect(appleCard).toHaveClass('border', 'border-card-border', 'rounded-2xl');
     });
   });
 

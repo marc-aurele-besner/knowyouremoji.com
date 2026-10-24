@@ -17,11 +17,10 @@ function SearchResults({ results, selectedIndex, onSelect, onHover }: SearchResu
         id="search-results"
         role="listbox"
         className={cn(
-          'absolute top-full left-0 z-50 mt-1 w-full min-w-[280px] rounded-md border border-gray-200 bg-white p-3 shadow-lg',
-          'dark:border-gray-700 dark:bg-gray-800'
+          'absolute top-full left-0 z-50 mt-1.5 w-full min-w-[300px] rounded-2xl border border-card-border bg-card p-4 shadow-pop'
         )}
       >
-        <p className="text-sm text-gray-500 dark:text-gray-400">No emojis found</p>
+        <p className="text-sm text-muted-foreground">No emojis found</p>
       </div>
     );
   }
@@ -31,8 +30,7 @@ function SearchResults({ results, selectedIndex, onSelect, onHover }: SearchResu
       id="search-results"
       role="listbox"
       className={cn(
-        'absolute top-full left-0 z-50 mt-1 w-full min-w-[280px] rounded-md border border-gray-200 bg-white py-1 shadow-lg',
-        'dark:border-gray-700 dark:bg-gray-800'
+        'absolute top-full left-0 z-50 mt-1.5 max-h-[420px] w-full min-w-[300px] overflow-auto rounded-2xl border border-card-border bg-card p-1.5 shadow-pop'
       )}
     >
       {results.map((emoji, index) => (
@@ -44,15 +42,15 @@ function SearchResults({ results, selectedIndex, onSelect, onHover }: SearchResu
           onClick={() => onSelect(emoji, index)}
           onMouseEnter={() => onHover(index)}
           className={cn(
-            'flex cursor-pointer items-center gap-3 px-3 py-2 text-sm',
-            'hover:bg-gray-100 dark:hover:bg-gray-700',
-            index === selectedIndex && 'bg-amber-50 dark:bg-amber-900/20'
+            'flex min-h-11 cursor-pointer items-center gap-3 rounded-[10px] px-2.5 py-2 text-sm text-foreground',
+            'hover:bg-muted',
+            index === selectedIndex && 'bg-muted'
           )}
         >
-          <span className="emoji-display text-2xl">{emoji.character}</span>
+          <span className="emoji-display w-7 text-center text-2xl">{emoji.character}</span>
           <div className="min-w-0 flex-1">
-            <p className="font-medium text-gray-900 dark:text-gray-100">{emoji.name}</p>
-            <p className="truncate text-xs text-gray-500 dark:text-gray-400">{emoji.tldr}</p>
+            <p className="font-medium text-foreground">{emoji.name}</p>
+            <p className="truncate text-xs text-muted-foreground">{emoji.tldr}</p>
           </div>
         </li>
       ))}

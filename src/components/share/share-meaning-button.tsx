@@ -3,6 +3,8 @@
 import { useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { shareEvents } from '@/lib/analytics';
+import { cn } from '@/lib/utils';
+import { ShareIcon } from '@/components/emoji/emoji-icons';
 
 export interface ShareMeaningButtonProps {
   /** The emoji character */
@@ -50,14 +52,14 @@ export function ShareMeaningButton({
 
   return (
     <Button
-      variant="ghost"
+      variant="outline"
       size="icon"
       onClick={handleShare}
       aria-label={`Share ${context} meaning`}
-      className={className}
+      className={cn('h-9 w-9', className)}
       title="Share this meaning"
     >
-      <span className="text-sm">📤</span>
+      <ShareIcon size={14} />
     </Button>
   );
 }

@@ -319,3 +319,14 @@ describe('RegisterForm', () => {
     });
   });
 });
+
+describe('RegisterForm password strength', () => {
+  it('updates the strength meter as the password changes', () => {
+    render(<RegisterForm />);
+    const meter = screen.getByTestId('password-strength');
+    expect(meter).toHaveAttribute('data-level', '0');
+    fireEvent.change(screen.getByLabelText(/^password$/i), { target: { value: 'Abcdefg1' } });
+    expect(meter).toHaveAttribute('data-level', '3');
+    expect(screen.getByText(/strength: good/i)).toBeInTheDocument();
+  });
+});

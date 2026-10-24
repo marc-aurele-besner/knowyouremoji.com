@@ -16,6 +16,11 @@ export interface ProbabilityMeterProps {
   className?: string;
   /** Optional test ID for the component */
   testId?: string;
+  /**
+   * When set, the fill is amber below this value and red at or above it,
+   * overriding the zone colors.
+   */
+  dangerThreshold?: number;
 }
 
 type ColorZone = 'low' | 'medium' | 'high';
@@ -28,44 +33,21 @@ function getColorZone(value: number): ColorZone {
 
 function getFillColorClass(zone: ColorZone, colorScheme: 'danger' | 'warning' | 'neutral'): string {
   if (colorScheme === 'neutral') {
-    return 'bg-blue-500';
+    return 'bg-primary-500';
   }
 
   if (colorScheme === 'warning') {
-    return 'bg-orange-500';
+    return 'bg-primary-600';
   }
 
   // danger scheme (default)
   switch (zone) {
     case 'low':
-      return 'bg-green-500';
+      return 'bg-success';
     case 'medium':
-      return 'bg-yellow-500';
+      return 'bg-primary-500';
     case 'high':
-      return 'bg-red-500';
-  }
-}
-
-function getBackgroundColorClass(
-  zone: ColorZone,
-  colorScheme: 'danger' | 'warning' | 'neutral'
-): string {
-  if (colorScheme === 'neutral') {
-    return 'bg-blue-100';
-  }
-
-  if (colorScheme === 'warning') {
-    return 'bg-orange-100';
-  }
-
-  // danger scheme (default)
-  switch (zone) {
-    case 'low':
-      return 'bg-green-100';
-    case 'medium':
-      return 'bg-yellow-100';
-    case 'high':
-      return 'bg-red-100';
+      return 'bg-danger';
   }
 }
 
@@ -87,6 +69,7 @@ export function ProbabilityMeter({
   colorScheme = 'danger',
   className,
   testId,
+  dangerThreshold,
 }: ProbabilityMeterProps) {
   const labelId = useId();
   const descriptionId = useId();
@@ -95,8 +78,13 @@ export function ProbabilityMeter({
   const clampedValue = Math.round(Math.max(0, Math.min(100, value)));
 
   const zone = getColorZone(clampedValue);
-  const fillColorClass = getFillColorClass(zone, colorScheme);
-  const bgColorClass = getBackgroundColorClass(zone, colorScheme);
+  const isDanger = dangerThreshold !== undefined && clampedValue >= dangerThreshold;
+  const fillColorClass =
+    dangerThreshold === undefined
+      ? getFillColorClass(zone, colorScheme)
+      : isDanger
+        ? 'bg-danger'
+        : 'bg-primary-500';
   const icon = getIcon(zone);
 
   return (
@@ -104,11 +92,24 @@ export function ProbabilityMeter({
       data-testid={testId ?? 'probability-meter'}
       data-color-zone={zone}
       data-color-scheme={colorScheme}
-      className={cn('flex flex-col gap-1 rounded-lg px-3 py-2', bgColorClass, className)}
+      data-danger={isDanger ? 'true' : undefined}
+      className={cn(
+        'flex flex-col gap-2 rounded-xl border border-card-border bg-card p-3.5',
+        className
+      )}
     >
-      <label id={labelId} className="text-sm text-gray-600">
+      <label id={labelId} className="text-xs text-muted-foreground">
         {label}
       </label>
+
+      <div className="flex items-baseline gap-2">
+        <span className="text-[26px] font-semibold leading-none tracking-tight text-foreground">
+          {clampedValue}%
+        </span>
+        <span data-testid="probability-meter-icon" className="text-base" aria-hidden="true">
+          {icon}
+        </span>
+      </div>
 
       <div
         role="meter"
@@ -118,32 +119,14 @@ export function ProbabilityMeter({
         aria-label={`${label}: ${clampedValue}%`}
         aria-labelledby={labelId}
         aria-describedby={description ? descriptionId : undefined}
-        className="flex items-center gap-3"
+        data-testid="probability-meter-bar"
+        className="h-2 overflow-hidden rounded-full bg-muted"
       >
-        {/* Progress bar container */}
         <div
-          data-testid="probability-meter-bar"
-          className="h-2 flex-1 overflow-hidden rounded-full bg-gray-200"
-        >
-          <div
-            data-testid="probability-meter-fill"
-            className={cn(
-              'h-full rounded-full transition-all duration-700 ease-out',
-              fillColorClass
-            )}
-            style={{ width: `${clampedValue}%` }}
-          />
-        </div>
-
-        {/* Icon indicator */}
-        <span data-testid="probability-meter-icon" className="text-lg" aria-hidden="true">
-          {icon}
-        </span>
-
-        {/* Percentage display */}
-        <span className="min-w-[3rem] text-right text-sm font-medium text-gray-700">
-          {clampedValue}%
-        </span>
+          data-testid="probability-meter-fill"
+          className={cn('h-full rounded-full transition-all duration-700 ease-out', fillColorClass)}
+          style={{ width: `${clampedValue}%` }}
+        />
       </div>
 
       {/* Description/tooltip */}
@@ -151,7 +134,7 @@ export function ProbabilityMeter({
         <p
           id={descriptionId}
           data-testid="probability-meter-description"
-          className="text-xs text-gray-500"
+          className="text-xs leading-snug text-muted-foreground"
         >
           {description}
         </p>

@@ -128,10 +128,10 @@ describe('ComboHeader', () => {
       expect(emojiElement.className).toMatch(/text-(6xl|7xl|8xl)/);
     });
 
-    it('applies centered layout classes', () => {
+    it('applies left-aligned hero layout classes', () => {
       render(<ComboHeader combo={mockCombo} />);
       const header = screen.getByRole('banner');
-      expect(header).toHaveClass('text-center');
+      expect(header).toHaveClass('text-left');
     });
 
     it('applies custom className when provided', () => {
@@ -204,6 +204,39 @@ describe('ComboHeader', () => {
 
       // Button should still be there (no crash)
       expect(screen.getByRole('button', { name: /copy combo/i })).toBeInTheDocument();
+    });
+  });
+  describe('hero extras', () => {
+    it('links the category badge to its category page', () => {
+      render(<ComboHeader combo={mockCombo} />);
+      expect(screen.getByRole('link', { name: 'humor' })).toHaveAttribute(
+        'href',
+        '/combo/category/humor'
+      );
+    });
+
+    it('renders tags beside the category', () => {
+      render(<ComboHeader combo={{ ...mockCombo, tags: ['funny', 'dead'] }} />);
+      expect(screen.getByText('funny')).toBeInTheDocument();
+      expect(screen.getByText('dead')).toBeInTheDocument();
+    });
+
+    it('renders extra actions and the meaning action slot', () => {
+      render(
+        <ComboHeader
+          combo={mockCombo}
+          actions={<button type="button">Share it</button>}
+          meaningAction={<button type="button">Copy meaning</button>}
+        />
+      );
+      expect(screen.getByRole('button', { name: 'Share it' })).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Copy meaning' })).toBeInTheDocument();
+      expect(screen.getByText('Meaning')).toBeInTheDocument();
+    });
+
+    it('omits the meaning panel when the meaning is empty', () => {
+      render(<ComboHeader combo={{ ...mockCombo, meaning: '' }} />);
+      expect(screen.queryByText('Meaning')).toBeNull();
     });
   });
 });

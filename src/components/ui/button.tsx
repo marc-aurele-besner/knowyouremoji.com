@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { ButtonHTMLAttributes, forwardRef } from 'react';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'ghost' | 'destructive' | 'outline';
+  variant?: 'primary' | 'brand' | 'secondary' | 'ghost' | 'destructive' | 'outline';
   size?: 'sm' | 'md' | 'lg' | 'icon';
   loading?: boolean;
   asChild?: boolean;
@@ -32,25 +32,24 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled || loading}
         className={cn(
-          'inline-flex items-center justify-center rounded-md font-medium transition-colors',
-          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900',
+          'inline-flex items-center justify-center gap-2 rounded-full font-medium whitespace-nowrap transition-colors',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
           'disabled:pointer-events-none disabled:opacity-50',
           {
-            'bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 focus-visible:ring-amber-500 dark:from-amber-500 dark:to-orange-500 dark:hover:from-amber-400 dark:hover:to-orange-400':
-              variant === 'primary',
-            'bg-gray-200 text-gray-900 hover:bg-gray-300 focus-visible:ring-gray-400 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600':
+            'bg-foreground text-background hover:opacity-90': variant === 'primary',
+            'bg-primary-500 text-primary-foreground font-semibold hover:brightness-105':
+              variant === 'brand',
+            'bg-muted text-foreground hover:bg-gray-200 dark:hover:bg-gray-800':
               variant === 'secondary',
-            'hover:bg-gray-100 focus-visible:ring-gray-400 dark:hover:bg-gray-800 dark:text-gray-100':
-              variant === 'ghost',
-            'bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600 dark:bg-red-700 dark:hover:bg-red-600':
-              variant === 'destructive',
-            'border border-gray-300 bg-transparent hover:bg-gray-100 focus-visible:ring-gray-400 dark:border-gray-600 dark:text-gray-100 dark:hover:bg-gray-800':
+            'text-foreground hover:bg-muted': variant === 'ghost',
+            'bg-danger-background text-danger hover:brightness-95': variant === 'destructive',
+            'border border-card-border bg-card text-foreground hover:bg-muted':
               variant === 'outline',
           },
           {
-            'h-8 px-3 text-sm': size === 'sm',
-            'h-10 px-4': size === 'md',
-            'h-12 px-6 text-lg': size === 'lg',
+            'h-9 px-3.5 text-sm': size === 'sm',
+            'h-10 px-4 text-sm': size === 'md',
+            'h-12 px-6 text-base': size === 'lg',
             'h-10 w-10 p-0': size === 'icon',
           },
           className
@@ -62,9 +61,11 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ) : (
           <>
             {loading ? (
-              <span className="mr-2 animate-spin" aria-label="Loading">
-                ⏳
-              </span>
+              <span
+                className="h-4 w-4 animate-spin rounded-full border-2 border-current border-r-transparent"
+                role="status"
+                aria-label="Loading"
+              />
             ) : null}
             {children}
           </>

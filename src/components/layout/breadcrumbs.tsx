@@ -24,7 +24,7 @@ function Breadcrumbs({ items, className, ...props }: BreadcrumbsProps) {
           return (
             <li key={`${item.label}-${index}`} className="flex items-center">
               {index > 0 && (
-                <span className="mx-2 text-gray-400" aria-hidden="true">
+                <span className="mx-2 text-muted-foreground/60" aria-hidden="true">
                   /
                 </span>
               )}
@@ -32,13 +32,13 @@ function Breadcrumbs({ items, className, ...props }: BreadcrumbsProps) {
               {item.href && !isLast ? (
                 <Link
                   href={item.href}
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
                   onClick={() => navigationEvents.breadcrumbClick(item.label, item.href!, index)}
                 >
                   {item.label}
                 </Link>
               ) : (
-                <span className="text-gray-500" aria-current={isLast ? 'page' : undefined}>
+                <span className="text-foreground" aria-current={isLast ? 'page' : undefined}>
                   {item.label}
                 </span>
               )}

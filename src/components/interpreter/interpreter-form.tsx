@@ -11,6 +11,18 @@ import { UsageCounter } from '@/components/rate-limit/usage-counter';
 const MIN_MESSAGE_LENGTH = 10;
 const MAX_MESSAGE_LENGTH = 1000;
 const EMOJI_REGEX = /\p{Emoji}/u;
+const EMOJI_COUNT_REGEX =
+  /\p{Regional_Indicator}{2}|\p{Extended_Pictographic}[\uFE0F\p{Emoji_Modifier}]*(?:\u200D\p{Extended_Pictographic}[\uFE0F\p{Emoji_Modifier}]*)*/gu;
+
+/** Count the emojis (graphemes, not code points) in a message. */
+export function countEmojis(value: string): number {
+  return value.match(EMOJI_COUNT_REGEX)?.length ?? 0;
+}
+
+function emojiCountText(count: number): string {
+  if (count === 0) return 'No emojis yet';
+  return `${count} emoji${count === 1 ? '' : 's'} detected`;
+}
 
 export interface InterpreterFormData {
   message: string;
@@ -26,6 +38,10 @@ export interface InterpreterFormProps {
   initialMessage?: string;
   initialPlatform?: Platform | 'OTHER';
   initialContext?: RelationshipContext;
+  /** Whether results stream in as they're written (shows a toggle when `onStreamingChange` is set) */
+  streaming?: boolean;
+  /** Called when the user flips the streaming toggle */
+  onStreamingChange?: (streaming: boolean) => void;
   className?: string;
 }
 
@@ -47,6 +63,8 @@ export function InterpreterForm({
   initialMessage = '',
   initialPlatform,
   initialContext,
+  streaming = true,
+  onStreamingChange,
   className,
 }: InterpreterFormProps) {
   const [message, setMessage] = useState(initialMessage);
@@ -56,6 +74,8 @@ export function InterpreterForm({
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const messageErrorId = useId();
+  const messageHintId = useId();
+  const streamingId = useId();
   const platformErrorId = useId();
   const contextErrorId = useId();
 
@@ -163,21 +183,23 @@ export function InterpreterForm({
 
   const getCharCountColor = () => {
     if (message.length >= MAX_MESSAGE_LENGTH) {
-      return 'text-red-600';
+      return 'text-danger';
     }
     if (message.length >= MAX_MESSAGE_LENGTH * 0.9) {
-      return 'text-yellow-600';
+      return 'text-primary-700';
     }
-    return 'text-gray-500';
+    return 'text-muted-foreground';
   };
 
   const showUsageCounter = usageRemaining !== undefined && usageMax !== undefined;
+
+  const labelClass = 'text-sm font-semibold text-foreground';
 
   return (
     <form role="form" onSubmit={handleSubmit} className={cn('flex flex-col gap-6', className)}>
       {/* Message Input */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="text-sm font-medium text-gray-700 dark:text-gray-300">
+        <label htmlFor="message" className={labelClass}>
           Message to interpret
         </label>
         <textarea
@@ -189,47 +211,46 @@ export function InterpreterForm({
           disabled={isFormDisabled}
           placeholder="Paste or type the message you want to decode... (must include emojis)"
           className={cn(
-            'min-h-[120px] w-full resize-y rounded-md border bg-white px-3 py-2 text-sm',
-            'dark:bg-gray-800 dark:text-gray-100',
-            'placeholder:text-gray-400 dark:placeholder:text-gray-500',
-            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
-            'dark:focus-visible:ring-offset-gray-900',
+            'min-h-[120px] w-full resize-y rounded-xl border bg-card px-3.5 py-3 text-[15px] text-foreground',
+            'placeholder:text-muted-foreground',
+            'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-card',
             'disabled:cursor-not-allowed disabled:opacity-50',
             errors.message
-              ? 'border-red-500 focus-visible:ring-red-500'
-              : 'border-gray-300 dark:border-gray-600 focus-visible:ring-amber-500'
+              ? 'border-danger focus-visible:ring-danger'
+              : 'border-card-border focus-visible:ring-primary-500'
           )}
-          aria-describedby={errors.message ? messageErrorId : undefined}
+          aria-describedby={errors.message ? `${messageErrorId} ${messageHintId}` : messageHintId}
           aria-invalid={!!errors.message}
         />
-        <div className="flex items-center justify-between">
-          {errors.message ? (
-            <span id={messageErrorId} className="text-sm text-red-600" role="alert">
-              {errors.message}
-            </span>
-          ) : (
-            <span />
-          )}
-          <span data-testid="char-counter" className={cn('text-sm', getCharCountColor())}>
+        <div id={messageHintId} className="flex items-center justify-between gap-3 text-[13px]">
+          <span data-testid="emoji-count" className="text-muted-foreground">
+            {emojiCountText(countEmojis(message))}
+          </span>
+          <span data-testid="char-counter" className={getCharCountColor()}>
             {message.length} / {MAX_MESSAGE_LENGTH}
           </span>
         </div>
+        {errors.message && (
+          <span id={messageErrorId} className="text-sm text-danger" role="alert">
+            {errors.message}
+          </span>
+        )}
       </div>
 
       {/* Platform Selector */}
       <div className="flex flex-col gap-2">
-        <label id="platform-label" className="text-sm font-medium text-gray-700 dark:text-gray-300">
+        <label id="platform-label" className={labelClass}>
           Platform
         </label>
         <PlatformSelector
           value={platform}
           onChange={handlePlatformChange}
-          variant="dropdown"
+          variant="buttons"
           disabled={isFormDisabled}
           aria-labelledby="platform-label"
         />
         {errors.platform && (
-          <span id={platformErrorId} className="text-sm text-red-600" role="alert">
+          <span id={platformErrorId} className="text-sm text-danger" role="alert">
             {errors.platform}
           </span>
         )}
@@ -237,8 +258,8 @@ export function InterpreterForm({
 
       {/* Context Selector */}
       <div className="flex flex-col gap-2">
-        <label id="context-label" className="text-sm font-medium text-gray-700 dark:text-gray-300">
-          Relationship context
+        <label id="context-label" className={labelClass}>
+          Who sent it?
         </label>
         <ContextSelector
           value={context}
@@ -248,25 +269,41 @@ export function InterpreterForm({
           aria-labelledby="context-label"
         />
         {errors.context && (
-          <span id={contextErrorId} className="text-sm text-red-600" role="alert">
+          <span id={contextErrorId} className="text-sm text-danger" role="alert">
             {errors.context}
           </span>
         )}
       </div>
 
-      {/* Usage Counter and Submit */}
-      <div className="flex items-center justify-between gap-4">
+      {onStreamingChange && (
+        <label htmlFor={streamingId} className="flex items-center gap-2.5 text-sm text-foreground">
+          <input
+            id={streamingId}
+            type="checkbox"
+            checked={streaming}
+            onChange={(e) => onStreamingChange(e.target.checked)}
+            disabled={isFormDisabled}
+            className="h-4 w-4 rounded accent-primary-500"
+          />
+          Stream the answer as it&apos;s written
+        </label>
+      )}
+
+      {/* Submit and Usage Counter */}
+      <div className="flex flex-col items-center gap-3">
+        <Button
+          type="submit"
+          variant="brand"
+          size="lg"
+          disabled={isFormDisabled || isRateLimited}
+          loading={isSubmitting}
+          className="w-full"
+        >
+          {isSubmitting ? 'Interpreting...' : 'Interpret message'}
+        </Button>
         {showUsageCounter && (
           <UsageCounter remaining={usageRemaining} max={usageMax} variant="default" />
         )}
-        <Button
-          type="submit"
-          disabled={isFormDisabled || isRateLimited}
-          loading={isSubmitting}
-          className={cn(!showUsageCounter && 'ml-auto')}
-        >
-          {isSubmitting ? 'Interpreting...' : 'Interpret Message'}
-        </Button>
       </div>
     </form>
   );

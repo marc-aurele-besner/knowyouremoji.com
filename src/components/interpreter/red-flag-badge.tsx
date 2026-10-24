@@ -26,29 +26,25 @@ function getSeverityConfig(severity: RedFlag['severity']) {
   switch (severity) {
     case 'high':
       return {
-        borderClass: 'border-red-500',
-        bgClass: 'bg-red-50',
+        toneClass: 'bg-danger-background text-danger',
         badgeVariant: 'destructive' as const,
         label: 'High',
       };
     case 'medium':
       return {
-        borderClass: 'border-yellow-500',
-        bgClass: 'bg-yellow-50',
+        toneClass: 'bg-primary-50 text-primary-700',
         badgeVariant: 'warning' as const,
         label: 'Medium',
       };
     case 'low':
       return {
-        borderClass: 'border-blue-500',
-        bgClass: 'bg-blue-50',
+        toneClass: 'bg-muted text-foreground',
         badgeVariant: 'secondary' as const,
         label: 'Low',
       };
     default:
       return {
-        borderClass: 'border-gray-500',
-        bgClass: 'bg-gray-50',
+        toneClass: 'bg-muted text-muted-foreground',
         badgeVariant: 'secondary' as const,
         label: 'Unknown',
       };
@@ -94,21 +90,17 @@ export function RedFlagBadge({
         data-testid="red-flag-badge"
         data-compact="true"
         data-expanded="false"
+        data-severity={flag.severity}
         role="alert"
         aria-label={ariaLabel}
         className={cn(
-          'border-l-4 rounded-r-lg p-2 inline-flex items-center gap-2',
-          config.borderClass,
-          config.bgClass,
+          'inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm',
+          config.toneClass,
           className
         )}
       >
-        <span className="text-red-500" aria-hidden="true">
-          ⚠️
-        </span>
-        <span className="font-medium text-gray-900 capitalize text-sm">
-          {formatFlagType(flag.type)}
-        </span>
+        <span aria-hidden="true">⚠️</span>
+        <span className="font-semibold capitalize">{formatFlagType(flag.type)}</span>
         <Badge data-testid="severity-badge" variant={config.badgeVariant} className="text-xs">
           {config.label}
         </Badge>
@@ -121,42 +113,45 @@ export function RedFlagBadge({
       data-testid="red-flag-badge"
       data-compact="false"
       data-expanded={isExpanded ? 'true' : 'false'}
+      data-severity={flag.severity}
       role="alert"
       aria-label={ariaLabel}
-      className={cn('border-l-4 rounded-r-lg p-4', config.borderClass, config.bgClass, className)}
+      className={cn('flex gap-3 rounded-xl px-4 py-3.5 text-sm', config.toneClass, className)}
     >
-      <div className="flex items-center gap-2 mb-1">
-        <span className="text-red-500" aria-hidden="true">
-          ⚠️
-        </span>
-        <span className="font-medium text-gray-900 capitalize">{formatFlagType(flag.type)}</span>
-        <Badge data-testid="severity-badge" variant={config.badgeVariant} className="text-xs">
-          {config.label}
-        </Badge>
-        {expandable && (
-          <button
-            type="button"
-            onClick={handleToggleExpand}
-            aria-label={isExpanded ? 'Collapse details' : 'Expand details'}
-            aria-expanded={isExpanded}
-            className="ml-auto text-gray-500 hover:text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-1"
+      <span className="mt-0.5 shrink-0" aria-hidden="true">
+        ⚠️
+      </span>
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="font-semibold capitalize">{formatFlagType(flag.type)}</span>
+          <Badge data-testid="severity-badge" variant={config.badgeVariant} className="text-xs">
+            {config.label}
+          </Badge>
+          {expandable && (
+            <button
+              type="button"
+              onClick={handleToggleExpand}
+              aria-label={isExpanded ? 'Collapse details' : 'Expand details'}
+              aria-expanded={isExpanded}
+              className="ml-auto rounded px-1 text-sm opacity-80 hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+            >
+              {isExpanded ? '▼' : '▶'} Details
+            </button>
+          )}
+        </div>
+        <p className="mt-1 leading-snug opacity-90">{flag.description}</p>
+        {resourceUrl && (
+          <a
+            href={resourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-sm font-medium underline underline-offset-2"
+            aria-label="Learn more about this red flag"
           >
-            {isExpanded ? '▼' : '▶'} Details
-          </button>
+            Learn more →
+          </a>
         )}
       </div>
-      <p className="text-sm text-gray-600">{flag.description}</p>
-      {resourceUrl && (
-        <a
-          href={resourceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 mt-2"
-          aria-label="Learn more about this red flag"
-        >
-          Learn more →
-        </a>
-      )}
     </div>
   );
 }

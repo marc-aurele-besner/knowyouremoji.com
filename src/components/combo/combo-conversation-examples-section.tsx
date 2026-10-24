@@ -37,29 +37,27 @@ export function ComboConversationExamplesSection({
   return (
     <section
       aria-labelledby="combo-conversation-examples-heading"
-      className={cn('my-8', className)}
+      className={cn('mt-14', className)}
       data-testid="combo-conversation-examples-section"
     >
       <h2
         id="combo-conversation-examples-heading"
-        className="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100"
+        className="mb-4 text-2xl font-semibold tracking-tight"
       >
         Real Conversation Examples
       </h2>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
         {examples.map((example, idx) => (
           <article
             key={idx}
-            className="rounded-2xl border bg-white/80 dark:bg-gray-800/60 border-gray-200 dark:border-gray-700/50 p-5 shadow-sm transition-all duration-300"
+            className="flex flex-col gap-3 rounded-2xl border border-card-border bg-card p-5"
             data-testid="combo-conversation-example"
           >
-            <div className="text-xs font-medium uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-2">
-              {SETTING_LABEL[example.setting] ?? example.setting}
-            </div>
-            <blockquote className="border-l-4 border-gray-200 dark:border-gray-700 pl-3 italic text-gray-900 dark:text-gray-100 mb-3">
-              &ldquo;{example.message}&rdquo;
-            </blockquote>
-            <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+            <span className="eyebrow">{SETTING_LABEL[example.setting] ?? example.setting}</span>
+            <p className="self-start rounded-2xl rounded-bl-sm bg-muted px-3 py-2 text-sm leading-normal text-foreground">
+              {example.message}
+            </p>
+            <p className="text-sm leading-relaxed text-muted-foreground">
               {example.interpretation}
             </p>
           </article>

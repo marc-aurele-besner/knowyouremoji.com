@@ -1,14 +1,13 @@
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getPageableContextTypes,
-  getEmojiSummariesByContext,
+  getEmojisByContext,
   getContextInfo,
+  getContextDisplayName,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
-import { Card, CardContent } from '@/components/ui/card';
-import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 
 interface ContextPageProps {
@@ -86,8 +85,36 @@ export default async function ContextPage({ params }: ContextPageProps) {
     notFound();
   }
 
-  const emojis = getEmojiSummariesByContext(contextInfo.slug);
+  const fullEmojis = getEmojisByContext(contextInfo.slug);
   const env = getEnv();
+
+  // Each card carries this hub's meaning so the quick view can show it.
+  const emojis = fullEmojis.map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+    category: emoji.category,
+    tldr: emoji.tldr,
+    contexts: emoji.contextMeanings.filter((m) => m.context === contextInfo.slug),
+  }));
+
+  const highlights = pickHubHighlights(fullEmojis).map((emoji) => {
+    const meaning = emoji.contextMeanings.find((m) => m.context === contextInfo.slug)!;
+    return {
+      slug: emoji.slug,
+      character: emoji.character,
+      name: emoji.name,
+      text: meaning.meaning,
+      riskLevel: meaning.riskLevel,
+      example: meaning.example,
+    };
+  });
+
+  const siblings = getPageableContextTypes().map((type) => ({
+    label: getContextDisplayName(type),
+    href: `/emoji/context/${type}`,
+    active: type === contextInfo.slug,
+  }));
 
   // Breadcrumb items for navigation
   const breadcrumbItems = [
@@ -108,54 +135,19 @@ export default async function ContextPage({ params }: ContextPageProps) {
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
 
-      <main className="container mx-auto px-4 py-8 max-w-6xl">
-        {/* Context Header */}
-        <header className="mb-8">
-          {/* Breadcrumb navigation */}
-          <Breadcrumbs items={breadcrumbItems} className="mb-4" />
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            {contextInfo.displayName} Emoji Meanings
-          </h1>
-          <p className="text-lg text-muted-foreground">{contextInfo.description}</p>
-          <p className="text-sm text-muted-foreground mt-2">
-            {contextInfo.emojiCount} emoji{contextInfo.emojiCount !== 1 ? 's' : ''} with{' '}
-            {contextInfo.displayName} context meanings
-          </p>
-        </header>
-
-        {/* Emoji Grid */}
-        {emojis.length > 0 ? (
-          <section aria-labelledby="emojis-heading">
-            <h2 id="emojis-heading" className="sr-only">
-              {contextInfo.displayName} Emoji Meanings
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
-              {emojis.map((emoji) => (
-                <Link
-                  key={emoji.slug}
-                  href={`/emoji/${emoji.slug}`}
-                  className="block"
-                  aria-label={`${emoji.name} emoji`}
-                >
-                  <Card className="h-full hover:border-primary hover:shadow-md transition-all">
-                    <CardContent className="p-4 text-center">
-                      <span className="text-4xl block mb-2">{emoji.character}</span>
-                      <h3 className="font-semibold text-sm text-gray-900 dark:text-gray-100 mb-1 line-clamp-1">
-                        {emoji.name}
-                      </h3>
-                      <p className="text-xs text-muted-foreground line-clamp-2">{emoji.tldr}</p>
-                    </CardContent>
-                  </Card>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ) : (
-          <p className="text-center text-muted-foreground py-8">
-            No emojis with context meanings found.
-          </p>
-        )}
-      </main>
+      <EmojiHubPage
+        breadcrumbs={breadcrumbItems}
+        title={`${contextInfo.displayName} Emoji Meanings`}
+        description={contextInfo.description}
+        countLabel={`${contextInfo.emojiCount} emoji${contextInfo.emojiCount !== 1 ? 's' : ''} with ${contextInfo.displayName} context meanings`}
+        siblings={siblings}
+        siblingsLabel="Other contexts"
+        highlights={highlights}
+        highlightsTitle={`${contextInfo.displayName} in practice`}
+        emojis={emojis}
+        gridHeading={`${contextInfo.displayName} Emoji Meanings`}
+        emptyTitle="No emojis with context meanings found."
+      />
     </>
   );
 }

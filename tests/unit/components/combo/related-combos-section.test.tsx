@@ -219,7 +219,7 @@ describe('RelatedCombosSection', () => {
     it('has proper spacing', () => {
       render(<RelatedCombosSection combos={mockRelatedCombos} />);
       const section = screen.getByRole('region');
-      expect(section).toHaveClass('my-8');
+      expect(section).toHaveClass('mt-14');
     });
 
     it('renders cards with border styling', () => {
@@ -240,28 +240,29 @@ describe('RelatedCombosSection', () => {
       render(<RelatedCombosSection combos={mockRelatedCombos} />);
       const gridContainer = screen.getByRole('region').querySelector('.grid');
       expect(gridContainer).toHaveClass('grid-cols-1');
-      expect(gridContainer).toHaveClass('md:grid-cols-2');
+      expect(gridContainer).toHaveClass('sm:grid-cols-[repeat(auto-fill,minmax(250px,1fr))]');
     });
   });
 
-  describe('dark mode support', () => {
-    it('has dark mode classes for card background', () => {
+  describe('theme tokens', () => {
+    it('uses the card surface token for the card background', () => {
       render(<RelatedCombosSection combos={singleCombo} />);
       const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link.closest('.border')).toHaveClass('dark:bg-card');
+      expect(link).toHaveClass('bg-card');
+      expect(link).toHaveClass('border-card-border');
     });
 
-    it('has dark mode classes for text', () => {
+    it('renders the combo name as a heading', () => {
       render(<RelatedCombosSection combos={singleCombo} />);
-      const nameElement = screen.getByText('Dead Laughing');
-      expect(nameElement).toHaveClass('dark:text-gray-100');
+      expect(screen.getByRole('heading', { level: 3, name: 'Dead Laughing' })).toBeInTheDocument();
     });
   });
 
   describe('icons', () => {
-    it('renders link icon in the heading', () => {
+    it('renders a plain section heading without a decorative icon', () => {
       render(<RelatedCombosSection combos={mockRelatedCombos} />);
-      expect(screen.getByTestId('link-icon')).toBeInTheDocument();
+      expect(screen.queryByTestId('link-icon')).toBeNull();
+      expect(screen.getByRole('heading', { level: 2, name: 'Related Combos' })).toBeInTheDocument();
     });
 
     it('renders chevron up icon when expanded', () => {
@@ -281,7 +282,7 @@ describe('RelatedCombosSection', () => {
     it('card has hover transition classes', () => {
       render(<RelatedCombosSection combos={singleCombo} />);
       const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link.closest('.border')).toHaveClass('transition-all');
+      expect(link.className).toContain('hover:shadow-soft');
     });
   });
 });

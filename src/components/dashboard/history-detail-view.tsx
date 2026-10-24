@@ -1,7 +1,6 @@
 'use client';
 
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import type { HistoryEntry } from './history-page';
 
 export interface HistoryDetailViewProps {
@@ -27,43 +26,58 @@ function HistoryDetailView({ entry, onClose }: HistoryDetailViewProps) {
     }
   };
 
+  const emojiLabel = `${entry.emoji_count} emoji${entry.emoji_count !== 1 ? 's' : ''} detected`;
+
   return (
-    <Card className="border-2 border-purple-200 dark:border-purple-800">
-      <CardContent className="pt-6 space-y-4">
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-gray-500 dark:text-gray-400">
+    <article
+      className="space-y-5 bg-card px-4 py-5 sm:px-6"
+      aria-label="Interpretation details"
+      data-testid="history-detail"
+    >
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="eyebrow">Saved interpretation</span>
+          <Badge variant="secondary">{emojiLabel}</Badge>
+        </div>
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close detail view"
+          className="inline-flex h-10 w-10 flex-none items-center justify-center rounded-xl border border-card-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+        >
+          <span aria-hidden="true">✕</span>
+        </button>
+      </div>
+
+      <div>
+        <h3 className="mb-2 text-[13px] font-semibold text-muted-foreground">Original Message</h3>
+        <p className="inline-block max-w-full rounded-2xl rounded-bl-sm bg-muted px-3.5 py-2.5 text-base text-foreground break-words">
+          {entry.message}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3">
+        <div className="rounded-xl border border-card-border bg-card p-3.5">
+          <div className="text-xs text-muted-foreground">Emojis</div>
+          <div className="mt-1 text-[26px] font-semibold leading-tight tracking-tight text-foreground tabular-nums">
+            {entry.emoji_count}
+          </div>
+        </div>
+        <div className="rounded-xl border border-card-border bg-card p-3.5">
+          <div className="text-xs text-muted-foreground">Saved</div>
+          <div className="mt-1 text-sm font-medium text-foreground">
             {formatDate(entry.created_at)}
-          </span>
-          <Button variant="ghost" size="sm" onClick={onClose} aria-label="Close detail view">
-            ✕
-          </Button>
+          </div>
         </div>
+      </div>
 
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">
-            Original Message
-          </h3>
-          <p className="text-base font-medium text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
-            {entry.message}
-          </p>
-        </div>
-
-        <div>
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">
-            Interpretation
-          </h3>
-          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-wrap">
-            {entry.interpretation}
-          </p>
-        </div>
-
-        <div className="flex items-center gap-4 pt-2 border-t border-gray-100 dark:border-gray-800">
-          <span className="text-sm text-gray-500 dark:text-gray-400">
-            {entry.emoji_count} emoji{entry.emoji_count !== 1 ? 's' : ''} detected
-          </span>
-        </div>
-      </CardContent>
-    </Card>
+      <div>
+        <h3 className="mb-2 text-[13px] font-semibold text-muted-foreground">Interpretation</h3>
+        <p className="text-[15px] leading-relaxed text-foreground whitespace-pre-wrap">
+          {entry.interpretation}
+        </p>
+      </div>
+    </article>
   );
 }
 

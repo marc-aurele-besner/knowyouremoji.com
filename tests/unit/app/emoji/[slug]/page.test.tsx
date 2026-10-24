@@ -1,5 +1,5 @@
 import { describe, expect, test, mock, beforeEach, afterEach } from 'bun:test';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import EmojiPage, {
   generateStaticParams,
   generateMetadata,
@@ -113,6 +113,7 @@ describe('EmojiPage', () => {
   });
 
   afterEach(() => {
+    cleanup();
     mockGetEmojiBySlug.mockReset();
     mockGetAllEmojiSlugs.mockReset();
     mockNotFound.mockReset();
@@ -362,17 +363,89 @@ describe('EmojiPage', () => {
       render(page);
 
       expect(screen.getByTestId('emoji-long-form-section')).toBeInTheDocument();
-      expect(screen.getByRole('heading', { name: 'Overview', level: 2 })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'The long read', level: 2 })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'Overview', level: 3 })).toBeInTheDocument();
       expect(
-        screen.getByRole('heading', { name: 'How People Use It', level: 2 })
+        screen.getByRole('heading', { name: 'How People Use It', level: 3 })
       ).toBeInTheDocument();
       expect(
-        screen.getByRole('heading', { name: 'When Not to Use It', level: 2 })
+        screen.getByRole('heading', { name: 'When Not to Use It', level: 3 })
       ).toBeInTheDocument();
-      expect(screen.getByRole('heading', { name: 'How to Reply', level: 2 })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'How to Reply', level: 3 })).toBeInTheDocument();
       expect(
-        screen.getByRole('heading', { name: 'Frequently Asked Questions', level: 2 })
+        screen.getByRole('heading', { name: 'Frequently Asked Questions', level: 3 })
       ).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Deep dive' })).toHaveAttribute('href', '#deep-dive');
+    });
+
+    test('renders the hero, in-page nav and share card for a full entry', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      const nav = screen.getByRole('navigation', { name: 'On this page' });
+      expect(nav).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Meaning' })).toHaveAttribute('href', '#meaning');
+      expect(screen.getByRole('link', { name: 'Platforms & generations' })).toHaveAttribute(
+        'href',
+        '#platforms'
+      );
+      expect(screen.queryByRole('link', { name: 'Examples' })).toBeNull();
+      expect(screen.queryByRole('link', { name: 'Deep dive' })).toBeNull();
+
+      // All sections are rendered in the DOM (not hidden behind client tabs)
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'What it means in context' })
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Platform differences' })
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Generational differences' })
+      ).toBeInTheDocument();
+      expect(document.getElementById('context-0')).not.toBeNull();
+
+      expect(screen.getByRole('button', { name: 'Share' })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { level: 2, name: 'Share this meaning' })
+      ).toBeInTheDocument();
+      expect(screen.getByRole('button', { name: 'Copy TL;DR' })).toBeInTheDocument();
+    });
+
+    test('omits empty groups and the compare link for a sparse entry', async () => {
+      const sparseEmoji: Emoji = {
+        ...mockEmoji,
+        slug: 'zz-no-such-emoji',
+        name: 'Sparse',
+        contextMeanings: [],
+        platformNotes: [],
+        generationalNotes: [],
+        warnings: [],
+      };
+      mockGetEmojiBySlug.mockImplementation(() => sparseEmoji);
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'zz-no-such-emoji' }) });
+      render(page);
+
+      expect(screen.queryByRole('link', { name: 'Meaning' })).toBeNull();
+      expect(screen.queryByRole('link', { name: /^compare$/i })).toBeNull();
+      expect(document.getElementById('meaning')).toBeNull();
+      // The platform preview is always available
+      expect(document.getElementById('platforms')).not.toBeNull();
+    });
+
+    test('shows warnings in the meaning group even without context meanings', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => ({ ...mockEmoji, contextMeanings: [] }));
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      expect(screen.getByRole('link', { name: 'Meaning' })).toBeInTheDocument();
+      expect(
+        screen.queryByRole('heading', { level: 2, name: 'What it means in context' })
+      ).toBeNull();
+      expect(screen.getByTestId('emoji-warnings')).toBeInTheDocument();
     });
 
     test('renders conversation examples when provided', async () => {
@@ -393,6 +466,7 @@ describe('EmojiPage', () => {
 
       expect(screen.getByTestId('emoji-conversation-examples-section')).toBeInTheDocument();
       expect(screen.getByText(/tripped into the projector/)).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Examples' })).toHaveAttribute('href', '#examples');
     });
   });
 });

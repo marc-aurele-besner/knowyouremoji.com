@@ -22,8 +22,13 @@ describe('ShareSection', () => {
   };
 
   it('renders share label', () => {
-    render(<ShareSection {...defaultProps} />);
-    expect(screen.getByText('Share')).toBeInTheDocument();
+    const { container } = render(<ShareSection {...defaultProps} />);
+    expect(container.querySelector('.eyebrow')).toHaveTextContent('Share');
+  });
+
+  it('can hide the share label', () => {
+    const { container } = render(<ShareSection {...defaultProps} showLabel={false} />);
+    expect(container.querySelector('.eyebrow')).toBeNull();
   });
 
   it('renders share buttons group', () => {
@@ -56,10 +61,10 @@ describe('ShareSection', () => {
     expect(screen.getByRole('group')).toBeInTheDocument();
   });
 
-  it('hides labels on buttons', () => {
+  it('shows labelled outline buttons', () => {
     render(<ShareSection {...defaultProps} />);
-    // Labels should be hidden in ShareSection (showLabels=false)
-    expect(screen.queryByText('Twitter')).not.toBeInTheDocument();
+    expect(screen.getByText('Twitter')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /share on twitter/i })).toHaveClass('border');
   });
 
   it('shows native share button when navigator.share is available', async () => {

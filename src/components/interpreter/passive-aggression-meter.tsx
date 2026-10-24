@@ -20,6 +20,9 @@ const PASSIVE_AGGRESSIVE_PATTERNS = [
   { pattern: 'Message.', description: 'Period after short message' },
 ];
 
+/** At or above this score the meter turns red. */
+export const PASSIVE_AGGRESSION_DANGER_THRESHOLD = 45;
+
 function getContextualDescription(value: number): string {
   if (value <= 30) {
     return 'Low likelihood of passive-aggressive undertones';
@@ -36,6 +39,7 @@ export function PassiveAggressionMeter({ value, className, testId }: PassiveAggr
     value,
     testId: testId ?? 'passive-aggression-meter',
     description: getContextualDescription(value),
+    dangerThreshold: PASSIVE_AGGRESSION_DANGER_THRESHOLD,
     className,
   };
 
@@ -43,7 +47,7 @@ export function PassiveAggressionMeter({ value, className, testId }: PassiveAggr
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <div data-testid="passive-aggression-meter-wrapper" className="cursor-help">
+          <div data-testid="passive-aggression-meter-wrapper" className="h-full cursor-help">
             <ProbabilityMeter {...meterProps} />
           </div>
         </TooltipTrigger>
@@ -53,8 +57,8 @@ export function PassiveAggressionMeter({ value, className, testId }: PassiveAggr
             <ul className="space-y-1">
               {PASSIVE_AGGRESSIVE_PATTERNS.map((item) => (
                 <li key={item.pattern} className="flex items-start gap-2 text-xs">
-                  <span className="font-mono text-gray-300">{item.pattern}</span>
-                  <span className="text-gray-400">- {item.description}</span>
+                  <span className="font-mono font-semibold">{item.pattern}</span>
+                  <span className="opacity-80">- {item.description}</span>
                 </li>
               ))}
             </ul>

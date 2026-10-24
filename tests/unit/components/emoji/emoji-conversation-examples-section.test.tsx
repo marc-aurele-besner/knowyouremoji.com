@@ -29,17 +29,16 @@ describe('EmojiConversationExamplesSection', () => {
   it('renders the section heading and one card per example', () => {
     render(<EmojiConversationExamplesSection examples={examples} />);
     expect(
-      screen.getByRole('heading', { name: 'Real Conversation Examples', level: 2 })
+      screen.getByRole('heading', { name: 'In real conversations', level: 2 })
     ).toBeInTheDocument();
     expect(screen.getAllByTestId('conversation-example')).toHaveLength(2);
   });
 
-  it('renders the conversation message as a blockquote', () => {
+  it('renders the conversation message as a chat bubble', () => {
     render(<EmojiConversationExamplesSection examples={examples} />);
-    // Blockquote wraps the message with curly quotes — match the inner substring.
-    expect(
-      screen.getByText(/bro i just tripped into the projector at work 💀/)
-    ).toBeInTheDocument();
+    const bubble = screen.getByText(/bro i just tripped into the projector at work 💀/);
+    expect(bubble).toBeInTheDocument();
+    expect(bubble).toHaveClass('rounded-2xl', 'rounded-bl-sm', 'bg-muted');
   });
 
   it('renders the interpretation paragraph', () => {

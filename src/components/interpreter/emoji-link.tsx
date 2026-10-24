@@ -116,7 +116,7 @@ export function EmojiLink({
         className={cn(
           'inline-block cursor-pointer',
           'hover:scale-110 transition-transform',
-          'focus:outline-none focus:ring-2 focus:ring-blue-500 rounded',
+          'rounded focus:outline-none focus:ring-2 focus:ring-primary-500',
           className
         )}
         aria-label={ariaLabel}
@@ -127,7 +127,7 @@ export function EmojiLink({
         <span
           role="tooltip"
           className={cn(
-            'absolute z-10 px-2 py-1 text-xs font-medium text-white bg-gray-900 rounded shadow-lg',
+            'absolute z-10 rounded bg-foreground px-2 py-1 text-xs font-medium text-background shadow-soft',
             'whitespace-nowrap',
             '-top-8 left-1/2 -translate-x-1/2',
             'animate-fadeIn'
@@ -135,7 +135,7 @@ export function EmojiLink({
         >
           {name}
           <span
-            className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900"
+            className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-foreground"
             aria-hidden="true"
           />
         </span>

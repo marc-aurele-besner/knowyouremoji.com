@@ -49,9 +49,9 @@ const manyEmojis: RelatedEmoji[] = [
 
 describe('RelatedEmojisSection', () => {
   describe('rendering', () => {
-    it('renders the section heading with "Related Emojis" title', () => {
+    it('renders the section heading with "Related emojis" title', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Related Emojis');
+      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Related emojis');
     });
 
     it('renders all emoji cards', () => {
@@ -68,11 +68,9 @@ describe('RelatedEmojisSection', () => {
       expect(screen.getByText('Red Heart')).toBeInTheDocument();
     });
 
-    it('renders emoji tldr descriptions', () => {
+    it('uses the dense card layout (TL;DR hidden)', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByText('Hot, cool, or exciting')).toBeInTheDocument();
-      expect(screen.getByText('Magic, excitement, or emphasis')).toBeInTheDocument();
-      expect(screen.getByText('Love and affection')).toBeInTheDocument();
+      expect(screen.queryByText('Hot, cool, or exciting')).not.toBeInTheDocument();
     });
 
     it('renders as a section element with proper aria-labelledby', () => {
@@ -90,14 +88,7 @@ describe('RelatedEmojisSection', () => {
   describe('links', () => {
     it('renders links to emoji detail pages', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const fireLink = screen.getByRole('link', { name: /fire/i });
-      expect(fireLink).toHaveAttribute('href', '/emoji/fire');
-    });
-
-    it('each emoji card is a link', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const links = screen.getAllByRole('link');
-      expect(links).toHaveLength(3);
+      expect(screen.getAllByRole('link')).toHaveLength(3);
     });
 
     it('links have correct href for each emoji', () => {
@@ -114,41 +105,6 @@ describe('RelatedEmojisSection', () => {
     });
   });
 
-  describe('collapsible functionality', () => {
-    it('renders expand/collapse button', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByRole('button', { name: /related emojis/i })).toBeInTheDocument();
-    });
-
-    it('starts expanded by default', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      expect(button).toHaveAttribute('aria-expanded', 'true');
-    });
-
-    it('collapses content when header button is clicked', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      fireEvent.click(button);
-      expect(button).toHaveAttribute('aria-expanded', 'false');
-    });
-
-    it('expands content when header button is clicked again', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      fireEvent.click(button);
-      fireEvent.click(button);
-      expect(button).toHaveAttribute('aria-expanded', 'true');
-    });
-
-    it('hides emojis when collapsed', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      fireEvent.click(button);
-      expect(screen.queryByText('🔥')).not.toBeInTheDocument();
-    });
-  });
-
   describe('accessibility', () => {
     it('has accessible heading with correct id', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
@@ -156,23 +112,11 @@ describe('RelatedEmojisSection', () => {
       expect(heading).toHaveAttribute('id', 'related-emojis-heading');
     });
 
-    it('section has proper ARIA landmark', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const section = screen.getByRole('region');
-      expect(section).toBeInTheDocument();
-    });
-
-    it('expand button has aria-expanded attribute', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      expect(button).toHaveAttribute('aria-expanded');
-    });
-
     it('emoji cards have accessible names', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByRole('link', { name: /fire/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /sparkles/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /red heart/i })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Fire emoji' })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Sparkles emoji' })).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: 'Red Heart emoji' })).toBeInTheDocument();
     });
   });
 
@@ -190,110 +134,35 @@ describe('RelatedEmojisSection', () => {
     });
 
     it('handles complex emoji characters', () => {
-      const complexEmoji: RelatedEmoji[] = [
-        {
-          slug: 'woman-technologist',
-          character: '👩‍💻',
-          name: 'Woman Technologist',
-          tldr: 'Female coder',
-        },
+      const complexEmojis: RelatedEmoji[] = [
+        { slug: 'woman-technologist', character: '👩‍💻', name: 'Woman Technologist', tldr: 'Coding' },
       ];
-      render(<RelatedEmojisSection emojis={complexEmoji} />);
+      render(<RelatedEmojisSection emojis={complexEmojis} />);
       expect(screen.getByText('👩‍💻')).toBeInTheDocument();
-    });
-
-    it('handles emoji with long tldr', () => {
-      const longTldrEmoji: RelatedEmoji[] = [
-        {
-          slug: 'fire',
-          character: '🔥',
-          name: 'Fire',
-          tldr: 'This is a very long description that describes what the fire emoji means in various contexts and situations',
-        },
-      ];
-      render(<RelatedEmojisSection emojis={longTldrEmoji} />);
-      expect(
-        screen.getByText(
-          'This is a very long description that describes what the fire emoji means in various contexts and situations'
-        )
-      ).toBeInTheDocument();
     });
   });
 
   describe('styling', () => {
     it('applies custom className', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} className="custom-class" />);
-      const section = screen.getByRole('region');
-      expect(section).toHaveClass('custom-class');
+      expect(screen.getByRole('region')).toHaveClass('custom-class');
     });
 
-    it('has proper spacing', () => {
+    it('has section spacing', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const section = screen.getByRole('region');
-      expect(section).toHaveClass('my-8');
+      expect(screen.getByRole('region')).toHaveClass('mt-14');
     });
 
-    it('renders cards with border styling', () => {
-      render(<RelatedEmojisSection emojis={singleEmoji} />);
-      const link = screen.getByRole('link', { name: /fire/i });
-      expect(link.closest('.border')).toBeInTheDocument();
-    });
-  });
-
-  describe('responsive layout', () => {
-    it('uses grid layout for emojis', () => {
+    it('renders compact cards in an auto-fill grid', () => {
       render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const gridContainer = screen.getByRole('region').querySelector('.grid');
-      expect(gridContainer).toBeInTheDocument();
-    });
-
-    it('has responsive grid columns', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const gridContainer = screen.getByRole('region').querySelector('.grid');
-      expect(gridContainer).toHaveClass('grid-cols-2');
-      expect(gridContainer).toHaveClass('md:grid-cols-3');
-      expect(gridContainer).toHaveClass('lg:grid-cols-4');
-    });
-  });
-
-  describe('dark mode support', () => {
-    it('has dark mode classes for card background', () => {
-      render(<RelatedEmojisSection emojis={singleEmoji} />);
-      const link = screen.getByRole('link', { name: /fire/i });
-      expect(link.closest('.border')).toHaveClass('dark:bg-card');
-    });
-
-    it('has dark mode classes for text', () => {
-      render(<RelatedEmojisSection emojis={singleEmoji} />);
-      const nameElement = screen.getByText('Fire');
-      expect(nameElement).toHaveClass('dark:text-gray-100');
-    });
-  });
-
-  describe('icons', () => {
-    it('renders link icon in the heading', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByTestId('link-icon')).toBeInTheDocument();
-    });
-
-    it('renders chevron up icon when expanded', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      expect(screen.getByTestId('chevron-up-icon')).toBeInTheDocument();
-    });
-
-    it('renders chevron down icon when collapsed', () => {
-      render(<RelatedEmojisSection emojis={mockRelatedEmojis} />);
-      const button = screen.getByRole('button', { name: /related emojis/i });
-      fireEvent.click(button);
-      expect(screen.getByTestId('chevron-down-icon')).toBeInTheDocument();
-    });
-  });
-
-  describe('hover effects', () => {
-    it('card has hover transition classes', () => {
-      render(<RelatedEmojisSection emojis={singleEmoji} />);
-      const link = screen.getByRole('link', { name: /fire/i });
-      expect(link.closest('.border')).toHaveClass('transition-all');
+      const list = screen.getByRole('list');
+      expect(list).toHaveClass('grid');
+      expect(list.className).toContain('minmax(96px,1fr)');
+      expect(screen.getByRole('link', { name: /fire/i })).toHaveClass(
+        'rounded-2xl',
+        'border-card-border',
+        'emoji-card-hover'
+      );
     });
   });
 

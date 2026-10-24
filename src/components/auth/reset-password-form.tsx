@@ -5,7 +5,13 @@ import Link from 'next/link';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
+import {
+  AuthFormError,
+  AuthSuccess,
+  authFieldErrorClass,
+  authLabelClass,
+  authLinkClass,
+} from './auth-ui';
 
 interface FormErrors {
   password?: string;
@@ -89,115 +95,94 @@ export function ResetPasswordForm() {
 
   if (resetComplete) {
     return (
-      <Card className="w-full max-w-md mx-auto">
-        <CardContent className="pt-6">
-          <div className="text-center space-y-4">
-            <div className="text-4xl">✅</div>
-            <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Password updated
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300">
-              Your password has been successfully updated. You can now sign in with your new
-              password.
-            </p>
-            <Button
-              onClick={() => {
-                router.push('/login');
-              }}
-            >
-              Sign in
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+      <AuthSuccess
+        emoji="✅"
+        title="Password updated"
+        action={
+          <Button
+            className="w-full"
+            onClick={() => {
+              router.push('/login');
+            }}
+          >
+            Sign in
+          </Button>
+        }
+      >
+        Your password has been successfully updated. You can now sign in with your new password.
+      </AuthSuccess>
     );
   }
 
   return (
-    <Card className="w-full max-w-md mx-auto">
-      <CardContent className="pt-6 space-y-6">
-        {/* General Error */}
-        {errors.general && (
-          <div
-            className="p-3 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-md"
-            role="alert"
-          >
-            {errors.general}
-          </div>
-        )}
+    <div className="flex flex-col gap-5">
+      {errors.general && <AuthFormError>{errors.general}</AuthFormError>}
 
-        {/* Reset Password Form */}
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="space-y-2">
-            <label
-              htmlFor="password"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-            >
-              New password
-            </label>
-            <Input
-              id="password"
-              type="password"
-              value={password}
-              onChange={(e) => {
-                setPassword(e.target.value);
-                setErrors((prev) => ({ ...prev, password: undefined }));
-              }}
-              placeholder="Enter your new password"
-              error={!!errors.password}
-              aria-describedby={errors.password ? 'password-error' : undefined}
-              disabled={isLoading}
-            />
-            {errors.password && (
-              <p id="password-error" className="text-sm text-red-600 dark:text-red-400">
-                {errors.password}
-              </p>
-            )}
-          </div>
+      {/* Reset Password Form */}
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <div className="space-y-1.5">
+          <label htmlFor="password" className={authLabelClass}>
+            New password
+          </label>
+          <Input
+            id="password"
+            type="password"
+            autoComplete="new-password"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              setErrors((prev) => ({ ...prev, password: undefined }));
+            }}
+            placeholder="Enter your new password"
+            error={!!errors.password}
+            aria-invalid={!!errors.password}
+            aria-describedby={errors.password ? 'password-error' : undefined}
+            disabled={isLoading}
+          />
+          {errors.password && (
+            <p id="password-error" className={authFieldErrorClass}>
+              {errors.password}
+            </p>
+          )}
+        </div>
+        <div className="space-y-1.5">
+          <label htmlFor="confirm-password" className={authLabelClass}>
+            Confirm new password
+          </label>
+          <Input
+            id="confirm-password"
+            type="password"
+            autoComplete="new-password"
+            value={confirmPassword}
+            onChange={(e) => {
+              setConfirmPassword(e.target.value);
+              setErrors((prev) => ({ ...prev, confirmPassword: undefined }));
+            }}
+            placeholder="Confirm your new password"
+            error={!!errors.confirmPassword}
+            aria-invalid={!!errors.confirmPassword}
+            aria-describedby={errors.confirmPassword ? 'confirm-password-error' : undefined}
+            disabled={isLoading}
+          />
+          {errors.confirmPassword && (
+            <p id="confirm-password-error" className={authFieldErrorClass}>
+              {errors.confirmPassword}
+            </p>
+          )}
+        </div>
 
-          <div className="space-y-2">
-            <label
-              htmlFor="confirm-password"
-              className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-            >
-              Confirm new password
-            </label>
-            <Input
-              id="confirm-password"
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => {
-                setConfirmPassword(e.target.value);
-                setErrors((prev) => ({ ...prev, confirmPassword: undefined }));
-              }}
-              placeholder="Confirm your new password"
-              error={!!errors.confirmPassword}
-              aria-describedby={errors.confirmPassword ? 'confirm-password-error' : undefined}
-              disabled={isLoading}
-            />
-            {errors.confirmPassword && (
-              <p id="confirm-password-error" className="text-sm text-red-600 dark:text-red-400">
-                {errors.confirmPassword}
-              </p>
-            )}
-          </div>
+        <Button type="submit" size="lg" className="w-full" loading={isLoading} disabled={isLoading}>
+          {isLoading ? 'Updating...' : 'Update password'}
+        </Button>
+      </form>
 
-          <Button type="submit" className="w-full" loading={isLoading} disabled={isLoading}>
-            {isLoading ? 'Updating...' : 'Update password'}
-          </Button>
-        </form>
-
-        {/* Back to Sign In Link */}
-        <p className="text-center text-sm text-gray-600 dark:text-gray-300">
-          Remember your password?{' '}
-          <Link
-            href="/login"
-            className="text-amber-600 hover:text-amber-500 dark:text-amber-400 font-medium"
-          >
-            Sign in
-          </Link>
-        </p>
-      </CardContent>
-    </Card>
+      {/* Back to Sign In Link */}
+      <p className="text-center text-sm text-muted-foreground">
+        Remember your password?{' '}
+        <Link href="/login" className={authLinkClass}>
+          Sign in
+        </Link>
+      </p>
+    </div>
   );
 }

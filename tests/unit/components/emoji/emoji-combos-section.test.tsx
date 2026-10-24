@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from 'bun:test';
-import { render, screen, fireEvent, cleanup } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import { EmojiCombosSection, type ComboWithEmoji } from '@/components/emoji/emoji-combos-section';
 
 afterEach(() => {
@@ -47,9 +47,14 @@ const manyCombos: ComboWithEmoji[] = [
 
 describe('EmojiCombosSection', () => {
   describe('rendering', () => {
-    it('renders the section heading with "Combos with this Emoji" title', () => {
+    it('renders the default section heading', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Combos with this Emoji');
+      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Combos with this emoji');
+    });
+
+    it('renders a custom title', () => {
+      render(<EmojiCombosSection combos={mockCombos} title="Combos with 💀" />);
+      expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Combos with 💀');
     });
 
     it('renders all combo cards', () => {
@@ -75,8 +80,7 @@ describe('EmojiCombosSection', () => {
 
     it('renders as a section element with proper aria-labelledby', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const section = screen.getByRole('region');
-      expect(section).toHaveAttribute('aria-labelledby', 'emoji-combos-heading');
+      expect(screen.getByRole('region')).toHaveAttribute('aria-labelledby', 'emoji-combos-heading');
     });
 
     it('returns null when combos array is empty', () => {
@@ -86,202 +90,74 @@ describe('EmojiCombosSection', () => {
   });
 
   describe('links', () => {
-    it('renders links to combo detail pages', () => {
+    it('renders one link per combo', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link).toHaveAttribute('href', '/combo/skull-laughing');
-    });
-
-    it('each combo card is a link', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const links = screen.getAllByRole('link');
-      expect(links).toHaveLength(3);
+      expect(screen.getAllByRole('link')).toHaveLength(3);
     });
 
     it('links have correct href for each combo', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByRole('link', { name: /dead laughing/i })).toHaveAttribute(
+      expect(screen.getByRole('link', { name: 'Dead Laughing combo' })).toHaveAttribute(
         'href',
         '/combo/skull-laughing'
       );
-      expect(screen.getByRole('link', { name: /skull fire/i })).toHaveAttribute(
+      expect(screen.getByRole('link', { name: 'Skull Fire combo' })).toHaveAttribute(
         'href',
         '/combo/skull-fire'
       );
-      expect(screen.getByRole('link', { name: /skull heart/i })).toHaveAttribute(
+      expect(screen.getByRole('link', { name: 'Skull Heart combo' })).toHaveAttribute(
         'href',
         '/combo/skull-heart'
       );
     });
   });
 
-  describe('collapsible functionality', () => {
-    it('renders expand/collapse button', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByRole('button', { name: /combos with this emoji/i })).toBeInTheDocument();
-    });
-
-    it('starts expanded by default', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      expect(button).toHaveAttribute('aria-expanded', 'true');
-    });
-
-    it('collapses content when header button is clicked', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      fireEvent.click(button);
-      expect(button).toHaveAttribute('aria-expanded', 'false');
-    });
-
-    it('expands content when header button is clicked again', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      fireEvent.click(button);
-      fireEvent.click(button);
-      expect(button).toHaveAttribute('aria-expanded', 'true');
-    });
-
-    it('hides combos when collapsed', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      fireEvent.click(button);
-      expect(screen.queryByText('💀😂')).not.toBeInTheDocument();
-    });
-  });
-
   describe('accessibility', () => {
     it('has accessible heading with correct id', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const heading = screen.getByRole('heading', { level: 2 });
-      expect(heading).toHaveAttribute('id', 'emoji-combos-heading');
+      expect(screen.getByRole('heading', { level: 2 })).toHaveAttribute(
+        'id',
+        'emoji-combos-heading'
+      );
     });
 
-    it('section has proper ARIA landmark', () => {
+    it('combo names are level-3 headings', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const section = screen.getByRole('region');
-      expect(section).toBeInTheDocument();
-    });
-
-    it('expand button has aria-expanded attribute', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      expect(button).toHaveAttribute('aria-expanded');
-    });
-
-    it('combo cards have accessible names', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByRole('link', { name: /dead laughing/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /skull fire/i })).toBeInTheDocument();
-      expect(screen.getByRole('link', { name: /skull heart/i })).toBeInTheDocument();
+      expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(3);
     });
   });
 
   describe('edge cases', () => {
     it('handles single combo', () => {
       render(<EmojiCombosSection combos={singleCombo} />);
-      expect(screen.getByText('💀😂')).toBeInTheDocument();
       expect(screen.getByText('Dead Laughing')).toBeInTheDocument();
     });
 
     it('handles many combos', () => {
       render(<EmojiCombosSection combos={manyCombos} />);
-      expect(screen.getByText('💀😂')).toBeInTheDocument();
-      expect(screen.getByText('💀🎉')).toBeInTheDocument();
-    });
-
-    it('handles combo with long meaning', () => {
-      const longMeaningCombo: ComboWithEmoji[] = [
-        {
-          slug: 'test',
-          combo: '💀😂',
-          name: 'Test Combo',
-          meaning:
-            'This is a very long meaning that describes what the combo means in various contexts and situations',
-        },
-      ];
-      render(<EmojiCombosSection combos={longMeaningCombo} />);
-      expect(
-        screen.getByText(
-          'This is a very long meaning that describes what the combo means in various contexts and situations'
-        )
-      ).toBeInTheDocument();
+      expect(screen.getAllByRole('link')).toHaveLength(6);
     });
   });
 
   describe('styling', () => {
     it('applies custom className', () => {
       render(<EmojiCombosSection combos={mockCombos} className="custom-class" />);
-      const section = screen.getByRole('region');
-      expect(section).toHaveClass('custom-class');
+      expect(screen.getByRole('region')).toHaveClass('custom-class');
     });
 
-    it('has proper spacing', () => {
+    it('has section spacing', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const section = screen.getByRole('region');
-      expect(section).toHaveClass('my-8');
+      expect(screen.getByRole('region')).toHaveClass('mt-14');
     });
 
-    it('renders cards with border styling', () => {
-      render(<EmojiCombosSection combos={singleCombo} />);
-      const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link.closest('.border')).toBeInTheDocument();
-    });
-  });
-
-  describe('responsive layout', () => {
-    it('uses grid layout for combos', () => {
+    it('renders cards in a grid with card styling', () => {
       render(<EmojiCombosSection combos={mockCombos} />);
-      const gridContainer = screen.getByRole('region').querySelector('.grid');
-      expect(gridContainer).toBeInTheDocument();
-    });
-
-    it('has responsive grid columns', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const gridContainer = screen.getByRole('region').querySelector('.grid');
-      expect(gridContainer).toHaveClass('grid-cols-1');
-      expect(gridContainer).toHaveClass('md:grid-cols-2');
-    });
-  });
-
-  describe('dark mode support', () => {
-    it('has dark mode classes for card background', () => {
-      render(<EmojiCombosSection combos={singleCombo} />);
-      const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link.closest('.border')).toHaveClass('dark:bg-card');
-    });
-
-    it('has dark mode classes for text', () => {
-      render(<EmojiCombosSection combos={singleCombo} />);
-      const nameElement = screen.getByText('Dead Laughing');
-      expect(nameElement).toHaveClass('dark:text-gray-100');
-    });
-  });
-
-  describe('icons', () => {
-    it('renders combo icon in the heading', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByTestId('combo-icon')).toBeInTheDocument();
-    });
-
-    it('renders chevron up icon when expanded', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      expect(screen.getByTestId('chevron-up-icon')).toBeInTheDocument();
-    });
-
-    it('renders chevron down icon when collapsed', () => {
-      render(<EmojiCombosSection combos={mockCombos} />);
-      const button = screen.getByRole('button', { name: /combos with this emoji/i });
-      fireEvent.click(button);
-      expect(screen.getByTestId('chevron-down-icon')).toBeInTheDocument();
-    });
-  });
-
-  describe('hover effects', () => {
-    it('card has hover transition classes', () => {
-      render(<EmojiCombosSection combos={singleCombo} />);
-      const link = screen.getByRole('link', { name: /dead laughing/i });
-      expect(link.closest('.border')).toHaveClass('transition-all');
+      expect(screen.getByRole('list')).toHaveClass('grid');
+      expect(screen.getByRole('link', { name: 'Dead Laughing combo' })).toHaveClass(
+        'rounded-2xl',
+        'border-card-border',
+        'bg-card'
+      );
     });
   });
 });

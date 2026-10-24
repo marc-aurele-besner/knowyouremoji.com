@@ -59,6 +59,11 @@ const CONTEXTS: ContextConfig[] = [
   },
 ];
 
+/** Human-readable label for a relationship context value. */
+export function getContextLabel(value: RelationshipContext): string {
+  return CONTEXTS.find((c) => c.value === value)?.label ?? value;
+}
+
 export interface ContextSelectorProps {
   value: RelationshipContext | undefined;
   onChange: (context: RelationshipContext) => void;
@@ -84,44 +89,42 @@ export function ContextSelector({
       <div
         role="radiogroup"
         aria-label="Select relationship context"
-        className={cn('flex flex-col gap-2', className)}
+        className={cn('grid grid-cols-1 gap-2 min-[400px]:grid-cols-2', className)}
       >
-        {CONTEXTS.map((context) => (
-          <button
-            key={context.value}
-            type="button"
-            role="radio"
-            aria-checked={value === context.value}
-            data-selected={value === context.value ? 'true' : undefined}
-            disabled={disabled}
-            onClick={() => onChange(context.value)}
-            className={cn(
-              'flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors text-left',
-              'min-h-[44px]',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2',
-              'dark:focus-visible:ring-offset-gray-900',
-              'disabled:pointer-events-none disabled:opacity-50',
-              value === context.value
-                ? 'bg-amber-500 text-white dark:bg-amber-600'
-                : 'border border-gray-300 bg-white hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700'
-            )}
-          >
-            <span className="text-lg" aria-hidden="true">
-              {context.icon}
-            </span>
-            <div className="flex flex-col">
-              <span>{context.label}</span>
-              <span
-                className={cn(
-                  'text-xs',
-                  value === context.value ? 'text-amber-100' : 'text-gray-500 dark:text-gray-400'
-                )}
-              >
-                {context.description}
+        {CONTEXTS.map((context) => {
+          const selected = value === context.value;
+          return (
+            <button
+              key={context.value}
+              type="button"
+              role="radio"
+              aria-checked={selected}
+              data-selected={selected ? 'true' : undefined}
+              disabled={disabled}
+              onClick={() => onChange(context.value)}
+              className={cn(
+                'flex min-h-[44px] items-start gap-2.5 rounded-xl border bg-card px-3 py-2.5 text-left transition',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+                'disabled:pointer-events-none disabled:opacity-50',
+                selected
+                  ? 'border-primary-500 ring-[3px] ring-primary-500/20'
+                  : 'border-card-border hover:border-secondary-500'
+              )}
+            >
+              <span className="mt-0.5 text-lg leading-none" aria-hidden="true">
+                {context.icon}
               </span>
-            </div>
-          </button>
-        ))}
+              <span className="min-w-0">
+                <span className="block text-[13.5px] font-semibold text-foreground">
+                  {context.label}
+                </span>
+                <span className="block text-xs leading-snug text-muted-foreground">
+                  {context.description}
+                </span>
+              </span>
+            </button>
+          );
+        })}
       </div>
     );
   }

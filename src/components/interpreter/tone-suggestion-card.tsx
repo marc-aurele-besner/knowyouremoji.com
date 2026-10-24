@@ -50,14 +50,14 @@ function RatingStars({
           aria-checked={selectedRating === rating}
           role="radio"
           className={cn(
-            'text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded',
+            'rounded text-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500',
             disabled && 'cursor-not-allowed opacity-50',
             !disabled && 'cursor-pointer hover:scale-110'
           )}
         >
           <span
             className={cn(
-              rating <= (hoveredRating || selectedRating) ? 'text-yellow-400' : 'text-gray-300'
+              rating <= (hoveredRating || selectedRating) ? 'text-primary-500' : 'text-card-border'
             )}
           >
             ★
@@ -65,7 +65,7 @@ function RatingStars({
         </button>
       ))}
       {selectedRating > 0 && (
-        <span className="ml-2 text-xs text-gray-500" role="status">
+        <span className="ml-2 text-xs text-muted-foreground" role="status">
           Thanks for rating!
         </span>
       )}
@@ -107,24 +107,24 @@ export function ToneSuggestionCard({
 
   const confidenceColor =
     suggestion.confidence >= 80
-      ? 'text-green-600'
+      ? 'text-success'
       : suggestion.confidence >= 60
-        ? 'text-yellow-600'
-        : 'text-gray-600';
+        ? 'text-primary-700'
+        : 'text-muted-foreground';
 
   return (
     <Card
       data-testid="tone-suggestion-card"
-      className={cn('animate-fadeIn', className)}
+      className={cn('animate-fadeIn rounded-xl shadow-none', className)}
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <CardHeader className="pb-2">
+      <CardHeader className="p-3.5 pb-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl" role="img" aria-label={toneInfo.label}>
+            <span className="text-lg" role="img" aria-label={toneInfo.label}>
               {toneInfo.icon}
             </span>
-            <h4 className="font-semibold text-sm">{toneInfo.label}</h4>
+            <h4 className="text-[13px] font-semibold">{toneInfo.label}</h4>
           </div>
           <div
             className={cn('text-xs font-medium', confidenceColor)}
@@ -135,25 +135,25 @@ export function ToneSuggestionCard({
           </div>
         </div>
       </CardHeader>
-      <CardContent className="space-y-3">
+      <CardContent className="space-y-3 p-3.5 pt-0">
         {/* Reasoning */}
-        <p className="text-sm text-gray-600">{suggestion.reasoning}</p>
+        <p className="text-xs leading-snug text-muted-foreground">{suggestion.reasoning}</p>
 
         {/* Example Responses */}
         <div className="space-y-2">
-          <p className="text-xs font-medium text-gray-500">Example responses:</p>
+          <p className="text-xs font-medium text-muted-foreground">Example responses:</p>
           <div className="space-y-2">
             {suggestion.examples.map((example, exampleIndex) => (
               <div
                 key={exampleIndex}
-                className="group flex items-start gap-2 rounded-lg bg-gray-50 p-2 text-sm"
+                className="group flex items-start gap-2 rounded-2xl rounded-bl-sm bg-muted px-3 py-2 text-sm"
               >
-                <p className="flex-1 text-gray-700">&ldquo;{example}&rdquo;</p>
+                <p className="flex-1 text-foreground">&ldquo;{example}&rdquo;</p>
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={() => handleCopyExample(example, exampleIndex)}
-                  className="h-6 px-2 text-xs opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="h-6 px-2 text-xs opacity-0 transition-opacity focus-visible:opacity-100 group-hover:opacity-100"
                   aria-label={copiedIndex === exampleIndex ? 'Copied' : 'Copy example'}
                 >
                   {copiedIndex === exampleIndex ? '✓' : 'Copy'}
@@ -165,8 +165,8 @@ export function ToneSuggestionCard({
 
         {/* Rating (Phase 2 - requires auth) */}
         {isRatingEnabled && onRate && (
-          <div className="pt-2 border-t">
-            <p className="text-xs text-gray-500 mb-2">Was this suggestion helpful?</p>
+          <div className="border-t border-card-border pt-2">
+            <p className="mb-2 text-xs text-muted-foreground">Was this suggestion helpful?</p>
             <RatingStars onRate={handleRate} />
           </div>
         )}

@@ -1,9 +1,11 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, type ReactNode } from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { EmojiDownloadButton } from '@/components/emoji/emoji-download-button';
+import { CheckIcon, CopyIcon, SwapIcon } from '@/components/emoji/emoji-icons';
 import { emojiEvents } from '@/lib/analytics';
 
 /**
@@ -21,14 +23,32 @@ export interface EmojiHeaderProps {
     shortcodes: string[];
     /** URL-friendly identifier for analytics tracking */
     slug?: string;
+    /** Category slug (links to the category hub) */
+    category?: string;
+    /** Human-readable category name */
+    categoryName?: string;
+    /** Unicode version the emoji was introduced in */
+    unicodeVersion?: string;
+    /** Unicode subcategory */
+    subcategory?: string;
+    /** ISO date the content was last updated */
+    updatedAt?: string;
   };
+  /** Link to a curated comparison featuring this emoji */
+  compareHref?: string;
+  /** Extra actions appended to the action row (e.g. the share dialog trigger) */
+  actions?: ReactNode;
   /** Additional CSS class names */
   className?: string;
 }
 
+const META_BADGE =
+  'inline-flex items-center rounded-full bg-muted px-2.5 py-1 font-mono text-xs text-muted-foreground';
+
 /**
- * EmojiHeader component displays the emoji character, name, copy button,
- * and Unicode information for an emoji detail page.
+ * EmojiHeader is the hero of the emoji detail page: the emoji in an amber
+ * tile, the name as page title, monospace metadata badges and the primary
+ * action row (copy, download PNG, compare, share).
  *
  * @example
  * ```tsx
@@ -37,12 +57,12 @@ export interface EmojiHeaderProps {
  *     character: '😀',
  *     name: 'Grinning Face',
  *     unicode: '1F600',
- *     shortcodes: [':grinning:', ':grinning_face:'],
+ *     shortcodes: [':grinning:'],
  *   }}
  * />
  * ```
  */
-export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
+export function EmojiHeader({ emoji, compareHref, actions, className }: EmojiHeaderProps) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(async () => {
@@ -58,7 +78,6 @@ export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Clipboard API not available, silently fail
-      // Could add a fallback or error toast here
     }
   }, [emoji.character, emoji.slug]);
 
@@ -69,51 +88,73 @@ export function EmojiHeader({ emoji, className }: EmojiHeaderProps) {
     .join('-');
 
   return (
-    <header className={cn('flex flex-col items-center text-center py-10 px-4', className)}>
-      {/* Emoji Character */}
-      <div
-        className="text-7xl md:text-9xl mb-6 select-none animate-bounce-in hover:animate-wiggle cursor-default"
-        role="img"
-        aria-label={emoji.name}
-      >
-        {emoji.character}
-      </div>
-
-      {/* Emoji Name */}
-      <h1 className="text-3xl md:text-4xl font-extrabold mb-4 gradient-text">{emoji.name}</h1>
-
-      {/* Action Buttons */}
-      <div className="flex flex-wrap items-center gap-3 mb-6">
-        <Button
-          onClick={handleCopy}
-          variant={copied ? 'secondary' : 'primary'}
-          size="md"
-          aria-label={copied ? 'Copied!' : 'Copy emoji'}
+    <header className={cn('flex flex-wrap items-center gap-6 md:gap-7', className)}>
+      {/* Emoji tile */}
+      <div className="flex h-28 w-28 flex-none items-center justify-center rounded-[28px] bg-primary-50 md:h-[132px] md:w-[132px]">
+        <span
+          className="emoji-display text-7xl select-none md:text-[84px]"
+          role="img"
+          aria-label={emoji.name}
         >
-          <span className="mr-2">{copied ? '✓' : '📋'}</span>
-          {copied ? 'Copied!' : 'Copy Emoji'}
-        </Button>
-
-        <EmojiDownloadButton character={emoji.character} name={emoji.name} slug={emoji.slug} />
+          {emoji.character}
+        </span>
       </div>
 
-      {/* Unicode Info */}
-      <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
-        <p>
-          <span className="font-medium text-gray-900 dark:text-gray-200">Unicode:</span>{' '}
-          {formattedUnicode}
-        </p>
-        {emoji.shortcodes.length > 0 && (
-          <p>
-            <span className="font-medium text-gray-900 dark:text-gray-200">Shortcodes:</span>{' '}
-            {emoji.shortcodes.map((code, index) => (
-              <code key={code} className="bg-gray-200 dark:bg-gray-700 px-1 py-0.5 rounded text-xs">
-                {code}
-                {index < emoji.shortcodes.length - 1 ? ' ' : ''}
-              </code>
-            ))}
-          </p>
-        )}
+      <div className="min-w-0 flex-1 basis-72">
+        <h1 className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
+          {emoji.name}
+        </h1>
+
+        {/* Metadata badges */}
+        <ul className="mt-3 flex flex-wrap gap-1.5" aria-label="Emoji details">
+          <li className={META_BADGE}>{formattedUnicode}</li>
+          {emoji.category && (
+            <li className="flex">
+              <Link
+                href={`/emoji/category/${emoji.category}`}
+                className={cn(
+                  META_BADGE,
+                  'hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500'
+                )}
+              >
+                {emoji.categoryName ?? emoji.category}
+              </Link>
+            </li>
+          )}
+          {emoji.unicodeVersion && <li className={META_BADGE}>Unicode {emoji.unicodeVersion}</li>}
+          {emoji.subcategory && <li className={META_BADGE}>{emoji.subcategory}</li>}
+          {emoji.shortcodes.map((code) => (
+            <li key={code} className={META_BADGE}>
+              {code}
+            </li>
+          ))}
+          {emoji.updatedAt && <li className={META_BADGE}>Updated {emoji.updatedAt}</li>}
+        </ul>
+
+        {/* Action row */}
+        <div className="mt-[18px] flex flex-wrap items-center gap-2">
+          <Button
+            onClick={handleCopy}
+            variant="primary"
+            aria-label={copied ? 'Copied!' : 'Copy emoji'}
+          >
+            {copied ? <CheckIcon /> : <CopyIcon />}
+            {copied ? 'Copied!' : `Copy ${emoji.character}`}
+          </Button>
+
+          <EmojiDownloadButton character={emoji.character} name={emoji.name} slug={emoji.slug} />
+
+          {compareHref && (
+            <Button asChild variant="outline">
+              <Link href={compareHref}>
+                <SwapIcon />
+                Compare
+              </Link>
+            </Button>
+          )}
+
+          {actions}
+        </div>
       </div>
     </header>
   );

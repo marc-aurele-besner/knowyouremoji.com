@@ -25,9 +25,9 @@ describe('Card', () => {
     expect(card).toHaveClass('rounded-2xl');
     expect(card).toHaveClass('border');
     expect(card).toHaveClass('shadow-sm');
-    expect(card).toHaveClass('dark:bg-gray-800/60');
+    expect(card).toHaveClass('bg-card');
     expect(card).toHaveClass('transition-all');
-    expect(card).toHaveClass('duration-300');
+    expect(card).toHaveClass('duration-200');
   });
 
   it('merges custom className', () => {
@@ -85,7 +85,7 @@ describe('CardTitle', () => {
   it('applies title styling', () => {
     render(<CardTitle data-testid="title">Title</CardTitle>);
     const title = screen.getByTestId('title');
-    expect(title).toHaveClass('text-2xl');
+    expect(title).toHaveClass('text-xl');
     expect(title).toHaveClass('font-semibold');
   });
 
@@ -111,7 +111,7 @@ describe('CardDescription', () => {
     render(<CardDescription data-testid="desc">Description</CardDescription>);
     const desc = screen.getByTestId('desc');
     expect(desc).toHaveClass('text-sm');
-    expect(desc).toHaveClass('text-gray-500');
+    expect(desc).toHaveClass('text-muted-foreground');
   });
 
   it('forwards ref correctly', () => {

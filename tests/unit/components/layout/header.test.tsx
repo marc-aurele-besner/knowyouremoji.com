@@ -1,14 +1,27 @@
 import { describe, it, expect, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup, fireEvent } from '@testing-library/react';
-import { Header } from '@/components/layout/header';
+import { Header, isNavLinkActive } from '@/components/layout/header';
 
 // Mock next/navigation for SearchBar
+const pathnameState = { current: '/emoji' as string | null };
 mock.module('next/navigation', () => ({
   useRouter: () => ({
     push: mock(() => {}),
     replace: mock(() => {}),
     prefetch: mock(() => {}),
   }),
+  usePathname: () => pathnameState.current,
+}));
+
+// Controllable session for the account area
+type MockSession = { data: { user: { name?: string; email?: string } } | null; status: string };
+const sessionState: { current: MockSession } = {
+  current: { data: null, status: 'unauthenticated' },
+};
+const signOutMock = mock(() => Promise.resolve());
+mock.module('next-auth/react', () => ({
+  useSession: () => sessionState.current,
+  signOut: signOutMock,
 }));
 
 // Mock fetch for SearchBar
@@ -20,6 +33,8 @@ global.fetch = mock(() =>
 
 afterEach(() => {
   cleanup();
+  sessionState.current = { data: null, status: 'unauthenticated' };
+  pathnameState.current = '/emoji';
 });
 
 describe('Header', () => {
@@ -101,14 +116,14 @@ describe('Header', () => {
     render(<Header />);
     const nav = screen.getByRole('navigation', { name: /main/i });
     expect(nav).toHaveClass('hidden');
-    expect(nav).toHaveClass('md:flex');
+    expect(nav).toHaveClass('lg:flex');
   });
 
   it('shows mobile menu button only on small screens via class', () => {
     render(<Header />);
     const menuButton = screen.getByRole('button', { name: /toggle menu/i });
-    // The button is inside a wrapper div with md:hidden class
-    expect(menuButton.parentElement).toHaveClass('md:hidden');
+    // The full nav needs desktop width, so the menu button shows below lg
+    expect(menuButton).toHaveClass('lg:hidden');
   });
 
   it('closes mobile nav when onClose is called from MobileNav', () => {
@@ -137,5 +152,45 @@ describe('Header', () => {
     render(<Header />);
     // Search bar should be present - look for the combobox (search input)
     expect(screen.getByRole('combobox')).toBeInTheDocument();
+  });
+
+  it('marks the current section link as active', () => {
+    pathnameState.current = '/emoji/skull';
+    render(<Header />);
+    const nav = screen.getByRole('navigation', { name: 'Main' });
+    const active = nav.querySelector('[aria-current="page"]');
+    expect(active).toHaveTextContent('Emojis');
+  });
+
+  it('hides the header search on the home page', () => {
+    pathnameState.current = '/';
+    render(<Header />);
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
+  });
+
+  it('shows the header search away from the home page', () => {
+    render(<Header />);
+    expect(screen.getByRole('combobox')).toBeInTheDocument();
+  });
+
+  it('shows sign in and get started links for guests', () => {
+    render(<Header />);
+    expect(screen.getByRole('link', { name: 'Sign in' })).toHaveAttribute('href', '/login');
+    expect(screen.getByRole('link', { name: 'Get started' })).toHaveAttribute('href', '/register');
+  });
+});
+
+describe('isNavLinkActive', () => {
+  it('matches the exact path and nested paths', () => {
+    expect(isNavLinkActive('/emoji', '/emoji')).toBe(true);
+    expect(isNavLinkActive('/emoji/skull', '/emoji')).toBe(true);
+  });
+
+  it('does not match siblings that share a prefix', () => {
+    expect(isNavLinkActive('/emojis-are-fun', '/emoji')).toBe(false);
+  });
+
+  it('returns false without a pathname', () => {
+    expect(isNavLinkActive(null, '/emoji')).toBe(false);
   });
 });
