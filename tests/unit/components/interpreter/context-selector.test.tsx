@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, fireEvent, waitFor, cleanup } from '@testing-library/react';
-import { ContextSelector } from '@/components/interpreter/context-selector';
+import { ContextSelector, getContextLabel } from '@/components/interpreter/context-selector';
 
 afterEach(() => {
   cleanup();
@@ -190,5 +190,15 @@ describe('ContextSelector', () => {
       );
       expect(screen.getByRole('radiogroup')).toHaveClass('custom-class');
     });
+  });
+});
+
+describe('getContextLabel', () => {
+  it('returns the display label for a context', () => {
+    expect(getContextLabel('FRIEND')).toBe('Friend');
+  });
+
+  it('falls back to the raw value for unknown contexts', () => {
+    expect(getContextLabel('NEMESIS' as never)).toBe('NEMESIS');
   });
 });

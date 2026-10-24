@@ -57,6 +57,11 @@ const PLATFORMS: PlatformConfig[] = [
   },
 ];
 
+/** Human-readable label for a platform value. */
+export function getPlatformLabel(value: Platform | 'OTHER'): string {
+  return PLATFORMS.find((p) => p.value === value)?.label ?? value;
+}
+
 export interface PlatformSelectorProps {
   value: Platform | 'OTHER' | undefined;
   onChange: (platform: Platform | 'OTHER') => void;
@@ -81,37 +86,45 @@ export function PlatformSelector({
       <div
         role="radiogroup"
         aria-label="Select messaging platform"
-        className={cn('flex flex-wrap gap-2', className)}
+        className={cn('grid grid-cols-1 gap-2 min-[400px]:grid-cols-2', className)}
       >
-        {PLATFORMS.map((platform) => (
-          <button
-            key={platform.value}
-            type="button"
-            role="radio"
-            aria-checked={value === platform.value}
-            data-selected={value === platform.value ? 'true' : undefined}
-            disabled={disabled}
-            onClick={() => {
-              interpreterEvents.platformSelect(platform.value);
-              onChange(platform.value);
-            }}
-            className={cn(
-              'inline-flex items-center justify-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors',
-              'min-h-[44px] min-w-[44px]',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2',
-              'dark:focus-visible:ring-offset-gray-900',
-              'disabled:pointer-events-none disabled:opacity-50',
-              value === platform.value
-                ? 'bg-amber-500 text-white dark:bg-amber-600'
-                : 'border border-gray-300 bg-white hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700'
-            )}
-          >
-            <span className="text-lg" aria-hidden="true">
-              {platform.icon}
-            </span>
-            <span>{platform.label}</span>
-          </button>
-        ))}
+        {PLATFORMS.map((platform) => {
+          const selected = value === platform.value;
+          return (
+            <button
+              key={platform.value}
+              type="button"
+              role="radio"
+              aria-checked={selected}
+              data-selected={selected ? 'true' : undefined}
+              disabled={disabled}
+              onClick={() => {
+                interpreterEvents.platformSelect(platform.value);
+                onChange(platform.value);
+              }}
+              className={cn(
+                'flex min-h-[44px] items-start gap-2.5 rounded-xl border bg-card px-3 py-2.5 text-left transition',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+                'disabled:pointer-events-none disabled:opacity-50',
+                selected
+                  ? 'border-primary-500 ring-[3px] ring-primary-500/20'
+                  : 'border-card-border hover:border-secondary-500'
+              )}
+            >
+              <span className="mt-0.5 text-lg leading-none" aria-hidden="true">
+                {platform.icon}
+              </span>
+              <span className="min-w-0">
+                <span className="block text-[13.5px] font-semibold text-foreground">
+                  {platform.label}
+                </span>
+                <span className="block text-xs leading-snug text-muted-foreground">
+                  {platform.description}
+                </span>
+              </span>
+            </button>
+          );
+        })}
       </div>
     );
   }

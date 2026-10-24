@@ -51,19 +51,19 @@ describe('ToneSuggestionCard', () => {
     it('applies green color for high confidence (>= 80)', () => {
       const highConfSuggestion = createSuggestedResponseTone({ confidence: 85 });
       render(<ToneSuggestionCard suggestion={highConfSuggestion} index={0} />);
-      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-green-600');
+      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-success');
     });
 
     it('applies yellow color for medium confidence (60-79)', () => {
       const medConfSuggestion = createSuggestedResponseTone({ confidence: 70 });
       render(<ToneSuggestionCard suggestion={medConfSuggestion} index={0} />);
-      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-yellow-600');
+      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-primary-700');
     });
 
     it('applies gray color for low confidence (< 60)', () => {
       const lowConfSuggestion = createSuggestedResponseTone({ confidence: 50 });
       render(<ToneSuggestionCard suggestion={lowConfSuggestion} index={0} />);
-      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-gray-600');
+      expect(screen.getByTestId('tone-confidence')).toHaveClass('text-muted-foreground');
     });
   });
 

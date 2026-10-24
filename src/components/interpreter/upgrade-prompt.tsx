@@ -78,24 +78,36 @@ export function UpgradePrompt({ className }: UpgradePromptProps) {
   return (
     <div
       data-testid="upgrade-prompt"
-      className={cn('p-6 rounded-lg border-2 border-blue-500 bg-blue-50 text-center', className)}
+      className={cn(
+        'flex flex-col items-center gap-2.5 rounded-2xl border-2 border-dashed border-card-border bg-card px-6 py-12 text-center',
+        className
+      )}
     >
-      <h3 className="text-lg font-semibold mb-2 text-gray-900">Daily Limit Reached</h3>
-      <p className="text-gray-600 mb-4">
-        You have used all 3 free interpretations for today.
-        <br />
-        <span data-testid="reset-countdown">Resets {timeUntilReset}.</span>
+      <span className="text-[40px] leading-none" aria-hidden="true">
+        ⏳
+      </span>
+      <h3 className="text-[17px] font-semibold text-foreground">Daily limit reached</h3>
+      <p className="max-w-[420px] text-sm text-muted-foreground">
+        You have used all 3 free interpretations for today.{' '}
+        <span data-testid="reset-countdown">Resets {timeUntilReset}.</span> Pro unlocks unlimited
+        interpretations and history.
       </p>
 
-      <div className="space-y-3">
+      <div className="mt-2 flex flex-wrap items-center justify-center gap-2">
         <Link
           href="/pricing"
-          className="block w-full py-3 px-6 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          className="inline-flex h-10 items-center rounded-full bg-primary-500 px-5 text-sm font-semibold text-primary-foreground transition hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 focus-visible:ring-offset-card"
         >
           Upgrade for Unlimited
         </Link>
-        <p className="text-xs text-gray-500">Starting at just $4.99/month</p>
+        <Link
+          href="/emoji"
+          className="inline-flex h-10 items-center rounded-full border border-card-border bg-card px-5 text-sm font-medium text-foreground transition hover:border-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+        >
+          Browse emojis (unlimited)
+        </Link>
       </div>
+      <p className="text-xs text-muted-foreground">Starting at just $4.99/month</p>
     </div>
   );
 }

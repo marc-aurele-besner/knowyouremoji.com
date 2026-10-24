@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, fireEvent, waitFor, cleanup } from '@testing-library/react';
-import { PlatformSelector } from '@/components/interpreter/platform-selector';
+import { PlatformSelector, getPlatformLabel } from '@/components/interpreter/platform-selector';
 
 afterEach(() => {
   cleanup();
@@ -189,5 +189,16 @@ describe('PlatformSelector', () => {
       );
       expect(screen.getByRole('radiogroup')).toHaveClass('custom-class');
     });
+  });
+});
+
+describe('getPlatformLabel', () => {
+  it('returns the display label for a platform', () => {
+    expect(getPlatformLabel('IMESSAGE')).toBe('iMessage');
+    expect(getPlatformLabel('OTHER')).toBe('Other/Unknown');
+  });
+
+  it('falls back to the raw value for unknown platforms', () => {
+    expect(getPlatformLabel('MYSPACE' as never)).toBe('MYSPACE');
   });
 });

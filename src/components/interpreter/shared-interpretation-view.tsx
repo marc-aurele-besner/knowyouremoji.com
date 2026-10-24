@@ -31,7 +31,7 @@ export function SharedInterpretationView({ data, className }: SharedInterpretati
     <div className={cn('space-y-6', className)}>
       {/* Shared Result Badge */}
       <div className="flex items-center gap-2">
-        <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800">
+        <span className="inline-flex items-center rounded-full bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-700">
           Shared Result
         </span>
       </div>
@@ -41,12 +41,14 @@ export function SharedInterpretationView({ data, className }: SharedInterpretati
 
       {/* CTA */}
       <div className="text-center pt-4">
-        <Link
-          href="/interpreter"
-          onClick={() => shareEvents.shareConversion(shareUrl, 'interpretation')}
-        >
-          <Button size="lg">Try the Interpreter Yourself</Button>
-        </Link>
+        <Button asChild size="lg" variant="brand">
+          <Link
+            href="/interpreter"
+            onClick={() => shareEvents.shareConversion(shareUrl, 'interpretation')}
+          >
+            Try the Interpreter Yourself
+          </Link>
+        </Button>
       </div>
     </div>
   );

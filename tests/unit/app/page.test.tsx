@@ -1,5 +1,11 @@
-import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
+import { describe, expect, test, beforeEach, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
+
+mock.module('next/navigation', () => ({
+  useRouter: () => ({ push: mock(() => {}), replace: mock(() => {}), prefetch: mock(() => {}) }),
+  usePathname: () => '/',
+}));
+
 import { generateMetadata } from '@/app/page';
 import { HomePageContent } from '@/components/home/home-page-content';
 import { getEmojiSummaries, clearEmojiCache } from '@/lib/emoji-data';
@@ -43,40 +49,38 @@ describe('HomePage', () => {
       // Check for main heading
       const heading = screen.getByRole('heading', { level: 1 });
       expect(heading).toBeInTheDocument();
-      expect(heading.textContent).toContain('Emoji');
+      expect(heading.textContent).toContain('What does that emoji actually mean?');
     });
 
     test('renders descriptive subheadline', () => {
       renderHome();
 
-      // Check for description text about emoji meanings
-      // Text is split across elements due to <em> tag, so use a custom matcher
-      const element = screen.getByText((_, el) => {
-        return el?.tagName === 'P' && /real meaning/i.test(el?.textContent ?? '');
-      });
-      expect(element).toBeInTheDocument();
+      expect(
+        screen.getByText(/look up any emoji, or paste the whole message/i)
+      ).toBeInTheDocument();
+    });
+
+    test('renders the omnibox search field', () => {
+      renderHome();
+
+      expect(screen.getByRole('combobox', { name: /search an emoji/i })).toBeInTheDocument();
+    });
+
+    test('shows real content counts in the hero note', () => {
+      renderHome();
+
+      expect(screen.getByText(/emojis · .* combos · .* guides/)).toBeInTheDocument();
     });
   });
 
-  describe('Features section', () => {
-    test('renders features heading', () => {
+  describe('Context strip', () => {
+    test('renders the context strip heading and four context links', () => {
       renderHome();
 
-      // Check for features section heading
-      expect(screen.getByRole('heading', { name: 'Features', level: 2 })).toBeInTheDocument();
-    });
-
-    test('displays key platform features', () => {
-      renderHome();
-
-      // Check for context-aware feature (heading)
-      expect(screen.getByRole('heading', { name: /Context-Aware/i })).toBeInTheDocument();
-
-      // Check for generational differences feature (heading)
-      expect(screen.getByRole('heading', { name: /Generation/i })).toBeInTheDocument();
-
-      // Check for AI interpreter feature (heading)
-      expect(screen.getByRole('heading', { name: /AI Interpret/i })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'Meaning depends on where you are', level: 2 })
+      ).toBeInTheDocument();
+      expect(screen.getAllByTestId('context-card')).toHaveLength(4);
     });
   });
 
@@ -94,7 +98,7 @@ describe('HomePage', () => {
       renderHome();
 
       // Check for link to emoji browsing
-      const browseLinks = screen.getAllByRole('link', { name: /browse|view all emoji/i });
+      const browseLinks = screen.getAllByRole('link', { name: /browse|view all .*emojis/i });
       expect(browseLinks.length).toBeGreaterThan(0);
     });
   });
@@ -104,7 +108,9 @@ describe('HomePage', () => {
       renderHome();
 
       // Use exact text match to distinguish from "Popular Emoji Combos"
-      expect(screen.getByRole('heading', { name: 'Popular Emojis', level: 2 })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'Trending this week', level: 2 })
+      ).toBeInTheDocument();
     });
 
     test('displays emoji cards with characters', () => {
@@ -148,7 +154,7 @@ describe('HomePage', () => {
       renderHome();
 
       expect(
-        screen.getByRole('heading', { name: /popular emoji combo/i, level: 2 })
+        screen.getByRole('heading', { name: /popular combos/i, level: 2 })
       ).toBeInTheDocument();
     });
 
@@ -319,6 +325,8 @@ describe('HomePage', () => {
     const { default: HomePage } = await import('@/app/page');
     const ui = await HomePage();
     render(ui);
-    expect(screen.getByRole('heading', { name: 'Popular Emojis', level: 2 })).toBeInTheDocument();
+    expect(
+      screen.getByRole('heading', { name: 'Trending this week', level: 2 })
+    ).toBeInTheDocument();
   });
 });

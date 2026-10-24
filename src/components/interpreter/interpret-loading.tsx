@@ -41,7 +41,7 @@ export interface InterpretLoadingProps {
 
 function LoadingSpinner() {
   return (
-    <div data-testid="loading-spinner" className="animate-spin h-5 w-5 text-blue-600">
+    <div data-testid="loading-spinner" className="h-5 w-5 animate-spin text-primary-500">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -158,7 +158,7 @@ export function InterpretLoading({
       {/* Loading header with spinner and message */}
       <div className="flex items-center gap-3">
         <LoadingSpinner />
-        <p data-testid="loading-message" className="text-gray-600 font-medium">
+        <p data-testid="loading-message" className="eyebrow">
           {LOADING_MESSAGES[currentMessageIndex]}
         </p>
       </div>
@@ -166,16 +166,12 @@ export function InterpretLoading({
       {/* Progress indicator */}
       <div
         data-testid="progress-indicator"
-        className="animate-pulse h-1 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 rounded-full"
-        style={{
-          backgroundSize: '200% 100%',
-          animation: 'shimmer 2s infinite linear',
-        }}
+        className="h-1 animate-pulse rounded-full bg-primary-100"
       />
 
       {/* Elapsed time */}
       {showElapsedTime && !effectiveIsTimedOut && (
-        <p data-testid="elapsed-time" className="text-sm text-gray-500">
+        <p data-testid="elapsed-time" className="text-sm text-muted-foreground">
           Elapsed: {formatElapsedTime(elapsedSeconds)}
         </p>
       )}
@@ -184,7 +180,7 @@ export function InterpretLoading({
       {showExtendedWait && !effectiveIsTimedOut && (
         <p
           data-testid="extended-wait-message"
-          className="text-sm text-gray-500 bg-gray-50 p-3 rounded-lg"
+          className="rounded-xl bg-muted p-3 text-sm text-muted-foreground"
         >
           This is taking longer than usual. Complex messages may require additional processing time.
         </p>
@@ -192,29 +188,24 @@ export function InterpretLoading({
 
       {/* Skeleton placeholder */}
       <div className="space-y-4">
-        {/* Summary skeleton */}
-        <div role="presentation">
-          <Skeleton className="h-6 w-1/3 mb-4" />
-          <Skeleton className="h-4 w-full mb-2" />
-          <Skeleton className="h-4 w-2/3" />
+        {/* Verdict skeleton */}
+        <div role="presentation" className="space-y-3">
+          <Skeleton className="h-6 w-[88%]" />
+          <Skeleton className="h-6 w-[64%]" />
+        </div>
+
+        {/* Stat tiles skeleton */}
+        <div role="presentation" className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          <Skeleton className="h-24 w-full rounded-xl" />
+          <Skeleton className="h-24 w-full rounded-xl" />
+          <Skeleton className="h-24 w-full rounded-xl" />
+          <Skeleton className="h-24 w-full rounded-xl" />
         </div>
 
         {/* Emoji breakdown skeleton */}
-        <div role="presentation">
-          <Skeleton className="h-6 w-1/4 mb-4" />
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Skeleton className="h-24 w-full" />
-            <Skeleton className="h-24 w-full" />
-          </div>
-        </div>
-
-        {/* Metrics skeleton */}
-        <div role="presentation">
-          <Skeleton className="h-6 w-1/4 mb-4" />
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Skeleton className="h-12 w-full" />
-            <Skeleton className="h-12 w-full" />
-          </div>
+        <div role="presentation" className="space-y-2">
+          <Skeleton className="h-14 w-full rounded-xl" />
+          <Skeleton className="h-14 w-full rounded-xl" />
         </div>
       </div>
 
@@ -222,13 +213,13 @@ export function InterpretLoading({
       {effectiveIsTimedOut && (
         <div
           data-testid="timeout-message"
-          className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 space-y-3"
+          className="space-y-3 rounded-xl bg-primary-50 p-4 text-primary-700"
         >
           <div className="flex items-center gap-2">
-            <span className="text-yellow-600">⏱️</span>
-            <p className="text-sm font-medium text-yellow-800">Request timed out</p>
+            <span aria-hidden="true">⏱️</span>
+            <p className="text-sm font-semibold">Request timed out</p>
           </div>
-          <p className="text-sm text-yellow-700">
+          <p className="text-sm">
             The interpretation is taking longer than expected. This could be due to high demand or a
             complex message.
           </p>

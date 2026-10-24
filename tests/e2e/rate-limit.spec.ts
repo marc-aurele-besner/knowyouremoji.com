@@ -24,7 +24,7 @@ test.describe('Rate Limit Flow', () => {
       const usageCounter = page.locator('[data-testid="usage-counter"]');
       await expect(usageCounter).toBeVisible();
       await expect(usageCounter).toContainText('3 of 3');
-      await expect(usageCounter).toContainText('free uses remaining');
+      await expect(usageCounter).toContainText('free interpretations left today');
     });
 
     test('should not show upgrade prompt initially', async ({ page }) => {
@@ -66,10 +66,12 @@ test.describe('Rate Limit Flow', () => {
       const textarea = page.locator('textarea[name="message"]');
       await textarea.fill('Hey there! 👋 How are you? 😊');
 
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       await page.locator('button[type="submit"]').click();
 
@@ -193,10 +195,12 @@ test.describe('Rate Limit Flow', () => {
       const textarea = page.locator('textarea[name="message"]');
       await textarea.fill('Last message 👋 with emoji 😊');
 
-      await page.locator('button[role="combobox"]').click();
-      await page.locator('[role="option"]:has-text("iMessage")').click();
+      await page.locator('button[role="radio"]:has-text("iMessage")').click();
 
-      await page.locator('button[role="radio"]').first().click();
+      await page
+        .locator('[aria-label="Select relationship context"] button[role="radio"]')
+        .first()
+        .click();
 
       await page.locator('button[type="submit"]').click();
 
@@ -250,7 +254,10 @@ test.describe('Rate Limit Flow', () => {
       const usageCounter = page.locator('[data-testid="usage-counter"]');
       await expect(usageCounter).toHaveAttribute('role', 'status');
       await expect(usageCounter).toHaveAttribute('aria-live', 'polite');
-      await expect(usageCounter).toHaveAttribute('aria-label', /\d+ of \d+ free uses remaining/);
+      await expect(usageCounter).toHaveAttribute(
+        'aria-label',
+        /\d+ of \d+ free interpretations left today/
+      );
     });
 
     test('should have accessible upgrade prompt when rate limited', async ({ page }) => {

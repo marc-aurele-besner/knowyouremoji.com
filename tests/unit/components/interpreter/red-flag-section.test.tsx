@@ -81,11 +81,11 @@ describe('RedFlagSection', () => {
       render(<RedFlagSection flags={shuffledFlags} />);
       const badges = screen.getAllByTestId('red-flag-badge');
       // High severity should be first
-      expect(badges[0]).toHaveClass('border-red-500');
+      expect(badges[0]).toHaveAttribute('data-severity', 'high');
       // Medium severity should be second
-      expect(badges[1]).toHaveClass('border-yellow-500');
+      expect(badges[1]).toHaveAttribute('data-severity', 'medium');
       // Low severity should be last
-      expect(badges[2]).toHaveClass('border-blue-500');
+      expect(badges[2]).toHaveAttribute('data-severity', 'low');
     });
   });
 
@@ -210,7 +210,7 @@ describe('RedFlagSection', () => {
     it('has proper spacing between flags', () => {
       render(<RedFlagSection flags={mockFlags} />);
       const flagsContainer = screen.getByTestId('flags-container');
-      expect(flagsContainer).toHaveClass('space-y-3');
+      expect(flagsContainer).toHaveClass('gap-2');
     });
 
     it('applies animation class', () => {

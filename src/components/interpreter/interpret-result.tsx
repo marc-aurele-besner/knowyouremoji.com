@@ -3,22 +3,26 @@
 import { useState, useCallback } from 'react';
 import { cn } from '@/lib/utils';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ProbabilityMeter } from './probability-meter';
 import { PassiveAggressionMeter } from './passive-aggression-meter';
 import { RedFlagBadge } from './red-flag-badge';
 import { EmojiLink } from './emoji-link';
+import { ToneSuggestionsSection } from './tone-suggestions-section';
 import { ShareSection } from '@/components/share/share-section';
 import { getShareUrl } from '@/lib/share-encoding';
-import type { InterpretationResult, DetectedEmoji } from '@/types';
+import type { InterpretationResult, InterpretationResultWithTones, DetectedEmoji } from '@/types';
 
 export interface InterpretResultProps {
-  result: InterpretationResult;
+  result: InterpretationResult | InterpretationResultWithTones;
   isLoading?: boolean;
   onEmojiClick?: (emoji: string) => void;
   /** Callback for tracking emoji link clicks (for analytics) */
   onEmojiLinkClick?: (emoji: string, slug: string) => void;
+  /** Context line shown next to the badges, e.g. "iMessage · Friend" */
+  meta?: string;
+  /** When set, shows a "New message" action that calls this */
+  onReset?: () => void;
   className?: string;
 }
 
@@ -45,85 +49,79 @@ function EmojiBreakdownCard({
   }, [onEmojiClick, emoji.character]);
 
   return (
-    <Card
+    <div
       data-testid="emoji-breakdown-card"
-      className="animate-fadeIn"
+      className="flex animate-fadeIn items-start gap-3.5 rounded-xl border border-card-border bg-card px-3.5 py-3 transition hover:border-primary-500"
       style={{ animationDelay: `${index * 100}ms` }}
     >
-      <CardContent className="flex items-start gap-4 p-4">
-        {hasSlug ? (
+      {hasSlug ? (
+        <EmojiLink
+          emoji={emoji.character}
+          slug={emoji.slug}
+          showPreview
+          onLinkClick={onEmojiLinkClick}
+          className="text-[28px] leading-none"
+        />
+      ) : hasClickHandler ? (
+        <button
+          onClick={handleClick}
+          className="cursor-pointer rounded-lg text-[28px] leading-none transition-transform hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
+          aria-label={`View details for ${emoji.character}`}
+        >
+          {emoji.character}
+        </button>
+      ) : (
+        <span className="text-[28px] leading-none">{emoji.character}</span>
+      )}
+      <div className="min-w-0 flex-1">
+        <p className="text-[13.5px] leading-snug text-foreground">{emoji.meaning}</p>
+        {emoji.slug && (
           <EmojiLink
-            emoji={emoji.character}
+            emoji=""
             slug={emoji.slug}
-            showPreview
             onLinkClick={onEmojiLinkClick}
-            className="text-4xl p-1"
-          />
-        ) : hasClickHandler ? (
-          <button
-            onClick={handleClick}
-            className="cursor-pointer text-4xl hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg p-1"
-            aria-label={`View details for ${emoji.character}`}
+            className="mt-1 inline-block text-xs font-medium text-primary-700 hover:underline"
           >
-            {emoji.character}
-          </button>
-        ) : (
-          <span className="text-4xl">{emoji.character}</span>
+            Learn more about this emoji →
+          </EmojiLink>
         )}
-        <div className="flex-1">
-          <p className="text-sm text-gray-700">{emoji.meaning}</p>
-          {emoji.slug && (
-            <EmojiLink
-              emoji=""
-              slug={emoji.slug}
-              onLinkClick={onEmojiLinkClick}
-              className="text-xs text-blue-500 hover:text-blue-700 mt-1 inline-block"
-            >
-              Learn more about this emoji →
-            </EmojiLink>
-          )}
-        </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }
 
 function InterpretResultSkeleton() {
   return (
-    <div data-testid="interpret-result-skeleton" className="space-y-6">
-      {/* Summary skeleton */}
-      <div role="presentation">
-        <Skeleton className="h-6 w-1/3 mb-4" />
-        <Skeleton className="h-4 w-full mb-2" />
-        <Skeleton className="h-4 w-2/3" />
+    <div data-testid="interpret-result-skeleton" className="space-y-5" aria-busy="true">
+      <div role="presentation" className="space-y-3">
+        <Skeleton className="h-6 w-[88%]" />
+        <Skeleton className="h-6 w-[64%]" />
       </div>
 
-      {/* Emoji breakdown skeleton */}
-      <div role="presentation">
-        <Skeleton className="h-6 w-1/4 mb-4" />
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Skeleton className="h-24 w-full" />
-          <Skeleton className="h-24 w-full" />
-        </div>
+      <div role="presentation" className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <Skeleton className="h-24 w-full rounded-xl" />
+        <Skeleton className="h-24 w-full rounded-xl" />
+        <Skeleton className="h-24 w-full rounded-xl" />
+        <Skeleton className="h-24 w-full rounded-xl" />
       </div>
 
-      {/* Metrics skeleton */}
-      <div role="presentation">
-        <Skeleton className="h-6 w-1/4 mb-4" />
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Skeleton className="h-12 w-full" />
-          <Skeleton className="h-12 w-full" />
-        </div>
+      <div role="presentation" className="space-y-2">
+        <Skeleton className="h-14 w-full rounded-xl" />
+        <Skeleton className="h-14 w-full rounded-xl" />
       </div>
     </div>
   );
 }
+
+const sectionHeading = 'mb-2.5 text-base font-semibold text-foreground';
 
 export function InterpretResult({
   result,
   isLoading,
   onEmojiClick,
   onEmojiLinkClick,
+  meta,
+  onReset,
   className,
 }: InterpretResultProps) {
   const [copied, setCopied] = useState(false);
@@ -144,11 +142,11 @@ export function InterpretResult({
   const getToneBadgeConfig = (tone: 'positive' | 'neutral' | 'negative') => {
     switch (tone) {
       case 'positive':
-        return { className: 'bg-green-100 text-green-800', label: 'Positive' };
+        return { className: 'bg-success-background text-success', label: 'Positive' };
       case 'negative':
-        return { className: 'bg-red-100 text-red-800', label: 'Negative' };
+        return { className: 'bg-danger-background text-danger', label: 'Negative' };
       case 'neutral':
-        return { className: 'bg-gray-100 text-gray-800', label: 'Neutral' };
+        return { className: 'bg-primary-50 text-primary-700', label: 'Neutral' };
     }
   };
 
@@ -157,74 +155,77 @@ export function InterpretResult({
   }
 
   const toneBadgeConfig = getToneBadgeConfig(result.metrics.overallTone);
+  const suggestedTones = 'suggestedTones' in result ? result.suggestedTones : [];
 
   return (
-    <article className={cn('animate-fadeIn space-y-6', className)}>
-      {/* Summary Section */}
-      <Card>
-        <CardHeader className="pb-3">
-          <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold leading-none tracking-tight">Interpretation</h2>
-            <div className="flex items-center gap-2">
-              <div
-                data-testid="tone-badge"
-                className={cn(
-                  'inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold',
-                  toneBadgeConfig.className
-                )}
-              >
-                {toneBadgeConfig.label}
-              </div>
-              <div
-                data-testid="confidence-indicator"
-                className="text-xs text-gray-500"
-                title="Confidence level"
-              >
-                {result.metrics.confidence}% confident
-              </div>
-            </div>
-          </div>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          {/* Original message */}
-          <div className="rounded-lg bg-gray-50 p-3">
-            <p className="text-xs text-gray-500 mb-1">Original message</p>
-            <p className="text-sm text-gray-700">{result.message}</p>
-          </div>
+    <article className={cn('flex animate-fadeIn flex-col gap-5', className)}>
+      <h2 className="sr-only">Interpretation</h2>
 
-          {/* Interpretation */}
-          <p className="text-gray-900">{result.interpretation}</p>
-
-          {/* Actions */}
-          <div className="flex items-center gap-2 pt-2">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={handleCopy}
-              aria-label={copied ? 'Copied' : 'Copy interpretation'}
-            >
-              {copied ? '✓ Copied' : 'Copy'}
-            </Button>
-            {copied && (
-              <span role="status" className="text-sm text-green-600">
-                Copied to clipboard
-              </span>
+      {/* Badges + context */}
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          <span
+            data-testid="tone-badge"
+            className={cn(
+              'inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold',
+              toneBadgeConfig.className
             )}
-            <ShareSection
-              url={getShareUrl(result, typeof window !== 'undefined' ? window.location.origin : '')}
-              title={`Emoji Interpretation: "${result.message.slice(0, 50)}${result.message.length > 50 ? '...' : ''}"`}
-              description={result.interpretation.slice(0, 200)}
-              contentType="interpretation"
-            />
-          </div>
-        </CardContent>
-      </Card>
+          >
+            {toneBadgeConfig.label} tone
+          </span>
+          <span
+            data-testid="confidence-indicator"
+            className="inline-flex items-center rounded-full bg-muted px-2.5 py-1 text-xs font-semibold text-muted-foreground"
+            title="Confidence level"
+          >
+            {result.metrics.confidence}% confident
+          </span>
+        </div>
+        {meta && <span className="text-[13px] text-muted-foreground">{meta}</span>}
+      </div>
+
+      {/* Original message as a chat bubble */}
+      <p className="max-w-full self-start rounded-2xl rounded-bl-sm bg-muted px-4 py-2.5 text-[15px] text-foreground">
+        <span className="sr-only">Original message: </span>
+        {result.message}
+      </p>
+
+      {/* Verdict */}
+      <p className="text-lg font-medium leading-relaxed tracking-tight text-foreground md:text-[22px]">
+        {result.interpretation}
+      </p>
+
+      {/* Stat tiles */}
+      <section aria-label="Tone analysis" className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        <ProbabilityMeter
+          label="Sarcasm"
+          value={result.metrics.sarcasmProbability}
+          colorScheme="neutral"
+          testId="sarcasm-meter"
+        />
+        <PassiveAggressionMeter value={result.metrics.passiveAggressionProbability} />
+        <div
+          data-testid="tone-tile"
+          className="flex flex-col gap-2 rounded-xl border border-card-border bg-card p-3.5"
+        >
+          <span className="text-xs text-muted-foreground">Overall tone</span>
+          <span className="mt-1 text-xl font-semibold tracking-tight text-foreground">
+            {toneBadgeConfig.label}
+          </span>
+        </div>
+        <ProbabilityMeter
+          label="Confidence"
+          value={result.metrics.confidence}
+          colorScheme="neutral"
+          testId="confidence-meter"
+        />
+      </section>
 
       {/* Emoji Breakdown */}
       {result.emojis.length > 0 && (
         <section>
-          <h3 className="text-lg font-semibold mb-4">Emoji Breakdown</h3>
-          <div data-testid="emoji-breakdown-grid" className="grid gap-4 sm:grid-cols-2">
+          <h3 className={sectionHeading}>Emojis in this message</h3>
+          <div data-testid="emoji-breakdown-grid" className="grid gap-2">
             {result.emojis.map((emoji, index) => (
               <EmojiBreakdownCard
                 key={`${emoji.character}-${index}`}
@@ -238,34 +239,57 @@ export function InterpretResult({
         </section>
       )}
 
-      {/* Probability Meters */}
-      <section>
-        <h3 className="text-lg font-semibold mb-4">Tone Analysis</h3>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <ProbabilityMeter
-            label="Sarcasm Probability"
-            value={result.metrics.sarcasmProbability}
-            testId="sarcasm-meter"
-            description="Likelihood the message contains sarcasm"
-          />
-          <PassiveAggressionMeter value={result.metrics.passiveAggressionProbability} />
-        </div>
-      </section>
-
       {/* Red Flags */}
-      {result.redFlags.length > 0 && (
+      {result.redFlags.length > 0 ? (
         <section data-testid="red-flags-section">
-          <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
-            <span className="text-red-500">⚠️</span>
-            Red Flags
-          </h3>
-          <div className="space-y-3">
+          <h3 className={sectionHeading}>Red flags</h3>
+          <div className="flex flex-col gap-2">
             {result.redFlags.map((flag, index) => (
               <RedFlagBadge key={`${flag.type}-${index}`} flag={flag} />
             ))}
           </div>
         </section>
+      ) : (
+        <p
+          data-testid="no-red-flags"
+          className="rounded-xl bg-success-background px-3.5 py-3 text-sm text-success"
+        >
+          No red flags spotted.
+        </p>
       )}
+
+      {/* Reply tones (when the API provides them) */}
+      {suggestedTones.length > 0 && (
+        <ToneSuggestionsSection suggestions={suggestedTones} interpretationId={result.id} />
+      )}
+
+      {/* Actions */}
+      <div className="flex flex-wrap items-center gap-2 border-t border-card-border pt-4">
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={handleCopy}
+          aria-label={copied ? 'Copied' : 'Copy interpretation'}
+        >
+          {copied ? '✓ Copied' : 'Copy'}
+        </Button>
+        {copied && (
+          <span role="status" className="text-sm text-success">
+            Copied to clipboard
+          </span>
+        )}
+        <ShareSection
+          url={getShareUrl(result, typeof window !== 'undefined' ? window.location.origin : '')}
+          title={`Emoji Interpretation: "${result.message.slice(0, 50)}${result.message.length > 50 ? '...' : ''}"`}
+          description={result.interpretation.slice(0, 200)}
+          contentType="interpretation"
+        />
+        {onReset && (
+          <Button variant="ghost" size="sm" onClick={onReset} className="ml-auto">
+            New message
+          </Button>
+        )}
+      </div>
     </article>
   );
 }

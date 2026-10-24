@@ -73,22 +73,19 @@ describe('RedFlagBadge', () => {
     it('applies red styling for high severity', () => {
       render(<RedFlagBadge flag={mockFlag} />);
       const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('border-red-500');
-      expect(badge).toHaveClass('bg-red-50');
+      expect(badge).toHaveClass('bg-danger-background', 'text-danger');
     });
 
-    it('applies yellow/orange styling for medium severity', () => {
+    it('applies amber tint for medium severity', () => {
       render(<RedFlagBadge flag={mockFlagMedium} />);
       const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('border-yellow-500');
-      expect(badge).toHaveClass('bg-yellow-50');
+      expect(badge).toHaveClass('bg-primary-50', 'text-primary-700');
     });
 
-    it('applies blue styling for low severity', () => {
+    it('applies muted tint for low severity', () => {
       render(<RedFlagBadge flag={mockFlagLow} />);
       const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('border-blue-500');
-      expect(badge).toHaveClass('bg-blue-50');
+      expect(badge).toHaveClass('bg-muted', 'text-foreground');
     });
 
     it('uses destructive variant badge for high severity', () => {
@@ -165,16 +162,11 @@ describe('RedFlagBadge', () => {
       expect(badge).toHaveClass('custom-class');
     });
 
-    it('has rounded border styling', () => {
+    it('renders as a rounded tinted row', () => {
       render(<RedFlagBadge flag={mockFlag} />);
       const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('rounded-r-lg');
-    });
-
-    it('has left border accent', () => {
-      render(<RedFlagBadge flag={mockFlag} />);
-      const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('border-l-4');
+      expect(badge).toHaveClass('rounded-xl');
+      expect(badge).toHaveAttribute('data-severity', 'high');
     });
   });
 
@@ -240,8 +232,7 @@ describe('RedFlagBadge', () => {
       const unknownSeverityFlag = { ...mockFlag, severity: 'unknown' as RedFlag['severity'] };
       render(<RedFlagBadge flag={unknownSeverityFlag} />);
       const badge = screen.getByTestId('red-flag-badge');
-      expect(badge).toHaveClass('border-gray-500');
-      expect(badge).toHaveClass('bg-gray-50');
+      expect(badge).toHaveClass('bg-muted', 'text-muted-foreground');
       expect(screen.getByText('Unknown')).toBeInTheDocument();
     });
   });

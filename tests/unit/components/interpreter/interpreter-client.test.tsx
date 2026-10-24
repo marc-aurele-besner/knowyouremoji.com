@@ -109,8 +109,25 @@ describe('InterpreterClient', () => {
       render(<InterpreterClient />);
 
       expect(screen.getByRole('textbox', { name: /message/i })).toBeInTheDocument();
-      expect(screen.getByRole('combobox')).toBeInTheDocument();
+      expect(screen.getByRole('radiogroup', { name: /platform/i })).toBeInTheDocument();
       expect(screen.getByRole('button', { name: /interpret/i })).toBeInTheDocument();
+    });
+
+    it('renders a header with the usage counter beside it', () => {
+      render(<InterpreterClient header={<h1>Emoji interpreter</h1>} />);
+
+      expect(
+        screen.getByRole('heading', { level: 1, name: 'Emoji interpreter' })
+      ).toBeInTheDocument();
+      // Only one counter: it moves from the form into the header row
+      expect(screen.getAllByTestId('usage-counter')).toHaveLength(1);
+    });
+
+    it('prefills the message without submitting it', () => {
+      render(<InterpreterClient initialMessage="ok sure 🙂" />);
+
+      expect(screen.getByRole('textbox', { name: /message/i })).toHaveValue('ok sure 🙂');
+      expect(mockInterpret).not.toHaveBeenCalled();
     });
 
     it('displays usage counter with rate limit data', () => {
@@ -118,7 +135,7 @@ describe('InterpreterClient', () => {
 
       const usageCounter = screen.getByTestId('usage-counter');
       expect(usageCounter).toBeInTheDocument();
-      expect(usageCounter).toHaveAttribute('aria-label', '3 of 3 free uses remaining');
+      expect(usageCounter).toHaveAttribute('aria-label', '3 of 3 free interpretations left today');
     });
 
     it('accepts className prop', () => {
@@ -170,11 +187,17 @@ describe('InterpreterClient', () => {
       expect(submitButton).toBeDisabled();
     });
 
+    it('still disables the submit button when the counter is in the header', () => {
+      render(<InterpreterClient header={<h1>Emoji interpreter</h1>} />);
+
+      expect(screen.getByRole('button', { name: /interpret/i })).toBeDisabled();
+    });
+
     it('shows usage counter with 0 remaining', () => {
       render(<InterpreterClient />);
 
       const usageCounter = screen.getByTestId('usage-counter');
-      expect(usageCounter).toHaveAttribute('aria-label', '0 of 3 free uses remaining');
+      expect(usageCounter).toHaveAttribute('aria-label', '0 of 3 free interpretations left today');
     });
   });
 
@@ -192,7 +215,7 @@ describe('InterpreterClient', () => {
       render(<InterpreterClient />);
 
       const usageCounter = screen.getByTestId('usage-counter');
-      expect(usageCounter).toHaveAttribute('aria-label', '1 of 3 free uses remaining');
+      expect(usageCounter).toHaveAttribute('aria-label', '1 of 3 free interpretations left today');
     });
 
     it('does not show upgrade prompt when uses remain', () => {
@@ -229,8 +252,6 @@ describe('InterpreterClient', () => {
       fireEvent.change(textarea, { target: { value: 'Hello there 👋' } });
 
       // Select platform
-      const platformCombobox = screen.getByRole('combobox');
-      fireEvent.click(platformCombobox);
       await waitFor(() => {
         expect(screen.getByText('iMessage')).toBeInTheDocument();
       });

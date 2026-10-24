@@ -18,11 +18,8 @@ export function SharedResultSection({ encodedResult }: SharedResultSectionProps)
 
   if (!decoded) {
     return (
-      <section
-        data-testid="interpreter-form-section"
-        className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800"
-      >
-        <p className="text-center text-gray-500 mb-4">
+      <section data-testid="interpreter-form-section" className="space-y-4">
+        <p className="rounded-xl bg-muted px-4 py-3 text-center text-sm text-muted-foreground">
           This shared result could not be loaded. Try interpreting a message yourself!
         </p>
         <InterpreterClient />
@@ -31,12 +28,14 @@ export function SharedResultSection({ encodedResult }: SharedResultSectionProps)
   }
 
   return (
-    <section className="space-y-8">
-      <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800">
+    <section className="space-y-10">
+      <div className="rounded-2xl border border-card-border bg-card p-5 md:p-7">
         <SharedInterpretationView data={decoded} />
       </div>
-      <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-800">
-        <h2 className="text-lg font-semibold mb-4">Try It Yourself</h2>
+      <div>
+        <h2 className="mb-4 text-2xl font-semibold tracking-tight text-foreground">
+          Try It Yourself
+        </h2>
         <InterpreterClient />
       </div>
     </section>

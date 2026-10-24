@@ -9,6 +9,9 @@ export interface UsageCounterProps {
   className?: string;
 }
 
+/** Pips are only drawn for small daily allowances; larger ones stay text-only. */
+const MAX_PIPS = 10;
+
 /**
  * Displays the remaining free interpretations counter.
  * Shows visual indicators when usage is low or exhausted.
@@ -21,15 +24,15 @@ export function UsageCounter({
 }: UsageCounterProps) {
   const getColorClass = () => {
     if (remaining === 0) {
-      return 'text-red-600';
+      return 'text-danger';
     }
     if (remaining === 1) {
-      return 'text-yellow-600';
+      return 'text-primary-700';
     }
-    return 'text-gray-600';
+    return 'text-muted-foreground';
   };
 
-  const ariaLabel = `${remaining} of ${max} free uses remaining`;
+  const ariaLabel = `${remaining} of ${max} free interpretations left today`;
 
   if (variant === 'compact') {
     return (
@@ -51,12 +54,24 @@ export function UsageCounter({
       aria-label={ariaLabel}
       aria-live="polite"
       data-testid="usage-counter"
-      className={cn('text-sm', getColorClass(), className)}
+      className={cn('inline-flex items-center gap-2.5 text-[13px]', getColorClass(), className)}
     >
-      <span className="font-medium">
-        {remaining} of {max}
-      </span>{' '}
-      free uses remaining
+      {max > 0 && max <= MAX_PIPS && (
+        <span data-testid="usage-pips" className="inline-flex gap-1" aria-hidden="true">
+          {Array.from({ length: max }, (_, i) => (
+            <i
+              key={i}
+              className={cn(
+                'h-1.5 w-[18px] rounded-full',
+                i < remaining ? 'bg-primary-500' : 'bg-card-border'
+              )}
+            />
+          ))}
+        </span>
+      )}
+      <span>
+        {remaining} of {max} free interpretations left today
+      </span>
     </span>
   );
 }

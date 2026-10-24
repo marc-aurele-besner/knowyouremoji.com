@@ -1,5 +1,11 @@
-import { describe, it, expect, afterEach } from 'bun:test';
+import { describe, it, expect, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
+
+mock.module('next/navigation', () => ({
+  useRouter: () => ({ push: mock(() => {}), replace: mock(() => {}), prefetch: mock(() => {}) }),
+  usePathname: () => '/',
+}));
+
 import { HomePageContent } from '@/components/home/home-page-content';
 import { createEmojiSummary } from '../../../utils/factories/emoji.factory';
 import { createEmojiComboSummary } from '../../../utils/factories/combo.factory';
@@ -54,7 +60,44 @@ describe('HomePageContent', () => {
     it('renders the hero headline', () => {
       render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
 
-      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Emoji');
+      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+        'What does that emoji actually mean?'
+      );
+    });
+
+    it('renders the omnibox and the interpreter CTA band', () => {
+      render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
+
+      expect(screen.getByRole('combobox', { name: /search an emoji/i })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { level: 2, name: /got a text you can.t read/i })
+      ).toBeInTheDocument();
+      expect(screen.getByRole('link', { name: /open the interpreter/i })).toHaveAttribute(
+        'href',
+        '/interpreter'
+      );
+    });
+
+    it('links the context strip to the context hubs', () => {
+      render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
+
+      const hrefs = screen.getAllByTestId('context-card').map((a) => a.getAttribute('href'));
+      expect(hrefs).toEqual([
+        '/emoji/context/SLANG',
+        '/emoji/context/DATING',
+        '/emoji/context/WORK',
+        '/emoji/context/IRONIC',
+      ]);
+    });
+
+    it('shows the emoji name and tldr on trending cards', () => {
+      const emoji = createEmojiSummary({ name: 'Test Skull', tldr: 'Means I am dead' });
+      render(<HomePageContent emojiSummaries={[emoji]} comboSummaries={[]} guideSummaries={[]} />);
+
+      const card = screen.getByTestId('emoji-card');
+      expect(card).toHaveTextContent('Test Skull');
+      expect(card).toHaveTextContent('Means I am dead');
+      expect(card).toHaveAttribute('href', `/emoji/${emoji.slug}`);
     });
 
     it('renders a card for every emoji summary', () => {
@@ -82,7 +125,7 @@ describe('HomePageContent', () => {
         <HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[mockGuide]} />
       );
 
-      expect(screen.getByRole('heading', { name: 'Latest Guides', level: 2 })).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'Latest guides', level: 2 })).toBeInTheDocument();
       expect(screen.getAllByTestId('guide-card')).toHaveLength(1);
     });
 
@@ -90,7 +133,7 @@ describe('HomePageContent', () => {
       render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
 
       expect(
-        screen.queryByRole('heading', { name: 'Latest Guides', level: 2 })
+        screen.queryByRole('heading', { name: 'Latest guides', level: 2 })
       ).not.toBeInTheDocument();
     });
   });
