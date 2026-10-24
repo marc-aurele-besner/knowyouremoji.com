@@ -1,12 +1,12 @@
 import { AdminEmojiForm } from '@/components/admin/admin-emoji-form';
+import { AdminNav } from '@/components/admin/admin-nav';
+import { DashboardPageHeader } from '@/components/dashboard/dashboard-ui';
 
 export default function NewEmojiPage() {
   return (
-    <div className="max-w-4xl">
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold">Create New Emoji</h1>
-        <p className="text-muted-foreground mt-1">Add a new emoji to the database</p>
-      </div>
+    <div className="max-w-4xl space-y-6">
+      <AdminNav />
+      <DashboardPageHeader title="Create New Emoji" description="Add a new emoji to the database" />
       <AdminEmojiForm />
     </div>
   );

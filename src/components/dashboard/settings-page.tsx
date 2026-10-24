@@ -3,9 +3,16 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import {
+  DashboardPageHeader,
+  EmptyState,
+  SectionCard,
+  SkeletonRows,
+  formErrorClass,
+  formOkClass,
+} from './dashboard-ui';
 
 function SettingsPage() {
   const { data: session, status } = useSession();
@@ -116,88 +123,57 @@ function SettingsPage() {
     }
   };
 
+  const labelClass = 'block text-[13px] font-semibold text-foreground';
+
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Settings</h1>
-        <p className="mt-1 text-gray-500 dark:text-gray-400">
-          Manage your profile and account settings.
-        </p>
-      </div>
+      <DashboardPageHeader
+        title="Settings"
+        description="Manage your profile and account settings."
+      />
 
       {!isAuthenticated && !isLoading && (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <div className="text-4xl mb-4">🔒</div>
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-              Settings Not Available
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Sign in to manage your profile and settings.
-            </p>
-          </CardContent>
-        </Card>
+        <EmptyState
+          emoji="🔒"
+          title="Settings Not Available"
+          description="Sign in to manage your profile and settings."
+          action={
+            <Button asChild>
+              <Link href="/login">Sign in</Link>
+            </Button>
+          }
+        />
       )}
 
       {isAuthenticated && error && (
-        <div
-          className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
-          role="alert"
-        >
+        <div className={formErrorClass} role="alert">
           {error}
         </div>
       )}
 
       {isAuthenticated && saveSuccess && (
-        <div
-          className="p-4 text-sm text-green-600 bg-green-50 dark:bg-green-900/20 dark:text-green-400 rounded-lg"
-          role="status"
-        >
+        <div className={formOkClass} role="status">
           Profile updated successfully.
         </div>
       )}
 
-      {isLoading && (
-        <div className="space-y-4">
-          {Array.from({ length: 2 }).map((_, i) => (
-            <Card key={i}>
-              <CardContent className="py-6">
-                <div className="animate-pulse space-y-4">
-                  <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-1/4" />
-                  <div className="h-10 bg-gray-200 dark:bg-gray-700 rounded w-full" />
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      )}
+      {isLoading && <SkeletonRows count={2} />}
 
       {isAuthenticated && !isLoading && (
-        <>
+        <div className="max-w-2xl space-y-4">
           {/* Profile Section */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Profile</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                >
+          <SectionCard title="Profile">
+            <div className="space-y-4">
+              <div className="space-y-1.5">
+                <label htmlFor="email" className={labelClass}>
                   Email
                 </label>
                 <Input id="email" type="email" value={session?.user?.email || ''} disabled />
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  Email cannot be changed here.
-                </p>
+                <p className="text-xs text-muted-foreground">Email cannot be changed here.</p>
               </div>
 
-              <div className="space-y-2">
-                <label
-                  htmlFor="displayName"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                >
+              <div className="space-y-1.5">
+                <label htmlFor="displayName" className={labelClass}>
                   Display Name
                 </label>
                 <Input
@@ -214,130 +190,108 @@ function SettingsPage() {
               </div>
 
               {createdAt && (
-                <div className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-sm text-muted-foreground">
                   Member since {formatDate(createdAt)}
-                </div>
+                </p>
               )}
 
               <Button onClick={handleSaveProfile} loading={isSaving} disabled={isSaving}>
                 {isSaving ? 'Saving...' : 'Save Changes'}
               </Button>
-            </CardContent>
-          </Card>
+            </div>
+          </SectionCard>
 
           {/* Subscription Section */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Subscription</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium text-gray-900 dark:text-white">Free Plan</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    3 interpretations per day
-                  </p>
-                </div>
-                <div className="flex gap-2">
-                  <Button variant="outline" asChild>
-                    <Link href="/dashboard/billing">Manage Billing</Link>
-                  </Button>
-                  <Button variant="outline" asChild>
-                    <Link href="/pricing">Upgrade</Link>
-                  </Button>
-                </div>
+          <SectionCard title="Subscription">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="font-medium text-foreground">Free Plan</p>
+                <p className="text-sm text-muted-foreground">3 interpretations per day</p>
               </div>
-            </CardContent>
-          </Card>
-
-          {/* Account Section */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Account</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium text-gray-900 dark:text-white">Sign Out</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Sign out of your account on this device.
-                  </p>
-                </div>
-                <Button variant="outline" onClick={handleSignOut}>
-                  Sign Out
+              <div className="flex flex-wrap gap-2">
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="/dashboard/billing">Manage Billing</Link>
+                </Button>
+                <Button variant="brand" size="sm" asChild>
+                  <Link href="/pricing">Upgrade</Link>
                 </Button>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </SectionCard>
+
+          {/* Account Section */}
+          <SectionCard title="Account">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div>
+                <p className="font-medium text-foreground">Sign Out</p>
+                <p className="text-sm text-muted-foreground">
+                  Sign out of your account on this device.
+                </p>
+              </div>
+              <Button variant="outline" size="sm" onClick={handleSignOut}>
+                Sign Out
+              </Button>
+            </div>
+          </SectionCard>
 
           {/* Danger Zone */}
-          <Card className="border-red-200 dark:border-red-800">
-            <CardHeader>
-              <CardTitle className="text-red-600 dark:text-red-400">Danger Zone</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {!showDeleteConfirm ? (
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="font-medium text-gray-900 dark:text-white">Delete Account</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Permanently delete your account and all associated data.
-                    </p>
-                  </div>
-                  <Button variant="destructive" onClick={() => setShowDeleteConfirm(true)}>
-                    Delete Account
+          <SectionCard title="Danger Zone" tone="danger">
+            {!showDeleteConfirm ? (
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <p className="font-medium text-foreground">Delete Account</p>
+                  <p className="text-sm text-muted-foreground">
+                    Permanently delete your account and all associated data.
+                  </p>
+                </div>
+                <Button variant="destructive" onClick={() => setShowDeleteConfirm(true)}>
+                  Delete Account
+                </Button>
+              </div>
+            ) : (
+              <div className="space-y-4">
+                <div className={formErrorClass} role="alert">
+                  This action is irreversible. All your data, including interpretation history, will
+                  be permanently deleted.
+                </div>
+                <div className="space-y-1.5">
+                  <label htmlFor="deleteConfirm" className={labelClass}>
+                    Type <strong>DELETE</strong> to confirm
+                  </label>
+                  <Input
+                    id="deleteConfirm"
+                    type="text"
+                    value={deleteConfirmText}
+                    onChange={(e) => setDeleteConfirmText(e.target.value)}
+                    placeholder="DELETE"
+                    disabled={isDeleting}
+                    className="max-w-[240px]"
+                  />
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <Button
+                    variant="destructive"
+                    onClick={handleDeleteAccount}
+                    loading={isDeleting}
+                    disabled={deleteConfirmText !== 'DELETE' || isDeleting}
+                  >
+                    {isDeleting ? 'Deleting...' : 'Permanently Delete Account'}
+                  </Button>
+                  <Button
+                    variant="outline"
+                    onClick={() => {
+                      setShowDeleteConfirm(false);
+                      setDeleteConfirmText('');
+                    }}
+                    disabled={isDeleting}
+                  >
+                    Cancel
                   </Button>
                 </div>
-              ) : (
-                <div className="space-y-4">
-                  <div
-                    className="p-4 text-sm text-red-600 bg-red-50 dark:bg-red-900/20 dark:text-red-400 rounded-lg"
-                    role="alert"
-                  >
-                    This action is irreversible. All your data, including interpretation history,
-                    will be permanently deleted.
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="deleteConfirm"
-                      className="block text-sm font-medium text-gray-700 dark:text-gray-200"
-                    >
-                      Type <strong>DELETE</strong> to confirm
-                    </label>
-                    <Input
-                      id="deleteConfirm"
-                      type="text"
-                      value={deleteConfirmText}
-                      onChange={(e) => setDeleteConfirmText(e.target.value)}
-                      placeholder="DELETE"
-                      disabled={isDeleting}
-                    />
-                  </div>
-                  <div className="flex gap-3">
-                    <Button
-                      variant="destructive"
-                      onClick={handleDeleteAccount}
-                      loading={isDeleting}
-                      disabled={deleteConfirmText !== 'DELETE' || isDeleting}
-                    >
-                      {isDeleting ? 'Deleting...' : 'Permanently Delete Account'}
-                    </Button>
-                    <Button
-                      variant="outline"
-                      onClick={() => {
-                        setShowDeleteConfirm(false);
-                        setDeleteConfirmText('');
-                      }}
-                      disabled={isDeleting}
-                    >
-                      Cancel
-                    </Button>
-                  </div>
-                </div>
-              )}
-            </CardContent>
-          </Card>
-        </>
+              </div>
+            )}
+          </SectionCard>
+        </div>
       )}
     </div>
   );

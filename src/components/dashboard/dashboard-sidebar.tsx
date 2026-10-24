@@ -3,105 +3,88 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { HTMLAttributes, useState } from 'react';
+import { signOut } from 'next-auth/react';
+import { HTMLAttributes } from 'react';
 
 const sidebarLinks = [
-  { label: 'Overview', href: '/dashboard', icon: '📊' },
+  { label: 'Dashboard', href: '/dashboard', icon: '📊' },
+  { label: 'History', href: '/dashboard/history', icon: '🕘' },
   { label: 'Profile', href: '/dashboard/profile', icon: '👤' },
-  { label: 'History', href: '/dashboard/history', icon: '📜' },
-  { label: 'Billing', href: '/dashboard/billing', icon: '💳' },
   { label: 'Settings', href: '/dashboard/settings', icon: '⚙️' },
+  { label: 'Billing', href: '/dashboard/billing', icon: '💳' },
 ];
+
+const adminLink = { label: 'Admin', href: '/admin/emojis', icon: '🛠️' };
+
+const itemClass =
+  'flex min-h-10 flex-none items-center gap-2.5 whitespace-nowrap rounded-xl px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500';
 
 export type DashboardSidebarProps = HTMLAttributes<HTMLElement>;
 
+/**
+ * Dashboard navigation: a sticky vertical list on md+ that collapses into a horizontally
+ * scrollable row on small screens. The Admin entry is shown while browsing /admin pages.
+ */
 function DashboardSidebar({ className, ...props }: DashboardSidebarProps) {
   const pathname = usePathname();
-  const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const inAdmin = pathname.startsWith('/admin');
+  const links = inAdmin ? [...sidebarLinks, adminLink] : sidebarLinks;
 
   const isActive = (href: string) => {
     if (href === '/dashboard') return pathname === '/dashboard';
+    if (href === adminLink.href) return inAdmin;
     return pathname.startsWith(href);
   };
 
-  const navContent = (
-    <nav aria-label="Dashboard" className="flex flex-col gap-1 p-4">
-      {sidebarLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          onClick={() => setIsMobileOpen(false)}
-          className={cn(
-            'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
-            isActive(link.href)
-              ? 'bg-amber-50 text-amber-700 dark:bg-amber-900/20 dark:text-amber-400'
-              : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-100'
-          )}
-          aria-current={isActive(link.href) ? 'page' : undefined}
-        >
-          <span className="emoji-display text-lg" aria-hidden="true">
-            {link.icon}
-          </span>
-          {link.label}
-        </Link>
-      ))}
-    </nav>
-  );
-
   return (
-    <>
-      {/* Mobile toggle button */}
-      <button
-        type="button"
-        aria-label="Toggle dashboard menu"
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-        className="fixed bottom-4 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg md:hidden"
-      >
-        <svg
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1.5"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          {isMobileOpen ? (
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          ) : (
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          )}
-        </svg>
-      </button>
-
-      {/* Mobile overlay */}
-      {isMobileOpen && (
-        <div
-          data-testid="sidebar-overlay"
-          className="fixed inset-0 z-30 bg-black/50 md:hidden"
-          onClick={() => setIsMobileOpen(false)}
-        />
+    <aside
+      data-testid="dashboard-sidebar"
+      className={cn(
+        '-mx-4 border-b border-card-border md:sticky md:top-[88px] md:mx-0 md:self-start md:border-b-0',
+        className
       )}
-
-      {/* Sidebar */}
-      <aside
-        data-testid="dashboard-sidebar"
-        className={cn(
-          'fixed inset-y-0 left-0 z-30 w-64 border-r border-gray-200/50 bg-white/95 backdrop-blur-sm transition-transform duration-300 dark:border-gray-700/50 dark:bg-gray-900/95 md:sticky md:top-14 md:z-0 md:h-[calc(100vh-3.5rem)] md:translate-x-0',
-          isMobileOpen ? 'translate-x-0' : '-translate-x-full',
-          className
-        )}
-        {...props}
+      {...props}
+    >
+      <nav
+        aria-label="Dashboard"
+        className="flex gap-1 overflow-x-auto px-4 pb-3 md:flex-col md:gap-0.5 md:overflow-visible md:px-0 md:pb-0"
       >
-        <div className="flex h-14 items-center border-b border-gray-200/50 px-4 dark:border-gray-700/50 md:hidden">
-          <span className="text-lg font-semibold text-gray-900 dark:text-white">Dashboard</span>
-        </div>
-        {navContent}
-      </aside>
-    </>
+        {links.map((link) => {
+          const active = isActive(link.href);
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                itemClass,
+                active
+                  ? 'bg-muted text-foreground'
+                  : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+              )}
+              aria-current={active ? 'page' : undefined}
+            >
+              <span className="emoji-display text-base" aria-hidden="true">
+                {link.icon}
+              </span>
+              {link.label}
+            </Link>
+          );
+        })}
+        <button
+          type="button"
+          onClick={() => signOut({ callbackUrl: '/' })}
+          className={cn(
+            itemClass,
+            'text-left text-muted-foreground hover:bg-muted hover:text-foreground md:mt-2'
+          )}
+        >
+          <span className="emoji-display text-base" aria-hidden="true">
+            👋
+          </span>
+          Sign Out
+        </button>
+      </nav>
+    </aside>
   );
 }
 

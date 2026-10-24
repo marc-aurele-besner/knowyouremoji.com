@@ -6,6 +6,11 @@ mock.module('next/navigation', () => ({
   usePathname: () => '/dashboard',
 }));
 
+mock.module('next-auth/react', () => ({
+  signOut: mock(() => Promise.resolve()),
+  useSession: () => ({ data: null, status: 'unauthenticated' }),
+}));
+
 afterEach(() => {
   cleanup();
 });
@@ -29,13 +34,14 @@ describe('DashboardLayout', () => {
     expect(screen.getByText('Dashboard child content')).toBeInTheDocument();
   });
 
-  it('has flex layout for sidebar and content', () => {
-    const { container } = render(
+  it('places the sidebar and content in a two-column grid on desktop', () => {
+    render(
       <DashboardLayout>
         <div>Content</div>
       </DashboardLayout>
     );
-    const wrapper = container.firstChild as HTMLElement;
-    expect(wrapper).toHaveClass('flex');
+    const grid = screen.getByTestId('dashboard-sidebar').parentElement as HTMLElement;
+    expect(grid).toHaveClass('flex');
+    expect(grid).toHaveClass('md:grid');
   });
 });

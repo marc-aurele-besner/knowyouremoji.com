@@ -1,10 +1,7 @@
-import { DashboardSidebar } from '@/components/dashboard/dashboard-sidebar';
-
+/**
+ * Admin pages render inside the (dashboard) group layout, which already provides the
+ * sidebar and page container, so this layout only passes its children through.
+ */
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex min-h-screen">
-      <DashboardSidebar />
-      <main className="flex-1 p-8">{children}</main>
-    </div>
-  );
+  return <>{children}</>;
 }
