@@ -38,6 +38,9 @@ jobs:
       - name: Validate emoji data
         run: bun run validate:emojis
 
+      - name: Check for near-duplicate emoji pages
+        run: bun run check:similarity -- --strict
+
       - name: Build
         run: bunx next build
 
