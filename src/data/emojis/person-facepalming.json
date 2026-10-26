@@ -7,121 +7,151 @@
   "category": "people",
   "subcategory": "person-gesture",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A person facepalming.",
-  "tldr": "Are you serious?! Pure exasperation.",
+  "baseMeaning": "A picture of a figure with one hand slapped across the face. Read in a message it lands as expressing disbelief, embarrassment, or a slow burn.",
+  "tldr": "🤦 Person Facepalming. In a chat it comes across as expressing disbelief, embarrassment, or a slow burn.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A facepalm gesture.",
-      "example": "Can't believe it 🤦",
+      "meaning": "The plain reading: a figure with one hand slapped across the face. Nothing hidden in the drawing itself.",
+      "example": "Reacting to a typo in a message you sent 🤦",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Exasperation or disbelief.",
-      "example": "Why 🤦",
+      "meaning": "Borrowed as a reaction, it reads as expressing disbelief, embarrassment, or a slow burn.",
+      "example": "Replying to news you should have seen coming 🤦",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Self-deprecating disbelief.",
-      "example": "Me again 🤦",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as expressing disbelief, embarrassment, or a slow burn, softened by whatever sentence sits next to it.",
+      "example": "not me 🤦",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Self-aware disbelief reaction to a take.",
-      "example": "Wow, really 🤦",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — expressing disbelief, embarrassment, or a slow burn — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤦",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Staple of exasperation-coded replies; reads as 'I cannot believe this just happened.'"
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in self-deprecating captions and story replies; pairs with 😅 for the awkward stack."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Comment-section reaction to bad takes and self-aware content; reads as 'I am facepalming at myself.'"
+      "platform": "SLACK",
+      "note": "In Slack 🤦 lands in channels where the sentence was supposed to be shorter. It is usually standing in for reacting to a typo in a message you sent, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Used in chat reactions to bot-moves and bad jokes; reads as 'wow, really?'"
+      "note": "On Discord 🤦 is a staple of the reaction bar, which is why it so often arrives stripped of its expressing disbelief, embarrassment, or a slow burn reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🤦 does most of its work in replies, where it tags a message like replying to news you should have seen coming. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Facepalming 🤦 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like reacting to a typo in a message you sent is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🤦 exactly as the phone system does, but the keyboard keeps it in the person-gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like replying to news you should have seen coming."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Self-deprecating exasperation default; 'me at my own bad take' is the common read."
+      "note": "Gen Z reaches for 🤦 to do the work of reacting to a typo in a message you sent, and treats the neutral drawing as the default rather than as a choice. What they hear first is expressing disbelief, embarrassment, or a slow burn."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic exasperation default; widely used as a reply to bad takes and work mishaps."
+      "note": "Millennials tend to send 🤦 deliberately, usually for something like replying to news you should have seen coming, and they read expressing disbelief, embarrassment, or a slow burn into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤦 literally, as the picture of the gesture itself, and is less likely to read expressing disbelief, embarrassment, or a slow burn into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads as the literal facepalm gesture; the self-deprecating layer is sometimes missed."
+      "note": "Older senders use 🤦 in the most straightforward way, on family and group messages, and are less likely to hear the expressing disbelief, embarrassment, or a slow burn subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤦 and 🤷 get swapped",
+      "description": "The Person Shrugging 🤷 is one tap away in every picker, and it does not carry the same reading — the shrug spreads both palms and shrugs off blame, the facepalm covers the eyes and owns it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤦 as something else fairly often: it gets sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤦 Person Facepalming Emoji Meaning",
-  "seoDescription": "Learn what the person facepalming emoji 🤦 really means.",
+  "seoTitle": "🤦 Person Facepalming Emoji - What It Actually Means in Text",
+  "seoDescription": "🤦 Person Facepalming meaning: expressing disbelief, embarrassment, or a slow burn. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The 🤦 person facepalming emoji was added in Unicode 9 (2016) and quickly became the universal sigh-at-the-forehead reaction. The facepalm gesture is the visual shorthand for disbelief, exasperation, and self-aware cringe. In 2026 🤦 is the default emoji for 'I cannot believe that just happened,' 'why would you say that,' and self-deprecating content.\n\nIn real-world chat 🤦 does very specific work. People send it as a reaction to a bad take, in self-deprecating captions about their own mistakes, or as the visual signal that something is so absurd the only response is a hand-on-forehead. The gesture carries both disbelief and humor. Writers should pick 🤦 when the message is about disbelief or self-deprecating humor, and avoid it in contexts where the sender actually wants to express serious criticism — the facepalm is too playful.",
-    "howPeopleUseIt": "🤦 shows up in reaction replies, in self-deprecating captions, and in exasperation-coded responses. People send it after a friend's bad take, after their own typo, or as a 'why' reaction to a botched plan. The emoji pairs naturally with 😅 for the awkward-exasperation stack and with 🙄 for the eye-roll facepalm read.\n\nIn close-friends chats 🤦 reads as 'I cannot believe you just said that.' In dating-app messages it can land as a soft 'wow' reaction. In public posts it is the self-deprecating and disbelief-coded default.",
-    "whenNotToUse": "Skip 🤦 in any context where the sender actually wants to express serious criticism or hurt. The facepalm reads as exasperation, not anger. Avoid it in contexts where the sender wants to be subtle about their displeasure — the gesture is too obvious.\n\nAlso avoid 🤦 in ironic contexts where the sender is not actually facepalming. The gesture implies real disbelief.",
-    "howToReply": "Mirror 🤦 with another 🤦 if you are matching the exasperation energy, or pair with 🙄 for the eye-roll stack. If the sender is signaling self-deprecation, mirror with 🤦 and a sentence of solidarity. If the sender is using 🤦 as a reaction to a bad take, mirror with 🤦 and a follow-up.\n\nIf 🤦 lands as a self-deprecating caption, mirror with 🤦 or 😅 to match the energy.",
+    "overview": "The drawing of 🤦 is a figure with one hand slapped across the face. It arrived with Unicode 9.0 in the person-gesture section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is expressing disbelief, embarrassment, or a slow burn. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🤷 Person Shrugging: the shrug spreads both palms and shrugs off blame, the facepalm covers the eyes and owns it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person facepalming also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person facepalming reads as expressing disbelief, embarrassment, or a slow burn, it is most often used for reacting to a typo in a message you sent or replying to news you should have seen coming, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🤦 in a work thread is replying to news you should have seen coming; 🤦 in a family thread is reacting to a typo in a message you sent; 🤦 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🤦 is the whole reply, and it is carrying a meaning nobody wrote down — expressing disbelief, embarrassment, or a slow burn is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Reacting to a typo in a message you sent is the job the person facepalming does most: it saves a sentence and lands faster than one would have. Replying to news you should have seen coming is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🤦 will get sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person facepalming gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🤦 reads as expressing disbelief, embarrassment, or a slow burn, and formality is exactly where that reading does the most damage.\n\nLeave 🤷 Person Shrugging for the other message. The shrug spreads both palms and shrugs off blame, the facepalm covers the eyes and owns it. And keep 🤦 out of threads where somebody is hurting: it reads as expressing disbelief, embarrassment, or a slow burn there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🤦 gets sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself often enough that the sentence matters more than the picture.\n\nAnd do not send 🤦 alone when the message underneath is supposed to be warm. A message like reacting to a typo in a message you sent carries the feeling; the picture on its own leaves the reader choosing between expressing disbelief, embarrassment, or a slow burn and something sharper.\n\nStart by reading what the 🤦 was doing. If it was a reaction, react: 🤦 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🤦 and its skin-tone versions?",
+        "answer": "The tone variants under person facepalming show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 🤦 mean in text?",
-        "answer": "🤦 means exasperation, disbelief, or self-deprecating humor. The facepalm is the visual cue for 'are you serious?' energy."
+        "answer": "🤦 is used for expressing disbelief, embarrassment, or a slow burn. The drawing shows a figure with one hand slapped across the face, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🤦 and 🤷?",
+        "answer": "The shrug spreads both palms and shrugs off blame, the facepalm covers the eyes and owns it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🤦 rude?",
+        "answer": "It can be. The gesture is meant as expressing disbelief, embarrassment, or a slow burn, but it gets sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 🤦 mean from a guy?",
-        "answer": "From a guy, 🤦 reads as an exasperation reaction or self-deprecating acknowledgment. The gesture is playful rather than hostile."
-      },
-      {
-        "question": "What does 🤦 mean on Instagram?",
-        "answer": "On Instagram, 🤦 is the default for self-deprecating captions and story reactions to bad takes."
-      },
-      {
-        "question": "When should I use 🤦?",
-        "answer": "Use 🤦 for disbelief reactions, self-deprecating humor, or exasperation-coded responses. Avoid it when serious criticism is needed."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "i forgot my keys again 🤦",
-      "interpretation": "Friend sharing self-deprecating mishap. Mirror with 🤦 or 😅 and a sentence of solidarity."
+      "setting": "social",
+      "message": "that is the whole post 🤦",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
-      "setting": "dating",
-      "message": "you forgot the reservation 🤦",
-      "interpretation": "Soft exasperated reaction. Mirror with 🤦 or 😬 and a sentence acknowledging."
+      "setting": "friends",
+      "message": "reacting to a typo in a message you sent 🤦",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as expressing disbelief, embarrassment, or a slow burn, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "the file got deleted again 🤦",
-      "interpretation": "Work-coded exasperation. Mirror with 🤦 or commiserate."
+      "message": "replying to news you should have seen coming 🤦",
+      "interpretation": "A handover or a sign-off in a channel. It reads as expressing disbelief, embarrassment, or a slow burn, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🤦",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets sent as genuine disappointment when it is usually self-directed, since a hand over your own face means you did it to yourself more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "dad jokes at brunch 🤦",
-      "interpretation": "Family-coded exasperation. Mirror with 🤦 or 😂."
-    },
-    {
-      "setting": "social",
-      "message": "me at my own bad take 🤦",
-      "interpretation": "Public self-deprecating post. Mirror with 🤦 or 😅."
+      "message": "reacting to a typo in a message you sent 🤦",
+      "interpretation": "Family threads are where this lands most naturally. The reading is expressing disbelief, embarrassment, or a slow burn, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "person-facepalming-light",
+    "person-facepalming-medium-light",
+    "person-facepalming-medium",
+    "person-facepalming-medium-dark",
+    "person-facepalming-dark"
   ]
 }

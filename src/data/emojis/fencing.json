@@ -7,66 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Fencing emoji.",
-  "tldr": "Represents person fencing.",
+  "baseMeaning": "A picture of a figure in a mask lunging with a thin sabre extended forward. Read in a message it lands as marking a duel, a challenge, or a precise competition.",
+  "tldr": "🤺 Person Fencing. In a chat it comes across as marking a duel, a challenge, or a precise competition.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The activity of person fencing.",
-      "example": "Time for person fencing 🤺",
+      "meaning": "The plain reading: a figure in a mask lunging with a thin sabre extended forward. Nothing hidden in the drawing itself.",
+      "example": "Answering a challenge with a \"touche\" reply 🤺",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🤺",
+      "meaning": "Borrowed as a reaction, it reads as marking a duel, a challenge, or a precise competition.",
+      "example": "Posting a score from a fencing tournament 🤺",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person fencing? 🤺",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking a duel, a challenge, or a precise competition, softened by whatever sentence sits next to it.",
+      "example": "not me 🤺",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🤺",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking a duel, a challenge, or a precise competition — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤺",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "In Slack 🤺 lands in channels where the sentence was supposed to be shorter. It is usually standing in for answering a challenge with a \"touche\" reply, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🤺 is a staple of the reaction bar, which is why it so often arrives stripped of its marking a duel, a challenge, or a precise competition reading — a shape pressed rather than a message sent."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Stands out as the precision-coded fencer anchor for duel pings, en-garde tweets, and touche-coded reveals where the masked-lunge cue matches the public register."
+      "note": "On X and Twitter 🤺 does most of its work in replies, where it tags a message like posting a score from a fencing tournament. Short enough to survive being the whole post, which is exactly why it is used that way."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Stands out as the competitive-coded fencer anchor for duel flat-lays, en-garde stories, and touche-coded reveals where the masked-lunge cue matches the visual register."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Fencing 🤺 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like answering a challenge with a \"touche\" reply is the kind that carries it — the picture lands before the sentence does."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Stands out as the precision-coded fencer anchor for duel transitions, en-garde clips, and touche-coded reactions where the masked-lunge cue matches the short-form register."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🤺 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like posting a score from a fencing tournament."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤺 in casual contexts."
+      "note": "Gen Z reaches for 🤺 to do the work of answering a challenge with a \"touche\" reply, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking a duel, a challenge, or a precise competition."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤺 across platforms."
+      "note": "Millennials tend to send 🤺 deliberately, usually for something like posting a score from a fencing tournament, and they read marking a duel, a challenge, or a precise competition into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤺 literally, as the picture of the gesture itself, and is less likely to read marking a duel, a challenge, or a precise competition into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤺 literally."
+      "note": "Older senders use 🤺 in the most straightforward way, on family and group messages, and are less likely to hear the marking a duel, a challenge, or a precise competition subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤺 and 🥋 get swapped",
+      "description": "The Martial Arts 🥋 is one tap away in every picker, and it does not carry the same reading — both show a low fighting stance, but the martial arts figure is bare-handed while the fencer holds a blade. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤺 as something else fairly often: it gets read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤺 Person Fencing Emoji Meaning - What Does 🤺 Really Mean?",
-  "seoDescription": "Learn what the person fencing emoji 🤺 really means in texts and social media.",
+  "seoTitle": "🤺 Person Fencing Emoji - What It Actually Means in Text",
+  "seoDescription": "🤺 Person Fencing meaning: marking a duel, a challenge, or a precise competition. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "fencing-light",
     "fencing-medium-light",
@@ -75,60 +98,60 @@
     "fencing-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤺 is the emoji of lunge-coded 'en-garde' fencer read — a masked figure with mask, sword extended in a forward lunge, the iconography of dueling, sport-coded precision, and the universal 'touche' tag. Where 🥊 reads as boxing-glove-coded punch vibe and 🏹 reads as bow-arrow-coded aim vibe, 🤺 captures the moment when the sender wants to communicate precision-coded competitive energy — a 'touche 🤺' duel ping or a 'en-garde 🤺' sport-coded reveal. The lunge cue borrows from the universal fencing tradition and the modern en-garde-coded aesthetic, which is exactly why the emoji reads as precision-coded rather than literal swordplay.\n\nIn real-world usage 🤺 lives in the spaces where the sender wants to communicate competitive-coded energy. A partner sends it on a 'touche 🤺' duel ping. A friend sends it on a 'en-garde 🤺' reveal. A coworker sends it on a 'bring it 🤺' coded check-in. The fencer cue is what makes the emoji feel lunge-coded — it is not just 'sword,' it is 'lunge-coded en-garde moment.' The masked silhouette and the extended blade have the unmistakable fencer signature that everyone recognizes.\n\nWhat separates 🤺 from the rest of the sport family is the precision register. The emoji is not saying 'boxing' (🥊), 'archery' (🏹), or 'running' (🏃). It is saying 'fencing,' which carries a specific classic-duel tradition. That is why 🤺 travels especially well on duel pings, en-garde reveals, and any context where the sender wants the message to land with lunge-coded precision.",
-    "howPeopleUseIt": "🤺 shows up as the closer on a 'touche 🤺' duel message ('en-garde 🤺'), the punctuation on a 'bring it 🤺' reveal, and the softener on a 'duel me 🤺' coded check-in. It pairs naturally with sentences that name the competitive-coded energy — 'touche,' 'en-garde,' 'bring it' — and sits beautifully on partner check-ins and sport-coded reveals.\n\nIn group chats 🤺 anchors 'touche 🤺' duel threads, en-garde reveals, and 'bring it' tags where the lunge cue matches the register. On Instagram it lands on precision-coded flat-lays and duel-tagged stories. On TikTok it travels in sport reveals and 'touche' reaction content.\n\nThe emoji also works in dating contexts. A 'duel me 🤺' partner message uses the fencer cue to communicate precision-coded romance. Across all of these surfaces the rule is the same: the more competitive-coded the moment, the more natural 🤺 feels.",
-    "whenNotToUse": "Skip 🤺 in sympathy, condolence, or break-up contexts. The competitive-coded lunge cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤺 in 'team sport' or group-coded contexts where the precision energy feels off. A 'touche 🤺' message works for competitive-coded reveal; for team-sport contexts use ⚽ or a sentence.\n\nSkip 🤺 when you want to communicate gentle or quiet moments. The en-garde register is too precision-coded for moments that need the gentle register; use 🧘 or 💆 when the calm needs to land.",
-    "howToReply": "If someone sends 🤺, the cleanest mirror is another 🤺, ⚔️, or a sentence that joins the competitive-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'touche for sure' or 'en-garde together.' If the lunge cue feels too precision-coded, reply with a sharper emoji (🥊 or 🏹) that signals sport without matching the en-garde volume.\n\nWhen 🤺 lands as a partner 'duel me 🤺' check-in, mirror with another 🤺, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'touche 🤺' duel message, mirror with another 🤺, a sentence that joins the duel warmth, or a heart emoji that matches.",
+    "overview": "The drawing of 🤺 is a figure in a mask lunging with a thin sabre extended forward. It arrived with Unicode 13.0 in the sport section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is marking a duel, a challenge, or a precise competition. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🥋 Martial Arts: both show a low fighting stance, but the martial arts figure is bare-handed while the fencer holds a blade. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person fencing also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person fencing reads as marking a duel, a challenge, or a precise competition, it is most often used for answering a challenge with a \"touche\" reply or posting a score from a fencing tournament, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🤺 in a work thread is posting a score from a fencing tournament; 🤺 in a family thread is answering a challenge with a \"touche\" reply; 🤺 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🤺 is the whole reply, and it is carrying a meaning nobody wrote down — marking a duel, a challenge, or a precise competition is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Answering a challenge with a \"touche\" reply is the job the person fencing does most: it saves a sentence and lands faster than one would have. Posting a score from a fencing tournament is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🤺 will get read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person fencing gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🤺 reads as marking a duel, a challenge, or a precise competition, and formality is exactly where that reading does the most damage.\n\nLeave 🥋 Martial Arts for the other message. Both show a low fighting stance, but the martial arts figure is bare-handed while the fencer holds a blade. And keep 🤺 out of threads where somebody is hurting: it reads as marking a duel, a challenge, or a precise competition there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🤺 gets read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise often enough that the sentence matters more than the picture.\n\nAnd do not send 🤺 alone when the message underneath is supposed to be warm. A message like answering a challenge with a \"touche\" reply carries the feeling; the picture on its own leaves the reader choosing between marking a duel, a challenge, or a precise competition and something sharper.\n\nStart by reading what the 🤺 was doing. If it was a reaction, react: 🤺 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🤺 and its skin-tone versions?",
+        "answer": "The tone variants under person fencing show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🤺 mean in text?",
+        "answer": "🤺 is used for marking a duel, a challenge, or a precise competition. The drawing shows a figure in a mask lunging with a thin sabre extended forward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🤺 and 🥋?",
+        "answer": "Both show a low fighting stance, but the martial arts figure is bare-handed while the fencer holds a blade. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🤺 rude?",
+        "answer": "It can be. The gesture is meant as marking a duel, a challenge, or a precise competition, but it gets read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🤺 mean from a guy?",
-        "answer": "From a guy, 🤺 signals precision-coded marker or 'touche 🤺' gentle check-in. The lunge cue reads as competitive-coded rather than literal swordplay, so it tends to land on duel pings, partner check-ins, family-coded en-garde messages, and 'touche' reveals."
-      },
-      {
-        "question": "Is 🤺 flirty?",
-        "answer": "It can be. In a partner context 🤺 can read as soft-coded romance — 'duel me 🤺' is a soft-coded precision check-in. On its own the emoji is more competitive-coded than romantic."
-      },
-      {
-        "question": "What is the difference between 🤺 and 🥊?",
-        "answer": "🥊 is the boxing glove — the cue is boxing-coded punch-vibe, the universal 'fight' energy. 🤺 is the fencer — the cue is lunge-coded en-garde, the precision-duel energy. Use 🥊 when the moment is boxing-coded; use 🤺 when the moment is precision-coded fencer."
-      },
-      {
-        "question": "Is 🤺 for duel moments?",
-        "answer": "Yes — 🤺 is one of the most popular competitive-coded emojis. The lunge cue is a natural fit for 'duel moment' reveals, precision-coded messages, and partner 'touche' check-ins."
-      },
-      {
-        "question": "Does 🤺 mean en-garde flex?",
-        "answer": "Often yes — 🤺 carries the masked silhouette and the extended blade and reads in modern usage as competitive-coded. The literal-swordplay-versus-precision split depends on the sender and the channel."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "duel me tonight, full en-garde energy 🤺",
-      "interpretation": "Partner precision-coded romance. Mirror with another 🤺, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "touche today, full duel energy 🤺",
-      "interpretation": "Public competitive-coded flex. Mirror with another 🤺, a sentence that joins the en-garde energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "bring it with the family, full fencer energy 🤺",
-      "interpretation": "Family precision-coded reveal. Mirror with another 🤺, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🤺",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "en-garde today, full lunge energy 🤺",
-      "interpretation": "Friend competitive-coded reveal. Mirror with another 🤺, a sentence that joins the duel energy, or a heart emoji that matches."
+      "message": "answering a challenge with a \"touche\" reply 🤺",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking a duel, a challenge, or a precise competition, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "cannot handle this whole thread, the en-garde chaos 🤺",
-      "interpretation": "Work precision-coded flex. Mirror with another 🤺, a sentence that joins the sport energy, or a heart emoji that matches."
+      "message": "posting a score from a fencing tournament 🤺",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking a duel, a challenge, or a precise competition, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🤺",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as a generic athletic emoji when the blade and mask point somewhere narrower, so it lands on formal competition and verbal sparring rather than exercise more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "answering a challenge with a \"touche\" reply 🤺",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking a duel, a challenge, or a precise competition, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

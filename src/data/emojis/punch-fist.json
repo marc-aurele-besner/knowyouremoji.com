@@ -7,78 +7,89 @@
   "category": "people",
   "subcategory": "hands",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A fist facing the viewer, as if punching toward you.",
-  "tldr": "Fist bump, punch, or showing strength.",
+  "baseMeaning": "Shows a closed fist driving forward, knuckles toward the viewer.",
+  "tldr": "👊 Oncoming Fist — a punch, a fist bump, or a bro greeting.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents the oncoming fist cue.",
-      "example": "the punch 👊",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "punch-coded moment or punch-coded reveal.",
-      "example": "punch mode 👊",
+      "meaning": "Borrowed as a reaction, it reads as a punch, a fist bump, or a bro greeting.",
+      "example": "Celebrating a win with a fist punch 👊",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "punch-coded flirty tag or partner-coded moment.",
-      "example": "punch partner plan 👊",
+      "context": "IRONIC",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: a punch, a fist bump, or a bro greeting, said without believing any of it.",
+      "example": "sure, sure 👊",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "punch-coded work moment or team energy.",
-      "example": "punch sprint 👊",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — a punch, a fist bump, or a bro greeting — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a closed fist driving forward, knuckles toward the viewer. Nothing hidden in the drawing itself.",
+      "example": "Greeting a friend in a group chat 👊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "👊 lands on punch-coded threads, punch-tagged hands posts, and 'punch-coded' reveals where the punch cue reads as modern-coded flex."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 👊 exactly as the phone system does, but the keyboard keeps it in the hands section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like celebrating a win with a fist punch."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "👊 is a staple of modern-coded flat-lays, punch-canvas story backgrounds, and modern-coded profile accents; the punch cue anchors the visual."
+      "note": "On Instagram 👊 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as a punch, a fist bump, or a bro greeting under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "👊 travels in modern-coded transitions, punch reaction reveals, and 'punch-coded' listicle content where the punch cue signals modern-coded energy."
+      "note": "In TikTok comments 👊 is the fastest way to answer a video without typing anything. The gesture stays a punch, a fist bump, or a bro greeting, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "👊 threads through modern-coded reactions, punch markers, and 'punch-coded' bullets in work channels where the punch cue fits the register."
+      "note": "In Slack 👊 lands in channels where the sentence was supposed to be shorter. It is usually standing in for greeting a friend in a group chat, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "👊 is an active reaction in modern-coded punch channels, server-coded punch markers, and 'punch-coded' reveals where the punch cue matches the modern-coded register."
+      "note": "On Discord 👊 is a staple of the reaction bar, which is why it so often arrives stripped of its a punch, a fist bump, or a bro greeting reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Reaches for 👊 on modern-coded punch threads, punch-coded reveals, and 'punch-coded' moments where the punch cue matches the modern-coded register."
-    },
-    {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded punch moments, and punch-coded reveals where the universal punch cue fits."
+      "note": "Millennials tend to send 👊 deliberately, usually for something like celebrating a win with a fist punch, and they read a punch, a fist bump, or a bro greeting into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded punch messages and punch reveals, treating the punch as literal modern-coded energy."
+      "note": "Gen X mostly uses 👊 literally, as the picture of the gesture itself, and is less likely to read a punch, a fist bump, or a bro greeting into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal punch and uses it on modern-coded tags without parsing the modern punch-coded subtext."
+      "note": "Older senders use 👊 in the most straightforward way, on family and group messages, and are less likely to hear the a punch, a fist bump, or a bro greeting subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 👊 to do the work of greeting a friend in a group chat, and treats the neutral drawing as the default rather than as a choice. What they hear first is a punch, a fist bump, or a bro greeting."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👊 and ✊ get swapped",
+      "description": "The Raised Fist ✊ is one tap away in every picker, and it does not carry the same reading — the raised fist is a held-up solidarity sign, the oncoming fist is a punch landing on you. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👊 as something else fairly often: it gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👊 Oncoming Fist Emoji Meaning - What Does 👊 Really Mean?",
-  "seoDescription": "Learn what the oncoming fist emoji 👊 really means. From fist bumps to solidarity, discover all its uses.",
+  "seoTitle": "👊 Oncoming Fist Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "👊 Oncoming Fist explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "punch-fist-light",
     "punch-fist-medium-light",
@@ -87,56 +98,60 @@
     "punch-fist-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Oncoming Fist is the emoji of hand-coded reaction - the manual tradition, the gesture cue, and the universal \"this is what I mean\" tag. Where ✌️ reads as V-shaped peace energy and 🤝 reads as handshake-coded connection, Oncoming Fist captures the moment when the sender wants to communicate hand-coded gesture energy - a \"oncoming fist\" signal tag or a hand-coded reveal.\n\nThe hand cue borrows from manual tradition and the modern hand-coded aesthetic, which is exactly why the emoji reads as hand-coded rather than literal.\n\nWhat separates Oncoming Fist from the rest of the hand family is the specific oncoming fist register. The emoji is not saying 'generic hand' (✌️). It is saying 'oncoming fist-coded oncoming fist,' which carries a specific hand, gesture, or signal specificity.\n\nIn real-world usage 👊 Oncoming Fist lives in the spaces where the sender wants to communicate hand energy. A partner sends it on a \"punch\" moment. A friend sends it on a \"hand\" reveal. A coworker sends it on a \"punch\" tag. The punch cue is what makes the emoji feel hand-coded - it is not just 'a moment,' it is 'punch-coded energy.'\n\nIn dating 👊 Oncoming Fist works as a soft-coded punch tag, where the punch cue signals manual expression. In work threads 👊 Oncoming Fist lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more hand the moment, the more natural 👊 feels.",
-    "howPeopleUseIt": "👊 Oncoming Fist shows up as the closer on a \"punch moment\", the punctuation on a \"hand\" reveal, and the softener on a \"punch-coded\" tag. It pairs naturally with sentences that name the hand energy - 'punch,' 'manual expression,' 'punch-coded' - and sits beautifully on reactions, signal-coded reveals, hand-coded tags, and gesture moments.\n\nIn group chats 👊 Oncoming Fist anchors 'punch moment' threads, hand reveals, and 'punch' tags where the punch cue matches the register. On Instagram it lands on hand flat-lays and hand stories. On TikTok it travels in hand transitions and 'punch' reaction content.\n\nThe emoji also works in dating contexts. A 'punch 👊' partner message uses the punch cue to communicate hand romance. Across all of these surfaces the rule is the same: the more hand the moment, the more natural 👊 feels.",
-    "whenNotToUse": "Skip Oncoming Fist in formal or work contexts. The hand-coded gesture cue is the wrong register for professional moments. A sentence or a softer emoji keeps the message grounded.\n\nAvoid Oncoming Fist in sympathy, condolence, or break-up contexts. The gesture energy is the wrong tone for somber moments.\n\nSkip Oncoming Fist when you want to communicate respect. The hand register is too gesture-coded for solemn moments; use 🙏 or a sentence when the moment needs reverence.",
-    "howToReply": "If someone sends Oncoming Fist, the cleanest mirror is another Oncoming Fist, a hand emoji, or a sentence that joins the gesture energy. If the hand cue feels too gesture-coded, reply with a softer emoji (✌️ or 🤝) that signals connection without matching the gesture volume.\n\nWhen Oncoming Fist lands as a friend-coded joke, mirror with another Oncoming Fist, a joke emoji, or a sentence that escalates the humor. When it arrives as a partner-coded flirty tag, mirror with another Oncoming Fist, a heart emoji, or a sentence that escalates the romance.",
+    "overview": "The complication is that the drawing invites a second reading. It gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ✊ Raised Fist: the raised fist is a held-up solidarity sign, the oncoming fist is a punch landing on you. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The oncoming fist comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the oncoming fist for? Mostly greeting a friend in a group chat, and then celebrating a win with a fist punch. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 👊 is a closed fist driving forward, knuckles toward the viewer. It came into the emoji set in Unicode 6.0, under the hands heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is a punch, a fist bump, or a bro greeting. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 👊 sent to a colleague is a piece of work, 👊 sent to a friend is a joke, and 👊 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 👊 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"a punch, a fist bump, or a bro greeting\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is greeting a friend in a group chat: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is celebrating a win with a fist punch, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 👊 gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and oncoming fist gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 👊 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as a punch, a fist bump, or a bro greeting — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant ✊ Raised Fist. The raised fist is a held-up solidarity sign, the oncoming fist is a punch landing on you. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 👊 sent as a reaction to somebody who is upset reads as a punch, a fist bump, or a bro greeting, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 👊 gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like greeting a friend in a group chat needs the sentence: the drawing alone leaves the reader deciding between a punch, a fist bump, or a bro greeting and something sharper.\n\nReply with 👊 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 👊 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does Oncoming Fist mean in chat?",
-        "answer": "Oncoming Fist is the hand-coded reaction - it borrows from manual tradition and signals a gesture reveal, hand-coded tag, or signal-coded moment. The hand cue is what makes the read feel hand-coded rather than literal."
+        "question": "What is the difference between 👊 and ✊?",
+        "answer": "The raised fist is a held-up solidarity sign, the oncoming fist is a punch landing on you. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is Oncoming Fist rude?",
-        "answer": "Sometimes. In certain contexts Oncoming Fist can read as a coded insult or a hand-coded dismissal. The full meaning depends on the relationship and channel - friends use it casually while coworkers read it as off-color."
+        "question": "Is 👊 rude?",
+        "answer": "It can be. The gesture is meant as a punch, a fist bump, or a bro greeting, but it gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What does Oncoming Fist mean from a friend?",
-        "answer": "From a friend, Oncoming Fist signals a hand-coded reaction or signal-coded moment. The hand cue reads as gesture-coded rather than literal, so it tends to land on joke tags, casual coded messages, and \"look at this\" reveals."
+        "question": "What does 👊 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "When should I use Oncoming Fist?",
-        "answer": "Use Oncoming Fist for hand-coded references, gesture reveals, or signal-coded moments. Avoid it when you want to communicate something formal - the hand cue is too gesture-coded for professional moments."
+        "question": "What is the difference between 👊 and its skin-tone versions?",
+        "answer": "The tone variants under oncoming fist show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 👊 mean in text?",
+        "answer": "👊 is used for a punch, a fist bump, or a bro greeting. The drawing shows a closed fist driving forward, knuckles toward the viewer, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "punch with the partner plan, full hand energy 👊",
-      "interpretation": "Partner hand romance. Mirror with another 👊, a heart emoji, or a sentence that escalates the romance."
+      "setting": "work",
+      "message": "celebrating a win with a fist punch 👊",
+      "interpretation": "A handover or a sign-off in a channel. It reads as a punch, a fist bump, or a bro greeting, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the punch chaos 👊",
-      "interpretation": "Public hand flex. Mirror with another 👊, a sentence that joins the energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 👊",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken as a threat of violence when it is usually a friendly bump — online, a fist rarely lands as anything but a greeting more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "punch with the family, full hand energy 👊",
-      "interpretation": "Family hand reveal. Mirror with another 👊, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "greeting a friend in a group chat 👊",
+      "interpretation": "Family threads are where this lands most naturally. The reading is a punch, a fist bump, or a bro greeting, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 👊",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "punch today, full hand energy 👊",
-      "interpretation": "Friend hand reveal. Mirror with another 👊, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "punch sprint today, full hand energy 👊",
-      "interpretation": "Work hand moment. Mirror with another 👊, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "greeting a friend in a group chat 👊",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as a punch, a fist bump, or a bro greeting, and matching it with the same emoji is a normal reply."
     }
   ]
 }

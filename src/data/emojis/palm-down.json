@@ -1,127 +1,157 @@
 {
-  "unicode": "U+1F91A",
+  "unicode": "U+1FAF3",
   "slug": "palm-down",
-  "character": "🫱",
-  "name": "Palm Up Hand",
-  "shortName": "palm up hand emoji",
+  "character": "🫳",
+  "name": "Palm Down Hand",
+  "shortName": "palm down hand emoji",
   "category": "People & Body",
   "subcategory": "Hand",
   "unicodeVersion": "14.0",
-  "baseMeaning": "Hand with palm facing up",
-  "tldr": "Palm up",
+  "baseMeaning": "A drawing of a single hand held flat with the palm facing the floor, fingers extended forward, used as marking \"go ahead\" or asking a room to settle.",
+  "tldr": "🫳 Palm Down Hand: marking \"go ahead\" or asking a room to settle.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Offering or holding",
-      "example": "Hold this 🫱",
+      "meaning": "The plain reading: a single hand held flat with the palm facing the floor, fingers extended forward. Nothing hidden in the drawing itself.",
+      "example": "Letting someone else go first 🫳",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Available or open",
-      "example": "Here 🫱",
+      "meaning": "Borrowed as a reaction, it reads as marking \"go ahead\" or asking a room to settle.",
+      "example": "Asking a chat to stop spiralling 🫳",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Open-palm-coded flirty tag or holding-hands tag.",
-      "example": "give me your hand 🫱",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking \"go ahead\" or asking a room to settle, softened by whatever sentence sits next to it.",
+      "example": "not me 🫳",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatizing being available.",
-      "example": "i am all 🫱",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking \"go ahead\" or asking a room to settle — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🫳",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for offering-coded and adult-coded available tweets. The palm-up hand is the visible 'open palm' default across close-friends replies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in offering-coded stories and aesthetic-coded available shares. The palm-up hand reads as the visible open default on story overlays and reply captions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded offering clips. The palm-up hand pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal available default."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Palm Down Hand 🫳 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like letting someone else go first is the kind that carries it — the picture lands before the sentence does."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Group-chat reaction to offering-coded content. The palm-up hand is the default 'here' tag among close-friends groups."
+      "note": "WhatsApp renders 🫳 exactly as the phone system does, but the keyboard keeps it in the hand section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like asking a chat to stop spiralling."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "On Instagram 🫳 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as marking \"go ahead\" or asking a room to settle under a photo, or a reaction somebody left on a story."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "In TikTok comments 🫳 is the fastest way to answer a video without typing anything. The gesture stays marking \"go ahead\" or asking a room to settle, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🫳 lands in channels where the sentence was supposed to be shorter. It is usually standing in for letting someone else go first, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Gen Z reaches for 🫳 to do the work of letting someone else go first, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking \"go ahead\" or asking a room to settle."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Millennials tend to send 🫳 deliberately, usually for something like asking a chat to stop spiralling, and they read marking \"go ahead\" or asking a room to settle into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🫳 literally, as the picture of the gesture itself, and is less likely to read marking \"go ahead\" or asking a room to settle into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🫱 literally for offering gestures."
+      "note": "Older senders use 🫳 in the most straightforward way, on family and group messages, and are less likely to hear the marking \"go ahead\" or asking a room to settle subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🫳 and 🫴 get swapped",
+      "description": "The Palm Up Hand 🫴 is one tap away in every picker, and it does not carry the same reading — the palm-up hand reads as offering or receiving, the palm-down hand reads as pushing forward or holding things down. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🫳 as something else fairly often: it gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫱 Palm Up Hand Emoji Meaning - What Does 🫱 Really Mean?",
-  "seoDescription": "Learn what the palm up hand emoji 🫱 really means in texts and social media.",
+  "seoTitle": "🫳 Palm Down Hand Emoji Meaning - What Does 🫳 Really Mean?",
+  "seoDescription": "What the palm down hand emoji 🫳 means in text: marking \"go ahead\" or asking a room to settle. Includes the misread it invites (read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite) and how to reply.",
   "longForm": {
-    "overview": "The 🫱 Palm Up Hand emoji was added in Unicode 14 (2021) and is drawn as a single open hand with the palm facing upward, as if offering or holding something. The visual cue reads instantly as offering-coded reference, available default, or the visible 'here' tag. By 2026 🫱 has become the go-to emoji for the open-palm-coded reaction, the visible offering default, and the available-coded reaction in close-friends and dating chats.\n\nIn modern chat 🫱 does very specific work. People send it as a literal offering-coded reference, as the visible 'I am available' tag, or as the open-coded default. The open palm facing upward is the visual cue that the read is offering or being open. Writers should pick 🫱 when the read is offering or visible 'take my hand' energy, and avoid it when the read is full-on two palms — 🤲 fits better there.",
-    "howPeopleUseIt": "🫱 lands on a friend's open-coded message, in a work channel where someone is signaling offering-coded energy, and in a dating-app DM where the sender is signaling flirty hand. The open palm facing upward anchors the read.\n\nIn close-friends chats 🫱 reads as the universal available default and the visible 'take my hand' tag. On X the emoji punctuates offering-coded and available tweets. The emoji pairs with 🫴 for the layered palm-up-and-palm-down stack and with 🤝 for the layered palm-and-shake stack.",
-    "whenNotToUse": "Skip 🫱 in any context where the read is supposed to be a closed hand. The open palm implies offering, not fist. Avoid 🫱 in casual contexts where the available-coded read lands as desperate.",
-    "howToReply": "If a friend sends 🫱 on an offering-coded message, mirror with another 🫱 or 🤝 to send matching energy. The open chain reads as solidarity.\n\nIf 🫱 lands as the available default, reply with another 🫱 or 🫴. And if you want to send 🫱 yourself, pair it with the moment so the offering-coded read is clear.",
+    "overview": "🫳 is the palm down hand: a single hand held flat with the palm facing the floor, fingers extended forward. It arrived in Unicode 14.0, and it lives in the hand part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as marking \"go ahead\" or asking a room to settle. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🫴 Palm Up Hand: the palm-up hand reads as offering or receiving, the palm-down hand reads as pushing forward or holding things down. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same palm down hand exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the palm down hand emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are letting someone else go first and asking a chat to stop spiralling, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🫳 does is letting someone else go first. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is asking a chat to stop spiralling. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🫳 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🫳 goes back on its own. It reads as \"marking \"go ahead\" or asking a room to settle\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🫳 when you mean 🫴 Palm Up Hand. The palm-up hand reads as offering or receiving, the palm-down hand reads as pushing forward or holding things down. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🫳 in a thread about a person reads as \"marking \"go ahead\" or asking a room to settle\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and palm down hand gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🫳 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of marking \"go ahead\" or asking a room to settle as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🫳. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the palm down hand was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like letting someone else go first almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant marking \"go ahead\" or asking a room to settle or something sharper.",
     "faqs": [
       {
-        "question": "What does 🫱 mean in text?",
-        "answer": "🫱 means offering-coded reference, available energy, or the visible 'take my hand' reaction. The open palm facing upward is the visual cue that the read is offering-coded."
+        "question": "What does 🫳 mean in text?",
+        "answer": "🫳 is used for marking \"go ahead\" or asking a room to settle. The drawing shows a single hand held flat with the palm facing the floor, fingers extended forward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🫱 flirty?",
-        "answer": "Sometimes. 🫱 reads as flirty-coded in a dating thread combined with 'give me your hand' tag content as romantic invite."
+        "question": "What is the difference between 🫳 and 🫴?",
+        "answer": "The palm-up hand reads as offering or receiving, the palm-down hand reads as pushing forward or holding things down. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🫱 mean from a girl?",
-        "answer": "From a girl or anyone, 🫱 carries the same offering-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "Is 🫳 rude?",
+        "answer": "It can be. The gesture is meant as marking \"go ahead\" or asking a room to settle, but it gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What does 🫱 mean on Instagram?",
-        "answer": "On Instagram, 🫱 is the default sticker on offering-coded captions and aesthetic-coded available story overlays."
+        "question": "What does 🫳 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🫳 and its skin-tone versions?",
+        "answer": "The tone variants under palm down hand show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "here, take this 🫱",
-      "interpretation": "Friend offering share. Mirror with another 🫱 or 🤝 so the open chain reads back."
+      "message": "letting someone else go first 🫳",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking \"go ahead\" or asking a room to settle, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "i am at your service 🫱",
-      "interpretation": "Work-coded offering share. Mirror with a clarifying sentence — 🫱 can land as off-topic in work channels."
+      "message": "asking a chat to stop spiralling 🫳",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking \"go ahead\" or asking a room to settle, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "give me your hand 🫱",
-      "interpretation": "Dating-coded flirty share. Mirror with 🫱 or 🥰 so the warm chain reads back."
+      "message": "there is something you should know 🫳",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as the palm-up offering gesture because the two hands sit next to each other in every picker, so it gets sent when someone means to hand something over — the drawing shows the opposite more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "let me hold your hand 🫱",
-      "interpretation": "Family-coded holding share. Mirror with 🫱 or 🤝 so the family-coded chain reads back."
+      "message": "letting someone else go first 🫳",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking \"go ahead\" or asking a room to settle, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "DM me anytime 🫱",
-      "interpretation": "Public adult-coded available share. Mirror with another 🫱 or 💬 so the solidarity chain reads back."
+      "message": "that is the whole post 🫳",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26",
+  "skinToneVariations": [
+    "palm-down-light",
+    "palm-down-medium-light",
+    "palm-down-medium",
+    "palm-down-medium-dark",
+    "palm-down-dark"
+  ]
 }

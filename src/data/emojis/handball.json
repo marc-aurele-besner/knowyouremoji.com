@@ -7,129 +7,144 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Playing Handball emoji.",
-  "tldr": "Represents person playing handball.",
+  "baseMeaning": "Shows a figure mid-stride with one arm raised, holding a small blue ball.",
+  "tldr": "🤾 Person Playing Handball — competing hard as part of a team.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "The activity of person playing handball.",
-      "example": "Time for person playing handball 🤾",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🤾",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person playing handball? 🤾",
+      "meaning": "Borrowed as a reaction, it reads as competing hard as part of a team.",
+      "example": "Someone going hard at a busy week 🤾",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🤾",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: competing hard as part of a team, said without believing any of it.",
+      "example": "sure, sure 🤾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — competing hard as part of a team — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure mid-stride with one arm raised, holding a small blue ball. Nothing hidden in the drawing itself.",
+      "example": "A team trying to set a competitive tone 🤾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors court-coded athletic flex threads, gym-class hype tweets, and team-sport reveals where the ball-raised overhead cue signals hand-pass register."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🤾 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like someone going hard at a busy week."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on court-coded story reposts, gym-class flat-lays, and team-sport reveals where the ball-raised overhead cue carries visible hand-pass charm."
+      "note": "On Instagram 🤾 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as competing hard as part of a team under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in court-coded transitions, gym-class reaction clips, and team-sport reaction content where the ball-above-head cue signals hand-pass register."
+      "note": "In TikTok comments 🤾 is the fastest way to answer a video without typing anything. The gesture stays competing hard as part of a team, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🤾 lands in channels where the sentence was supposed to be shorter. It is usually standing in for a team trying to set a competitive tone, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on court-coded squad check-ins, gym-class hype messages, and group chats where the ball-raised overhead cue matches the hand-pass moment."
+      "note": "On Discord 🤾 is a staple of the reaction bar, which is why it so often arrives stripped of its competing hard as part of a team reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Wields 🤾 on court-coded hype threads, gym-class memes, and team-sport fits where the ball-above-head cue matches the modern hand-pass register."
-    },
-    {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 🤾 on court-coded nostalgia, gym-class-coded hype, and team-sport jokes where the millennial school-PE memory still resonates."
+      "note": "Millennials tend to send 🤾 deliberately, usually for something like someone going hard at a busy week, and they read competing hard as part of a team into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🤾 on court-coded reveals, gym-class flexes, and team-sport jokes where the ball-raised overhead cue reads as hand-pass reference."
+      "note": "Gen X mostly uses 🤾 literally, as the picture of the gesture itself, and is less likely to read competing hard as part of a team into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🤾 as a literal court athlete and pastes it onto PE-class replies without parsing the modern 'court-coded hype' or gym-class subtext."
+      "note": "Older senders use 🤾 in the most straightforward way, on family and group messages, and are less likely to hear the competing hard as part of a team subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🤾 to do the work of a team trying to set a competitive tone, and treats the neutral drawing as the default rather than as a choice. What they hear first is competing hard as part of a team."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤾 and 🏀 get swapped",
+      "description": "The Basketball 🏀 is one tap away in every picker, and it does not carry the same reading — basketball brings a hoop and a court, handball brings a smaller ball thrown and smacked indoors. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤾 as something else fairly often: it gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤾 Person Playing Handball Emoji Meaning - What Does 🤾 Really Mean?",
-  "seoDescription": "Learn what the person playing handball emoji 🤾 really means in texts and DMs. Court-coded athletic flex, gym-class hype energy, and team-sport charm.",
+  "seoTitle": "🤾 Person Playing Handball Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🤾 Person Playing Handball explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤾 is the emoji of court-coded athletic flex — a player mid-throw with ball raised overhead and arm cocked back, the iconography of gym-class tradition, team-sport hype, and the universal hand-pass tag. Where 🏀 reads as basketball-coded hoop-shot and 🤾 reads as handball-coded overhead-throw, 🤾 captures the moment when the sender wants to communicate court-coded energy — a 'court-coded hype 🤾' gym-class flex or a 'team-sport-coded 🤾' hand-pass reveal. The ball-above-head cue borrows from the universal gym tradition and the modern hand-pass aesthetic, which is exactly why the emoji reads as team-sport rather than literal court athlete.\n\nIn real-world usage 🤾 lives in the spaces where the sender wants to communicate court-coded energy. A friend sends it on a 'court-coded hype 🤾' reveal. A team-sport-coded chat partner sends it on a 'gym-class-coded 🤾' coded message. A coworker sends it on a 'court flex 🤾' team-coded flex. The ball-above-head cue is what makes the emoji feel court-coded — it is not just 'handball,' it is 'court-coded athletic flex.'\n\nWhat separates 🤾 from the rest of the sport-emoji family is the team-sport register. The emoji is not saying 'basketball' (🏀), 'volleyball' (🏐), or 'water polo' (🤽). It is saying 'court-coded athletic flex,' which carries a specific gym-class tradition. That is why 🤾 travels especially well on court-coded hype flexes, gym-class jokes, team-sport-coded reveals, and any context where the sender wants the message to land with hand-pass energy.",
-    "howPeopleUseIt": "🤾 shows up as the closer on a 'court-coded hype 🤾' gym-class message ('court-coded hype 🤾'), the punctuation on a 'team-sport-coded 🤾' hand-pass reveal, and the softener on a 'court flex 🤾' coded message. It pairs naturally with sentences that name the hand-pass energy — 'court-coded,' 'gym-class-coded,' 'team-sport flex' — and sits beautifully on gym-class flexes and court-coded reveals.\n\nIn group chats 🤾 anchors 'court-coded moment' threads, team-sport reveals, and 'hand-pass flex 🤾' coded tags where the ball-above-head cue matches the register. On Instagram it lands on court-coded flat-lays and gym-class stories. On TikTok it travels in hand-pass reveals and 'court-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'court-coded hype tonight 🤾' partner message uses the ball-above-head cue to communicate team-sport-coded soft-coded romance. Across all of these surfaces the rule is the same: the more hand-pass the moment, the more natural 🤾 feels.",
-    "whenNotToUse": "Skip 🤾 in solo-coded or solo-sport-coded contexts. The team court ball-above-head cue is the wrong tone for any conversation where the moment is individual. A sentence or a neutral emoji is a better fit.\n\nAvoid 🤾 in office-coded or formal-coded contexts where the gym-class rule feels off. A 'court-coded hype 🤾' message works for team reveal; for office moments use a sentence.\n\nSkip 🤾 when you want to communicate calm leisure. The team-sport register is too energetic for relaxed moments; use 🏃 or a sentence when the tone needs to be quieter.",
-    "howToReply": "If someone sends 🤾, the cleanest mirror is another 🤾, 🏀, or a sentence that joins the court-energy. If you want to escalate the engagement, follow with a sentence that adds context: 'court-coded hype for sure' or 'team-sport-coded together.' If the ball-above-head cue feels too gym-coded, reply with a softer emoji (🏃 or 🤸) that signals athletic without matching the court volume.\n\nWhen 🤾 lands as a partner 'court-coded hype 🤾' check-in, mirror with another 🤾, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'court flex 🤾' coded message, mirror with another 🤾, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏀 Basketball: basketball brings a hoop and a court, handball brings a smaller ball thrown and smacked indoors. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The person playing handball comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the person playing handball for? Mostly a team trying to set a competitive tone, and then someone going hard at a busy week. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🤾 is a figure mid-stride with one arm raised, holding a small blue ball. It came into the emoji set in Unicode 13.0, under the sport heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is competing hard as part of a team. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🤾 sent to a colleague is a piece of work, 🤾 sent to a friend is a joke, and 🤾 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🤾 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"competing hard as part of a team\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is a team trying to set a competitive tone: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is someone going hard at a busy week, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🤾 gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and person playing handball gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🤾 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as competing hard as part of a team — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🏀 Basketball. Basketball brings a hoop and a court, handball brings a smaller ball thrown and smacked indoors. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🤾 sent as a reaction to somebody who is upset reads as competing hard as part of a team, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🤾 gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like a team trying to set a competitive tone needs the sentence: the drawing alone leaves the reader deciding between competing hard as part of a team and something sharper.\n\nReply with 🤾 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🤾 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does 🤾 mean from a guy?",
-        "answer": "From a guy, 🤾 signals court-coded flex or 'court-coded hype 🤾' team-sport reveal. The ball-above-head cue reads as gym-class-coded rather than literal court athlete, so it tends to land on partner check-ins, court-coded hype messages, and 'court flex' reveals."
-      },
-      {
-        "question": "Is 🤾 flirty?",
-        "answer": "It can be. In a partner context 🤾 can read as team-sport-coded soft-coded romance — 'court-coded hype tonight 🤾' is a soft-coded hand-pass check-in. On its own the emoji is more court-coded than romantic."
-      },
-      {
         "question": "What is the difference between 🤾 and 🏀?",
-        "answer": "🏀 is the basketball player — the cue is basketball-coded hoop-shot, the universal 'ball' energy. 🤾 is the handball player — the cue is handball-coded overhead-throw, the 'court-coded hype' hand-pass energy. Use 🏀 when the moment is hoop-shot; use 🤾 when the moment is court flex."
+        "answer": "Basketball brings a hoop and a court, handball brings a smaller ball thrown and smacked indoors. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🤾 for team-sport moments?",
-        "answer": "Yes — 🤾 is one of the most popular court-coded emojis. The ball-above-head cue is a natural fit for team-sport reveals, gym-class messages, and partner 'court flex' check-ins."
+        "question": "Is 🤾 rude?",
+        "answer": "It can be. The gesture is meant as competing hard as part of a team, but it gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🤾 mean court-coded hype?",
-        "answer": "Often yes — 🤾 carries gym-class charm and reads in modern usage as team-sport. The literal-handball-player-versus-court-hype split depends on the sender and the channel."
+        "question": "What does 🤾 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🤾 and its skin-tone versions?",
+        "answer": "The tone variants under person playing handball show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🤾 mean in text?",
+        "answer": "🤾 is used for competing hard as part of a team. The drawing shows a figure mid-stride with one arm raised, holding a small blue ball, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "court-coded hype tonight, full hand-pass energy 🤾",
-      "interpretation": "Partner team-sport-coded romance. Mirror with another 🤾, a heart emoji, or a sentence that escalates the romance."
+      "setting": "work",
+      "message": "someone going hard at a busy week 🤾",
+      "interpretation": "A handover or a sign-off in a channel. It reads as competing hard as part of a team, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the gym-class chaos 🤾",
-      "interpretation": "Public court-coded flex. Mirror with another 🤾, a sentence that joins the hand-pass energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🤾",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a general sports picture when it is really a handball-specific one, so players who mean a different sport have to add a word to explain themselves more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "court-coded hype moment with the family, full hand-pass energy 🤾",
-      "interpretation": "Family team-sport-coded reveal. Mirror with another 🤾, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "a team trying to set a competitive tone 🤾",
+      "interpretation": "Family threads are where this lands most naturally. The reading is competing hard as part of a team, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🤾",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "team-sport energy today, full court flex 🤾",
-      "interpretation": "Friend court-coded reveal. Mirror with another 🤾, a sentence that joins the hand-pass energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "court flex at work today, full hand-pass mode 🤾",
-      "interpretation": "Work team-sport-coded moment. Mirror with another 🤾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "a team trying to set a competitive tone 🤾",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as competing hard as part of a team, and matching it with the same emoji is a normal reply."
     }
   ],
   "skinToneVariations": [

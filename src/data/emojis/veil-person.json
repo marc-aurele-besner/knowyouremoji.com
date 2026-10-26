@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person with Veil emoji.",
-  "tldr": "Represents person with veil.",
+  "baseMeaning": "A person with veil emoji: a smiling figure in a white veil and gown.",
+  "tldr": "Person with Veil 👰: marking a wedding, a bride, or a big day.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking a wedding, a bride, or a big day — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👰",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents person with veil.",
-      "example": "Look at this person with veil 👰",
+      "meaning": "The plain reading: a smiling figure in a white veil and gown. Nothing hidden in the drawing itself.",
+      "example": "Announcing an engagement or wedding date 👰",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a person with veil.",
-      "example": "They're such a person with veil 👰",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Professional context for person with veil.",
-      "example": "Meeting with the team 👰",
+      "meaning": "Borrowed as a reaction, it reads as marking a wedding, a bride, or a big day.",
+      "example": "Replying to a bridesmaid photo 👰",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing person with veil.",
-      "example": "Sure, I'm totally a person with veil 👰",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: marking a wedding, a bride, or a big day, said without believing any of it.",
+      "example": "sure, sure 👰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on wear coded veil-person threads, style-marker reveal posts, and veil-person-pulse coded lists."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of wear coded veil-person flat-lays, wear-canvas story backgrounds, and style-marker profile accents."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Travels in wear coded veil-person transitions, style-marker reaction reveals, and veil-person-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors wear coded veil-person status messages, role-coded style-marker markers, and veil-person-pulse coded reactions."
+      "note": "In TikTok comments 👰 is the fastest way to answer a video without typing anything. The gesture stays marking a wedding, a bride, or a big day, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through wear coded veil-person reactions, style-marker markers, and veil-person-pulse coded bullets."
+      "note": "In Slack 👰 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing an engagement or wedding date, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 👰 is a staple of the reaction bar, which is why it so often arrives stripped of its marking a wedding, a bride, or a big day reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👰 does most of its work in replies, where it tags a message like replying to a bridesmaid photo. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person with Veil 👰 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing an engagement or wedding date is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 👰 in the most straightforward way, on family and group messages, and are less likely to hear the marking a wedding, a bride, or a big day subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Uses 👰 frequently in casual chat."
+      "note": "Gen Z reaches for 👰 to do the work of announcing an engagement or wedding date, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking a wedding, a bride, or a big day."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 👰 across platforms."
+      "note": "Millennials tend to send 👰 deliberately, usually for something like replying to a bridesmaid photo, and they read marking a wedding, a bride, or a big day into it more often than the older cohorts do."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 👰 literally."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 👰 literally, as the picture of the gesture itself, and is less likely to read marking a wedding, a bride, or a big day into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👰 and 🧕 get swapped",
+      "description": "The Woman with Headscarf 🧕 is one tap away in every picker, and it does not carry the same reading — the headscarf covers for faith and modesty, the veil is tied to a wedding. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👰 as something else fairly often: it gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👰 Person with Veil Emoji Meaning - What Does 👰 Really Mean?",
-  "seoDescription": "Learn what the person with veil emoji 👰 really means in texts and social media. Discover all its uses and interpretations.",
+  "seoTitle": "👰 Person with Veil Emoji Meaning and How to Use It",
+  "seoDescription": "What 👰 means when people send it, the person with veil reading, and how to answer it without guessing.",
   "skinToneVariations": [
     "veil-person-light",
     "veil-person-medium-light",
@@ -83,60 +98,60 @@
     "veil-person-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👰 is the emoji of wear coded veil-person read — a clean veil-person-pulse shape, the wear filled-in silhouette, and the universal 'wear veil-person' tag for style-marker. Where ⬛ reads as solid-black-coded veil-person read and ⬜ reads as solid-white-coded veil-person read, 👰 captures the moment when the sender wants to communicate wear coded veil-person — a 'wear 👰' style-marker marker or a 'veil-person-pulse pulse 👰' style-marker reveal. The wear fill cue borrows from design-coded bullet lists and the modern style-marker aesthetic, which is exactly why the emoji reads as wear coded rather than literal veil-person-coded shape.\n\nIn real-world usage 👰 lives in the spaces where the sender wants to communicate style-marker energy. A partner sends it on a 'wear 👰' style-marker marker. A friend sends it on a 'veil-person-pulse pulse 👰' reveal. A coworker sends it on a 'wear coded 👰' list thread. The wear fill cue is what makes the emoji feel wear coded — it is not just 'shape,' it is 'wear coded veil-person moment.'\n\nWhat separates 👰 from the rest of the shape family is the wear register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'wear coded veil-person,' which carries a specific design-coded tradition. That is why 👰 travels especially well on partner style-marker markers, style-marker reveals, and any context where the sender wants the message to land with wear energy.",
-    "howPeopleUseIt": "👰 shows up as the bullet on a 'wear 👰' list message ('veil-person-pulse pulse 👰'), the punctuation on a 'wear coded 👰' reveal, and the softener on a 'veil-person-pulse pulse 👰' list thread. It pairs naturally with sentences that name the wear energy — 'wear,' 'veil-person-pulse pulse,' 'style-marker-coded' — and sits beautifully on partner style-marker markers and style-marker reveals.\n\nIn group chats 👰 anchors 'wear coded moment' threads, style-marker reveals, and 'wear 👰' tags where the veil-person cue matches the register. On Instagram it lands on wear coded flat-lays and wear-canvas stories. On TikTok it travels in wear coded reveals and 'wear' reaction content.\n\nThe emoji also works in dating contexts. A 'wear 👰' partner message uses the veil-person cue to communicate style-marker romance. Across all of these surfaces the rule is the same: the more wear coded the moment, the more natural 👰 feels.",
-    "whenNotToUse": "Skip 👰 in sympathy, condolence, or break-up contexts. The wear coded veil-person cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👰 in 'literal object' or finish-coded contexts where the wear energy feels off. A 'wear 👰' message works for wear marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 👰 when you want to communicate a different color. The wear coded register is too wear-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 👰, the cleanest mirror is another 👰, ⬛, or a sentence that joins the wear energy. If you want to escalate the engagement, follow with a sentence that adds context: 'wear for sure' or 'veil-person-pulse pulse together.' If the veil-person cue feels too wear coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the wear volume.\n\nWhen 👰 lands as a partner 'wear 👰' style-marker marker, mirror with another 👰, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'veil-person-pulse pulse 👰' list thread, mirror with another 👰, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "What follows is the useful part: the two things the person with veil is actually for (announcing an engagement or wedding date and replying to a bridesmaid photo), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 👰 is a smiling figure in a white veil and gown, added in Unicode 13.0 and filed under person-role. What it does in a message is carry a meaning — here, marking a wedding, a bride, or a big day — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧕 Woman with Headscarf: the headscarf covers for faith and modesty, the veil is tied to a wedding. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are announcing an engagement or wedding date and replying to a bridesmaid photo. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 👰 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"marking a wedding, a bride, or a big day\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 👰 is easy to send when 🧕 Woman with Headscarf was meant — the headscarf covers for faith and modesty, the veil is tied to a wedding. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"marking a wedding, a bride, or a big day\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 👰 gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and person with veil gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 👰 next to somebody's performance, or in a first note to a client, and marking a wedding, a bride, or a big day is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 👰 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the person with veil was meant, read the line above it instead. 👰 gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like announcing an engagement or wedding date sent with 👰 on its own is a coin toss between marking a wedding, a bride, or a big day and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
         "question": "What does 👰 mean from a guy?",
-        "answer": "From a guy, 👰 signals wear coded flex or 'wear 👰' style-marker marker. The veil-person cue reads as wear-coded rather than literal veil-person-coded shape, so it tends to land on partner style-marker markers, family-coded wear messages, and 'veil-person-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 👰 flirty?",
-        "answer": "It can be. In a partner context 👰 can read as soft-coded romance — 'wear 👰' is a soft-coded style-marker marker. On its own the emoji is more wear coded than romantic."
+        "question": "What is the difference between 👰 and its skin-tone versions?",
+        "answer": "The tone variants under person with veil show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 👰 and ⬛?",
-        "answer": "⬛ is the solid-black veil-person — the cue is solid-black-coded read, the universal 'fill' energy. 👰 is the wear veil-person — the cue is wear coded veil-person read, the wear energy. Use ⬛ when the moment is fill-coded; use 👰 when the moment is wear coded."
+        "question": "What does 👰 mean in text?",
+        "answer": "👰 is used for marking a wedding, a bride, or a big day. The drawing shows a smiling figure in a white veil and gown, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 👰 for style-marker moments?",
-        "answer": "Yes — 👰 is one of the most popular wear coded emojis. The veil-person cue is a natural fit for 'style-marker' reveals, wear coded messages, and partner 'wear' markers."
+        "question": "What is the difference between 👰 and 🧕?",
+        "answer": "The headscarf covers for faith and modesty, the veil is tied to a wedding. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Does 👰 mean veil-person-pulse pulse?",
-        "answer": "Often yes — 👰 carries the wear fill visual and reads in modern usage as wear coded. The literal-shape-versus-wear-coded split depends on the sender and the channel."
+        "question": "Is 👰 rude?",
+        "answer": "It can be. The gesture is meant as marking a wedding, a bride, or a big day, but it gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "veil-person-pulse pulse for the partner plan, full wear energy 👰",
-      "interpretation": "Partner wear romance. Mirror with another 👰, a heart emoji, or a sentence that escalates the romance."
+      "setting": "family",
+      "message": "announcing an engagement or wedding date 👰",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking a wedding, a bride, or a big day, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "cannot handle this whole thread, the wear chaos 👰",
-      "interpretation": "Public wear flex. Mirror with another 👰, a sentence that joins the wear energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "wear style-marker with the family, full veil-person-pulse pulse energy 👰",
-      "interpretation": "Family wear reveal. Mirror with another 👰, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 👰",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "veil-person-pulse pulse today, full wear energy 👰",
-      "interpretation": "Friend wear reveal. Mirror with another 👰, a sentence that joins the wear energy, or a heart emoji that matches."
+      "message": "announcing an engagement or wedding date 👰",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking a wedding, a bride, or a big day, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "wear coded sprint today, full veil-person-pulse pulse energy 👰",
-      "interpretation": "Work wear moment. Mirror with another 👰, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "replying to a bridesmaid photo 👰",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking a wedding, a bride, or a big day, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👰",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as a literal bride when it is often a stand-in for the person getting married, since the veil carries the whole event in one glyph more easily here than it does in a work thread, because the thread is thinner."
     }
   ]
 }

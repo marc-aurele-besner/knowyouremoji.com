@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Raised hand or stop gesture.",
-  "tldr": "Stop! Or high five.",
+  "baseMeaning": "A drawing of an open hand held upright, palm forward, fingers spread wide, used as stopping someone, or volunteering to answer.",
+  "tldr": "✋ Raised Hand: stopping someone, or volunteering to answer.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents stop or high five.",
-      "example": "High five ✋",
+      "meaning": "The plain reading: an open hand held upright, palm forward, fingers spread wide. Nothing hidden in the drawing itself.",
+      "example": "Calling a meeting agenda back on track ✋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Wait, stop, or hold up.",
-      "example": "Hold on ✋",
+      "meaning": "Borrowed as a reaction, it reads as stopping someone, or volunteering to answer.",
+      "example": "Jumping in to answer a question ✋",
       "riskLevel": "LOW"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Stop talking or back off.",
-      "example": "I've heard enough ✋",
-      "riskLevel": "MEDIUM"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as stopping someone, or volunteering to answer, softened by whatever sentence sits next to it.",
+      "example": "not me ✋",
+      "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "I have a question or stop.",
-      "example": "Question ✋",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — stopping someone, or volunteering to answer — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted ✋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors hold-up-coded tweets, 'I have a question' replies, and stop-coded reveals where the raised palm reads as pause-coded interruption rather than literal high-five."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Raised Hand ✋ renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like calling a meeting agenda back on track is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders ✋ exactly as the phone system does, but the keyboard keeps it in the hand-gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like jumping in to answer a question."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on high-five-coded story reposts, 'question ✋' reveals, and stop-coded captions where the raised palm signals pause-coded interruption."
+      "note": "On Instagram ✋ usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as stopping someone, or volunteering to answer under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in hold-up-coded transitions, 'stop right there' content, and pause-coded reaction clips where the raised palm matches the stop-coded register."
+      "note": "In TikTok comments ✋ is the fastest way to answer a video without typing anything. The gesture stays stopping someone, or volunteering to answer, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Surfaces on server hold-up check-ins, friend-coded 'wait ✋' reveals, and pause-coded group chats where the raised palm matches the interruption-coded register."
+      "platform": "SLACK",
+      "note": "In Slack ✋ lands in channels where the sentence was supposed to be shorter. It is usually standing in for calling a meeting agenda back on track, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields ✋ heavily on stop-coded threads, hold-up-coded reveals, and 'wait ✋' tags where the raised palm matches the modern pause-coded interruption register."
+      "note": "Gen Z reaches for ✋ to do the work of calling a meeting agenda back on track, and treats the neutral drawing as the default rather than as a choice. What they hear first is stopping someone, or volunteering to answer."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the raised hand on high-five-coded nostalgia, 'I have a question ✋' coded moments, and stop-coded replies where the universal raised-palm cue still resonates."
+      "note": "Millennials tend to send ✋ deliberately, usually for something like jumping in to answer a question, and they read stopping someone, or volunteering to answer into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends ✋ on family-coded stop messages, work-coded 'I have a question' reveals, and 'hold on ✋' coded tags where the raised palm reads as pause-coded reference."
+      "note": "Gen X mostly uses ✋ literally, as the picture of the gesture itself, and is less likely to read stopping someone, or volunteering to answer into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads ✋ as a literal raised hand and sends it on family and grandchild-coded high-five messages without parsing the modern 'stop right there' pause-coded subtext."
+      "note": "Older senders use ✋ in the most straightforward way, on family and group messages, and are less likely to hear the stopping someone, or volunteering to answer subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "✋ and 🖐️ get swapped",
+      "description": "The Hand with Fingers Splayed 🖐️ is one tap away in every picker, and it does not carry the same reading — the two look nearly identical on most platforms, so people send whichever one their keyboard produced. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take ✋ as something else fairly often: it gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "✋ Raised Hand Emoji Meaning",
-  "seoDescription": "Learn what the Raised Hand emoji ✋ really means.",
+  "seoTitle": "✋ Raised Hand Emoji Meaning - What Does ✋ Really Mean?",
+  "seoDescription": "What the raised hand emoji ✋ means in text: stopping someone, or volunteering to answer. Includes the misread it invites (taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses) and how to reply.",
   "skinToneVariations": [
     "raised-hand-light",
     "raised-hand-medium-light",
@@ -83,60 +98,60 @@
     "raised-hand-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "✋ is the emoji of stop-coded pause — a raised palm facing forward, the iconography of pause-coded interruption, 'I have a question' call-out, and the universal 'hold up' tag. Where 👋 reads as waving-coded greeting and 🖐 reads as fingers-splayed-coded stop, ✋ captures the moment when the sender wants to communicate pause-coded interruption energy — a 'hold on ✋' partner check-in or a 'question ✋' work-coded call-out. The raised palm borrows from the universal classroom-question tradition and the modern hold-up-coded pause aesthetic, which is exactly why the emoji reads as stop-coded rather than literal high-five.\n\nIn real-world usage ✋ lives in the spaces where the sender wants to communicate pause-coded interruption. A partner sends it on a 'wait ✋' hold-up-coded check-in. A friend sends it on a 'hold on ✋' pause-coded reveal. A coworker sends it on a 'I have a question ✋' meeting-coded call-out. The raised palm is what makes the emoji feel stop-coded — it is not just 'hand,' it is 'raised-hand-coded pause.'\n\nWhat separates ✋ from the rest of the hand-gesture family is the pause-coded register. The emoji is not saying 'waving hand' (👋), 'fingers splayed' (🖐), or 'open hands' (👐). It is saying 'stop or question,' which carries a specific classroom-question tradition. That is why ✋ travels especially well on meeting-coded call-outs, hold-up-coded replies, and any context where the sender wants the message to land with pause-coded interruption energy.",
-    "howPeopleUseIt": "✋ shows up as the closer on a 'hold on ✋' pause-coded check-in, the punctuation on a 'wait ✋' hold-up reveal, and the softener on a 'I have a question ✋' meeting-coded message. It pairs naturally with sentences that name the pause-coded energy — 'hold on,' 'I have a question,' 'wait a sec' — and sits beautifully on hold-up-coded replies and meeting-coded call-outs.\n\nIn group chats ✋ anchors 'question moment' threads, pause-coded reveals, and 'stop right there ✋' coded tags where the raised palm matches the register. On Instagram it lands on high-five-coded story reposts and 'question ✋' reveals. On TikTok it travels in hold-up-coded transitions and 'wait ✋' reaction content.\n\nThe emoji also works in dating contexts. A 'hold on ✋' partner message uses the raised palm to communicate pause-coded soft romance. Across all of these surfaces the rule is the same: the more pause-coded the moment, the more natural ✋ feels.",
-    "whenNotToUse": "Skip ✋ in sympathy, condolence, or formal apology contexts. The stop-coded pause cue is the wrong tone for any conversation where the moment is tender. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid ✋ in passive-aggressive or coded-shutdown contexts where the pause-coded energy feels off. An 'I have heard enough ✋' message works for back-off; for tender moments use 🤝 or a sentence.\n\nSkip ✋ when you want to communicate a celebratory high-five. The pause-coded register is too interruption for celebration; use 🙌 or 🙏 when the high-five needs to land friendly.",
-    "howToReply": "If someone sends ✋, the cleanest mirror is another ✋, ✋, or a sentence that joins the pause-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'wait right back' or 'I have a question too.' If the raised palm feels too stop-coded, reply with a softer emoji (🤝 or 🙋) that signals pause without matching the interruption volume.\n\nWhen ✋ lands as a partner 'hold on ✋' check-in, mirror with another ✋, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'question ✋' meeting-coded call-out, mirror with another ✋, a sentence that joins the team energy, or a support emoji that matches.",
+    "overview": "✋ is the raised hand: an open hand held upright, palm forward, fingers spread wide. It arrived in Unicode 6.0, and it lives in the hand-gesture part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as stopping someone, or volunteering to answer. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🖐️ Hand with Fingers Splayed: the two look nearly identical on most platforms, so people send whichever one their keyboard produced. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same raised hand exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the raised hand emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are calling a meeting agenda back on track and jumping in to answer a question, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job ✋ does is calling a meeting agenda back on track. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is jumping in to answer a question. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread ✋ is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and ✋ goes back on its own. It reads as \"stopping someone, or volunteering to answer\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use ✋ when you mean 🖐️ Hand with Fingers Splayed. The two look nearly identical on most platforms, so people send whichever one their keyboard produced. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare ✋ in a thread about a person reads as \"stopping someone, or volunteering to answer\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and raised hand gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. ✋ in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of stopping someone, or volunteering to answer as arrogance.",
+    "howToReply": "The easy reply is to match it with the same ✋. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the raised hand was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like calling a meeting agenda back on track almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant stopping someone, or volunteering to answer or something sharper.",
     "faqs": [
       {
-        "question": "What does ✋ mean from a guy?",
-        "answer": "From a guy, ✋ signals stop-coded pause — 'hold on ✋' pause-coded check-in or 'I have a question ✋' meeting-coded call-out. The raised palm reads as pause-coded rather than literal high-five, so it tends to land on hold-up-coded replies, meeting-coded call-outs, and 'wait ✋' interruption tags."
+        "question": "What does ✋ mean in text?",
+        "answer": "✋ is used for stopping someone, or volunteering to answer. The drawing shows an open hand held upright, palm forward, fingers spread wide, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between ✋ and 🖐️?",
+        "answer": "The two look nearly identical on most platforms, so people send whichever one their keyboard produced. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
         "question": "Is ✋ rude?",
-        "answer": "It can be. In a passive-aggressive context ✋ can read as 'I have heard enough ✋' stop-coded back-off — the raised palm becomes a soft-coded shutdown. On its own the emoji is more pause-coded than rude."
+        "answer": "It can be. The gesture is meant as stopping someone, or volunteering to answer, but it gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What is the difference between ✋ and 👋?",
-        "answer": "👋 is the waving hand — the cue is waving-coded greeting, the universal 'hi or bye' energy. ✋ is the raised hand — the cue is raised-palm-coded, the 'hold up' pause-coded energy. Use 👋 when the moment is hi-and-bye-coded greeting; use ✋ when the moment is stop-coded pause interruption."
+        "question": "What does ✋ mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is ✋ for meeting-coded call-outs?",
-        "answer": "Yes — ✋ is one of the most popular pause-coded emojis. The raised palm is a natural fit for meeting-coded call-outs, hold-up-coded replies, and 'wait a sec' pause-coded tags."
-      },
-      {
-        "question": "Does ✋ mean stop?",
-        "answer": "Often yes — ✋ carries a raised palm facing forward and reads in modern usage as pause-coded interruption. The literal-high-five-versus-stop-coded-pause split depends on the sender and the channel."
+        "question": "What is the difference between ✋ and its skin-tone versions?",
+        "answer": "The tone variants under raised hand show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "hold on tonight, full pause-coded interruption ✋",
-      "interpretation": "Partner stop-coded romance. Mirror with another ✋, a heart emoji, or a sentence that escalates the pause."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this thread, the wait-a-sec moment ✋",
-      "interpretation": "Public pause-coded reply. Mirror with another ✋, a sentence that joins the pause-coded energy, or a support emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "hold on family, full pause-coded energy ✋",
-      "interpretation": "Family stop-coded reveal. Mirror with another ✋, a sentence that joins the family warmth, or a support emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "wait a sec today, full pause-coded energy ✋",
-      "interpretation": "Friend pause-coded reveal. Mirror with another ✋, a sentence that joins the stop-coded energy, or a support emoji that matches."
+      "message": "calling a meeting agenda back on track ✋",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as stopping someone, or volunteering to answer, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "I have a question at work, full pause-coded energy ✋",
-      "interpretation": "Work stop-coded moment. Mirror with another ✋, a sentence that joins the team energy, or a support emoji that matches."
+      "message": "jumping in to answer a question ✋",
+      "interpretation": "A handover or a sign-off in a channel. It reads as stopping someone, or volunteering to answer, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know ✋",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a high five when it is more often a stop or a claim on attention, since the palm-out pose is the one a teacher uses more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "calling a meeting agenda back on track ✋",
+      "interpretation": "Family threads are where this lands most naturally. The reading is stopping someone, or volunteering to answer, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post ✋",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }

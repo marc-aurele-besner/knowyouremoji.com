@@ -7,125 +7,151 @@
   "category": "people",
   "subcategory": "person-fantasy",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A mage or wizard, often in a pointed hat with a magical aura.",
-  "tldr": "Halloween-coded spellcaster, 'abracadabra' register, or costume/aesthetic magic.",
+  "baseMeaning": "Shows a figure in a wide pointed hat and long robe holding a staff.",
+  "tldr": "🧙 Mage — asking for help from something with real power.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "A mage or wizard figure.",
-      "example": "Wizard mode 🧙",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Halloween-coded costume reveal or magic-coded comfort.",
-      "example": "Costume reveal 🧙",
+      "meaning": "Borrowed as a reaction, it reads as asking for help from something with real power.",
+      "example": "Casting a wish in a group chat 🧙",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Witchy-coded flirt or 'casting a spell' register.",
-      "example": "You cast a spell 🧙",
+      "context": "IRONIC",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: asking for help from something with real power, said without believing any of it.",
+      "example": "sure, sure 🧙",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Game-coded 'level up' reaction or 'spell' reveal.",
-      "example": "Casting today 🧙",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — asking for help from something with real power — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧙",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure in a wide pointed hat and long robe holding a staff. Nothing hidden in the drawing itself.",
+      "example": "Begging the universe for a good outcome 🧙",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Piles up on Halloween-coded threads, witchy aesthetic reveals, and 'casting spells' hot takes where 🧙 reads as costume-coded mystic energy."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧙 exactly as the phone system does, but the keyboard keeps it in the person-fantasy section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like casting a wish in a group chat."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Anchors Halloween costume grids, witchy aesthetic stories, and 'spell-coded' aesthetic posts where 🧙 pairs with candles, crystals, and purple grading."
+      "note": "On Instagram 🧙 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as asking for help from something with real power under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in 'costume reveal' transitions, witchy-coded tutorials, and Halloween hot takes where the mage cue reads as mystic-coded flair."
+      "note": "In TikTok comments 🧙 is the fastest way to answer a video without typing anything. The gesture stays asking for help from something with real power, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🧙 lands in channels where the sentence was supposed to be shorter. It is usually standing in for begging the universe for a good outcome, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on D&D-coded campaign chats, witchy-coded aesthetic reveals, and Halloween-coded party invites where the mage cue fits the fantasy register."
+      "note": "On Discord 🧙 is a staple of the reaction bar, which is why it so often arrives stripped of its asking for help from something with real power reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Reaches for 🧙 on witchy aesthetic posts, Halloween costume reveals, and 'casting spells' partner flirts where the mage cue signals mystic-coded energy."
-    },
-    {
       "generation": "MILLENNIAL",
-      "note": "Treats 🧙 as the standard Halloween-coded emoji, sending it through October costume reveals and witchy-coded partner messages."
+      "note": "Millennials tend to send 🧙 deliberately, usually for something like casting a wish in a group chat, and they read asking for help from something with real power into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded Halloween costumes and D&D-coded campaign messages, treating the mage as literal wizard figure rather than aesthetic prop."
+      "note": "Gen X mostly uses 🧙 literally, as the picture of the gesture itself, and is less likely to read asking for help from something with real power into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads 🧙 as literal wizard and pairs it with fantasy-coded messaging; the Halloween costume and witchy-coded aesthetic registers are largely invisible."
+      "note": "Older senders use 🧙 in the most straightforward way, on family and group messages, and are less likely to hear the asking for help from something with real power subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🧙 to do the work of begging the universe for a good outcome, and treats the neutral drawing as the default rather than as a choice. What they hear first is asking for help from something with real power."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧙 and 🪄 get swapped",
+      "description": "The Magic Wand 🪄 is one tap away in every picker, and it does not carry the same reading — the wand is the tool alone, the mage brings a person and a request. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧙 as something else fairly often: it gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧙 Mage Emoji Meaning - What Does 🧙 Really Mean?",
-  "seoDescription": "Learn what the Mage emoji 🧙 really means. Halloween-coded spellcaster, 'abracadabra' register, or costume/aesthetic magic in modern texting.",
+  "seoTitle": "🧙 Mage Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🧙 Mage explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧙 is the emoji of Halloween-coded spellcaster - a mage or wizard, the iconography of 'abracadabra,' costume/aesthetic magic, and witchy-coded comfort. Where 🧛 reads as the gothic drain and 🧚 reads as the sparkly fairy, 🧙 captures the moment when the sender wants to communicate mystic energy - a 'costume reveal 🧙' Halloween post, a 'casting a spell 🧙' partner flirt, or a D&D-coded campaign message where the mage is the central class.\n\nIn real-world usage 🧙 lives in the spaces where the sender wants to communicate mystic-coded warmth. A partner sends it on a 'you cast a spell 🧙' affectionate message. A friend sends it on a 'Halloween costume reveal 🧙' post. A gamer sends it on a 'level up 🧙' campaign message. The mage cue is what makes the emoji feel mystic-coded - it is not just 'wizard,' it is 'wizard-coded costume.'\n\nWhat separates 🧙 from the rest of the fantasy-emoji family is the spellcaster register. The emoji is not saying 'vampire' (🧛), 'fairy' (🧚), or 'witch-coded hat.' It is saying 'mage-coded spellcaster,' which carries a specific mystic-coded charm. That is why 🧙 travels especially well on Halloween costume reveals, witchy-coded aesthetic posts, and any D&D or fantasy-coded context where the sender wants the message to land with magic-coded energy.",
-    "howPeopleUseIt": "🧙 shows up as the closer on a 'costume reveal 🧙' Halloween post ('costume reveal 🧙'), the punctuation on a 'casting a spell 🧙' partner flirt ('you cast a spell 🧙'), and the visual accessory on a witchy-coded aesthetic reveal ('witchy-coded mood 🧙'). It pairs naturally with sentences that name the magic - 'abracadabra,' 'casting spells,' 'witchy' - and sits beautifully on partner affection messages and family-coded Halloween reveals.\n\nIn group chats 🧙 anchors 'Halloween countdown' threads, witchy-coded moments, and 'October mood 🧙' reveals where the mage cue matches the season. On Instagram it lands on Halloween-coded aesthetic posts and costume reveal stories. On TikTok it travels in 'costume reveal' transitions and 'witchy' reveals.\n\nThe emoji also works in dating contexts. A 'you cast a spell on me 🧙' partner message uses the mage cue to communicate mystic-coded romance. Across all of these surfaces the rule is the same: the more mystic-coded the moment, the more natural 🧙 feels.",
-    "whenNotToUse": "Skip 🧙 outside the Halloween-to-early-November window. The costume-coded register feels out of season in March and reads as trying-too-hard in summer. A 🎩 or a generic emoji is a better fit outside the holiday window.\n\nSkip 🧙 when you want to communicate serious grief. The mystic-coded register is too playful for somber contexts; use 🕯️ or a quiet ❤️ when the moment calls for sympathy. And skip 🧙 in religious-coded contexts where the wizard-coded register reads as cultural friction.",
-    "howToReply": "If someone sends 🧙, the cleanest mirror is another 🧙, 🧚, or a sentence that joins the mystic-coded warmth. If you want to escalate the engagement, follow with a sentence that adds context: 'casting spells too' or 'witchy-coded energy.' If the mage cue feels too costume, reply with a softer emoji (❤️ or ✨) that signals warmth without matching the mystic volume.\n\nWhen 🧙 lands as a partner 'casting a spell' check-in, mirror with another 🧙, a heart emoji, or a sentence that escalates the romance. When it arrives on a Halloween thread, mirror with another 🧙, a sentence that joins the festive energy, or a 🎃 that matches the Halloween-coded register.",
+    "overview": "The complication is that the drawing invites a second reading. It gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🪄 Magic Wand: the wand is the tool alone, the mage brings a person and a request. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The mage comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the mage for? Mostly begging the universe for a good outcome, and then casting a wish in a group chat. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🧙 is a figure in a wide pointed hat and long robe holding a staff. It came into the emoji set in Unicode 10.0, under the person-fantasy heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is asking for help from something with real power. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🧙 sent to a colleague is a piece of work, 🧙 sent to a friend is a joke, and 🧙 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🧙 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"asking for help from something with real power\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is begging the universe for a good outcome: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is casting a wish in a group chat, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🧙 gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and mage gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🧙 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as asking for help from something with real power — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🪄 Magic Wand. The wand is the tool alone, the mage brings a person and a request. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🧙 sent as a reaction to somebody who is upset reads as asking for help from something with real power, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🧙 gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like begging the universe for a good outcome needs the sentence: the drawing alone leaves the reader deciding between asking for help from something with real power and something sharper.\n\nReply with 🧙 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🧙 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does 🧙 mean in texting?",
-        "answer": "In texting 🧙 means 'mystic energy,' 'Halloween costume,' or 'casting a spell.' The mage cue carries October-coded costume energy in family contexts and witchy-coded flirt in dating contexts, so context drives the reading."
+        "question": "What is the difference between 🧙 and 🪄?",
+        "answer": "The wand is the tool alone, the mage brings a person and a request. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🧙 rude?",
+        "answer": "It can be. The gesture is meant as asking for help from something with real power, but it gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 🧙 mean from a guy?",
-        "answer": "From a guy, 🧙 signals mystic-coded affection - 'casting a spell' or 'witchy-coded partner.' The mage cue reads as costume-coded rather than literal religion, so it tends to land on partner affection messages and Halloween-coded reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🧙 for Halloween only?",
-        "answer": "Not strictly - 🧙 reads as mystic-coded in any season, especially in witchy-coded aesthetics and D&D campaign chats. But its strongest register is October through early November, when the costume reveal context dominates."
+        "question": "What is the difference between 🧙 and its skin-tone versions?",
+        "answer": "The tone variants under mage show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🧙 and 🧚?",
-        "answer": "🧚 is the fairy - sparkly, light-coded, fairy-coded comfort. 🧙 is the mage - mystic, costume-coded, spellcaster-coded energy. Use 🧚 when the moment leans fairy-coded; use 🧙 when the moment leans mystic or costume-coded."
+        "question": "What does 🧙 mean in text?",
+        "answer": "🧙 is used for asking for help from something with real power. The drawing shows a figure in a wide pointed hat and long robe holding a staff, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "you cast a spell on me tonight, full mage energy 🧙",
-      "interpretation": "Partner mystic-coded romance. Mirror with another 🧙, a heart emoji, or a sentence that escalates the witchy-coded flirt."
+      "setting": "work",
+      "message": "casting a wish in a group chat 🧙",
+      "interpretation": "A handover or a sign-off in a channel. It reads as asking for help from something with real power, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "costume reveal drop, full Halloween mood 🧙",
-      "interpretation": "Public costume-coded reveal. Mirror with another 🧙, a sentence that joins the festive energy, or a 🎃 that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🧙",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets treated as a spooky caster when it is usually a polite request aimed upward — the robe and hat are theater for wanting a favor more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "Halloween night with the family, full mage 🧙",
-      "interpretation": "Family costume-coded reveal. Mirror with another 🧙, a sentence that joins the family warmth, or a 🎃 that matches."
+      "message": "begging the universe for a good outcome 🧙",
+      "interpretation": "Family threads are where this lands most naturally. The reading is asking for help from something with real power, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🧙",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "witchy party tonight, full abracadabra 🧙",
-      "interpretation": "Friend mystic-coded reveal. Mirror with another 🧙, a sentence that joins the energy, or a ✨ that matches."
-    },
-    {
-      "setting": "work",
-      "message": "casting spells on this deck today, full mage 🧙",
-      "interpretation": "Work magic-coded moment. Mirror with another 🧙, a sentence that joins the team energy, or a ✨ that matches."
+      "message": "begging the universe for a good outcome 🧙",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as asking for help from something with real power, and matching it with the same emoji is a normal reply."
     }
+  ],
+  "skinToneVariations": [
+    "mage-light",
+    "mage-medium-light",
+    "mage-medium",
+    "mage-medium-dark",
+    "mage-dark"
   ]
 }

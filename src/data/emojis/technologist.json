@@ -7,78 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A person working at a computer.",
-  "tldr": "Coder! Tech or programming.",
+  "baseMeaning": "A picture of a figure hunched over an open laptop, hands on the keyboard. Read in a message it lands as marking coding, deep work, or screen time.",
+  "tldr": "🧑‍💻 Technologist. In a chat it comes across as marking coding, deep work, or screen time.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the technologist cue.",
-      "example": "the coder 🧑‍💻",
+      "meaning": "The plain reading: a figure hunched over an open laptop, hands on the keyboard. Nothing hidden in the drawing itself.",
+      "example": "Announcing a long afternoon of debugging 🧑‍💻",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "coder-coded moment or coder-coded reveal.",
-      "example": "coder mode 🧑‍💻",
+      "meaning": "Borrowed as a reaction, it reads as marking coding, deep work, or screen time.",
+      "example": "Claiming a cafe table for a work block 🧑‍💻",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "coder-coded flirty tag or partner-coded moment.",
-      "example": "coder partner plan 🧑‍💻",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking coding, deep work, or screen time, softened by whatever sentence sits next to it.",
+      "example": "not me 🧑‍💻",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "coder-coded work moment or team energy.",
-      "example": "coder sprint 🧑‍💻",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking coding, deep work, or screen time — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍💻",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "🧑‍💻 lands on coder-coded threads, coder-tagged person-role posts, and 'coder-coded' reveals where the coder cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🧑‍💻 is a staple of modern-coded flat-lays, coder-canvas story backgrounds, and modern-coded profile accents; the coder cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🧑‍💻 travels in modern-coded transitions, coder reaction reveals, and 'coder-coded' listicle content where the coder cue signals modern-coded energy."
-    },
-    {
       "platform": "SLACK",
-      "note": "🧑‍💻 threads through modern-coded reactions, coder markers, and 'coder-coded' bullets in work channels where the coder cue fits the register."
+      "note": "In Slack 🧑‍💻 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a long afternoon of debugging, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "🧑‍💻 is an active reaction in modern-coded coder channels, server-coded coder markers, and 'coder-coded' reveals where the coder cue matches the modern-coded register."
+      "note": "On Discord 🧑‍💻 is a staple of the reaction bar, which is why it so often arrives stripped of its marking coding, deep work, or screen time reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧑‍💻 does most of its work in replies, where it tags a message like claiming a cafe table for a work block. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Technologist 🧑‍💻 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a long afternoon of debugging is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧑‍💻 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like claiming a cafe table for a work block."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧑‍💻 on modern-coded coder threads, coder-coded reveals, and 'coder-coded' moments where the coder cue matches the modern-coded register."
+      "note": "Gen Z reaches for 🧑‍💻 to do the work of announcing a long afternoon of debugging, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking coding, deep work, or screen time."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded coder moments, and coder-coded reveals where the universal coder cue fits."
+      "note": "Millennials tend to send 🧑‍💻 deliberately, usually for something like claiming a cafe table for a work block, and they read marking coding, deep work, or screen time into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded coder messages and coder reveals, treating the coder as literal modern-coded energy."
+      "note": "Gen X mostly uses 🧑‍💻 literally, as the picture of the gesture itself, and is less likely to read marking coding, deep work, or screen time into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal coder and uses it on modern-coded tags without parsing the modern coder-coded subtext."
+      "note": "Older senders use 🧑‍💻 in the most straightforward way, on family and group messages, and are less likely to hear the marking coding, deep work, or screen time subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍💻 and 👨‍💻 get swapped",
+      "description": "The Man Technologist 👨‍💻 is one tap away in every picker, and it does not carry the same reading — same pose, but the man-coded version is read as a stereotype, the neutral one as any colleague at a laptop. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍💻 as something else fairly often: it gets assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍💻 Technologist Emoji Meaning",
-  "seoDescription": "Learn what the Technologist emoji 🧑‍💻 really means.",
+  "seoTitle": "🧑‍💻 Technologist Emoji - What It Actually Means in Text",
+  "seoDescription": "🧑‍💻 Technologist meaning: marking coding, deep work, or screen time. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "technologist-light",
     "technologist-medium-light",
@@ -87,56 +98,60 @@
     "technologist-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Technologist is the emoji of gesture-coded reaction - the body language, the social performance, and the universal \"I have feelings\" tag. Where 🤦 reads as hands-to-forehead energy and 🙄 reads as eye-roll exasperation, Technologist captures the moment when the sender wants to communicate gesture-coded emotional energy - a \"technologist\" mood tag or an exasperation-coded reveal.\n\nThe body cue borrows from body language tradition and the modern mood-coded aesthetic, which is exactly why the emoji reads as gesture-coded rather than literal.\n\nWhat separates Technologist from the rest of the gesture family is the specific technologist register. The emoji is not saying 'generic gesture' (🤷). It is saying 'technologist-coded technologist,' which carries a specific mood, expression, or body-language specificity.\n\nIn real-world usage 🧑‍💻 Technologist lives in the spaces where the sender wants to communicate gesture energy. A partner sends it on a \"coder\" moment. A friend sends it on a \"gesture\" reveal. A coworker sends it on a \"coder\" tag. The coder cue is what makes the emoji feel gesture-coded - it is not just 'a moment,' it is 'coder-coded energy.'\n\nIn dating 🧑‍💻 Technologist works as a soft-coded coder tag, where the coder cue signals body language tradition. In work threads 🧑‍💻 Technologist lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🧑‍💻 feels.",
-    "howPeopleUseIt": "🧑‍💻 Technologist shows up as the closer on a \"coder moment\", the punctuation on a \"gesture\" reveal, and the softener on a \"coder-coded\" tag. It pairs naturally with sentences that name the gesture energy - 'coder,' 'body language tradition,' 'coder-coded' - and sits beautifully on reactions, emotional shares, mood-coded reveals, and gesture-coded moments.\n\nIn group chats 🧑‍💻 Technologist anchors 'coder moment' threads, gesture reveals, and 'coder' tags where the coder cue matches the register. On Instagram it lands on gesture flat-lays and gesture stories. On TikTok it travels in gesture transitions and 'coder' reaction content.\n\nThe emoji also works in dating contexts. A 'coder 🧑‍💻' partner message uses the coder cue to communicate gesture romance. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🧑‍💻 feels.",
-    "whenNotToUse": "Skip Technologist in celebration or victory contexts. The gesture-coded body cue is the wrong register for triumphant moments. A 🎉 or 🏆 keeps the message joyful.\n\nAvoid Technologist in formal or professional contexts where the gesture energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip Technologist when you want to communicate confidence. The gesture register is too expressive-coded for decisive moments; use 💪 or 🫡 when the moment needs strength.",
-    "howToReply": "If someone sends Technologist, the cleanest mirror is another Technologist, 🤦, or a sentence that joins the gesture energy. If the body cue feels too expressive-coded, reply with a softer emoji (🙃 or 🫠) that signals shared emotion without matching the gesture volume.\n\nWhen Technologist lands as a mood-coded complaint, mirror with another Technologist, an exasperation emoji, or a sentence that escalates the reaction. When it arrives as a work-coded reveal, mirror with another Technologist, a sentence that joins the frustration, or a solidarity emoji that fits.",
+    "overview": "The drawing of 🧑‍💻 is a figure hunched over an open laptop, hands on the keyboard. It arrived with Unicode 12.1 in the person-role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is marking coding, deep work, or screen time. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👨‍💻 Man Technologist: same pose, but the man-coded version is read as a stereotype, the neutral one as any colleague at a laptop. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe technologist also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the technologist reads as marking coding, deep work, or screen time, it is most often used for announcing a long afternoon of debugging or claiming a cafe table for a work block, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🧑‍💻 in a work thread is claiming a cafe table for a work block; 🧑‍💻 in a family thread is announcing a long afternoon of debugging; 🧑‍💻 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🧑‍💻 is the whole reply, and it is carrying a meaning nobody wrote down — marking coding, deep work, or screen time is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Announcing a long afternoon of debugging is the job the technologist does most: it saves a sentence and lands faster than one would have. Claiming a cafe table for a work block is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🧑‍💻 will get assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a technologist gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🧑‍💻 reads as marking coding, deep work, or screen time, and formality is exactly where that reading does the most damage.\n\nLeave 👨‍💻 Man Technologist for the other message. Same pose, but the man-coded version is read as a stereotype, the neutral one as any colleague at a laptop. And keep 🧑‍💻 out of threads where somebody is hurting: it reads as marking coding, deep work, or screen time there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🧑‍💻 gets assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled often enough that the sentence matters more than the picture.\n\nAnd do not send 🧑‍💻 alone when the message underneath is supposed to be warm. A message like announcing a long afternoon of debugging carries the feeling; the picture on its own leaves the reader choosing between marking coding, deep work, or screen time and something sharper.\n\nStart by reading what the 🧑‍💻 was doing. If it was a reaction, react: 🧑‍💻 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does Technologist mean in chat?",
-        "answer": "Technologist is the gesture-coded reaction - it borrows from body language tradition and signals an emotional reveal, mood-coded tag, or gesture-coded moment. The body cue is what makes the read feel gesture-coded rather than literal."
+        "question": "What is the difference between 🧑‍💻 and its skin-tone versions?",
+        "answer": "The tone variants under technologist show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is Technologist passive-aggressive?",
-        "answer": "Sometimes. In a texting thread Technologist can read as a mood-coded complaint - a \"I can't believe this\" tag or an exasperated-coded reveal. On its own it reads more gesture than aggressive."
+        "question": "What does 🧑‍💻 mean in text?",
+        "answer": "🧑‍💻 is used for marking coding, deep work, or screen time. The drawing shows a figure hunched over an open laptop, hands on the keyboard, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "What does Technologist mean from a coworker?",
-        "answer": "From a coworker, Technologist signals a gesture-coded reaction or work-coded exasperation. The body cue reads as mood-coded rather than literal, so it tends to land on complaint tags, team coded messages, and \"I need a break\" reveals."
+        "question": "What is the difference between 🧑‍💻 and 👨‍💻?",
+        "answer": "Same pose, but the man-coded version is read as a stereotype, the neutral one as any colleague at a laptop. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "When should I use Technologist?",
-        "answer": "Use Technologist for gesture-coded reactions, mood reveals, or body language moments. Avoid it when you want to communicate something neutral - the gesture cue is too expressive for calm moments."
+        "question": "Is 🧑‍💻 rude?",
+        "answer": "It can be. The gesture is meant as marking coding, deep work, or screen time, but it gets assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
+        "question": "What does 🧑‍💻 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "coder with the partner plan, full gesture energy 🧑‍💻",
-      "interpretation": "Partner gesture romance. Mirror with another 🧑‍💻, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the coder chaos 🧑‍💻",
-      "interpretation": "Public gesture flex. Mirror with another 🧑‍💻, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "coder with the family, full gesture energy 🧑‍💻",
-      "interpretation": "Family gesture reveal. Mirror with another 🧑‍💻, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🧑‍💻",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "coder today, full gesture energy 🧑‍💻",
-      "interpretation": "Friend gesture reveal. Mirror with another 🧑‍💻, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "announcing a long afternoon of debugging 🧑‍💻",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking coding, deep work, or screen time, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "coder sprint today, full gesture energy 🧑‍💻",
-      "interpretation": "Work gesture moment. Mirror with another 🧑‍💻, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "claiming a cafe table for a work block 🧑‍💻",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking coding, deep work, or screen time, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧑‍💻",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to mean \"I write code\" when it is far more often a stand-in for \"I am heads-down, do not disturb\" — the laptop and the hunch say busy rather than skilled more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "announcing a long afternoon of debugging 🧑‍💻",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking coding, deep work, or screen time, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

@@ -7,121 +7,151 @@
   "category": "People & Body",
   "subcategory": "Person Role",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person wearing a tuxedo",
-  "tldr": "Formal wear",
+  "baseMeaning": "A picture of a figure in a black tuxedo with a bow tie and pocket square. Read in a message it lands as marking formal wear, a wedding, or a milestone.",
+  "tldr": "🤵 Person in Tuxedo. In a chat it comes across as marking formal wear, a wedding, or a milestone.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Tuxedo or formal wear",
-      "example": "Wedding 🤵",
+      "meaning": "The plain reading: a figure in a black tuxedo with a bow tie and pocket square. Nothing hidden in the drawing itself.",
+      "example": "Announcing a wedding or engagement 🤵",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dressed up or dapper",
-      "example": "Suited up 🤵",
+      "meaning": "Borrowed as a reaction, it reads as marking formal wear, a wedding, or a milestone.",
+      "example": "Posting about a job offer or promotion 🤵",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Wedding-coded reaction or formal date tag.",
-      "example": "ready to marry 🤵",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking formal wear, a wedding, or a milestone, softened by whatever sentence sits next to it.",
+      "example": "not me 🤵",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Calling out a major life moment or promotion.",
-      "example": "got the job 🤵",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking formal wear, a wedding, or a milestone — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "In Slack 🤵 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a wedding or engagement, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🤵 is a staple of the reaction bar, which is why it so often arrives stripped of its marking formal wear, a wedding, or a milestone reading — a shape pressed rather than a message sent."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used for wedding-coded and adult-coded formal tweets. The tuxedo figure is the visible 'suited up' default across close-friends replies."
+      "note": "On X and Twitter 🤵 does most of its work in replies, where it tags a message like posting about a job offer or promotion. Short enough to survive being the whole post, which is exactly why it is used that way."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Common in wedding-coded stories and aesthetic-coded formal shares. The tuxedo figure reads as the visible groom default on story overlays and reply captions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded wedding clips. The tuxedo figure pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal formal default."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person in Tuxedo 🤵 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a wedding or engagement is the kind that carries it — the picture lands before the sentence does."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Group-chat reaction to wedding-coded content. The tuxedo figure is the default 'groom-ready' tag among close-friends groups."
+      "note": "WhatsApp renders 🤵 exactly as the phone system does, but the keyboard keeps it in the person role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like posting about a job offer or promotion."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Gen Z reaches for 🤵 to do the work of announcing a wedding or engagement, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking formal wear, a wedding, or a milestone."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Millennials tend to send 🤵 deliberately, usually for something like posting about a job offer or promotion, and they read marking formal wear, a wedding, or a milestone into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤵 literally, as the picture of the gesture itself, and is less likely to read marking formal wear, a wedding, or a milestone into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤵 literally for wedding references."
+      "note": "Older senders use 🤵 in the most straightforward way, on family and group messages, and are less likely to hear the marking formal wear, a wedding, or a milestone subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤵 and 🕴️ get swapped",
+      "description": "The Person in Suit Levitating 🕴️ is one tap away in every picker, and it does not carry the same reading — the levitating suit is a suit with no visible person, the tuxedo figure shows who is wearing it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤵 as something else fairly often: it gets assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤵 Person in Tuxedo Emoji Meaning - What Does 🤵 Really Mean?",
-  "seoDescription": "Learn what the person in tuxedo emoji 🤵 really means in texts and social media.",
+  "seoTitle": "🤵 Person in Tuxedo Emoji - What It Actually Means in Text",
+  "seoDescription": "🤵 Person in Tuxedo meaning: marking formal wear, a wedding, or a milestone. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "longForm": {
-    "overview": "The 🤵 Person in Tuxedo emoji was added in Unicode 9 (2016) and is drawn as a person wearing a black tuxedo with bow tie and white shirt visible. The visual cue reads instantly as wedding-coded reference, formal default, or the visible 'suited up' tag. By 2026 🤵 has become the go-to emoji for the wedding-coded reaction, the visible dapper default, and the groom-coded reaction in close-friends and family chats.\n\nIn modern chat 🤵 does very specific work. People send it as a literal formal-coded reference, as the visible 'I am dressed up' tag, or as the wedding-coded default. The tuxedo with bow tie is the visual cue that the read is formal or groom-coded. Writers should pick 🤵 when the read is wedding or visible 'suited up' energy, and avoid it when the read is full-on suit without bow tie — 👔 fits better there.",
-    "howPeopleUseIt": "🤵 lands on a friend's wedding-coded message, in a work channel where someone is signaling formal-coded energy, and in a dating-app DM where the sender is signaling dressed-up. The tuxedo with bow tie anchors the read.\n\nIn close-friends chats 🤵 reads as the universal groom default and the visible 'suited up' tag. On X the emoji punctuates wedding-coded and formal tweets. The emoji pairs with 👰 for the layered groom-and-bride stack and with 💍 for the layered tux-and-ring stack.",
-    "whenNotToUse": "Skip 🤵 in any context where the read is supposed to be casual. The tuxedo implies formality, not casual. Avoid 🤵 in casual contexts where the formal-coded read lands as overdressed.",
-    "howToReply": "If a friend sends 🤵 on a wedding-coded message, mirror with another 🤵 or 👰 to send matching energy. The formal chain reads as solidarity.\n\nIf 🤵 lands as the dapper default, reply with another 🤵 or 💍. And if you want to send 🤵 yourself, pair it with the moment so the wedding-coded read is clear.",
+    "overview": "The drawing of 🤵 is a figure in a black tuxedo with a bow tie and pocket square. It arrived with Unicode 13.0 in the person role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is marking formal wear, a wedding, or a milestone. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🕴️ Person in Suit Levitating: the levitating suit is a suit with no visible person, the tuxedo figure shows who is wearing it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person in tuxedo also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person in tuxedo reads as marking formal wear, a wedding, or a milestone, it is most often used for announcing a wedding or engagement or posting about a job offer or promotion, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🤵 in a work thread is posting about a job offer or promotion; 🤵 in a family thread is announcing a wedding or engagement; 🤵 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🤵 is the whole reply, and it is carrying a meaning nobody wrote down — marking formal wear, a wedding, or a milestone is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Announcing a wedding or engagement is the job the person in tuxedo does most: it saves a sentence and lands faster than one would have. Posting about a job offer or promotion is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🤵 will get assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person in tuxedo gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🤵 reads as marking formal wear, a wedding, or a milestone, and formality is exactly where that reading does the most damage.\n\nLeave 🕴️ Person in Suit Levitating for the other message. The levitating suit is a suit with no visible person, the tuxedo figure shows who is wearing it. And keep 🤵 out of threads where somebody is hurting: it reads as marking formal wear, a wedding, or a milestone there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🤵 gets assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment often enough that the sentence matters more than the picture.\n\nAnd do not send 🤵 alone when the message underneath is supposed to be warm. A message like announcing a wedding or engagement carries the feeling; the picture on its own leaves the reader choosing between marking formal wear, a wedding, or a milestone and something sharper.\n\nStart by reading what the 🤵 was doing. If it was a reaction, react: 🤵 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🤵 and its skin-tone versions?",
+        "answer": "The tone variants under person in tuxedo show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 🤵 mean in text?",
-        "answer": "🤵 means wedding-coded reference, formal energy, or the visible 'suited up' reaction. The tuxedo with bow tie is the visual cue that the read is wedding-coded."
+        "answer": "🤵 is used for marking formal wear, a wedding, or a milestone. The drawing shows a figure in a black tuxedo with a bow tie and pocket square, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🤵 flirty?",
-        "answer": "Sometimes. 🤵 reads as flirty-coded in a dating thread combined with 'we should get hitched' tag content."
+        "question": "What is the difference between 🤵 and 🕴️?",
+        "answer": "The levitating suit is a suit with no visible person, the tuxedo figure shows who is wearing it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🤵 mean from a girl?",
-        "answer": "From a girl or anyone, 🤵 carries the same wedding-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "Is 🤵 rude?",
+        "answer": "It can be. The gesture is meant as marking formal wear, a wedding, or a milestone, but it gets assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What does 🤵 mean on Instagram?",
-        "answer": "On Instagram, 🤵 is the default sticker on wedding-coded captions and aesthetic-coded groom story overlays."
+        "question": "What does 🤵 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
+      "setting": "social",
+      "message": "that is the whole post 🤵",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
       "setting": "friends",
-      "message": "wedding day 🤵",
-      "interpretation": "Friend wedding share. Mirror with another 🤵 or 👰 so the formal chain reads back."
+      "message": "announcing a wedding or engagement 🤵",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking formal wear, a wedding, or a milestone, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "suited up for the gala 🤵",
-      "interpretation": "Work-coded formal share. Mirror with a clarifying sentence — 🤵 can land as off-topic in work channels."
+      "message": "posting about a job offer or promotion 🤵",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking formal wear, a wedding, or a milestone, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "prom night 🤵",
-      "interpretation": "Dating-coded flirty share. Mirror with 🤵 or 🥰 so the warm chain reads back."
+      "message": "there is something you should know 🤵",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to signal a marriage announcement when it is far more often used for any life upgrade, from a new job to a first apartment more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "brother's wedding 🤵",
-      "interpretation": "Family-coded wedding share. Mirror with 🤵 or 👰 so the family-coded chain reads back."
-    },
-    {
-      "setting": "social",
-      "message": "ready to say I do 🤵",
-      "interpretation": "Public adult-coded wedding share. Mirror with another 🤵 or 💍 so the solidarity chain reads back."
+      "message": "announcing a wedding or engagement 🤵",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking formal wear, a wedding, or a milestone, and nobody in the thread is reading it as anything sharper than that."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26",
+  "skinToneVariations": [
+    "tuxedo-person-light",
+    "tuxedo-person-medium-light",
+    "tuxedo-person-medium",
+    "tuxedo-person-medium-dark",
+    "tuxedo-person-dark"
+  ]
 }

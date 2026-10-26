@@ -7,78 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person in Steamy Room emoji.",
-  "tldr": "Represents person in steamy room.",
+  "baseMeaning": "A drawing of a figure with a towel wrapped around the head, steam rising around them, used as signalling heat, overheating, or a spa break.",
+  "tldr": "🧖 Person in Steamy Room: signalling heat, overheating, or a spa break.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the person in steamy room cue.",
-      "example": "the sauna 🧖",
+      "meaning": "The plain reading: a figure with a towel wrapped around the head, steam rising around them. Nothing hidden in the drawing itself.",
+      "example": "Saying the meeting room is unbearably hot 🧖",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "sauna-coded moment or sauna-coded reveal.",
-      "example": "sauna mode 🧖",
+      "meaning": "Borrowed as a reaction, it reads as signalling heat, overheating, or a spa break.",
+      "example": "Posting a spa or sauna trip 🧖",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "sauna-coded flirty tag or partner-coded moment.",
-      "example": "sauna partner plan 🧖",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as signalling heat, overheating, or a spa break, softened by whatever sentence sits next to it.",
+      "example": "not me 🧖",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "sauna-coded work moment or team energy.",
-      "example": "sauna sprint 🧖",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — signalling heat, overheating, or a spa break — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧖",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "🧖 lands on sauna-coded threads, sauna-tagged sport posts, and 'sauna-coded' reveals where the sauna cue reads as modern-coded flex."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person in Steamy Room 🧖 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like saying the meeting room is unbearably hot is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧖 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like posting a spa or sauna trip."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "🧖 is a staple of modern-coded flat-lays, sauna-canvas story backgrounds, and modern-coded profile accents; the sauna cue anchors the visual."
+      "note": "On Instagram 🧖 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as signalling heat, overheating, or a spa break under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "🧖 travels in modern-coded transitions, sauna reaction reveals, and 'sauna-coded' listicle content where the sauna cue signals modern-coded energy."
+      "note": "In TikTok comments 🧖 is the fastest way to answer a video without typing anything. The gesture stays signalling heat, overheating, or a spa break, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "🧖 threads through modern-coded reactions, sauna markers, and 'sauna-coded' bullets in work channels where the sauna cue fits the register."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "🧖 is an active reaction in modern-coded sauna channels, server-coded sauna markers, and 'sauna-coded' reveals where the sauna cue matches the modern-coded register."
+      "note": "In Slack 🧖 lands in channels where the sentence was supposed to be shorter. It is usually standing in for saying the meeting room is unbearably hot, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧖 on modern-coded sauna threads, sauna-coded reveals, and 'sauna-coded' moments where the sauna cue matches the modern-coded register."
+      "note": "Gen Z reaches for 🧖 to do the work of saying the meeting room is unbearably hot, and treats the neutral drawing as the default rather than as a choice. What they hear first is signalling heat, overheating, or a spa break."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded sauna moments, and sauna-coded reveals where the universal sauna cue fits."
+      "note": "Millennials tend to send 🧖 deliberately, usually for something like posting a spa or sauna trip, and they read signalling heat, overheating, or a spa break into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded sauna messages and sauna reveals, treating the sauna as literal modern-coded energy."
+      "note": "Gen X mostly uses 🧖 literally, as the picture of the gesture itself, and is less likely to read signalling heat, overheating, or a spa break into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal sauna and uses it on modern-coded tags without parsing the modern sauna-coded subtext."
+      "note": "Older senders use 🧖 in the most straightforward way, on family and group messages, and are less likely to hear the signalling heat, overheating, or a spa break subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧖 and 🧘 get swapped",
+      "description": "The Person in Lotus Position 🧘 is one tap away in every picker, and it does not carry the same reading — the lotus figure reads as calm and centred, the steaming figure reads as overwhelmed and overheating. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧖 as something else fairly often: it gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🧖 Person in Steamy Room Emoji Meaning - What Does 🧖 Really Mean?",
-  "seoDescription": "Learn what the person in steamy room emoji 🧖 really means in texts and social media.",
+  "seoDescription": "What the person in steamy room emoji 🧖 means in text: signalling heat, overheating, or a spa break. Includes the misread it invites (taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort) and how to reply.",
   "skinToneVariations": [
     "sauna-light",
     "sauna-medium-light",
@@ -87,56 +98,60 @@
     "sauna-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The Person in Steamy Room emoji is the activity-coded tag - the person in steamy room tradition, the recreational cue, and the universal \"person in steamy room moment\" tag. Where 🎮 reads as gaming-coded energy and ⚽ reads as sports-coded energy, the Person in Steamy Room captures the moment when the sender wants to communicate activity-coded energy - a \"person in steamy room reveal\" tag or a \"sport-coded\" reveal.\n\nThe activity cue borrows from person in steamy room tradition and the modern person in steamy room-coded aesthetic, which is exactly why the emoji reads as person in steamy room-coded rather than literal.\n\nWhat separates the Person in Steamy Room emoji from the rest of the sport family is the specific person in steamy room register. The emoji is not saying 'generic activity' (🎮) but rather 'person in steamy room-coded person in steamy room,' which carries a specific recreational, sport, or hobby specificity.\n\nIn real-world usage 🧖 Person in Steamy Room lives in the spaces where the sender wants to communicate activity energy. A partner sends it on a \"sauna\" moment. A friend sends it on a \"activity\" reveal. A coworker sends it on a \"sauna\" tag. The sauna cue is what makes the emoji feel activity-coded - it is not just 'a moment,' it is 'sauna-coded energy.'\n\nIn dating 🧖 Person in Steamy Room works as a soft-coded sauna tag, where the sauna cue signals person in steamy room tradition. In work threads 🧖 Person in Steamy Room lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more activity the moment, the more natural 🧖 feels.",
-    "howPeopleUseIt": "🧖 Person in Steamy Room shows up as the closer on a \"sauna moment\", the punctuation on a \"activity\" reveal, and the softener on a \"sauna-coded\" tag. It pairs naturally with sentences that name the activity energy - 'sauna,' 'person in steamy room tradition,' 'sauna-coded' - and sits beautifully on person in steamy room reveals, sport-coded tags, recreational-coded moments, and hobby references.\n\nIn group chats 🧖 Person in Steamy Room anchors 'sauna moment' threads, activity reveals, and 'sauna' tags where the sauna cue matches the register. On Instagram it lands on activity flat-lays and activity stories. On TikTok it travels in activity transitions and 'sauna' reaction content.\n\nThe emoji also works in dating contexts. A 'sauna 🧖' partner message uses the sauna cue to communicate activity romance. Across all of these surfaces the rule is the same: the more activity the moment, the more natural 🧖 feels.",
-    "whenNotToUse": "Skip the Person in Steamy Room emoji in sympathy, condolence, or break-up contexts. The person in steamy room-coded cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid the Person in Steamy Room emoji in formal or professional contexts where the activity energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip the Person in Steamy Room emoji when you want to communicate something abstract. The Person in Steamy Room register is too person in steamy room-coded for emotional moments; use a heart or sentence when the moment needs warmth.",
-    "howToReply": "If someone sends the Person in Steamy Room emoji, the cleanest mirror is another Person in Steamy Room emoji, a related activity emoji, or a sentence that joins the person in steamy room energy. If the activity cue feels too sport-coded, reply with a softer emoji (🙌 or 🫶) that signals engagement without matching the activity volume.\n\nWhen the Person in Steamy Room emoji lands as a recreational-coded reveal, mirror with another Person in Steamy Room emoji, a related activity emoji, or a sentence that escalates the engagement. When it arrives as a person in steamy room-coded reference, mirror with another Person in Steamy Room emoji, a sentence that joins the moment, or an emoji that fits.",
+    "overview": "🧖 is the person in steamy room: a figure with a towel wrapped around the head, steam rising around them. It arrived in Unicode 13.0, and it lives in the sport part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as signalling heat, overheating, or a spa break. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧘 Person in Lotus Position: the lotus figure reads as calm and centred, the steaming figure reads as overwhelmed and overheating. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same person in steamy room exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the person in steamy room emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are saying the meeting room is unbearably hot and posting a spa or sauna trip, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🧖 does is saying the meeting room is unbearably hot. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is posting a spa or sauna trip. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🧖 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🧖 goes back on its own. It reads as \"signalling heat, overheating, or a spa break\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🧖 when you mean 🧘 Person in Lotus Position. The lotus figure reads as calm and centred, the steaming figure reads as overwhelmed and overheating. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🧖 in a thread about a person reads as \"signalling heat, overheating, or a spa break\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and person in steamy room gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🧖 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of signalling heat, overheating, or a spa break as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🧖. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the person in steamy room was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like saying the meeting room is unbearably hot almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant signalling heat, overheating, or a spa break or something sharper.",
     "faqs": [
       {
-        "question": "What does the Person in Steamy Room emoji mean in chat?",
-        "answer": "The Person in Steamy Room emoji is the activity-coded tag - it borrows from person in steamy room tradition and signals a person in steamy room reveal, sport-coded moment, or recreational-coded reference. The activity cue is what makes the read feel person in steamy room-coded rather than literal."
+        "question": "What does 🧖 mean in text?",
+        "answer": "🧖 is used for signalling heat, overheating, or a spa break. The drawing shows a figure with a towel wrapped around the head, steam rising around them, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is the Person in Steamy Room emoji useful in messaging?",
-        "answer": "Yes - the Person in Steamy Room emoji is one of the most useful sport-coded emojis. It works for person in steamy room-coded references, hobby reveals, and recreational tags where the activity cue adds specificity."
+        "question": "What is the difference between 🧖 and 🧘?",
+        "answer": "The lotus figure reads as calm and centred, the steaming figure reads as overwhelmed and overheating. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does the Person in Steamy Room emoji mean from a friend?",
-        "answer": "From a friend, the Person in Steamy Room emoji signals an activity-coded share or a \"look at this person in steamy room\" tag. The activity cue reads as person in steamy room-coded rather than literal, so it tends to land on casual coded messages, sport tags, and \"I'm doing this\" reveals."
+        "question": "Is 🧖 rude?",
+        "answer": "It can be. The gesture is meant as signalling heat, overheating, or a spa break, but it gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "When should I use the Person in Steamy Room emoji?",
-        "answer": "Use the Person in Steamy Room emoji for person in steamy room-coded references, sport reveals, or recreational moments. Avoid it when you want to communicate something abstract - the activity cue is too specific for emotional moments."
+        "question": "What does 🧖 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🧖 and its skin-tone versions?",
+        "answer": "The tone variants under person in steamy room show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "sauna with the partner plan, full activity energy 🧖",
-      "interpretation": "Partner activity romance. Mirror with another 🧖, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the sauna chaos 🧖",
-      "interpretation": "Public activity flex. Mirror with another 🧖, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "sauna with the family, full activity energy 🧖",
-      "interpretation": "Family activity reveal. Mirror with another 🧖, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "sauna today, full activity energy 🧖",
-      "interpretation": "Friend activity reveal. Mirror with another 🧖, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "saying the meeting room is unbearably hot 🧖",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as signalling heat, overheating, or a spa break, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "sauna sprint today, full activity energy 🧖",
-      "interpretation": "Work activity moment. Mirror with another 🧖, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "posting a spa or sauna trip 🧖",
+      "interpretation": "A handover or a sign-off in a channel. It reads as signalling heat, overheating, or a spa break, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧖",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken as a calm wellness moment when it is nearly always a complaint about being too hot, because the towel and steam read as discomfort more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "saying the meeting room is unbearably hot 🧖",
+      "interpretation": "Family threads are where this lands most naturally. The reading is signalling heat, overheating, or a spa break, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🧖",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }

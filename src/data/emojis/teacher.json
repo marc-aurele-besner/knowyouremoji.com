@@ -7,78 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A teacher or educator.",
-  "tldr": "Teacher! Education or learning.",
+  "baseMeaning": "A drawing of a figure beside a whiteboard, holding a pointer in one hand, used as teaching, grading, or being in charge of a lesson.",
+  "tldr": "🧑‍🏫 Teacher: teaching, grading, or being in charge of a lesson.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the teacher cue.",
-      "example": "the teacher 🧑‍🏫",
+      "meaning": "The plain reading: a figure beside a whiteboard, holding a pointer in one hand. Nothing hidden in the drawing itself.",
+      "example": "A classroom photo caption 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "teacher-coded moment or teacher-coded reveal.",
-      "example": "teacher mode 🧑‍🏫",
+      "meaning": "Borrowed as a reaction, it reads as teaching, grading, or being in charge of a lesson.",
+      "example": "Asking a coworker to explain something again 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "teacher-coded flirty tag or partner-coded moment.",
-      "example": "teacher partner plan 🧑‍🏫",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as teaching, grading, or being in charge of a lesson, softened by whatever sentence sits next to it.",
+      "example": "not me 🧑‍🏫",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "teacher-coded work moment or team energy.",
-      "example": "teacher sprint 🧑‍🏫",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — teaching, grading, or being in charge of a lesson — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍🏫",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "🧑‍🏫 lands on teacher-coded threads, teacher-tagged person-role posts, and 'teacher-coded' reveals where the teacher cue reads as modern-coded flex."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Teacher 🧑‍🏫 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like a classroom photo caption is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧑‍🏫 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like asking a coworker to explain something again."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "🧑‍🏫 is a staple of modern-coded flat-lays, teacher-canvas story backgrounds, and modern-coded profile accents; the teacher cue anchors the visual."
+      "note": "On Instagram 🧑‍🏫 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as teaching, grading, or being in charge of a lesson under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "🧑‍🏫 travels in modern-coded transitions, teacher reaction reveals, and 'teacher-coded' listicle content where the teacher cue signals modern-coded energy."
+      "note": "In TikTok comments 🧑‍🏫 is the fastest way to answer a video without typing anything. The gesture stays teaching, grading, or being in charge of a lesson, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "🧑‍🏫 threads through modern-coded reactions, teacher markers, and 'teacher-coded' bullets in work channels where the teacher cue fits the register."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "🧑‍🏫 is an active reaction in modern-coded teacher channels, server-coded teacher markers, and 'teacher-coded' reveals where the teacher cue matches the modern-coded register."
+      "note": "In Slack 🧑‍🏫 lands in channels where the sentence was supposed to be shorter. It is usually standing in for a classroom photo caption, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧑‍🏫 on modern-coded teacher threads, teacher-coded reveals, and 'teacher-coded' moments where the teacher cue matches the modern-coded register."
+      "note": "Gen Z reaches for 🧑‍🏫 to do the work of a classroom photo caption, and treats the neutral drawing as the default rather than as a choice. What they hear first is teaching, grading, or being in charge of a lesson."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded teacher moments, and teacher-coded reveals where the universal teacher cue fits."
+      "note": "Millennials tend to send 🧑‍🏫 deliberately, usually for something like asking a coworker to explain something again, and they read teaching, grading, or being in charge of a lesson into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded teacher messages and teacher reveals, treating the teacher as literal modern-coded energy."
+      "note": "Gen X mostly uses 🧑‍🏫 literally, as the picture of the gesture itself, and is less likely to read teaching, grading, or being in charge of a lesson into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal teacher and uses it on modern-coded tags without parsing the modern teacher-coded subtext."
+      "note": "Older senders use 🧑‍🏫 in the most straightforward way, on family and group messages, and are less likely to hear the teaching, grading, or being in charge of a lesson subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍🏫 and 🧑‍💻 get swapped",
+      "description": "The Technologist 🧑‍💻 is one tap away in every picker, and it does not carry the same reading — the technologist sits at a screen, the teacher stands at a board with a pointer in hand. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍🏫 as something else fairly often: it gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🏫 Teacher Emoji Meaning",
-  "seoDescription": "Learn what the Teacher emoji 🧑‍🏫 really means.",
+  "seoTitle": "🧑‍🏫 Teacher Emoji Meaning - What Does 🧑‍🏫 Really Mean?",
+  "seoDescription": "What the teacher emoji 🧑‍🏫 means in text: teaching, grading, or being in charge of a lesson. Includes the misread it invites (taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher) and how to reply.",
   "skinToneVariations": [
     "teacher-light",
     "teacher-medium-light",
@@ -87,56 +98,60 @@
     "teacher-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Teacher is the emoji of role-coded profession reveal - the career tradition, the role cue, and the universal \"this is my profession\" tag. Where 💼 reads as briefcase-coded work energy and 🧑 reads as person-coded identity energy, Teacher captures the moment when the sender wants to communicate role-coded profession energy - a \"teacher\" role tag or a career-coded reveal.\n\nThe role cue borrows from profession tradition and the modern role-coded aesthetic, which is exactly why the emoji reads as role-coded rather than literal.\n\nWhat separates Teacher from the rest of the role family is the specific teacher register. The emoji is not saying 'generic role' (💼). It is saying 'teacher-coded teacher,' which carries a specific profession, career, or role specificity.\n\nIn real-world usage 🧑‍🏫 Teacher lives in the spaces where the sender wants to communicate role energy. A partner sends it on a \"teacher\" moment. A friend sends it on a \"role\" reveal. A coworker sends it on a \"teacher\" tag. The teacher cue is what makes the emoji feel role-coded - it is not just 'a moment,' it is 'teacher-coded energy.'\n\nIn dating 🧑‍🏫 Teacher works as a soft-coded teacher tag, where the teacher cue signals profession. In work threads 🧑‍🏫 Teacher lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🏫 feels.",
-    "howPeopleUseIt": "🧑‍🏫 Teacher shows up as the closer on a \"teacher moment\", the punctuation on a \"role\" reveal, and the softener on a \"teacher-coded\" tag. It pairs naturally with sentences that name the role energy - 'teacher,' 'profession,' 'teacher-coded' - and sits beautifully on profession reveals, role-coded tags, career moments, and appreciation shares.\n\nIn group chats 🧑‍🏫 Teacher anchors 'teacher moment' threads, role reveals, and 'teacher' tags where the teacher cue matches the register. On Instagram it lands on role flat-lays and role stories. On TikTok it travels in role transitions and 'teacher' reaction content.\n\nThe emoji also works in dating contexts. A 'teacher 🧑‍🏫' partner message uses the teacher cue to communicate role romance. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🏫 feels.",
-    "whenNotToUse": "Skip Teacher in sympathy, condolence, or break-up contexts. The role-coded profession cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Teacher in casual contexts where the role energy feels too formal. A simpler emoji or a sentence keeps the message grounded.\n\nSkip Teacher when you want to communicate identity beyond profession. The role register is too career-coded for personal moments; use 🧑 or a sentence when the moment needs the whole person.",
-    "howToReply": "If someone sends Teacher, the cleanest mirror is another Teacher, 👏, or a sentence that joins the role energy. If the role cue feels too profession-coded, reply with a softer emoji (🙌 or 🫶) that signals appreciation without matching the role volume.\n\nWhen Teacher lands as a profession-coded flex, mirror with another Teacher, a clap emoji, or a sentence that escalates the appreciation. When it arrives as a work-coded reveal, mirror with another Teacher, a sentence that joins the celebration, or a heart emoji that fits.",
+    "overview": "🧑‍🏫 is the teacher: a figure beside a whiteboard, holding a pointer in one hand. It arrived in Unicode 12.1, and it lives in the person-role part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as teaching, grading, or being in charge of a lesson. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧑‍💻 Technologist: the technologist sits at a screen, the teacher stands at a board with a pointer in hand. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same teacher exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the teacher emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are a classroom photo caption and asking a coworker to explain something again, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🧑‍🏫 does is a classroom photo caption. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is asking a coworker to explain something again. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🧑‍🏫 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🧑‍🏫 goes back on its own. It reads as \"teaching, grading, or being in charge of a lesson\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🧑‍🏫 when you mean 🧑‍💻 Technologist. The technologist sits at a screen, the teacher stands at a board with a pointer in hand. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🧑‍🏫 in a thread about a person reads as \"teaching, grading, or being in charge of a lesson\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and teacher gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🧑‍🏫 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of teaching, grading, or being in charge of a lesson as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🧑‍🏫. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the teacher was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like a classroom photo caption almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant teaching, grading, or being in charge of a lesson or something sharper.",
     "faqs": [
       {
-        "question": "What does Teacher mean in chat?",
-        "answer": "Teacher is the role-coded profession reveal - it borrows from career tradition and signals a profession reveal, role-coded tag, or career-coded moment. The role cue is what makes the read feel role-coded rather than literal."
+        "question": "What does 🧑‍🏫 mean in text?",
+        "answer": "🧑‍🏫 is used for teaching, grading, or being in charge of a lesson. The drawing shows a figure beside a whiteboard, holding a pointer in one hand, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is Teacher flirty?",
-        "answer": "Sometimes. In a dating thread Teacher can read as playful-coded romance - a \"what's your dream job\" tag or a role-coded flirty hint. On its own it reads more role than romantic."
+        "question": "What is the difference between 🧑‍🏫 and 🧑‍💻?",
+        "answer": "The technologist sits at a screen, the teacher stands at a board with a pointer in hand. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does Teacher mean from a coworker?",
-        "answer": "From a coworker, Teacher signals a role-coded share or a profession-coded moment. The role cue reads as career-coded rather than literal, so it tends to land on work coded messages, profession tags, and \"look at my job\" reveals."
+        "question": "Is 🧑‍🏫 rude?",
+        "answer": "It can be. The gesture is meant as teaching, grading, or being in charge of a lesson, but it gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "When should I use Teacher?",
-        "answer": "Use Teacher for appreciation moments, role-coded reveals, or profession tags. Avoid it when you want to communicate identity beyond profession - the role cue is too career-coded for personal moments."
+        "question": "What does 🧑‍🏫 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🧑‍🏫 and its skin-tone versions?",
+        "answer": "The tone variants under teacher show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "teacher with the partner plan, full role energy 🧑‍🏫",
-      "interpretation": "Partner role romance. Mirror with another 🧑‍🏫, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the teacher chaos 🧑‍🏫",
-      "interpretation": "Public role flex. Mirror with another 🧑‍🏫, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "teacher with the family, full role energy 🧑‍🏫",
-      "interpretation": "Family role reveal. Mirror with another 🧑‍🏫, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "teacher today, full role energy 🧑‍🏫",
-      "interpretation": "Friend role reveal. Mirror with another 🧑‍🏫, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "a classroom photo caption 🧑‍🏫",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as teaching, grading, or being in charge of a lesson, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "teacher sprint today, full role energy 🧑‍🏫",
-      "interpretation": "Work role moment. Mirror with another 🧑‍🏫, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "asking a coworker to explain something again 🧑‍🏫",
+      "interpretation": "A handover or a sign-off in a channel. It reads as teaching, grading, or being in charge of a lesson, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧑‍🏫",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for any education worker when the artwork specifically reads as classroom instruction, so a tutor or a professor ends up looking like a school teacher more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "a classroom photo caption 🧑‍🏫",
+      "interpretation": "Family threads are where this lands most naturally. The reading is teaching, grading, or being in charge of a lesson, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🧑‍🏫",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }

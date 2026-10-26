@@ -7,121 +7,151 @@
   "category": "people",
   "subcategory": "hands",
   "unicodeVersion": "14.0",
-  "baseMeaning": "A hand extended to the right.",
-  "tldr": "Reaching out, offering, or direction.",
+  "baseMeaning": "A picture of a hand extended sideways, palm facing down, fingers pointing right. Read in a message it lands as handing something over, or passing the turn.",
+  "tldr": "🫱 Rightwards Hand. In a chat it comes across as handing something over, or passing the turn.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Hand extending to the right.",
-      "example": "Pass it over 🫱",
+      "meaning": "The plain reading: a hand extended sideways, palm facing down, fingers pointing right. Nothing hidden in the drawing itself.",
+      "example": "Passing a task to the next person 🫱",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Reaching out or offering.",
-      "example": "I got you 🫱",
+      "meaning": "Borrowed as a reaction, it reads as handing something over, or passing the turn.",
+      "example": "Handing over the last slice of pizza 🫱",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Extending hand or reaching out.",
-      "example": "Take my hand 🫱",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as handing something over, or passing the turn, softened by whatever sentence sits next to it.",
+      "example": "not me 🫱",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Passing responsibility.",
-      "example": "Your turn now 🫱",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — handing something over, or passing the turn — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🫱",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used with other hand emojis for handshake memes; pairs with 🫲 for the deal stack."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of collaborative content and 'passing it on' posts."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Comment-section direction emoji; reads as 'I am offering' or 'passing the baton.'"
+      "platform": "SLACK",
+      "note": "In Slack 🫱 lands in channels where the sentence was supposed to be shorter. It is usually standing in for passing a task to the next person, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Used in roleplay servers and 'handing off' workflow messages."
+      "note": "On Discord 🫱 is a staple of the reaction bar, which is why it so often arrives stripped of its handing something over, or passing the turn reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🫱 does most of its work in replies, where it tags a message like handing over the last slice of pizza. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Rightwards Hand 🫱 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like passing a task to the next person is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🫱 exactly as the phone system does, but the keyboard keeps it in the hands section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like handing over the last slice of pizza."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Often combined with leftwards hand 🫲 for handshake memes; reads as 'deal.'"
+      "note": "Gen Z reaches for 🫱 to do the work of passing a task to the next person, and treats the neutral drawing as the default rather than as a choice. What they hear first is handing something over, or passing the turn."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Used for reaching out contexts; the directional read is more common than the meme."
+      "note": "Millennials tend to send 🫱 deliberately, usually for something like handing over the last slice of pizza, and they read handing something over, or passing the turn into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🫱 literally, as the picture of the gesture itself, and is less likely to read handing something over, or passing the turn into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May interpret as simple directional gesture."
+      "note": "Older senders use 🫱 in the most straightforward way, on family and group messages, and are less likely to hear the handing something over, or passing the turn subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🫱 and 👉 get swapped",
+      "description": "The Backhand Index Pointing Right 👉 is one tap away in every picker, and it does not carry the same reading — the pointing finger singles out a target, the flat hand sweeps the offer across. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🫱 as something else fairly often: it gets read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫱 Rightwards Hand Emoji Meaning - What Does 🫱 Really Mean?",
-  "seoDescription": "Learn what the rightwards hand emoji 🫱 really means. From reaching out to offering, discover all its uses.",
+  "seoTitle": "🫱 Rightwards Hand Emoji - What It Actually Means in Text",
+  "seoDescription": "🫱 Rightwards Hand meaning: handing something over, or passing the turn. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The 🫱 rightwards hand was added in Unicode 14 (2021) as the mirror of 🫲. The default read is 'hand extending to the right,' which functions both as a directional cue ('hand it over there') and as the right half of a handshake pair when stacked with 🫲. In 2026 🫱 lives in tutorial captions, in 'handing off' reactions, and in handshake memes where two hands meet to signal a deal.\n\nIn real-world chat 🫱 does the opposite work of 🫲 — it is the 'offering' hand rather than the 'receiving' hand. People send it as a directional cue, as a 'handing off' signal, or as the right half of a handshake stack. The direction matters for the read. Writers should pick 🫱 when the message is about offering or reaching out, and avoid it when a generic 👋 would land cleaner.",
-    "howPeopleUseIt": "🫱 shows up at the end of 'passing it on' posts, in collaborative-content captions, and as the right half of a handshake stack. People send it as a directional cue in workflow messages, as a 'handing off' signal when passing work, or as the right half of a 🤝-replacement emoji pair. The emoji pairs naturally with 🫲 for the handshake and with 🤝 for the agreement stack.\n\nIn close-friends chats 🫱 can read as 'I got you' — a supportive offer. In dating-app messages it can land as 'take my hand,' which is sweeter than it sounds. In work channels it is the directional cue for handing off a task.",
-    "whenNotToUse": "Skip 🫱 in any context where the directional read will confuse the message — a casual chat where direction does not matter, a friend group where the gesture is too literal. Avoid it in any professional context where the directional cue could read as commanding rather than offering.\n\nAlso avoid 🫱 in ironic or sarcastic contexts where the recipient will read it as a literal command rather than a meme.",
-    "howToReply": "Mirror 🫱 with 🫲 for the handshake, or pair with 🤝 for the agreement stack. If the sender is signaling 'I am offering,' mirror with 🫱 or 👍 to confirm. If the sender is using 🫱 as a directional cue, follow the direction.\n\nIf 🫱 lands as part of a handshake deal, mirror with 🫲 and a follow-up that confirms the agreement.",
+    "overview": "The drawing of 🫱 is a hand extended sideways, palm facing down, fingers pointing right. It arrived with Unicode 14.0 in the hands section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is handing something over, or passing the turn. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👉 Backhand Index Pointing Right: the pointing finger singles out a target, the flat hand sweeps the offer across. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe rightwards hand also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the rightwards hand reads as handing something over, or passing the turn, it is most often used for passing a task to the next person or handing over the last slice of pizza, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🫱 in a work thread is handing over the last slice of pizza; 🫱 in a family thread is passing a task to the next person; 🫱 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🫱 is the whole reply, and it is carrying a meaning nobody wrote down — handing something over, or passing the turn is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Passing a task to the next person is the job the rightwards hand does most: it saves a sentence and lands faster than one would have. Handing over the last slice of pizza is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🫱 will get read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a rightwards hand gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🫱 reads as handing something over, or passing the turn, and formality is exactly where that reading does the most damage.\n\nLeave 👉 Backhand Index Pointing Right for the other message. The pointing finger singles out a target, the flat hand sweeps the offer across. And keep 🫱 out of threads where somebody is hurting: it reads as handing something over, or passing the turn there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🫱 gets read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open often enough that the sentence matters more than the picture.\n\nAnd do not send 🫱 alone when the message underneath is supposed to be warm. A message like passing a task to the next person carries the feeling; the picture on its own leaves the reader choosing between handing something over, or passing the turn and something sharper.\n\nStart by reading what the 🫱 was doing. If it was a reaction, react: 🫱 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🫱 mean in text?",
-        "answer": "🫱 means a hand extending to the right — 'offering,' 'passing it on,' or the right half of a handshake when paired with 🫲."
+        "question": "What is the difference between 🫱 and its skin-tone versions?",
+        "answer": "The tone variants under rightwards hand show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What does 🫲🫱 mean together?",
-        "answer": "🫲🫱 together means a handshake — 'deal,' 'agreement,' or 'we are meeting in the middle.' It is a meme-friendly replacement for 🤝."
+        "question": "What does 🫱 mean in text?",
+        "answer": "🫱 is used for handing something over, or passing the turn. The drawing shows a hand extended sideways, palm facing down, fingers pointing right, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🫱 and 👉?",
-        "answer": "👉 is a pointing finger (literally 'look this way'); 🫱 is an open palm extending right (literally 'hand it to me'). The shape changes the read."
+        "answer": "The pointing finger singles out a target, the flat hand sweeps the offer across. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "When should I use 🫱?",
-        "answer": "Use 🫱 as a directional cue, an 'offering' signal, or as the right half of a handshake. Avoid it in casual chats where direction does not matter."
+        "question": "Is 🫱 rude?",
+        "answer": "It can be. The gesture is meant as handing something over, or passing the turn, but it gets read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
+        "question": "What does 🫱 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "tagging you next 🫱",
-      "interpretation": "Playful 'passing the baton' cue. Mirror with the opposite hand or 😂."
+      "setting": "social",
+      "message": "that is the whole post 🫱",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
-      "setting": "dating",
-      "message": "take my hand 🫱",
-      "interpretation": "Sweet romantic offer. Mirror with the opposite hand 🫲 to complete the handshake."
+      "setting": "friends",
+      "message": "passing a task to the next person 🫱",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as handing something over, or passing the turn, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "I'll hand this off 🫱",
-      "interpretation": "Workflow direction cue in a work channel. Reply with 👍 to confirm or ask a clarifying question."
+      "message": "handing over the last slice of pizza 🫱",
+      "interpretation": "A handover or a sign-off in a channel. It reads as handing something over, or passing the turn, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🫱",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as pointing at something when it is more often about moving a task along — the sideways hand resembles the pointing finger but stays flat and open more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "your turn to drive 🫱",
-      "interpretation": "Family direction cue. Mirror with a sentence acknowledging the handoff."
-    },
-    {
-      "setting": "social",
-      "message": "deal? 🫱",
-      "interpretation": "Public handshake prompt. Mirror with 🫲 to seal the deal."
+      "message": "passing a task to the next person 🫱",
+      "interpretation": "Family threads are where this lands most naturally. The reading is handing something over, or passing the turn, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "rightwards-hand-light",
+    "rightwards-hand-medium-light",
+    "rightwards-hand-medium",
+    "rightwards-hand-medium-dark",
+    "rightwards-hand-dark"
   ]
 }

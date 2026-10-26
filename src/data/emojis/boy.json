@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A boy, often depicted with youthful features.",
-  "tldr": "Boy-coded youth, 'kid energy' register, or family-coded comfort.",
+  "baseMeaning": "A drawing of a young boy with short hair and a plain shirt, facing forward, used as signalling a younger brother, a kid, or playful youth.",
+  "tldr": "👦 Boy: signalling a younger brother, a kid, or playful youth.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A boy or young male.",
-      "example": "Saw a boy 👦",
+      "meaning": "The plain reading: a young boy with short hair and a plain shirt, facing forward. Nothing hidden in the drawing itself.",
+      "example": "Calling out a younger brother in a family photo 👦",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Boy-coded youth or 'kid energy' register.",
-      "example": "Kid energy 👦",
+      "meaning": "Borrowed as a reaction, it reads as signalling a younger brother, a kid, or playful youth.",
+      "example": "Naming the friend who acts the youngest in the group 👦",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Cozy-coded partner check-in or 'kiddo for you' moment.",
-      "example": "Kiddo for you 👦",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as signalling a younger brother, a kid, or playful youth, softened by whatever sentence sits next to it.",
+      "example": "not me 👦",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Family-coded team energy or 'son-coded' moment.",
-      "example": "Son-coded 👦",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — signalling a younger brother, a kid, or playful youth — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👦",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors boy-coded threads, 'kid energy' replies, and 'mood 👦' reveals where the boy cue matches the youth register."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Boy 👦 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like calling out a younger brother in a family photo is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 👦 exactly as the phone system does, but the keyboard keeps it in the person section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like naming the friend who acts the youngest in the group."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on family-coded story reposts, kid-coded photo posts, and 'mood 👦' reveals where the boy cue reads as youth-coded comfort."
+      "note": "On Instagram 👦 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as signalling a younger brother, a kid, or playful youth under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in boy-coded transitions, 'kiddo for you' reveals, and reaction-content where the boy cue signals youth-coded energy."
+      "note": "In TikTok comments 👦 is the fastest way to answer a video without typing anything. The gesture stays signalling a younger brother, a kid, or playful youth, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Surfaces on partner 'kiddo for you' check-ins, family-coded son messages, and group chats where the boy cue matches the moment."
+      "platform": "SLACK",
+      "note": "In Slack 👦 lands in channels where the sentence was supposed to be shorter. It is usually standing in for calling out a younger brother in a family photo, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 👦 heavily on boy-coded threads, 'kid energy' moments, and youth-coded reveals where the boy cue matches the youth register."
+      "note": "Gen Z reaches for 👦 to do the work of calling out a younger brother in a family photo, and treats the neutral drawing as the default rather than as a choice. What they hear first is signalling a younger brother, a kid, or playful youth."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the boy on partner 'kiddo for you' check-ins, youth-coded comfort moments, and family son messages where the universal kid cue fits."
+      "note": "Millennials tend to send 👦 deliberately, usually for something like naming the friend who acts the youngest in the group, and they read signalling a younger brother, a kid, or playful youth into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded messages and family reveals, treating the boy as literal youth energy."
+      "note": "Gen X mostly uses 👦 literally, as the picture of the gesture itself, and is less likely to read signalling a younger brother, a kid, or playful youth into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal boy and sends it on family and grandchild-coded messages without parsing the modern 'kid energy' subtext."
+      "note": "Older senders use 👦 in the most straightforward way, on family and group messages, and are less likely to hear the signalling a younger brother, a kid, or playful youth subtext in it."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as ageist-coded in adult contexts",
-      "description": "Sending 👦 to adult men in partner or work contexts where the ageist-coded reading is unwelcome can land as condescending-coded. Be aware of the personal-coded reading when sending to adults.",
+      "title": "👦 and 👧 get swapped",
+      "description": "The Girl 👧 is one tap away in every picker, and it does not carry the same reading — both are youth figures with similar proportions, but one codes male and the other female. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👦 as something else fairly often: it gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
   "seoTitle": "👦 Boy Emoji Meaning - What Does 👦 Really Mean?",
-  "seoDescription": "Learn what the Boy emoji 👦 really means in texts and DMs. Boy-coded youth, 'kid energy' register, or family-coded comfort.",
+  "seoDescription": "What the boy emoji 👦 means in text: signalling a younger brother, a kid, or playful youth. Includes the misread it invites (taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely) and how to reply.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👦 is the emoji of boy-coded youth - a boy, the iconography of 'kid energy,' youth-coded comfort, and 'kiddo for you' register. Where 👶 reads as baby-coded softness and 👨 reads as adult-coded default, 👦 captures the moment when the sender wants to communicate youth-coded intimacy - a 'kiddo for you 👦' partner moment or a 'kid energy 👦' family reveal. The boy cue borrows from the universal kid tradition and the modern 'kid energy' aesthetic, which is exactly why the emoji reads as youth-coded rather than literal youth.\n\nIn real-world usage 👦 lives in the spaces where the sender wants to communicate youth-coded comfort. A partner sends it on a 'kiddo for you 👦' check-in. A friend sends it on a 'kid energy 👦' reveal. A coworker sends it on a 'son-coded 👦' work message. The boy cue is what makes the emoji feel youth-coded - it is not just 'boy,' it is 'boy-coded kid-energy.'\n\nWhat separates 👦 from the rest of the people-emoji family is the kid-energy register. The emoji is not saying 'baby softness' (👶), 'adult default' (👨), or 'granny wisdom' (👵). It is saying 'boy-coded youth,' which carries a specific youth-coded charm. That is why 👦 travels especially well on partner 'kiddo for you' check-ins, family son messages, and any context where the sender wants the message to land with youth-coded comfort.",
-    "howPeopleUseIt": "👦 shows up as the closer on a 'kiddo for you tonight' partner message ('kiddo for you tonight 👦'), the punctuation on a 'kid energy 👦' youth-coded reveal ('kid energy 👦'), and the softener on a 'son-coded 👦' team check-in. It pairs naturally with sentences that name the boy-coded youth - 'kiddo for you,' 'kid energy,' 'son-coded' - and sits beautifully on partner 'kiddo for you' check-ins and family son messages.\n\nIn group chats 👦 anchors 'boy appreciation' threads, youth-coded moments, and 'mood 👦' reveals where the boy cue matches the moment. On Instagram it lands on family-coded story reposts and kid-coded photo posts. On TikTok it travels in boy-coded transitions and 'mood 👦' reveals.\n\nThe emoji also works in dating contexts. A 'kiddo for you tonight 👦' partner message uses the boy cue to communicate youth-coded romance. Across all of these surfaces the rule is the same: the more youth-coded the comfort, the more natural 👦 feels.",
-    "whenNotToUse": "Skip 👦 in sympathy, condolence, or break-up contexts. The boy-coded youth cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👦 to adult men in partner or work contexts where the ageist-coded reading is unwelcome - the condescending-coded register can land as off. Stick to a sentence or a clear message when sending to adults.\n\nSkip 👦 when you want to communicate serious affection. The youth-coded register is too kid-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 👦, the cleanest mirror is another 👦, 👧, or a sentence that joins the youth-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'kiddo for you right back' or 'kid energy too.' If the boy cue feels too youth-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the youth volume.\n\nWhen 👦 lands as a partner 'kiddo for you' check-in, mirror with another 👦, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'kid energy 👦' youth reveal, mirror with another 👦, a sentence that joins the youth energy, or a heart emoji that matches.",
+    "overview": "👦 is the boy: a young boy with short hair and a plain shirt, facing forward. It arrived in Unicode 13.0, and it lives in the person part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as signalling a younger brother, a kid, or playful youth. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👧 Girl: both are youth figures with similar proportions, but one codes male and the other female. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same boy exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the boy emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are calling out a younger brother in a family photo and naming the friend who acts the youngest in the group, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 👦 does is calling out a younger brother in a family photo. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is naming the friend who acts the youngest in the group. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 👦 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 👦 goes back on its own. It reads as \"signalling a younger brother, a kid, or playful youth\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 👦 when you mean 👧 Girl. Both are youth figures with similar proportions, but one codes male and the other female. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 👦 in a thread about a person reads as \"signalling a younger brother, a kid, or playful youth\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and boy gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 👦 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of signalling a younger brother, a kid, or playful youth as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 👦. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the boy was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like calling out a younger brother in a family photo almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant signalling a younger brother, a kid, or playful youth or something sharper.",
     "faqs": [
       {
+        "question": "What does 👦 mean in text?",
+        "answer": "👦 is used for signalling a younger brother, a kid, or playful youth. The drawing shows a young boy with short hair and a plain shirt, facing forward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 👦 and 👧?",
+        "answer": "Both are youth figures with similar proportions, but one codes male and the other female. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 👦 rude?",
+        "answer": "It can be. The gesture is meant as signalling a younger brother, a kid, or playful youth, but it gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 👦 mean from a guy?",
-        "answer": "From a guy, 👦 signals boy-coded youth - 'kid energy' or 'kiddo for you.' The boy cue reads as youth-coded rather than literal youth, so it tends to land on partner 'kiddo for you' check-ins, family son messages, and youth-coded reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 👦 flirty?",
-        "answer": "It can be. In a partner context 👦 can read as youth-coded romance - 'kiddo for you tonight 👦' is a soft-coded romantic check-in. On its own the emoji is more youth-coded than romantic."
-      },
-      {
-        "question": "What is the difference between 👦 and 👨?",
-        "answer": "👨 is the man - the cue is man-coded default, the 'adult' full-grown man energy. 👦 is the boy - the cue is boy-coded youth, the 'kid energy' youth-only kid charm. Use 👨 when the moment is adult man; use 👦 when the moment is youth boy."
-      },
-      {
-        "question": "Is 👦 for 'kid energy' moments?",
-        "answer": "Yes - 👦 is one of the most common youth-coded emojis. The boy cue is a natural fit for 'kid energy' moments, youth-coded reveals, and partner 'kiddo for you' check-ins."
+        "question": "What is the difference between 👦 and its skin-tone versions?",
+        "answer": "The tone variants under boy show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "kiddo for you tonight, full boy romance 👦",
-      "interpretation": "Partner youth-coded romance. Mirror with another 👦, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the kid energy 👦",
-      "interpretation": "Public boy appreciation. Mirror with another 👦, a sentence that joins the youth energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "son-coded with the family, full boy mode 👦",
-      "interpretation": "Family family-coded reveal. Mirror with another 👦, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "kid energy today, full youth energy 👦",
-      "interpretation": "Friend youth-coded reveal. Mirror with another 👦, a sentence that joins the youth energy, or a heart emoji that matches."
+      "message": "calling out a younger brother in a family photo 👦",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as signalling a younger brother, a kid, or playful youth, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "son-coded today, full boy mode 👦",
-      "interpretation": "Work family-coded moment. Mirror with another 👦, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "naming the friend who acts the youngest in the group 👦",
+      "interpretation": "A handover or a sign-off in a channel. It reads as signalling a younger brother, a kid, or playful youth, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👦",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken literally as a child when it is more often used to talk about a younger male friend, a brother, or a joke about behaving immaturely more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "calling out a younger brother in a family photo 👦",
+      "interpretation": "Family threads are where this lands most naturally. The reading is signalling a younger brother, a kid, or playful youth, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 👦",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
+  ],
+  "skinToneVariations": [
+    "boy-light",
+    "boy-medium-light",
+    "boy-medium",
+    "boy-medium-dark",
+    "boy-dark"
   ]
 }

@@ -7,74 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Snowboarder emoji.",
-  "tldr": "Represents snowboarder.",
+  "baseMeaning": "A rider leaning into a carve on a single snowboard — describing speed, a cold trip, or a wipeout.",
+  "tldr": "The snowboarder emoji 🏂 reads as describing speed, a cold trip, or a wipeout.",
   "contextMeanings": [
     {
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as describing speed, a cold trip, or a wipeout, softened by whatever sentence sits next to it.",
+      "example": "not me 🏂",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — describing speed, a cold trip, or a wipeout — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🏂",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of snowboarder.",
-      "example": "Time for snowboarder 🏂",
+      "meaning": "The plain reading: a rider leaning into a carve on a single snowboard. Nothing hidden in the drawing itself.",
+      "example": "Bragging about a weekend in the mountains 🏂",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🏂",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try snowboarder? 🏂",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🏂",
+      "meaning": "Borrowed as a reaction, it reads as describing speed, a cold trip, or a wipeout.",
+      "example": "Describing a turn nobody else noticed 🏂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on action coded snowboarder threads, movement-marker reveal posts, and snowboarder-pulse coded lists."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Staple of action coded snowboarder flat-lays, action-canvas story backgrounds, and movement-marker profile accents."
+      "note": "On Instagram 🏂 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as describing speed, a cold trip, or a wipeout under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in action coded snowboarder transitions, movement-marker reaction reveals, and snowboarder-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors action coded snowboarder status messages, role-coded movement-marker markers, and snowboarder-pulse coded reactions."
+      "note": "In TikTok comments 🏂 is the fastest way to answer a video without typing anything. The gesture stays describing speed, a cold trip, or a wipeout, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through action coded snowboarder reactions, movement-marker markers, and snowboarder-pulse coded bullets."
+      "note": "In Slack 🏂 lands in channels where the sentence was supposed to be shorter. It is usually standing in for bragging about a weekend in the mountains, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🏂 is a staple of the reaction bar, which is why it so often arrives stripped of its describing speed, a cold trip, or a wipeout reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🏂 does most of its work in replies, where it tags a message like describing a turn nobody else noticed. Short enough to survive being the whole post, which is exactly why it is used that way."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 🏂 in casual contexts."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Familiar with 🏂 across platforms."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🏂 literally, as the picture of the gesture itself, and is less likely to read describing speed, a cold trip, or a wipeout into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🏂 literally."
+      "note": "Older senders use 🏂 in the most straightforward way, on family and group messages, and are less likely to hear the describing speed, a cold trip, or a wipeout subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🏂 to do the work of bragging about a weekend in the mountains, and treats the neutral drawing as the default rather than as a choice. What they hear first is describing speed, a cold trip, or a wipeout."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🏂 deliberately, usually for something like describing a turn nobody else noticed, and they read describing speed, a cold trip, or a wipeout into it more often than the older cohorts do."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🏂 and ⛷️ get swapped",
+      "description": "The Skier ⛷️ is one tap away in every picker, and it does not carry the same reading — the skier stands upright on two skis with poles, the rider carves sideways on one board. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🏂 as something else fairly often: it gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏂 Snowboarder Emoji Meaning - What Does 🏂 Really Mean?",
-  "seoDescription": "Learn what the snowboarder emoji 🏂 really means in texts and social media.",
+  "seoTitle": "What Does the Snowboarder Emoji 🏂 Mean? A Full Breakdown",
+  "seoDescription": "The meaning of 🏂 Snowboarder in texts and DMs, with the snowboarder readings, the common misread, and the pickers it gets confused with.",
   "skinToneVariations": [
     "snowboarder-light",
     "snowboarder-medium-light",
@@ -83,60 +98,60 @@
     "snowboarder-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🏂 is the emoji of action coded snowboarder read — a clean snowboarder-pulse shape, the action filled-in silhouette, and the universal 'action snowboarder' tag for movement-marker. Where ⬛ reads as solid-black-coded snowboarder read and ⬜ reads as solid-white-coded snowboarder read, 🏂 captures the moment when the sender wants to communicate action coded snowboarder — a 'action 🏂' movement-marker marker or a 'snowboarder-pulse pulse 🏂' movement-marker reveal. The action fill cue borrows from design-coded bullet lists and the modern movement-marker aesthetic, which is exactly why the emoji reads as action coded rather than literal snowboarder-coded shape.\n\nIn real-world usage 🏂 lives in the spaces where the sender wants to communicate movement-marker energy. A partner sends it on a 'action 🏂' movement-marker marker. A friend sends it on a 'snowboarder-pulse pulse 🏂' reveal. A coworker sends it on a 'action coded 🏂' list thread. The action fill cue is what makes the emoji feel action coded — it is not just 'shape,' it is 'action coded snowboarder moment.'\n\nWhat separates 🏂 from the rest of the shape family is the action register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'action coded snowboarder,' which carries a specific design-coded tradition. That is why 🏂 travels especially well on partner movement-marker markers, movement-marker reveals, and any context where the sender wants the message to land with action energy.",
-    "howPeopleUseIt": "🏂 shows up as the bullet on a 'action 🏂' list message ('snowboarder-pulse pulse 🏂'), the punctuation on a 'action coded 🏂' reveal, and the softener on a 'snowboarder-pulse pulse 🏂' list thread. It pairs naturally with sentences that name the action energy — 'action,' 'snowboarder-pulse pulse,' 'movement-marker-coded' — and sits beautifully on partner movement-marker markers and movement-marker reveals.\n\nIn group chats 🏂 anchors 'action coded moment' threads, movement-marker reveals, and 'action 🏂' tags where the snowboarder cue matches the register. On Instagram it lands on action coded flat-lays and action-canvas stories. On TikTok it travels in action coded reveals and 'action' reaction content.\n\nThe emoji also works in dating contexts. A 'action 🏂' partner message uses the snowboarder cue to communicate movement-marker romance. Across all of these surfaces the rule is the same: the more action coded the moment, the more natural 🏂 feels.",
-    "whenNotToUse": "Skip 🏂 in sympathy, condolence, or break-up contexts. The action coded snowboarder cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🏂 in 'literal object' or finish-coded contexts where the action energy feels off. A 'action 🏂' message works for action marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🏂 when you want to communicate a different color. The action coded register is too action-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🏂, the cleanest mirror is another 🏂, ⬛, or a sentence that joins the action energy. If you want to escalate the engagement, follow with a sentence that adds context: 'action for sure' or 'snowboarder-pulse pulse together.' If the snowboarder cue feels too action coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the action volume.\n\nWhen 🏂 lands as a partner 'action 🏂' movement-marker marker, mirror with another 🏂, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'snowboarder-pulse pulse 🏂' list thread, mirror with another 🏂, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "This page is the untoned drawing. Somewhere below it are five versions of the same snowboarder with a skin tone applied, and those pages are about something different: not what the gesture means, but what a particular tone adds to it when it arrives from a particular face.\n\nThe short version. The snowboarder is for bragging about a weekend in the mountains and for describing a turn nobody else noticed, it gets misread often enough to be worth writing down, and it has five skin-tone versions worth reading on their own. The sections below take those in turn.\n\nUnicode 13.0 is where 🏂 comes from. The drawing shows a rider leaning into a carve on a single snowboard, it sits in the sport group of the set, and in a conversation it does one thing: it says what a sentence would have said less well.\n\nWhat it says is describing speed, a cold trip, or a wipeout. That is the reading most people arrive with, and it is usually the intended one — the picture does the same work as the words it replaces, and it gets there faster.\n\nThe complication is that the drawing invites a second reading. It gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ⛷️ Skier: the skier stands upright on two skis with poles, the rider carves sideways on one board. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.",
+    "howPeopleUseIt": "There is one habit that turns a small emoji into a misunderstanding. 🏂 goes back on its own, with no words around it, and it stands for whatever the sender had in mind — which was describing speed, a cold trip, or a wipeout. The reader gets the drawing and none of the context that produced it.\n\nStart with Bragging about a weekend in the mountains. That is where the snowboarder earns its place: it closes a sentence that has already said the thing, and nobody has to add \"you know what I mean\". The other job is describing a turn nobody else noticed, and there the emoji is not the message but the temperature of the message.\n\nThe setting does half the work. 🏂 used for bragging about a weekend in the mountains in a work channel reads as a handover; the same move in a group chat reads as a joke. The emoji is not saying anything different — the audience is.\n\nWhich is also why this family has skin-tone pages. The gesture is the same in all five, and the tone you choose is the only part of the message that says anything about you.",
+    "whenNotToUse": "There is also a place where this emoji does not belong: the professional setting. 🏂 under a review, or in a first message to a client, reads as describing speed, a cold trip, or a wipeout, and in that room the same reading sounds like somebody settling a point.\n\nTwo rules. First, ⛷️ Skier is a different message: the skier stands upright on two skis with poles, the rider carves sideways on one board. Do not send 🏂 when you meant that one. Second, a reaction to bad news needs words. A bare 🏂 reads as describing speed, a cold trip, or a wipeout, and nobody in a thread about a person wants to be answered with a drawing of a gesture.\n\nNot every message survives being turned into a picture. The emoji gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed, and the sentence underneath it loses the argument. Once 🏂 is carrying the meaning, the meaning has moved without either sender moving it.\n\nWith somebody you have just met, it is worse. 🏂 has no warmth in the drawing, and the gesture has picked up an edge of superiority from being used to answer other people.",
+    "howToReply": "If the intent is warmth, the sentence is the part that carries it. Sending 🏂 next to a message like bragging about a weekend in the mountains leaves the reader to guess whether it was describing speed, a cold trip, or a wipeout or something sharper.\n\nIf it was a reaction, 🏂 back is a complete answer. It says \"same\" without writing a word, and the exchange can end there.\n\nIf it was aimed at you, it needs text. 🏂 replying to 🏂 looks like a conversation between two drawings, and whatever the sender actually asked never gets answered.\n\nWhen the register is unclear, the words win. The drawing gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed, so the sentence it was sent with is the only reliable guide to what it meant.",
     "faqs": [
       {
+        "question": "Is 🏂 rude?",
+        "answer": "It can be. The gesture is meant as describing speed, a cold trip, or a wipeout, but it gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🏂 mean from a guy?",
-        "answer": "From a guy, 🏂 signals action coded flex or 'action 🏂' movement-marker marker. The snowboarder cue reads as action-coded rather than literal snowboarder-coded shape, so it tends to land on partner movement-marker markers, family-coded action messages, and 'snowboarder-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🏂 flirty?",
-        "answer": "It can be. In a partner context 🏂 can read as soft-coded romance — 'action 🏂' is a soft-coded movement-marker marker. On its own the emoji is more action coded than romantic."
+        "question": "What is the difference between 🏂 and its skin-tone versions?",
+        "answer": "The tone variants under snowboarder show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🏂 and ⬛?",
-        "answer": "⬛ is the solid-black snowboarder — the cue is solid-black-coded read, the universal 'fill' energy. 🏂 is the action snowboarder — the cue is action coded snowboarder read, the action energy. Use ⬛ when the moment is fill-coded; use 🏂 when the moment is action coded."
+        "question": "What does 🏂 mean in text?",
+        "answer": "🏂 is used for describing speed, a cold trip, or a wipeout. The drawing shows a rider leaning into a carve on a single snowboard, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🏂 for movement-marker moments?",
-        "answer": "Yes — 🏂 is one of the most popular action coded emojis. The snowboarder cue is a natural fit for 'movement-marker' reveals, action coded messages, and partner 'action' markers."
-      },
-      {
-        "question": "Does 🏂 mean snowboarder-pulse pulse?",
-        "answer": "Often yes — 🏂 carries the action fill visual and reads in modern usage as action coded. The literal-shape-versus-action-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🏂 and ⛷️?",
+        "answer": "The skier stands upright on two skis with poles, the rider carves sideways on one board. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "snowboarder-pulse pulse for the partner plan, full action energy 🏂",
-      "interpretation": "Partner action romance. Mirror with another 🏂, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the action chaos 🏂",
-      "interpretation": "Public action flex. Mirror with another 🏂, a sentence that joins the action energy, or a heart emoji that matches."
+      "message": "there is something you should know 🏂",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to be skiing when the board makes it a different sport entirely — one plank under both feet reads as surfing and the sideways lean sells speed more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "action movement-marker with the family, full snowboarder-pulse pulse energy 🏂",
-      "interpretation": "Family action reveal. Mirror with another 🏂, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "bragging about a weekend in the mountains 🏂",
+      "interpretation": "Family threads are where this lands most naturally. The reading is describing speed, a cold trip, or a wipeout, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🏂",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "snowboarder-pulse pulse today, full action energy 🏂",
-      "interpretation": "Friend action reveal. Mirror with another 🏂, a sentence that joins the action energy, or a heart emoji that matches."
+      "message": "bragging about a weekend in the mountains 🏂",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as describing speed, a cold trip, or a wipeout, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "action coded sprint today, full snowboarder-pulse pulse energy 🏂",
-      "interpretation": "Work action moment. Mirror with another 🏂, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "describing a turn nobody else noticed 🏂",
+      "interpretation": "A handover or a sign-off in a channel. It reads as describing speed, a cold trip, or a wipeout, and naming the next step in words is usually clearer than leaving it to the gesture."
     }
   ]
 }

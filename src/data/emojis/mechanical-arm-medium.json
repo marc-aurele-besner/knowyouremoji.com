@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "12.0",
-  "baseMeaning": "A robotic or prosthetic arm.",
-  "tldr": "Strength, cyborg vibes, or disability representation.",
+  "baseMeaning": "A robotic or prosthetic arm. The medium skin tone modifier is applied to the arm.",
+  "tldr": "🦾🏽 Mechanical Arm with a medium skin tone. The middle tone, often standing in for a neutral default.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referencing prosthetics or mechanical limbs.",
-      "example": "Prosthetic technology is amazing 🦾",
+      "meaning": "Shows the same artwork as the untoned version, with the medium skin tone applied to the arm.",
+      "example": "🦾🏽",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being strong or unstoppable.",
-      "example": "Nothing can stop me now 🦾",
+      "meaning": "The gesture reads the same as the untoned version; the medium skin tone makes it the neutral version of the emoji, with almost nothing attached.",
+      "example": "copy that 🦾🏽",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Showing strength or resilience.",
-      "example": "Bounced back stronger 🦾",
-      "riskLevel": "LOW"
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it the safest possible choice, which some senders use on purpose.",
+      "example": "easy 🦾🏽",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Cyborg or superhuman energy.",
-      "example": "After three coffees 🦾",
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium skin tone reads as the unremarkable version in a work thread.",
+      "example": "acknowledged 🦾🏽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "IMESSAGE",
-      "note": "Lands on mechanical arm reaction taps, blue-bubble thread replies, and tapback 'love/like/laughing' markers when the mechanical arm cue fits the message."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Shows up on mechanical arm story stickers, DM reaction replies, and reel comments where the mechanical arm cue reads cleanly in the captions and story reactions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in mechanical arm sound-cued transitions, green-screen comment replies, and stitched reaction videos where the mechanical arm beat lands fast."
+      "note": "On iOS 🦾🏽 renders as one combined glyph with the tone applied. The medium swatch is the one several keyboards select when the picker opens, so on a device with that default set, 🦾🏽 is often the result of a finger never touching the tone list."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Frequently sent as a single mechanical arm reaction, attached to a green-tick delivered voice note, or stacked under a group-chat punchline for quick read."
+      "note": "WhatsApp applies the medium modifier on current builds and puts the swatch in the middle of the row. It renders the most consistently of the five tones across the clients people actually use, which is part of why the medium variant is the one most often mistaken for a deliberately neutral choice."
     },
     {
       "platform": "TWITTER",
-      "note": "Anchors mechanical arm quote tweets, ratio-style thread openers, and reply-guy reaction one-liners where the mechanical arm cue adds the headline read."
+      "note": "Twemoji renders 🦾🏽 the same way on every device, which makes the medium swatch the easiest one to identify in a screenshot. The confusion is not visual: it is that a medium tone so often stands in for somebody the sender never asked you to picture."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Slack renders the medium swatch slightly flatter than the phone version, in the same way it flattens every swatch. Nothing about 🦾🏽 changes meaning in Slack, but a workspace that reacts with it constantly can make the tone look like a signature it never was."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji and applies the modifier cleanly. The medium swatch survives copy-paste and re-posting better than the extremes of the list, which is another reason it has become the default in a lot of servers without anybody deciding on it."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for 'built different' and strong energy."
+      "note": "Gen Z has largely stopped treating the medium swatch as neutral and uses 🦾🏽 less than the older tones, because the middle of the Fitzpatrick list no longer reads as a safe default. When it does appear it is usually an unintentional leftover."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Associated with cyborg and strength themes."
+      "note": "Millennials use 🦾🏽 heavily as the neutral middle option — the tone that looks deliberate without looking like a statement. It is one of the most common swatches in messages from this cohort."
     },
     {
-      "generation": "BOOMER",
-      "note": "May interpret as prosthetics or robots."
+      "generation": "GEN_X",
+      "note": "Gen X treats 🦾🏽 as a plain 🦾. The medium swatch was the default in the keyboards this cohort grew up with, so it usually reflects the settings rather than the sender."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🦾🏽 is frequently used to depict somebody other than its sender, and because it is treated as the neutral pick, it is the tone most likely to be used to refer to somebody other than the sender. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🦾🏽 Mechanical Arm Medium Skin Tone Emoji - What Does 🦾🏽 Mean?",
-  "seoDescription": "Learn what the mechanical arm emoji with medium skin tone 🦾🏽 means in texts and social media.",
+  "seoTitle": "🦾🏽 Mechanical Arm Medium Skin Tone Emoji Meaning - What Does 🦾🏽 Mean?",
+  "seoDescription": "What does the mechanical arm emoji 🦾🏽 mean? Mechanical Arm showing a segmented metal robotic arm ending in a mechanical hand. Covers the medium skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "mechanical-arm",
   "skinToneModifier": "medium",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🦾🏽 is the mechanical arm emoji — the body-parts shorthand that bridges the literal mechanical arm meaning with the soft, layered reading modern chat uses it for. In its base form it stands in for mechanical arm as a noun, a moment, or a mood: a friend describes their afternoon, a partner leaves a mechanical arm reaction, a coworker flags a mechanical arm blocker in a thread. The visual cue is short and graphic on purpose, which is why it travels across IM, group chat, story replies, and search without losing read.\n\nIn real-world usage 🦾🏽 lives in the spaces where the sender wants to communicate mechanical arm energy without over-explaining. A DM opens with 🦾🏽 as a soft hello. A group chat uses 🦾🏽 as the period at the end of a mechanical arm story. A work thread drops 🦾🏽 to confirm a mechanical arm handoff. The emoji's clarity is what makes it flexible — it can carry literal mechanical arm, ironic mechanical arm, or sentimental mechanical arm depending on the message and the sender.\n\nWhat separates 🦾🏽 from the broader body-parts family is its read-speed. The visual hits in under a second, which is exactly why it works as a reaction, a caption, a sign-off, or a thread-opener. That is why 🦾🏽 travels especially well on story replies, DM reactions, and any context where the sender wants the message to land with mechanical arm energy in a single tap.",
-    "howPeopleUseIt": "🦾🏽 shows up in chat as a stand-alone mechanical arm reaction ('just 🦾🏽'), as the punctuation on a mechanical arm sentence ('finished the report 🦾🏽'), and as the softener on a longer message ('long day but we're good 🦾🏽'). It pairs naturally with words that name the mechanical arm energy — 'mood,' 'literally,' 'so mechanical arm.'\n\nIn group chats 🦾🏽 anchors 'mechanical arm moment' threads, friend reactions, and thread-enders where the mechanical arm cue matches the register. On Instagram it lands on mechanical arm story replies and mechanical arm DM reactions. On TikTok it travels in mechanical arm sound-cued content and mechanical arm comment replies.\n\nThe emoji also works in dating contexts. A partner's '🦾🏽' DM uses the mechanical arm cue to communicate warmth. Across all of these surfaces the rule is the same: the more mechanical arm-coded the moment, the more natural 🦾🏽 feels.",
-    "whenNotToUse": "Skip 🦾🏽 in condolence, sympathy, or break-up contexts — the mechanical arm cue is too lightweight for somber moments. A quiet ❤️ or a plain sentence that acknowledges the feeling is a better fit.\n\nAvoid 🦾🏽 when the message calls for literal precision. If the sender needs an exact mechanical arm reference (a recipe, an instruction, a specific product), use a word or a more specific emoji rather than the mechanical arm shorthand.\n\nSkip 🦾🏽 in very formal channels — legal emails, executive memos, regulated finance or healthcare messages. The mechanical arm cue reads as casual and can undercut professional weight. Stick to plain text where tone matters.",
-    "howToReply": "If someone sends 🦾🏽, the easiest replies are to mirror with another 🦾🏽, send a related emoji that fits the mechanical arm energy, or reply with a short sentence that acknowledges the mechanical arm cue. If the message reads as a question, answer it directly; if it reads as a vibe, match it with the same mechanical arm register. A single-word reply — 'same,' 'mood,' 'love it,' or 'literally' — usually lands. When 🦾🏽 arrives as a soft flirt, mirror the energy with a heart-coded emoji or a sentence that escalates the warmth without overcommitting.",
+    "overview": "There are five skin tones in the Fitzpatrick set and 🦾🏽 is the one in the middle of them — Mechanical Arm with a medium skin tone, a segmented metal robotic arm ending in a mechanical hand. Because it sits in the middle of the list and several keyboards default to it, it is the variant that most often ends up standing in for \"somebody\", with no view at all from the sender. Often the choice of someone who is not using skin tone to make a point, which is why it reads as the neutral stand-in\n\nThat neutrality is useful and it is also the reason to be careful. 🦾🏽 reads as signalling strength, cyborg capability, or a prosthetic limb, the same job 🦾 does. But because the medium swatch is so often pressed by people who are simply not thinking about skin tone, it is also the variant that most often ends up describing somebody who is not the sender — and the most likely to be misread that way.\n\nThe situations it turns up in are the family ones, unchanged by the tone. It gets mixed up with 🦿 Mechanical Leg more than it should — the leg version reads as walking and mobility, the arm version reads as grip, tooling and upper-body work. The misread that comes up most often with this glyph is specific enough to name: it gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength.",
+    "howPeopleUseIt": "The gesture is the same one 🦾 makes, so the family habits carry straight over. What changes with 🦾🏽 is who tends to send it and what they are assuming about the reader.\n\nThe medium swatch is the workhorse of the set. 🦾🏽 is the one people send when they are not trying to make a point about skin tone at all, which makes it the variant most likely to be used as a stand-in for someone unspecified. You will see it in announcing a new prosthetic or assistive device, and in joking a deadline is too much for one human arm, and in a great many places where the sender simply pressed the emoji that was already selected.\n\nThe flip side of that ubiquity is that the tone carries almost no signal of its own. 🦾🏽 reads as the neutral version of the emoji, with almost nothing attached, and it tends to disappear into the line it sits on. If the sender wanted the skin tone to mean something, this is the variant that will not deliver it.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🦾 itself, and every tone in this family inherits it.\n\nThe trap for 🦾🏽 is that its neutrality is an illusion. It is chosen by reflex more often than by intent, and a reflex choice is not a statement about the sender. Do not send 🦾🏽 expecting it to be read as \"this is what I look like\" unless that is genuinely why you picked it — the medium swatch is the one most likely to have been selected without a thought at all.\n\nAnd skip it when a specific person is being depicted and you would be guessing at their skin tone. The default-position argument cuts the other way here: the easiest swatch to press is the easiest one to press by accident, and it is the one that looks most like a decision.",
+    "howToReply": "The simplest reply is 🦾 with the same gesture and no tone commentary, because the medium swatch does not usually carry a message of its own.\n\nIf the sender was representing themselves, though, 🏽 back is warmer than 🦾 — it says you registered what they chose. If they were representing somebody else, match the gesture only.",
     "faqs": [
       {
-        "question": "What does 🦾🏽 mean in texting?",
-        "answer": "In texting, 🦾🏽 usually points to mechanical arm. It can be literal — describing mechanical arm in the moment — or shorthand for the feeling or mood that mechanical arm carries. Context, sender, and platform decide which read wins."
+        "question": "What does 🦾🏽 mean in text?",
+        "answer": "🦾🏽 is Mechanical Arm with a medium skin tone. The gesture reads as signalling strength, cyborg capability, or a prosthetic limb."
       },
       {
-        "question": "Is 🦾🏽 flirty?",
-        "answer": "It can be. 🦾🏽 can read as soft flirt when sent on its own or paired with a compliment — especially in dating-app DMs. In a friend or work thread it usually reads as playful rather than romantic."
+        "question": "Is the medium skin tone in 🦾🏽 a statement?",
+        "answer": "Rarely on its own. It is the middle swatch in the tone list, and the one several keyboards land on by default when the tone picker opens. It is the variant people pick when they are not thinking about skin tone, so it rarely reads as one."
+      },
+      {
+        "question": "What does 🦾🏽 mean from a guy?",
+        "answer": "The tone does not change the gesture, so the read is the same. There is no separate gendered reading of 🦾."
       },
       {
         "question": "Is 🦾🏽 rude?",
-        "answer": "Generally no — 🦾🏽 is a neutral-to-friendly mechanical arm marker. It can read as dismissive if used to replace a sentence in a tense exchange, but on its own the mechanical arm cue is more playful than rude."
+        "answer": "Not because of the swatch. The gesture carries that risk on its own, and the medium tone does not add to it."
       },
       {
-        "question": "What does 🦾🏽 mean on Snapchat?",
-        "answer": "On Snapchat, 🦾🏽 typically rides on streak messages, story replies, or as a snap caption. The platform's heavier use of friend emojis means the mechanical arm cue often lands with a casual, friendly tone."
-      },
-      {
-        "question": "Does 🦾🏽 have a hidden meaning?",
-        "answer": "Not really — 🦾🏽 usually means mechanical arm. The 'hidden meaning' angle tends to come from sender, context, and platform. A 🦾🏽 on a flirty thread reads differently than the same 🦾🏽 in a work channel."
+        "question": "What is the difference between 🦾🏽 and 🦾?",
+        "answer": "The swatch, and only the swatch. 🦾 is the tone-less version and is the safer choice whenever you are not depicting a specific person."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "that mechanical arm moment with you, full energy 🦾🏽",
-      "interpretation": "Sentiment-coded mechanical arm message — the mechanical arm cue carries the warmth. Mirror with another 🦾🏽, a heart emoji, or a sentence that escalates the romance."
+      "setting": "friends",
+      "message": "announcing a new prosthetic or assistive device 🦾🏽",
+      "interpretation": "A friend sending 🦾🏽 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
     },
     {
-      "setting": "friends",
-      "message": "cannot handle this thread, full mechanical arm chaos 🦾🏽",
-      "interpretation": "Friend-coded mechanical arm reaction — the sender is being playful. Mirror with another 🦾🏽, a sentence that joins the energy, or a related emoji that matches the mechanical arm beat."
+      "setting": "dating",
+      "message": "joking a deadline is too much for one human arm 🦾🏽",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is the safest possible choice, which some senders use on purpose."
     },
     {
       "setting": "work",
-      "message": "mechanical arm blocker sorted, ready when you are 🦾🏽",
-      "interpretation": "Work-coded mechanical arm update — concise, professional, with a soft mechanical arm touch. Mirror with another 🦾🏽, a sentence that confirms the handoff, or a thumbs-up emoji that matches the register."
+      "message": "acknowledged 🦾🏽",
+      "interpretation": "A work thread. The medium skin tone reads as the unremarkable version in a work thread."
     },
     {
       "setting": "family",
-      "message": "family mechanical arm tonight, cannot wait 🦾🏽",
-      "interpretation": "Family-coded mechanical arm excitement — warm, affectionate. Mirror with another 🦾🏽, a sentence that joins the warmth, or a heart emoji that matches the family tone."
+      "message": "okay 🦾🏽",
+      "interpretation": "A family chat where the emoji is being read literally — the medium skin tone stands for the person in the picture rather than for the tone."
     },
     {
       "setting": "social",
-      "message": "this whole mechanical arm era, full energy 🦾🏽",
-      "interpretation": "Public mechanical arm flex — the sender is in their mechanical arm moment. Mirror with another 🦾🏽, a sentence that joins the energy, or a heart emoji that matches the public mechanical arm beat."
+      "message": "agreed 🦾🏽",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

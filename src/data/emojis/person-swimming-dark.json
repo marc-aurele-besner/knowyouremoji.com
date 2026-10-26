@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "person-sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person swimming.",
-  "tldr": "Swimming, pool time, summer vibes, or staying afloat.",
+  "baseMeaning": "A person swimming. The dark skin tone modifier is applied to the figure.",
+  "tldr": "🏊🏿 Person Swimming with a dark skin tone. Always a deliberate pick, and one that needs context to land.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the person swimming: dark skin tone cue.",
-      "example": "the swimming dark 🏊🏿",
+      "meaning": "Shows the same artwork as the untoned version, with the dark skin tone applied to the figure.",
+      "example": "🏊🏿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "swimming dark-coded moment or swimming dark-coded reveal.",
-      "example": "swimming dark mode 🏊🏿",
+      "meaning": "The gesture reads the same as the untoned version; the dark skin tone makes it a deliberate statement with real weight behind it.",
+      "example": "heard 🏊🏿",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "swimming dark-coded flirty tag or partner-coded moment.",
-      "example": "swimming dark partner plan 🏊🏿",
-      "riskLevel": "LOW"
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it a strong statement, and a wrong one lands badly.",
+      "example": "back off 🏊🏿",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "swimming dark-coded work moment or team energy.",
-      "example": "swimming dark sprint 🏊🏿",
+      "meaning": "In a work thread the gesture is unchanged, and the dark skin tone reads as deliberate enough that the choice itself is noticed.",
+      "example": "confirmed 🏊🏿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🏊🏿 renders as one combined glyph with the tone applied. The dark swatch is the last one in Apple's picker, and it is also the one where the rendering difference between clients is largest: the same emoji can look like a noticeably different person depending on which font drew it."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the dark modifier on current builds and lists it last, so it takes a deliberate scroll. Older Android builds of WhatsApp fall back to the untoned glyph, and because the dark swatch is the most conspicuous of the five when it does render, the difference between the two is the one people notice."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🏊🏿 lands on swimming dark-coded threads, swimming dark-tagged person-sport posts, and 'swimming dark-coded' reveals where the swimming dark cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🏊🏿 is a staple of modern-coded flat-lays, swimming dark-canvas story backgrounds, and modern-coded profile accents; the swimming dark cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🏊🏿 travels in modern-coded transitions, swimming dark reaction reveals, and 'swimming dark-coded' listicle content where the swimming dark cue signals modern-coded energy."
+      "note": "Twemoji renders 🏊🏿 with the dark swatch intact, and it is the tone most often used deliberately on the platform, so it is also the one most likely to be screenshotted out of context and read as a comment on whoever is in the picture."
     },
     {
       "platform": "SLACK",
-      "note": "🏊🏿 threads through modern-coded reactions, swimming dark markers, and 'swimming dark-coded' bullets in work channels where the swimming dark cue fits the register."
+      "note": "Slack's own emoji font renders the dark swatch with less contrast against the darker themes than the phone version does. On a dark background the tone can lose definition entirely, which is worth knowing before you conclude that somebody sent something else."
     },
     {
       "platform": "DISCORD",
-      "note": "🏊🏿 is an active reaction in modern-coded swimming dark channels, server-coded swimming dark markers, and 'swimming dark-coded' reveals where the swimming dark cue matches the modern-coded register."
+      "note": "Discord uses Twemoji and applies the modifier cleanly. As with the other dark-swatch uses, the interesting failure mode is not rendering but reuse: 🏊🏿 forwarded into a channel it was not meant for keeps its meaning as a statement and loses its context."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🏊🏿 on modern-coded swimming dark threads, swimming dark-coded reveals, and 'swimming dark-coded' moments where the swimming dark cue matches the modern-coded register."
+      "note": "Gen Z uses 🏊🏿 as a clear statement of self, and is also the cohort most alert to its use about other people. Because the swatch is unmistakable, the reaction to a misused 🏊🏿 in this cohort is fast and rarely subtle."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded swimming dark moments, and swimming dark-coded reveals where the universal swimming dark cue fits."
+      "note": "Millennials use 🏊🏿 when they are representing themselves, and read the tone as personal. It is also the tone most often borrowed to depict somebody else, which is where it turns from a self-description into a comment on somebody's appearance."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded swimming dark messages and swimming dark reveals, treating the swimming dark as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal swimming dark and uses it on modern-coded tags without parsing the modern swimming dark-coded subtext."
+      "note": "Gen X rarely changes the tone, so 🏊🏿 mostly shows up as self-representation. Older clients in this cohort also flatten it more often, so the glyph a sender saw is not always the glyph a recipient saw."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Do not use the dark swatch as a joke about skin",
+      "description": "🏊🏿 is the tone most often used to make a point about somebody's appearance. Used about someone other than the sender, it is read as a comment on their skin rather than as the gesture.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏊🏿 Person Swimming Dark Skin Tone Emoji - What Does 🏊🏿 Mean?",
-  "seoDescription": "Learn what the person swimming emoji with dark skin tone 🏊🏿 means in texts and social media.",
+  "seoTitle": "🏊🏿 Person Swimming Dark Skin Tone Emoji Meaning - What Does 🏊🏿 Mean?",
+  "seoDescription": "What does the person swimming emoji 🏊🏿 mean? Person Swimming showing a swimmer in a cap and goggles, one arm extended forward in the water. Covers the dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "person-swimming",
   "skinToneModifier": "dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Person Swimming is the emoji of sport-coded athletic flex - the athletic tradition, the fitness cue, and the universal \"in the game\" tag. Where 🏆 reads as victory-coded finish energy and ⚽ reads as ball-coded play energy, Person Swimming captures the moment when the sender wants to communicate sport-coded athletic energy - a \"person swimming\" workout tag or a game-day-coded reveal.\n\nThe athletic cue borrows from sports tradition and the modern fitness aesthetic, which is exactly why the emoji reads as sport-coded rather than literal.\n\nWhat separates Person Swimming from the rest of the sport family is the specific person swimming register. The emoji is not saying 'generic sport' (🏆). It is saying 'person swimming-coded person swimming,' which carries a specific sport, athletic, or workout specificity.\n\nIn real-world usage 🏊🏿 Person Swimming: Dark Skin Tone lives in the spaces where the sender wants to communicate sport energy. A partner sends it on a \"swimming dark\" moment. A friend sends it on a \"sport\" reveal. A coworker sends it on a \"swimming dark\" tag. The swimming dark cue is what makes the emoji feel sport-coded - it is not just 'a moment,' it is 'swimming dark-coded energy.'\n\nIn dating 🏊🏿 Person Swimming: Dark Skin Tone works as a soft-coded swimming dark tag, where the swimming dark cue signals sport tradition. In work threads 🏊🏿 Person Swimming: Dark Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏊🏿 feels.",
-    "howPeopleUseIt": "🏊🏿 Person Swimming: Dark Skin Tone shows up as the closer on a \"swimming dark moment\", the punctuation on a \"sport\" reveal, and the softener on a \"swimming dark-coded\" tag. It pairs naturally with sentences that name the sport energy - 'swimming dark,' 'sport tradition,' 'swimming dark-coded' - and sits beautifully on fitness reveals, game-day tags, athletic-coded flex, and training moments.\n\nIn group chats 🏊🏿 Person Swimming: Dark Skin Tone anchors 'swimming dark moment' threads, sport reveals, and 'swimming dark' tags where the swimming dark cue matches the register. On Instagram it lands on sport flat-lays and sport stories. On TikTok it travels in sport transitions and 'swimming dark' reaction content.\n\nThe emoji also works in dating contexts. A 'swimming dark 🏊🏿' partner message uses the swimming dark cue to communicate sport romance. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏊🏿 feels.",
-    "whenNotToUse": "Skip Person Swimming in sympathy, condolence, or break-up contexts. The sport-coded athletic cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Person Swimming in sedentary contexts where the athletic energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip Person Swimming when you want to communicate rest or recovery. The sport register is too athletic-coded for quiet moments; use 🛋️ or a sentence when the moment needs calm.",
-    "howToReply": "If someone sends Person Swimming, the cleanest mirror is another Person Swimming, 💪, or a sentence that joins the athletic energy. If the sport cue feels too active-coded, reply with a softer emoji (🏆 or 🙌) that signals support without matching the workout volume.\n\nWhen Person Swimming lands as a game-day tag, mirror with another Person Swimming, a trophy emoji, or a sentence that escalates the fan energy. When it arrives as a fitness-coded reveal, mirror with another Person Swimming, a sentence that joins the gym energy, or a flex emoji that fits.",
+    "overview": "Reaching 🏊🏿 takes work, because it is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is worth knowing, because it changes what the emoji means in a thread. 🏊🏿 is Person Swimming with a dark skin tone, a swimmer in a cap and goggles, one arm extended forward in the water, and it is doing the same job as 🏊: doing laps, going through the motions, staying afloat.\n\nBut a tone that someone went looking for is not a tone that gets skimmed. The most deliberately chosen of the five, because getting there is the most work. In a group chat, 🏊🏿 tends to get a second look, and it tends to get one for a reason — either because it genuinely represents the sender, or because the sender wanted it to. The difference between those two is not visible from the emoji alone, which is the single most important thing to understand about this variant.\n\nThe situations it turns up in are the family ones, unchanged by the tone, and the trap is the same one the rest of the set has: it gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official. The neighbouring glyph people reach for instead is 🏄 Person Surfing — the surfer rides a wave standing up, the swimmer is head-down in a pool doing laps.",
+    "howPeopleUseIt": "The gesture is the same one 🏊 makes, so the family habits carry straight over. What changes with 🏊🏿 is who tends to send it and what they are assuming about the reader.\n\nBecause it is the last swatch, 🏊🏿 shows up where the tone was the point: an avatar, a profile picture, an introduction of oneself, a reaction that is meant to carry the sender's own appearance. It appears in a weekly swim set done on autopilot, and in saying you are keeping your head above water.\n\nIt is also, for the same reason, the tone most likely to be deployed as a joke about someone's skin, which is the context where it stops being harmless. 🏊🏿 used about someone other than the sender, with no context, is the version of this emoji that causes real offence — and the reason is not the gesture but the fact that the tone was chosen to make a point.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🏊 itself, and every tone in this family inherits it.\n\nThe trap for 🏊🏿 is the obvious one, and it is worth stating plainly: the darkest swatch is the one most often used as a joke about skin. Because it takes a deliberate scroll to reach, the emoji reads as a statement about somebody, and if the sender is not the somebody, it lands as a comment on their appearance. Do not use 🏊🏿 to depict another person without a reason you would be comfortable explaining out loud.\n\nBeyond that, skip it when the moment is light enough that a swatch with this much weight will outweigh the sentence. 🏊🏿 gets a second look in every thread it lands in, and not every message can afford that.",
+    "howToReply": "Reply with 🏿 if the sender was representing themselves — matching the darkest swatch is one of the more concrete ways to say you saw what they chose. 🏊 is fine when the tone was incidental.\n\nIf the tone was pointed — if 🏊🏿 was deployed as a joke about somebody's skin — the reply is a sentence, not an emoji. Nothing mirrors that well, and a mirrored emoji makes the joke land twice.",
     "faqs": [
       {
-        "question": "What does Person Swimming mean in chat?",
-        "answer": "Person Swimming is the sport-coded athletic flex - it borrows from athletic tradition and signals a fitness reveal, game-day tag, or workout-coded moment. The athletic cue is what makes the read feel sport-coded rather than literal."
+        "question": "What does 🏊🏿 mean in text?",
+        "answer": "🏊🏿 is Person Swimming with a dark skin tone. The gesture reads as doing laps, going through the motions, staying afloat, and the swatch is the heaviest of the five."
       },
       {
-        "question": "Is Person Swimming flirty?",
-        "answer": "Sometimes. In a dating thread Person Swimming can read as active-coded romance - a \"let's workout together\" tag or a fitness-coded flirty hint. On its own it reads more sport than romantic."
+        "question": "Is 🏊🏿 a deliberate choice?",
+        "answer": "Almost always. It is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is why 🏊🏿 gets a second look in a thread while 🏊 does not."
       },
       {
-        "question": "What does Person Swimming mean from a friend?",
-        "answer": "From a friend, Person Swimming signals a sport-coded flex or a fitness-coded reveal. The athletic cue reads as workout-coded rather than literal, so it tends to land on game-day tags, friend coded messages, and fitness-coded reveals."
+        "question": "What does 🏊🏿 mean from a guy?",
+        "answer": "The gesture reads the same as it does from anyone else. The skin tone is not a gendered signal on 🏊."
       },
       {
-        "question": "When should I use Person Swimming?",
-        "answer": "Use Person Swimming for sport-coded references, fitness reveals, or game-day moments. Avoid it when you want to communicate something restful - the sport cue is too active for calm moments."
+        "question": "Is 🏊🏿 offensive?",
+        "answer": "It can be, and it is the tone most often used as a joke about skin. It is the tone most often used to make a point about someone’s skin, which is why it never travels without context. Used to depict the sender, it is one of the most personal choices in the emoji set."
+      },
+      {
+        "question": "What is the difference between 🏊🏿 and 🏊?",
+        "answer": "The swatch, and it matters more here than for the other tones. 🏊 is the tone-less version, and it is the right pick whenever the sender is not the person being shown."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "swimming dark with the partner plan, full sport energy 🏊🏿",
-      "interpretation": "Partner sport romance. Mirror with another 🏊🏿, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the swimming dark chaos 🏊🏿",
-      "interpretation": "Public sport flex. Mirror with another 🏊🏿, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "swimming dark with the family, full sport energy 🏊🏿",
-      "interpretation": "Family sport reveal. Mirror with another 🏊🏿, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "swimming dark today, full sport energy 🏊🏿",
-      "interpretation": "Friend sport reveal. Mirror with another 🏊🏿, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "a weekly swim set done on autopilot 🏊🏿",
+      "interpretation": "A friend sending 🏊🏿 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "saying you are keeping your head above water 🏊🏿",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a strong statement, and a wrong one lands badly."
     },
     {
       "setting": "work",
-      "message": "swimming dark sprint today, full sport energy 🏊🏿",
-      "interpretation": "Work sport moment. Mirror with another 🏊🏿, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "confirmed 🏊🏿",
+      "interpretation": "A work thread. The dark skin tone reads as deliberate enough that the choice itself is noticed."
+    },
+    {
+      "setting": "family",
+      "message": "understood 🏊🏿",
+      "interpretation": "A family chat where the emoji is being read literally — the dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "exactly 🏊🏿",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

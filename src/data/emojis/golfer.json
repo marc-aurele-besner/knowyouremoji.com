@@ -7,129 +7,144 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Golfing emoji.",
-  "tldr": "Represents person golfing.",
+  "baseMeaning": "A picture of a figure mid-swing, club arced over the shoulder on a fairway. Read in a message it lands as playing golf, or making an awkward swing at something.",
+  "tldr": "🏌️ Person Golfing. In a chat it comes across as playing golf, or making an awkward swing at something.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The activity of person golfing.",
-      "example": "Time for person golfing 🏌️",
+      "meaning": "The plain reading: a figure mid-swing, club arced over the shoulder on a fairway. Nothing hidden in the drawing itself.",
+      "example": "Teasing a friend for missing an easy shot 🏌️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🏌️",
+      "meaning": "Borrowed as a reaction, it reads as playing golf, or making an awkward swing at something.",
+      "example": "Marking a lazy day with nothing scheduled 🏌️",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person golfing? 🏌️",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as playing golf, or making an awkward swing at something, softened by whatever sentence sits next to it.",
+      "example": "not me 🏌️",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🏌️",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — playing golf, or making an awkward swing at something — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🏌️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors fairway-coded athletic flex threads, country-club hype tweets, and tee-time reveals where the swung-club follow-through cue signals course-life register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on fairway-coded story reposts, country-club flat-lays, and tee-time reveals where the swung-club follow-through cue carries visible course-life charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in fairway-coded transitions, country-club reaction clips, and tee-time reaction content where the swing-arc cue signals course-life register."
+      "platform": "SLACK",
+      "note": "In Slack 🏌️ lands in channels where the sentence was supposed to be shorter. It is usually standing in for teasing a friend for missing an easy shot, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on fairway-coded squad check-ins, country-club hype messages, and group chats where the swung-club follow-through cue matches the tee-time moment."
+      "note": "On Discord 🏌️ is a staple of the reaction bar, which is why it so often arrives stripped of its playing golf, or making an awkward swing at something reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🏌️ does most of its work in replies, where it tags a message like marking a lazy day with nothing scheduled. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Golfing 🏌️ renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like teasing a friend for missing an easy shot is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🏌️ exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like marking a lazy day with nothing scheduled."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 🏌️ on fairway-coded hype threads, country-club memes, and tee-time fits where the swing-arc cue matches the modern course-life register."
+      "note": "Gen Z reaches for 🏌️ to do the work of teasing a friend for missing an easy shot, and treats the neutral drawing as the default rather than as a choice. What they hear first is playing golf, or making an awkward swing at something."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 🏌️ on fairway-coded nostalgia, country-club-coded hype, and course-life jokes where the millennial country-club memory still resonates."
+      "note": "Millennials tend to send 🏌️ deliberately, usually for something like marking a lazy day with nothing scheduled, and they read playing golf, or making an awkward swing at something into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🏌️ on fairway-coded reveals, country-club flexes, and tee-time jokes where the swung-club follow-through cue reads as course-life reference."
+      "note": "Gen X mostly uses 🏌️ literally, as the picture of the gesture itself, and is less likely to read playing golf, or making an awkward swing at something into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🏌️ as a literal weekend golfer and pastes it onto country-club replies without parsing the modern 'fairway-coded hype' or course-life subtext."
+      "note": "Older senders use 🏌️ in the most straightforward way, on family and group messages, and are less likely to hear the playing golf, or making an awkward swing at something subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🏌️ and ⛳ get swapped",
+      "description": "The Flag in Hole ⛳ is one tap away in every picker, and it does not carry the same reading — the flag names the target and the scoring, the golfer names the person taking the swing. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🏌️ as something else fairly often: it gets mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏌️ Person Golfing Emoji Meaning - What Does 🏌️ Really Mean?",
-  "seoDescription": "Learn what the person golfing emoji 🏌️ really means in texts and DMs. Fairway-coded athletic flex, country-club hype energy, and tee-time charm.",
+  "seoTitle": "🏌️ Person Golfing Emoji - What It Actually Means in Text",
+  "seoDescription": "🏌️ Person Golfing meaning: playing golf, or making an awkward swing at something. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🏌️ is the emoji of fairway-coded athletic flex — a player mid-swing with club arcing over the shoulder, the iconography of country-club tradition, tee-time hype, and the universal course-life tag. Where ⛳ reads as golf-flag-coded hole-finish and 🏌️ reads as swing-coded tee-shot, 🏌️ captures the moment when the sender wants to communicate fairway-coded energy — a 'fairway-coded hype 🏌️' tee-time flex or a 'country-club-coded 🏌️' course reveal. The swing-arc cue borrows from the universal country-club tradition and the modern course-hype aesthetic, which is exactly why the emoji reads as course-life rather than literal weekend golfer.\n\nIn real-world usage 🏌️ lives in the spaces where the sender wants to communicate fairway-coded energy. A friend sends it on a 'fairway-coded hype 🏌️' reveal. A country-club-coded chat partner sends it on a 'tee-time-coded 🏌️' coded message. A coworker sends it on a 'fairway flex 🏌️' course-coded flex. The swing-arc cue is what makes the emoji feel fairway-coded — it is not just 'golf,' it is 'fairway-coded athletic flex.'\n\nWhat separates 🏌️ from the rest of the sport-emoji family is the course-life register. The emoji is not saying 'golf flag' (⛳), 'tennis' (🎾), or 'cricket' (🏏). It is saying 'fairway-coded athletic flex,' which carries a specific country-club tradition. That is why 🏌️ travels especially well on fairway-coded hype flexes, country-club jokes, tee-time-coded reveals, and any context where the sender wants the message to land with course-life energy.",
-    "howPeopleUseIt": "🏌️ shows up as the closer on a 'fairway-coded hype 🏌️' country-club message ('fairway-coded hype 🏌️'), the punctuation on a 'tee-time-coded 🏌️' course reveal, and the softener on a 'fairway flex 🏌️' coded message. It pairs naturally with sentences that name the course-life energy — 'fairway-coded,' 'country-club-coded,' 'tee-time flex' — and sits beautifully on country-club flexes and fairway-coded reveals.\n\nIn group chats 🏌️ anchors 'fairway-coded moment' threads, country-club reveals, and 'course-life flex 🏌️' coded tags where the swing-arc cue matches the register. On Instagram it lands on fairway-coded flat-lays and country-club stories. On TikTok it travels in tee-time reveals and 'fairway-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'fairway-coded hype tonight 🏌️' partner message uses the swing-arc cue to communicate country-club-coded soft-coded romance. Across all of these surfaces the rule is the same: the more course-life the moment, the more natural 🏌️ feels.",
-    "whenNotToUse": "Skip 🏌️ in street-coded or urban-coded contexts. The country-club swing-arc cue is the wrong tone for any conversation where the moment is street. A sentence or a neutral emoji is a better fit.\n\nAvoid 🏌️ in casual-coded or budget-coded contexts where the course-life rule feels off. A 'fairway-coded hype 🏌️' message works for country-club reveal; for casual moments use a sentence.\n\nSkip 🏌️ when you want to communicate high-energy team sport. The country-club register is too polished for rough moments; use 🏀 or a sentence when the tone needs to be louder.",
-    "howToReply": "If someone sends 🏌️, the cleanest mirror is another 🏌️, ⛳, or a sentence that joins the course-energy. If you want to escalate the engagement, follow with a sentence that adds context: 'fairway-coded hype for sure' or 'tee-time-coded together.' If the swing-arc cue feels too country-club-coded, reply with a softer emoji (🌳 or 🏞) that signals outdoor without matching the course-life volume.\n\nWhen 🏌️ lands as a partner 'fairway-coded hype 🏌️' check-in, mirror with another 🏌️, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'fairway flex 🏌️' coded message, mirror with another 🏌️, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The drawing of 🏌️ is a figure mid-swing, club arced over the shoulder on a fairway. It arrived with Unicode 13.0 in the sport section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is playing golf, or making an awkward swing at something. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ⛳ Flag in Hole: the flag names the target and the scoring, the golfer names the person taking the swing. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person golfing also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person golfing reads as playing golf, or making an awkward swing at something, it is most often used for teasing a friend for missing an easy shot or marking a lazy day with nothing scheduled, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🏌️ in a work thread is marking a lazy day with nothing scheduled; 🏌️ in a family thread is teasing a friend for missing an easy shot; 🏌️ in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🏌️ is the whole reply, and it is carrying a meaning nobody wrote down — playing golf, or making an awkward swing at something is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Teasing a friend for missing an easy shot is the job the person golfing does most: it saves a sentence and lands faster than one would have. Marking a lazy day with nothing scheduled is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🏌️ will get mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person golfing gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🏌️ reads as playing golf, or making an awkward swing at something, and formality is exactly where that reading does the most damage.\n\nLeave ⛳ Flag in Hole for the other message. The flag names the target and the scoring, the golfer names the person taking the swing. And keep 🏌️ out of threads where somebody is hurting: it reads as playing golf, or making an awkward swing at something there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🏌️ gets mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely often enough that the sentence matters more than the picture.\n\nAnd do not send 🏌️ alone when the message underneath is supposed to be warm. A message like teasing a friend for missing an easy shot carries the feeling; the picture on its own leaves the reader choosing between playing golf, or making an awkward swing at something and something sharper.\n\nStart by reading what the 🏌️ was doing. If it was a reaction, react: 🏌️ back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🏌️ mean from a guy?",
-        "answer": "From a guy, 🏌️ signals fairway-coded flex or 'fairway-coded hype 🏌️' tee-time reveal. The swing-arc cue reads as country-club-coded rather than literal weekend golfer, so it tends to land on partner check-ins, fairway-coded hype messages, and 'fairway flex' reveals."
+        "question": "What is the difference between 🏌️ and its skin-tone versions?",
+        "answer": "The tone variants under person golfing show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is 🏌️ flirty?",
-        "answer": "It can be. In a partner context 🏌️ can read as country-club-coded soft-coded romance — 'fairway-coded hype tonight 🏌️' is a soft-coded course-life check-in. On its own the emoji is more fairway-coded than romantic."
+        "question": "What does 🏌️ mean in text?",
+        "answer": "🏌️ is used for playing golf, or making an awkward swing at something. The drawing shows a figure mid-swing, club arced over the shoulder on a fairway, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🏌️ and ⛳?",
-        "answer": "⛳ is the golf flag — the cue is golf-flag-coded hole-finish, the universal 'green' energy. 🏌️ is the golfer — the cue is swing-coded tee-shot, the 'fairway-coded hype' course-life energy. Use ⛳ when the moment is hole-finish; use 🏌️ when the moment is fairway flex."
+        "answer": "The flag names the target and the scoring, the golfer names the person taking the swing. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🏌️ for country-club moments?",
-        "answer": "Yes — 🏌️ is one of the most popular fairway-coded emojis. The swing-arc cue is a natural fit for country-club reveals, tee-time messages, and partner 'fairway flex' check-ins."
+        "question": "Is 🏌️ rude?",
+        "answer": "It can be. The gesture is meant as playing golf, or making an awkward swing at something, but it gets mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🏌️ mean fairway-coded hype?",
-        "answer": "Often yes — 🏌️ carries country-club charm and reads in modern usage as course-life. The literal-golfer-versus-fairway-hype split depends on the sender and the channel."
+        "question": "What does 🏌️ mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "fairway-coded hype tonight, full tee-time energy 🏌️",
-      "interpretation": "Partner country-club-coded romance. Mirror with another 🏌️, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the course-life chaos 🏌️",
-      "interpretation": "Public fairway-coded flex. Mirror with another 🏌️, a sentence that joins the course-life energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "fairway-coded hype moment with the family, full tee-time energy 🏌️",
-      "interpretation": "Family country-club-coded reveal. Mirror with another 🏌️, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🏌️",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "country-club energy today, full fairway flex 🏌️",
-      "interpretation": "Friend fairway-coded reveal. Mirror with another 🏌️, a sentence that joins the course-life energy, or a heart emoji that matches."
+      "message": "teasing a friend for missing an easy shot 🏌️",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as playing golf, or making an awkward swing at something, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "fairway flex at work today, full tee-time mode 🏌️",
-      "interpretation": "Work country-club-coded moment. Mirror with another 🏌️, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "marking a lazy day with nothing scheduled 🏌️",
+      "interpretation": "A handover or a sign-off in a channel. It reads as playing golf, or making an awkward swing at something, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🏌️",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets mistaken for a calm country-club image when it is nearly always the setup for a joke about someone swinging at something and missing entirely more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "teasing a friend for missing an easy shot 🏌️",
+      "interpretation": "Family threads are where this lands most naturally. The reading is playing golf, or making an awkward swing at something, and nobody in the thread is reading it as anything sharper than that."
     }
   ],
   "skinToneVariations": [

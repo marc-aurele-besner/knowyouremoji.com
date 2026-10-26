@@ -7,121 +7,151 @@
   "category": "people-body",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "10.0",
-  "baseMeaning": "American Sign Language gesture for 'I love you'.",
-  "tldr": "I love you! ASL sign combining I, L, and Y for love.",
+  "baseMeaning": "Shows a hand with thumb, index finger, and pinky extended, other fingers folded.",
+  "tldr": "🤟 Love-You Gesture — saying I love you, or hyping something up.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "ASL sign for 'I love you'.",
-      "example": "Love you always 🤟",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Rock on or cool vibes (often confused with rock sign).",
-      "example": "Let's go! 🤟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Expressing love or affection.",
-      "example": "Miss you 🤟",
+      "meaning": "Borrowed as a reaction, it reads as saying I love you, or hyping something up.",
+      "example": "Hyping a song before you press play 🤟",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Casual love expression or hyping something up.",
-      "example": "This song 🤟",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: saying I love you, or hyping something up, said without believing any of it.",
+      "example": "sure, sure 🤟",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — saying I love you, or hyping something up — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤟",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a hand with thumb, index finger, and pinky extended, other fingers folded. Nothing hidden in the drawing itself.",
+      "example": "Texting love to a partner or a close friend 🤟",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "INSTAGRAM",
-      "note": "Staple of captions and bio flourishes; pairs with ❤️ for emphasis."
-    },
-    {
-      "platform": "TWITTER",
-      "note": "Common for expressing love or enthusiasm; reads as casual affection or hype."
-    },
-    {
       "platform": "WHATSAPP",
-      "note": "Popular in family and relationship messages; the 'love you' closer."
+      "note": "WhatsApp renders 🤟 exactly as the phone system does, but the keyboard keeps it in the hand-fingers-partial section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like hyping a song before you press play."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "On Instagram 🤟 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as saying I love you, or hyping something up under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in fan edits and creator shoutouts; reads as 'love you' rather than rock sign."
+      "note": "In TikTok comments 🤟 is the fastest way to answer a video without typing anything. The gesture stays saying I love you, or hyping something up, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🤟 lands in channels where the sentence was supposed to be shorter. It is usually standing in for texting love to a partner or a close friend, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🤟 is a staple of the reaction bar, which is why it so often arrives stripped of its saying I love you, or hyping something up reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Often used interchangeably with rock sign; the ASL meaning is known but secondary."
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🤟 deliberately, usually for something like hyping a song before you press play, and they read saying I love you, or hyping something up into it more often than the older cohorts do."
     },
     {
-      "generation": "MILLENNIAL",
-      "note": "Knows ASL meaning but also uses casually for hype or affection."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤟 literally, as the picture of the gesture itself, and is less likely to read saying I love you, or hyping something up into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May know ASL meaning or confuse with rock sign entirely."
+      "note": "Older senders use 🤟 in the most straightforward way, on family and group messages, and are less likely to hear the saying I love you, or hyping something up subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🤟 to do the work of texting love to a partner or a close friend, and treats the neutral drawing as the default rather than as a choice. What they hear first is saying I love you, or hyping something up."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤟 and 🤘 get swapped",
+      "description": "The Sign of the Horns 🤘 is one tap away in every picker, and it does not carry the same reading — the horns sign is a rock handshape, the pinky-out version is the ASL love sign. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤟 as something else fairly often: it gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤟 Love-You Gesture Emoji Meaning - What Does 🤟 Really Mean?",
-  "seoDescription": "Learn what the love-you gesture emoji 🤟 really means. ASL sign for 'I love you' combining I, L, and Y. Complete context guide.",
+  "seoTitle": "🤟 Love-You Gesture Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🤟 Love-You Gesture explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The 🤟 love-you gesture is the ASL sign that combines I, L, and Y into a single gesture — the 'ILY' of American Sign Language. The raised thumb, index, and pinky with the folded middle and ring fingers is a distinct shape that gets confused with the rock sign (🤘) but is functionally different. In 2026 🤟 has become the default 'love you' hand emoji, used both for romantic and platonic affection.\n\nIn real-world chat 🤟 does very different work depending on the surrounding text. 'Love you always 🤟' reads as a romantic or family signal; 'This song 🤟' reads as hype. The shape is the same; the context changes the read. Writers should pick 🤟 when the message is about affection or hype and avoid it when the recipient will not recognize the gesture (older users may default to rock-sign interpretation).",
-    "howPeopleUseIt": "🤟 shows up at the end of affectionate messages, in family chats as a 'love you' closer, and in hype captions for music and content. People send it after a friend's good news, as a sweet romantic signal, or as a casual 'love this' reaction. The emoji pairs naturally with ❤️ for the romantic stack and with 🙌 for the hype read.\n\nIn close-friends chats 🤟 is the 'love you' closer. In dating-app messages it can read as a romantic signal — gentler than the red heart because the gesture is performative rather than literal. In music culture 🤟 is sometimes used interchangeably with the rock sign 🤘, though the two are distinct gestures.",
-    "whenNotToUse": "Skip 🤟 in any context where the recipient expects a clear romantic signal — a partner in a serious conversation, a family member in a grief moment. The hand gesture reads as casual, which can feel mismatched. Avoid it in professional contexts where the hand shape will read as 'rock on' rather than 'I love you,' confusing the message.\n\nAlso avoid 🤟 in contexts where the recipient does not know ASL and will read it as the rock sign. The two gestures are functionally different.",
-    "howToReply": "Mirror 🤟 with another 🤟 if you want to keep the affection register, or pair with ❤️ for the romantic stack. If the sender is signaling hype, mirror with 🤟 and a sentence that agrees. If the sender is using 🤟 as a 'love you' closer, mirror with 🤟 or ❤️ and a follow-up that returns the warmth.\n\nIf 🤟 lands in a romantic context, mirror with ❤️ or 🤟 and a sentence that keeps the affection going.",
+    "overview": "The complication is that the drawing invites a second reading. It gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🤘 Sign of the Horns: the horns sign is a rock handshape, the pinky-out version is the ASL love sign. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The love-you gesture comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the love-you gesture for? Mostly texting love to a partner or a close friend, and then hyping a song before you press play. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🤟 is a hand with thumb, index finger, and pinky extended, other fingers folded. It came into the emoji set in Unicode 10.0, under the hand-fingers-partial heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is saying I love you, or hyping something up. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🤟 sent to a colleague is a piece of work, 🤟 sent to a friend is a joke, and 🤟 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🤟 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"saying I love you, or hyping something up\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is texting love to a partner or a close friend: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is hyping a song before you press play, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🤟 gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and love-you gesture gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🤟 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as saying I love you, or hyping something up — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🤘 Sign of the Horns. The horns sign is a rock handshape, the pinky-out version is the ASL love sign. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🤟 sent as a reaction to somebody who is upset reads as saying I love you, or hyping something up, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🤟 gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like texting love to a partner or a close friend needs the sentence: the drawing alone leaves the reader deciding between saying I love you, or hyping something up and something sharper.\n\nReply with 🤟 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🤟 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does 🤟 mean in text?",
-        "answer": "🤟 means 'I love you' in ASL or casual affection/hype. The shape — thumb, index, and pinky raised — is the ASL ILY sign."
-      },
-      {
         "question": "What is the difference between 🤟 and 🤘?",
-        "answer": "🤘 is the rock sign (index and pinky only); 🤟 is the love-you gesture (thumb, index, and pinky). The thumb makes 🤟 distinct from the rock gesture."
+        "answer": "The horns sign is a rock handshape, the pinky-out version is the ASL love sign. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🤟 flirty?",
-        "answer": "🤟 can read as soft-flirty when used in a dating context — a performative 'love you' closer. In other contexts it is hype or affection."
+        "question": "Is 🤟 rude?",
+        "answer": "It can be. The gesture is meant as saying I love you, or hyping something up, but it gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "When should I use 🤟?",
-        "answer": "Use 🤟 as an 'I love you' closer in family and dating chats, or as a hype emoji for music and content. Avoid it in serious professional contexts."
+        "question": "What does 🤟 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🤟 and its skin-tone versions?",
+        "answer": "The tone variants under love-you gesture show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🤟 mean in text?",
+        "answer": "🤟 is used for saying I love you, or hyping something up. The drawing shows a hand with thumb, index finger, and pinky extended, other fingers folded, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "love you guys 🤟",
-      "interpretation": "Platonic affection in a friend group. Mirror with 🤟 or ❤️ to return the warmth."
+      "setting": "work",
+      "message": "hyping a song before you press play 🤟",
+      "interpretation": "A handover or a sign-off in a channel. It reads as saying I love you, or hyping something up, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "miss you already 🤟",
-      "interpretation": "Sweet romantic miss. Mirror with 🤟 or ❤️ to keep the affection going."
-    },
-    {
-      "setting": "work",
-      "message": "great work today 🤟",
-      "interpretation": "Coworker hype. Mirror with 🤟 or 👍 if you share the energy."
+      "message": "there is something you should know 🤟",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "love you mom 🤟",
-      "interpretation": "Family-coded 'love you' closer. Mirror with ❤️ or 🤟 and a follow-up."
+      "message": "texting love to a partner or a close friend 🤟",
+      "interpretation": "Family threads are where this lands most naturally. The reading is saying I love you, or hyping something up, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "this new track 🤟",
-      "interpretation": "Hype reaction to music. Mirror with 🤟 or 🎶."
+      "message": "that is the whole post 🤟",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
+      "setting": "friends",
+      "message": "texting love to a partner or a close friend 🤟",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as saying I love you, or hyping something up, and matching it with the same emoji is a normal reply."
     }
+  ],
+  "skinToneVariations": [
+    "love-you-gesture-light",
+    "love-you-gesture-medium-light",
+    "love-you-gesture-medium",
+    "love-you-gesture-medium-dark",
+    "love-you-gesture-dark"
   ]
 }

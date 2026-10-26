@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person swimming.",
-  "tldr": "Swimming, pool time, summer vibes, or staying afloat.",
+  "baseMeaning": "A picture of a swimmer in a cap and goggles, one arm extended forward in the water. Read in a message it lands as doing laps, going through the motions, staying afloat.",
+  "tldr": "🏊 Person Swimming. In a chat it comes across as doing laps, going through the motions, staying afloat.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Swimming or pool activities.",
-      "example": "Pool day 🏊",
+      "meaning": "The plain reading: a swimmer in a cap and goggles, one arm extended forward in the water. Nothing hidden in the drawing itself.",
+      "example": "A weekly swim set done on autopilot 🏊",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Summer vibes or water activities.",
-      "example": "Summer mode activated 🏊",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Staying afloat or managing.",
-      "example": "Just trying to stay afloat 🏊",
+      "meaning": "Borrowed as a reaction, it reads as doing laps, going through the motions, staying afloat.",
+      "example": "Saying you are keeping your head above water 🏊",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Pool date or beach activity.",
-      "example": "Pool party? 🏊",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as doing laps, going through the motions, staying afloat, softened by whatever sentence sits next to it.",
+      "example": "not me 🏊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — doing laps, going through the motions, staying afloat — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🏊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on staying-afloat threads, pool-day-tagged tweets, and 'summer mode' posts where the swimmer cue reads as water-energy flex rather than literal sport."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of pool-day flat-lays, summer-coded stories, and 'pool party' reveals; the water-line visual carries the visible summer energy."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Shows up on pool transitions, summer-coded clips, and 'staying afloat 🏊' ironic content where the swimmer cue signals water-coded flex."
-    },
-    {
       "platform": "SLACK",
-      "note": "Surfaces on team 'summer Friday' tags, work-coded staying-afloat messages, and friend pool moments where the swimmer cue fits the seasonal register."
+      "note": "In Slack 🏊 lands in channels where the sentence was supposed to be shorter. It is usually standing in for a weekly swim set done on autopilot, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🏊 is a staple of the reaction bar, which is why it so often arrives stripped of its doing laps, going through the motions, staying afloat reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🏊 does most of its work in replies, where it tags a message like saying you are keeping your head above water. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Swimming 🏊 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like a weekly swim set done on autopilot is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🏊 exactly as the phone system does, but the keyboard keeps it in the person-sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like saying you are keeping your head above water."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🏊 on staying-afloat threads, pool-day reveals, and 'summer mode' moments where the swimmer cue matches the modern water-coded register."
+      "note": "Gen Z reaches for 🏊 to do the work of a weekly swim set done on autopilot, and treats the neutral drawing as the default rather than as a choice. What they hear first is doing laps, going through the motions, staying afloat."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on summer-coded tags, nostalgia-coded pool moments, and staying-afloat reveals where the universal swimmer cue fits."
+      "note": "Millennials tend to send 🏊 deliberately, usually for something like saying you are keeping your head above water, and they read doing laps, going through the motions, staying afloat into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded pool messages and summer reveals, treating the swimmer as literal water-sport energy."
+      "note": "Gen X mostly uses 🏊 literally, as the picture of the gesture itself, and is less likely to read doing laps, going through the motions, staying afloat into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal swimmer and uses it on exercise-coded tags without parsing the modern staying-afloat subtext."
+      "note": "Older senders use 🏊 in the most straightforward way, on family and group messages, and are less likely to hear the doing laps, going through the motions, staying afloat subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🏊 and 🏄 get swapped",
+      "description": "The Person Surfing 🏄 is one tap away in every picker, and it does not carry the same reading — the surfer rides a wave standing up, the swimmer is head-down in a pool doing laps. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🏊 as something else fairly often: it gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏊 Person Swimming Emoji Meaning - What Does 🏊 Really Mean?",
-  "seoDescription": "Learn what the person swimming emoji 🏊 really means in texting. Swimming, summer vibes, or staying afloat. Complete context guide.",
+  "seoTitle": "🏊 Person Swimming Emoji - What It Actually Means in Text",
+  "seoDescription": "🏊 Person Swimming meaning: doing laps, going through the motions, staying afloat. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "person-swimming-light",
     "person-swimming-medium-light",
@@ -83,60 +98,60 @@
     "person-swimming-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🏊 is the emoji of water-coded summer flex — a water-line swimmer, the iconography of the pool, summer-coded energy, and the universal 'pool day' tag. Where 🚴 reads as road-coded cycling energy and 🏃 reads as runner-coded cardio energy, 🏊 captures the moment when the sender wants to communicate water-coded summer energy — a 'pool day 🏊' seasonal moment or a 'staying afloat 🏊' ironic reveal. The swimmer cue borrows from the pool tradition and the modern water-coded aesthetic, which is exactly why the emoji reads as summer-coded rather than literal sport.\n\nIn real-world usage 🏊 lives in the spaces where the sender wants to communicate water-coded energy. A swimmer sends it on a 'pool day 🏊' seasonal-coded message. A friend sends it on a 'summer mode activated 🏊' pool reveal. A coworker sends it on a 'just trying to stay afloat 🏊' ironic-coded tag. The swimmer cue is what makes the emoji feel summer-coded — it is not just 'swimming,' it is 'swimming-coded pool moment.'\n\nWhat separates 🏊 from the rest of the person-sport family is the water-coded register. The emoji is not saying 'cyclist' (🚴), 'climber' (🧗), or 'ball-bouncer' (⛹️). It is saying 'water-coded summer,' which carries a specific pool tradition. That is why 🏊 travels especially well on 'pool day' tags, summer-coded reveals, and any context where the sender wants the message to land with seasonal energy.",
-    "howPeopleUseIt": "🏊 shows up as the closer on a 'pool day 🏊' seasonal message ('pool day 🏊'), the punctuation on a 'summer mode activated 🏊' water-coded reveal, and the softener on a 'just trying to stay afloat 🏊' ironic-coded tag. It pairs naturally with sentences that name the water-coded energy — 'pool day,' 'summer mode,' 'staying afloat' — and sits beautifully on seasonal messages and pool reveals.\n\nIn group chats 🏊 anchors 'water moment' threads, summer-coded pool reveals, and 'pool party 🏊' seasonal-coded tags where the swimmer cue matches the register. On Instagram it lands on pool-day flat-lays and summer-coded stories. On TikTok it travels in pool transitions and 'summer mode' reaction content.\n\nThe emoji also works in dating contexts. A 'pool party 🏊' partner message uses the swimmer cue to communicate water-coded romance. Across all of these surfaces the rule is the same: the more summer-coded the moment, the more natural 🏊 feels.",
-    "whenNotToUse": "Skip 🏊 in rest or recovery-coded contexts. The water-coded swimmer cue is the wrong tone for any conversation where the moment is quiet. A sentence that acknowledges the moment is a better fit.\n\nAvoid 🏊 in 'literal swimming' coded contexts where the water-coded energy feels off. A 'pool day 🏊' message works for summer-coded flex; for literal sport contexts use 🤽 or a sentence.\n\nSkip 🏊 when you want to communicate grounded focus. The water-coded register is too seasonal for steady moments; use 🧘 or 📚 when the focus needs to be calm.",
-    "howToReply": "If someone sends 🏊, the cleanest mirror is another 🏊, 🌊, or a sentence that joins the water-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'pool day too' or 'summer mode for sure.' If the swimmer cue feels too water-coded, reply with a softer emoji (🏖️ or ☀️) that signals summer without matching the pool volume.\n\nWhen 🏊 lands as a 'pool day 🏊' seasonal-coded message, mirror with another 🏊, a wave emoji, or a sentence that escalates the energy. When it arrives as a 'just trying to stay afloat 🏊' ironic-coded tag, mirror with another 🏊, a sentence that joins the irony, or an emoji that matches.",
+    "overview": "The drawing of 🏊 is a swimmer in a cap and goggles, one arm extended forward in the water. It arrived with Unicode 6.0 in the person-sport section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is doing laps, going through the motions, staying afloat. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏄 Person Surfing: the surfer rides a wave standing up, the swimmer is head-down in a pool doing laps. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person swimming also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person swimming reads as doing laps, going through the motions, staying afloat, it is most often used for a weekly swim set done on autopilot or saying you are keeping your head above water, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🏊 in a work thread is saying you are keeping your head above water; 🏊 in a family thread is a weekly swim set done on autopilot; 🏊 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🏊 is the whole reply, and it is carrying a meaning nobody wrote down — doing laps, going through the motions, staying afloat is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. A weekly swim set done on autopilot is the job the person swimming does most: it saves a sentence and lands faster than one would have. Saying you are keeping your head above water is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🏊 will get read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person swimming gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🏊 reads as doing laps, going through the motions, staying afloat, and formality is exactly where that reading does the most damage.\n\nLeave 🏄 Person Surfing for the other message. The surfer rides a wave standing up, the swimmer is head-down in a pool doing laps. And keep 🏊 out of threads where somebody is hurting: it reads as doing laps, going through the motions, staying afloat there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🏊 gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official often enough that the sentence matters more than the picture.\n\nAnd do not send 🏊 alone when the message underneath is supposed to be warm. A message like a weekly swim set done on autopilot carries the feeling; the picture on its own leaves the reader choosing between doing laps, going through the motions, staying afloat and something sharper.\n\nStart by reading what the 🏊 was doing. If it was a reaction, react: 🏊 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🏊 mean from a swimmer?",
-        "answer": "From a swimmer, 🏊 signals water-coded summer flex or a 'pool day 🏊' message. The swimmer cue reads as summer-coded rather than literal sport, so it tends to land on summer tags, friend pool-day messages, and summer-mode reveals."
+        "question": "What is the difference between 🏊 and its skin-tone versions?",
+        "answer": "The tone variants under person swimming show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is 🏊 flirty?",
-        "answer": "It can be. In a partner context 🏊 can read as soft-coded romance — 'pool party 🏊' is a soft-coded summer tag. On its own the emoji is more summer-coded than romantic."
+        "question": "What does 🏊 mean in text?",
+        "answer": "🏊 is used for doing laps, going through the motions, staying afloat. The drawing shows a swimmer in a cap and goggles, one arm extended forward in the water, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "What is the difference between 🏊 and 🚴?",
-        "answer": "🚴 is the person biking — the cue is road-coded cycling energy, the universal 'morning ride' tag. 🏊 is the person swimming — the cue is water-coded summer energy, the 'pool day' seasonal energy. Use 🚴 when the moment is road-coded; use 🏊 when the moment is water-coded summer."
+        "question": "What is the difference between 🏊 and 🏄?",
+        "answer": "The surfer rides a wave standing up, the swimmer is head-down in a pool doing laps. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🏊 for 'pool day' moments?",
-        "answer": "Yes — 🏊 is one of the most common summer-coded emojis. The swimmer cue is a natural fit for 'pool day' moments, summer-coded reveals, and 'staying afloat' ironic tags."
+        "question": "Is 🏊 rude?",
+        "answer": "It can be. The gesture is meant as doing laps, going through the motions, staying afloat, but it gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🏊 mean staying afloat?",
-        "answer": "Often yes — 🏊 carries the water-line visual and reads in modern usage as water-coded. The literal-swimmer-versus-staying-afloat split depends on the sender and the channel."
+        "question": "What does 🏊 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "social",
-      "message": "pool day with the whole crew, full summer mode 🏊",
-      "interpretation": "Public water-coded flex. Mirror with another 🏊, a wave emoji, or a sentence that joins the summer energy."
-    },
-    {
-      "setting": "dating",
-      "message": "want to hit the pool this weekend, full summer era 🏊",
-      "interpretation": "Partner water-coded romance. Mirror with another 🏊, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "work",
-      "message": "just trying to stay afloat today, full water mode 🏊",
-      "interpretation": "Work water-coded metaphor. Mirror with another 🏊, a wave emoji, or a sentence that joins the team energy."
-    },
-    {
-      "setting": "family",
-      "message": "took the kids to the lake, full summer mode 🏊",
-      "interpretation": "Family water-coded tag. Mirror with another 🏊, a sentence that joins the family moment, or a wave emoji that matches."
+      "message": "that is the whole post 🏊",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "summer mode activated, full pool era 🏊",
-      "interpretation": "Friend water-coded reveal. Mirror with another 🏊, a sentence that joins the summer energy, or a wave emoji that matches."
+      "message": "a weekly swim set done on autopilot 🏊",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as doing laps, going through the motions, staying afloat, and matching it with the same emoji is a normal reply."
+    },
+    {
+      "setting": "work",
+      "message": "saying you are keeping your head above water 🏊",
+      "interpretation": "A handover or a sign-off in a channel. It reads as doing laps, going through the motions, staying afloat, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🏊",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as a serious athlete or race effort when it is more often someone treading water through a slow week, since the cap and goggles look official more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "a weekly swim set done on autopilot 🏊",
+      "interpretation": "Family threads are where this lands most naturally. The reading is doing laps, going through the motions, staying afloat, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

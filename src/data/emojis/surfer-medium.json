@@ -7,135 +7,137 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Surfing emoji.",
-  "tldr": "Represents person surfing.",
+  "baseMeaning": "Person Surfing emoji. The medium skin tone modifier is applied to the figure.",
+  "tldr": "🏄🏽 Person Surfing with a medium skin tone. The middle tone, often standing in for a neutral default.",
   "contextMeanings": [
     {
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it the safest possible choice, which some senders use on purpose.",
+      "example": "easy 🏄🏽",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium skin tone reads as the unremarkable version in a work thread.",
+      "example": "acknowledged 🏄🏽",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of person surfing.",
-      "example": "Time for person surfing 🏄",
+      "meaning": "Shows the same artwork as the untoned version, with the medium skin tone applied to the figure.",
+      "example": "🏄🏽",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🏄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person surfing? 🏄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🏄",
+      "meaning": "The gesture reads the same as the untoned version; the medium skin tone makes it the neutral version of the emoji, with almost nothing attached.",
+      "example": "copy that 🏄🏽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🏄🏽 renders as one combined glyph with the tone applied. The medium swatch is the one several keyboards select when the picker opens, so on a device with that default set, 🏄🏽 is often the result of a finger never touching the tone list."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the medium modifier on current builds and puts the swatch in the middle of the row. It renders the most consistently of the five tones across the clients people actually use, which is part of why the medium variant is the one most often mistaken for a deliberately neutral choice."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🏄🏽 lands on modern-coded person surfing threads, person surfing-tagged moment posts, and 'person surfing-coded' reveals where the person surfing cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🏄🏽 is a staple of modern-coded flat-lays, person surfing-canvas story backgrounds, and modern-coded profile accents; the person surfing cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🏄🏽 travels in modern-coded transitions, person surfing reaction reveals, and 'person surfing-coded' listicle content where the person surfing cue signals modern-coded energy."
+      "note": "Twemoji renders 🏄🏽 the same way on every device, which makes the medium swatch the easiest one to identify in a screenshot. The confusion is not visual: it is that a medium tone so often stands in for somebody the sender never asked you to picture."
     },
     {
       "platform": "SLACK",
-      "note": "🏄🏽 threads through modern-coded reactions, person surfing markers, and 'person surfing-coded' bullets in work channels where the person surfing cue fits the register."
+      "note": "Slack renders the medium swatch slightly flatter than the phone version, in the same way it flattens every swatch. Nothing about 🏄🏽 changes meaning in Slack, but a workspace that reacts with it constantly can make the tone look like a signature it never was."
     },
     {
       "platform": "DISCORD",
-      "note": "🏄🏽 is an active reaction in modern-coded person surfing channels, server-coded person surfing markers, and 'person surfing-coded' reveals where the person surfing cue matches the modern-coded register."
+      "note": "Discord uses Twemoji and applies the modifier cleanly. The medium swatch survives copy-paste and re-posting better than the extremes of the list, which is another reason it has become the default in a lot of servers without anybody deciding on it."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🏄🏽 on modern-coded person surfing threads, person surfing-coded reveals, and 'person surfing-coded' moments where the person surfing cue matches the modern modern-coded register."
+      "note": "Gen Z has largely stopped treating the medium swatch as neutral and uses 🏄🏽 less than the older tones, because the middle of the Fitzpatrick list no longer reads as a safe default. When it does appear it is usually an unintentional leftover."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded person surfing moments, and person surfing-coded reveals where the universal person surfing cue fits."
+      "note": "Millennials use 🏄🏽 heavily as the neutral middle option — the tone that looks deliberate without looking like a statement. It is one of the most common swatches in messages from this cohort."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded person surfing messages and person surfing reveals, treating the person surfing as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal person surfing and uses it on modern-coded tags without parsing the modern person surfing-coded subtext."
+      "note": "Gen X treats 🏄🏽 as a plain 🏄. The medium swatch was the default in the keyboards this cohort grew up with, so it usually reflects the settings rather than the sender."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🏄🏽 is frequently used to depict somebody other than its sender, and because it is treated as the neutral pick, it is the tone most likely to be used to refer to somebody other than the sender. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏄🏽 Person Surfing Medium Skin Tone Emoji - What Does 🏄🏽 Mean?",
-  "seoDescription": "Learn what the person surfing emoji with medium skin tone 🏄🏽 means in texts and social media.",
+  "seoTitle": "🏄🏽 Person Surfing Medium Skin Tone Emoji Meaning - What Does 🏄🏽 Mean?",
+  "seoDescription": "What does the person surfing emoji 🏄🏽 mean? Person Surfing showing a figure standing sideways on a surfboard riding a breaking wave. Covers the medium skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "surfer",
   "skinToneModifier": "medium",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🏄🏽 Person Surfing: Medium Skin Tone is the emoji of sport-coded athletic flex — the athletic tradition, the fitness cue, and the universal \"in the game\" tag. Where 🏆 reads as victory-coded finish energy and ⚽ reads as ball-coded play energy, 🏄🏽 Person Surfing: Medium Skin Tone captures the moment when the sender wants to communicate sport-coded athletic energy — a \"medium-skinned person surfing\" workout tag or a game-day-coded reveal.\n\nWhat separates 🏄🏽 from the rest of the family is the sport-coded register. The emoji is not saying 'person surfing-only.' It is saying 'person surfing-coded sport,' which carries a specific athletic tradition, sports fandom, or workout energy. That is why 🏄🏽 travels especially well on fitness reveals, game-day tags, athletic-coded flex, and training moments and any context where the sender wants the message to land with sport energy.\n\n🏄🏽 Person Surfing: Medium Skin Tone lives in the spaces where the sender wants to communicate sport energy. A partner sends it on a \"person surfing 🏄🏽\" moment. A friend sends it on a \"sport 🏄🏽\" reveal. A coworker sends it on a \"person surfing 🏄🏽\" tag. The person surfing cue is what makes the emoji feel sport-coded — it is not just 'a moment,' it is 'person surfing-coded energy.'\n\nIn dating 🏄🏽 Person Surfing: Medium Skin Tone works as a soft-coded flirty tag, where the person surfing cue signals sport-coded athletic flex. In work threads 🏄🏽 Person Surfing: Medium Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏄🏽 feels.\n\nThe medium-skinned variant carries the same sport-coded read but anchors the representation to a mid skin-tone register. Writers can pair the medium-skinned variant with the moment to keep the sport-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "🏄🏽 Person Surfing: Medium Skin Tone shows up as the closer on a 'person surfing 🏄🏽' moment, the punctuation on a 'person surfing 🏄🏽' reveal, and the softener on a 'sport 🏄🏽' tag. It pairs naturally with sentences that name the sport energy — 'person surfing,' 'sport-coded athletic flex,' 'person surfing-coded' — and sits beautifully on fitness reveals, game-day tags, athletic-coded flex, and training moments.\n\nIn group chats 🏄🏽 Person Surfing: Medium Skin Tone anchors 'person surfing moment' threads, sport reveals, and 'person surfing 🏄🏽' tags where the person surfing cue matches the register. On Instagram it lands on sport flat-lays and sport stories. On TikTok it travels in sport transitions and 'person surfing' reaction content.\n\nThe emoji also works in dating contexts. A 'person surfing 🏄🏽' partner message uses the person surfing cue to communicate sport romance. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏄🏽 feels.",
-    "whenNotToUse": "Skip 🏄🏽 Person Surfing: Medium Skin Tone in sympathy, condolence, or break-up contexts. The sport-coded athletic cue is the wrong register for somber moments. A quiet 💔 or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🏄🏽 Person Surfing: Medium Skin Tone in sedentary contexts where the athletic energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip 🏄🏽 Person Surfing: Medium Skin Tone when you want to communicate rest or recovery. The sport register is too athletic-coded for quiet moments; use 🛋️ or a sentence when the moment needs calm.",
-    "howToReply": "If someone sends 🏄🏽 Person Surfing: Medium Skin Tone, the cleanest mirror is another 🏄🏽 Person Surfing: Medium Skin Tone, 💪, or a sentence that joins the athletic energy. If the sport cue feels too active-coded, reply with a softer emoji (🏆 or 🙌) that signals support without matching the workout volume.\n\nWhen 🏄🏽 Person Surfing: Medium Skin Tone lands as a game-day tag, mirror with another 🏄🏽 Person Surfing: Medium Skin Tone, a trophy emoji, or a sentence that escalates the fan energy. When it arrives as a fitness-coded reveal, mirror with another 🏄🏽 Person Surfing: Medium Skin Tone, a sentence that joins the gym energy, or a flex emoji that fits.",
+    "overview": "There are five skin tones in the Fitzpatrick set and 🏄🏽 is the one in the middle of them — Person Surfing with a medium skin tone, a figure standing sideways on a surfboard riding a breaking wave. Because it sits in the middle of the list and several keyboards default to it, it is the variant that most often ends up standing in for \"somebody\", with no view at all from the sender. Often the choice of someone who is not using skin tone to make a point, which is why it reads as the neutral stand-in\n\nThat neutrality is useful and it is also the reason to be careful. 🏄🏽 reads as going with the flow, or chasing a big moment, the same job 🏄 does. But because the medium swatch is so often pressed by people who are simply not thinking about skin tone, it is also the variant that most often ends up describing somebody who is not the sender — and the most likely to be misread that way.\n\nThe situations it turns up in are the family ones, unchanged by the tone. It gets mixed up with 🏊 Person Swimming more than it should — the swimmer is head-down exertion, the surfer is upright balance on something much faster. The misread that comes up most often with this glyph is specific enough to name: it gets taken for a laid-back beach holiday when it is really about a single committed ride, one wave and no interest in what happens after.",
+    "howPeopleUseIt": "The gesture is the same one 🏄 makes, so the family habits carry straight over. What changes with 🏄🏽 is who tends to send it and what they are assuming about the reader.\n\nThe medium swatch is the workhorse of the set. 🏄🏽 is the one people send when they are not trying to make a point about skin tone at all, which makes it the variant most likely to be used as a stand-in for someone unspecified. You will see it in announcing you are leaving the group chat, and in signing off a difficult stretch of work, and in a great many places where the sender simply pressed the emoji that was already selected.\n\nThe flip side of that ubiquity is that the tone carries almost no signal of its own. 🏄🏽 reads as the neutral version of the emoji, with almost nothing attached, and it tends to disappear into the line it sits on. If the sender wanted the skin tone to mean something, this is the variant that will not deliver it.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🏄 itself, and every tone in this family inherits it.\n\nThe trap for 🏄🏽 is that its neutrality is an illusion. It is chosen by reflex more often than by intent, and a reflex choice is not a statement about the sender. Do not send 🏄🏽 expecting it to be read as \"this is what I look like\" unless that is genuinely why you picked it — the medium swatch is the one most likely to have been selected without a thought at all.\n\nAnd skip it when a specific person is being depicted and you would be guessing at their skin tone. The default-position argument cuts the other way here: the easiest swatch to press is the easiest one to press by accident, and it is the one that looks most like a decision.",
+    "howToReply": "The simplest reply is 🏄 with the same gesture and no tone commentary, because the medium swatch does not usually carry a message of its own.\n\nIf the sender was representing themselves, though, 🏽 back is warmer than 🏄 — it says you registered what they chose. If they were representing somebody else, match the gesture only.",
     "faqs": [
       {
-        "question": "What does 🏄🏽 Person Surfing: Medium Skin Tone mean in chat?",
-        "answer": "🏄🏽 Person Surfing: Medium Skin Tone is the sport-coded athletic flex — it borrows from athletic tradition and signals a fitness reveal, game-day tag, or workout-coded moment. The athletic cue is what makes the read feel sport-coded rather than literal."
+        "question": "What does 🏄🏽 mean in text?",
+        "answer": "🏄🏽 is Person Surfing with a medium skin tone. The gesture reads as going with the flow, or chasing a big moment."
       },
       {
-        "question": "Is 🏄🏽 Person Surfing: Medium Skin Tone flirty?",
-        "answer": "Sometimes. In a dating thread 🏄🏽 Person Surfing: Medium Skin Tone can read as active-coded romance — a \"let's workout together\" tag or a fitness-coded flirty hint. On its own it reads more sport than romantic."
+        "question": "Is the medium skin tone in 🏄🏽 a statement?",
+        "answer": "Rarely on its own. It is the middle swatch in the tone list, and the one several keyboards land on by default when the tone picker opens. It is the variant people pick when they are not thinking about skin tone, so it rarely reads as one."
       },
       {
-        "question": "What does 🏄🏽 Person Surfing: Medium Skin Tone mean from a guy?",
-        "answer": "From anyone, 🏄🏽 Person Surfing: Medium Skin Tone signals sport-coded flex or a fitness-coded reveal. The athletic cue reads as workout-coded rather than literal, so it tends to land on game-day tags, friend coded messages, and fitness-coded reveals."
+        "question": "What does 🏄🏽 mean from a guy?",
+        "answer": "The tone does not change the gesture, so the read is the same. There is no separate gendered reading of 🏄."
       },
       {
-        "question": "Does 🏄🏽 Person Surfing: Medium Skin Tone work for working out moments?",
-        "answer": "Yes — 🏄🏽 Person Surfing: Medium Skin Tone is one of the most popular sport-coded emojis. The athletic cue fits gym reveals, training-coded tags, and game-day-coded fandom shares."
+        "question": "Is 🏄🏽 rude?",
+        "answer": "Not because of the swatch. The gesture carries that risk on its own, and the medium tone does not add to it."
       },
       {
-        "question": "What is the difference between 🏄🏽 Person Surfing: Medium Skin Tone and 🏆?",
-        "answer": "🏆 is the trophy — the cue is victory-coded finish energy. 🏄🏽 Person Surfing: Medium Skin Tone is the active athletic moment — the cue is sport-coded fitness, the \"in the game\" energy. Use 🏆 when the moment is victory-coded; use 🏄🏽 Person Surfing: Medium Skin Tone when the moment is sport-coded athletic."
+        "question": "What is the difference between 🏄🏽 and 🏄?",
+        "answer": "The swatch, and only the swatch. 🏄 is the tone-less version and is the safer choice whenever you are not depicting a specific person."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "person surfing 🏄🏽 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 🏄🏽, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the person surfing chaos 🏄🏽",
-      "interpretation": "Public modern-coded flex. Mirror with another 🏄🏽, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "person surfing 🏄🏽 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 🏄🏽, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "person surfing today, full modern-coded energy 🏄🏽",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 🏄🏽, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "announcing you are leaving the group chat 🏄🏽",
+      "interpretation": "A friend sending 🏄🏽 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "signing off a difficult stretch of work 🏄🏽",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is the safest possible choice, which some senders use on purpose."
     },
     {
       "setting": "work",
-      "message": "person surfing coded sprint today, full modern-coded energy 🏄🏽",
-      "interpretation": "Work modern-coded moment. Mirror with another 🏄🏽, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "acknowledged 🏄🏽",
+      "interpretation": "A work thread. The medium skin tone reads as the unremarkable version in a work thread."
+    },
+    {
+      "setting": "family",
+      "message": "okay 🏄🏽",
+      "interpretation": "A family chat where the emoji is being read literally — the medium skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "agreed 🏄🏽",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

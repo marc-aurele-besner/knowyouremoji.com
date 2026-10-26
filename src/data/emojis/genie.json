@@ -7,125 +7,151 @@
   "category": "people",
   "subcategory": "person-fantasy",
   "unicodeVersion": "10.0",
-  "baseMeaning": "A genie emerging from a lamp, often associated with wishes and Aladdin.",
-  "tldr": "Wish-coded genie, 'three wishes' register, or Aladdin-coded fantasy comfort.",
+  "baseMeaning": "A picture of a purple-skinned figure with crossed arms, the lower body trailing into smoke. Read in a message it lands as granting a wish, or conjuring something impossible.",
+  "tldr": "🧞 Genie. In a chat it comes across as granting a wish, or conjuring something impossible.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A genie figure.",
-      "example": "Three wishes 🧞",
+      "meaning": "The plain reading: a purple-skinned figure with crossed arms, the lower body trailing into smoke. Nothing hidden in the drawing itself.",
+      "example": "Making a wish about a result you want 🧞",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Wish-coded comfort or 'make a wish' register.",
-      "example": "Wish granted 🧞",
+      "meaning": "Borrowed as a reaction, it reads as granting a wish, or conjuring something impossible.",
+      "example": "Tagging someone as the one who fixes everything 🧞",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Affection-coded wish-coded flirt.",
-      "example": "Wish you were here 🧞",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as granting a wish, or conjuring something impossible, softened by whatever sentence sits next to it.",
+      "example": "not me 🧞",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Aesthetic-coded 'magic helper' reveal or 'wish' moment.",
-      "example": "Wish mode 🧞",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — granting a wish, or conjuring something impossible — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧞",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Threads that lean wish-coded or Aladdin-coded pile up 🧞 as the visual anchor, often paired with ✨ and 🪔 as the standard genie-coded trio."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Anchors Aladdin-coded aesthetic grids, wish-coded birthday reveals, and 'three wishes' transitions where 🧞 pairs with lamps, blues, and gold grading."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in 'birthday wish' transitions, Aladdin-coded tutorials, and 'three wishes' reveal videos where the genie cue reads as wish-coded flair."
+      "platform": "SLACK",
+      "note": "In Slack 🧞 lands in channels where the sentence was supposed to be shorter. It is usually standing in for making a wish about a result you want, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on birthday-coded celebration chats, wish-coded reveal posts, and Aladdin-coded nostalgia moments where the genie cue matches the moment."
+      "note": "On Discord 🧞 is a staple of the reaction bar, which is why it so often arrives stripped of its granting a wish, or conjuring something impossible reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧞 does most of its work in replies, where it tags a message like tagging someone as the one who fixes everything. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Genie 🧞 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like making a wish about a result you want is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧞 exactly as the phone system does, but the keyboard keeps it in the person-fantasy section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like tagging someone as the one who fixes everything."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧞 on birthday wish posts, Aladdin-coded nostalgia reveals, and 'three wishes' partner messages where the genie cue signals wish-coded energy."
+      "note": "Gen Z reaches for 🧞 to do the work of making a wish about a result you want, and treats the neutral drawing as the default rather than as a choice. What they hear first is granting a wish, or conjuring something impossible."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Treats 🧞 as the standard Aladdin-coded emoji, sending it through birthday-coded reveals and partner-coded affection messages."
+      "note": "Millennials tend to send 🧞 deliberately, usually for something like tagging someone as the one who fixes everything, and they read granting a wish, or conjuring something impossible into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded birthday reveals and Aladdin-coded nostalgia messages, treating the genie as literal wish-granter rather than aesthetic prop."
+      "note": "Gen X mostly uses 🧞 literally, as the picture of the gesture itself, and is less likely to read granting a wish, or conjuring something impossible into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads 🧞 as literal genie and pairs it with fantasy-coded messaging; the birthday-coded and Aladdin-coded aesthetic registers are largely invisible."
+      "note": "Older senders use 🧞 in the most straightforward way, on family and group messages, and are less likely to hear the granting a wish, or conjuring something impossible subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧞 and 🧙 get swapped",
+      "description": "The Mage 🧙 is one tap away in every picker, and it does not carry the same reading — the mage is a full human with a hat and staff, the genie is a torso trailing into smoke. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧞 as something else fairly often: it gets understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧞 Genie Emoji Meaning - What Does 🧞 Really Mean?",
-  "seoDescription": "Learn what the Genie emoji 🧞 really means. Wish-coded genie, 'three wishes' register, or Aladdin-coded fantasy comfort in modern texting.",
+  "seoTitle": "🧞 Genie Emoji - What It Actually Means in Text",
+  "seoDescription": "🧞 Genie meaning: granting a wish, or conjuring something impossible. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧞 is the emoji of wish-coded genie - a genie emerging from a lamp, the iconography of 'three wishes,' Aladdin-coded fantasy comfort, and the unmistakable wish-granting charm. Where 🧙 reads as the mystic spellcaster and 🧚 reads as the sparkly fairy, 🧞 captures the moment when the sender wants to communicate wish energy - a 'three wishes 🧞' birthday post, a 'wish granted 🧞' partner affection, or an Aladdin-coded nostalgia reveal where the lamp is part of the visual set dressing.\n\nIn real-world usage 🧞 lives in the spaces where the sender wants to communicate wish-coded warmth. A partner sends it on a 'wish you were here 🧞' affectionate message. A friend sends it on a 'birthday wish 🧞' celebration post. An Aladdin fan posts it on a nostalgia-coded reveal. The genie cue is what makes the emoji feel wish-coded - it is not just 'lamp,' it is 'lamp-coded three-wishes.'\n\nWhat separates 🧞 from the rest of the fantasy-emoji family is the wish-granting register. The emoji is not saying 'mage' (🧙), 'fairy' (🧚), or 'elf' (🧝). It is saying 'genie-coded wishes,' which carries a specific magic-coded charm. That is why 🧞 travels especially well on birthday-coded celebrations, Aladdin-coded nostalgia posts, and any wish-coded context where the sender wants the message to land with magic-coded charm.",
-    "howPeopleUseIt": "🧞 shows up as the closer on a 'three wishes 🧞' birthday post ('three wishes 🧞'), the punctuation on a 'wish granted 🧞' partner affection ('wish granted tonight 🧞'), and the visual accessory on an Aladdin-coded nostalgia reveal ('Aladdin-coded forever 🧞'). It pairs naturally with sentences that name the wish - 'three wishes,' 'wish granted,' 'make a wish' - and sits beautifully on partner affection messages and family-coded birthday reveals.\n\nIn group chats 🧞 anchors 'birthday celebration' threads, wish-coded moments, and 'Aladdin-coded mood 🧞' reveals where the genie cue matches the moment. On Instagram it lands on Aladdin-coded aesthetic posts and birthday reveals. On TikTok it travels in 'birthday wish' transitions and 'three wishes' reveals.\n\nThe emoji also works in dating contexts. A 'wish you were here tonight 🧞' partner message uses the genie cue to communicate wish-coded romance. Across all of these surfaces the rule is the same: the more wish-coded the moment, the more natural 🧞 feels.",
-    "whenNotToUse": "Skip 🧞 in sympathy, condolence, or break-up contexts. The wish-coded register is too playful for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 🧞 when you want to communicate serious affection. The wish-coded register is too magical for tender moments; use 🥰 or 🤗 when the affection needs to be deeper, and reserve 🧞 for the moments that lean wish-coded.",
-    "howToReply": "If someone sends 🧞, the cleanest mirror is another 🧞, ✨, or a sentence that joins the wish-coded warmth. If you want to escalate the engagement, follow with a sentence that adds context: 'wish granted too' or 'three wishes energy.' If the genie cue feels too magical, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the wish volume.\n\nWhen 🧞 lands as a partner 'wish you were here' check-in, mirror with another 🧞, a heart emoji, or a sentence that escalates the romance. When it arrives on a birthday thread, mirror with another 🧞, a sentence that joins the celebration, or a 🎂 that matches the birthday-coded register.",
+    "overview": "The drawing of 🧞 is a purple-skinned figure with crossed arms, the lower body trailing into smoke. It arrived with Unicode 10.0 in the person-fantasy section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is granting a wish, or conjuring something impossible. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧙 Mage: the mage is a full human with a hat and staff, the genie is a torso trailing into smoke. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe genie also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the genie reads as granting a wish, or conjuring something impossible, it is most often used for making a wish about a result you want or tagging someone as the one who fixes everything, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🧞 in a work thread is tagging someone as the one who fixes everything; 🧞 in a family thread is making a wish about a result you want; 🧞 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🧞 is the whole reply, and it is carrying a meaning nobody wrote down — granting a wish, or conjuring something impossible is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Making a wish about a result you want is the job the genie does most: it saves a sentence and lands faster than one would have. Tagging someone as the one who fixes everything is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🧞 will get understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a genie gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🧞 reads as granting a wish, or conjuring something impossible, and formality is exactly where that reading does the most damage.\n\nLeave 🧙 Mage for the other message. The mage is a full human with a hat and staff, the genie is a torso trailing into smoke. And keep 🧞 out of threads where somebody is hurting: it reads as granting a wish, or conjuring something impossible there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🧞 gets understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears often enough that the sentence matters more than the picture.\n\nAnd do not send 🧞 alone when the message underneath is supposed to be warm. A message like making a wish about a result you want carries the feeling; the picture on its own leaves the reader choosing between granting a wish, or conjuring something impossible and something sharper.\n\nStart by reading what the 🧞 was doing. If it was a reaction, react: 🧞 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🧞 mean in texting?",
-        "answer": "In texting 🧞 means 'three wishes,' 'make a wish,' or 'Aladdin-coded nostalgia.' The genie cue carries wish-coded magic in dating contexts and birthday-coded comfort in family contexts, so context drives the reading."
+        "question": "What is the difference between 🧞 and its skin-tone versions?",
+        "answer": "The tone variants under genie show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What does 🧞 mean from a girl?",
-        "answer": "From a girl, 🧞 signals wish-coded affection - 'wish granted' or 'three wishes.' The genie cue reads as magical rather than literal fantasy, so it tends to land on partner affection messages and birthday-coded reveals."
-      },
-      {
-        "question": "Is 🧞 used for Aladdin references?",
-        "answer": "Yes - 🧞 is the unofficial emoji of Aladdin-coded nostalgia, where the genie maps onto Robin Williams' iconic performance. It also works for any wish-coded reveal or birthday-coded celebration."
+        "question": "What does 🧞 mean in text?",
+        "answer": "🧞 is used for granting a wish, or conjuring something impossible. The drawing shows a purple-skinned figure with crossed arms, the lower body trailing into smoke, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🧞 and 🧙?",
-        "answer": "🧙 is the mage - mystic, costume-coded, spellcaster-coded energy. 🧞 is the genie - wish-coded, lamp-coded, Aladdin-coded magic. Use 🧙 when the moment leans mystic or costume-coded; use 🧞 when the moment leans wish-coded or birthday-coded."
+        "answer": "The mage is a full human with a hat and staff, the genie is a torso trailing into smoke. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🧞 rude?",
+        "answer": "It can be. The gesture is meant as granting a wish, or conjuring something impossible, but it gets understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
+        "question": "What does 🧞 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "wish you were here tonight, full genie energy 🧞",
-      "interpretation": "Partner wish-coded romance. Mirror with another 🧞, a heart emoji, or a sentence that escalates the magic-coded flirt."
-    },
-    {
       "setting": "social",
-      "message": "birthday wish drop, full three wishes 🧞",
-      "interpretation": "Public wish-coded reveal. Mirror with another 🧞, a sentence that joins the celebration energy, or a 🎂 that matches."
-    },
-    {
-      "setting": "family",
-      "message": "birthday morning with the family, full genie 🧞",
-      "interpretation": "Family wish-coded reveal. Mirror with another 🧞, a sentence that joins the family warmth, or a 🎂 that matches."
+      "message": "that is the whole post 🧞",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "Aladdin-coded vibes all day, full genie 🧞",
-      "interpretation": "Friend wish-coded reveal. Mirror with another 🧞, a sentence that joins the magic energy, or a ✨ that matches."
+      "message": "making a wish about a result you want 🧞",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as granting a wish, or conjuring something impossible, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "wish mode with the team today, full genie 🧞",
-      "interpretation": "Work magic-coded moment. Mirror with another 🧞, a sentence that joins the team energy, or a ✨ that matches."
+      "message": "tagging someone as the one who fixes everything 🧞",
+      "interpretation": "A handover or a sign-off in a channel. It reads as granting a wish, or conjuring something impossible, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧞",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets understood as a magic helper who grants requests, when the figure more often works as a wish marker — pointing at the thing you want and hoping it appears more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "making a wish about a result you want 🧞",
+      "interpretation": "Family threads are where this lands most naturally. The reading is granting a wish, or conjuring something impossible, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "genie-light",
+    "genie-medium-light",
+    "genie-medium",
+    "genie-medium-dark",
+    "genie-dark"
   ]
 }

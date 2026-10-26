@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "hands",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A fist facing right, ready for a fist bump.",
-  "tldr": "Fist bump partner (right side) or solidarity.",
+  "baseMeaning": "Shows a clenched fist with the knuckles facing right, thumb folded across.",
+  "tldr": "🤜 Right-Facing Fist — offering a fist bump or a gesture of solidarity.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Right side of fist bump.",
-      "example": "🤛🤜 We did it!",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Paired with left fist for solidarity.",
-      "example": "Team spirit 🤛🤜",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Partnership and teamwork.",
-      "example": "Best duo 🤛🤜",
+      "meaning": "Borrowed as a reaction, it reads as offering a fist bump or a gesture of solidarity.",
+      "example": "Signing off a hard week with solidarity 🤜",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Mock fist bump after disagreement.",
-      "example": "Agree to disagree 🤛🤜",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: offering a fist bump or a gesture of solidarity, said without believing any of it.",
+      "example": "sure, sure 🤜",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — offering a fist bump or a gesture of solidarity — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤜",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a clenched fist with the knuckles facing right, thumb folded across. Nothing hidden in the drawing itself.",
+      "example": "A fist bump after a shared win 🤜",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors partnership-coded threads, 'we did it 🤛🤜' reveals, and team-coded reply tweets where the right-facing fist reads as right-half partnership-coded solidarity rather than literal right fist."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🤜 exactly as the phone system does, but the keyboard keeps it in the hands section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like signing off a hard week with solidarity."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on partnership-coded story reposts, duo-coded flat-lays, and 'best duo 🤛🤜' reveals where the right-facing fist signals right-half partnership-coded solidarity."
+      "note": "On Instagram 🤜 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as offering a fist bump or a gesture of solidarity under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in partnership-coded transitions, duo-coded reaction clips, and 'we did it 🤛🤜' reveal content where the right-facing fist matches the partnership-coded register."
+      "note": "In TikTok comments 🤜 is the fastest way to answer a video without typing anything. The gesture stays offering a fist bump or a gesture of solidarity, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🤜 lands in channels where the sentence was supposed to be shorter. It is usually standing in for a fist bump after a shared win, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on server partnership-coded channels, friend-coded 'best duo 🤛🤜' reveals, and duo-coded group chats where the right-facing fist matches the solidarity-coded register."
+      "note": "On Discord 🤜 is a staple of the reaction bar, which is why it so often arrives stripped of its offering a fist bump or a gesture of solidarity reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Wields 🤜 heavily on partnership-coded threads, duo-coded reveals, and 'we did it 🤛🤜' tags where the right-facing fist matches the modern right-half partnership-coded register."
-    },
-    {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the right-facing fist on partnership-coded nostalgia, duo-coded moments, and 'team spirit 🤛🤜' coded replies where the universal right-half cue still resonates."
+      "note": "Millennials tend to send 🤜 deliberately, usually for something like signing off a hard week with solidarity, and they read offering a fist bump or a gesture of solidarity into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🤜 on family-coded partnership messages, duo-coded reveals, and 'best duo 🤛🤜' coded tags where the right-facing fist reads as partnership-coded reference."
+      "note": "Gen X mostly uses 🤜 literally, as the picture of the gesture itself, and is less likely to read offering a fist bump or a gesture of solidarity into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🤜 as literal right fist and pastes it onto partnership-coded replies without parsing the modern 'team spirit 🤛🤜' solidarity subtext."
+      "note": "Older senders use 🤜 in the most straightforward way, on family and group messages, and are less likely to hear the offering a fist bump or a gesture of solidarity subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🤜 to do the work of a fist bump after a shared win, and treats the neutral drawing as the default rather than as a choice. What they hear first is offering a fist bump or a gesture of solidarity."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤜 and ✊ get swapped",
+      "description": "The Raised Fist ✊ is one tap away in every picker, and it does not carry the same reading — the raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤜 as something else fairly often: it gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤜 Right-Facing Fist Emoji Meaning - What Does 🤜 Really Mean?",
-  "seoDescription": "Learn what the right-facing fist emoji 🤜 really means. From fist bumps to teamwork, discover all its uses.",
+  "seoTitle": "🤜 Right-Facing Fist Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🤜 Right-Facing Fist explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "fist-right-light",
     "fist-right-medium-light",
@@ -83,60 +98,60 @@
     "fist-right-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤜 is the emoji of right-half fist-bump-coded partnership — a fist with knuckles facing right, the iconography of fist-bump-coded solidarity, duo-coded teamwork, and the universal 'best duo' tag. Where 🤛 reads as left-half fist-bump-coded mirror and ✊ reads as raised-fist-coded resistance, 🤜 captures the moment when the sender wants to communicate right-half partnership-coded energy — a 'we did it 🤛🤜' partner check-in or a 'best duo 🤛🤜' duo-coded reveal. The right-facing fist borrows from the universal fist-bump tradition and the modern duo-coded partnership aesthetic, which is exactly why the emoji reads as right-half partnership-coded rather than literal right fist.\n\nIn real-world usage 🤜 lives in the spaces where the sender wants to communicate right-half solidarity-coded energy. A partner sends it on a 'best duo 🤛🤜' partnership-coded check-in. A friend sends it on a 'we did it 🤛🤜' duo-coded reveal. A coworker sends it on a 'team spirit 🤛🤜' partnership-coded message. The right-facing fist is what makes the emoji feel right-half partnership-coded — it is not just 'fist,' it is 'fist-right-coded right-half solidarity.'\n\nWhat separates 🤜 from the rest of the hands family is the right-half duo register. The emoji is not saying 'left-facing fist' (🤛), 'raised fist' (✊), or 'oncoming fist' (👊). It is saying 'right half of a fist bump,' which carries a specific bro-handshake tradition. That is why 🤜 travels especially well on partnership-coded reply tweets, duo-coded flat-lays, and any context where the sender wants the message to land with right-half partnership-coded solidarity.",
-    "howPeopleUseIt": "🤜 shows up as the closer on a 'we did it 🤛🤜' right-half partnership-coded check-in, the punctuation on a 'best duo 🤛🤜' duo reveal, and the softener on a 'team spirit 🤛🤜' partnership-coded message. It pairs naturally with sentences that name the right-half partnership-coded energy — 'we did it,' 'best duo,' 'team spirit' — and sits beautifully on duo-coded reply tweets and partnership-coded captions.\n\nIn group chats 🤜 anchors 'duo moment' threads, partnership-coded reveals, and 'we did it 🤛🤜' coded tags where the right-facing fist matches the register. On Instagram it lands on duo-coded flat-lays and partnership-coded story reposts. On TikTok it travels in partnership-coded transitions and 'best duo 🤛🤜' reaction content.\n\nThe emoji also works in dating contexts. A 'best duo 🤛🤜' partner message uses the right-facing fist to communicate partnership-coded solidarity romance. Across all of these surfaces the rule is the same: the more right-half partnership-coded the moment, the more natural 🤜 feels.",
-    "whenNotToUse": "Skip 🤜 in sympathy, condolence, or formal apology contexts. The right-half partnership-coded solidarity cue is the wrong tone for any conversation where the moment is heavy. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤜 in coded-conflict or stand-alone-fist contexts where the partnership-coded energy feels off. A 'we did it 🤛🤜' message works for duo-coded check-in; for stand-alone resistance use ✊ or a sentence.\n\nSkip 🤜 when you want to communicate greeting. The partnership-coded register is too duo for casual greetings; use 👊 when the bro handshake needs to land friendly.",
-    "howToReply": "If someone sends 🤜, the cleanest mirror is another 🤜, 🤛, or a sentence that joins the right-half partnership-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'we did it together' or 'best duo for sure.' If the right-facing fist feels too partnership-coded, reply with a softer emoji (🤝 or ❤️) that signals duo without matching the right-half solidarity volume.\n\nWhen 🤜 lands as a partner 'best duo 🤛🤜' check-in, mirror with another 🤜, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'we did it 🤛🤜' duo-coded reveal, mirror with another 🤜, a sentence that joins the partnership energy, or a heart emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ✊ Raised Fist: the raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The right-facing fist comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the right-facing fist for? Mostly a fist bump after a shared win, and then signing off a hard week with solidarity. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🤜 is a clenched fist with the knuckles facing right, thumb folded across. It came into the emoji set in Unicode 9.0, under the hands heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is offering a fist bump or a gesture of solidarity. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🤜 sent to a colleague is a piece of work, 🤜 sent to a friend is a joke, and 🤜 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🤜 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"offering a fist bump or a gesture of solidarity\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is a fist bump after a shared win: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is signing off a hard week with solidarity, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🤜 gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and right-facing fist gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🤜 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as offering a fist bump or a gesture of solidarity — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant ✊ Raised Fist. The raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🤜 sent as a reaction to somebody who is upset reads as offering a fist bump or a gesture of solidarity, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🤜 gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like a fist bump after a shared win needs the sentence: the drawing alone leaves the reader deciding between offering a fist bump or a gesture of solidarity and something sharper.\n\nReply with 🤜 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🤜 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
+        "question": "What is the difference between 🤜 and ✊?",
+        "answer": "The raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🤜 rude?",
+        "answer": "It can be. The gesture is meant as offering a fist bump or a gesture of solidarity, but it gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🤜 mean from a guy?",
-        "answer": "From a guy, 🤜 signals right-half partnership-coded solidarity — 'we did it 🤛🤜' duo-coded check-in or 'best duo 🤛🤜' partnership-coded reveal. The right-facing fist reads as right-half partnership-coded rather than literal right fist, so it tends to land on partnership-coded reply tweets, duo-coded flat-lays, and 'team spirit' solidarity tags."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🤜 flirty?",
-        "answer": "It can be soft-coded. In a dating context 🤜 can read as partnership-coded solidarity romance — 'best duo 🤛🤜' is a soft-coded duo check-in. On its own the emoji is more partnership-coded than romantic."
+        "question": "What is the difference between 🤜 and its skin-tone versions?",
+        "answer": "The tone variants under right-facing fist show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🤜 and 🤛?",
-        "answer": "🤛 is the left-facing fist — the cue is left-half-coded mirror, the universal 'fist bump partner' energy. 🤜 is the right-facing fist — the cue is right-half-coded, the 'right half of a fist bump' partnership-coded energy. Use 🤛 when the moment is left-half-coded mirror; use 🤜 when the moment is right-half-coded partnership."
-      },
-      {
-        "question": "Is 🤜 for duo-coded content?",
-        "answer": "Yes — 🤜 is one of the most popular partnership-coded emojis. The right-facing fist is a natural fit for duo-coded flat-lays, partnership-coded reply tweets, and 'we did it 🤛🤜' solidarity tags."
-      },
-      {
-        "question": "Does 🤜 mean fist bump?",
-        "answer": "Often yes — 🤜 carries a fist with knuckles facing right and reads in modern usage as right-half partnership-coded solidarity. The literal-right-fist-versus-duo-coded-fist-bump split depends on the sender and the channel."
+        "question": "What does 🤜 mean in text?",
+        "answer": "🤜 is used for offering a fist bump or a gesture of solidarity. The drawing shows a clenched fist with the knuckles facing right, thumb folded across, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "best duo tonight, full partnership-coded solidarity 🤜",
-      "interpretation": "Partner right-half partnership-coded romance. Mirror with another 🤜, a heart emoji, or a sentence that escalates the duo."
+      "setting": "work",
+      "message": "signing off a hard week with solidarity 🤜",
+      "interpretation": "A handover or a sign-off in a channel. It reads as offering a fist bump or a gesture of solidarity, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this thread, the we-did-it moment 🤜",
-      "interpretation": "Public partnership-coded reply. Mirror with another 🤜, a sentence that joins the duo-coded energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🤜",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "team spirit family, full partnership-coded solidarity 🤜",
-      "interpretation": "Family duo-coded reveal. Mirror with another 🤜, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "a fist bump after a shared win 🤜",
+      "interpretation": "Family threads are where this lands most naturally. The reading is offering a fist bump or a gesture of solidarity, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🤜",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "we did it today, full duo-coded energy 🤜",
-      "interpretation": "Friend partnership-coded reveal. Mirror with another 🤜, a sentence that joins the partnership-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "partnership at work today, full right-half solidarity 🤜",
-      "interpretation": "Work partnership-coded moment. Mirror with another 🤜, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "a fist bump after a shared win 🤜",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as offering a fist bump or a gesture of solidarity, and matching it with the same emoji is a normal reply."
     }
   ]
 }

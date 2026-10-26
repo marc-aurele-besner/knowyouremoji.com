@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Detective emoji.",
-  "tldr": "Represents detective.",
+  "baseMeaning": "A figure in a tan trench coat and fedora, peering with a magnifying glass — looking into something, or acting like you are.",
+  "tldr": "The detective emoji 🕵️ reads as looking into something, or acting like you are.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents detective.",
-      "example": "Look at this detective 🕵️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Used to describe someone acting like a detective.",
-      "example": "They're such a detective 🕵️",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as looking into something, or acting like you are, softened by whatever sentence sits next to it.",
+      "example": "not me 🕵️",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Professional context for detective.",
-      "example": "Meeting with the team 🕵️",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — looking into something, or acting like you are — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🕵️",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Sarcastically referencing detective.",
-      "example": "Sure, I'm totally a detective 🕵️",
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure in a tan trench coat and fedora, peering with a magnifying glass. Nothing hidden in the drawing itself.",
+      "example": "Nudging a friend who omitted an interesting detail 🕵️",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Borrowed as a reaction, it reads as looking into something, or acting like you are.",
+      "example": "Flagging a suspicious gap in a story 🕵️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors detective-coded threads, detective with coat-coded flex tweets, and 'detective energy' captions where the detective with coat cue signals mystery-flex register."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Lands on detective-coded flat-lays, detective with coat-coded stories, and 'detective-coded' reveals where the detective with coat visual carries mystery-flex charm."
+      "note": "On Instagram 🕵️ usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as looking into something, or acting like you are under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in detective-coded transitions, detective with coat-coded clips, and 'detective-coded' reaction content where the detective with coat cue signals mystery-flex register."
+      "note": "In TikTok comments 🕵️ is the fastest way to answer a video without typing anything. The gesture stays looking into something, or acting like you are, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🕵️ lands in channels where the sentence was supposed to be shorter. It is usually standing in for nudging a friend who omitted an interesting detail, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner detective-coded check-ins, friend detective with coat-coded messages, and group chats where the 🕵️ cue matches the mystery-flex moment."
+      "note": "On Discord 🕵️ is a staple of the reaction bar, which is why it so often arrives stripped of its looking into something, or acting like you are reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🕵️ does most of its work in replies, where it tags a message like flagging a suspicious gap in a story. Short enough to survive being the whole post, which is exactly why it is used that way."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Wields 🕵️ on detective-coded threads, detective with coat-coded memes, and detective fits where the detective with coat cue matches the modern mystery-flex register."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Reaches for 🕵️ on detective-coded nostalgia, detective with coat-coded humor, and 'detective-coded' jokes where the millennial detective memory still resonates."
-    },
-    {
       "generation": "GEN_X",
-      "note": "Sends 🕵️ on detective-coded jokes, detective with coat-coded reveals, and detective flexes where the detective with coat cue reads as mystery-flex reference."
+      "note": "Gen X mostly uses 🕵️ literally, as the picture of the gesture itself, and is less likely to read looking into something, or acting like you are into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🕵️ as a literal detective with coat and pastes it onto detective replies without parsing the modern 'detective-coded' or mystery-flex subtext."
+      "note": "Older senders use 🕵️ in the most straightforward way, on family and group messages, and are less likely to hear the looking into something, or acting like you are subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🕵️ to do the work of nudging a friend who omitted an interesting detail, and treats the neutral drawing as the default rather than as a choice. What they hear first is looking into something, or acting like you are."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🕵️ deliberately, usually for something like flagging a suspicious gap in a story, and they read looking into something, or acting like you are into it more often than the older cohorts do."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🕵️ and 🥷 get swapped",
+      "description": "The Ninja 🥷 is one tap away in every picker, and it does not carry the same reading — the ninja implies stealth and threat, the detective implies curiosity and a magnifying glass. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🕵️ as something else fairly often: it gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🕵️ Detective Emoji Meaning - What Does 🕵️ Really Mean?",
-  "seoDescription": "Learn what the detective emoji 🕵️ really means in texts and DMs. detective, investigate, and the mystery flex register.",
+  "seoTitle": "What Does the Detective Emoji 🕵️ Mean? A Full Breakdown",
+  "seoDescription": "The meaning of 🕵️ Detective in texts and DMs, with the detective readings, the common misread, and the pickers it gets confused with.",
   "skinToneVariations": [
     "detective-light",
     "detective-medium-light",
@@ -83,60 +98,60 @@
     "detective-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🕵️ is the emoji of detective-coded charm — a detective with coat detective, the iconography of investigate-coded nostalgia, mystery-flex-coded flex, and the universal mystery-flex tag. 🕵️ captures the moment when the sender wants to communicate detective-coded warmth — a 'mystery-flex-coded 🕵️' investigate-coded flex or a 'detective-coded 🕵️' mystery-flex-coded reveal. The detective with coat cue borrows from the universal detective tradition and the modern mystery aesthetic, which is exactly why the emoji reads as mystery-flex rather than literal.\n\nIn real-world usage 🕵️ lives in the spaces where the sender wants to communicate detective-coded warmth. A friend sends it on a 'mystery-flex-coded 🕵️' investigate-coded reveal. A partner sends it on a 'detective-coded 🕵️' mystery-flex-coded check-in. A coworker sends it on a 'mystery-flex-coded flex 🕵️' detective-coded flex. The detective with coat cue is what makes the emoji feel detective-coded — it is not just 'detective,' it is 'detective-coded detective flex.'\n\nWhat separates 🕵️ from related detective emojis is the mystery-flex register. The emoji is not saying the literal detective version, the obvious variant, or the related alt. It is saying 'detective-coded charm,' which carries a specific detective tradition. That is why 🕵️ travels especially well on mystery-flex-coded flexes, investigate-coded reveals, detective-coded jokes, and any context where the sender wants the message to land with mystery-flex energy.",
-    "howPeopleUseIt": "🕵️ shows up as the closer on a 'mystery-flex-coded 🕵️' detective message ('detective-coded today 🕵️'), the punctuation on a 'investigate-coded 🕵️' mystery-flex-coded reveal, and the softener on a 'detective-coded flex 🕵️' mystery-flex-coded flex. It pairs naturally with sentences that name the mystery-flex energy — 'detective-coded,' 'investigate-coded,' 'mystery-flex-coded' — and sits beautifully on mystery-flex-coded flexes and investigate-coded reveals.\n\nIn group chats 🕵️ anchors 'detective-coded moment' threads, mystery-flex-coded moments, and 'investigate-coded 🕵️' coded tags where the detective with coat cue matches the register. On Instagram it lands on detective-coded flat-lays and investigate-coded stories. On TikTok it travels in detective-coded reveals and 'mystery-flex-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'mystery-flex-coded tonight 🕵️' partner message uses the detective with coat cue to communicate detective-coded soft-coded romance. Across all of these surfaces the rule is the same: the more detective-coded the moment, the more natural 🕵️ feels.",
-    "whenNotToUse": "Skip 🕵️ in opposite-coded or off-tone contexts. The mystery-flex visual cue is the wrong tone for any conversation where the moment runs counter. A sentence that acknowledges the energy or a more neutral emoji is a better fit.\n\nAvoid 🕵️ in work or formal-coded contexts where the detective-coded rule feels off. A 'detective-coded 🕵️' Slack message works for a mystery-flex moment; for a more measured update use a sentence or calmer emoji.\n\nSkip 🕵️ when you want to communicate soft or bold affection outside the mystery-flex register. The detective-coded tone is too coded for tender or loud moments; use a heart emoji or a sentence when the affection needs to read clearer.",
-    "howToReply": "If someone sends 🕵️, the cleanest mirror is another 🕵️, a related emoji, or a sentence that joins the mystery-flex energy. If you want to escalate the engagement, follow with a sentence that adds context: 'detective-coded for sure' or 'mystery-flex-coded together.' If the visual cue feels too coded, reply with a softer emoji that signals the register without matching the volume.\n\nWhen 🕵️ lands as a partner 'mystery-flex-coded 🕵️' check-in, mirror with another 🕵️, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'detective-coded flex 🕵️' coded message, mirror with another 🕵️, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "This page is the untoned drawing. Somewhere below it are five versions of the same detective with a skin tone applied, and those pages are about something different: not what the gesture means, but what a particular tone adds to it when it arrives from a particular face.\n\nThe short version. The detective is for nudging a friend who omitted an interesting detail and for flagging a suspicious gap in a story, it gets misread often enough to be worth writing down, and it has five skin-tone versions worth reading on their own. The sections below take those in turn.\n\nUnicode 13.0 is where 🕵️ comes from. The drawing shows a figure in a tan trench coat and fedora, peering with a magnifying glass, it sits in the person-role group of the set, and in a conversation it does one thing: it says what a sentence would have said less well.\n\nWhat it says is looking into something, or acting like you are. That is the reading most people arrive with, and it is usually the intended one — the picture does the same work as the words it replaces, and it gets there faster.\n\nThe complication is that the drawing invites a second reading. It gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🥷 Ninja: the ninja implies stealth and threat, the detective implies curiosity and a magnifying glass. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.",
+    "howPeopleUseIt": "There is one habit that turns a small emoji into a misunderstanding. 🕵️ goes back on its own, with no words around it, and it stands for whatever the sender had in mind — which was looking into something, or acting like you are. The reader gets the drawing and none of the context that produced it.\n\nStart with Nudging a friend who omitted an interesting detail. That is where the detective earns its place: it closes a sentence that has already said the thing, and nobody has to add \"you know what I mean\". The other job is flagging a suspicious gap in a story, and there the emoji is not the message but the temperature of the message.\n\nThe setting does half the work. 🕵️ used for nudging a friend who omitted an interesting detail in a work channel reads as a handover; the same move in a group chat reads as a joke. The emoji is not saying anything different — the audience is.\n\nWhich is also why this family has skin-tone pages. The gesture is the same in all five, and the tone you choose is the only part of the message that says anything about you.",
+    "whenNotToUse": "There is also a place where this emoji does not belong: the professional setting. 🕵️ under a review, or in a first message to a client, reads as looking into something, or acting like you are, and in that room the same reading sounds like somebody settling a point.\n\nTwo rules. First, 🥷 Ninja is a different message: the ninja implies stealth and threat, the detective implies curiosity and a magnifying glass. Do not send 🕵️ when you meant that one. Second, a reaction to bad news needs words. A bare 🕵️ reads as looking into something, or acting like you are, and nobody in a thread about a person wants to be answered with a drawing of a gesture.\n\nNot every message survives being turned into a picture. The emoji gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out, and the sentence underneath it loses the argument. Once 🕵️ is carrying the meaning, the meaning has moved without either sender moving it.\n\nWith somebody you have just met, it is worse. 🕵️ has no warmth in the drawing, and the gesture has picked up an edge of superiority from being used to answer other people.",
+    "howToReply": "If the intent is warmth, the sentence is the part that carries it. Sending 🕵️ next to a message like nudging a friend who omitted an interesting detail leaves the reader to guess whether it was looking into something, or acting like you are or something sharper.\n\nIf it was a reaction, 🕵️ back is a complete answer. It says \"same\" without writing a word, and the exchange can end there.\n\nIf it was aimed at you, it needs text. 🕵️ replying to 🕵️ looks like a conversation between two drawings, and whatever the sender actually asked never gets answered.\n\nWhen the register is unclear, the words win. The drawing gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out, so the sentence it was sent with is the only reliable guide to what it meant.",
     "faqs": [
       {
+        "question": "Is 🕵️ rude?",
+        "answer": "It can be. The gesture is meant as looking into something, or acting like you are, but it gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🕵️ mean from a guy?",
-        "answer": "From a guy, 🕵️ signals detective-coded flex or 'mystery-flex-coded 🕵️' reveal. The visual cue reads as mystery-flex rather than literal, so it tends to land on partner check-ins, family-coded messages, and 'mystery-flex-coded flex' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🕵️ flirty?",
-        "answer": "It can be. In a partner context 🕵️ can read as detective-coded soft-coded romance — 'mystery-flex-coded tonight 🕵️' is a soft-coded check-in. On its own the emoji is more detective-coded than romantic."
+        "question": "What is the difference between 🕵️ and its skin-tone versions?",
+        "answer": "The tone variants under detective show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "How does 🕵️ differ from other detective emojis?",
-        "answer": "🕵️ sits in the detective-coded register and reads as mystery-flex-coded energy, while other detective emojis lean toward more literal or alternative readings. The visual cue is what separates 🕵️ from sibling options, so use it when the moment is detective-coded."
+        "question": "What does 🕵️ mean in text?",
+        "answer": "🕵️ is used for looking into something, or acting like you are. The drawing shows a figure in a tan trench coat and fedora, peering with a magnifying glass, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🕵️ for detective moments?",
-        "answer": "Yes — 🕵️ is a popular detective-coded emoji. The visual cue is a natural fit for mystery-flex-coded reveals, detective-coded messages, and partner 'mystery-flex-coded flex' check-ins."
-      },
-      {
-        "question": "Does 🕵️ mean detective-coded?",
-        "answer": "Often yes — 🕵️ carries mystery-flex-coded detective-coded charm and reads in modern usage as detective-coded. The literal-versus-mystery-flex split depends on the sender and the channel."
+        "question": "What is the difference between 🕵️ and 🥷?",
+        "answer": "The ninja implies stealth and threat, the detective implies curiosity and a magnifying glass. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "mystery-flex-coded tonight, full detective-coded energy 🕵️",
-      "interpretation": "Partner detective-coded romance. Mirror with another 🕵️, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the mystery-flex-coded chaos 🕵️",
-      "interpretation": "Public detective-coded flex. Mirror with another 🕵️, a sentence that joins the mystery-flex energy, or a heart emoji that matches."
+      "message": "there is something you should know 🕵️",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets often heard as an accusation of snooping when it is really a playful nod at harmless nosiness about a detail someone left out more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "mystery-flex-coded moment with the family, full detective-coded energy 🕵️",
-      "interpretation": "Family detective-coded reveal. Mirror with another 🕵️, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "nudging a friend who omitted an interesting detail 🕵️",
+      "interpretation": "Family threads are where this lands most naturally. The reading is looking into something, or acting like you are, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🕵️",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "detective-coded today, full mystery-flex-coded flex 🕵️",
-      "interpretation": "Friend detective-coded reveal. Mirror with another 🕵️, a sentence that joins the mystery-flex energy, or a heart emoji that matches."
+      "message": "nudging a friend who omitted an interesting detail 🕵️",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as looking into something, or acting like you are, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "mystery-flex-coded flex at work today, full detective-coded mode 🕵️",
-      "interpretation": "Work detective-coded moment. Mirror with another 🕵️, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "flagging a suspicious gap in a story 🕵️",
+      "interpretation": "A handover or a sign-off in a channel. It reads as looking into something, or acting like you are, and naming the next step in words is usually clearer than leaving it to the gesture."
     }
   ]
 }

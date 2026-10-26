@@ -7,131 +7,131 @@
   "category": "people",
   "subcategory": "person-sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person riding a bicycle.",
-  "tldr": "Cycling, exercise, eco-friendly transport, or Tour de France.",
+  "baseMeaning": "A person riding a bicycle. The medium-light skin tone modifier is applied to the figure.",
+  "tldr": "🚴🏼 Person Biking with a medium-light skin tone. One step past the default, so it reads as a considered choice.",
   "contextMeanings": [
     {
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it evidence that somebody thought about which swatch to press.",
+      "example": "careful 🚴🏼",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-light skin tone passes without comment in a work thread.",
+      "example": "understood 🚴🏼",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents the person biking: medium-light skin tone cue.",
-      "example": "the biking medium light 🚴🏼",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-light skin tone applied to the figure.",
+      "example": "🚴🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "biking medium light-coded moment or biking medium light-coded reveal.",
-      "example": "biking medium light mode 🚴🏼",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "biking medium light-coded flirty tag or partner-coded moment.",
-      "example": "biking medium light partner plan 🚴🏼",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "biking medium light-coded work moment or team energy.",
-      "example": "biking medium light sprint 🚴🏼",
+      "meaning": "The gesture reads the same as the untoned version; the medium-light skin tone makes it a slightly more considered version of the same gesture.",
+      "example": "got it 🚴🏼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🚴🏼 renders as a single toned glyph, and the medium-light swatch is the second one along in Apple's picker. It is far enough from the untoned version to be noticed but close enough that a screenshot taken at small size can still read as untoned."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders the tone correctly on current builds, and its picker puts the medium-light swatch second, so a sender reaches it with one tap past the default. Older Android builds of WhatsApp drop the modifier entirely, and because this is not the swatch people reach for by habit, the fallback is more often noticed than it is with the default."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🚴🏼 lands on biking medium light-coded threads, biking medium light-tagged person-sport posts, and 'biking medium light-coded' reveals where the biking medium light cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🚴🏼 is a staple of modern-coded flat-lays, biking medium light-canvas story backgrounds, and modern-coded profile accents; the biking medium light cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🚴🏼 travels in modern-coded transitions, biking medium light reaction reveals, and 'biking medium light-coded' listicle content where the biking medium light cue signals modern-coded energy."
+      "note": "Twemoji applies the tone to 🚴🏼 consistently, and the modifier is applied to the single code point, so the swatch is preserved while the rest of the message does not survive a quote-tweet intact."
     },
     {
       "platform": "SLACK",
-      "note": "🚴🏼 threads through modern-coded reactions, biking medium light markers, and 'biking medium light-coded' bullets in work channels where the biking medium light cue fits the register."
+      "note": "Slack's own emoji font renders the medium-light swatch a shade warmer than the phone version, which is the usual reason somebody screenshots a Slack message and gets a slightly different looking emoji than the one they sent."
     },
     {
       "platform": "DISCORD",
-      "note": "🚴🏼 is an active reaction in modern-coded biking medium light channels, server-coded biking medium light markers, and 'biking medium light-coded' reveals where the biking medium light cue matches the modern-coded register."
+      "note": "Discord uses Twemoji as well, and its web and mobile clients agree with each other on the medium-light swatch. The risk sits with bots and bridges, which usually pass the tone through only when the emoji survived the trip as a single code point."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🚴🏼 on modern-coded biking medium light threads, biking medium light-coded reveals, and 'biking medium light-coded' moments where the biking medium light cue matches the modern-coded register."
+      "note": "Gen Z is the cohort most likely to pick 🚴🏼 deliberately, because the swatch is familiar enough to reach without hunting and rare enough to feel like a choice. It is used to represent the sender more often than the other four tones."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded biking medium light moments, and biking medium light-coded reveals where the universal biking medium light cue fits."
+      "note": "Millennials reach for 🚴🏼 when a message needs a slightly more personal feel than 🚴 gives, without the weight of the two darker swatches. It sits in the middle of what this generation is comfortable with."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded biking medium light messages and biking medium light reveals, treating the biking medium light as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal biking medium light and uses it on modern-coded tags without parsing the modern biking medium light-coded subtext."
+      "note": "Gen X mostly treats 🚴🏼 as decoration. The swatch is picked because it was next in the list, not because it carries a message."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🚴🏼 Person Biking Medium-Light Skin Tone Emoji - What Does 🚴🏼 Mean?",
-  "seoDescription": "Learn what the person biking emoji with medium-light skin tone 🚴🏼 means in texts and social media.",
+  "seoTitle": "🚴🏼 Person Biking Medium-Light Skin Tone Emoji Meaning - What Does 🚴🏼 Mean?",
+  "seoDescription": "What does the person biking emoji 🚴🏼 mean? Person Biking showing a helmeted rider in yellow shorts leaning forward over a road bike. Covers the medium-light skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "person-biking",
   "skinToneModifier": "medium-light",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Person Biking is the emoji of sport-coded athletic flex - the athletic tradition, the fitness cue, and the universal \"in the game\" tag. Where 🏆 reads as victory-coded finish energy and ⚽ reads as ball-coded play energy, Person Biking captures the moment when the sender wants to communicate sport-coded athletic energy - a \"person biking\" workout tag or a game-day-coded reveal.\n\nThe athletic cue borrows from sports tradition and the modern fitness aesthetic, which is exactly why the emoji reads as sport-coded rather than literal.\n\nWhat separates Person Biking from the rest of the sport family is the specific person biking register. The emoji is not saying 'generic sport' (🏆). It is saying 'person biking-coded person biking,' which carries a specific sport, athletic, or workout specificity.\n\nIn real-world usage 🚴🏼 Person Biking: Medium-Light Skin Tone lives in the spaces where the sender wants to communicate sport energy. A partner sends it on a \"biking medium light\" moment. A friend sends it on a \"sport\" reveal. A coworker sends it on a \"biking medium light\" tag. The biking medium light cue is what makes the emoji feel sport-coded - it is not just 'a moment,' it is 'biking medium light-coded energy.'\n\nIn dating 🚴🏼 Person Biking: Medium-Light Skin Tone works as a soft-coded biking medium light tag, where the biking medium light cue signals sport tradition. In work threads 🚴🏼 Person Biking: Medium-Light Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🚴🏼 feels.",
-    "howPeopleUseIt": "🚴🏼 Person Biking: Medium-Light Skin Tone shows up as the closer on a \"biking medium light moment\", the punctuation on a \"sport\" reveal, and the softener on a \"biking medium light-coded\" tag. It pairs naturally with sentences that name the sport energy - 'biking medium light,' 'sport tradition,' 'biking medium light-coded' - and sits beautifully on fitness reveals, game-day tags, athletic-coded flex, and training moments.\n\nIn group chats 🚴🏼 Person Biking: Medium-Light Skin Tone anchors 'biking medium light moment' threads, sport reveals, and 'biking medium light' tags where the biking medium light cue matches the register. On Instagram it lands on sport flat-lays and sport stories. On TikTok it travels in sport transitions and 'biking medium light' reaction content.\n\nThe emoji also works in dating contexts. A 'biking medium light 🚴🏼' partner message uses the biking medium light cue to communicate sport romance. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🚴🏼 feels.",
-    "whenNotToUse": "Skip Person Biking in sympathy, condolence, or break-up contexts. The sport-coded athletic cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Person Biking in sedentary contexts where the athletic energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip Person Biking when you want to communicate rest or recovery. The sport register is too athletic-coded for quiet moments; use 🛋️ or a sentence when the moment needs calm.",
-    "howToReply": "If someone sends Person Biking, the cleanest mirror is another Person Biking, 💪, or a sentence that joins the athletic energy. If the sport cue feels too active-coded, reply with a softer emoji (🏆 or 🙌) that signals support without matching the workout volume.\n\nWhen Person Biking lands as a game-day tag, mirror with another Person Biking, a trophy emoji, or a sentence that escalates the fan energy. When it arrives as a fitness-coded reveal, mirror with another Person Biking, a sentence that joins the gym energy, or a flex emoji that fits.",
+    "overview": "🚴🏼 shows Person Biking with a medium-light skin tone — a helmeted rider in yellow shorts leaning forward over a road bike. Underneath the tone, the gesture is unchanged: this is going for a ride, or logging the miles, and it is the same conversation move as 🚴. The swatch is the part that differs.\n\nMedium-light sits second in the standard tone list, so it takes one deliberate tap past the default to reach. That small extra effort is what shapes how it lands. Picked slightly more thoughtfully than the default, and noticeably less often than the middle tones. In practice that means 🚴🏼 tends to arrive from someone who looked at the picker rather than someone who fired the emoji out of habit, and it is correspondingly harder to treat as neutral.\n\nThe practical uses are the family ones, unchanged by the tone. The confusion to watch for is with 🚲 Bicycle — the bicycle shows the machine with nobody on it, the rider shows the person in motion. And like every member of this family, 🚴🏼 carries one misread more often than the rest: it gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting.",
+    "howPeopleUseIt": "The gesture is the same one 🚴 makes, so the family habits carry straight over. What changes with 🚴🏼 is who tends to send it and what they are assuming about the reader.\n\nMedium-light is reached with one extra tap, and the extra tap shows in the usage pattern. 🚴🏼 more often appears where somebody was picking a version on purpose — a profile picture caption, an avatar, a signature emoji, a reaction in a thread where the choice was not incidental. You will see it in announcing a weekend ride on a sunny day, and in adding the bike to a photo of the ride.\n\nIt also shows up as a middle path. When the exact tone is not obvious, or when the sender is representing a character rather than themselves, medium-light is the compromise — and that is worth keeping in mind, because a compromise tone reads as deliberately neutral while carrying none of the reassurance of the neutral-sounding default.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🚴 itself, and every tone in this family inherits it.\n\nFor 🚴🏼, the specific trap is the compromise. It is easy to reach for a middle tone as a safe approximation, but a safe approximation is not neutral — it is a guess, and the guess is visible to anyone who has thought about it. If you do not know whose skin tone you are depicting, use 🚴 rather than reaching for a swatch that lands in the wrong place.\n\nAvoid 🚴🏼 when the tone is supposed to be read as deliberate but the rest of the message is casual. A chosen tone pulls the reader's attention to the emoji, and that attention does not transfer to the sentence.",
+    "howToReply": "Reply with 🚴 if you want to match the gesture without adopting a swatch. Matching the tone is only worth doing when the sender was clearly choosing on purpose — in that case, 🏼 back is a real acknowledgement of their choice.\n\nIf 🚴🏼 was a compromise rather than a decision, do not read it as one. Respond to the gesture and the sentence, not to the tone.",
     "faqs": [
       {
-        "question": "What does Person Biking mean in chat?",
-        "answer": "Person Biking is the sport-coded athletic flex - it borrows from athletic tradition and signals a fitness reveal, game-day tag, or workout-coded moment. The athletic cue is what makes the read feel sport-coded rather than literal."
+        "question": "What does 🚴🏼 mean in chat?",
+        "answer": "🚴🏼 is Person Biking with a medium-light skin tone. It reads as going for a ride, or logging the miles, and the swatch adds a small note of deliberation."
       },
       {
-        "question": "Is Person Biking flirty?",
-        "answer": "Sometimes. In a dating thread Person Biking can read as active-coded romance - a \"let's workout together\" tag or a fitness-coded flirty hint. On its own it reads more sport than romantic."
+        "question": "Is 🚴🏼 a deliberate choice?",
+        "answer": "More often than the first swatch. It is the second swatch in the tone list, one position past the default, so it takes a deliberate second tap. That extra step is why 🚴🏼 carries a slightly more intentional read than the default tone."
       },
       {
-        "question": "What does Person Biking mean from a friend?",
-        "answer": "From a friend, Person Biking signals a sport-coded flex or a fitness-coded reveal. The athletic cue reads as workout-coded rather than literal, so it tends to land on game-day tags, friend coded messages, and fitness-coded reveals."
+        "question": "What does 🚴🏼 mean from a girl?",
+        "answer": "The same as it means from anyone else. The gesture is unchanged, and the skin tone does not shift the meaning by itself."
       },
       {
-        "question": "When should I use Person Biking?",
-        "answer": "Use Person Biking for sport-coded references, fitness reveals, or game-day moments. Avoid it when you want to communicate something restful - the sport cue is too active for calm moments."
+        "question": "Should I use 🚴🏼 to represent someone else?",
+        "answer": "Carefully. 🚴🏼 is a reasonable approximation for a lot of people, which is exactly why it gets borrowed so often. If you are depicting a specific person and you are not certain, use 🚴 instead of guessing."
+      },
+      {
+        "question": "What is the difference between 🚴🏼 and 🚲 Bicycle?",
+        "answer": "the bicycle shows the machine with nobody on it, the rider shows the person in motion. The tone does not change that — 🚴🏼 is the same gesture in a different swatch."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "biking medium light with the partner plan, full sport energy 🚴🏼",
-      "interpretation": "Partner sport romance. Mirror with another 🚴🏼, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the biking medium light chaos 🚴🏼",
-      "interpretation": "Public sport flex. Mirror with another 🚴🏼, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "biking medium light with the family, full sport energy 🚴🏼",
-      "interpretation": "Family sport reveal. Mirror with another 🚴🏼, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "biking medium light today, full sport energy 🚴🏼",
-      "interpretation": "Friend sport reveal. Mirror with another 🚴🏼, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "announcing a weekend ride on a sunny day 🚴🏼",
+      "interpretation": "A friend sending 🚴🏼 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "adding the bike to a photo of the ride 🚴🏼",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is evidence that somebody thought about which swatch to press."
     },
     {
       "setting": "work",
-      "message": "biking medium light sprint today, full sport energy 🚴🏼",
-      "interpretation": "Work sport moment. Mirror with another 🚴🏼, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "understood 🚴🏼",
+      "interpretation": "A work thread. The medium-light skin tone passes without comment in a work thread."
+    },
+    {
+      "setting": "family",
+      "message": "fine 🚴🏼",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-light skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "right 🚴🏼",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

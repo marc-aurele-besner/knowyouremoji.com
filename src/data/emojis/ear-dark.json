@@ -7,135 +7,137 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Human ear emoji.",
-  "tldr": "Listening! Hearing or paying attention.",
+  "baseMeaning": "Human ear emoji. The dark skin tone modifier is applied to the ear.",
+  "tldr": "👂🏿 Ear with a dark skin tone. Always a deliberate pick, and one that needs context to land.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents ear or listening.",
-      "example": "I'm all ears 👂",
+      "meaning": "Shows the same artwork as the untoned version, with the dark skin tone applied to the ear.",
+      "example": "👂🏿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Listening carefully or gossip.",
-      "example": "Tell me everything 👂",
+      "meaning": "The gesture reads the same as the untoned version; the dark skin tone makes it a deliberate statement with real weight behind it.",
+      "example": "heard 👂🏿",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Pretending to listen.",
-      "example": "Oh I'm listening 👂",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it a strong statement, and a wrong one lands badly.",
+      "example": "back off 👂🏿",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Active listening or feedback.",
-      "example": "Open to feedback 👂",
+      "meaning": "In a work thread the gesture is unchanged, and the dark skin tone reads as deliberate enough that the choice itself is noticed.",
+      "example": "confirmed 👂🏿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 👂🏿 renders as one combined glyph with the tone applied. The dark swatch is the last one in Apple's picker, and it is also the one where the rendering difference between clients is largest: the same emoji can look like a noticeably different person depending on which font drew it."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the dark modifier on current builds and lists it last, so it takes a deliberate scroll. Older Android builds of WhatsApp fall back to the untoned glyph, and because the dark swatch is the most conspicuous of the five when it does render, the difference between the two is the one people notice."
+    },
+    {
       "platform": "TWITTER",
-      "note": "👂🏿 lands on modern-coded ear threads, ear-tagged moment posts, and 'ear-coded' reveals where the ear cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "👂🏿 is a staple of modern-coded flat-lays, ear-canvas story backgrounds, and modern-coded profile accents; the ear cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "👂🏿 travels in modern-coded transitions, ear reaction reveals, and 'ear-coded' listicle content where the ear cue signals modern-coded energy."
+      "note": "Twemoji renders 👂🏿 with the dark swatch intact, and it is the tone most often used deliberately on the platform, so it is also the one most likely to be screenshotted out of context and read as a comment on whoever is in the picture."
     },
     {
       "platform": "SLACK",
-      "note": "👂🏿 threads through modern-coded reactions, ear markers, and 'ear-coded' bullets in work channels where the ear cue fits the register."
+      "note": "Slack's own emoji font renders the dark swatch with less contrast against the darker themes than the phone version does. On a dark background the tone can lose definition entirely, which is worth knowing before you conclude that somebody sent something else."
     },
     {
       "platform": "DISCORD",
-      "note": "👂🏿 is an active reaction in modern-coded ear channels, server-coded ear markers, and 'ear-coded' reveals where the ear cue matches the modern-coded register."
+      "note": "Discord uses Twemoji and applies the modifier cleanly. As with the other dark-swatch uses, the interesting failure mode is not rendering but reuse: 👂🏿 forwarded into a channel it was not meant for keeps its meaning as a statement and loses its context."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 👂🏿 on modern-coded ear threads, ear-coded reveals, and 'ear-coded' moments where the ear cue matches the modern modern-coded register."
+      "note": "Gen Z uses 👂🏿 as a clear statement of self, and is also the cohort most alert to its use about other people. Because the swatch is unmistakable, the reaction to a misused 👂🏿 in this cohort is fast and rarely subtle."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded ear moments, and ear-coded reveals where the universal ear cue fits."
+      "note": "Millennials use 👂🏿 when they are representing themselves, and read the tone as personal. It is also the tone most often borrowed to depict somebody else, which is where it turns from a self-description into a comment on somebody's appearance."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded ear messages and ear reveals, treating the ear as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal ear and uses it on modern-coded tags without parsing the modern ear-coded subtext."
+      "note": "Gen X rarely changes the tone, so 👂🏿 mostly shows up as self-representation. Older clients in this cohort also flatten it more often, so the glyph a sender saw is not always the glyph a recipient saw."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Do not use the dark swatch as a joke about skin",
+      "description": "👂🏿 is the tone most often used to make a point about somebody's appearance. Used about someone other than the sender, it is read as a comment on their skin rather than as the gesture.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👂🏿 Ear Dark Skin Tone Emoji - What Does 👂🏿 Mean?",
-  "seoDescription": "Learn what the ear emoji with dark skin tone 👂🏿 means in texts and social media.",
+  "seoTitle": "👂🏿 Ear Dark Skin Tone Emoji Meaning - What Does 👂🏿 Mean?",
+  "seoDescription": "What does the ear emoji 👂🏿 mean? Ear showing a single human ear in side profile, the inner folds curved inward. Covers the dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "ear",
   "skinToneModifier": "dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👂🏿 Ear: Dark Skin Tone is the emoji of body-coded representation — the anatomical tradition, the body cue, and the universal \"look at this body part\" tag. Where 💪 reads as arm-coded strength energy and 🦶 reads as foot-coded stance energy, 👂🏿 Ear: Dark Skin Tone captures the moment when the sender wants to communicate body-coded physical energy — a \"dark-skinned ear\" anatomy tag or a personal-coded reveal.\n\nWhat separates 👂🏿 from the rest of the family is the body-coded register. The emoji is not saying 'ear-only.' It is saying 'ear-coded body,' which carries a specific body representation, anatomy-coded emoji, or physical reference. That is why 👂🏿 travels especially well on physical flex reveals, body-coded tags, anatomy-coded moments, and personal-share tags and any context where the sender wants the message to land with body energy.\n\n👂🏿 Ear: Dark Skin Tone lives in the spaces where the sender wants to communicate body energy. A partner sends it on a \"ear 👂🏿\" moment. A friend sends it on a \"body 👂🏿\" reveal. A coworker sends it on a \"ear 👂🏿\" tag. The ear cue is what makes the emoji feel body-coded — it is not just 'a moment,' it is 'ear-coded energy.'\n\nIn dating 👂🏿 Ear: Dark Skin Tone works as a soft-coded flirty tag, where the ear cue signals body-part-coded flex. In work threads 👂🏿 Ear: Dark Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more body the moment, the more natural 👂🏿 feels.\n\nThe dark-skinned variant carries the same body-coded read but anchors the representation to a deeper skin-tone register. Writers can pair the dark-skinned variant with the moment to keep the body-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "👂🏿 Ear: Dark Skin Tone shows up as the closer on a 'ear 👂🏿' moment, the punctuation on a 'ear 👂🏿' reveal, and the softener on a 'body 👂🏿' tag. It pairs naturally with sentences that name the body energy — 'ear,' 'body-part-coded flex,' 'ear-coded' — and sits beautifully on physical flex reveals, body-coded tags, anatomy-coded moments, and personal-share tags.\n\nIn group chats 👂🏿 Ear: Dark Skin Tone anchors 'ear moment' threads, body reveals, and 'ear 👂🏿' tags where the ear cue matches the register. On Instagram it lands on body flat-lays and body stories. On TikTok it travels in body transitions and 'ear' reaction content.\n\nThe emoji also works in dating contexts. A 'ear 👂🏿' partner message uses the ear cue to communicate body romance. Across all of these surfaces the rule is the same: the more body the moment, the more natural 👂🏿 feels.",
-    "whenNotToUse": "Skip 👂🏿 Ear: Dark Skin Tone in sympathy, condolence, or break-up contexts. The body-coded cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👂🏿 Ear: Dark Skin Tone in formal or professional contexts where the body energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip 👂🏿 Ear: Dark Skin Tone when you want to communicate mind or intellect. The body register is too physical-coded for thoughtful moments; use 🧠 or a sentence when the moment needs clarity.",
-    "howToReply": "If someone sends 👂🏿 Ear: Dark Skin Tone, the cleanest mirror is another 👂🏿 Ear: Dark Skin Tone, 💪, or a sentence that joins the body energy. If the body cue feels too physical-coded, reply with a softer emoji (🙃 or 🫶) that signals warmth without matching the flex volume.\n\nWhen 👂🏿 Ear: Dark Skin Tone lands as a workout-coded flex, mirror with another 👂🏿 Ear: Dark Skin Tone, a flex emoji, or a sentence that escalates the fitness energy. When it arrives as a personal-coded reveal, mirror with another 👂🏿 Ear: Dark Skin Tone, a heart emoji, or a sentence that joins the celebration.",
+    "overview": "Reaching 👂🏿 takes work, because it is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is worth knowing, because it changes what the emoji means in a thread. 👂🏿 is Ear with a dark skin tone, a single human ear in side profile, the inner folds curved inward, and it is doing the same job as 👂: listening, hearing something, or paying attention.\n\nBut a tone that someone went looking for is not a tone that gets skimmed. The most deliberately chosen of the five, because getting there is the most work. In a group chat, 👂🏿 tends to get a second look, and it tends to get one for a reason — either because it genuinely represents the sender, or because the sender wanted it to. The difference between those two is not visible from the emoji alone, which is the single most important thing to understand about this variant.\n\nThe situations it turns up in are the family ones, unchanged by the tone, and the trap is the same one the rest of the set has: it gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement. The neighbouring glyph people reach for instead is 🦻 Ear with Hearing Aid — the hearing aid version adds the device behind the ear and gets used when hearing itself is the subject.",
+    "howPeopleUseIt": "The gesture is the same one 👂 makes, so the family habits carry straight over. What changes with 👂🏿 is who tends to send it and what they are assuming about the reader.\n\nBecause it is the last swatch, 👂🏿 shows up where the tone was the point: an avatar, a profile picture, an introduction of oneself, a reaction that is meant to carry the sender's own appearance. It appears in telling a friend you are on a call listening, and in reacting when someone says something surprising.\n\nIt is also, for the same reason, the tone most likely to be deployed as a joke about someone's skin, which is the context where it stops being harmless. 👂🏿 used about someone other than the sender, with no context, is the version of this emoji that causes real offence — and the reason is not the gesture but the fact that the tone was chosen to make a point.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 👂 itself, and every tone in this family inherits it.\n\nThe trap for 👂🏿 is the obvious one, and it is worth stating plainly: the darkest swatch is the one most often used as a joke about skin. Because it takes a deliberate scroll to reach, the emoji reads as a statement about somebody, and if the sender is not the somebody, it lands as a comment on their appearance. Do not use 👂🏿 to depict another person without a reason you would be comfortable explaining out loud.\n\nBeyond that, skip it when the moment is light enough that a swatch with this much weight will outweigh the sentence. 👂🏿 gets a second look in every thread it lands in, and not every message can afford that.",
+    "howToReply": "Reply with 🏿 if the sender was representing themselves — matching the darkest swatch is one of the more concrete ways to say you saw what they chose. 👂 is fine when the tone was incidental.\n\nIf the tone was pointed — if 👂🏿 was deployed as a joke about somebody's skin — the reply is a sentence, not an emoji. Nothing mirrors that well, and a mirrored emoji makes the joke land twice.",
     "faqs": [
       {
-        "question": "What does 👂🏿 Ear: Dark Skin Tone mean in chat?",
-        "answer": "👂🏿 Ear: Dark Skin Tone is the body-coded representation — it borrows from anatomy and signals a physical reveal, body-coded tag, or anatomy-coded moment. The body cue is what makes the read feel body-coded rather than literal."
+        "question": "What does 👂🏿 mean in text?",
+        "answer": "👂🏿 is Ear with a dark skin tone. The gesture reads as listening, hearing something, or paying attention, and the swatch is the heaviest of the five."
       },
       {
-        "question": "Is 👂🏿 Ear: Dark Skin Tone flirty?",
-        "answer": "Sometimes. In a dating thread 👂🏿 Ear: Dark Skin Tone can read as physical-coded romance — a body part highlight or a \"look at this\" flirty hint. On its own it reads more body than romantic."
+        "question": "Is 👂🏿 a deliberate choice?",
+        "answer": "Almost always. It is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is why 👂🏿 gets a second look in a thread while 👂 does not."
       },
       {
-        "question": "What does 👂🏿 Ear: Dark Skin Tone mean from a friend?",
-        "answer": "From a friend, 👂🏿 Ear: Dark Skin Tone signals a body-coded share or a \"look at my progress\" tag. The body cue reads as flex-coded rather than literal, so it tends to land on gym-coded messages, workout tags, and personal reveal moments."
+        "question": "What does 👂🏿 mean from a guy?",
+        "answer": "The gesture reads the same as it does from anyone else. The skin tone is not a gendered signal on 👂."
       },
       {
-        "question": "Does 👂🏿 Ear: Dark Skin Tone work in fitness moments?",
-        "answer": "Yes — 👂🏿 Ear: Dark Skin Tone is one of the most popular body-coded emojis. The body cue fits workout reveals, anatomy-coded shares, and physical-coded progress tags."
+        "question": "Is 👂🏿 offensive?",
+        "answer": "It can be, and it is the tone most often used as a joke about skin. It is the tone most often used to make a point about someone’s skin, which is why it never travels without context. Used to depict the sender, it is one of the most personal choices in the emoji set."
       },
       {
-        "question": "What is the difference between 👂🏿 Ear: Dark Skin Tone and 💪?",
-        "answer": "💪 is the flexed biceps — the cue is arm-coded strength energy. 👂🏿 Ear: Dark Skin Tone is the body part — the cue is body-coded representation, the \"look at this body part\" energy. Use 💪 when the moment is strength-coded; use 👂🏿 Ear: Dark Skin Tone when the moment is body-coded anatomical."
+        "question": "What is the difference between 👂🏿 and 👂?",
+        "answer": "The swatch, and it matters more here than for the other tones. 👂 is the tone-less version, and it is the right pick whenever the sender is not the person being shown."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "ear 👂🏿 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 👂🏿, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the ear chaos 👂🏿",
-      "interpretation": "Public modern-coded flex. Mirror with another 👂🏿, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "ear 👂🏿 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 👂🏿, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "ear today, full modern-coded energy 👂🏿",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 👂🏿, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "telling a friend you are on a call listening 👂🏿",
+      "interpretation": "A friend sending 👂🏿 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "reacting when someone says something surprising 👂🏿",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a strong statement, and a wrong one lands badly."
     },
     {
       "setting": "work",
-      "message": "ear coded sprint today, full modern-coded energy 👂🏿",
-      "interpretation": "Work modern-coded moment. Mirror with another 👂🏿, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "confirmed 👂🏿",
+      "interpretation": "A work thread. The dark skin tone reads as deliberate enough that the choice itself is noticed."
+    },
+    {
+      "setting": "family",
+      "message": "understood 👂🏿",
+      "interpretation": "A family chat where the emoji is being read literally — the dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "exactly 👂🏿",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

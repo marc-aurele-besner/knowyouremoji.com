@@ -7,121 +7,151 @@
   "category": "people",
   "subcategory": "person-fantasy",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A superhero figure.",
-  "tldr": "Heroic, brave, or 'superhero energy'.",
+  "baseMeaning": "A picture of a masked figure in a red suit and purple cape, with a chest emblem. Read in a message it lands as being the one who fixes it, heroically or ironically.",
+  "tldr": "🦸 Superhero. In a chat it comes across as being the one who fixes it, heroically or ironically.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A superhero.",
-      "example": "Local hero 🦸",
+      "meaning": "The plain reading: a masked figure in a red suit and purple cape, with a chest emblem. Nothing hidden in the drawing itself.",
+      "example": "Announcing you handled a hard problem 🦸",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Heroic or brave-coded energy.",
-      "example": "Superhero energy 🦸",
+      "meaning": "Borrowed as a reaction, it reads as being the one who fixes it, heroically or ironically.",
+      "example": "Signing off a messy project you saved 🦸",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Brave-coded compliment.",
-      "example": "My superhero 🦸",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as being the one who fixes it, heroically or ironically, softened by whatever sentence sits next to it.",
+      "example": "not me 🦸",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Self-heroic-coded humor.",
-      "example": "Saving the day 🦸",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — being the one who fixes it, heroically or ironically — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🦸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Staple of 'heroic' coded tweets and brave-coded reactions; reads as 'I am being a superhero.'"
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in comic-coded captions and heroic-coded posts; pairs with 💪 for the superhero-power stack."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Comment-section reaction to brave content and heroic-coded clips; reads as 'heroic win.'"
+      "platform": "SLACK",
+      "note": "In Slack 🦸 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing you handled a hard problem, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Used in fandom servers and gaming-coded channels; reads as 'heroic and bold.'"
+      "note": "On Discord 🦸 is a staple of the reaction bar, which is why it so often arrives stripped of its being the one who fixes it, heroically or ironically reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🦸 does most of its work in replies, where it tags a message like signing off a messy project you saved. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Superhero 🦸 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing you handled a hard problem is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🦸 exactly as the phone system does, but the keyboard keeps it in the person-fantasy section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like signing off a messy project you saved."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🦸 for brave-coded affection and heroic-coded reactions; the comic-coded read is strong."
+      "note": "Gen Z reaches for 🦸 to do the work of announcing you handled a hard problem, and treats the neutral drawing as the default rather than as a choice. What they hear first is being the one who fixes it, heroically or ironically."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🦸 across platforms; reads as 'heroic' or 'comic-coded.'"
+      "note": "Millennials tend to send 🦸 deliberately, usually for something like signing off a messy project you saved, and they read being the one who fixes it, heroically or ironically into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🦸 literally, as the picture of the gesture itself, and is less likely to read being the one who fixes it, heroically or ironically into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🦸 literally as the superhero; the cultural layer of brave-coding is sometimes missed."
+      "note": "Older senders use 🦸 in the most straightforward way, on family and group messages, and are less likely to hear the being the one who fixes it, heroically or ironically subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🦸 and 🦹 get swapped",
+      "description": "The Supervillain 🦹 is one tap away in every picker, and it does not carry the same reading — the villain points the mask at someone else, the hero wears the same costume as a claim on itself. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🦸 as something else fairly often: it gets usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🦸 Superhero Emoji Meaning - What Does 🦸 Really Mean?",
-  "seoDescription": "Learn what the superhero emoji 🦸 really means in texts and social media.",
+  "seoTitle": "🦸 Superhero Emoji - What It Actually Means in Text",
+  "seoDescription": "🦸 Superhero meaning: being the one who fixes it, heroically or ironically. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The 🦸 superhero emoji was added in Unicode 11 (2018) and quickly filled a niche that older emoji did not cover — the 'heroic and brave' coded figure. The superhero is the visual shorthand for bravery, comic-coded fandom, and heroic compliments. In 2026 🦸 is the default emoji for heroic-coded reactions, comic fandom-coded content, and 'you saved me' compliments.\n\nIn real-world chat 🦸 does very specific work. People send it after a friend's heroic move, in comic-coded fandom posts, or as a 'you are my hero' compliment. The face carries both affection and admiration. Writers should pick 🦸 when the message is about heroic-coded affection or brave-coded energy, and avoid it when a more specific emoji is needed. The figure has been a fixture of comic-coded fandom since Unicode 11 and continues to land as the heroic-coded default in 2026 chats across platforms.",
-    "howPeopleUseIt": "🦸 shows up in heroic-coded posts, in comic-coded fandom reactions, and in 'you saved me' compliments. People send it after a friend's heroic move, in Marvel-coded posts, or as a heroic-coded compliment to a partner. The emoji pairs naturally with 💪 for the superhero-power stack and with 🔥 for the heroic-coded stack.\n\nIn close-friends chats 🦸 reads as 'heroic win' or 'you saved me.' In dating-app messages it can land as a heroic-coded compliment. In public posts it is the comic-coded fandom and heroic default.",
-    "whenNotToUse": "Skip 🦸 in any context where the recipient expects a more specific emoji. The superhero reads as heroic, not generic. Avoid it in contexts where the sender wants to be subtle about the comic-coded read — the face is too specific.\n\nAlso avoid 🦸 in ironic contexts where the sender is not actually being heroic. The face implies real bravery.",
-    "howToReply": "Mirror 🦸 with another 🦸 if you are matching the heroic energy, or pair with 💪 for the superhero-power stack. If the sender is signaling admiration, mirror with 🦸 or ❤️ and a sentence acknowledging. If the sender is using 🦸 as a comic-coded signal, mirror with 🦸 and a sentence engaging the fandom.\n\nIf 🦸 lands as a heroic-coded post, mirror with 🦸 or 🔥 to match the energy.",
+    "overview": "The drawing of 🦸 is a masked figure in a red suit and purple cape, with a chest emblem. It arrived with Unicode 11.0 in the person-fantasy section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is being the one who fixes it, heroically or ironically. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🦹 Supervillain: the villain points the mask at someone else, the hero wears the same costume as a claim on itself. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe superhero also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the superhero reads as being the one who fixes it, heroically or ironically, it is most often used for announcing you handled a hard problem or signing off a messy project you saved, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🦸 in a work thread is signing off a messy project you saved; 🦸 in a family thread is announcing you handled a hard problem; 🦸 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🦸 is the whole reply, and it is carrying a meaning nobody wrote down — being the one who fixes it, heroically or ironically is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Announcing you handled a hard problem is the job the superhero does most: it saves a sentence and lands faster than one would have. Signing off a messy project you saved is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🦸 will get usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a superhero gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🦸 reads as being the one who fixes it, heroically or ironically, and formality is exactly where that reading does the most damage.\n\nLeave 🦹 Supervillain for the other message. The villain points the mask at someone else, the hero wears the same costume as a claim on itself. And keep 🦸 out of threads where somebody is hurting: it reads as being the one who fixes it, heroically or ironically there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🦸 gets usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster often enough that the sentence matters more than the picture.\n\nAnd do not send 🦸 alone when the message underneath is supposed to be warm. A message like announcing you handled a hard problem carries the feeling; the picture on its own leaves the reader choosing between being the one who fixes it, heroically or ironically and something sharper.\n\nStart by reading what the 🦸 was doing. If it was a reaction, react: 🦸 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🦸 and its skin-tone versions?",
+        "answer": "The tone variants under superhero show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 🦸 mean in text?",
-        "answer": "🦸 means heroic, brave, or comic-coded energy. The superhero is the visual cue for heroic-coded affection."
+        "answer": "🦸 is used for being the one who fixes it, heroically or ironically. The drawing shows a masked figure in a red suit and purple cape, with a chest emblem, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "What does 🦸 mean from a girl?",
-        "answer": "From a girl, 🦸 reads as a heroic-coded compliment or 'you saved me' affection. The face is admiring rather than coded."
+        "question": "What is the difference between 🦸 and 🦹?",
+        "answer": "The villain points the mask at someone else, the hero wears the same costume as a claim on itself. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🦸 mean on Instagram?",
-        "answer": "On Instagram, 🦸 is the default for comic-coded captions and heroic-coded posts."
+        "question": "Is 🦸 rude?",
+        "answer": "It can be. The gesture is meant as being the one who fixes it, heroically or ironically, but it gets usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "When should I use 🦸?",
-        "answer": "Use 🦸 for heroic-coded affection, comic fandom, or 'superhero energy' reactions. Avoid it when a more specific emoji is needed."
+        "question": "What does 🦸 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "you saved the day 🦸",
-      "interpretation": "Friend reacting to a heroic move. Mirror with 🦸 or 💪."
+      "setting": "social",
+      "message": "that is the whole post 🦸",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
-      "setting": "dating",
-      "message": "my superhero 🦸",
-      "interpretation": "Heroic-coded pet name. Mirror with 🦸 or ❤️ to keep the admiration."
+      "setting": "friends",
+      "message": "announcing you handled a hard problem 🦸",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as being the one who fixes it, heroically or ironically, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "crushed the deadline 🦸",
-      "interpretation": "Work-coded heroic win. Reply with 🦸 or a sentence acknowledging."
+      "message": "signing off a messy project you saved 🦸",
+      "interpretation": "A handover or a sign-off in a channel. It reads as being the one who fixes it, heroically or ironically, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🦸",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets usually taken for a sincere compliment, when the cape and the chest mark are almost always self-applied — you are claiming to be the hero of your own small disaster more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "movie night, marvel 🦸",
-      "interpretation": "Family-coded fandom activity. Mirror with 🦸 or 💪."
-    },
-    {
-      "setting": "social",
-      "message": "superhero energy only 🦸",
-      "interpretation": "Public heroic-coded post. Mirror with 🦸 or 💪."
+      "message": "announcing you handled a hard problem 🦸",
+      "interpretation": "Family threads are where this lands most naturally. The reading is being the one who fixes it, heroically or ironically, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "superhero-light",
+    "superhero-medium-light",
+    "superhero-medium",
+    "superhero-medium-dark",
+    "superhero-dark"
   ]
 }

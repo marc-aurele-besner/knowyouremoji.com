@@ -7,70 +7,89 @@
   "category": "people",
   "subcategory": "gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person with one hand raised, indicating volunteering, asking a question, or wanting to speak.",
-  "tldr": "Volunteering, asking, or 'pick me!'",
+  "baseMeaning": "A drawing of a figure with one arm raised high and an open hand, used as volunteering, asking to speak, or claiming the win.",
+  "tldr": "🙋 Person Raising Hand: volunteering, asking to speak, or claiming the win.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Raising a hand to volunteer or ask.",
-      "example": "I have a question 🙋",
+      "meaning": "The plain reading: a figure with one arm raised high and an open hand. Nothing hidden in the drawing itself.",
+      "example": "Claiming a task before anyone else volunteers 🙋",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Enthusiastic volunteering or 'me!' reactions.",
-      "example": "Me! 🙋",
+      "meaning": "Borrowed as a reaction, it reads as volunteering, asking to speak, or claiming the win.",
+      "example": "Answering a question with a raised hand 🙋",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Soft-flirty 'pick me' signal.",
-      "example": "take me out 🙋",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as volunteering, asking to speak, or claiming the win, softened by whatever sentence sits next to it.",
+      "example": "not me 🙋",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Mock volunteering for something undesirable.",
-      "example": "Who wants to do the dishes 🙋",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — volunteering, asking to speak, or claiming the win — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🙋",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Enthusiastic 'me!' reaction under 'who wants to...' tweets; reads as volunteering energy."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Raising Hand 🙋 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like claiming a task before anyone else volunteers is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🙋 exactly as the phone system does, but the keyboard keeps it in the gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like answering a question with a raised hand."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of 'tag yourself' and 'me!' caption reactions; pairs with 🙋‍♂️ for the gender split."
+      "note": "On Instagram 🙋 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as volunteering, asking to speak, or claiming the win under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Comment-section reaction under 'who's coming?' posts; reads as 'count me in.'"
+      "note": "In TikTok comments 🙋 is the fastest way to answer a video without typing anything. The gesture stays volunteering, asking to speak, or claiming the win, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Server-volunteer reaction; reads as 'I will do it' in mod channels and event planning."
+      "platform": "SLACK",
+      "note": "In Slack 🙋 lands in channels where the sentence was supposed to be shorter. It is usually standing in for claiming a task before anyone else volunteers, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🙋 for emphatic volunteering and 'me!' reactions; reads as enthusiastic agreement."
+      "note": "Gen Z reaches for 🙋 to do the work of claiming a task before anyone else volunteers, and treats the neutral drawing as the default rather than as a choice. What they hear first is volunteering, asking to speak, or claiming the win."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic volunteering gesture emoji; reads as 'I have a question' or 'I will do it.'"
+      "note": "Millennials tend to send 🙋 deliberately, usually for something like answering a question with a raised hand, and they read volunteering, asking to speak, or claiming the win into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🙋 literally, as the picture of the gesture itself, and is less likely to read volunteering, asking to speak, or claiming the win into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Straightforward classroom gesture meaning; the meme layer is sometimes missed."
+      "note": "Older senders use 🙋 in the most straightforward way, on family and group messages, and are less likely to hear the volunteering, asking to speak, or claiming the win subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🙋 and ✋ get swapped",
+      "description": "The Raised Hand ✋ is one tap away in every picker, and it does not carry the same reading — the raised hand is a stop or high-five signal, the full figure means volunteering and asking. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🙋 as something else fairly often: it gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🙋 Person Raising Hand Emoji Meaning - What Does 🙋 Really Mean?",
-  "seoDescription": "Learn what the person raising hand emoji 🙋 really means in texts and social media. Discover all its uses and interpretations.",
+  "seoDescription": "What the person raising hand emoji 🙋 means in text: volunteering, asking to speak, or claiming the win. Includes the misread it invites (read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness) and how to reply.",
   "skinToneVariations": [
     "person-raising-hand-light",
     "person-raising-hand-medium-light",
@@ -79,56 +98,60 @@
     "person-raising-hand-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The 🙋 person raising hand emoji shows a figure with one hand raised — the universal 'I have a question' or 'pick me' gesture. It was added in Unicode 6 (2010) and has become the default emoji for volunteering, asking, and 'me!' reactions. The body language is unmistakable: this person wants to be called on.\n\nIn real-world chat 🙋 does very specific work. People send it after volunteering for a task, as a 'me!' reaction to a 'who wants' question, and in soft-flirty 'pick me' contexts. The gesture is stronger than a plain ✋ because it carries a full body, which makes it feel more performative. Writers should pick 🙋 when the message is about volunteering or asking, and avoid it when a quieter hand-up would land cleaner.",
-    "howPeopleUseIt": "🙋 shows up in 'me!' reactions, in volunteering replies, and in 'pick me' contexts. People send it after a 'who wants to...' prompt, as a 'I have a question' opener, or as a soft-flirty 'take me out' signal. The emoji pairs naturally with 🙋‍♂️ for the gender split and with ✋ for the simpler hand-up.\n\nIn close-friends chats 🙋 reads as 'I am in.' In dating-app messages it can land as a soft 'pick me' — flirty but not too forward. In work channels it is the formal 'I volunteer' or 'I have a question.'",
-    "whenNotToUse": "Skip 🙅 in any context where the recipient expects a quieter yes. The full-body volunteer gesture reads as more dramatic than the moment warrants. Avoid it in professional contexts where the recipient will read it as over-the-top or unprofessional.\n\nAlso avoid 🙋 in ironic contexts where the sender actually means no. The raised-hand gesture is too enthusiastic for playful flip-flopping.",
-    "howToReply": "Mirror 🙋 with another 🙋 if you want to amplify the volunteering energy, or pair with ✋ for the simpler hand-up. If the sender is signaling volunteering and you want to match, mirror with 🙋 or 👍 and a sentence that confirms. If the sender is using 🙋 as a 'me!' reaction, mirror with 🙋 and a sentence of agreement.\n\nIf 🙋 lands as a real volunteering offer in a serious context, mirror with 👍 or 🙋 and a follow-up that confirms.",
+    "overview": "🙋 is the person raising hand: a figure with one arm raised high and an open hand. It arrived in Unicode 6.0, and it lives in the gesture part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as volunteering, asking to speak, or claiming the win. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ✋ Raised Hand: the raised hand is a stop or high-five signal, the full figure means volunteering and asking. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same person raising hand exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the person raising hand emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are claiming a task before anyone else volunteers and answering a question with a raised hand, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🙋 does is claiming a task before anyone else volunteers. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is answering a question with a raised hand. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🙋 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🙋 goes back on its own. It reads as \"volunteering, asking to speak, or claiming the win\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🙋 when you mean ✋ Raised Hand. The raised hand is a stop or high-five signal, the full figure means volunteering and asking. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🙋 in a thread about a person reads as \"volunteering, asking to speak, or claiming the win\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and person raising hand gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🙋 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of volunteering, asking to speak, or claiming the win as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🙋. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the person raising hand was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like claiming a task before anyone else volunteers almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant volunteering, asking to speak, or claiming the win or something sharper.",
     "faqs": [
       {
         "question": "What does 🙋 mean in text?",
-        "answer": "🙋 means volunteering, asking, or 'pick me!' The raised hand is the universal classroom and event gesture."
+        "answer": "🙋 is used for volunteering, asking to speak, or claiming the win. The drawing shows a figure with one arm raised high and an open hand, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🙋 and ✋?",
-        "answer": "✋ is a flat raised hand (stop, high-five, or 'I have a question'); 🙋 is a full person with one hand raised (volunteering or 'me!'). The body changes the read."
+        "answer": "The raised hand is a stop or high-five signal, the full figure means volunteering and asking. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🙋 flirty?",
-        "answer": "🙋 can read as soft-flirty when used in a dating context — a 'pick me' or 'take me out' signal. In other contexts it is volunteering or asking."
+        "question": "Is 🙋 rude?",
+        "answer": "It can be. The gesture is meant as volunteering, asking to speak, or claiming the win, but it gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "When should I use 🙋?",
-        "answer": "Use 🙋 when you want to volunteer, ask a question, or react to a 'who wants' prompt. Avoid it when a quieter hand-up would land cleaner."
+        "question": "What does 🙋 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🙋 and its skin-tone versions?",
+        "answer": "The tone variants under person raising hand show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "who wants pizza 🙋",
-      "interpretation": "Friend volunteering or reacting to a 'who wants' prompt. Mirror with 🙋 or 🍕 to confirm."
-    },
-    {
-      "setting": "dating",
-      "message": "take me out 🙋",
-      "interpretation": "Soft-flirty 'pick me' signal. Mirror with 🙋 or ❤️ to keep the energy going."
+      "message": "claiming a task before anyone else volunteers 🙋",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as volunteering, asking to speak, or claiming the win, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "I'll take that ticket 🙋",
-      "interpretation": "Work volunteering for a task. Reply with 👍 to acknowledge."
+      "message": "answering a question with a raised hand 🙋",
+      "interpretation": "A handover or a sign-off in a channel. It reads as volunteering, asking to speak, or claiming the win, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🙋",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as a request for attention in a meeting when it is more often playful claiming in chat, so the raised hand marks eagerness rather than politeness more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "I'll do the dishes 🙋",
-      "interpretation": "Family volunteering. Mirror with ❤️ or a sentence of thanks."
+      "message": "claiming a task before anyone else volunteers 🙋",
+      "interpretation": "Family threads are where this lands most naturally. The reading is volunteering, asking to speak, or claiming the win, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "me! 🙋",
-      "interpretation": "Public 'count me in' reaction. Mirror with 🙋 or 👍."
+      "message": "that is the whole post 🙋",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }

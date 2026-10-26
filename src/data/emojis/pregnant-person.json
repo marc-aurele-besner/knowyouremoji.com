@@ -7,121 +7,151 @@
   "category": "People & Body",
   "subcategory": "Family",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Pregnant woman",
-  "tldr": "Pregnancy",
+  "baseMeaning": "A picture of a woman standing with one hand resting on her rounded belly. Read in a message it lands as announcing or celebrating a pregnancy.",
+  "tldr": "🤰 Pregnant Woman. In a chat it comes across as announcing or celebrating a pregnancy.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Pregnancy or expecting",
-      "example": "Expecting 🤰",
+      "meaning": "The plain reading: a woman standing with one hand resting on her rounded belly. Nothing hidden in the drawing itself.",
+      "example": "A first pregnancy announcement to family 🤰",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Food baby or full belly tag",
-      "example": "Food baby 🤰",
+      "meaning": "Borrowed as a reaction, it reads as announcing or celebrating a pregnancy.",
+      "example": "Congratulating a friend who just shared news 🤰",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Family-planning-coded tag as future reference or in-joke.",
-      "example": "future mom 🤰",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as announcing or celebrating a pregnancy, softened by whatever sentence sits next to it.",
+      "example": "not me 🤰",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatizing eating too much.",
-      "example": "after brunch 🤰",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — announcing or celebrating a pregnancy — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤰",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "SLACK",
+      "note": "In Slack 🤰 lands in channels where the sentence was supposed to be shorter. It is usually standing in for a first pregnancy announcement to family, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🤰 is a staple of the reaction bar, which is why it so often arrives stripped of its announcing or celebrating a pregnancy reading — a shape pressed rather than a message sent."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Used for pregnancy-coded and adult-coded baby tweets. The pregnant figure is the visible 'expecting' default across close-friends replies."
+      "note": "On X and Twitter 🤰 does most of its work in replies, where it tags a message like congratulating a friend who just shared news. Short enough to survive being the whole post, which is exactly why it is used that way."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Common in family-coded stories and aesthetic-coded bump shares. The pregnant figure reads as the visible pregnancy default on story overlays and reply captions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded pregnancy clips. The pregnant figure pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal expecting default."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Pregnant Woman 🤰 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like a first pregnancy announcement to family is the kind that carries it — the picture lands before the sentence does."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Group-chat reaction to baby-coded content. The pregnant figure is the default 'announcement' tag among close-friends groups."
+      "note": "WhatsApp renders 🤰 exactly as the phone system does, but the keyboard keeps it in the family section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like congratulating a friend who just shared news."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Gen Z reaches for 🤰 to do the work of a first pregnancy announcement to family, and treats the neutral drawing as the default rather than as a choice. What they hear first is announcing or celebrating a pregnancy."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Millennials tend to send 🤰 deliberately, usually for something like congratulating a friend who just shared news, and they read announcing or celebrating a pregnancy into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤰 literally, as the picture of the gesture itself, and is less likely to read announcing or celebrating a pregnancy into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🤰 literally for pregnancy references."
+      "note": "Older senders use 🤰 in the most straightforward way, on family and group messages, and are less likely to hear the announcing or celebrating a pregnancy subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤰 and 👶 get swapped",
+      "description": "The Baby 👶 is one tap away in every picker, and it does not carry the same reading — the baby is the new arrival, the pregnancy is the wait, and the two get swapped in timelines. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤰 as something else fairly often: it gets used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤰 Pregnant Woman Emoji Meaning - What Does 🤰 Really Mean?",
-  "seoDescription": "Learn what the pregnant woman emoji 🤰 really means in texts and social media.",
+  "seoTitle": "🤰 Pregnant Woman Emoji - What It Actually Means in Text",
+  "seoDescription": "🤰 Pregnant Woman meaning: announcing or celebrating a pregnancy. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "longForm": {
-    "overview": "The 🤰 Pregnant Woman emoji was added in Unicode 9 (2016) and is drawn as a woman with a visible pregnant belly, holding it with both hands. The visual cue reads instantly as pregnancy-coded reference, expecting default, or the visible 'food baby' tag. By 2026 🤰 has become the go-to emoji for the pregnancy-coded reaction, the visible bump default, and the food-baby-coded reaction in close-friends and family chats.\n\nIn modern chat 🤰 does very specific work. People send it as a literal pregnancy-coded reference, as the visible 'expecting' tag, or as the food-baby-coded default. The pregnant belly held with both hands is the visual cue that the read is pregnancy or full belly. Writers should pick 🤰 when the read is pregnancy or visible 'I ate too much' energy, and avoid it when the read is full-on mom — 👩 fits better there.",
-    "howPeopleUseIt": "🤰 lands on a friend's pregnancy-announcement message, in a work channel where someone is signaling pregnancy-coded energy, and in a dating-app DM where the sender is signaling family planning. The pregnant belly anchors the read.\n\nIn close-friends chats 🤰 reads as the universal expecting default and the visible 'food baby' tag. On X the emoji punctuates pregnancy-coded and family tweets. The emoji pairs with 👶 for the layered pregnant-and-baby stack and with 🍼 for the layered pregnant-and-bottle stack.",
-    "whenNotToUse": "Skip 🤰 in any context where the read is supposed to be light. The pregnant figure implies a deep personal or comedic-belly topic, not casual. Avoid 🤰 in casual contexts where the pregnancy-coded read lands as overshare.",
-    "howToReply": "If a friend sends 🤰 on a pregnancy-coded message, mirror with another 🤰 or 👶 to send matching energy. The pregnancy chain reads as solidarity.\n\nIf 🤰 lands as the food-baby default, reply with another 🤰 or 🍔. And if you want to send 🤰 yourself, pair it with the moment so the pregnancy-coded read is clear.",
+    "overview": "The drawing of 🤰 is a woman standing with one hand resting on her rounded belly. It arrived with Unicode 13.0 in the family section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is announcing or celebrating a pregnancy. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👶 Baby: the baby is the new arrival, the pregnancy is the wait, and the two get swapped in timelines. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe pregnant woman also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the pregnant woman reads as announcing or celebrating a pregnancy, it is most often used for a first pregnancy announcement to family or congratulating a friend who just shared news, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🤰 in a work thread is congratulating a friend who just shared news; 🤰 in a family thread is a first pregnancy announcement to family; 🤰 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🤰 is the whole reply, and it is carrying a meaning nobody wrote down — announcing or celebrating a pregnancy is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. A first pregnancy announcement to family is the job the pregnant woman does most: it saves a sentence and lands faster than one would have. Congratulating a friend who just shared news is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🤰 will get used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a pregnant woman gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🤰 reads as announcing or celebrating a pregnancy, and formality is exactly where that reading does the most damage.\n\nLeave 👶 Baby for the other message. The baby is the new arrival, the pregnancy is the wait, and the two get swapped in timelines. And keep 🤰 out of threads where somebody is hurting: it reads as announcing or celebrating a pregnancy there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🤰 gets used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong often enough that the sentence matters more than the picture.\n\nAnd do not send 🤰 alone when the message underneath is supposed to be warm. A message like a first pregnancy announcement to family carries the feeling; the picture on its own leaves the reader choosing between announcing or celebrating a pregnancy and something sharper.\n\nStart by reading what the 🤰 was doing. If it was a reaction, react: 🤰 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🤰 and its skin-tone versions?",
+        "answer": "The tone variants under pregnant woman show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 🤰 mean in text?",
-        "answer": "🤰 means pregnancy-coded reference, expecting energy, or the visible 'I ate too much' reaction. The pregnant belly is the visual cue that the read is pregnancy or food-baby."
+        "answer": "🤰 is used for announcing or celebrating a pregnancy. The drawing shows a woman standing with one hand resting on her rounded belly, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🤰 flirty?",
-        "answer": "Sometimes. 🤰 reads as flirty-coded in a dating thread combined with 'future with you' tag content as family-planning nod."
+        "question": "What is the difference between 🤰 and 👶?",
+        "answer": "The baby is the new arrival, the pregnancy is the wait, and the two get swapped in timelines. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🤰 mean from a girl?",
-        "answer": "From a girl or anyone, 🤰 carries the same pregnancy-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "Is 🤰 rude?",
+        "answer": "It can be. The gesture is meant as announcing or celebrating a pregnancy, but it gets used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What does 🤰 mean on Instagram?",
-        "answer": "On Instagram, 🤰 is the default sticker on bump-coded captions and aesthetic-coded pregnancy-announcement story overlays."
+        "question": "What does 🤰 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
+      "setting": "social",
+      "message": "that is the whole post 🤰",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
       "setting": "friends",
-      "message": "announcement 🤰",
-      "interpretation": "Friend pregnancy share. Mirror with another 🤰 or 👶 so the expecting chain reads back."
+      "message": "a first pregnancy announcement to family 🤰",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as announcing or celebrating a pregnancy, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "team expanding 🤰",
-      "interpretation": "Work-coded pregnancy share. Mirror with a clarifying sentence — 🤰 can land as off-topic in work channels."
+      "message": "congratulating a friend who just shared news 🤰",
+      "interpretation": "A handover or a sign-off in a channel. It reads as announcing or celebrating a pregnancy, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "food baby for two 🤰",
-      "interpretation": "Dating-coded flirty share. Mirror with 🤰 or 🥰 so the warm chain reads back."
+      "message": "there is something you should know 🤰",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets used as a generic celebration picture though it is really a pregnancy announcement, so sending it as filler for a new job or a graduation lands wrong more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "sister finally expecting 🤰",
-      "interpretation": "Family-coded pregnancy share. Mirror with 🤰 or 👶 so the family-coded chain reads back."
-    },
-    {
-      "setting": "social",
-      "message": "third-trimester energy 🤰",
-      "interpretation": "Public adult-coded pregnancy share. Mirror with another 🤰 or 🌟 so the solidarity chain reads back."
+      "message": "a first pregnancy announcement to family 🤰",
+      "interpretation": "Family threads are where this lands most naturally. The reading is announcing or celebrating a pregnancy, and nobody in the thread is reading it as anything sharper than that."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26",
+  "skinToneVariations": [
+    "pregnant-person-light",
+    "pregnant-person-medium-light",
+    "pregnant-person-medium",
+    "pregnant-person-medium-dark",
+    "pregnant-person-dark"
+  ]
 }

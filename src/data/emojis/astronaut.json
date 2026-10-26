@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "An astronaut in a space suit.",
-  "tldr": "Astronaut! Space or exploration.",
+  "baseMeaning": "A picture of a figure in a white spacesuit with a gold-visored helmet and a life-support pack. Read in a message it lands as going to the moon, literally or financially.",
+  "tldr": "🧑‍🚀 Astronaut. In a chat it comes across as going to the moon, literally or financially.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents an astronaut.",
-      "example": "To the moon 🧑‍🚀",
+      "meaning": "The plain reading: a figure in a white spacesuit with a gold-visored helmet and a life-support pack. Nothing hidden in the drawing itself.",
+      "example": "Calling a coin or a share price to the moon 🧑‍🚀",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "High aspirations or crypto moon.",
-      "example": "We're going to the moon 🧑‍🚀",
+      "meaning": "Borrowed as a reaction, it reads as going to the moon, literally or financially.",
+      "example": "Marking the launch of something wildly overhyped 🧑‍🚀",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Spaced out.",
-      "example": "My brain today 🧑‍🚀",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as going to the moon, literally or financially, softened by whatever sentence sits next to it.",
+      "example": "not me 🧑‍🚀",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Space or aerospace context.",
-      "example": "Space team 🧑‍🚀",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — going to the moon, literally or financially — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍🚀",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Travels on crypto-moon threads, 'going to the moon' calls, and space-coded hype tweets where the astronaut cue reads as big-ambition flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of space-aesthetic flat-lays, exploration-themed stories, and 'liftoff mood' reveals; the helmet visual carries the visible big-ambition energy."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Shows up on spaced-out transitions, 'my brain today 🧑‍🚀' ironic clips, and crypto-moon reaction content where the astronaut cue signals lift-off."
-    },
-    {
       "platform": "SLACK",
-      "note": "Surfaces on team 'launching today' tags, work aerospace-coded messages, and friend hype moments where the astronaut cue fits the moment."
+      "note": "In Slack 🧑‍🚀 lands in channels where the sentence was supposed to be shorter. It is usually standing in for calling a coin or a share price to the moon, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🧑‍🚀 is a staple of the reaction bar, which is why it so often arrives stripped of its going to the moon, literally or financially reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧑‍🚀 does most of its work in replies, where it tags a message like marking the launch of something wildly overhyped. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Astronaut 🧑‍🚀 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like calling a coin or a share price to the moon is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧑‍🚀 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like marking the launch of something wildly overhyped."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧑‍🚀 on crypto-moon hype threads, 'spaced out' ironic reveals, and big-ambition tags where the astronaut cue matches the modern flex register."
+      "note": "Gen Z reaches for 🧑‍🚀 to do the work of calling a coin or a share price to the moon, and treats the neutral drawing as the default rather than as a choice. What they hear first is going to the moon, literally or financially."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on space-exploration hype threads, nostalgia-coded lift-off moments, and big-ambition reveals where the universal astronaut cue fits."
+      "note": "Millennials tend to send 🧑‍🚀 deliberately, usually for something like marking the launch of something wildly overhyped, and they read going to the moon, literally or financially into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded space-themed messages and big-ambition reveals, treating the astronaut as literal space-exploration energy."
+      "note": "Gen X mostly uses 🧑‍🚀 literally, as the picture of the gesture itself, and is less likely to read going to the moon, literally or financially into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal space explorer and uses it on aerospace-coded tags without parsing the modern crypto-moon subtext."
+      "note": "Older senders use 🧑‍🚀 in the most straightforward way, on family and group messages, and are less likely to hear the going to the moon, literally or financially subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍🚀 and 🚀 get swapped",
+      "description": "The Rocket 🚀 is one tap away in every picker, and it does not carry the same reading — the rocket is the vehicle and the trip itself, the astronaut is the person flying and feeling it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍🚀 as something else fairly often: it gets assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🚀 Astronaut Emoji Meaning",
-  "seoDescription": "Learn what the Astronaut emoji 🧑‍🚀 really means.",
+  "seoTitle": "🧑‍🚀 Astronaut Emoji - What It Actually Means in Text",
+  "seoDescription": "🧑‍🚀 Astronaut meaning: going to the moon, literally or financially. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "astronaut-light",
     "astronaut-medium-light",
@@ -83,60 +98,60 @@
     "astronaut-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧑‍🚀 is the emoji of big-ambition flex reveal — a suited space explorer, the iconography of the cosmos, launch-coded hype, and the universal 'to the moon' tag. Where 🚀 reads as rocket-coded lift-off energy and 🌌 reads as cosmic-coded wonder, 🧑‍🚀 captures the moment when the sender wants to communicate ambitious flex — a 'going to the moon 🧑‍🚀' partner moment or a 'spaced out today 🧑‍🚀' ironic reveal. The astronaut cue borrows from the space-exploration tradition and the modern big-ambition aesthetic, which is exactly why the emoji reads as hype-coded rather than literal career title.\n\nIn real-world usage 🧑‍🚀 lives in the spaces where the sender wants to communicate big-ambition energy. A trader sends it on a 'to the moon 🧑‍🚀' crypto-coded hype call. A friend sends it on a 'spaced out today 🧑‍🚀' ironic reveal. A coworker sends it on a 'space team 🧑‍🚀' aerospace-coded message. The astronaut cue is what makes the emoji feel big-ambition — it is not just 'astronaut,' it is 'astronaut-coded lift-off moment.'\n\nWhat separates 🧑‍🚀 from the rest of the people-role family is the big-ambition register. The emoji is not saying 'doctor' (🧑‍⚕️), 'teacher' (🧑‍🏫), or 'pilot' (🧑‍✈️). It is saying 'big-ambition-coded lift-off,' which carries a specific space-exploration tradition. That is why 🧑‍🚀 travels especially well on crypto-moon hype calls, spaced-out ironic reveals, and any context where the sender wants the message to land with cosmic-coded energy.",
-    "howPeopleUseIt": "🧑‍🚀 shows up as the closer on a 'to the moon 🧑‍🚀' crypto hype message ('to the moon 🧑‍🚀'), the punctuation on a 'spaced out today 🧑‍🚀' ironic reveal, and the softener on a 'space team 🧑‍🚀' aerospace-coded message. It pairs naturally with sentences that name the big-ambition energy — 'to the moon,' 'spaced out,' 'liftoff' — and sits beautifully on hype calls and ironic reveal tags.\n\nIn group chats 🧑‍🚀 anchors 'launch moment' threads, big-ambition reveals, and 'going to the moon 🧑‍🚀' hype-coded tags where the astronaut cue matches the register. On Instagram it lands on space-aesthetic flat-lays and exploration-themed stories. On TikTok it travels in spaced-out ironic clips and 'my brain today' reaction content.\n\nThe emoji also works in work contexts. A 'space team 🧑‍🚀' aerospace message uses the astronaut cue to communicate big-ambition team energy. Across all of these surfaces the rule is the same: the more cosmic-coded the moment, the more natural 🧑‍🚀 feels.",
-    "whenNotToUse": "Skip 🧑‍🚀 in grounded or humble-coded contexts. The big-ambition astronaut cue is the wrong tone for any conversation where the moment is quiet. A sentence that acknowledges the moment is a better fit.\n\nAvoid 🧑‍🚀 in 'literally career-coded' contexts where the big-ambition energy feels off. A 'to the moon 🧑‍🚀' message works for hype-coded flex; for literal career contexts use 🧑‍⚕️ or a sentence.\n\nSkip 🧑‍🚀 when you want to communicate grounded focus. The big-ambition register is too cosmic-coded for steady moments; use 🧑‍💻 or 📚 when the focus needs to be steady.",
-    "howToReply": "If someone sends 🧑‍🚀, the cleanest mirror is another 🧑‍🚀, 🚀, or a sentence that joins the big-ambition energy. If you want to escalate the engagement, follow with a sentence that adds context: 'to the moon too' or 'liftoff for sure.' If the astronaut cue feels too big-ambition, reply with a softer emoji (🌌 or ✨) that signals wonder without matching the hype volume.\n\nWhen 🧑‍🚀 lands as a 'to the moon 🧑‍🚀' crypto hype call, mirror with another 🧑‍🚀, a rocket emoji, or a sentence that escalates the hype. When it arrives as a 'spaced out today 🧑‍🚀' ironic reveal, mirror with another 🧑‍🚀, a sentence that joins the irony, or an emoji that matches.",
+    "overview": "The drawing of 🧑‍🚀 is a figure in a white spacesuit with a gold-visored helmet and a life-support pack. It arrived with Unicode 12.1 in the person-role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is going to the moon, literally or financially. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🚀 Rocket: the rocket is the vehicle and the trip itself, the astronaut is the person flying and feeling it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe astronaut also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the astronaut reads as going to the moon, literally or financially, it is most often used for calling a coin or a share price to the moon or marking the launch of something wildly overhyped, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🧑‍🚀 in a work thread is marking the launch of something wildly overhyped; 🧑‍🚀 in a family thread is calling a coin or a share price to the moon; 🧑‍🚀 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🧑‍🚀 is the whole reply, and it is carrying a meaning nobody wrote down — going to the moon, literally or financially is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Calling a coin or a share price to the moon is the job the astronaut does most: it saves a sentence and lands faster than one would have. Marking the launch of something wildly overhyped is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🧑‍🚀 will get assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a astronaut gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🧑‍🚀 reads as going to the moon, literally or financially, and formality is exactly where that reading does the most damage.\n\nLeave 🚀 Rocket for the other message. The rocket is the vehicle and the trip itself, the astronaut is the person flying and feeling it. And keep 🧑‍🚀 out of threads where somebody is hurting: it reads as going to the moon, literally or financially there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🧑‍🚀 gets assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside often enough that the sentence matters more than the picture.\n\nAnd do not send 🧑‍🚀 alone when the message underneath is supposed to be warm. A message like calling a coin or a share price to the moon carries the feeling; the picture on its own leaves the reader choosing between going to the moon, literally or financially and something sharper.\n\nStart by reading what the 🧑‍🚀 was doing. If it was a reaction, react: 🧑‍🚀 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🧑‍🚀 mean on a crypto thread?",
-        "answer": "On a crypto thread, 🧑‍🚀 signals 'to the moon' big-ambition flex or a 'going to the moon' hype call. The astronaut cue reads as cosmic-coded lift-off rather than literal space career, so it tends to land on crypto hype tags, work aerospace-coded messages, and friend hype moments."
+        "question": "What is the difference between 🧑‍🚀 and its skin-tone versions?",
+        "answer": "The tone variants under astronaut show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is 🧑‍🚀 flirty?",
-        "answer": "Not really. 🧑‍🚀 is more about big-ambition hype or ironic spaced-out reveal than romance. On its own the emoji reads as cosmic-coded flex rather than soft-coded affection."
+        "question": "What does 🧑‍🚀 mean in text?",
+        "answer": "🧑‍🚀 is used for going to the moon, literally or financially. The drawing shows a figure in a white spacesuit with a gold-visored helmet and a life-support pack, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🧑‍🚀 and 🚀?",
-        "answer": "🚀 is the rocket — the cue is rocket-coded lift-off energy, the universal 'launch' tag. 🧑‍🚀 is the astronaut — the cue is astronaut-coded big ambition, the 'to the moon' hype energy. Use 🚀 when the moment is launch-coded; use 🧑‍🚀 when the moment is big-ambition-coded hype."
+        "answer": "The rocket is the vehicle and the trip itself, the astronaut is the person flying and feeling it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🧑‍🚀 for 'spaced out' ironic moments?",
-        "answer": "Yes — 🧑‍🚀 is one of the most common ironic-coded spaced-out emojis. The astronaut cue is a natural fit for 'spaced out' ironic moments, my-brain-today reveals, and unfocused-coded tag humor."
+        "question": "Is 🧑‍🚀 rude?",
+        "answer": "It can be. The gesture is meant as going to the moon, literally or financially, but it gets assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🧑‍🚀 mean space-exploration?",
-        "answer": "Often yes — 🧑‍🚀 carries the helmet visual and reads in modern usage as big-ambition-coded. The literal-space-career-versus-crypto-moon-hype split depends on the sender and the channel."
+        "question": "What does 🧑‍🚀 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "social",
-      "message": "to the moon on this altcoin, watch the liftoff 🧑‍🚀",
-      "interpretation": "Public big-ambition flex. Mirror with another 🧑‍🚀, a rocket emoji, or a sentence that joins the hype."
-    },
-    {
-      "setting": "work",
-      "message": "launching the new satellite today, full space team 🧑‍🚀",
-      "interpretation": "Work aerospace-coded moment. Mirror with another 🧑‍🚀, a rocket emoji, or a sentence that joins the team energy."
+      "message": "that is the whole post 🧑‍🚀",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "my brain is fully spaced out today, no thoughts 🧑‍🚀",
-      "interpretation": "Friend ironic-coded reveal. Mirror with another 🧑‍🚀, a sentence that joins the irony, or an emoji that matches."
+      "message": "calling a coin or a share price to the moon 🧑‍🚀",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as going to the moon, literally or financially, and matching it with the same emoji is a normal reply."
     },
     {
-      "setting": "family",
-      "message": "grandpa took us to the space museum, full astronaut era 🧑‍🚀",
-      "interpretation": "Family space-themed tag. Mirror with another 🧑‍🚀, a sentence that joins the family moment, or a rocket emoji that matches."
+      "setting": "work",
+      "message": "marking the launch of something wildly overhyped 🧑‍🚀",
+      "interpretation": "A handover or a sign-off in a channel. It reads as going to the moon, literally or financially, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "you take me to another galaxy, full liftoff energy 🧑‍🚀",
-      "interpretation": "Partner big-ambition romance. Mirror with another 🧑‍🚀, a heart emoji, or a sentence that escalates the romance."
+      "message": "there is something you should know 🧑‍🚀",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to be a genuine space reference when it is usually borrowed for crypto and stock hype, where the suit stands in for unrealistic upside more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "calling a coin or a share price to the moon 🧑‍🚀",
+      "interpretation": "Family threads are where this lands most naturally. The reading is going to the moon, literally or financially, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

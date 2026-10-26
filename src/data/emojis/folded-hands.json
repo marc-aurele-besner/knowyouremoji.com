@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Folded hands in prayer or thanks.",
-  "tldr": "Three meanings layered in one emoji: please/thank you, high-five request, or religious prayer/namaste.",
+  "baseMeaning": "A picture of two hands pressed palm to palm, fingertips pointing upward. Read in a message it lands as asking nicely, giving thanks, or praying.",
+  "tldr": "🙏 Folded Hands. In a chat it comes across as asking nicely, giving thanks, or praying.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Prayer, gratitude to a higher power, or reverence for a moment.",
-      "example": "Sending thoughts and prayers 🙏",
+      "meaning": "The plain reading: two hands pressed palm to palm, fingertips pointing upward. Nothing hidden in the drawing itself.",
+      "example": "Begging for an extension in a work chat 🙏",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Polite request or eager 'please' - '🙏 for good news' works as a soft plea.",
-      "example": "🙏 the deadline holds",
+      "meaning": "Borrowed as a reaction, it reads as asking nicely, giving thanks, or praying.",
+      "example": "Sending prayers for a sick friend 🙏",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "The 'high-five me' read - swapping high-fives or congratulations across DMs and reply threads.",
-      "example": "you got promoted 🙏",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as asking nicely, giving thanks, or praying, softened by whatever sentence sits next to it.",
+      "example": "not me 🙏",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Customer-facing politeness in service channels; can read as warm gratitude in casual teams.",
-      "example": "thanks for shipping 🙏",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — asking nicely, giving thanks, or praying — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🙏",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Pasted in reply threads as the polite 'let's hope' or 'please' framing — fans line up with 🙏 in '🙏 for the announcement' countdown threads."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Frequent comment reaction on religion-themed posts and on creators who share devotional or namaste aesthetics; doubles as the warm gratitude emoji in casual comments."
-    },
-    {
       "platform": "SLACK",
-      "note": "Customer-support politeness emoji; teams paste 🙏 after closing a ticket or as the warm closer in casual channels."
+      "note": "In Slack 🙏 lands in channels where the sentence was supposed to be shorter. It is usually standing in for begging for an extension in a work chat, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "High-five read dominates in younger servers — 💪🙏 or 🙏 are paired for the digital-five reaction on wins and game moments."
+      "note": "On Discord 🙏 is a staple of the reaction bar, which is why it so often arrives stripped of its asking nicely, giving thanks, or praying reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🙏 does most of its work in replies, where it tags a message like sending prayers for a sick friend. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Folded Hands 🙏 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like begging for an extension in a work chat is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🙏 exactly as the phone system does, but the keyboard keeps it in the hand-gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like sending prayers for a sick friend."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Owns 🙏 as the polite-please emoji rather than a literal prayer — uses it for 'fingers crossed' energy and as the digital high-five on wins."
+      "note": "Gen Z reaches for 🙏 to do the work of begging for an extension in a work chat, and treats the neutral drawing as the default rather than as a choice. What they hear first is asking nicely, giving thanks, or praying."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses 🙏 for both prayer and polite-please registers, depending on context; reads the high-five subtext without effort."
+      "note": "Millennials tend to send 🙏 deliberately, usually for something like sending prayers for a sick friend, and they read asking nicely, giving thanks, or praying into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Reads 🙏 as prayer or sincere thanks; sometimes catches the high-five meaning after family members point it out."
+      "note": "Gen X mostly uses 🙏 literally, as the picture of the gesture itself, and is less likely to read asking nicely, giving thanks, or praying into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Sends 🙏 sincerely on prayer requests and on warm thanks; rarely posts the high-five or 'fingers crossed' read."
+      "note": "Older senders use 🙏 in the most straightforward way, on family and group messages, and are less likely to hear the asking nicely, giving thanks, or praying subtext in it."
     }
   ],
   "warnings": [
     {
-      "title": "Religion read",
-      "description": "🙏 on a religious post reads as reverence. 🙏 on a meme thread reads as polite-please. Make sure the channel register matches the meaning you intend.",
+      "title": "🙏 and 🤲 get swapped",
+      "description": "The Palms Up Together 🤲 is one tap away in every picker, and it does not carry the same reading — the clasped hands point upward in prayer, the open palms face upward to receive. Check which one you actually picked.",
       "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🙏 as something else fairly often: it gets assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
     }
   ],
   "relatedCombos": ["pray-thanks", "folded-hands-pleading"],
-  "seoTitle": "🙏 Folded Hands Emoji Meaning - What Does 🙏 Really Mean?",
-  "seoDescription": "Learn what the folded hands emoji 🙏 really means - the prayer read, the polite-please slang, the high-five energy, and how to send the right meaning.",
+  "seoTitle": "🙏 Folded Hands Emoji - What It Actually Means in Text",
+  "seoDescription": "🙏 Folded Hands meaning: asking nicely, giving thanks, or praying. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🙏 is the emoji that holds three meanings in one pair of cartoon hands. The visual cue is two hands pressed together, palms touching — the universal gesture that means prayer, gratitude, namaste, or a polite request depending on the culture. On modern chat threads the same emoji now carries a fourth meaning: 'high-five' or 'please,' both slang registers that have grown up around the emoji since the 2010s.\n\nThe layered meanings make 🙏 one of the most contextual emojis in the set. On a religious post it reads as reverence. On a friend's big announcement it reads as 'congratulations' or 'high-five.' On a hopeful comment ('🙏 for good weather') it reads as 'please' or 'fingers crossed.' The same pair of hands can carry four different reads, and the channel context plus the surrounding message does most of the disambiguation.",
-    "howPeopleUseIt": "🙏 lands as the polite closer on a service ticket ('thanks for your patience 🙏'), the high-five reaction on a friend's promotion, the reverent closer on a condolences thread, and the 'fingers crossed' energy on a hopeful comment. On X it pairs naturally with countdown threads ('🙏 for the announcement tomorrow').\n\nIn dating threads 🙏 carries the warm-congratulations read when a partner shares good news. In group chats 🙏 shows up as the polite-please closer on a request, the high-five energy after a good game, and the digital gratitude when a friend does something kind. The emoji is omnipresent across Slack, Discord, and WhatsApp without ever feeling crowded.",
-    "whenNotToUse": "Avoid 🙏 on a meme thread where the prayer read dominates — sending 🙏 in a faith space when you mean 'high-five' will confuse the room. Likewise, sending 🙏 on a wholesome-support post when you meant the polite request will register as performative spirituality rather than casual gratitude.\n\nAvoid 🙏 as a substitute for actual help when someone is in need. A '🙏' reply to a friend asking for a real conversation is dismissive; the emoji softens the deflection into a performative spiritual gesture that the recipient will not feel seen by. Send a sentence or a phone call instead.",
-    "howToReply": "If a friend texts 🙏 after a win, mirror with another 🙏, a 🙌, or a sentence that acknowledges the moment ('you earned it'). The chain of 🙏🙏🙏 as 'high-five' is fine in friend groups; sending a heart emoji reads as romance rather than celebration.\n\nIf 🙏 lands in service or formal work channels, mirror with 'thanks' or 'appreciate it' so the register stays professional. And if 🙏 arrives as a prayer request from a family member, mirror with a heart or a sentence that shares the hope — the religious read deserves the warm reply.",
+    "overview": "The drawing of 🙏 is two hands pressed palm to palm, fingertips pointing upward. It arrived with Unicode 6.0 in the hand-gesture section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is asking nicely, giving thanks, or praying. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🤲 Palms Up Together: the clasped hands point upward in prayer, the open palms face upward to receive. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe folded hands also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the folded hands reads as asking nicely, giving thanks, or praying, it is most often used for begging for an extension in a work chat or sending prayers for a sick friend, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🙏 in a work thread is sending prayers for a sick friend; 🙏 in a family thread is begging for an extension in a work chat; 🙏 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🙏 is the whole reply, and it is carrying a meaning nobody wrote down — asking nicely, giving thanks, or praying is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Begging for an extension in a work chat is the job the folded hands does most: it saves a sentence and lands faster than one would have. Sending prayers for a sick friend is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🙏 will get assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a folded hands gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🙏 reads as asking nicely, giving thanks, or praying, and formality is exactly where that reading does the most damage.\n\nLeave 🤲 Palms Up Together for the other message. The clasped hands point upward in prayer, the open palms face upward to receive. And keep 🙏 out of threads where somebody is hurting: it reads as asking nicely, giving thanks, or praying there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🙏 gets assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential often enough that the sentence matters more than the picture.\n\nAnd do not send 🙏 alone when the message underneath is supposed to be warm. A message like begging for an extension in a work chat carries the feeling; the picture on its own leaves the reader choosing between asking nicely, giving thanks, or praying and something sharper.\n\nStart by reading what the 🙏 was doing. If it was a reaction, react: 🙏 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🙏 mean in texting?",
-        "answer": "🙏 has four overlapping meanings: prayer/reverence, polite please, high-five, or high-fingers-crossed hope. The context determines which read lands; the emoji itself is contextual."
+        "question": "What is the difference between 🙏 and its skin-tone versions?",
+        "answer": "The tone variants under folded hands show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What does 🙏 mean from a girl?",
-        "answer": "From a girl or anyone, 🙏 means whatever the sender's context signals — a polite request, a high-five, or reverence. There is no gendered meaning."
+        "question": "What does 🙏 mean in text?",
+        "answer": "🙏 is used for asking nicely, giving thanks, or praying. The drawing shows two hands pressed palm to palm, fingertips pointing upward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🙏 flirty?",
-        "answer": "It can be. A 🙏 on a dating thread can read as a sincere 'congratulations' or as the polite-please flirty closer. Pair it with a heart or an explicit subject to send the flirty read."
+        "question": "What is the difference between 🙏 and 🤲?",
+        "answer": "The clasped hands point upward in prayer, the open palms face upward to receive. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🙏 mean in a work chat?",
-        "answer": "In Slack or Teams 🙏 usually reads as polite gratitude or 'thanks for your patience.' It is one of the safer emojis for a professional tone."
+        "question": "Is 🙏 rude?",
+        "answer": "It can be. The gesture is meant as asking nicely, giving thanks, or praying, but it gets assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
+        "question": "What does 🙏 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "you got the apartment 🙏",
-      "interpretation": "Friend high-fiving. Mirror with 🙌 or 'congratulations' so the moment matches the energy."
-    },
-    {
       "setting": "social",
-      "message": "🙏 for the announcement tomorrow",
-      "interpretation": "Public 'fingers crossed' energy. Mirror with 🙏 or 'lmaoo same' so the count-down vibe travels."
+      "message": "that is the whole post 🙏",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
-      "setting": "family",
-      "message": "praying for grandma 🙏",
-      "interpretation": "Family grief or concern. Mirror with a heart, a sentence that shares the hope, or both — avoid a solo 🙏 that reads as performance."
-    },
-    {
-      "setting": "dating",
-      "message": "dinner was perfect 🙏",
-      "interpretation": "Partner warming the close. Mirror with ❤️ or 'same, let's do it again' so the chemistry translates."
+      "setting": "friends",
+      "message": "begging for an extension in a work chat 🙏",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as asking nicely, giving thanks, or praying, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "thanks for jumping on the call 🙏",
-      "interpretation": "Work gratitude. Mirror with 'no problem' or 'happy to help' so the register stays useful."
+      "message": "sending prayers for a sick friend 🙏",
+      "interpretation": "A handover or a sign-off in a channel. It reads as asking nicely, giving thanks, or praying, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🙏",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to be real religious prayer when it is far more often a polite please or a virtual high-five — people reuse the clasped shape for anything soft and deferential more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "begging for an extension in a work chat 🙏",
+      "interpretation": "Family threads are where this lands most naturally. The reading is asking nicely, giving thanks, or praying, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "folded-hands-light",
+    "folded-hands-medium-light",
+    "folded-hands-medium",
+    "folded-hands-medium-dark",
+    "folded-hands-dark"
   ]
 }

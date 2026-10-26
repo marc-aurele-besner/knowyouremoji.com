@@ -7,74 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Cartwheeling emoji.",
-  "tldr": "Represents person cartwheeling.",
+  "baseMeaning": "A person cartwheeling emoji: a figure mid-cartwheel, legs split and hands on the floor.",
+  "tldr": "Person Cartwheeling 🤸: celebrating so hard the sender cannot sit still.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — celebrating so hard the sender cannot sit still — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤸",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of person cartwheeling.",
-      "example": "Time for person cartwheeling 🤸",
+      "meaning": "The plain reading: a figure mid-cartwheel, legs split and hands on the floor. Nothing hidden in the drawing itself.",
+      "example": "Announcing a win at work 🤸",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🤸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person cartwheeling? 🤸",
+      "meaning": "Borrowed as a reaction, it reads as celebrating so hard the sender cannot sit still.",
+      "example": "Reacting to a friend getting engaged 🤸",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🤸",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: celebrating so hard the sender cannot sit still, said without believing any of it.",
+      "example": "sure, sure 🤸",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on gymnastics-coded threads, 'feeling athletic' tweets, and 'cartwheel moment' posts where the cartwheel cue reads as playful-flex energy."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of gymnastics flat-lays, playful-coded stories, and 'gymnastics era' reveals; the cartwheel visual carries the visible playful energy."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Shows up on gymnastics transitions, 'feeling athletic 🤸' clips, and 'me attempting sports 🤸' ironic content where the cartwheel cue signals flex."
+      "note": "In TikTok comments 🤸 is the fastest way to answer a video without typing anything. The gesture stays celebrating so hard the sender cannot sit still, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Surfaces on team 'we nailed it' tags, work-coded celebration messages, and friend playful moments where the cartwheel cue fits the energetic register."
+      "note": "In Slack 🤸 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a win at work, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🤸 is a staple of the reaction bar, which is why it so often arrives stripped of its celebrating so hard the sender cannot sit still reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🤸 does most of its work in replies, where it tags a message like reacting to a friend getting engaged. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Cartwheeling 🤸 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a win at work is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 🤸 in the most straightforward way, on family and group messages, and are less likely to hear the celebrating so hard the sender cannot sit still subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Reaches for 🤸 on playful-coded threads, 'feeling athletic' reveals, and 'cartwheel moment' tags where the cartwheel cue matches the modern playful register."
+      "note": "Gen Z reaches for 🤸 to do the work of announcing a win at work, and treats the neutral drawing as the default rather than as a choice. What they hear first is celebrating so hard the sender cannot sit still."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on nostalgic-coded tags, gymnastics-coded memories, and playful reveals where the universal cartwheel cue fits."
+      "note": "Millennials tend to send 🤸 deliberately, usually for something like reacting to a friend getting engaged, and they read celebrating so hard the sender cannot sit still into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded playful messages and gymnastics reveals, treating the cartwheel as literal gymnastics-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal gymnastics move and uses it on sport-coded tags without parsing the modern ironic-athletic subtext."
+      "note": "Gen X mostly uses 🤸 literally, as the picture of the gesture itself, and is less likely to read celebrating so hard the sender cannot sit still into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🤸 and 🏃 get swapped",
+      "description": "The Person Running 🏃 is one tap away in every picker, and it does not carry the same reading — the runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤸 as something else fairly often: it gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤸 Person Cartwheeling Emoji Meaning - What Does 🤸 Really Mean?",
-  "seoDescription": "Learn what the person cartwheeling emoji 🤸 really means in texts and social media.",
+  "seoTitle": "🤸 Person Cartwheeling Emoji Meaning and How to Use It",
+  "seoDescription": "What 🤸 means when people send it, the person cartwheeling reading, and how to answer it without guessing.",
   "skinToneVariations": [
     "cartwheeling-light",
     "cartwheeling-medium-light",
@@ -83,60 +98,60 @@
     "cartwheeling-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤸 is the emoji of playful-coded athletic flex — a cartwheeling person, the iconography of gymnastics, movement-coded celebration, and the universal 'feeling athletic' tag. Where 🏃 reads as runner-coded cardio energy and ⛹️ reads as court-coded ball-bounce energy, 🤸 captures the moment when the sender wants to communicate playful-coded athletic energy — a 'feeling athletic 🤸' celebration moment or a 'me attempting sports 🤸' ironic reveal. The cartwheel cue borrows from the gymnastics tradition and the modern playful-coded aesthetic, which is exactly why the emoji reads as energetic-coded rather than literal sport.\n\nIn real-world usage 🤸 lives in the spaces where the sender wants to communicate playful movement. A friend sends it on a 'feeling athletic 🤸' celebration-coded message. A family member sends it on a 'cartwheel moment 🤸' playful reveal. A coworker sends it on a 'me attempting sports 🤸' ironic-coded tag. The cartwheel cue is what makes the emoji feel playful-coded — it is not just 'cartwheeling,' it is 'cartwheel-coded celebration moment.'\n\nWhat separates 🤸 from the rest of the sport family is the playful-coded register. The emoji is not saying 'cyclist' (🚴), 'swimmer' (🏊), or 'climber' (🧗). It is saying 'playful-coded gymnastics,' which carries a specific celebration tradition. That is why 🤸 travels especially well on 'feeling athletic' tags, playful-coded reveals, and any context where the sender wants the message to land with celebratory energy.",
-    "howPeopleUseIt": "🤸 shows up as the closer on a 'feeling athletic 🤸' celebration message ('feeling athletic 🤸'), the punctuation on a 'cartwheel moment 🤸' playful reveal, and the softener on a 'me attempting sports 🤸' ironic-coded tag. It pairs naturally with sentences that name the playful-coded energy — 'feeling athletic,' 'cartwheel moment,' 'celebrating today' — and sits beautifully on celebration messages and playful reveals.\n\nIn group chats 🤸 anchors 'gymnastics moment' threads, playful-coded celebration reveals, and 'feeling athletic 🤸' playful-coded tags where the cartwheel cue matches the register. On Instagram it lands on gymnastics flat-lays and playful-coded stories. On TikTok it travels in gymnastics transitions and 'feeling athletic' reaction content.\n\nThe emoji also works in dating contexts. A 'want to try gymnastics 🤸' partner message uses the cartwheel cue to communicate playful-coded romance. Across all of these surfaces the rule is the same: the more playful-coded the moment, the more natural 🤸 feels.",
-    "whenNotToUse": "Skip 🤸 in rest or recovery-coded contexts. The playful-coded cartwheel cue is the wrong tone for any conversation where the moment is quiet. A sentence that acknowledges the moment is a better fit.\n\nAvoid 🤸 in 'literal gymnastics' coded contexts where the playful-coded energy feels off. A 'feeling athletic 🤸' message works for playful-coded flex; for literal sport contexts use 🤸‍♀️ or a sentence.\n\nSkip 🤸 when you want to communicate steady focus. The playful-coded register is too movement-coded for steady moments; use 🧘 or 📚 when the focus needs to be calm.",
-    "howToReply": "If someone sends 🤸, the cleanest mirror is another 🤸, 🎉, or a sentence that joins the playful-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'feeling athletic too' or 'cartwheel moment for sure.' If the cartwheel cue feels too playful-coded, reply with a softer emoji (💃 or 🎊) that signals celebration without matching the movement volume.\n\nWhen 🤸 lands as a 'feeling athletic 🤸' celebration-coded message, mirror with another 🤸, a celebration emoji, or a sentence that escalates the energy. When it arrives as a 'me attempting sports 🤸' ironic-coded tag, mirror with another 🤸, a sentence that joins the irony, or an emoji that matches.",
+    "overview": "What follows is the useful part: the two things the person cartwheeling is actually for (announcing a win at work and reacting to a friend getting engaged), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 🤸 is a figure mid-cartwheel, legs split and hands on the floor, added in Unicode 13.0 and filed under sport. What it does in a message is carry a meaning — here, celebrating so hard the sender cannot sit still — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏃 Person Running: the runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are announcing a win at work and reacting to a friend getting engaged. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 🤸 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"celebrating so hard the sender cannot sit still\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 🤸 is easy to send when 🏃 Person Running was meant — the runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"celebrating so hard the sender cannot sit still\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 🤸 gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and person cartwheeling gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 🤸 next to somebody's performance, or in a first note to a client, and celebrating so hard the sender cannot sit still is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 🤸 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the person cartwheeling was meant, read the line above it instead. 🤸 gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like announcing a win at work sent with 🤸 on its own is a coin toss between celebrating so hard the sender cannot sit still and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
-        "question": "What does 🤸 mean from a friend?",
-        "answer": "From a friend, 🤸 signals playful-coded celebration flex or a 'feeling athletic 🤸' message. The cartwheel cue reads as energetic-coded rather than literal sport, so it tends to land on celebration tags, friend playful-coded messages, and cartwheel reveals."
+        "question": "What does 🤸 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🤸 flirty?",
-        "answer": "Not really. 🤸 is more about playful-coded athletic flex or ironic me-attempting-sports humor than romance. On its own the emoji reads as movement-coded rather than soft-coded affection."
+        "question": "What is the difference between 🤸 and its skin-tone versions?",
+        "answer": "The tone variants under person cartwheeling show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🤸 and 💃?",
-        "answer": "💃 is the woman dancing — the cue is dance-coded rhythmic energy, the universal 'dance' tag. 🤸 is the person cartwheeling — the cue is cartwheel-coded playful movement, the 'feeling athletic' celebration energy. Use 💃 when the moment is dance-coded; use 🤸 when the moment is playful-coded athletic."
+        "question": "What does 🤸 mean in text?",
+        "answer": "🤸 is used for celebrating so hard the sender cannot sit still. The drawing shows a figure mid-cartwheel, legs split and hands on the floor, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🤸 for 'feeling athletic' moments?",
-        "answer": "Yes — 🤸 is one of the most common playful-coded emojis. The cartwheel cue is a natural fit for 'feeling athletic' moments, celebration-coded reveals, and 'me attempting sports' ironic tags."
+        "question": "What is the difference between 🤸 and 🏃?",
+        "answer": "The runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Does 🤸 mean literal gymnast?",
-        "answer": "Sometimes — 🤸 carries the cartwheel visual and reads in modern usage as playful-coded. The literal-gymnast-versus-ironic-athletic split depends on the sender and the channel."
+        "question": "Is 🤸 rude?",
+        "answer": "It can be. The gesture is meant as celebrating so hard the sender cannot sit still, but it gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "social",
-      "message": "feeling athletic after that workout, full cartwheel era 🤸",
-      "interpretation": "Public playful-coded flex. Mirror with another 🤸, a celebration emoji, or a sentence that joins the playful energy."
-    },
-    {
-      "setting": "dating",
-      "message": "want to try a gymnastics class with me, full playful mode 🤸",
-      "interpretation": "Partner playful-coded romance. Mirror with another 🤸, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "work",
-      "message": "nailed the pitch, full cartwheel moment 🤸",
-      "interpretation": "Work playful-coded celebration. Mirror with another 🤸, a celebration emoji, or a sentence that joins the team energy."
-    },
-    {
       "setting": "family",
-      "message": "showed the kids how to cartwheel, full playful era 🤸",
-      "interpretation": "Family playful-coded tag. Mirror with another 🤸, a sentence that joins the family moment, or a celebration emoji that matches."
+      "message": "announcing a win at work 🤸",
+      "interpretation": "Family threads are where this lands most naturally. The reading is celebrating so hard the sender cannot sit still, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🤸",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "me attempting sports at the gym today, full cartwheel energy 🤸",
-      "interpretation": "Friend ironic-coded reveal. Mirror with another 🤸, a sentence that joins the irony, or an emoji that matches."
+      "message": "announcing a win at work 🤸",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as celebrating so hard the sender cannot sit still, and matching it with the same emoji is a normal reply."
+    },
+    {
+      "setting": "work",
+      "message": "reacting to a friend getting engaged 🤸",
+      "interpretation": "A handover or a sign-off in a channel. It reads as celebrating so hard the sender cannot sit still, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🤸",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose more easily here than it does in a work thread, because the thread is thinner."
     }
   ]
 }

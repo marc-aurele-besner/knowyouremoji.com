@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A woman, often depicted with neutral expression.",
-  "tldr": "Woman-coded default, 'gal reply' register, or gender-coded neutral.",
+  "baseMeaning": "A woman with shoulder-length hair, shown from the chest up — marking a female speaker or a group of women.",
+  "tldr": "The woman emoji 👩 reads as marking a female speaker or a group of women.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "A woman or female adult.",
-      "example": "Saw a woman 👩",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Woman-coded default or 'gal reply' register.",
-      "example": "Gal reply 👩",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "DATING",
-      "meaning": "Cozy-coded partner check-in or 'thinking of you' moment.",
-      "example": "Thinking of you 👩",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking a female speaker or a group of women, softened by whatever sentence sits next to it.",
+      "example": "not me 👩",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Coworker-coded team energy or 'meeting her' moment.",
-      "example": "Meeting her 👩",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking a female speaker or a group of women — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👩",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a woman with shoulder-length hair, shown from the chest up. Nothing hidden in the drawing itself.",
+      "example": "Saying hi to a group chat of friends 👩",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Borrowed as a reaction, it reads as marking a female speaker or a group of women.",
+      "example": "Quoting a woman in a story she told 👩",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors woman-coded threads, 'gal reply' replies, and 'mood 👩' reveals where the woman cue matches the default register."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Lands on default-coded story reposts, neutral-coded photo posts, and 'mood 👩' reveals where the woman cue reads as gender-coded comfort."
+      "note": "On Instagram 👩 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as marking a female speaker or a group of women under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in woman-coded transitions, 'thinking of you' reveals, and reaction-content where the woman cue signals default-coded energy."
+      "note": "In TikTok comments 👩 is the fastest way to answer a video without typing anything. The gesture stays marking a female speaker or a group of women, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 👩 lands in channels where the sentence was supposed to be shorter. It is usually standing in for saying hi to a group chat of friends, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'thinking of you' check-ins, family-coded default messages, and group chats where the woman cue matches the moment."
+      "note": "On Discord 👩 is a staple of the reaction bar, which is why it so often arrives stripped of its marking a female speaker or a group of women reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👩 does most of its work in replies, where it tags a message like quoting a woman in a story she told. Short enough to survive being the whole post, which is exactly why it is used that way."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 👩 heavily on woman-coded threads, 'gal reply' moments, and default-coded reveals where the woman cue matches the gender register."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Reaches for the woman on partner 'thinking of you' check-ins, default-coded comfort moments, and family default messages where the universal adult cue fits."
-    },
-    {
       "generation": "GEN_X",
-      "note": "Sends it on default-coded messages and family reveals, treating the woman as literal adult energy."
+      "note": "Gen X mostly uses 👩 literally, as the picture of the gesture itself, and is less likely to read marking a female speaker or a group of women into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal woman and sends it on family and grandchild-coded messages without parsing the modern 'gal reply' subtext."
+      "note": "Older senders use 👩 in the most straightforward way, on family and group messages, and are less likely to hear the marking a female speaker or a group of women subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 👩 to do the work of saying hi to a group chat of friends, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking a female speaker or a group of women."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 👩 deliberately, usually for something like quoting a woman in a story she told, and they read marking a female speaker or a group of women into it more often than the older cohorts do."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as gender-binary-coded in non-binary contexts",
-      "description": "Sending 👩 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome can land as exclusionary-coded. Be aware of the personal-coded reading when sending to non-binary audiences.",
+      "title": "👩 and 🧑 get swapped",
+      "description": "The Person 🧑 is one tap away in every picker, and it does not carry the same reading — the neutral person is used when gender is irrelevant, the woman is picked deliberately to signal the speaker. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👩 as something else fairly often: it gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "👩 Woman Emoji Meaning - What Does 👩 Really Mean?",
-  "seoDescription": "Learn what the Woman emoji 👩 really means in texts and DMs. Woman-coded default, 'gal reply' register, or gender-coded neutral.",
+  "seoTitle": "What Does the Woman Emoji 👩 Mean? A Full Breakdown",
+  "seoDescription": "The meaning of 👩 Woman in texts and DMs, with the woman readings, the common misread, and the pickers it gets confused with.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👩 is the emoji of woman-coded default - a woman, the iconography of 'gal reply,' default-coded comfort, and 'thinking of you' register. Where 👶 reads as baby-coded softness and 👵 reads as grandma-coded wisdom, 👩 captures the moment when the sender wants to communicate default-coded intimacy - a 'thinking of you 👩' partner moment or a 'gal reply 👩' default reveal. The woman cue borrows from the universal adult tradition and the modern 'gal reply' aesthetic, which is exactly why the emoji reads as default-coded rather than literal adult.\n\nIn real-world usage 👩 lives in the spaces where the sender wants to communicate default-coded comfort. A partner sends it on a 'thinking of you 👩' check-in. A friend sends it on a 'gal reply 👩' reveal. A coworker sends it on a 'meeting her 👩' work message. The woman cue is what makes the emoji feel default-coded - it is not just 'woman,' it is 'woman-coded gal-reply.'\n\nWhat separates 👩 from the rest of the people-emoji family is the gal-reply register. The emoji is not saying 'baby softness' (👶), 'granny wisdom' (👵), or 'kid play' (🧒). It is saying 'woman-coded default,' which carries a specific default-coded charm. That is why 👩 travels especially well on partner 'thinking of you' check-ins, family default messages, and any context where the sender wants the message to land with default-coded comfort.",
-    "howPeopleUseIt": "👩 shows up as the closer on a 'thinking of you tonight' partner message ('thinking of you tonight 👩'), the punctuation on a 'gal reply 👩' default-coded reveal ('gal reply 👩'), and the softener on a 'meeting her 👩' team check-in. It pairs naturally with sentences that name the woman-coded default - 'thinking of you,' 'gal reply,' 'meeting her' - and sits beautifully on partner 'thinking of you' check-ins and family default messages.\n\nIn group chats 👩 anchors 'woman appreciation' threads, default-coded moments, and 'mood 👩' reveals where the woman cue matches the moment. On Instagram it lands on default-coded story reposts and neutral-coded photo posts. On TikTok it travels in woman-coded transitions and 'mood 👩' reveals.\n\nThe emoji also works in dating contexts. A 'thinking of you tonight 👩' partner message uses the woman cue to communicate default-coded romance. Across all of these surfaces the rule is the same: the more default-coded the comfort, the more natural 👩 feels.",
-    "whenNotToUse": "Skip 👩 in sympathy, condolence, or break-up contexts. The woman-coded default cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👩 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome - the exclusionary-coded register can land as off. Stick to a sentence or a clear message when sending to non-binary audiences.\n\nSkip 👩 when you want to communicate specific identity. The default-coded register is too neutral for explicit identity moments; use specific identity pronouns or a clearer message when the moment is identity-specific.",
-    "howToReply": "If someone sends 👩, the cleanest mirror is another 👩, 👨, or a sentence that joins the default-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'thinking of you right back' or 'gal reply too.' If the woman cue feels too default-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the default volume.\n\nWhen 👩 lands as a partner 'thinking of you' check-in, mirror with another 👩, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'gal reply 👩' default reveal, mirror with another 👩, a sentence that joins the default energy, or a heart emoji that matches.",
+    "overview": "This page is the untoned drawing. Somewhere below it are five versions of the same woman with a skin tone applied, and those pages are about something different: not what the gesture means, but what a particular tone adds to it when it arrives from a particular face.\n\nThe short version. The woman is for saying hi to a group chat of friends and for quoting a woman in a story she told, it gets misread often enough to be worth writing down, and it has five skin-tone versions worth reading on their own. The sections below take those in turn.\n\nUnicode 13.0 is where 👩 comes from. The drawing shows a woman with shoulder-length hair, shown from the chest up, it sits in the person group of the set, and in a conversation it does one thing: it says what a sentence would have said less well.\n\nWhat it says is marking a female speaker or a group of women. That is the reading most people arrive with, and it is usually the intended one — the picture does the same work as the words it replaces, and it gets there faster.\n\nThe complication is that the drawing invites a second reading. It gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧑 Person: the neutral person is used when gender is irrelevant, the woman is picked deliberately to signal the speaker. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.",
+    "howPeopleUseIt": "There is one habit that turns a small emoji into a misunderstanding. 👩 goes back on its own, with no words around it, and it stands for whatever the sender had in mind — which was marking a female speaker or a group of women. The reader gets the drawing and none of the context that produced it.\n\nStart with Saying hi to a group chat of friends. That is where the woman earns its place: it closes a sentence that has already said the thing, and nobody has to add \"you know what I mean\". The other job is quoting a woman in a story she told, and there the emoji is not the message but the temperature of the message.\n\nThe setting does half the work. 👩 used for saying hi to a group chat of friends in a work channel reads as a handover; the same move in a group chat reads as a joke. The emoji is not saying anything different — the audience is.\n\nWhich is also why this family has skin-tone pages. The gesture is the same in all five, and the tone you choose is the only part of the message that says anything about you.",
+    "whenNotToUse": "There is also a place where this emoji does not belong: the professional setting. 👩 under a review, or in a first message to a client, reads as marking a female speaker or a group of women, and in that room the same reading sounds like somebody settling a point.\n\nTwo rules. First, 🧑 Person is a different message: the neutral person is used when gender is irrelevant, the woman is picked deliberately to signal the speaker. Do not send 👩 when you meant that one. Second, a reaction to bad news needs words. A bare 👩 reads as marking a female speaker or a group of women, and nobody in a thread about a person wants to be answered with a drawing of a gesture.\n\nNot every message survives being turned into a picture. The emoji gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference, and the sentence underneath it loses the argument. Once 👩 is carrying the meaning, the meaning has moved without either sender moving it.\n\nWith somebody you have just met, it is worse. 👩 has no warmth in the drawing, and the gesture has picked up an edge of superiority from being used to answer other people.",
+    "howToReply": "If the intent is warmth, the sentence is the part that carries it. Sending 👩 next to a message like saying hi to a group chat of friends leaves the reader to guess whether it was marking a female speaker or a group of women or something sharper.\n\nIf it was a reaction, 👩 back is a complete answer. It says \"same\" without writing a word, and the exchange can end there.\n\nIf it was aimed at you, it needs text. 👩 replying to 👩 looks like a conversation between two drawings, and whatever the sender actually asked never gets answered.\n\nWhen the register is unclear, the words win. The drawing gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference, so the sentence it was sent with is the only reliable guide to what it meant.",
     "faqs": [
       {
-        "question": "What does 👩 mean from a girl?",
-        "answer": "From a girl, 👩 signals woman-coded default - 'gal reply' or 'thinking of you.' The woman cue reads as default-coded rather than literal adult, so it tends to land on partner 'thinking of you' check-ins, family default messages, and default-coded reveals."
+        "question": "Is 👩 rude?",
+        "answer": "It can be. The gesture is meant as marking a female speaker or a group of women, but it gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Is 👩 flirty?",
-        "answer": "It can be. In a partner context 👩 can read as default-coded romance - 'thinking of you tonight 👩' is a soft-coded romantic check-in. On its own the emoji is more default-coded than romantic."
+        "question": "What does 👩 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "What is the difference between 👩 and 👨?",
-        "answer": "👨 is the man - the cue is man-coded default, the 'guy reply' man-coded default charm. 👩 is the woman - the cue is woman-coded default, the 'gal reply' woman-coded default energy. Use 👨 when the moment is man-specific; use 👩 when the moment is woman-specific."
+        "question": "What is the difference between 👩 and its skin-tone versions?",
+        "answer": "The tone variants under woman show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is 👩 for 'gal reply' moments?",
-        "answer": "Yes - 👩 is one of the most common default-coded emojis. The woman cue is a natural fit for 'gal reply' moments, default-coded reveals, and partner 'thinking of you' check-ins."
+        "question": "What does 👩 mean in text?",
+        "answer": "👩 is used for marking a female speaker or a group of women. The drawing shows a woman with shoulder-length hair, shown from the chest up, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 👩 and 🧑?",
+        "answer": "The neutral person is used when gender is irrelevant, the woman is picked deliberately to signal the speaker. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "thinking of you tonight, full woman romance 👩",
-      "interpretation": "Partner default-coded romance. Mirror with another 👩, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the gal reply 👩",
-      "interpretation": "Public woman appreciation. Mirror with another 👩, a sentence that joins the default energy, or a heart emoji that matches."
+      "message": "there is something you should know 👩",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets used as a stand-in for \"me\" in a group chat, which turns a self-reference into a comment about women generally, and it also reads as a partner reference more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "meeting her with the family, full woman mode 👩",
-      "interpretation": "Family default-coded reveal. Mirror with another 👩, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "saying hi to a group chat of friends 👩",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking a female speaker or a group of women, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 👩",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "gal reply today, full default energy 👩",
-      "interpretation": "Friend default-coded reveal. Mirror with another 👩, a sentence that joins the default energy, or a heart emoji that matches."
+      "message": "saying hi to a group chat of friends 👩",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking a female speaker or a group of women, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "meeting her today, full woman mode 👩",
-      "interpretation": "Work coworker-coded moment. Mirror with another 👩, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "quoting a woman in a story she told 👩",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking a female speaker or a group of women, and naming the next step in words is usually clearer than leaving it to the gesture."
     }
+  ],
+  "skinToneVariations": [
+    "woman-light",
+    "woman-medium-light",
+    "woman-medium",
+    "woman-medium-dark",
+    "woman-dark"
   ]
 }

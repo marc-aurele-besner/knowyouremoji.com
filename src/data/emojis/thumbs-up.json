@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "hand",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A thumbs-up gesture indicating approval or agreement.",
-  "tldr": "The universal 'got it' or 'looks good.' Approval, agreement, or the minimal-effort acknowledge in chat.",
+  "baseMeaning": "A drawing of a closed fist turned sideways with the thumb raised straight up, used as approving something, quickly and without much ceremony.",
+  "tldr": "👍 Thumbs Up: approving something, quickly and without much ceremony.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Approval, agreement, or 'this is good.'",
-      "example": "Sounds great 👍",
+      "meaning": "The plain reading: a closed fist turned sideways with the thumb raised straight up. Nothing hidden in the drawing itself.",
+      "example": "Approving a plan in a hurry 👍",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dismissive or angry 'thanks for nothing' - 'cool 👍' can read as cold or sarcastic depending on context.",
-      "example": "cool, thanks 👍",
-      "riskLevel": "MEDIUM"
-    },
-    {
-      "context": "WORK",
-      "meaning": "The lowest-effort acknowledgment in work chat - often read as 'I saw it' rather than active engagement.",
-      "example": "PR approved 👍",
+      "meaning": "Borrowed as a reaction, it reads as approving something, quickly and without much ceremony.",
+      "example": "Acknowledging a message without typing more 👍",
       "riskLevel": "LOW"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Sarcastic acknowledgment under frustration - 'cool 👍' from a manager can deflate a junior's motivation.",
-      "example": "Sure thing 👍",
-      "riskLevel": "MEDIUM"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as approving something, quickly and without much ceremony, softened by whatever sentence sits next to it.",
+      "example": "not me 👍",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — approving something, quickly and without much ceremony — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👍",
+      "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "SLACK",
-      "note": "The universal 'got it' reaction; doubles as the lowest-friction acknowledgment in work threads - many teams reserve it for 'I saw, no comment.'"
+      "platform": "IMESSAGE",
+      "note": "On iOS the Thumbs Up 👍 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like approving a plan in a hurry is the kind that carries it — the picture lands before the sentence does."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Default reaction in family groups where it functions as 'thank you' and 'acknowledged' without anyone typing the words."
+      "note": "WhatsApp renders 👍 exactly as the phone system does, but the keyboard keeps it in the hand section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like acknowledging a message without typing more."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "On Instagram 👍 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as approving something, quickly and without much ceremony under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Pasted as 'support the creator' reaction in comment sections and DM threads where younger viewers use it as a quick 'noted'."
+      "note": "In TikTok comments 👍 is the fastest way to answer a video without typing anything. The gesture stays approving something, quickly and without much ceremony, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Server reaction of choice for acknowledgments; ':thumbsup:' emotes do the same work in long-running friend groups."
+      "platform": "SLACK",
+      "note": "In Slack 👍 lands in channels where the sentence was supposed to be shorter. It is usually standing in for approving a plan in a hurry, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Knows 👍 has a passive-aggressive edge - sometimes replaces with 🙌 or ✊ to flag the read as sincere; otherwise default acknowledge."
+      "note": "Gen Z reaches for 👍 to do the work of approving a plan in a hurry, and treats the neutral drawing as the default rather than as a choice. What they hear first is approving something, quickly and without much ceremony."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Default approval emoji across work and personal chat - registers the cold-tone read but rarely thinks about it when sending."
+      "note": "Millennials tend to send 👍 deliberately, usually for something like acknowledging a message without typing more, and they read approving something, quickly and without much ceremony into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 👍 sincerely as the universal approval; reads 'cool 👍' as affirmation rather than sarcasm."
+      "note": "Gen X mostly uses 👍 literally, as the picture of the gesture itself, and is less likely to read approving something, quickly and without much ceremony into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Heart of 👍 as 'well done' or 'good idea'; the dominant reaction in work emails and family-text acknowledgments."
+      "note": "Older senders use 👍 in the most straightforward way, on family and group messages, and are less likely to hear the approving something, quickly and without much ceremony subtext in it."
     }
   ],
   "warnings": [
     {
-      "title": "Passive-aggressive edge",
-      "description": "A lone 👍 as a reply can read as cold, dismissive, or sarcastic - especially from a manager or anyone with formal authority over the recipient.",
+      "title": "👍 and 👎 get swapped",
+      "description": "The Thumbs Down 👎 is one tap away in every picker, and it does not carry the same reading — the thumbs down is a clear verdict against, the thumbs up is a soft yes that stays open to argument. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👍 as something else fairly often: it gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": ["thumbs-up-ok", "thumbs-up-slightly-smiling"],
   "seoTitle": "👍 Thumbs Up Emoji Meaning - What Does 👍 Really Mean?",
-  "seoDescription": "Learn what the thumbs up emoji 👍 really means - the universal approval, the dismissive 'cool,' and when the emoji reads as cold rather than supportive.",
+  "seoDescription": "What the thumbs up emoji 👍 means in text: approving something, quickly and without much ceremony. Includes the misread it invites (taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm) and how to reply.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👍 is the lowest-friction approval emoji on the keyboard. The visual cue is the cartoon thumbs-up gesture — the same hand signal that has meant 'good' or 'okay' for a century. In chat threads 👍 functions as the default acknowledgment: 'received,' 'agree,' or 'this is good.' It is the emoji you send when you do not want to type the words.\n\nWhat gives 👍 texture — and a real edge — is the negative register that emerged in the 2010s. A lone 👍 in response to a question can read as cold, dismissive, or sarcastic, especially from someone with authority. 'Cool 👍' from a manager can deflate a junior's submission. The emoji is widely understood as the bare-minimum acknowledge, which is why some senders now pair it with a sentence or swap to 🙌 for warmth. When the intent is sincere, 👍 is the easiest approval signal available.",
-    "howPeopleUseIt": "👍 lands as the closing reaction on a Slack thread, the 'got it' reply on a friend's update, and the lowest-effort acknowledgment in customer-facing service. In a work channel 👍 is the universal 'I saw, I agree, no comment.' In a personal channel 👍 is the laziness approval: when you don't want to type 'great' but want to flag support.\n\nThe emoji pairs naturally with 🔥, 🙌, or ❤️ to amplify the warmth. It also stacks into '👍👍' as the more emphatic version when a single 👍 feels too thin. On WhatsApp family groups 👍 shows up after a parent's question so the conversation can move on without anyone typing 'yes, that's fine.'",
-    "whenNotToUse": "Avoid 👍 as the sole reply to a meaningful share. A friend's big announcement, a romantic partner's vulnerability, a colleague's first win all deserve more than a thumbs up — pair 👍 with a sentence that acknowledges the moment, or reach for a heart or a 🎉 instead.\n\nAvoid 👍 in any context where authority is at stake. A manager replying 'cool 👍' to a junior's pitch reads as a closed door rather than an opening. Substitute with a sentence that engages the actual work — 'let's discuss Friday' carries the warmth of the door remaining open. And avoid 👍 when you genuinely want to be read — the emoji's passive-aggressive edge will undercut the message.",
-    "howToReply": "If a peer sends 👍 as a low-effort acknowledgment, mirror with 👍 and follow up with substance when you have more to add. The 👍 👍 does most of the work; the sentence is what matters.\n\nWhen you receive 👍 on your own content and want to be sure it reads as support rather than dismissal, anchor it with a follow-up — 'really?' or 'glad that landed' lets the sender clarify the warmth. And when you want to send 👍 sincerely, pair it with a sentence or a stronger emoji so the read stays warm.",
+    "overview": "👍 is the thumbs up: a closed fist turned sideways with the thumb raised straight up. It arrived in Unicode 6.0, and it lives in the hand part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as approving something, quickly and without much ceremony. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👎 Thumbs Down: the thumbs down is a clear verdict against, the thumbs up is a soft yes that stays open to argument. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same thumbs up exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the thumbs up emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are approving a plan in a hurry and acknowledging a message without typing more, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 👍 does is approving a plan in a hurry. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is acknowledging a message without typing more. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 👍 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 👍 goes back on its own. It reads as \"approving something, quickly and without much ceremony\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 👍 when you mean 👎 Thumbs Down. The thumbs down is a clear verdict against, the thumbs up is a soft yes that stays open to argument. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 👍 in a thread about a person reads as \"approving something, quickly and without much ceremony\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and thumbs up gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 👍 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of approving something, quickly and without much ceremony as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 👍. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the thumbs up was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like approving a plan in a hurry almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant approving something, quickly and without much ceremony or something sharper.",
     "faqs": [
       {
-        "question": "What does 👍 mean in work chat?",
-        "answer": "In Slack or Teams 👍 usually means 'I saw it' or 'approved.' It is the lowest-friction acknowledgement. From a manager it can read as cold; from a peer it usually reads fine."
+        "question": "What does 👍 mean in text?",
+        "answer": "👍 is used for approving something, quickly and without much ceremony. The drawing shows a closed fist turned sideways with the thumb raised straight up, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 👍 passive-aggressive?",
-        "answer": "Sometimes. A lone 👍 from a manager, an older family member, or anyone with authority can read as dismissive or cold. Pair it with a sentence when the warmth matters."
+        "question": "What is the difference between 👍 and 👎?",
+        "answer": "The thumbs down is a clear verdict against, the thumbs up is a soft yes that stays open to argument. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 👍 mean from a girl?",
-        "answer": "From a girl or anyone else, 👍 means 'okay' or 'I agree.' The emoji is not gendered; the context and tone of the message carry most of the weight."
+        "question": "Is 👍 rude?",
+        "answer": "It can be. The gesture is meant as approving something, quickly and without much ceremony, but it gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 👍 mean from a guy?",
-        "answer": "From a guy, 👍 carries the same approval read as from anyone else. There is no gendered meaning; the channel and the relationship carry the warmth."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 👍 and its skin-tone versions?",
+        "answer": "The tone variants under thumbs up show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "you got the job? sounds great 👍",
-      "interpretation": "Friend acknowledgment of a win. Mirror with a 🎉 or 'we are celebrating this weekend' rather than another 👍 that reads thin."
+      "message": "approving a plan in a hurry 👍",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as approving something, quickly and without much ceremony, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "PR looks good 👍",
-      "interpretation": "Coworker approval on a code review. Mirror with 'merging' or 'ship it' so the read translates to action."
-    },
-    {
-      "setting": "family",
-      "message": "Sunday at 6 👍",
-      "interpretation": "Family confirming plans. Mirror with 👍 or 'see you then' so the plan reads as locked in."
+      "message": "acknowledging a message without typing more 👍",
+      "interpretation": "A handover or a sign-off in a channel. It reads as approving something, quickly and without much ceremony, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "first date was good 👍",
-      "interpretation": "Heard-as-cold read for some recipients. Mirror with a sentence that names the moment ('the pasta place was great') rather than another 👍."
+      "message": "there is something you should know 👍",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken at face value as genuine approval when it is often a low-effort acknowledgment — the flat thumb shows approval without enthusiasm more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "approving a plan in a hurry 👍",
+      "interpretation": "Family threads are where this lands most naturally. The reading is approving something, quickly and without much ceremony, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "love the new track 👍",
-      "interpretation": "Friendly hype. Mirror with a 🔥 or a sentence that names what works so the creator knows the comment is real."
+      "message": "that is the whole post 👍",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
+  ],
+  "skinToneVariations": [
+    "thumbs-up-light",
+    "thumbs-up-medium-light",
+    "thumbs-up-medium",
+    "thumbs-up-medium-dark",
+    "thumbs-up-dark"
   ]
 }

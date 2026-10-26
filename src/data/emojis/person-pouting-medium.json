@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "gesture",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Pouting emoji.",
-  "tldr": "Represents person pouting.",
+  "baseMeaning": "Person Pouting emoji. The medium skin tone modifier is applied to the figure.",
+  "tldr": "🙎🏽 Person Pouting with a medium skin tone. The middle tone, often standing in for a neutral default.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents the person pouting: medium skin tone cue.",
-      "example": "the person pouting medium 🙎🏽",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "person pouting medium-coded moment or person pouting medium-coded reveal.",
-      "example": "person pouting medium mode 🙎🏽",
+      "meaning": "The gesture reads the same as the untoned version; the medium skin tone makes it the neutral version of the emoji, with almost nothing attached.",
+      "example": "copy that 🙎🏽",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "person pouting medium-coded flirty tag or partner-coded moment.",
-      "example": "person pouting medium partner plan 🙎🏽",
+      "context": "IRONIC",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very chill 🙎🏽",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "person pouting medium-coded work moment or team energy.",
-      "example": "person pouting medium sprint 🙎🏽",
+      "meaning": "In a work thread the gesture is unchanged, and the medium skin tone reads as the unremarkable version in a work thread.",
+      "example": "acknowledged 🙎🏽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Shows the same artwork as the untoned version, with the medium skin tone applied to the figure.",
+      "example": "🙎🏽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🙎🏽 renders as one combined glyph with the tone applied. The medium swatch is the one several keyboards select when the picker opens, so on a device with that default set, 🙎🏽 is often the result of a finger never touching the tone list."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the medium modifier on current builds and puts the swatch in the middle of the row. It renders the most consistently of the five tones across the clients people actually use, which is part of why the medium variant is the one most often mistaken for a deliberately neutral choice."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🙎🏽 lands on person pouting medium-coded threads, person pouting medium-tagged gesture posts, and 'person pouting medium-coded' reveals where the person pouting medium cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🙎🏽 is a staple of modern-coded flat-lays, person pouting medium-canvas story backgrounds, and modern-coded profile accents; the person pouting medium cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🙎🏽 travels in modern-coded transitions, person pouting medium reaction reveals, and 'person pouting medium-coded' listicle content where the person pouting medium cue signals modern-coded energy."
+      "note": "Twemoji renders 🙎🏽 the same way on every device, which makes the medium swatch the easiest one to identify in a screenshot. The confusion is not visual: it is that a medium tone so often stands in for somebody the sender never asked you to picture."
     },
     {
       "platform": "SLACK",
-      "note": "🙎🏽 threads through modern-coded reactions, person pouting medium markers, and 'person pouting medium-coded' bullets in work channels where the person pouting medium cue fits the register."
+      "note": "Slack renders the medium swatch slightly flatter than the phone version, in the same way it flattens every swatch. Nothing about 🙎🏽 changes meaning in Slack, but a workspace that reacts with it constantly can make the tone look like a signature it never was."
     },
     {
       "platform": "DISCORD",
-      "note": "🙎🏽 is an active reaction in modern-coded person pouting medium channels, server-coded person pouting medium markers, and 'person pouting medium-coded' reveals where the person pouting medium cue matches the modern-coded register."
+      "note": "Discord uses Twemoji and applies the modifier cleanly. The medium swatch survives copy-paste and re-posting better than the extremes of the list, which is another reason it has become the default in a lot of servers without anybody deciding on it."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🙎🏽 on modern-coded person pouting medium threads, person pouting medium-coded reveals, and 'person pouting medium-coded' moments where the person pouting medium cue matches the modern-coded register."
+      "note": "Gen Z has largely stopped treating the medium swatch as neutral and uses 🙎🏽 less than the older tones, because the middle of the Fitzpatrick list no longer reads as a safe default. When it does appear it is usually an unintentional leftover."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded person pouting medium moments, and person pouting medium-coded reveals where the universal person pouting medium cue fits."
+      "note": "Millennials use 🙎🏽 heavily as the neutral middle option — the tone that looks deliberate without looking like a statement. It is one of the most common swatches in messages from this cohort."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded person pouting medium messages and person pouting medium reveals, treating the person pouting medium as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal person pouting medium and uses it on modern-coded tags without parsing the modern person pouting medium-coded subtext."
+      "note": "Gen X treats 🙎🏽 as a plain 🙎. The medium swatch was the default in the keyboards this cohort grew up with, so it usually reflects the settings rather than the sender."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🙎🏽 is frequently used to depict somebody other than its sender, and because it is treated as the neutral pick, it is the tone most likely to be used to refer to somebody other than the sender. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🙎🏽 Person Pouting Medium Skin Tone Emoji - What Does 🙎🏽 Mean?",
-  "seoDescription": "Learn what the person pouting emoji with medium skin tone 🙎🏽 means in texts and social media.",
+  "seoTitle": "🙎🏽 Person Pouting Medium Skin Tone Emoji Meaning - What Does 🙎🏽 Mean?",
+  "seoDescription": "What does the person pouting emoji 🙎🏽 mean? Person Pouting showing a face with a downturned mouth and lowered brows, in a grey top. Covers the medium skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "person-pouting",
   "skinToneModifier": "medium",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Person Pouting is the emoji of gesture-coded reaction - the body language, the social performance, and the universal \"I have feelings\" tag. Where 🤦 reads as hands-to-forehead energy and 🙄 reads as eye-roll exasperation, Person Pouting captures the moment when the sender wants to communicate gesture-coded emotional energy - a \"person pouting\" mood tag or an exasperation-coded reveal.\n\nThe body cue borrows from body language tradition and the modern mood-coded aesthetic, which is exactly why the emoji reads as gesture-coded rather than literal.\n\nWhat separates Person Pouting from the rest of the gesture family is the specific person pouting register. The emoji is not saying 'generic gesture' (🤷). It is saying 'person pouting-coded person pouting,' which carries a specific mood, expression, or body-language specificity.\n\nIn real-world usage 🙎🏽 Person Pouting: Medium Skin Tone lives in the spaces where the sender wants to communicate gesture energy. A partner sends it on a \"person pouting medium\" moment. A friend sends it on a \"gesture\" reveal. A coworker sends it on a \"person pouting medium\" tag. The person pouting medium cue is what makes the emoji feel gesture-coded - it is not just 'a moment,' it is 'person pouting medium-coded energy.'\n\nIn dating 🙎🏽 Person Pouting: Medium Skin Tone works as a soft-coded person pouting medium tag, where the person pouting medium cue signals body language tradition. In work threads 🙎🏽 Person Pouting: Medium Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🙎🏽 feels.",
-    "howPeopleUseIt": "🙎🏽 Person Pouting: Medium Skin Tone shows up as the closer on a \"person pouting medium moment\", the punctuation on a \"gesture\" reveal, and the softener on a \"person pouting medium-coded\" tag. It pairs naturally with sentences that name the gesture energy - 'person pouting medium,' 'body language tradition,' 'person pouting medium-coded' - and sits beautifully on reactions, emotional shares, mood-coded reveals, and gesture-coded moments.\n\nIn group chats 🙎🏽 Person Pouting: Medium Skin Tone anchors 'person pouting medium moment' threads, gesture reveals, and 'person pouting medium' tags where the person pouting medium cue matches the register. On Instagram it lands on gesture flat-lays and gesture stories. On TikTok it travels in gesture transitions and 'person pouting medium' reaction content.\n\nThe emoji also works in dating contexts. A 'person pouting medium 🙎🏽' partner message uses the person pouting medium cue to communicate gesture romance. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🙎🏽 feels.",
-    "whenNotToUse": "Skip Person Pouting in celebration or victory contexts. The gesture-coded body cue is the wrong register for triumphant moments. A 🎉 or 🏆 keeps the message joyful.\n\nAvoid Person Pouting in formal or professional contexts where the gesture energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip Person Pouting when you want to communicate confidence. The gesture register is too expressive-coded for decisive moments; use 💪 or 🫡 when the moment needs strength.",
-    "howToReply": "If someone sends Person Pouting, the cleanest mirror is another Person Pouting, 🤦, or a sentence that joins the gesture energy. If the body cue feels too expressive-coded, reply with a softer emoji (🙃 or 🫠) that signals shared emotion without matching the gesture volume.\n\nWhen Person Pouting lands as a mood-coded complaint, mirror with another Person Pouting, an exasperation emoji, or a sentence that escalates the reaction. When it arrives as a work-coded reveal, mirror with another Person Pouting, a sentence that joins the frustration, or a solidarity emoji that fits.",
+    "overview": "There are five skin tones in the Fitzpatrick set and 🙎🏽 is the one in the middle of them — Person Pouting with a medium skin tone, a face with a downturned mouth and lowered brows, in a grey top. Because it sits in the middle of the list and several keyboards default to it, it is the variant that most often ends up standing in for \"somebody\", with no view at all from the sender. Often the choice of someone who is not using skin tone to make a point, which is why it reads as the neutral stand-in\n\nThat neutrality is useful and it is also the reason to be careful. 🙎🏽 reads as annoyance, sulking, or mild disappointment, the same job 🙎 does. But because the medium swatch is so often pressed by people who are simply not thinking about skin tone, it is also the variant that most often ends up describing somebody who is not the sender — and the most likely to be misread that way.\n\nThe situations it turns up in are the family ones, unchanged by the tone. It gets mixed up with ☹️ Frowning Face more than it should — the plain frowning face is a cartoon symbol, the pouting person is a character with an actual mood. The misread that comes up most often with this glyph is specific enough to name: it gets looks like an angry or hostile jab, when the drawn face is a pout — sulking, huffy, self-pitying — usually posted about your own bad luck rather than aimed at anyone.",
+    "howPeopleUseIt": "The gesture is the same one 🙎 makes, so the family habits carry straight over. What changes with 🙎🏽 is who tends to send it and what they are assuming about the reader.\n\nThe medium swatch is the workhorse of the set. 🙎🏽 is the one people send when they are not trying to make a point about skin tone at all, which makes it the variant most likely to be used as a stand-in for someone unspecified. You will see it in sulking about a small inconvenience, and in showing you are put out by a delay, and in a great many places where the sender simply pressed the emoji that was already selected.\n\nThe flip side of that ubiquity is that the tone carries almost no signal of its own. 🙎🏽 reads as the neutral version of the emoji, with almost nothing attached, and it tends to disappear into the line it sits on. If the sender wanted the skin tone to mean something, this is the variant that will not deliver it.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🙎 itself, and every tone in this family inherits it.\n\nThe trap for 🙎🏽 is that its neutrality is an illusion. It is chosen by reflex more often than by intent, and a reflex choice is not a statement about the sender. Do not send 🙎🏽 expecting it to be read as \"this is what I look like\" unless that is genuinely why you picked it — the medium swatch is the one most likely to have been selected without a thought at all.\n\nAnd skip it when a specific person is being depicted and you would be guessing at their skin tone. The default-position argument cuts the other way here: the easiest swatch to press is the easiest one to press by accident, and it is the one that looks most like a decision.",
+    "howToReply": "The simplest reply is 🙎 with the same gesture and no tone commentary, because the medium swatch does not usually carry a message of its own.\n\nIf the sender was representing themselves, though, 🏽 back is warmer than 🙎 — it says you registered what they chose. If they were representing somebody else, match the gesture only.",
     "faqs": [
       {
-        "question": "What does Person Pouting mean in chat?",
-        "answer": "Person Pouting is the gesture-coded reaction - it borrows from body language tradition and signals an emotional reveal, mood-coded tag, or gesture-coded moment. The body cue is what makes the read feel gesture-coded rather than literal."
+        "question": "What does 🙎🏽 mean in text?",
+        "answer": "🙎🏽 is Person Pouting with a medium skin tone. The gesture reads as annoyance, sulking, or mild disappointment."
       },
       {
-        "question": "Is Person Pouting passive-aggressive?",
-        "answer": "Sometimes. In a texting thread Person Pouting can read as a mood-coded complaint - a \"I can't believe this\" tag or an exasperated-coded reveal. On its own it reads more gesture than aggressive."
+        "question": "Is the medium skin tone in 🙎🏽 a statement?",
+        "answer": "Rarely on its own. It is the middle swatch in the tone list, and the one several keyboards land on by default when the tone picker opens. It is the variant people pick when they are not thinking about skin tone, so it rarely reads as one."
       },
       {
-        "question": "What does Person Pouting mean from a coworker?",
-        "answer": "From a coworker, Person Pouting signals a gesture-coded reaction or work-coded exasperation. The body cue reads as mood-coded rather than literal, so it tends to land on complaint tags, team coded messages, and \"I need a break\" reveals."
+        "question": "What does 🙎🏽 mean from a guy?",
+        "answer": "The tone does not change the gesture, so the read is the same. There is no separate gendered reading of 🙎."
       },
       {
-        "question": "When should I use Person Pouting?",
-        "answer": "Use Person Pouting for gesture-coded reactions, mood reveals, or body language moments. Avoid it when you want to communicate something neutral - the gesture cue is too expressive for calm moments."
+        "question": "Is 🙎🏽 rude?",
+        "answer": "Not because of the swatch. The gesture carries that risk on its own, and the medium tone does not add to it."
+      },
+      {
+        "question": "What is the difference between 🙎🏽 and 🙎?",
+        "answer": "The swatch, and only the swatch. 🙎 is the tone-less version and is the safer choice whenever you are not depicting a specific person."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "person pouting medium with the partner plan, full gesture energy 🙎🏽",
-      "interpretation": "Partner gesture romance. Mirror with another 🙎🏽, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the person pouting medium chaos 🙎🏽",
-      "interpretation": "Public gesture flex. Mirror with another 🙎🏽, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "person pouting medium with the family, full gesture energy 🙎🏽",
-      "interpretation": "Family gesture reveal. Mirror with another 🙎🏽, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "person pouting medium today, full gesture energy 🙎🏽",
-      "interpretation": "Friend gesture reveal. Mirror with another 🙎🏽, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "sulking about a small inconvenience 🙎🏽",
+      "interpretation": "A friend sending 🙎🏽 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "showing you are put out by a delay 🙎🏽",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is the safest possible choice, which some senders use on purpose."
     },
     {
       "setting": "work",
-      "message": "person pouting medium sprint today, full gesture energy 🙎🏽",
-      "interpretation": "Work gesture moment. Mirror with another 🙎🏽, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "acknowledged 🙎🏽",
+      "interpretation": "A work thread. The medium skin tone reads as the unremarkable version in a work thread."
+    },
+    {
+      "setting": "family",
+      "message": "okay 🙎🏽",
+      "interpretation": "A family chat where the emoji is being read literally — the medium skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "agreed 🙎🏽",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

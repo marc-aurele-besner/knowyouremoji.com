@@ -7,131 +7,131 @@
   "category": "people",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A hand making the rock on gesture.",
-  "tldr": "Rock on, metal, or that's awesome.",
+  "baseMeaning": "A hand making the rock on gesture. The medium-light skin tone modifier is applied to the hand.",
+  "tldr": "🤘🏼 Sign of the Horns with a medium-light skin tone. One step past the default, so it reads as a considered choice.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Rock and roll gesture.",
-      "example": "Rock on 🤘",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-light skin tone applied to the hand.",
+      "example": "🤘🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "That's awesome.",
-      "example": "So metal 🤘",
+      "meaning": "The gesture reads the same as the untoned version; the medium-light skin tone makes it a slightly more considered version of the same gesture.",
+      "example": "got it 🤘🏼",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Party hard.",
-      "example": "Weekend mode 🤘",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it evidence that somebody thought about which swatch to press.",
+      "example": "careful 🤘🏼",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Crushing it.",
-      "example": "Killed that presentation 🤘",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-light skin tone passes without comment in a work thread.",
+      "example": "understood 🤘🏼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🤘🏼 renders as a single toned glyph, and the medium-light swatch is the second one along in Apple's picker. It is far enough from the untoned version to be noticed but close enough that a screenshot taken at small size can still read as untoned."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders the tone correctly on current builds, and its picker puts the medium-light swatch second, so a sender reaches it with one tap past the default. Older Android builds of WhatsApp drop the modifier entirely, and because this is not the swatch people reach for by habit, the fallback is more often noticed than it is with the default."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Lands on music coded sign-of-horns-medium-light threads, sound-marker reveal posts, and sign-of-horns-medium-light-pulse coded lists."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of music coded sign-of-horns-medium-light flat-lays, music-canvas story backgrounds, and sound-marker profile accents."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in music coded sign-of-horns-medium-light transitions, sound-marker reaction reveals, and sign-of-horns-medium-light-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors music coded sign-of-horns-medium-light status messages, role-coded sound-marker markers, and sign-of-horns-medium-light-pulse coded reactions."
+      "note": "Twemoji applies the tone to 🤘🏼 consistently, and the modifier is applied to the single code point, so the swatch is preserved while the rest of the message does not survive a quote-tweet intact."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through music coded sign-of-horns-medium-light reactions, sound-marker markers, and sign-of-horns-medium-light-pulse coded bullets."
+      "note": "Slack's own emoji font renders the medium-light swatch a shade warmer than the phone version, which is the usual reason somebody screenshots a Slack message and gets a slightly different looking emoji than the one they sent."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji as well, and its web and mobile clients agree with each other on the medium-light swatch. The risk sits with bots and bridges, which usually pass the tone through only when the emoji survived the trip as a single code point."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Rock on excitement."
+      "note": "Gen Z is the cohort most likely to pick 🤘🏼 deliberately, because the swatch is familiar enough to reach without hunting and rare enough to feel like a choice. It is used to represent the sender more often than the other four tones."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Metal and rock."
+      "note": "Millennials reach for 🤘🏼 when a message needs a slightly more personal feel than 🤘 gives, without the weight of the two darker swatches. It sits in the middle of what this generation is comfortable with."
     },
     {
-      "generation": "BOOMER",
-      "note": "Rock and roll."
+      "generation": "GEN_X",
+      "note": "Gen X mostly treats 🤘🏼 as decoration. The swatch is picked because it was next in the list, not because it carries a message."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🤘🏼 Sign of the Horns Medium-Light Skin Tone Emoji - What Does 🤘🏼 Mean?",
-  "seoDescription": "Learn what the sign of the horns emoji with medium-light skin tone 🤘🏼 means in texts and social media.",
+  "seoTitle": "🤘🏼 Sign of the Horns Medium-Light Skin Tone Emoji Meaning - What Does 🤘🏼 Mean?",
+  "seoDescription": "What does the sign of the horns emoji 🤘🏼 mean? Sign of the Horns showing a hand with index and little fingers extended, thumb pinning the middle two down. Covers the medium-light skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "sign-of-horns",
   "skinToneModifier": "medium-light",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤘🏼 is the emoji of music coded sign-of-horns-medium-light read — a clean sign-of-horns-medium-light-pulse shape, the music filled-in silhouette, and the universal 'music sign-of-horns-medium-light' tag for sound-marker. Where ⬛ reads as solid-black-coded sign-of-horns-medium-light read and ⬜ reads as solid-white-coded sign-of-horns-medium-light read, 🤘🏼 captures the moment when the sender wants to communicate music coded sign-of-horns-medium-light — a 'music 🤘🏼' sound-marker marker or a 'sign-of-horns-medium-light-pulse pulse 🤘🏼' sound-marker reveal. The music fill cue borrows from design-coded bullet lists and the modern sound-marker aesthetic, which is exactly why the emoji reads as music coded rather than literal sign-of-horns-medium-light-coded shape.\n\nIn real-world usage 🤘🏼 lives in the spaces where the sender wants to communicate sound-marker energy. A partner sends it on a 'music 🤘🏼' sound-marker marker. A friend sends it on a 'sign-of-horns-medium-light-pulse pulse 🤘🏼' reveal. A coworker sends it on a 'music coded 🤘🏼' list thread. The music fill cue is what makes the emoji feel music coded — it is not just 'shape,' it is 'music coded sign-of-horns-medium-light moment.'\n\nWhat separates 🤘🏼 from the rest of the shape family is the music register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'music coded sign-of-horns-medium-light,' which carries a specific design-coded tradition. That is why 🤘🏼 travels especially well on partner sound-marker markers, sound-marker reveals, and any context where the sender wants the message to land with music energy.",
-    "howPeopleUseIt": "🤘🏼 shows up as the bullet on a 'music 🤘🏼' list message ('sign-of-horns-medium-light-pulse pulse 🤘🏼'), the punctuation on a 'music coded 🤘🏼' reveal, and the softener on a 'sign-of-horns-medium-light-pulse pulse 🤘🏼' list thread. It pairs naturally with sentences that name the music energy — 'music,' 'sign-of-horns-medium-light-pulse pulse,' 'sound-marker-coded' — and sits beautifully on partner sound-marker markers and sound-marker reveals.\n\nIn group chats 🤘🏼 anchors 'music coded moment' threads, sound-marker reveals, and 'music 🤘🏼' tags where the sign-of-horns-medium-light cue matches the register. On Instagram it lands on music coded flat-lays and music-canvas stories. On TikTok it travels in music coded reveals and 'music' reaction content.\n\nThe emoji also works in dating contexts. A 'music 🤘🏼' partner message uses the sign-of-horns-medium-light cue to communicate sound-marker romance. Across all of these surfaces the rule is the same: the more music coded the moment, the more natural 🤘🏼 feels.",
-    "whenNotToUse": "Skip 🤘🏼 in sympathy, condolence, or break-up contexts. The music coded sign-of-horns-medium-light cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤘🏼 in 'literal object' or finish-coded contexts where the music energy feels off. A 'music 🤘🏼' message works for music marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🤘🏼 when you want to communicate a different color. The music coded register is too music-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🤘🏼, the cleanest mirror is another 🤘🏼, ⬛, or a sentence that joins the music energy. If you want to escalate the engagement, follow with a sentence that adds context: 'music for sure' or 'sign-of-horns-medium-light-pulse pulse together.' If the sign-of-horns-medium-light cue feels too music coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the music volume.\n\nWhen 🤘🏼 lands as a partner 'music 🤘🏼' sound-marker marker, mirror with another 🤘🏼, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'sign-of-horns-medium-light-pulse pulse 🤘🏼' list thread, mirror with another 🤘🏼, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "🤘🏼 shows Sign of the Horns with a medium-light skin tone — a hand with index and little fingers extended, thumb pinning the middle two down. Underneath the tone, the gesture is unchanged: this is rocking out, approving something, or jokingly claiming toughness, and it is the same conversation move as 🤘. The swatch is the part that differs.\n\nMedium-light sits second in the standard tone list, so it takes one deliberate tap past the default to reach. That small extra effort is what shapes how it lands. Picked slightly more thoughtfully than the default, and noticeably less often than the middle tones. In practice that means 🤘🏼 tends to arrive from someone who looked at the picker rather than someone who fired the emoji out of habit, and it is correspondingly harder to treat as neutral.\n\nThe practical uses are the family ones, unchanged by the tone. The confusion to watch for is with 🤙 Call Me Hand — the call me hand extends thumb and pinky sideways, the horns points index and pinky straight up. And like every member of this family, 🤘🏼 carries one misread more often than the rest: it gets treated as a music reference when it is really just a stubborn or defiant gesture, and plenty of people have no idea where it came from.",
+    "howPeopleUseIt": "The gesture is the same one 🤘 makes, so the family habits carry straight over. What changes with 🤘🏼 is who tends to send it and what they are assuming about the reader.\n\nMedium-light is reached with one extra tap, and the extra tap shows in the usage pattern. 🤘🏼 more often appears where somebody was picking a version on purpose — a profile picture caption, an avatar, a signature emoji, a reaction in a thread where the choice was not incidental. You will see it in announcing a gig you are heading to, and in signing off a stubborn reply in a chat.\n\nIt also shows up as a middle path. When the exact tone is not obvious, or when the sender is representing a character rather than themselves, medium-light is the compromise — and that is worth keeping in mind, because a compromise tone reads as deliberately neutral while carrying none of the reassurance of the neutral-sounding default.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🤘 itself, and every tone in this family inherits it.\n\nFor 🤘🏼, the specific trap is the compromise. It is easy to reach for a middle tone as a safe approximation, but a safe approximation is not neutral — it is a guess, and the guess is visible to anyone who has thought about it. If you do not know whose skin tone you are depicting, use 🤘 rather than reaching for a swatch that lands in the wrong place.\n\nAvoid 🤘🏼 when the tone is supposed to be read as deliberate but the rest of the message is casual. A chosen tone pulls the reader's attention to the emoji, and that attention does not transfer to the sentence.",
+    "howToReply": "Reply with 🤘 if you want to match the gesture without adopting a swatch. Matching the tone is only worth doing when the sender was clearly choosing on purpose — in that case, 🏼 back is a real acknowledgement of their choice.\n\nIf 🤘🏼 was a compromise rather than a decision, do not read it as one. Respond to the gesture and the sentence, not to the tone.",
     "faqs": [
       {
-        "question": "What does 🤘🏼 mean from a guy?",
-        "answer": "From a guy, 🤘🏼 signals music coded flex or 'music 🤘🏼' sound-marker marker. The sign-of-horns-medium-light cue reads as music-coded rather than literal sign-of-horns-medium-light-coded shape, so it tends to land on partner sound-marker markers, family-coded music messages, and 'sign-of-horns-medium-light-pulse pulse' reveals."
+        "question": "What does 🤘🏼 mean in chat?",
+        "answer": "🤘🏼 is Sign of the Horns with a medium-light skin tone. It reads as rocking out, approving something, or jokingly claiming toughness, and the swatch adds a small note of deliberation."
       },
       {
-        "question": "Is 🤘🏼 flirty?",
-        "answer": "It can be. In a partner context 🤘🏼 can read as soft-coded romance — 'music 🤘🏼' is a soft-coded sound-marker marker. On its own the emoji is more music coded than romantic."
+        "question": "Is 🤘🏼 a deliberate choice?",
+        "answer": "More often than the first swatch. It is the second swatch in the tone list, one position past the default, so it takes a deliberate second tap. That extra step is why 🤘🏼 carries a slightly more intentional read than the default tone."
       },
       {
-        "question": "What is the difference between 🤘🏼 and ⬛?",
-        "answer": "⬛ is the solid-black sign-of-horns-medium-light — the cue is solid-black-coded read, the universal 'fill' energy. 🤘🏼 is the music sign-of-horns-medium-light — the cue is music coded sign-of-horns-medium-light read, the music energy. Use ⬛ when the moment is fill-coded; use 🤘🏼 when the moment is music coded."
+        "question": "What does 🤘🏼 mean from a girl?",
+        "answer": "The same as it means from anyone else. The gesture is unchanged, and the skin tone does not shift the meaning by itself."
       },
       {
-        "question": "Is 🤘🏼 for sound-marker moments?",
-        "answer": "Yes — 🤘🏼 is one of the most popular music coded emojis. The sign-of-horns-medium-light cue is a natural fit for 'sound-marker' reveals, music coded messages, and partner 'music' markers."
+        "question": "Should I use 🤘🏼 to represent someone else?",
+        "answer": "Carefully. 🤘🏼 is a reasonable approximation for a lot of people, which is exactly why it gets borrowed so often. If you are depicting a specific person and you are not certain, use 🤘 instead of guessing."
       },
       {
-        "question": "Does 🤘🏼 mean sign-of-horns-medium-light-pulse pulse?",
-        "answer": "Often yes — 🤘🏼 carries the music fill visual and reads in modern usage as music coded. The literal-shape-versus-music-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🤘🏼 and 🤙 Call Me Hand?",
+        "answer": "the call me hand extends thumb and pinky sideways, the horns points index and pinky straight up. The tone does not change that — 🤘🏼 is the same gesture in a different swatch."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "sign-of-horns-medium-light-pulse pulse for the partner plan, full music energy 🤘🏼",
-      "interpretation": "Partner music romance. Mirror with another 🤘🏼, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the music chaos 🤘🏼",
-      "interpretation": "Public music flex. Mirror with another 🤘🏼, a sentence that joins the music energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "music sound-marker with the family, full sign-of-horns-medium-light-pulse pulse energy 🤘🏼",
-      "interpretation": "Family music reveal. Mirror with another 🤘🏼, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "sign-of-horns-medium-light-pulse pulse today, full music energy 🤘🏼",
-      "interpretation": "Friend music reveal. Mirror with another 🤘🏼, a sentence that joins the music energy, or a heart emoji that matches."
+      "message": "announcing a gig you are heading to 🤘🏼",
+      "interpretation": "A friend sending 🤘🏼 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "signing off a stubborn reply in a chat 🤘🏼",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is evidence that somebody thought about which swatch to press."
     },
     {
       "setting": "work",
-      "message": "music coded sprint today, full sign-of-horns-medium-light-pulse pulse energy 🤘🏼",
-      "interpretation": "Work music moment. Mirror with another 🤘🏼, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "understood 🤘🏼",
+      "interpretation": "A work thread. The medium-light skin tone passes without comment in a work thread."
+    },
+    {
+      "setting": "family",
+      "message": "fine 🤘🏼",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-light skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "right 🤘🏼",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

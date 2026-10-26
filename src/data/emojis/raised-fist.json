@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "hand-fingers-closed",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A closed fist raised upward, showing solidarity, defiance, or a triumphant gesture.",
-  "tldr": "Solidarity-coded resistance, 'power to the people' register, or triumphant celebration.",
+  "baseMeaning": "A drawing of a closed fist held up at shoulder height, used as signaling solidarity, resistance, or determination.",
+  "tldr": "✊ Raised Fist: signaling solidarity, resistance, or determination.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Raising a closed fist as a gesture of solidarity, protest, or resistance.",
-      "example": "Power to the people ✊",
+      "meaning": "The plain reading: a closed fist held up at shoulder height. Nothing hidden in the drawing itself.",
+      "example": "Posting a solidarity message after a news event ✊",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Excitement, hype, or 'let's go' energy in a casual setting.",
-      "example": "Game day ✊",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Signaling team determination or commitment to a goal.",
-      "example": "We can hit Q4 ✊",
+      "meaning": "Borrowed as a reaction, it reads as signaling solidarity, resistance, or determination.",
+      "example": "Signing off a team win announcement ✊",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Showing support for a partner's goals or shared enthusiasm.",
-      "example": "Get it babe ✊",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as signaling solidarity, resistance, or determination, softened by whatever sentence sits next to it.",
+      "example": "not me ✊",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — signaling solidarity, resistance, or determination — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted ✊",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Twitter uses ✊ as a solidarity tag on activist posts and as a hype stamp on sports and comeback threads; it travels with hashtags like #BlackLivesMatter and #Resist."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Raised Fist ✊ renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like posting a solidarity message after a news event is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders ✊ exactly as the phone system does, but the keyboard keeps it in the hand-fingers-closed section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like signing off a team win announcement."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Instagram captions pair ✊ with protest reels and gym-progress posts; it doubles as a resistance symbol and a 'let's go' hype beat."
+      "note": "On Instagram ✊ usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as signaling solidarity, resistance, or determination under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "TikTok creators layer ✊ onto empowerment audios and protest edits; the gesture is read instantly as solidarity, not aggression."
+      "note": "In TikTok comments ✊ is the fastest way to answer a video without typing anything. The gesture stays signaling solidarity, resistance, or determination, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Discord servers use ✊ in clan, sports, and gaming channels as a 'we ride together' tag; it usually lands as in-group loyalty rather than protest."
+      "platform": "SLACK",
+      "note": "In Slack ✊ lands in channels where the sentence was supposed to be shorter. It is usually standing in for posting a solidarity message after a news event, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reads as both protest solidarity and a hype 'let's go' gesture depending on context; used in activism, sports, and gaming."
+      "note": "Gen Z reaches for ✊ to do the work of posting a solidarity message after a news event, and treats the neutral drawing as the default rather than as a choice. What they hear first is signaling solidarity, resistance, or determination."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Most often associated with activism and resistance movements; also used casually for hype in sports and team contexts."
+      "note": "Millennials tend to send ✊ deliberately, usually for something like signing off a team win announcement, and they read signaling solidarity, resistance, or determination into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Tends to read the fist through a protest or union-strike lens first; slang hype usage is less familiar."
+      "note": "Gen X mostly uses ✊ literally, as the picture of the gesture itself, and is less likely to read signaling solidarity, resistance, or determination into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Likely to interpret ✊ strictly as a political protest or solidarity gesture; the casual hype usage may read as tone-deaf."
+      "note": "Older senders use ✊ in the most straightforward way, on family and group messages, and are less likely to hear the signaling solidarity, resistance, or determination subtext in it."
     }
   ],
   "warnings": [
     {
-      "title": "Political and cultural weight",
-      "description": "The raised fist carries strong protest and resistance meaning. In casual or work contexts it can land as performative or politically loaded, especially when the sender is not part of the movement being referenced.",
+      "title": "✊ and 👍 get swapped",
+      "description": "The Thumbs Up 👍 is one tap away in every picker, and it does not carry the same reading — the thumbs up approves and moves on, the raised fist commits and resists. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take ✊ as something else fairly often: it gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
   "seoTitle": "✊ Raised Fist Emoji Meaning - What Does ✊ Really Mean?",
-  "seoDescription": "Learn what the raised fist emoji ✊ really means in modern texting. Solidarity-coded resistance, 'power to the people' register, or triumphant celebration. Full context guide.",
+  "seoDescription": "What the raised fist emoji ✊ means in text: signaling solidarity, resistance, or determination. Includes the misread it invites (taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid) and how to reply.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "The ✊ raised-fist emoji is one of the most politically charged gestures in the emoji set. Its base reading is straightforward: a closed fist held upward. But the cultural meaning layered onto that shape is heavy. The raised fist has been a symbol of solidarity, labor rights, civil rights, and resistance movements for more than a century. From the Industrial Workers of the World to Black Power salutes at the 1968 Olympics, the gesture has meant defiance and collective strength. In modern texting that is still the dominant frame.\n\nYounger users have softened the reading into a hype emoji, using ✊ the way earlier generations used a literal fist pump at a sports game. 'Game day ✊' and 'closing this deal ✊' are common. That secondary usage is real, but it coexists with the political reading, and the sender cannot always control which one the recipient defaults to. A parent receiving ✊ from a teenager in a casual chat will almost certainly read it as protest, while that same teen probably meant 'let's go.'\n\nThe emoji also appears in identity and bio contexts. People place ✊ in their Instagram bios, on protest artwork, and in support captions for movements from BLM to labor strikes. Outside of those uses, it tends to read as either solidarity or excitement — which is why it pairs well with words rather than carrying them on its own. A clear sentence frames the fist as protest, hype, or humor so the recipient does not have to guess.",
-    "howPeopleUseIt": "In protest and activist contexts ✊ appears at the end of a sentence as a closing solidarity stamp, often alongside other emoji like ✊🏿 and ✊🏽 to signal cross-skin-tone unity. It works the same way an in-person raised fist works at a rally: an icon of shared commitment. The gesture also pairs with #hashtags that frame the movement, turning a single emoji into a search-and-discover tag.\n\nOutside of activism ✊ shows up in sports and team contexts as a hype emoji. 'Tonight's game ✊' reads as fan solidarity rather than protest. The emoji also functions as a one-word pep talk: 'go get that promotion ✊' is the equivalent of a high-five and a 'you got this' combined. In group chats the fist often replaces a physical fist bump — it is the digital handshake between friends, gamers, and teammates who want to acknowledge a shared win.\n\nA third usage is ironic or humor-coded. Some senders drop ✊ under a meme to mock the seriousness of the gesture, treating it as the punchline rather than the point. That usage is rarer on mainstream platforms but thrives in Discord servers, group chats, and meme subreddits where the joke is the over-sincere fist.",
-    "whenNotToUse": "Skip ✊ in customer-facing professional writing where its political weight can land as performative. A sales email ending with 'looking forward to working together ✊' reads as tone-deaf because the gesture has too much activist history to read as a neutral business handshake. Reach for 🤝 instead when the goal is professional partnership.\n\nAlso avoid ✊ when the recipient may read the gesture as aggression or threat. In dating-app openers or early conversation, an unsolicited ✊ can land as confrontational, especially if the sender is a man messaging a woman and the topic is not explicitly playful. The fist is too loaded to use as casual flirtation unless you already have a rapport that lets the joke land.",
-    "howToReply": "Mirror ✊ with another ✊ to keep the solidarity or hype loop going, or pair with a 🔥 to add hype energy. When the fist is protest-coded, a simple ✊🏿 or ✊🏽 in the same skin tone signals cross-racial solidarity and is often the most respectful reply. Avoid stacking unrelated emoji on top — a protest fist does not need decoration.\n\nWhen ✊ lands as hype ('we got the deal ✊'), match it with a reaction emoji like 🙌, 🙌🏿, or 🔥 to ride the same energy. If the sender is clearly joking or ironic, mirror with a laugh-reaction like 💀 or 😂 to confirm you read the tone. And if you receive ✊ from someone you do not know well in a non-activist context, ask before assuming — the simplest way to recover from an awkward read is to clarify what they meant.",
+    "overview": "✊ is the raised fist: a closed fist held up at shoulder height. It arrived in Unicode 6.0, and it lives in the hand-fingers-closed part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as signaling solidarity, resistance, or determination. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👍 Thumbs Up: the thumbs up approves and moves on, the raised fist commits and resists. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same raised fist exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the raised fist emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are posting a solidarity message after a news event and signing off a team win announcement, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job ✊ does is posting a solidarity message after a news event. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is signing off a team win announcement. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread ✊ is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and ✊ goes back on its own. It reads as \"signaling solidarity, resistance, or determination\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use ✊ when you mean 👍 Thumbs Up. The thumbs up approves and moves on, the raised fist commits and resists. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare ✊ in a thread about a person reads as \"signaling solidarity, resistance, or determination\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and raised fist gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. ✊ in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of signaling solidarity, resistance, or determination as arrogance.",
+    "howToReply": "The easy reply is to match it with the same ✊. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the raised fist was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like posting a solidarity message after a news event almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant signaling solidarity, resistance, or determination or something sharper.",
     "faqs": [
       {
-        "question": "What does ✊ mean in texting?",
-        "answer": "In texting ✊ means solidarity, protest, or hype energy depending on context. The political meaning dominates on activist threads; younger users also use it casually as a 'let's go' hype stamp in sports and team chats."
+        "question": "What does ✊ mean in text?",
+        "answer": "✊ is used for signaling solidarity, resistance, or determination. The drawing shows a closed fist held up at shoulder height, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between ✊ and 👍?",
+        "answer": "The thumbs up approves and moves on, the raised fist commits and resists. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is ✊ rude?",
+        "answer": "It can be. The gesture is meant as signaling solidarity, resistance, or determination, but it gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does ✊ mean from a guy?",
-        "answer": "From a guy, ✊ usually reads as solidarity, hype, or 'let's go' energy. In a casual group chat it is just a fist bump. In an activist or dating context it can carry protest weight, so context matters more than gender."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is ✊ a hate symbol?",
-        "answer": "✊ is not a hate symbol. It is a solidarity and resistance gesture used by labor, civil rights, and empowerment movements. Different skin-tone modifiers change the cultural weight but not the underlying meaning of resistance and collective strength."
-      },
-      {
-        "question": "What does ✊ mean on social media?",
-        "answer": "On social media ✊ usually signals solidarity, support for a movement, or hype for an event. It shows up in protest captions, sports posts, and team comms; the same emoji reads differently depending on the caption it accompanies."
+        "question": "What is the difference between ✊ and its skin-tone versions?",
+        "answer": "The tone variants under raised fist show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "we actually did it ✊",
-      "interpretation": "Group celebration after a shared win. Mirror with another ✊, 🙌, or 🔥 to keep the hype going."
-    },
-    {
-      "setting": "social",
-      "message": "still thinking about the march ✊",
-      "interpretation": "Solidarity post about a protest or movement. Best to reply with a fist in the same skin tone or a short affirmation."
+      "message": "posting a solidarity message after a news event ✊",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as signaling solidarity, resistance, or determination, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "closed the deal, team ✊",
-      "interpretation": "Team win in a tight-knit channel. Safe inside the team; tone it down with 🤝 for cross-company comms."
+      "message": "signing off a team win announcement ✊",
+      "interpretation": "A handover or a sign-off in a channel. It reads as signaling solidarity, resistance, or determination, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "you nailed that interview ✊",
-      "interpretation": "Affirming and supportive pep-talk. Pair with a heart or a follow-up sentence to add warmth."
+      "message": "there is something you should know ✊",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a generic hype or go-for-it fist when the raised knuckle line is political and often landed on protest and mutual aid more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "proud of you kid ✊",
-      "interpretation": "Family pride and encouragement. Reads as warm across generations; safe to mirror with ❤️ or 🙌."
+      "message": "posting a solidarity message after a news event ✊",
+      "interpretation": "Family threads are where this lands most naturally. The reading is signaling solidarity, resistance, or determination, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post ✊",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
+  ],
+  "skinToneVariations": [
+    "raised-fist-light",
+    "raised-fist-medium-light",
+    "raised-fist-medium",
+    "raised-fist-medium-dark",
+    "raised-fist-dark"
   ]
 }

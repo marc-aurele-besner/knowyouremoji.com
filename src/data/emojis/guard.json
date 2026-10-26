@@ -7,121 +7,151 @@
   "category": "People & Body",
   "subcategory": "Person Role",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person in royal guard or military uniform",
-  "tldr": "Royal guard",
+  "baseMeaning": "A drawing of a figure in a red uniform and tall bearskin hat, standing at attention, used as watching over something, or standing rigidly on duty.",
+  "tldr": "💂 Guard: watching over something, or standing rigidly on duty.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Guard or royal guard",
-      "example": "Palace 💂",
+      "meaning": "The plain reading: a figure in a red uniform and tall bearskin hat, standing at attention. Nothing hidden in the drawing itself.",
+      "example": "Reporting that you are not leaving your post 💂",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Watchful or guarded",
-      "example": "On watch 💂",
+      "meaning": "Borrowed as a reaction, it reads as watching over something, or standing rigidly on duty.",
+      "example": "Announcing you are on watch duty tonight 💂",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Watchful-coded tag or 'on patrol' invitation.",
-      "example": "at your service 💂",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as watching over something, or standing rigidly on duty, softened by whatever sentence sits next to it.",
+      "example": "not me 💂",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatizing commitment to not spilling tea.",
-      "example": "guard up 💂",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — watching over something, or standing rigidly on duty — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 💂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for guard-coded and adult-coded watchful tweets. The guard figure is the visible 'standing watch' default across close-friends replies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in palace-coded stories and aesthetic-coded royal-guard shares. The guard figure reads as the visible travel default on story overlays and reply captions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded guard clips. The guard figure pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal protect default."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Guard 💂 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like reporting that you are not leaving your post is the kind that carries it — the picture lands before the sentence does."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Group-chat reaction to guard-coded content. The guard figure is the default 'on watch' tag among close-friends groups."
+      "note": "WhatsApp renders 💂 exactly as the phone system does, but the keyboard keeps it in the person role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like announcing you are on watch duty tonight."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "On Instagram 💂 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as watching over something, or standing rigidly on duty under a photo, or a reaction somebody left on a story."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "In TikTok comments 💂 is the fastest way to answer a video without typing anything. The gesture stays watching over something, or standing rigidly on duty, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 💂 lands in channels where the sentence was supposed to be shorter. It is usually standing in for reporting that you are not leaving your post, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Gen Z reaches for 💂 to do the work of reporting that you are not leaving your post, and treats the neutral drawing as the default rather than as a choice. What they hear first is watching over something, or standing rigidly on duty."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Millennials tend to send 💂 deliberately, usually for something like announcing you are on watch duty tonight, and they read watching over something, or standing rigidly on duty into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 💂 literally, as the picture of the gesture itself, and is less likely to read watching over something, or standing rigidly on duty into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 💂 literally for guard references."
+      "note": "Older senders use 💂 in the most straightforward way, on family and group messages, and are less likely to hear the watching over something, or standing rigidly on duty subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "💂 and 👮 get swapped",
+      "description": "The Police Officer 👮 is one tap away in every picker, and it does not carry the same reading — the police officer carries enforcement and authority, the guard carries ceremony and standing still. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 💂 as something else fairly often: it gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "💂 Guard Emoji Meaning - What Does 💂 Really Mean?",
-  "seoDescription": "Learn what the guard emoji 💂 really means in texts and social media.",
+  "seoDescription": "What the guard emoji 💂 means in text: watching over something, or standing rigidly on duty. Includes the misread it invites (taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law) and how to reply.",
   "longForm": {
-    "overview": "The 💂 Guard emoji was added in Unicode 6 (2010) and is drawn as a person in a tall black bearskin hat and red tunic, in the classic British royal guard style. The visual cue reads instantly as authority-coded reference, watchful default, or the visible 'standing guard' tag. By 2026 💂 has become the go-to emoji for the palace-coded reaction, the visible guard default, and the British-icon-coded reaction in close-friends and travel chats.\n\nIn modern chat 💂 does very specific work. People send it as a literal guard-coded reference, as the visible 'I am on watch' tag, or as the travel-coded default. The bearskin hat and red tunic is the visual cue that the read is British royal or guard. Writers should pick 💂 when the read is palace or visible 'standing watch' energy, and avoid it when the read is full-on police — 👮 fits better there.",
-    "howPeopleUseIt": "💂 lands on a friend's london-coded message, in a work channel where someone is signaling authority-coded energy, and in a dating-app DM where the sender is signaling flirty watchful. The bearskin hat and red tunic anchors the read.\n\nIn close-friends chats 💂 reads as the universal palace default and the visible 'standing guard' tag. On X the emoji punctuates palace-coded and travel tweets. The emoji pairs with 🇬🇧 for the layered guard-and-UK-flag stack and with 🏰 for the layered guard-and-castle stack.",
-    "whenNotToUse": "Skip 💂 in any context where the read is supposed to be casual. The guard uniform implies formal authority, not relaxed. Avoid 💂 in casual contexts where the guard-coded read lands as silly uniform.",
-    "howToReply": "If a friend sends 💂 on a guard-coded message, mirror with another 💂 or 🇬🇧 to send matching energy. The authority chain reads as solidarity.\n\nIf 💂 lands as the watchful default, reply with another 💂 or 🏰. And if you want to send 💂 yourself, pair it with the moment so the guard-coded read is clear.",
+    "overview": "💂 is the guard: a figure in a red uniform and tall bearskin hat, standing at attention. It arrived in Unicode 13.0, and it lives in the person role part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as watching over something, or standing rigidly on duty. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👮 Police Officer: the police officer carries enforcement and authority, the guard carries ceremony and standing still. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same guard exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the guard emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are reporting that you are not leaving your post and announcing you are on watch duty tonight, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 💂 does is reporting that you are not leaving your post. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is announcing you are on watch duty tonight. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 💂 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 💂 goes back on its own. It reads as \"watching over something, or standing rigidly on duty\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 💂 when you mean 👮 Police Officer. The police officer carries enforcement and authority, the guard carries ceremony and standing still. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 💂 in a thread about a person reads as \"watching over something, or standing rigidly on duty\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and guard gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 💂 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of watching over something, or standing rigidly on duty as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 💂. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the guard was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like reporting that you are not leaving your post almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant watching over something, or standing rigidly on duty or something sharper.",
     "faqs": [
       {
         "question": "What does 💂 mean in text?",
-        "answer": "💂 means guard-coded reference, watchful energy, or the visible 'standing guard' reaction. The bearskin hat and red tunic is the visual cue that the read is palace-coded."
+        "answer": "💂 is used for watching over something, or standing rigidly on duty. The drawing shows a figure in a red uniform and tall bearskin hat, standing at attention, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 💂 flirty?",
-        "answer": "Rarely. 💂 reads as flirty-coded only in a dating thread combined with 'at your service' tag content as role-play."
+        "question": "What is the difference between 💂 and 👮?",
+        "answer": "The police officer carries enforcement and authority, the guard carries ceremony and standing still. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 💂 mean from a girl?",
-        "answer": "From a girl or anyone, 💂 carries the same guard-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "Is 💂 rude?",
+        "answer": "It can be. The gesture is meant as watching over something, or standing rigidly on duty, but it gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "What does 💂 mean on Instagram?",
-        "answer": "On Instagram, 💂 is the default sticker on london-coded captions and aesthetic-coded palace story overlays."
+        "question": "What does 💂 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 💂 and its skin-tone versions?",
+        "answer": "The tone variants under guard show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "finally at the palace 💂",
-      "interpretation": "Friend guard share. Mirror with another 💂 or 🏰 so the palace chain reads back."
+      "message": "reporting that you are not leaving your post 💂",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as watching over something, or standing rigidly on duty, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "guard up for the launch 💂",
-      "interpretation": "Work-coded watchful share. Mirror with a clarifying sentence — 💂 can land as off-topic in work channels."
+      "message": "announcing you are on watch duty tonight 💂",
+      "interpretation": "A handover or a sign-off in a channel. It reads as watching over something, or standing rigidly on duty, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "let me stand guard 🫡",
-      "interpretation": "Dating-coded flirty share. Mirror with 💂 or 🥰 so the warm chain reads back."
+      "message": "there is something you should know 💂",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a police officer when the tall bearskin hat marks a ceremonial palace guard, so the scarlet uniform reads as royal rather than law more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "trip to london finally 💂",
-      "interpretation": "Family-coded trip share. Mirror with 💂 or 🇬🇧 so the family-coded chain reads back."
+      "message": "reporting that you are not leaving your post 💂",
+      "interpretation": "Family threads are where this lands most naturally. The reading is watching over something, or standing rigidly on duty, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "i shall not spill the tea 💂",
-      "interpretation": "Public adult-coded loyalty share. Mirror with another 💂 or 🤐 so the solidarity chain reads back."
+      "message": "that is the whole post 💂",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26",
+  "skinToneVariations": [
+    "guard-light",
+    "guard-medium-light",
+    "guard-medium",
+    "guard-medium-dark",
+    "guard-dark"
+  ]
 }

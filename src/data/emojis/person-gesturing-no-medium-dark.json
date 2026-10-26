@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "person-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person with arms crossed in an X shape, indicating 'no' or rejection.",
-  "tldr": "No way, rejection, or not happening.",
+  "baseMeaning": "A person with arms crossed in an X shape, indicating 'no' or rejection. The medium-dark skin tone modifier is applied to the figure.",
+  "tldr": "🙅🏾 Person Gesturing No with a medium-dark skin tone. Reached deliberately, so it reads as intentional.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries.",
+      "example": "roger 🙅🏾",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents the person gesturing no: medium-dark skin tone cue.",
-      "example": "the no gesture medium dark 🙅🏾",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-dark skin tone applied to the figure.",
+      "example": "🙅🏾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "no gesture medium dark-coded moment or no gesture medium dark-coded reveal.",
-      "example": "no gesture medium dark mode 🙅🏾",
+      "meaning": "The gesture reads the same as the untoned version; the medium-dark skin tone makes it a chosen version rather than a defaulted one.",
+      "example": "noted, understood 🙅🏾",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "no gesture medium dark-coded flirty tag or partner-coded moment.",
-      "example": "no gesture medium dark partner plan 🙅🏾",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "no gesture medium dark-coded work moment or team energy.",
-      "example": "no gesture medium dark sprint 🙅🏾",
+      "context": "IRONIC",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very relaxed 🙅🏾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🙅🏾 renders as a single toned glyph, and the medium-dark swatch is the fourth of the five in Apple's picker — it takes an extra tap past the three before it. Because it is chosen less often, it is also the one a sender is most likely to have picked on purpose."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp lists the medium-dark swatch fourth and renders it correctly on current builds, but older Android versions of the app fall back to the untoned glyph. In practice the medium-dark variant is one of the tones that loses its meaning most often in forwarded messages, because the fallback removes the part that was deliberate."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🙅🏾 lands on no gesture medium dark-coded threads, no gesture medium dark-tagged person-gesture posts, and 'no gesture medium dark-coded' reveals where the no gesture medium dark cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🙅🏾 is a staple of modern-coded flat-lays, no gesture medium dark-canvas story backgrounds, and modern-coded profile accents; the no gesture medium dark cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🙅🏾 travels in modern-coded transitions, no gesture medium dark reaction reveals, and 'no gesture medium dark-coded' listicle content where the no gesture medium dark cue signals modern-coded energy."
+      "note": "Twemoji applies the tone to 🙅🏾 consistently. The medium-dark swatch holds its contrast better on a white background than the darkest one does, so it survives screenshotting and re-posting more often than the tone it sits next to."
     },
     {
       "platform": "SLACK",
-      "note": "🙅🏾 threads through modern-coded reactions, no gesture medium dark markers, and 'no gesture medium dark-coded' bullets in work channels where the no gesture medium dark cue fits the register."
+      "note": "Slack's emoji font renders the medium-dark swatch with less contrast than the phone version does, and the difference is more noticeable here than for the lighter tones. People who picked the swatch to represent themselves can look under-represented in a Slack screenshot for no reason other than the font."
     },
     {
       "platform": "DISCORD",
-      "note": "🙅🏾 is an active reaction in modern-coded no gesture medium dark channels, server-coded no gesture medium dark markers, and 'no gesture medium dark-coded' reveals where the no gesture medium dark cue matches the modern-coded register."
+      "note": "Discord uses Twemoji, so the modifier is preserved, but bots and integrations that rewrite messages are the weak point. The medium-dark swatch is the one most likely to arrive untoned, and the reason it was chosen in the first place is usually the reason it matters."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🙅🏾 on modern-coded no gesture medium dark threads, no gesture medium dark-coded reveals, and 'no gesture medium dark-coded' moments where the no gesture medium dark cue matches the modern-coded register."
+      "note": "Gen Z reads 🙅🏾 as a deliberate choice, because the swatch takes extra taps to reach. This cohort is also the most likely to notice when 🙅🏾 has been used to depict somebody else, and to read that as a statement about the person."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded no gesture medium dark moments, and no gesture medium dark-coded reveals where the universal no gesture medium dark cue fits."
+      "note": "Millennials pick 🙅🏾 when representing themselves, and treat it as personal in a way they do not treat the lighter tones. It is also the tone most often borrowed to depict somebody else in this cohort."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded no gesture medium dark messages and no gesture medium dark reveals, treating the no gesture medium dark as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal no gesture medium dark and uses it on modern-coded tags without parsing the modern no gesture medium dark-coded subtext."
+      "note": "Gen X is less likely to change the tone at all, so 🙅🏾 appears mostly in messages where the sender was depicting themselves. The swatch is read as personal rather than political."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🙅🏾 is frequently used to depict somebody other than its sender, and it is the tone most often used to represent a person who is not the sender, which is where the misreading starts. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🙅🏾 Person Gesturing No Medium-Dark Skin Tone Emoji - What Does 🙅🏾 Mean?",
-  "seoDescription": "Learn what the person gesturing no emoji with medium-dark skin tone 🙅🏾 means in texts and social media.",
+  "seoTitle": "🙅🏾 Person Gesturing No Medium-Dark Skin Tone Emoji Meaning - What Does 🙅🏾 Mean?",
+  "seoDescription": "What does the person gesturing no emoji 🙅🏾 mean? Person Gesturing No showing a figure with both forearms crossed in an X before the body. Covers the medium-dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "person-gesturing-no",
   "skinToneModifier": "medium-dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Person Gesturing No is the emoji of gesture-coded reaction - the body language, the social performance, and the universal \"I have feelings\" tag. Where 🤦 reads as hands-to-forehead energy and 🙄 reads as eye-roll exasperation, Person Gesturing No captures the moment when the sender wants to communicate gesture-coded emotional energy - a \"person gesturing no\" mood tag or an exasperation-coded reveal.\n\nThe body cue borrows from body language tradition and the modern mood-coded aesthetic, which is exactly why the emoji reads as gesture-coded rather than literal.\n\nWhat separates Person Gesturing No from the rest of the gesture family is the specific person gesturing no register. The emoji is not saying 'generic gesture' (🤷). It is saying 'person gesturing no-coded person gesturing no,' which carries a specific mood, expression, or body-language specificity.\n\nIn real-world usage 🙅🏾 Person Gesturing No: Medium-Dark Skin Tone lives in the spaces where the sender wants to communicate gesture energy. A partner sends it on a \"no gesture medium dark\" moment. A friend sends it on a \"gesture\" reveal. A coworker sends it on a \"no gesture medium dark\" tag. The no gesture medium dark cue is what makes the emoji feel gesture-coded - it is not just 'a moment,' it is 'no gesture medium dark-coded energy.'\n\nIn dating 🙅🏾 Person Gesturing No: Medium-Dark Skin Tone works as a soft-coded no gesture medium dark tag, where the no gesture medium dark cue signals body language tradition. In work threads 🙅🏾 Person Gesturing No: Medium-Dark Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🙅🏾 feels.",
-    "howPeopleUseIt": "🙅🏾 Person Gesturing No: Medium-Dark Skin Tone shows up as the closer on a \"no gesture medium dark moment\", the punctuation on a \"gesture\" reveal, and the softener on a \"no gesture medium dark-coded\" tag. It pairs naturally with sentences that name the gesture energy - 'no gesture medium dark,' 'body language tradition,' 'no gesture medium dark-coded' - and sits beautifully on reactions, emotional shares, mood-coded reveals, and gesture-coded moments.\n\nIn group chats 🙅🏾 Person Gesturing No: Medium-Dark Skin Tone anchors 'no gesture medium dark moment' threads, gesture reveals, and 'no gesture medium dark' tags where the no gesture medium dark cue matches the register. On Instagram it lands on gesture flat-lays and gesture stories. On TikTok it travels in gesture transitions and 'no gesture medium dark' reaction content.\n\nThe emoji also works in dating contexts. A 'no gesture medium dark 🙅🏾' partner message uses the no gesture medium dark cue to communicate gesture romance. Across all of these surfaces the rule is the same: the more gesture the moment, the more natural 🙅🏾 feels.",
-    "whenNotToUse": "Skip Person Gesturing No in celebration or victory contexts. The gesture-coded body cue is the wrong register for triumphant moments. A 🎉 or 🏆 keeps the message joyful.\n\nAvoid Person Gesturing No in formal or professional contexts where the gesture energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip Person Gesturing No when you want to communicate confidence. The gesture register is too expressive-coded for decisive moments; use 💪 or 🫡 when the moment needs strength.",
-    "howToReply": "If someone sends Person Gesturing No, the cleanest mirror is another Person Gesturing No, 🤦, or a sentence that joins the gesture energy. If the body cue feels too expressive-coded, reply with a softer emoji (🙃 or 🫠) that signals shared emotion without matching the gesture volume.\n\nWhen Person Gesturing No lands as a mood-coded complaint, mirror with another Person Gesturing No, an exasperation emoji, or a sentence that escalates the reaction. When it arrives as a work-coded reveal, mirror with another Person Gesturing No, a sentence that joins the frustration, or a solidarity emoji that fits.",
+    "overview": "🙅🏾 is Person Gesturing No with a medium-dark skin tone — a figure with both forearms crossed in an X before the body. The gesture is the familiar one, doing what it always does: rejecting an offer or flatly refusing something. What makes this variant worth its own page is that the tone is not an accident. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it, and that effort shows up in how the message lands.\n\nThe upshot is that 🙅🏾 reads as chosen. Where a first-swatch emoji can be waved past, a tone someone had to reach for tends to be read as a small, deliberate piece of information — usually about who the message is coming from, occasionally about who it is about. Neither reading is wrong, but they are not interchangeable, and that is where the confusion with 🙆 Person Gesturing OK comes from: the OK gesture is a thumbs up, the no gesture is crossed arms, and swapping them flips the meaning.\n\nThe situations it turns up in are the family ones, unchanged by the tone. The misread that keeps coming up is this: it gets taken as a general dislike when it is aimed at a specific offer, and the crossed arms can look like the person is merely uncomfortable.",
+    "howPeopleUseIt": "The gesture is the same one 🙅 makes, so the family habits carry straight over. What changes with 🙅🏾 is who tends to send it and what they are assuming about the reader.\n\nMedium-dark takes an extra tap to reach, and 🙅🏾 shows up in the places where that extra tap was made on purpose: profile photos, avatars, introductions, and the emoji people pick for themselves rather than for a situation. It appears in turning down a plan you do not want, and in marking a task as declined at work, and it is more likely than the other tones to be the sender's own.\n\nIt is also the tone that gets borrowed most, because it sits closer to the middle of the list and so reads as a reasonable approximation of a lot of people. When 🙅🏾 is used to stand in for somebody else, the tone is quietly doing a job the sender never mentioned.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🙅 itself, and every tone in this family inherits it.\n\nThe tone-specific rule for 🙅🏾 is about borrowed representation. This is the swatch people reach for when they are depicting somebody else, and it is the swatch most likely to be wrong. If you are sending 🙅🏾 to stand in for another person, either know that you are doing it deliberately and accept that it will read that way, or use 🙅 instead.\n\nAlso avoid 🙅🏾 in professional threads where a chosen skin tone on a neutral emoji can look like a stance the message never made. The tone says the sender chose it, and readers will read the choice even when the sentence does not support it.",
+    "howToReply": "Matching the swatch is the acknowledging move here. If somebody picks a tone deliberately and you reply with 🏾, you are telling them you noticed; 🙅 reads as though you did not.\n\nKeep the reply proportionate otherwise. A sentence that names the moment will land better than a mirrored emoji when the message is the kind that invites a reply — the gesture is a good conversation opener on its own.",
     "faqs": [
       {
-        "question": "What does Person Gesturing No mean in chat?",
-        "answer": "Person Gesturing No is the gesture-coded reaction - it borrows from body language tradition and signals an emotional reveal, mood-coded tag, or gesture-coded moment. The body cue is what makes the read feel gesture-coded rather than literal."
+        "question": "What does 🙅🏾 mean in chat?",
+        "answer": "🙅🏾 is Person Gesturing No with a medium-dark skin tone. The gesture reads as rejecting an offer or flatly refusing something, and the tone reads as chosen rather than defaulted to."
       },
       {
-        "question": "Is Person Gesturing No passive-aggressive?",
-        "answer": "Sometimes. In a texting thread Person Gesturing No can read as a mood-coded complaint - a \"I can't believe this\" tag or an exasperated-coded reveal. On its own it reads more gesture than aggressive."
+        "question": "Why does 🙅🏾 feel more intentional than 🙅?",
+        "answer": "Because of the picker position. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it. A swatch that takes extra taps gets read as a decision."
       },
       {
-        "question": "What does Person Gesturing No mean from a coworker?",
-        "answer": "From a coworker, Person Gesturing No signals a gesture-coded reaction or work-coded exasperation. The body cue reads as mood-coded rather than literal, so it tends to land on complaint tags, team coded messages, and \"I need a break\" reveals."
+        "question": "What does 🙅🏾 mean from a girl?",
+        "answer": "The gesture reads the same as it does from anyone else. The tone does not add a gendered layer to 🙅."
       },
       {
-        "question": "When should I use Person Gesturing No?",
-        "answer": "Use Person Gesturing No for gesture-coded reactions, mood reveals, or body language moments. Avoid it when you want to communicate something neutral - the gesture cue is too expressive for calm moments."
+        "question": "Is it rude to use 🙅🏾 to describe someone else?",
+        "answer": "It can be, and this is the tone where that happens most often. It is the tone most often used to represent a person who is not the sender, which is where the misreading starts. If you are unsure, 🙅 avoids the problem entirely."
+      },
+      {
+        "question": "What is the difference between 🙅🏾 and 🙆 Person Gesturing OK?",
+        "answer": "the OK gesture is a thumbs up, the no gesture is crossed arms, and swapping them flips the meaning."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "no gesture medium dark with the partner plan, full gesture energy 🙅🏾",
-      "interpretation": "Partner gesture romance. Mirror with another 🙅🏾, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the no gesture medium dark chaos 🙅🏾",
-      "interpretation": "Public gesture flex. Mirror with another 🙅🏾, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "no gesture medium dark with the family, full gesture energy 🙅🏾",
-      "interpretation": "Family gesture reveal. Mirror with another 🙅🏾, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "no gesture medium dark today, full gesture energy 🙅🏾",
-      "interpretation": "Friend gesture reveal. Mirror with another 🙅🏾, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "turning down a plan you do not want 🙅🏾",
+      "interpretation": "A friend sending 🙅🏾 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "marking a task as declined at work 🙅🏾",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a deliberate statement about who is being pictured."
     },
     {
       "setting": "work",
-      "message": "no gesture medium dark sprint today, full gesture energy 🙅🏾",
-      "interpretation": "Work gesture moment. Mirror with another 🙅🏾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "roger 🙅🏾",
+      "interpretation": "A work thread. The medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries."
+    },
+    {
+      "setting": "family",
+      "message": "right then 🙅🏾",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "indeed 🙅🏾",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

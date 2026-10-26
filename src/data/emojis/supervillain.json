@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-fantasy",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A supervillain with cape.",
-  "tldr": "Villain! Bad or mischievous.",
+  "baseMeaning": "A drawing of a grinning figure in a dark cape and mask, with a high collar, used as performing villainy, mischief, or a villain era.",
+  "tldr": "🦹 Supervillain: performing villainy, mischief, or a villain era.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a supervillain.",
-      "example": "Villain origin story 🦹",
+      "meaning": "The plain reading: a grinning figure in a dark cape and mask, with a high collar. Nothing hidden in the drawing itself.",
+      "example": "Announcing a villain era after a messy week 🦹",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being bad or mischievous.",
-      "example": "Villain era 🦹",
+      "meaning": "Borrowed as a reaction, it reads as performing villainy, mischief, or a villain era.",
+      "example": "Playing the bad guy when plans fall through 🦹",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Playing the bad guy.",
-      "example": "When I say no to plans 🦹",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as performing villainy, mischief, or a villain era, softened by whatever sentence sits next to it.",
+      "example": "not me 🦹",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Being the bad news bearer.",
-      "example": "Had to be the villain today 🦹",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — performing villainy, mischief, or a villain era — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🦹",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on nature coded supervillain threads, wild-marker reveal posts, and supervillain-pulse coded lists."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Supervillain 🦹 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a villain era after a messy week is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🦹 exactly as the phone system does, but the keyboard keeps it in the person-fantasy section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like playing the bad guy when plans fall through."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of nature coded supervillain flat-lays, nature-canvas story backgrounds, and wild-marker profile accents."
+      "note": "On Instagram 🦹 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as performing villainy, mischief, or a villain era under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in nature coded supervillain transitions, wild-marker reaction reveals, and supervillain-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors nature coded supervillain status messages, role-coded wild-marker markers, and supervillain-pulse coded reactions."
+      "note": "In TikTok comments 🦹 is the fastest way to answer a video without typing anything. The gesture stays performing villainy, mischief, or a villain era, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through nature coded supervillain reactions, wild-marker markers, and supervillain-pulse coded bullets."
+      "note": "In Slack 🦹 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a villain era after a messy week, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Villain era/arc."
+      "note": "Gen Z reaches for 🦹 to do the work of announcing a villain era after a messy week, and treats the neutral drawing as the default rather than as a choice. What they hear first is performing villainy, mischief, or a villain era."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Being bad."
+      "note": "Millennials tend to send 🦹 deliberately, usually for something like playing the bad guy when plans fall through, and they read performing villainy, mischief, or a villain era into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🦹 literally, as the picture of the gesture itself, and is less likely to read performing villainy, mischief, or a villain era into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Bad guy."
+      "note": "Older senders use 🦹 in the most straightforward way, on family and group messages, and are less likely to hear the performing villainy, mischief, or a villain era subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🦹 and 🦸 get swapped",
+      "description": "The Superhero 🦸 is one tap away in every picker, and it does not carry the same reading — both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🦹 as something else fairly often: it gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🦹 Supervillain Emoji Meaning",
-  "seoDescription": "Learn what the Supervillain emoji 🦹 really means.",
+  "seoTitle": "🦹 Supervillain Emoji Meaning - What Does 🦹 Really Mean?",
+  "seoDescription": "What the supervillain emoji 🦹 means in text: performing villainy, mischief, or a villain era. Includes the misread it invites (taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else) and how to reply.",
   "skinToneVariations": [
     "supervillain-light",
     "supervillain-medium-light",
@@ -83,60 +98,60 @@
     "supervillain-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🦹 is the emoji of nature coded supervillain read — a clean supervillain-pulse shape, the nature filled-in silhouette, and the universal 'nature supervillain' tag for wild-marker. Where ⬛ reads as solid-black-coded supervillain read and ⬜ reads as solid-white-coded supervillain read, 🦹 captures the moment when the sender wants to communicate nature coded supervillain — a 'nature 🦹' wild-marker marker or a 'supervillain-pulse pulse 🦹' wild-marker reveal. The nature fill cue borrows from design-coded bullet lists and the modern wild-marker aesthetic, which is exactly why the emoji reads as nature coded rather than literal supervillain-coded shape.\n\nIn real-world usage 🦹 lives in the spaces where the sender wants to communicate wild-marker energy. A partner sends it on a 'nature 🦹' wild-marker marker. A friend sends it on a 'supervillain-pulse pulse 🦹' reveal. A coworker sends it on a 'nature coded 🦹' list thread. The nature fill cue is what makes the emoji feel nature coded — it is not just 'shape,' it is 'nature coded supervillain moment.'\n\nWhat separates 🦹 from the rest of the shape family is the nature register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'nature coded supervillain,' which carries a specific design-coded tradition. That is why 🦹 travels especially well on partner wild-marker markers, wild-marker reveals, and any context where the sender wants the message to land with nature energy.",
-    "howPeopleUseIt": "🦹 shows up as the bullet on a 'nature 🦹' list message ('supervillain-pulse pulse 🦹'), the punctuation on a 'nature coded 🦹' reveal, and the softener on a 'supervillain-pulse pulse 🦹' list thread. It pairs naturally with sentences that name the nature energy — 'nature,' 'supervillain-pulse pulse,' 'wild-marker-coded' — and sits beautifully on partner wild-marker markers and wild-marker reveals.\n\nIn group chats 🦹 anchors 'nature coded moment' threads, wild-marker reveals, and 'nature 🦹' tags where the supervillain cue matches the register. On Instagram it lands on nature coded flat-lays and nature-canvas stories. On TikTok it travels in nature coded reveals and 'nature' reaction content.\n\nThe emoji also works in dating contexts. A 'nature 🦹' partner message uses the supervillain cue to communicate wild-marker romance. Across all of these surfaces the rule is the same: the more nature coded the moment, the more natural 🦹 feels.",
-    "whenNotToUse": "Skip 🦹 in sympathy, condolence, or break-up contexts. The nature coded supervillain cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🦹 in 'literal object' or finish-coded contexts where the nature energy feels off. A 'nature 🦹' message works for nature marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🦹 when you want to communicate a different color. The nature coded register is too nature-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🦹, the cleanest mirror is another 🦹, ⬛, or a sentence that joins the nature energy. If you want to escalate the engagement, follow with a sentence that adds context: 'nature for sure' or 'supervillain-pulse pulse together.' If the supervillain cue feels too nature coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the nature volume.\n\nWhen 🦹 lands as a partner 'nature 🦹' wild-marker marker, mirror with another 🦹, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'supervillain-pulse pulse 🦹' list thread, mirror with another 🦹, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "🦹 is the supervillain: a grinning figure in a dark cape and mask, with a high collar. It arrived in Unicode 11.0, and it lives in the person-fantasy part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as performing villainy, mischief, or a villain era. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🦸 Superhero: both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same supervillain exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the supervillain emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are announcing a villain era after a messy week and playing the bad guy when plans fall through, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🦹 does is announcing a villain era after a messy week. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is playing the bad guy when plans fall through. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🦹 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🦹 goes back on its own. It reads as \"performing villainy, mischief, or a villain era\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🦹 when you mean 🦸 Superhero. Both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🦹 in a thread about a person reads as \"performing villainy, mischief, or a villain era\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and supervillain gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🦹 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of performing villainy, mischief, or a villain era as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🦹. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the supervillain was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like announcing a villain era after a messy week almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant performing villainy, mischief, or a villain era or something sharper.",
     "faqs": [
       {
+        "question": "What does 🦹 mean in text?",
+        "answer": "🦹 is used for performing villainy, mischief, or a villain era. The drawing shows a grinning figure in a dark cape and mask, with a high collar, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🦹 and 🦸?",
+        "answer": "Both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🦹 rude?",
+        "answer": "It can be. The gesture is meant as performing villainy, mischief, or a villain era, but it gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🦹 mean from a guy?",
-        "answer": "From a guy, 🦹 signals nature coded flex or 'nature 🦹' wild-marker marker. The supervillain cue reads as nature-coded rather than literal supervillain-coded shape, so it tends to land on partner wild-marker markers, family-coded nature messages, and 'supervillain-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🦹 flirty?",
-        "answer": "It can be. In a partner context 🦹 can read as soft-coded romance — 'nature 🦹' is a soft-coded wild-marker marker. On its own the emoji is more nature coded than romantic."
-      },
-      {
-        "question": "What is the difference between 🦹 and ⬛?",
-        "answer": "⬛ is the solid-black supervillain — the cue is solid-black-coded read, the universal 'fill' energy. 🦹 is the nature supervillain — the cue is nature coded supervillain read, the nature energy. Use ⬛ when the moment is fill-coded; use 🦹 when the moment is nature coded."
-      },
-      {
-        "question": "Is 🦹 for wild-marker moments?",
-        "answer": "Yes — 🦹 is one of the most popular nature coded emojis. The supervillain cue is a natural fit for 'wild-marker' reveals, nature coded messages, and partner 'nature' markers."
-      },
-      {
-        "question": "Does 🦹 mean supervillain-pulse pulse?",
-        "answer": "Often yes — 🦹 carries the nature fill visual and reads in modern usage as nature coded. The literal-shape-versus-nature-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🦹 and its skin-tone versions?",
+        "answer": "The tone variants under supervillain show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "supervillain-pulse pulse for the partner plan, full nature energy 🦹",
-      "interpretation": "Partner nature romance. Mirror with another 🦹, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the nature chaos 🦹",
-      "interpretation": "Public nature flex. Mirror with another 🦹, a sentence that joins the nature energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "nature wild-marker with the family, full supervillain-pulse pulse energy 🦹",
-      "interpretation": "Family nature reveal. Mirror with another 🦹, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "supervillain-pulse pulse today, full nature energy 🦹",
-      "interpretation": "Friend nature reveal. Mirror with another 🦹, a sentence that joins the nature energy, or a heart emoji that matches."
+      "message": "announcing a villain era after a messy week 🦹",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as performing villainy, mischief, or a villain era, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "nature coded sprint today, full supervillain-pulse pulse energy 🦹",
-      "interpretation": "Work nature moment. Mirror with another 🦹, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "playing the bad guy when plans fall through 🦹",
+      "interpretation": "A handover or a sign-off in a channel. It reads as performing villainy, mischief, or a villain era, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🦹",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "announcing a villain era after a messy week 🦹",
+      "interpretation": "Family threads are where this lands most naturally. The reading is performing villainy, mischief, or a villain era, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🦹",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }

@@ -7,70 +7,89 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Human nose emoji.",
-  "tldr": "Smell! Sniffing or being nosy.",
+  "baseMeaning": "A nose emoji: a bare nose with nostrils, floating with no face attached.",
+  "tldr": "Nose 👃: suspicion, or a sharp sense of smell.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — suspicion, or a sharp sense of smell — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👃",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents nose or smelling.",
-      "example": "Something smells good 👃",
+      "meaning": "The plain reading: a bare nose with nostrils, floating with no face attached. Nothing hidden in the drawing itself.",
+      "example": "Flagging that someone is being nosy 👃",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being nosy or suspicious.",
-      "example": "I smell drama 👃",
+      "meaning": "Borrowed as a reaction, it reads as suspicion, or a sharp sense of smell.",
+      "example": "Saying you can smell a lie coming 👃",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Pretending to sniff something out.",
-      "example": "Smells fishy 👃",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Intuition or sensing something.",
-      "example": "Something's off 👃",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: suspicion, or a sharp sense of smell, said without believing any of it.",
+      "example": "sure, sure 👃",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for sniffing-out-coded drama and adult-coded intuition tweets. The nose is the visible 'I smell something' default across close-friends replies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in aesthetic-coded smell shares and gossip-coded stories. The nose reads as the visible nosy-coded default on story overlays and reply captions."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded suspicious clips. The nose pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal sniffing default."
+      "note": "In TikTok comments 👃 is the fastest way to answer a video without typing anything. The gesture stays suspicion, or a sharp sense of smell, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "WHATSAPP",
-      "note": "Group-chat reaction to gossip-coded content. The nose is the default 'I smell tea' tag among close-friends groups."
+      "platform": "SLACK",
+      "note": "In Slack 👃 lands in channels where the sentence was supposed to be shorter. It is usually standing in for flagging that someone is being nosy, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 👃 is a staple of the reaction bar, which is why it so often arrives stripped of its suspicion, or a sharp sense of smell reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👃 does most of its work in replies, where it tags a message like saying you can smell a lie coming. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Nose 👃 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like flagging that someone is being nosy is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 👃 in the most straightforward way, on family and group messages, and are less likely to hear the suspicion, or a sharp sense of smell subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Smelling drama."
+      "note": "Gen Z reaches for 👃 to do the work of flagging that someone is being nosy, and treats the neutral drawing as the default rather than as a choice. What they hear first is suspicion, or a sharp sense of smell."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Nosy or suspicious."
+      "note": "Millennials tend to send 👃 deliberately, usually for something like saying you can smell a lie coming, and they read suspicion, or a sharp sense of smell into it more often than the older cohorts do."
     },
     {
-      "generation": "BOOMER",
-      "note": "Nose symbol."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 👃 literally, as the picture of the gesture itself, and is less likely to read suspicion, or a sharp sense of smell into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👃 and 🐽 get swapped",
+      "description": "The Pig Nose 🐽 is one tap away in every picker, and it does not carry the same reading — the pig snout is animal and comic, the human nose signals suspicion — people swap them for jokes about smell. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👃 as something else fairly often: it gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👃 Nose Emoji Meaning",
-  "seoDescription": "Learn what the Nose emoji 👃 really means.",
+  "seoTitle": "👃 Nose Emoji Meaning and How to Use It",
+  "seoDescription": "What 👃 means when people send it, the nose reading, and how to answer it without guessing.",
   "skinToneVariations": [
     "nose-light",
     "nose-medium-light",
@@ -79,56 +98,60 @@
     "nose-dark"
   ],
   "longForm": {
-    "overview": "The 👃 Nose emoji was added in Unicode 6 (2010) and is drawn as a human nose with visible nostrils, presented in profile. The visual cue reads instantly as smell-coded reference, sniffing-out default, or the visible 'I am being nosy' tag. By 2026 👃 has become the go-to emoji for the smell-coded reaction, the visible nosy default, and the intuition-coded reaction in close-friends and family chats.\n\nIn modern chat 👃 does very specific work. People send it as a literal smell-coded reference, as the visible 'I am sniffing out gossip' tag, or as the intuition-coded default. The nose with visible nostrils is the visual cue that the read is nosy-coded. Writers should pick 👃 when the read is sniffing-out energy or visible 'I smell drama' tag, and avoid it when the read is just a face feature — 👃 itself remains the body-part emoji.",
-    "howPeopleUseIt": "👃 lands on a friend's gossip message, in a work channel where someone is signaling intuition-coded energy, and in a dating-app DM where the sender is signaling playful suspicion. The nose with visible nostrils anchors the read.\n\nIn close-friends chats 👃 reads as the universal nosy default and the visible 'I am sniffing it out' tag. On X the emoji punctuates intuition-coded and gossip tweets. The emoji pairs with 👀 for the layered nosy-and-side-eye stack and with 🍵 for the layered sniffing-out-and-tea stack.",
-    "whenNotToUse": "Skip 👃 in any context where the read is casual conversation only. The nose implies sniffing-out-coded, not just idle chat. Avoid 👃 in formal contexts where the nosy-coded read lands as gossipy.",
-    "howToReply": "If a friend sends 👃 on a sniffing-out-coded message, mirror with another 👃 or 👀 to send matching energy. The nosy chain reads as solidarity.\n\nIf 👃 lands as the intuition default, reply with another 👃 or 🔍. And if you want to send 👃 yourself, pair it with the moment so the sniffing-coded read is clear.",
+    "overview": "What follows is the useful part: the two things the nose is actually for (flagging that someone is being nosy and saying you can smell a lie coming), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 👃 is a bare nose with nostrils, floating with no face attached, added in Unicode 6.0 and filed under body-parts. What it does in a message is carry a meaning — here, suspicion, or a sharp sense of smell — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🐽 Pig Nose: the pig snout is animal and comic, the human nose signals suspicion — people swap them for jokes about smell. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are flagging that someone is being nosy and saying you can smell a lie coming. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 👃 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"suspicion, or a sharp sense of smell\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 👃 is easy to send when 🐽 Pig Nose was meant — the pig snout is animal and comic, the human nose signals suspicion — people swap them for jokes about smell. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"suspicion, or a sharp sense of smell\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 👃 gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and nose gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 👃 next to somebody's performance, or in a first note to a client, and suspicion, or a sharp sense of smell is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 👃 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the nose was meant, read the line above it instead. 👃 gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like flagging that someone is being nosy sent with 👃 on its own is a coin toss between suspicion, or a sharp sense of smell and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
+        "question": "What does 👃 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 👃 and its skin-tone versions?",
+        "answer": "The tone variants under nose show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 👃 mean in text?",
-        "answer": "👃 means smell-coded reference, sniffing-out energy, or the visible 'I am being nosy' reaction. The nose with visible nostrils is the visual cue that the read is nosy-coded."
+        "answer": "👃 is used for suspicion, or a sharp sense of smell. The drawing shows a bare nose with nostrils, floating with no face attached, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 👃 flirty?",
-        "answer": "Rarely. 👃 usually reads as nosy-coded rather than flirty; in a dating thread it can read as 'I am sniffing things out' tag content."
+        "question": "What is the difference between 👃 and 🐽?",
+        "answer": "The pig snout is animal and comic, the human nose signals suspicion — people swap them for jokes about smell. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 👃 mean from a girl?",
-        "answer": "From a girl or anyone, 👃 carries the same nosy-coded read. There is no gendered meaning; the emoji works the same regardless."
-      },
-      {
-        "question": "What does 👃 mean on Instagram?",
-        "answer": "On Instagram, 👃 is the default sticker on gossip-coded captions and aesthetic-coded nosy story overlays."
+        "question": "Is 👃 rude?",
+        "answer": "It can be. The gesture is meant as suspicion, or a sharp sense of smell, but it gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "what are you two up to 👃",
-      "interpretation": "Friend nosy share. Mirror with another 👃 or 👀 so the sniffing chain reads back."
-    },
-    {
-      "setting": "work",
-      "message": "something's off with this report 👃",
-      "interpretation": "Work-coded intuition share. Mirror with a clarifying sentence — 👃 can land as off-topic in work channels."
-    },
-    {
-      "setting": "dating",
-      "message": "you smell nice today 👃",
-      "interpretation": "Dating-coded flirty share. Mirror with 👃 or 🥰 so the warm chain reads back."
-    },
-    {
       "setting": "family",
-      "message": "what is grandma cooking 👃",
-      "interpretation": "Family-coded smell share. Mirror with 👃 or 🍪 so the family-coded chain reads back."
+      "message": "flagging that someone is being nosy 👃",
+      "interpretation": "Family threads are where this lands most naturally. The reading is suspicion, or a sharp sense of smell, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "I smell a plot twist 👃",
-      "interpretation": "Public adult-coded intuition share. Mirror with another 👃 or 🍿 so the solidarity chain reads back."
+      "message": "that is the whole post 👃",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
+      "setting": "friends",
+      "message": "flagging that someone is being nosy 👃",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as suspicion, or a sharp sense of smell, and matching it with the same emoji is a normal reply."
+    },
+    {
+      "setting": "work",
+      "message": "saying you can smell a lie coming 👃",
+      "interpretation": "A handover or a sign-off in a channel. It reads as suspicion, or a sharp sense of smell, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👃",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken to mean a literal sniff or a smell, when the floating nose with no face is a stock cartoon for nosiness — the snooping-dog pose repurposed for people more easily here than it does in a work thread, because the thread is thinner."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26"
 }

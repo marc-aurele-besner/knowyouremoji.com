@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "12.0",
-  "baseMeaning": "A robotic or prosthetic arm.",
-  "tldr": "Strength, cyborg vibes, or disability representation.",
+  "baseMeaning": "A drawing of a segmented metal robotic arm ending in a mechanical hand, used as signalling strength, cyborg capability, or a prosthetic limb.",
+  "tldr": "🦾 Mechanical Arm: signalling strength, cyborg capability, or a prosthetic limb.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Referencing prosthetics or mechanical limbs.",
-      "example": "Prosthetic technology is amazing 🦾",
+      "meaning": "The plain reading: a segmented metal robotic arm ending in a mechanical hand. Nothing hidden in the drawing itself.",
+      "example": "Announcing a new prosthetic or assistive device 🦾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being strong or unstoppable.",
-      "example": "Nothing can stop me now 🦾",
+      "meaning": "Borrowed as a reaction, it reads as signalling strength, cyborg capability, or a prosthetic limb.",
+      "example": "Joking a deadline is too much for one human arm 🦾",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Showing strength or resilience.",
-      "example": "Bounced back stronger 🦾",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as signalling strength, cyborg capability, or a prosthetic limb, softened by whatever sentence sits next to it.",
+      "example": "not me 🦾",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Cyborg or superhuman energy.",
-      "example": "After three coffees 🦾",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — signalling strength, cyborg capability, or a prosthetic limb — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🦾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors built-different-coded tweets, cyborg-thread flexes, and 'mechanical-arm-coded' strength posts where the metal-segment cue signals cyborg-coded register."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Mechanical Arm 🦾 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a new prosthetic or assistive device is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🦾 exactly as the phone system does, but the keyboard keeps it in the body-parts section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like joking a deadline is too much for one human arm."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on built-different-coded flat-lays, cyborg-story reposts, and 'mechanical-arm-coded' aesthetic posts where the visible metal carries cyborg-coded charm."
+      "note": "On Instagram 🦾 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as signalling strength, cyborg capability, or a prosthetic limb under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in built-different transitions, cyborg clips, and 'mechanical-arm-coded' reaction content where the metal cue signals cyborg-coded register."
+      "note": "In TikTok comments 🦾 is the fastest way to answer a video without typing anything. The gesture stays signalling strength, cyborg capability, or a prosthetic limb, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Surfaces on friend 'built-different-coded' check-ins, cyborg group chats, and mechanical-arm reactions where the metal cue matches the cyborg-coded moment."
+      "platform": "SLACK",
+      "note": "In Slack 🦾 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a new prosthetic or assistive device, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 🦾 on built-different-coded threads, cyborg memes, and metal-arm fits where the metal-segment cue matches the modern cyborg-coded register."
+      "note": "Gen Z reaches for 🦾 to do the work of announcing a new prosthetic or assistive device, and treats the neutral drawing as the default rather than as a choice. What they hear first is signalling strength, cyborg capability, or a prosthetic limb."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the mechanical arm on cyborg-coded nostalgia, sci-fi-coded humor, and 'built-different-coded' jokes where the millennial prosthetic memory still resonates."
+      "note": "Millennials tend to send 🦾 deliberately, usually for something like joking a deadline is too much for one human arm, and they read signalling strength, cyborg capability, or a prosthetic limb into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🦾 on built-different-coded jokes, cyborg reveals, and metal-arm flexes where the metal cue reads as cyborg-coded reference."
+      "note": "Gen X mostly uses 🦾 literally, as the picture of the gesture itself, and is less likely to read signalling strength, cyborg capability, or a prosthetic limb into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🦾 as a literal prosthetic and pastes it onto robot references without parsing the modern 'cyborg-coded' or built-different-coded subtext."
+      "note": "Older senders use 🦾 in the most straightforward way, on family and group messages, and are less likely to hear the signalling strength, cyborg capability, or a prosthetic limb subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🦾 and 🦿 get swapped",
+      "description": "The Mechanical Leg 🦿 is one tap away in every picker, and it does not carry the same reading — the leg version reads as walking and mobility, the arm version reads as grip, tooling and upper-body work. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🦾 as something else fairly often: it gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🦾 Mechanical Arm Emoji Meaning - What Does 🦾 Really Mean?",
-  "seoDescription": "Learn what the mechanical arm emoji 🦾 really means in texts and DMs. Built-different-coded flex, cyborg charm, and metal-arm energy.",
+  "seoDescription": "What the mechanical arm emoji 🦾 means in text: signalling strength, cyborg capability, or a prosthetic limb. Includes the misread it invites (read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength) and how to reply.",
   "skinToneVariations": [
     "mechanical-arm-light",
     "mechanical-arm-medium-light",
@@ -83,60 +98,60 @@
     "mechanical-arm-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🦾 is the emoji of mechanical-arm-coded built-different flex — a metallic arm with visible segment joints, the iconography of the modern cyborg tradition, prosthetic-coded sci-fi charm, and the universal built-different tag. Where 💪 reads as muscle-coded strength-build and 🦾 reads as mechanical-arm-coded cyborg, 🦾 captures the moment when the sender wants to communicate cyborg-coded energy — a 'built-different-coded 🦾' cyborg flex or a 'sci-fi-coded 🦾' prosthetic reveal. The metal-segment cue borrows from the universal cyborg tradition and the modern built-different-coded aesthetic, which is exactly why the emoji reads as cyborg-coded rather than literal muscle.\n\nIn real-world usage 🦾 lives in the spaces where the sender wants to communicate cyborg-coded energy. A friend sends it on a 'sci-fi-coded 🦾' reveal. A built-different-coded chat partner sends it on a 'cyborg-coded 🦾' coded message. A coworker sends it on a 'sci-fi-coded flex 🦾' built-different-coded flex. The metal-segment cue is what makes the emoji feel cyborg-coded — it is not just 'arm,' it is 'mechanical-arm-coded built-different flex.'\n\nWhat separates 🦾 from the rest of the body-part-emoji family is the cyborg-coded register. The emoji is not saying 'muscle' (💪), 'hand' (✋), or 'leg' (🦵). It is saying 'mechanical-arm-coded built-different flex,' which carries a specific metal-segment tradition. That is why 🦾 travels especially well on cyborg-coded flexes, built-different-coded jokes, sci-fi reveals, and any context where the sender wants the message to land with prosthetic-coded energy.",
-    "howPeopleUseIt": "🦾 shows up as the closer on a 'sci-fi-coded 🦾' cyborg message ('built-different 🦾'), the punctuation on a 'cyborg-coded 🦾' prosthetic reveal, and the softener on a 'built-different-coded flex 🦾' coded message. It pairs naturally with sentences that name the cyborg-coded energy — 'sci-fi-coded,' 'cyborg-coded,' 'built-different-coded' — and sits beautifully on prosthetic flexes and sci-fi reveals.\n\nIn group chats 🦾 anchors 'mechanical-arm-coded moment' threads, built-different reveals, and 'cyborg-coded flex 🦾' coded tags where the metal cue matches the register. On Instagram it lands on cyborg-coded flat-lays and sci-fi stories. On TikTok it travels in built-different reveals and 'sci-fi-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'cyborg-tonight 🦾' partner message uses the metal cue to communicate built-different-coded soft-coded romance. Across all of these surfaces the rule is the same: the more cyborg-coded the moment, the more natural 🦾 feels.",
-    "whenNotToUse": "Skip 🦾 in conflict-coded or aggressive-coded contexts. The built-different-coded metal cue is the wrong tone for any conversation where the moment is sharp. A quiet sentence that acknowledges the moment is a better fit.\n\nAvoid 🦾 in chaos or hype-coded contexts where the cyborg-coded rule feels off. A 'sci-fi-coded 🦾' message works for prosthetic reveal; for hype moments use 🔥 or a sentence.\n\nSkip 🦾 when you want to communicate natural or organic-coded energy. The built-different register is too metal-segment-coded for flesh references; use 💪 when the arm needs to be natural.",
-    "howToReply": "If someone sends 🦾, the cleanest mirror is another 🦾, 🤖, or a sentence that joins the cyborg-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'built-different for sure' or 'cyborg-coded together.' If the metal cue feels too sci-fi-coded, reply with a softer emoji (💪 or 🦿) that signals strength without matching the prosthetic-coded volume.\n\nWhen 🦾 lands as a partner 'cyborg-tonight 🦾' check-in, mirror with another 🦾, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'built-different-coded flex 🦾' coded message, mirror with another 🦾, a sentence that joins the sci-fi energy, or a heart emoji that matches.",
+    "overview": "🦾 is the mechanical arm: a segmented metal robotic arm ending in a mechanical hand. It arrived in Unicode 12.0, and it lives in the body-parts part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as signalling strength, cyborg capability, or a prosthetic limb. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🦿 Mechanical Leg: the leg version reads as walking and mobility, the arm version reads as grip, tooling and upper-body work. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same mechanical arm exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the mechanical arm emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are announcing a new prosthetic or assistive device and joking a deadline is too much for one human arm, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 🦾 does is announcing a new prosthetic or assistive device. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is joking a deadline is too much for one human arm. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 🦾 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 🦾 goes back on its own. It reads as \"signalling strength, cyborg capability, or a prosthetic limb\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 🦾 when you mean 🦿 Mechanical Leg. The leg version reads as walking and mobility, the arm version reads as grip, tooling and upper-body work. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 🦾 in a thread about a person reads as \"signalling strength, cyborg capability, or a prosthetic limb\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and mechanical arm gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 🦾 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of signalling strength, cyborg capability, or a prosthetic limb as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 🦾. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the mechanical arm was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like announcing a new prosthetic or assistive device almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant signalling strength, cyborg capability, or a prosthetic limb or something sharper.",
     "faqs": [
       {
+        "question": "What does 🦾 mean in text?",
+        "answer": "🦾 is used for signalling strength, cyborg capability, or a prosthetic limb. The drawing shows a segmented metal robotic arm ending in a mechanical hand, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🦾 and 🦿?",
+        "answer": "The leg version reads as walking and mobility, the arm version reads as grip, tooling and upper-body work. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🦾 rude?",
+        "answer": "It can be. The gesture is meant as signalling strength, cyborg capability, or a prosthetic limb, but it gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🦾 mean from a guy?",
-        "answer": "From a guy, 🦾 signals built-different-coded flex or 'cyborg-coded 🦾' prosthetic reveal. The metal-segment cue reads as cyborg-coded rather than literal muscle, so it tends to land on partner check-ins, family-coded sci-fi messages, and 'built-different-coded flex' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🦾 flirty?",
-        "answer": "It can be. In a partner context 🦾 can read as built-different-coded soft-coded romance — 'cyborg-tonight 🦾' is a soft-coded sci-fi check-in. On its own the emoji is more cyborg-coded than romantic."
-      },
-      {
-        "question": "What is the difference between 🦾 and 💪?",
-        "answer": "💪 is the muscle — the cue is strength-coded natural-build, the universal 'flex' energy. 🦾 is the mechanical arm — the cue is built-different-coded flex, the 'cyborg-coded' prosthetic energy. Use 💪 when the moment is organic-coded; use 🦾 when the moment is cyborg-coded."
-      },
-      {
-        "question": "Is 🦾 for sci-fi moments?",
-        "answer": "Yes — 🦾 is one of the most popular cyborg-coded emojis. The metal cue is a natural fit for prosthetic reveals, built-different messages, and partner 'sci-fi-coded flex' check-ins."
-      },
-      {
-        "question": "Does 🦾 mean built-different?",
-        "answer": "Often yes — 🦾 carries metal-segment-coded cyborg charm and reads in modern usage as sci-fi-coded. The literal-prosthetic-versus-cyborg-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🦾 and its skin-tone versions?",
+        "answer": "The tone variants under mechanical arm show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "cyborg tonight, full sci-fi-coded energy 🦾",
-      "interpretation": "Partner built-different-coded romance. Mirror with another 🦾, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the prosthetic chaos 🦾",
-      "interpretation": "Public cyborg-coded flex. Mirror with another 🦾, a sentence that joins the sci-fi energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "built-different moment with the family, full sci-fi-coded energy 🦾",
-      "interpretation": "Family prosthetic-coded reveal. Mirror with another 🦾, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "cyborg today, full built-different flex 🦾",
-      "interpretation": "Friend sci-fi-coded reveal. Mirror with another 🦾, a sentence that joins the prosthetic energy, or a heart emoji that matches."
+      "message": "announcing a new prosthetic or assistive device 🦾",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as signalling strength, cyborg capability, or a prosthetic limb, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "sci-fi-coded flex at work today, full cyborg mode 🦾",
-      "interpretation": "Work built-different-coded moment. Mirror with another 🦾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "joking a deadline is too much for one human arm 🦾",
+      "interpretation": "A handover or a sign-off in a channel. It reads as signalling strength, cyborg capability, or a prosthetic limb, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🦾",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets read as a superhero power fantasy when it is more often about hardware and access, so the metal arm lands on engineering rather than superhuman strength more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "announcing a new prosthetic or assistive device 🦾",
+      "interpretation": "Family threads are where this lands most naturally. The reading is signalling strength, cyborg capability, or a prosthetic limb, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🦾",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ]
 }
