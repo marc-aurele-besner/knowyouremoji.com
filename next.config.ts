@@ -1,6 +1,46 @@
 import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs/config';
 
+/** The five Fitzpatrick tones, in swatch order. */
+const SKIN_TONES = ['light', 'medium-light', 'medium', 'medium-dark', 'dark'] as const;
+
+/**
+ * Emoji pages that were removed because another page already covered the same
+ * glyph, and now point at the page that took over.
+ *
+ * The catalog used to publish several slugs for one drawing — a raised back of
+ * hand under two names, a person swimming under three, and a set of tone
+ * variants that were filed under a family whose base page showed a different
+ * emoji altogether. Every one of those pairs was a second page saying the
+ * same thing, so the duplicates were dropped and their addresses redirected.
+ */
+const EMOJI_REDIRECTS: Array<{ source: string; destination: string }> = [
+  // 🤚 was published twice, as `raised-back-hand` and `raised-back-of-hand`.
+  { source: '/emoji/raised-back-of-hand', destination: '/emoji/raised-back-hand' },
+  // 👵 was published twice, as `older-woman` and `old-woman`.
+  { source: '/emoji/old-woman', destination: '/emoji/older-woman' },
+  // 🤲 lives on `palms-up-together`; `palms-together` was the second copy.
+  { source: '/emoji/palms-together', destination: '/emoji/palms-up-together' },
+  { source: '/emoji/backhand-up', destination: '/emoji/palms-up-together' },
+  // 🖐️ lives on `hand-with-fingers-splayed`.
+  { source: '/emoji/stop-hand', destination: '/emoji/hand-with-fingers-splayed' },
+  // 🏊 lives on `person-swimming`.
+  { source: '/emoji/swimmer', destination: '/emoji/person-swimming' },
+  { source: '/emoji/swimming', destination: '/emoji/person-swimming' },
+  // 🚴 lives on `person-biking`.
+  { source: '/emoji/bicyclist', destination: '/emoji/person-biking' },
+  ...SKIN_TONES.flatMap((tone) => [
+    {
+      source: `/emoji/backhand-up-${tone}`,
+      destination: `/emoji/hand-with-fingers-splayed-${tone}`,
+    },
+    { source: `/emoji/stop-hand-${tone}`, destination: `/emoji/raised-hand-${tone}` },
+    { source: `/emoji/palms-together-${tone}`, destination: '/emoji/palms-up-together' },
+    { source: `/emoji/swimmer-${tone}`, destination: `/emoji/person-swimming-${tone}` },
+    { source: `/emoji/bicyclist-${tone}`, destination: `/emoji/person-biking-${tone}` },
+  ]),
+];
+
 const nextConfig: NextConfig = {
   // Bundle optimization: Enable modular imports for large libraries
   modularizeImports: {
@@ -31,6 +71,15 @@ const nextConfig: NextConfig = {
   experimental: {
     // Optimize package imports for better tree-shaking
     optimizePackageImports: ['@radix-ui/react-icons', 'posthog-js'],
+  },
+
+  // Pages that were removed as duplicates now point at the page that replaced them.
+  async redirects() {
+    return EMOJI_REDIRECTS.map(({ source, destination }) => ({
+      source,
+      destination,
+      permanent: true,
+    }));
   },
 
   images: {
