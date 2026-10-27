@@ -7,131 +7,151 @@
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "13.0",
-  "baseMeaning": "A man, often depicted with neutral expression.",
-  "tldr": "Man-coded default, 'guy reply' register, or gender-coded neutral.",
+  "baseMeaning": "A man emoji: a smiling man with short blond hair, cropped at the shoulders.",
+  "tldr": "Man 👨: referring to a man, often a third party.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — referring to a man, often a third party — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👨",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "A man or male adult.",
-      "example": "Saw a man 👨",
+      "meaning": "The plain reading: a smiling man with short blond hair, cropped at the shoulders. Nothing hidden in the drawing itself.",
+      "example": "Mentioning a friend, a dad, or a coworker 👨",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Man-coded default or 'guy reply' register.",
-      "example": "Guy reply 👨",
+      "meaning": "Borrowed as a reaction, it reads as referring to a man, often a third party.",
+      "example": "Replying to a thread about a man 👨",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Cozy-coded partner check-in or 'thinking of you' moment.",
-      "example": "Thinking of you 👨",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Coworker-coded team energy or 'meeting him' moment.",
-      "example": "Meeting him 👨",
+      "context": "IRONIC",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: referring to a man, often a third party, said without believing any of it.",
+      "example": "sure, sure 👨",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors man-coded threads, 'guy reply' replies, and 'mood 👨' reveals where the man cue matches the default register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on default-coded story reposts, neutral-coded photo posts, and 'mood 👨' reveals where the man cue reads as gender-coded comfort."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Travels in man-coded transitions, 'thinking of you' reveals, and reaction-content where the man cue signals default-coded energy."
+      "note": "In TikTok comments 👨 is the fastest way to answer a video without typing anything. The gesture stays referring to a man, often a third party, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 👨 lands in channels where the sentence was supposed to be shorter. It is usually standing in for mentioning a friend, a dad, or a coworker, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'thinking of you' check-ins, family-coded default messages, and group chats where the man cue matches the moment."
+      "note": "On Discord 👨 is a staple of the reaction bar, which is why it so often arrives stripped of its referring to a man, often a third party reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👨 does most of its work in replies, where it tags a message like replying to a thread about a man. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Man 👨 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like mentioning a friend, a dad, or a coworker is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 👨 in the most straightforward way, on family and group messages, and are less likely to hear the referring to a man, often a third party subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Uses 👨 heavily on man-coded threads, 'guy reply' moments, and default-coded reveals where the man cue matches the gender register."
+      "note": "Gen Z reaches for 👨 to do the work of mentioning a friend, a dad, or a coworker, and treats the neutral drawing as the default rather than as a choice. What they hear first is referring to a man, often a third party."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the man on partner 'thinking of you' check-ins, default-coded comfort moments, and family default messages where the universal adult cue fits."
+      "note": "Millennials tend to send 👨 deliberately, usually for something like replying to a thread about a man, and they read referring to a man, often a third party into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on default-coded messages and family reveals, treating the man as literal adult energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal man and sends it on family and grandchild-coded messages without parsing the modern 'guy reply' subtext."
+      "note": "Gen X mostly uses 👨 literally, as the picture of the gesture itself, and is less likely to read referring to a man, often a third party into it than younger senders are."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as gender-binary-coded in non-binary contexts",
-      "description": "Sending 👨 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome can land as exclusionary-coded. Be aware of the personal-coded reading when sending to non-binary audiences.",
+      "title": "👨 and 🧑 get swapped",
+      "description": "The Person 🧑 is one tap away in every picker, and it does not carry the same reading — the neutral person covers anyone, the man emoji is one man and gets read as gendered by default. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👨 as something else fairly often: it gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "👨 Man Emoji Meaning - What Does 👨 Really Mean?",
-  "seoDescription": "Learn what the Man emoji 👨 really means in texts and DMs. Man-coded default, 'guy reply' register, or gender-coded neutral.",
+  "seoTitle": "👨 Man Emoji Meaning and How to Use It",
+  "seoDescription": "What 👨 means when people send it, the man reading, and how to answer it without guessing.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👨 is the emoji of man-coded default - a man, the iconography of 'guy reply,' default-coded comfort, and 'thinking of you' register. Where 👶 reads as baby-coded softness and 👵 reads as grandma-coded wisdom, 👨 captures the moment when the sender wants to communicate default-coded intimacy - a 'thinking of you 👨' partner moment or a 'guy reply 👨' default reveal. The man cue borrows from the universal adult tradition and the modern 'guy reply' aesthetic, which is exactly why the emoji reads as default-coded rather than literal adult.\n\nIn real-world usage 👨 lives in the spaces where the sender wants to communicate default-coded comfort. A partner sends it on a 'thinking of you 👨' check-in. A friend sends it on a 'guy reply 👨' reveal. A coworker sends it on a 'meeting him 👨' work message. The man cue is what makes the emoji feel default-coded - it is not just 'man,' it is 'man-coded guy-reply.'\n\nWhat separates 👨 from the rest of the people-emoji family is the guy-reply register. The emoji is not saying 'baby softness' (👶), 'granny wisdom' (👵), or 'kid play' (🧒). It is saying 'man-coded default,' which carries a specific default-coded charm. That is why 👨 travels especially well on partner 'thinking of you' check-ins, family default messages, and any context where the sender wants the message to land with default-coded comfort.",
-    "howPeopleUseIt": "👨 shows up as the closer on a 'thinking of you tonight' partner message ('thinking of you tonight 👨'), the punctuation on a 'guy reply 👨' default-coded reveal ('guy reply 👨'), and the softener on a 'meeting him 👨' team check-in. It pairs naturally with sentences that name the man-coded default - 'thinking of you,' 'guy reply,' 'meeting him' - and sits beautifully on partner 'thinking of you' check-ins and family default messages.\n\nIn group chats 👨 anchors 'man appreciation' threads, default-coded moments, and 'mood 👨' reveals where the man cue matches the moment. On Instagram it lands on default-coded story reposts and neutral-coded photo posts. On TikTok it travels in man-coded transitions and 'mood 👨' reveals.\n\nThe emoji also works in dating contexts. A 'thinking of you tonight 👨' partner message uses the man cue to communicate default-coded romance. Across all of these surfaces the rule is the same: the more default-coded the comfort, the more natural 👨 feels.",
-    "whenNotToUse": "Skip 👨 in sympathy, condolence, or break-up contexts. The man-coded default cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👨 in non-binary partner or work contexts where the gender-binary-coded reading is unwelcome - the exclusionary-coded register can land as off. Stick to a sentence or a clear message when sending to non-binary audiences.\n\nSkip 👨 when you want to communicate specific identity. The default-coded register is too neutral for explicit identity moments; use specific identity pronouns or a clearer message when the moment is identity-specific.",
-    "howToReply": "If someone sends 👨, the cleanest mirror is another 👨, 👩, or a sentence that joins the default-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'thinking of you right back' or 'guy reply too.' If the man cue feels too default-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the default volume.\n\nWhen 👨 lands as a partner 'thinking of you' check-in, mirror with another 👨, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'guy reply 👨' default reveal, mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches.",
+    "overview": "What follows is the useful part: the two things the man is actually for (mentioning a friend, a dad, or a coworker and replying to a thread about a man), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 👨 is a smiling man with short blond hair, cropped at the shoulders, added in Unicode 13.0 and filed under person. What it does in a message is carry a meaning — here, referring to a man, often a third party — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧑 Person: the neutral person covers anyone, the man emoji is one man and gets read as gendered by default. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are mentioning a friend, a dad, or a coworker and replying to a thread about a man. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 👨 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"referring to a man, often a third party\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 👨 is easy to send when 🧑 Person was meant — the neutral person covers anyone, the man emoji is one man and gets read as gendered by default. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"referring to a man, often a third party\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 👨 gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and man gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 👨 next to somebody's performance, or in a first note to a client, and referring to a man, often a third party is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 👨 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the man was meant, read the line above it instead. 👨 gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like mentioning a friend, a dad, or a coworker sent with 👨 on its own is a coin toss between referring to a man, often a third party and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
         "question": "What does 👨 mean from a guy?",
-        "answer": "From a guy, 👨 signals man-coded default - 'guy reply' or 'thinking of you.' The man cue reads as default-coded rather than literal adult, so it tends to land on partner 'thinking of you' check-ins, family default messages, and default-coded reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 👨 flirty?",
-        "answer": "It can be. In a partner context 👨 can read as default-coded romance - 'thinking of you tonight 👨' is a soft-coded romantic check-in. On its own the emoji is more default-coded than romantic."
+        "question": "What is the difference between 👨 and its skin-tone versions?",
+        "answer": "The tone variants under man show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 👨 and 👩?",
-        "answer": "👩 is the woman - the cue is woman-coded default, the 'woman-coded' default-coded woman-coded energy. 👨 is the man - the cue is man-coded default, the 'guy reply' man-coded default charm. Use 👩 when the moment is woman-specific; use 👨 when the moment is man-specific."
+        "question": "What does 👨 mean in text?",
+        "answer": "👨 is used for referring to a man, often a third party. The drawing shows a smiling man with short blond hair, cropped at the shoulders, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 👨 for 'guy reply' moments?",
-        "answer": "Yes - 👨 is one of the most common default-coded emojis. The man cue is a natural fit for 'guy reply' moments, default-coded reveals, and partner 'thinking of you' check-ins."
+        "question": "What is the difference between 👨 and 🧑?",
+        "answer": "The neutral person covers anyone, the man emoji is one man and gets read as gendered by default. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 👨 rude?",
+        "answer": "It can be. The gesture is meant as referring to a man, often a third party, but it gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "thinking of you tonight, full man romance 👨",
-      "interpretation": "Partner default-coded romance. Mirror with another 👨, a heart emoji, or a sentence that escalates the romance."
+      "setting": "family",
+      "message": "mentioning a friend, a dad, or a coworker 👨",
+      "interpretation": "Family threads are where this lands most naturally. The reading is referring to a man, often a third party, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "cannot handle this whole thread, the guy reply 👨",
-      "interpretation": "Public man appreciation. Mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "meeting him with the family, full man mode 👨",
-      "interpretation": "Family default-coded reveal. Mirror with another 👨, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 👨",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "guy reply today, full default energy 👨",
-      "interpretation": "Friend default-coded reveal. Mirror with another 👨, a sentence that joins the default energy, or a heart emoji that matches."
+      "message": "mentioning a friend, a dad, or a coworker 👨",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as referring to a man, often a third party, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "meeting him today, full man mode 👨",
-      "interpretation": "Work coworker-coded moment. Mirror with another 👨, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "replying to a thread about a man 👨",
+      "interpretation": "A handover or a sign-off in a channel. It reads as referring to a man, often a third party, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👨",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths more easily here than it does in a work thread, because the thread is thinner."
     }
+  ],
+  "skinToneVariations": [
+    "man-light",
+    "man-medium-light",
+    "man-medium",
+    "man-medium-dark",
+    "man-dark"
   ]
 }

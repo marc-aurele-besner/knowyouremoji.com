@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Human ear emoji.",
-  "tldr": "Listening! Hearing or paying attention.",
+  "baseMeaning": "A picture of a single human ear in side profile, the inner folds curved inward. Read in a message it lands as listening, hearing something, or paying attention.",
+  "tldr": "👂 Ear. In a chat it comes across as listening, hearing something, or paying attention.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents ear or listening.",
-      "example": "I'm all ears 👂",
+      "meaning": "The plain reading: a single human ear in side profile, the inner folds curved inward. Nothing hidden in the drawing itself.",
+      "example": "Telling a friend you are on a call listening 👂",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Listening carefully or gossip.",
-      "example": "Tell me everything 👂",
+      "meaning": "Borrowed as a reaction, it reads as listening, hearing something, or paying attention.",
+      "example": "Reacting when someone says something surprising 👂",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Pretending to listen.",
-      "example": "Oh I'm listening 👂",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as listening, hearing something, or paying attention, softened by whatever sentence sits next to it.",
+      "example": "not me 👂",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Active listening or feedback.",
-      "example": "Open to feedback 👂",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — listening, hearing something, or paying attention — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👂",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors ear-coded threads, anatomical ear-coded flex tweets, and 'ear energy' captions where the anatomical ear cue signals listen-flex register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on ear-coded flat-lays, anatomical ear-coded stories, and 'ear-coded' reveals where the anatomical ear visual carries listen-flex charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in ear-coded transitions, anatomical ear-coded clips, and 'ear-coded' reaction content where the anatomical ear cue signals listen-flex register."
+      "platform": "SLACK",
+      "note": "In Slack 👂 lands in channels where the sentence was supposed to be shorter. It is usually standing in for telling a friend you are on a call listening, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner ear-coded check-ins, friend anatomical ear-coded messages, and group chats where the 👂 cue matches the listen-flex moment."
+      "note": "On Discord 👂 is a staple of the reaction bar, which is why it so often arrives stripped of its listening, hearing something, or paying attention reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👂 does most of its work in replies, where it tags a message like reacting when someone says something surprising. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Ear 👂 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like telling a friend you are on a call listening is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 👂 exactly as the phone system does, but the keyboard keeps it in the body-parts section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like reacting when someone says something surprising."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 👂 on ear-coded threads, anatomical ear-coded memes, and ear fits where the anatomical ear cue matches the modern listen-flex register."
+      "note": "Gen Z reaches for 👂 to do the work of telling a friend you are on a call listening, and treats the neutral drawing as the default rather than as a choice. What they hear first is listening, hearing something, or paying attention."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 👂 on ear-coded nostalgia, anatomical ear-coded humor, and 'ear-coded' jokes where the millennial ear memory still resonates."
+      "note": "Millennials tend to send 👂 deliberately, usually for something like reacting when someone says something surprising, and they read listening, hearing something, or paying attention into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 👂 on ear-coded jokes, anatomical ear-coded reveals, and ear flexes where the anatomical ear cue reads as listen-flex reference."
+      "note": "Gen X mostly uses 👂 literally, as the picture of the gesture itself, and is less likely to read listening, hearing something, or paying attention into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 👂 as a literal anatomical ear and pastes it onto ear replies without parsing the modern 'ear-coded' or listen-flex subtext."
+      "note": "Older senders use 👂 in the most straightforward way, on family and group messages, and are less likely to hear the listening, hearing something, or paying attention subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👂 and 🦻 get swapped",
+      "description": "The Ear with Hearing Aid 🦻 is one tap away in every picker, and it does not carry the same reading — the hearing aid version adds the device behind the ear and gets used when hearing itself is the subject. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👂 as something else fairly often: it gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👂 Ear Emoji Meaning - What Does 👂 Really Mean?",
-  "seoDescription": "Learn what the ear emoji 👂 really means in texts and DMs. ear, listen, and the listen flex register.",
+  "seoTitle": "👂 Ear Emoji - What It Actually Means in Text",
+  "seoDescription": "👂 Ear meaning: listening, hearing something, or paying attention. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "ear-light",
     "ear-medium-light",
@@ -83,60 +98,60 @@
     "ear-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👂 is the emoji of listen-coded 'all-ears' ear reveal — a single human ear shown in profile with visible helix and earlobe, the iconography of listen-coded attention, gossip-coded tell-me-everything, and the universal 'I am all ears' tag. Where 👃 reads as nose-coded smell flex and 👁 reads as eye-coded see moment, 👂 captures the moment when the sender wants to communicate listen-coded energy — a 'I am all ears 👂' tell-me-everything-coded check-in or a 'tell me everything 👂' gossip-coded reveal. The visible-helix-and-earlobe profile visual cue borrows from the universal anatomy-textbook tradition and the modern active-listening aesthetic, which is exactly why the emoji reads as listen-coded rather than literal ear.\n\nIn real-world usage 👂 lives in the spaces where the sender wants to communicate active-listening flex. A partner sends it on a 'tell me everything 👂' listen-coded check-in. A friend sends it on a 'I am all ears 👂' gossip-coded reveal. A coworker sends it on a 'open to feedback 👂' listen-coded message. The visible-helix-and-earlobe profile visual cue is what makes the emoji feel listen-coded — it is not just 'ear,' it is 'all-ears-coded active-listening flex.'\n\nWhat separates 👂 from the rest of the body-parts family is the all-ears-coded register. The emoji is not saying 'nose smelling' (👃), 'eye seeing' (👁), or 'tongue tasting' (👅). It is saying 'listen-coded all-ears,' which carries a specific active-listening tradition. That is why 👂 travels especially well on gossip-coded reveals, listen-coded check-ins, and any context where the sender wants the message to land with all-ears-coded energy.",
-    "howPeopleUseIt": "👂 shows up as the closer on a 'tell me everything tonight 👂' partner message, the punctuation on a 'I am all ears 👂' listen-coded reveal, and the softener on a 'open to feedback 👂' gossip-coded check-in. It pairs naturally with sentences that name the listen-coded energy — 'tell me everything,' 'I am all ears,' 'open to feedback' — and sits beautifully on gossip-coded reveals and listen-coded check-ins.\n\nIn group chats 👂 anchors 'listen moment' threads, active-listening reveals, and 'tell me everything 👂' coded moments where the visible-helix-and-earlobe profile visual cue matches the register. On Instagram it lands on listen-coded flat-lays and all-ears-coded stories. On TikTok it travels in listen-coded transitions and 'I am all ears' reaction content.\n\nThe emoji also works in dating contexts. A 'tell me everything tonight 👂' partner message uses the visible-helix-and-earlobe profile visual cue to communicate listen-coded soft-coded romance. Across all of these surfaces the rule is the same: the more active-listening the moment, the more natural 👂 feels.",
-    "whenNotToUse": "Skip 👂 in sympathy, condolence, or break-up contexts. The listen-coded all-ears cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👂 in pure work formal-coded contexts where the active-listening rule feels off. A 'tell me everything 👂' message works for listen-coded reveal; for serious-coded work updates use a sentence or calmer emoji.\n\nSkip 👂 when you want to communicate hearing-impaired-coded identity. The listen-coded register is too all-ears for deaf-identity moments; use 🧏 when the deaf-culture read needs to land clean.",
-    "howToReply": "If someone sends 👂, the cleanest mirror is another 👂, 👃, or a sentence that joins the listen-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'tell me everything together' or 'I am all ears too.' If the visible-helix-and-earlobe profile visual cue feels too active-listening, reply with a softer emoji (❤️ or 🤗) that signals warmth without matching the listen volume.\n\nWhen 👂 lands as a partner 'tell me everything 👂' check-in, mirror with another 👂, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'I am all ears 👂' gossip-coded reveal, mirror with another 👂, a sentence that joins the team energy, or a face emoji that matches.",
+    "overview": "The drawing of 👂 is a single human ear in side profile, the inner folds curved inward. It arrived with Unicode 6.0 in the body-parts section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is listening, hearing something, or paying attention. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🦻 Ear with Hearing Aid: the hearing aid version adds the device behind the ear and gets used when hearing itself is the subject. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe ear also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the ear reads as listening, hearing something, or paying attention, it is most often used for telling a friend you are on a call listening or reacting when someone says something surprising, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 👂 in a work thread is reacting when someone says something surprising; 👂 in a family thread is telling a friend you are on a call listening; 👂 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 👂 is the whole reply, and it is carrying a meaning nobody wrote down — listening, hearing something, or paying attention is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Telling a friend you are on a call listening is the job the ear does most: it saves a sentence and lands faster than one would have. Reacting when someone says something surprising is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 👂 will get taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a ear gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 👂 reads as listening, hearing something, or paying attention, and formality is exactly where that reading does the most damage.\n\nLeave 🦻 Ear with Hearing Aid for the other message. The hearing aid version adds the device behind the ear and gets used when hearing itself is the subject. And keep 👂 out of threads where somebody is hurting: it reads as listening, hearing something, or paying attention there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 👂 gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement often enough that the sentence matters more than the picture.\n\nAnd do not send 👂 alone when the message underneath is supposed to be warm. A message like telling a friend you are on a call listening carries the feeling; the picture on its own leaves the reader choosing between listening, hearing something, or paying attention and something sharper.\n\nStart by reading what the 👂 was doing. If it was a reaction, react: 👂 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 👂 and its skin-tone versions?",
+        "answer": "The tone variants under ear show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 👂 mean in text?",
+        "answer": "👂 is used for listening, hearing something, or paying attention. The drawing shows a single human ear in side profile, the inner folds curved inward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 👂 and 🦻?",
+        "answer": "The hearing aid version adds the device behind the ear and gets used when hearing itself is the subject. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 👂 rude?",
+        "answer": "It can be. The gesture is meant as listening, hearing something, or paying attention, but it gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 👂 mean from a guy?",
-        "answer": "From a guy, 👂 signals listen-coded flex or 'tell me everything 👂' active-listening reveal. The visible-helix-and-earlobe profile visual cue reads as all-ears-coded rather than literal ear, so it tends to land on partner listen check-ins, friend-coded gossip threads, and 'I am all ears' coded moments."
-      },
-      {
-        "question": "Is 👂 flirty?",
-        "answer": "It can be. In a partner context 👂 can read as listen-coded soft-coded romance — 'tell me everything tonight 👂' is a soft-coded active-listening check-in. On its own the emoji is more active-listening than romantic."
-      },
-      {
-        "question": "What is the difference between 👂 and 👃?",
-        "answer": "👃 is the nose — the cue is nose-coded smell flex, the universal 'I smell something' energy. 👂 is the ear — the cue is listen-coded all-ears, the 'tell me everything' active-listening-coded energy. Use 👃 when the moment is smell flex; use 👂 when the moment is listen flex."
-      },
-      {
-        "question": "Is 👂 for gossip moments?",
-        "answer": "Yes — 👂 is one of the most popular listen-coded emojis. The visible-helix-and-earlobe profile visual cue is a natural fit for 'tell me everything' moments, gossip-coded reveals, and partner 'I am all ears' check-ins."
-      },
-      {
-        "question": "Does 👂 mean I am all ears?",
-        "answer": "Often yes — 👂 carries the visible-helix-and-earlobe profile visual cue from anatomy-textbook tradition and reads in modern usage as listen-coded all-ears. The literal-ear-versus-active-listening-coded flex split depends on the sender and the channel."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "tell me everything tonight, full listen-coded energy 👂",
-      "interpretation": "Partner active-listening romance. Mirror with another 👂, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the all-ears chaos 👂",
-      "interpretation": "Public listen-coded flex. Mirror with another 👂, a sentence that joins the active-listening energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "I am all ears with the family, full listen-coded moment 👂",
-      "interpretation": "Family active-listening reveal. Mirror with another 👂, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 👂",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "open to feedback today, full listen-coded energy 👂",
-      "interpretation": "Friend gossip-coded reveal. Mirror with another 👂, a sentence that joins the active-listening energy, or a heart emoji that matches."
+      "message": "telling a friend you are on a call listening 👂",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as listening, hearing something, or paying attention, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "all-ears today, full listen-coded flex 👂",
-      "interpretation": "Work active-listening moment. Mirror with another 👂, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "reacting when someone says something surprising 👂",
+      "interpretation": "A handover or a sign-off in a channel. It reads as listening, hearing something, or paying attention, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👂",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken as \"sounds good\" when it usually means \"I am listening to you right now\", because the ear alone signals attention rather than agreement more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "telling a friend you are on a call listening 👂",
+      "interpretation": "Family threads are where this lands most naturally. The reading is listening, hearing something, or paying attention, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

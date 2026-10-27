@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "person-fantasy",
   "unicodeVersion": "11.0",
-  "baseMeaning": "A supervillain with cape.",
-  "tldr": "Villain! Bad or mischievous.",
+  "baseMeaning": "A supervillain with cape. The medium-dark skin tone modifier is applied to the figure.",
+  "tldr": "🦹🏾 Supervillain with a medium-dark skin tone. Reached deliberately, so it reads as intentional.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a supervillain.",
-      "example": "Villain origin story 🦹",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-dark skin tone applied to the figure.",
+      "example": "🦹🏾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Being bad or mischievous.",
-      "example": "Villain era 🦹",
+      "meaning": "The gesture reads the same as the untoned version; the medium-dark skin tone makes it a chosen version rather than a defaulted one.",
+      "example": "noted, understood 🦹🏾",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Playing the bad guy.",
-      "example": "When I say no to plans 🦹",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it a deliberate statement about who is being pictured.",
+      "example": "hands off 🦹🏾",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Being the bad news bearer.",
-      "example": "Had to be the villain today 🦹",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries.",
+      "example": "roger 🦹🏾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "IMESSAGE",
-      "note": "Lands on supervillain reaction taps, blue-bubble thread replies, and tapback 'love/like/laughing' markers when the supervillain cue fits the message."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Shows up on supervillain story stickers, DM reaction replies, and reel comments where the supervillain cue reads cleanly in the captions and story reactions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in supervillain sound-cued transitions, green-screen comment replies, and stitched reaction videos where the supervillain beat lands fast."
+      "note": "On iOS 🦹🏾 renders as a single toned glyph, and the medium-dark swatch is the fourth of the five in Apple's picker — it takes an extra tap past the three before it. Because it is chosen less often, it is also the one a sender is most likely to have picked on purpose."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Frequently sent as a single supervillain reaction, attached to a green-tick delivered voice note, or stacked under a group-chat punchline for quick read."
+      "note": "WhatsApp lists the medium-dark swatch fourth and renders it correctly on current builds, but older Android versions of the app fall back to the untoned glyph. In practice the medium-dark variant is one of the tones that loses its meaning most often in forwarded messages, because the fallback removes the part that was deliberate."
     },
     {
       "platform": "TWITTER",
-      "note": "Anchors supervillain quote tweets, ratio-style thread openers, and reply-guy reaction one-liners where the supervillain cue adds the headline read."
+      "note": "Twemoji applies the tone to 🦹🏾 consistently. The medium-dark swatch holds its contrast better on a white background than the darkest one does, so it survives screenshotting and re-posting more often than the tone it sits next to."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Slack's emoji font renders the medium-dark swatch with less contrast than the phone version does, and the difference is more noticeable here than for the lighter tones. People who picked the swatch to represent themselves can look under-represented in a Slack screenshot for no reason other than the font."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji, so the modifier is preserved, but bots and integrations that rewrite messages are the weak point. The medium-dark swatch is the one most likely to arrive untoned, and the reason it was chosen in the first place is usually the reason it matters."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Villain era/arc."
+      "note": "Gen Z reads 🦹🏾 as a deliberate choice, because the swatch takes extra taps to reach. This cohort is also the most likely to notice when 🦹🏾 has been used to depict somebody else, and to read that as a statement about the person."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Being bad."
+      "note": "Millennials pick 🦹🏾 when representing themselves, and treat it as personal in a way they do not treat the lighter tones. It is also the tone most often borrowed to depict somebody else in this cohort."
     },
     {
-      "generation": "BOOMER",
-      "note": "Bad guy."
+      "generation": "GEN_X",
+      "note": "Gen X is less likely to change the tone at all, so 🦹🏾 appears mostly in messages where the sender was depicting themselves. The swatch is read as personal rather than political."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🦹🏾 is frequently used to depict somebody other than its sender, and it is the tone most often used to represent a person who is not the sender, which is where the misreading starts. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🦹🏾 Supervillain Medium-Dark Skin Tone Emoji - What Does 🦹🏾 Mean?",
-  "seoDescription": "Learn what the supervillain emoji with medium-dark skin tone 🦹🏾 means in texts and social media.",
+  "seoTitle": "🦹🏾 Supervillain Medium-Dark Skin Tone Emoji Meaning - What Does 🦹🏾 Mean?",
+  "seoDescription": "What does the supervillain emoji 🦹🏾 mean? Supervillain showing a grinning figure in a dark cape and mask, with a high collar. Covers the medium-dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "supervillain",
   "skinToneModifier": "medium-dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🦹🏾 is the supervillain emoji — the person-fantasy shorthand that bridges the literal supervillain meaning with the soft, layered reading modern chat uses it for. In its base form it stands in for supervillain as a noun, a moment, or a mood: a friend describes their afternoon, a partner leaves a supervillain reaction, a coworker flags a supervillain blocker in a thread. The visual cue is short and graphic on purpose, which is why it travels across IM, group chat, story replies, and search without losing read.\n\nIn real-world usage 🦹🏾 lives in the spaces where the sender wants to communicate supervillain energy without over-explaining. A DM opens with 🦹🏾 as a soft hello. A group chat uses 🦹🏾 as the period at the end of a supervillain story. A work thread drops 🦹🏾 to confirm a supervillain handoff. The emoji's clarity is what makes it flexible — it can carry literal supervillain, ironic supervillain, or sentimental supervillain depending on the message and the sender.\n\nWhat separates 🦹🏾 from the broader person-fantasy family is its read-speed. The visual hits in under a second, which is exactly why it works as a reaction, a caption, a sign-off, or a thread-opener. That is why 🦹🏾 travels especially well on story replies, DM reactions, and any context where the sender wants the message to land with supervillain energy in a single tap.",
-    "howPeopleUseIt": "🦹🏾 shows up in chat as a stand-alone supervillain reaction ('just 🦹🏾'), as the punctuation on a supervillain sentence ('finished the report 🦹🏾'), and as the softener on a longer message ('long day but we're good 🦹🏾'). It pairs naturally with words that name the supervillain energy — 'mood,' 'literally,' 'so supervillain.'\n\nIn group chats 🦹🏾 anchors 'supervillain moment' threads, friend reactions, and thread-enders where the supervillain cue matches the register. On Instagram it lands on supervillain story replies and supervillain DM reactions. On TikTok it travels in supervillain sound-cued content and supervillain comment replies.\n\nThe emoji also works in dating contexts. A partner's '🦹🏾' DM uses the supervillain cue to communicate warmth. Across all of these surfaces the rule is the same: the more supervillain-coded the moment, the more natural 🦹🏾 feels.",
-    "whenNotToUse": "Skip 🦹🏾 in condolence, sympathy, or break-up contexts — the supervillain cue is too lightweight for somber moments. A quiet ❤️ or a plain sentence that acknowledges the feeling is a better fit.\n\nAvoid 🦹🏾 when the message calls for literal precision. If the sender needs an exact supervillain reference (a recipe, an instruction, a specific product), use a word or a more specific emoji rather than the supervillain shorthand.\n\nSkip 🦹🏾 in very formal channels — legal emails, executive memos, regulated finance or healthcare messages. The supervillain cue reads as casual and can undercut professional weight. Stick to plain text where tone matters.",
-    "howToReply": "If someone sends 🦹🏾, the easiest replies are to mirror with another 🦹🏾, send a related emoji that fits the supervillain energy, or reply with a short sentence that acknowledges the supervillain cue. If the message reads as a question, answer it directly; if it reads as a vibe, match it with the same supervillain register. A single-word reply — 'same,' 'mood,' 'love it,' or 'literally' — usually lands. When 🦹🏾 arrives as a soft flirt, mirror the energy with a heart-coded emoji or a sentence that escalates the warmth without overcommitting.",
+    "overview": "🦹🏾 is Supervillain with a medium-dark skin tone — a grinning figure in a dark cape and mask, with a high collar. The gesture is the familiar one, doing what it always does: performing villainy, mischief, or a villain era. What makes this variant worth its own page is that the tone is not an accident. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it, and that effort shows up in how the message lands.\n\nThe upshot is that 🦹🏾 reads as chosen. Where a first-swatch emoji can be waved past, a tone someone had to reach for tends to be read as a small, deliberate piece of information — usually about who the message is coming from, occasionally about who it is about. Neither reading is wrong, but they are not interchangeable, and that is where the confusion with 🦸 Superhero comes from: both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad.\n\nThe situations it turns up in are the family ones, unchanged by the tone. The misread that keeps coming up is this: it gets taken literally as a threat when it is nearly always self-directed mockery, so the cape marks the sender as the bad one rather than anyone else.",
+    "howPeopleUseIt": "The gesture is the same one 🦹 makes, so the family habits carry straight over. What changes with 🦹🏾 is who tends to send it and what they are assuming about the reader.\n\nMedium-dark takes an extra tap to reach, and 🦹🏾 shows up in the places where that extra tap was made on purpose: profile photos, avatars, introductions, and the emoji people pick for themselves rather than for a situation. It appears in announcing a villain era after a messy week, and in playing the bad guy when plans fall through, and it is more likely than the other tones to be the sender's own.\n\nIt is also the tone that gets borrowed most, because it sits closer to the middle of the list and so reads as a reasonable approximation of a lot of people. When 🦹🏾 is used to stand in for somebody else, the tone is quietly doing a job the sender never mentioned.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🦹 itself, and every tone in this family inherits it.\n\nThe tone-specific rule for 🦹🏾 is about borrowed representation. This is the swatch people reach for when they are depicting somebody else, and it is the swatch most likely to be wrong. If you are sending 🦹🏾 to stand in for another person, either know that you are doing it deliberately and accept that it will read that way, or use 🦹 instead.\n\nAlso avoid 🦹🏾 in professional threads where a chosen skin tone on a neutral emoji can look like a stance the message never made. The tone says the sender chose it, and readers will read the choice even when the sentence does not support it.",
+    "howToReply": "Matching the swatch is the acknowledging move here. If somebody picks a tone deliberately and you reply with 🏾, you are telling them you noticed; 🦹 reads as though you did not.\n\nKeep the reply proportionate otherwise. A sentence that names the moment will land better than a mirrored emoji when the message is the kind that invites a reply — the gesture is a good conversation opener on its own.",
     "faqs": [
       {
-        "question": "What does 🦹🏾 mean in texting?",
-        "answer": "In texting, 🦹🏾 usually points to supervillain. It can be literal — describing supervillain in the moment — or shorthand for the feeling or mood that supervillain carries. Context, sender, and platform decide which read wins."
+        "question": "What does 🦹🏾 mean in chat?",
+        "answer": "🦹🏾 is Supervillain with a medium-dark skin tone. The gesture reads as performing villainy, mischief, or a villain era, and the tone reads as chosen rather than defaulted to."
       },
       {
-        "question": "Is 🦹🏾 flirty?",
-        "answer": "It can be. 🦹🏾 can read as soft flirt when sent on its own or paired with a compliment — especially in dating-app DMs. In a friend or work thread it usually reads as playful rather than romantic."
+        "question": "Why does 🦹🏾 feel more intentional than 🦹?",
+        "answer": "Because of the picker position. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it. A swatch that takes extra taps gets read as a decision."
       },
       {
-        "question": "Is 🦹🏾 rude?",
-        "answer": "Generally no — 🦹🏾 is a neutral-to-friendly supervillain marker. It can read as dismissive if used to replace a sentence in a tense exchange, but on its own the supervillain cue is more playful than rude."
+        "question": "What does 🦹🏾 mean from a girl?",
+        "answer": "The gesture reads the same as it does from anyone else. The tone does not add a gendered layer to 🦹."
       },
       {
-        "question": "What does 🦹🏾 mean on Snapchat?",
-        "answer": "On Snapchat, 🦹🏾 typically rides on streak messages, story replies, or as a snap caption. The platform's heavier use of friend emojis means the supervillain cue often lands with a casual, friendly tone."
+        "question": "Is it rude to use 🦹🏾 to describe someone else?",
+        "answer": "It can be, and this is the tone where that happens most often. It is the tone most often used to represent a person who is not the sender, which is where the misreading starts. If you are unsure, 🦹 avoids the problem entirely."
       },
       {
-        "question": "Does 🦹🏾 have a hidden meaning?",
-        "answer": "Not really — 🦹🏾 usually means supervillain. The 'hidden meaning' angle tends to come from sender, context, and platform. A 🦹🏾 on a flirty thread reads differently than the same 🦹🏾 in a work channel."
+        "question": "What is the difference between 🦹🏾 and 🦸 Superhero?",
+        "answer": "both have a cape and mask, but the superhero reads as virtuous and the grinning figure as gleefully bad."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "that supervillain moment with you, full energy 🦹🏾",
-      "interpretation": "Sentiment-coded supervillain message — the supervillain cue carries the warmth. Mirror with another 🦹🏾, a heart emoji, or a sentence that escalates the romance."
+      "setting": "friends",
+      "message": "announcing a villain era after a messy week 🦹🏾",
+      "interpretation": "A friend sending 🦹🏾 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
     },
     {
-      "setting": "friends",
-      "message": "cannot handle this thread, full supervillain chaos 🦹🏾",
-      "interpretation": "Friend-coded supervillain reaction — the sender is being playful. Mirror with another 🦹🏾, a sentence that joins the energy, or a related emoji that matches the supervillain beat."
+      "setting": "dating",
+      "message": "playing the bad guy when plans fall through 🦹🏾",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a deliberate statement about who is being pictured."
     },
     {
       "setting": "work",
-      "message": "supervillain blocker sorted, ready when you are 🦹🏾",
-      "interpretation": "Work-coded supervillain update — concise, professional, with a soft supervillain touch. Mirror with another 🦹🏾, a sentence that confirms the handoff, or a thumbs-up emoji that matches the register."
+      "message": "roger 🦹🏾",
+      "interpretation": "A work thread. The medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries."
     },
     {
       "setting": "family",
-      "message": "family supervillain tonight, cannot wait 🦹🏾",
-      "interpretation": "Family-coded supervillain excitement — warm, affectionate. Mirror with another 🦹🏾, a sentence that joins the warmth, or a heart emoji that matches the family tone."
+      "message": "right then 🦹🏾",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-dark skin tone stands for the person in the picture rather than for the tone."
     },
     {
       "setting": "social",
-      "message": "this whole supervillain era, full energy 🦹🏾",
-      "interpretation": "Public supervillain flex — the sender is in their supervillain moment. Mirror with another 🦹🏾, a sentence that joins the energy, or a heart emoji that matches the public supervillain beat."
+      "message": "indeed 🦹🏾",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

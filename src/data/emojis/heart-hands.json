@@ -7,70 +7,89 @@
   "category": "people",
   "subcategory": "hands",
   "unicodeVersion": "14.0",
-  "baseMeaning": "Two hands forming a heart shape.",
-  "tldr": "Love, appreciation, or K-pop fan gesture.",
+  "baseMeaning": "Shows two hands curved together, thumbs and fingers forming a heart.",
+  "tldr": "🫶 Heart Hands — sending love, gratitude, or a fan scream.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Expressing love with hand heart gesture.",
-      "example": "Love you all 🫶",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "K-pop fan culture and appreciation.",
-      "example": "My bias did the thing 🫶",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Cute love gesture.",
-      "example": "You mean everything to me 🫶",
+      "meaning": "Borrowed as a reaction, it reads as sending love, gratitude, or a fan scream.",
+      "example": "Showing love for a band or an idol 🫶",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Rarely used ironically.",
-      "example": "Love this presentation 🫶",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: sending love, gratitude, or a fan scream, said without believing any of it.",
+      "example": "sure, sure 🫶",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — sending love, gratitude, or a fan scream — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🫶",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: two hands curved together, thumbs and fingers forming a heart. Nothing hidden in the drawing itself.",
+      "example": "Thanking a friend who actually helped 🫶",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Extremely popular in K-pop fandoms and stan communities."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🫶 exactly as the phone system does, but the keyboard keeps it in the hands section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like showing love for a band or an idol."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in appreciation and love posts across creators."
+      "note": "On Instagram 🫶 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as sending love, gratitude, or a fan scream under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Viral gesture emoji, especially in fan content and edits."
+      "note": "In TikTok comments 🫶 is the fastest way to answer a video without typing anything. The gesture stays sending love, gratitude, or a fan scream, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🫶 lands in channels where the sentence was supposed to be shorter. It is usually standing in for thanking a friend who actually helped, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Server members paste it as the appreciation reaction on shared wins."
+      "note": "On Discord 🫶 is a staple of the reaction bar, which is why it so often arrives stripped of its sending love, gratitude, or a fan scream reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "A favorite for expressing love and fan appreciation."
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🫶 deliberately, usually for something like showing love for a band or an idol, and they read sending love, gratitude, or a fan scream into it more often than the older cohorts do."
     },
     {
-      "generation": "MILLENNIAL",
-      "note": "Used for cute love expressions."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🫶 literally, as the picture of the gesture itself, and is less likely to read sending love, gratitude, or a fan scream into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May not recognize the K-pop connection."
+      "note": "Older senders use 🫶 in the most straightforward way, on family and group messages, and are less likely to hear the sending love, gratitude, or a fan scream subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🫶 to do the work of thanking a friend who actually helped, and treats the neutral drawing as the default rather than as a choice. What they hear first is sending love, gratitude, or a fan scream."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🫶 and ❤️ get swapped",
+      "description": "The Red Heart ❤️ is one tap away in every picker, and it does not carry the same reading — the plain heart names the feeling, the hand heart shows who is sending it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🫶 as something else fairly often: it gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫶 Heart Hands Emoji Meaning - What Does 🫶 Really Mean?",
-  "seoDescription": "Learn what the heart hands emoji 🫶 really means. From K-pop fan culture to expressing love, discover all its uses.",
+  "seoTitle": "🫶 Heart Hands Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🫶 Heart Hands explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "heart-hands-light",
     "heart-hands-medium-light",
@@ -79,56 +98,60 @@
     "heart-hands-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-12",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🫶 is the heart hands emoji, the two hands forming a heart shape that signals love, appreciation, or the K-pop fan-culture gesture. The visual cue — palms together, fingers forming a heart — is a relatively recent Unicode addition (2021) that has rapidly become one of the most-used love emoji on the keyboard. On Twitter, Instagram, and TikTok 🫶 shows up as the universal 'sending love' reaction, the fan-culture marker on K-pop appreciation posts, and the cute affection closer on a friend's wholesome message. The emoji is interesting because it spans romantic warmth, friendship appreciation, and fandom culture all on the same beat.\n\nThe emoji also doubles as the cute-affection reaction. A friend shares something sweet and the appropriate reply is 🫶 — the visual tag for 'I am sending you love.' The dual reading — romantic, friendship, or fan-appreciation — keeps 🫶 versatile without diluting the warmth. Use 🫶 when the moment calls for the cute love signal, not as a default reaction to every nice moment.",
-    "howPeopleUseIt": "🫶 arrives as the love reaction to a friend's wholesome post, the fan-culture marker on a K-pop tweet, or the punchline on a cute affection message. On Twitter it functions as the fandom reaction to a favorite artist's post. On Instagram captions the emoji lands as the signature flourish on a love post or a glow-up share. On TikTok creators paste 🫶 on fan edits as the visual tag for the appreciation moment.\n\nIn group chats 🫶 works as the shared 'sending love' reaction when a friend shares something sweet. The emoji also pairs naturally with ❤️ for layered affection, with 🥰 for the warm admiration, and with a sentence that names what is being loved so the heart-hands does not feel generic.",
-    "whenNotToUse": "Skip 🫶 in contexts where the love reading will land wrong — in cold professional channels, in customer complaint replies, or in formal client emails. A 🫶 in a customer complaint thread will sound tone deaf. Avoid it in serious discussions about grief or loss where the cuteness cannot reach the actual pain.\n\nAlso avoid 🫶 when you want to actually deliver careful feedback. A manager who replies to a missed deadline with 🫶 sounds as if they are softening bad news with cuteness rather than delivering clear direction. Reach for words or a more neutral emoji when the message needs to land as honest.",
-    "howToReply": "Mirror 🫶 with another 🫶 or ❤️ if you want to keep the warmth going, or upgrade to 🥰 for the warm admiration. If you receive 🫶 on a wholesome post, reply with 'thanks 🫶' or a sentence that acknowledges the love.\n\nIf 🫶 arrives as a fan-culture reaction, mirror with a heart or a sentence that engages with the fandom. And if you want to send 🫶 as a soft friendly reaction, anchor the emoji with a sentence that names the warmth so the heart-hands does not feel generic.",
+    "overview": "The complication is that the drawing invites a second reading. It gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is ❤️ Red Heart: the plain heart names the feeling, the hand heart shows who is sending it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The heart hands comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the heart hands for? Mostly thanking a friend who actually helped, and then showing love for a band or an idol. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🫶 is two hands curved together, thumbs and fingers forming a heart. It came into the emoji set in Unicode 14.0, under the hands heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is sending love, gratitude, or a fan scream. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🫶 sent to a colleague is a piece of work, 🫶 sent to a friend is a joke, and 🫶 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🫶 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"sending love, gratitude, or a fan scream\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is thanking a friend who actually helped: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is showing love for a band or an idol, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🫶 gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and heart hands gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🫶 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as sending love, gratitude, or a fan scream — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant ❤️ Red Heart. The plain heart names the feeling, the hand heart shows who is sending it. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🫶 sent as a reaction to somebody who is upset reads as sending love, gratitude, or a fan scream, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🫶 gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like thanking a friend who actually helped needs the sentence: the drawing alone leaves the reader deciding between sending love, gratitude, or a fan scream and something sharper.\n\nReply with 🫶 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🫶 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does 🫶 mean in texting?",
-        "answer": "🫶 means 'I love you' or 'sending love.' The heart-hands emoji is the universal cute-affection signal and reads as romantic, friendship, or fandom appreciation depending on context."
+        "question": "What is the difference between 🫶 and ❤️?",
+        "answer": "The plain heart names the feeling, the hand heart shows who is sending it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🫶 mean from a girl?",
-        "answer": "From a girl or anyone else, 🫶 means the sender is sending love or affection. There is no gendered meaning; the emoji is about the warmth, not who is sending it."
-      },
-      {
-        "question": "Is 🫶 flirty?",
-        "answer": "🫶 can read as flirty in a dating context, especially paired with romantic content. In other contexts it stays in the wholesome or fandom zone."
+        "question": "Is 🫶 rude?",
+        "answer": "It can be. The gesture is meant as sending love, gratitude, or a fan scream, but it gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 🫶 mean from a guy?",
-        "answer": "From a guy, 🫶 has the same meaning it has from anyone else: cute love or appreciation. The emoji is not gendered and reads the same regardless of who sends it."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🫶 and its skin-tone versions?",
+        "answer": "The tone variants under heart hands show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🫶 mean in text?",
+        "answer": "🫶 is used for sending love, gratitude, or a fan scream. The drawing shows two hands curved together, thumbs and fingers forming a heart, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "love you bestie 🫶",
-      "interpretation": "Friend's warm affection. Mirror with 🫶 or a heart to close the loop."
-    },
-    {
-      "setting": "social",
-      "message": "my bias did the thing 🫶",
-      "interpretation": "Fan-culture reaction. Mirror with 🫶 or a sentence that engages with the fandom."
+      "setting": "work",
+      "message": "showing love for a band or an idol 🫶",
+      "interpretation": "A handover or a sign-off in a channel. It reads as sending love, gratitude, or a fan scream, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "you mean everything to me 🫶",
-      "interpretation": "Romantic partner's love message. Mirror with 🫶 or a heart to engage with the warmth."
+      "message": "there is something you should know 🫶",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets sent as pure romantic love when it is mostly how people say thank you — the heart shape pushes everything into the romantic register, including applause and support more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "love you mom 🫶",
-      "interpretation": "Family warmth. Mirror with 🫶 or a heart to close the loop."
+      "message": "thanking a friend who actually helped 🫶",
+      "interpretation": "Family threads are where this lands most naturally. The reading is sending love, gratitude, or a fan scream, and nobody in the thread is reading it as anything sharper than that."
     },
     {
-      "setting": "work",
-      "message": "thanks for the handoff 🫶",
-      "interpretation": "Risky in a wide team channel; safe in a tight collaborator DM. If used in a team channel, anchor with a sentence that adds context."
+      "setting": "social",
+      "message": "that is the whole post 🫶",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
+      "setting": "friends",
+      "message": "thanking a friend who actually helped 🫶",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as sending love, gratitude, or a fan scream, and matching it with the same emoji is a normal reply."
     }
   ]
 }

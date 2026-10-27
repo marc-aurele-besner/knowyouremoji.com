@@ -7,74 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Rowing Boat emoji.",
-  "tldr": "Represents person rowing boat.",
+  "baseMeaning": "Shows a figure seated in a narrow boat, one oar pulled through the water.",
+  "tldr": "🚣 Person Rowing Boat — rowing, keeping pace, or working through something slowly.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "The activity of person rowing boat.",
-      "example": "Time for person rowing boat 🚣",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🚣",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person rowing boat? 🚣",
+      "meaning": "Borrowed as a reaction, it reads as rowing, keeping pace, or working through something slowly.",
+      "example": "Keeping pace with a long task 🚣",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🚣",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: rowing, keeping pace, or working through something slowly, said without believing any of it.",
+      "example": "sure, sure 🚣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — rowing, keeping pace, or working through something slowly — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🚣",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure seated in a narrow boat, one oar pulled through the water. Nothing hidden in the drawing itself.",
+      "example": "Saying you are working through a slow week 🚣",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on travel coded rowboat threads, journey-marker reveal posts, and rowboat-pulse coded lists."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🚣 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like keeping pace with a long task."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of travel coded rowboat flat-lays, travel-canvas story backgrounds, and journey-marker profile accents."
+      "note": "On Instagram 🚣 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as rowing, keeping pace, or working through something slowly under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in travel coded rowboat transitions, journey-marker reaction reveals, and rowboat-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors travel coded rowboat status messages, role-coded journey-marker markers, and rowboat-pulse coded reactions."
+      "note": "In TikTok comments 🚣 is the fastest way to answer a video without typing anything. The gesture stays rowing, keeping pace, or working through something slowly, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through travel coded rowboat reactions, journey-marker markers, and rowboat-pulse coded bullets."
+      "note": "In Slack 🚣 lands in channels where the sentence was supposed to be shorter. It is usually standing in for saying you are working through a slow week, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🚣 is a staple of the reaction bar, which is why it so often arrives stripped of its rowing, keeping pace, or working through something slowly reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 🚣 in casual contexts."
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🚣 deliberately, usually for something like keeping pace with a long task, and they read rowing, keeping pace, or working through something slowly into it more often than the older cohorts do."
     },
     {
-      "generation": "MILLENNIAL",
-      "note": "Familiar with 🚣 across platforms."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🚣 literally, as the picture of the gesture itself, and is less likely to read rowing, keeping pace, or working through something slowly into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🚣 literally."
+      "note": "Older senders use 🚣 in the most straightforward way, on family and group messages, and are less likely to hear the rowing, keeping pace, or working through something slowly subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🚣 to do the work of saying you are working through a slow week, and treats the neutral drawing as the default rather than as a choice. What they hear first is rowing, keeping pace, or working through something slowly."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🚣 and 🛶 get swapped",
+      "description": "The Canoe 🛶 is one tap away in every picker, and it does not carry the same reading — the canoe is an empty vessel for leisure, the rowboat always shows a person putting in the work. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🚣 as something else fairly often: it gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🚣 Person Rowing Boat Emoji Meaning - What Does 🚣 Really Mean?",
-  "seoDescription": "Learn what the person rowing boat emoji 🚣 really means in texts and social media.",
+  "seoTitle": "🚣 Person Rowing Boat Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🚣 Person Rowing Boat explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "rowboat-light",
     "rowboat-medium-light",
@@ -83,60 +98,60 @@
     "rowboat-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🚣 is the emoji of travel coded rowboat read — a clean rowboat-pulse shape, the travel filled-in silhouette, and the universal 'travel rowboat' tag for journey-marker. Where ⬛ reads as solid-black-coded rowboat read and ⬜ reads as solid-white-coded rowboat read, 🚣 captures the moment when the sender wants to communicate travel coded rowboat — a 'travel 🚣' journey-marker marker or a 'rowboat-pulse pulse 🚣' journey-marker reveal. The travel fill cue borrows from design-coded bullet lists and the modern journey-marker aesthetic, which is exactly why the emoji reads as travel coded rather than literal rowboat-coded shape.\n\nIn real-world usage 🚣 lives in the spaces where the sender wants to communicate journey-marker energy. A partner sends it on a 'travel 🚣' journey-marker marker. A friend sends it on a 'rowboat-pulse pulse 🚣' reveal. A coworker sends it on a 'travel coded 🚣' list thread. The travel fill cue is what makes the emoji feel travel coded — it is not just 'shape,' it is 'travel coded rowboat moment.'\n\nWhat separates 🚣 from the rest of the shape family is the travel register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'travel coded rowboat,' which carries a specific design-coded tradition. That is why 🚣 travels especially well on partner journey-marker markers, journey-marker reveals, and any context where the sender wants the message to land with travel energy.",
-    "howPeopleUseIt": "🚣 shows up as the bullet on a 'travel 🚣' list message ('rowboat-pulse pulse 🚣'), the punctuation on a 'travel coded 🚣' reveal, and the softener on a 'rowboat-pulse pulse 🚣' list thread. It pairs naturally with sentences that name the travel energy — 'travel,' 'rowboat-pulse pulse,' 'journey-marker-coded' — and sits beautifully on partner journey-marker markers and journey-marker reveals.\n\nIn group chats 🚣 anchors 'travel coded moment' threads, journey-marker reveals, and 'travel 🚣' tags where the rowboat cue matches the register. On Instagram it lands on travel coded flat-lays and travel-canvas stories. On TikTok it travels in travel coded reveals and 'travel' reaction content.\n\nThe emoji also works in dating contexts. A 'travel 🚣' partner message uses the rowboat cue to communicate journey-marker romance. Across all of these surfaces the rule is the same: the more travel coded the moment, the more natural 🚣 feels.",
-    "whenNotToUse": "Skip 🚣 in sympathy, condolence, or break-up contexts. The travel coded rowboat cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🚣 in 'literal object' or finish-coded contexts where the travel energy feels off. A 'travel 🚣' message works for travel marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🚣 when you want to communicate a different color. The travel coded register is too travel-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🚣, the cleanest mirror is another 🚣, ⬛, or a sentence that joins the travel energy. If you want to escalate the engagement, follow with a sentence that adds context: 'travel for sure' or 'rowboat-pulse pulse together.' If the rowboat cue feels too travel coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the travel volume.\n\nWhen 🚣 lands as a partner 'travel 🚣' journey-marker marker, mirror with another 🚣, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'rowboat-pulse pulse 🚣' list thread, mirror with another 🚣, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🛶 Canoe: the canoe is an empty vessel for leisure, the rowboat always shows a person putting in the work. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The person rowing boat comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the person rowing boat for? Mostly saying you are working through a slow week, and then keeping pace with a long task. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🚣 is a figure seated in a narrow boat, one oar pulled through the water. It came into the emoji set in Unicode 13.0, under the sport heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is rowing, keeping pace, or working through something slowly. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🚣 sent to a colleague is a piece of work, 🚣 sent to a friend is a joke, and 🚣 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🚣 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"rowing, keeping pace, or working through something slowly\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is saying you are working through a slow week: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is keeping pace with a long task, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🚣 gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and person rowing boat gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🚣 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as rowing, keeping pace, or working through something slowly — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🛶 Canoe. The canoe is an empty vessel for leisure, the rowboat always shows a person putting in the work. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🚣 sent as a reaction to somebody who is upset reads as rowing, keeping pace, or working through something slowly, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🚣 gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like saying you are working through a slow week needs the sentence: the drawing alone leaves the reader deciding between rowing, keeping pace, or working through something slowly and something sharper.\n\nReply with 🚣 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🚣 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
+        "question": "What is the difference between 🚣 and 🛶?",
+        "answer": "The canoe is an empty vessel for leisure, the rowboat always shows a person putting in the work. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🚣 rude?",
+        "answer": "It can be. The gesture is meant as rowing, keeping pace, or working through something slowly, but it gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🚣 mean from a guy?",
-        "answer": "From a guy, 🚣 signals travel coded flex or 'travel 🚣' journey-marker marker. The rowboat cue reads as travel-coded rather than literal rowboat-coded shape, so it tends to land on partner journey-marker markers, family-coded travel messages, and 'rowboat-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🚣 flirty?",
-        "answer": "It can be. In a partner context 🚣 can read as soft-coded romance — 'travel 🚣' is a soft-coded journey-marker marker. On its own the emoji is more travel coded than romantic."
+        "question": "What is the difference between 🚣 and its skin-tone versions?",
+        "answer": "The tone variants under person rowing boat show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🚣 and ⬛?",
-        "answer": "⬛ is the solid-black rowboat — the cue is solid-black-coded read, the universal 'fill' energy. 🚣 is the travel rowboat — the cue is travel coded rowboat read, the travel energy. Use ⬛ when the moment is fill-coded; use 🚣 when the moment is travel coded."
-      },
-      {
-        "question": "Is 🚣 for journey-marker moments?",
-        "answer": "Yes — 🚣 is one of the most popular travel coded emojis. The rowboat cue is a natural fit for 'journey-marker' reveals, travel coded messages, and partner 'travel' markers."
-      },
-      {
-        "question": "Does 🚣 mean rowboat-pulse pulse?",
-        "answer": "Often yes — 🚣 carries the travel fill visual and reads in modern usage as travel coded. The literal-shape-versus-travel-coded split depends on the sender and the channel."
+        "question": "What does 🚣 mean in text?",
+        "answer": "🚣 is used for rowing, keeping pace, or working through something slowly. The drawing shows a figure seated in a narrow boat, one oar pulled through the water, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "rowboat-pulse pulse for the partner plan, full travel energy 🚣",
-      "interpretation": "Partner travel romance. Mirror with another 🚣, a heart emoji, or a sentence that escalates the romance."
+      "setting": "work",
+      "message": "keeping pace with a long task 🚣",
+      "interpretation": "A handover or a sign-off in a channel. It reads as rowing, keeping pace, or working through something slowly, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the travel chaos 🚣",
-      "interpretation": "Public travel flex. Mirror with another 🚣, a sentence that joins the travel energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🚣",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to be a quiet boating scene when it is usually about effort — the long stroke suggests grinding through something at a steady pace more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "travel journey-marker with the family, full rowboat-pulse pulse energy 🚣",
-      "interpretation": "Family travel reveal. Mirror with another 🚣, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "saying you are working through a slow week 🚣",
+      "interpretation": "Family threads are where this lands most naturally. The reading is rowing, keeping pace, or working through something slowly, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🚣",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "rowboat-pulse pulse today, full travel energy 🚣",
-      "interpretation": "Friend travel reveal. Mirror with another 🚣, a sentence that joins the travel energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "travel coded sprint today, full rowboat-pulse pulse energy 🚣",
-      "interpretation": "Work travel moment. Mirror with another 🚣, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "saying you are working through a slow week 🚣",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as rowing, keeping pace, or working through something slowly, and matching it with the same emoji is a normal reply."
     }
   ]
 }

@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-sport",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A person riding a bicycle.",
-  "tldr": "Cycling, exercise, eco-friendly transport, or Tour de France.",
+  "baseMeaning": "A helmeted rider in yellow shorts leaning forward over a road bike — going for a ride, or logging the miles.",
+  "tldr": "The person biking emoji 🚴 reads as going for a ride, or logging the miles.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Cycling or biking.",
-      "example": "Bike ride today 🚴",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Eco-friendly or healthy lifestyle.",
-      "example": "Biking to work 🚴",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as going for a ride, or logging the miles, softened by whatever sentence sits next to it.",
+      "example": "not me 🚴",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Commuting or transportation.",
-      "example": "Biking to the office 🚴",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — going for a ride, or logging the miles — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🚴",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Active date or outdoor activity.",
-      "example": "Bike date? 🚴",
+      "context": "LITERAL",
+      "meaning": "The plain reading: a helmeted rider in yellow shorts leaning forward over a road bike. Nothing hidden in the drawing itself.",
+      "example": "Announcing a weekend ride on a sunny day 🚴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Borrowed as a reaction, it reads as going for a ride, or logging the miles.",
+      "example": "Adding the bike to a photo of the ride 🚴",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on action coded person-biking threads, movement-marker reveal posts, and person-biking-pulse coded lists."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Staple of action coded person-biking flat-lays, action-canvas story backgrounds, and movement-marker profile accents."
+      "note": "On Instagram 🚴 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as going for a ride, or logging the miles under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in action coded person-biking transitions, movement-marker reaction reveals, and person-biking-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors action coded person-biking status messages, role-coded movement-marker markers, and person-biking-pulse coded reactions."
+      "note": "In TikTok comments 🚴 is the fastest way to answer a video without typing anything. The gesture stays going for a ride, or logging the miles, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through action coded person-biking reactions, movement-marker markers, and person-biking-pulse coded bullets."
+      "note": "In Slack 🚴 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a weekend ride on a sunny day, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🚴 is a staple of the reaction bar, which is why it so often arrives stripped of its going for a ride, or logging the miles reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🚴 does most of its work in replies, where it tags a message like adding the bike to a photo of the ride. Short enough to survive being the whole post, which is exactly why it is used that way."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Eco-friendly and active lifestyle."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Urban cycling and fitness."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🚴 literally, as the picture of the gesture itself, and is less likely to read going for a ride, or logging the miles into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Cycling and exercise."
+      "note": "Older senders use 🚴 in the most straightforward way, on family and group messages, and are less likely to hear the going for a ride, or logging the miles subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🚴 to do the work of announcing a weekend ride on a sunny day, and treats the neutral drawing as the default rather than as a choice. What they hear first is going for a ride, or logging the miles."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🚴 deliberately, usually for something like adding the bike to a photo of the ride, and they read going for a ride, or logging the miles into it more often than the older cohorts do."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🚴 and 🚲 get swapped",
+      "description": "The Bicycle 🚲 is one tap away in every picker, and it does not carry the same reading — the bicycle shows the machine with nobody on it, the rider shows the person in motion. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🚴 as something else fairly often: it gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🚴 Person Biking Emoji Meaning - What Does 🚴 Really Mean?",
-  "seoDescription": "Learn what the person biking emoji 🚴 really means in texting. Cycling, exercise, or eco-friendly transport. Complete context guide.",
+  "seoTitle": "What Does the Person Biking Emoji 🚴 Mean? A Full Breakdown",
+  "seoDescription": "The meaning of 🚴 Person Biking in texts and DMs, with the person biking readings, the common misread, and the pickers it gets confused with.",
   "skinToneVariations": [
     "person-biking-light",
     "person-biking-medium-light",
@@ -83,60 +98,60 @@
     "person-biking-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🚴 is the emoji of action coded person-biking read — a clean person-biking-pulse shape, the action filled-in silhouette, and the universal 'action person-biking' tag for movement-marker. Where ⬛ reads as solid-black-coded person-biking read and ⬜ reads as solid-white-coded person-biking read, 🚴 captures the moment when the sender wants to communicate action coded person-biking — a 'action 🚴' movement-marker marker or a 'person-biking-pulse pulse 🚴' movement-marker reveal. The action fill cue borrows from design-coded bullet lists and the modern movement-marker aesthetic, which is exactly why the emoji reads as action coded rather than literal person-biking-coded shape.\n\nIn real-world usage 🚴 lives in the spaces where the sender wants to communicate movement-marker energy. A partner sends it on a 'action 🚴' movement-marker marker. A friend sends it on a 'person-biking-pulse pulse 🚴' reveal. A coworker sends it on a 'action coded 🚴' list thread. The action fill cue is what makes the emoji feel action coded — it is not just 'shape,' it is 'action coded person-biking moment.'\n\nWhat separates 🚴 from the rest of the shape family is the action register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'action coded person-biking,' which carries a specific design-coded tradition. That is why 🚴 travels especially well on partner movement-marker markers, movement-marker reveals, and any context where the sender wants the message to land with action energy.",
-    "howPeopleUseIt": "🚴 shows up as the bullet on a 'action 🚴' list message ('person-biking-pulse pulse 🚴'), the punctuation on a 'action coded 🚴' reveal, and the softener on a 'person-biking-pulse pulse 🚴' list thread. It pairs naturally with sentences that name the action energy — 'action,' 'person-biking-pulse pulse,' 'movement-marker-coded' — and sits beautifully on partner movement-marker markers and movement-marker reveals.\n\nIn group chats 🚴 anchors 'action coded moment' threads, movement-marker reveals, and 'action 🚴' tags where the person-biking cue matches the register. On Instagram it lands on action coded flat-lays and action-canvas stories. On TikTok it travels in action coded reveals and 'action' reaction content.\n\nThe emoji also works in dating contexts. A 'action 🚴' partner message uses the person-biking cue to communicate movement-marker romance. Across all of these surfaces the rule is the same: the more action coded the moment, the more natural 🚴 feels.",
-    "whenNotToUse": "Skip 🚴 in sympathy, condolence, or break-up contexts. The action coded person-biking cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🚴 in 'literal object' or finish-coded contexts where the action energy feels off. A 'action 🚴' message works for action marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🚴 when you want to communicate a different color. The action coded register is too action-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🚴, the cleanest mirror is another 🚴, ⬛, or a sentence that joins the action energy. If you want to escalate the engagement, follow with a sentence that adds context: 'action for sure' or 'person-biking-pulse pulse together.' If the person-biking cue feels too action coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the action volume.\n\nWhen 🚴 lands as a partner 'action 🚴' movement-marker marker, mirror with another 🚴, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'person-biking-pulse pulse 🚴' list thread, mirror with another 🚴, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "This page is the untoned drawing. Somewhere below it are five versions of the same person biking with a skin tone applied, and those pages are about something different: not what the gesture means, but what a particular tone adds to it when it arrives from a particular face.\n\nThe short version. The person biking is for announcing a weekend ride on a sunny day and for adding the bike to a photo of the ride, it gets misread often enough to be worth writing down, and it has five skin-tone versions worth reading on their own. The sections below take those in turn.\n\nUnicode 6.0 is where 🚴 comes from. The drawing shows a helmeted rider in yellow shorts leaning forward over a road bike, it sits in the person-sport group of the set, and in a conversation it does one thing: it says what a sentence would have said less well.\n\nWhat it says is going for a ride, or logging the miles. That is the reading most people arrive with, and it is usually the intended one — the picture does the same work as the words it replaces, and it gets there faster.\n\nThe complication is that the drawing invites a second reading. It gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🚲 Bicycle: the bicycle shows the machine with nobody on it, the rider shows the person in motion. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.",
+    "howPeopleUseIt": "There is one habit that turns a small emoji into a misunderstanding. 🚴 goes back on its own, with no words around it, and it stands for whatever the sender had in mind — which was going for a ride, or logging the miles. The reader gets the drawing and none of the context that produced it.\n\nStart with Announcing a weekend ride on a sunny day. That is where the person biking earns its place: it closes a sentence that has already said the thing, and nobody has to add \"you know what I mean\". The other job is adding the bike to a photo of the ride, and there the emoji is not the message but the temperature of the message.\n\nThe setting does half the work. 🚴 used for announcing a weekend ride on a sunny day in a work channel reads as a handover; the same move in a group chat reads as a joke. The emoji is not saying anything different — the audience is.\n\nWhich is also why this family has skin-tone pages. The gesture is the same in all five, and the tone you choose is the only part of the message that says anything about you.",
+    "whenNotToUse": "There is also a place where this emoji does not belong: the professional setting. 🚴 under a review, or in a first message to a client, reads as going for a ride, or logging the miles, and in that room the same reading sounds like somebody settling a point.\n\nTwo rules. First, 🚲 Bicycle is a different message: the bicycle shows the machine with nobody on it, the rider shows the person in motion. Do not send 🚴 when you meant that one. Second, a reaction to bad news needs words. A bare 🚴 reads as going for a ride, or logging the miles, and nobody in a thread about a person wants to be answered with a drawing of a gesture.\n\nNot every message survives being turned into a picture. The emoji gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting, and the sentence underneath it loses the argument. Once 🚴 is carrying the meaning, the meaning has moved without either sender moving it.\n\nWith somebody you have just met, it is worse. 🚴 has no warmth in the drawing, and the gesture has picked up an edge of superiority from being used to answer other people.",
+    "howToReply": "If the intent is warmth, the sentence is the part that carries it. Sending 🚴 next to a message like announcing a weekend ride on a sunny day leaves the reader to guess whether it was going for a ride, or logging the miles or something sharper.\n\nIf it was a reaction, 🚴 back is a complete answer. It says \"same\" without writing a word, and the exchange can end there.\n\nIf it was aimed at you, it needs text. 🚴 replying to 🚴 looks like a conversation between two drawings, and whatever the sender actually asked never gets answered.\n\nWhen the register is unclear, the words win. The drawing gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting, so the sentence it was sent with is the only reliable guide to what it meant.",
     "faqs": [
       {
+        "question": "Is 🚴 rude?",
+        "answer": "It can be. The gesture is meant as going for a ride, or logging the miles, but it gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🚴 mean from a guy?",
-        "answer": "From a guy, 🚴 signals action coded flex or 'action 🚴' movement-marker marker. The person-biking cue reads as action-coded rather than literal person-biking-coded shape, so it tends to land on partner movement-marker markers, family-coded action messages, and 'person-biking-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🚴 flirty?",
-        "answer": "It can be. In a partner context 🚴 can read as soft-coded romance — 'action 🚴' is a soft-coded movement-marker marker. On its own the emoji is more action coded than romantic."
+        "question": "What is the difference between 🚴 and its skin-tone versions?",
+        "answer": "The tone variants under person biking show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🚴 and ⬛?",
-        "answer": "⬛ is the solid-black person-biking — the cue is solid-black-coded read, the universal 'fill' energy. 🚴 is the action person-biking — the cue is action coded person-biking read, the action energy. Use ⬛ when the moment is fill-coded; use 🚴 when the moment is action coded."
+        "question": "What does 🚴 mean in text?",
+        "answer": "🚴 is used for going for a ride, or logging the miles. The drawing shows a helmeted rider in yellow shorts leaning forward over a road bike, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🚴 for movement-marker moments?",
-        "answer": "Yes — 🚴 is one of the most popular action coded emojis. The person-biking cue is a natural fit for 'movement-marker' reveals, action coded messages, and partner 'action' markers."
-      },
-      {
-        "question": "Does 🚴 mean person-biking-pulse pulse?",
-        "answer": "Often yes — 🚴 carries the action fill visual and reads in modern usage as action coded. The literal-shape-versus-action-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🚴 and 🚲?",
+        "answer": "The bicycle shows the machine with nobody on it, the rider shows the person in motion. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "person-biking-pulse pulse for the partner plan, full action energy 🚴",
-      "interpretation": "Partner action romance. Mirror with another 🚴, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the action chaos 🚴",
-      "interpretation": "Public action flex. Mirror with another 🚴, a sentence that joins the action energy, or a heart emoji that matches."
+      "message": "there is something you should know 🚴",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets interpreted as a fitness claim, when it mostly marks a ride that happened — a weekend out, a trip to the shop, the bike itself as a thing worth wanting more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "action movement-marker with the family, full person-biking-pulse pulse energy 🚴",
-      "interpretation": "Family action reveal. Mirror with another 🚴, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "announcing a weekend ride on a sunny day 🚴",
+      "interpretation": "Family threads are where this lands most naturally. The reading is going for a ride, or logging the miles, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🚴",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "person-biking-pulse pulse today, full action energy 🚴",
-      "interpretation": "Friend action reveal. Mirror with another 🚴, a sentence that joins the action energy, or a heart emoji that matches."
+      "message": "announcing a weekend ride on a sunny day 🚴",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as going for a ride, or logging the miles, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "action coded sprint today, full person-biking-pulse pulse energy 🚴",
-      "interpretation": "Work action moment. Mirror with another 🚴, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "adding the bike to a photo of the ride 🚴",
+      "interpretation": "A handover or a sign-off in a channel. It reads as going for a ride, or logging the miles, and naming the next step in words is usually clearer than leaving it to the gesture."
     }
   ]
 }

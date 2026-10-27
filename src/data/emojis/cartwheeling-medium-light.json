@@ -7,131 +7,131 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Cartwheeling emoji.",
-  "tldr": "Represents person cartwheeling.",
+  "baseMeaning": "Person Cartwheeling emoji. The medium-light skin tone modifier is applied to the figure.",
+  "tldr": "🤸🏼 Person Cartwheeling with a medium-light skin tone. One step past the default, so it reads as a considered choice.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-light skin tone passes without comment in a work thread.",
+      "example": "understood 🤸🏼",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of person cartwheeling.",
-      "example": "Time for person cartwheeling 🤸",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-light skin tone applied to the figure.",
+      "example": "🤸🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🤸",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person cartwheeling? 🤸",
+      "meaning": "The gesture reads the same as the untoned version; the medium-light skin tone makes it a slightly more considered version of the same gesture.",
+      "example": "got it 🤸🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🤸",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very normal 🤸🏼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "IMESSAGE",
-      "note": "Lands on person cartwheeling reaction taps, blue-bubble thread replies, and tapback 'love/like/laughing' markers when the person cartwheeling cue fits the message."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Shows up on person cartwheeling story stickers, DM reaction replies, and reel comments where the person cartwheeling cue reads cleanly in the captions and story reactions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in person cartwheeling sound-cued transitions, green-screen comment replies, and stitched reaction videos where the person cartwheeling beat lands fast."
+      "note": "On iOS 🤸🏼 renders as a single toned glyph, and the medium-light swatch is the second one along in Apple's picker. It is far enough from the untoned version to be noticed but close enough that a screenshot taken at small size can still read as untoned."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Frequently sent as a single person cartwheeling reaction, attached to a green-tick delivered voice note, or stacked under a group-chat punchline for quick read."
+      "note": "WhatsApp renders the tone correctly on current builds, and its picker puts the medium-light swatch second, so a sender reaches it with one tap past the default. Older Android builds of WhatsApp drop the modifier entirely, and because this is not the swatch people reach for by habit, the fallback is more often noticed than it is with the default."
     },
     {
       "platform": "TWITTER",
-      "note": "Anchors person cartwheeling quote tweets, ratio-style thread openers, and reply-guy reaction one-liners where the person cartwheeling cue adds the headline read."
+      "note": "Twemoji applies the tone to 🤸🏼 consistently, and the modifier is applied to the single code point, so the swatch is preserved while the rest of the message does not survive a quote-tweet intact."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Slack's own emoji font renders the medium-light swatch a shade warmer than the phone version, which is the usual reason somebody screenshots a Slack message and gets a slightly different looking emoji than the one they sent."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji as well, and its web and mobile clients agree with each other on the medium-light swatch. The risk sits with bots and bridges, which usually pass the tone through only when the emoji survived the trip as a single code point."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤸 in casual contexts."
+      "note": "Gen Z is the cohort most likely to pick 🤸🏼 deliberately, because the swatch is familiar enough to reach without hunting and rare enough to feel like a choice. It is used to represent the sender more often than the other four tones."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🤸 across platforms."
+      "note": "Millennials reach for 🤸🏼 when a message needs a slightly more personal feel than 🤸 gives, without the weight of the two darker swatches. It sits in the middle of what this generation is comfortable with."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 🤸 literally."
+      "generation": "GEN_X",
+      "note": "Gen X mostly treats 🤸🏼 as decoration. The swatch is picked because it was next in the list, not because it carries a message."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "🤸🏼 Person Cartwheeling Medium-Light Skin Tone Emoji - What Does 🤸🏼 Mean?",
-  "seoDescription": "Learn what the person cartwheeling emoji with medium-light skin tone 🤸🏼 means in texts and social media.",
+  "seoTitle": "🤸🏼 Person Cartwheeling Medium-Light Skin Tone Emoji Meaning - What Does 🤸🏼 Mean?",
+  "seoDescription": "What does the person cartwheeling emoji 🤸🏼 mean? Person Cartwheeling showing a figure mid-cartwheel, legs split and hands on the floor. Covers the medium-light skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "cartwheeling",
   "skinToneModifier": "medium-light",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤸🏼 is the person cartwheeling emoji — the sport shorthand that bridges the literal person cartwheeling meaning with the soft, layered reading modern chat uses it for. In its base form it stands in for person cartwheeling as a noun, a moment, or a mood: a friend describes their afternoon, a partner leaves a person cartwheeling reaction, a coworker flags a person cartwheeling blocker in a thread. The visual cue is short and graphic on purpose, which is why it travels across IM, group chat, story replies, and search without losing read.\n\nIn real-world usage 🤸🏼 lives in the spaces where the sender wants to communicate person cartwheeling energy without over-explaining. A DM opens with 🤸🏼 as a soft hello. A group chat uses 🤸🏼 as the period at the end of a person cartwheeling story. A work thread drops 🤸🏼 to confirm a person cartwheeling handoff. The emoji's clarity is what makes it flexible — it can carry literal person cartwheeling, ironic person cartwheeling, or sentimental person cartwheeling depending on the message and the sender.\n\nWhat separates 🤸🏼 from the broader sport family is its read-speed. The visual hits in under a second, which is exactly why it works as a reaction, a caption, a sign-off, or a thread-opener. That is why 🤸🏼 travels especially well on story replies, DM reactions, and any context where the sender wants the message to land with person cartwheeling energy in a single tap.",
-    "howPeopleUseIt": "🤸🏼 shows up in chat as a stand-alone person cartwheeling reaction ('just 🤸🏼'), as the punctuation on a person cartwheeling sentence ('finished the report 🤸🏼'), and as the softener on a longer message ('long day but we're good 🤸🏼'). It pairs naturally with words that name the person cartwheeling energy — 'mood,' 'literally,' 'so person cartwheeling.'\n\nIn group chats 🤸🏼 anchors 'person cartwheeling moment' threads, friend reactions, and thread-enders where the person cartwheeling cue matches the register. On Instagram it lands on person cartwheeling story replies and person cartwheeling DM reactions. On TikTok it travels in person cartwheeling sound-cued content and person cartwheeling comment replies.\n\nThe emoji also works in dating contexts. A partner's '🤸🏼' DM uses the person cartwheeling cue to communicate warmth. Across all of these surfaces the rule is the same: the more person cartwheeling-coded the moment, the more natural 🤸🏼 feels.",
-    "whenNotToUse": "Skip 🤸🏼 in condolence, sympathy, or break-up contexts — the person cartwheeling cue is too lightweight for somber moments. A quiet ❤️ or a plain sentence that acknowledges the feeling is a better fit.\n\nAvoid 🤸🏼 when the message calls for literal precision. If the sender needs an exact person cartwheeling reference (a recipe, an instruction, a specific product), use a word or a more specific emoji rather than the person cartwheeling shorthand.\n\nSkip 🤸🏼 in very formal channels — legal emails, executive memos, regulated finance or healthcare messages. The person cartwheeling cue reads as casual and can undercut professional weight. Stick to plain text where tone matters.",
-    "howToReply": "If someone sends 🤸🏼, the easiest replies are to mirror with another 🤸🏼, send a related emoji that fits the person cartwheeling energy, or reply with a short sentence that acknowledges the person cartwheeling cue. If the message reads as a question, answer it directly; if it reads as a vibe, match it with the same person cartwheeling register. A single-word reply — 'same,' 'mood,' 'love it,' or 'literally' — usually lands. When 🤸🏼 arrives as a soft flirt, mirror the energy with a heart-coded emoji or a sentence that escalates the warmth without overcommitting.",
+    "overview": "🤸🏼 shows Person Cartwheeling with a medium-light skin tone — a figure mid-cartwheel, legs split and hands on the floor. Underneath the tone, the gesture is unchanged: this is celebrating so hard the sender cannot sit still, and it is the same conversation move as 🤸. The swatch is the part that differs.\n\nMedium-light sits second in the standard tone list, so it takes one deliberate tap past the default to reach. That small extra effort is what shapes how it lands. Picked slightly more thoughtfully than the default, and noticeably less often than the middle tones. In practice that means 🤸🏼 tends to arrive from someone who looked at the picker rather than someone who fired the emoji out of habit, and it is correspondingly harder to treat as neutral.\n\nThe practical uses are the family ones, unchanged by the tone. The confusion to watch for is with 🏃 Person Running — the runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. And like every member of this family, 🤸🏼 carries one misread more often than the rest: it gets taken for actual athletic skill when it is mostly a shortcut for glee, since a cartwheel is a thing nobody does on purpose.",
+    "howPeopleUseIt": "The gesture is the same one 🤸 makes, so the family habits carry straight over. What changes with 🤸🏼 is who tends to send it and what they are assuming about the reader.\n\nMedium-light is reached with one extra tap, and the extra tap shows in the usage pattern. 🤸🏼 more often appears where somebody was picking a version on purpose — a profile picture caption, an avatar, a signature emoji, a reaction in a thread where the choice was not incidental. You will see it in announcing a win at work, and in reacting to a friend getting engaged.\n\nIt also shows up as a middle path. When the exact tone is not obvious, or when the sender is representing a character rather than themselves, medium-light is the compromise — and that is worth keeping in mind, because a compromise tone reads as deliberately neutral while carrying none of the reassurance of the neutral-sounding default.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🤸 itself, and every tone in this family inherits it.\n\nFor 🤸🏼, the specific trap is the compromise. It is easy to reach for a middle tone as a safe approximation, but a safe approximation is not neutral — it is a guess, and the guess is visible to anyone who has thought about it. If you do not know whose skin tone you are depicting, use 🤸 rather than reaching for a swatch that lands in the wrong place.\n\nAvoid 🤸🏼 when the tone is supposed to be read as deliberate but the rest of the message is casual. A chosen tone pulls the reader's attention to the emoji, and that attention does not transfer to the sentence.",
+    "howToReply": "Reply with 🤸 if you want to match the gesture without adopting a swatch. Matching the tone is only worth doing when the sender was clearly choosing on purpose — in that case, 🏼 back is a real acknowledgement of their choice.\n\nIf 🤸🏼 was a compromise rather than a decision, do not read it as one. Respond to the gesture and the sentence, not to the tone.",
     "faqs": [
       {
-        "question": "What does 🤸🏼 mean in texting?",
-        "answer": "In texting, 🤸🏼 usually points to person cartwheeling. It can be literal — describing person cartwheeling in the moment — or shorthand for the feeling or mood that person cartwheeling carries. Context, sender, and platform decide which read wins."
+        "question": "What does 🤸🏼 mean in chat?",
+        "answer": "🤸🏼 is Person Cartwheeling with a medium-light skin tone. It reads as celebrating so hard the sender cannot sit still, and the swatch adds a small note of deliberation."
       },
       {
-        "question": "Is 🤸🏼 flirty?",
-        "answer": "It can be. 🤸🏼 can read as soft flirt when sent on its own or paired with a compliment — especially in dating-app DMs. In a friend or work thread it usually reads as playful rather than romantic."
+        "question": "Is 🤸🏼 a deliberate choice?",
+        "answer": "More often than the first swatch. It is the second swatch in the tone list, one position past the default, so it takes a deliberate second tap. That extra step is why 🤸🏼 carries a slightly more intentional read than the default tone."
       },
       {
-        "question": "Is 🤸🏼 rude?",
-        "answer": "Generally no — 🤸🏼 is a neutral-to-friendly person cartwheeling marker. It can read as dismissive if used to replace a sentence in a tense exchange, but on its own the person cartwheeling cue is more playful than rude."
+        "question": "What does 🤸🏼 mean from a girl?",
+        "answer": "The same as it means from anyone else. The gesture is unchanged, and the skin tone does not shift the meaning by itself."
       },
       {
-        "question": "Is 🤸🏼 for sports?",
-        "answer": "🤸🏼 is widely used in sports contexts — match threads, fan reactions, and post-game replies. Outside sports it can still work as a fun person cartwheeling cue, but the strongest read is sports-coded."
+        "question": "Should I use 🤸🏼 to represent someone else?",
+        "answer": "Carefully. 🤸🏼 is a reasonable approximation for a lot of people, which is exactly why it gets borrowed so often. If you are depicting a specific person and you are not certain, use 🤸 instead of guessing."
       },
       {
-        "question": "What does 🤸🏼 mean from a guy?",
-        "answer": "From a guy, 🤸🏼 usually reads as a sports-coded reaction or a friendly person cartwheeling gesture. In dating contexts it can carry flirty energy, especially paired with a compliment."
+        "question": "What is the difference between 🤸🏼 and 🏃 Person Running?",
+        "answer": "the runner says someone is late or hurrying, the cartwheel says nobody is going anywhere. The tone does not change that — 🤸🏼 is the same gesture in a different swatch."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "that person cartwheeling moment with you, full energy 🤸🏼",
-      "interpretation": "Sentiment-coded person cartwheeling message — the person cartwheeling cue carries the warmth. Mirror with another 🤸🏼, a heart emoji, or a sentence that escalates the romance."
+      "setting": "friends",
+      "message": "announcing a win at work 🤸🏼",
+      "interpretation": "A friend sending 🤸🏼 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
     },
     {
-      "setting": "friends",
-      "message": "cannot handle this thread, full person cartwheeling chaos 🤸🏼",
-      "interpretation": "Friend-coded person cartwheeling reaction — the sender is being playful. Mirror with another 🤸🏼, a sentence that joins the energy, or a related emoji that matches the person cartwheeling beat."
+      "setting": "dating",
+      "message": "reacting to a friend getting engaged 🤸🏼",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is evidence that somebody thought about which swatch to press."
     },
     {
       "setting": "work",
-      "message": "person cartwheeling blocker sorted, ready when you are 🤸🏼",
-      "interpretation": "Work-coded person cartwheeling update — concise, professional, with a soft person cartwheeling touch. Mirror with another 🤸🏼, a sentence that confirms the handoff, or a thumbs-up emoji that matches the register."
+      "message": "understood 🤸🏼",
+      "interpretation": "A work thread. The medium-light skin tone passes without comment in a work thread."
     },
     {
       "setting": "family",
-      "message": "family person cartwheeling tonight, cannot wait 🤸🏼",
-      "interpretation": "Family-coded person cartwheeling excitement — warm, affectionate. Mirror with another 🤸🏼, a sentence that joins the warmth, or a heart emoji that matches the family tone."
+      "message": "fine 🤸🏼",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-light skin tone stands for the person in the picture rather than for the tone."
     },
     {
       "setting": "social",
-      "message": "this whole person cartwheeling era, full energy 🤸🏼",
-      "interpretation": "Public person cartwheeling flex — the sender is in their person cartwheeling moment. Mirror with another 🤸🏼, a sentence that joins the energy, or a heart emoji that matches the public person cartwheeling beat."
+      "message": "right 🤸🏼",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

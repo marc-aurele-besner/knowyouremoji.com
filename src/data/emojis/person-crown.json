@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person with Crown emoji.",
-  "tldr": "Represents person with crown.",
+  "baseMeaning": "Shows a figure wearing a small golden crown on top of the head.",
+  "tldr": "🫅 Person with Crown — claiming the top spot, often playfully.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents person with crown.",
-      "example": "Look at this person with crown 🫅",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a person with crown.",
-      "example": "They're such a person with crown 🫅",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Professional context for person with crown.",
-      "example": "Meeting with the team 🫅",
+      "meaning": "Borrowed as a reaction, it reads as claiming the top spot, often playfully.",
+      "example": "Marking a friendly winner of a small bet 🫅",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing person with crown.",
-      "example": "Sure, I'm totally a person with crown 🫅",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: claiming the top spot, often playfully, said without believing any of it.",
+      "example": "sure, sure 🫅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — claiming the top spot, often playfully — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🫅",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure wearing a small golden crown on top of the head. Nothing hidden in the drawing itself.",
+      "example": "Declaring yourself the best in the group chat 🫅",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on action coded person-crown threads, movement-marker reveal posts, and person-crown-pulse coded lists."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🫅 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like marking a friendly winner of a small bet."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of action coded person-crown flat-lays, action-canvas story backgrounds, and movement-marker profile accents."
+      "note": "On Instagram 🫅 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as claiming the top spot, often playfully under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in action coded person-crown transitions, movement-marker reaction reveals, and person-crown-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors action coded person-crown status messages, role-coded movement-marker markers, and person-crown-pulse coded reactions."
+      "note": "In TikTok comments 🫅 is the fastest way to answer a video without typing anything. The gesture stays claiming the top spot, often playfully, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through action coded person-crown reactions, movement-marker markers, and person-crown-pulse coded bullets."
+      "note": "In Slack 🫅 lands in channels where the sentence was supposed to be shorter. It is usually standing in for declaring yourself the best in the group chat, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🫅 is a staple of the reaction bar, which is why it so often arrives stripped of its claiming the top spot, often playfully reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 🫅 frequently in casual chat."
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🫅 deliberately, usually for something like marking a friendly winner of a small bet, and they read claiming the top spot, often playfully into it more often than the older cohorts do."
     },
     {
-      "generation": "MILLENNIAL",
-      "note": "Familiar with 🫅 across platforms."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🫅 literally, as the picture of the gesture itself, and is less likely to read claiming the top spot, often playfully into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🫅 literally."
+      "note": "Older senders use 🫅 in the most straightforward way, on family and group messages, and are less likely to hear the claiming the top spot, often playfully subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🫅 to do the work of declaring yourself the best in the group chat, and treats the neutral drawing as the default rather than as a choice. What they hear first is claiming the top spot, often playfully."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🫅 and 👑 get swapped",
+      "description": "The Crown 👑 is one tap away in every picker, and it does not carry the same reading — the crown is the prize itself, the crowned person is whoever is wearing it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🫅 as something else fairly often: it gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫅 Person with Crown Emoji Meaning - What Does 🫅 Really Mean?",
-  "seoDescription": "Learn what the person with crown emoji 🫅 really means in texts and social media. Discover all its uses and interpretations.",
+  "seoTitle": "🫅 Person with Crown Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🫅 Person with Crown explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "person-crown-light",
     "person-crown-medium-light",
@@ -83,60 +98,60 @@
     "person-crown-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🫅 is the emoji of action coded person-crown read — a clean person-crown-pulse shape, the action filled-in silhouette, and the universal 'action person-crown' tag for movement-marker. Where ⬛ reads as solid-black-coded person-crown read and ⬜ reads as solid-white-coded person-crown read, 🫅 captures the moment when the sender wants to communicate action coded person-crown — a 'action 🫅' movement-marker marker or a 'person-crown-pulse pulse 🫅' movement-marker reveal. The action fill cue borrows from design-coded bullet lists and the modern movement-marker aesthetic, which is exactly why the emoji reads as action coded rather than literal person-crown-coded shape.\n\nIn real-world usage 🫅 lives in the spaces where the sender wants to communicate movement-marker energy. A partner sends it on a 'action 🫅' movement-marker marker. A friend sends it on a 'person-crown-pulse pulse 🫅' reveal. A coworker sends it on a 'action coded 🫅' list thread. The action fill cue is what makes the emoji feel action coded — it is not just 'shape,' it is 'action coded person-crown moment.'\n\nWhat separates 🫅 from the rest of the shape family is the action register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'action coded person-crown,' which carries a specific design-coded tradition. That is why 🫅 travels especially well on partner movement-marker markers, movement-marker reveals, and any context where the sender wants the message to land with action energy.",
-    "howPeopleUseIt": "🫅 shows up as the bullet on a 'action 🫅' list message ('person-crown-pulse pulse 🫅'), the punctuation on a 'action coded 🫅' reveal, and the softener on a 'person-crown-pulse pulse 🫅' list thread. It pairs naturally with sentences that name the action energy — 'action,' 'person-crown-pulse pulse,' 'movement-marker-coded' — and sits beautifully on partner movement-marker markers and movement-marker reveals.\n\nIn group chats 🫅 anchors 'action coded moment' threads, movement-marker reveals, and 'action 🫅' tags where the person-crown cue matches the register. On Instagram it lands on action coded flat-lays and action-canvas stories. On TikTok it travels in action coded reveals and 'action' reaction content.\n\nThe emoji also works in dating contexts. A 'action 🫅' partner message uses the person-crown cue to communicate movement-marker romance. Across all of these surfaces the rule is the same: the more action coded the moment, the more natural 🫅 feels.",
-    "whenNotToUse": "Skip 🫅 in sympathy, condolence, or break-up contexts. The action coded person-crown cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🫅 in 'literal object' or finish-coded contexts where the action energy feels off. A 'action 🫅' message works for action marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🫅 when you want to communicate a different color. The action coded register is too action-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🫅, the cleanest mirror is another 🫅, ⬛, or a sentence that joins the action energy. If you want to escalate the engagement, follow with a sentence that adds context: 'action for sure' or 'person-crown-pulse pulse together.' If the person-crown cue feels too action coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the action volume.\n\nWhen 🫅 lands as a partner 'action 🫅' movement-marker marker, mirror with another 🫅, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'person-crown-pulse pulse 🫅' list thread, mirror with another 🫅, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👑 Crown: the crown is the prize itself, the crowned person is whoever is wearing it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The person with crown comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the person with crown for? Mostly declaring yourself the best in the group chat, and then marking a friendly winner of a small bet. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🫅 is a figure wearing a small golden crown on top of the head. It came into the emoji set in Unicode 13.0, under the person-role heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is claiming the top spot, often playfully. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🫅 sent to a colleague is a piece of work, 🫅 sent to a friend is a joke, and 🫅 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🫅 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"claiming the top spot, often playfully\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is declaring yourself the best in the group chat: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is marking a friendly winner of a small bet, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🫅 gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and person with crown gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🫅 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as claiming the top spot, often playfully — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 👑 Crown. The crown is the prize itself, the crowned person is whoever is wearing it. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🫅 sent as a reaction to somebody who is upset reads as claiming the top spot, often playfully, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🫅 gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like declaring yourself the best in the group chat needs the sentence: the drawing alone leaves the reader deciding between claiming the top spot, often playfully and something sharper.\n\nReply with 🫅 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🫅 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
+        "question": "What is the difference between 🫅 and 👑?",
+        "answer": "The crown is the prize itself, the crowned person is whoever is wearing it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🫅 rude?",
+        "answer": "It can be. The gesture is meant as claiming the top spot, often playfully, but it gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🫅 mean from a guy?",
-        "answer": "From a guy, 🫅 signals action coded flex or 'action 🫅' movement-marker marker. The person-crown cue reads as action-coded rather than literal person-crown-coded shape, so it tends to land on partner movement-marker markers, family-coded action messages, and 'person-crown-pulse pulse' reveals."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🫅 flirty?",
-        "answer": "It can be. In a partner context 🫅 can read as soft-coded romance — 'action 🫅' is a soft-coded movement-marker marker. On its own the emoji is more action coded than romantic."
+        "question": "What is the difference between 🫅 and its skin-tone versions?",
+        "answer": "The tone variants under person with crown show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🫅 and ⬛?",
-        "answer": "⬛ is the solid-black person-crown — the cue is solid-black-coded read, the universal 'fill' energy. 🫅 is the action person-crown — the cue is action coded person-crown read, the action energy. Use ⬛ when the moment is fill-coded; use 🫅 when the moment is action coded."
-      },
-      {
-        "question": "Is 🫅 for movement-marker moments?",
-        "answer": "Yes — 🫅 is one of the most popular action coded emojis. The person-crown cue is a natural fit for 'movement-marker' reveals, action coded messages, and partner 'action' markers."
-      },
-      {
-        "question": "Does 🫅 mean person-crown-pulse pulse?",
-        "answer": "Often yes — 🫅 carries the action fill visual and reads in modern usage as action coded. The literal-shape-versus-action-coded split depends on the sender and the channel."
+        "question": "What does 🫅 mean in text?",
+        "answer": "🫅 is used for claiming the top spot, often playfully. The drawing shows a figure wearing a small golden crown on top of the head, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "person-crown-pulse pulse for the partner plan, full action energy 🫅",
-      "interpretation": "Partner action romance. Mirror with another 🫅, a heart emoji, or a sentence that escalates the romance."
+      "setting": "work",
+      "message": "marking a friendly winner of a small bet 🫅",
+      "interpretation": "A handover or a sign-off in a channel. It reads as claiming the top spot, often playfully, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the action chaos 🫅",
-      "interpretation": "Public action flex. Mirror with another 🫅, a sentence that joins the action energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🫅",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a literal royal claim when it is mostly a joke about being number one, so the crown marks the bragging rather than any real status more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "action movement-marker with the family, full person-crown-pulse pulse energy 🫅",
-      "interpretation": "Family action reveal. Mirror with another 🫅, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "declaring yourself the best in the group chat 🫅",
+      "interpretation": "Family threads are where this lands most naturally. The reading is claiming the top spot, often playfully, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🫅",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "person-crown-pulse pulse today, full action energy 🫅",
-      "interpretation": "Friend action reveal. Mirror with another 🫅, a sentence that joins the action energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "action coded sprint today, full person-crown-pulse pulse energy 🫅",
-      "interpretation": "Work action moment. Mirror with another 🫅, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "declaring yourself the best in the group chat 🫅",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as claiming the top spot, often playfully, and matching it with the same emoji is a normal reply."
     }
   ]
 }

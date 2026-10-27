@@ -7,135 +7,137 @@
   "category": "people-body",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "10.0",
-  "baseMeaning": "American Sign Language gesture for 'I love you'.",
-  "tldr": "I love you! ASL sign combining I, L, and Y for love.",
+  "baseMeaning": "American Sign Language gesture for 'I love you'. The medium-dark skin tone modifier is applied to the hand.",
+  "tldr": "🤟🏾 Love-You Gesture with a medium-dark skin tone. Reached deliberately, so it reads as intentional.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "ASL sign for 'I love you'.",
-      "example": "Love you always 🤟",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Rock on or cool vibes (often confused with rock sign).",
-      "example": "Let's go! 🤟",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Expressing love or affection.",
-      "example": "Miss you 🤟",
+      "meaning": "The gesture reads the same as the untoned version; the medium-dark skin tone makes it a chosen version rather than a defaulted one.",
+      "example": "noted, understood 🤟🏾",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Casual love expression or hyping something up.",
-      "example": "This song 🤟",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very relaxed 🤟🏾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries.",
+      "example": "roger 🤟🏾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-dark skin tone applied to the hand.",
+      "example": "🤟🏾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🤟🏾 renders as a single toned glyph, and the medium-dark swatch is the fourth of the five in Apple's picker — it takes an extra tap past the three before it. Because it is chosen less often, it is also the one a sender is most likely to have picked on purpose."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp lists the medium-dark swatch fourth and renders it correctly on current builds, but older Android versions of the app fall back to the untoned glyph. In practice the medium-dark variant is one of the tones that loses its meaning most often in forwarded messages, because the fallback removes the part that was deliberate."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🤟🏾 lands on modern-coded love-you gesture threads, love-you gesture-tagged moment posts, and 'love-you gesture-coded' reveals where the love-you gesture cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🤟🏾 is a staple of modern-coded flat-lays, love-you gesture-canvas story backgrounds, and modern-coded profile accents; the love-you gesture cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🤟🏾 travels in modern-coded transitions, love-you gesture reaction reveals, and 'love-you gesture-coded' listicle content where the love-you gesture cue signals modern-coded energy."
+      "note": "Twemoji applies the tone to 🤟🏾 consistently. The medium-dark swatch holds its contrast better on a white background than the darkest one does, so it survives screenshotting and re-posting more often than the tone it sits next to."
     },
     {
       "platform": "SLACK",
-      "note": "🤟🏾 threads through modern-coded reactions, love-you gesture markers, and 'love-you gesture-coded' bullets in work channels where the love-you gesture cue fits the register."
+      "note": "Slack's emoji font renders the medium-dark swatch with less contrast than the phone version does, and the difference is more noticeable here than for the lighter tones. People who picked the swatch to represent themselves can look under-represented in a Slack screenshot for no reason other than the font."
     },
     {
       "platform": "DISCORD",
-      "note": "🤟🏾 is an active reaction in modern-coded love-you gesture channels, server-coded love-you gesture markers, and 'love-you gesture-coded' reveals where the love-you gesture cue matches the modern-coded register."
+      "note": "Discord uses Twemoji, so the modifier is preserved, but bots and integrations that rewrite messages are the weak point. The medium-dark swatch is the one most likely to arrive untoned, and the reason it was chosen in the first place is usually the reason it matters."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🤟🏾 on modern-coded love-you gesture threads, love-you gesture-coded reveals, and 'love-you gesture-coded' moments where the love-you gesture cue matches the modern modern-coded register."
+      "note": "Gen Z reads 🤟🏾 as a deliberate choice, because the swatch takes extra taps to reach. This cohort is also the most likely to notice when 🤟🏾 has been used to depict somebody else, and to read that as a statement about the person."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded love-you gesture moments, and love-you gesture-coded reveals where the universal love-you gesture cue fits."
+      "note": "Millennials pick 🤟🏾 when representing themselves, and treat it as personal in a way they do not treat the lighter tones. It is also the tone most often borrowed to depict somebody else in this cohort."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded love-you gesture messages and love-you gesture reveals, treating the love-you gesture as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal love-you gesture and uses it on modern-coded tags without parsing the modern love-you gesture-coded subtext."
+      "note": "Gen X is less likely to change the tone at all, so 🤟🏾 appears mostly in messages where the sender was depicting themselves. The swatch is read as personal rather than political."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🤟🏾 is frequently used to depict somebody other than its sender, and it is the tone most often used to represent a person who is not the sender, which is where the misreading starts. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤟🏾 Love-You Gesture Medium-Dark Skin Tone Emoji - What Does 🤟🏾 Mean?",
-  "seoDescription": "Learn what the love-you gesture emoji with medium-dark skin tone 🤟🏾 means in texts and social media.",
+  "seoTitle": "🤟🏾 Love-You Gesture Medium-Dark Skin Tone Emoji Meaning - What Does 🤟🏾 Mean?",
+  "seoDescription": "What does the love-you gesture emoji 🤟🏾 mean? Love-You Gesture showing a hand with thumb, index finger, and pinky extended, other fingers folded. Covers the medium-dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "love-you-gesture",
   "skinToneModifier": "medium-dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤟🏾 Love-You Gesture: Medium-Dark Skin Tone is the emoji of finger-coded signal — the sign-language tradition, the finger cue, and the universal \"this is what I mean\" tag. Where 🤙 reads as call-coded connection energy and 🤞 reads as luck-coded hope energy, 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone captures the moment when the sender wants to communicate finger-coded signal energy — a \"medium-dark-skinned love-you gesture\" coded tag or a partial-hand reveal.\n\nWhat separates 🤟🏾 from the rest of the family is the finger-coded register. The emoji is not saying 'love-you gesture-only.' It is saying 'love-you gesture-coded finger,' which carries a specific ASL, sign language, finger-coded tradition, or partial-hand expression. That is why 🤟🏾 travels especially well on coded reveals, signal tags, finger-coded moments, and partial-hand reactions and any context where the sender wants the message to land with finger energy.\n\n🤟🏾 Love-You Gesture: Medium-Dark Skin Tone lives in the spaces where the sender wants to communicate finger energy. A partner sends it on a \"love-you gesture 🤟🏾\" moment. A friend sends it on a \"finger 🤟🏾\" reveal. A coworker sends it on a \"love-you gesture 🤟🏾\" tag. The love-you gesture cue is what makes the emoji feel finger-coded — it is not just 'a moment,' it is 'love-you gesture-coded energy.'\n\nIn dating 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone works as a soft-coded flirty tag, where the love-you gesture cue signals hand-partial-coded signal. In work threads 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more finger the moment, the more natural 🤟🏾 feels.\n\nThe medium-dark-skinned variant carries the same finger-coded read but anchors the representation to a medium-dark skin-tone register. Writers can pair the medium-dark-skinned variant with the moment to keep the finger-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "🤟🏾 Love-You Gesture: Medium-Dark Skin Tone shows up as the closer on a 'love-you gesture 🤟🏾' moment, the punctuation on a 'love-you gesture 🤟🏾' reveal, and the softener on a 'finger 🤟🏾' tag. It pairs naturally with sentences that name the finger energy — 'love-you gesture,' 'hand-partial-coded signal,' 'love-you gesture-coded' — and sits beautifully on coded reveals, signal tags, finger-coded moments, and partial-hand reactions.\n\nIn group chats 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone anchors 'love-you gesture moment' threads, finger reveals, and 'love-you gesture 🤟🏾' tags where the love-you gesture cue matches the register. On Instagram it lands on finger flat-lays and finger stories. On TikTok it travels in finger transitions and 'love-you gesture' reaction content.\n\nThe emoji also works in dating contexts. A 'love-you gesture 🤟🏾' partner message uses the love-you gesture cue to communicate finger romance. Across all of these surfaces the rule is the same: the more finger the moment, the more natural 🤟🏾 feels.",
-    "whenNotToUse": "Skip 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone in sympathy, condolence, or break-up contexts. The finger-coded cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone in formal or professional contexts where the finger energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone when you want to communicate a full message. The finger register is too partial-coded for complete moments; use a sentence or a fuller hand emoji when the moment needs clarity.",
-    "howToReply": "If someone sends 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone, the cleanest mirror is another 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone, 🤙, or a sentence that joins the finger-coded energy. If the signal cue feels too finger-coded, reply with a softer emoji (✌️ or 🫶) that signals warmth without matching the signal volume.\n\nWhen 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone lands as a partner-coded flirty tag, mirror with another 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone, a heart emoji, or a sentence that escalates the romance. When it arrives as a hope-coded reveal, mirror with another 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone, a sentence that joins the hope, or a flex emoji that fits.",
+    "overview": "🤟🏾 is Love-You Gesture with a medium-dark skin tone — a hand with thumb, index finger, and pinky extended, other fingers folded. The gesture is the familiar one, doing what it always does: saying I love you, or hyping something up. What makes this variant worth its own page is that the tone is not an accident. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it, and that effort shows up in how the message lands.\n\nThe upshot is that 🤟🏾 reads as chosen. Where a first-swatch emoji can be waved past, a tone someone had to reach for tends to be read as a small, deliberate piece of information — usually about who the message is coming from, occasionally about who it is about. Neither reading is wrong, but they are not interchangeable, and that is where the confusion with 🤘 Sign of the Horns comes from: the horns sign is a rock handshape, the pinky-out version is the ASL love sign.\n\nThe situations it turns up in are the family ones, unchanged by the tone. The misread that keeps coming up is this: it gets mistaken for the rock horns sign, so the message lands as party talk rather than affection — the two shapes share a silhouette and the pinky is easy to overlook.",
+    "howPeopleUseIt": "The gesture is the same one 🤟 makes, so the family habits carry straight over. What changes with 🤟🏾 is who tends to send it and what they are assuming about the reader.\n\nMedium-dark takes an extra tap to reach, and 🤟🏾 shows up in the places where that extra tap was made on purpose: profile photos, avatars, introductions, and the emoji people pick for themselves rather than for a situation. It appears in texting love to a partner or a close friend, and in hyping a song before you press play, and it is more likely than the other tones to be the sender's own.\n\nIt is also the tone that gets borrowed most, because it sits closer to the middle of the list and so reads as a reasonable approximation of a lot of people. When 🤟🏾 is used to stand in for somebody else, the tone is quietly doing a job the sender never mentioned.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🤟 itself, and every tone in this family inherits it.\n\nThe tone-specific rule for 🤟🏾 is about borrowed representation. This is the swatch people reach for when they are depicting somebody else, and it is the swatch most likely to be wrong. If you are sending 🤟🏾 to stand in for another person, either know that you are doing it deliberately and accept that it will read that way, or use 🤟 instead.\n\nAlso avoid 🤟🏾 in professional threads where a chosen skin tone on a neutral emoji can look like a stance the message never made. The tone says the sender chose it, and readers will read the choice even when the sentence does not support it.",
+    "howToReply": "Matching the swatch is the acknowledging move here. If somebody picks a tone deliberately and you reply with 🏾, you are telling them you noticed; 🤟 reads as though you did not.\n\nKeep the reply proportionate otherwise. A sentence that names the moment will land better than a mirrored emoji when the message is the kind that invites a reply — the gesture is a good conversation opener on its own.",
     "faqs": [
       {
-        "question": "What does 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone mean in chat?",
-        "answer": "🤟🏾 Love-You Gesture: Medium-Dark Skin Tone is the finger-coded signal — it borrows from sign-language tradition and signals a coded reveal, hand-coded tag, or finger-coded moment. The finger cue is what makes the read feel finger-coded rather than literal."
+        "question": "What does 🤟🏾 mean in chat?",
+        "answer": "🤟🏾 is Love-You Gesture with a medium-dark skin tone. The gesture reads as saying I love you, or hyping something up, and the tone reads as chosen rather than defaulted to."
       },
       {
-        "question": "Is 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone flirty?",
-        "answer": "Sometimes. In a dating thread 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone can read as soft-coded romance — a \"thinking of you\" signal or a flirty-coded hand tag. On its own it reads more finger-coded than romantic."
+        "question": "Why does 🤟🏾 feel more intentional than 🤟?",
+        "answer": "Because of the picker position. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it. A swatch that takes extra taps gets read as a decision."
       },
       {
-        "question": "What does 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone mean from a partner?",
-        "answer": "From a partner, 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone signals a finger-coded signal or a coded reveal. The hand cue reads as signal-coded rather than literal, so it tends to land on partner coded messages, romance tags, and \"I'm here\" reveals."
+        "question": "What does 🤟🏾 mean from a girl?",
+        "answer": "The gesture reads the same as it does from anyone else. The tone does not add a gendered layer to 🤟."
       },
       {
-        "question": "Does 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone work in hope or luck moments?",
-        "answer": "Yes — 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone is a natural fit for hope reveals, finger-coded reactions, and \"I'm crossing my fingers\" tags. The finger cue is what makes the read feel finger-coded rather than sincere."
+        "question": "Is it rude to use 🤟🏾 to describe someone else?",
+        "answer": "It can be, and this is the tone where that happens most often. It is the tone most often used to represent a person who is not the sender, which is where the misreading starts. If you are unsure, 🤟 avoids the problem entirely."
       },
       {
-        "question": "What is the difference between 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone and 🤙?",
-        "answer": "🤙 is the call-me hand — the cue is call-coded connection energy. 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone is the finger-coded signal — the cue is finger-coded expression, the \"this is what I mean\" energy. Use 🤙 when the moment is call-coded; use 🤟🏾 Love-You Gesture: Medium-Dark Skin Tone when the moment is finger-coded signal."
+        "question": "What is the difference between 🤟🏾 and 🤘 Sign of the Horns?",
+        "answer": "the horns sign is a rock handshape, the pinky-out version is the ASL love sign."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "love-you gesture 🤟🏾 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 🤟🏾, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the love-you gesture chaos 🤟🏾",
-      "interpretation": "Public modern-coded flex. Mirror with another 🤟🏾, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "love-you gesture 🤟🏾 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 🤟🏾, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "love-you gesture today, full modern-coded energy 🤟🏾",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 🤟🏾, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "texting love to a partner or a close friend 🤟🏾",
+      "interpretation": "A friend sending 🤟🏾 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "hyping a song before you press play 🤟🏾",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a deliberate statement about who is being pictured."
     },
     {
       "setting": "work",
-      "message": "love-you gesture coded sprint today, full modern-coded energy 🤟🏾",
-      "interpretation": "Work modern-coded moment. Mirror with another 🤟🏾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "roger 🤟🏾",
+      "interpretation": "A work thread. The medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries."
+    },
+    {
+      "setting": "family",
+      "message": "right then 🤟🏾",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "indeed 🤟🏾",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

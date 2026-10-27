@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A farmer with crops.",
-  "tldr": "Farmer! Agriculture or country life.",
+  "baseMeaning": "A picture of a head and shoulders with a sheaf of wheat rising behind them. Read in a message it lands as working the land, or grinding through a hard stretch.",
+  "tldr": "🧑‍🌾 Farmer. In a chat it comes across as working the land, or grinding through a hard stretch.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a farmer.",
-      "example": "Farm life 🧑‍🌾",
+      "meaning": "The plain reading: a head and shoulders with a sheaf of wheat rising behind them. Nothing hidden in the drawing itself.",
+      "example": "Grinding through a work backlog 🧑‍🌾",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Grinding or working hard.",
-      "example": "Farming for rewards 🧑‍🌾",
+      "meaning": "Borrowed as a reaction, it reads as working the land, or grinding through a hard stretch.",
+      "example": "Announcing a game farming session 🧑‍🌾",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Gaming farming reference.",
-      "example": "Farming XP 🧑‍🌾",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as working the land, or grinding through a hard stretch, softened by whatever sentence sits next to it.",
+      "example": "not me 🧑‍🌾",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Agriculture context.",
-      "example": "Farm update 🧑‍🌾",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — working the land, or grinding through a hard stretch — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍🌾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors farmer-coded threads, farmer with hat-coded flex tweets, and 'farmer energy' captions where the farmer with hat cue signals harvest-flex register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on farmer-coded flat-lays, farmer with hat-coded stories, and 'farmer-coded' reveals where the farmer with hat visual carries harvest-flex charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in farmer-coded transitions, farmer with hat-coded clips, and 'farmer-coded' reaction content where the farmer with hat cue signals harvest-flex register."
+      "platform": "SLACK",
+      "note": "In Slack 🧑‍🌾 lands in channels where the sentence was supposed to be shorter. It is usually standing in for grinding through a work backlog, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner farmer-coded check-ins, friend farmer with hat-coded messages, and group chats where the 🧑‍🌾 cue matches the harvest-flex moment."
+      "note": "On Discord 🧑‍🌾 is a staple of the reaction bar, which is why it so often arrives stripped of its working the land, or grinding through a hard stretch reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧑‍🌾 does most of its work in replies, where it tags a message like announcing a game farming session. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Farmer 🧑‍🌾 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like grinding through a work backlog is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧑‍🌾 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like announcing a game farming session."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 🧑‍🌾 on farmer-coded threads, farmer with hat-coded memes, and farmer fits where the farmer with hat cue matches the modern harvest-flex register."
+      "note": "Gen Z reaches for 🧑‍🌾 to do the work of grinding through a work backlog, and treats the neutral drawing as the default rather than as a choice. What they hear first is working the land, or grinding through a hard stretch."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 🧑‍🌾 on farmer-coded nostalgia, farmer with hat-coded humor, and 'farmer-coded' jokes where the millennial farmer memory still resonates."
+      "note": "Millennials tend to send 🧑‍🌾 deliberately, usually for something like announcing a game farming session, and they read working the land, or grinding through a hard stretch into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🧑‍🌾 on farmer-coded jokes, farmer with hat-coded reveals, and farmer flexes where the farmer with hat cue reads as harvest-flex reference."
+      "note": "Gen X mostly uses 🧑‍🌾 literally, as the picture of the gesture itself, and is less likely to read working the land, or grinding through a hard stretch into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🧑‍🌾 as a literal farmer with hat and pastes it onto farmer replies without parsing the modern 'farmer-coded' or harvest-flex subtext."
+      "note": "Older senders use 🧑‍🌾 in the most straightforward way, on family and group messages, and are less likely to hear the working the land, or grinding through a hard stretch subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍🌾 and 👨‍🌾 get swapped",
+      "description": "The Man Farmer 👨‍🌾 is one tap away in every picker, and it does not carry the same reading — the gendered farmer pins the role to one man, the neutral farmer covers whoever is doing the work. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍🌾 as something else fairly often: it gets often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🌾 Farmer Emoji Meaning - What Does 🧑‍🌾 Really Mean?",
-  "seoDescription": "Learn what the farmer emoji 🧑‍🌾 really means in texts and DMs. farmer, harvest, and the harvest flex register.",
+  "seoTitle": "🧑‍🌾 Farmer Emoji - What It Actually Means in Text",
+  "seoDescription": "🧑‍🌾 Farmer meaning: working the land, or grinding through a hard stretch. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "farmer-light",
     "farmer-medium-light",
@@ -83,60 +98,60 @@
     "farmer-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧑‍🌾 is the emoji of farmer-coded charm — a farmer with hat farmer, the iconography of harvest-coded nostalgia, rural-flex-coded flex, and the universal harvest-flex tag. 🧑‍🌾 captures the moment when the sender wants to communicate farmer-coded warmth — a 'rural-flex-coded 🧑‍🌾' harvest-coded flex or a 'farmer-coded 🧑‍🌾' rural-flex-coded reveal. The farmer with hat cue borrows from the universal farmer tradition and the modern rural aesthetic, which is exactly why the emoji reads as harvest-flex rather than literal.\n\nIn real-world usage 🧑‍🌾 lives in the spaces where the sender wants to communicate farmer-coded warmth. A friend sends it on a 'rural-flex-coded 🧑‍🌾' harvest-coded reveal. A partner sends it on a 'farmer-coded 🧑‍🌾' rural-flex-coded check-in. A coworker sends it on a 'rural-flex-coded flex 🧑‍🌾' farmer-coded flex. The farmer with hat cue is what makes the emoji feel farmer-coded — it is not just 'farmer,' it is 'farmer-coded farmer flex.'\n\nWhat separates 🧑‍🌾 from related farmer emojis is the harvest-flex register. The emoji is not saying the literal farmer version, the obvious variant, or the related alt. It is saying 'farmer-coded charm,' which carries a specific farmer tradition. That is why 🧑‍🌾 travels especially well on rural-flex-coded flexes, harvest-coded reveals, farmer-coded jokes, and any context where the sender wants the message to land with harvest-flex energy.",
-    "howPeopleUseIt": "🧑‍🌾 shows up as the closer on a 'rural-flex-coded 🧑‍🌾' farmer message ('farmer-coded today 🧑‍🌾'), the punctuation on a 'harvest-coded 🧑‍🌾' rural-flex-coded reveal, and the softener on a 'farmer-coded flex 🧑‍🌾' rural-flex-coded flex. It pairs naturally with sentences that name the harvest-flex energy — 'farmer-coded,' 'harvest-coded,' 'rural-flex-coded' — and sits beautifully on rural-flex-coded flexes and harvest-coded reveals.\n\nIn group chats 🧑‍🌾 anchors 'farmer-coded moment' threads, rural-flex-coded moments, and 'harvest-coded 🧑‍🌾' coded tags where the farmer with hat cue matches the register. On Instagram it lands on farmer-coded flat-lays and harvest-coded stories. On TikTok it travels in farmer-coded reveals and 'rural-flex-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'rural-flex-coded tonight 🧑‍🌾' partner message uses the farmer with hat cue to communicate farmer-coded soft-coded romance. Across all of these surfaces the rule is the same: the more farmer-coded the moment, the more natural 🧑‍🌾 feels.",
-    "whenNotToUse": "Skip 🧑‍🌾 in opposite-coded or off-tone contexts. The harvest-flex visual cue is the wrong tone for any conversation where the moment runs counter. A sentence that acknowledges the energy or a more neutral emoji is a better fit.\n\nAvoid 🧑‍🌾 in work or formal-coded contexts where the farmer-coded rule feels off. A 'farmer-coded 🧑‍🌾' Slack message works for a harvest-flex moment; for a more measured update use a sentence or calmer emoji.\n\nSkip 🧑‍🌾 when you want to communicate soft or bold affection outside the harvest-flex register. The farmer-coded tone is too coded for tender or loud moments; use a heart emoji or a sentence when the affection needs to read clearer.",
-    "howToReply": "If someone sends 🧑‍🌾, the cleanest mirror is another 🧑‍🌾, a related emoji, or a sentence that joins the harvest-flex energy. If you want to escalate the engagement, follow with a sentence that adds context: 'farmer-coded for sure' or 'rural-flex-coded together.' If the visual cue feels too coded, reply with a softer emoji that signals the register without matching the volume.\n\nWhen 🧑‍🌾 lands as a partner 'rural-flex-coded 🧑‍🌾' check-in, mirror with another 🧑‍🌾, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'farmer-coded flex 🧑‍🌾' coded message, mirror with another 🧑‍🌾, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The drawing of 🧑‍🌾 is a head and shoulders with a sheaf of wheat rising behind them. It arrived with Unicode 12.1 in the person-role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is working the land, or grinding through a hard stretch. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👨‍🌾 Man Farmer: the gendered farmer pins the role to one man, the neutral farmer covers whoever is doing the work. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe farmer also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the farmer reads as working the land, or grinding through a hard stretch, it is most often used for grinding through a work backlog or announcing a game farming session, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🧑‍🌾 in a work thread is announcing a game farming session; 🧑‍🌾 in a family thread is grinding through a work backlog; 🧑‍🌾 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🧑‍🌾 is the whole reply, and it is carrying a meaning nobody wrote down — working the land, or grinding through a hard stretch is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Grinding through a work backlog is the job the farmer does most: it saves a sentence and lands faster than one would have. Announcing a game farming session is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🧑‍🌾 will get often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a farmer gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🧑‍🌾 reads as working the land, or grinding through a hard stretch, and formality is exactly where that reading does the most damage.\n\nLeave 👨‍🌾 Man Farmer for the other message. The gendered farmer pins the role to one man, the neutral farmer covers whoever is doing the work. And keep 🧑‍🌾 out of threads where somebody is hurting: it reads as working the land, or grinding through a hard stretch there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🧑‍🌾 gets often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game often enough that the sentence matters more than the picture.\n\nAnd do not send 🧑‍🌾 alone when the message underneath is supposed to be warm. A message like grinding through a work backlog carries the feeling; the picture on its own leaves the reader choosing between working the land, or grinding through a hard stretch and something sharper.\n\nStart by reading what the 🧑‍🌾 was doing. If it was a reaction, react: 🧑‍🌾 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🧑‍🌾 and its skin-tone versions?",
+        "answer": "The tone variants under farmer show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🧑‍🌾 mean in text?",
+        "answer": "🧑‍🌾 is used for working the land, or grinding through a hard stretch. The drawing shows a head and shoulders with a sheaf of wheat rising behind them, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🧑‍🌾 and 👨‍🌾?",
+        "answer": "The gendered farmer pins the role to one man, the neutral farmer covers whoever is doing the work. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🧑‍🌾 rude?",
+        "answer": "It can be. The gesture is meant as working the land, or grinding through a hard stretch, but it gets often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🧑‍🌾 mean from a guy?",
-        "answer": "From a guy, 🧑‍🌾 signals farmer-coded flex or 'rural-flex-coded 🧑‍🌾' reveal. The visual cue reads as harvest-flex rather than literal, so it tends to land on partner check-ins, family-coded messages, and 'rural-flex-coded flex' reveals."
-      },
-      {
-        "question": "Is 🧑‍🌾 flirty?",
-        "answer": "It can be. In a partner context 🧑‍🌾 can read as farmer-coded soft-coded romance — 'rural-flex-coded tonight 🧑‍🌾' is a soft-coded check-in. On its own the emoji is more farmer-coded than romantic."
-      },
-      {
-        "question": "How does 🧑‍🌾 differ from other farmer emojis?",
-        "answer": "🧑‍🌾 sits in the farmer-coded register and reads as rural-flex-coded energy, while other farmer emojis lean toward more literal or alternative readings. The visual cue is what separates 🧑‍🌾 from sibling options, so use it when the moment is farmer-coded."
-      },
-      {
-        "question": "Is 🧑‍🌾 for farmer moments?",
-        "answer": "Yes — 🧑‍🌾 is a popular farmer-coded emoji. The visual cue is a natural fit for rural-flex-coded reveals, farmer-coded messages, and partner 'rural-flex-coded flex' check-ins."
-      },
-      {
-        "question": "Does 🧑‍🌾 mean farmer-coded?",
-        "answer": "Often yes — 🧑‍🌾 carries rural-flex-coded farmer-coded charm and reads in modern usage as farmer-coded. The literal-versus-harvest-flex split depends on the sender and the channel."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "rural-flex-coded tonight, full farmer-coded energy 🧑‍🌾",
-      "interpretation": "Partner farmer-coded romance. Mirror with another 🧑‍🌾, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the rural-flex-coded chaos 🧑‍🌾",
-      "interpretation": "Public farmer-coded flex. Mirror with another 🧑‍🌾, a sentence that joins the harvest-flex energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "rural-flex-coded moment with the family, full farmer-coded energy 🧑‍🌾",
-      "interpretation": "Family farmer-coded reveal. Mirror with another 🧑‍🌾, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🧑‍🌾",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "farmer-coded today, full rural-flex-coded flex 🧑‍🌾",
-      "interpretation": "Friend farmer-coded reveal. Mirror with another 🧑‍🌾, a sentence that joins the harvest-flex energy, or a heart emoji that matches."
+      "message": "grinding through a work backlog 🧑‍🌾",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as working the land, or grinding through a hard stretch, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "rural-flex-coded flex at work today, full farmer-coded mode 🧑‍🌾",
-      "interpretation": "Work farmer-coded moment. Mirror with another 🧑‍🌾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "announcing a game farming session 🧑‍🌾",
+      "interpretation": "A handover or a sign-off in a channel. It reads as working the land, or grinding through a hard stretch, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧑‍🌾",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets often mistaken for a literal job title, when the wheat usually stands in for the grind itself — someone hustling, grinding, or farming XP in a game more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "grinding through a work backlog 🧑‍🌾",
+      "interpretation": "Family threads are where this lands most naturally. The reading is working the land, or grinding through a hard stretch, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

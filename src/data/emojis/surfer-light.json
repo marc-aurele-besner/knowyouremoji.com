@@ -7,135 +7,137 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Surfing emoji.",
-  "tldr": "Represents person surfing.",
+  "baseMeaning": "Person Surfing emoji. The light skin tone modifier is applied to the figure.",
+  "tldr": "🏄🏻 Person Surfing with a light skin tone. Usually the default pick, so it reads as casual rather than deliberate.",
   "contextMeanings": [
     {
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it a low-stakes, playful choice rather than a considered one.",
+      "example": "say less 🏄🏻",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the light skin tone stays safe in a work thread precisely because nobody registers the choice.",
+      "example": "on it 🏄🏻",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of person surfing.",
-      "example": "Time for person surfing 🏄",
+      "meaning": "Shows the same artwork as the untoned version, with the light skin tone applied to the figure.",
+      "example": "🏄🏻",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🏄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person surfing? 🏄",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🏄",
+      "meaning": "The gesture reads the same as the untoned version; the light skin tone makes it a straight rendering with no deliberate tone attached.",
+      "example": "mm-hm 🏄🏻",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🏄🏻 renders as one combined glyph with the tone applied, since Apple has supported Fitzpatrick modifiers since iOS 9.3. The light swatch is also the hardest one to judge on a screen: it sits close enough to the untoned version that most readers do not register a tone at all."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the tone on current builds and lists the swatches in the same order as every other client, so the light swatch is the first one in the row. Older Android builds fall back to the untoned glyph, which means an old screenshot can show 🏄 where a new phone shows 🏄🏻."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🏄🏻 lands on modern-coded person surfing threads, person surfing-tagged moment posts, and 'person surfing-coded' reveals where the person surfing cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🏄🏻 is a staple of modern-coded flat-lays, person surfing-canvas story backgrounds, and modern-coded profile accents; the person surfing cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🏄🏻 travels in modern-coded transitions, person surfing reaction reveals, and 'person surfing-coded' listicle content where the person surfing cue signals modern-coded energy."
+      "note": "Twitter renders through Twemoji, which applies the light modifier consistently to plain emoji. Because the swatch is the default one, a screenshot of a reply rarely carries enough contrast to tell a light variant from an untoned one."
     },
     {
       "platform": "SLACK",
-      "note": "🏄🏻 threads through modern-coded reactions, person surfing markers, and 'person surfing-coded' bullets in work channels where the person surfing cue fits the register."
+      "note": "Slack uses its own emoji font, and its light swatch renders flatter and slightly paler than the same glyph on a phone. That is a font difference rather than a meaning difference, but it does mean 🏄🏻 looks less obviously toned in a Slack thread than in Messages."
     },
     {
       "platform": "DISCORD",
-      "note": "🏄🏻 is an active reaction in modern-coded person surfing channels, server-coded person surfing markers, and 'person surfing-coded' reveals where the person surfing cue matches the modern-coded register."
+      "note": "Discord also uses Twemoji, so 🏄🏻 looks the same there as it does on Twitter. The practical thing to remember is that bots, bridges and older clients in the middle of a chain flatten the tone first, and a light swatch is the one most likely to be flattened without anyone noticing."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🏄🏻 on modern-coded person surfing threads, person surfing-coded reveals, and 'person surfing-coded' moments where the person surfing cue matches the modern modern-coded register."
+      "note": "Gen Z reaches for 🏄🏻 constantly and almost never as a statement, because it is the first swatch in the tone list on Apple, Google, WhatsApp and Slack, and the one a thumb lands on without looking. What the generation does instead is default to it and then override it later, which is why the light swatch shows up so often in avatars that were meant to be personalised."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded person surfing moments, and person surfing-coded reveals where the universal person surfing cue fits."
+      "note": "Millennials send 🏄🏻 as the safe version of 🏄, particularly in mixed groups where nobody wants to guess at a representation. The tone gets changed deliberately only when the picture is of the sender."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded person surfing messages and person surfing reveals, treating the person surfing as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal person surfing and uses it on modern-coded tags without parsing the modern person surfing-coded subtext."
+      "note": "Gen X tends to treat 🏄🏻 as simply 🏄 with a face on it, and picks the light swatch because it is first in the list. The tone is rarely interpreted at all in this cohort."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "The default swatch is not a neutral one",
+      "description": "🏄🏻 is picked without a decision often enough that it ends up describing people who never chose it. Use 🏄 when you are not depicting a specific person.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🏄🏻 Person Surfing Light Skin Tone Emoji - What Does 🏄🏻 Mean?",
-  "seoDescription": "Learn what the person surfing emoji with light skin tone 🏄🏻 means in texts and social media.",
+  "seoTitle": "🏄🏻 Person Surfing Light Skin Tone Emoji Meaning - What Does 🏄🏻 Mean?",
+  "seoDescription": "What does the person surfing emoji 🏄🏻 mean? Person Surfing showing a figure standing sideways on a surfboard riding a breaking wave. Covers the light skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "surfer",
   "skinToneModifier": "light",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🏄🏻 Person Surfing: Light Skin Tone is the emoji of sport-coded athletic flex — the athletic tradition, the fitness cue, and the universal \"in the game\" tag. Where 🏆 reads as victory-coded finish energy and ⚽ reads as ball-coded play energy, 🏄🏻 Person Surfing: Light Skin Tone captures the moment when the sender wants to communicate sport-coded athletic energy — a \"light-skinned person surfing\" workout tag or a game-day-coded reveal.\n\nWhat separates 🏄🏻 from the rest of the family is the sport-coded register. The emoji is not saying 'person surfing-only.' It is saying 'person surfing-coded sport,' which carries a specific athletic tradition, sports fandom, or workout energy. That is why 🏄🏻 travels especially well on fitness reveals, game-day tags, athletic-coded flex, and training moments and any context where the sender wants the message to land with sport energy.\n\n🏄🏻 Person Surfing: Light Skin Tone lives in the spaces where the sender wants to communicate sport energy. A partner sends it on a \"person surfing 🏄🏻\" moment. A friend sends it on a \"sport 🏄🏻\" reveal. A coworker sends it on a \"person surfing 🏄🏻\" tag. The person surfing cue is what makes the emoji feel sport-coded — it is not just 'a moment,' it is 'person surfing-coded energy.'\n\nIn dating 🏄🏻 Person Surfing: Light Skin Tone works as a soft-coded flirty tag, where the person surfing cue signals sport-coded athletic flex. In work threads 🏄🏻 Person Surfing: Light Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏄🏻 feels.\n\nThe light-skinned variant carries the same sport-coded read but anchors the representation to a lighter skin-tone register. Writers can pair the light-skinned variant with the moment to keep the sport-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "🏄🏻 Person Surfing: Light Skin Tone shows up as the closer on a 'person surfing 🏄🏻' moment, the punctuation on a 'person surfing 🏄🏻' reveal, and the softener on a 'sport 🏄🏻' tag. It pairs naturally with sentences that name the sport energy — 'person surfing,' 'sport-coded athletic flex,' 'person surfing-coded' — and sits beautifully on fitness reveals, game-day tags, athletic-coded flex, and training moments.\n\nIn group chats 🏄🏻 Person Surfing: Light Skin Tone anchors 'person surfing moment' threads, sport reveals, and 'person surfing 🏄🏻' tags where the person surfing cue matches the register. On Instagram it lands on sport flat-lays and sport stories. On TikTok it travels in sport transitions and 'person surfing' reaction content.\n\nThe emoji also works in dating contexts. A 'person surfing 🏄🏻' partner message uses the person surfing cue to communicate sport romance. Across all of these surfaces the rule is the same: the more sport the moment, the more natural 🏄🏻 feels.",
-    "whenNotToUse": "Skip 🏄🏻 Person Surfing: Light Skin Tone in sympathy, condolence, or break-up contexts. The sport-coded athletic cue is the wrong register for somber moments. A quiet 💔 or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🏄🏻 Person Surfing: Light Skin Tone in sedentary contexts where the athletic energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip 🏄🏻 Person Surfing: Light Skin Tone when you want to communicate rest or recovery. The sport register is too athletic-coded for quiet moments; use 🛋️ or a sentence when the moment needs calm.",
-    "howToReply": "If someone sends 🏄🏻 Person Surfing: Light Skin Tone, the cleanest mirror is another 🏄🏻 Person Surfing: Light Skin Tone, 💪, or a sentence that joins the athletic energy. If the sport cue feels too active-coded, reply with a softer emoji (🏆 or 🙌) that signals support without matching the workout volume.\n\nWhen 🏄🏻 Person Surfing: Light Skin Tone lands as a game-day tag, mirror with another 🏄🏻 Person Surfing: Light Skin Tone, a trophy emoji, or a sentence that escalates the fan energy. When it arrives as a fitness-coded reveal, mirror with another 🏄🏻 Person Surfing: Light Skin Tone, a sentence that joins the gym energy, or a flex emoji that fits.",
+    "overview": "🏄🏻 is Person Surfing rendered with a light skin tone — a figure standing sideways on a surfboard riding a breaking wave. The gesture itself is doing the same work it does in 🏄, so the reading is going with the flow, or chasing a big moment. What the swatch adds is proximity. It is the first swatch in the tone list on Apple, Google, WhatsApp and Slack, and the one a thumb lands on without looking. People press it without thinking, which is exactly why the tone rarely gets read as a statement on its own. That is the useful thing to know about 🏄🏻 — it is the tone that disappears into the sentence.\n\nThe trap with this variant is that it gets borrowed. Because it is the swatch people reach for without looking, 🏄🏻 is frequently used to stand in for somebody else — a friend in a screenshot, a character in a story, a figure in a joke. When that happens the tone is doing no work, and the risk is that a reader takes the borrowing as a description of the person who sent it.\n\nWhere it lands in practice is spelled out below, and the pattern is unremarkable: the gesture does the work and the tone is incidental. It sits next to 🏊 Person Swimming often enough to be worth separating: the swimmer is head-down exertion, the surfer is upright balance on something much faster. And the standard misread for this glyph is worth naming outright — it gets taken for a laid-back beach holiday when it is really about a single committed ride, one wave and no interest in what happens after.",
+    "howPeopleUseIt": "The gesture is the same one 🏄 makes, so the family habits carry straight over. What changes with 🏄🏻 is who tends to send it and what they are assuming about the reader.\n\nBecause it is the first swatch in the tone list on Apple, Google, WhatsApp and Slack, and the one a thumb lands on without looking, 🏄🏻 tends to be sent in passing — a reaction to a photo, a half-second addition to a sentence, a mark on the end of a line. It turns up in announcing you are leaving the group chat, and in signing off a difficult stretch of work. It also turns up in screenshots, forwarded messages, and quotes of other people, where the skin tone belongs to whoever was in the original picture rather than to the sender. That is the single most common context for this variant, and the one most likely to be misunderstood as a statement about the person forwarding it.\n\nThe tone is almost never the point. 🏄🏻 reads as a straight rendering with no deliberate tone attached, which is why it usually gets skimmed the way any other emoji in this family gets skimmed.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🏄 itself, and every tone in this family inherits it.\n\nThe tone-specific rule for 🏄🏻 is simpler: do not use it as if it were a description of anyone. Because the light swatch is the default press, it gets attached to people, characters and screenshots constantly without anyone deciding what the skin tone was doing there. If you are writing about a real person, use their name or a neutral emoji instead of defaulting to 🏄🏻.\n\nAlso skip 🏄🏻 when the message is about the tone itself — a joke that only works if the reader notices the swatch — because the light tone is too ordinary to be noticed on purpose.",
+    "howToReply": "Mirror with 🏄 or with another light tone if you want to match without making the swatch a point. Because the light tone is the default press, it is the safest tone to send back: nobody reads anything into it.\n\nIf the sender is representing themselves with 🏄🏻 and you want to acknowledge that specifically, 🏻 with a sentence naming the moment works better than a bare emoji. And if the message is one of the family's usual misfires — the gesture read as something harsher than it was — a plain sentence is usually more effective than any mirrored emoji.",
     "faqs": [
       {
-        "question": "What does 🏄🏻 Person Surfing: Light Skin Tone mean in chat?",
-        "answer": "🏄🏻 Person Surfing: Light Skin Tone is the sport-coded athletic flex — it borrows from athletic tradition and signals a fitness reveal, game-day tag, or workout-coded moment. The athletic cue is what makes the read feel sport-coded rather than literal."
+        "question": "What does 🏄🏻 mean in text?",
+        "answer": "🏄🏻 is Person Surfing drawn with a light skin tone. The gesture still reads as going with the flow, or chasing a big moment, but because the light swatch is the one most pickers default to, the tone itself rarely gets interpreted."
       },
       {
-        "question": "Is 🏄🏻 Person Surfing: Light Skin Tone flirty?",
-        "answer": "Sometimes. In a dating thread 🏄🏻 Person Surfing: Light Skin Tone can read as active-coded romance — a \"let's workout together\" tag or a fitness-coded flirty hint. On its own it reads more sport than romantic."
+        "question": "Does the light skin tone in 🏄🏻 mean anything on its own?",
+        "answer": "Usually not. It is the first swatch in the tone list on Apple, Google, WhatsApp and Slack, and the one a thumb lands on without looking — so most senders pick it without deciding to. It starts carrying meaning when somebody chooses it to depict a specific person."
       },
       {
-        "question": "What does 🏄🏻 Person Surfing: Light Skin Tone mean from a guy?",
-        "answer": "From anyone, 🏄🏻 Person Surfing: Light Skin Tone signals sport-coded flex or a fitness-coded reveal. The athletic cue reads as workout-coded rather than literal, so it tends to land on game-day tags, friend coded messages, and fitness-coded reveals."
+        "question": "What does 🏄🏻 mean from a guy?",
+        "answer": "Nothing changes about the gesture, so nothing changes about the read. The skin tone is not gendered and does not add a gendered meaning to 🏄."
       },
       {
-        "question": "Does 🏄🏻 Person Surfing: Light Skin Tone work for working out moments?",
-        "answer": "Yes — 🏄🏻 Person Surfing: Light Skin Tone is one of the most popular sport-coded emojis. The athletic cue fits gym reveals, training-coded tags, and game-day-coded fandom shares."
+        "question": "Is 🏄🏻 rude?",
+        "answer": "The tone is not what makes it rude. 🏄 carries the risk on its own, and the light swatch does not make the gesture safer or bolder — it only changes which version of it you sent."
       },
       {
-        "question": "What is the difference between 🏄🏻 Person Surfing: Light Skin Tone and 🏆?",
-        "answer": "🏆 is the trophy — the cue is victory-coded finish energy. 🏄🏻 Person Surfing: Light Skin Tone is the active athletic moment — the cue is sport-coded fitness, the \"in the game\" energy. Use 🏆 when the moment is victory-coded; use 🏄🏻 Person Surfing: Light Skin Tone when the moment is sport-coded athletic."
+        "question": "What is the difference between 🏄🏻 and 🏄?",
+        "answer": "Only the skin tone. 🏄 is the tone-less version, and it is the one to use when you are not depicting a specific person. The swimmer is head-down exertion, the surfer is upright balance on something much faster."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "person surfing 🏄🏻 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 🏄🏻, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the person surfing chaos 🏄🏻",
-      "interpretation": "Public modern-coded flex. Mirror with another 🏄🏻, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "person surfing 🏄🏻 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 🏄🏻, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "person surfing today, full modern-coded energy 🏄🏻",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 🏄🏻, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "announcing you are leaving the group chat 🏄🏻",
+      "interpretation": "A friend sending 🏄🏻 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "signing off a difficult stretch of work 🏄🏻",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a low-stakes, playful choice rather than a considered one."
     },
     {
       "setting": "work",
-      "message": "person surfing coded sprint today, full modern-coded energy 🏄🏻",
-      "interpretation": "Work modern-coded moment. Mirror with another 🏄🏻, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "on it 🏄🏻",
+      "interpretation": "A work thread. The light skin tone stays safe in a work thread precisely because nobody registers the choice."
+    },
+    {
+      "setting": "family",
+      "message": "alright then 🏄🏻",
+      "interpretation": "A family chat where the emoji is being read literally — the light skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "ok 🏄🏻",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

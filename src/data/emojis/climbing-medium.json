@@ -7,131 +7,137 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Climbing emoji.",
-  "tldr": "Represents person climbing.",
+  "baseMeaning": "Person Climbing emoji. The medium skin tone modifier is applied to the figure.",
+  "tldr": "🧗🏽 Person Climbing with a medium skin tone. The middle tone, often standing in for a neutral default.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "The activity of person climbing.",
-      "example": "Time for person climbing 🧗",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🧗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person climbing? 🧗",
+      "meaning": "The gesture reads the same as the untoned version; the medium skin tone makes it the neutral version of the emoji, with almost nothing attached.",
+      "example": "copy that 🧗🏽",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🧗",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very chill 🧗🏽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium skin tone reads as the unremarkable version in a work thread.",
+      "example": "acknowledged 🧗🏽",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Shows the same artwork as the untoned version, with the medium skin tone applied to the figure.",
+      "example": "🧗🏽",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
       "platform": "IMESSAGE",
-      "note": "Lands on person climbing reaction taps, blue-bubble thread replies, and tapback 'love/like/laughing' markers when the person climbing cue fits the message."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Shows up on person climbing story stickers, DM reaction replies, and reel comments where the person climbing cue reads cleanly in the captions and story reactions."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in person climbing sound-cued transitions, green-screen comment replies, and stitched reaction videos where the person climbing beat lands fast."
+      "note": "On iOS 🧗🏽 renders as one combined glyph with the tone applied. The medium swatch is the one several keyboards select when the picker opens, so on a device with that default set, 🧗🏽 is often the result of a finger never touching the tone list."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Frequently sent as a single person climbing reaction, attached to a green-tick delivered voice note, or stacked under a group-chat punchline for quick read."
+      "note": "WhatsApp applies the medium modifier on current builds and puts the swatch in the middle of the row. It renders the most consistently of the five tones across the clients people actually use, which is part of why the medium variant is the one most often mistaken for a deliberately neutral choice."
     },
     {
       "platform": "TWITTER",
-      "note": "Anchors person climbing quote tweets, ratio-style thread openers, and reply-guy reaction one-liners where the person climbing cue adds the headline read."
+      "note": "Twemoji renders 🧗🏽 the same way on every device, which makes the medium swatch the easiest one to identify in a screenshot. The confusion is not visual: it is that a medium tone so often stands in for somebody the sender never asked you to picture."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Slack renders the medium swatch slightly flatter than the phone version, in the same way it flattens every swatch. Nothing about 🧗🏽 changes meaning in Slack, but a workspace that reacts with it constantly can make the tone look like a signature it never was."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji and applies the modifier cleanly. The medium swatch survives copy-paste and re-posting better than the extremes of the list, which is another reason it has become the default in a lot of servers without anybody deciding on it."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🧗 in casual contexts."
+      "note": "Gen Z has largely stopped treating the medium swatch as neutral and uses 🧗🏽 less than the older tones, because the middle of the Fitzpatrick list no longer reads as a safe default. When it does appear it is usually an unintentional leftover."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🧗 across platforms."
+      "note": "Millennials use 🧗🏽 heavily as the neutral middle option — the tone that looks deliberate without looking like a statement. It is one of the most common swatches in messages from this cohort."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 🧗 literally."
+      "generation": "GEN_X",
+      "note": "Gen X treats 🧗🏽 as a plain 🧗. The medium swatch was the default in the keyboards this cohort grew up with, so it usually reflects the settings rather than the sender."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🧗🏽 is frequently used to depict somebody other than its sender, and because it is treated as the neutral pick, it is the tone most likely to be used to refer to somebody other than the sender. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧗🏽 Person Climbing Medium Skin Tone Emoji - What Does 🧗🏽 Mean?",
-  "seoDescription": "Learn what the person climbing emoji with medium skin tone 🧗🏽 means in texts and social media.",
+  "seoTitle": "🧗🏽 Person Climbing Medium Skin Tone Emoji Meaning - What Does 🧗🏽 Mean?",
+  "seoDescription": "What does the person climbing emoji 🧗🏽 mean? Person Climbing showing a figure with both hands on a rock face, mid-climb. Covers the medium skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "climbing",
   "skinToneModifier": "medium",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧗🏽 is the person climbing emoji — the sport shorthand that bridges the literal person climbing meaning with the soft, layered reading modern chat uses it for. In its base form it stands in for person climbing as a noun, a moment, or a mood: a friend describes their afternoon, a partner leaves a person climbing reaction, a coworker flags a person climbing blocker in a thread. The visual cue is short and graphic on purpose, which is why it travels across IM, group chat, story replies, and search without losing read.\n\nIn real-world usage 🧗🏽 lives in the spaces where the sender wants to communicate person climbing energy without over-explaining. A DM opens with 🧗🏽 as a soft hello. A group chat uses 🧗🏽 as the period at the end of a person climbing story. A work thread drops 🧗🏽 to confirm a person climbing handoff. The emoji's clarity is what makes it flexible — it can carry literal person climbing, ironic person climbing, or sentimental person climbing depending on the message and the sender.\n\nWhat separates 🧗🏽 from the broader sport family is its read-speed. The visual hits in under a second, which is exactly why it works as a reaction, a caption, a sign-off, or a thread-opener. That is why 🧗🏽 travels especially well on story replies, DM reactions, and any context where the sender wants the message to land with person climbing energy in a single tap.",
-    "howPeopleUseIt": "🧗🏽 shows up in chat as a stand-alone person climbing reaction ('just 🧗🏽'), as the punctuation on a person climbing sentence ('finished the report 🧗🏽'), and as the softener on a longer message ('long day but we're good 🧗🏽'). It pairs naturally with words that name the person climbing energy — 'mood,' 'literally,' 'so person climbing.'\n\nIn group chats 🧗🏽 anchors 'person climbing moment' threads, friend reactions, and thread-enders where the person climbing cue matches the register. On Instagram it lands on person climbing story replies and person climbing DM reactions. On TikTok it travels in person climbing sound-cued content and person climbing comment replies.\n\nThe emoji also works in dating contexts. A partner's '🧗🏽' DM uses the person climbing cue to communicate warmth. Across all of these surfaces the rule is the same: the more person climbing-coded the moment, the more natural 🧗🏽 feels.",
-    "whenNotToUse": "Skip 🧗🏽 in condolence, sympathy, or break-up contexts — the person climbing cue is too lightweight for somber moments. A quiet ❤️ or a plain sentence that acknowledges the feeling is a better fit.\n\nAvoid 🧗🏽 when the message calls for literal precision. If the sender needs an exact person climbing reference (a recipe, an instruction, a specific product), use a word or a more specific emoji rather than the person climbing shorthand.\n\nSkip 🧗🏽 in very formal channels — legal emails, executive memos, regulated finance or healthcare messages. The person climbing cue reads as casual and can undercut professional weight. Stick to plain text where tone matters.",
-    "howToReply": "If someone sends 🧗🏽, the easiest replies are to mirror with another 🧗🏽, send a related emoji that fits the person climbing energy, or reply with a short sentence that acknowledges the person climbing cue. If the message reads as a question, answer it directly; if it reads as a vibe, match it with the same person climbing register. A single-word reply — 'same,' 'mood,' 'love it,' or 'literally' — usually lands. When 🧗🏽 arrives as a soft flirt, mirror the energy with a heart-coded emoji or a sentence that escalates the warmth without overcommitting.",
+    "overview": "There are five skin tones in the Fitzpatrick set and 🧗🏽 is the one in the middle of them — Person Climbing with a medium skin tone, a figure with both hands on a rock face, mid-climb. Because it sits in the middle of the list and several keyboards default to it, it is the variant that most often ends up standing in for \"somebody\", with no view at all from the sender. Often the choice of someone who is not using skin tone to make a point, which is why it reads as the neutral stand-in\n\nThat neutrality is useful and it is also the reason to be careful. 🧗🏽 reads as grappling with something hard, one move at a time, the same job 🧗 does. But because the medium swatch is so often pressed by people who are simply not thinking about skin tone, it is also the variant that most often ends up describing somebody who is not the sender — and the most likely to be misread that way.\n\nThe situations it turns up in are the family ones, unchanged by the tone. It gets mixed up with 🏔️ Snow-Capped Mountain more than it should — the mountain names the terrain, the climber names the struggle. The misread that comes up most often with this glyph is specific enough to name: it gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning.",
+    "howPeopleUseIt": "The gesture is the same one 🧗 makes, so the family habits carry straight over. What changes with 🧗🏽 is who tends to send it and what they are assuming about the reader.\n\nThe medium swatch is the workhorse of the set. 🧗🏽 is the one people send when they are not trying to make a point about skin tone at all, which makes it the variant most likely to be used as a stand-in for someone unspecified. You will see it in bracing for a hard week of work, and in describing a wall you cannot get over, and in a great many places where the sender simply pressed the emoji that was already selected.\n\nThe flip side of that ubiquity is that the tone carries almost no signal of its own. 🧗🏽 reads as the neutral version of the emoji, with almost nothing attached, and it tends to disappear into the line it sits on. If the sender wanted the skin tone to mean something, this is the variant that will not deliver it.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🧗 itself, and every tone in this family inherits it.\n\nThe trap for 🧗🏽 is that its neutrality is an illusion. It is chosen by reflex more often than by intent, and a reflex choice is not a statement about the sender. Do not send 🧗🏽 expecting it to be read as \"this is what I look like\" unless that is genuinely why you picked it — the medium swatch is the one most likely to have been selected without a thought at all.\n\nAnd skip it when a specific person is being depicted and you would be guessing at their skin tone. The default-position argument cuts the other way here: the easiest swatch to press is the easiest one to press by accident, and it is the one that looks most like a decision.",
+    "howToReply": "The simplest reply is 🧗 with the same gesture and no tone commentary, because the medium swatch does not usually carry a message of its own.\n\nIf the sender was representing themselves, though, 🏽 back is warmer than 🧗 — it says you registered what they chose. If they were representing somebody else, match the gesture only.",
     "faqs": [
       {
-        "question": "What does 🧗🏽 mean in texting?",
-        "answer": "In texting, 🧗🏽 usually points to person climbing. It can be literal — describing person climbing in the moment — or shorthand for the feeling or mood that person climbing carries. Context, sender, and platform decide which read wins."
+        "question": "What does 🧗🏽 mean in text?",
+        "answer": "🧗🏽 is Person Climbing with a medium skin tone. The gesture reads as grappling with something hard, one move at a time."
       },
       {
-        "question": "Is 🧗🏽 flirty?",
-        "answer": "It can be. 🧗🏽 can read as soft flirt when sent on its own or paired with a compliment — especially in dating-app DMs. In a friend or work thread it usually reads as playful rather than romantic."
-      },
-      {
-        "question": "Is 🧗🏽 rude?",
-        "answer": "Generally no — 🧗🏽 is a neutral-to-friendly person climbing marker. It can read as dismissive if used to replace a sentence in a tense exchange, but on its own the person climbing cue is more playful than rude."
-      },
-      {
-        "question": "Is 🧗🏽 for sports?",
-        "answer": "🧗🏽 is widely used in sports contexts — match threads, fan reactions, and post-game replies. Outside sports it can still work as a fun person climbing cue, but the strongest read is sports-coded."
+        "question": "Is the medium skin tone in 🧗🏽 a statement?",
+        "answer": "Rarely on its own. It is the middle swatch in the tone list, and the one several keyboards land on by default when the tone picker opens. It is the variant people pick when they are not thinking about skin tone, so it rarely reads as one."
       },
       {
         "question": "What does 🧗🏽 mean from a guy?",
-        "answer": "From a guy, 🧗🏽 usually reads as a sports-coded reaction or a friendly person climbing gesture. In dating contexts it can carry flirty energy, especially paired with a compliment."
+        "answer": "The tone does not change the gesture, so the read is the same. There is no separate gendered reading of 🧗."
+      },
+      {
+        "question": "Is 🧗🏽 rude?",
+        "answer": "Not because of the swatch. The gesture carries that risk on its own, and the medium tone does not add to it."
+      },
+      {
+        "question": "What is the difference between 🧗🏽 and 🧗?",
+        "answer": "The swatch, and only the swatch. 🧗 is the tone-less version and is the safer choice whenever you are not depicting a specific person."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "that person climbing moment with you, full energy 🧗🏽",
-      "interpretation": "Sentiment-coded person climbing message — the person climbing cue carries the warmth. Mirror with another 🧗🏽, a heart emoji, or a sentence that escalates the romance."
+      "setting": "friends",
+      "message": "bracing for a hard week of work 🧗🏽",
+      "interpretation": "A friend sending 🧗🏽 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
     },
     {
-      "setting": "friends",
-      "message": "cannot handle this thread, full person climbing chaos 🧗🏽",
-      "interpretation": "Friend-coded person climbing reaction — the sender is being playful. Mirror with another 🧗🏽, a sentence that joins the energy, or a related emoji that matches the person climbing beat."
+      "setting": "dating",
+      "message": "describing a wall you cannot get over 🧗🏽",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is the safest possible choice, which some senders use on purpose."
     },
     {
       "setting": "work",
-      "message": "person climbing blocker sorted, ready when you are 🧗🏽",
-      "interpretation": "Work-coded person climbing update — concise, professional, with a soft person climbing touch. Mirror with another 🧗🏽, a sentence that confirms the handoff, or a thumbs-up emoji that matches the register."
+      "message": "acknowledged 🧗🏽",
+      "interpretation": "A work thread. The medium skin tone reads as the unremarkable version in a work thread."
     },
     {
       "setting": "family",
-      "message": "family person climbing tonight, cannot wait 🧗🏽",
-      "interpretation": "Family-coded person climbing excitement — warm, affectionate. Mirror with another 🧗🏽, a sentence that joins the warmth, or a heart emoji that matches the family tone."
+      "message": "okay 🧗🏽",
+      "interpretation": "A family chat where the emoji is being read literally — the medium skin tone stands for the person in the picture rather than for the tone."
     },
     {
       "setting": "social",
-      "message": "this whole person climbing era, full energy 🧗🏽",
-      "interpretation": "Public person climbing flex — the sender is in their person climbing moment. Mirror with another 🧗🏽, a sentence that joins the energy, or a heart emoji that matches the public person climbing beat."
+      "message": "agreed 🧗🏽",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

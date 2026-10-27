@@ -1,127 +1,157 @@
 {
-  "unicode": "U+1F932",
+  "unicode": "U+1FAF4",
   "slug": "palm-up",
   "character": "🫴",
-  "name": "Palm Down Hand",
-  "shortName": "palm down hand emoji",
+  "name": "Palm Up Hand",
+  "shortName": "palm up hand emoji",
   "category": "People & Body",
   "subcategory": "Hand",
   "unicodeVersion": "14.0",
-  "baseMeaning": "Hand with palm facing down",
-  "tldr": "Palm down",
+  "baseMeaning": "A palm up hand emoji: a single hand held up, palm facing up, fingers pointing skyward.",
+  "tldr": "Palm Up Hand 🫴: holding a hand out to catch or take something.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — holding a hand out to catch or take something — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🫴",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Placing or dropping",
-      "example": "Drop it 🫴",
+      "meaning": "The plain reading: a single hand held up, palm facing up, fingers pointing skyward. Nothing hidden in the drawing itself.",
+      "example": "Asking a friend to pass something over 🫴",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dismissing or moving on",
-      "example": "Moving on 🫴",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Setting-boundary-coded tag or playful dismissal.",
-      "example": "anyway 🫴",
+      "meaning": "Borrowed as a reaction, it reads as holding a hand out to catch or take something.",
+      "example": "Holding your hand out for a handshake 🫴",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Dramatizing a low-effort reaction or shrug.",
-      "example": "next topic 🫴",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: holding a hand out to catch or take something, said without believing any of it.",
+      "example": "sure, sure 🫴",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for drop-coded and adult-coded dismissal tweets. The palm-down hand is the visible 'moving on' default across close-friends replies."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Common in dismiss-coded stories and aesthetic-coded moving-on shares. The palm-down hand reads as the visible drop default on story overlays and reply captions."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Default comment-section reaction to adult-coded low-effort clips. The palm-down hand pairs with visual-cue-coded clip reactions; Gen Z reads it as the universal next-topic default."
+      "note": "In TikTok comments 🫴 is the fastest way to answer a video without typing anything. The gesture stays holding a hand out to catch or take something, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "WHATSAPP",
-      "note": "Group-chat reaction to dismiss-coded content. The palm-down hand is the default 'low effort' tag among close-friends groups."
+      "platform": "SLACK",
+      "note": "In Slack 🫴 lands in channels where the sentence was supposed to be shorter. It is usually standing in for asking a friend to pass something over, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🫴 is a staple of the reaction bar, which is why it so often arrives stripped of its holding a hand out to catch or take something reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🫴 does most of its work in replies, where it tags a message like holding your hand out for a handshake. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Palm Up Hand 🫴 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like asking a friend to pass something over is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 🫴 in the most straightforward way, on family and group messages, and are less likely to hear the holding a hand out to catch or take something subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Used in various creative contexts"
+      "note": "Gen Z reaches for 🫴 to do the work of asking a friend to pass something over, and treats the neutral drawing as the default rather than as a choice. What they hear first is holding a hand out to catch or take something."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Straightforward usage"
+      "note": "Millennials tend to send 🫴 deliberately, usually for something like holding your hand out for a handshake, and they read holding a hand out to catch or take something into it more often than the older cohorts do."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 🫴 literally for placing or dropping."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🫴 literally, as the picture of the gesture itself, and is less likely to read holding a hand out to catch or take something into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🫴 and 🫳 get swapped",
+      "description": "The Palm Down Hand 🫳 is one tap away in every picker, and it does not carry the same reading — the palm up hand receives, the palm down hand sweeps something away. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🫴 as something else fairly often: it gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫴 Palm Down Hand Emoji Meaning - What Does 🫴 Really Mean?",
-  "seoDescription": "Learn what the palm down hand emoji 🫴 really means in texts and social media.",
+  "seoTitle": "🫴 Palm Up Hand Emoji Meaning and How to Use It",
+  "seoDescription": "What 🫴 means when people send it, the palm up hand reading, and how to answer it without guessing.",
   "longForm": {
-    "overview": "The 🫴 Palm Down Hand emoji was added in Unicode 14 (2021) and is drawn as a single open hand with the palm facing downward, as if placing or dropping something. The visual cue reads instantly as drop-coded reference, dismissal default, or the visible 'moving on' tag. By 2026 🫴 has become the go-to emoji for the drop-coded reaction, the visible dismissal default, and the low-effort-coded reaction in close-friends and group chats.\n\nIn modern chat 🫴 does very specific work. People send it as a literal drop-coded reference, as the visible 'low effort' tag, or as the moving-on-coded default. The open palm facing downward is the visual cue that the read is dropping or moving on. Writers should pick 🫴 when the read is drop/dismiss or visible 'low effort' energy, and avoid it when the read is full-on two palms — 🤲 fits better there.",
-    "howPeopleUseIt": "🫴 lands on a friend's low-effort message, in a work channel where someone is signaling drop-coded energy, and in a group chat where the sender is signaling moving on. The open palm facing downward anchors the read.\n\nIn close-friends chats 🫴 reads as the universal low-effort default and the visible 'dropping this thread' tag. On X the emoji punctuates dismiss-coded and moving-on tweets. The emoji pairs with 🫱 for the layered palm-down-and-palm-up stack and with 💅 for the layered low-effort-and-shrug stack.",
-    "whenNotToUse": "Skip 🫴 in any context where the read is supposed to be a raised palm. The downward palm implies dropping, not raising. Avoid 🫴 in casual contexts where the dismiss-coded read lands as dismissive.",
-    "howToReply": "If a friend sends 🫴 on a drop-coded message, mirror with another 🫴 or 💅 to send matching energy. The drop chain reads as solidarity.\n\nIf 🫴 lands as the moving-on default, reply with another 🫴 or 🤷. And if you want to send 🫴 yourself, pair it with the moment so the drop-coded read is clear.",
+    "overview": "What follows is the useful part: the two things the palm up hand is actually for (asking a friend to pass something over and holding your hand out for a handshake), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 🫴 is a single hand held up, palm facing up, fingers pointing skyward, added in Unicode 14.0 and filed under hand. What it does in a message is carry a meaning — here, holding a hand out to catch or take something — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🫳 Palm Down Hand: the palm up hand receives, the palm down hand sweeps something away. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are asking a friend to pass something over and holding your hand out for a handshake. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 🫴 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"holding a hand out to catch or take something\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 🫴 is easy to send when 🫳 Palm Down Hand was meant — the palm up hand receives, the palm down hand sweeps something away. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"holding a hand out to catch or take something\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 🫴 gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and palm up hand gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 🫴 next to somebody's performance, or in a first note to a client, and holding a hand out to catch or take something is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 🫴 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the palm up hand was meant, read the line above it instead. 🫴 gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like asking a friend to pass something over sent with 🫴 on its own is a coin toss between holding a hand out to catch or take something and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
+        "question": "What does 🫴 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🫴 and its skin-tone versions?",
+        "answer": "The tone variants under palm up hand show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
         "question": "What does 🫴 mean in text?",
-        "answer": "🫴 means drop-coded reference, dismissal energy, or the visible 'moving on' reaction. The open palm facing downward is the visual cue that the read is drop-coded."
+        "answer": "🫴 is used for holding a hand out to catch or take something. The drawing shows a single hand held up, palm facing up, fingers pointing skyward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 🫴 flirty?",
-        "answer": "Sometimes. 🫴 reads as flirty-coded in a dating thread combined with 'anyway' tag content as playful dismissal-coded tease."
+        "question": "What is the difference between 🫴 and 🫳?",
+        "answer": "The palm up hand receives, the palm down hand sweeps something away. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "What does 🫴 mean from a girl?",
-        "answer": "From a girl or anyone, 🫴 carries the same drop-coded read. There is no gendered meaning; the emoji works the same regardless."
-      },
-      {
-        "question": "What does 🫴 mean on TikTok?",
-        "answer": "On TikTok, 🫴 is the default comment reaction to drop-coded and moving-on clips."
+        "question": "Is 🫴 rude?",
+        "answer": "It can be. The gesture is meant as holding a hand out to catch or take something, but it gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "anyway, next topic 🫴",
-      "interpretation": "Friend drop share. Mirror with another 🫴 or 🤷 so the moving-on chain reads back."
-    },
-    {
-      "setting": "work",
-      "message": "moving on from that meeting 🫴",
-      "interpretation": "Work-coded dismissal share. Mirror with a clarifying sentence — 🫴 can land as off-topic in work channels."
-    },
-    {
-      "setting": "dating",
-      "message": "low effort DM but here 🫴",
-      "interpretation": "Dating-coded flirty share. Mirror with 🫴 or 🥰 so the warm chain reads back."
-    },
-    {
       "setting": "family",
-      "message": "place it on the counter 🫴",
-      "interpretation": "Family-coded drop share. Mirror with 🫴 or 🫱 so the family-coded chain reads back."
+      "message": "asking a friend to pass something over 🫴",
+      "interpretation": "Family threads are where this lands most naturally. The reading is holding a hand out to catch or take something, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "drop the mic, peace 🫴",
-      "interpretation": "Public adult-coded mic-drop share. Mirror with another 🫴 or 🎤 so the solidarity chain reads back."
+      "message": "that is the whole post 🫴",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
+    },
+    {
+      "setting": "friends",
+      "message": "asking a friend to pass something over 🫴",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as holding a hand out to catch or take something, and matching it with the same emoji is a normal reply."
+    },
+    {
+      "setting": "work",
+      "message": "holding your hand out for a handshake 🫴",
+      "interpretation": "A handover or a sign-off in a channel. It reads as holding a hand out to catch or take something, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🫴",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a request when it is more often a hand held out to receive — one open palm asks for a thing, and the plain version skips the two-handed plea more easily here than it does in a work thread, because the thread is thinner."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26",
+  "skinToneVariations": [
+    "palm-up-light",
+    "palm-up-medium-light",
+    "palm-up-medium",
+    "palm-up-medium-dark",
+    "palm-up-dark"
+  ]
 }

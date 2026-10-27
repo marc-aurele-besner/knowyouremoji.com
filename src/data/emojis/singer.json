@@ -7,78 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A singer or rock star.",
-  "tldr": "Singer! Music or performer.",
+  "baseMeaning": "A singer emoji: a figure singing into a microphone with a headset mic.",
+  "tldr": "Singer 🧑‍🎤: marking performance, music taste, or karaoke night.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking performance, music taste, or karaoke night — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍🎤",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents the singer cue.",
-      "example": "the singer 🧑‍🎤",
+      "meaning": "The plain reading: a figure singing into a microphone with a headset mic. Nothing hidden in the drawing itself.",
+      "example": "Signing off a voice note with a song 🧑‍🎤",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "singer-coded moment or singer-coded reveal.",
-      "example": "singer mode 🧑‍🎤",
+      "meaning": "Borrowed as a reaction, it reads as marking performance, music taste, or karaoke night.",
+      "example": "Claiming the aux cord at a party 🧑‍🎤",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "singer-coded flirty tag or partner-coded moment.",
-      "example": "singer partner plan 🧑‍🎤",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "singer-coded work moment or team energy.",
-      "example": "singer sprint 🧑‍🎤",
+      "context": "IRONIC",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: marking performance, music taste, or karaoke night, said without believing any of it.",
+      "example": "sure, sure 🧑‍🎤",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "🧑‍🎤 lands on singer-coded threads, singer-tagged person-role posts, and 'singer-coded' reveals where the singer cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🧑‍🎤 is a staple of modern-coded flat-lays, singer-canvas story backgrounds, and modern-coded profile accents; the singer cue anchors the visual."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "🧑‍🎤 travels in modern-coded transitions, singer reaction reveals, and 'singer-coded' listicle content where the singer cue signals modern-coded energy."
+      "note": "In TikTok comments 🧑‍🎤 is the fastest way to answer a video without typing anything. The gesture stays marking performance, music taste, or karaoke night, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "🧑‍🎤 threads through modern-coded reactions, singer markers, and 'singer-coded' bullets in work channels where the singer cue fits the register."
+      "note": "In Slack 🧑‍🎤 lands in channels where the sentence was supposed to be shorter. It is usually standing in for signing off a voice note with a song, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "🧑‍🎤 is an active reaction in modern-coded singer channels, server-coded singer markers, and 'singer-coded' reveals where the singer cue matches the modern-coded register."
+      "note": "On Discord 🧑‍🎤 is a staple of the reaction bar, which is why it so often arrives stripped of its marking performance, music taste, or karaoke night reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧑‍🎤 does most of its work in replies, where it tags a message like claiming the aux cord at a party. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Singer 🧑‍🎤 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like signing off a voice note with a song is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use 🧑‍🎤 in the most straightforward way, on family and group messages, and are less likely to hear the marking performance, music taste, or karaoke night subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧑‍🎤 on modern-coded singer threads, singer-coded reveals, and 'singer-coded' moments where the singer cue matches the modern-coded register."
+      "note": "Gen Z reaches for 🧑‍🎤 to do the work of signing off a voice note with a song, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking performance, music taste, or karaoke night."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded singer moments, and singer-coded reveals where the universal singer cue fits."
+      "note": "Millennials tend to send 🧑‍🎤 deliberately, usually for something like claiming the aux cord at a party, and they read marking performance, music taste, or karaoke night into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded singer messages and singer reveals, treating the singer as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal singer and uses it on modern-coded tags without parsing the modern singer-coded subtext."
+      "note": "Gen X mostly uses 🧑‍🎤 literally, as the picture of the gesture itself, and is less likely to read marking performance, music taste, or karaoke night into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍🎤 and 🎤 get swapped",
+      "description": "The Microphone 🎤 is one tap away in every picker, and it does not carry the same reading — the microphone stands for the act itself, the singer adds a person doing it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍🎤 as something else fairly often: it gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🎤 Singer Emoji Meaning",
-  "seoDescription": "Learn what the Singer emoji 🧑‍🎤 really means.",
+  "seoTitle": "🧑‍🎤 Singer Emoji Meaning and How to Use It",
+  "seoDescription": "What 🧑‍🎤 means when people send it, the singer reading, and how to answer it without guessing.",
   "skinToneVariations": [
     "singer-light",
     "singer-medium-light",
@@ -87,56 +98,60 @@
     "singer-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Singer is the emoji of role-coded profession reveal - the career tradition, the role cue, and the universal \"this is my profession\" tag. Where 💼 reads as briefcase-coded work energy and 🧑 reads as person-coded identity energy, Singer captures the moment when the sender wants to communicate role-coded profession energy - a \"singer\" role tag or a career-coded reveal.\n\nThe role cue borrows from profession tradition and the modern role-coded aesthetic, which is exactly why the emoji reads as role-coded rather than literal.\n\nWhat separates Singer from the rest of the role family is the specific singer register. The emoji is not saying 'generic role' (💼). It is saying 'singer-coded singer,' which carries a specific profession, career, or role specificity.\n\nIn real-world usage 🧑‍🎤 Singer lives in the spaces where the sender wants to communicate role energy. A partner sends it on a \"singer\" moment. A friend sends it on a \"role\" reveal. A coworker sends it on a \"singer\" tag. The singer cue is what makes the emoji feel role-coded - it is not just 'a moment,' it is 'singer-coded energy.'\n\nIn dating 🧑‍🎤 Singer works as a soft-coded singer tag, where the singer cue signals profession. In work threads 🧑‍🎤 Singer lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🎤 feels.",
-    "howPeopleUseIt": "🧑‍🎤 Singer shows up as the closer on a \"singer moment\", the punctuation on a \"role\" reveal, and the softener on a \"singer-coded\" tag. It pairs naturally with sentences that name the role energy - 'singer,' 'profession,' 'singer-coded' - and sits beautifully on profession reveals, role-coded tags, career moments, and appreciation shares.\n\nIn group chats 🧑‍🎤 Singer anchors 'singer moment' threads, role reveals, and 'singer' tags where the singer cue matches the register. On Instagram it lands on role flat-lays and role stories. On TikTok it travels in role transitions and 'singer' reaction content.\n\nThe emoji also works in dating contexts. A 'singer 🧑‍🎤' partner message uses the singer cue to communicate role romance. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🎤 feels.",
-    "whenNotToUse": "Skip Singer in sympathy, condolence, or break-up contexts. The role-coded profession cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Singer in casual contexts where the role energy feels too formal. A simpler emoji or a sentence keeps the message grounded.\n\nSkip Singer when you want to communicate identity beyond profession. The role register is too career-coded for personal moments; use 🧑 or a sentence when the moment needs the whole person.",
-    "howToReply": "If someone sends Singer, the cleanest mirror is another Singer, 👏, or a sentence that joins the role energy. If the role cue feels too profession-coded, reply with a softer emoji (🙌 or 🫶) that signals appreciation without matching the role volume.\n\nWhen Singer lands as a profession-coded flex, mirror with another Singer, a clap emoji, or a sentence that escalates the appreciation. When it arrives as a work-coded reveal, mirror with another Singer, a sentence that joins the celebration, or a heart emoji that fits.",
+    "overview": "What follows is the useful part: the two things the singer is actually for (signing off a voice note with a song and claiming the aux cord at a party), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. 🧑‍🎤 is a figure singing into a microphone with a headset mic, added in Unicode 12.1 and filed under person-role. What it does in a message is carry a meaning — here, marking performance, music taste, or karaoke night — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🎤 Microphone: the microphone stands for the act itself, the singer adds a person doing it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are signing off a voice note with a song and claiming the aux cord at a party. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often 🧑‍🎤 is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"marking performance, music taste, or karaoke night\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. 🧑‍🎤 is easy to send when 🎤 Microphone was meant — the microphone stands for the act itself, the singer adds a person doing it. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"marking performance, music taste, or karaoke night\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. 🧑‍🎤 gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and singer gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put 🧑‍🎤 next to somebody's performance, or in a first note to a client, and marking performance, music taste, or karaoke night is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send 🧑‍🎤 back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the singer was meant, read the line above it instead. 🧑‍🎤 gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like signing off a voice note with a song sent with 🧑‍🎤 on its own is a coin toss between marking performance, music taste, or karaoke night and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
-        "question": "What does Singer mean in chat?",
-        "answer": "Singer is the role-coded profession reveal - it borrows from career tradition and signals a profession reveal, role-coded tag, or career-coded moment. The role cue is what makes the read feel role-coded rather than literal."
+        "question": "What does 🧑‍🎤 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is Singer flirty?",
-        "answer": "Sometimes. In a dating thread Singer can read as playful-coded romance - a \"what's your dream job\" tag or a role-coded flirty hint. On its own it reads more role than romantic."
+        "question": "What is the difference between 🧑‍🎤 and its skin-tone versions?",
+        "answer": "The tone variants under singer show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What does Singer mean from a coworker?",
-        "answer": "From a coworker, Singer signals a role-coded share or a profession-coded moment. The role cue reads as career-coded rather than literal, so it tends to land on work coded messages, profession tags, and \"look at my job\" reveals."
+        "question": "What does 🧑‍🎤 mean in text?",
+        "answer": "🧑‍🎤 is used for marking performance, music taste, or karaoke night. The drawing shows a figure singing into a microphone with a headset mic, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "When should I use Singer?",
-        "answer": "Use Singer for appreciation moments, role-coded reveals, or profession tags. Avoid it when you want to communicate identity beyond profession - the role cue is too career-coded for personal moments."
+        "question": "What is the difference between 🧑‍🎤 and 🎤?",
+        "answer": "The microphone stands for the act itself, the singer adds a person doing it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🧑‍🎤 rude?",
+        "answer": "It can be. The gesture is meant as marking performance, music taste, or karaoke night, but it gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "singer with the partner plan, full role energy 🧑‍🎤",
-      "interpretation": "Partner role romance. Mirror with another 🧑‍🎤, a heart emoji, or a sentence that escalates the romance."
+      "setting": "family",
+      "message": "signing off a voice note with a song 🧑‍🎤",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking performance, music taste, or karaoke night, and nobody in the thread is reading it as anything sharper than that."
     },
     {
       "setting": "social",
-      "message": "cannot handle this whole thread, the singer chaos 🧑‍🎤",
-      "interpretation": "Public role flex. Mirror with another 🧑‍🎤, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "singer with the family, full role energy 🧑‍🎤",
-      "interpretation": "Family role reveal. Mirror with another 🧑‍🎤, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🧑‍🎤",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "singer today, full role energy 🧑‍🎤",
-      "interpretation": "Friend role reveal. Mirror with another 🧑‍🎤, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "signing off a voice note with a song 🧑‍🎤",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking performance, music taste, or karaoke night, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "singer sprint today, full role energy 🧑‍🎤",
-      "interpretation": "Work role moment. Mirror with another 🧑‍🎤, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "claiming the aux cord at a party 🧑‍🎤",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking performance, music taste, or karaoke night, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧑‍🎤",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for a professional stage performer when it is usually just someone announcing they are going to sing, which is why it shows up as a playful sign-off rather than as music talk more easily here than it does in a work thread, because the thread is thinner."
     }
   ]
 }

@@ -7,74 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Climbing emoji.",
-  "tldr": "Represents person climbing.",
+  "baseMeaning": "Shows a figure with both hands on a rock face, mid-climb.",
+  "tldr": "🧗 Person Climbing — grappling with something hard, one move at a time.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "The activity of person climbing.",
-      "example": "Time for person climbing 🧗",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🧗",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person climbing? 🧗",
+      "meaning": "Borrowed as a reaction, it reads as grappling with something hard, one move at a time.",
+      "example": "Describing a wall you cannot get over 🧗",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🧗",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: grappling with something hard, one move at a time, said without believing any of it.",
+      "example": "sure, sure 🧗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — grappling with something hard, one move at a time — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧗",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure with both hands on a rock face, mid-climb. Nothing hidden in the drawing itself.",
+      "example": "Bracing for a hard week of work 🧗",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on summit-coded threads, ascent-tagged hype tweets, and 'climbing today' posts where the climbing cue reads as upward-progress flex."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧗 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like describing a wall you cannot get over."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of summit flat-lays, ascent-coded stories, and 'sent the route' reveals; the chalk-up visual carries the visible upward energy."
+      "note": "On Instagram 🧗 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as grappling with something hard, one move at a time under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Shows up on climbing transitions, ascent-coded clips, and 'me attempting sports 🧗' ironic content where the climbing cue signals progress flex."
+      "note": "In TikTok comments 🧗 is the fastest way to answer a video without typing anything. The gesture stays grappling with something hard, one move at a time, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Surfaces on team 'crushing it' tags, work-coded progress messages, and friend summit moments where the climbing cue fits the upward register."
+      "note": "In Slack 🧗 lands in channels where the sentence was supposed to be shorter. It is usually standing in for bracing for a hard week of work, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord 🧗 is a staple of the reaction bar, which is why it so often arrives stripped of its grappling with something hard, one move at a time reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Reaches for 🧗 on summit-coded threads, ascent-tagged reveals, and 'me attempting sports' moments where the climbing cue matches the modern progress register."
-    },
-    {
       "generation": "MILLENNIAL",
-      "note": "Uses it on upward-coded tags, nostalgia-coded climbing moments, and summit reveals where the universal climbing cue fits."
+      "note": "Millennials tend to send 🧗 deliberately, usually for something like describing a wall you cannot get over, and they read grappling with something hard, one move at a time into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded climbing messages and ascent reveals, treating the climbing as literal sport-coded energy."
+      "note": "Gen X mostly uses 🧗 literally, as the picture of the gesture itself, and is less likely to read grappling with something hard, one move at a time into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal rock climber and uses it on sport-coded tags without parsing the modern ironic-athletic subtext."
+      "note": "Older senders use 🧗 in the most straightforward way, on family and group messages, and are less likely to hear the grappling with something hard, one move at a time subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🧗 to do the work of bracing for a hard week of work, and treats the neutral drawing as the default rather than as a choice. What they hear first is grappling with something hard, one move at a time."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧗 and 🏔️ get swapped",
+      "description": "The Snow-Capped Mountain 🏔️ is one tap away in every picker, and it does not carry the same reading — the mountain names the terrain, the climber names the struggle. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧗 as something else fairly often: it gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧗 Person Climbing Emoji Meaning - What Does 🧗 Really Mean?",
-  "seoDescription": "Learn what the person climbing emoji 🧗 really means in texts and social media.",
+  "seoTitle": "🧗 Person Climbing Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🧗 Person Climbing explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "climbing-light",
     "climbing-medium-light",
@@ -83,60 +98,60 @@
     "climbing-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧗 is the emoji of summit-coded upward flex — a chalk-handed climber, the iconography of the wall, ascent-coded progress, and the universal 'sent the route' tag. Where 🚴 reads as road-coded cycling energy and 🏃 reads as runner-coded cardio energy, 🧗 captures the moment when the sender wants to communicate upward-coded progress — a 'sent the route 🧗' athletic moment or a 'me attempting sports 🧗' ironic reveal. The climbing cue borrows from the ascent tradition and the modern upward-coded aesthetic, which is exactly why the emoji reads as progress-coded rather than literal sport.\n\nIn real-world usage 🧗 lives in the spaces where the sender wants to communicate upward-coded progress. A climber sends it on a 'sent the route 🧗' achievement-coded message. A friend sends it on a 'summit today 🧗' progress reveal. A coworker sends it on a 'me attempting sports 🧗' ironic-coded tag. The climbing cue is what makes the emoji feel upward-coded — it is not just 'climbing,' it is 'climbing-coded ascent moment.'\n\nWhat separates 🧗 from the rest of the sport family is the ascent-coded register. The emoji is not saying 'cyclist' (🚴), 'swimmer' (🏊), or 'ball-bouncer' (⛹️). It is saying 'upward-coded climbing,' which carries a specific summit tradition. That is why 🧗 travels especially well on 'sent the route' tags, ascent-coded reveals, and any context where the sender wants the message to land with progress energy.",
-    "howPeopleUseIt": "🧗 shows up as the closer on a 'sent the route 🧗' achievement message ('sent the route 🧗'), the punctuation on a 'summit today 🧗' progress reveal, and the softener on a 'me attempting sports 🧗' ironic-coded tag. It pairs naturally with sentences that name the ascent-coded energy — 'sent the route,' 'summit today,' 'crushing it' — and sits beautifully on achievement messages and progress reveals.\n\nIn group chats 🧗 anchors 'climbing moment' threads, upward-coded progress reveals, and 'sent the route 🧗' ascent-coded tags where the climbing cue matches the register. On Instagram it lands on summit flat-lays and ascent-coded stories. On TikTok it travels in climbing transitions and 'me attempting sports' ironic content.\n\nThe emoji also works in dating contexts. A 'want to try climbing 🧗' partner message uses the climbing cue to communicate upward-coded romance. Across all of these surfaces the rule is the same: the more ascent-coded the moment, the more natural 🧗 feels.",
-    "whenNotToUse": "Skip 🧗 in rest or recovery-coded contexts. The ascent-coded climbing cue is the wrong tone for any conversation where the moment is quiet. A sentence that acknowledges the moment is a better fit.\n\nAvoid 🧗 in 'literal climbing' coded contexts where the ascent-coded energy feels off. A 'sent the route 🧗' message works for upward-coded flex; for literal sport contexts use 🧗‍♀️ or a sentence.\n\nSkip 🧗 when you want to communicate steady focus. The ascent-coded register is too upward-coded for steady moments; use 🧘 or 📚 when the focus needs to be calm.",
-    "howToReply": "If someone sends 🧗, the cleanest mirror is another 🧗, 🏔️, or a sentence that joins the ascent-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'sent the route too' or 'summit today for sure.' If the climbing cue feels too upward-coded, reply with a softer emoji (🚶 or 🏞️) that signals movement without matching the ascent volume.\n\nWhen 🧗 lands as a 'sent the route 🧗' achievement-coded message, mirror with another 🧗, a mountain emoji, or a sentence that escalates the energy. When it arrives as a 'me attempting sports 🧗' ironic-coded tag, mirror with another 🧗, a sentence that joins the irony, or an emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏔️ Snow-Capped Mountain: the mountain names the terrain, the climber names the struggle. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The person climbing comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the person climbing for? Mostly bracing for a hard week of work, and then describing a wall you cannot get over. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🧗 is a figure with both hands on a rock face, mid-climb. It came into the emoji set in Unicode 13.0, under the sport heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is grappling with something hard, one move at a time. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🧗 sent to a colleague is a piece of work, 🧗 sent to a friend is a joke, and 🧗 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🧗 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"grappling with something hard, one move at a time\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is bracing for a hard week of work: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is describing a wall you cannot get over, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🧗 gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and person climbing gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🧗 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as grappling with something hard, one move at a time — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🏔️ Snow-Capped Mountain. The mountain names the terrain, the climber names the struggle. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🧗 sent as a reaction to somebody who is upset reads as grappling with something hard, one move at a time, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🧗 gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like bracing for a hard week of work needs the sentence: the drawing alone leaves the reader deciding between grappling with something hard, one move at a time and something sharper.\n\nReply with 🧗 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🧗 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
-        "question": "What does 🧗 mean from a climber?",
-        "answer": "From a climber, 🧗 signals ascent-coded progress flex or a 'sent the route 🧗' achievement-coded message. The climbing cue reads as upward-coded rather than literal sport, so it tends to land on achievement tags, friend ascent-coded messages, and summit reveals."
-      },
-      {
-        "question": "Is 🧗 flirty?",
-        "answer": "Not really. 🧗 is more about ascent-coded progress flex or ironic me-attempting-sports humor than romance. On its own the emoji reads as upward-coded rather than soft-coded affection."
-      },
-      {
         "question": "What is the difference between 🧗 and 🏔️?",
-        "answer": "🏔️ is the snow-capped mountain — the cue is mountain-coded summit energy, the universal 'summit' tag. 🧗 is the person climbing — the cue is climbing-coded ascent progress, the 'sent the route' upward energy. Use 🏔️ when the moment is mountain-coded; use 🧗 when the moment is ascent-coded progress."
+        "answer": "The mountain names the terrain, the climber names the struggle. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🧗 for 'sent the route' moments?",
-        "answer": "Yes — 🧗 is one of the most common ascent-coded emojis. The climbing cue is a natural fit for 'sent the route' moments, progress-coded reveals, and 'me attempting sports' ironic tags."
+        "question": "Is 🧗 rude?",
+        "answer": "It can be. The gesture is meant as grappling with something hard, one move at a time, but it gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🧗 mean literal climber?",
-        "answer": "Sometimes — 🧗 carries the chalk-up visual and reads in modern usage as ascent-coded. The literal-climber-versus-ironic-athletic split depends on the sender and the channel."
+        "question": "What does 🧗 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 🧗 and its skin-tone versions?",
+        "answer": "The tone variants under person climbing show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🧗 mean in text?",
+        "answer": "🧗 is used for grappling with something hard, one move at a time. The drawing shows a figure with both hands on a rock face, mid-climb, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "social",
-      "message": "sent the route today, full summit era 🧗",
-      "interpretation": "Public ascent-coded flex. Mirror with another 🧗, a mountain emoji, or a sentence that joins the upward energy."
+      "setting": "work",
+      "message": "describing a wall you cannot get over 🧗",
+      "interpretation": "A handover or a sign-off in a channel. It reads as grappling with something hard, one move at a time, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
       "setting": "dating",
-      "message": "want to try climbing this weekend, full ascent mode 🧗",
-      "interpretation": "Partner ascent-coded romance. Mirror with another 🧗, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "work",
-      "message": "crushing the deadline today, full climbing energy 🧗",
-      "interpretation": "Work ascent-coded metaphor. Mirror with another 🧗, a mountain emoji, or a sentence that joins the team energy."
+      "message": "there is something you should know 🧗",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to be an invite to work out when it is mostly a stand-in for grinding through something tedious — the strained pose reads as effort and people import a gym meaning more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "took the kids to the climbing wall, full ascent era 🧗",
-      "interpretation": "Family ascent-coded tag. Mirror with another 🧗, a sentence that joins the family moment, or a mountain emoji that matches."
+      "message": "bracing for a hard week of work 🧗",
+      "interpretation": "Family threads are where this lands most naturally. The reading is grappling with something hard, one move at a time, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🧗",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "me attempting sports at the gym today, full climbing energy 🧗",
-      "interpretation": "Friend ironic-coded reveal. Mirror with another 🧗, a sentence that joins the irony, or an emoji that matches."
+      "message": "bracing for a hard week of work 🧗",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as grappling with something hard, one move at a time, and matching it with the same emoji is a normal reply."
     }
   ]
 }

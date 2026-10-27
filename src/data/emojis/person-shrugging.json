@@ -7,127 +7,151 @@
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A person with raised shoulders and arms, palms facing up.",
-  "tldr": "The universal 'idk' or 'whatever.' Confusion, indifference, or 'I don't know what to tell you.'",
+  "baseMeaning": "A picture of a figure with both arms raised, palms turned up. Read in a message it lands as saying nobody knows, or that it does not matter.",
+  "tldr": "🤷 Person Shrugging. In a chat it comes across as saying nobody knows, or that it does not matter.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Genuinely unsure - 'I do not know' or 'I am lost.'",
-      "example": "where are my keys 🤷",
+      "meaning": "The plain reading: a figure with both arms raised, palms turned up. Nothing hidden in the drawing itself.",
+      "example": "Answering a question you did not expect 🤷",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Indifference or 'whatever happens, happens' - active disengagement rather than confusion.",
-      "example": "guess we'll see 🤷",
+      "meaning": "Borrowed as a reaction, it reads as saying nobody knows, or that it does not matter.",
+      "example": "Declining to take blame for a group decision 🤷",
       "riskLevel": "LOW"
     },
     {
-      "context": "PASSIVE_AGGRESSIVE",
-      "meaning": "Dismissing responsibility - 'not my problem' read where accountability should sit.",
-      "example": "not my job 🤷",
-      "riskLevel": "MEDIUM"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as saying nobody knows, or that it does not matter, softened by whatever sentence sits next to it.",
+      "example": "not me 🤷",
+      "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Casual admission of uncertainty in Slack threads where the team has the register.",
-      "example": "no idea 🤷 will check",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — saying nobody knows, or that it does not matter — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🤷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Tag for uncertain threads and 'no one knows' takes where the poster wants to flag the absence of an answer without claiming one."
-    },
-    {
       "platform": "SLACK",
-      "note": "Standard 'I don't know yet' reaction in work channels where the team has the register; pairs with a sentence ('will check') so the channel stays useful."
-    },
-    {
-      "platform": "IMESSAGE",
-      "note": "Default 'idk' between friends and family; the shrug emoji does the uncertainty work without anyone typing 'I have no idea.'"
+      "note": "In Slack 🤷 lands in channels where the sentence was supposed to be shorter. It is usually standing in for answering a question you did not expect, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Server reaction emoji on debates where no one can agree; the shrug does the visible 'no consensus' energy."
+      "note": "On Discord 🤷 is a staple of the reaction bar, which is why it so often arrives stripped of its saying nobody knows, or that it does not matter reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🤷 does most of its work in replies, where it tags a message like declining to take blame for a group decision. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Shrugging 🤷 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like answering a question you did not expect is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🤷 exactly as the phone system does, but the keyboard keeps it in the person section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like declining to take blame for a group decision."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Default shrug; uses 🤷 for both uncertainty and indifference, and the receiver decodes the read from the rest of the message."
+      "note": "Gen Z reaches for 🤷 to do the work of answering a question you did not expect, and treats the neutral drawing as the default rather than as a choice. What they hear first is saying nobody knows, or that it does not matter."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Universal confusion or indifference emoji - uses 🤷 for 'idk' across personal and work chat."
+      "note": "Millennials tend to send 🤷 deliberately, usually for something like declining to take blame for a group decision, and they read saying nobody knows, or that it does not matter into it more often than the older cohorts do."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🤷 literally, as the picture of the gesture itself, and is less likely to read saying nobody knows, or that it does not matter into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May not be as familiar with the shrug gesture - reads the emoji as confusion rather than the meme register."
+      "note": "Older senders use 🤷 in the most straightforward way, on family and group messages, and are less likely to hear the saying nobody knows, or that it does not matter subtext in it."
     }
   ],
   "warnings": [
     {
-      "title": "Avoiding accountability",
-      "description": "A 🤷 on a question you should be able to answer reads as dodging responsibility. Pair with a sentence that names the next step so the channel stays useful.",
+      "title": "🤷 and 🤨 get swapped",
+      "description": "The Face With Raised Eyebrow 🤨 is one tap away in every picker, and it does not carry the same reading — the raised eyebrow questions one specific claim, the shrug questions everything and moves on. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🤷 as something else fairly often: it gets mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": ["shrug-idk", "shrug-upside-down"],
-  "seoTitle": "🤷 Person Shrugging Emoji Meaning - What Does 🤷 Really Mean?",
-  "seoDescription": "Learn what the person shrugging emoji 🤷 really means - the 'idk' register, the indifference inverse, and where the emoji reads as dodging rather than confused.",
+  "seoTitle": "🤷 Person Shrugging Emoji - What It Actually Means in Text",
+  "seoDescription": "🤷 Person Shrugging meaning: saying nobody knows, or that it does not matter. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-08-14",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤷 is the universal shrug emoji - a cartoon person with shoulders raised, palms turned up, mouth in a small flat line. The image reads instantly as 'I don't know' or 'whatever happens.' On modern chat threads 🤷 does most of its work as the shrug emoji for both genuine uncertainty (a real 'I have no idea') and active indifference ('I do not care enough to have an opinion'), and the rest of the message decodes which read lands.\n\nThe shrug emoji is one of the most commonly sent reactions in chat threads because it does the 'idk' work without anyone typing the words. A 🤷 on a friend's question reads as 'genuinely no idea,' a 🤷 on a friend's bad day reads as 'I do not know what to tell you, but I am with you,' and a 🤷 on a friend's bad take reads as 'I will not engage this.' The same emoji carries three reads and the context does the disambiguation.",
-    "howPeopleUseIt": "🤷 lands as the 'genuine uncertainty' reaction on a friend's question ('no idea where they are 🤷'), the 'indifference' closer on a friend's complaint ('couldn't tell you 🤷'), and the 'I won't engage' dismiss on a friend's hot take. On X the emoji tags threads where the poster wants to flag that the answer is unknown.\n\nIn work channels 🤷 functions as the lowest-effort 'I have not solved this yet' reaction. The emoji pairs naturally with 😅 or 'will check' so the channel stays useful. In dating threads 🤷 functions as the playful 'who knows, maybe?' energy on plans that have not locked in yet.",
-    "whenNotToUse": "Avoid 🤷 when you should be able to give a real answer. A 🤷 from a manager on an employee question reads as 'I do not know, do not bother me,' which the employee experiences as dismissal. When you do not know, say 'I will check' rather than shrug.\n\nAvoid 🤷 in any channel where the recipient needs a real opinion. A 🤷 on a friend's vulnerable share reads as 'I have no idea what to say to you,' which is a worse outcome than saying nothing. Use a heart or a sentence that acknowledges the moment.",
-    "howToReply": "If a friend sends 🤷 on a question, mirror with a sentence that actually answers, or another 🤷 to share the confusion. The shrug chain works as 'same' when the question is unanswerable.\n\nIf 🤷 lands as the indifference closer on a friend's bad day, mirror with a heart or 'I am here' rather than another 🤷 that doubles the disengage. And if you want to send 🤷 yourself, pair it with the subject so the shrug frame matches a real reason.",
+    "overview": "The drawing of 🤷 is a figure with both arms raised, palms turned up. It arrived with Unicode 9.0 in the person section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is saying nobody knows, or that it does not matter. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🤨 Face With Raised Eyebrow: the raised eyebrow questions one specific claim, the shrug questions everything and moves on. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person shrugging also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person shrugging reads as saying nobody knows, or that it does not matter, it is most often used for answering a question you did not expect or declining to take blame for a group decision, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🤷 in a work thread is declining to take blame for a group decision; 🤷 in a family thread is answering a question you did not expect; 🤷 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🤷 is the whole reply, and it is carrying a meaning nobody wrote down — saying nobody knows, or that it does not matter is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Answering a question you did not expect is the job the person shrugging does most: it saves a sentence and lands faster than one would have. Declining to take blame for a group decision is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🤷 will get mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person shrugging gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🤷 reads as saying nobody knows, or that it does not matter, and formality is exactly where that reading does the most damage.\n\nLeave 🤨 Face With Raised Eyebrow for the other message. The raised eyebrow questions one specific claim, the shrug questions everything and moves on. And keep 🤷 out of threads where somebody is hurting: it reads as saying nobody knows, or that it does not matter there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🤷 gets mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room often enough that the sentence matters more than the picture.\n\nAnd do not send 🤷 alone when the message underneath is supposed to be warm. A message like answering a question you did not expect carries the feeling; the picture on its own leaves the reader choosing between saying nobody knows, or that it does not matter and something sharper.\n\nStart by reading what the 🤷 was doing. If it was a reaction, react: 🤷 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🤷 mean in texting?",
-        "answer": "🤷 means 'I don't know,' 'I don't care,' or 'whatever happens.' The emoji carries both uncertainty and indifference; the context and the surrounding message decode the read."
+        "question": "What is the difference between 🤷 and its skin-tone versions?",
+        "answer": "The tone variants under person shrugging show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🤷 mean in text?",
+        "answer": "🤷 is used for saying nobody knows, or that it does not matter. The drawing shows a figure with both arms raised, palms turned up, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🤷 and 🤨?",
+        "answer": "The raised eyebrow questions one specific claim, the shrug questions everything and moves on. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
         "question": "Is 🤷 rude?",
-        "answer": "Sometimes. A 🤷 on a friend's vulnerable moment reads as 'I have nothing to say to you.' Use sparingly when the recipient expected engagement and select a softer emoji when you do not have an opinion."
+        "answer": "It can be. The gesture is meant as saying nobody knows, or that it does not matter, but it gets mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 🤷 mean from a guy?",
-        "answer": "From a guy or anyone else, 🤷 carries the same idk or indifference read. There is no gendered meaning; the shrug works the same regardless of who is sending it."
-      },
-      {
-        "question": "What does 🤷 mean at work?",
-        "answer": "In work channels 🤷 usually reads as 'I don't have an answer yet.' Pair with 'will check' or 'will follow up' so the channel stays productive."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "where did I put my wallet 🤷",
-      "interpretation": "Friend genuinely asking. Mirror with 'check the kitchen counter' or 'try the car' rather than another 🤷 that doubles the confusion."
-    },
-    {
       "setting": "social",
-      "message": "why is the election this way 🤷",
-      "interpretation": "Friend processing public news. Mirror with a sentence that engages rather than another 🤷 that doubles the resignation."
+      "message": "that is the whole post 🤷",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
-      "setting": "dating",
-      "message": "Saturday maybe, idk 🤷",
-      "interpretation": "Partner noncommittal on a plan. Mirror with a sentence that locks the plan in ('let's say 7') or another 🤷 that accepts the indecision."
+      "setting": "friends",
+      "message": "answering a question you did not expect 🤷",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as saying nobody knows, or that it does not matter, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "blocked on the design call, will follow up 🤷",
-      "interpretation": "Work channel: 'I don't have an answer yet.' Mirror with 'ping me Friday' so the thread stays productive."
+      "message": "declining to take blame for a group decision 🤷",
+      "interpretation": "A handover or a sign-off in a channel. It reads as saying nobody knows, or that it does not matter, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🤷",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets mistaken for an apology when it usually refuses to take responsibility, since the palms-up gesture hands the problem back to the room more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "where did grandma's ring go 🤷",
-      "interpretation": "Family wonder. Mirror with 'check the dresser' rather than another 🤷 that doubles the worry."
+      "message": "answering a question you did not expect 🤷",
+      "interpretation": "Family threads are where this lands most naturally. The reading is saying nobody knows, or that it does not matter, and nobody in the thread is reading it as anything sharper than that."
     }
+  ],
+  "skinToneVariations": [
+    "person-shrugging-light",
+    "person-shrugging-medium-light",
+    "person-shrugging-medium",
+    "person-shrugging-medium-dark",
+    "person-shrugging-dark"
   ]
 }

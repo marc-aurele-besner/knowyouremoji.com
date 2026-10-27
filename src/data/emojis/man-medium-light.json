@@ -7,135 +7,131 @@
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "6.0",
-  "baseMeaning": "An adult man.",
-  "tldr": "Man! Adult male.",
+  "baseMeaning": "An adult man. The medium-light skin tone modifier is applied to the figure.",
+  "tldr": "👨🏼 Man with a medium-light skin tone. One step past the default, so it reads as a considered choice.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-light skin tone passes without comment in a work thread.",
+      "example": "understood 👨🏼",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "Represents an adult man.",
-      "example": "My husband 👨",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-light skin tone applied to the figure.",
+      "example": "👨🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dude or guy.",
-      "example": "My man 👨",
+      "meaning": "The gesture reads the same as the untoned version; the medium-light skin tone makes it a slightly more considered version of the same gesture.",
+      "example": "got it 👨🏼",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Typical man behavior.",
-      "example": "Men 👨",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Male representation.",
-      "example": "Team member 👨",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very normal 👨🏼",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 👨🏼 renders as a single toned glyph, and the medium-light swatch is the second one along in Apple's picker. It is far enough from the untoned version to be noticed but close enough that a screenshot taken at small size can still read as untoned."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders the tone correctly on current builds, and its picker puts the medium-light swatch second, so a sender reaches it with one tap past the default. Older Android builds of WhatsApp drop the modifier entirely, and because this is not the swatch people reach for by habit, the fallback is more often noticed than it is with the default."
+    },
+    {
       "platform": "TWITTER",
-      "note": "👨🏼 lands on modern-coded man threads, man-tagged moment posts, and 'man-coded' reveals where the man cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "👨🏼 is a staple of modern-coded flat-lays, man-canvas story backgrounds, and modern-coded profile accents; the man cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "👨🏼 travels in modern-coded transitions, man reaction reveals, and 'man-coded' listicle content where the man cue signals modern-coded energy."
+      "note": "Twemoji applies the tone to 👨🏼 consistently, and the modifier is applied to the single code point, so the swatch is preserved while the rest of the message does not survive a quote-tweet intact."
     },
     {
       "platform": "SLACK",
-      "note": "👨🏼 threads through modern-coded reactions, man markers, and 'man-coded' bullets in work channels where the man cue fits the register."
+      "note": "Slack's own emoji font renders the medium-light swatch a shade warmer than the phone version, which is the usual reason somebody screenshots a Slack message and gets a slightly different looking emoji than the one they sent."
     },
     {
       "platform": "DISCORD",
-      "note": "👨🏼 is an active reaction in modern-coded man channels, server-coded man markers, and 'man-coded' reveals where the man cue matches the modern-coded register."
+      "note": "Discord uses Twemoji as well, and its web and mobile clients agree with each other on the medium-light swatch. The risk sits with bots and bridges, which usually pass the tone through only when the emoji survived the trip as a single code point."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 👨🏼 on modern-coded man threads, man-coded reveals, and 'man-coded' moments where the man cue matches the modern modern-coded register."
+      "note": "Gen Z is the cohort most likely to pick 👨🏼 deliberately, because the swatch is familiar enough to reach without hunting and rare enough to feel like a choice. It is used to represent the sender more often than the other four tones."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded man moments, and man-coded reveals where the universal man cue fits."
+      "note": "Millennials reach for 👨🏼 when a message needs a slightly more personal feel than 👨 gives, without the weight of the two darker swatches. It sits in the middle of what this generation is comfortable with."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded man messages and man reveals, treating the man as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal man and uses it on modern-coded tags without parsing the modern man-coded subtext."
+      "note": "Gen X mostly treats 👨🏼 as decoration. The swatch is picked because it was next in the list, not because it carries a message."
     }
   ],
   "warnings": [],
   "relatedCombos": [],
-  "seoTitle": "👨🏼 Man Medium-Light Skin Tone Emoji - What Does 👨🏼 Mean?",
-  "seoDescription": "Learn what the man emoji with medium-light skin tone 👨🏼 means in texts and social media.",
+  "seoTitle": "👨🏼 Man Medium-Light Skin Tone Emoji Meaning - What Does 👨🏼 Mean?",
+  "seoDescription": "What does the man emoji 👨🏼 mean? Man showing a smiling man with short blond hair, cropped at the shoulders. Covers the medium-light skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "man",
   "skinToneModifier": "medium-light",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👨🏼 Man: Medium-Light Skin Tone is the emoji of identity-coded representation — the personal tradition, the identity cue, and the universal \"this is who I am\" tag. Where 🧑 reads as neutral person energy and 👤 reads as silhouette identity energy, 👨🏼 Man: Medium-Light Skin Tone captures the moment when the sender wants to communicate identity-coded personal energy — a \"medium-light-skinned man\" identity tag or a personal-coded reveal.\n\nWhat separates 👨🏼 from the rest of the family is the identity-coded register. The emoji is not saying 'man-only.' It is saying 'man-coded identity,' which carries a specific identity, gender-coded moment, or personal-coded share. That is why 👨🏼 travels especially well on identity reveals, personal-coded tags, gender-coded moments, and individual shares and any context where the sender wants the message to land with identity energy.\n\n👨🏼 Man: Medium-Light Skin Tone lives in the spaces where the sender wants to communicate identity energy. A partner sends it on a \"man 👨🏼\" moment. A friend sends it on a \"identity 👨🏼\" reveal. A coworker sends it on a \"man 👨🏼\" tag. The man cue is what makes the emoji feel identity-coded — it is not just 'a moment,' it is 'man-coded energy.'\n\nIn dating 👨🏼 Man: Medium-Light Skin Tone works as a soft-coded flirty tag, where the man cue signals person-coded identity tag. In work threads 👨🏼 Man: Medium-Light Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more identity the moment, the more natural 👨🏼 feels.\n\nThe medium-light-skinned variant carries the same identity-coded read but anchors the representation to a medium-light skin-tone register. Writers can pair the medium-light-skinned variant with the moment to keep the identity-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "👨🏼 Man: Medium-Light Skin Tone shows up as the closer on a 'man 👨🏼' moment, the punctuation on a 'man 👨🏼' reveal, and the softener on a 'identity 👨🏼' tag. It pairs naturally with sentences that name the identity energy — 'man,' 'person-coded identity tag,' 'man-coded' — and sits beautifully on identity reveals, personal-coded tags, gender-coded moments, and individual shares.\n\nIn group chats 👨🏼 Man: Medium-Light Skin Tone anchors 'man moment' threads, identity reveals, and 'man 👨🏼' tags where the man cue matches the register. On Instagram it lands on identity flat-lays and identity stories. On TikTok it travels in identity transitions and 'man' reaction content.\n\nThe emoji also works in dating contexts. A 'man 👨🏼' partner message uses the man cue to communicate identity romance. Across all of these surfaces the rule is the same: the more identity the moment, the more natural 👨🏼 feels.",
-    "whenNotToUse": "Skip 👨🏼 Man: Medium-Light Skin Tone in sympathy, condolence, or break-up contexts. The identity-coded cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👨🏼 Man: Medium-Light Skin Tone in formal contexts where the identity energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip 👨🏼 Man: Medium-Light Skin Tone when you want to communicate a different identity. The Man register is too specific-coded for moments that need neutrality; use 🧑 when the moment needs the default person.",
-    "howToReply": "If someone sends 👨🏼 Man: Medium-Light Skin Tone, the cleanest mirror is another 👨🏼 Man: Medium-Light Skin Tone, 🧑, or a sentence that joins the identity energy. If the identity cue feels too person-coded, reply with a softer emoji (🙃 or 🫶) that signals warmth without matching the identity volume.\n\nWhen 👨🏼 Man: Medium-Light Skin Tone lands as an identity-coded share, mirror with another 👨🏼 Man: Medium-Light Skin Tone, a heart emoji, or a sentence that escalates the warmth. When it arrives as a personal-coded reveal, mirror with another 👨🏼 Man: Medium-Light Skin Tone, a sentence that joins the moment, or an emoji that fits.",
+    "overview": "👨🏼 shows Man with a medium-light skin tone — a smiling man with short blond hair, cropped at the shoulders. Underneath the tone, the gesture is unchanged: this is referring to a man, often a third party, and it is the same conversation move as 👨. The swatch is the part that differs.\n\nMedium-light sits second in the standard tone list, so it takes one deliberate tap past the default to reach. That small extra effort is what shapes how it lands. Picked slightly more thoughtfully than the default, and noticeably less often than the middle tones. In practice that means 👨🏼 tends to arrive from someone who looked at the picker rather than someone who fired the emoji out of habit, and it is correspondingly harder to treat as neutral.\n\nThe practical uses are the family ones, unchanged by the tone. The confusion to watch for is with 🧑 Person — the neutral person covers anyone, the man emoji is one man and gets read as gendered by default. And like every member of this family, 👨🏼 carries one misread more often than the rest: it gets used as a generic stand-in for a person, when the base emoji is explicitly male and a separate neutral option exists — a mismatch can quietly put words in the men’s mouths.",
+    "howPeopleUseIt": "The gesture is the same one 👨 makes, so the family habits carry straight over. What changes with 👨🏼 is who tends to send it and what they are assuming about the reader.\n\nMedium-light is reached with one extra tap, and the extra tap shows in the usage pattern. 👨🏼 more often appears where somebody was picking a version on purpose — a profile picture caption, an avatar, a signature emoji, a reaction in a thread where the choice was not incidental. You will see it in mentioning a friend, a dad, or a coworker, and in replying to a thread about a man.\n\nIt also shows up as a middle path. When the exact tone is not obvious, or when the sender is representing a character rather than themselves, medium-light is the compromise — and that is worth keeping in mind, because a compromise tone reads as deliberately neutral while carrying none of the reassurance of the neutral-sounding default.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 👨 itself, and every tone in this family inherits it.\n\nFor 👨🏼, the specific trap is the compromise. It is easy to reach for a middle tone as a safe approximation, but a safe approximation is not neutral — it is a guess, and the guess is visible to anyone who has thought about it. If you do not know whose skin tone you are depicting, use 👨 rather than reaching for a swatch that lands in the wrong place.\n\nAvoid 👨🏼 when the tone is supposed to be read as deliberate but the rest of the message is casual. A chosen tone pulls the reader's attention to the emoji, and that attention does not transfer to the sentence.",
+    "howToReply": "Reply with 👨 if you want to match the gesture without adopting a swatch. Matching the tone is only worth doing when the sender was clearly choosing on purpose — in that case, 🏼 back is a real acknowledgement of their choice.\n\nIf 👨🏼 was a compromise rather than a decision, do not read it as one. Respond to the gesture and the sentence, not to the tone.",
     "faqs": [
       {
-        "question": "What does 👨🏼 Man: Medium-Light Skin Tone mean in chat?",
-        "answer": "👨🏼 Man: Medium-Light Skin Tone is the identity-coded representation — it borrows from personal tradition and signals an identity reveal, person-coded tag, or personal-coded moment. The identity cue is what makes the read feel person-coded rather than literal."
+        "question": "What does 👨🏼 mean in chat?",
+        "answer": "👨🏼 is Man with a medium-light skin tone. It reads as referring to a man, often a third party, and the swatch adds a small note of deliberation."
       },
       {
-        "question": "Is 👨🏼 Man: Medium-Light Skin Tone flirty?",
-        "answer": "Sometimes. In a dating thread 👨🏼 Man: Medium-Light Skin Tone can read as identity-coded romance — a partner-coded identity tag or a flirty-coded person hint. On its own it reads more identity than romantic."
+        "question": "Is 👨🏼 a deliberate choice?",
+        "answer": "More often than the first swatch. It is the second swatch in the tone list, one position past the default, so it takes a deliberate second tap. That extra step is why 👨🏼 carries a slightly more intentional read than the default tone."
       },
       {
-        "question": "What does 👨🏼 Man: Medium-Light Skin Tone mean from a friend?",
-        "answer": "From a friend, 👨🏼 Man: Medium-Light Skin Tone signals a person-coded share or a \"look at this person\" tag. The identity cue reads as person-coded rather than literal, so it tends to land on casual coded messages, identity tags, and personal reveal moments."
+        "question": "What does 👨🏼 mean from a girl?",
+        "answer": "The same as it means from anyone else. The gesture is unchanged, and the skin tone does not shift the meaning by itself."
       },
       {
-        "question": "Does 👨🏼 Man: Medium-Light Skin Tone work in identity moments?",
-        "answer": "Yes — 👨🏼 Man: Medium-Light Skin Tone is a natural fit for identity reveals, person-coded reactions, and personal-coded shares. The identity cue is what makes the read feel person-coded rather than generic."
+        "question": "Should I use 👨🏼 to represent someone else?",
+        "answer": "Carefully. 👨🏼 is a reasonable approximation for a lot of people, which is exactly why it gets borrowed so often. If you are depicting a specific person and you are not certain, use 👨 instead of guessing."
       },
       {
-        "question": "What is the difference between 👨🏼 Man: Medium-Light Skin Tone and 🧑?",
-        "answer": "🧑 is the person — the cue is neutral person-coded identity energy. 👨🏼 Man: Medium-Light Skin Tone is the specific identity — the cue is identity-coded representation, the \"this is who I am\" energy. Use 🧑 when the moment is neutral-coded; use 👨🏼 Man: Medium-Light Skin Tone when the moment is identity-coded specific."
+        "question": "What is the difference between 👨🏼 and 🧑 Person?",
+        "answer": "the neutral person covers anyone, the man emoji is one man and gets read as gendered by default. The tone does not change that — 👨🏼 is the same gesture in a different swatch."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "man 👨🏼 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 👨🏼, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the man chaos 👨🏼",
-      "interpretation": "Public modern-coded flex. Mirror with another 👨🏼, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "man 👨🏼 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 👨🏼, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "man today, full modern-coded energy 👨🏼",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 👨🏼, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "mentioning a friend, a dad, or a coworker 👨🏼",
+      "interpretation": "A friend sending 👨🏼 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "replying to a thread about a man 👨🏼",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is evidence that somebody thought about which swatch to press."
     },
     {
       "setting": "work",
-      "message": "man coded sprint today, full modern-coded energy 👨🏼",
-      "interpretation": "Work modern-coded moment. Mirror with another 👨🏼, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "understood 👨🏼",
+      "interpretation": "A work thread. The medium-light skin tone passes without comment in a work thread."
+    },
+    {
+      "setting": "family",
+      "message": "fine 👨🏼",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-light skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "right 👨🏼",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

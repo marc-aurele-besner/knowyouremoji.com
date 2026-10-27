@@ -7,135 +7,137 @@
   "category": "people",
   "subcategory": "hands",
   "unicodeVersion": "9.0",
-  "baseMeaning": "A fist facing right, ready for a fist bump.",
-  "tldr": "Fist bump partner (right side) or solidarity.",
+  "baseMeaning": "A fist facing right, ready for a fist bump. The medium-dark skin tone modifier is applied to the hand.",
+  "tldr": "🤜🏾 Right-Facing Fist with a medium-dark skin tone. Reached deliberately, so it reads as intentional.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Right side of fist bump.",
-      "example": "🤛🤜 We did it!",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Paired with left fist for solidarity.",
-      "example": "Team spirit 🤛🤜",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Partnership and teamwork.",
-      "example": "Best duo 🤛🤜",
+      "meaning": "The gesture reads the same as the untoned version; the medium-dark skin tone makes it a chosen version rather than a defaulted one.",
+      "example": "noted, understood 🤜🏾",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Mock fist bump after disagreement.",
-      "example": "Agree to disagree 🤛🤜",
+      "meaning": "Used ironically to undercut the same reading; the tone choice is part of the joke.",
+      "example": "sure, very relaxed 🤜🏾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread the gesture is unchanged, and the medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries.",
+      "example": "roger 🤜🏾",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "Shows the same artwork as the untoned version, with the medium-dark skin tone applied to the hand.",
+      "example": "🤜🏾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🤜🏾 renders as a single toned glyph, and the medium-dark swatch is the fourth of the five in Apple's picker — it takes an extra tap past the three before it. Because it is chosen less often, it is also the one a sender is most likely to have picked on purpose."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp lists the medium-dark swatch fourth and renders it correctly on current builds, but older Android versions of the app fall back to the untoned glyph. In practice the medium-dark variant is one of the tones that loses its meaning most often in forwarded messages, because the fallback removes the part that was deliberate."
+    },
+    {
       "platform": "TWITTER",
-      "note": "🤜🏾 lands on modern-coded right-facing fist threads, right-facing fist-tagged moment posts, and 'right-facing fist-coded' reveals where the right-facing fist cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🤜🏾 is a staple of modern-coded flat-lays, right-facing fist-canvas story backgrounds, and modern-coded profile accents; the right-facing fist cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🤜🏾 travels in modern-coded transitions, right-facing fist reaction reveals, and 'right-facing fist-coded' listicle content where the right-facing fist cue signals modern-coded energy."
+      "note": "Twemoji applies the tone to 🤜🏾 consistently. The medium-dark swatch holds its contrast better on a white background than the darkest one does, so it survives screenshotting and re-posting more often than the tone it sits next to."
     },
     {
       "platform": "SLACK",
-      "note": "🤜🏾 threads through modern-coded reactions, right-facing fist markers, and 'right-facing fist-coded' bullets in work channels where the right-facing fist cue fits the register."
+      "note": "Slack's emoji font renders the medium-dark swatch with less contrast than the phone version does, and the difference is more noticeable here than for the lighter tones. People who picked the swatch to represent themselves can look under-represented in a Slack screenshot for no reason other than the font."
     },
     {
       "platform": "DISCORD",
-      "note": "🤜🏾 is an active reaction in modern-coded right-facing fist channels, server-coded right-facing fist markers, and 'right-facing fist-coded' reveals where the right-facing fist cue matches the modern-coded register."
+      "note": "Discord uses Twemoji, so the modifier is preserved, but bots and integrations that rewrite messages are the weak point. The medium-dark swatch is the one most likely to arrive untoned, and the reason it was chosen in the first place is usually the reason it matters."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🤜🏾 on modern-coded right-facing fist threads, right-facing fist-coded reveals, and 'right-facing fist-coded' moments where the right-facing fist cue matches the modern modern-coded register."
+      "note": "Gen Z reads 🤜🏾 as a deliberate choice, because the swatch takes extra taps to reach. This cohort is also the most likely to notice when 🤜🏾 has been used to depict somebody else, and to read that as a statement about the person."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded right-facing fist moments, and right-facing fist-coded reveals where the universal right-facing fist cue fits."
+      "note": "Millennials pick 🤜🏾 when representing themselves, and treat it as personal in a way they do not treat the lighter tones. It is also the tone most often borrowed to depict somebody else in this cohort."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded right-facing fist messages and right-facing fist reveals, treating the right-facing fist as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal right-facing fist and uses it on modern-coded tags without parsing the modern right-facing fist-coded subtext."
+      "note": "Gen X is less likely to change the tone at all, so 🤜🏾 appears mostly in messages where the sender was depicting themselves. The swatch is read as personal rather than political."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Borrowed skin tones are the usual failure point",
+      "description": "🤜🏾 is frequently used to depict somebody other than its sender, and it is the tone most often used to represent a person who is not the sender, which is where the misreading starts. When the person being depicted is in the room, the tone is read as a description of them.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤜🏾 Right-Facing Fist Medium-Dark Skin Tone Emoji - What Does 🤜🏾 Mean?",
-  "seoDescription": "Learn what the right-facing fist emoji with medium-dark skin tone 🤜🏾 means in texts and social media.",
+  "seoTitle": "🤜🏾 Right-Facing Fist Medium-Dark Skin Tone Emoji Meaning - What Does 🤜🏾 Mean?",
+  "seoDescription": "What does the right-facing fist emoji 🤜🏾 mean? Right-Facing Fist showing a clenched fist with the knuckles facing right, thumb folded across. Covers the medium-dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "fist-right",
   "skinToneModifier": "medium-dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone is the emoji of hand-coded reaction — the manual tradition, the gesture cue, and the universal \"this is what I mean\" tag. Where ✌️ reads as V-shaped peace energy and 🤝 reads as handshake-coded connection, 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone captures the moment when the sender wants to communicate hand-coded gesture energy — a \"medium-dark-skinned right-facing fist\" signal tag or a hand-coded reveal.\n\nWhat separates 🤜🏾 from the rest of the family is the hand-coded register. The emoji is not saying 'right-facing fist-only.' It is saying 'right-facing fist-coded hand,' which carries a specific manual expression, sign language, or hand-coded moment. That is why 🤜🏾 travels especially well on reactions, signal-coded reveals, hand-coded tags, and gesture moments and any context where the sender wants the message to land with hand energy.\n\n🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone lives in the spaces where the sender wants to communicate hand energy. A partner sends it on a \"right-facing fist 🤜🏾\" moment. A friend sends it on a \"hand 🤜🏾\" reveal. A coworker sends it on a \"right-facing fist 🤜🏾\" tag. The right-facing fist cue is what makes the emoji feel hand-coded — it is not just 'a moment,' it is 'right-facing fist-coded energy.'\n\nIn dating 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone works as a soft-coded flirty tag, where the right-facing fist cue signals hand-gesture-coded reaction. In work threads 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more hand the moment, the more natural 🤜🏾 feels.\n\nThe medium-dark-skinned variant carries the same hand-coded read but anchors the representation to a medium-dark skin-tone register. Writers can pair the medium-dark-skinned variant with the moment to keep the hand-coded read while signaling a specific skin-tone-coded representation.",
-    "howPeopleUseIt": "🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone shows up as the closer on a 'right-facing fist 🤜🏾' moment, the punctuation on a 'right-facing fist 🤜🏾' reveal, and the softener on a 'hand 🤜🏾' tag. It pairs naturally with sentences that name the hand energy — 'right-facing fist,' 'hand-gesture-coded reaction,' 'right-facing fist-coded' — and sits beautifully on reactions, signal-coded reveals, hand-coded tags, and gesture moments.\n\nIn group chats 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone anchors 'right-facing fist moment' threads, hand reveals, and 'right-facing fist 🤜🏾' tags where the right-facing fist cue matches the register. On Instagram it lands on hand flat-lays and hand stories. On TikTok it travels in hand transitions and 'right-facing fist' reaction content.\n\nThe emoji also works in dating contexts. A 'right-facing fist 🤜🏾' partner message uses the right-facing fist cue to communicate hand romance. Across all of these surfaces the rule is the same: the more hand the moment, the more natural 🤜🏾 feels.",
-    "whenNotToUse": "Skip 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone in formal or work contexts. The hand-coded gesture cue is the wrong register for professional moments. A sentence or a softer emoji keeps the message grounded.\n\nAvoid 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone in sympathy, condolence, or break-up contexts. The gesture energy is the wrong tone for somber moments.\n\nSkip 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone when you want to communicate respect. The hand register is too gesture-coded for solemn moments; use 🙏 or a sentence when the moment needs reverence.",
-    "howToReply": "If someone sends 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone, the cleanest mirror is another 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone, a hand emoji, or a sentence that joins the gesture energy. If the hand cue feels too gesture-coded, reply with a softer emoji (✌️ or 🤝) that signals connection without matching the gesture volume.\n\nWhen 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone lands as a friend-coded joke, mirror with another 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone, a joke emoji, or a sentence that escalates the humor. When it arrives as a partner-coded flirty tag, mirror with another 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone, a heart emoji, or a sentence that escalates the romance.",
+    "overview": "🤜🏾 is Right-Facing Fist with a medium-dark skin tone — a clenched fist with the knuckles facing right, thumb folded across. The gesture is the familiar one, doing what it always does: offering a fist bump or a gesture of solidarity. What makes this variant worth its own page is that the tone is not an accident. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it, and that effort shows up in how the message lands.\n\nThe upshot is that 🤜🏾 reads as chosen. Where a first-swatch emoji can be waved past, a tone someone had to reach for tends to be read as a small, deliberate piece of information — usually about who the message is coming from, occasionally about who it is about. Neither reading is wrong, but they are not interchangeable, and that is where the confusion with ✊ Raised Fist comes from: the raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump.\n\nThe situations it turns up in are the family ones, unchanged by the tone. The misread that keeps coming up is this: it gets often taken for a punch being thrown because the knuckles are prominent, though in practice it is nearly always the bump offered before or after.",
+    "howPeopleUseIt": "The gesture is the same one 🤜 makes, so the family habits carry straight over. What changes with 🤜🏾 is who tends to send it and what they are assuming about the reader.\n\nMedium-dark takes an extra tap to reach, and 🤜🏾 shows up in the places where that extra tap was made on purpose: profile photos, avatars, introductions, and the emoji people pick for themselves rather than for a situation. It appears in a fist bump after a shared win, and in signing off a hard week with solidarity, and it is more likely than the other tones to be the sender's own.\n\nIt is also the tone that gets borrowed most, because it sits closer to the middle of the list and so reads as a reasonable approximation of a lot of people. When 🤜🏾 is used to stand in for somebody else, the tone is quietly doing a job the sender never mentioned.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🤜 itself, and every tone in this family inherits it.\n\nThe tone-specific rule for 🤜🏾 is about borrowed representation. This is the swatch people reach for when they are depicting somebody else, and it is the swatch most likely to be wrong. If you are sending 🤜🏾 to stand in for another person, either know that you are doing it deliberately and accept that it will read that way, or use 🤜 instead.\n\nAlso avoid 🤜🏾 in professional threads where a chosen skin tone on a neutral emoji can look like a stance the message never made. The tone says the sender chose it, and readers will read the choice even when the sentence does not support it.",
+    "howToReply": "Matching the swatch is the acknowledging move here. If somebody picks a tone deliberately and you reply with 🏾, you are telling them you noticed; 🤜 reads as though you did not.\n\nKeep the reply proportionate otherwise. A sentence that names the moment will land better than a mirrored emoji when the message is the kind that invites a reply — the gesture is a good conversation opener on its own.",
     "faqs": [
       {
-        "question": "What does 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone mean in chat?",
-        "answer": "🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone is the hand-coded reaction — it borrows from manual tradition and signals a gesture reveal, hand-coded tag, or signal-coded moment. The hand cue is what makes the read feel hand-coded rather than literal."
+        "question": "What does 🤜🏾 mean in chat?",
+        "answer": "🤜🏾 is Right-Facing Fist with a medium-dark skin tone. The gesture reads as offering a fist bump or a gesture of solidarity, and the tone reads as chosen rather than defaulted to."
       },
       {
-        "question": "Is 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone rude?",
-        "answer": "Sometimes. In certain contexts 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone can read as a coded insult or a hand-coded dismissal. The full meaning depends on the relationship and channel — friends use it casually while coworkers read it as off-color."
+        "question": "Why does 🤜🏾 feel more intentional than 🤜?",
+        "answer": "Because of the picker position. It is the fourth swatch in the tone list, which means it takes an extra tap past the three before it. A swatch that takes extra taps gets read as a decision."
       },
       {
-        "question": "What does 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone mean from a friend?",
-        "answer": "From a friend, 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone signals a hand-coded reaction or signal-coded moment. The hand cue reads as gesture-coded rather than literal, so it tends to land on joke tags, casual coded messages, and \"look at this\" reveals."
+        "question": "What does 🤜🏾 mean from a girl?",
+        "answer": "The gesture reads the same as it does from anyone else. The tone does not add a gendered layer to 🤜."
       },
       {
-        "question": "Is 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone flirty?",
-        "answer": "It can be. In a dating thread 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone can read as soft-coded romance — a partner-coded hand signal or a flirty-coded hand tag. On its own it reads more hand-coded than romantic."
+        "question": "Is it rude to use 🤜🏾 to describe someone else?",
+        "answer": "It can be, and this is the tone where that happens most often. It is the tone most often used to represent a person who is not the sender, which is where the misreading starts. If you are unsure, 🤜 avoids the problem entirely."
       },
       {
-        "question": "What is the difference between 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone and ✌️?",
-        "answer": "✌️ is the peace sign — the cue is V-shaped calm energy. 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone is the hand-coded reaction — the cue is hand-coded expression, the \"this is what I mean\" energy. Use ✌️ when the moment is peace-coded; use 🤜🏾 Right-Facing Fist: Medium-Dark Skin Tone when the moment is hand-coded expressive."
+        "question": "What is the difference between 🤜🏾 and ✊ Raised Fist?",
+        "answer": "the raised fist signals triumph or protest, the sideways fist is aimed at a partner for a bump."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "right-facing fist 🤜🏾 with the partner plan, full modern-coded energy",
-      "interpretation": "Partner modern-coded romance. Mirror with another 🤜🏾, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the right-facing fist chaos 🤜🏾",
-      "interpretation": "Public modern-coded flex. Mirror with another 🤜🏾, a sentence that joins the modern-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "right-facing fist 🤜🏾 with the family, full modern-coded energy",
-      "interpretation": "Family modern-coded reveal. Mirror with another 🤜🏾, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "right-facing fist today, full modern-coded energy 🤜🏾",
-      "interpretation": "Friend modern-coded reveal. Mirror with another 🤜🏾, a sentence that joins the modern-coded energy, or a heart emoji that matches."
+      "message": "a fist bump after a shared win 🤜🏾",
+      "interpretation": "A friend sending 🤜🏾 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "signing off a hard week with solidarity 🤜🏾",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a deliberate statement about who is being pictured."
     },
     {
       "setting": "work",
-      "message": "right-facing fist coded sprint today, full modern-coded energy 🤜🏾",
-      "interpretation": "Work modern-coded moment. Mirror with another 🤜🏾, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "roger 🤜🏾",
+      "interpretation": "A work thread. The medium-dark skin tone still reads as intentional, but without the extra weight the darkest tone carries."
+    },
+    {
+      "setting": "family",
+      "message": "right then 🤜🏾",
+      "interpretation": "A family chat where the emoji is being read literally — the medium-dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "indeed 🤜🏾",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

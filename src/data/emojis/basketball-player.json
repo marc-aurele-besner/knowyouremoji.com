@@ -7,74 +7,89 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Bouncing Ball emoji.",
-  "tldr": "Represents person bouncing ball.",
+  "baseMeaning": "A person bouncing ball emoji: a figure crouched with one hand pushing a basketball down to the floor.",
+  "tldr": "Person Bouncing Ball ⛹️: showing off a sport, usually to claim competence.",
   "contextMeanings": [
     {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — showing off a sport, usually to claim competence — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted ⛹️",
+      "riskLevel": "LOW"
+    },
+    {
       "context": "LITERAL",
-      "meaning": "The activity of person bouncing ball.",
-      "example": "Time for person bouncing ball ⛹️",
+      "meaning": "The plain reading: a figure crouched with one hand pushing a basketball down to the floor. Nothing hidden in the drawing itself.",
+      "example": "Announcing you are heading to the gym ⛹️",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic ⛹️",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person bouncing ball? ⛹️",
+      "meaning": "Borrowed as a reaction, it reads as showing off a sport, usually to claim competence.",
+      "example": "Joking about your terrible free throws ⛹️",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports ⛹️",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: showing off a sport, usually to claim competence, said without believing any of it.",
+      "example": "sure, sure ⛹️",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on court-coded threads, game-day-tagged hype tweets, and 'practice today' posts where the ball-bounce cue reads as athletic-energy flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of court-side flat-lays, game-day-coded stories, and 'pickup game' reveals; the basketball visual carries the visible athletic energy."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Shows up on court-coded transitions, game-day clips, and 'me attempting sports ⛹️' ironic content where the ball-bounce cue signals active flex."
+      "note": "In TikTok comments ⛹️ is the fastest way to answer a video without typing anything. The gesture stays showing off a sport, usually to claim competence, and the tone of the comment underneath it carries the rest."
     },
     {
       "platform": "SLACK",
-      "note": "Surfaces on team 'game today' tags, work-coded athletic messages, and friend pickup-game moments where the ball-bounce cue fits the energetic register."
+      "note": "In Slack ⛹️ lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing you are heading to the gym, and a channel where the topic is somebody's workload is where it misreads."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord ⛹️ is a staple of the reaction bar, which is why it so often arrives stripped of its showing off a sport, usually to claim competence reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter ⛹️ does most of its work in replies, where it tags a message like joking about your terrible free throws. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Bouncing Ball ⛹️ renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing you are heading to the gym is the kind that carries it — the picture lands before the sentence does."
     }
   ],
   "generationalNotes": [
     {
+      "generation": "BOOMER",
+      "note": "Older senders use ⛹️ in the most straightforward way, on family and group messages, and are less likely to hear the showing off a sport, usually to claim competence subtext in it."
+    },
+    {
       "generation": "GEN_Z",
-      "note": "Reaches for ⛹️ on court-coded threads, game-day reveals, and 'me attempting sports' moments where the ball-bounce cue matches the modern active register."
+      "note": "Gen Z reaches for ⛹️ to do the work of announcing you are heading to the gym, and treats the neutral drawing as the default rather than as a choice. What they hear first is showing off a sport, usually to claim competence."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on athletic-coded tags, nostalgia-coded court moments, and pickup-game reveals where the universal ball-bounce cue fits."
+      "note": "Millennials tend to send ⛹️ deliberately, usually for something like joking about your terrible free throws, and they read showing off a sport, usually to claim competence into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded court messages and athletic reveals, treating the ball-bounce as literal sport-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal basketball player and uses it on game-day tags without parsing the modern ironic-sports subtext."
+      "note": "Gen X mostly uses ⛹️ literally, as the picture of the gesture itself, and is less likely to read showing off a sport, usually to claim competence into it than younger senders are."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "⛹️ and 🏀 get swapped",
+      "description": "The Basketball 🏀 is one tap away in every picker, and it does not carry the same reading — the ball is the object being played with, the figure is the person handling it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take ⛹️ as something else fairly often: it gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "⛹️ Person Bouncing Ball Emoji Meaning - What Does ⛹️ Really Mean?",
-  "seoDescription": "Learn what the person bouncing ball emoji ⛹️ really means in texts and social media.",
+  "seoTitle": "⛹️ Person Bouncing Ball Emoji Meaning and How to Use It",
+  "seoDescription": "What ⛹️ means when people send it, the person bouncing ball reading, and how to answer it without guessing.",
   "skinToneVariations": [
     "basketball-player-light",
     "basketball-player-medium-light",
@@ -83,60 +98,60 @@
     "basketball-player-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "⛹️ is the emoji of court-coded athletic flex — a ball-bouncing player, the iconography of the hardwood, game-day-coded hype, and the universal 'pickup game' tag. Where 🏀 reads as basketball-coded ball energy and 🏃 reads as runner-coded cardio energy, ⛹️ captures the moment when the sender wants to communicate active-coded court energy — a 'game today ⛹️' athletic moment or a 'me attempting sports ⛹️' ironic reveal. The ball-bounce cue borrows from the court tradition and the modern athletic-coded aesthetic, which is exactly why the emoji reads as active-coded rather than literal sport.\n\nIn real-world usage ⛹️ lives in the spaces where the sender wants to communicate athletic energy. A player sends it on a 'game today ⛹️' hype-coded message. A friend sends it on a 'pickup game ⛹️' athletic reveal. A coworker sends it on a 'me attempting sports ⛹️' ironic-coded tag. The ball-bounce cue is what makes the emoji feel court-coded — it is not just 'bouncing ball,' it is 'ball-bounce-coded game-day moment.'\n\nWhat separates ⛹️ from the rest of the sport family is the court-coded register. The emoji is not saying 'runner' (🏃), 'swimmer' (🏊), or 'cyclist' (🚴). It is saying 'athletic-coded court,' which carries a specific game-day tradition. That is why ⛹️ travels especially well on 'game today' tags, pickup-game reveals, and any context where the sender wants the message to land with active energy.",
-    "howPeopleUseIt": "⛹️ shows up as the closer on a 'game today ⛹️' hype message ('game today ⛹️'), the punctuation on a 'pickup game ⛹️' athletic reveal, and the softener on a 'me attempting sports ⛹️' ironic-coded tag. It pairs naturally with sentences that name the athletic-coded energy — 'game today,' 'pickup game,' 'me attempting sports' — and sits beautifully on hype messages and athletic reveals.\n\nIn group chats ⛹️ anchors 'court moment' threads, athletic-coded game-day reveals, and 'practice today ⛹️' court-coded tags where the ball-bounce cue matches the register. On Instagram it lands on court-side flat-lays and game-day-coded stories. On TikTok it travels in court-coded clips and 'me attempting sports' ironic content.\n\nThe emoji also works in dating contexts. A 'want to try pickup game ⛹️' partner message uses the ball-bounce cue to communicate active-coded romance. Across all of these surfaces the rule is the same: the more court-coded the moment, the more natural ⛹️ feels.",
-    "whenNotToUse": "Skip ⛹️ in rest or recovery-coded contexts. The athletic-coded ball-bounce cue is the wrong tone for any conversation where the moment is quiet. A sentence that acknowledges the moment is a better fit.\n\nAvoid ⛹️ in 'literally basketball' coded contexts where the ironic-coded energy feels off. A 'game today ⛹️' message works for active-coded flex; for literal sport contexts use 🏀 or a sentence.\n\nSkip ⛹️ when you want to communicate indoor focus. The athletic-coded register is too court-coded for indoor moments; use 🧘 or 📚 when the focus needs to be still.",
-    "howToReply": "If someone sends ⛹️, the cleanest mirror is another ⛹️, 🏀, or a sentence that joins the athletic-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'game today too' or 'pickup game for sure.' If the ball-bounce cue feels too athletic-coded, reply with a softer emoji (🏃 or 🏀) that signals active energy without matching the court volume.\n\nWhen ⛹️ lands as a 'game today ⛹️' hype-coded message, mirror with another ⛹️, a basketball emoji, or a sentence that escalates the energy. When it arrives as a 'me attempting sports ⛹️' ironic-coded tag, mirror with another ⛹️, a sentence that joins the irony, or an emoji that matches.",
+    "overview": "What follows is the useful part: the two things the person bouncing ball is actually for (announcing you are heading to the gym and joking about your terrible free throws), the reading it gets when it is not what the sender meant, and the five tone pages that sit under this one.\n\nThere is not a lot to the picture. ⛹️ is a figure crouched with one hand pushing a basketball down to the floor, added in Unicode 13.0 and filed under sport. What it does in a message is carry a meaning — here, showing off a sport, usually to claim competence — without anyone having to write it out.\n\nThat plain reading is the one most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, and it lands first.\n\nThe complication is that the drawing invites a second reading. It gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏀 Basketball: the ball is the object being played with, the figure is the person handling it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThere are five tone versions of this emoji, and they are not copies of this page. Each one describes the same gesture from inside a different group, because a tone is read as a signal about the sender before the sentence is read.",
+    "howPeopleUseIt": "The common uses are announcing you are heading to the gym and joking about your terrible free throws. The first one is about speed — the picture replaces the explanation, and it lands before the words would have. The second is about tone — the sentence stands on its own, and the emoji is there to change how it reads.\n\nThe same emoji in three rooms: a family thread, a work channel, and a dating app. In the first it closes a conversation, in the second it hands something over, in the third it is a joke with an eyebrow raised. The drawing never changes; the expectation of the reader does.\n\nThat is also the reason the skin-tone variants are written as their own pages rather than as one page with a table of swatches. A tone is not a setting, and it is read differently.\n\nLook at how often ⛹️ is used to avoid typing. A question goes out, a question comes back, and in between there is a single picture standing in for an answer that would have taken a sentence. It reads as \"showing off a sport, usually to claim competence\", which is fine until it is not.",
+    "whenNotToUse": "Watch the picker, and watch the thread. ⛹️ is easy to send when 🏀 Basketball was meant — the ball is the object being played with, the figure is the person handling it. And the emoji has no business being the whole reply to somebody who has just told you something bad: it reads as \"showing off a sport, usually to claim competence\", which is about the gesture rather than about them.\n\nThe problem is not the emoji, it is the message underneath it. ⛹️ gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway, and the drift happens silently. Nobody notices that the meaning changed, because the change was in a picture.\n\nNor is it a good opener with a stranger. The drawing is cold, and person bouncing ball gestures have collected a faintly superior edge from being used to reply to other people for years.\n\nProfessional settings are the other place to leave it alone. Put ⛹️ next to somebody's performance, or in a first note to a client, and showing off a sport, usually to claim competence is the note it reads as — a note that costs more in a workplace than in a group chat.",
+    "howToReply": "Matching works when the message was a reaction: send ⛹️ back and the tone is confirmed without a word. It does not work when the message was aimed at you. A request, a handover, a nudge — those want a sentence, because two gestures in a row leave the question open.\n\nIf you cannot tell how the person bouncing ball was meant, read the line above it instead. ⛹️ gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway; the sentence underneath is the part that disambiguates it.\n\nWarmth needs words next to the picture. Something like announcing you are heading to the gym sent with ⛹️ on its own is a coin toss between showing off a sport, usually to claim competence and something sharper, and the sender never gets to pick which one landed.",
     "faqs": [
       {
-        "question": "What does ⛹️ mean from a player?",
-        "answer": "From a player, ⛹️ signals court-coded athletic flex or a 'game today ⛹️' hype-coded message. The ball-bounce cue reads as active-coded rather than literal sport, so it tends to land on hype tags, friend athletic-coded messages, and pickup-game reveals."
+        "question": "What does ⛹️ mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is ⛹️ flirty?",
-        "answer": "Not really. ⛹️ is more about athletic-coded court flex or ironic me-attempting-sports humor than romance. On its own the emoji reads as active-coded rather than soft-coded affection."
+        "question": "What is the difference between ⛹️ and its skin-tone versions?",
+        "answer": "The tone variants under person bouncing ball show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does ⛹️ mean in text?",
+        "answer": "⛹️ is used for showing off a sport, usually to claim competence. The drawing shows a figure crouched with one hand pushing a basketball down to the floor, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between ⛹️ and 🏀?",
-        "answer": "🏀 is the basketball — the cue is basketball-coded ball energy, the universal 'game' tag. ⛹️ is the person bouncing ball — the cue is ball-bounce-coded court energy, the 'pickup game' athletic energy. Use 🏀 when the moment is ball-coded; use ⛹️ when the moment is court-coded athletic."
+        "answer": "The ball is the object being played with, the figure is the person handling it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is ⛹️ for 'game today' moments?",
-        "answer": "Yes — ⛹️ is one of the most common athletic-coded emojis. The ball-bounce cue is a natural fit for 'game today' moments, athletic-coded reveals, and 'me attempting sports' ironic tags."
-      },
-      {
-        "question": "Does ⛹️ mean literal basketball player?",
-        "answer": "Sometimes — ⛹️ carries the ball-bounce visual and reads in modern usage as athletic-coded. The literal-player-versus-ironic-sports split depends on the sender and the channel."
+        "question": "Is ⛹️ rude?",
+        "answer": "It can be. The gesture is meant as showing off a sport, usually to claim competence, but it gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "social",
-      "message": "game today at the rec center, full court energy ⛹️",
-      "interpretation": "Public athletic-coded flex. Mirror with another ⛹️, a basketball emoji, or a sentence that joins the court energy."
-    },
-    {
-      "setting": "dating",
-      "message": "want to try pickup game this weekend, full athletic mode ⛹️",
-      "interpretation": "Partner athletic-coded romance. Mirror with another ⛹️, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "work",
-      "message": "bouncing between meetings all day, full court energy ⛹️",
-      "interpretation": "Work athletic-coded metaphor. Mirror with another ⛹️, a basketball emoji, or a sentence that joins the team energy."
-    },
-    {
       "setting": "family",
-      "message": "took the kids to the court, full athletic era ⛹️",
-      "interpretation": "Family athletic-coded tag. Mirror with another ⛹️, a sentence that joins the family moment, or a basketball emoji that matches."
+      "message": "announcing you are heading to the gym ⛹️",
+      "interpretation": "Family threads are where this lands most naturally. The reading is showing off a sport, usually to claim competence, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post ⛹️",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "me attempting sports at the gym today, full court energy ⛹️",
-      "interpretation": "Friend ironic-coded reveal. Mirror with another ⛹️, a sentence that joins the irony, or an emoji that matches."
+      "message": "announcing you are heading to the gym ⛹️",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as showing off a sport, usually to claim competence, and matching it with the same emoji is a normal reply."
+    },
+    {
+      "setting": "work",
+      "message": "joking about your terrible free throws ⛹️",
+      "interpretation": "A handover or a sign-off in a channel. It reads as showing off a sport, usually to claim competence, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know ⛹️",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for genuine athletic pride when it is usually a joke about being bad at the sport — the crouch is the giveaway more easily here than it does in a work thread, because the thread is thinner."
     }
   ]
 }

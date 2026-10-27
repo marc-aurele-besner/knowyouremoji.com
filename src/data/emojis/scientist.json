@@ -7,78 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "12.1",
-  "baseMeaning": "A scientist with equipment.",
-  "tldr": "Scientist! Science or research.",
+  "baseMeaning": "A picture of a figure in a white lab coat holding up a glass flask. Read in a message it lands as examining something closely, or explaining it.",
+  "tldr": "🧑‍🔬 Scientist. In a chat it comes across as examining something closely, or explaining it.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the scientist cue.",
-      "example": "the scientist 🧑‍🔬",
+      "meaning": "The plain reading: a figure in a white lab coat holding up a glass flask. Nothing hidden in the drawing itself.",
+      "example": "Announcing the results of a long test 🧑‍🔬",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "scientist-coded moment or scientist-coded reveal.",
-      "example": "scientist mode 🧑‍🔬",
+      "meaning": "Borrowed as a reaction, it reads as examining something closely, or explaining it.",
+      "example": "Explaining a process step by step 🧑‍🔬",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "scientist-coded flirty tag or partner-coded moment.",
-      "example": "scientist partner plan 🧑‍🔬",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as examining something closely, or explaining it, softened by whatever sentence sits next to it.",
+      "example": "not me 🧑‍🔬",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "scientist-coded work moment or team energy.",
-      "example": "scientist sprint 🧑‍🔬",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — examining something closely, or explaining it — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧑‍🔬",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "🧑‍🔬 lands on scientist-coded threads, scientist-tagged person-role posts, and 'scientist-coded' reveals where the scientist cue reads as modern-coded flex."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "🧑‍🔬 is a staple of modern-coded flat-lays, scientist-canvas story backgrounds, and modern-coded profile accents; the scientist cue anchors the visual."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "🧑‍🔬 travels in modern-coded transitions, scientist reaction reveals, and 'scientist-coded' listicle content where the scientist cue signals modern-coded energy."
-    },
-    {
       "platform": "SLACK",
-      "note": "🧑‍🔬 threads through modern-coded reactions, scientist markers, and 'scientist-coded' bullets in work channels where the scientist cue fits the register."
+      "note": "In Slack 🧑‍🔬 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing the results of a long test, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "🧑‍🔬 is an active reaction in modern-coded scientist channels, server-coded scientist markers, and 'scientist-coded' reveals where the scientist cue matches the modern-coded register."
+      "note": "On Discord 🧑‍🔬 is a staple of the reaction bar, which is why it so often arrives stripped of its examining something closely, or explaining it reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🧑‍🔬 does most of its work in replies, where it tags a message like explaining a process step by step. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Scientist 🧑‍🔬 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing the results of a long test is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧑‍🔬 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like explaining a process step by step."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 🧑‍🔬 on modern-coded scientist threads, scientist-coded reveals, and 'scientist-coded' moments where the scientist cue matches the modern-coded register."
+      "note": "Gen Z reaches for 🧑‍🔬 to do the work of announcing the results of a long test, and treats the neutral drawing as the default rather than as a choice. What they hear first is examining something closely, or explaining it."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded scientist moments, and scientist-coded reveals where the universal scientist cue fits."
+      "note": "Millennials tend to send 🧑‍🔬 deliberately, usually for something like explaining a process step by step, and they read examining something closely, or explaining it into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded scientist messages and scientist reveals, treating the scientist as literal modern-coded energy."
+      "note": "Gen X mostly uses 🧑‍🔬 literally, as the picture of the gesture itself, and is less likely to read examining something closely, or explaining it into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal scientist and uses it on modern-coded tags without parsing the modern scientist-coded subtext."
+      "note": "Older senders use 🧑‍🔬 in the most straightforward way, on family and group messages, and are less likely to hear the examining something closely, or explaining it subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧑‍🔬 and 👨‍⚕️ get swapped",
+      "description": "The Man Health Worker 👨‍⚕️ is one tap away in every picker, and it does not carry the same reading — the health worker is a clinical stethoscope cue, the scientist is a flask and a lab coat. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧑‍🔬 as something else fairly often: it gets mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧑‍🔬 Scientist Emoji Meaning",
-  "seoDescription": "Learn what the Scientist emoji 🧑‍🔬 really means.",
+  "seoTitle": "🧑‍🔬 Scientist Emoji - What It Actually Means in Text",
+  "seoDescription": "🧑‍🔬 Scientist meaning: examining something closely, or explaining it. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "scientist-light",
     "scientist-medium-light",
@@ -87,56 +98,60 @@
     "scientist-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "Scientist is the emoji of role-coded profession reveal - the career tradition, the role cue, and the universal \"this is my profession\" tag. Where 💼 reads as briefcase-coded work energy and 🧑 reads as person-coded identity energy, Scientist captures the moment when the sender wants to communicate role-coded profession energy - a \"scientist\" role tag or a career-coded reveal.\n\nThe role cue borrows from profession tradition and the modern role-coded aesthetic, which is exactly why the emoji reads as role-coded rather than literal.\n\nWhat separates Scientist from the rest of the role family is the specific scientist register. The emoji is not saying 'generic role' (💼). It is saying 'scientist-coded scientist,' which carries a specific profession, career, or role specificity.\n\nIn real-world usage 🧑‍🔬 Scientist lives in the spaces where the sender wants to communicate role energy. A partner sends it on a \"scientist\" moment. A friend sends it on a \"role\" reveal. A coworker sends it on a \"scientist\" tag. The scientist cue is what makes the emoji feel role-coded - it is not just 'a moment,' it is 'scientist-coded energy.'\n\nIn dating 🧑‍🔬 Scientist works as a soft-coded scientist tag, where the scientist cue signals profession. In work threads 🧑‍🔬 Scientist lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🔬 feels.",
-    "howPeopleUseIt": "🧑‍🔬 Scientist shows up as the closer on a \"scientist moment\", the punctuation on a \"role\" reveal, and the softener on a \"scientist-coded\" tag. It pairs naturally with sentences that name the role energy - 'scientist,' 'profession,' 'scientist-coded' - and sits beautifully on profession reveals, role-coded tags, career moments, and appreciation shares.\n\nIn group chats 🧑‍🔬 Scientist anchors 'scientist moment' threads, role reveals, and 'scientist' tags where the scientist cue matches the register. On Instagram it lands on role flat-lays and role stories. On TikTok it travels in role transitions and 'scientist' reaction content.\n\nThe emoji also works in dating contexts. A 'scientist 🧑‍🔬' partner message uses the scientist cue to communicate role romance. Across all of these surfaces the rule is the same: the more role the moment, the more natural 🧑‍🔬 feels.",
-    "whenNotToUse": "Skip Scientist in sympathy, condolence, or break-up contexts. The role-coded profession cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid Scientist in casual contexts where the role energy feels too formal. A simpler emoji or a sentence keeps the message grounded.\n\nSkip Scientist when you want to communicate identity beyond profession. The role register is too career-coded for personal moments; use 🧑 or a sentence when the moment needs the whole person.",
-    "howToReply": "If someone sends Scientist, the cleanest mirror is another Scientist, 👏, or a sentence that joins the role energy. If the role cue feels too profession-coded, reply with a softer emoji (🙌 or 🫶) that signals appreciation without matching the role volume.\n\nWhen Scientist lands as a profession-coded flex, mirror with another Scientist, a clap emoji, or a sentence that escalates the appreciation. When it arrives as a work-coded reveal, mirror with another Scientist, a sentence that joins the celebration, or a heart emoji that fits.",
+    "overview": "The drawing of 🧑‍🔬 is a figure in a white lab coat holding up a glass flask. It arrived with Unicode 12.1 in the person-role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is examining something closely, or explaining it. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👨‍⚕️ Man Health Worker: the health worker is a clinical stethoscope cue, the scientist is a flask and a lab coat. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe scientist also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the scientist reads as examining something closely, or explaining it, it is most often used for announcing the results of a long test or explaining a process step by step, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🧑‍🔬 in a work thread is explaining a process step by step; 🧑‍🔬 in a family thread is announcing the results of a long test; 🧑‍🔬 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🧑‍🔬 is the whole reply, and it is carrying a meaning nobody wrote down — examining something closely, or explaining it is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Announcing the results of a long test is the job the scientist does most: it saves a sentence and lands faster than one would have. Explaining a process step by step is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🧑‍🔬 will get mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a scientist gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🧑‍🔬 reads as examining something closely, or explaining it, and formality is exactly where that reading does the most damage.\n\nLeave 👨‍⚕️ Man Health Worker for the other message. The health worker is a clinical stethoscope cue, the scientist is a flask and a lab coat. And keep 🧑‍🔬 out of threads where somebody is hurting: it reads as examining something closely, or explaining it there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🧑‍🔬 gets mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work often enough that the sentence matters more than the picture.\n\nAnd do not send 🧑‍🔬 alone when the message underneath is supposed to be warm. A message like announcing the results of a long test carries the feeling; the picture on its own leaves the reader choosing between examining something closely, or explaining it and something sharper.\n\nStart by reading what the 🧑‍🔬 was doing. If it was a reaction, react: 🧑‍🔬 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does Scientist mean in chat?",
-        "answer": "Scientist is the role-coded profession reveal - it borrows from career tradition and signals a profession reveal, role-coded tag, or career-coded moment. The role cue is what makes the read feel role-coded rather than literal."
+        "question": "What is the difference between 🧑‍🔬 and its skin-tone versions?",
+        "answer": "The tone variants under scientist show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is Scientist flirty?",
-        "answer": "Sometimes. In a dating thread Scientist can read as playful-coded romance - a \"what's your dream job\" tag or a role-coded flirty hint. On its own it reads more role than romantic."
+        "question": "What does 🧑‍🔬 mean in text?",
+        "answer": "🧑‍🔬 is used for examining something closely, or explaining it. The drawing shows a figure in a white lab coat holding up a glass flask, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "What does Scientist mean from a coworker?",
-        "answer": "From a coworker, Scientist signals a role-coded share or a profession-coded moment. The role cue reads as career-coded rather than literal, so it tends to land on work coded messages, profession tags, and \"look at my job\" reveals."
+        "question": "What is the difference between 🧑‍🔬 and 👨‍⚕️?",
+        "answer": "The health worker is a clinical stethoscope cue, the scientist is a flask and a lab coat. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "When should I use Scientist?",
-        "answer": "Use Scientist for appreciation moments, role-coded reveals, or profession tags. Avoid it when you want to communicate identity beyond profession - the role cue is too career-coded for personal moments."
+        "question": "Is 🧑‍🔬 rude?",
+        "answer": "It can be. The gesture is meant as examining something closely, or explaining it, but it gets mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
+        "question": "What does 🧑‍🔬 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "scientist with the partner plan, full role energy 🧑‍🔬",
-      "interpretation": "Partner role romance. Mirror with another 🧑‍🔬, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the scientist chaos 🧑‍🔬",
-      "interpretation": "Public role flex. Mirror with another 🧑‍🔬, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "scientist with the family, full role energy 🧑‍🔬",
-      "interpretation": "Family role reveal. Mirror with another 🧑‍🔬, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🧑‍🔬",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "scientist today, full role energy 🧑‍🔬",
-      "interpretation": "Friend role reveal. Mirror with another 🧑‍🔬, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "announcing the results of a long test 🧑‍🔬",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as examining something closely, or explaining it, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "scientist sprint today, full role energy 🧑‍🔬",
-      "interpretation": "Work role moment. Mirror with another 🧑‍🔬, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "explaining a process step by step 🧑‍🔬",
+      "interpretation": "A handover or a sign-off in a channel. It reads as examining something closely, or explaining it, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🧑‍🔬",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets mistaken for a doctor or a teacher because of the coat and glasses, when it is nearly always a claim about doing the careful, methodical work more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "announcing the results of a long test 🧑‍🔬",
+      "interpretation": "Family threads are where this lands most naturally. The reading is examining something closely, or explaining it, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

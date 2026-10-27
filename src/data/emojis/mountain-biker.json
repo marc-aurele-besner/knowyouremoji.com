@@ -7,129 +7,144 @@
   "category": "activities",
   "subcategory": "sport",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Person Mountain Biking emoji.",
-  "tldr": "Represents person mountain biking.",
+  "baseMeaning": "A picture of a figure on a knobby-tired bicycle, riding over uneven ground. Read in a message it lands as marking trail riding, weekends, or a hard climb.",
+  "tldr": "🚵 Person Mountain Biking. In a chat it comes across as marking trail riding, weekends, or a hard climb.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The activity of person mountain biking.",
-      "example": "Time for person mountain biking 🚵",
+      "meaning": "The plain reading: a figure on a knobby-tired bicycle, riding over uneven ground. Nothing hidden in the drawing itself.",
+      "example": "Planning a weekend off in the hills 🚵",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Expressing energy or athletic mood.",
-      "example": "Feeling athletic 🚵",
+      "meaning": "Borrowed as a reaction, it reads as marking trail riding, weekends, or a hard climb.",
+      "example": "Bragging about a rough downhill run 🚵",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Suggesting an active date.",
-      "example": "Want to try person mountain biking? 🚵",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as marking trail riding, weekends, or a hard climb, softened by whatever sentence sits next to it.",
+      "example": "not me 🚵",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Joking about athletic abilities.",
-      "example": "Me attempting sports 🚵",
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — marking trail riding, weekends, or a hard climb — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🚵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors trail-coded athletic flex threads, mountain-side hype tweets, and outdoor-coded reveals where the helmeted rider cue signals trail-sport register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on trail-coded story reposts, mountain-side flat-lays, and outdoor-coded reveals where the helmeted rider cue carries visible trail-sport charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in trail-coded transitions, mountain-side reaction clips, and outdoor-coded reaction content where the bike-and-helmet cue signals trail-sport register."
+      "platform": "SLACK",
+      "note": "In Slack 🚵 lands in channels where the sentence was supposed to be shorter. It is usually standing in for planning a weekend off in the hills, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on trail-coded squad check-ins, mountain-side hype messages, and group chats where the helmeted rider cue matches the outdoor trail moment."
+      "note": "On Discord 🚵 is a staple of the reaction bar, which is why it so often arrives stripped of its marking trail riding, weekends, or a hard climb reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🚵 does most of its work in replies, where it tags a message like bragging about a rough downhill run. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Person Mountain Biking 🚵 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like planning a weekend off in the hills is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🚵 exactly as the phone system does, but the keyboard keeps it in the sport section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like bragging about a rough downhill run."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 🚵 on trail-coded hype threads, mountain-side memes, and outdoor flex fits where the bike-and-helmet cue matches the modern trail-sport register."
+      "note": "Gen Z reaches for 🚵 to do the work of planning a weekend off in the hills, and treats the neutral drawing as the default rather than as a choice. What they hear first is marking trail riding, weekends, or a hard climb."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 🚵 on trail-coded nostalgia, mountain-bike-coded hype, and outdoor jokes where the millennial trail-side memory still resonates."
+      "note": "Millennials tend to send 🚵 deliberately, usually for something like bragging about a rough downhill run, and they read marking trail riding, weekends, or a hard climb into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🚵 on trail-coded reveals, mountain-side flexes, and outdoor jokes where the helmeted rider cue reads as trail-sport reference."
+      "note": "Gen X mostly uses 🚵 literally, as the picture of the gesture itself, and is less likely to read marking trail riding, weekends, or a hard climb into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🚵 as a literal mountain cyclist and pastes it onto trail replies without parsing the modern 'trail-coded hype' or mountain-side subtext."
+      "note": "Older senders use 🚵 in the most straightforward way, on family and group messages, and are less likely to hear the marking trail riding, weekends, or a hard climb subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🚵 and 🏍️ get swapped",
+      "description": "The Motorcycle 🏍️ is one tap away in every picker, and it does not carry the same reading — the motorbike reads speed and traffic, the mountain biker reads rough ground and no engine. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🚵 as something else fairly often: it gets assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🚵 Person Mountain Biking Emoji Meaning - What Does 🚵 Really Mean?",
-  "seoDescription": "Learn what the person mountain biking emoji 🚵 really means in texts and DMs. Trail-coded athletic flex, mountain-side hype energy, and outdoor charm.",
+  "seoTitle": "🚵 Person Mountain Biking Emoji - What It Actually Means in Text",
+  "seoDescription": "🚵 Person Mountain Biking meaning: marking trail riding, weekends, or a hard climb. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🚵 is the emoji of trail-coded athletic flex — a helmeted cyclist mid-ride on a mountain bike, the iconography of trail-sport tradition, mountain-side hype, and the universal outdoor flex tag. Where 🚴 reads as road-bike-coded leisurely-ride and 🚵 reads as mountain-bike-coded trail-climb, 🚵 captures the moment when the sender wants to communicate trail-sport energy — a 'trail-coded hype 🚵' mountain-side flex or a 'mountain-side-coded 🚵' outdoor reveal. The helmet-and-bike cue borrows from the universal trail tradition and the modern outdoor-hype aesthetic, which is exactly why the emoji reads as trail-sport rather than literal mountain cyclist.\n\nIn real-world usage 🚵 lives in the spaces where the sender wants to communicate trail-sport energy. A friend sends it on a 'trail-coded hype 🚵' reveal. An outdoor-coded chat partner sends it on a 'mountain-side-coded 🚵' coded message. A coworker sends it on a 'trail flex 🚵' outdoor-coded flex. The helmet-and-bike cue is what makes the emoji feel trail-coded — it is not just 'cycling,' it is 'trail-coded athletic flex.'\n\nWhat separates 🚵 from the rest of the cyclist-emoji family is the mountain-side register. The emoji is not saying 'road bike' (🚴), 'bike' (🚲), or 'scooter' (🛴). It is saying 'trail-coded athletic flex,' which carries a specific outdoor-tradition. That is why 🚵 travels especially well on trail-coded hype flexes, mountain-side jokes, outdoor-coded reveals, and any context where the sender wants the message to land with trail-sport energy.",
-    "howPeopleUseIt": "🚵 shows up as the closer on a 'trail-coded hype 🚵' athletic message ('trail-coded hype 🚵'), the punctuation on a 'mountain-side-coded 🚵' outdoor reveal, and the softener on a 'trail flex 🚵' coded message. It pairs naturally with sentences that name the trail-sport energy — 'trail-coded,' 'mountain-side-coded,' 'outdoor flex' — and sits beautifully on mountain-side flexes and trail-coded reveals.\n\nIn group chats 🚵 anchors 'trail-coded moment' threads, mountain-side reveals, and 'outdoor flex 🚵' coded tags where the helmet-and-bike cue matches the register. On Instagram it lands on trail-coded flat-lays and outdoor stories. On TikTok it travels in mountain-side reveals and 'trail-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'trail-coded hype tonight 🚵' partner message uses the helmet-and-bike cue to communicate outdoor-coded soft-coded romance. Across all of these surfaces the rule is the same: the more trail-sport the moment, the more natural 🚵 feels.",
-    "whenNotToUse": "Skip 🚵 in office-coded or formal-coded contexts. The trail-sport helmet-and-bike cue is the wrong tone for any conversation where the moment is professional. A sentence or a neutral emoji is a better fit.\n\nAvoid 🚵 in indoor-coded or couch-coded contexts where the trail-sport rule feels off. A 'trail-coded hype 🚵' message works for outdoor reveal; for indoor moments use 🚴 or a sentence.\n\nSkip 🚵 when you want to communicate road-coded calm. The mountain-side register is too rugged for quiet moments; use 🚴 or a sentence when the tone needs to be smoother.",
-    "howToReply": "If someone sends 🚵, the cleanest mirror is another 🚵, 🚴, or a sentence that joins the trail-sport energy. If you want to escalate the engagement, follow with a sentence that adds context: 'trail-coded hype for sure' or 'mountain-side-coded together.' If the helmet-and-bike cue feels too trail-coded, reply with a softer emoji (🏔 or 🌲) that signals outdoor without matching the trail-sport volume.\n\nWhen 🚵 lands as a partner 'trail-coded hype 🚵' check-in, mirror with another 🚵, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'trail flex 🚵' coded message, mirror with another 🚵, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The drawing of 🚵 is a figure on a knobby-tired bicycle, riding over uneven ground. It arrived with Unicode 13.0 in the sport section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is marking trail riding, weekends, or a hard climb. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🏍️ Motorcycle: the motorbike reads speed and traffic, the mountain biker reads rough ground and no engine. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe person mountain biking also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the person mountain biking reads as marking trail riding, weekends, or a hard climb, it is most often used for planning a weekend off in the hills or bragging about a rough downhill run, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🚵 in a work thread is bragging about a rough downhill run; 🚵 in a family thread is planning a weekend off in the hills; 🚵 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🚵 is the whole reply, and it is carrying a meaning nobody wrote down — marking trail riding, weekends, or a hard climb is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Planning a weekend off in the hills is the job the person mountain biking does most: it saves a sentence and lands faster than one would have. Bragging about a rough downhill run is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🚵 will get assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a person mountain biking gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🚵 reads as marking trail riding, weekends, or a hard climb, and formality is exactly where that reading does the most damage.\n\nLeave 🏍️ Motorcycle for the other message. The motorbike reads speed and traffic, the mountain biker reads rough ground and no engine. And keep 🚵 out of threads where somebody is hurting: it reads as marking trail riding, weekends, or a hard climb there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🚵 gets assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors often enough that the sentence matters more than the picture.\n\nAnd do not send 🚵 alone when the message underneath is supposed to be warm. A message like planning a weekend off in the hills carries the feeling; the picture on its own leaves the reader choosing between marking trail riding, weekends, or a hard climb and something sharper.\n\nStart by reading what the 🚵 was doing. If it was a reaction, react: 🚵 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 🚵 and its skin-tone versions?",
+        "answer": "The tone variants under person mountain biking show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 🚵 mean in text?",
+        "answer": "🚵 is used for marking trail riding, weekends, or a hard climb. The drawing shows a figure on a knobby-tired bicycle, riding over uneven ground, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 🚵 and 🏍️?",
+        "answer": "The motorbike reads speed and traffic, the mountain biker reads rough ground and no engine. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🚵 rude?",
+        "answer": "It can be. The gesture is meant as marking trail riding, weekends, or a hard climb, but it gets assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🚵 mean from a guy?",
-        "answer": "From a guy, 🚵 signals trail-coded hype flex or 'trail-coded hype 🚵' mountain-side reveal. The helmet-and-bike cue reads as outdoor-coded rather than literal mountain cyclist, so it tends to land on partner check-ins, trail-coded hype messages, and 'trail flex' reveals."
-      },
-      {
-        "question": "Is 🚵 flirty?",
-        "answer": "It can be. In a partner context 🚵 can read as trail-coded soft-coded romance — 'trail-coded hype tonight 🚵' is a soft-coded trail-sport check-in. On its own the emoji is more outdoor-coded than romantic."
-      },
-      {
-        "question": "What is the difference between 🚵 and 🚴?",
-        "answer": "🚴 is the road cyclist — the cue is road-bike-coded leisurely-ride, the universal 'cycling' energy. 🚵 is the mountain biker — the cue is trail-sport-coded helmeted-ride, the 'trail-coded hype' mountain-side energy. Use 🚴 when the moment is leisurely-ride; use 🚵 when the moment is trail flex."
-      },
-      {
-        "question": "Is 🚵 for outdoor moments?",
-        "answer": "Yes — 🚵 is one of the most popular trail-coded emojis. The helmet-and-bike cue is a natural fit for outdoor reveals, mountain-side messages, and partner 'trail flex' check-ins."
-      },
-      {
-        "question": "Does 🚵 mean trail-coded hype?",
-        "answer": "Often yes — 🚵 carries trail-coded charm and reads in modern usage as mountain-side. The literal-mountain-cyclist-versus-trail-hype split depends on the sender and the channel."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "trail-coded hype tonight, full mountain-side energy 🚵",
-      "interpretation": "Partner trail-coded romance. Mirror with another 🚵, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the trail-sport chaos 🚵",
-      "interpretation": "Public trail-coded flex. Mirror with another 🚵, a sentence that joins the trail-sport energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "trail-coded hype moment with the family, full mountain-side energy 🚵",
-      "interpretation": "Family trail-coded reveal. Mirror with another 🚵, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🚵",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "mountain-side energy today, full trail flex 🚵",
-      "interpretation": "Friend trail-coded reveal. Mirror with another 🚵, a sentence that joins the trail-sport energy, or a heart emoji that matches."
+      "message": "planning a weekend off in the hills 🚵",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as marking trail riding, weekends, or a hard climb, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "trail flex at work today, full mountain-side mode 🚵",
-      "interpretation": "Work trail-coded moment. Mirror with another 🚵, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "bragging about a rough downhill run 🚵",
+      "interpretation": "A handover or a sign-off in a channel. It reads as marking trail riding, weekends, or a hard climb, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🚵",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets assumed to mean mountain biking as a sport when it is usually a stand-in for a weekend away from a city, a dusty commute, or an excuse to be outdoors more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "planning a weekend off in the hills 🚵",
+      "interpretation": "Family threads are where this lands most naturally. The reading is marking trail riding, weekends, or a hard climb, and nobody in the thread is reading it as anything sharper than that."
     }
   ],
   "skinToneVariations": [

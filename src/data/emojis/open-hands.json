@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "hand-gesture",
   "unicodeVersion": "6.0",
-  "baseMeaning": "Open hands gesture.",
-  "tldr": "Open! Jazz hands or receiving.",
+  "baseMeaning": "A drawing of two open hands held forward, palms up and fingers spread wide, used as receiving, giving up, or asking for a hug.",
+  "tldr": "👐 Open Hands: receiving, giving up, or asking for a hug.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Open hands, receiving or giving.",
-      "example": "Welcome 👐",
+      "meaning": "The plain reading: two open hands held forward, palms up and fingers spread wide. Nothing hidden in the drawing itself.",
+      "example": "Asking a friend to hand over the last snack 👐",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Jazz hands or excitement.",
-      "example": "Surprise 👐",
+      "meaning": "Borrowed as a reaction, it reads as receiving, giving up, or asking for a hug.",
+      "example": "Signalling a big group hug photo 👐",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Exaggerated welcome.",
-      "example": "Oh great, you're here 👐",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as receiving, giving up, or asking for a hug, softened by whatever sentence sits next to it.",
+      "example": "not me 👐",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Open to ideas or welcoming.",
-      "example": "All ideas welcome 👐",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — receiving, giving up, or asking for a hug — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👐",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "INSTAGRAM",
-      "note": "Sticker on openness-coded captions and welcoming-coded story overlays; the open-palms fit warm-coded adult content."
+      "platform": "IMESSAGE",
+      "note": "On iOS the Open Hands 👐 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like asking a friend to hand over the last snack is the kind that carries it — the picture lands before the sentence does."
     },
     {
-      "platform": "TWITTER",
-      "note": "Reply to openness-coded and 'nothing to hide' tweets; reads as the visible openness tag across adult-coded audiences."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 👐 exactly as the phone system does, but the keyboard keeps it in the hand-gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like signalling a big group hug photo."
+    },
+    {
+      "platform": "INSTAGRAM",
+      "note": "On Instagram 👐 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as receiving, giving up, or asking for a hug under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Comment-section reaction to openness-coded content; pairs with welcoming-coded clip reactions."
+      "note": "In TikTok comments 👐 is the fastest way to answer a video without typing anything. The gesture stays receiving, giving up, or asking for a hug, and the tone of the comment underneath it carries the rest."
     },
     {
-      "platform": "DISCORD",
-      "note": "Server reaction to openness-coded content; the open-palms are the default 'I have nothing to hide' tag."
+      "platform": "SLACK",
+      "note": "In Slack 👐 lands in channels where the sentence was supposed to be shorter. It is usually standing in for asking a friend to hand over the last snack, and a channel where the topic is somebody's workload is where it misreads."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 👐 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
+      "note": "Gen Z reaches for 👐 to do the work of asking a friend to hand over the last snack, and treats the neutral drawing as the default rather than as a choice. What they hear first is receiving, giving up, or asking for a hug."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reads 👐 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+      "note": "Millennials tend to send 👐 deliberately, usually for something like signalling a big group hug photo, and they read receiving, giving up, or asking for a hug into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 👐 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
+      "note": "Gen X mostly uses 👐 literally, as the picture of the gesture itself, and is less likely to read receiving, giving up, or asking for a hug into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Uses 👐 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
+      "note": "Older senders use 👐 in the most straightforward way, on family and group messages, and are less likely to hear the receiving, giving up, or asking for a hug subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👐 and 🙏 get swapped",
+      "description": "The Folded Hands 🙏 is one tap away in every picker, and it does not carry the same reading — the folded hands ask or give thanks, the open palms are already out waiting to receive. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👐 as something else fairly often: it gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👐 Open Hands Emoji Meaning",
-  "seoDescription": "Learn what the Open Hands emoji 👐 really means.",
+  "seoTitle": "👐 Open Hands Emoji Meaning - What Does 👐 Really Mean?",
+  "seoDescription": "What the open hands emoji 👐 means in text: receiving, giving up, or asking for a hug. Includes the misread it invites (taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward) and how to reply.",
   "skinToneVariations": [
     "open-hands-light",
     "open-hands-medium-light",
@@ -83,56 +98,60 @@
     "open-hands-dark"
   ],
   "longForm": {
-    "overview": "The 👐 Open Hands emoji was added in Unicode 6 (2010) and is drawn as two yellow open hands, palms facing up, in a gesture of openness or showing emptiness. The visual cue reads instantly as openness, 'I have nothing,' or the visible 'look, hands up' tag. By 2026 👐 has become the go-to emoji for the openness reaction, the visible-'nothing to hide' tag, and the welcoming-coded open-arms default.\n\nIn modern chat 👐 does very specific work. People send it as a literal openness feeling, as the visible 'I have nothing' tag, or as the welcoming open-arms default. The two-open-palms-up are the visual cue that the gesture is openness-coded. Writers should pick 👐 when the read is openness or welcoming, and avoid it when the read is hugging — 🤗 fits better for hug-coded moments.",
-    "howPeopleUseIt": "👐 lands on a friend's 'nothing to hide' message, in a work channel where someone is showing openness, and in a dating-app DM where the sender is welcoming. The two-open-palms anchor the read.\n\nIn close-friends chats 👐 reads as the universal 'open arms' tag. On X the emoji punctuates openness-coded tweets. The emoji pairs with 🤗 for the layered openness-and-hug stack and with 🫶 for the visible love-pair stack.",
-    "whenNotToUse": "Skip 👐 in any context where the read is hugging — 🤗 fits better. Avoid 👐 in ironic contexts where the openness is faked — 🙄 fits better there.",
-    "howToReply": "If a friend sends 👐 on an openness message, mirror with another 👐 or 🤗 to match the welcoming energy. The open-arms chain reads as solidarity.\n\nIf 👐 lands as the welcoming default, reply with another 👐 or 🫶. And if you want to send 👐 yourself, pair it with the moment so the openness read is clear.",
+    "overview": "👐 is the open hands: two open hands held forward, palms up and fingers spread wide. It arrived in Unicode 6.0, and it lives in the hand-gesture part of the emoji set, where the drawing is doing one specific job. Somebody sends it, and the picture either stands in for a sentence or stands in for a mood. Which one it is depends on what is around it.\n\nAt the plain level the gesture reads as receiving, giving up, or asking for a hug. That is the reading most people arrive with, and it is usually the intended one. The picture is doing the same work as the sentence it replaces, which is why it lands faster than a sentence would have landed.\n\nThe complication is that the drawing invites a second reading. It gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🙏 Folded Hands: the folded hands ask or give thanks, the open palms are already out waiting to receive. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe drawing on this page is the neutral one. The same open hands exists in five skin tones, and each of those pages covers how a particular tone gets read by the people who send it. The gesture does not change between them; what changes is who it looks like it is coming from.\n\nPractically, this is what the page is for: what the open hands emoji is used for, how it behaves in the places people actually use it, and where the drawing is more confident than the person who sent it. The two jobs it does most often are asking a friend to hand over the last snack and signalling a big group hug photo, and the sections below break both of them down.",
+    "howPeopleUseIt": "The first job 👐 does is asking a friend to hand over the last snack. It gets typed at the end of a sentence that already made the point, and it removes the need to explain how the sender wants the message taken. Nobody has to write \"you know what I mean\", because the picture says it.\n\nThe second is signalling a big group hug photo. Here the emoji is doing something different: it is not the punchline, it is the tone. The message could have been sent without it, but it would have read as flat.\n\nWhere the gesture lands depends on the room. In a family thread 👐 is closer to a sign-off, in a work channel it is a decision or a handover, and in a dating thread it is a way of making a small joke without writing one. The same drawing moves because the people reading it expect different things.\n\nThat is also why the skin-tone versions matter. The five variants under this family cover the same gesture, and the tone you pick says something about you before the sentence is read.\n\nThe habit worth naming is the one where the emoji replaces a reply altogether. Somebody asks a question, and 👐 goes back on its own. It reads as \"receiving, giving up, or asking for a hug\", and it saves the sender a sentence — which is exactly why it is so easy to send something that means less than intended.",
+    "whenNotToUse": "Do not use 👐 when you mean 🙏 Folded Hands. The folded hands ask or give thanks, the open palms are already out waiting to receive. The two drawings are easy to confuse, and the wrong one changes the message from one thing to a different thing entirely.\n\nAnd do not use it as a reaction to somebody who is upset. A bare 👐 in a thread about a person reads as \"receiving, giving up, or asking for a hug\", which is about the picture and not about them.\n\nSkip it when the sentence underneath it is the important part. The emoji gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward. Once that happens the emoji is carrying the message, and the message has drifted somewhere neither sender intended.\n\nIt is also a poor choice in a first exchange with somebody you do not know. There is no warmth baked into the drawing, and open hands gestures often collect a slightly superior edge from being used as answers to other people's messages.\n\nFinally, leave it out of formal settings where the tone is supposed to be neutral. 👐 in a thread about somebody's performance, or in a message to a client you have never met, buys very little and risks a read of receiving, giving up, or asking for a hug as arrogance.",
+    "howToReply": "The easy reply is to match it with the same 👐. That confirms the tone without adding anything, and it works when the original message was a reaction rather than a question.\n\nIf the open hands was aimed at you — a nudge, a handover, a request for a decision — answer in words. A gesture answering a gesture leaves the actual point unanswered.\n\nIf somebody sends it and you are not sure what register they are in, respond to the sentence rather than to the emoji. The drawing gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward — and the sentence is the part that tells you which reading you are dealing with.\n\nAnd when you want the warmth without the ambiguity, add a line of text. A message like asking a friend to hand over the last snack almost always needs the sentence, because the picture on its own leaves the reader to guess whether you meant receiving, giving up, or asking for a hug or something sharper.",
     "faqs": [
       {
         "question": "What does 👐 mean in text?",
-        "answer": "👐 means openness, 'nothing to hide,' or welcoming-coded open-arms. The two-open-palms-up are the visual cue that the gesture is openness-coded."
+        "answer": "👐 is used for receiving, giving up, or asking for a hug. The drawing shows two open hands held forward, palms up and fingers spread wide, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
-        "question": "Is 👐 flirty?",
-        "answer": "Sometimes, gently. 👐 can read as soft-coded flirty welcoming in a dating thread. It is warmth-coded rather than pure romance-coded."
+        "question": "What is the difference between 👐 and 🙏?",
+        "answer": "The folded hands ask or give thanks, the open palms are already out waiting to receive. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 👐 rude?",
+        "answer": "It can be. The gesture is meant as receiving, giving up, or asking for a hug, but it gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
         "question": "What does 👐 mean from a guy?",
-        "answer": "From a guy or anyone, 👐 carries the same openness read. There is no gendered meaning; the emoji works the same regardless."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "What does 👐 mean at work?",
-        "answer": "In Slack, 👐 reads as the 'nothing to hide' tag when admitting a small mistake. Pair with a sentence about the issue so the channel stays useful."
+        "question": "What is the difference between 👐 and its skin-tone versions?",
+        "answer": "The tone variants under open hands show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "nothing up my sleeve 👐",
-      "interpretation": "Friend openness-coded share. Mirror with another 👐 or 🤗 so the openness chain reads back."
-    },
-    {
-      "setting": "dating",
-      "message": "open arms for you 👐",
-      "interpretation": "Dating-coded welcoming share. Mirror with 👐 or 🤗 so the warm welcoming chain reads back."
-    },
-    {
-      "setting": "social",
-      "message": "I give up 👐",
-      "interpretation": "Public adult-coded openness share. Mirror with another 👐 or 🤷 so the openness-default chain reads back."
-    },
-    {
-      "setting": "family",
-      "message": "love you all 👐",
-      "interpretation": "Family-coded welcoming share. Mirror with another 👐 or 🫶 so the family-welcoming chain reads back."
+      "message": "asking a friend to hand over the last snack 👐",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as receiving, giving up, or asking for a hug, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "all good here 👐",
-      "interpretation": "Work-coded openness tag. Mirror with another 🙏 or a sentence so the channel stays useful."
+      "message": "signalling a big group hug photo 👐",
+      "interpretation": "A handover or a sign-off in a channel. It reads as receiving, giving up, or asking for a hug, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👐",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets taken for celebration or applause when it more often reads as open palms waiting to be handed something, because the hands are cupped upward more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "asking a friend to hand over the last snack 👐",
+      "interpretation": "Family threads are where this lands most naturally. The reading is receiving, giving up, or asking for a hug, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 👐",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-10-26"
 }

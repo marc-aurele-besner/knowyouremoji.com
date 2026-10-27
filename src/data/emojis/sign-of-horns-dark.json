@@ -7,131 +7,137 @@
   "category": "people",
   "subcategory": "hand-fingers-partial",
   "unicodeVersion": "8.0",
-  "baseMeaning": "A hand making the rock on gesture.",
-  "tldr": "Rock on, metal, or that's awesome.",
+  "baseMeaning": "A hand making the rock on gesture. The dark skin tone modifier is applied to the hand.",
+  "tldr": "🤘🏿 Sign of the Horns with a dark skin tone. Always a deliberate pick, and one that needs context to land.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Rock and roll gesture.",
-      "example": "Rock on 🤘",
+      "meaning": "Shows the same artwork as the untoned version, with the dark skin tone applied to the hand.",
+      "example": "🤘🏿",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "That's awesome.",
-      "example": "So metal 🤘",
+      "meaning": "The gesture reads the same as the untoned version; the dark skin tone makes it a deliberate statement with real weight behind it.",
+      "example": "heard 🤘🏿",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Party hard.",
-      "example": "Weekend mode 🤘",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is unchanged; the tone makes it a strong statement, and a wrong one lands badly.",
+      "example": "back off 🤘🏿",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Crushing it.",
-      "example": "Killed that presentation 🤘",
+      "meaning": "In a work thread the gesture is unchanged, and the dark skin tone reads as deliberate enough that the choice itself is noticed.",
+      "example": "confirmed 🤘🏿",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
+      "platform": "IMESSAGE",
+      "note": "On iOS 🤘🏿 renders as one combined glyph with the tone applied. The dark swatch is the last one in Apple's picker, and it is also the one where the rendering difference between clients is largest: the same emoji can look like a noticeably different person depending on which font drew it."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp applies the dark modifier on current builds and lists it last, so it takes a deliberate scroll. Older Android builds of WhatsApp fall back to the untoned glyph, and because the dark swatch is the most conspicuous of the five when it does render, the difference between the two is the one people notice."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Lands on music coded sign-of-horns-dark threads, sound-marker reveal posts, and sign-of-horns-dark-pulse coded lists."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Staple of music coded sign-of-horns-dark flat-lays, music-canvas story backgrounds, and sound-marker profile accents."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in music coded sign-of-horns-dark transitions, sound-marker reaction reveals, and sign-of-horns-dark-pulse coded listicle content."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Anchors music coded sign-of-horns-dark status messages, role-coded sound-marker markers, and sign-of-horns-dark-pulse coded reactions."
+      "note": "Twemoji renders 🤘🏿 with the dark swatch intact, and it is the tone most often used deliberately on the platform, so it is also the one most likely to be screenshotted out of context and read as a comment on whoever is in the picture."
     },
     {
       "platform": "SLACK",
-      "note": "Threads through music coded sign-of-horns-dark reactions, sound-marker markers, and sign-of-horns-dark-pulse coded bullets."
+      "note": "Slack's own emoji font renders the dark swatch with less contrast against the darker themes than the phone version does. On a dark background the tone can lose definition entirely, which is worth knowing before you conclude that somebody sent something else."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "Discord uses Twemoji and applies the modifier cleanly. As with the other dark-swatch uses, the interesting failure mode is not rendering but reuse: 🤘🏿 forwarded into a channel it was not meant for keeps its meaning as a statement and loses its context."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Rock on excitement."
+      "note": "Gen Z uses 🤘🏿 as a clear statement of self, and is also the cohort most alert to its use about other people. Because the swatch is unmistakable, the reaction to a misused 🤘🏿 in this cohort is fast and rarely subtle."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Metal and rock."
+      "note": "Millennials use 🤘🏿 when they are representing themselves, and read the tone as personal. It is also the tone most often borrowed to depict somebody else, which is where it turns from a self-description into a comment on somebody's appearance."
     },
     {
-      "generation": "BOOMER",
-      "note": "Rock and roll."
+      "generation": "GEN_X",
+      "note": "Gen X rarely changes the tone, so 🤘🏿 mostly shows up as self-representation. Older clients in this cohort also flatten it more often, so the glyph a sender saw is not always the glyph a recipient saw."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Do not use the dark swatch as a joke about skin",
+      "description": "🤘🏿 is the tone most often used to make a point about somebody's appearance. Used about someone other than the sender, it is read as a comment on their skin rather than as the gesture.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤘🏿 Sign of the Horns Dark Skin Tone Emoji - What Does 🤘🏿 Mean?",
-  "seoDescription": "Learn what the sign of the horns emoji with dark skin tone 🤘🏿 means in texts and social media.",
+  "seoTitle": "🤘🏿 Sign of the Horns Dark Skin Tone Emoji Meaning - What Does 🤘🏿 Mean?",
+  "seoDescription": "What does the sign of the horns emoji 🤘🏿 mean? Sign of the Horns showing a hand with index and little fingers extended, thumb pinning the middle two down. Covers the dark skin tone variant, the misread it invites, and how to reply.",
   "skinToneBase": "sign-of-horns",
   "skinToneModifier": "dark",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🤘🏿 is the emoji of music coded sign-of-horns-dark read — a clean sign-of-horns-dark-pulse shape, the music filled-in silhouette, and the universal 'music sign-of-horns-dark' tag for sound-marker. Where ⬛ reads as solid-black-coded sign-of-horns-dark read and ⬜ reads as solid-white-coded sign-of-horns-dark read, 🤘🏿 captures the moment when the sender wants to communicate music coded sign-of-horns-dark — a 'music 🤘🏿' sound-marker marker or a 'sign-of-horns-dark-pulse pulse 🤘🏿' sound-marker reveal. The music fill cue borrows from design-coded bullet lists and the modern sound-marker aesthetic, which is exactly why the emoji reads as music coded rather than literal sign-of-horns-dark-coded shape.\n\nIn real-world usage 🤘🏿 lives in the spaces where the sender wants to communicate sound-marker energy. A partner sends it on a 'music 🤘🏿' sound-marker marker. A friend sends it on a 'sign-of-horns-dark-pulse pulse 🤘🏿' reveal. A coworker sends it on a 'music coded 🤘🏿' list thread. The music fill cue is what makes the emoji feel music coded — it is not just 'shape,' it is 'music coded sign-of-horns-dark moment.'\n\nWhat separates 🤘🏿 from the rest of the shape family is the music register. The emoji is not saying 'solid-black' (⬛), 'solid-white' (⬜), or 'solid-square' (◼). It is saying 'music coded sign-of-horns-dark,' which carries a specific design-coded tradition. That is why 🤘🏿 travels especially well on partner sound-marker markers, sound-marker reveals, and any context where the sender wants the message to land with music energy.",
-    "howPeopleUseIt": "🤘🏿 shows up as the bullet on a 'music 🤘🏿' list message ('sign-of-horns-dark-pulse pulse 🤘🏿'), the punctuation on a 'music coded 🤘🏿' reveal, and the softener on a 'sign-of-horns-dark-pulse pulse 🤘🏿' list thread. It pairs naturally with sentences that name the music energy — 'music,' 'sign-of-horns-dark-pulse pulse,' 'sound-marker-coded' — and sits beautifully on partner sound-marker markers and sound-marker reveals.\n\nIn group chats 🤘🏿 anchors 'music coded moment' threads, sound-marker reveals, and 'music 🤘🏿' tags where the sign-of-horns-dark cue matches the register. On Instagram it lands on music coded flat-lays and music-canvas stories. On TikTok it travels in music coded reveals and 'music' reaction content.\n\nThe emoji also works in dating contexts. A 'music 🤘🏿' partner message uses the sign-of-horns-dark cue to communicate sound-marker romance. Across all of these surfaces the rule is the same: the more music coded the moment, the more natural 🤘🏿 feels.",
-    "whenNotToUse": "Skip 🤘🏿 in sympathy, condolence, or break-up contexts. The music coded sign-of-horns-dark cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🤘🏿 in 'literal object' or finish-coded contexts where the music energy feels off. A 'music 🤘🏿' message works for music marker; for finish-coded contexts use 🏁 or a sentence.\n\nSkip 🤘🏿 when you want to communicate a different color. The music coded register is too music-coded for moments that need a literal neutral fill; use ⬛ or ⬜ when the design needs to land clean.",
-    "howToReply": "If someone sends 🤘🏿, the cleanest mirror is another 🤘🏿, ⬛, or a sentence that joins the music energy. If you want to escalate the engagement, follow with a sentence that adds context: 'music for sure' or 'sign-of-horns-dark-pulse pulse together.' If the sign-of-horns-dark cue feels too music coded, reply with a sharper emoji (◼ or ◻) that signals shape-coded energy without matching the music volume.\n\nWhen 🤘🏿 lands as a partner 'music 🤘🏿' sound-marker marker, mirror with another 🤘🏿, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'sign-of-horns-dark-pulse pulse 🤘🏿' list thread, mirror with another 🤘🏿, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "Reaching 🤘🏿 takes work, because it is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is worth knowing, because it changes what the emoji means in a thread. 🤘🏿 is Sign of the Horns with a dark skin tone, a hand with index and little fingers extended, thumb pinning the middle two down, and it is doing the same job as 🤘: rocking out, approving something, or jokingly claiming toughness.\n\nBut a tone that someone went looking for is not a tone that gets skimmed. The most deliberately chosen of the five, because getting there is the most work. In a group chat, 🤘🏿 tends to get a second look, and it tends to get one for a reason — either because it genuinely represents the sender, or because the sender wanted it to. The difference between those two is not visible from the emoji alone, which is the single most important thing to understand about this variant.\n\nThe situations it turns up in are the family ones, unchanged by the tone, and the trap is the same one the rest of the set has: it gets treated as a music reference when it is really just a stubborn or defiant gesture, and plenty of people have no idea where it came from. The neighbouring glyph people reach for instead is 🤙 Call Me Hand — the call me hand extends thumb and pinky sideways, the horns points index and pinky straight up.",
+    "howPeopleUseIt": "The gesture is the same one 🤘 makes, so the family habits carry straight over. What changes with 🤘🏿 is who tends to send it and what they are assuming about the reader.\n\nBecause it is the last swatch, 🤘🏿 shows up where the tone was the point: an avatar, a profile picture, an introduction of oneself, a reaction that is meant to carry the sender's own appearance. It appears in announcing a gig you are heading to, and in signing off a stubborn reply in a chat.\n\nIt is also, for the same reason, the tone most likely to be deployed as a joke about someone's skin, which is the context where it stops being harmless. 🤘🏿 used about someone other than the sender, with no context, is the version of this emoji that causes real offence — and the reason is not the gesture but the fact that the tone was chosen to make a point.",
+    "whenNotToUse": "The family rule applies first, and it is the one spelled out above: the standard misread of this glyph belongs to 🤘 itself, and every tone in this family inherits it.\n\nThe trap for 🤘🏿 is the obvious one, and it is worth stating plainly: the darkest swatch is the one most often used as a joke about skin. Because it takes a deliberate scroll to reach, the emoji reads as a statement about somebody, and if the sender is not the somebody, it lands as a comment on their appearance. Do not use 🤘🏿 to depict another person without a reason you would be comfortable explaining out loud.\n\nBeyond that, skip it when the moment is light enough that a swatch with this much weight will outweigh the sentence. 🤘🏿 gets a second look in every thread it lands in, and not every message can afford that.",
+    "howToReply": "Reply with 🏿 if the sender was representing themselves — matching the darkest swatch is one of the more concrete ways to say you saw what they chose. 🤘 is fine when the tone was incidental.\n\nIf the tone was pointed — if 🤘🏿 was deployed as a joke about somebody's skin — the reply is a sentence, not an emoji. Nothing mirrors that well, and a mirrored emoji makes the joke land twice.",
     "faqs": [
       {
+        "question": "What does 🤘🏿 mean in text?",
+        "answer": "🤘🏿 is Sign of the Horns with a dark skin tone. The gesture reads as rocking out, approving something, or jokingly claiming toughness, and the swatch is the heaviest of the five."
+      },
+      {
+        "question": "Is 🤘🏿 a deliberate choice?",
+        "answer": "Almost always. It is the last swatch in the tone list, so reaching it means scrolling or swiping past four others. That is why 🤘🏿 gets a second look in a thread while 🤘 does not."
+      },
+      {
         "question": "What does 🤘🏿 mean from a guy?",
-        "answer": "From a guy, 🤘🏿 signals music coded flex or 'music 🤘🏿' sound-marker marker. The sign-of-horns-dark cue reads as music-coded rather than literal sign-of-horns-dark-coded shape, so it tends to land on partner sound-marker markers, family-coded music messages, and 'sign-of-horns-dark-pulse pulse' reveals."
+        "answer": "The gesture reads the same as it does from anyone else. The skin tone is not a gendered signal on 🤘."
       },
       {
-        "question": "Is 🤘🏿 flirty?",
-        "answer": "It can be. In a partner context 🤘🏿 can read as soft-coded romance — 'music 🤘🏿' is a soft-coded sound-marker marker. On its own the emoji is more music coded than romantic."
+        "question": "Is 🤘🏿 offensive?",
+        "answer": "It can be, and it is the tone most often used as a joke about skin. It is the tone most often used to make a point about someone’s skin, which is why it never travels without context. Used to depict the sender, it is one of the most personal choices in the emoji set."
       },
       {
-        "question": "What is the difference between 🤘🏿 and ⬛?",
-        "answer": "⬛ is the solid-black sign-of-horns-dark — the cue is solid-black-coded read, the universal 'fill' energy. 🤘🏿 is the music sign-of-horns-dark — the cue is music coded sign-of-horns-dark read, the music energy. Use ⬛ when the moment is fill-coded; use 🤘🏿 when the moment is music coded."
-      },
-      {
-        "question": "Is 🤘🏿 for sound-marker moments?",
-        "answer": "Yes — 🤘🏿 is one of the most popular music coded emojis. The sign-of-horns-dark cue is a natural fit for 'sound-marker' reveals, music coded messages, and partner 'music' markers."
-      },
-      {
-        "question": "Does 🤘🏿 mean sign-of-horns-dark-pulse pulse?",
-        "answer": "Often yes — 🤘🏿 carries the music fill visual and reads in modern usage as music coded. The literal-shape-versus-music-coded split depends on the sender and the channel."
+        "question": "What is the difference between 🤘🏿 and 🤘?",
+        "answer": "The swatch, and it matters more here than for the other tones. 🤘 is the tone-less version, and it is the right pick whenever the sender is not the person being shown."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "sign-of-horns-dark-pulse pulse for the partner plan, full music energy 🤘🏿",
-      "interpretation": "Partner music romance. Mirror with another 🤘🏿, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the music chaos 🤘🏿",
-      "interpretation": "Public music flex. Mirror with another 🤘🏿, a sentence that joins the music energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "music sound-marker with the family, full sign-of-horns-dark-pulse pulse energy 🤘🏿",
-      "interpretation": "Family music reveal. Mirror with another 🤘🏿, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "sign-of-horns-dark-pulse pulse today, full music energy 🤘🏿",
-      "interpretation": "Friend music reveal. Mirror with another 🤘🏿, a sentence that joins the music energy, or a heart emoji that matches."
+      "message": "announcing a gig you are heading to 🤘🏿",
+      "interpretation": "A friend sending 🤘🏿 in a chat where the gesture is doing the work. Replying with the same gesture, or with a sentence, both land."
+    },
+    {
+      "setting": "dating",
+      "message": "signing off a stubborn reply in a chat 🤘🏿",
+      "interpretation": "A partner message where the tone is doing as much work as the gesture — it is a strong statement, and a wrong one lands badly."
     },
     {
       "setting": "work",
-      "message": "music coded sprint today, full sign-of-horns-dark-pulse pulse energy 🤘🏿",
-      "interpretation": "Work music moment. Mirror with another 🤘🏿, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "confirmed 🤘🏿",
+      "interpretation": "A work thread. The dark skin tone reads as deliberate enough that the choice itself is noticed."
+    },
+    {
+      "setting": "family",
+      "message": "understood 🤘🏿",
+      "interpretation": "A family chat where the emoji is being read literally — the dark skin tone stands for the person in the picture rather than for the tone."
+    },
+    {
+      "setting": "social",
+      "message": "exactly 🤘🏿",
+      "interpretation": "A public post where the gesture is doing the work and the tone is incidental."
     }
   ]
 }

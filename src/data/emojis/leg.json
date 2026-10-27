@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "body-parts",
   "unicodeVersion": "11.0",
-  "baseMeaning": "Human leg.",
-  "tldr": "Leg! Walking, running, or leg day.",
+  "baseMeaning": "A picture of a leg from thigh to bare foot, the foot angled slightly outward. Read in a message it lands as walking, running, or a leg day at the gym.",
+  "tldr": "🦵 Leg. In a chat it comes across as walking, running, or a leg day at the gym.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a leg.",
-      "example": "Leg day 🦵",
+      "meaning": "The plain reading: a leg from thigh to bare foot, the foot angled slightly outward. Nothing hidden in the drawing itself.",
+      "example": "Posting about leg day at the gym 🦵",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Fitness or running content.",
-      "example": "Never skip leg day 🦵",
+      "meaning": "Borrowed as a reaction, it reads as walking, running, or a leg day at the gym.",
+      "example": "Reporting a leg injury to a friend 🦵",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Leg related humor.",
-      "example": "My legs after stairs 🦵",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as walking, running, or a leg day at the gym, softened by whatever sentence sits next to it.",
+      "example": "not me 🦵",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Fitness context.",
-      "example": "Gym schedule 🦵",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — walking, running, or a leg day at the gym — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🦵",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors leg-coded threads, anatomical leg-coded flex tweets, and 'leg energy' captions where the anatomical leg cue signals stride-flex register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on leg-coded flat-lays, anatomical leg-coded stories, and 'leg-coded' reveals where the anatomical leg visual carries stride-flex charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in leg-coded transitions, anatomical leg-coded clips, and 'leg-coded' reaction content where the anatomical leg cue signals stride-flex register."
+      "platform": "SLACK",
+      "note": "In Slack 🦵 lands in channels where the sentence was supposed to be shorter. It is usually standing in for posting about leg day at the gym, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner leg-coded check-ins, friend anatomical leg-coded messages, and group chats where the 🦵 cue matches the stride-flex moment."
+      "note": "On Discord 🦵 is a staple of the reaction bar, which is why it so often arrives stripped of its walking, running, or a leg day at the gym reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 🦵 does most of its work in replies, where it tags a message like reporting a leg injury to a friend. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Leg 🦵 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like posting about leg day at the gym is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🦵 exactly as the phone system does, but the keyboard keeps it in the body-parts section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like reporting a leg injury to a friend."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 🦵 on leg-coded threads, anatomical leg-coded memes, and leg fits where the anatomical leg cue matches the modern stride-flex register."
+      "note": "Gen Z reaches for 🦵 to do the work of posting about leg day at the gym, and treats the neutral drawing as the default rather than as a choice. What they hear first is walking, running, or a leg day at the gym."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 🦵 on leg-coded nostalgia, anatomical leg-coded humor, and 'leg-coded' jokes where the millennial leg memory still resonates."
+      "note": "Millennials tend to send 🦵 deliberately, usually for something like reporting a leg injury to a friend, and they read walking, running, or a leg day at the gym into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🦵 on leg-coded jokes, anatomical leg-coded reveals, and leg flexes where the anatomical leg cue reads as stride-flex reference."
+      "note": "Gen X mostly uses 🦵 literally, as the picture of the gesture itself, and is less likely to read walking, running, or a leg day at the gym into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 🦵 as a literal anatomical leg and pastes it onto leg replies without parsing the modern 'leg-coded' or stride-flex subtext."
+      "note": "Older senders use 🦵 in the most straightforward way, on family and group messages, and are less likely to hear the walking, running, or a leg day at the gym subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🦵 and 🦶 get swapped",
+      "description": "The Foot 🦶 is one tap away in every picker, and it does not carry the same reading — the foot stands alone for walking or bare feet, the leg always drags the thigh and knee along with it. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🦵 as something else fairly often: it gets used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🦵 Leg Emoji Meaning - What Does 🦵 Really Mean?",
-  "seoDescription": "Learn what the leg emoji 🦵 really means in texts and DMs. leg, stride, and the stride flex register.",
+  "seoTitle": "🦵 Leg Emoji - What It Actually Means in Text",
+  "seoDescription": "🦵 Leg meaning: walking, running, or a leg day at the gym. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "leg-light",
     "leg-medium-light",
@@ -83,60 +98,60 @@
     "leg-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🦵 is the emoji of stride-coded 'knee-flex' leg reveal — a single anatomical leg with thigh and calf shown from upper thigh to foot, the iconography of leg-day-coded flex, stride-coded walking moment, and the universal 'never skip leg day' tag. Where 🦶 reads as foot-coded put-down mood and 🦿 reads as mechanical-leg-coded prosthetic flex, 🦵 captures the moment when the sender wants to communicate stride-coded energy — a 'never skip leg day 🦵' knee-flex-coded check-in or a 'walk it off 🦵' leg-day-coded reveal. The thigh-to-foot anatomy visual cue borrows from the universal gym-bro tradition and the modern stride-walking aesthetic, which is exactly why the emoji reads as stride-coded rather than literal leg.\n\nIn real-world usage 🦵 lives in the spaces where the sender wants to communicate leg-day-coded flex. A partner sends it on a 'walk it off 🦵' stride-coded check-in. A friend sends it on a 'never skip leg day 🦵' knee-flex-coded reveal. A coworker sends it on a 'leg day mood 🦵' leg-day-coded message. The thigh-to-foot anatomy visual cue is what makes the emoji feel stride-coded — it is not just 'leg,' it is 'knee-flex-coded leg-day flex.'\n\nWhat separates 🦵 from the rest of the body-parts family is the leg-day-coded register. The emoji is not saying 'foot put-down' (🦶), 'mechanical leg prosthetic' (🦿), or 'kick coded' (🦵). It is saying 'stride-coded knee-flex,' which carries a specific gym-bro tradition. That is why 🦵 travels especially well on leg-day reveals, stride-coded check-ins, and any context where the sender wants the message to land with knee-flex-coded energy.",
-    "howPeopleUseIt": "🦵 shows up as the closer on a 'walk it off tonight 🦵' partner message, the punctuation on a 'never skip leg day 🦵' stride-coded reveal, and the softener on a 'leg day mood 🦵' leg-day-coded check-in. It pairs naturally with sentences that name the stride-coded energy — 'walk it off,' 'never skip leg day,' 'leg day mood' — and sits beautifully on leg-day reveals and knee-flex-coded check-ins.\n\nIn group chats 🦵 anchors 'stride moment' threads, leg-day-coded reveals, and 'never skip leg day 🦵' coded moments where the thigh-to-foot anatomy visual cue matches the register. On Instagram it lands on stride-coded flat-lays and leg-day-coded stories. On TikTok it travels in knee-flex-coded transitions and 'leg day' reaction content.\n\nThe emoji also works in dating contexts. A 'leg day mood tonight 🦵' partner message uses the thigh-to-foot anatomy visual cue to communicate stride-coded soft-coded romance. Across all of these surfaces the rule is the same: the more leg-day-coded the moment, the more natural 🦵 feels.",
-    "whenNotToUse": "Skip 🦵 in sympathy, condolence, or break-up contexts. The stride-coded knee-flex cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🦵 in pure work formal-coded contexts where the leg-day-coded rule feels off. A 'walk it off 🦵' message works for stride-coded reveal; for serious-coded work updates use a sentence or calmer emoji.\n\nSkip 🦵 when you want to communicate put-your-foot-down energy. The stride-coded register is too walking for foot-down moments; use 🦶 when the foot-down read needs to land clean.",
-    "howToReply": "If someone sends 🦵, the cleanest mirror is another 🦵, 🦶, or a sentence that joins the stride-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'walk it off together' or 'leg day mood too.' If the thigh-to-foot anatomy visual cue feels too leg-day-coded, reply with a softer emoji (💪 or ❤️) that signals warmth without matching the knee-flex volume.\n\nWhen 🦵 lands as a partner 'walk it off 🦵' check-in, mirror with another 🦵, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'never skip leg day 🦵' stride-coded reveal, mirror with another 🦵, a sentence that joins the team energy, or a muscle emoji that matches.",
+    "overview": "The drawing of 🦵 is a leg from thigh to bare foot, the foot angled slightly outward. It arrived with Unicode 11.0 in the body-parts section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is walking, running, or a leg day at the gym. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🦶 Foot: the foot stands alone for walking or bare feet, the leg always drags the thigh and knee along with it. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe leg also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the leg reads as walking, running, or a leg day at the gym, it is most often used for posting about leg day at the gym or reporting a leg injury to a friend, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 🦵 in a work thread is reporting a leg injury to a friend; 🦵 in a family thread is posting about leg day at the gym; 🦵 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 🦵 is the whole reply, and it is carrying a meaning nobody wrote down — walking, running, or a leg day at the gym is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Posting about leg day at the gym is the job the leg does most: it saves a sentence and lands faster than one would have. Reporting a leg injury to a friend is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 🦵 will get used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a leg gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 🦵 reads as walking, running, or a leg day at the gym, and formality is exactly where that reading does the most damage.\n\nLeave 🦶 Foot for the other message. The foot stands alone for walking or bare feet, the leg always drags the thigh and knee along with it. And keep 🦵 out of threads where somebody is hurting: it reads as walking, running, or a leg day at the gym there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 🦵 gets used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike often enough that the sentence matters more than the picture.\n\nAnd do not send 🦵 alone when the message underneath is supposed to be warm. A message like posting about leg day at the gym carries the feeling; the picture on its own leaves the reader choosing between walking, running, or a leg day at the gym and something sharper.\n\nStart by reading what the 🦵 was doing. If it was a reaction, react: 🦵 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
-        "question": "What does 🦵 mean from a guy?",
-        "answer": "From a guy, 🦵 signals stride-coded flex or 'never skip leg day 🦵' knee-flex-coded reveal. The thigh-to-foot anatomy visual cue reads as leg-day-coded rather than literal leg, so it tends to land on partner stride check-ins, friend-coded gym threads, and 'walk it off' coded moments."
+        "question": "What is the difference between 🦵 and its skin-tone versions?",
+        "answer": "The tone variants under leg show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "Is 🦵 flirty?",
-        "answer": "It can be. In a partner context 🦵 can read as stride-coded soft-coded romance — 'leg day mood tonight 🦵' is a soft-coded gym check-in. On its own the emoji is more leg-day-coded than romantic."
+        "question": "What does 🦵 mean in text?",
+        "answer": "🦵 is used for walking, running, or a leg day at the gym. The drawing shows a leg from thigh to bare foot, the foot angled slightly outward, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 🦵 and 🦶?",
-        "answer": "🦶 is the foot — the cue is foot-coded put-down mood, the universal 'foot down' energy. 🦵 is the leg — the cue is stride-coded knee-flex, the 'leg day' gym-bro-coded energy. Use 🦶 when the moment is foot down; use 🦵 when the moment is leg-day flex."
+        "answer": "The foot stands alone for walking or bare feet, the leg always drags the thigh and knee along with it. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       },
       {
-        "question": "Is 🦵 for leg day?",
-        "answer": "Yes — 🦵 is one of the most popular stride-coded emojis. The thigh-to-foot anatomy visual cue is a natural fit for 'never skip leg day' moments, leg-day-coded reveals, and partner 'walk it off' check-ins."
+        "question": "Is 🦵 rude?",
+        "answer": "It can be. The gesture is meant as walking, running, or a leg day at the gym, but it gets used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Does 🦵 mean leg day?",
-        "answer": "Often yes — 🦵 carries the thigh-to-foot anatomy visual cue from gym-bro tradition and reads in modern usage as stride-coded knee-flex. The literal-leg-versus-leg-day-coded flex split depends on the sender and the channel."
+        "question": "What does 🦵 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "leg day mood tonight, full stride-coded energy 🦵",
-      "interpretation": "Partner knee-flex-coded romance. Mirror with another 🦵, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the leg-day chaos 🦵",
-      "interpretation": "Public stride-coded flex. Mirror with another 🦵, a sentence that joins the knee-flex-coded energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "never skip leg day with the family, full stride-coded moment 🦵",
-      "interpretation": "Family leg-day-coded reveal. Mirror with another 🦵, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 🦵",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "walk it off today, full leg-day-coded energy 🦵",
-      "interpretation": "Friend stride-coded reveal. Mirror with another 🦵, a sentence that joins the knee-flex-coded energy, or a heart emoji that matches."
+      "message": "posting about leg day at the gym 🦵",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as walking, running, or a leg day at the gym, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "knee-flex today, full stride-coded flex 🦵",
-      "interpretation": "Work leg-day-coded moment. Mirror with another 🦵, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "reporting a leg injury to a friend 🦵",
+      "interpretation": "A handover or a sign-off in a channel. It reads as walking, running, or a leg day at the gym, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 🦵",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets used to mean \"going for a run\" when it is more often shorthand for legs as a body part, appearing in injury reports and gym posts alike more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "posting about leg day at the gym 🦵",
+      "interpretation": "Family threads are where this lands most naturally. The reading is walking, running, or a leg day at the gym, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

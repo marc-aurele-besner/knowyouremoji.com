@@ -7,74 +7,89 @@
   "category": "people",
   "subcategory": "person-role",
   "unicodeVersion": "6.0",
-  "baseMeaning": "A construction worker.",
-  "tldr": "Building! Work in progress or construction.",
+  "baseMeaning": "A picture of a figure in an orange hard hat and yellow safety vest, smiling. Read in a message it lands as announcing work, repairs, or a job in progress.",
+  "tldr": "👷 Construction Worker. In a chat it comes across as announcing work, repairs, or a job in progress.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents a construction worker.",
-      "example": "Construction zone 👷",
+      "meaning": "The plain reading: a figure in an orange hard hat and yellow safety vest, smiling. Nothing hidden in the drawing itself.",
+      "example": "Announcing a renovation you just started 👷",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Building or work in progress.",
-      "example": "Building my empire 👷",
+      "meaning": "Borrowed as a reaction, it reads as announcing work, repairs, or a job in progress.",
+      "example": "Thanking the crew that fixed the leak 👷",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Under construction.",
-      "example": "My life 👷",
+      "context": "DATING",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as announcing work, repairs, or a job in progress, softened by whatever sentence sits next to it.",
+      "example": "not me 👷",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Construction or building context.",
-      "example": "Site update 👷",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — announcing work, repairs, or a job in progress — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👷",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors construction-coded threads, construction worker hat-coded flex tweets, and 'construction energy' captions where the construction worker hat cue signals build-flex register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on construction-coded flat-lays, construction worker hat-coded stories, and 'construction-coded' reveals where the construction worker hat visual carries build-flex charm."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Travels in construction-coded transitions, construction worker hat-coded clips, and 'construction-coded' reaction content where the construction worker hat cue signals build-flex register."
+      "platform": "SLACK",
+      "note": "In Slack 👷 lands in channels where the sentence was supposed to be shorter. It is usually standing in for announcing a renovation you just started, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner construction-coded check-ins, friend construction worker hat-coded messages, and group chats where the 👷 cue matches the build-flex moment."
+      "note": "On Discord 👷 is a staple of the reaction bar, which is why it so often arrives stripped of its announcing work, repairs, or a job in progress reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👷 does most of its work in replies, where it tags a message like thanking the crew that fixed the leak. Short enough to survive being the whole post, which is exactly why it is used that way."
+    },
+    {
+      "platform": "IMESSAGE",
+      "note": "On iOS the Construction Worker 👷 renders as the neutral drawing, and the neutral swatch is what most people send without thinking about it. A message like announcing a renovation you just started is the kind that carries it — the picture lands before the sentence does."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 👷 exactly as the phone system does, but the keyboard keeps it in the person-role section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like thanking the crew that fixed the leak."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Wields 👷 on construction-coded threads, construction worker hat-coded memes, and construction fits where the construction worker hat cue matches the modern build-flex register."
+      "note": "Gen Z reaches for 👷 to do the work of announcing a renovation you just started, and treats the neutral drawing as the default rather than as a choice. What they hear first is announcing work, repairs, or a job in progress."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for 👷 on construction-coded nostalgia, construction worker hat-coded humor, and 'construction-coded' jokes where the millennial construction memory still resonates."
+      "note": "Millennials tend to send 👷 deliberately, usually for something like thanking the crew that fixed the leak, and they read announcing work, repairs, or a job in progress into it more often than the older cohorts do."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 👷 on construction-coded jokes, construction worker hat-coded reveals, and construction flexes where the construction worker hat cue reads as build-flex reference."
+      "note": "Gen X mostly uses 👷 literally, as the picture of the gesture itself, and is less likely to read announcing work, repairs, or a job in progress into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Often reads 👷 as a literal construction worker hat and pastes it onto construction replies without parsing the modern 'construction-coded' or build-flex subtext."
+      "note": "Older senders use 👷 in the most straightforward way, on family and group messages, and are less likely to hear the announcing work, repairs, or a job in progress subtext in it."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "👷 and 🧑‍🔧 get swapped",
+      "description": "The Mechanic 🧑‍🔧 is one tap away in every picker, and it does not carry the same reading — the mechanic reads as repair and troubleshooting, the construction worker reads as building and the site. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👷 as something else fairly often: it gets mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "👷 Construction Worker Emoji Meaning - What Does 👷 Really Mean?",
-  "seoDescription": "Learn what the construction worker emoji 👷 really means in texts and DMs. construction, build, and the build flex register.",
+  "seoTitle": "👷 Construction Worker Emoji - What It Actually Means in Text",
+  "seoDescription": "👷 Construction Worker meaning: announcing work, repairs, or a job in progress. How the emoji is used at work, at home and in dating threads, and where it goes wrong.",
   "skinToneVariations": [
     "construction-worker-light",
     "construction-worker-medium-light",
@@ -83,60 +98,60 @@
     "construction-worker-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👷 is the emoji of construction-coded charm — a construction worker hat construction worker, the iconography of build-coded nostalgia, hard-hat-flex-coded flex, and the universal build-flex tag. 👷 captures the moment when the sender wants to communicate construction-coded warmth — a 'hard-hat-flex-coded 👷' build-coded flex or a 'construction-coded 👷' hard-hat-flex-coded reveal. The construction worker hat cue borrows from the universal construction worker tradition and the modern labor aesthetic, which is exactly why the emoji reads as build-flex rather than literal.\n\nIn real-world usage 👷 lives in the spaces where the sender wants to communicate construction-coded warmth. A friend sends it on a 'hard-hat-flex-coded 👷' build-coded reveal. A partner sends it on a 'construction-coded 👷' hard-hat-flex-coded check-in. A coworker sends it on a 'hard-hat-flex-coded flex 👷' construction-coded flex. The construction worker hat cue is what makes the emoji feel construction-coded — it is not just 'construction worker,' it is 'construction worker-coded construction worker flex.'\n\nWhat separates 👷 from related construction worker emojis is the build-flex register. The emoji is not saying the literal construction worker version, the obvious variant, or the related alt. It is saying 'construction-coded charm,' which carries a specific construction worker tradition. That is why 👷 travels especially well on hard-hat-flex-coded flexes, build-coded reveals, construction-coded jokes, and any context where the sender wants the message to land with build-flex energy.",
-    "howPeopleUseIt": "👷 shows up as the closer on a 'hard-hat-flex-coded 👷' construction message ('construction-coded today 👷'), the punctuation on a 'build-coded 👷' hard-hat-flex-coded reveal, and the softener on a 'construction-coded flex 👷' hard-hat-flex-coded flex. It pairs naturally with sentences that name the build-flex energy — 'construction-coded,' 'build-coded,' 'hard-hat-flex-coded' — and sits beautifully on hard-hat-flex-coded flexes and build-coded reveals.\n\nIn group chats 👷 anchors 'construction-coded moment' threads, hard-hat-flex-coded moments, and 'build-coded 👷' coded tags where the construction worker hat cue matches the register. On Instagram it lands on construction-coded flat-lays and build-coded stories. On TikTok it travels in construction-coded reveals and 'hard-hat-flex-coded' reaction content.\n\nThe emoji also works in dating contexts. A 'hard-hat-flex-coded tonight 👷' partner message uses the construction worker hat cue to communicate construction-coded soft-coded romance. Across all of these surfaces the rule is the same: the more construction-coded the moment, the more natural 👷 feels.",
-    "whenNotToUse": "Skip 👷 in opposite-coded or off-tone contexts. The build-flex visual cue is the wrong tone for any conversation where the moment runs counter. A sentence that acknowledges the energy or a more neutral emoji is a better fit.\n\nAvoid 👷 in work or formal-coded contexts where the construction-coded rule feels off. A 'construction-coded 👷' Slack message works for a build-flex moment; for a more measured update use a sentence or calmer emoji.\n\nSkip 👷 when you want to communicate soft or bold affection outside the build-flex register. The construction-coded tone is too coded for tender or loud moments; use a heart emoji or a sentence when the affection needs to read clearer.",
-    "howToReply": "If someone sends 👷, the cleanest mirror is another 👷, a related emoji, or a sentence that joins the build-flex energy. If you want to escalate the engagement, follow with a sentence that adds context: 'construction-coded for sure' or 'hard-hat-flex-coded together.' If the visual cue feels too coded, reply with a softer emoji that signals the register without matching the volume.\n\nWhen 👷 lands as a partner 'hard-hat-flex-coded 👷' check-in, mirror with another 👷, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'construction-coded flex 👷' coded message, mirror with another 👷, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The drawing of 👷 is a figure in an orange hard hat and yellow safety vest, smiling. It arrived with Unicode 6.0 in the person-role section, and in a conversation it does the work of a line somebody left out on purpose.\n\nThe line it stands in for is announcing work, repairs, or a job in progress. That is the reading most people arrive with, and it is usually the intended one — a picture carries the same meaning as the sentence it replaces, and it arrives first.\n\nThe complication is that the drawing invites a second reading. It gets mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🧑‍🔧 Mechanic: the mechanic reads as repair and troubleshooting, the construction worker reads as building and the site. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nThe construction worker also exists in five skin tones. They are separate pages with separate copy, because picking a tone is a decision in a way that picking the plain emoji is not: it says something about who the sender thinks the reader is.\n\nIn short — the construction worker reads as announcing work, repairs, or a job in progress, it is most often used for announcing a renovation you just started or thanking the crew that fixed the leak, and the five tone pages under it each say something different about who is sending it. The rest of the page takes those three apart.",
+    "howPeopleUseIt": "Context, not the picture, decides how this lands. 👷 in a work thread is thanking the crew that fixed the leak; 👷 in a family thread is announcing a renovation you just started; 👷 in a thread with somebody you like is a way of saying something you would rather not type out.\n\nThe tone versions of the emoji make the same point from the other side. The gesture is identical in all five, and the swatch says something about the sender before a word is read.\n\nThe shortest messages are the risky ones. A lone 👷 is the whole reply, and it is carrying a meaning nobody wrote down — announcing work, repairs, or a job in progress is the intention, but what arrives is a drawing. Everything the sentence would have disambiguated is simply missing.\n\nPut it this way. Announcing a renovation you just started is the job the construction worker does most: it saves a sentence and lands faster than one would have. Thanking the crew that fixed the leak is the job it does second: there the picture is not the point, it is the temperature of the message.",
+    "whenNotToUse": "Think about what the emoji is replacing. If the sentence under it is doing the real work, 👷 will get mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace instead, and the thread ends up carrying a meaning nobody wrote.\n\nAnd keep it away from first contact. There is nothing warm in the drawing, and a construction worker gesture used to answer other people's messages tends to sound like it is settling a point.\n\nKeep it out of the formal register. In a thread about somebody's work, or in a message to somebody you have not met, 👷 reads as announcing work, repairs, or a job in progress, and formality is exactly where that reading does the most damage.\n\nLeave 🧑‍🔧 Mechanic for the other message. The mechanic reads as repair and troubleshooting, the construction worker reads as building and the site. And keep 👷 out of threads where somebody is hurting: it reads as announcing work, repairs, or a job in progress there, because there is nothing in the drawing that says you meant well.",
+    "howToReply": "The safe move in an unclear thread is to answer the text. 👷 gets mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace often enough that the sentence matters more than the picture.\n\nAnd do not send 👷 alone when the message underneath is supposed to be warm. A message like announcing a renovation you just started carries the feeling; the picture on its own leaves the reader choosing between announcing work, repairs, or a job in progress and something sharper.\n\nStart by reading what the 👷 was doing. If it was a reaction, react: 👷 back, and the thread is closed. If it was aimed at you, write. The difference matters, because the reply to a reaction can be a picture and the reply to a request cannot.",
     "faqs": [
       {
+        "question": "What is the difference between 👷 and its skin-tone versions?",
+        "answer": "The tone variants under construction worker show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 👷 mean in text?",
+        "answer": "👷 is used for announcing work, repairs, or a job in progress. The drawing shows a figure in an orange hard hat and yellow safety vest, smiling, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
+      },
+      {
+        "question": "What is the difference between 👷 and 🧑‍🔧?",
+        "answer": "The mechanic reads as repair and troubleshooting, the construction worker reads as building and the site. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 👷 rude?",
+        "answer": "It can be. The gesture is meant as announcing work, repairs, or a job in progress, but it gets mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 👷 mean from a guy?",
-        "answer": "From a guy, 👷 signals construction-coded flex or 'hard-hat-flex-coded 👷' reveal. The visual cue reads as build-flex rather than literal, so it tends to land on partner check-ins, family-coded messages, and 'hard-hat-flex-coded flex' reveals."
-      },
-      {
-        "question": "Is 👷 flirty?",
-        "answer": "It can be. In a partner context 👷 can read as construction-coded soft-coded romance — 'hard-hat-flex-coded tonight 👷' is a soft-coded check-in. On its own the emoji is more construction-coded than romantic."
-      },
-      {
-        "question": "How does 👷 differ from other construction emojis?",
-        "answer": "👷 sits in the construction-coded register and reads as hard-hat-flex-coded energy, while other construction emojis lean toward more literal or alternative readings. The visual cue is what separates 👷 from sibling options, so use it when the moment is construction-coded."
-      },
-      {
-        "question": "Is 👷 for construction moments?",
-        "answer": "Yes — 👷 is a popular construction-coded emoji. The visual cue is a natural fit for hard-hat-flex-coded reveals, construction-coded messages, and partner 'hard-hat-flex-coded flex' check-ins."
-      },
-      {
-        "question": "Does 👷 mean construction-coded?",
-        "answer": "Often yes — 👷 carries hard-hat-flex-coded construction-coded charm and reads in modern usage as construction-coded. The literal-versus-build-flex split depends on the sender and the channel."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "hard-hat-flex-coded tonight, full construction-coded energy 👷",
-      "interpretation": "Partner construction-coded romance. Mirror with another 👷, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
       "setting": "social",
-      "message": "cannot handle this whole thread, the hard-hat-flex-coded chaos 👷",
-      "interpretation": "Public construction-coded flex. Mirror with another 👷, a sentence that joins the build-flex energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "hard-hat-flex-coded moment with the family, full construction-coded energy 👷",
-      "interpretation": "Family construction-coded reveal. Mirror with another 👷, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that is the whole post 👷",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "construction-coded today, full hard-hat-flex-coded flex 👷",
-      "interpretation": "Friend construction-coded reveal. Mirror with another 👷, a sentence that joins the build-flex energy, or a heart emoji that matches."
+      "message": "announcing a renovation you just started 👷",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as announcing work, repairs, or a job in progress, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "hard-hat-flex-coded flex at work today, full construction-coded mode 👷",
-      "interpretation": "Work construction-coded moment. Mirror with another 👷, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "thanking the crew that fixed the leak 👷",
+      "interpretation": "A handover or a sign-off in a channel. It reads as announcing work, repairs, or a job in progress, and naming the next step in words is usually clearer than leaving it to the gesture."
+    },
+    {
+      "setting": "dating",
+      "message": "there is something you should know 👷",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets mistaken for a property-dispute warning when it is usually pride in doing the work — the vest signals builder, not menace more easily here than it does in a work thread, because the thread is thinner."
+    },
+    {
+      "setting": "family",
+      "message": "announcing a renovation you just started 👷",
+      "interpretation": "Family threads are where this lands most naturally. The reading is announcing work, repairs, or a job in progress, and nobody in the thread is reading it as anything sharper than that."
     }
   ]
 }

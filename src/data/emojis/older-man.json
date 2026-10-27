@@ -2,136 +2,156 @@
   "unicode": "1F474",
   "slug": "older-man",
   "character": "👴",
-  "name": "Older Man",
+  "name": "Old Man",
   "shortName": "older man",
   "category": "people",
   "subcategory": "person",
   "unicodeVersion": "13.0",
-  "baseMeaning": "An older man, often depicted with grey hair and glasses.",
-  "tldr": "Grandpa-coded wisdom, 'sweet grandpa' register, or family-coded comfort.",
+  "baseMeaning": "An older figure with swept grey hair and round spectacles — grandfatherly, or a knowing old head.",
+  "tldr": "The old man emoji 👴 reads as grandfatherly, or a knowing old head.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "An older man or grandfather.",
-      "example": "Saw grandpa 👴",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Grandpa-coded wisdom or 'sweet grandpa' register.",
-      "example": "Sweet grandpa 👴",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "DATING",
-      "meaning": "Cozy-coded partner check-in or 'grampy for you' moment.",
-      "example": "Grampy for you 👴",
+      "meaning": "In a dating thread the gesture is usually doing the work of a line that was not typed. It arrives as grandfatherly, or a knowing old head, softened by whatever sentence sits next to it.",
+      "example": "not me 👴",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Family-coded team energy or 'sage advice' moment.",
-      "example": "Sage advice 👴",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — grandfatherly, or a knowing old head — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 👴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: an older figure with swept grey hair and round spectacles. Nothing hidden in the drawing itself.",
+      "example": "Quoting a piece of old-fashioned advice 👴",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "SLANG",
+      "meaning": "Borrowed as a reaction, it reads as grandfatherly, or a knowing old head.",
+      "example": "Calling someone a harmless old-timer 👴",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors grandpa-coded threads, 'sweet grandpa' replies, and 'mood 👴' reveals where the older-man cue matches the wise register."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Lands on family-coded story reposts, grandpa photo posts, and 'mood 👴' reveals where the older-man cue reads as cozy-coded comfort."
+      "note": "On Instagram 👴 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as grandfatherly, or a knowing old head under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in older-man-coded transitions, 'grampy for you' reveals, and reaction-content where the older-man cue signals cozy-coded energy."
+      "note": "In TikTok comments 👴 is the fastest way to answer a video without typing anything. The gesture stays grandfatherly, or a knowing old head, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 👴 lands in channels where the sentence was supposed to be shorter. It is usually standing in for quoting a piece of old-fashioned advice, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'grampy for you' check-ins, family-coded grandpa messages, and group chats where the older-man cue matches the moment."
+      "note": "On Discord 👴 is a staple of the reaction bar, which is why it so often arrives stripped of its grandfatherly, or a knowing old head reading — a shape pressed rather than a message sent."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On X and Twitter 👴 does most of its work in replies, where it tags a message like calling someone a harmless old-timer. Short enough to survive being the whole post, which is exactly why it is used that way."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 👴 heavily on grandpa-coded threads, 'sweet grandpa' moments, and cozy-coded reveals where the older-man cue matches the wise register."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Reaches for the older-man on partner 'grampy for you' check-ins, cozy-coded comfort moments, and family grandpa messages where the universal grandfather cue fits."
-    },
-    {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded messages and family reveals, treating the older-man as literal grandfather energy."
+      "note": "Gen X mostly uses 👴 literally, as the picture of the gesture itself, and is less likely to read grandfatherly, or a knowing old head into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal grandfather and sends it on family and grandchild-coded messages without parsing the modern 'sweet grandpa' subtext."
+      "note": "Older senders use 👴 in the most straightforward way, on family and group messages, and are less likely to hear the grandfatherly, or a knowing old head subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 👴 to do the work of quoting a piece of old-fashioned advice, and treats the neutral drawing as the default rather than as a choice. What they hear first is grandfatherly, or a knowing old head."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 👴 deliberately, usually for something like calling someone a harmless old-timer, and they read grandfatherly, or a knowing old head into it more often than the older cohorts do."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as ageist-coded in adult contexts",
-      "description": "Sending 👴 to adult men in partner or work contexts where the ageist-coded reading is unwelcome can land as condescending-coded. Be aware of the personal-coded reading when sending to adults.",
+      "title": "👴 and 👵 get swapped",
+      "description": "The Old Woman 👵 is one tap away in every picker, and it does not carry the same reading — the two are near-identical apart from gender, and neither one is the neutral older-person emoji. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 👴 as something else fairly often: it gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for. The sentence around it is usually what settles the meaning.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "👴 Older Man Emoji Meaning - What Does 👴 Really Mean?",
-  "seoDescription": "Learn what the Older Man emoji 👴 really means in texts and DMs. Grandpa-coded wisdom, 'sweet grandpa' register, or family-coded comfort.",
+  "seoTitle": "What Does the Old Man Emoji 👴 Mean? A Full Breakdown",
+  "seoDescription": "The meaning of 👴 Old Man in texts and DMs, with the old man readings, the common misread, and the pickers it gets confused with.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "👴 is the emoji of grandpa-coded wisdom - an older man, the iconography of 'sweet grandpa,' cozy-coded comfort, and 'grampy for you' register. Where 👶 reads as baby-coded softness and 👨 reads as adult-coded default, 👴 captures the moment when the sender wants to communicate cozy-coded intimacy - a 'grampy for you 👴' partner moment or a 'sweet grandpa 👴' family reveal. The older-man cue borrows from the universal grandfather tradition and the modern 'sweet grandpa' aesthetic, which is exactly why the emoji reads as cozy-coded rather than literal elder.\n\nIn real-world usage 👴 lives in the spaces where the sender wants to communicate cozy-coded comfort. A partner sends it on a 'grampy for you 👴' check-in. A friend sends it on a 'sweet grandpa 👴' reveal. A coworker sends it on a 'sage advice 👴' work message. The older-man cue is what makes the emoji feel cozy-coded - it is not just 'old man,' it is 'older-man-coded sweet-grandpa.'\n\nWhat separates 👴 from the rest of the people-emoji family is the sweet-grandpa register. The emoji is not saying 'baby softness' (👶), 'adult default' (👨), or 'kid play' (🧒). It is saying 'grandpa-coded wisdom,' which carries a specific cozy-coded charm. That is why 👴 travels especially well on partner 'grampy for you' check-ins, family grandpa messages, and any context where the sender wants the message to land with cozy-coded comfort.",
-    "howPeopleUseIt": "👴 shows up as the closer on a 'grampy for you tonight' partner message ('grampy for you tonight 👴'), the punctuation on a 'sweet grandpa 👴' cozy-coded reveal ('sweet grandpa 👴'), and the softener on a 'sage advice 👴' team check-in. It pairs naturally with sentences that name the grandpa-coded wisdom - 'grampy for you,' 'sweet grandpa,' 'sage advice' - and sits beautifully on partner 'grampy for you' check-ins and family grandpa messages.\n\nIn group chats 👴 anchors 'grandpa appreciation' threads, cozy-coded moments, and 'mood 👴' reveals where the older-man cue matches the moment. On Instagram it lands on family-coded story reposts and grandpa photo posts. On TikTok it travels in older-man-coded transitions and 'mood 👴' reveals.\n\nThe emoji also works in dating contexts. A 'grampy for you tonight 👴' partner message uses the older-man cue to communicate cozy-coded romance. Across all of these surfaces the rule is the same: the more cozy-coded the comfort, the more natural 👴 feels.",
-    "whenNotToUse": "Skip 👴 in sympathy, condolence, or break-up contexts. The grandpa-coded wisdom cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 👴 to adult men in partner or work contexts where the ageist-coded reading is unwelcome - the condescending-coded register can land as off. Stick to a sentence or a clear message when sending to adults.\n\nSkip 👴 when you want to communicate serious affection. The cozy-coded register is too grampa-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 👴, the cleanest mirror is another 👴, 🧓, or a sentence that joins the cozy-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'grampy for you right back' or 'sweet grandpa too.' If the older-man cue feels too grandpa-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the cozy volume.\n\nWhen 👴 lands as a partner 'grampy for you' check-in, mirror with another 👴, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'sweet grandpa 👴' cozy reveal, mirror with another 👴, a sentence that joins the cozy energy, or a heart emoji that matches.",
+    "overview": "This page is the untoned drawing. Somewhere below it are five versions of the same old man with a skin tone applied, and those pages are about something different: not what the gesture means, but what a particular tone adds to it when it arrives from a particular face.\n\nThe short version. The old man is for quoting a piece of old-fashioned advice and for calling someone a harmless old-timer, it gets misread often enough to be worth writing down, and it has five skin-tone versions worth reading on their own. The sections below take those in turn.\n\nUnicode 13.0 is where 👴 comes from. The drawing shows an older figure with swept grey hair and round spectacles, it sits in the person group of the set, and in a conversation it does one thing: it says what a sentence would have said less well.\n\nWhat it says is grandfatherly, or a knowing old head. That is the reading most people arrive with, and it is usually the intended one — the picture does the same work as the words it replaces, and it gets there faster.\n\nThe complication is that the drawing invites a second reading. It gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 👵 Old Woman: the two are near-identical apart from gender, and neither one is the neutral older-person emoji. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.",
+    "howPeopleUseIt": "There is one habit that turns a small emoji into a misunderstanding. 👴 goes back on its own, with no words around it, and it stands for whatever the sender had in mind — which was grandfatherly, or a knowing old head. The reader gets the drawing and none of the context that produced it.\n\nStart with Quoting a piece of old-fashioned advice. That is where the old man earns its place: it closes a sentence that has already said the thing, and nobody has to add \"you know what I mean\". The other job is calling someone a harmless old-timer, and there the emoji is not the message but the temperature of the message.\n\nThe setting does half the work. 👴 used for quoting a piece of old-fashioned advice in a work channel reads as a handover; the same move in a group chat reads as a joke. The emoji is not saying anything different — the audience is.\n\nWhich is also why this family has skin-tone pages. The gesture is the same in all five, and the tone you choose is the only part of the message that says anything about you.",
+    "whenNotToUse": "There is also a place where this emoji does not belong: the professional setting. 👴 under a review, or in a first message to a client, reads as grandfatherly, or a knowing old head, and in that room the same reading sounds like somebody settling a point.\n\nTwo rules. First, 👵 Old Woman is a different message: the two are near-identical apart from gender, and neither one is the neutral older-person emoji. Do not send 👴 when you meant that one. Second, a reaction to bad news needs words. A bare 👴 reads as grandfatherly, or a knowing old head, and nobody in a thread about a person wants to be answered with a drawing of a gesture.\n\nNot every message survives being turned into a picture. The emoji gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for, and the sentence underneath it loses the argument. Once 👴 is carrying the meaning, the meaning has moved without either sender moving it.\n\nWith somebody you have just met, it is worse. 👴 has no warmth in the drawing, and the gesture has picked up an edge of superiority from being used to answer other people.",
+    "howToReply": "If the intent is warmth, the sentence is the part that carries it. Sending 👴 next to a message like quoting a piece of old-fashioned advice leaves the reader to guess whether it was grandfatherly, or a knowing old head or something sharper.\n\nIf it was a reaction, 👴 back is a complete answer. It says \"same\" without writing a word, and the exchange can end there.\n\nIf it was aimed at you, it needs text. 👴 replying to 👴 looks like a conversation between two drawings, and whatever the sender actually asked never gets answered.\n\nWhen the register is unclear, the words win. The drawing gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for, so the sentence it was sent with is the only reliable guide to what it meant.",
     "faqs": [
       {
-        "question": "What does 👴 mean from a guy?",
-        "answer": "From a guy, 👴 signals grandpa-coded wisdom - 'sweet grandpa' or 'grampy for you.' The older-man cue reads as cozy-coded rather than literal elder, so it tends to land on partner 'grampy for you' check-ins, family grandpa messages, and cozy-coded reveals."
+        "question": "Is 👴 rude?",
+        "answer": "It can be. The gesture is meant as grandfatherly, or a knowing old head, but it gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
       },
       {
-        "question": "Is 👴 flirty?",
-        "answer": "It can be. In a partner context 👴 can read as cozy-coded romance - 'grampy for you tonight 👴' is a soft-coded romantic check-in. On its own the emoji is more cozy-coded than romantic."
+        "question": "What does 👴 mean from a guy?",
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
+      },
+      {
+        "question": "What is the difference between 👴 and its skin-tone versions?",
+        "answer": "The tone variants under old man show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
+      },
+      {
+        "question": "What does 👴 mean in text?",
+        "answer": "👴 is used for grandfatherly, or a knowing old head. The drawing shows an older figure with swept grey hair and round spectacles, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       },
       {
         "question": "What is the difference between 👴 and 👵?",
-        "answer": "👵 is the old woman - the cue is grandma-coded wisdom, the 'sweet granny' woman-coded cozy energy. 👴 is the older man - the cue is grandpa-coded wisdom, the 'sweet grandpa' man-coded cozy charm. Use 👵 when the moment is granny-specific; use 👴 when the moment is grandpa-specific."
-      },
-      {
-        "question": "Is 👴 for 'sweet grandpa' moments?",
-        "answer": "Yes - 👴 is one of the most common cozy-coded emojis. The older-man cue is a natural fit for 'sweet grandpa' moments, family-coded reveals, and partner 'grampy for you' check-ins."
+        "answer": "The two are near-identical apart from gender, and neither one is the neutral older-person emoji. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "grampy for you tonight, full grandpa romance 👴",
-      "interpretation": "Partner cozy-coded romance. Mirror with another 👴, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the sweet grandpa 👴",
-      "interpretation": "Public older-man appreciation. Mirror with another 👴, a sentence that joins the cozy energy, or a heart emoji that matches."
+      "message": "there is something you should know 👴",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets picked up as warm family nostalgia when it is just as often a way of claiming authority, borrowing the grandfather voice for advice nobody asked for more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "sage advice with the family, full grandpa mode 👴",
-      "interpretation": "Family family-coded reveal. Mirror with another 👴, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "quoting a piece of old-fashioned advice 👴",
+      "interpretation": "Family threads are where this lands most naturally. The reading is grandfatherly, or a knowing old head, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 👴",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "sweet grandpa today, full cozy energy 👴",
-      "interpretation": "Friend cozy-coded reveal. Mirror with another 👴, a sentence that joins the cozy energy, or a heart emoji that matches."
+      "message": "quoting a piece of old-fashioned advice 👴",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as grandfatherly, or a knowing old head, and matching it with the same emoji is a normal reply."
     },
     {
       "setting": "work",
-      "message": "sage advice today, full grandpa mode 👴",
-      "interpretation": "Work family-coded moment. Mirror with another 👴, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "calling someone a harmless old-timer 👴",
+      "interpretation": "A handover or a sign-off in a channel. It reads as grandfatherly, or a knowing old head, and naming the next step in words is usually clearer than leaving it to the gesture."
     }
+  ],
+  "skinToneVariations": [
+    "older-man-light",
+    "older-man-medium-light",
+    "older-man-medium",
+    "older-man-medium-dark",
+    "older-man-dark"
   ]
 }

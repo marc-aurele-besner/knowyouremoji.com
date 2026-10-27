@@ -7,70 +7,89 @@
   "category": "people",
   "subcategory": "gesture",
   "unicodeVersion": "13.0",
-  "baseMeaning": "Deaf Person emoji.",
-  "tldr": "Represents deaf person.",
+  "baseMeaning": "Shows a figure with a hand cupped against the ear, head turned slightly.",
+  "tldr": "🧏 Deaf Person — flagging deafness, sign language, or a missed conversation.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents deaf person.",
-      "example": "Look at this deaf person 🧏",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Used to describe someone acting like a deaf person.",
-      "example": "They're such a deaf person 🧏",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Professional context for deaf person.",
-      "example": "Meeting with the team 🧏",
+      "meaning": "Borrowed as a reaction, it reads as flagging deafness, sign language, or a missed conversation.",
+      "example": "Marking a video that has captions and sign language 🧏",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Sarcastically referencing deaf person.",
-      "example": "Sure, I'm totally a deaf person 🧏",
+      "meaning": "Used sarcastically it is the gesture with the deadpan delivery: flagging deafness, sign language, or a missed conversation, said without believing any of it.",
+      "example": "sure, sure 🧏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work channel it is read the same way it is read anywhere else — flagging deafness, sign language, or a missed conversation — but the stakes of a misread are higher, because the sender is often talking about somebody's actual work.",
+      "example": "noted 🧏",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "LITERAL",
+      "meaning": "The plain reading: a figure with a hand cupped against the ear, head turned slightly. Nothing hidden in the drawing itself.",
+      "example": "Naming a deaf creator or signer in a thread 🧏",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors deaf-culture-coded respect threads and sign-language-coded reveal check-ins."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp renders 🧏 exactly as the phone system does, but the keyboard keeps it in the gesture section, where nobody looks unless they are hunting for it. In family threads it tends to accompany a message like marking a video that has captions and sign language."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of sign-language-coded deaf-identity stories and casual-listening-coded flat-lays."
+      "note": "On Instagram 🧏 usually arrives as the tail of a caption rather than as a post of its own — a sign-off that reads as flagging deafness, sign language, or a missed conversation under a photo, or a reaction somebody left on a story."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in deaf-identity-coded culture transitions and casual-listening-coded reaction clips."
+      "note": "In TikTok comments 🧏 is the fastest way to answer a video without typing anything. The gesture stays flagging deafness, sign language, or a missed conversation, and the tone of the comment underneath it carries the rest."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack 🧏 lands in channels where the sentence was supposed to be shorter. It is usually standing in for naming a deaf creator or signer in a thread, and a channel where the topic is somebody's workload is where it misreads."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on sign-language-coded community servers and deaf-identity-coded close-friends group chats."
+      "note": "On Discord 🧏 is a staple of the reaction bar, which is why it so often arrives stripped of its flagging deafness, sign language, or a missed conversation reading — a shape pressed rather than a message sent."
     }
   ],
   "generationalNotes": [
     {
-      "generation": "GEN_Z",
-      "note": "Uses 🧏 frequently in casual chat."
+      "generation": "MILLENNIAL",
+      "note": "Millennials tend to send 🧏 deliberately, usually for something like marking a video that has captions and sign language, and they read flagging deafness, sign language, or a missed conversation into it more often than the older cohorts do."
     },
     {
-      "generation": "MILLENNIAL",
-      "note": "Familiar with 🧏 across platforms."
+      "generation": "GEN_X",
+      "note": "Gen X mostly uses 🧏 literally, as the picture of the gesture itself, and is less likely to read flagging deafness, sign language, or a missed conversation into it than younger senders are."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 🧏 literally."
+      "note": "Older senders use 🧏 in the most straightforward way, on family and group messages, and are less likely to hear the flagging deafness, sign language, or a missed conversation subtext in it."
+    },
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z reaches for 🧏 to do the work of naming a deaf creator or signer in a thread, and treats the neutral drawing as the default rather than as a choice. What they hear first is flagging deafness, sign language, or a missed conversation."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "🧏 and 🙉 get swapped",
+      "description": "The Face With Hand Over Mouth 🙉 is one tap away in every picker, and it does not carry the same reading — the covered mouth reads as shock or secrecy, the cupped ear reads as hearing or deafness. Check which one you actually picked.",
+      "severity": "LOW"
+    },
+    {
+      "title": "The reading it usually gets is not the one it was sent with",
+      "description": "People take 🧏 as something else fairly often: it gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening. The sentence around it is usually what settles the meaning.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧏 Deaf Person Emoji Meaning - What Does 🧏 Really Mean?",
-  "seoDescription": "Learn what the deaf person emoji 🧏 really means in texts and social media. Discover all its uses and interpretations.",
+  "seoTitle": "🧏 Deaf Person Emoji: Meaning, Uses and Common Misreads",
+  "seoDescription": "🧏 Deaf Person explained: what the drawing shows, when people send it, and why it gets misread as something else.",
   "skinToneVariations": [
     "deaf-person-light",
     "deaf-person-medium-light",
@@ -79,60 +98,60 @@
     "deaf-person-dark"
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-10-26",
   "longForm": {
-    "overview": "🧏 is the emoji of sign-language-coded 'hand-to-ear' reveal — a person shown from the chest up with one hand raised and index finger touching near the ear, the iconography of sign-language-coded identity, deaf-culture-coded respect, and the universal 'I am deaf' tag. Where 👂 reads as ear-coded listening flex and 🤟 reads as love-you-sign-coded rock-on gesture, 🧏 captures the moment when the sender wants to communicate sign-language-coded energy — a 'I cannot hear you 🧏' deaf-identity-coded check-in or a 'deaf culture matters 🧏' sign-language-coded reveal. The hand-to-ear gesture visual cue borrows from the universal sign-language tradition and the modern deaf-identity aesthetic, which is exactly why the emoji reads as sign-language-coded rather than literal ear touch.\n\nIn real-world usage 🧏 lives in the spaces where the sender wants to communicate deaf-identity-coded respect. A partner sends it on a 'deaf culture matters 🧏' coded check-in. A friend sends it on a 'I cannot hear you 🧏' sign-language-coded reveal. A coworker sends it on a 'deaf awareness 🧏' identity-coded message. The hand-to-ear gesture visual cue is what makes the emoji feel sign-language-coded — it is not just 'ear,' it is 'hand-to-ear-coded identity flex.'\n\nWhat separates 🧏 from the rest of the gesture family is the deaf-identity-coded register. The emoji is not saying 'ear listening' (👂), 'love sign rock' (🤟), or 'pointing hand' (👉). It is saying 'sign-language-coded hand-to-ear,' which carries a specific deaf-culture tradition. That is why 🧏 travels especially well on deaf-identity-coded threads, sign-language-coded reveals, and any context where the sender wants the message to land with deaf-culture-coded energy.",
-    "howPeopleUseIt": "🧏 shows up as the closer on a 'deaf culture matters 🧏' partner message, the punctuation on a 'I cannot hear you 🧏' sign-language-coded reveal, and the softener on a 'deaf awareness 🧏' identity-coded check-in. It pairs naturally with sentences that name the sign-language-coded energy — 'deaf culture matters,' 'I cannot hear you,' 'deaf awareness' — and sits beautifully on sign-language-coded reveals and deaf-identity-coded check-ins.\n\nIn group chats 🧏 anchors 'sign-language moment' threads, deaf-identity-coded reveals, and 'deaf culture matters 🧏' coded moments where the hand-to-ear gesture visual cue matches the register. On Instagram it lands on sign-language-coded flat-lays and deaf-identity-coded stories. On TikTok it travels in sign-language-coded transitions and 'deaf culture' reaction content.\n\nThe emoji also works in close-friends coded contexts. A 'deaf culture matters tonight 🧏' partner message uses the hand-to-ear gesture visual cue to communicate sign-language-coded soft-coded identity. Across all of these surfaces the rule is the same: the more sign-language-coded the moment, the more natural 🧏 feels.",
-    "whenNotToUse": "Skip 🧏 in sympathy, condolence, or break-up contexts. The sign-language-coded deaf-identity cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🧏 in pure celebration or hype-coded moments where the deaf-identity-coded rule feels off. A 'deaf culture matters 🧏' message works for sign-language-coded reveal; for hype-coded celebrations use 🙌 or a sentence.\n\nSkip 🧏 when you want to communicate pure listening. The sign-language-coded register is too identity-coded for casual-listening moments; use 👂 when the listening read needs to land clean.",
-    "howToReply": "If someone sends 🧏, the cleanest mirror is another 🧏, 🤟, or a sentence that joins the sign-language-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'deaf culture matters together' or 'sign-language-coded respect.' If the hand-to-ear gesture visual cue feels too identity-coded, reply with a softer emoji (❤️ or ✌️) that signals warmth without matching the deaf-identity volume.\n\nWhen 🧏 lands as a partner 'deaf culture matters 🧏' check-in, mirror with another 🧏, a heart emoji, or a sentence that escalates the respect. When it arrives as a 'I cannot hear you 🧏' coded reveal, mirror with another 🧏, a sentence that joins the team energy, or a sign-language emoji that matches.",
+    "overview": "The complication is that the drawing invites a second reading. It gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening. In practice that second reading is not rare — it is the one that decides how a message lands, because the sender has usually not thought about it at all.\n\nIt also sits in the crowded part of the picker. The nearest neighbour is 🙉 Face With Hand Over Mouth: the covered mouth reads as shock or secrecy, the cupped ear reads as hearing or deafness. The two are close enough that a fast thumb picks the wrong one, and the message goes out carrying a meaning nobody chose.\n\nFive other pages sit under this one. The deaf person comes in light, medium-light, medium, medium-dark and dark, and each one is written from the point of view of the person who picked that swatch. The drawing is identical in all five; only the tone moves.\n\nSo: what is the deaf person for? Mostly naming a deaf creator or signer in a thread, and then marking a video that has captions and sign language. The rest of this page covers the drawing, the second reading it invites, and the tone variants, which are written as separate pages because they are read differently.\n\nStart with the drawing: 🧏 is a figure with a hand cupped against the ear, head turned slightly. It came into the emoji set in Unicode 13.0, under the gesture heading, and it has been doing one job ever since — standing in for a sentence the sender did not want to type.\n\nThat job is flagging deafness, sign language, or a missed conversation. It is the reading most people arrive with, and it is usually the intended one. The picture carries the same weight as the sentence it replaces, which is why it lands faster than a sentence would have.",
+    "howPeopleUseIt": "Rooms change the meaning. 🧏 sent to a colleague is a piece of work, 🧏 sent to a friend is a joke, and 🧏 sent to somebody you are seeing is a small dare. Nobody reads it out of context, and that is exactly why the same emoji is not the same message in each of those threads.\n\nThe tone does the same job in a different register: the five variants of this emoji carry the identical gesture, and the swatch is a quiet statement about the sender.\n\nWorth watching: how often 🧏 arrives as the entire answer to a question. The sender saves themselves a sentence, and the sentence was where the actual thought was. By the time it reaches the reader, all that is left is a drawing that reads as \"flagging deafness, sign language, or a missed conversation\" for some people and as something else for others.\n\nTwo jobs, most of the time. The first is naming a deaf creator or signer in a thread: the emoji goes at the end of a line that has already made the point, and it saves the sender from explaining how they want it taken. The second is marking a video that has captions and sign language, and there it is not the punchline but the tone — the message would survive without it, but it would read as flat.",
+    "whenNotToUse": "The riskiest use is the one where the picture carries a message the words were carrying better. 🧏 gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening, and once the emoji is doing the work the message has drifted somewhere neither side intended.\n\nFirst exchanges are worse. There is no warmth in the drawing, and deaf person gestures collect a slightly superior edge from years of being used as answers to other people's messages.\n\nAnd leave it out of the rooms where the tone is supposed to be level. 🧏 in a thread about somebody's work, or sent to a client you have not met, says very little and can read as flagging deafness, sign language, or a missed conversation — which sounds like arrogance in a place where arrogance is expensive.\n\nThe first thing to check is whether you meant 🙉 Face With Hand Over Mouth. The covered mouth reads as shock or secrecy, the cupped ear reads as hearing or deafness. Those two are close in every picker, and the wrong one does not soften the message, it changes it.\n\nThe second thing to check is whose thread it is. 🧏 sent as a reaction to somebody who is upset reads as flagging deafness, sign language, or a missed conversation, and the picture is about the gesture rather than about them.",
+    "howToReply": "Unsure? Answer the sentence, not the picture. 🧏 gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening, and the words around it are the only thing that tells you which reading you are in.\n\nFor warmth without the ambiguity, write the line as well as sending the picture. A message like naming a deaf creator or signer in a thread needs the sentence: the drawing alone leaves the reader deciding between flagging deafness, sign language, or a missed conversation and something sharper.\n\nReply with 🧏 itself when the message was a reaction. It confirms the tone and adds nothing, which is what a reaction deserves.\n\nBut when 🧏 was pointed at you, do not answer with a picture. A nudge, a handover, a request for a decision — those need a sentence, because a gesture answering a gesture leaves the point unanswered.",
     "faqs": [
       {
+        "question": "What is the difference between 🧏 and 🙉?",
+        "answer": "The covered mouth reads as shock or secrecy, the cupped ear reads as hearing or deafness. The two sit close together in most pickers, so the difference is often about which one the sender pressed rather than about what they meant."
+      },
+      {
+        "question": "Is 🧏 rude?",
+        "answer": "It can be. The gesture is meant as flagging deafness, sign language, or a missed conversation, but it gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening. The risk is highest when it is the only message in the thread — a sentence gives the picture some context to sit in."
+      },
+      {
         "question": "What does 🧏 mean from a guy?",
-        "answer": "From a guy, 🧏 signals sign-language-coded flex or 'deaf culture matters 🧏' deaf-identity-coded reveal. The hand-to-ear gesture visual cue reads as identity-coded rather than literal ear touch, so it tends to land on partner sign-language check-ins, friend-coded deaf culture threads, and 'deaf awareness' coded moments."
+        "answer": "Nothing gender-specific. The same reading applies whoever sends it, and the meaning is set by the thread and by what is written next to it rather than by the sender."
       },
       {
-        "question": "Is 🧏 flirty?",
-        "answer": "Rarely. 🧏 usually reads as sign-language-coded identity-coded rather than flirty; in a dating thread it can land as 'I cannot hear you 🧏' tag content."
+        "question": "What is the difference between 🧏 and its skin-tone versions?",
+        "answer": "The tone variants under deaf person show the same gesture in five different skin tones. The gesture does not change, but the tone is a small signal about who the sender imagines the reader is, and in some groups that signal is read louder than the sentence."
       },
       {
-        "question": "What is the difference between 🧏 and 👂?",
-        "answer": "👂 is the ear — the cue is ear-coded listening, the universal 'I hear' energy. 🧏 is the deaf person — the cue is sign-language-coded hand-to-ear, the 'deaf culture matters' identity-coded energy. Use 👂 when the moment is listening; use 🧏 when the moment is sign-language-coded identity."
-      },
-      {
-        "question": "Is 🧏 for deaf culture moments?",
-        "answer": "Yes — 🧏 is one of the most common sign-language-coded emojis. The hand-to-ear gesture visual cue is a natural fit for 'deaf awareness' moments, deaf-identity-coded reveals, and partner 'deaf culture matters' check-ins."
-      },
-      {
-        "question": "Does 🧏 mean I cannot hear you?",
-        "answer": "Often yes — 🧏 carries the hand-to-ear gesture visual cue from sign-language tradition and reads in modern usage as sign-language-coded identity. The literal-ear-touch-versus-sign-language-coded identity split depends on the sender and the channel."
+        "question": "What does 🧏 mean in text?",
+        "answer": "🧏 is used for flagging deafness, sign language, or a missed conversation. The drawing shows a figure with a hand cupped against the ear, head turned slightly, and that part is not in dispute — what changes is whether the sender is being literal or borrowing the gesture for a reaction."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "deaf culture matters tonight, full sign-language-coded energy 🧏",
-      "interpretation": "Partner deaf-identity-coded romance. Mirror with another 🧏, a heart emoji, or a sentence that escalates the respect."
+      "setting": "work",
+      "message": "marking a video that has captions and sign language 🧏",
+      "interpretation": "A handover or a sign-off in a channel. It reads as flagging deafness, sign language, or a missed conversation, and naming the next step in words is usually clearer than leaving it to the gesture."
     },
     {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the hand-to-ear chaos 🧏",
-      "interpretation": "Public sign-language-coded flex. Mirror with another 🧏, a sentence that joins the deaf-identity energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "there is something you should know 🧏",
+      "interpretation": "A small joke or a nudge, with the emoji doing the tone work. It gets used as a mock \"I cannot hear you\" joke far more often than it acknowledges a real person, because the cupped ear reads as a cartoon of not listening more easily here than it does in a work thread, because the thread is thinner."
     },
     {
       "setting": "family",
-      "message": "I cannot hear you with the family, full sign-language-coded moment 🧏",
-      "interpretation": "Family deaf-identity-coded reveal. Mirror with another 🧏, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "naming a deaf creator or signer in a thread 🧏",
+      "interpretation": "Family threads are where this lands most naturally. The reading is flagging deafness, sign language, or a missed conversation, and nobody in the thread is reading it as anything sharper than that."
+    },
+    {
+      "setting": "social",
+      "message": "that is the whole post 🧏",
+      "interpretation": "A public sign-off, with the emoji as the full stop. The picture is doing the punctuation, which is why it is sent instead of a sentence."
     },
     {
       "setting": "friends",
-      "message": "deaf awareness today, full sign-language-coded energy 🧏",
-      "interpretation": "Friend sign-language-coded reveal. Mirror with another 🧏, a sentence that joins the deaf-identity energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "work",
-      "message": "hand-to-ear today, full sign-language-coded flex 🧏",
-      "interpretation": "Work deaf-identity-coded moment. Mirror with another 🧏, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "naming a deaf creator or signer in a thread 🧏",
+      "interpretation": "The everyday use: the picture carries the whole line. It lands as flagging deafness, sign language, or a missed conversation, and matching it with the same emoji is a normal reply."
     }
   ]
 }

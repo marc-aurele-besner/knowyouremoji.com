@@ -16,6 +16,8 @@
     "test:watch": "npx bun test tests/unit tests/integration --watch",
     "test:e2e": "playwright test",
     "validate:emojis": "npx bun run scripts/validate-emojis.ts",
+    "generate:skin-tone-content": "npx bun run scripts/skin-tone-content/generate.ts",
+    "check:similarity": "npx bun run scripts/check-content-similarity.ts",
     "import:neon": "npx bun run scripts/import-to-neon.ts",
     "backup:neon": "npx bun run scripts/backup-neon.ts",
     "prepare": "husky"
