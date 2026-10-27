@@ -15,7 +15,11 @@ import { Button } from '@/components/ui/button';
 import { EmojiCopyButton } from '@/components/emoji/emoji-copy-button';
 import { EmojiCard, emojiGridClass } from '@/components/emoji/emoji-card';
 import { ArrowRightIcon, CloseIcon } from '@/components/emoji/emoji-icons';
-import { CATEGORY_DISPLAY_NAMES, getCategoryDisplayName } from '@/components/emoji/category-link';
+import {
+  getCategoryDisplayName,
+  isValidCategorySlug,
+  resolveCategorySlug,
+} from '@/lib/emoji-taxonomy';
 import {
   BADGE_CLASS,
   BUBBLE_CLASS,
@@ -79,8 +83,9 @@ export function EmojiQuickViewDrawer({
   if (!emoji) return null;
 
   const contexts = (emoji.contexts ?? []).slice(0, 4);
-  const hasCategoryPage = emoji.category in CATEGORY_DISPLAY_NAMES;
-  const categoryLabel = getCategoryDisplayName(emoji.category);
+  const categorySlug = resolveCategorySlug(emoji.category);
+  const hasCategoryPage = isValidCategorySlug(categorySlug);
+  const categoryLabel = getCategoryDisplayName(categorySlug);
 
   return (
     <DialogPrimitive.Root open={open} onOpenChange={onOpenChange}>
@@ -149,7 +154,7 @@ export function EmojiQuickViewDrawer({
           ) : (
             hasCategoryPage && (
               <div className="mt-[18px] flex flex-wrap gap-2">
-                <Link href={`/emoji/category/${emoji.category}`} className={chipClass()}>
+                <Link href={`/emoji/category/${categorySlug}`} className={chipClass()}>
                   {categoryLabel}
                 </Link>
               </div>

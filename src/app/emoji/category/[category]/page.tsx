@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import {
-  getAllCategories,
   getAllCategoryInfo,
+  getAllValidCategories,
   getCategoryInfo,
   getEmojiSummariesByCategory,
   isValidCategory,
@@ -23,9 +23,14 @@ export const revalidate = 3600;
 
 /**
  * Generate static params for all category pages at build time
+ *
+ * Only the canonical categories are generated. The corpus contains legacy
+ * category strings that do not have their own page — generating them would
+ * prerender a 404 for each one, still carrying the site's default
+ * `index, follow` robots directives.
  */
 export async function generateStaticParams() {
-  const categories = getAllCategories();
+  const categories = getAllValidCategories();
   return categories.map((category) => ({ category }));
 }
 
@@ -37,7 +42,25 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const categoryInfo = getCategoryInfo(category);
 
   if (!categoryInfo) {
-    return {};
+    // An unknown category slug has no page to describe. Returning `{}`
+    // here would inherit the root layout's metadata — including its
+    // `index, follow` directives and the *homepage's* canonical URL,
+    // which tells search engines the homepage is the canonical version of
+    // this URL. Ask for removal from the index instead.
+    return {
+      title: 'Category Not Found',
+      robots: {
+        index: false,
+        follow: true,
+        googleBot: {
+          index: false,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      },
+    };
   }
 
   const env = getEnv();

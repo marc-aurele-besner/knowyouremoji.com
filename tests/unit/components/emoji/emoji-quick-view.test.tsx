@@ -46,8 +46,17 @@ const fire: QuickViewEmoji = {
   slug: 'fire',
   character: '🔥',
   name: 'Fire',
-  category: 'nature',
+  category: 'unmapped-category',
   tldr: 'Hot or cool.',
+};
+
+/** A legacy corpus category that resolves to a canonical hub page. */
+const legacyNature: QuickViewEmoji = {
+  ...fire,
+  slug: 'leaf',
+  character: '🍂',
+  name: 'Leaf',
+  category: 'nature',
 };
 
 describe('isModifiedClick', () => {
@@ -111,8 +120,16 @@ describe('EmojiQuickViewDrawer', () => {
 
   it('omits the category chip when the category has no hub page', () => {
     render(<EmojiQuickViewDrawer emoji={fire} open onOpenChange={() => {}} />);
-    expect(screen.getByText('Nature')).toBeInTheDocument();
-    expect(screen.queryByRole('link', { name: 'Nature' })).toBeNull();
+    expect(screen.getByText('Unmapped-category')).toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: 'Unmapped-category' })).toBeNull();
+  });
+
+  it('links a legacy category to its canonical hub page', () => {
+    render(<EmojiQuickViewDrawer emoji={legacyNature} open onOpenChange={() => {}} />);
+    expect(screen.getByRole('link', { name: 'Animals & Nature' })).toHaveAttribute(
+      'href',
+      '/emoji/category/animals'
+    );
   });
 
   it('requests closing from the close button', () => {

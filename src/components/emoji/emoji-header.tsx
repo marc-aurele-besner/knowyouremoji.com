@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { EmojiDownloadButton } from '@/components/emoji/emoji-download-button';
 import { CheckIcon, CopyIcon, SwapIcon } from '@/components/emoji/emoji-icons';
 import { emojiEvents } from '@/lib/analytics';
+import { resolveCategorySlug } from '@/lib/emoji-taxonomy';
 
 /**
  * Props for the EmojiHeader component
@@ -111,7 +112,7 @@ export function EmojiHeader({ emoji, compareHref, actions, className }: EmojiHea
           {emoji.category && (
             <li className="flex">
               <Link
-                href={`/emoji/category/${emoji.category}`}
+                href={`/emoji/category/${resolveCategorySlug(emoji.category)}`}
                 className={cn(
                   META_BADGE,
                   'hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500'

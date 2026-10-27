@@ -149,13 +149,15 @@ describe('category-data utilities', () => {
   describe('getEmojiSummariesByCategory', () => {
     it('should return emoji summaries for a valid category', async () => {
       const { getEmojiSummariesByCategory } = await import('../../../src/lib/emoji-data');
+      const { resolveCategorySlug } = await import('../../../src/lib/emoji-taxonomy');
       const summaries = getEmojiSummariesByCategory('faces');
       expect(Array.isArray(summaries)).toBe(true);
       expect(summaries.length).toBeGreaterThan(0);
 
-      // All summaries should be from the faces category
+      // All summaries should resolve to the faces category. Legacy corpus
+      // strings such as `smileys-emotion` are aliases of `faces`.
       summaries.forEach((summary) => {
-        expect(summary.category).toBe('faces');
+        expect(resolveCategorySlug(summary.category)).toBe('faces');
       });
 
       // Each summary should have required properties

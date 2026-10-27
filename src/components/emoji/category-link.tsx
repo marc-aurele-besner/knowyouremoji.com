@@ -1,27 +1,15 @@
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
+import {
+  CATEGORY_DISPLAY_NAMES,
+  getCategoryDisplayName,
+  resolveCategorySlug,
+} from '@/lib/emoji-taxonomy';
 
-/**
- * Category display names mapping
- */
-export const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
-  faces: 'Smileys & Faces',
-  people: 'People & Body',
-  animals: 'Animals & Nature',
-  food: 'Food & Drink',
-  travel: 'Travel & Places',
-  activities: 'Activities',
-  objects: 'Objects',
-  symbols: 'Symbols',
-  flags: 'Flags',
-};
-
-/**
- * Get display name for a category
- */
-export function getCategoryDisplayName(category: string): string {
-  return CATEGORY_DISPLAY_NAMES[category] || category.charAt(0).toUpperCase() + category.slice(1);
-}
+// Re-exported so existing importers of the display-name helpers keep
+// working. The canonical definitions now live in `src/lib/emoji-taxonomy.ts`,
+// which is safe to import from client components.
+export { CATEGORY_DISPLAY_NAMES, getCategoryDisplayName };
 
 /**
  * Props for the CategoryLink component
@@ -64,11 +52,14 @@ function FolderIcon({ className }: { className?: string }) {
  * ```
  */
 export function CategoryLink({ category, className, showIcon = true }: CategoryLinkProps) {
-  const displayName = getCategoryDisplayName(category);
+  // Legacy category strings are resolved to the canonical taxonomy so the
+  // link always points at a category page that exists.
+  const slug = resolveCategorySlug(category);
+  const displayName = getCategoryDisplayName(slug);
 
   return (
     <Link
-      href={`/emoji/category/${category}`}
+      href={`/emoji/category/${slug}`}
       className={cn(
         'inline-flex items-center gap-1.5 text-primary dark:text-primary hover:underline',
         className
