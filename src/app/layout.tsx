@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Instrument_Serif } from 'next/font/google';
 import './globals.css';
-import { siteMetadata } from '@/lib/metadata';
+import { siteMetadata, DEFAULT_DESCRIPTION, getSiteUrl, getSiteName } from '@/lib/metadata';
+import { SiteJsonLd } from '@/components/seo/site-json-ld';
 import { GoogleAnalytics } from '@/components/analytics/google-analytics';
 import { PostHogProvider } from '@/components/analytics/posthog';
 import { ThemeProvider } from '@/components/theme/theme-provider';
@@ -39,6 +40,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Site-wide publisher identity: Organization + WebSite. Emitted once
+            here so every route inherits it. */}
+        <SiteJsonLd
+          appUrl={getSiteUrl()}
+          appName={getSiteName()}
+          description={DEFAULT_DESCRIPTION}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
       >
