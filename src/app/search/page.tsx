@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getEmojiSummaries, getEmojiCount } from '@/lib/emoji-data';
 import { getComboSummaries, getComboCount } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
-import { SearchPageClient } from '@/components/search/search-page-client';
+import { SearchPageShell } from '@/components/search/search-page-shell';
 
 /**
  * Generate metadata for the search page
@@ -62,7 +62,7 @@ export default function SearchPage() {
         </p>
       </header>
 
-      <SearchPageClient emojis={emojiSummaries} combos={comboSummaries} />
+      <SearchPageShell emojis={emojiSummaries} combos={comboSummaries} />
     </div>
   );
 }

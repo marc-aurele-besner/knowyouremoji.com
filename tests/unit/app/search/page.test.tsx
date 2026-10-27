@@ -1,9 +1,22 @@
-import { describe, test, expect, afterEach } from 'bun:test';
+import { describe, test, expect, afterEach, mock } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import SearchPage, { generateMetadata } from '@/app/search/page';
 
+/**
+ * The search page reads its seed query from `useSearchParams` so that
+ * `/search?q=skull` deep links work. Outside the Next.js runtime there is
+ * no router, so the hook is mocked here — mirroring the pattern used by
+ * the other app-level page tests.
+ */
+let mockSearchParams = new URLSearchParams();
+
+mock.module('next/navigation', () => ({
+  useSearchParams: () => mockSearchParams,
+}));
+
 afterEach(() => {
   cleanup();
+  mockSearchParams = new URLSearchParams();
 });
 
 describe('SearchPage', () => {
@@ -49,6 +62,17 @@ describe('SearchPage', () => {
       expect(
         screen.getByRole('combobox', { name: /filter emojis by category/i })
       ).toBeInTheDocument();
+    });
+
+    test('seeds the search box from the q query parameter', () => {
+      mockSearchParams = new URLSearchParams('q=skull');
+      render(<SearchPage />);
+      expect(screen.getByRole('searchbox')).toHaveValue('skull');
+    });
+
+    test('leaves the search box empty when no query is present', () => {
+      render(<SearchPage />);
+      expect(screen.getByRole('searchbox')).toHaveValue('');
     });
   });
 
