@@ -210,7 +210,9 @@ describe('generateMetadata', () => {
   it('returns metadata with correct title', async () => {
     const metadata = await generateMetadata(defaultMetadataParams);
 
-    expect(metadata.title).toBe('Emoji Interpreter - Decode Hidden Meanings | KnowYourEmoji');
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // page metadata title must not include the site name itself.
+    expect(metadata.title).toBe('Emoji Interpreter - Decode Hidden Meanings');
   });
 
   it('returns metadata with correct description', async () => {

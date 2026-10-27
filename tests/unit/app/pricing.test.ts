@@ -36,7 +36,9 @@ describe('Pricing Page', () => {
     test('generates metadata with correct title', () => {
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('Pricing | KnowYourEmoji');
+      // The root layout applies the `%s | <siteName>` title template, so the
+      // page metadata title must not include the site name itself.
+      expect(metadata.title).toBe('Pricing');
     });
 
     test('generates metadata with correct description', () => {
@@ -127,7 +129,7 @@ describe('Pricing Page', () => {
 
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('Pricing | CustomName');
+      expect(metadata.title).toBe('Pricing');
       const alternates = metadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://custom-url.com/pricing');
     });

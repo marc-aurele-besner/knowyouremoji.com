@@ -8,7 +8,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const pageUrl = `${env.appUrl}/register`;
 
   return {
-    title: `Create Account | ${env.appName}`,
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // metadata title must NOT include the site name itself.
+    title: 'Create Account',
     description: `Create your ${env.appName} account to save your interpretation history, access premium features, and personalize your emoji experience.`,
     alternates: {
       canonical: pageUrl,

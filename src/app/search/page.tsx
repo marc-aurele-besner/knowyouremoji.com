@@ -12,7 +12,12 @@ export function generateMetadata(): Metadata {
   const emojiCount = getEmojiCount();
   const comboCount = getComboCount();
   const pageUrl = `${env.appUrl}/search`;
-  const title = `Search Emojis & Combos - ${env.appName}`;
+  // The root layout applies the `%s | <siteName>` title template, so the
+  // metadata title must NOT include the site name itself — otherwise the
+  // rendered `<title>` ends up with the name twice. Social cards are not
+  // templated, so they keep their own fully-branded string.
+  const title = 'Search Emojis & Combos';
+  const socialTitle = `Search Emojis & Combos - ${env.appName}`;
   const description = `Search through ${emojiCount} emojis and ${comboCount} emoji combos. Find context-aware meanings and interpretations for any emoji or combination.`;
 
   return {
@@ -26,12 +31,12 @@ export function generateMetadata(): Metadata {
       locale: 'en_US',
       url: pageUrl,
       siteName: env.appName,
-      title,
+      title: socialTitle,
       description,
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: socialTitle,
       description,
     },
   };

@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
   const pageUrl = `${env.appUrl}/privacy`;
 
   return {
-    title: `${pageTitle} | ${env.appName}`,
+    title: pageTitle,
     description: pageDescription,
     alternates: {
       canonical: pageUrl,

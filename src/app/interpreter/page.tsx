@@ -36,7 +36,9 @@ export async function generateMetadata({ searchParams }: MetadataProps): Promise
     : `${env.appUrl}/og-image.png`;
 
   return {
-    title: `${title} | ${env.appName}`,
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // metadata title must NOT include the site name itself.
+    title,
     description,
     keywords: [
       'emoji interpreter',
