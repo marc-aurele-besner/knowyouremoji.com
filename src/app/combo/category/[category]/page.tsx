@@ -11,6 +11,8 @@ import { ComboCard } from '@/components/combo/combo-card';
 import { ComboCategoryChips } from '@/components/combo/combo-category-chips';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
+import { buildComboListItems } from '@/lib/seo-schema';
 import type { Metadata } from 'next';
 
 interface ComboCategoryPageProps {
@@ -109,6 +111,14 @@ export default async function ComboCategoryPage({ params }: ComboCategoryPagePro
     <>
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
+
+      {/* Structured list of the combo meanings on this page */}
+      <ItemListJsonLd
+        name={`${categoryInfo.displayName} Emoji Combos`}
+        description={categoryInfo.description}
+        pageUrl={`${env.appUrl}/combo/category/${category}`}
+        items={buildComboListItems(env.appUrl, combos)}
+      />
 
       <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
         {/* Category Header */}

@@ -9,6 +9,8 @@ import {
 import { getEnv } from '@/lib/env';
 import { EmojiHubPage } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
+import { buildEmojiListItems } from '@/lib/seo-schema';
 import type { Metadata } from 'next';
 
 interface CategoryPageProps {
@@ -139,6 +141,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <>
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
+
+      {/* Structured list of the emoji meanings on this page */}
+      <ItemListJsonLd
+        name={`${categoryInfo.displayName} Emojis`}
+        description={categoryInfo.description}
+        pageUrl={`${env.appUrl}/emoji/category/${category}`}
+        items={buildEmojiListItems(env.appUrl, emojis)}
+      />
 
       <EmojiHubPage
         breadcrumbs={breadcrumbItems}
