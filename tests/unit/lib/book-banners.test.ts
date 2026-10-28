@@ -1,21 +1,33 @@
 import { describe, it, expect } from 'bun:test';
 import {
+  BOOKS,
   BOOK_BANNERS,
   BOOK_BANNER_IDS,
-  BOOK_COVER,
-  BOOK_URL,
   BOOK_WIDE_BANNERS,
+  getBook,
 } from '@/lib/book-banners';
 
 describe('book-banners', () => {
-  it('links to the book on Amazon', () => {
-    expect(BOOK_URL).toBe('https://www.amazon.com/dp/B0HN32NYYX');
+  it('links every book to its Amazon page', () => {
+    expect(getBook('teen-texts').url).toBe('https://www.amazon.com/dp/B0HN32NYYX');
+    expect(getBook('work-emoji').url).toBe('https://www.amazon.com/dp/B0HPGNF1QW');
+  });
+
+  it('gives every book a unique id', () => {
+    expect(new Set(BOOKS.map((book) => book.id)).size).toBe(BOOKS.length);
   });
 
   it('exposes one unique id per inline and wide banner', () => {
     const all = [...BOOK_BANNERS, ...BOOK_WIDE_BANNERS];
     expect(BOOK_BANNER_IDS).toEqual(all.map((banner) => banner.id));
     expect(new Set(BOOK_BANNER_IDS).size).toBe(all.length);
+  });
+
+  it('gives every book at least one inline and one wide banner', () => {
+    for (const book of BOOKS) {
+      expect(BOOK_BANNERS.some((banner) => banner.book === book.id)).toBe(true);
+      expect(BOOK_WIDE_BANNERS.some((banner) => banner.book === book.id)).toBe(true);
+    }
   });
 
   it('serves every wide banner image from public/books-images', async () => {
@@ -31,8 +43,10 @@ describe('book-banners', () => {
     }
   });
 
-  it('serves the cover thumbnail from public/books-images', async () => {
-    expect(BOOK_COVER.src).toBe('/books-images/book-cover-thumb.png');
-    expect(await Bun.file(`public${BOOK_COVER.src}`).exists()).toBe(true);
+  it('serves every cover thumbnail from public/books-images', async () => {
+    for (const book of BOOKS) {
+      expect(book.cover.src.startsWith('/books-images/')).toBe(true);
+      expect(await Bun.file(`public${book.cover.src}`).exists()).toBe(true);
+    }
   });
 });
