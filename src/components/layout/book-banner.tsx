@@ -5,11 +5,9 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { engagementEvents } from '@/lib/analytics';
-import { BOOK_BANNERS, BOOK_COVER, BOOK_URL, BOOK_WIDE_BANNERS } from '@/lib/book-banners';
+import { BOOK_BANNERS, BOOK_WIDE_BANNERS, getBook, type BookId } from '@/lib/book-banners';
 
-export { BOOK_BANNERS, BOOK_URL, BOOK_WIDE_BANNERS };
-
-const BOOK_TITLE = "The Parent's Guide to Decoding Your Teen's Texts";
+export { BOOK_BANNERS, BOOK_WIDE_BANNERS };
 
 // Deterministic per path so server and client render the same variant.
 function pickByPath<T>(pathname: string, variants: readonly T[]): T {
@@ -20,8 +18,10 @@ function pickByPath<T>(pathname: string, variants: readonly T[]): T {
   return variants[Math.abs(hash) % variants.length];
 }
 
-export function pickBookBanner(pathname: string) {
-  return pickByPath(pathname, BOOK_BANNERS);
+/** Picks a card headline, optionally restricted to one book. */
+export function pickBookBanner(pathname: string, bookId?: BookId) {
+  const cards = bookId ? BOOK_BANNERS.filter((banner) => banner.book === bookId) : BOOK_BANNERS;
+  return pickByPath(pathname, cards);
 }
 
 export function pickWideBookBanner(pathname: string) {
@@ -61,8 +61,10 @@ function isWideViewport(): boolean {
  */
 function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
   const pathname = usePathname() ?? '/';
-  const card = pickBookBanner(pathname);
   const wide = variant === 'wide' ? pickWideBookBanner(pathname) : null;
+  // The small-screen fallback card promotes the same book as the wide image.
+  const card = pickBookBanner(pathname, wide?.book);
+  const book = getBook(card.book);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -89,11 +91,11 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
   }, [card.id, wide, pathname]);
 
   const linkProps = (bannerId: string) => ({
-    href: BOOK_URL,
+    href: book.url,
     target: '_blank',
     rel: 'sponsored noopener noreferrer',
     onClick: () => {
-      engagementEvents.externalLinkClick(BOOK_URL, 'Book banner');
+      engagementEvents.externalLinkClick(book.url, 'Book banner');
       recordBookBannerEvent('click', bannerId, pathname);
     },
   });
@@ -103,7 +105,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
       {wide && (
         <a
           {...linkProps(wide.id)}
-          aria-label={`${BOOK_TITLE} by Claire Vance — buy on Amazon`}
+          aria-label={`${book.title} by ${book.author} — buy on Amazon`}
           className="hidden overflow-hidden rounded-2xl ring-1 ring-card-border transition hover:shadow-soft hover:ring-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 md:block"
         >
           <Image
@@ -124,10 +126,10 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
         )}
       >
         <Image
-          src={BOOK_COVER.src}
+          src={book.cover.src}
           alt=""
-          width={BOOK_COVER.width}
-          height={BOOK_COVER.height}
+          width={book.cover.width}
+          height={book.cover.height}
           sizes="80px"
           className="h-auto w-14 shrink-0 rounded-md shadow-soft"
         />
@@ -137,7 +139,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
           </p>
           <p className="mt-1 text-[15px] font-semibold text-primary-700">{card.headline}</p>
           <p className="mt-0.5 text-[13.5px] text-muted-foreground">
-            <span className="italic">{BOOK_TITLE}</span> by Claire Vance.{' '}
+            <span className="italic">{book.title}</span> by {book.author}.{' '}
             <span className="font-medium text-primary-700 underline-offset-2 group-hover:underline sm:hidden">
               Get it on Amazon →
             </span>

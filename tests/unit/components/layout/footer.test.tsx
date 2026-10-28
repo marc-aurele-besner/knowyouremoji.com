@@ -52,6 +52,7 @@ describe('Footer', () => {
       '/interpreter'
     );
     expect(screen.getByRole('link', { name: /about/i })).toHaveAttribute('href', '/about');
+    expect(screen.getByRole('link', { name: /books/i })).toHaveAttribute('href', '/books');
   });
 
   it('legal links have correct hrefs', () => {

@@ -249,6 +249,7 @@ describe('sitemap', () => {
         '/about',
         '/contact',
         '/pricing',
+        '/books',
         '/privacy',
         '/terms',
         '/search',

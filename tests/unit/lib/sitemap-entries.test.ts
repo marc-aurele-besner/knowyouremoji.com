@@ -161,6 +161,7 @@ describe('sitemap-entries', () => {
         '/about',
         '/contact',
         '/pricing',
+        '/books',
         '/privacy',
         '/terms',
         '/search',

@@ -17,15 +17,21 @@ mock.module('@/lib/analytics', () => ({
   },
 }));
 
+import { getBook } from '@/lib/book-banners';
 import {
   BookBanner,
-  BOOK_URL,
   BOOK_BANNERS,
   BOOK_WIDE_BANNERS,
   pickBookBanner,
   pickWideBookBanner,
   recordBookBannerEvent,
 } from '@/components/layout/book-banner';
+
+const PATHS = Array.from({ length: 50 }, (_, i) => `/page-${i}`);
+
+function bookFor(pathname: string) {
+  return getBook(pickBookBanner(pathname).book);
+}
 
 function sentEvents() {
   return mockFetch.mock.calls.map(([url, init]) => ({
@@ -55,7 +61,7 @@ describe('BookBanner', () => {
   it('renders a link to the book on Amazon', () => {
     render(<BookBanner />);
     const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', BOOK_URL);
+    expect(link).toHaveAttribute('href', bookFor('/').url);
     expect(link).toHaveAttribute('target', '_blank');
     expect(link.getAttribute('rel')).toContain('sponsored');
     expect(link.getAttribute('rel')).toContain('noopener');
@@ -64,9 +70,7 @@ describe('BookBanner', () => {
   it('renders the book title and a headline variant', () => {
     mockPathname = '/emoji/skull';
     render(<BookBanner />);
-    expect(
-      screen.getByText("The Parent's Guide to Decoding Your Teen's Texts")
-    ).toBeInTheDocument();
+    expect(screen.getByText(bookFor('/emoji/skull').title)).toBeInTheDocument();
     expect(screen.getByText(pickBookBanner('/emoji/skull').headline)).toBeInTheDocument();
   });
 
@@ -83,7 +87,7 @@ describe('BookBanner', () => {
   it('tracks clicks', () => {
     render(<BookBanner />);
     fireEvent.click(screen.getByRole('link'));
-    expect(mockExternalLinkClick).toHaveBeenCalledWith(BOOK_URL, 'Book banner');
+    expect(mockExternalLinkClick).toHaveBeenCalledWith(bookFor('/').url, 'Book banner');
   });
 
   it('renders on content pages', () => {
@@ -115,14 +119,13 @@ describe('BookBanner wide variant', () => {
   it('renders the full-width image plus the card fallback for small screens', () => {
     mockPathname = '/';
     render(<BookBanner variant="wide" />);
+    const book = getBook(pickWideBookBanner('/').book);
     const links = screen.getAllByRole('link');
     expect(links).toHaveLength(2);
-    links.forEach((link) => expect(link).toHaveAttribute('href', BOOK_URL));
+    links.forEach((link) => expect(link).toHaveAttribute('href', book.url));
     expect(links[0]).toHaveClass('hidden', 'md:block');
     expect(links[1]).toHaveClass('md:hidden');
-    expect(links[0]).toHaveAccessibleName(
-      "The Parent's Guide to Decoding Your Teen's Texts by Claire Vance — buy on Amazon"
-    );
+    expect(links[0]).toHaveAccessibleName(`${book.title} by ${book.author} — buy on Amazon`);
     const image = links[0].querySelector('img');
     expect(decodeURIComponent(image?.getAttribute('src') ?? '')).toContain(
       pickWideBookBanner('/').src
@@ -151,7 +154,7 @@ describe('BookBanner wide variant', () => {
     mockPathname = '/emoji';
     render(<BookBanner variant="wide" />);
     fireEvent.click(screen.getAllByRole('link')[1]);
-    const id = pickBookBanner('/emoji').id;
+    const id = pickBookBanner('/emoji', pickWideBookBanner('/emoji').book).id;
     expect(sentEvents().map((e) => e.body)).toEqual([
       { type: 'view', banner: id, path: '/emoji' },
       { type: 'click', banner: id, path: '/emoji' },
@@ -165,10 +168,17 @@ describe('BookBanner wide variant', () => {
     expect(sentEvents()[0].body.banner).toBe(pickWideBookBanner('/combo').id);
   });
 
-  it('uses both image variants across paths', () => {
-    const paths = ['/', '/a', '/b', '/emoji', '/combo', '/guides', '/interpreter'];
-    const picked = new Set(paths.map((p) => pickWideBookBanner(p).id));
+  it('uses every image variant across paths', () => {
+    const picked = new Set(PATHS.map((p) => pickWideBookBanner(p).id));
     expect(picked).toEqual(new Set(BOOK_WIDE_BANNERS.map((b) => b.id)));
+  });
+
+  it('shows a fallback card for the same book as the image', () => {
+    for (const path of PATHS) {
+      expect(pickBookBanner(path, pickWideBookBanner(path).book).book).toBe(
+        pickWideBookBanner(path).book
+      );
+    }
   });
 });
 
@@ -249,11 +259,17 @@ describe('pickBookBanner', () => {
   });
 
   it('returns one of the available banners', () => {
-    const paths = ['/', '/a', '/b', '/emoji', '/combo', '/guides', '/interpreter'];
-    const picked = new Set(paths.map((p) => pickBookBanner(p).id));
+    const picked = new Set(PATHS.map((p) => pickBookBanner(p).id));
     for (const src of picked) {
       expect(BOOK_BANNERS.some((b) => b.id === src)).toBe(true);
     }
     expect(picked.size).toBe(BOOK_BANNERS.length);
+  });
+
+  it('only returns banners for the requested book', () => {
+    for (const path of PATHS) {
+      expect(pickBookBanner(path, 'work-emoji').book).toBe('work-emoji');
+      expect(pickBookBanner(path, 'teen-texts').book).toBe('teen-texts');
+    }
   });
 });
