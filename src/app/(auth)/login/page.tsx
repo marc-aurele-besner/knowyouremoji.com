@@ -8,7 +8,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const pageUrl = `${env.appUrl}/login`;
 
   return {
-    title: `Sign In | ${env.appName}`,
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // metadata title must NOT include the site name itself.
+    title: 'Sign In',
     description: `Sign in to your ${env.appName} account to access your interpretation history, saved preferences, and premium features.`,
     alternates: {
       canonical: pageUrl,

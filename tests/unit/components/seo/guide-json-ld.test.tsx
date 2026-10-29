@@ -43,8 +43,9 @@ describe('GuideJsonLd', () => {
 
     it('uses publishedAt and updatedAt for date fields', () => {
       const ld = buildGuideJsonLd(mockGuide, mockAppUrl, mockAppName);
-      expect(ld.datePublished).toBe(mockGuide.publishedAt);
-      expect(ld.dateModified).toBe(mockGuide.updatedAt);
+      // Normalized to a plain calendar day.
+      expect(ld.datePublished).toBe('2026-08-12');
+      expect(ld.dateModified).toBe('2026-08-12');
     });
 
     it('joins tags with commas for the keywords field', () => {

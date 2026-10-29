@@ -6,6 +6,12 @@
  */
 
 import type { Emoji, EmojiSummary } from '@/types/emoji';
+import {
+  getCategoryDescription as getTaxonomyDescription,
+  getCategoryDisplayName as getTaxonomyDisplayName,
+  isValidCategorySlug,
+  resolveCategorySlug,
+} from '@/lib/emoji-taxonomy';
 
 // Read the catalog on the server in both production and tests. Next.js does
 // not implement import.meta.glob; silently falling back to an empty catalog
@@ -53,11 +59,16 @@ export function getEmojiBySlug(slug: string): Emoji | undefined {
 
 /**
  * Get all emojis in a specific category
+ *
+ * Matching is done against the *canonical* category slug, so an emoji
+ * tagged with a legacy category (`food-drink`) still shows up on the
+ * canonical category page (`food`).
+ *
  * @param category - Category to filter by
  * @returns Array of emojis in the category
  */
 export function getEmojisByCategory(category: string): Emoji[] {
-  return loadEmojis().filter((emoji) => emoji.category === category);
+  return loadEmojis().filter((emoji) => resolveCategorySlug(emoji.category) === category);
 }
 
 /**
@@ -67,6 +78,22 @@ export function getEmojisByCategory(category: string): Emoji[] {
 export function getAllCategories(): string[] {
   const categories = loadEmojis().map((emoji) => emoji.category);
   return [...new Set(categories)];
+}
+
+/**
+ * Get every canonical category slug that has at least one emoji.
+ *
+ * This is the list of category pages that actually exist and should be
+ * linked to. Use it instead of {@link getAllCategories}, which returns the
+ * raw category strings found in the corpus.
+ */
+export function getAllValidCategories(): string[] {
+  const seen = new Set<string>();
+  for (const emoji of loadEmojis()) {
+    const slug = resolveCategorySlug(emoji.category);
+    if (isValidCategory(slug)) seen.add(slug);
+  }
+  return [...seen];
 }
 
 /**
@@ -153,60 +180,21 @@ export function clearEmojiCache(): void {
 // ============================================
 
 /**
- * Valid emoji categories
- */
-const VALID_CATEGORIES = [
-  'faces',
-  'people',
-  'animals',
-  'food',
-  'travel',
-  'activities',
-  'objects',
-  'symbols',
-  'flags',
-] as const;
-
-/**
- * Category display names mapping
- */
-const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
-  faces: 'Smileys & Faces',
-  people: 'People & Body',
-  animals: 'Animals & Nature',
-  food: 'Food & Drink',
-  travel: 'Travel & Places',
-  activities: 'Activities',
-  objects: 'Objects',
-  symbols: 'Symbols',
-  flags: 'Flags',
-};
-
-/**
- * Category descriptions mapping
- */
-const CATEGORY_DESCRIPTIONS: Record<string, string> = {
-  faces: 'Explore smileys, face expressions, and emotional emojis with their real-world meanings.',
-  people:
-    'Discover people, body parts, and gesture emojis and what they really mean in different contexts.',
-  animals:
-    'Learn about animal and nature emojis and their hidden meanings in modern communication.',
-  food: 'Understand food and drink emojis beyond their literal meaning.',
-  travel: 'Explore travel and places emojis and how they are used in everyday texting.',
-  activities: 'Discover activities and sports emojis and their contextual meanings.',
-  objects: 'Learn about object emojis and what they symbolize in different situations.',
-  symbols: 'Understand symbol emojis and their significance in digital communication.',
-  flags: 'Explore flag emojis and their usage in modern messaging.',
-};
-
-/**
  * Check if a category is valid
  * @param category - Category slug to check
  * @returns True if the category is valid
  */
 export function isValidCategory(category: string): boolean {
-  return VALID_CATEGORIES.includes(category as (typeof VALID_CATEGORIES)[number]);
+  return isValidCategorySlug(category);
 }
+
+/**
+ * Resolve a raw category string to its canonical category slug.
+ *
+ * Re-exported from `src/lib/emoji-taxonomy.ts` so server code has a
+ * single import for everything category-related.
+ */
+export { resolveCategorySlug };
 
 /**
  * Get the display name for a category
@@ -214,7 +202,7 @@ export function isValidCategory(category: string): boolean {
  * @returns Human-readable category name
  */
 export function getCategoryDisplayName(category: string): string {
-  return CATEGORY_DISPLAY_NAMES[category] || category.charAt(0).toUpperCase() + category.slice(1);
+  return getTaxonomyDisplayName(category);
 }
 
 /**
@@ -223,9 +211,7 @@ export function getCategoryDisplayName(category: string): string {
  * @returns Category description
  */
 export function getCategoryDescription(category: string): string {
-  return (
-    CATEGORY_DESCRIPTIONS[category] || `Explore ${category} emojis and their meanings in context.`
-  );
+  return getTaxonomyDescription(category);
 }
 
 /**
@@ -263,13 +249,16 @@ export function getCategoryInfo(category: string): CategoryInfo | null {
 }
 
 /**
- * Get info for all categories that have emojis
+ * Get info for all canonical categories that have emojis
+ *
+ * Only categories that resolve to a real, linkable category page are
+ * returned — see {@link CATEGORY_ALIASES} for why the raw category strings
+ * cannot be used directly.
+ *
  * @returns Array of category info, sorted by emoji count descending
  */
 export function getAllCategoryInfo(): CategoryInfo[] {
-  const categories = getAllCategories();
-
-  return categories
+  return getAllValidCategories()
     .map((category) => ({
       slug: category,
       displayName: getCategoryDisplayName(category),

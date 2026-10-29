@@ -8,7 +8,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const pageUrl = `${env.appUrl}/forgot-password`;
 
   return {
-    title: `Forgot Password | ${env.appName}`,
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // metadata title must NOT include the site name itself.
+    title: 'Forgot Password',
     description: `Reset your ${env.appName} password. Enter your email address and we'll send you a link to reset your password.`,
     alternates: {
       canonical: pageUrl,

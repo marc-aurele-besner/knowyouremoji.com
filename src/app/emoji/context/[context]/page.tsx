@@ -9,6 +9,8 @@ import {
 import { getEnv } from '@/lib/env';
 import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
+import { buildEmojiListItems } from '@/lib/seo-schema';
 
 interface ContextPageProps {
   params: Promise<{ context: string }>;
@@ -134,6 +136,14 @@ export default async function ContextPage({ params }: ContextPageProps) {
     <>
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
+
+      {/* Structured list of the emoji meanings on this page */}
+      <ItemListJsonLd
+        name={`${contextInfo.displayName} Emoji Meanings`}
+        description={contextInfo.description}
+        pageUrl={`${env.appUrl}/emoji/context/${context}`}
+        items={buildEmojiListItems(env.appUrl, emojis)}
+      />
 
       <EmojiHubPage
         breadcrumbs={breadcrumbItems}

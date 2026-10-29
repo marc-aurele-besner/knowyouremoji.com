@@ -326,6 +326,7 @@ describe('Root Layout Component', () => {
     mock.module('next/font/google', () => ({
       Geist: () => ({ variable: '--font-geist-sans' }),
       Geist_Mono: () => ({ variable: '--font-geist-mono' }),
+      Instrument_Serif: () => ({ variable: '--font-instrument-serif' }),
     }));
 
     // Mock Google Analytics - use same data-testid as google-analytics.test.tsx
@@ -345,5 +346,46 @@ describe('Root Layout Component', () => {
 
     const { container } = render(<GoogleAnalytics />);
     expect(container.innerHTML).toBe('');
+  });
+
+  test('renders the site-wide Organization and WebSite JSON-LD', async () => {
+    process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
+    process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
+
+    // The header reads the current path, which needs a router context.
+    mock.module('next/navigation', () => ({
+      usePathname: () => '/',
+      useSearchParams: () => new URLSearchParams(),
+      useRouter: () => ({
+        push: mock(() => {}),
+        replace: mock(() => {}),
+        back: mock(() => {}),
+        forward: mock(() => {}),
+        refresh: mock(() => {}),
+        prefetch: mock(() => {}),
+      }),
+      useParams: () => ({}),
+      useSelectedLayoutSegment: () => null,
+      useSelectedLayoutSegments: () => [],
+      redirect: mock(() => {}),
+      permanentRedirect: mock(() => {}),
+      notFound: mock(() => {}),
+    }));
+
+    const RootLayout = (await import('../../../src/app/layout')).default;
+    render(<RootLayout>{null}</RootLayout>);
+
+    // React hoists the JSON-LD script out of the tree, so look it up in the
+    // document rather than in the render container.
+    const scripts = Array.from(
+      document.querySelectorAll('script[type="application/ld+json"]')
+    ).filter((node) => node.textContent?.includes('"Organization"'));
+    expect(scripts.length).toBeGreaterThan(0);
+
+    const parsed = JSON.parse(scripts[0].textContent!);
+    expect(parsed['@context']).toBe('https://schema.org');
+    expect(parsed['@graph']).toHaveLength(2);
+    expect(parsed['@graph'][0]['@type']).toBe('Organization');
+    expect(parsed['@graph'][1]['@type']).toBe('WebSite');
   });
 });

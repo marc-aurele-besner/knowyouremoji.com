@@ -37,11 +37,12 @@ describe('CategoryPage utilities', () => {
   describe('getEmojiSummariesByCategory', () => {
     it('returns emoji summaries for valid categories', async () => {
       const { getEmojiSummariesByCategory } = await import('@/lib/emoji-data');
+      const { resolveCategorySlug } = await import('@/lib/emoji-taxonomy');
       const summaries = getEmojiSummariesByCategory('faces');
       expect(Array.isArray(summaries)).toBe(true);
       expect(summaries.length).toBeGreaterThan(0);
       summaries.forEach((emoji) => {
-        expect(emoji.category).toBe('faces');
+        expect(resolveCategorySlug(emoji.category)).toBe('faces');
       });
     });
 
@@ -146,12 +147,26 @@ describe('Category page metadata generation', () => {
     expect(metadata.title).toContain('Smileys & Faces');
   });
 
-  it('generateMetadata returns empty object for invalid categories', async () => {
+  it('generateMetadata asks for removal from the index for invalid categories', async () => {
     const { generateMetadata } = await import('@/app/emoji/category/[category]/page');
     const metadata = await generateMetadata({
       params: Promise.resolve({ category: 'invalid-category' }),
     });
-    expect(metadata).toEqual({});
+    expect(metadata.title).toBe('Category Not Found');
+    expect(metadata.robots).toEqual({
+      index: false,
+      follow: true,
+      googleBot: {
+        index: false,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    });
+    // An unknown category must not claim a canonical URL, and above all not
+    // inherit the homepage's one.
+    expect(metadata.alternates).toBeUndefined();
   });
 
   it('generateMetadata includes OpenGraph properties', async () => {

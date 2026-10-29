@@ -5,9 +5,22 @@
  * Uses DefinedTerm to describe the emoji entity within the article.
  * When the emoji ships FAQs (CONTENT-P1-001), an additional FAQPage entity
  * is emitted so search engines can pick up "People Also Ask" style answers.
+ *
+ * The Article node carries `author`, `datePublished`, `dateModified`,
+ * `image`, and `inLanguage`. Google will not consider a page eligible for
+ * an article rich result without the author and date fields, and the image
+ * is what makes the result visual rather than a bare text link.
  */
 
 import type { Emoji } from '@/types/emoji';
+import {
+  buildImageObject,
+  buildIsPartOf,
+  buildMainEntityOfPage,
+  buildPublisher,
+  resolveArticleDates,
+} from '@/lib/seo-schema';
+import { getCategoryDisplayName, resolveCategorySlug } from '@/lib/emoji-taxonomy';
 
 interface EmojiJsonLdProps {
   /** The emoji data to generate structured data for */
@@ -16,13 +29,6 @@ interface EmojiJsonLdProps {
   appUrl: string;
   /** Name of the application */
   appName: string;
-}
-
-/**
- * Capitalize the first letter of a string
- */
-function capitalizeFirst(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 /**
@@ -69,22 +75,25 @@ function generateEmojiJsonLd(emoji: Emoji, appUrl: string, appName: string) {
     'emoji guide',
   ];
 
+  const headline = `${emoji.character} ${emoji.name} Emoji Meaning`;
+
   const article = {
     '@type': 'Article',
-    headline: `${emoji.character} ${emoji.name} Emoji Meaning`,
+    headline,
     description: emoji.tldr,
     url: pageUrl,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': pageUrl,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: appName,
-      url: appUrl,
-    },
+    mainEntityOfPage: buildMainEntityOfPage(pageUrl, headline),
+    author: buildPublisher(appName, appUrl),
+    publisher: buildPublisher(appName, appUrl),
+    image: buildImageObject(
+      `${appUrl}/og/emoji/${emoji.slug}.png`,
+      `${emoji.character} ${emoji.name} emoji meaning`
+    ),
+    ...resolveArticleDates(emoji.contentUpdatedAt),
+    inLanguage: 'en',
+    isPartOf: buildIsPartOf(appUrl),
     keywords: keywords.join(', '),
-    articleSection: capitalizeFirst(emoji.category),
+    articleSection: getCategoryDisplayName(resolveCategorySlug(emoji.category)),
     about: {
       '@type': 'DefinedTerm',
       name: emoji.name,

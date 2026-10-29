@@ -17,7 +17,7 @@ export function generateMetadata(): Metadata {
   const pageUrl = `${env.appUrl}/about`;
 
   return {
-    title: `${pageTitle} | ${env.appName}`,
+    title: pageTitle,
     description: pageDescription,
     keywords: [
       'about knowyouremoji',

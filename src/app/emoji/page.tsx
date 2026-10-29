@@ -26,7 +26,12 @@ export function generateMetadata(): Metadata {
   const env = getEnv();
   const emojiCount = getEmojiCount();
   const pageUrl = `${env.appUrl}/emoji`;
-  const title = `Browse All ${emojiCount} Emojis - ${env.appName}`;
+  // The root layout applies the `%s | <siteName>` title template, so the
+  // metadata title must NOT include the site name itself — otherwise the
+  // rendered `<title>` ends up with the name twice. Social cards are not
+  // templated, so they keep their own fully-branded string.
+  const title = `Browse All ${emojiCount} Emojis`;
+  const socialTitle = `Browse All ${emojiCount} Emojis - ${env.appName}`;
   const description = `Explore ${emojiCount} emoji meanings with context-aware interpretations. Understand what emojis really mean in texts, social media, and everyday communication.`;
 
   return {
@@ -40,12 +45,12 @@ export function generateMetadata(): Metadata {
       locale: 'en_US',
       url: pageUrl,
       siteName: env.appName,
-      title,
+      title: socialTitle,
       description,
     },
     twitter: {
       card: 'summary_large_image',
-      title,
+      title: socialTitle,
       description,
     },
   };

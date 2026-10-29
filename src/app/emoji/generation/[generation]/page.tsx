@@ -10,6 +10,8 @@ import {
 import { getEnv } from '@/lib/env';
 import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
+import { buildEmojiListItems } from '@/lib/seo-schema';
 
 interface GenerationPageProps {
   params: Promise<{ generation: string }>;
@@ -122,6 +124,14 @@ export default async function GenerationPage({ params }: GenerationPageProps) {
     <>
       {/* JSON-LD structured data for breadcrumbs */}
       <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={env.appUrl} />
+
+      {/* Structured list of the emoji meanings on this page */}
+      <ItemListJsonLd
+        name={`${generationInfo.displayName} Emoji Meanings`}
+        description={generationInfo.description}
+        pageUrl={`${env.appUrl}/emoji/generation/${generation}`}
+        items={buildEmojiListItems(env.appUrl, emojis)}
+      />
 
       <EmojiHubPage
         breadcrumbs={breadcrumbItems}

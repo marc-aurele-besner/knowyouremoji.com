@@ -8,6 +8,13 @@
  */
 
 import type { EmojiCombo } from '@/types/combo';
+import {
+  buildImageObject,
+  buildIsPartOf,
+  buildMainEntityOfPage,
+  buildPublisher,
+  resolveArticleDates,
+} from '@/lib/seo-schema';
 
 interface ComboJsonLdProps {
   /** The combo data to generate structured data for */
@@ -69,20 +76,23 @@ function generateComboJsonLd(combo: EmojiCombo, appUrl: string, appName: string)
     ...(combo.tags || []),
   ];
 
+  const headline = `${combo.combo} ${combo.name} Combo Meaning`;
+
   const article = {
     '@type': 'Article',
-    headline: `${combo.combo} ${combo.name} Combo Meaning`,
+    headline,
     description: combo.meaning,
     url: pageUrl,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': pageUrl,
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: appName,
-      url: appUrl,
-    },
+    mainEntityOfPage: buildMainEntityOfPage(pageUrl, headline),
+    author: buildPublisher(appName, appUrl),
+    publisher: buildPublisher(appName, appUrl),
+    image: buildImageObject(
+      `${appUrl}/og/combo/${combo.slug}.png`,
+      `${combo.combo} ${combo.name} combo meaning`
+    ),
+    ...resolveArticleDates(combo.contentUpdatedAt),
+    inLanguage: 'en',
+    isPartOf: buildIsPartOf(appUrl),
     keywords: keywords.join(', '),
     articleSection: capitalizeFirst(combo.category),
     about: {

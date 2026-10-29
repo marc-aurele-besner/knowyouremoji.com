@@ -108,6 +108,7 @@ describe('ComboJsonLd', () => {
       expect(parsed.mainEntityOfPage).toEqual({
         '@type': 'WebPage',
         '@id': 'https://knowyouremoji.com/combo/skull-laughing',
+        name: '💀😂 Dead Laughing Combo Meaning',
       });
     });
 

@@ -140,6 +140,7 @@ describe('EmojiJsonLd', () => {
       expect(parsed.mainEntityOfPage).toEqual({
         '@type': 'WebPage',
         '@id': 'https://knowyouremoji.com/emoji/skull',
+        name: '💀 Skull Emoji Meaning',
       });
     });
 
@@ -173,7 +174,8 @@ describe('EmojiJsonLd', () => {
       const script = document.querySelector('script[type="application/ld+json"]');
       const parsed = JSON.parse(script!.textContent!);
 
-      expect(parsed.articleSection).toBe('Faces');
+      // The canonical category display name, not the raw slug.
+      expect(parsed.articleSection).toBe('Smileys & Faces');
     });
 
     it('includes about with DefinedTerm type for the emoji', () => {
@@ -207,7 +209,7 @@ describe('EmojiJsonLd', () => {
       expect(script).not.toBeNull();
 
       const parsed = JSON.parse(script!.textContent!);
-      expect(parsed.articleSection).toBe('Faces');
+      expect(parsed.articleSection).toBe('Smileys & Faces');
     });
 
     it('handles emoji with empty context meanings', () => {

@@ -4,6 +4,7 @@ import {
   getAllEmojiSlugs,
   getRelatedEmojis,
   getCategoryDisplayName,
+  resolveCategorySlug,
 } from '@/lib/emoji-data';
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
@@ -138,14 +139,17 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   // Get combos that contain this emoji
   const combosWithEmoji = getComboSummariesByEmoji(slug, 6);
 
-  // Get category display name
-  const categoryDisplayName = getCategoryDisplayName(emoji.category);
+  // Get category display name. Legacy category strings are resolved to the
+  // canonical taxonomy first, so both the label and the link point at a
+  // category page that actually exists.
+  const categorySlug = resolveCategorySlug(emoji.category);
+  const categoryDisplayName = getCategoryDisplayName(categorySlug);
 
   // Breadcrumb items for navigation (with category link)
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Emojis', href: '/emoji' },
-    { label: categoryDisplayName, href: `/emoji/category/${emoji.category}` },
+    { label: categoryDisplayName, href: `/emoji/category/${categorySlug}` },
     { label: `${emoji.character} ${emoji.name}` },
   ];
 
@@ -153,7 +157,7 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   const breadcrumbJsonLdItems = [
     { name: 'Home', href: '/' },
     { name: 'Emojis', href: '/emoji' },
-    { name: categoryDisplayName, href: `/emoji/category/${emoji.category}` },
+    { name: categoryDisplayName, href: `/emoji/category/${categorySlug}` },
     { name: `${emoji.character} ${emoji.name}` },
   ];
 

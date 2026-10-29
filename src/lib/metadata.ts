@@ -22,7 +22,14 @@ export function getSiteName(): string {
   return getEnv().appName;
 }
 
-const defaultDescription =
+/**
+ * Default meta description for the site.
+ *
+ * Exported so the root layout can reuse the exact same wording in the
+ * site-wide `Organization` JSON-LD, keeping the machine-readable
+ * description in sync with the `<meta name="description">` tag.
+ */
+export const DEFAULT_DESCRIPTION =
   'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.';
 
 /**
@@ -40,7 +47,7 @@ export function createSiteMetadata(): Metadata {
       default: defaultTitle,
       template: `%s | ${siteName}`,
     },
-    description: defaultDescription,
+    description: DEFAULT_DESCRIPTION,
     keywords: [
       'emoji meaning',
       'emoji interpreter',
@@ -75,7 +82,7 @@ export function createSiteMetadata(): Metadata {
       url: siteUrl,
       siteName: siteName,
       title: defaultTitle,
-      description: defaultDescription,
+      description: DEFAULT_DESCRIPTION,
       images: [
         {
           url: '/logo.png',
@@ -86,7 +93,7 @@ export function createSiteMetadata(): Metadata {
     twitter: {
       card: 'summary_large_image',
       title: defaultTitle,
-      description: defaultDescription,
+      description: DEFAULT_DESCRIPTION,
       images: [
         {
           url: '/logo.png',

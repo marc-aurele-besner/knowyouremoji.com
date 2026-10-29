@@ -106,4 +106,56 @@ describe('robots', () => {
       expect(result.sitemap).toMatch(/^https?:\/\//);
     });
   });
+
+  describe('AI crawler rules', () => {
+    it('explicitly allows the known AI search, answer, and training crawlers', async () => {
+      const { default: robots, AI_CRAWLER_USER_AGENTS } = await import('../../../src/app/robots');
+      const result = robots();
+
+      const rules = Array.isArray(result.rules) ? result.rules : [result.rules];
+      const aiRule = rules.find((rule) =>
+        Array.isArray(rule.userAgent) ? rule.userAgent.includes('OAI-SearchBot') : false
+      );
+
+      expect(aiRule).toBeDefined();
+      expect(aiRule?.userAgent).toEqual([...AI_CRAWLER_USER_AGENTS]);
+
+      for (const agent of [
+        'OAI-SearchBot',
+        'ChatGPT-User',
+        'GPTBot',
+        'ClaudeBot',
+        'Claude-SearchBot',
+        'Claude-User',
+        'PerplexityBot',
+        'Perplexity-User',
+        'Google-Extended',
+        'Applebot-Extended',
+        'Amazonbot',
+        'meta-externalagent',
+        'Bytespider',
+        'CCBot',
+      ]) {
+        expect(aiRule?.userAgent).toContain(agent);
+      }
+    });
+
+    it('allows the agent-facing content files for AI crawlers', async () => {
+      const { default: robots, AGENT_CONTENT_PATHS } = await import('../../../src/app/robots');
+      const result = robots();
+
+      const rules = Array.isArray(result.rules) ? result.rules : [result.rules];
+      const aiRule = rules.find((rule) =>
+        Array.isArray(rule.userAgent) ? rule.userAgent.includes('OAI-SearchBot') : false
+      );
+
+      const allowPaths = Array.isArray(aiRule?.allow) ? aiRule?.allow : [aiRule?.allow];
+      expect(allowPaths).toContain('/');
+      for (const path of AGENT_CONTENT_PATHS) {
+        expect(allowPaths).toContain(path);
+      }
+      expect(AGENT_CONTENT_PATHS).toContain('/llms.txt');
+      expect(AGENT_CONTENT_PATHS).toContain('/llms-full.txt');
+    });
+  });
 });

@@ -10,6 +10,13 @@
  */
 
 import type { Guide } from '@/types/guide';
+import {
+  buildImageObject,
+  buildIsPartOf,
+  buildMainEntityOfPage,
+  buildPublisher,
+  toIsoDay,
+} from '@/lib/seo-schema';
 
 interface GuideJsonLdProps {
   /** The guide to render structured data for. */
@@ -33,22 +40,17 @@ export function buildGuideJsonLd(guide: Guide, appUrl: string, appName: string) 
     headline: guide.title,
     description: guide.description,
     url: pageUrl,
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': pageUrl,
-    },
-    datePublished: guide.publishedAt,
-    dateModified: guide.updatedAt,
+    mainEntityOfPage: buildMainEntityOfPage(pageUrl, guide.title),
+    datePublished: toIsoDay(guide.publishedAt),
+    dateModified: toIsoDay(guide.updatedAt),
     author: {
       '@type': 'Organization',
       name: guide.author || appName,
       url: appUrl,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: appName,
-      url: appUrl,
-    },
+    publisher: buildPublisher(appName, appUrl),
+    image: buildImageObject(`${appUrl}/og-image.png`, guide.title),
+    isPartOf: buildIsPartOf(appUrl),
     keywords: guide.tags.join(', '),
     articleSection: 'Guides',
     inLanguage: 'en',

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { SoftwareApplicationJsonLd } from '@/components/seo/software-application-json-ld';
 import { BookBanner } from '@/components/layout/book-banner';
 import { InterpreterClient } from '@/components/interpreter/interpreter-client';
 import { SharedResultSection } from '@/components/interpreter/shared-result-section';
@@ -36,7 +37,9 @@ export async function generateMetadata({ searchParams }: MetadataProps): Promise
     : `${env.appUrl}/og-image.png`;
 
   return {
-    title: `${title} | ${env.appName}`,
+    // The root layout applies the `%s | <siteName>` title template, so the
+    // metadata title must NOT include the site name itself.
+    title,
     description,
     keywords: [
       'emoji interpreter',
@@ -112,11 +115,28 @@ function PageHeading() {
 
 export default async function InterpreterPage({ searchParams }: InterpreterPageProps) {
   const { r: sharedResult, m } = await searchParams;
+  const env = getEnv();
   const rawPrefill = Array.isArray(m) ? m[0] : m;
   const initialMessage = rawPrefill ? rawPrefill.slice(0, MAX_PREFILL_LENGTH) : undefined;
 
   return (
     <main className="container mx-auto max-w-4xl px-4 py-8 md:py-12">
+      {/* Structured data describing the interpreter as an application, so
+          search engines and answer engines treat it as a tool rather than
+          an article. */}
+      <SoftwareApplicationJsonLd
+        appUrl={env.appUrl}
+        appName={env.appName}
+        description="Paste a message with emojis and get the hidden meaning, tone, sarcasm, passive-aggression signals, red flags, and a suggested reply."
+        features={[
+          'Decodes the hidden meaning of emojis in a full message',
+          'Detects sarcasm and passive-aggression signals',
+          'Flags red flags in dating and workplace conversations',
+          'Suggests a reply that matches the intended tone',
+          'Supports iMessage, Instagram, TikTok, WhatsApp, Slack, Discord, and Twitter',
+        ]}
+      />
+
       <Breadcrumbs items={breadcrumbItems} className="mb-6" />
 
       {sharedResult ? (

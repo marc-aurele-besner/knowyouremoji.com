@@ -36,7 +36,9 @@ describe('About Page', () => {
     test('generates metadata with correct title', () => {
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('About Us | KnowYourEmoji');
+      // The root layout applies the `%s | <siteName>` title template, so the
+      // page metadata title must not include the site name itself.
+      expect(metadata.title).toBe('About Us');
     });
 
     test('generates metadata with correct description', () => {
@@ -127,7 +129,7 @@ describe('About Page', () => {
 
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('About Us | CustomName');
+      expect(metadata.title).toBe('About Us');
       const alternates = metadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://custom-url.com/about');
     });

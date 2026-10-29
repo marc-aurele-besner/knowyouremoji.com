@@ -98,13 +98,23 @@ describe('emoji-data', () => {
   describe('getEmojisByCategory', () => {
     it('should return emojis filtered by category', async () => {
       const { getEmojisByCategory } = await import('../../../src/lib/emoji-data');
+      const { resolveCategorySlug } = await import('../../../src/lib/emoji-taxonomy');
       const facesEmojis = getEmojisByCategory('faces');
       expect(Array.isArray(facesEmojis)).toBe(true);
+      expect(facesEmojis.length).toBeGreaterThan(0);
 
-      // All returned emojis should have the same category
+      // All returned emojis should resolve to the same canonical category.
+      // Legacy corpus strings such as `smileys-emotion` are aliases of `faces`.
       facesEmojis.forEach((emoji) => {
-        expect(emoji.category).toBe('faces');
+        expect(resolveCategorySlug(emoji.category)).toBe('faces');
       });
+    });
+
+    it('should include emojis stored under a legacy category alias', async () => {
+      const { getEmojisByCategory } = await import('../../../src/lib/emoji-data');
+      const facesEmojis = getEmojisByCategory('faces');
+      // The corpus seeds a slice of the faces category under `smileys-emotion`.
+      expect(facesEmojis.some((emoji) => emoji.category === 'smileys-emotion')).toBe(true);
     });
 
     it('should return empty array for non-existent category', async () => {
