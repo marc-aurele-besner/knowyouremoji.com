@@ -8,120 +8,131 @@
   "subcategory": "face-concerned",
   "unicodeVersion": "6.1",
   "baseMeaning": "A yellow face with raised eyebrows and a frown, expressing anguish or distress.",
-  "tldr": "Distressed, anguished, or horrified.",
+  "tldr": "😧 signals distressed surprise: concern that something is wrong, often sent after bad news or a worrying update.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Expressing deep distress or concern.",
-      "example": "I left the stove on 😧",
+      "meaning": "Used plainly, 😧 expresses anguish, alarm, or distress about an unpleasant situation.",
+      "example": "that appointment did not go at all like i expected 😧",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Shows horror or extreme worry.",
-      "example": "Check your bank account 😧",
+      "meaning": "In close conversations, 😧 flags something troubling the sender thinks the recipient may not have noticed.",
+      "example": "check your bank account 😧",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Worried about the relationship or situation.",
-      "example": "We need to talk 😧",
+      "context": "WORK",
+      "meaning": "In a work thread, 😧 can suggest that the sender is worried about the situation or having a bad day.",
+      "example": "the system has been down all morning 😧",
       "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatizing minor concerns.",
-      "example": "Phone battery at 5% 😧",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "With someone you do not know well, 😧 can seem overly personal or emotionally intense for ordinary news.",
+      "example": "we need to talk 😧",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for expressing worry and distress. Reply to visual-cue-coded and adult-coded tweets; the emoji reads as the universal visual-cue default across adult audiences."
+      "platform": "IMESSAGE",
+      "note": "😧 fits naturally in the close friend and family conversations that dominate iMessage. It is most useful there for a genuinely worrying update rather than a mild surprise."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in stressed or worried posts. Sticker default on aesthetic-coded captions and story overlays; the visual cue carries across adult-coded audiences."
-    },
-    {
-      "platform": "TIKTOK",
-      "note": "Often in 'anxiety moment' content. Comment-section reaction to visual-cue-coded clips; pairs with adult-coded clip reactions and aesthetic-coded overlays."
+      "note": "In Instagram direct messages, 😧 can feel performative because the platform often treats strong reactions as part of the post. It lands better when there is an obvious problem to discuss."
     },
     {
       "platform": "WHATSAPP",
-      "note": "Group-chat reaction to anguish-coded content; the raised eyebrows and small frown are the default 'I am hurting' tag among close-friends groups."
+      "note": "WhatsApp conversations often include family and friends across generations, so 😧 can work as a blunt warning that something is wrong. The relationship should carry the concern behind it."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In a work channel such as Slack, 😧 may make an ordinary update look like a personal crisis. Reserve it for a real obstacle and give the team useful information in the message."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Used for expressing anxiety and worry."
+      "note": "Gen Z tends to use 😱, 🤯, or 😳 for strong reactions, so 😧 can feel less like a default shock emoji. It still works when the sender genuinely wants to show worry."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Classic distressed emoji."
+      "note": "Millennials often choose 😮, 😯, 😲, 😱, or 🤯 for surprise. 😧 is more distinct because it places concern and distress ahead of the shock itself."
     },
     {
-      "generation": "BOOMER",
-      "note": "Used for expressing concern or fear."
+      "generation": "GEN_X",
+      "note": "In a Gen X conversation, 😧 may feel more emotionally exposed than a broader shock emoji. Use it for a genuinely worrying update rather than routine news."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Too intimate for a new connection",
+      "description": "With a mid-tier friend or a new romantic interest, 😧 can make the sender seem distressed or intensely invested. Use 😮 for mild surprise or write plainly instead.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "The wrong tone for customer support",
+      "description": "A customer-facing reply with 😧 can suggest that the sender cannot handle the issue. State the problem and next step without the emoji.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "😧 Anguished Face Emoji Meaning - What Does 😧 Really Mean?",
-  "seoDescription": "Learn what the anguished face emoji 😧 really means. From genuine distress to dramatic worry, discover all its uses.",
+  "seoTitle": "😧 Anguished Face Emoji Meaning",
+  "seoDescription": "What does 😧 mean? It signals distressed surprise: concern that something is wrong, often used with worried friends, family, or close contacts.",
   "longForm": {
-    "overview": "The 😧 Anguished Face emoji was added in Unicode 6 (2010) and is drawn as a yellow face with raised eyebrows, a small frown, and visible distressed eyes with small tears welling up. The visual cue reads instantly as anguish-coded distress, sad-but-worried reaction, or the visible 'I am hurting' tag. By 2026 😧 has become the go-to emoji for the distress-coded reaction, the visible 'I am in pain' default, and the sad-but-worried coded reaction in close-friends and family chats.\n\nIn modern chat 😧 does very specific work. People send it as a literal distress-coded reaction, as the visible 'I am hurting' tag, or as the worried-sad-coded default. The raised eyebrows and small frown are the visual cue that the read is anguish-coded. Writers should pick 😧 when the read is visible distress or worried-sad energy, and avoid it when the read is full-on crying — 😭 fits better there.",
-    "howPeopleUseIt": "😧 lands on a friend's bad-news message, in a work channel where someone is signaling distress-coded energy, and in a dating-app DM where the sender is reacting to bad news. The raised eyebrows and small frown anchor the read.\n\nIn close-friends chats 😧 reads as the universal anguish default and the visible 'I am hurting' tag. On X the emoji punctuates distress-coded and worried-sad-coded tweets. The emoji pairs with 😦 for the layered distress-and-frown stack and with 😭 for the layered sad-and-crying stack.",
-    "whenNotToUse": "Skip 😧 in any context where the read is full-on crying only. The small frown implies worried-sad-coded distress, not crying-crying. Avoid 😧 in casual joke contexts where the distress-coded read lands as over-the-top.",
-    "howToReply": "If a friend sends 😧 on a distress-coded message, mirror with another 😧 or 🫂 to send comfort. The anguish chain reads as solidarity.\n\nIf 😧 lands as the worried-sad-coded default, reply with another 😧 or 💛. And if you want to send 😧 yourself, pair it with the moment so the distress-coded read is clear.",
+    "overview": "😧 arrived in Unicode 6.1 in 2012 with a plain, anguished expression: raised eyebrows and a frown. In its earliest literal use, it meant visible distress, not a general reaction to surprise. It did not begin as an all-purpose “wow.” Texting sharpened that older feeling into distressed surprise: the sender has seen something worrying and wants the other person to notice the gravity without writing a paragraph.\n\nToday 😧 is the emoji for “this is bad” and “I am worried about this.” It works after “check your bank account,” before a difficult conversation, or after serious news. Unlike 😮 for mild surprise or 😱 for dramatic shock, 😧 combines surprise with concern. Its raised brows can look like worry, while the frown keeps it from sounding cheerful or neutral. That makes it intimate in a useful way: close friends and family will read the concern as sincere, while a stranger or customer may read it as the sender buckling under the topic.",
+    "howPeopleUseIt": "😧 usually appears when surprise has a worried edge. Someone sends “check your bank account 😧” because they suspect trouble without wanting to spell it out. It can also introduce a hard conversation with “we need to talk 😧,” or follow serious news when the sender wants to show that they understand how bad it is.\n\nThe most effective messages give the emoji a specific reason to be there. In close friend and family threads, 😧 works as a compact signal: something is wrong, I noticed, and I am worried. Its job is not merely to end the sentence. It adds concern to what was just said and asks the recipient to take the message seriously.",
+    "whenNotToUse": "Skip 😧 for ordinary surprises, minor updates, or mild revelations. If someone moved to another city, 😮 is calmer; if a strange plot twist needs a louder reaction, 😱 may fit better. Using 😧 for either can make the sender seem unable to cope with a trivial event.\n\nBe especially careful with mid-tier friends, new romantic interests, customer-facing replies, and Instagram direct messages. 😧 can feel too intimate in a new relationship, make a work problem look like a personal breakdown, or read as staged intensity. Plain words are safer there: explain the concern, give useful context, and save the emoji for conversations where the closeness is already established.",
+    "howToReply": "Match the concern rather than escalating it blindly. If a friend sends “check your bank account 😧,” ask what happened or offer to look with them. If they send “we need to talk 😧,” a direct reply such as “okay, what happened?” confirms that you understood the seriousness without turning the moment into a performance.\n\nIf 😧 lands on your own news, ask whether they are worried about you, the situation, or something else. That question can rescue an overpersonal message. When the concern was genuine, returning 😧 or naming the specific problem will usually keep the exchange natural.",
     "faqs": [
       {
-        "question": "What does 😧 mean in text?",
-        "answer": "😧 means anguish-coded distress, visible 'I am hurting' energy, or the sad-but-worried reaction. The raised eyebrows and small frown are the visual cue that the read is anguish-coded."
+        "question": "What does 😧 mean from a guy?",
+        "answer": "Usually, it means he is worried that something is wrong or reacting with distress to what you said. It is not a reliable hidden romantic signal on its own."
       },
       {
         "question": "Is 😧 flirty?",
-        "answer": "Rarely. 😧 usually reads as distress-coded rather than flirty; in a dating thread it can read as 'I am worried about us' content."
+        "answer": "Not usually. 😧 communicates concern and distress, while a blushing face such as 😳 is much more commonly used to combine surprise with romantic interest."
       },
       {
-        "question": "What does 😧 mean from a girl?",
-        "answer": "From a girl or anyone, 😧 carries the same distress-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "What does 😧 mean on TikTok?",
+        "answer": "On TikTok, 😧 usually communicates that something is alarming, troubling, or harder to handle than expected. The surrounding caption determines whether the distress is serious or playful."
       },
       {
-        "question": "What does 😧 mean at work?",
-        "answer": "In Slack, 😧 reads as the visible distress default when paired with 'this is bad news' content."
+        "question": "Why does 😧 feel more serious than 😮?",
+        "answer": "😮 mainly marks mild surprise, while 😧 adds worry and anguish. That extra distress can make a casual situation seem more serious than the sender intended."
       }
     ]
   },
   "conversationExamples": [
     {
+      "setting": "dating",
+      "message": "i know we said tomorrow would be easy but can we talk about it later 😧",
+      "interpretation": "The sender sounds worried that a difficult subject has been raised too soon. Respond gently and ask what they need to discuss before sharing a long explanation."
+    },
+    {
       "setting": "friends",
-      "message": "this hurts 😧",
-      "interpretation": "Friend distress-coded share. Mirror with another 😧 or 🫂 so the comfort chain reads back."
+      "message": "check your bank account before you spend anything 😧",
+      "interpretation": "The sender thinks there may be a problem with the money and wants their friend to look immediately. Ask what they noticed or offer to check it together."
     },
     {
       "setting": "work",
-      "message": "I think I broke production 😧",
-      "interpretation": "Work-coded distress share. Mirror with a clarifying sentence — 😧 can land as off-topic in work channels."
-    },
-    {
-      "setting": "dating",
-      "message": "I am worried about us 😧",
-      "interpretation": "Dating-coded worried-coded share. Mirror with 😧 or 💬 so the warm chain reads back."
+      "message": "the whole reporting system has failed twice today 😧",
+      "interpretation": "The sender is flagging a real work problem while showing how stressful it has become. Acknowledge the issue and move toward a practical next step."
     },
     {
       "setting": "family",
-      "message": "grandma is in the hospital 😧",
-      "interpretation": "Family-coded anguish share. Mirror with 😧 or 🫂 so the family-coded chain reads back."
+      "message": "did you see the news about the storm near grandma's town 😧",
+      "interpretation": "The sender is worried about a family member and wants immediate attention to the danger. Confirm whether everyone is safe rather than replying with another shocked emoji."
     },
     {
       "setting": "social",
-      "message": "bad news cycle today 😧",
-      "interpretation": "Public adult-coded distress share. Mirror with another 😧 or 💛 so the solidarity chain reads back."
+      "message": "you will not believe what that account just posted 😧",
+      "interpretation": "The emoji adds disbelief and concern because the post may be outrageous or troublesome. Ask for the screenshot so you can understand what prompted the reaction."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-11-02"
 }

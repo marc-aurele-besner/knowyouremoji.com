@@ -8,130 +8,131 @@
   "subcategory": "face-hand",
   "unicodeVersion": "14.0",
   "baseMeaning": "A face giving a salute.",
-  "tldr": "Respect, acknowledgment, or yes sir.",
+  "tldr": "🫡 means respect or “got it,” but can also quietly signal that the sender is checked out.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Saluting.",
-      "example": "Yes sir 🫡",
+      "context": "WORK",
+      "meaning": "A salute confirms that a task has been accepted and the sender intends to handle it.",
+      "example": "I’ll take care of the launch notes 🫡",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Acknowledging.",
-      "example": "Copy that 🫡",
+      "meaning": "The salute becomes ironic bravado when someone announces a difficult or questionable undertaking.",
+      "example": "running my first half marathon tomorrow 🫡",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "On it.",
-      "example": "Will do 🫡",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "A short 🫡 can dismiss a long message or end a conversation without offering any real engagement.",
+      "example": "cool 🫡",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Doing duty.",
-      "example": "Reporting for duty 🫡",
-      "riskLevel": "LOW"
+      "context": "DATING",
+      "meaning": "In a flirty message, 🫡 often feels like formal compliance rather than interest, affection, or a thoughtful response.",
+      "example": "So are we doing this Friday? 🫡",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Travels in respect-coded threads and acknowledgment-coded replies where the salute cue matches the yes-sir register."
+      "platform": "SLACK",
+      "note": "On Slack, 🫡 frequently serves as a quick work acknowledgment, similar to “got it, will do.” In a casual channel, it can still land as a deliberately detached way to close a thread."
+    },
+    {
+      "platform": "TIKTOK",
+      "note": "On TikTok, 🫡 often accompanies an ambitious plan or an idea that may obviously go wrong. The gesture performs confidence and comic compliance even when the sender feels nervous."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands in story reposts of respectful moments and tribute reveals where the salute cue signals acknowledgment-coded respect."
+      "note": "On Instagram, 🫡 can punctuate a boast, a new job announcement, or a proud life update. Its meaning depends heavily on the caption, since a lone salute after a personal post may feel ceremonial or oddly distant."
     },
     {
-      "platform": "DISCORD",
-      "note": "Anchors acknowledgment-coded replies in channels where a quick 'will do' task confirmation carries the salute-coded respect register."
-    },
-    {
-      "platform": "SLACK",
-      "note": "Surfaces as task-accepted ack in work-coded chats where the salute cue signals 'will do' acknowledgment-coded respect perfectly."
+      "platform": "WHATSAPP",
+      "note": "On WhatsApp, 🫡 may look like a polite reply to instructions, plans, or a request. Because personal messages often contain feelings, using the same neat acknowledgment for emotional news can make it seem cold."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🫡 as the default acknowledgment-coded reaction in 'will do' replies, respect-coded threads, and yes-sir moments where the salute face fits perfectly."
+      "note": "Gen Z often uses 🫡 for ironic compliance or a quiet exit from a conversation. It can also serve as a sincere task acknowledgment in workplace chats."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the saluting face on partner respect-coded check-ins, family-coded tribute moments, and work threads where the universal acknowledgment cue matches."
-    },
-    {
-      "generation": "GEN_X",
-      "note": "Sends it on respect-coded messages and family-coded moments, treating the saluting face as the universal 'reporting for duty' acknowledgment."
+      "note": "Millennials may use 🫡 as a warmer substitute for 👍 when accepting responsibility for something. In personal chats, the same gesture can still feel like the sender is keeping their distance."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal salute and sends it on family-coded tribute messages with full military-respect subtext."
+      "note": "A Boomer sender may take 🫡 more literally as respect, duty, or formal agreement. The possible gap is not fixed by age, but the sender’s tone and the surrounding message matter more than the generation label."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as respect-coded rather than casual",
-      "description": "Sending 🫡 in a context where the sender wants to be casual can undercut the message. The salute cue carries respect-coded acknowledgment, so it works best on duty-coded moments rather than casual reveals.",
-      "severity": "LOW"
+      "title": "The dismissal misread",
+      "description": "A lone 🫡 after a long message, a serious confession, or someone else’s pain can make the sender seem checked out. Use a sentence, ❤️, or “I’m sorry” when the topic needs care.",
+      "severity": "HIGH"
+    },
+    {
+      "title": "The compliance misread",
+      "description": "To a skeptical manager, 🫡 may look like mockery disguised as obedience rather than a promise to do the work. Write out what you will do instead of relying on the salute.",
+      "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🫡 Saluting Face Emoji Meaning - What Does 🫡 Really Mean?",
-  "seoDescription": "Learn what the saluting face emoji 🫡 really means. Respect or acknowledgment vibes. Complete context guide.",
+  "seoTitle": "🫡 Saluting Face Emoji Meaning",
+  "seoDescription": "What does 🫡 mean? It can show respect, accept a task, perform comic bravado, or quietly dismiss a conversation, depending on the context.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🫡 is the emoji of respect-coded acknowledgment - a yellow face with eyes forward and a hand raised in a crisp salute, the iconography of 'reporting for duty,' saluting-coded affection, and acknowledgment-coded respect. Where ✋ reads as pause-coded high-five and 🙏 reads as gratitude-coded thanks, 🫡 captures the moment when the sender wants to communicate respect-coded acknowledgment - a 'will do 🫡' work message or a 'yes sir 🫡' partner reveal. The salute cue borrows from the universal military-respect tradition and the modern acknowledgment-coded aesthetic, which is exactly why the emoji reads as duty-coded rather than literal salute.\n\nIn real-world usage 🫡 lives in the spaces where the sender wants to communicate respect-coded energy. A partner sends it on a 'reporting for duty' check-in. A friend sends it on a 'yes sir' reveal. A coworker sends it on a 'will do' message. The salute cue is what makes the emoji feel acknowledgment-coded - it is not just 'salute,' it is 'salute-coded yes-sir.'\n\nWhat separates 🫡 from the rest of the face-emoji family is the respect-coded register. The emoji is not saying 'pause high-five' (✋), 'gratitude thanks' (🙏), or 'sealed silence' (🤐). It is saying 'respect-coded acknowledgment,' which carries a specific reporting-for-duty-energy. That is why 🫡 travels especially well on partner 'reporting for duty' check-ins, family tribute-coded messages, and any context where the sender wants the message to land with respect-coded energy.",
-    "howPeopleUseIt": "🫡 shows up as the closer on a 'reporting for duty' partner message ('reporting for duty 🫡'), the punctuation on a 'yes sir' respect-coded reveal ('yes sir 🫡'), and the softener on a 'will do' check-in. It pairs naturally with sentences that name the respect-coded moment - 'reporting for duty,' 'yes sir,' 'will do' - and sits beautifully on partner 'reporting for duty' check-ins and family tribute-coded messages.\n\nIn group chats 🫡 anchors 'respect appreciation' threads, duty-coded moments, and 'yes sir' reveals where the salute cue matches the moment. On Instagram it lands on relatable photo posts and story reposts of tribute moments. On TikTok it travels in respect-coded transitions and 'yes sir' reveals.\n\nThe emoji also works in dating contexts. A 'reporting for duty 🫡' partner message uses the salute cue to communicate respect-coded romance. Across all of these surfaces the rule is the same: the more respect-coded the acknowledgment, the more natural 🫡 feels.",
-    "whenNotToUse": "Skip 🫡 in sympathy, condolence, or break-up contexts. The respect-coded acknowledgment cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🫡 in dating contexts where the duty-coded energy feels too formal. A 'reporting for duty 🫡' partner message works for soft-coded romance; for tender affection use 🥰 or a heart emoji.\n\nSkip 🫡 when you want to communicate soft affection. The respect-coded register is too duty-coded for tender moments; use 🥰 or 🤗 when the affection needs to be softer.",
-    "howToReply": "If someone sends 🫡, the cleanest mirror is another 🫡, 💪, or a sentence that joins the respect-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'yes sir right back' or 'will do too.' If the salute cue feels too duty-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the respect volume.\n\nWhen 🫡 lands as a partner 'reporting for duty' check-in, mirror with another 🫡, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'will do' reveal, mirror with another 🫡, a sentence that joins the team energy, or a heart emoji that matches.",
+    "overview": "The easiest mistake with 🫡 is treating the gesture as straightforward respect. Often, the sender means that: they have accepted the task, they are ready to begin, or they are treating the message with a ceremonial nod. “Will own this 🫡” in a work thread is a compact promise, while “Welcome aboard 🫡” can be a sincere congratulations. In these settings, 🫡 is warmer than a bare 👍 and more committed than an empty acknowledgment.\n\nBut the same image also allows the sender to perform compliance without becoming emotionally involved. After a rant, a carefully explained problem, or a flirtatious message, 🫡 can mean “I have registered this and I am moving on.” A younger employee may use it to parody obedience while a manager assumes they are taking responsibility. The problem is not the salute itself but what the surrounding words invite the emoji to do: respect, acknowledgment, comic bravado, or a quiet check-out.",
+    "howPeopleUseIt": "🫡 appears most naturally where someone has accepted an instruction: “I’ll send the file today 🫡,” “I’ll handle it 🫡,” or “Welcome aboard 🫡.” It works as a quick substitute for “yes” and “got it,” particularly in workplace conversations where a full sentence would feel unnecessarily formal.\n\nIt also appears when someone wants witnesses for a difficult act. “Running a half marathon tomorrow 🫡” borrows the posture of a dutiful soldier for something that is probably painful and slightly ridiculous. In social posts, the emoji can perform courage, confidence, or cheerful surrender. A lone “cool 🫡” at the end of a thread does something different: it closes the conversation without adding anything.",
+    "whenNotToUse": "Avoid 🫡 when someone is venting, sharing bad news, describing a painful experience, or asking for a real response. Even a sender who only meant “I acknowledge this” can appear to be sorting the other person’s feelings into a category and moving on. A flirty conversation is another poor fit because the salute sounds formal, impersonal, and strangely obedient.\n\nIn work, 🫡 is usually safe when it confirms a specific task, but it can expose you if you are joking about compliance or if the recipient already suspects you are checked out. Write a sentence when stakes are high, use 👍 or 🙌 for routine acknowledgment, and reach for ❤️, 🙏, or “I’m sorry” when warmth matters.",
+    "howToReply": "If the salute is acknowledging a task, mirror it with 🫡 only when you have nothing else to add. That creates a neat exchange of mutual acknowledgment; for a more enthusiastic response, use 🙌 or a brief sentence confirming what you will do. If the original 🫡 was used for comic bravado, an eye roll and clap combo such as 🙄👏 can return the joke.\n\nWhen the salute has landed as cold or passive-aggressive, do not answer with another salute. Write something human, especially if the previous message contained feelings. If it appeared under your own post, you can ask whether they meant it sincerely or were closing the thread, but a short question is usually more effective than sending an emoji that matches the ambiguity.",
     "faqs": [
       {
         "question": "What does 🫡 mean from a guy?",
-        "answer": "From a guy, 🫡 signals respect-coded acknowledgment - 'will do' or 'yes sir.' The salute cue reads as duty-coded rather than literal salute, so it tends to land on partner 'reporting for duty' check-ins, family tribute-coded messages, and acknowledgment-coded reveals."
+        "answer": "It often means “got it,” “I’m on it,” or a playful salute. In a flirty chat, however, it can sound distant and formal rather than enthusiastic."
       },
       {
         "question": "Is 🫡 flirty?",
-        "answer": "It can be. In a partner context 🫡 can read as respect-coded romance - 'reporting for duty 🫡' is a soft-coded romantic check-in. On its own the emoji is more respect-coded than romantic."
+        "answer": "Usually not. 🫡 is better understood as respect, acknowledgment, comic compliance, or a quiet check-out; using it in a dating context often makes the message less warm."
       },
       {
-        "question": "What is the difference between 🫡 and 🙏?",
-        "answer": "🙏 is the folded hands - the cue is gratitude-coded thanks, the universal 'thank you' energy. 🫡 is the saluting face - the cue is respect-coded acknowledgment, the 'reporting for duty' yes-sir energy. Use 🙏 when the moment is gratitude-coded thanks; use 🫡 when the moment is respect-coded acknowledgment."
+        "question": "What does 🫡 mean on TikTok?",
+        "answer": "On TikTok, it often means “I am doing this anyway.” It appears before a difficult challenge, an overconfident plan, or an idea that everyone expects to go wrong."
       },
       {
-        "question": "Is 🫡 for 'will do' moments?",
-        "answer": "Yes - 🫡 is one of the most common acknowledgment-coded emojis. The salute cue is a natural fit for 'will do' moments, respect-coded reveals, and partner 'reporting for duty' check-ins."
+        "question": "Why does 🫡 sometimes feel dismissive?",
+        "answer": "A salute can look like acknowledgment without engagement. After a long explanation, a confession, or a complaint, send a sentence instead of treating the person’s message like a task to close."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "reporting for duty, full respect romance 🫡",
-      "interpretation": "Partner respect-coded romance. Mirror with another 🫡, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the yes sir 🫡",
-      "interpretation": "Public salute appreciation. Mirror with another 🫡, a sentence that joins the respect energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "another family duty moment, full salute mode 🫡",
-      "interpretation": "Family respect-coded reveal. Mirror with another 🫡, a sentence that joins the family warmth, or a heart emoji that matches."
+      "setting": "work",
+      "message": "i can update the client deck before standup 🫡",
+      "interpretation": "This is a straightforward acceptance of the task. A confirming sentence or 👍 would also work; avoid turning the salute into a joke if the deadline is serious."
     },
     {
       "setting": "friends",
-      "message": "yes sir, full duty energy 🫡",
-      "interpretation": "Friend respect-coded reveal. Mirror with another 🫡, a sentence that joins the duty energy, or a heart emoji that matches."
+      "message": "i’m moving to the city alone next month 🫡",
+      "interpretation": "The salute performs brave confidence while acknowledging that the decision is daunting. Respond with encouragement or curiosity rather than treating it like a completed work order."
     },
     {
-      "setting": "work",
-      "message": "will do, full acknowledgment mode 🫡",
-      "interpretation": "Work acknowledgment-coded moment. Mirror with another 🫡, a sentence that joins the team energy, or a heart emoji that matches."
+      "setting": "dating",
+      "message": "i guess we’re meeting at eight then 🫡",
+      "interpretation": "The emoji makes the confirmation sound overly formal and keeps the flirtation at arm’s length. If the sender wants warmth, they should state their excitement directly."
+    },
+    {
+      "setting": "family",
+      "message": "thanks for driving me to the airport 🫡",
+      "interpretation": "Here the salute may mean genuine gratitude or respect, but it can also feel formal when a warmer family response is expected. A sentence expressing appreciation is safer."
+    },
+    {
+      "setting": "social",
+      "message": "starting a 5am gym routine on monday 🫡",
+      "interpretation": "This is comic bravado: the sender is about to attempt something difficult and wants the group to witness it. A laughing reaction or mock encouragement suits the post."
     }
   ]
 }

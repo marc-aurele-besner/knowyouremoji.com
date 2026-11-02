@@ -8,111 +8,131 @@
   "subcategory": "money",
   "unicodeVersion": "6.0",
   "baseMeaning": "A dollar sign.",
-  "tldr": "Money, expensive, or cash.",
+  "tldr": "💲 marks money, prices, and costs, usually when someone wants an amount to stand out.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Dollar currency.",
-      "example": "Cost 💲💲💲",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "Expensive.",
-      "example": "Pricey 💲",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Pricing.",
-      "example": "Budget 💲",
+      "meaning": "It highlights a dollar amount or refers directly to money.",
+      "example": "the deposit was $500 💲",
       "riskLevel": "LOW"
     },
     {
       "context": "IRONIC",
-      "meaning": "Overpriced.",
-      "example": "Worth it? 💲💲💲",
+      "meaning": "It emphasizes that a price is absurd, painful, or worth complaining about.",
+      "example": "a $14 cheeseburger 💲",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "It can underline a cost while hinting that the amount is unwelcome or unreasonable.",
+      "example": "so the final invoice is $1,200 💲",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "It marks a budget, quote, expense, or other figure in a professional conversation.",
+      "example": "that option comes to $8,500 💲",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors currency-S-coded threads, 'too expensive' tweets, and 'that is pricey' reveals where the dollar-sign cue matches the cost register."
+      "platform": "IMESSAGE",
+      "note": "In a direct text, 💲 commonly closes a casual sentence about paying, charging, or splitting a bill. It makes the amount feel more noticeable without requiring a follow-up explanation."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on price-tag-coded story reposts and budget photo captions where the currency-S cue reads as cost-tag-coded energy."
+      "note": "In captions and comments, it can turn a price into the punchline, especially when someone is describing an expensive purchase. The visible dollar amount supplies the joke, while 💲 adds the reaction."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in cost transitions and 'too expensive' reaction clips where the dollar-sign cue signals price-tag-coded flex."
+      "note": "In comments about luxury purchases, absurd menus, or expensive travel, 💲 often functions as a quick complaint about the price. It points the viewer toward the number rather than adding a detailed opinion."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In workplace channels, it is clearest beside a budget, proposal, or invoice amount. A casual 💲 may seem pointed, so professional messages can state the figure plainly instead."
     }
   ],
   "generationalNotes": [
-    { "generation": "GEN_Z", "note": "Expensive." },
-    { "generation": "MILLENNIAL", "note": "Money." },
-    { "generation": "BOOMER", "note": "Cost." }
+    {
+      "generation": "GEN_Z",
+      "note": "Gen Z often uses it as a price reaction, with the emphasis landing on how expensive or ridiculous something is."
+    },
+    {
+      "generation": "MILLENNIAL",
+      "note": "Millennials may use it when discussing bills, shared expenses, or a purchase that cost more than expected."
+    },
+    {
+      "generation": "GEN_X",
+      "note": "Gen X will usually read it literally as money or a dollar amount, especially in messages about invoices and household costs."
+    }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Paid or spent?",
+      "description": "💲 does not show money moving away, so it can be unclear whether someone paid, owes, or is charging you. In a serious payment conversation, name the direction of the transaction explicitly.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Joke mistaken for a demand",
+      "description": "After an invoice or quote, a joking 💲 can sound like a passive-aggressive complaint. Use plain wording when the recipient needs a definite answer about payment.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "💲 Dollar Sign Emoji Meaning - What Does 💲 Really Mean?",
-  "seoDescription": "Learn what the dollar sign emoji 💲 really means. Money or expensive vibes. Complete context guide.",
+  "seoTitle": "💲 Dollar Sign Emoji Meaning",
+  "seoDescription": "What does 💲 mean? It marks money, prices, and costs, often closing a sentence about an expense or an amount that feels painfully high.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-16",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "💲 is the emoji of currency-S-coded price tag flex — the classic dollar glyph, the iconography of money-coded prices, lean-currency mark flex, and the universal \"this costs money\" register. Where 💲 (heavy-dollar-sign-emoji) reads as bold-S-coded thick-stack and 💵 reads as greenback-coded cash-stack read, 💲 (the classic dollar-sign) captures the moment when the sender wants to communicate price-tag flex — a \"that is pricey 💲\" partner moment or a \"too expensive 💲\" budget reveal. The currency-S cue borrows from the universal cost-tag tradition and the modern lean-currency aesthetic, which is exactly why the emoji reads as price-tag-coded rather than literal currency.\n\nIn real-world usage 💲 (dollar-sign) lives in the spaces where the sender wants to communicate cost-coded energy. A partner sends it on a \"that is pricey tonight 💲\" check-in. A friend sends it on a \"too expensive 💲\" reveal. A coworker sends it on a \"budget check 💲\" coded message. The currency-S cue is what makes the emoji feel price-tag-coded — it is not just \"dollar,\" it is \"currency-coded cost moment.\"\n\nWhat separates 💲 (dollar-sign) from the rest of the currency family is the lean cost register. The emoji is not saying \"bold flex\" (heavy-dollar-sign-emoji), \"banknote\" (💵), or \"winged bill\" (💸). It is saying \"currency-S-coded price tag,\" which carries a specific cost-tag tradition. That is why 💲 travels especially well on partner \"that is pricey\" check-ins, family budget messages, and any context where the sender wants the message to land with price-tag-coded energy.",
-    "howPeopleUseIt": "💲 shows up as the closer on a \"that is pricey tonight 💲\" partner message (\"that is pricey tonight 💲\"), the punctuation on a \"too expensive 💲\" cost reveal (\"too expensive 💲\"), and the softener on a \"budget check 💲\" team check-in. It pairs naturally with sentences that name the currency-S-coded energy — \"that is pricey,\" \"too expensive,\" \"budget check\" — and sits beautifully on partner check-ins and family budget moments.\n\nIn group chats 💲 anchors \"price tag\" threads, cost reveals, and \"mood 💲\" reveals where the currency-S cue matches the register. On Instagram it lands on price-tag-coded story reposts and money photo posts. On TikTok it travels in cost transitions and \"that is pricey\" reveals.\n\nThe emoji also works in dating contexts. A \"that is pricey tonight 💲\" partner message uses the currency-S cue to communicate cost-coded romance. Across all of these surfaces the rule is the same: the more price-tag the moment, the more natural 💲 feels.",
-    "whenNotToUse": "Skip 💲 in sympathy, condolence, or break-up contexts. The currency-S-coded cost cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 💲 in free or no-cost contexts where the price-tag energy feels off. A \"too expensive 💲\" message works for cost reveal; for free contexts use 🎉 or a sentence.\n\nSkip 💲 when you want to communicate serious affection. The cost register is too currency-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 💲, the cleanest mirror is another 💲, 💵, or a sentence that joins the price-tag-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: \"too expensive right back\" or \"that is pricey too.\" If the currency-S cue feels too cost-coded, reply with a softer emoji (💵 or ❤️) that signals care without matching the price volume.\n\nWhen 💲 lands as a partner \"that is pricey\" check-in, mirror with another 💲, a heart emoji, or a sentence that escalates the romance. When it arrives as a \"budget check 💲\" coded message, mirror with another 💲, a sentence that joins the cost energy, or a heart emoji that matches.",
+    "overview": "💲 is the heavy dollar sign, and its most common job is to close a sentence by putting money at the center of it. People attach it to prices, bills, deposits, quotes, and unexpected expenses: “that table is $80 💲,” “rent was $1,850 💲,” or “the invoice came to $900 💲.” Sometimes it simply identifies the dollar amount; sometimes it adds a little disbelief about how much something costs.\n\nThe emoji arrived in Unicode 6.0 in 2010 with 💰, 💵, 💸, and 💳, a group drawn for banking and finance apps. What distinguishes 💲 is its plain currency-symbol form. It does not show a bag of cash like 💰, a banknote like 💵, or money flying away like 💸. It also does not show the direction of a transaction, which can make “that cost me $40 💲” and “you owe me $40 💲” depend entirely on the words around it.\n\nThat makes 💲 more flexible than the neighboring money emoji but also easier to misread. It can underline a real charge, complain about an extravagant price, or close a sentence whose meaning was already clear. The symbol itself is not flirting, approving, or hostile; the sentence determines which of those it becomes.",
+    "howPeopleUseIt": "💲 usually appears at the end of a sentence rather than standing by itself. A text about rent, dinner, shopping, repairs, or a new quote gets a dollar sign after the total, making the number the final point. “Groceries were $112 💲” reports a cost, while “that rooftop brunch is $75 a person 💲” sounds like price shock.\n\nIt also works when people want to joke about an expensive purchase without writing a complaint. The number establishes the absurdity; the emoji frames it as a reaction. In a group chat, someone might send “the concert upgrade was $180 💲” to make everyone focus on the price. Because 💲 does not indicate whether money is incoming or outgoing, people usually add a verb such as “spent,” “paid,” or “cost” when the distinction matters.",
+    "whenNotToUse": "Avoid 💲 when the amount needs to be unmistakable, especially in an invoice dispute, payment request, or contract discussion. A symbol that can be used for both paying and being paid may leave the direction of the money unclear, and a joking use can make a genuine disagreement sound sarcastic. Write the amount and transaction direction plainly there.\n\nIt can also feel overly casual in conversations with someone who may take money talk literally, including landlords, clients, or older relatives. A symbol attached to an alarming bill may sound like the sender is minimizing the problem. If the point is simply that the cost is high, a clear sentence such as “that was more expensive than I expected” is less likely to create friction than relying on 💲 alone.",
+    "howToReply": "Match the use by responding to the number. If someone says “that jacket was $240 💲,” you can answer “that is painful” or ask whether they are keeping it. For a shared expense, say directly whether you will split it and how: “I can send my half tonight.” That preserves the money focus without forcing the other person to guess your intention.\n\nIf 💲 lands after your own price, quote, or expense, clarify when it matters. “That includes everything” or “the $500 total is still the best option I found” answers the implied concern more usefully than another emoji. If the recipient used it jokingly and seems disappointed, acknowledge the price before discussing alternatives. The sign can turn a number into a reaction, but the reply should still make your actual position clear.",
     "faqs": [
       {
         "question": "What does 💲 mean from a guy?",
-        "answer": "From a guy, 💲 signals price-tag-coded flex — \"that is pricey\" or \"too expensive.\" The currency-S cue reads as cost-coded rather than literal currency, so it tends to land on partner check-ins, family budget messages, and price-tag reveals."
+        "answer": "It usually means he is drawing attention to a price, cost, or payment. It is not by itself a romantic sign, though a surrounding sentence about who is paying can change the context."
       },
       {
         "question": "Is 💲 flirty?",
-        "answer": "It can be. In a partner context 💲 can read as soft-coded romance — \"that is pricey tonight 💲\" is a cost-coded check-in. On its own the emoji is more price-tag than romantic."
+        "answer": "No. 💲 normally marks money, often with surprise or annoyance at the amount. A flirty message using it might be about treating someone to dinner, but the emoji is emphasizing the cost rather than the romance."
       },
       {
-        "question": "What is the difference between 💲 (dollar-sign) and 💲 (heavy-dollar-sign-emoji)?",
-        "answer": "💲 (heavy-dollar-sign-emoji) is the bold heavy dollar — the cue is bold-S-coded flex, the 'chasing the bag' thick-stack energy. 💲 (dollar-sign) is the classic dollar — the cue is currency-S-coded price tag, the 'too expensive' cost-tag energy. Use the heavy version when the moment is bold-flex; use the classic when the moment is price-tag-coded."
+        "question": "What does 💲 mean on TikTok?",
+        "answer": "It often reacts to an expensive item, meal, trip, or purchase. In comments, it usually points out the price and adds disbelief, especially when the amount seems excessive."
       },
       {
-        "question": "Is 💲 for \"too expensive\" moments?",
-        "answer": "Yes — 💲 is one of the most common cost-coded money emojis. The currency-S cue is a natural fit for \"too expensive\" moments, price reveals, and partner \"that is pricey\" check-ins."
-      },
-      {
-        "question": "Does 💲 mean pricey?",
-        "answer": "Often yes — 💲 carries the classic-glyph visual and reads in modern usage as price-tag-coded. The literal-currency-versus-cost split depends on the sender and the channel."
+        "question": "Does 💲 mean money went away?",
+        "answer": "Not necessarily. The heavy dollar sign identifies money but does not show movement, so it can refer to money spent, money owed, or a price being quoted. Read the sentence around it."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "that is pricey tonight, full currency-S romance 💲",
-      "interpretation": "Partner cost-coded romance. Mirror with another 💲, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the price-tag flex 💲",
-      "interpretation": "Public cost-coded reveal. Mirror with another 💲, a sentence that joins the price-tag energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "too expensive for the family, full currency-S energy 💲",
-      "interpretation": "Family price-tag-coded reveal. Mirror with another 💲, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "that dinner was $96 💲 want to split it?",
+      "interpretation": "He is noting the bill and directly asking whether to divide it. Reply with your preferred split or say you will cover it."
     },
     {
       "setting": "friends",
-      "message": "that is pricey today, full cost-tag energy 💲",
-      "interpretation": "Friend price reveal. Mirror with another 💲, a sentence that joins the cost energy, or a heart emoji that matches."
+      "message": "the rooftop table is $75 per person 💲",
+      "interpretation": "He is reacting to an expensive menu and may be checking whether the group still wants to book it. Ask for the total bill or suggest somewhere cheaper."
     },
     {
       "setting": "work",
-      "message": "budget check at work today, full currency-S energy 💲",
-      "interpretation": "Work price-tag-coded moment. Mirror with another 💲, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "we can do it, but that changes the quote to $4,000 💲",
+      "interpretation": "He is clearly flagging the new cost rather than joking. Confirm the revised budget and what work is included before approving it."
+    },
+    {
+      "setting": "family",
+      "message": "the car repair came to $840 💲",
+      "interpretation": "He is sharing the expense and probably wants help processing the shock. Ask what repairs were needed before discussing who pays."
+    },
+    {
+      "setting": "social",
+      "message": "we accidentally booked the $2,000 suite 💲",
+      "interpretation": "The emoji expresses disbelief at the mistake or the price. Respond with humor, then confirm whether the booking should be cancelled or kept."
     }
   ]
 }

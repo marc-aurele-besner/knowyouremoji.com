@@ -8,124 +8,136 @@
   "subcategory": "face-negative",
   "unicodeVersion": "6.0",
   "baseMeaning": "Pouting red face signaling real anger or rage.",
-  "tldr": "Rage-coded pout, 'I am genuinely mad' register, or heated-coded boundary moment.",
+  "tldr": "😡 signals hot anger, especially when a specific action has genuinely upset you.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "An enraged red face signaling genuine anger or fury.",
-      "example": "I am so done with this 😡",
+      "meaning": "😡 directly shows that you are angry about something that happened, rather than merely irritated by a small inconvenience.",
+      "example": "why did you cancel on me again 😡",
       "riskLevel": "LOW"
     },
     {
-      "context": "SLANG",
-      "meaning": "Rage-coded pout used to vent a real injustice or hot-take.",
-      "example": "they cut my favorite show, criminal 😡",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "😡 can underline a warning or a firm boundary, making the message feel more pointed than the words alone.",
+      "example": "this is the last time I'm asking 😡",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "DATING",
-      "meaning": "Heated-coded partner boundary or 'genuinely mad at you' moment.",
-      "example": "you forgot the anniversary, actually 😡",
+      "meaning": "In a date conversation, 😡 works best for genuine irritation, but sending it over something small can make the reaction feel disproportionate.",
+      "example": "they're charging us for a table we didn't reserve 😡",
       "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Professional boundary moment or 'I need this addressed' energy.",
-      "example": "this is the third time, actually 😡",
-      "riskLevel": "MEDIUM"
+      "meaning": "In work communication, 😡 can make the sender look heated or unprofessional, even when the complaint itself is justified.",
+      "example": "this approval has been pending for three days 😡",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors rage-coded quote-tweets, fandom-cancellation threads, and hot-take vents where the pout cue reads as genuine fury rather than low-stakes ire."
+      "platform": "IMESSAGE",
+      "note": "😡 works naturally in close friend and family conversations on iMessage, where hot anger can land as an honest reaction. It is less suitable for customer-facing messages or workplace threads."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on heated-coded story reposts, angry captions, and 'mood 😡' reveals where the rage cue reads as performative or boundary-coded charm."
+      "note": "In Instagram direct messages, 😡 is a reasonable way to show anger about something specific. It can feel more dramatic than the situation warrants, especially in conversations with people you do not know well."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Travels in rage-coded transitions, fandom-reaction content, and 'actually mad' reveals where the pout cue signals real heat rather than playful ire."
+      "platform": "WHATSAPP",
+      "note": "😡 appears in cross-generation family groups and international friend conversations on WhatsApp. The broader audience can make the red-faced anger feel harsher than it does in a private close-relationship chat."
     },
     {
-      "platform": "DISCORD",
-      "note": "Surfaces on partner boundary moments, server-mod disputes, and group chats where the pout cue matches the moment of genuinely held ground."
+      "platform": "SLACK",
+      "note": "In Slack, 😡 may suggest that the sender is losing their composure, especially when directed toward a coworker or manager. A clear description of the problem is usually more effective than relying on the emoji to carry the anger."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 😡 on fandom cancellation threads, genuinely-felt hot-takes, and 'actually mad' reveals where the pout cue matches the modern real-fury register."
+      "note": "Gen Z commonly reaches for 💢, 😤, or 🤬 when showing frustration or rage. 😡 can still work as a direct expression of anger, but it may feel less like the usual choice."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the pouting face on partner boundary moments, work-frustration vents, and family group-chat reactions where the rage cue feels held."
+      "note": "Millennials often use 😡 as their standard emoji for hot anger about a specific event. It reads as more heated than 😠 and more direct than the cartoon huff of 😤."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on heated-coded messages and family reveals, treating the pouting face as a literal 'I am genuinely mad' energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal enraged face and sends it on family and grandchild-coded messages without parsing the modern 'actually mad' subtext."
+      "note": "Gen X tends to reach for 😠 for ordinary annoyance. 😡 is the louder alternative, so it can make a message sound angrier than the sender intends."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Too much for a casual friendship",
+      "description": "In a mid-tier friendship, hot anger can seem disproportionate and make the sender look like they have escalated too quickly. Use 😠 for ordinary annoyance, or add a sentence that explains the problem.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Looks unprofessional at work",
+      "description": "The red face can make a Slack message or customer-facing reply look like the sender has lost their composure. Describe the issue directly instead of sending 😡 alone.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "😡 Pouting Face Emoji Meaning - What Does 😡 Really Mean?",
-  "seoDescription": "Learn what the Pouting Face emoji 😡 really means in texts and DMs. Rage-coded pout, 'I am genuinely mad' register, or heated-coded boundary moment.",
+  "seoTitle": "😡 Pouting Face Emoji Meaning",
+  "seoDescription": "What does 😡 mean? It signals hot anger or a firm boundary about a specific offense, and can feel unprofessional or threatening in work messages.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "😡 is the emoji of rage-coded pout — the red-faced fury that signals 'I am genuinely mad' without softening into low-stakes heat. Where 😠 reads as frustration-coded ire and 🤬 reads as swearing-coded expletive, 😡 captures the moment when the sender wants to communicate real boundary — a 'you forgot the anniversary, actually 😡' partner moment or a 'this is the third time, actually 😡' work boundary. The red-coded pout borrows from the universal rage tradition and the modern real-fury aesthetic, which is exactly why the emoji reads as held ground rather than playful ire.\n\nIn real-world usage 😡 lives in the spaces where the sender wants to communicate held-coded anger. A partner sends it on a 'you forgot the anniversary, actually 😡' boundary. A fan sends it on a 'they cut my favorite show, criminal 😡' cancellation. A coworker sends it on a 'this is the third time, actually 😡' work boundary. The red-coded pout is what makes the emoji feel real — it is not just 'angry,' it is 'enraged enough to mean it.'\n\nWhat separates 😡 from the rest of the smileys-emotion-emoji family is the held-ground register. The emoji is not saying 'low-stakes ire' (😠), 'swearing expletive' (🤬), or 'weary exhaustion' (😩). It is saying 'rage-coded pout,' which carries a specific boundary-coded charm. That is why 😡 travels especially well on partner 'actually mad' moments, fandom-coded cancellation vents, and any context where the sender wants the message to land with held-ground energy.",
-    "howPeopleUseIt": "😡 shows up as the closer on a 'you forgot the anniversary, actually 😡' partner boundary, the punctuation on a 'they cut my favorite show, criminal 😡' fandom vent, and the softener on a 'this is the third time, actually 😡' work boundary. It pairs naturally with sentences that name the rage-coded pout — 'actually,' 'criminal,' 'this is the third time' — and sits beautifully on partner 'genuinely mad' moments and fandom-coded cancellation threads.\n\nIn group chats 😡 anchors 'boundary appreciation' threads, rage-coded moments, and 'mood 😡' reveals where the pout cue matches the moment. On Instagram it lands on heated-coded story reposts and angry captions. On TikTok it travels in rage-coded transitions and fandom-reaction content.\n\nThe emoji also works in dating contexts. A 'you forgot the anniversary, actually 😡' partner boundary uses the red-coded pout to communicate held ground. Across all of these surfaces the rule is the same: the more genuinely-felt the rage, the more natural 😡 feels.",
-    "whenNotToUse": "Skip 😡 in sympathy, condolence, or break-up contexts. The rage-coded pout cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 😡 when you want to communicate playful heat. The held-ground register is too real for soft moments; use 😠 when the ire needs to read as low-stakes rather than genuinely felt.",
-    "howToReply": "If someone sends 😡, the cleanest mirror is another 😡, 🤬, or a sentence that joins the rage-coded energy. If you want to de-escalate, follow with a sentence that acknowledges the boundary: 'you are right' or 'I hear you.' If the pout cue feels too real, reply with a softer emoji (😔 or ❤️) that signals care without matching the rage volume.\n\nWhen 😡 lands as a partner 'genuinely mad' boundary, mirror with acknowledgment: 'I hear you,' a heart emoji, or a sentence that owns the moment. When it arrives as a 'they cut my favorite show, criminal 😡' fandom vent, mirror with another 😡, a sentence that joins the fandom rage, or a heart emoji that matches.",
+    "overview": "😡 is the red-faced pouting face, and it is meant to show genuine anger rather than a passing annoyance. The flushed color, downturned mouth, and flared nostrils make it look hotter than 😠, whose usual job is to say “I’m annoyed.” That difference matters: 😡 usually appears after a specific betrayal, insult, family dispute, or repeated failure. It is not usually the emoji someone reaches for because a typo or minor delay made their day slightly harder.\n\nAs a bare reaction, 😡 says, “I am heated about this.” In a close friendship or family thread, it can be an honest emotional marker that saves the sender from writing several sentences. In a work thread or a more distant relationship, the same face can look like the sender is making a threat or losing control. The shape of the face is not enough to decide whether it lands well; the relationship and the stakes behind the message decide that.",
+    "howPeopleUseIt": "The prompt for 😡 is usually a concrete event that crossed a line: a friend betrayed a confidence, a relative said something outrageous, or an argument has finally reached a stopping point. It often appears after a short sentence—“I can’t believe they did that 😡” or “this is the last time 😡”—so the emoji intensifies the meaning rather than carrying it alone. A single 😡 can close the beat when the anger is obvious.\n\nIn close relationships, people use it to make the recipient feel the heat of what happened and, sometimes, to mark a boundary. It is also common with specific frustration: “this has been waiting for an hour 😡.” The distinction from 😠 is important: 😠 handles a typo, a small inconvenience, or a mildly irritating message, while 😡 signals that the sender is actively angry.",
+    "whenNotToUse": "Skip 😡 when the problem is only mild annoyance. A coworker sends an imperfect message, a restaurant gets the order wrong once, or a friend says something mildly irritating: 😠 usually communicates that without making the reaction sound explosive. If the sender wants the recipient to understand the severity, add a plain sentence instead of relying on the red face alone.\n\nAlso be careful with 😡 around coworkers, customers, managers, and mid-tier friends. In those settings it can look unprofessional, theatrical, or threatening, especially when paired with “this is the last time.” Close friends and family are more likely to understand the anger, but even there the emoji should match the actual event. When the issue needs a solution rather than an emotional burst, describe what went wrong and what you want to happen next.",
+    "howToReply": "If the anger is genuine and the relationship is close, match it with a specific acknowledgment: “No, that was messed up” or “I’m still angry, but I’m listening.” If the sender wants a boundary, treat it seriously and say whether you understand it. Mirroring with 😡 can make the exchange hotter, so use another angry emoji only when that is genuinely how you feel.\n\nIf 😡 lands badly, ask directly whether they are upset or whether something came out stronger than intended. That is especially useful after a work message or a reaction in a looser friendship. If the emoji arrived with your content, do not treat it as a joke: acknowledge the issue, explain your intention if it was unclear, and offer to fix it. A calm sentence will usually do more than another face emoji.",
     "faqs": [
       {
         "question": "What does 😡 mean from a guy?",
-        "answer": "From a guy, 😡 signals rage-coded pout — 'I am genuinely mad' or 'actually.' The red-coded pout cue reads as held ground rather than low-stakes ire, so it tends to land on partner boundary moments, fandom-coded cancellation vents, and real-fury reveals."
+        "answer": "😡 normally means the sender is genuinely angry about what happened; the sender’s gender does not change its basic meaning. In a romantic context, check the surrounding words because the emoji can show frustration without the whole relationship being in danger."
       },
       {
         "question": "Is 😡 flirty?",
-        "answer": "Rarely. In a partner context 😡 is more boundary than flirt — 'you forgot the anniversary, actually 😡' is a held-ground check-in. On its own the emoji is more rage-coded than romantic."
+        "answer": "😡 is usually not flirty on its own. It most often signals hot anger, though a playful conversation can soften the reaction, so the words around it matter."
       },
       {
-        "question": "What is the difference between 😡 and 😠?",
-        "answer": "😠 is the angry face — the cue is frustration-coded ire, the 'this grinds my gears' low-stakes heat-coded energy. 😡 is the pouting face — the cue is rage-coded pout, the 'I am genuinely mad' held-ground boundary-coded charm. Use 😠 when the moment is low-stakes; use 😡 when the moment is real."
+        "question": "What does 😡 mean on TikTok?",
+        "answer": "In a TikTok comment or direct message, 😡 usually means hot anger or a strong reaction to something that happened. It can look overly intense in a public comment when the issue is only minor annoyance."
       },
       {
-        "question": "Is 😡 for boundary moments?",
-        "answer": "Yes — 😡 is one of the most common held-ground emojis. The red-coded pout cue is a natural fit for 'actually mad' moments, rage-coded reveals, and partner 'genuinely mad' boundaries where the sender wants to communicate real boundary."
+        "question": "What is the difference between 😠 and 😡?",
+        "answer": "😠 communicates mild annoyance, while 😡 communicates hotter, more active anger. If a typo or small inconvenience bothers you, 😠 is usually enough; 😡 fits a serious event or a clear boundary."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "you forgot the anniversary, actually 😡",
-      "interpretation": "Partner held-ground boundary. Mirror with acknowledgment: 'I hear you,' a heart emoji, or a sentence that owns the moment."
-    },
-    {
-      "setting": "social",
-      "message": "they cut my favorite show, criminal 😡",
-      "interpretation": "Fandom rage-coded vent. Mirror with another 😡, a sentence that joins the fandom rage, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "they moved the holiday, actually 😡",
-      "interpretation": "Family rage-coded reveal. Mirror with another 😡, a sentence that joins the family boundary, or a heart emoji that matches."
+      "message": "they made us wait at the host stand for twenty minutes 😡",
+      "interpretation": "The sender is irritated about a specific delay, not necessarily about the date itself. Respond by acknowledging the annoyance and asking what happened next.",
+      "riskLevel": "MEDIUM"
     },
     {
       "setting": "friends",
-      "message": "they canceled the show, criminal 😡",
-      "interpretation": "Friend rage-coded vent. Mirror with another 😡, a sentence that joins the fandom ire, or a heart emoji that matches."
+      "message": "you actually told everyone what i said 😡",
+      "interpretation": "This is hot anger after a betrayal of trust. Acknowledge the breach and give the sender room to explain; do not answer with another angry emoji unless you are prepared for the anger to escalate.",
+      "riskLevel": "LOW"
+    },
+    {
+      "setting": "family",
+      "message": "the absolute nerve of bringing that up in front of everyone 😡",
+      "interpretation": "The sender is angry about a family confrontation and wants the other person to understand how serious it felt. A calm response that recognizes the disrespect is safer than matching the heat.",
+      "riskLevel": "MEDIUM"
     },
     {
       "setting": "work",
-      "message": "this is the third time, actually 😡",
-      "interpretation": "Work held-ground moment. Mirror with acknowledgment, a sentence that owns the boundary, or a heart emoji that matches."
+      "message": "this request has been sitting in the queue since friday 😡",
+      "interpretation": "The sender is frustrated about a delayed request. In a work channel, remove the emoji and specify the delay and the next step so the message stays firm without seeming unprofessional.",
+      "riskLevel": "HIGH"
+    },
+    {
+      "setting": "social",
+      "message": "after everything i did for this group, this is what i get 😡",
+      "interpretation": "The sender feels unappreciated after a conflict in a shared social space. Ask what happened and what outcome they want; another 😡 may only make the disagreement louder.",
+      "riskLevel": "MEDIUM"
     }
   ]
 }

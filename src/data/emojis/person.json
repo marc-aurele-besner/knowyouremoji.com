@@ -8,130 +8,143 @@
   "subcategory": "person",
   "unicodeVersion": "13.0",
   "baseMeaning": "A person, often depicted as a gender-neutral adult.",
-  "tldr": "Person-coded default, 'neutral adult' register, or gender-neutral-coded comfort.",
+  "tldr": "🧑 is a generic adult used to point to someone without specifying their gender, often as sentence-ending punctuation.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A person or adult.",
-      "example": "Saw a person 🧑",
+      "meaning": "🧑 stands for an adult person when the person's role or identity is already clear.",
+      "example": "the new hire is a 🧑",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Person-coded default or 'neutral adult' register.",
-      "example": "Neutral adult 🧑",
+      "meaning": "🧑 acts as a quick visual stand-in for an unnamed person, especially when placed after a description of what they did.",
+      "example": "some random 🧑 parked across two spaces",
+      "riskLevel": "LOW"
+    },
+    {
+      "context": "IRONIC",
+      "meaning": "🧑 can make an absurd or hypothetical person feel deliberately vague and impersonal.",
+      "example": "apparently a 🧑 wandered into the meeting uninvited",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Cozy-coded partner check-in or 'thinking of you' moment.",
-      "example": "Thinking of you 🧑",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "WORK",
-      "meaning": "Coworker-coded team energy or 'meeting them' moment.",
-      "example": "Meeting them 🧑",
-      "riskLevel": "LOW"
+      "meaning": "🧑 can point back at one partner playfully when the message is clearly about the two of you.",
+      "example": "so this 🧑 is just ignoring my good morning?",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors person-coded threads, 'neutral adult' replies, and 'mood 🧑' reveals where the person cue matches the default register."
+      "platform": "TIKTOK",
+      "note": "On TikTok, 🧑 often sits at the end of a caption as a reaction to the person or situation described. The surrounding video usually supplies the joke."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on default-coded story reposts, neutral-coded photo posts, and 'mood 🧑' reveals where the person cue reads as gender-neutral-coded comfort."
+      "note": "In Instagram captions or direct messages, 🧑 can label a stranger, a friend, or even the account owner. The generic figure may leave the subject intentionally unidentified."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Travels in person-coded transitions, 'thinking of you' reveals, and reaction-content where the person cue signals default-coded energy."
+      "platform": "WHATSAPP",
+      "note": "On WhatsApp, 🧑 frequently closes a family message about an absent, late, or surprising person. A follow-up sentence often makes clear which person was meant."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack, adding 🧑 to a workplace message can mean “the relevant person” or refer to someone mentioned separately. It can look vague without a name or channel."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'thinking of you' check-ins, family-coded default messages, and group chats where the person cue matches the moment."
+      "note": "In Discord chats, 🧑 works as a lightweight reaction to someone else's behavior or a shared screenshot. Its neutrality makes it useful when the sender does not want to name a person."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On Twitter, 🧑 can close a post about a person in a story, news item, or joke. It reads less like a statement about the sender and more like a pointer toward the subject."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🧑 heavily on person-coded threads, 'neutral adult' moments, and default-coded reveals where the person cue matches the gender-neutral register."
+      "note": "Gen Z may use 🧑 as a deliberately neutral way to describe a stranger or make a message feel less personal. Its humor often comes from leaving the person unspecified."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the person on partner 'thinking of you' check-ins, default-coded comfort moments, and family default messages where the universal adult cue fits."
+      "note": "Millennials may read 🧑 as a simple visual stand-in for another person, especially in messages about work, dating, or family plans."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on default-coded messages and family reveals, treating the person as literal adult energy."
+      "note": "Gen X may sometimes take 🧑 as a man because the figure can look broadly masculine in small sizes. That reading ignores the emoji's usual gender-neutral design."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal person and sends it on family and grandchild-coded messages without parsing the modern 'neutral adult' subtext."
+      "note": "Boomers may need the surrounding sentence to understand 🧑, since it can look like a generic silhouette rather than a familiar person. It may also be mistaken for a specific individual or gender."
     }
   ],
   "warnings": [
     {
-      "title": "Reads as vague-coded in specific contexts",
-      "description": "Sending 🧑 in partner or work contexts where specific identity is needed can read as vague-coded or unspecified-coded. Be aware of the personal-coded reading when sending about a specific person.",
+      "title": "Mistaking it for a man or woman",
+      "description": "Although the figure can look masculine or feminine at small sizes, 🧑 is normally used as a gender-neutral adult. Name the person or role instead if precision matters.",
       "severity": "LOW"
+    },
+    {
+      "title": "Leaving the subject unclear",
+      "description": "A lone 🧑 may give no clue which person you mean, especially in a busy chat. Add a name, role, or short description so the message does not create confusion.",
+      "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🧑 Person Emoji Meaning - What Does 🧑 Really Mean?",
-  "seoDescription": "Learn what the Person emoji 🧑 really means in texts and DMs. Person-coded default, 'neutral adult' register, or gender-neutral-coded comfort.",
+  "seoTitle": "🧑 Person Emoji Meaning",
+  "seoDescription": "What does 🧑 mean? It is a generic adult person, often used at the end of a sentence to point to someone without naming or specifying their gender.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🧑 is the emoji of person-coded default - a person, the iconography of 'neutral adult,' default-coded comfort, and 'thinking of you' register. Where 👨 reads as man-coded default and 👩 reads as woman-coded default, 🧑 captures the moment when the sender wants to communicate gender-neutral-coded intimacy - a 'thinking of you 🧑' partner moment or a 'neutral adult 🧑' default reveal. The person cue borrows from the universal adult tradition and the modern 'neutral adult' aesthetic, which is exactly why the emoji reads as gender-neutral-coded rather than literal adult.\n\nIn real-world usage 🧑 lives in the spaces where the sender wants to communicate default-coded comfort. A partner sends it on a 'thinking of you 🧑' check-in. A friend sends it on a 'neutral adult 🧑' reveal. A coworker sends it on a 'meeting them 🧑' work message. The person cue is what makes the emoji feel gender-neutral-coded - it is not just 'person,' it is 'person-coded neutral-adult.'\n\nWhat separates 🧑 from the rest of the people-emoji family is the neutral-adult register. The emoji is not saying 'man default' (👨), 'woman default' (👩), or 'kid play' (🧒). It is saying 'person-coded default,' which carries a specific gender-neutral-coded charm. That is why 🧑 travels especially well on partner 'thinking of you' check-ins, family default messages, and any context where the sender wants the message to land with default-coded comfort.",
-    "howPeopleUseIt": "🧑 shows up as the closer on a 'thinking of you tonight' partner message ('thinking of you tonight 🧑'), the punctuation on a 'neutral adult 🧑' default-coded reveal ('neutral adult 🧑'), and the softener on a 'meeting them 🧑' team check-in. It pairs naturally with sentences that name the person-coded default - 'thinking of you,' 'neutral adult,' 'meeting them' - and sits beautifully on partner 'thinking of you' check-ins and family default messages.\n\nIn group chats 🧑 anchors 'person appreciation' threads, default-coded moments, and 'mood 🧑' reveals where the person cue matches the moment. On Instagram it lands on default-coded story reposts and neutral-coded photo posts. On TikTok it travels in person-coded transitions and 'mood 🧑' reveals.\n\nThe emoji also works in dating contexts. A 'thinking of you tonight 🧑' partner message uses the person cue to communicate default-coded romance. Across all of these surfaces the rule is the same: the more default-coded the comfort, the more natural 🧑 feels.",
-    "whenNotToUse": "Skip 🧑 in sympathy, condolence, or break-up contexts. The person-coded default cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid 🧑 in partner or work contexts where specific identity is needed - the vague-coded register can land as unspecified-coded. Stick to a specific gendered emoji or a clearer message when sending about a specific person.\n\nSkip 🧑 when you want to communicate specific identity. The default-coded register is too neutral for explicit identity moments; use specific identity pronouns or a clearer message when the moment is identity-specific.",
-    "howToReply": "If someone sends 🧑, the cleanest mirror is another 🧑, 👨, or a sentence that joins the default-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'thinking of you right back' or 'neutral adult too.' If the person cue feels too default-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the default volume.\n\nWhen 🧑 lands as a partner 'thinking of you' check-in, mirror with another 🧑, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'neutral adult 🧑' default reveal, mirror with another 🧑, a sentence that joins the default energy, or a heart emoji that matches.",
+    "overview": "🧑 is a generic human figure, usually shown as an adult without a clearly specified gender. Its main usefulness is simple: it can stand in for a person whose name, role, or gender does not matter. Placed at the end of a sentence, it often works like a visual period. “The neighbor returned the package 🧑” points to the neighbor without requiring another noun.\n\nThe emoji is less specific than 👨, 👩, 👦, 👧, or 👶 because it does not intentionally identify an adult as a man or woman and does not depict a child. That makes 🧑 useful for stories, jokes, reactions, and messages about an unspecified person. People often use it to keep the focus on an action—“some random 🧑 left the store unlocked”—rather than on the person's identity. The common mistake is to treat it as a stronger statement than it is. It normally identifies the subject of a sentence; it does not automatically carry a mood, accusation, joke, or sign that the sender means the recipient.",
+    "howPeopleUseIt": "🧑 shows up most often after a sentence about someone: “the landlord never answered 🧑,” “my cousin chose the loudest restaurant 🧑,” or “that 🧑 is standing outside my door.” In chats, it can compress the subject into a picture, especially when the point is the person's behavior rather than their identity. It can also label a stranger in a story without deciding whether to call them a man, woman, or anything else.\n\nAt the end of a message, 🧑 often acts like punctuation. “Guess who showed up 🧑” leaves the joke hanging and invites a response. In work messages, it may refer to a teammate whose name was given earlier. In dating or family messages, it can point back at a partner or relative. Its meaning depends almost entirely on the sentence before it.",
+    "whenNotToUse": "Do not use 🧑 when the person's identity matters and the reader may not know whom you mean. “Tell the 🧑 to call” is too vague in a group chat, a workplace thread, or a message involving several people. Add a name, job title, or relationship instead.\n\nThe emoji may also be misread as a man, particularly where the small figure looks masculine. If gender is relevant to the story, use 👨 or 👩 deliberately rather than relying on 🧑 and hoping the meaning is obvious. Avoid it in highly formal or sensitive exchanges where a generic silhouette could look impersonal. A written name is clearer when discussing performance, responsibility, money, or personal circumstances.",
+    "howToReply": "Reply according to the sentence, not the emoji alone. If someone writes “some stranger followed me home 🧑,” ask what happened or send a concerned response such as “Are you safe?” If the message is a joke, match its vagueness with something like “that person had one job 🧑” or ask which person they mean. Adding your own 🧑 can keep the tone light without changing the subject.\n\nIf 🧑 lands on your own story, treat it as a pointer rather than a verdict: the sender is drawing attention to the person described. If you need clarity, say “which person did you mean?” If you used 🧑 to make a serious point, follow up with the name or role so nobody has to guess what you meant.",
     "faqs": [
       {
-        "question": "What does 🧑 mean from a guy?",
-        "answer": "From a guy, 🧑 signals person-coded default - 'neutral adult' or 'thinking of you.' The person cue reads as gender-neutral-coded rather than literal adult, so it tends to land on partner 'thinking of you' check-ins, family default messages, and default-coded reveals."
+        "question": "What does 🧑 mean at the end of a sentence?",
+        "answer": "It usually points to the person described in the sentence. It can also work as a visual full stop, especially when the story or joke is meant to end there."
+      },
+      {
+        "question": "Does 🧑 mean a specific person?",
+        "answer": "Only if the surrounding message makes that person clear. On its own, 🧑 means a generic adult and leaves the identity unspecified."
       },
       {
         "question": "Is 🧑 flirty?",
-        "answer": "It can be. In a partner context 🧑 can read as default-coded romance - 'thinking of you tonight 🧑' is a soft-coded romantic check-in. On its own the emoji is more default-coded than romantic."
+        "answer": "The emoji itself is not inherently flirty. It becomes flirty when the sentence points at a partner, such as “so this 🧑 is ignoring my texts?”"
       },
       {
-        "question": "What is the difference between 🧑 and 👨?",
-        "answer": "👨 is the man - the cue is man-coded default, the 'guy reply' man-specific default charm. 🧑 is the person - the cue is person-coded default, the 'neutral adult' gender-neutral default energy. Use 👨 when the moment is man-specific; use 🧑 when the moment is gender-neutral."
-      },
-      {
-        "question": "Is 🧑 for 'neutral adult' moments?",
-        "answer": "Yes - 🧑 is one of the most common default-coded emojis. The person cue is a natural fit for 'neutral adult' moments, gender-neutral-coded reveals, and partner 'thinking of you' check-ins."
+        "question": "What does 🧑 mean on TikTok?",
+        "answer": "On TikTok, it commonly closes a caption about an unnamed person and reacts to what that person did. The video or caption provides the actual joke or story."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "thinking of you tonight, full person romance 🧑",
-      "interpretation": "Partner default-coded romance. Mirror with another 🧑, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the neutral adult 🧑",
-      "interpretation": "Public person appreciation. Mirror with another 🧑, a sentence that joins the default energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "meeting them with the family, full person mode 🧑",
-      "interpretation": "Family default-coded reveal. Mirror with another 🧑, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "apparently this 🧑 decided sleeping through my good morning was acceptable",
+      "interpretation": "The sender is playfully complaining about their partner. Reply in the same teasing tone or ask whether they want reassurance instead."
     },
     {
       "setting": "friends",
-      "message": "neutral adult today, full default energy 🧑",
-      "interpretation": "Friend default-coded reveal. Mirror with another 🧑, a sentence that joins the default energy, or a heart emoji that matches."
+      "message": "some random 🧑 knocked over my drink and kept walking",
+      "interpretation": "The sender is recounting an annoying stranger. React to the situation or ask what happened; there is no need to guess who the person is."
     },
     {
       "setting": "work",
-      "message": "meeting them today, full person mode 🧑",
-      "interpretation": "Work coworker-coded moment. Mirror with another 🧑, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "the contractor who installed the new system left without explaining the setup 🧑",
+      "interpretation": "The contractor mentioned earlier is being blamed for leaving the work incomplete. A direct question about the missing instructions is more useful than another emoji."
+    },
+    {
+      "setting": "family",
+      "message": "uncle bob says he's coming to dinner 🧑",
+      "interpretation": "This identifies the relative the message is about and may carry amused dread about the visit. Respond with a joke or ask whether the sender needs help preparing."
+    },
+    {
+      "setting": "social",
+      "message": "that story sounds like it happened to one extremely unlucky 🧑",
+      "interpretation": "The sender is describing a person in a story without identifying them. A brief reaction or a follow-up question about the incident fits naturally."
     }
   ]
 }

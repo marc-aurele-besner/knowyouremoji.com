@@ -8,124 +8,131 @@
   "subcategory": "food-prepared",
   "unicodeVersion": "6.0",
   "baseMeaning": "Bento Box emoji.",
-  "tldr": "Bento!",
+  "tldr": "🍱 signals a cared-for meal: home cooking, comfort, and thoughtful care, especially for someone close.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents Bento Box.",
-      "example": "Look at this 🍱",
+      "meaning": "It refers to an actual bento, usually a packed meal of rice, vegetables, and small portions.",
+      "example": "packed a bento for lunch today 🍱",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Japanese lunch box.",
-      "example": "Feeling 🍱",
+      "meaning": "It stands in for home-cooked comfort and the wish that someone eats and feels looked after.",
+      "example": "made you something warm, now eat 🍱",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Ironic usage.",
-      "example": "Mood 🍱",
+      "context": "DATING",
+      "meaning": "It can communicate intimate, thoughtful care, especially when the meal was made by the sender.",
+      "example": "i’ll make you a bento after work 🍱",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes 🍱",
-      "riskLevel": "LOW"
+      "meaning": "In a casual work chat it can suggest a shared lunch, but it may make the sender seem overly playful or caring.",
+      "example": "team lunch is at 12:30, bento orders in 🍱",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
-      "platform": "INSTAGRAM",
-      "note": "Sticker on Japanese-aesthetic captions and bento-coded story overlays; the rectangular-bento fits adult-coded Japanese-comfort content."
+      "platform": "IMESSAGE",
+      "note": "On iMessage, 🍱 appears in Apple’s full-color emoji design, so the boxed meal is immediately visible. In a private thread, it retains its warm, cared-for feeling without requiring much explanation."
     },
     {
-      "platform": "TWITTER",
-      "note": "Reply to bento-coded and Japanese-comfort tweets; reads as the universal bento-box default across adult-coded audiences."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp uses its own emoji set, which is relatively close to Apple’s. Family groups often choose 🍱 or 🍲 instead of 🍕 because older recipients recognize home cooking more easily than fast food."
+    },
+    {
+      "platform": "SLACK",
+      "note": "Slack renders its own emoji set, and its professional setting makes most food emoji look out of place. A bare 🍱 can age the sender, so it works best only in a relaxed team chat."
     },
     {
       "platform": "TIKTOK",
-      "note": "Comment-section reaction to bento-coded content; pairs with Japanese-comfort and 'packed lunch' clip reactions."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Server reaction to bento-coded content; the rectangular-bento is the default 'bento' tag in food-coded contexts."
+      "note": "On TikTok, 🍱 has no separate slang meaning of its own. Gen Z viewers generally understand it as lunch or a cared-for meal, although it is a less common choice than more familiar food emoji."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🍱 across casual chat and aesthetic-coded captions; the modern-coded read is the dominant one and the slang layer usually lands."
+      "note": "Gen Z recipients usually recognize 🍱 without explanation, though it is a less common choice in everyday chats. It can work as an understated food symbol or as part of a cute-care message such as 🍱✨."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reads 🍱 as familiar across platforms; the slang and modern-coded registers are well adopted in close-friends chats."
+      "note": "Millennials often expect a sentence alongside the emoji when a meal matters. A bare 🍱 may seem vague, while “I packed you lunch” makes the caring intention clear."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends 🍱 for both the literal and the modern-coded read; the visual cue works regardless of whether the slang layer is picked up."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Uses 🍱 either literally or with the modern-coded read; the visual cue carries the meaning even when the slang layer is missed."
+      "note": "Gen X recipients in family groups may take 🍱 as a straightforward home-cooking message, especially when an older relative has sent the meal. In a dating chat, its thoughtful care can also land clearly."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Too cute for a coworker chat",
+      "description": "🍱✨ can feel unprofessional when the audience is coworkers rather than close friends. Use a plain sentence about bringing lunch instead of adding the cute-care combination.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Expecting a fancy date",
+      "description": "🍱 communicates home-made care rather than an expensive night out, while 🍣 carries that premium date feeling. Use 🍣 when an elevated, intentional meal is the point of the invitation.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "🍱 Bento Box Emoji Meaning",
-  "seoDescription": "Learn what the Bento Box emoji 🍱 really means.",
+  "seoDescription": "What does 🍱 mean? It signals home-cooked comfort, caring for someone, and a thoughtful meal, with 🍱✨ adding a cute touch in close relationships.",
   "longForm": {
-    "overview": "The 🍱 Bento Box emoji was added in Unicode 6 (2010) and is drawn as a rectangular Japanese bento box with white rice, red meat, green vegetables, and yellow egg visible in separate compartments. The visual cue reads instantly as bento box, the visible-Japanese-comfort default, or the packed-lunch tag. By 2026 🍱 has become the go-to emoji for the bento-box-coded reaction, the visible-Japanese-comfort default, and the packed-lunch tag.\n\nIn modern chat 🍱 does very specific work. People send it as a literal bento-box reference, as the visible Japanese-comfort default, or as the packed-lunch tag. The rectangular-bento-with-compartments is the visual cue that the read is Japanese-comfort-coded. Writers should pick 🍱 when the read is bento-box or Japanese-comfort, and avoid it when the read is sushi-only — 🍣 fits better there.",
-    "howPeopleUseIt": "🍱 lands on a friend's 'packed lunch' message, in a work channel where someone is signing off with food-coded content, and in a dating-app DM where the sender is sending Japanese-comfort content. The rectangular-bento anchors the read.\n\nIn close-friends chats 🍱 reads as the universal Japanese-comfort default. On X the emoji punctuates bento-coded and Japanese-comfort tweets. The emoji pairs with 🍣 for the layered Japanese-comfort stack and with 🍙 for the layered rice-coded pair stack.",
-    "whenNotToUse": "Skip 🍱 in any context where the read is sushi-only — 🍣 fits better. Avoid 🍱 in work channels where the Japanese-comfort read lands as off-topic. Pick 🍕 when the read is comfort-coded without Japanese influence.",
-    "howToReply": "If a friend sends 🍱 on a Japanese-comfort message, mirror with another 🍱 or 🍣 to match the Japanese-comfort energy. The bento chain reads as solidarity.\n\nIf 🍱 lands as the packed-lunch default, reply with another 🍱 or 🍙. And if you want to send 🍱 yourself, pair it with the moment so the Japanese-comfort-coded read is clear.",
+    "overview": "🍱 is the emoji for a meal made with attention. It shows a boxed set of rice, vegetables, and small portions, but people usually send it for the feeling behind the food: someone feeding you, looking after you, or making an ordinary meal feel cared for. It sits closer to comfort than to a fancy night out.\n\nThe distinction matters when 🍱 and 🍣 appear beside each other. 🍱 suggests home cooking, tenderness, and the intimacy of feeding someone yourself, while 🍣 suggests an intentional date with more expense and polish. That does not make 🍱 less romantic; in an established relationship, making lunch for someone can feel more intimate than choosing a restaurant.\n\n🍱✨ sharpens the cute side of that message. It works well with someone close and can feel sugary in a coworker chat. Another common misread is treating 🍱 as merely a generic lunch symbol. For the recipient, it usually asks for a little emotional care, not just an update about what they ate.",
+    "howPeopleUseIt": "🍱 shows up when someone is taking care of another person: packing lunch, bringing food over, or offering comfort after a difficult day. The food matters less than the thought behind it. “I made this for you” and “eat something warm” can both become 🍱 without another sentence.\n\nIt also works as shorthand for an actual packed lunch, especially among family members and older WhatsApp users. Someone might send it after cooking, mention what is inside the box, or use it to propose sharing a meal. In close relationships, it often functions as a compact promise of nourishment rather than a full invitation to a restaurant.",
+    "whenNotToUse": "Skip 🍱 in a formal coworker or client channel. On Slack, even a harmless food emoji can make the sender look out of place, and 🍱✨ can read as overly cute rather than warm. A plain sentence—“I’ll bring lunch for everyone at 12:30”—is more professional. Use 🍣 instead if the point is an intentional, elevated date rather than homemade care.\n\nDo not use 🍱 as the entire response to someone having a hard time. The emoji can express concern, but a concrete offer matters more. Say that you will bring food, come over, or check in, then add 🍱 as a warm punctuation mark rather than a substitute for support.",
+    "howToReply": "If someone sends 🍱, match the caring tone instead of answering with only another food emoji. “I’ll bring you something warm,” “that sounds perfect,” or “save me a bite” all continue the meal-and-care exchange. When they have sent an actual bento photo, ask what is inside or offer something in return.\n\nIf 🍱 lands on something you shared, treat it as an invitation to take care of you. A simple “really? I’ll come by” answers the thought behind the emoji. If you were only joking about lunch and the response feels oddly intimate, clarify with “you really made that?” so the warmth does not outrun the situation.",
     "faqs": [
       {
-        "question": "What does 🍱 mean in text?",
-        "answer": "🍱 means bento box, Japanese-comfort default, or packed-lunch tag. The rectangular-bento-with-compartments is the visual cue that the read is Japanese-comfort-coded."
+        "question": "What does 🍱 mean from a guy?",
+        "answer": "Usually, it means he is thinking about your comfort or wants to feed you. It can be caring without being romantic, so the surrounding conversation matters more than the emoji alone."
       },
       {
         "question": "Is 🍱 flirty?",
-        "answer": "Sometimes. 🍱 reads as Japanese-comfort flirty in a dating thread combined with 'I will pack you a lunch' content. It is more food-coded than flirty-coded by itself."
+        "answer": "It can be, especially when he made the meal or is imagining spending time together. It also works between close friends and family members, where the same emoji means home-cooked comfort."
       },
       {
-        "question": "What does 🍱 mean from a guy?",
-        "answer": "From a guy or anyone, 🍱 carries the same Japanese-comfort read. There is no gendered meaning; the emoji works the same regardless."
+        "question": "What does 🍱✨ mean in a text?",
+        "answer": "The combination asks for a cute, caring meal and works well in dating or close-friend conversations. In a coworker chat, it can feel too playful or unprofessional."
       },
       {
-        "question": "What does 🍱 mean on Instagram?",
-        "answer": "On Instagram, 🍱 is the default sticker on Japanese-aesthetic-coded captions and bento-coded story overlays."
+        "question": "What should I send a sibling going through a hard time?",
+        "answer": "🍱 works because it carries warmth and caretaking. Pair it with a specific offer to show up or bring food; the concrete help will matter more than the emoji by itself."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "packed lunch 🍱",
-      "interpretation": "Friend Japanese-comfort share. Mirror with another 🍱 or 🍣 so the Japanese chain reads back."
-    },
-    {
       "setting": "dating",
-      "message": "let me pack you a bento 🍱",
-      "interpretation": "Dating-coded Japanese-comfort share. Mirror with 🍱 or 🍙 so the warm chain reads back."
+      "message": "i made you a little bento for after work 🍱",
+      "interpretation": "This is thoughtful, intimate care and may be a quiet invitation to spend time together. Respond warmly by thanking them and showing interest in what you made."
     },
     {
-      "setting": "social",
-      "message": "bento day 🍱",
-      "interpretation": "Public adult-coded bento share. Mirror with another 🍱 or 🍣 so the bento chain reads back."
-    },
-    {
-      "setting": "family",
-      "message": "bento tonight 🍱",
-      "interpretation": "Family-coded bento share. Mirror with 🍱 or 🍣 so the family-coded chain reads back."
+      "setting": "friends",
+      "message": "i’m bringing the good bento, you bring the blanket 🍱",
+      "interpretation": "The emoji turns a casual meal into a cozy plan built around comfort and looking after each other. Meet the energy by confirming the time or offering to bring a drink."
     },
     {
       "setting": "work",
-      "message": "team bento lunch 🍱",
-      "interpretation": "Work-coded bento share. Mirror with another sentence — 🍱 can land as off-topic in work channels."
+      "message": "team lunch is at 12:30, bento orders in 🍱",
+      "interpretation": "In a relaxed team chat, this proposes an informal shared lunch. In a more professional channel, use a plain sentence because the food emoji may make the message look out of place."
+    },
+    {
+      "setting": "family",
+      "message": "mom packed enough bento for the whole train ride 🍱",
+      "interpretation": "This carries home-cooking warmth and the familiar feeling of being looked after. Reply with thanks and maybe mention which side you want first."
+    },
+    {
+      "setting": "social",
+      "message": "friday bento club is officially happening 🍱",
+      "interpretation": "The playful post suggests a group lunch with an organized, cared-for feel. Respond with enthusiasm, ask where everyone is eating, or join with your own lunch picture."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-11-02"
 }

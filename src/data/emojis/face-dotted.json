@@ -8,120 +8,131 @@
   "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "14.0",
   "baseMeaning": "A face made of dotted lines, appearing faded or invisible.",
-  "tldr": "Feeling invisible, fading away, or dissociating.",
+  "tldr": "🫥 means the sender is fading out, becoming invisible, or leaving without a proper goodbye.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Feeling invisible or unnoticed.",
-      "example": "Everyone's ignoring my messages 🫥",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Dissociating or mentally checking out.",
-      "example": "In this meeting 🫥",
+      "meaning": "🫥 signals that the sender is deliberately disappearing from their previous life or current presence.",
+      "example": "new city, new me, old me 🫥",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Being ghosted or feeling ignored.",
-      "example": "Haven't heard from them in days 🫥",
-      "riskLevel": "LOW"
+      "meaning": "In dating chats, 🫥 can announce that the sender is no longer genuinely interested or available.",
+      "example": "i'm not really into this anymore 🫥",
+      "riskLevel": "MEDIUM"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Dramatically fading into the background.",
-      "example": "When they start talking about math 🫥",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "As a bare or nearly bare reply, 🫥 can express the sender's decision to stop participating in the conversation.",
+      "example": "🫥",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "WORK",
+      "meaning": "In a work thread, 🫥 can mark the sender's withdrawal from a discussion or project, though the ambiguity can cause trouble.",
+      "example": "i'm stepping away from this project now 🫥",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Used for feeling overlooked or dissociating."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "Popular in relatable 'invisible' content."
+      "note": "On Instagram, putting 🫥 alone in a bio or beside a place suggests that the person has erased an old version of themselves. In direct messages, it can close a conversation without a conventional goodbye."
     },
     {
       "platform": "TIKTOK",
-      "note": "Common in mental health and dissociation humor."
+      "note": "On TikTok, 🫥 can work as a comment announcing that the poster has left the topic or stepped away from the conversation. Younger users are more likely to understand its deliberate disappearance meaning."
     },
     {
-      "platform": "WHATSAPP",
-      "note": "Group-chat reaction to invisible-coded content; the dotted outline and flat expression are the default 'please don't notice me' tag among close-friends groups."
+      "platform": "SLACK",
+      "note": "In Slack, a lone 🫥 may look like a comment on whether the sender is still taking part in the channel. Because workplace messages need clearer handoffs, naming the change is usually less confusing."
+    },
+    {
+      "platform": "DISCORD",
+      "note": "On Discord, 🫥 can punctuate a server exchange about muting, leaving, or fading from a community. In a casual chat it may simply mirror another user's own disappearance joke."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Perfect for dissociation and feeling invisible."
+      "note": "Gen Z is the group most likely to use 🫥 as an explicit self-erasure emoji. Its dotted outline closely matches the language of quietly leaving without explaining."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Used when feeling overlooked."
+      "note": "Millennials may recognize 🫥, but younger users have adopted it more readily because it arrived in Unicode 14.0. It can still read as an intentional goodbye rather than a literal disappearance."
     },
     {
-      "generation": "BOOMER",
-      "note": "May not understand the dissociation context."
+      "generation": "GEN_X",
+      "note": "Older users are less likely to use 🫥 because the emoji has not spread as widely among them. They may need the surrounding message to understand that the sender is withdrawing on purpose."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Missed as an intentional exit",
+      "description": "Someone unfamiliar with 🫥 may treat the dotted face as a rendering problem or miss the self-erasure message. In an important conversation, say plainly that you are leaving, disengaging, or changing your status.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Too vague at work",
+      "description": "A lone 🫥 in a work channel can be mistaken for inactivity or a reaction to someone else's message. State what you are ending or who should take over instead of leaving only the emoji.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🫥 Dotted Line Face Emoji Meaning - What Does 🫥 Really Mean?",
-  "seoDescription": "Learn what the dotted line face emoji 🫥 really means. From feeling invisible to dissociating, discover all its uses.",
+  "seoTitle": "🫥 Dotted Line Face Emoji Meaning",
+  "seoDescription": "What does 🫥 mean? It says the sender has faded out, become invisible, or is leaving a conversation without a formal goodbye.",
   "longForm": {
-    "overview": "The 🫥 Dotted Line Face emoji was added in Unicode 14 (2021) and is drawn as a yellow face drawn with a dotted outline instead of a solid line, with a flat expression. The visual cue reads instantly as invisible-coded reaction, fade-into-background default, or the visible 'I am trying to be unseen' tag. By 2026 🫥 has become the go-to emoji for the invisible-coded reaction, the visible 'please don't notice me' default, and the fade-out coded reaction in close-friends and family chats.\n\nIn modern chat 🫥 does very specific work. People send it as a literal invisible-coded reaction, as the visible 'I am trying to disappear' tag, or as the fade-out default. The dotted outline and flat expression are the visual cue that the read is invisibility-coded. Writers should pick 🫥 when the read is invisible-coded or visible 'please don't notice me' energy, and avoid it when the read is just neutral — 😐 fits better there.",
-    "howPeopleUseIt": "🫥 lands on a friend's embarrassing-group-chat moment, in a work channel where someone is signaling fade-out-coded energy, and in a dating-app DM where the sender is reacting with invisible energy. The dotted outline and flat expression anchor the read.\n\nIn close-friends chats 🫥 reads as the universal invisible default and the visible 'please don't notice me' tag. On X the emoji punctuates fade-out-coded and embarrassed-coded tweets. The emoji pairs with 🙈 for the layered invisible-and-shy stack and with 😶 for the layered silence stack.",
-    "whenNotToUse": "Skip 🫥 in any context where the read is neutral only. The dotted outline implies invisible-coded fade-out, not just neutral expression. Avoid 🫥 in formal contexts where the fade-out-coded read could be misread as disengaged.",
-    "howToReply": "If a friend sends 🫥 on a fade-out-coded message, mirror with another 🫥 or 🙈 to match the energy. The invisible chain reads as solidarity.\n\nIf 🫥 lands as the embarrassed-coded default, reply with another 🫥 or 🫂. And if you want to send 🫥 yourself, pair it with the moment so the invisible-coded read is clear.",
+    "overview": "The moment 🫥 appears as a bare reaction, the sender is announcing that they have already begun to disappear. Younger users are more likely to send it because it turns quiet withdrawal into an explicit signal: the message says, “I am not fully here anymore.” Used alone in a thread, it can mean the sender has stopped participating; used in a bio, it can suggest that someone has erased the life or identity attached to that account.\n\n🫥 is more deliberate than the 👋 wave and more final than the 🙃 reaction that pretends a fading conversation is merely casual. It also differs from 👻, which still tends to appear in Halloween posts, playful “boo” messages, and flirt about haunting someone’s messages. The melting face 🫠 says “I am dissolving” with greater emotional strain, while 🫥 presents a cleaner outline: the person has become invisible on purpose.\n\nThat distinction matters because the dotted face can look like an ordinary fading or image error until the recipient knows the newer meaning. In the right circle, it is unusually honest about withdrawal. Elsewhere, it can seem cryptic, careless, or simply broken.",
+    "howPeopleUseIt": "🫥 first tends to appear when a conversation has already run its course and the sender wants to leave without writing a formal goodbye. As the only reply, it says, “I am not really here” or “I have stopped engaging.” In a bio, especially by itself or beside a city, it can announce that the sender has vanished from an earlier chapter of life. A post such as “new chapter 🫥” treats the emoji as the final mark of a dissolved identity.\n\nThe same bare reaction can be playful among friends who already understand the disappearing act. There, sending 🫥 after an exaggerated goodbye continues the joke and avoids an uncomfortable direct farewell. In less familiar settings, the sender may still expect it to communicate that the exit was deliberate.",
+    "whenNotToUse": "Avoid 🫥 when the practical consequence of leaving matters more than the atmosphere. Work handoffs, family plans, and dating decisions can suffer when the message is too easy to misread. A recipient who does not know the emoji may see an image glitch, while an older user may simply miss the intended announcement that the sender is withdrawing.\n\nIt is also a poor substitute for a necessary boundary. If the point is that you no longer want to continue a conversation, write that you are ending it. If the point is that you have changed jobs, moved away, or want to stop replying to someone, name the change. 🫥 works best among people familiar with its meaning or in a playful conversation where nobody needs further instructions.",
+    "howToReply": "If someone sends 🫥 as a joke, match the exit with 👋 or 🫠 and keep the bit moving. A reply such as “the outline says hi 🫥” acknowledges that you understand they are fading out. If they pair it with “new chapter” or a new city, you can celebrate the change instead of treating the emoji as a final warning.\n\nIf it lands seriously, do not reply with another disappearance emoji and leave the uncertainty unresolved. Ask whether they are stepping away for good or simply closing the thread. If 🫥 appeared on your own post, you can answer with a direct “I’m leaving this conversation for now 🫥” to remove any doubt. When the sender appears to be ending a relationship or working arrangement, prioritize a clear statement over matching the visual joke.",
     "faqs": [
       {
-        "question": "What does 🫥 mean in text?",
-        "answer": "🫥 means invisible-coded reaction, visible 'please don't notice me' energy, or the fade-out reaction. The dotted outline and flat expression are the visual cue that the read is invisibility-coded."
+        "question": "What does 🫥 mean from a guy?",
+        "answer": "It usually means he is fading out, disengaging, or signaling that he is no longer fully present. The sender’s gender does not change the basic meaning, so context matters more than who sent it."
       },
       {
         "question": "Is 🫥 flirty?",
-        "answer": "Rarely. 🫥 usually reads as embarrassed-coded rather than flirty; in a dating thread it can read as 'I want to disappear' content."
-      },
-      {
-        "question": "What does 🫥 mean from a girl?",
-        "answer": "From a girl or anyone, 🫥 carries the same invisible-coded read. There is no gendered meaning; the emoji works the same regardless."
+        "answer": "🫥 has no inherent romantic meaning. It can appear in a flirtatious exchange as a playful way to describe vanishing, but it more directly announces withdrawal."
       },
       {
         "question": "What does 🫥 mean on TikTok?",
-        "answer": "On TikTok, 🫥 is the default comment reaction to embarrassed-coded clips and fade-out-coded videos."
+        "answer": "On TikTok, it usually means the sender is leaving the topic, stepping away from the exchange, or presenting themselves as already invisible. Younger TikTok users are especially likely to understand that self-erasure meaning."
+      },
+      {
+        "question": "What does sending 🫥 in a bio mean?",
+        "answer": "It suggests that the person has disappeared from an earlier identity, place, or chapter of life. Beside a city, it can mean they are presenting a move as the erasure of their previous life."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "pretend I am not here 🫥",
-      "interpretation": "Friend fade-out-coded share. Mirror with another 🫥 or 🙈 so the solidarity chain reads back."
-    },
-    {
-      "setting": "work",
-      "message": "I would rather be anywhere else 🫥",
-      "interpretation": "Work-coded invisible share. Mirror with a clarifying sentence — 🫥 can land as off-topic in work channels."
+      "message": "i’m done pretending i’m still coming to those brunches 🫥",
+      "interpretation": "The sender is joking that they have quietly dropped out of a recurring social plan. Respond with teasing recognition, such as “so you’re officially an outline now?”"
     },
     {
       "setting": "dating",
-      "message": "oh god did I really say that 🫥",
-      "interpretation": "Dating-coded embarrassed-coded share. Mirror with 🫥 or 🫂 so the warm chain reads back."
+      "message": "i don’t think i’m actually interested in taking this further 🫥",
+      "interpretation": "This is a softened version of ending the dating connection. A direct reply should confirm whether they want to stop rather than merely joking about disappearing."
+    },
+    {
+      "setting": "work",
+      "message": "i’m stepping away from this project after the handoff 🫥",
+      "interpretation": "The sender is marking a work withdrawal, but the emoji leaves the handoff unclear. Ask who is taking over and what still needs action."
     },
     {
       "setting": "family",
-      "message": "why am I related to these people 🫥",
-      "interpretation": "Family-coded invisible share. Mirror with 🫥 or 🙈 so the family-coded chain reads back."
+      "message": "changing my number and letting this old chapter go 🫥",
+      "interpretation": "The sender is using the emoji to describe a deliberate break from their former life. Confirm the practical details with them directly if you need to stay in touch."
     },
     {
       "setting": "social",
-      "message": "meeting energy today 🫥",
-      "interpretation": "Public adult-coded fade-out share. Mirror with another 🫥 or 💻 so the solidarity chain reads back."
+      "message": "🫥",
+      "interpretation": "A lone 🫥 says the sender is no longer fully engaged and may be exiting the thread. Reply with “you fading out for real?” if the exact intent matters."
     }
   ],
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14"
+  "contentUpdatedAt": "2026-11-02"
 }

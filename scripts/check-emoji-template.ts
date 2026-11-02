@@ -46,7 +46,7 @@ import type { EmojiTemplateMarkerKind } from '../src/lib/emoji-boilerplate';
  * fails when the count grows, so a rewrite that is not yet reflected here
  * cannot break CI.
  */
-const BASELINE_TEMPLATED_EMOJI_COUNT = 1327;
+const BASELINE_TEMPLATED_EMOJI_COUNT = 1011;
 
 interface Args {
   strict: boolean;
@@ -84,10 +84,8 @@ function parseArgs(argv: string[]): Args {
  */
 function markerLabel(kind: EmojiTemplateMarkerKind): string {
   switch (kind) {
-    case 'overview-phrase':
-      return 'overview says "is the emoji of"';
-    case 'faq-phrase':
-      return 'FAQ says "is a natural fit for"';
+    case 'template-phrase':
+      return 'long-form uses the batch phrase ("is the emoji of" / "is a natural fit for")';
     case 'coded-token':
       return 'long-form is saturated with "-coded"';
     default:

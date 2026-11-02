@@ -8,124 +8,131 @@
   "subcategory": "food-asian",
   "unicodeVersion": "6.0",
   "baseMeaning": "A piece of sushi.",
-  "tldr": "Sushi-coded fresh, 'chef's pick' register, or japanese-coded clean.",
+  "tldr": "🍣 usually closes a sentence as a dinner suggestion, often making a night out feel intentional, premium, or romantically framed.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A piece of sushi.",
-      "example": "Chef's pick 🍣",
+      "meaning": "Names sushi as the meal being discussed without adding a romantic implication.",
+      "example": "picking up sushi for dinner, what should i order? 🍣",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Sushi-coded fresh or 'chef's pick' register.",
-      "example": "Chef's pick 🍣",
-      "riskLevel": "LOW"
+      "meaning": "Replaces the words “fancy dinner” with a quick suggestion for a planned, higher-cost night out.",
+      "example": "sushi and drinks after work? 🍣",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "DATING",
-      "meaning": "Japanese-coded partner check-in or 'sushi for you' moment.",
-      "example": "Sushi for you 🍣",
+      "meaning": "Turns a meal question into an invitation for a deliberate date, especially when the relationship has already developed.",
+      "example": "sushi at 8 tonight? 🍣",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Fresh-coded team energy or 'sushi mode' moment.",
-      "example": "Sushi mode 🍣",
-      "riskLevel": "LOW"
+      "meaning": "Can mark a meal that is genuinely part of a client meeting, but feels overly personal in ordinary workplace chat.",
+      "example": "i booked a sushi place for the client meeting, does 1 pm work? 🍣",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors sushi-coded threads, 'chef's pick' replies, and 'mood 🍣' reveals where the sushi cue matches the fresh register."
+      "platform": "IMESSAGE",
+      "note": "iMessage renders 🍣 in Apple’s full-color design, so the recipient sees the sushi plainly. In a personal chat, it can still suggest dinner or a date, but it should not replace clear wording in professional conversations."
     },
     {
-      "platform": "INSTAGRAM",
-      "note": "Lands on japanese-coded story reposts, sushi posts, and 'mood 🍣' reveals where the sushi cue reads as fresh-coded comfort."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp uses its own emoji set, though it stays visually close to Apple’s. Family groups often choose 🍱 or 🍲 because older recipients may understand those home-style meal symbols more easily than fast-food emojis."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Travels in sushi-coded transitions, 'sushi for you' reveals, and reaction-content where the sushi cue signals japanese-coded energy."
+      "platform": "SLACK",
+      "note": "Slack threads are usually professional, where most food emoji can make the sender look out of place. 🍣 fits only when a client meal is part of the plan; otherwise, ☕ is the safer default."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'sushi for you' check-ins, family-coded japanese messages, and group chats where the sushi cue matches the moment."
+      "note": "In a casual Discord server, 🍣 can serve as shorthand for a food plan or night out with friends. In a work channel, the same emoji is more likely to seem like unnecessary emphasis, so a plain sentence is safer."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🍣 heavily on sushi-coded threads, 'chef's pick' moments, and japanese-coded reveals where the sushi cue matches the modern fresh register."
+      "note": "Gen Z treats 🍣 as the date default and parses it without effort. It also fits familiar food combinations such as 🍣✨."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the sushi on partner 'sushi for you' check-ins, fresh-coded comfort moments, and family japanese messages where the universal sushi cue fits."
+      "note": "Millennials parse 🍣 easily, especially in dating contexts. For a significant meal, they tend to expect a sentence alongside the emoji rather than relying on 🍣 alone."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on japanese-coded messages and family reveals, treating the sushi as literal sushi energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal sushi and sends it on family and grandchild-coded messages without parsing the modern 'chef's pick' subtext."
+      "note": "Gen X reads 🍣 in date contexts, where the sit-down meal naturally carries that meaning. It is less reliable as casual food shorthand across generations."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Too much for a friendship",
+      "description": "In a friend thread, 🍣 can suggest romantic weight or an attempt to overinvest. Use 🍕, 🍻, or a direct question about dinner instead.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Premature dating signal",
+      "description": "A first-date match who sends “want 🍣 tonight?” before any plan exists may look as though they have already decided this is a serious date. Start with 🍕 or ☕ and let the relationship develop.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🍣 Sushi Emoji Meaning - What Does 🍣 Really Mean?",
-  "seoDescription": "Learn what the Sushi emoji 🍣 really means in texts and DMs. Sushi-coded fresh, 'chef's pick' register, or japanese-coded clean.",
+  "seoTitle": "🍣 Sushi Emoji Meaning",
+  "seoDescription": "What does 🍣 mean? It often closes a sentence as a dinner invitation, and in dating chats it suggests a deliberate, more expensive night out.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🍣 is the emoji of sushi-coded fresh - a piece of sushi, the iconography of 'chef's pick,' japanese-coded clean, and 'sushi for you' register. Where 🥟 reads as dumpling-coded comfort and 🍜 reads as steaming-bowl-coded comfort, 🍣 captures the moment when the sender wants to communicate japanese-coded intimacy - a 'sushi for you 🍣' partner moment or a 'chef's pick 🍣' clean reveal. The sushi cue borrows from the universal fresh tradition and the modern 'chef's pick' aesthetic, which is exactly why the emoji reads as japanese-coded rather than literal sushi.\n\nIn real-world usage 🍣 lives in the spaces where the sender wants to communicate fresh-coded comfort. A partner sends it on a 'sushi for you 🍣' check-in. A friend sends it on a 'chef's pick 🍣' reveal. A coworker sends it on a 'sushi mode 🍣' work message. The sushi cue is what makes the emoji feel japanese-coded - it is not just 'sushi,' it is 'sushi-coded chef's-pick.'\n\nWhat separates 🍣 from the rest of the food-emoji family is the chef's-pick register. The emoji is not saying 'dumpling comfort' (🥟), 'steaming-bowl comfort' (🍜), or 'ramen-coded comfort' (🍜). It is saying 'sushi-coded fresh,' which carries a specific japanese-coded charm. That is why 🍣 travels especially well on partner 'sushi for you' check-ins, family japanese messages, and any context where the sender wants the message to land with fresh-coded energy.",
-    "howPeopleUseIt": "🍣 shows up as the closer on a 'sushi for you tonight' partner message ('sushi for you tonight 🍣'), the punctuation on a 'chef's pick 🍣' fresh-coded reveal ('chef's pick 🍣'), and the softener on a 'sushi mode 🍣' team check-in. It pairs naturally with sentences that name the sushi-coded fresh - 'sushi for you,' 'chef's pick,' 'sushi mode' - and sits beautifully on partner 'sushi for you' check-ins and family japanese messages.\n\nIn group chats 🍣 anchors 'sushi appreciation' threads, japanese-coded moments, and 'mood 🍣' reveals where the sushi cue matches the moment. On Instagram it lands on fresh-coded story reposts and sushi posts. On TikTok it travels in sushi-coded transitions and 'mood 🍣' reveals.\n\nThe emoji also works in dating contexts. A 'sushi for you tonight 🍣' partner message uses the sushi cue to communicate japanese-coded romance. Across all of these surfaces the rule is the same: the more fresh-coded the clean, the more natural 🍣 feels.",
-    "whenNotToUse": "Skip 🍣 in sympathy, condolence, or break-up contexts. The sushi-coded fresh cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 🍣 when you want to communicate serious affection. The japanese-coded register is too fresh-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 🍣, the cleanest mirror is another 🍣, 🥟, or a sentence that joins the fresh-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'sushi for you right back' or 'chef's pick too.' If the sushi cue feels too japanese-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the fresh volume.\n\nWhen 🍣 lands as a partner 'sushi for you' check-in, mirror with another 🍣, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'chef's pick 🍣' clean reveal, mirror with another 🍣, a sentence that joins the japanese energy, or a heart emoji that matches.",
+    "overview": "🍣 is a picture of one piece of sushi, but when it closes a sentence it often means more than the food. “want 🍣 tonight?” makes the meal the invitation. Compared with 🍕, 🍣 suggests a sit-down restaurant, time spent together, and a willingness to spend money rather than grabbing something quick. That makes it especially common in dating messages, where one emoji can quietly frame the night as a deliberate date.\n\nThe distinction depends on the relationship already built. In an established dating thread, 🍣 can be the ordinary default for dinner, like “sushi at 8? 🍣.” In a new dating thread, the same emoji can feel as though the sender has decided the evening is a serious date before the other person has. In a friend group, it can feel romantic or overinvested. The people most likely to misread it are not confused about sushi; they are reading the expense and effort behind the suggestion.",
+    "howPeopleUseIt": "🍣 usually lands at the end of a plan, where the food choice does the work of a sentence. People write “sushi tonight? 🍣,” “we should do 🍣,” or “let’s make it a sit-down thing 🍣.” In dating chats, the closing emoji can make a dinner question feel more planned and premium, saying: I want us to go out, and I am willing to spend money and time on that.\n\nIt also appears in established dating chats as routine shorthand for the usual dinner plan. 🍣🍣 adds enthusiasm; a longer stack can make the sender look as though they are trying too hard. When the message is plainly about eating, 🍣 remains literal. Its effect comes from context, not the fish image itself.",
+    "whenNotToUse": "🍣 misfires when the relationship has not earned the expense it implies. A first-date match who sends “want 🍣 tonight?” can look as though they are overinvesting; 🍕 or ☕ is the safer opening. It can also feel too pointed in a friend thread, where “🍣?” may be read as romantic weight rather than dinner. If the friendship cannot absorb that, ask directly or choose a casual food such as 🍕 or 🍻.\n\nProfessional spaces are another problem. Food emoji generally age the sender in workplace conversations, and 🍣 has a dating flavor. It fits a client-meeting thread where the meal is part of the plan, but not a Slack channel. On Slack, ☕ is the safer default.",
+    "howToReply": "If 🍣 is the date proposal, confirm the plan. “sounds perfect, see you at 8 🍣” mirrors the intention and closes the loop. In an established dating thread, “let’s do 🍣 instead, I know a place” turns a casual suggestion into a more intentional dinner. If someone wants to move the meal home, “come over, I’m making 🍝” offers a slower, more intimate evening.\n\nIf 🍣 feels too formal for a friend conversation, ask whether they meant dinner or something more. That clears up the romantic overtones. If someone replies with 🍣 to your invite, treat it as agreement and enthusiasm, then give a time and place. Avoid reflexively stacking more; 🍣🍣 can amplify the invitation, while a longer run looks like overperformance.",
     "faqs": [
       {
         "question": "What does 🍣 mean from a guy?",
-        "answer": "From a guy, 🍣 signals sushi-coded fresh - 'chef's pick' or 'sushi for you.' The sushi cue reads as japanese-coded rather than literal sushi, so it tends to land on partner 'sushi for you' check-ins, family japanese messages, and fresh-coded reveals."
+        "answer": "When he closes a dating message with 🍣, he is usually proposing sushi and making the evening sound more intentional than a quick meal. The exact meaning still depends on how well you know each other."
       },
       {
         "question": "Is 🍣 flirty?",
-        "answer": "It can be. In a partner context 🍣 can read as japanese-coded romance - 'sushi for you tonight 🍣' is a soft-coded romantic check-in. On its own the emoji is more fresh-coded than romantic."
+        "answer": "Yes, 🍣 often carries romantic weight because sushi suggests a sit-down meal and a willingness to spend money. In a plainly practical food conversation, it can remain completely ordinary."
       },
       {
-        "question": "What is the difference between 🍣 and 🥟?",
-        "answer": "🥟 is the dumpling - the cue is dumpling-coded comfort, the 'steamy bite' dumpling-style comfort-coded charm. 🍣 is the sushi - the cue is sushi-coded fresh, the 'chef's pick' japanese-coded fresh-coded energy. Use 🥟 when the moment is comfort; use 🍣 when the moment is fresh."
+        "question": "What does 🍣 mean on TikTok?",
+        "answer": "On TikTok, 🍣 usually identifies sushi or closes a post about getting sushi. In a personal message, the same emoji can suggest a more intentional dinner or date."
       },
       {
-        "question": "Is 🍣 for 'chef's pick' moments?",
-        "answer": "Yes - 🍣 is one of the most common fresh-coded emojis. The sushi cue is a natural fit for 'chef's pick' moments, japanese-coded reveals, and partner 'sushi for you' check-ins."
+        "question": "What does 🍣🍣 mean in a text?",
+        "answer": "🍣🍣 emphasizes the food suggestion and can add enthusiasm to a date invitation. A longer stack, such as 🍣🍣🍣, can make the sender look as though they are overdoing it."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "sushi for you tonight, full sushi romance 🍣",
-      "interpretation": "Partner japanese-coded romance. Mirror with another 🍣, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the chef's pick 🍣",
-      "interpretation": "Public sushi appreciation. Mirror with another 🍣, a sentence that joins the fresh energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "sushi mode with the family, full sushi mode 🍣",
-      "interpretation": "Family japanese-coded reveal. Mirror with another 🍣, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "sushi at 8 tonight? 🍣",
+      "interpretation": "This is an intentional dinner invitation with some romantic weight. Confirm the time and place, or suggest another restaurant if the evening is not yet that formal."
     },
     {
       "setting": "friends",
-      "message": "chef's pick today, full fresh energy 🍣",
-      "interpretation": "Friend fresh-coded reveal. Mirror with another 🍣, a sentence that joins the japanese energy, or a heart emoji that matches."
+      "message": "want 🍣 tonight? 🍣",
+      "interpretation": "The sender may only mean dinner, but the extra expense can make the invitation feel overinvested or romantic. A casual suggestion such as pizza may fit the friendship better."
     },
     {
       "setting": "work",
-      "message": "sushi mode today, full sushi mode 🍣",
-      "interpretation": "Work japanese-coded moment. Mirror with another 🍣, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "i booked a sushi place for the client meeting, does 1 pm work? 🍣",
+      "interpretation": "Here the meal is genuinely part of a client meeting, which is the professional setting where 🍣 fits. Confirm the booking rather than treating it as a casual food reaction."
+    },
+    {
+      "setting": "family",
+      "message": "grandma wants to take everyone for sushi tonight 🍣",
+      "interpretation": "This is primarily a literal family plan, so the emoji does not need to carry romantic meaning. If the reference is to a shared family meal rather than the restaurant choice, 🍱 may be easier for older relatives to interpret."
+    },
+    {
+      "setting": "social",
+      "message": "sushi tasting after the meetup, anyone in? 🍣",
+      "interpretation": "The emoji marks a social food plan and adds enthusiasm without necessarily implying romance. Reply with the location, time, and whether a reservation is needed."
     }
   ]
 }

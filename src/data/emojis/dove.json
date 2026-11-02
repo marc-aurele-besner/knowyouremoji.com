@@ -8,124 +8,139 @@
   "subcategory": "animal-bird",
   "unicodeVersion": "7.0",
   "baseMeaning": "A dove, often carrying an olive branch.",
-  "tldr": "Dove-coded peace, 'peace be with you' register, or soft-coded comfort.",
+  "tldr": "🕊️ means peace, but in condolences it can sound like a platitude about the dead being at rest.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A dove, often carrying an olive branch.",
-      "example": "Peace be with you 🕊️",
+      "meaning": "The dove is often shown carrying an olive branch, making it a direct image of peace and reconciliation.",
+      "example": "that dove 🕊️ with the olive branch really does mean peace",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Dove-coded peace or 'peace be with you' register.",
-      "example": "Peace be with you 🕊️",
+      "meaning": "In a casual argument, 🕊️ can serve as shorthand for making peace and leaving the disagreement behind.",
+      "example": "we're good 🕊️",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Soft-coded partner check-in or 'dove for you' moment.",
-      "example": "Dove for you 🕊️",
-      "riskLevel": "LOW"
+      "context": "IRONIC",
+      "meaning": "Someone may use 🕊️ to mock the stock “they are at peace now” consolation people send after a death.",
+      "example": "perfect, another 'they're at peace' platitude 🕊️",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Peace-coded team energy or 'dove mode' moment.",
-      "example": "Dove mode 🕊️",
-      "riskLevel": "LOW"
+      "meaning": "In a workplace memorial message, 🕊️ can make a condolence feel ceremonial, impersonal, or religious.",
+      "example": "sorry for your loss, Sam 🕊️",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors dove-coded threads, 'peace be with you' replies, and 'mood 🕊️' reveals where the dove cue matches the peace register."
+      "platform": "IMESSAGE",
+      "note": "In family conversations, a younger sender may treat 🕊️ as a familiar peace symbol while an older relative hears solemn or religious imagery. On a condolence thread, a single bird can therefore seem emotionally off-key."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Lands on soft-coded story reposts, dove posts, and 'mood 🕊️' reveals where the dove cue reads as peace-coded comfort."
+      "note": "As a public caption, 🕊️ can look like a broad statement about peace rather than a specific message to one person. In a direct message about grief, it carries the same risk of sounding like a stock consolation."
     },
     {
       "platform": "TIKTOK",
-      "note": "Travels in dove-coded transitions, 'dove for you' reveals, and reaction-content where the dove cue signals soft-coded energy."
+      "note": "In comments, 🕊️ can work as a quick way to wish someone peace or close a disagreement. Under video about a death, however, it can appear detached and reduce the loss to a familiar symbol."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "WhatsApp family groups often mix generations, so a young sender and a grieving parent may interpret 🕊️ very differently. A clear sentence of sympathy is safer than assuming the bird communicates warmth."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In a workplace channel, 🕊️ may make news of a death feel formal or impersonal without anyone intending that effect. Naming the loss and offering specific help communicates more clearly."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'dove for you' check-ins, family-coded peace messages, and group chats where the dove cue matches the moment."
+      "note": "Among friends, 🕊️ can serve as a harmless peace signoff after tension. In a server channel where someone is grieving, the casual context can clash badly with the person’s loss."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🕊️ heavily on dove-coded threads, 'peace be with you' moments, and soft-coded reveals where the dove cue matches the modern peace register."
-    },
-    {
-      "generation": "MILLENNIAL",
-      "note": "Reaches for the dove on partner 'dove for you' check-ins, peace-coded comfort moments, and family soft messages where the universal dove cue fits."
+      "note": "A younger sender may treat 🕊️ as a familiar peace shorthand and include it among other condolence emojis. That can leave a grieving parent unsure whether the message is comfort, slang, or a statement about resting in peace."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on peace-coded messages and family reveals, treating the dove as literal dove energy."
+      "note": "Some Gen X recipients may read 🕊️ as ceremonial or religious language rather than a casual reaction. It is less likely to feel personal when used by itself in a serious conversation."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal dove and sends it on family and grandchild-coded messages without parsing the modern 'peace be with you' subtext."
+      "note": "A Boomer recipient may connect the dove with church, prayer, or funeral language. If they have not asked for religious imagery, the symbol can feel more like a platitude than a message of comfort."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "A condolence in disguise",
+      "description": "After someone dies, 🕊️ can sound like the claim that they are now at peace rather than an acknowledgment of what you lost. Unless religious imagery has been specifically invited, send a direct sentence of sympathy instead.",
+      "severity": "HIGH"
+    },
+    {
+      "title": "Meaning does not travel between generations",
+      "description": "A younger friend may send 🕊️ as part of a familiar condolence set, while a grieving parent may not know how to interpret it. Use 🤍🕯️ plus a sentence that says how sorry you are and what support you can offer.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🕊️ Dove Emoji Meaning - What Does 🕊️ Really Mean?",
-  "seoDescription": "Learn what the Dove emoji 🕊️ really means in texts and DMs. Dove-coded peace, 'peace be with you' register, or soft-coded comfort.",
+  "seoTitle": "🕊️ Dove Emoji Meaning",
+  "seoDescription": "What does 🕊️ mean? It signals peace or reconciliation, but in a condolence it can sound like a religious platitude or a claim that the dead are at rest.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-12",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🕊️ is the emoji of dove-coded peace - a dove often carrying an olive branch, the iconography of 'peace be with you,' soft-coded comfort, and 'dove for you' register. Where 🦅 reads as eagle-coded fierce and 🦉 reads as owl-coded wisdom, 🕊️ captures the moment when the sender wants to communicate peace-coded intimacy - a 'dove for you 🕊️' partner moment or a 'peace be with you 🕊️' soft reveal. The dove cue borrows from the universal peace tradition and the modern 'peace be with you' aesthetic, which is exactly why the emoji reads as soft-coded rather than literal animal.\n\nIn real-world usage 🕊️ lives in the spaces where the sender wants to communicate peace-coded comfort. A partner sends it on a 'dove for you 🕊️' check-in. A friend sends it on a 'peace be with you 🕊️' reveal. A coworker sends it on a 'dove mode 🕊️' work message. The dove cue is what makes the emoji feel soft-coded - it is not just 'dove,' it is 'dove-coded peace-be-with-you.'\n\nWhat separates 🕊️ from the rest of the animals-emoji family is the peace-be-with-you register. The emoji is not saying 'eagle fierce' (🦅), 'owl wisdom' (🦉), or 'parrot mimicry' (🦜). It is saying 'dove-coded peace,' which carries a specific soft-coded charm. That is why 🕊️ travels especially well on partner 'dove for you' check-ins, family peace messages, and any context where the sender wants the message to land with soft-coded comfort.",
-    "howPeopleUseIt": "🕊️ shows up as the closer on a 'dove for you tonight' partner message ('dove for you tonight 🕊️'), the punctuation on a 'peace be with you 🕊️' peace-coded reveal ('peace be with you 🕊️'), and the softener on a 'dove mode 🕊️' team check-in. It pairs naturally with sentences that name the dove-coded peace - 'dove for you,' 'peace be with you,' 'dove mode' - and sits beautifully on partner 'dove for you' check-ins and family peace messages.\n\nIn group chats 🕊️ anchors 'dove appreciation' threads, soft-coded moments, and 'mood 🕊️' reveals where the dove cue matches the moment. On Instagram it lands on peace-coded story reposts and dove posts. On TikTok it travels in dove-coded transitions and 'mood 🕊️' reveals.\n\nThe emoji also works in dating contexts. A 'dove for you tonight 🕊️' partner message uses the dove cue to communicate soft-coded romance. Across all of these surfaces the rule is the same: the more peace-coded the comfort, the more natural 🕊️ feels.",
-    "whenNotToUse": "Skip 🕊️ in sympathy, condolence, or break-up contexts. The dove-coded peace cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 🕊️ when you want to communicate serious affection. The soft-coded register is too peace-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 🕊️, the cleanest mirror is another 🕊️, 🦅, or a sentence that joins the peace-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'dove for you right back' or 'peace be with you too.' If the dove cue feels too soft-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the peace volume.\n\nWhen 🕊️ lands as a partner 'dove for you' check-in, mirror with another 🕊️, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'peace be with you 🕊️' soft reveal, mirror with another 🕊️, a sentence that joins the peace energy, or a heart emoji that matches.",
+    "overview": "🕊️ is a dove, often shown carrying an olive branch, so its visual message is peace: reconciliation, goodwill, or a hope for calm. That plain meaning is easy to understand. The harder question is who is expected to understand it that way. A younger sender may treat the bird as a quick way to say “peace” after an argument or as part of a familiar condolence set, while an older relative may hear solemn religious imagery or the claim that the person who died is now at peace.\n\nThat gap matters most in grief. 🕊️ can look like a stock phrase rather than a personal acknowledgment of the loss, which makes it easy for the message to feel dismissive. It also differs from the practical sympathy of 🤍 and 🕯️, and from 🙏, which some older recipients understand simply as warmth. If religious language has not been invited, use a clear sentence of sympathy instead of trusting the bird to carry the feeling.",
+    "howPeopleUseIt": "🕊️ appears when someone wants to mark peace, reconciliation, or the end of an disagreement. “we’re good 🕊️” is light and direct; in a family or friendship chat, it can also serve as a blessing or a gentle wish for calm. A person may add it after saying goodbye, especially when the conversation has shifted from tension back to warmth.\n\nIts hardest use is grief. Younger senders sometimes include 🕊️ because it feels solemn and familiar, but that choice may not match what the recipient understands. The sender is usually trying to offer comfort, while the recipient may hear “they are at peace now,” a religious platitude, or a cliché. Because the same symbol can carry those meanings without explanation, the words around it matter more than usual.",
+    "whenNotToUse": "Do not send 🕊️ in a condolence thread unless the recipient has specifically asked for religious imagery. Even when your intention is “rest in peace,” it can erase the particular loss and make the message feel like a stock phrase. That is especially risky when a parent has lost a spouse: a younger friend’s 😭💔🕊️ can be received as slang that the parent does not know how to interpret.\n\nAlso avoid it as the only response in a hospital, work, or family thread about a death. A lone bird says very little about what you can do or how you feel. 🤍🕯️ plus a specific sentence is a safer default: acknowledge the person, say you are sorry, and offer concrete help if that is appropriate.",
+    "howToReply": "If someone sends 🕊️ after a disagreement, a short peace signoff works: “yeah, let’s leave it there 🕊️” or “good, I’m glad we’re good.” Match the gesture without turning it into a solemn speech. In a casual friendship or dating chat, the emoji can be returned to keep the exchange warm.\n\nIf it appears in a grief thread, do not reply with another 🕊️ merely because it matches. Say what you mean: “I’m so sorry. I’m here if you need anything.” If the recipient is a grieving parent, use 🤍🕯️ with a sentence that offers presence or practical help. If the bird lands on your own post and feels hollow, ask whether it came across as too casual and offer a more direct message.",
     "faqs": [
       {
-        "question": "What does 🕊️ mean from a guy?",
-        "answer": "From a guy, 🕊️ signals dove-coded peace - 'peace be with you' or 'dove for you.' The dove cue reads as soft-coded rather than literal animal, so it tends to land on partner 'dove for you' check-ins, family peace messages, and peace-coded reveals."
+        "question": "What does 🕊️ mean from a guy",
+        "answer": "It usually means peace, reconciliation, or “let’s leave the argument alone.” It is not automatically romantic, so the surrounding message matters more than the gender of the sender."
       },
       {
-        "question": "Is 🕊️ flirty?",
-        "answer": "It can be. In a partner context 🕊️ can read as soft-coded romance - 'dove for you tonight 🕊️' is a soft-coded romantic check-in. On its own the emoji is more peace-coded than romantic."
+        "question": "Is 🕊️ flirty",
+        "answer": "It can be mildly romantic if the rest of the message is affectionate, but on its own it usually reads as a peace gesture rather than a declaration of love."
       },
       {
-        "question": "What is the difference between 🕊️ and 🦅?",
-        "answer": "🦅 is the eagle - the cue is eagle-coded fierce, the 'sharp eye' eagle-style fierce-coded charm. 🕊️ is the dove - the cue is dove-coded peace, the 'peace be with you' soft-coded peace-coded energy. Use 🦅 when the moment is fierce; use 🕊️ when the moment is peace."
+        "question": "What does 🕊️ mean on TikTok",
+        "answer": "In a comment, it commonly means peace or a wish for things to calm down. On content about a death, it can feel like the familiar “they are at peace” platitude."
       },
       {
-        "question": "Is 🕊️ for 'peace be with you' moments?",
-        "answer": "Yes - 🕊️ is one of the most common peace-coded emojis. The dove cue is a natural fit for 'peace be with you' moments, soft-coded reveals, and partner 'dove for you' check-ins."
+        "question": "Can you send 🕊️ to someone grieving",
+        "answer": "It is generally better not to, unless the recipient has specifically asked for religious imagery. Write a direct message of sympathy instead; 🤍🕯️ plus a sentence is a safer default for a grieving parent."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "dove for you tonight, full dove romance 🕊️",
-      "interpretation": "Partner soft-coded romance. Mirror with another 🕊️, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the peace be with you 🕊️",
-      "interpretation": "Public dove appreciation. Mirror with another 🕊️, a sentence that joins the peace energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "dove mode with the family, full dove mode 🕊️",
-      "interpretation": "Family soft-coded reveal. Mirror with another 🕊️, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "i still think that was silly, but we're good 🕊️",
+      "interpretation": "The sender wants to close the disagreement and leave things affectionate. Reply warmly if you feel the same, but do not treat the dove as a major romantic declaration."
     },
     {
       "setting": "friends",
-      "message": "peace be with you today, full peace energy 🕊️",
-      "interpretation": "Friend peace-coded reveal. Mirror with another 🕊️, a sentence that joins the soft energy, or a heart emoji that matches."
+      "message": "hey, no stress about what happened. all good between us 🕊️",
+      "interpretation": "This is a reconciliation signal between friends. A simple acknowledgment that the tension is over is enough; matching with 🕊️ is optional."
     },
     {
       "setting": "work",
-      "message": "dove mode today, full dove mode 🕊️",
-      "interpretation": "Work soft-coded moment. Mirror with another 🕊️, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "sorry about your dad's death 🕊️",
+      "interpretation": "The sender probably means to offer condolences, but the dove can make the message sound ceremonial or impersonal. A specific expression of sympathy would be better received."
+    },
+    {
+      "setting": "family",
+      "message": "mom, thinking of you both 🕊️",
+      "interpretation": "A younger family member may see this as solemn comfort, while a grieving parent may hear a religious or stock “at peace” message. Use 🤍🕯️ and add a sentence offering support instead."
+    },
+    {
+      "setting": "social",
+      "message": "hoping everyone has a calmer week 🕊️",
+      "interpretation": "Here the dove is a general wish for peace and a calmer atmosphere. It is not addressing a death, but it can still feel vague, so the rest of the post should clarify what prompted the wish."
     }
   ]
 }
