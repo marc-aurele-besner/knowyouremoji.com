@@ -23,6 +23,23 @@ interface FormErrors {
 
 type AuthMode = 'password' | 'magic-link';
 
+const DEFAULT_REDIRECT = '/dashboard';
+
+/**
+ * Resolve where to send the user after signing in.
+ *
+ * The middleware appends `?redirect=<path>` when it bounces an unauthenticated
+ * request to /login. Only same-origin relative paths are honoured so the param
+ * can't be abused as an open redirect (`//evil.com`, `/\\evil.com`, `https://...`).
+ */
+export function getPostLoginRedirect(search: string): string {
+  const target = new URLSearchParams(search).get('redirect');
+  if (!target || !target.startsWith('/') || target.startsWith('//') || target.startsWith('/\\')) {
+    return DEFAULT_REDIRECT;
+  }
+  return target;
+}
+
 export function LoginForm() {
   const router = useRouter();
   const [email, setEmail] = useState('');
@@ -79,7 +96,7 @@ export function LoginForm() {
         return;
       }
 
-      router.push('/dashboard');
+      router.push(getPostLoginRedirect(window.location.search));
     } finally {
       setIsLoading(false);
     }
@@ -120,7 +137,7 @@ export function LoginForm() {
     setIsLoading(true);
 
     try {
-      await signIn(provider, { callbackUrl: '/dashboard' });
+      await signIn(provider, { callbackUrl: getPostLoginRedirect(window.location.search) });
     } catch {
       setErrors({ general: 'Failed to sign in with provider' });
       setIsLoading(false);
