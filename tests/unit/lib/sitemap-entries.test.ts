@@ -287,6 +287,24 @@ describe('sitemap-entries', () => {
       expect(urls.some((url) => url.includes('/combo/thin-combo'))).toBe(false);
     });
 
+    test('excludes templated combos that still carry the batch template', async () => {
+      const { buildComboSitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      getAllCombosSpy.mockReturnValue([
+        ...mockCombos,
+        {
+          ...mockCombos[0],
+          slug: 'templated-combo',
+          contentTier: 'deep',
+          longForm: {
+            whenNotToUse: 'The read depends on context, but the register itself does not.',
+          },
+        },
+      ]);
+
+      const urls = buildComboSitemapEntries().map((entry) => entry.url);
+      expect(urls.some((url) => url.includes('/combo/templated-combo'))).toBe(false);
+    });
+
     test('uses contentUpdatedAt for lastModified', async () => {
       const { buildComboSitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildComboSitemapEntries();
