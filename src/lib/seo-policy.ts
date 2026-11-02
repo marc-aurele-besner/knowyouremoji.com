@@ -16,12 +16,20 @@
  * in Google Search so the site as a whole reads as a publisher, not a
  * template farm.
  *
+ * A `contentTier` stamp is not sufficient on its own. The batch generator
+ * wrote `deep` onto the pages it produced, because the template satisfied
+ * the deep-tier word and FAQ thresholds. Those pages are near-duplicates of
+ * each other, so the tier is checked against the copy itself: an emoji
+ * whose long-form still carries the template markers is treated as `thin`
+ * no matter what the file claims.
+ *
  * See issue #344 (CONTENT-P1-006) and the sibling ticket CONTENT-P1-001 for
- * the content-tier taxonomy.
+ * the content-tier taxonomy. See issue #479 for the template markers.
  */
 
 import type { Emoji, ContentTier } from '@/types/emoji';
 import type { EmojiCombo, ComboContentTier } from '@/types/combo';
+import { findEmojiTemplateMarkers, isEmojiTemplated } from '@/lib/emoji-boilerplate';
 
 export interface IndexingDecision {
   /** Whether search engines should index the page */
@@ -36,9 +44,15 @@ export interface IndexingDecision {
 
 /**
  * Effective content tier after applying thin-page heuristics.
- * Order of precedence: explicit `contentTier` > skin-tone derivation > stub check.
+ * Order of precedence: template detection > explicit `contentTier` >
+ * skin-tone derivation > stub check.
  */
 export function resolveContentTier(emoji: Emoji): ContentTier {
+  // Batch-generated copy is thin by definition: the template satisfied the
+  // deep-tier thresholds, so the stamped tier proves nothing. Checked
+  // first so a templated page cannot buy its way into the index.
+  if (isEmojiTemplated(emoji)) return 'thin';
+
   if (emoji.contentTier) return emoji.contentTier;
 
   // Skin-tone variations are by definition thin duplicates.
@@ -74,6 +88,19 @@ export function getIndexingDecision(
       follow: true,
       canonical: basePageUrl,
       reason: 'skin-tone variant → canonical to base emoji',
+    };
+  }
+
+  // Batch-generated copy → noindex. The page keeps serving readers, but it
+  // must not be indexed as an original article, and it must not carry FAQ
+  // structured data (see `emoji-json-ld.tsx`).
+  const templateMarkers = findEmojiTemplateMarkers(emoji);
+  if (templateMarkers.length > 0) {
+    return {
+      index: false,
+      follow: true,
+      canonical: pageUrl,
+      reason: `templated copy (${templateMarkers.map((marker) => marker.match).join(', ')}) → noindex, keep reachable for users`,
     };
   }
 

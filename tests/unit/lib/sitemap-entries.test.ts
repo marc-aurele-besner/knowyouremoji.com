@@ -215,6 +215,29 @@ describe('sitemap-entries', () => {
       // skull has contextMeanings, so it falls back to standard (no explicit tier)
       expect(skull?.priority).toBeGreaterThanOrEqual(0.7);
     });
+
+    test('excludes templated emoji pages even when they are stamped deep', async () => {
+      const templated: Emoji = {
+        ...mockEmojis[0],
+        slug: 'ginger-root',
+        contentTier: 'deep',
+        longForm: {
+          overview: 'The ginger root is the emoji of ginger root-coded ginger root flex.',
+          faqs: [
+            {
+              question: 'What does the ginger root emoji mean?',
+              answer: 'The visual cue is a natural fit for root-flex-coded reveals.',
+            },
+          ],
+        },
+      };
+      getAllEmojisSpy.mockReturnValue([templated]);
+
+      const { buildEmojiSitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const entries = buildEmojiSitemapEntries();
+
+      expect(entries).toHaveLength(0);
+    });
   });
 
   describe('buildComboSitemapEntries', () => {

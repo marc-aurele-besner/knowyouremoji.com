@@ -41,6 +41,9 @@ jobs:
       - name: Check for near-duplicate emoji pages
         run: bun run check:similarity -- --strict
 
+      - name: Check for emoji pages that still carry the batch template
+        run: bun run check:emoji-template -- --strict
+
       - name: Build
         run: bunx next build
 

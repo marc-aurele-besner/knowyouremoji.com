@@ -316,6 +316,30 @@ describe('EmojiJsonLd', () => {
       expect(parsed['@type']).toBe('Article');
       expect(parsed['@graph']).toBeUndefined();
     });
+
+    it('does not emit an FAQPage for a batch-generated page (#479)', () => {
+      const templatedEmoji: Emoji = {
+        ...mockEmoji,
+        longForm: {
+          overview: 'The ginger root is the emoji of ginger root-coded ginger root flex.',
+          faqs: [
+            {
+              question: 'What does the ginger root emoji mean?',
+              answer: 'The visual cue is a natural fit for root-flex-coded reveals.',
+            },
+          ],
+        },
+      };
+
+      render(<EmojiJsonLd emoji={templatedEmoji} appUrl={mockAppUrl} appName={mockAppName} />);
+
+      const script = document.querySelector('script[type="application/ld+json"]');
+      const parsed = JSON.parse(script!.textContent!);
+
+      expect(parsed['@type']).toBe('Article');
+      expect(parsed['@graph']).toBeUndefined();
+      expect(script!.textContent).not.toContain('FAQPage');
+    });
   });
 
   describe('SEO compliance', () => {
