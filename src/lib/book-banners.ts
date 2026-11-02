@@ -8,7 +8,7 @@ export const BOOKS = [
     id: 'teen-texts',
     title: "The Parent's Guide to Decoding Your Teen's Texts",
     author: 'Claire Vance',
-    url: 'https://www.amazon.com/dp/B0HN32NYYX',
+    asin: 'B0HN32NYYX',
     cover: { src: '/books-images/book-cover-thumb.png', width: 300, height: 400 },
     audience: 'For parents',
     description:
@@ -18,7 +18,7 @@ export const BOOKS = [
     id: 'work-emoji',
     title: 'Don’t 👍 Your Boss: Know Your Emoji at Work',
     author: 'Claire Vance',
-    url: 'https://www.amazon.com/dp/B0HPGNF1QW',
+    asin: 'B0HPGNF1QW',
     cover: { src: '/books-images/boss-cover-thumb.png', width: 300, height: 400 },
     audience: 'For professionals',
     description:

@@ -191,6 +191,10 @@ export const engagementEvents = {
   externalLinkClick: (url: string, linkText: string) =>
     safeTrackEvent('external_link_click', { url, link_text: linkText }),
 
+  /** Track a click on an Amazon affiliate link to one of our books */
+  affiliateClick: (book: string, storefront: string, placement: string) =>
+    safeTrackEvent('affiliate_click', { book, storefront, placement }),
+
   /** Track scroll depth milestones */
   scrollDepth: (depth: 25 | 50 | 75 | 100, pagePath: string) =>
     safeTrackEvent('scroll_depth', { depth, page_path: pagePath }),

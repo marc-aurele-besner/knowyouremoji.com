@@ -197,6 +197,15 @@ describe('analytics', () => {
       });
     });
 
+    it('tracks affiliate clicks', () => {
+      engagementEvents.affiliateClick('teen-texts', 'DE', 'books-page');
+      expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'affiliate_click', {
+        book: 'teen-texts',
+        storefront: 'DE',
+        placement: 'books-page',
+      });
+    });
+
     it('tracks scroll depth', () => {
       engagementEvents.scrollDepth(50, '/emoji/fire');
       expect(mockSendGAEvent).toHaveBeenCalledWith('event', 'scroll_depth', {

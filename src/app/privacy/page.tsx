@@ -162,6 +162,12 @@ export default function PrivacyPage() {
               and rate limiting. Third-party analytics services may set their own cookies. You can
               disable cookies in your browser settings, though this may affect some features.
             </p>
+            <p className="mt-3">
+              Links to our books go to your nearest Amazon store. To pick it, we look up your
+              country from your IP address and keep only the country code in localStorage for 30
+              days; the IP address is not stored. Amazon may set its own cookies when you follow one
+              of these links, as described in its privacy notice.
+            </p>
           </div>
 
           <div id="section-5" className="scroll-mt-24">
@@ -227,7 +233,7 @@ export default function PrivacyPage() {
           </div>
 
           <p className="border-t border-card-border pt-8 text-sm text-muted-foreground">
-            Last updated: August 2026
+            Last updated: November 2026
           </p>
         </article>
 

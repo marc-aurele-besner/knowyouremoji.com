@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { HTMLAttributes } from 'react';
+import { AMAZON_DISCLOSURE, hasAmazonTag } from '@/lib/amazon-affiliate';
 import { engagementEvents } from '@/lib/analytics';
 import { FOOTER_LINK_GROUPS } from '@/lib/nav-links';
 
@@ -51,7 +52,10 @@ function Footer({ className, ...props }: FooterProps) {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-card-border pt-6 text-[13px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {currentYear} KnowYourEmoji. All rights reserved.</p>
+          <div className="space-y-1">
+            <p>© {currentYear} KnowYourEmoji. All rights reserved.</p>
+            {hasAmazonTag() && <p data-testid="amazon-disclosure">{AMAZON_DISCLOSURE}</p>}
+          </div>
           <a
             href="https://github.com/marc-aurele-besner/knowyouremoji.com"
             target="_blank"

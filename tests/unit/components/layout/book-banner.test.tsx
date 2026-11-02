@@ -11,12 +11,15 @@ mock.module('next/navigation', () => ({
 }));
 
 const mockExternalLinkClick = mock(() => {});
+const mockAffiliateClick = mock(() => {});
 mock.module('@/lib/analytics', () => ({
   engagementEvents: {
     externalLinkClick: mockExternalLinkClick,
+    affiliateClick: mockAffiliateClick,
   },
 }));
 
+import { amazonProductUrl } from '@/lib/amazon-affiliate';
 import { getBook } from '@/lib/book-banners';
 import {
   BookBanner,
@@ -33,8 +36,13 @@ function bookFor(pathname: string) {
   return getBook(pickBookBanner(pathname).book);
 }
 
+// Banner event requests only; the links' storefront lookup (/api/geo) is not one.
+function bannerCalls() {
+  return mockFetch.mock.calls.filter(([url]) => url === '/api/book-banner/event');
+}
+
 function sentEvents() {
-  return mockFetch.mock.calls.map(([url, init]) => ({
+  return bannerCalls().map(([url, init]) => ({
     url,
     body: JSON.parse((init as RequestInit).body as string),
     keepalive: (init as RequestInit).keepalive,
@@ -44,6 +52,8 @@ function sentEvents() {
 beforeEach(() => {
   mockPathname = '/';
   mockExternalLinkClick.mockClear();
+  mockAffiliateClick.mockClear();
+  window.localStorage.clear();
   mockFetch.mockClear();
   mockFetch.mockImplementation(async () => new Response('{"ok":true}'));
   globalThis.fetch = mockFetch as unknown as typeof fetch;
@@ -61,7 +71,7 @@ describe('BookBanner', () => {
   it('renders a link to the book on Amazon', () => {
     render(<BookBanner />);
     const link = screen.getByRole('link');
-    expect(link).toHaveAttribute('href', bookFor('/').url);
+    expect(link).toHaveAttribute('href', amazonProductUrl(bookFor('/').asin));
     expect(link).toHaveAttribute('target', '_blank');
     expect(link.getAttribute('rel')).toContain('sponsored');
     expect(link.getAttribute('rel')).toContain('noopener');
@@ -87,7 +97,10 @@ describe('BookBanner', () => {
   it('tracks clicks', () => {
     render(<BookBanner />);
     fireEvent.click(screen.getByRole('link'));
-    expect(mockExternalLinkClick).toHaveBeenCalledWith(bookFor('/').url, 'Book banner');
+    expect(mockExternalLinkClick).toHaveBeenCalledWith(
+      amazonProductUrl(bookFor('/').asin),
+      'Book banner'
+    );
   });
 
   it('renders on content pages', () => {
@@ -122,7 +135,7 @@ describe('BookBanner wide variant', () => {
     const book = getBook(pickWideBookBanner('/').book);
     const links = screen.getAllByRole('link');
     expect(links).toHaveLength(2);
-    links.forEach((link) => expect(link).toHaveAttribute('href', book.url));
+    links.forEach((link) => expect(link).toHaveAttribute('href', amazonProductUrl(book.asin)));
     expect(links[0]).toHaveClass('hidden', 'md:block');
     expect(links[1]).toHaveClass('md:hidden');
     expect(links[0]).toHaveAccessibleName(`${book.title} by ${book.author} — buy on Amazon`);
@@ -229,7 +242,7 @@ describe('BookBanner event tracking', () => {
       MockIntersectionObserver as unknown as typeof IntersectionObserver;
     mockPathname = '/guides/x';
     render(<BookBanner />);
-    expect(mockFetch).not.toHaveBeenCalled();
+    expect(bannerCalls()).toHaveLength(0);
 
     const [observer] = observers;
     const fire = (isIntersecting: boolean) =>
@@ -238,7 +251,7 @@ describe('BookBanner event tracking', () => {
         observer as unknown as IntersectionObserver
       );
     fire(false);
-    expect(mockFetch).not.toHaveBeenCalled();
+    expect(bannerCalls()).toHaveLength(0);
     fire(true);
     expect(sentEvents().map((e) => e.body.type)).toEqual(['view']);
     expect(observer.disconnect).toHaveBeenCalled();

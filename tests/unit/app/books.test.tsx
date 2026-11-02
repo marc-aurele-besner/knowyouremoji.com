@@ -2,8 +2,13 @@ import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { render, screen, cleanup, within } from '@testing-library/react';
 import { generateMetadata, default as BooksPage } from '../../../src/app/books/page';
 import { BOOKS } from '../../../src/lib/book-banners';
+import { AMAZON_DISCLOSURE, amazonProductUrl } from '../../../src/lib/amazon-affiliate';
 
-const TESTED_KEYS = ['NEXT_PUBLIC_APP_URL', 'NEXT_PUBLIC_APP_NAME'] as const;
+const TESTED_KEYS = [
+  'NEXT_PUBLIC_APP_URL',
+  'NEXT_PUBLIC_APP_NAME',
+  'NEXT_PUBLIC_AMZN_TAG',
+] as const;
 const savedEnv: Record<string, string | undefined> = {};
 
 describe('Books Page', () => {
@@ -11,6 +16,7 @@ describe('Books Page', () => {
     for (const key of TESTED_KEYS) savedEnv[key] = process.env[key];
     process.env.NEXT_PUBLIC_APP_URL = 'https://knowyouremoji.com';
     process.env.NEXT_PUBLIC_APP_NAME = 'KnowYourEmoji';
+    Reflect.deleteProperty(process.env, 'NEXT_PUBLIC_AMZN_TAG');
   });
 
   afterEach(() => {
@@ -57,10 +63,22 @@ describe('Books Page', () => {
         expect(item.getByAltText(`Cover of ${book.title}`)).toBeInTheDocument();
         expect(item.getByText(`by ${book.author}`)).toBeInTheDocument();
         const link = item.getByRole('link', { name: /get it on amazon/i });
-        expect(link).toHaveAttribute('href', book.url);
+        expect(link).toHaveAttribute('href', amazonProductUrl(book.asin));
         expect(link).toHaveAttribute('target', '_blank');
         expect(link.getAttribute('rel')).toContain('sponsored');
       });
+    });
+
+    test('shows the Amazon Associates disclosure only when a tracking ID is set', () => {
+      render(<BooksPage />);
+      expect(screen.queryByTestId('amazon-disclosure')).not.toBeInTheDocument();
+      cleanup();
+
+      process.env.NEXT_PUBLIC_AMZN_TAG = 'knowyouremoji-20';
+      render(<BooksPage />);
+      expect(screen.getByTestId('amazon-disclosure')).toHaveTextContent(AMAZON_DISCLOSURE);
+      const link = screen.getAllByRole('link', { name: /get it on amazon/i })[0];
+      expect(link.getAttribute('href')).toContain('tag=knowyouremoji-20');
     });
   });
 });

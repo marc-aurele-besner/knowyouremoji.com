@@ -8,9 +8,10 @@ import {
 } from '@/lib/book-banners';
 
 describe('book-banners', () => {
-  it('links every book to its Amazon page', () => {
-    expect(getBook('teen-texts').url).toBe('https://www.amazon.com/dp/B0HN32NYYX');
-    expect(getBook('work-emoji').url).toBe('https://www.amazon.com/dp/B0HPGNF1QW');
+  it('gives every book its Amazon ASIN', () => {
+    expect(getBook('teen-texts').asin).toBe('B0HN32NYYX');
+    expect(getBook('work-emoji').asin).toBe('B0HPGNF1QW');
+    for (const book of BOOKS) expect(book.asin).toMatch(/^[A-Z0-9]{10}$/);
   });
 
   it('gives every book a unique id', () => {
