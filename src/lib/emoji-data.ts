@@ -58,6 +58,41 @@ export function getEmojiBySlug(slug: string): Emoji | undefined {
 }
 
 /**
+ * Strip the variation selectors from an emoji character.
+ *
+ * Some records store their glyph without the variation selector that asks
+ * for the emoji presentation (`☮` rather than `☮️`), while the pages and
+ * the combos carry the full sequence. The two are the same emoji, so they
+ * have to compare equal.
+ */
+export function normalizeEmojiCharacter(character: string): string {
+  return character.replace(/️/g, '').replace(/︎/g, '');
+}
+
+/**
+ * Get the published emoji for a glyph.
+ *
+ * The slug is not always a reliable handle: several emoji have more than one
+ * record in the catalog for the same character, and a handful of them are
+ * only published under a name that does not match the one other pages use
+ * for the same glyph (`tanabata-tree` rather than `tanabata-tree-emoji`,
+ * `red-flag` rather than `triangular-flag-emoji`).
+ *
+ * The character is the identifier that cannot drift — it is what the reader
+ * sees. Where more than one published record shares a character, the first
+ * by slug is returned so the answer is stable.
+ *
+ * @param character The glyph, e.g. "🎋".
+ */
+export function getEmojiByCharacter(character: string): Emoji | undefined {
+  if (!character) return undefined;
+  const normalized = normalizeEmojiCharacter(character);
+  return loadEmojis()
+    .filter((emoji) => normalizeEmojiCharacter(emoji.character) === normalized)
+    .sort((a, b) => a.slug.localeCompare(b.slug))[0];
+}
+
+/**
  * Get all emojis in a specific category
  *
  * Matching is done against the *canonical* category slug, so an emoji

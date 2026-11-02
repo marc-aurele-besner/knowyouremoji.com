@@ -1,7 +1,11 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getComboBySlug, getAllComboSlugs, getRelatedCombos } from '@/lib/combo-data';
-import { getEmojiBySlug } from '@/lib/emoji-data';
+import {
+  getComboBySlug,
+  getAllComboSlugs,
+  getRelatedCombos,
+  getComboEmojiRecords,
+} from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getComboIndexingDecision } from '@/lib/seo-policy';
 import { ShareSection } from '@/components/share/share-section';
@@ -144,13 +148,14 @@ export default async function ComboPage({ params }: ComboPageProps) {
   // Get related combos
   const relatedCombos = getRelatedCombos(slug, 6);
 
-  // Get emoji info for each emoji in the combo
-  const emojiLinks: EmojiLinkInfo[] = combo.emojis
-    .map((emojiSlug) => {
-      const emoji = getEmojiBySlug(emojiSlug);
-      return emoji ? { slug: emojiSlug, character: emoji.character, name: emoji.name } : null;
-    })
-    .filter((emoji): emoji is EmojiLinkInfo => emoji !== null);
+  // Get emoji info for each emoji in the combo. The resolver works from the
+  // glyphs rather than the recorded slugs, so every part of the combo links
+  // to the emoji page that actually shows that glyph.
+  const emojiLinks: EmojiLinkInfo[] = getComboEmojiRecords(combo).map((emoji) => ({
+    slug: emoji.slug,
+    character: emoji.character,
+    name: emoji.name,
+  }));
 
   // Breadcrumb items for navigation
   const breadcrumbItems = [
