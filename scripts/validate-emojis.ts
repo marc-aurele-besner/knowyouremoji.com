@@ -26,6 +26,7 @@ import type {
   WarningSeverity,
   ConversationSetting,
 } from '../src/types/emoji';
+import { findComboBoilerplate } from './combo-content/boilerplate';
 import type {
   EmojiCombo,
   ComboLongForm,
@@ -1182,6 +1183,47 @@ export function validateCombo(
 
   if (combo.contentTier === 'deep') {
     errors.push(...validateComboDeepTier(combo));
+  }
+
+  // Shared template language is rejected on every tier: a combo that repeats
+  // a paragraph from another combo is a near-duplicate page whether or not
+  // it is indexed.
+  errors.push(...validateComboBoilerplate(combo));
+
+  return errors;
+}
+
+/**
+ * Reject a combo whose prose still carries the shared template language.
+ *
+ * A batch of 750 combo pages was generated from a category template that
+ * pasted the same paragraphs into every file. Each page cleared the word
+ * floors on its own, which is how the duplication slipped past review: the
+ * catalog read as one page repeated 750 times, and search engines saw the
+ * same thing on every URL.
+ *
+ * The check lives here so the template cannot come back. It runs against the
+ * prose a reader actually sees, not the metadata around it.
+ */
+export function validateComboBoilerplate(combo: EmojiCombo): ValidationError[] {
+  const errors: ValidationError[] = [];
+  const file = combo.slug || 'unknown';
+
+  const hits = findComboBoilerplate(combo);
+  if (hits.length) {
+    // The full list can run to twenty phrases, which buries the rest of the
+    // validation output. The first few are enough to identify the template.
+    const shown = hits.slice(0, 5);
+    const more = hits.length - shown.length;
+    errors.push({
+      file,
+      field: 'longForm',
+      message:
+        'combo copy reuses shared template language: ' +
+        shown.map((h) => `"${h}"`).join(', ') +
+        (more > 0 ? `, and ${more} more` : '') +
+        '. Each combo must be written about its own emoji pair.',
+    });
   }
 
   return errors;

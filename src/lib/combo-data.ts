@@ -7,6 +7,8 @@
 
 import type { EmojiCombo, EmojiComboSummary, EmojiComboCategoryName } from '@/types/combo';
 import type { EmojiSlug } from '@/types/emoji';
+import type { Emoji } from '@/types/emoji';
+import { getEmojiByCharacter, getEmojiBySlug, normalizeEmojiCharacter } from '@/lib/emoji-data';
 
 // Read the catalog on the server in both production and tests. Next.js does
 // not implement import.meta.glob; silently falling back to an empty catalog
@@ -145,12 +147,75 @@ export function getRelatedCombos(slug: string, limit: number = 6): EmojiComboSum
 }
 
 /**
+ * Split a combo's glyph string into grapheme clusters.
+ *
+ * A combo like 😵‍💫 is a single emoji made of several code points, so the
+ * glyph string has to be split on grapheme boundaries rather than on
+ * characters or on the emoji slugs.
+ */
+function splitGraphemes(glyphs: string): string[] {
+  if (typeof Intl !== 'undefined' && typeof Intl.Segmenter === 'function') {
+    const segmenter = new Intl.Segmenter('en', { granularity: 'grapheme' });
+    return [...segmenter.segment(glyphs)].map((s) => s.segment);
+  }
+  // Fallback for runtimes without Intl.Segmenter: split on the surrogate
+  // pairs that emoji are made of, keeping variation selectors and ZWJ
+  // sequences attached.
+  return glyphs.match(/\p{RI}️?‍?|\p{Emoji_Presentation}|\p{RI}/gu) ?? [glyphs];
+}
+
+/**
+ * The emoji records behind a combo, in the order the glyphs appear.
+ *
+ * A combo names its parts with slugs, and the slugs do not always line up
+ * with the catalog: `smiling-face-with-sunglasses` is published as
+ * `smiling-sunglasses`, `honeybee` as `bee`, `bamboo` as `tanabata-tree`.
+ * Resolving on the slug alone silently dropped 46 emoji references across 43
+ * combos, which cost the page a card in its "Emojis in this Combo" grid and
+ * an internal link to the emoji's own page.
+ *
+ * So the slug is used when it agrees with the glyph, and the glyph decides
+ * when it does not.
+ */
+export function getComboEmojiRecords(combo: EmojiCombo): Emoji[] {
+  const glyphs = splitGraphemes(combo.combo ?? '');
+  const records: Emoji[] = [];
+
+  for (const [index, glyph] of glyphs.entries()) {
+    const slug = combo.emojis?.[index];
+    const bySlug = slug ? getEmojiBySlug(slug) : undefined;
+
+    // Trust the slug only when it points at the glyph actually shown.
+    if (bySlug && normalizeEmojiCharacter(bySlug.character) === normalizeEmojiCharacter(glyph)) {
+      records.push(bySlug);
+      continue;
+    }
+
+    const byCharacter = getEmojiByCharacter(glyph);
+    if (byCharacter) records.push(byCharacter);
+    else if (bySlug) records.push(bySlug);
+  }
+
+  return records;
+}
+
+/**
  * Get combos that contain a specific emoji
+ *
+ * Matched on the glyph rather than on the slug, so a combo still links to
+ * the emoji page when the two disagree about what to call it.
+ *
  * @param emojiSlug - Slug of the emoji to search for
  * @returns Array of combos containing the emoji
  */
 export function getCombosByEmoji(emojiSlug: EmojiSlug): EmojiCombo[] {
-  return loadCombos().filter((combo) => combo.emojis.includes(emojiSlug));
+  const emoji = getEmojiBySlug(emojiSlug);
+
+  return loadCombos().filter((combo) => {
+    if (combo.emojis?.includes(emojiSlug)) return true;
+    if (!emoji) return false;
+    return splitGraphemes(combo.combo ?? '').includes(emoji.character);
+  });
 }
 
 /**
