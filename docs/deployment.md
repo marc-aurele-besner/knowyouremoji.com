@@ -70,6 +70,11 @@ Configure these in Vercel Dashboard > Project Settings > Environment Variables:
 | `SENTRY_ORG`                      | If using Sentry | Sentry organization slug       |
 | `SENTRY_PROJECT`                  | If using Sentry | Sentry project slug            |
 | `NEXT_PUBLIC_VERCEL_ANALYTICS_ID` | No              | Auto-configured by Vercel      |
+| `NEXT_PUBLIC_AMZN_TAG`            | Recommended     | Amazon Associates tracking ID  |
+| `NEXT_PUBLIC_AMZN_TAG_<CC>`       | No              | Per-storefront tracking ID     |
+
+The Amazon variables are inlined at build time: redeploy after changing them. See
+[`amazon-affiliate.md`](./amazon-affiliate.md).
 
 ### Local Development
 
