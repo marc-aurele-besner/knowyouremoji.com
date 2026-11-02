@@ -1,6 +1,19 @@
-import { describe, it, expect, beforeEach, mock, afterEach } from 'bun:test';
+import { describe, it, expect, beforeEach, mock, afterEach, setSystemTime } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import { UpgradePrompt } from '@/components/interpreter/upgrade-prompt';
+
+/**
+ * The instant the countdown tests run against.
+ *
+ * The countdown is built from two separate clock reads: the test builds
+ * `resetTime` from `Date.now()`, and the component reads the clock again
+ * when it formats the countdown. With a live clock the two reads can
+ * straddle a minute boundary, so a reset one minute away renders as
+ * "less than a minute" depending on how long the render took — the test
+ * then fails on a machine that is merely busy. Freezing the clock makes
+ * both reads the same instant, so the countdown is exact.
+ */
+const FROZEN_NOW = new Date('2026-01-01T12:00:00.000Z');
 
 // Mock localStorage
 const createLocalStorageMock = () => {
@@ -42,14 +55,20 @@ mock.module('@/hooks/use-rate-limit', () => ({
 
 describe('UpgradePrompt', () => {
   let localStorageMock: ReturnType<typeof createLocalStorageMock>;
+  let realNow: Date;
 
   beforeEach(() => {
+    // Captured before the clock is frozen, so the test can put it back.
+    realNow = new Date();
+    setSystemTime(FROZEN_NOW);
+
     localStorageMock = createLocalStorageMock();
     globalThis.localStorage = localStorageMock;
     mockUseRateLimit.mockClear();
   });
 
   afterEach(() => {
+    setSystemTime(realNow);
     cleanup();
   });
 
@@ -217,7 +236,7 @@ describe('UpgradePrompt', () => {
         maxUses: 3,
         canUse: false,
         isLimited: true,
-        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000 + 1.5 * 60 * 1000), // 2 hours and ~1.5 minutes (buffer for execution time)
+        resetTime: new Date(Date.now() + 2 * 60 * 60 * 1000 + 1 * 60 * 1000), // 2 hours and 1 minute
         recordUse: mock(() => 0),
         reset: mock(() => {}),
       }));
