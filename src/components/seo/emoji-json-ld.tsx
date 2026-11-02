@@ -10,6 +10,10 @@
  * `image`, and `inLanguage`. Google will not consider a page eligible for
  * an article rich result without the author and date fields, and the image
  * is what makes the result visual rather than a bare text link.
+ *
+ * The FAQPage entity is only emitted for pages that were actually written:
+ * a batch-generated page keeps its FAQs out of the structured data so a
+ * template answer is never offered as a rich result (issue #479).
  */
 
 import type { Emoji } from '@/types/emoji';
@@ -21,6 +25,7 @@ import {
   resolveArticleDates,
 } from '@/lib/seo-schema';
 import { getCategoryDisplayName, resolveCategorySlug } from '@/lib/emoji-taxonomy';
+import { isEmojiTemplated } from '@/lib/emoji-boilerplate';
 
 interface EmojiJsonLdProps {
   /** The emoji data to generate structured data for */
@@ -35,8 +40,14 @@ interface EmojiJsonLdProps {
  * Build an optional FAQPage entity when the emoji has FAQs to expose.
  * Returns `undefined` when there are no FAQs so the Article payload stays
  * clean for thin pages.
+ *
+ * Batch-generated pages are excluded as well: their FAQs came from the
+ * same template as the rest of the page, and asking Google to rich-result
+ * a generated answer is how a doorway page gets promoted (issue #479).
  */
 function buildFaqEntity(emoji: Emoji) {
+  if (isEmojiTemplated(emoji)) return undefined;
+
   const faqs = emoji.longForm?.faqs;
   if (!Array.isArray(faqs) || faqs.length === 0) return undefined;
 

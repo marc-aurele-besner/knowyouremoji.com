@@ -66,6 +66,27 @@ describe('seo-policy', () => {
       });
       expect(resolveContentTier(standard)).toBe('standard');
     });
+
+    test('treats a templated page as thin even when it is stamped deep', () => {
+      const templated = createEmoji({
+        contentTier: 'deep',
+        longForm: {
+          overview: 'The ginger root is the emoji of ginger root-coded ginger root flex.',
+        },
+      });
+      expect(resolveContentTier(templated)).toBe('thin');
+    });
+
+    test('keeps a hand-written deep page deep', () => {
+      const deep = createEmoji({
+        contentTier: 'deep',
+        longForm: {
+          overview:
+            'The skull emoji has drifted from its literal meaning of death. On TikTok it now signals that the sender is dead from laughter.',
+        },
+      });
+      expect(resolveContentTier(deep)).toBe('deep');
+    });
   });
 
   describe('getIndexingDecision', () => {
@@ -133,6 +154,29 @@ describe('seo-policy', () => {
       expect(decision.follow).toBe(true);
       // Falls back to self canonical when base URL missing
       expect(decision.canonical).toBe(url);
+    });
+
+    test('templated page → noindex, follow, self canonical', () => {
+      const templated = createEmoji({
+        slug: 'ginger-root',
+        contentTier: 'deep',
+        longForm: {
+          overview: 'The ginger root is the emoji of ginger root-coded ginger root flex.',
+          faqs: [
+            {
+              question: 'What does the ginger root emoji mean?',
+              answer: 'The visual cue is a natural fit for root-flex-coded reveals.',
+            },
+          ],
+        },
+      });
+      const url = 'https://knowyouremoji.com/emoji/ginger-root';
+      const decision = getIndexingDecision(templated, url);
+
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(url);
+      expect(decision.reason).toContain('templated');
     });
   });
 
