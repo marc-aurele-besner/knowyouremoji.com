@@ -25,6 +25,25 @@ describe('Footer', () => {
     expect(screen.getByText(/© \d{4} KnowYourEmoji/)).toBeInTheDocument();
   });
 
+  it('shows the Amazon Associates disclosure only when a tracking ID is set', () => {
+    const saved = process.env.NEXT_PUBLIC_AMZN_TAG;
+    try {
+      Reflect.deleteProperty(process.env, 'NEXT_PUBLIC_AMZN_TAG');
+      render(<Footer />);
+      expect(screen.queryByTestId('amazon-disclosure')).not.toBeInTheDocument();
+      cleanup();
+
+      process.env.NEXT_PUBLIC_AMZN_TAG = 'knowyouremoji-20';
+      render(<Footer />);
+      expect(screen.getByTestId('amazon-disclosure')).toHaveTextContent(
+        'As an Amazon Associate, KnowYourEmoji earns from qualifying purchases.'
+      );
+    } finally {
+      if (saved === undefined) Reflect.deleteProperty(process.env, 'NEXT_PUBLIC_AMZN_TAG');
+      else process.env.NEXT_PUBLIC_AMZN_TAG = saved;
+    }
+  });
+
   it('renders current year in copyright', () => {
     render(<Footer />);
     const currentYear = new Date().getFullYear();

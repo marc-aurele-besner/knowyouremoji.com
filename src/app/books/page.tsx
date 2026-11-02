@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { AmazonBookLink } from '@/components/books/amazon-book-link';
 import { Button } from '@/components/ui/button';
+import { AMAZON_DISCLOSURE, hasAmazonTag } from '@/lib/amazon-affiliate';
 import { BOOKS } from '@/lib/book-banners';
 import { getEnv } from '@/lib/env';
 
@@ -101,9 +103,9 @@ export default function BooksPage() {
               <p className="mt-3 text-[15px] leading-relaxed">{book.description}</p>
               <div className="mt-5 sm:mt-auto sm:pt-5">
                 <Button asChild variant="brand">
-                  <a href={book.url} target="_blank" rel="sponsored noopener noreferrer">
+                  <AmazonBookLink book={book} placement="books-page">
                     Get it on Amazon →
-                  </a>
+                  </AmazonBookLink>
                 </Button>
               </div>
             </div>
@@ -112,8 +114,13 @@ export default function BooksPage() {
       </ul>
 
       <p className="mt-6 text-sm text-muted-foreground">
-        Each link opens the book’s page on Amazon in a new tab.
+        Each link opens the book’s page on your local Amazon store in a new tab.
       </p>
+      {hasAmazonTag() && (
+        <p className="mt-2 text-sm text-muted-foreground" data-testid="amazon-disclosure">
+          {AMAZON_DISCLOSURE}
+        </p>
+      )}
     </main>
   );
 }

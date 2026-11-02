@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, type MouseEvent } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { AmazonBookLink } from '@/components/books/amazon-book-link';
 import { cn } from '@/lib/utils';
 import { engagementEvents } from '@/lib/analytics';
 import { BOOK_BANNERS, BOOK_WIDE_BANNERS, getBook, type BookId } from '@/lib/book-banners';
@@ -91,11 +92,10 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
   }, [card.id, wide, pathname]);
 
   const linkProps = (bannerId: string) => ({
-    href: book.url,
-    target: '_blank',
-    rel: 'sponsored noopener noreferrer',
-    onClick: () => {
-      engagementEvents.externalLinkClick(book.url, 'Book banner');
+    book,
+    placement: bannerId,
+    onClick: (event: MouseEvent<HTMLAnchorElement>) => {
+      engagementEvents.externalLinkClick(event.currentTarget.href, 'Book banner');
       recordBookBannerEvent('click', bannerId, pathname);
     },
   });
@@ -103,7 +103,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
   return (
     <aside ref={ref} aria-label="Featured book" className={cn('not-prose', className)}>
       {wide && (
-        <a
+        <AmazonBookLink
           {...linkProps(wide.id)}
           aria-label={`${book.title} by ${book.author} — buy on Amazon`}
           className="hidden overflow-hidden rounded-2xl ring-1 ring-card-border transition hover:shadow-soft hover:ring-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 md:block"
@@ -116,9 +116,9 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
             sizes="(min-width: 1152px) 1120px, 100vw"
             className="h-auto w-full"
           />
-        </a>
+        </AmazonBookLink>
       )}
-      <a
+      <AmazonBookLink
         {...linkProps(card.id)}
         className={cn(
           'group flex items-center gap-4 rounded-2xl border border-card-border bg-card p-4 transition hover:border-primary-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 sm:gap-5 sm:px-[22px] sm:py-5',
@@ -151,7 +151,7 @@ function BookBanner({ className, variant = 'inline' }: BookBannerProps) {
         >
           Get it on Amazon →
         </span>
-      </a>
+      </AmazonBookLink>
     </aside>
   );
 }
