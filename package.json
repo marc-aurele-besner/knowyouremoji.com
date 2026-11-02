@@ -18,6 +18,7 @@
     "validate:emojis": "npx bun run scripts/validate-emojis.ts",
     "generate:skin-tone-content": "npx bun run scripts/skin-tone-content/generate.ts",
     "check:similarity": "npx bun run scripts/check-content-similarity.ts",
+    "check:emoji-template": "npx bun run scripts/check-emoji-template.ts",
     "import:neon": "npx bun run scripts/import-to-neon.ts",
     "backup:neon": "npx bun run scripts/backup-neon.ts",
     "prepare": "husky"
