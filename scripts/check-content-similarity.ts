@@ -27,6 +27,12 @@
  * are supposed to sound alike. The two checks above are the ones that point
  * at real duplication.
  *
+ * The combo catalog is checked the same way. It was left out of this script
+ * for a long time, and 750 combo pages were generated from a shared template
+ * before anyone noticed: they each passed a word-count floor on their own,
+ * which is how a page repeated seven hundred times made it into the
+ * catalog. The combo check below is the reason that cannot happen again.
+ *
  * Usage:
  *   bun run check:similarity                 # report duplicates and family spread
  *   bun run check:similarity -- --threshold 0.98
@@ -37,7 +43,10 @@
 import fs from 'fs';
 import path from 'path';
 
+import { findComboBoilerplate } from './combo-content/boilerplate';
+
 const EMOJI_DIR = path.join(process.cwd(), 'src', 'data', 'emojis');
+const COMBO_DIR = path.join(process.cwd(), 'src', 'data', 'combos');
 
 /** Similarity at or above which two pages are reported as near-duplicates. */
 const DEFAULT_THRESHOLD = 0.95;
@@ -71,6 +80,15 @@ const DUPLICATE_THRESHOLD = 0.95;
  * as the backlog is cleared.
  */
 const BASELINE_OFFENDER_COUNT = 28;
+/**
+ * The number of near-duplicate combo pairs the catalog is allowed to carry.
+ *
+ * Combos that cover the same pair of emoji are a special case: a page for
+ * 🔥💯 and a page for 💯🔥 answer the same question, so the catalog will
+ * always hold some pairs that are similar by construction. The count is
+ * kept as a ratchet — it fails when the number grows.
+ */
+const BASELINE_COMBO_OFFENDER_COUNT = 0;
 /**
  * Terms appearing in more than this many pages are ignored when generating
  * candidate pairs. They cannot narrow anything down and the posting lists
@@ -156,6 +174,53 @@ function loadPages(): Page[] {
         file: path.join('src', 'data', 'emojis', name),
         family: emoji.skinToneBase as string | undefined,
         text: pageText(emoji),
+      };
+    });
+}
+
+/**
+ * Flatten every text field of a combo page into one comparable blob.
+ *
+ * The slug, the category and the tags are left out: they are navigation
+ * metadata, and a page that shares a category with another page is not
+ * thereby saying the same thing.
+ */
+function comboPageText(combo: Record<string, unknown>): string {
+  const longForm = (combo.longForm ?? {}) as Record<string, unknown>;
+  const faqs = (longForm.faqs ?? []) as Array<Record<string, string>>;
+  const examples = (combo.conversationExamples ?? []) as Array<Record<string, string>>;
+
+  return [
+    combo.description,
+    combo.meaning,
+    longForm.overview,
+    longForm.howPeopleUseIt,
+    longForm.whenNotToUse,
+    longForm.howToReply,
+    ...faqs.map((f) => `${f.question} ${f.answer}`),
+    ...examples.map((e) => `${e.message} ${e.interpretation}`),
+  ]
+    .filter((value): value is string => typeof value === 'string' && value.length > 0)
+    .join(' ');
+}
+
+/** Load every published combo page. */
+function loadComboPages(): Page[] {
+  if (!fs.existsSync(COMBO_DIR)) return [];
+  return fs
+    .readdirSync(COMBO_DIR)
+    .filter((name) => name.endsWith('.json'))
+    .sort()
+    .map((name) => {
+      const combo = JSON.parse(fs.readFileSync(path.join(COMBO_DIR, name), 'utf-8')) as Record<
+        string,
+        unknown
+      >;
+      return {
+        slug: (combo.slug as string) ?? name.slice(0, -5),
+        file: path.join('src', 'data', 'combos', name),
+        family: undefined,
+        text: comboPageText(combo),
       };
     });
 }
@@ -303,6 +368,60 @@ function main(): void {
     }
   }
 
+  // --- Combo catalog -----------------------------------------------------------
+  const comboPages = loadComboPages();
+  const comboVectors = buildVectors(comboPages);
+
+  const comboOffenders: Offender[] = [];
+  let comboDuplicateCount = 0;
+  for (const [i, j] of candidatePairs(comboPages, comboVectors)) {
+    const similarity = cosine(comboVectors[i], comboVectors[j]);
+    if (similarity >= DUPLICATE_THRESHOLD) comboDuplicateCount += 1;
+    if (similarity >= threshold) {
+      comboOffenders.push({ a: comboPages[i].slug, b: comboPages[j].slug, similarity });
+    }
+  }
+  comboOffenders.sort((x, y) => y.similarity - x.similarity);
+
+  // Combos still carrying the shared template language.
+  const templatedCombos = comboPages.filter((page) => {
+    const combo = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), page.file), 'utf-8')
+    ) as Record<string, unknown>;
+    return findComboBoilerplate(combo).length > 0;
+  });
+
+  console.log('');
+  console.log(`Checked ${comboPages.length} combo pages.`);
+  console.log(
+    `Found ${comboOffenders.length} pair(s) at or above ${threshold.toFixed(2)} cosine similarity.`
+  );
+  console.log(
+    `${comboDuplicateCount} pair(s) at or above the ${DUPLICATE_THRESHOLD.toFixed(2)} duplicate ` +
+      `threshold; ${templatedCombos.length} combo(s) still carry shared template language.`
+  );
+
+  if (comboOffenders.length > 0) {
+    console.log('');
+    for (const offender of comboOffenders.slice(0, top)) {
+      console.log(`  ${offender.similarity.toFixed(3)}  ${offender.a}  ||  ${offender.b}`);
+    }
+    if (comboOffenders.length > top) {
+      console.log(`  ... and ${comboOffenders.length - top} more`);
+    }
+  }
+
+  if (templatedCombos.length > 0) {
+    console.log('');
+    console.log('  Combos carrying shared template language:');
+    for (const page of templatedCombos.slice(0, top)) {
+      console.log(`    ${page.slug}`);
+    }
+    if (templatedCombos.length > top) {
+      console.log(`    ... and ${templatedCombos.length - top} more`);
+    }
+  }
+
   // --- Skin-tone family spread -------------------------------------------------
   const families = new Map<string, number[]>();
   pages.forEach((page, index) => {
@@ -367,6 +486,31 @@ function main(): void {
     console.log(
       `${-delta} duplicate pair(s) below the recorded baseline of ${BASELINE_OFFENDER_COUNT}. Lower ` +
         `BASELINE_OFFENDER_COUNT in scripts/check-content-similarity.ts to keep the ratchet tight.`
+    );
+  }
+
+  const comboDelta = comboDuplicateCount - BASELINE_COMBO_OFFENDER_COUNT;
+  if (comboDelta > 0) {
+    failed = true;
+    console.error('');
+    console.error(
+      `Near-duplicate combo pages found: ${comboDuplicateCount} pair(s) at or above ` +
+        `${DUPLICATE_THRESHOLD.toFixed(2)}, ${comboDelta} more than the recorded baseline of ` +
+        `${BASELINE_COMBO_OFFENDER_COUNT}. Rewrite the copy, or lower the threshold.`
+    );
+  }
+
+  if (templatedCombos.length > 0) {
+    failed = true;
+    console.error('');
+    console.error(
+      `${templatedCombos.length} combo page(s) still carry shared template language: ` +
+        `${templatedCombos
+          .slice(0, 10)
+          .map((page) => page.slug)
+          .join(', ')}` +
+        (templatedCombos.length > 10 ? ', ...' : '') +
+        '. Rewrite them about their own emoji pair.'
     );
   }
 
