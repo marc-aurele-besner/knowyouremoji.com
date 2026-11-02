@@ -17,6 +17,9 @@
 /test-results/
 /playwright/.cache/
 
+# content rewrite scratch
+/.emoji-content-failed/
+
 # next.js
 /.next/
 /out/
