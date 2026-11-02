@@ -8,123 +8,130 @@
   "subcategory": "household",
   "unicodeVersion": "4.1",
   "baseMeaning": "Coffin emoji.",
-  "tldr": "RIP!",
+  "tldr": "⚰️ usually means “I’m dead” in a slang reaction, but in serious conversations it can seem cruelly literal.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "Represents Coffin.",
-      "example": "Look at this ⚰️",
+      "context": "SLANG",
+      "meaning": "In casual chat, ⚰️ means “I’m dead,” expressing overwhelm, exhaustion, or a dramatic inability to continue.",
+      "example": "that meeting ran three hours ⚰️",
       "riskLevel": "LOW"
     },
     {
-      "context": "SLANG",
-      "meaning": "Burial coffin.",
-      "example": "Feeling ⚰️",
-      "riskLevel": "LOW"
+      "context": "IRONIC",
+      "meaning": "⚰️ can turn frustration into a dark joke, though the joke only works when no real death is involved.",
+      "example": "great, another family dinner. ⚰️",
+      "riskLevel": "MEDIUM"
     },
-    { "context": "IRONIC", "meaning": "Ironic usage.", "example": "Mood ⚰️", "riskLevel": "LOW" },
+    {
+      "context": "LITERAL",
+      "meaning": "When the conversation concerns an actual body, funeral, or accident, ⚰️ refers to the physical coffin.",
+      "example": "the report showed the coffin recovered from the river ⚰️",
+      "riskLevel": "MEDIUM"
+    },
     {
       "context": "WORK",
-      "meaning": "Work context.",
-      "example": "Work vibes ⚰️",
-      "riskLevel": "LOW"
+      "meaning": "Using ⚰️ after work problems can make the sender seem callous or like they are joking about death.",
+      "example": "we lost the account. ⚰️",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Lands on death-of-thread-coded tweets, dunk-on-them posts, and 'burying this take ⚰️' ironic posts where the coffin cue reads as brutal-finish flex."
+      "platform": "TIKTOK",
+      "note": "In comments and short replies, ⚰️ often functions as “I’m dead” after something silly or overwhelming. Serious videos about an actual death can make the same emoji feel grim and disconnected from the intended joke."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Staple of death-coded flat-lays, brutal-finish stories, and 'RIP the algorithm ⚰️' reveals; the lid-and-handle visual carries the visible burial energy."
+      "note": "In direct messages, ⚰️ can punctuate an exaggerated complaint about someone’s message, an event, or a long day. Under a memorial post or family-loss story, however, the literal coffin image is likely to be read literally."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Shows up on coffin-dance transitions, brutal-finish clips, and 'burying this take ⚰️' ironic content where the coffin cue signals finish-coded flex."
+      "platform": "WHATSAPP",
+      "note": "WhatsApp group chats often mix jokes with family news, which makes ⚰️ especially risky near grief or illness conversations. A playful “I’m dead” reaction among close friends can work, but relatives may not recognize the slang."
     },
     {
       "platform": "SLACK",
-      "note": "Surfaces on team 'RIP project' tags, work-coded finish messages, and friend brutal-coded moments where the coffin cue fits the finish register."
+      "note": "In workplace channels, ⚰️ can sound like a morbid joke even when the sender is reacting to routine frustration. Concrete words such as “I’m overwhelmed” or “I need help” communicate the problem without making death part of the punchline."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for ⚰️ on dunk-coded threads, 'burying this take ⚰️' reveals, and brutal-finish moments where the coffin cue matches the modern ironic register."
+      "note": "Gen Z users often read ⚰️ as the same “I’m dead” reaction associated with 💀, especially after a long silence or an exhausting exchange. It is usually understood as exaggerated frustration rather than a literal death message."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on dunk-coded tags, nostalgia-coded brutal moments, and coffin-dance reveals where the universal lid-and-handle cue fits."
+      "note": "Millennials may understand the internet meaning of ⚰️ while still finding the coffin image more grim than 💀. The joke can therefore land among peers but feel needlessly harsh in a serious family chat."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded finish messages and brutal reveals, treating the coffin as literal burial-coded energy."
+      "note": "Gen X recipients may focus on the coffin itself rather than the slang around it. That makes ⚰️ more likely to sound insensitive when the conversation already involves illness, tragedy, or death."
     },
     {
       "generation": "BOOMER",
-      "note": "Reads it as a literal coffin and uses it on grief-coded tags without parsing the modern brutal-ironic subtext."
+      "note": "Older recipients are more likely to take ⚰️ as a literal reference to a coffin or as inappropriate dark humor. Avoid it when family grief is nearby, even if the sender intended the casual “I’m dead” meaning."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Dark humor in a grief thread",
+      "description": "⚰️ can read as cruel or emotionally tone-deaf when someone has died. Do not send it in a condolence thread; use plain words such as “I’m so sorry” instead.",
+      "severity": "HIGH"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "⚰️ Coffin Emoji Meaning",
-  "seoDescription": "Learn what the Coffin emoji ⚰️ really means.",
+  "seoDescription": "What does ⚰️ mean? It usually signals “I’m dead” as a slang reaction, but in grief or serious-news threads the literal coffin can seem cruel or like dark humor.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-15",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "⚰️ is the emoji of brutal-finish-coded flex — a lid-and-handle coffin, the iconography of the burial, dunk-coded finish energy, and the universal 'RIP the algorithm ⚰️' tag. Where 💀 reads as dead-coded skull energy and 🪦 reads as grave-coded memorial energy, ⚰️ captures the moment when the sender wants to communicate brutal finish — a 'burying this take ⚰️' dunk moment or a 'RIP the algorithm ⚰️' ironic reveal. The coffin cue borrows from the burial tradition and the modern brutal-coded aesthetic, which is exactly why the emoji reads as finish-coded rather than literal grief symbol.\n\nIn real-world usage ⚰️ lives in the spaces where the sender wants to communicate brutal finish energy. A friend sends it on a 'burying this take ⚰️' dunk-coded message. A coworker sends it on a 'RIP project ⚰️' brutal-finish reveal. A relative sends it on a 'RIP the algorithm ⚰️' ironic-coded tag. The coffin cue is what makes the emoji feel brutal-coded — it is not just 'coffin,' it is 'coffin-coded finish moment.'\n\nWhat separates ⚰️ from the rest of the household-objects family is the brutal-finish register. The emoji is not saying 'urn' (⚱️), 'headstone' (🪦), or 'candle' (🕯️). It is saying 'brutal-coded finish,' which carries a specific burial tradition. That is why ⚰️ travels especially well on 'burying this take' tags, dunk-coded reveals, and any context where the sender wants the message to land with finish energy.",
-    "howPeopleUseIt": "⚰️ shows up as the closer on a 'burying this take ⚰️' dunk message ('burying this take ⚰️'), the punctuation on a 'RIP the algorithm ⚰️' brutal-finish reveal, and the softener on a 'RIP project ⚰️' ironic-coded tag. It pairs naturally with sentences that name the brutal-coded energy — 'burying this take,' 'RIP the algorithm,' 'RIP project' — and sits beautifully on dunk messages and brutal-finish reveals.\n\nIn group chats ⚰️ anchors 'finish moment' threads, brutal-coded dunk reveals, and 'RIP project ⚰️' finish-coded tags where the coffin cue matches the register. On Instagram it lands on death-coded flat-lays and brutal-finish stories. On TikTok it travels in coffin-dance transitions and 'burying this take' ironic content.\n\nThe emoji also works in work contexts. A 'work vibes ⚰️' work-coded message uses the coffin cue to communicate brutal-coded team energy. Across all of these surfaces the rule is the same: the more brutal-coded the moment, the more natural ⚰️ feels.",
-    "whenNotToUse": "Skip ⚰️ in genuine grief or sympathy contexts. The brutal-finish-coded coffin cue is the wrong tone for any conversation where the moment is real loss. A sentence that acknowledges the moment is a better fit.\n\nAvoid ⚰️ in 'literally grief' coded contexts where the brutal-coded energy feels off. A 'burying this take ⚰️' message works for dunk-coded flex; for literal grief contexts use 🕯️ or a sentence.\n\nSkip ⚰️ when you want to communicate sincere sympathy. The brutal-coded register is too ironic-coded for sincere moments; use 🕯️ or 🪦 when the sympathy needs to be genuine.",
-    "howToReply": "If someone sends ⚰️, the cleanest mirror is another ⚰️, 💀, or a sentence that joins the brutal-finish-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'burying this take too' or 'RIP project for sure.' If the coffin cue feels too brutal-coded, reply with a softer emoji (🪦 or 🕯️) that signals final without matching the brutal volume.\n\nWhen ⚰️ lands as a 'burying this take ⚰️' dunk-coded message, mirror with another ⚰️, a skull emoji, or a sentence that escalates the energy. When it arrives as a 'RIP project ⚰️' brutal-finish reveal, mirror with another ⚰️, a sentence that joins the finish energy, or an emoji that matches.",
+    "overview": "⚰️ shows a literal coffin, so what the recipient hears depends heavily on their age and the subject of the conversation. Gen Z users often take it as the same slang reaction associated with 💀: “I’m dead,” meaning overwhelmed, unable to answer, or dramatically done with the exchange. Millennials and Gen X recipients may understand that meaning while noticing the coffin itself, which can make the joke feel harsher. In a family chat involving illness, an accident, or death, even that slang interpretation may not be enough.\n\nThat makes ⚰️ much harder to place than its cartoon shape suggests. It is not a neutral sympathy symbol, and it does not become safer because death-related emoji are jokes elsewhere. In a casual conversation, it can work like “I cannot” or “please stop”; in a grief thread, it reads as dark humor at best and cruelty at worst. Unlike 💀, which has become a standard reaction marker, ⚰️ is the most condemned condolence emoji on the modern keyboard. When someone is actually grieving, words are the safer choice.",
+    "howPeopleUseIt": "⚰️ most often appears after an exhausting message, a painfully long exchange, or a reply delayed long enough that the sender wants to joke about vanishing. In that setting, it means “I’m dead” or “I cannot deal with this anymore.” It may follow a complaint such as “three meetings in a row,” or stand alone as a dramatic way to close a message.\n\nThe coffin is less casual than 💀 because its literal image is harder to forget. People who use it are usually trying to make frustration sound playful, but the joke depends on everyone knowing the conversation is not about an actual death. That assumption fails quickly when the subject is a funeral, a hospital update, or bad news delivered seriously.",
+    "whenNotToUse": "Do not send ⚰️ in a grief thread, beneath a condolence, or alongside news that someone has died. The guide’s verdict is unusually direct: the coffin reads as dark humor at best and as cruelty at worst, so no amount of casual context makes it an appropriate condolence emoji. A simple “I’m sorry” carries more care without risking that misread.\n\nAlso avoid it in workplace channels, family groups, or serious conversations about illness and accidents. Older recipients may focus on the literal coffin, while younger recipients may be using “I’m dead” as slang. If the point is simply that you are exhausted, use 😵‍💫 or write “I’m completely done” instead.",
+    "howToReply": "If ⚰️ arrives as part of an obvious joke, you can keep the exaggeration going with “you’re not alive either” or 😵‍💫 rather than sending more coffin imagery. A playful reply makes clear that you understand the “I’m dead” meaning without forcing the recipient to explain it. If the message followed exhausting news, a more caring reply might be “that sounds brutal, are you okay?”\n\nIf ⚰️ lands on your own story and feels too literal, ask whether the sender meant “I’m dead” as slang, or simply apologize and explain that the topic was sensitive. If you sent it in a genuine grief conversation, do not answer with another joke; say plainly that the emoji was a mistake, apologize, and offer a sincere message of support.",
     "faqs": [
       {
-        "question": "What does ⚰️ mean from a friend?",
-        "answer": "From a friend, ⚰️ signals brutal-finish-coded flex or a 'burying this take ⚰️' dunk-coded message. The coffin cue reads as finish-coded rather than literal grief symbol, so it tends to land on dunk tags, friend brutal-coded messages, and RIP-project reveals."
+        "question": "What does ⚰️ mean from a guy?",
+        "answer": "There is no gender-specific meaning. In casual chat, it usually says “I’m dead,” meaning the message overwhelmed him, though the literal coffin can make it inappropriate in serious contexts."
       },
       {
         "question": "Is ⚰️ flirty?",
-        "answer": "Not really. ⚰️ is more about brutal-finish-coded dunk flex or ironic burying-this-take humor than romance. On its own the emoji reads as finish-coded rather than soft-coded affection."
+        "answer": "⚰️ is not inherently flirty. It is more commonly an exaggerated reaction to shock, exhaustion, or an absurd situation, so the surrounding message matters more than the sender’s gender."
       },
       {
-        "question": "What is the difference between ⚰️ and 💀?",
-        "answer": "💀 is the skull — the cue is dead-coded skull energy, the universal 'I'm dead' tag. ⚰️ is the coffin — the cue is coffin-coded brutal finish, the 'burying this take' dunk energy. Use 💀 when the moment is dead-coded; use ⚰️ when the moment is brutal-coded finish."
+        "question": "What does ⚰️ mean on TikTok?",
+        "answer": "On TikTok, ⚰️ usually means “I’m dead” after something wild, overwhelming, or extremely funny. Comments about an actual death or memorial content can make it read literally instead."
       },
       {
-        "question": "Is ⚰️ for 'burying this take' moments?",
-        "answer": "Yes — ⚰️ is one of the most common brutal-coded emojis. The coffin cue is a natural fit for 'burying this take' moments, dunk-coded reveals, and 'RIP project' ironic tags."
-      },
-      {
-        "question": "Does ⚰️ mean literal coffin?",
-        "answer": "Sometimes — ⚰️ carries the lid-and-handle visual and reads in modern usage as brutal-coded. The literal-coffin-versus-ironic-burial split depends on the sender and the channel."
+        "question": "Why is ⚰️ rude in grief threads?",
+        "answer": "Because the coffin is the literal symbol of death and can make a condolence feel like dark humor. The source guide says it reads as dark humor at best and cruelty at worst, so use sincere words instead."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "social",
-      "message": "burying this take on the timeline, full brutal-finish era ⚰️",
-      "interpretation": "Public brutal-finish-coded flex. Mirror with another ⚰️, a skull emoji, or a sentence that joins the finish energy."
-    },
-    {
-      "setting": "work",
-      "message": "RIP project tonight, full coffin-dance energy ⚰️",
-      "interpretation": "Work brutal-finish-coded message. Mirror with another ⚰️, a skull emoji, or a sentence that joins the team energy."
-    },
-    {
       "setting": "friends",
-      "message": "burying this drama right now, full finish era ⚰️",
-      "interpretation": "Friend brutal-coded reveal. Mirror with another ⚰️, a sentence that joins the finish energy, or an emoji that matches."
+      "message": "the group chat has been going since midnight ⚰️",
+      "interpretation": "This means “I’m dead” or “I cannot keep up.” Reply with playful exhaustion, such as “we need to all log off,” rather than discussing death literally."
     },
     {
-      "setting": "family",
-      "message": "RIP the diet starting tonight, full coffin energy ⚰️",
-      "interpretation": "Family brutal-coded tag. Mirror with another ⚰️, a sentence that joins the family moment, or a skull emoji that matches."
+      "setting": "social",
+      "message": "my phone died at 2 percent and now the charger is gone too ⚰️",
+      "interpretation": "The sender is dramatically saying both they and their phone are “dead.” React with sympathy for the charger and keep the exaggeration going."
     },
     {
       "setting": "dating",
-      "message": "you killed me, full coffin-dance mode ⚰️",
-      "interpretation": "Partner brutal-coded romance. Mirror with another ⚰️, a heart emoji, or a sentence that escalates the romance."
+      "message": "you sent me that voice note at 1am ⚰️",
+      "interpretation": "This is usually playful overwhelm rather than a romantic signal. A flirty reply can match the joke, but do not assume ⚰️ itself carries romantic meaning."
+    },
+    {
+      "setting": "work",
+      "message": "the dashboard failed again right before the client demo ⚰️",
+      "interpretation": "The sender may be expressing defeat, but the emoji can sound inappropriate with colleagues. Respond with practical help and describe the problem without the coffin imagery."
+    },
+    {
+      "setting": "family",
+      "message": "the funeral was so long ⚰️",
+      "interpretation": "This reads as a grave joke at the wrong moment and may deeply offend the family. Do not laugh or reply with another skull; acknowledge the service and offer condolences instead."
     }
   ]
 }

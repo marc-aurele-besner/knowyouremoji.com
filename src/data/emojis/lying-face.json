@@ -8,130 +8,131 @@
   "subcategory": "face-neutral",
   "unicodeVersion": "9.0",
   "baseMeaning": "A yellow face with a long nose like Pinocchio, indicating a lie or fib.",
-  "tldr": "Pinch-coded 'I'm fibbing' register, 'called out' register, or self-aware-bluff closer.",
+  "tldr": "🤥 marks a fib, calls out a doubtful claim, or jokingly admits that something untrue was said.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Admitting a small lie, fib, or exaggeration.",
-      "example": "I may have stretched the truth 🤥",
+      "meaning": "🤥 directly says that a statement or story is false.",
+      "example": "the cake was store-bought 🤥",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Self-aware joke about lying, calling cap, or calling out.",
-      "example": "no cap, except when there is cap 🤥",
+      "meaning": "🤥 works as a skeptical reaction to an obvious exaggeration or unlikely excuse.",
+      "example": "you stayed up until 3 watching one episode 🤥",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Flirty 'okay, you caught me' admission after a small bluff.",
-      "example": "fine, I lied about liking that restaurant 🤥",
+      "context": "IRONIC",
+      "meaning": "🤥 jokingly admits that the sender is the person who lied.",
+      "example": "i only checked my phone once during the movie 🤥",
       "riskLevel": "LOW"
     },
     {
-      "context": "WORK",
-      "meaning": "Self-aware joke about a soft exaggeration in a meeting.",
-      "example": "okay, the timeline was a little optimistic 🤥",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "🤥 can express frustration by implying that an explanation is false or evasive.",
+      "example": "great, another ‘quick’ update. nothing changed at all 🤥",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
+      "platform": "TIKTOK",
+      "note": "In comments, 🤥 often accompanies an exaggerated story as a playful challenge: “you really woke up at 5 for that coffee?” It can also mark a creator’s obvious acting when the caption already makes the joke."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Anchors 'okay I lied' threads, cap-callout tweets, and self-aware fib confessions where the long Pinocchio-nose cue reads as honest admission rather than actual deception."
+      "note": "On Twitter, a lone 🤥 tends to function as a blunt reaction to a boast, suspicious claim, or contradiction. The short format leaves the target open, so nearby words often determine whether it feels teasing or accusatory."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Surfaces in caption banter, 'no cap except when there is cap' stories, and fib-confession captions where the lying-face cue matches a self-aware exaggeration moment."
+      "note": "In Instagram messages, 🤥 is common in playful exchanges about late replies, pretend excuses, or overstated plans. Sending it between photos usually adds teasing skepticism rather than demanding a literal confession."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Travels in 'okay I stretched that' comments, cap-callout threads, and confession captions where the long-nose cue signals playful honesty about the bluff."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Sits in server banter, 'fine, I lied' threads, and self-aware joke messages where the Pinocchio-nose cue softens a fib into warm confession."
+      "platform": "SLACK",
+      "note": "In Slack, 🤥 can label a colleague’s convenient explanation without requiring a long dispute. Outside close work groups, though, the same emoji may sound more pointed because the surrounding relationship is less visible."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤥 as the canonical 'no cap except when there is cap' or 'okay I lied' reaction. The Pinocchio-nose cue has become shorthand for self-aware fibbing on cheeky threads."
+      "note": "Gen Z often uses 🤥 as a joke about an obvious lie, especially when the truth is already clear from context. It can function like a teasing “caught you,” although serious accusations still use it."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Mixes literal 'I am fibbing' use with the self-aware cap-callout reading. The cue does double duty on friend banter and work meeting jokes where exaggeration confessions land."
+      "note": "Millennials tend to read 🤥 straightforwardly as “that is not true,” with jokes and sarcasm determining how aggressively it lands. In a familiar group chat, it may simply invite the sender to explain the story."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on actual admission moments - 'fine, I stretched that' - treating the long nose as a literal Pinocchio-coded lie cue."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal 'I am lying' emoji and sends it on honest admission moments, sometimes missing the self-aware cap-callout subtext on younger threads."
+      "note": "Gen X recipients may take 🤥 more literally, particularly when the sender is someone they do not know well. The emoji’s accusation can feel less playful there, especially in a serious disagreement."
     }
   ],
   "warnings": [
     {
-      "title": "Can read as admitting an actual lie",
-      "description": "Sending 🤥 in a serious context can read as a literal admission of deception. The Pinocchio-nose cue is taken at face value in some moments, so pair it with a sentence that frames the admission as self-aware exaggeration.",
+      "title": "Teasing becomes an accusation",
+      "description": "A recipient may hear “you are lying” rather than “that sounds unlikely,” especially if the relationship is new. Pair the emoji with a light question or use 😅 when the concern is genuinely mild.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "The joke obscures the real problem",
+      "description": "🤥 can make a complaint sound like banter when someone needs a straight answer. State the discrepancy plainly, or ask for clarification instead of relying on the emoji to carry the criticism.",
       "severity": "MEDIUM"
     }
   ],
   "relatedCombos": [],
-  "seoTitle": "🤥 Lying Face Emoji Meaning - What Does 🤥 Really Mean?",
-  "seoDescription": "Learn what the lying face emoji 🤥 really means in modern texting. Pinch-coded 'I'm fibbing' register, 'called out' register, or self-aware-bluff closer.",
+  "seoTitle": "🤥 Lying Face Emoji Meaning",
+  "seoDescription": "What does 🤥 mean? It marks a playful fib, calls out a claim that is untrue, or adds skeptical humor to an exaggerated story.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🤥 is the emoji of self-aware fibbing - a yellow face with a long Pinocchio-style nose, the universal cue of 'I lied.' Where 😏 reads as sly-smug and 🤐 reads as zip-the-lip silence, 🤥 captures the moment when the sender wants to admit a small exaggeration or call out a soft bluff. The long-nose visual borrows from the Pinocchio story, which is exactly why the emoji reads as honest confession rather than actual deception.\n\nIn real-world usage 🤥 lives in the spaces where the sender wants to confess a small fib. A friend sends it on 'okay I lied about being busy.' A partner sends it on 'fine, I actually did like the gift.' A coworker sends it on 'the timeline was a little optimistic' - the soft-exaggeration confession. The long nose is what anchors the cue; without it the emoji would be just a neutral face, but with it the moment reads as Pinocchio-coded honesty about the lie.\n\nWhat separates 🤥 from the rest of the lie-emoji family is the self-aware-confession register. The emoji is not saying 'I am sly' (😏), 'I am silent' (🤐), or 'I am embarrassed' (🤭). It is saying 'I am fibbing and I know it,' which carries a specific playful-honesty energy that the more silent emojis cannot match. That is why 🤥 travels especially well on cap-callout threads, friend banter confessions, and any moment where the sender wants the lie to read as warm rather than manipulative.",
-    "howPeopleUseIt": "🤥 shows up as the punchline on a 'okay I lied' admission, the closer on a 'fine, I stretched that' confession, and the softener on a 'no cap except when there is cap' message. It pairs naturally with sentences that own the fib - 'okay I lied,' 'I stretched the truth,' 'fine, you caught me' - and sits beautifully on self-aware banter and confession threads.\n\nIn group chats 🤥 anchors 'okay fine, I lied' threads, cap-callout reactions, and 'I stretched that' moments where the Pinocchio-nose cue matches the bit. On Twitter it lands on 'okay I lied' tweets and self-aware fib confessions. On TikTok it travels on 'fine, you caught me' comments and confession captions where the long-nose cue signals honest admission.\n\nThe emoji also works in dating. A 'fine, I lied about liking that restaurant' partner message uses 🤥 to communicate self-aware confession without sounding manipulative. Across all of these surfaces the rule is the same: the more playful the fib, the more natural 🤥 feels.",
-    "whenNotToUse": "Skip 🤥 in sympathy, condolence, or break-up contexts. The fib cue is the wrong tone for any conversation where the moment is emotional; a quiet ❤️ or a sentence that acknowledges the feeling is a better fit.\n\nAvoid 🤥 when you actually want to accuse someone of lying. The Pinocchio-nose cue reads as self-aware confession, not as a serious accusation, so it will undercut the gravity. Use a sentence that names the concern directly.\n\nSkip 🤥 in serious work moments where the fib actually matters. The lying-face cue softens the admission into a joke, which can land wrong when the consequence is real.",
-    "howToReply": "If someone sends 🤥, the cleanest mirror is another 🤥, a sentence that joins the confession, or a follow-up that escalates the cap-callout. If you want to engage, follow with a sentence that adds to the bit: 'okay but how long was the nose.' If the lying-face cue feels like an actual lie, address it directly with a sentence rather than mirroring with another fib emoji.\n\nWhen 🤥 lands as a partner's fib admission, mirror with another 🤥, a sentence that joins the confession, or a follow-up that escalates the banter. When it arrives as a work exaggeration admission, mirror with a sentence that engages with the actual concern rather than another lying face that doubles the joke.",
+    "overview": "🤥 is built around a simple visual joke: the yellow face has a long Pinocchio-style nose, so the emoji points directly at a false statement. Added in Unicode 9.0, it began with an unusually clear job—marking a lie, fib, or claim the sender does not believe.\n\nThat clear job does not make every use a serious accusation. 🤥 can be a teasing “nice try,” an ironic acknowledgment that the sender is the one lying, or a skeptical marker attached to an obviously exaggerated story. Its meaning changes with the sentence, relationship, and delivery. A friend who writes “i said i’d only buy one, but… 🤥” is joking about their own bad decision; a colleague who writes “the report was accurate 🤥” may be challenging the report. What people get wrong is treating the long nose as proof that 🤥 always means “you are lying.” It can also be the punchline itself.",
+    "howPeopleUseIt": "People usually reach for 🤥 when a claim is so exaggerated that the emoji can deliver the disbelief for them. It often follows a boast, an implausible excuse, a contradicted alibi, or a story whose details do not quite fit. The emoji also appears when someone admits their own minor dishonesty: “i was going to eat just one, but… 🤥.”\n\nThe surrounding text determines the force. “You watched the whole finale without falling asleep? 🤥” sounds teasing, while “that never happened 🤥” directly rejects the claim. In group chats, 🤥 can stand alone as a reaction when everyone already understands the joke. It may also point out that someone’s stated reason does not match what happened, making it useful for calling out a dodge without writing a stern paragraph.",
+    "whenNotToUse": "Avoid 🤥 when the issue needs a precise answer rather than a comic reaction. If money, work, loyalty, or a health matter is involved, the long-nose joke can distract from the actual problem. Say exactly what is inaccurate and ask for an explanation; a neutral question like “what happened?” keeps the conversation from turning into a contest over who gets to lie.\n\nOlder recipients or people who know you less well may also take the emoji literally. A joke about missed plans can sound like an accusation, and a playful 🤥 aimed at a relative may create unnecessary tension. Use 😅, 🙃, or plain wording when the point is mild. If someone is discussing grief, illness, or another painful subject, leave the emoji out entirely.",
+    "howToReply": "If 🤥 arrives as playful skepticism, match its energy with a brief explanation, a wink, or another 🤥. For example, “okay, the video was only two hours” can continue the joke without treating it as a serious challenge. To escalate, ask a specific question: “wait, what time did you actually leave?” That moves the exchange toward the story instead of repeating the accusation.\n\nIf 🤥 lands on something you shared and feels harsher than intended, respond plainly: “that part was exaggerated, but the rest was true.” If you sent it and the other person seems confused, clarify whether you were teasing or genuinely disputing their claim. A quick explanation preserves the joke while making the actual level of seriousness clear.",
     "faqs": [
       {
         "question": "What does 🤥 mean from a guy?",
-        "answer": "From a guy, 🤥 signals self-aware fibbing or a playful confession - 'okay I lied.' The Pinocchio-nose visual is one of the most universally recognized lie-coded emojis on the keyboard, so it tends to land on cap-callout threads, fib-confession messages, and self-aware exaggeration moments."
+        "answer": "🤥 has no gender-specific meaning. It usually says that he thinks a claim is false, is teasing you about an obvious exaggeration, or is jokingly admitting his own lie."
       },
       {
-        "question": "Is 🤥 an insult?",
-        "answer": "It can be if used to call someone out. The long-nose cue carries a 'called out' undertone, especially in younger use where it doubles as a cap-callout. In a self-aware confession it reads as warm honesty; as a reply to someone's claim it can read as accusation."
+        "question": "Is 🤥 flirty?",
+        "answer": "🤥 is not inherently flirty; it normally points to dishonesty or disbelief. It can appear in playful flirting when the joke involves a shared excuse, but the surrounding words determine that meaning."
       },
       {
-        "question": "What is the difference between 🤥 and 🤭?",
-        "answer": "🤭 is the hand-over-mouth face - the cue is giggly delight or secret-sharing. 🤥 is the lying face - the cue is fibbing confession or cap-callout. Use 🤭 when the sender is reacting to something cute or cheeky; use 🤥 when the sender is admitting or calling out a fib."
+        "question": "What does 🤥 mean on TikTok?",
+        "answer": "On TikTok, 🤥 commonly reacts to an exaggerated story, suspicious excuse, or obvious boast. It is often playful when the creator has already invited disbelief through the joke itself."
       },
       {
-        "question": "Is 🤥 rude?",
-        "answer": "It can be if used as a serious accusation. The Pinocchio-nose cue reads as warm confession in self-aware contexts but as 'you are a liar' when sent to someone who just made a claim. Pair it with a sentence that frames the admission as self-aware exaggeration."
+        "question": "Can 🤥 be serious?",
+        "answer": "Yes. When attached to a disputed fact, 🤥 can mean “that is false” and may open a serious confrontation. Use plain language if the distinction between a fib and a consequential lie matters."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "fine, I lied about being too busy to see you this weekend 🤥",
-      "interpretation": "Dating fib confession. Mirror with another 🤥, a sentence that escalates the warmth, or a follow-up that addresses the actual reason for the lie."
-    },
-    {
       "setting": "friends",
-      "message": "okay I said I was five minutes away, that was, uh, optimistic 🤥",
-      "interpretation": "Friend thread time-exaggeration confession. Mirror with another 🤥, a sentence that joins the joke, or a follow-up that asks how late."
+      "message": "i only ate two of the pizza rolls 🤥",
+      "interpretation": "The sender is jokingly confessing to eating more than they admitted. Reply with “sure you did” or ask how many are actually left."
     },
     {
       "setting": "social",
-      "message": "no cap except when there is cap, ask me anything 🤥",
-      "interpretation": "Public self-aware cap-callout. Mirror with a question or a sentence that escalates the bit, not another lying face that doubles the cue."
+      "message": "my flight was delayed six hours and i still made it on time 🤥",
+      "interpretation": "This marks the story as an obvious exaggeration or boast. The sender probably wants the audience to call out the implausible timing."
     },
     {
-      "setting": "family",
-      "message": "okay I may have eaten the last slice, my bad 🤥",
-      "interpretation": "Family group fib confession. Mirror with another 🤥, a sentence that joins the bit, or a follow-up that escalates the sibling-style banter."
+      "setting": "dating",
+      "message": "he said he was at the office all night, then posted stories from the bar 🤥",
+      "interpretation": "The emoji highlights the contradiction and suggests distrust. A good reply asks what happened rather than accusing him outright."
     },
     {
       "setting": "work",
-      "message": "the timeline was a little optimistic, fair point 🤥",
-      "interpretation": "Risky in a wide team channel; safer in a tight collaborator DM. Anchor with a sentence that names the real timeline so the admission does not feel glib."
+      "message": "the invoice went out friday, but it’s still sitting in drafts 🤥",
+      "interpretation": "The sender is calmly pointing out that the stated action did not happen. Respond by checking the actual status and correcting the record."
+    },
+    {
+      "setting": "family",
+      "message": "i only put one plate of cookies out 🤥",
+      "interpretation": "The sender is teasing themselves or another family member about disappearing cookies. Reply with a playful accusation about how many they actually ate."
     }
   ]
 }

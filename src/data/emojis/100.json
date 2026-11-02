@@ -8,120 +8,131 @@
   "subcategory": "Symbol",
   "unicodeVersion": "6.0",
   "baseMeaning": "Hundred points.",
-  "tldr": "Hundred, 'keep it 100', or 'real'.",
+  "tldr": "💯 means complete agreement, enthusiastic approval, or perfect hype, though some people still read it as a literal score.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Hundred points.",
-      "example": "100 💯",
+      "meaning": "It can mean a perfect score or full marks, especially when a parent or older relative uses it.",
+      "example": "you got 100 on the test 💯",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "'Keep it 100' or 'real'.",
-      "example": "real talk 💯",
+      "meaning": "It stands for 100% agreement, complete support, or enthusiastic approval.",
+      "example": "you should absolutely apply 💯",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Affection-coded 'real' energy.",
-      "example": "you're 100 💯",
+      "meaning": "In a romantic exchange, it can emphasize a sincere compliment without making the emoji inherently flirty.",
+      "example": "you look amazing tonight 💯",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "Full-effort at work.",
-      "example": "gave 100 💯",
-      "riskLevel": "LOW"
+      "meaning": "In a formal workplace message, 💯 may sound juvenile and distract from the work being discussed.",
+      "example": "great work on the quarterly report 💯",
+      "riskLevel": "MEDIUM"
     }
   ],
   "platformNotes": [
     {
+      "platform": "TIKTOK",
+      "note": "On TikTok, 💯 commonly caps an excited comment about a performance, video, or strong reaction. It reads as emphatic praise rather than a measured response."
+    },
+    {
       "platform": "TWITTER",
-      "note": "Staple of 'keep it 100' tweets and 'real' reactions; reads as 'I am being authentic.'"
+      "note": "On Twitter, 💯 can confirm that a take is completely correct, making it common under strong opinions and hot takes. It says “I support this fully,” not merely “I saw this.”"
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in real-coded captions and authentic-story overlays; pairs with 🔥 for the fire stack."
+      "note": "On Instagram, 💯 can show full support for a person or what they shared. It often closes a compliment and strengthens the praise."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Comment-section reaction to real clips and 'authentic' videos; reads as '100.'"
-    },
-    {
-      "platform": "DISCORD",
-      "note": "Used in real channels and authentic-coded servers; reads as 'I am being real.'"
+      "platform": "SLACK",
+      "note": "In Slack, 💯 can work in a casual team channel but feel too playful for a formal announcement. The channel’s tone matters more than the platform itself."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 💯 for 'keep it 100' affection and self-aware real reactions; the authentic read is dominant."
+      "note": "Gen Z commonly treats 💯 as shorthand for 100% agreement or maximal hype. Several in a row can feel performative rather than more sincere."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 💯 across platforms; reads as '100' or 'real-coded.'"
+      "note": "Millennials may use 💯 as a hype closer while still recognizing its older meaning of full marks or a perfect score."
     },
     {
       "generation": "BOOMER",
-      "note": "May use 💯 literally as a score; the cultural layer of 'keep it 100' is sometimes missed."
+      "note": "Boomers, especially parents, may read 💯 literally as a 100% grade or total agreement. The surrounding wording often determines which meaning lands."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Wrong tone for grief or formal work",
+      "description": "A 💯 beside bad news, grief, or a quarterly report can sound flippant or juvenile. Use the actual words, ❤️ for sympathy, or a straightforward professional comment instead.",
+      "severity": "HIGH"
+    },
+    {
+      "title": "False certainty when nuance is needed",
+      "description": "“Sure, no problem 💯” can falsely promise an easy result when the task will actually be difficult. Explain the real status instead of adding the emoji.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "💯 Hundred Points Emoji Meaning - What Does 💯 Really Mean?",
-  "seoDescription": "Learn what the hundred points emoji 💯 really means in texts and social media.",
+  "seoTitle": "💯 Hundred Points Emoji Meaning",
+  "seoDescription": "What does 💯 mean? It signals 100% agreement, full approval, or perfect hype, while older recipients may still read it as a score or full marks.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "The 💯 Hundred Points emoji was added in Unicode 6 (2010) and has been a default for authentic reactions ever since. The bold red '100' is the visual shorthand for real, 'keep it 100' affection, and full-effort self-aware authenticity. In 2026 💯 is the default emoji for real captions, authentic reactions, and 'I am being real' drops.\n\nIn real-world chat 💯 does very specific work. People send it in authentic-coded captions, as a real affection signal, or as the visual equivalent of 'keep it 100.' The number carries both literal score and self-aware-real. Writers should pick 💯 when the message is about authentic-coded energy, and avoid it when understatement is needed — the 100 is too loud. The number has been a fixture of real-coded captions since Unicode 6 and continues to land as the keep-it-100-and-real default in 2026 chats across platforms.",
-    "howPeopleUseIt": "💯 shows up in real captions, in 'keep it 100' reactions, and in authentic-coded posts. People send it during an authentic-coded share, as a date-coded opener, or as a work full-effort signal. The emoji pairs naturally with 🔥 for the fire stack and with ✨ for the sparkle stack.\n\nIn close-friends chats 💯 reads as 'real.' In dating-app messages it can land as an authentic-coded affection signal. In public posts it is the real-coded and authentic default.",
-    "whenNotToUse": "Skip 💯 in any context where understatement or restraint is needed. The bold '100' read is too loud. Avoid it in professional contexts where the 'real' read lands as performative rather than substantive. Also avoid 💯 in ironic contexts where the sender is actually being fake — the 100 implies real authenticity.",
-    "howToReply": "Mirror 💯 with another 💯 if you are matching the real energy, or pair with 🔥 for the fire stack. If the sender is signaling authentic-coded, mirror with 💯 or ✨ and a sentence that engages. If the sender is using 💯 as a date-coded opener, mirror with 💯 or ❤️ and a follow-up.\n\nIf 💯 lands as a 'keep it 100' reaction, mirror with 💯 or 🙌 to match the energy.",
+    "overview": "💯 began as what it literally shows: the number 100. Before emoji slang turned it into a hype device, people used “100” as a grade, a score, and shorthand for full marks. That older meaning survives. A parent saying “that’s the truth 💯” may still be offering a literal 100%, and someone unfamiliar with internet shorthand may hear a score rather than a reaction.\n\nIn everyday chats, however, 💯 usually means “I agree completely” or “you did it perfectly.” It closes a compliment, validates a win, or certifies that someone’s take is correct: “you nailed it 💯.” It can also end a hype comment, where it acts like the final emphatic beat after the words have already made the claim. A single 💯 is emphatic; repeated 💯💯💯 pushes the agreement further. Unlike a plain thumbs-up, 💯 sounds less like mild approval and more like total approval, although it still cannot replace a thoughtful response.",
+    "howPeopleUseIt": "💯 shows up after a strong compliment, a finished task, or a take the sender fully supports. “you nailed the presentation 💯” turns praise into a verdict: no partial credit. In slang, “no cap, that was the realest 💯” adds visual confirmation that the person is sincere or authentic, while “you should apply 💯” says “yes, completely.”\n\nThe number also works as a closing beat. One 💯 is enough for emphatic approval; doubling or tripling it makes the enthusiasm harder to miss. Pairing it with 🔥 changes the feeling from agreement to maximum hype, especially around something already being called “fire.”",
+    "whenNotToUse": "Skip 💯 in formal or serious conversations. Under a quarterly report it can read as juvenile, and beside an apology for someone’s loss it can sound painfully inappropriate. These are moments for plain words, a thumbs-up, or ❤️ when genuine warmth is appropriate.\n\nIt can also cause trouble when complete agreement is not true. “Sure, no problem 💯” sounds reassuring, but it hides the fact that the work will be tight. Write the actual answer instead. Older recipients may understand 💯 only as a score or full marks, so do not rely on it to carry a nuanced response.",
+    "howToReply": "If someone sends 💯 and you agree, another 💯 keeps the exchange emphatic and mutual. Add 🔥 when you want to turn agreement into maximum hype, or pair it with ❤️ when the subject is personal and warmth matters more than hype. Do not mirror it when you actually disagree; say what you think because the number is too emphatic to pass as neutral agreement.\n\nIf 💯 appears under your own post or story, treat it as validation. If someone responds to meaningful news with only 💯, add words rather than sending another number, since a bare hundred can sound like a brush-off.",
     "faqs": [
       {
-        "question": "What does 💯 mean in text?",
-        "answer": "💯 means hundred, 'keep it 100,' or 'real.' The number is the visual cue for authentic-coded affection."
-      },
-      {
         "question": "What does 💯 mean from a guy?",
-        "answer": "From a guy, 💯 reads as an authentic-coded affection signal or 'real talk' coded humor. The number is bold rather than coded."
+        "answer": "It usually means “I completely agree” or “you did it perfectly.” It is not inherently romantic, although the surrounding message can make it sound flirty."
       },
       {
-        "question": "What does 💯 mean on Instagram?",
-        "answer": "On Instagram, 💯 is the default for real-coded aesthetic captions and authentic-overlay content."
+        "question": "Is 💯 flirty?",
+        "answer": "Usually no. 💯 mainly signals strong agreement, approval, or validation, so the words around it determine whether the tone is friendly, excited, or romantic."
       },
       {
-        "question": "When should I use 💯?",
-        "answer": "Use 💯 for authenticity, 'keep it 100' reactions, or 'real' posts. Avoid it when understatement is needed."
+        "question": "What does 💯 mean on TikTok?",
+        "answer": "On TikTok, it is commonly an emphatic closer for praise, excitement, or total agreement about a performance, video, or strong opinion."
+      },
+      {
+        "question": "Does 💯 still mean 100%?",
+        "answer": "Yes. It often replaces the words “100%,” meaning complete agreement or support. Older relatives may also read it literally as a perfect score or full marks."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "friends",
-      "message": "real talk 💯",
-      "interpretation": "Friend signaling authentic vibes. Mirror with 💯 or 🔥."
+      "message": "that last set was unreal 💯",
+      "interpretation": "Your friend is giving the performance total approval. Reply with 💯 to match the enthusiasm or add a specific compliment about what they did well."
     },
     {
       "setting": "dating",
-      "message": "you're 100 💯",
-      "interpretation": "Affection-coded 'real' energy. Mirror with 💯 or ❤️ to engage."
+      "message": "that restaurant pick was perfect 💯",
+      "interpretation": "The emoji mainly confirms approval of the choice; it does not automatically make the message flirty. Answer warmly and clarify the plan if needed."
     },
     {
       "setting": "work",
-      "message": "gave 100 💯",
-      "interpretation": "Work-coded full-effort share. Reply with 💯 or a sentence acknowledging."
+      "message": "i finished the first draft 💯",
+      "interpretation": "In a casual team chat, this can celebrate completion, though it may sound too playful in a formal channel. Respond with specific feedback and next steps."
     },
     {
       "setting": "family",
-      "message": "real sunday 💯",
-      "interpretation": "Family-coded authentic share. Mirror with 💯 or ✨."
+      "message": "you really did ace that exam 💯",
+      "interpretation": "A parent may mean a literal 100% grade, while a younger relative may mean complete pride. Respond with warmth and acknowledge the achievement."
     },
     {
       "setting": "social",
-      "message": "100 vibes 💯",
-      "interpretation": "Public real post. Mirror with 💯 or 🔥."
+      "message": "no cap, that was the realest 💯",
+      "interpretation": "This adds emphasis to the slang claim that the person or moment was completely genuine. Echoing 💯 confirms that you understood the authenticity."
     }
   ]
 }

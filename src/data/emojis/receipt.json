@@ -8,120 +8,136 @@
   "subcategory": "Money",
   "unicodeVersion": "11.0",
   "baseMeaning": "Receipt.",
-  "tldr": "Spend-coded, money-coded, or 'show me the receipt'.",
+  "tldr": "🧾 is proof of a specific expense: it shows the total, settles a shared bill, or turns overspending into a joke.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "A receipt.",
-      "example": "receipt 🧾",
+      "meaning": "🧾 points to an actual receipt or an itemized record of what was bought.",
+      "example": "here's the receipt from the store 🧾",
       "riskLevel": "LOW"
     },
     {
-      "context": "SLANG",
-      "meaning": "Spend-coded or 'show me the receipt'.",
-      "example": "show me the receipt 🧾",
+      "context": "IRONIC",
+      "meaning": "🧾 can turn an expensive purchase into a self-deprecating joke about having no money left.",
+      "example": "spent my whole paycheck on trainers 🧾",
       "riskLevel": "LOW"
     },
     {
-      "context": "DATING",
-      "meaning": "Spend-coded affection.",
-      "example": "treat me 🧾",
-      "riskLevel": "LOW"
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "In a disputed shared expense, 🧾 can sound pointed because it presents the sender's account as proof of what they paid.",
+      "example": "here's the receipt for what i paid, so you know exactly what i'm owed 🧾",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Expense-coded signal.",
-      "example": "team expense 🧾",
+      "meaning": "In workplace chats, 🧾 usually indicates that documentation for a purchase or expense is available.",
+      "example": "expense report submitted, receipt attached 🧾",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Staple of spend-coded tweets and 'show me the receipt' reactions; reads as 'proof' rather than literal receipt."
+      "platform": "IMESSAGE",
+      "note": "On iMessage, 🧾 often follows a specific total or accompanies a receipt image. It reads most clearly when the amount is nearby, such as \"$64 total 🧾.\""
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in spend-coded captions and proof overlays; pairs with 💰 for the money stack."
+      "note": "In Instagram captions and comments, 🧾 commonly accompanies a shopping post or a receipt image. It can frame the purchase as evidence or make overspending the joke."
     },
     {
-      "platform": "TIKTOK",
-      "note": "Comment-section reaction to spend clips and 'show me the receipt' videos; reads as 'proof-coded.'"
+      "platform": "WHATSAPP",
+      "note": "In WhatsApp group chats, 🧾 is useful when several people are dividing a bill. The amount still matters because the emoji alone does not say how much each person owes."
     },
     {
-      "platform": "DISCORD",
-      "note": "Used in spend channels and proof-coded servers; reads as 'team expense.'"
+      "platform": "SLACK",
+      "note": "In Slack, 🧾 can mark an attached receipt, a completed expense claim, or proof that a charge occurred. It sounds procedural unless the channel is deliberately casual."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🧾 for spend-coded affection and self-aware show-me-the-receipt reactions; the 'proof' read is dominant."
+      "note": "Gen Z users often use 🧾 as a quick receipt post, including the ironic \"my whole paycheck is gone\" version. The emoji can be part of the joke rather than literal documentation."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🧾 across platforms; reads as 'receipt' or 'spend-coded.'"
+      "note": "Millennials may use 🧾 when splitting dinner, travel, or household costs with friends. They often pair it with the total so the group has something concrete to divide."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 🧾 literally as receipt; the cultural layer of proof-coding is sometimes missed."
+      "generation": "GEN_X",
+      "note": "Older Gen X recipients may interpret 🧾 more literally as confirmation that a purchase was paid for. The spending joke is less likely to land without nearby context."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Proof mistaken for a payment request",
+      "description": "A receipt can imply that the sender has already paid and expects the other person to reimburse them. If you are asking for money, state the amount and request directly: \"Can you send me $28 for dinner? 🧾\"",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "A complaint without the number",
+      "description": "🧾 cannot show how serious a cost was when no amount is given. \"Rent went up again 🧾\" leaves out the useful part; \"rent went up 15% 🧾\" makes the increase clear.",
+      "severity": "LOW"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🧾 Receipt Emoji Meaning - What Does 🧾 Really Mean?",
-  "seoDescription": "Learn what the receipt emoji 🧾 really means in texts and social media.",
+  "seoTitle": "🧾 Receipt Emoji Meaning",
+  "seoDescription": "What does 🧾 mean? It shows proof of a purchase or shared expense, adds an itemized total to a bill, or jokes about overspending.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "The 🧾 Receipt emoji was added in Unicode 11 (2018) and has been a default for spend-coded reactions ever since. The long paper receipt is the visual shorthand for proof, spend-coded affection, and 'show me the receipt' self-aware receipts-on-receipts. In 2026 🧾 is the default emoji for spend captions, proof reactions, and 'team expense' drops.\n\nIn real-world chat 🧾 does very specific work. People send it in spend-coded captions, as a proof affection signal, or as the visual equivalent of 'treat me.' The receipt carries both literal receipt and self-aware-show-me-the-receipt. Writers should pick 🧾 when the message is about spend-coded energy, and avoid it when save-coded content is being described. The receipt has been a fixture of spend-coded captions since Unicode 11 and continues to land as the proof-and-show-me-the-receipt default in 2026 chats across platforms.",
-    "howPeopleUseIt": "🧾 shows up in spend captions, in 'show me the receipt' reactions, and in proof-coded posts. People send it during a spend-coded share, as a date-coded opener, or as a work team-expense signal. The emoji pairs naturally with 💰 for the money stack and with 💳 for the credit-card stack.\n\nIn close-friends chats 🧾 reads as 'spend-coded.' In dating-app messages it can land as a treat affection signal. In public posts it is the proof-coded and receipt default.",
-    "whenNotToUse": "Skip 🧾 in any context where save-coded content is being described. The show-me-the-receipt read is too spend. Avoid it in contexts where the sender wants to be obvious about casual-coded energy — the receipt is too proof.\n\nAlso avoid 🧾 in professional contexts where the team-expense read lands as 'audit' rather than 'spend-coded.'",
-    "howToReply": "Mirror 🧾 with another 🧾 if you are matching the spend energy, or pair with 💰 for the money stack. If the sender is signaling proof-coded, mirror with 🧾 or 💳 and a sentence that engages. If the sender is using 🧾 as a date-coded opener, mirror with 🧾 or ❤️ and a follow-up.\n\nIf 🧾 lands as a 'team expense' reaction, mirror with 🧾 or 🙌 to match the energy.",
+    "overview": "🧾 arrived in Unicode 11.0 as a literal receipt: a strip of paper that records a purchase. That origin matters because the emoji’s strongest everyday use is still evidentiary rather than decorative. People send it to say, \"here is the proof,\" after buying something, paying a bill, adding a tip, or settling a shared expense.\n\nIts current meaning is more specific than the broad money emoji around it. 💸 can complain about being broke or celebrate an expensive purchase, while 🪙 suggests small money, change, or a tip. 🧾 points to the record itself: the meal came to $64, this is the transaction, or here is the figure behind what I paid. That makes it useful in arguments about who owes what because it supplies the missing detail.\n\nThe common mistake is to treat it as a vague money tag. A receipt is not just \"money happened.\" It implies that a specific charge exists and may already have been settled. If the sender wants reimbursement rather than presenting evidence, the amount and request need words: \"Can you send me $28 for dinner? 🧾\"",
+    "howPeopleUseIt": "🧾 tends to arrive after the useful number or with the receipt image itself. \"Dinner was $64 🧾\" announces the total; \"here, the receipt 🧾\" offers proof; \"I paid, and it was $84 🧾\" tries to close a shared bill without asking everyone to guess.\n\nIt also works as the punchline of a spending post. Someone who says \"spent my whole paycheck on trainers 🧾\" is posting the receipt as content: part expense report, part self-deprecating confession. The emoji also helps when a thread has become about splitting money, because it redirects the conversation from vague complaints about being broke to the concrete transaction at issue.",
+    "whenNotToUse": "Do not send 🧾 when you still need someone to pay. The emoji can look like evidence that the transaction is complete, so \"here’s the receipt 🧾\" may be mistaken for \"I have already handled this\" rather than \"please send your share.\" State the amount and ask directly: \"Dinner was $84; can you spot me $28? 🧾\"\n\nIt is also a poor choice for adding emotion to a bill with no number attached. \"Rent went up again 🧾\" leaves the size of the increase unknown; \"rent went up 15% 🧾\" gives the recipient the information that matters. In serious family or workplace conversations, attach the actual amount or avoid the emoji entirely, since a playful receipt can trivialize the problem.",
+    "howToReply": "If someone sends 🧾, treat it as an invitation to look at the transaction, not as a request for a dramatic reaction. Ask for the missing detail or confirm the amount: \"$64 each?\" or \"send me the total.\" Mirroring 🧾 works when they are sharing proof, but repeating it without engaging can make the reply look like empty agreement.\n\nIf they say they paid, check the amount before replying and make the next step clear: \"got it, that’s $28 each.\" If they are joking about being broke, you can answer with humor or ask whether they really need to split the bill. When the receipt lands on your own content, a direct question is usually better than another emoji: \"still need to split this?\"",
     "faqs": [
       {
-        "question": "What does 🧾 mean in text?",
-        "answer": "🧾 means spend-coded, money-coded, or 'show me the receipt.' The receipt is the visual cue for spend-coded affection."
-      },
-      {
         "question": "What does 🧾 mean from a guy?",
-        "answer": "From a guy, 🧾 reads as a spend-coded affection signal or 'treat me' coded humor. The receipt is firm rather than coded."
+        "answer": "It usually means he is sharing proof of a purchase or showing the total of a shared expense. It is not inherently romantic, though the surrounding message determines the intent."
       },
       {
-        "question": "What does 🧾 mean on Instagram?",
-        "answer": "On Instagram, 🧾 is the default for spend-coded aesthetic captions and proof-overlay content."
+        "question": "Is 🧾 flirty?",
+        "answer": "Not by itself. 🧾 normally points to money, a receipt, or a bill; pairing it with affectionate wording is more likely to be flirty."
       },
       {
-        "question": "When should I use 🧾?",
-        "answer": "Use 🧾 for spend-coded reactions, proof content, or 'show me the receipt' posts. Avoid it when save-coded content is being described."
+        "question": "What does 🧾 mean on TikTok?",
+        "answer": "On TikTok, it often accompanies a receipt image or turns an extravagant purchase into an \"I can't believe I paid this\" joke. It can also be used when splitting a group expense."
+      },
+      {
+        "question": "Does 🧾 mean you already paid?",
+        "answer": "Often, yes: 🧾 can present evidence that a transaction happened and may have been settled. If you are still requesting payment, say the amount and ask for it directly."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "show me the receipt 🧾",
-      "interpretation": "Friend signaling spend-coded vibes. Mirror with 🧾 or 💰."
+      "setting": "dating",
+      "message": "dinner came to $64, my half is $32 🧾",
+      "interpretation": "He is separating his share and probably expects you to cover yours. Respond with your part or state that you will send it later.",
+      "riskLevel": "LOW"
     },
     {
-      "setting": "dating",
-      "message": "treat me 🧾",
-      "interpretation": "Spend-coded affection. Mirror with 🧾 or ❤️ to engage."
+      "setting": "friends",
+      "message": "concert tickets were $30 each, i paid for both 🧾",
+      "interpretation": "He is showing proof that he covered the tickets and pointing out what you owe him. Confirm the amount and offer to send $30.",
+      "riskLevel": "LOW"
     },
     {
       "setting": "work",
-      "message": "team expense 🧾",
-      "interpretation": "Work-coded spend share. Reply with 🧾 or a sentence acknowledging."
+      "message": "expense report submitted, receipt attached 🧾",
+      "interpretation": "This marks a completed administrative step with supporting documentation. A brief confirmation is enough unless something is missing.",
+      "riskLevel": "LOW"
     },
     {
       "setting": "family",
-      "message": "spend sunday 🧾",
-      "interpretation": "Family-coded proof share. Mirror with 🧾 or 💳."
+      "message": "the electric bill was $146 this month 🧾",
+      "interpretation": "He may be documenting the bill and complaining about its size. Respond to the actual cost rather than treating the emoji alone as the point.",
+      "riskLevel": "LOW"
     },
     {
       "setting": "social",
-      "message": "proof vibes 🧾",
-      "interpretation": "Public spend post. Mirror with 🧾 or 🙌."
+      "message": "spent my whole paycheck on trainers 🧾",
+      "interpretation": "This is an ironic spending post, combining a real receipt idea with a complaint about being left broke. A playful response fits better than asking for a receipt image.",
+      "riskLevel": "LOW"
     }
   ]
 }

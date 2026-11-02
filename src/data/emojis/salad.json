@@ -8,120 +8,131 @@
   "subcategory": "food-prepared",
   "unicodeVersion": "9.0",
   "baseMeaning": "Green Salad emoji.",
-  "tldr": "Healthy, fresh, or 'eating clean'.",
+  "tldr": "🥗 names a green salad, but often signals a light, healthy meal or an intentional lunch invitation.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "The salad food.",
-      "example": "Look at this 🥗",
+      "meaning": "The emoji identifies actual leafy greens or a salad being served or discussed.",
+      "example": "i grabbed a 🥗 for lunch",
       "riskLevel": "LOW"
     },
     {
       "context": "SLANG",
-      "meaning": "Healthy or fresh-coded.",
-      "example": "Eating clean 🥗",
+      "meaning": "🥗 serves as shorthand for choosing something light or eating healthily without explaining the meal.",
+      "example": "lunch is just a 🥗 today",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Healthy-coded lifestyle signal.",
-      "example": "salad date? 🥗",
+      "meaning": "In a dating thread, 🥗 can suggest a healthier, more deliberate meal that the sender wants to share.",
+      "example": "🥗 for lunch? somewhere nice and maybe a 🍷 after",
       "riskLevel": "LOW"
     },
     {
-      "context": "IRONIC",
-      "meaning": "Health-coded deflection.",
-      "example": "I will eat a salad 🥗",
+      "context": "WORK",
+      "meaning": "In a work chat, 🥗 can label a light lunch option while presenting it as a sensible routine choice.",
+      "example": "working lunch at 1 — i'll bring a 🥗 unless anyone wants something else",
       "riskLevel": "LOW"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Staple of 'eating clean' tweets and healthy-coded posts; reads as 'I am being healthy.'"
+      "platform": "IMESSAGE",
+      "note": "In a private conversation, 🥗 often completes a direct meal invitation. Nearby words determine whether it merely names lunch or suggests that the sender wants to share a healthier meal."
     },
     {
       "platform": "INSTAGRAM",
-      "note": "Common in foodie aesthetic captions and wellness-coded content; pairs with 🥑 for the healthy stack."
+      "note": "Beside a food photo, 🥗 usually confirms what the image shows. In a caption, it can also present the meal as a deliberate healthy choice rather than an unremarkable dinner."
     },
     {
       "platform": "TIKTOK",
-      "note": "Comment-section reaction to wellness-coded clips and food videos; reads as 'fresh and healthy.'"
+      "note": "On food or lifestyle posts, 🥗 works as a quick label for what is being shown. In comments, it can stand alone for a light meal without requiring the poster to describe it."
     },
     {
-      "platform": "DISCORD",
-      "note": "Used in fitness and wellness-coded channels; reads as 'healthy lifestyle.'"
+      "platform": "SLACK",
+      "note": "In workplace channels, 🥗 can fit naturally into a lunch poll or coordinate what someone is bringing. It may sound more health-conscious than a generic food emoji, so keep any dietary point light."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🥗 for healthy-coded lifestyle posts and wellness-coded aesthetic; the 'eating clean' read is strong."
+      "note": "Many younger senders use 🥗 as a clean shorthand for a healthy routine or meal prep. In dating chats, it can still carry the stronger suggestion that the sender wants to present themselves as thoughtful about health."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Familiar with 🥗 across platforms; reads as 'salad' or 'healthy lifestyle-coded.'"
+      "note": "Millennials often treat 🥗 as both an ordinary weekday meal and a way to frame lunch as a healthier date. The surrounding conversation usually settles which meaning is intended."
     },
     {
-      "generation": "BOOMER",
-      "note": "May use 🥗 literally as the food; the cultural layer of wellness-coding is sometimes missed."
+      "generation": "GEN_X",
+      "note": "Some Gen X recipients read 🥗 first as the name of the food. They are less likely to see the dating implication unless it is made explicit or the emoji is paired with a drink."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Healthy-eating signal",
+      "description": "A casual recipient may hear a deliberate statement about healthy eating when the sender only meant to name lunch. For an ordinary food plan, a sandwich emoji or a plain description will feel less pointed.",
+      "severity": "LOW"
+    },
+    {
+      "title": "Too curated for a new match",
+      "description": "🥗 paired with a drink is a clear healthy-date signal, but it works best after some rapport already exists. With a new match, a simple restaurant suggestion may feel less calculated.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🥗 Green Salad Emoji Meaning - What Does 🥗 Really Mean?",
-  "seoDescription": "Learn what the green salad emoji 🥗 really means in texts and social media.",
+  "seoTitle": "🥗 Green Salad Emoji Meaning",
+  "seoDescription": "What does 🥗 mean? It shows a green salad and often signals a light, healthy meal, a casual lunch plan, or a healthy date invitation.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-14",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "The 🥗 green salad emoji was added in Unicode 9 (2016) and quickly filled a niche that older emoji did not cover — the 'healthy fresh' food. The salad bowl is the visual shorthand for healthy eating, fresh-coded lifestyle, and wellness aesthetic. In 2026 🥗 is the default emoji for 'eating clean' posts, wellness-coded content, and salad-shop captions.\n\nIn real-world chat 🥗 does very specific work. People send it in foodie-coded captions, as a healthy-coded lifestyle signal, or as the visual equivalent of 'I am eating well.' The bowl carries both food and wellness-coded humor. Writers should pick 🥗 when the message is about healthy eating or fresh-coded lifestyle, and avoid it when a more specific food emoji is needed. The bowl has been a fixture of wellness-coded captions since Unicode 9 and continues to land as the healthy-and-fresh default in 2026 chats across platforms.",
-    "howPeopleUseIt": "🥗 shows up in wellness-coded captions, in 'eating clean' posts, and in healthy-lifestyle shares. People send it during a healthy-eating kick, as a date-coded wellness signal, or as the visual equivalent of 'I will eat a salad.' The emoji pairs naturally with 🥑 for the healthy stack and with 🏋️ for the fitness stack.\n\nIn close-friends chats 🥗 reads as 'I am being healthy.' In dating-app messages it can land as a wellness-coded lifestyle signal. In public posts it is the foodie and wellness default.",
-    "whenNotToUse": "Skip 🥗 in any context where the recipient expects a more specific food emoji. The bowl reads as healthy-fresh, not generic. Avoid it in contexts where the sender wants to be subtle about the wellness-coded read — the bowl is too specific.\n\nAlso avoid 🥗 in ironic contexts where the sender is not actually eating well. The bowl implies real healthy eating.",
-    "howToReply": "Mirror 🥗 with another 🥗 if you are matching the healthy energy, or pair with 🥑 for the wellness stack. If the sender is signaling healthy eating, mirror with 🥗 or 🏋️ and a sentence that engages. If the sender is using 🥗 as a wellness-coded signal, mirror with 🥗 and a follow-up.\n\nIf 🥗 lands as a foodie-coded post, mirror with 🥗 or 🥑 to match the energy.",
+    "overview": "🥗 began as a literal picture of a bowl of greens when it entered Unicode 9.0. At first, it named the food itself: lettuce and whatever else came in the bowl. That basic meaning is still intact when someone posts a photo of dinner and adds 🥗 underneath. It is the later social use that surprises people. The glyph can now stand in for eating well, choosing something light, or making a meal plan feel healthier than it really is.\n\nMost of that change comes from what people are trying to say around the food. In a dating thread, “🥗 for lunch?” is not merely naming vegetables. It suggests that the sender is taking care of themselves and wants to share the meal, while also presenting themselves as the healthy kind of date. Pairing 🥗 with 🍷 makes that intention clearer: a slower, healthier date rather than a quick meal. In ordinary friend or work chats, the same emoji often does less work. It can simply describe a weekday lunch, especially beside text that makes the food choice explicit.",
+    "howPeopleUseIt": "🥗 shows up when a meal is named without describing it. “🥗 for lunch?” asks whether someone wants to share something light. In a dating thread, it can mean “let’s make this a healthier date,” while in a group chat it may simply say that a lunch order is salad. Beside a food photo, the image supplies the literal detail and the emoji adds a note about eating well.\n\nThe sender is naming what they plan to eat while presenting themselves as thoughtful about health. That makes 🥗 feel more intentional than 🍪 or 🍕. A sandwich is better for “I’m grabbing something and we can eat”; 🥗 adds the idea that the meal is light, deliberate, or healthier.",
+    "whenNotToUse": "🥗 can be too pointed when all you mean is lunch. Someone may hear a diet statement, a wellness routine, or an attempt to seem especially healthy, even when the food is simply what the sender ordered. A sandwich or plain wording works better for a casual meal with friends or coworkers.\n\nBe especially careful with 🥗 in an early dating thread. The emoji can imply that the sender wants to share something healthy and is managing how they appear, which may feel more calculated than intended. Once a dating connection is established, 🥗 with a drink can comfortably mean a slower, healthier date. In serious health discussions, use clearer wording because the playful food shorthand adds little.",
+    "howToReply": "If someone sends 🥗, mirror the meal plan with another food emoji or name the place directly. “🥗 sounds good, want to grab a table?” accepts the lunch invitation without treating it as a grand romantic gesture. Pairing your reply with 🍷 can match a healthy-date suggestion when that is the tone they established.\n\nIf 🥗 lands on your own content, take it as a response to the food or the choice you presented. A quick “would you actually order that?” works when the reply feels self-conscious rather than enthusiastic. If someone used it to make a healthier date invitation, meet them in that spirit by suggesting somewhere with good salads and a relaxed drink.",
     "faqs": [
       {
-        "question": "What does 🥗 mean in text?",
-        "answer": "🥗 means healthy, fresh, or wellness-coded lifestyle. The salad bowl is the visual cue for 'eating clean' energy."
+        "question": "What does 🥗 mean from a guy?",
+        "answer": "In a dating context, 🥗 often suggests that he wants to share a healthier meal and present himself as someone who takes care of himself. It is a signal of his intended meal, not proof of how seriously he is taking the date."
       },
       {
-        "question": "What does 🥗 mean from a girl?",
-        "answer": "From a girl, 🥗 reads as a healthy-coded lifestyle signal or wellness-coded affection. The bowl is fresh rather than coded."
+        "question": "Is 🥗 flirty?",
+        "answer": "It can be. In a dating thread, “🥗 for lunch?” may invite someone to share a light, healthier meal, especially when paired with 🍷 or another relaxed date detail."
       },
       {
-        "question": "What does 🥗 mean on Instagram?",
-        "answer": "On Instagram, 🥗 is the default for foodie aesthetic captions and wellness-coded content."
+        "question": "What does 🥗 mean on TikTok?",
+        "answer": "On TikTok, 🥗 usually labels a salad shown in a food or lifestyle post. In a comment, it can simply mean a light or healthy lunch without naming the ingredients."
       },
       {
-        "question": "When should I use 🥗?",
-        "answer": "Use 🥗 for healthy eating, fresh-coded lifestyle posts, or 'eating clean' shares. Avoid it when a more specific food emoji is needed."
+        "question": "Should I send 🥗 for lunch?",
+        "answer": "Yes, if salad is genuinely what you want to eat. It can sound deliberately healthy, though, so use a less pointed food emoji when you only need to arrange an ordinary lunch."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "friends",
-      "message": "lunch salad 🥗",
-      "interpretation": "Friend signaling healthy eating. Mirror with 🥗 or 🥑."
+      "setting": "dating",
+      "message": "🥗 for lunch? somewhere with good salads and maybe a 🍷 after",
+      "interpretation": "This is a deliberately healthy date invitation. Respond with a place, accept the drink suggestion, or say that you would rather keep lunch simple."
     },
     {
-      "setting": "dating",
-      "message": "salad date? 🥗",
-      "interpretation": "Healthy-coded date opener. Mirror with 🥗 or ❤️ to engage."
+      "setting": "friends",
+      "message": "picking up lunch for the park — should i grab a 🥗 or sandwiches?",
+      "interpretation": "The sender is asking the group to choose the food, not making a health statement. A vote for sandwiches or a direct choice of salad keeps the exchange casual."
     },
     {
       "setting": "work",
-      "message": "eating clean this week 🥗",
-      "interpretation": "Work-coded wellness share. Reply with 🥗 or a sentence acknowledging."
+      "message": "working lunch at 1, i'm doing a 🥗 unless someone wants to order in",
+      "interpretation": "This announces one person's light lunch while leaving the group room to choose something else. Respond with another option rather than discussing whether the meal is healthy."
     },
     {
       "setting": "family",
-      "message": "sunday salad prep 🥗",
-      "interpretation": "Family-coded meal prep. Mirror with 🥗 or 🥑."
+      "message": "mom made me a huge 🥗 and told me to finish it before dinner",
+      "interpretation": "Here 🥗 is plainly the food being discussed, with a touch of family-earned annoyance. A sympathetic or teasing reply fits better than treating it as a wellness announcement."
     },
     {
       "setting": "social",
-      "message": "eating my feelings 🥗",
-      "interpretation": "Public wellness-coded post. Mirror with 🥗 or 🥑."
+      "message": "post-gym lunch is a giant 🥗 and i am still hungry lol",
+      "interpretation": "The sender is describing an ordinary healthy meal and joking that it did not solve their hunger. A playful response about adding more food fits the message."
     }
   ]
 }

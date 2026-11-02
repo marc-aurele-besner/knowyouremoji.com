@@ -8,124 +8,131 @@
   "subcategory": "face-neutral-skeptical",
   "unicodeVersion": "8.0",
   "baseMeaning": "A face with a single raised eyebrow, indicating skepticism or suspicion.",
-  "tldr": "Face-with-raised-eyebrow-coded skeptic, 'really?' register, or suspicion-coded side-eye.",
+  "tldr": "🤨 shows polite skepticism—a quick “really?” used to question a claim without starting a fight.",
   "contextMeanings": [
     {
-      "context": "LITERAL",
-      "meaning": "A face with a single raised eyebrow, indicating skepticism or suspicion.",
-      "example": "Really? 🤨",
-      "riskLevel": "LOW"
-    },
-    {
       "context": "SLANG",
-      "meaning": "Face-with-raised-eyebrow-coded skeptic or 'really?' register.",
-      "example": "Really? 🤨",
+      "meaning": "It is the standard chat shorthand for a quick “really?” or “I am questioning this.”",
+      "example": "you really slept until noon? 🤨",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "Suspicion-coded partner check-in or 'face with raised eyebrow for you' moment.",
-      "example": "Face with raised eyebrow for you 🤨",
-      "riskLevel": "LOW"
+      "meaning": "In a close romantic chat, it can invite a playful explanation of a surprising story or decision.",
+      "example": "wait, you're meeting your ex there? 🤨",
+      "riskLevel": "MEDIUM"
     },
     {
       "context": "WORK",
-      "meaning": "Side-eye-coded team energy or 'face with raised eyebrow mode' moment.",
-      "example": "Face with raised eyebrow mode 🤨",
-      "riskLevel": "LOW"
+      "meaning": "In a colleague thread, it marks a proposal as doubtful while keeping the response light.",
+      "example": "a three-day sprint will fix it? 🤨",
+      "riskLevel": "MEDIUM"
+    },
+    {
+      "context": "PASSIVE_AGGRESSIVE",
+      "meaning": "When the sender is withholding stronger disapproval, it can sound like restrained dissatisfaction.",
+      "example": "thanks for deciding that without me 🤨",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "Anchors face-with-raised-eyebrow-coded threads, 'really?' replies, and 'mood 🤨' reveals where the face with raised eyebrow cue matches the skeptic register."
-    },
-    {
-      "platform": "INSTAGRAM",
-      "note": "Lands on suspicion-coded story reposts, face with raised eyebrow posts, and 'mood 🤨' reveals where the face with raised eyebrow cue reads as side-eye-coded comfort."
-    },
-    {
       "platform": "TIKTOK",
-      "note": "Travels in face-with-raised-eyebrow-coded transitions, 'face with raised eyebrow for you' reveals, and reaction-content where the face with raised eyebrow cue signals suspicion-coded energy."
+      "note": "On TikTok, a lone 🤨 under a bold claim reads as a quick “really?” in public. It keeps disagreement brief and playful rather than turning the comment into a long argument."
+    },
+    {
+      "platform": "TWITTER",
+      "note": "On Twitter, 🤨 often appears beneath a hot take that the sender does not quite accept. It works as a compact public challenge without adding a paragraph of criticism."
+    },
+    {
+      "platform": "SLACK",
+      "note": "In Slack, 🤨 can close a colleague's uncertain update with a light “wait, is that right?” tone. When the proposal is genuinely weak, add a sentence so the concern does not look unserious."
     },
     {
       "platform": "DISCORD",
-      "note": "Surfaces on partner 'face with raised eyebrow for you' check-ins, family-coded suspicion messages, and group chats where the face with raised eyebrow cue matches the moment."
+      "note": "In a Discord server, one 🤨 suits a familiar side comment, while repeated eyebrows make the demand for an explanation more obvious. The playful version works best among people who already know each other."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Uses 🤨 heavily on face-with-raised-eyebrow-coded threads, 'really?' moments, and suspicion-coded reveals where the face with raised eyebrow cue matches the modern skeptic register."
+      "note": "Gen Z commonly uses 🤨 in quick, playful replies among friends and in public threads, where “really?” is enough. Repeating it can make the request for a defense unmistakably louder."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Reaches for the face with raised eyebrow on partner 'face with raised eyebrow for you' check-ins, side-eye-coded comfort moments, and family suspicion messages where the universal face with raised eyebrow cue fits."
+      "note": "Millennials often use 🤨 as a soft closer in colleague chats, reading it as “hmm, interesting” while keeping criticism light. It also appears in close friendships when someone is exaggerating."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on suspicion-coded messages and family reveals, treating the face with raised eyebrow as literal face with raised eyebrow energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal face with raised eyebrow and sends it on family and grandchild-coded messages without parsing the modern 'really?' subtext."
+      "note": "Older senders and recipients may treat 🤨 more literally as a raised-eyebrow reaction, especially in family or workplace messages. Age does not change its basic meaning, but expectations about joking tone can differ."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Curiosity mistaken for doubt",
+      "description": "A partner, manager, or parent may read 🤨 as a challenge to what you said rather than open curiosity. Write “wait, what do you mean? 🤨” when you want an explanation without antagonism.",
+      "severity": "MEDIUM"
+    },
+    {
+      "title": "Too polite for real scrutiny",
+      "description": "🤨 can seem too tame when a story is genuinely suspicious, a proposal is unsound, or a decision does not add up. Ask a direct question or use a fuller thinking face when you need actual scrutiny.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
-  "seoTitle": "🤨 Face With Raised Eyebrow Emoji Meaning - What Does 🤨 Really Mean?",
-  "seoDescription": "Learn what the Face With Raised Eyebrow emoji 🤨 really means in texts and DMs. Face-with-raised-eyebrow-coded skeptic, 'really?' register, or suspicion-coded side-eye.",
+  "seoTitle": "🤨 Face With Raised Eyebrow Emoji Meaning",
+  "seoDescription": "What does 🤨 mean? It shows polite skepticism or a quick “really?” reaction, often used playfully to question a claim without sounding hostile.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-13",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "🤨 is the emoji of face-with-raised-eyebrow-coded skeptic - a face with a single raised eyebrow, indicating skepticism or suspicion, the iconography of 'really?,' suspicion-coded side-eye, and 'face with raised eyebrow for you' register. Where 🧐 reads as monocled-coded scrutinize and 😏 reads as smirking-coded knowing, 🤨 captures the moment when the sender wants to communicate suspicion-coded intimacy - a 'face with raised eyebrow for you 🤨' partner moment or a 'really? 🤨' side-eye reveal. The face with raised eyebrow cue borrows from the universal skeptic tradition and the modern 'really?' aesthetic, which is exactly why the emoji reads as suspicion-coded rather than literal face with raised eyebrow.\n\nIn real-world usage 🤨 lives in the spaces where the sender wants to communicate side-eye-coded comfort. A partner sends it on a 'face with raised eyebrow for you 🤨' check-in. A friend sends it on a 'really? 🤨' reveal. A coworker sends it on a 'face with raised eyebrow mode 🤨' work message. The face with raised eyebrow cue is what makes the emoji feel suspicion-coded - it is not just 'face with raised eyebrow,' it is 'face-with-raised-eyebrow-coded really.'\n\nWhat separates 🤨 from the rest of the skeptical-emoji family is the really register. The emoji is not saying 'monocled scrutinize' (🧐), 'smirking knowing' (😏), or 'unamused-coded dry' (😒). It is saying 'face-with-raised-eyebrow-coded skeptic,' which carries a specific suspicion-coded charm. That is why 🤨 travels especially well on partner 'face with raised eyebrow for you' check-ins, family suspicion messages, and any context where the sender wants the message to land with side-eye-coded energy.",
-    "howPeopleUseIt": "🤨 shows up as the closer on a 'face with raised eyebrow for you tonight' partner message ('face with raised eyebrow for you tonight 🤨'), the punctuation on a 'really? 🤨' side-eye-coded reveal ('really? 🤨'), and the softener on a 'face with raised eyebrow mode 🤨' team check-in. It pairs naturally with sentences that name the face-with-raised-eyebrow-coded skeptic - 'face with raised eyebrow for you,' 'really?,' 'face with raised eyebrow mode' - and sits beautifully on partner 'face with raised eyebrow for you' check-ins and family suspicion messages.\n\nIn group chats 🤨 anchors 'face with raised eyebrow appreciation' threads, suspicion-coded moments, and 'mood 🤨' reveals where the face with raised eyebrow cue matches the moment. On Instagram it lands on side-eye-coded story reposts and face with raised eyebrow posts. On TikTok it travels in face-with-raised-eyebrow-coded transitions and 'mood 🤨' reveals.\n\nThe emoji also works in dating contexts. A 'face with raised eyebrow for you tonight 🤨' partner message uses the face with raised eyebrow cue to communicate suspicion-coded romance. Across all of these surfaces the rule is the same: the more side-eye-coded the skeptic, the more natural 🤨 feels.",
-    "whenNotToUse": "Skip 🤨 in sympathy, condolence, or break-up contexts. The face-with-raised-eyebrow-coded skeptic cue is the wrong tone for any conversation where the moment is somber. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nSkip 🤨 when you want to communicate serious affection. The suspicion-coded register is too side-eye-coded for tender moments; use 🥰 or 🤗 when the affection needs to be deeper.",
-    "howToReply": "If someone sends 🤨, the cleanest mirror is another 🤨, 🧐, or a sentence that joins the side-eye-coded energy. If you want to escalate the engagement, follow with a sentence that adds context: 'face with raised eyebrow for you right back' or 'really? too.' If the face with raised eyebrow cue feels too suspicion-coded, reply with a softer emoji (❤️ or 🥰) that signals warmth without matching the side-eye volume.\n\nWhen 🤨 lands as a partner 'face with raised eyebrow for you' check-in, mirror with another 🤨, a heart emoji, or a sentence that escalates the romance. When it arrives as a 'really? 🤨' skeptic reveal, mirror with another 🤨, a sentence that joins the suspicion energy, or a heart emoji that matches.",
+    "overview": "🤨 is the compact way to say “really?” One eyebrow rises while the other stays down, so the face can hold doubt without turning the exchange into a confrontation. It usually marks a claim as questionable: “you really did that 🤨,” “really? 🤨,” or “wait, is this actually true 🤨.” The emoji asks for a second look without demanding a full explanation.\n\nIts main rivals are nearby in meaning but different in force. 😐 can signal flat disengagement, while 🤔 suggests that the sender is actively considering something. 🤨 stays in between: it can be curiosity, polite doubt, or a playful challenge. That flexibility is why it works in friend chats, colleague threads, and public replies, but why it can feel too restrained when a story is genuinely suspect or a decision does not add up.",
+    "howPeopleUseIt": "In real conversations, 🤨 often closes a surprising statement. A friend says they skipped work all morning, and you answer “you really did that 🤨.” Under a bold opinion, “really? 🤨” says that you are not buying the argument yet without starting a fight. In a colleague thread, the same emoji can mean “hmm, interesting” when the tone is playful.\n\nStacking it changes the force. One 🤨 is restrained enough for ordinary doubt; 🤨🤨🤨 makes the impatience obvious and suggests that the sender expects a defense. People also use it when a plan sounds dubious, a proposal needs scrutiny, or a partner’s explanation needs checking. A short sentence can set the limit more clearly.",
+    "whenNotToUse": "🤨 can misfire when the sender wants a real reaction, not polite doubt. After a friend tells a suspicious story, one raised eyebrow may sound too tame. The same problem appears when a coworker proposes something unsound or a partner announces a decision that does not add up: the emoji can read as “I am barely engaging” or “I am holding back my real face.” Ask a direct question when scrutiny is required.\n\nThe risk depends on the relationship. Close friends and casual public threads keep the emoji playful. A partner, manager, or parent may notice the difference between curiosity and doubt, so “what do you mean? 🤨” is safer than the face alone. For serious disagreement, make the concern clear in words.",
+    "howToReply": "If someone sends 🤨, answer the question directly: “what part seems off?” That turns the expression into an invitation for explanation instead of a vague challenge. In a playful exchange, match it with “really? 🤨” or stack 🤨🤨🤨 to say you want the claim checked. The stacked version asks for a firmer defense, so reserve it for playful scrutiny.\n\nIf the emoji lands on something you shared, do not assume hostility. Ask “too skeptical?” or explain the missing detail, especially with a partner, manager, or parent who may have heard real doubt. If they meant deeper scrutiny, answer the question; if they were joking, one clear sentence can release the tension.",
     "faqs": [
       {
-        "question": "What does 🤨 mean from a guy?",
-        "answer": "From a guy, 🤨 signals face-with-raised-eyebrow-coded skeptic - 'really?' or 'face with raised eyebrow for you.' The face with raised eyebrow cue reads as suspicion-coded rather than literal face with raised eyebrow, so it tends to land on partner 'face with raised eyebrow for you' check-ins, family suspicion messages, and side-eye-coded reveals."
+        "question": "What does 🤨 mean from a guy",
+        "answer": "It usually means he is questioning what you said, often with a playful “really?” tone. Whether it feels flirty depends on the rest of the conversation, not the emoji alone."
       },
       {
-        "question": "Is 🤨 flirty?",
-        "answer": "It can be. In a partner context 🤨 can read as suspicion-coded romance - 'face with raised eyebrow for you tonight 🤨' is a soft-coded romantic check-in. On its own the emoji is more side-eye-coded than romantic."
+        "question": "Is 🤨 flirty",
+        "answer": "It can be flirtatious when it follows a teasing or intimate message, but the emoji itself mainly expresses skepticism. Context, wording, and the relationship matter more than the raised eyebrow."
       },
       {
-        "question": "What is the difference between 🤨 and 🧐?",
-        "answer": "🧐 is the monocled face - the cue is monocled-coded scrutinize, the 'monocle time' monocled-style scrutinize-coded charm. 🤨 is the face with raised eyebrow - the cue is face-with-raised-eyebrow-coded skeptic, the 'really?' suspicion-coded side-eye-coded energy. Use 🧐 when the moment is scrutinize; use 🤨 when the moment is side-eye."
+        "question": "What does 🤨 mean on TikTok",
+        "answer": "On TikTok, it is usually a short, playful “really?” reaction to a surprising claim, bold opinion, or suspicious story. It invites doubt without starting a serious argument."
       },
       {
-        "question": "Is 🤨 for 'really?' moments?",
-        "answer": "Yes - 🤨 is one of the most common side-eye-coded emojis. The face with raised eyebrow cue is a natural fit for 'really?' moments, suspicion-coded reveals, and partner 'face with raised eyebrow for you' check-ins."
+        "question": "Why do people send three 🤨 emojis",
+        "answer": "Repeating 🤨 turns restrained doubt into stronger impatience. The tripled version suggests that the sender is deeply skeptical and expects the original claim to be defended."
       }
     ]
   },
   "conversationExamples": [
     {
       "setting": "dating",
-      "message": "face with raised eyebrow for you tonight, full face with raised eyebrow romance 🤨",
-      "interpretation": "Partner suspicion-coded romance. Mirror with another 🤨, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the really? 🤨",
-      "interpretation": "Public face with raised eyebrow appreciation. Mirror with another 🤨, a sentence that joins the side-eye energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "face with raised eyebrow mode with the family, full face with raised eyebrow mode 🤨",
-      "interpretation": "Family suspicion-coded reveal. Mirror with another 🤨, a sentence that joins the family warmth, or a heart emoji that matches."
+      "message": "wait, you're texting your ex at 2am? 🤨",
+      "interpretation": "This is playful suspicion in a close romantic chat, but it may also want reassurance. Reply with the missing context or a light joke depending on what you actually want to discuss."
     },
     {
       "setting": "friends",
-      "message": "really? today, full skeptic energy 🤨",
-      "interpretation": "Friend side-eye-coded reveal. Mirror with another 🤨, a sentence that joins the suspicion energy, or a heart emoji that matches."
+      "message": "you really locked yourself out again? 🤨",
+      "interpretation": "The emoji teases a familiar repeated mistake rather than expressing serious suspicion. Laugh, remind them what happened last time, and offer help if they are stuck outside."
     },
     {
       "setting": "work",
-      "message": "face with raised eyebrow mode today, full face with raised eyebrow mode 🤨",
-      "interpretation": "Work suspicion-coded moment. Mirror with another 🤨, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "the client wants a launch by friday? 🤨",
+      "interpretation": "This marks the timeline as unrealistic without sounding openly hostile. Ask which deliverable matters most and point out the scheduling conflict clearly."
+    },
+    {
+      "setting": "family",
+      "message": "you're saying the flight got cancelled? 🤨",
+      "interpretation": "The sender wants the practical details before deciding what happens next. Answer with the airline information or ask what the family should do about the change."
+    },
+    {
+      "setting": "social",
+      "message": "i'm supposed to believe this random stat? 🤨",
+      "interpretation": "This challenges a shaky claim in a public discussion while keeping the pushback brief. Respond with the source if you have one, or let the doubt stand without piling on."
     }
   ]
 }

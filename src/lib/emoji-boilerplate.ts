@@ -26,21 +26,26 @@
 import type { Emoji } from '@/types/emoji';
 
 /**
- * Phrases the batch generator pasted into the opening of `longForm.overview`.
+ * Phrases the batch generator used to fill a slot with the emoji's own name.
  *
- * "is the emoji of" turns a sentence about the glyph into a sentence about
+ * "is the emoji of" turned a sentence about the glyph into a sentence about
  * the category: "ginger root is the emoji of ginger root-coded ginger root
- * flex". It reads as a sentence but says nothing about the emoji.
- */
-export const EMOJI_TEMPLATE_OVERVIEW_PHRASES: readonly string[] = ['is the emoji of'];
-
-/**
- * Phrases the batch generator pasted into FAQ answers.
+ * flex". It read as a sentence but said nothing about the emoji. The batch
+ * used it in the opening of `longForm.overview`.
  *
- * "is a natural fit for" is the tell that a FAQ answer was assembled from
- * the emoji's own name rather than written about how people use it.
+ * "is a natural fit for" was the tell that a FAQ answer had been assembled
+ * from the emoji's name rather than written about how people use it. The
+ * batch used it in the FAQ answers.
+ *
+ * Both are scanned across the whole long-form rather than only in the slot
+ * the batch happened to fill, because the phrases are the batch's language
+ * wherever they appear — a page that says "is a natural fit for" in a
+ * section is still echoing the template (issue #480).
  */
-export const EMOJI_TEMPLATE_FAQ_PHRASES: readonly string[] = ['is a natural fit for'];
+export const EMOJI_TEMPLATE_PHRASES: readonly string[] = [
+  'is the emoji of',
+  'is a natural fit for',
+];
 
 /**
  * The compound the generator used to bolt an identity onto a meaning
@@ -98,7 +103,7 @@ export function emojiLongFormProse(emoji: Pick<Emoji, 'longForm'>): string {
 /**
  * The kind of rule that matched a page.
  */
-export type EmojiTemplateMarkerKind = 'overview-phrase' | 'faq-phrase' | 'coded-token';
+export type EmojiTemplateMarkerKind = 'template-phrase' | 'coded-token';
 
 /**
  * A single reason a page was flagged as templated.
@@ -121,19 +126,11 @@ export function findEmojiTemplateMarkers(emoji: Pick<Emoji, 'longForm'>): EmojiT
   const longForm = emoji.longForm;
   if (!longForm) return findings;
 
-  const overview = normalizeProse(longForm.overview ?? '');
-  for (const phrase of EMOJI_TEMPLATE_OVERVIEW_PHRASES) {
-    if (overview.includes(phrase)) {
-      findings.push({ kind: 'overview-phrase', match: phrase });
-    }
-  }
+  const prose = normalizeProse(emojiLongFormProse(emoji));
 
-  for (const faq of longForm.faqs ?? []) {
-    const faqText = normalizeProse(`${faq.question ?? ''} ${faq.answer ?? ''}`);
-    for (const phrase of EMOJI_TEMPLATE_FAQ_PHRASES) {
-      if (faqText.includes(phrase)) {
-        findings.push({ kind: 'faq-phrase', match: phrase });
-      }
+  for (const phrase of EMOJI_TEMPLATE_PHRASES) {
+    if (prose.includes(phrase)) {
+      findings.push({ kind: 'template-phrase', match: phrase });
     }
   }
 

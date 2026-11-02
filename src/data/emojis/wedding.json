@@ -8,128 +8,131 @@
   "subcategory": "place-building",
   "unicodeVersion": "6.0",
   "baseMeaning": "Wedding emoji.",
-  "tldr": "Wedding!",
+  "tldr": "💒 announces a wedding or marriage; it is rarely just a casual symbol for romance or serious intentions.",
   "contextMeanings": [
     {
       "context": "LITERAL",
-      "meaning": "Represents the wedding cue.",
-      "example": "the chapel 💒",
-      "riskLevel": "LOW"
-    },
-    {
-      "context": "SLANG",
-      "meaning": "chapel-coded moment or chapel-coded reveal.",
-      "example": "chapel mode 💒",
+      "meaning": "The chapel directly identifies a wedding ceremony and commonly accompanies a photo or announcement about getting married.",
+      "example": "we did it 💒",
       "riskLevel": "LOW"
     },
     {
       "context": "DATING",
-      "meaning": "chapel-coded flirty tag or partner-coded moment.",
-      "example": "chapel partner plan 💒",
+      "meaning": "💒 can mark the wedding date in a save-the-date message, especially when the couple wants to share the news directly.",
+      "example": "save the date 💒 06.14.2026",
       "riskLevel": "LOW"
     },
     {
       "context": "WORK",
-      "meaning": "chapel-coded work moment or team energy.",
-      "example": "chapel sprint 💒",
+      "meaning": "A colleague may use 💒 in a work chat when announcing their own marriage or sharing wedding news with coworkers.",
+      "example": "quick wedding announcement from our team 💒 congrats to them!",
       "riskLevel": "LOW"
+    },
+    {
+      "context": "RED_FLAG",
+      "meaning": "If someone drops 💒 into an unrelated joke or casual chat, most readers may still treat it as a real marriage announcement.",
+      "example": "office gossip was wild 💒",
+      "riskLevel": "HIGH"
     }
   ],
   "platformNotes": [
     {
-      "platform": "TWITTER",
-      "note": "💒 lands on chapel-coded threads, chapel-tagged place-building posts, and 'chapel-coded' reveals where the chapel cue reads as modern-coded flex."
-    },
-    {
       "platform": "INSTAGRAM",
-      "note": "💒 is a staple of modern-coded flat-lays, chapel-canvas story backgrounds, and modern-coded profile accents; the chapel cue anchors the visual."
+      "note": "In an Instagram caption, 💒 beneath wedding photos reads as a direct marriage announcement. Outside that setting, it can look like a declaration that does not belong in the post."
     },
     {
       "platform": "TIKTOK",
-      "note": "💒 travels in modern-coded transitions, chapel reaction reveals, and 'chapel-coded' listicle content where the chapel cue signals modern-coded energy."
+      "note": "In a TikTok caption, pairing 💒 with ceremony footage or a date gives the post a clear wedding meaning. A stand-alone use may still be read as an announcement rather than decoration."
+    },
+    {
+      "platform": "WHATSAPP",
+      "note": "In a family or friend group on WhatsApp, “we did it 💒” is an efficient way to announce the marriage. Reactions often become congratulations because the emoji leaves little room for a casual interpretation."
     },
     {
       "platform": "SLACK",
-      "note": "💒 threads through modern-coded reactions, chapel markers, and 'chapel-coded' bullets in work channels where the chapel cue fits the register."
-    },
-    {
-      "platform": "DISCORD",
-      "note": "💒 is an active reaction in modern-coded chapel channels, server-coded chapel markers, and 'chapel-coded' reveals where the chapel cue matches the modern-coded register."
+      "note": "In a Slack work channel, 💒 makes a colleague's personal announcement easy to recognize. Dropping it into an ordinary work conversation can be mistaken for news about an actual wedding."
     }
   ],
   "generationalNotes": [
     {
       "generation": "GEN_Z",
-      "note": "Reaches for 💒 on modern-coded chapel threads, chapel-coded reveals, and 'chapel-coded' moments where the chapel cue matches the modern-coded register."
+      "note": "Gen Z often adds 💒 to compact Instagram captions and stacks it with emojis such as 🥂, 💐, or 🎉. The chapel keeps the post centered on the marriage while the extra symbols add the celebration."
     },
     {
       "generation": "MILLENNIAL",
-      "note": "Uses it on modern-coded tags, nostalgia-coded chapel moments, and chapel-coded reveals where the universal chapel cue fits."
+      "note": "Millennials are likely to treat 💒 as the practical announcement symbol in wedding and family chats. A date beside it, such as “💒 06.14.2026,” works like a concise save-the-date."
     },
     {
       "generation": "GEN_X",
-      "note": "Sends it on family-coded chapel messages and chapel reveals, treating the chapel as literal modern-coded energy."
-    },
-    {
-      "generation": "BOOMER",
-      "note": "Reads it as a literal chapel and uses it on modern-coded tags without parsing the modern chapel-coded subtext."
+      "note": "Gen X is unlikely to read 💒 as a subtle romantic hint. The chapel is most likely to be taken literally as news that a wedding or marriage has happened."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    {
+      "title": "Casual use looks like a hard announcement",
+      "description": "💒 does not remain decorative in an unrelated group chat; readers may assume someone is announcing a marriage. Use ❤️ or another plainly casual symbol when no wedding is involved.",
+      "severity": "HIGH"
+    },
+    {
+      "title": "Wedding does not mean engagement",
+      "description": "Using 💒 to signal that a relationship is becoming serious can be mistaken for news that the wedding has already happened. Use 💍 when the engagement is the actual announcement.",
+      "severity": "MEDIUM"
+    }
+  ],
   "relatedCombos": [],
   "seoTitle": "💒 Wedding Emoji Meaning",
-  "seoDescription": "Learn what the Wedding emoji 💒 really means.",
+  "seoDescription": "What does 💒 mean? It announces a wedding or marriage, marks a save-the-date or anniversary, and adds ceremony or celebration to wedding posts.",
   "contentTier": "deep",
-  "contentUpdatedAt": "2026-09-17",
+  "contentUpdatedAt": "2026-11-02",
   "longForm": {
-    "overview": "The Wedding emoji is the travel-coded tag - the wedding tradition, the journey cue, and the universal \"wedding moment\" tag. Where ✈️ reads as flight-coded energy and 🌍 reads as world-coded energy, the Wedding captures the moment when the sender wants to communicate travel-coded energy - a \"wedding reveal\" tag or a \"place-building-coded\" reveal.\n\nThe travel cue borrows from wedding tradition and the modern wedding-coded aesthetic, which is exactly why the emoji reads as wedding-coded rather than literal.\n\nWhat separates the Wedding emoji from the rest of the travel family is the specific wedding register. The emoji is not saying 'generic travel' (✈️) but rather 'wedding-coded wedding,' which carries a specific journey, place-building, or location specificity.\n\nIn real-world usage 💒 Wedding lives in the spaces where the sender wants to communicate travel energy. A partner sends it on a \"chapel\" moment. A friend sends it on a \"travel\" reveal. A coworker sends it on a \"chapel\" tag. The chapel cue is what makes the emoji feel travel-coded - it is not just 'a moment,' it is 'chapel-coded energy.'\n\nIn dating 💒 Wedding works as a soft-coded chapel tag, where the chapel cue signals wedding tradition. In work threads 💒 Wedding lives as a quick coded check-in. Across all of these surfaces the rule is the same: the more travel the moment, the more natural 💒 feels.",
-    "howPeopleUseIt": "💒 Wedding shows up as the closer on a \"chapel moment\", the punctuation on a \"travel\" reveal, and the softener on a \"chapel-coded\" tag. It pairs naturally with sentences that name the travel energy - 'chapel,' 'wedding tradition,' 'chapel-coded' - and sits beautifully on travel reveals, place-building-coded tags, journey-coded moments, and location references.\n\nIn group chats 💒 Wedding anchors 'chapel moment' threads, travel reveals, and 'chapel' tags where the chapel cue matches the register. On Instagram it lands on travel flat-lays and travel stories. On TikTok it travels in travel transitions and 'chapel' reaction content.\n\nThe emoji also works in dating contexts. A 'chapel 💒' partner message uses the chapel cue to communicate travel romance. Across all of these surfaces the rule is the same: the more travel the moment, the more natural 💒 feels.",
-    "whenNotToUse": "Skip the Wedding emoji in sympathy, condolence, or break-up contexts. The wedding-coded cue is the wrong register for somber moments. A quiet ❤️ or a sentence that acknowledges the moment is a better fit.\n\nAvoid the Wedding emoji in sedentary contexts where the travel energy feels off. A plain check-in or a sentence keeps the message grounded.\n\nSkip the Wedding emoji when you want to communicate something abstract. The Wedding register is too wedding-coded for emotional moments; use a heart or sentence when the moment needs warmth.",
-    "howToReply": "If someone sends the Wedding emoji, the cleanest mirror is another Wedding emoji, a related travel emoji, or a sentence that joins the wedding energy. If the travel cue feels too place-building-coded, reply with a softer emoji (🌍 or 🫶) that signals connection without matching the travel volume.\n\nWhen the Wedding emoji lands as a travel-coded reveal, mirror with another Wedding emoji, a related travel emoji, or a sentence that escalates the engagement. When it arrives as a wedding-coded reference, mirror with another Wedding emoji, a sentence that joins the moment, or an emoji that fits.",
+    "overview": "💒 is easy to misread because it sits close to several different relationship symbols: 💍 announces an engagement, 👰🤵 shows the couple at the ceremony, and 💑 can be mistaken for a relationship declaration. But 💒 itself has a much narrower job. Its chapel means a wedding or marriage announcement, especially when it appears with wedding photos, a date, or a celebration.\n\nWhen someone posts “we did it 💒,” they are marking the marriage, not merely saying they like weddings. “one year married 💒” celebrates an anniversary, while “💒 06.14.2026” can label a save-the-date. The same goes for 💒 beside a wedding chapel: most readers will say the couple got married. Pair it with 🥂 or 🎉 and it adds a toast or loud celebration; add 💐 and the post foregrounds the flowers. That directness is useful, but it is why 💒 feels misplaced outside a wedding announcement. The chapel does not soften into casual intent, so a joke or stray use can look like a hard announcement.",
+    "howPeopleUseIt": "💒 shows up after the big photo dump, where a single emoji can stand in for a paragraph: “we did it 💒.” People also use it to label a save-the-date, mark the wedding day, or note an anniversary. In a group chat, “💒 06.14.2026” gives friends the essential date and ceremony reference without adding more detail.\n\nIt becomes more specific when paired. 💒💍 says the marriage and the rings, 💐💒 points out the flowers, and 🥂💒 or 🎉💒 turns the announcement into a celebration. 👰🤵 instead depicts the couple, while 💒 focuses on the wedding itself. These are announcement devices, not subtle hints: if the surrounding message is ambiguous, 💒 will still be read as “we are married.”",
+    "whenNotToUse": "Do not use 💒 for generic romance, a date invitation, or a playful comment about finding a spouse. A couple may think 💒 is a cute way to suggest serious feelings, but the chapel is commonly taken as a marriage announcement, not a soft hint. It can also land badly when dropped into an unrelated joke or a group chat where the sender expects the emoji to remain decorative.\n\nIf you mean engagement, use 💍 and let the surrounding words explain it. For the wedding day, 👰🤵 can show the couple, while 🎉, 🥂, or 💐 handle celebration and flowers. When no wedding is involved, skip 💒 rather than relying on context to rescue it. The safer choice is ❤️ or another plainly noncommittal symbol, depending on what you meant.",
+    "howToReply": "If a friend sends 💒, congratulate them: “congrats!! 💒” or “love this for you 💒.” Mirroring the chapel keeps the ceremony in focus; adding 🥂 turns your reply into a toast, while 🎉 makes it a louder celebration. For a save-the-date, acknowledge the date and ask about the plans rather than treating the emoji as proof the ceremony has already happened.\n\nIf 💒 lands on your own post and seems too strong, ask whether they meant a wedding announcement. If someone used it casually in a group chat, do not correct them aggressively; ask privately what they meant. The safest move is to check, because treating 💒 as a casual symbol can leave the sender wondering why their wedding announcement received real congratulations.",
     "faqs": [
       {
-        "question": "What does the Wedding emoji mean in chat?",
-        "answer": "The Wedding emoji is the travel-coded tag - it borrows from wedding tradition and signals a travel reveal, place-building-coded moment, or journey-coded reference. The travel cue is what makes the read feel wedding-coded rather than literal."
+        "question": "What does 💒 mean from a guy",
+        "answer": "💒 from a guy almost always points to a wedding or marriage, especially when it accompanies photos, a date, or “we did it.” It is not usually a private signal that he wants to get serious."
       },
       {
-        "question": "Is the Wedding emoji useful in messaging?",
-        "answer": "Yes - the Wedding emoji is one of the most useful travel-coded emojis. It works for wedding-coded references, journey reveals, and place-building tags where the travel cue adds specificity."
+        "question": "Is 💒 flirty",
+        "answer": "💒 can accompany a romantic announcement, but the chapel itself is not primarily flirty. Most readers will interpret it as “we are married” or “we are getting married,” even when the couple is excited and playful."
       },
       {
-        "question": "What does the Wedding emoji mean from a friend?",
-        "answer": "From a friend, Wedding signals a travel-coded share or a \"look at this wedding\" tag. The travel cue reads as wedding-coded rather than literal, so it tends to land on casual coded messages, travel tags, and \"I'm here\" reveals."
+        "question": "What does 💒 mean on TikTok",
+        "answer": "On TikTok, 💒 usually marks a wedding announcement, ceremony clip, save-the-date, or anniversary post. Without wedding context, it can still be mistaken for real relationship news."
       },
       {
-        "question": "When should I use the Wedding emoji?",
-        "answer": "Use the Wedding emoji for wedding-coded references, travel reveals, or place-building moments. Avoid it when you want to communicate something abstract - the travel cue is too specific for emotional moments."
+        "question": "Can 💒 mean an engagement",
+        "answer": "Use 💍 for an engagement. 💒 points more directly to the wedding or marriage, so the two emojis can mark different stages of the same story."
       }
     ]
   },
   "conversationExamples": [
     {
-      "setting": "dating",
-      "message": "chapel with the partner plan, full travel energy 💒",
-      "interpretation": "Partner travel romance. Mirror with another 💒, a heart emoji, or a sentence that escalates the romance."
-    },
-    {
-      "setting": "social",
-      "message": "cannot handle this whole thread, the chapel chaos 💒",
-      "interpretation": "Public travel flex. Mirror with another 💒, a sentence that joins the energy, or a heart emoji that matches."
-    },
-    {
-      "setting": "family",
-      "message": "chapel with the family, full travel energy 💒",
-      "interpretation": "Family travel reveal. Mirror with another 💒, a sentence that joins the family warmth, or a heart emoji that matches."
-    },
-    {
       "setting": "friends",
-      "message": "chapel today, full travel energy 💒",
-      "interpretation": "Friend travel reveal. Mirror with another 💒, a sentence that joins the energy, or a heart emoji that matches."
+      "message": "we did it 💒",
+      "interpretation": "The sender is announcing that they got married. Reply with congratulations and excitement rather than treating the emoji as a vague romantic hint."
+    },
+    {
+      "setting": "dating",
+      "message": "save the date 💒 06.14.2026",
+      "interpretation": "The sender is sharing the wedding date with their partner. Acknowledge the date and celebrate the news; do not assume the ceremony has already happened."
     },
     {
       "setting": "work",
-      "message": "chapel sprint today, full travel energy 💒",
-      "interpretation": "Work travel moment. Mirror with another 💒, a sentence that joins the team energy, or a heart emoji that matches."
+      "message": "quick announcement: our coworker just got married 💒 congrats!",
+      "interpretation": "A coworker is sharing marriage news in the work chat. Congratulate them or react positively, while recognizing that a stray 💒 in an ordinary work discussion could confuse the room."
+    },
+    {
+      "setting": "family",
+      "message": "one year married 💒",
+      "interpretation": "The sender is celebrating a first wedding anniversary. Reply with an anniversary message, not congratulations on the original marriage."
+    },
+    {
+      "setting": "social",
+      "message": "💐💒 best day ever",
+      "interpretation": "This is a wedding celebration post with the bouquet and chapel shown together. The sender is emphasizing both the flowers and the marriage, so an enthusiastic celebration fits."
     }
   ]
 }

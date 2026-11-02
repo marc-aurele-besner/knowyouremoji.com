@@ -79,7 +79,7 @@ const DUPLICATE_THRESHOLD = 0.95;
  * ratchet: it fails when the count grows, and the number is lowered by hand
  * as the backlog is cleared.
  */
-const BASELINE_OFFENDER_COUNT = 28;
+const BASELINE_OFFENDER_COUNT = 22;
 /**
  * The number of near-duplicate combo pairs the catalog is allowed to carry.
  *
