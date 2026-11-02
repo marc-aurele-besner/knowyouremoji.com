@@ -19,6 +19,21 @@ export function matchesRoute(pathname: string, routes: string[]): boolean {
   return routes.some((route) => pathname === route || pathname.startsWith(`${route}/`));
 }
 
+/**
+ * Whether the request carries Auth.js's secure (`__Secure-` prefixed) session cookie.
+ *
+ * Auth.js sets `__Secure-authjs.session-token` when serving over HTTPS, but `getToken`
+ * defaults to looking up the non-secure `authjs.session-token` name. Without telling it
+ * which one to read, every production (HTTPS) request looks unauthenticated and the
+ * dashboard redirects back to /login. Session tokens may be chunked (`.0`, `.1`, ...),
+ * hence the prefix match.
+ */
+export function hasSecureSessionCookie(request: NextRequest): boolean {
+  return request.cookies
+    .getAll()
+    .some((cookie) => cookie.name.startsWith('__Secure-authjs.session-token'));
+}
+
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -29,7 +44,11 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const token = await getToken({ req: request, secret: process.env.AUTH_SECRET });
+  const token = await getToken({
+    req: request,
+    secret: process.env.AUTH_SECRET,
+    secureCookie: hasSecureSessionCookie(request),
+  });
   const isAuthenticated = !!token;
 
   if (isProtectedRoute && !isAuthenticated) {
