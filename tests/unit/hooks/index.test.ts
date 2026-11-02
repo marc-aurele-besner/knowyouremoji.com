@@ -23,6 +23,13 @@ describe('Hooks barrel export (index.ts)', () => {
     });
   });
 
+  describe('useAmazonStorefront exports', () => {
+    it('exports useAmazonStorefront and getVisitorCountry', () => {
+      expect(typeof hooks.useAmazonStorefront).toBe('function');
+      expect(typeof hooks.getVisitorCountry).toBe('function');
+    });
+  });
+
   describe('useStreamingInterpret exports', () => {
     it('exports useStreamingInterpret hook', () => {
       expect(hooks.useStreamingInterpret).toBeDefined();
