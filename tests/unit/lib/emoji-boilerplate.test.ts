@@ -105,7 +105,7 @@ describe('emoji-boilerplate', () => {
       );
 
       expect(findings).toHaveLength(1);
-      expect(findings[0].kind).toBe('overview-phrase');
+      expect(findings[0].kind).toBe('template-phrase');
       expect(findings[0].match).toBe('is the emoji of');
     });
 
@@ -124,8 +124,34 @@ describe('emoji-boilerplate', () => {
       );
 
       expect(findings).toHaveLength(1);
-      expect(findings[0].kind).toBe('faq-phrase');
+      expect(findings[0].kind).toBe('template-phrase');
       expect(findings[0].match).toBe('is a natural fit for');
+    });
+
+    test('flags the batch phrase wherever it appears in the long-form', () => {
+      const findings = findEmojiTemplateMarkers(
+        createEmoji({
+          longForm: {
+            howPeopleUseIt: 'It is a natural fit for a friend\u2019s driving test.',
+          },
+        })
+      );
+
+      expect(findings).toHaveLength(1);
+      expect(findings[0].kind).toBe('template-phrase');
+      expect(findings[0].match).toBe('is a natural fit for');
+    });
+
+    test('flags the batch phrase in a section rather than the overview', () => {
+      const findings = findEmojiTemplateMarkers(
+        createEmoji({
+          longForm: { whenNotToUse: 'It is the emoji of nothing in particular.' },
+        })
+      );
+
+      expect(findings).toHaveLength(1);
+      expect(findings[0].kind).toBe('template-phrase');
+      expect(findings[0].match).toBe('is the emoji of');
     });
 
     test('flags a long-form saturated with "-coded" compounds', () => {
@@ -156,15 +182,15 @@ describe('emoji-boilerplate', () => {
       );
 
       expect(findings).toHaveLength(1);
-      expect(findings[0].kind).toBe('overview-phrase');
+      expect(findings[0].kind).toBe('template-phrase');
     });
 
     test('reports every marker a templated page carries', () => {
       const findings = findEmojiTemplateMarkers(createEmoji({ longForm: templatedLongForm() }));
 
-      const kinds = findings.map((finding) => finding.kind);
-      expect(kinds).toContain('overview-phrase');
-      expect(kinds).toContain('faq-phrase');
+      const matches = findings.map((finding) => finding.match);
+      expect(matches).toContain('is the emoji of');
+      expect(matches).toContain('is a natural fit for');
     });
   });
 
