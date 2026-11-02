@@ -32,17 +32,49 @@ function stubFetch(responses: Array<{ status: number; body: unknown }>): void {
   }) as unknown as typeof fetch;
 }
 
+/**
+ * Run a test against a fake `.env` file.
+ *
+ * The writer reads its credentials out of the local env file. There is no env
+ * file in CI, so a test that needs a key has to supply one rather than
+ * relying on whatever the developer happens to have on their machine.
+ */
+function withEnvFile(contents: string, run: () => void): void {
+  const originalExistsSync = fs.existsSync;
+  const originalReadFileSync = fs.readFileSync;
+
+  fs.existsSync = ((filePath: fs.PathLike) =>
+    String(filePath).endsWith('.env')
+      ? true
+      : originalExistsSync(filePath)) as typeof fs.existsSync;
+  fs.readFileSync = ((filePath: string, encoding: BufferEncoding) => {
+    if (String(filePath).endsWith('.env')) return contents;
+    return originalReadFileSync.call(fs, filePath, encoding);
+  }) as typeof fs.readFileSync;
+
+  try {
+    run();
+  } finally {
+    fs.existsSync = originalExistsSync;
+    fs.readFileSync = originalReadFileSync;
+  }
+}
+
 describe('combo-content/llm', () => {
   describe('loadLlmConfig', () => {
     it('reads the API key out of the env file', () => {
-      const config = loadLlmConfig('anthropic/claude-haiku-4.5');
-      expect(config.apiKey).toBeTruthy();
-      expect(config.model).toBe('anthropic/claude-haiku-4.5');
+      withEnvFile('OPENROUTER_API_KEY="test-key"', () => {
+        const config = loadLlmConfig('anthropic/claude-haiku-4.5');
+        expect(config.apiKey).toBe('test-key');
+        expect(config.model).toBe('anthropic/claude-haiku-4.5');
+      });
     });
 
     it('does not fall back to the interpreter model', () => {
-      const config = loadLlmConfig('anthropic/claude-haiku-4.5');
-      expect(config.model).not.toBe(config.apiKey);
+      withEnvFile('OPENROUTER_API_KEY="test-key"', () => {
+        const config = loadLlmConfig('anthropic/claude-haiku-4.5');
+        expect(config.model).not.toBe(config.apiKey);
+      });
     });
 
     it('throws when the env file has no API key', () => {
@@ -607,9 +639,11 @@ describe('combo-content/llm', () => {
 
 describe('combo-content/llm file layout', () => {
   it('keeps the retry defaults short enough for a batch run', () => {
-    const config = loadLlmConfig('anthropic/claude-haiku-4.5');
-    expect(config.retryBaseMs).toBeGreaterThan(0);
-    expect(config.maxRetries).toBeGreaterThan(0);
+    withEnvFile('OPENROUTER_API_KEY="test-key"', () => {
+      const config = loadLlmConfig('anthropic/claude-haiku-4.5');
+      expect(config.retryBaseMs).toBeGreaterThan(0);
+      expect(config.maxRetries).toBeGreaterThan(0);
+    });
   });
 
   it('has no stray temp files in the scripts directory', () => {
