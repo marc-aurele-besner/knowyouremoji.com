@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs/config';
+import { EMOJI_ALIASES } from './src/lib/emoji-aliases';
 
 /** The five Fitzpatrick tones, in swatch order. */
 const SKIN_TONES = ['light', 'medium-light', 'medium', 'medium-dark', 'dark'] as const;
@@ -39,6 +40,14 @@ const EMOJI_REDIRECTS: Array<{ source: string; destination: string }> = [
     { source: `/emoji/swimmer-${tone}`, destination: `/emoji/person-swimming-${tone}` },
     { source: `/emoji/bicyclist-${tone}`, destination: `/emoji/person-biking-${tone}` },
   ]),
+  // Pages that are still published but show a glyph another page owns
+  // (`100` → `hundred-points`). They are noindexed with a canonical to the
+  // owner as well; the redirect sends readers and link equity there too.
+  // See `src/lib/emoji-aliases.ts` and issue #482.
+  ...Object.entries(EMOJI_ALIASES).map(([alias, owner]) => ({
+    source: `/emoji/${alias}`,
+    destination: `/emoji/${owner}`,
+  })),
 ];
 
 const nextConfig: NextConfig = {
