@@ -391,6 +391,28 @@ describe('EmojiPage', () => {
       expect(screen.getByRole('link', { name: 'Deep dive' })).toHaveAttribute('href', '#deep-dive');
     });
 
+    test('renders the book banner after the meaning and deep dive, not under the TL;DR (#486)', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => ({
+        ...mockEmoji,
+        longForm: {
+          overview: 'Overview.',
+          howPeopleUseIt: 'Usage.',
+          whenNotToUse: 'Avoid.',
+          howToReply: 'Reply.',
+          faqs: [],
+        },
+      }));
+
+      const page = await EmojiPage({ params: Promise.resolve({ slug: 'skull' }) });
+      render(page);
+
+      const banner = screen.getByRole('complementary', { name: 'Featured book' });
+      for (const heading of ['What it means in context', 'The long read']) {
+        const el = screen.getByRole('heading', { name: heading, level: 2 });
+        expect(el.compareDocumentPosition(banner) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+      }
+    });
+
     test('renders the hero, in-page nav and share card for a full entry', async () => {
       mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
 

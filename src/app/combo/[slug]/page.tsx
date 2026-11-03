@@ -196,10 +196,6 @@ export default async function ComboPage({ params }: ComboPageProps) {
           meaningAction={<CopySectionButton text={combo.meaning} contentType="combo-meaning" />}
         />
 
-        <section className="mt-14">
-          <BookBanner />
-        </section>
-
         {/* Description Section */}
         <section className="mt-14 max-w-[720px]">
           <div className="mb-4 flex items-center justify-between gap-3">
@@ -241,6 +237,11 @@ export default async function ComboPage({ params }: ComboPageProps) {
             </ul>
           </section>
         )}
+
+        {/* Book banner sits after the meaning, description and examples so the answer comes first */}
+        <section className="mt-14">
+          <BookBanner />
+        </section>
 
         {/* Emojis in this Combo Section */}
         {emojiLinks.length > 0 && (

@@ -251,8 +251,6 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
           }
         />
 
-        <BookBanner className="mt-7" />
-
         {/* Sticky in-page section navigation (anchor links + scroll-spy) */}
         <EmojiSectionNav sections={navSections} className="mt-8" />
 
@@ -306,6 +304,9 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
             </DetailSection>
           </div>
         )}
+
+        {/* Book banner sits after the meaning, examples and deep dive so the answer comes first */}
+        <BookBanner className="mt-14" />
 
         {/* Related: combos + related emojis */}
         {hasRelated && (
