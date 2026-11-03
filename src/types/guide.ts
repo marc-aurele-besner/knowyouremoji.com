@@ -49,6 +49,15 @@ export interface GuideSummary {
   seoTitle?: string;
   /** Optional human SEO description override */
   seoDescription?: string;
+  /**
+   * First day (inclusive, `YYYY-MM-DD`, UTC) of a seasonal featuring
+   * window. While the window is open the homepage pins the guide ahead of
+   * the newest guides, so a holiday piece stays visible through its season
+   * even after newer guides are published.
+   */
+  featuredFrom?: string;
+  /** Last day (inclusive, `YYYY-MM-DD`, UTC) of the featuring window. */
+  featuredUntil?: string;
 }
 
 /**

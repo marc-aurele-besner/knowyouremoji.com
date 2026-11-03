@@ -143,20 +143,22 @@ describe('HomePageContent', () => {
       expect(screen.getAllByTestId('combo-card')).toHaveLength(2);
     });
 
-    it('renders the latest guides section when guides are provided', () => {
+    it('renders the featured guides section when guides are provided', () => {
       render(
         <HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[mockGuide]} />
       );
 
-      expect(screen.getByRole('heading', { name: 'Latest guides', level: 2 })).toBeInTheDocument();
+      expect(
+        screen.getByRole('heading', { name: 'Featured guides', level: 2 })
+      ).toBeInTheDocument();
       expect(screen.getAllByTestId('guide-card')).toHaveLength(1);
     });
 
-    it('does not render the latest guides section when there are no guides', () => {
+    it('does not render the featured guides section when there are no guides', () => {
       render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
 
       expect(
-        screen.queryByRole('heading', { name: 'Latest guides', level: 2 })
+        screen.queryByRole('heading', { name: 'Featured guides', level: 2 })
       ).not.toBeInTheDocument();
     });
   });

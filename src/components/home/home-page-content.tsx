@@ -110,7 +110,7 @@ export interface HomePageContentProps {
   emojiSource?: HomeEmojiSource;
   /** Combos shown in the Popular combos section. */
   comboSummaries: EmojiComboSummary[];
-  /** Latest published guides shown in the Editorial section (top 3). */
+  /** Guides shown in the Editorial section (top 3): seasonal picks first, then the newest. */
   guideSummaries: GuideSummary[];
 }
 
@@ -245,7 +245,7 @@ export function HomePageContent({
           <section className="mt-14">
             <SectionHead
               eyebrow="Editorial"
-              title="Latest guides"
+              title="Featured guides"
               href="/guides"
               linkLabel={`All ${guideCount} guides`}
             />
