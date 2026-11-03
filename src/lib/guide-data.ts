@@ -185,6 +185,14 @@ export function _buildGuideFromFrontmatter(
 
   const draft = data.draft === 'true' || data.draft === true;
 
+  const featuredFrom = optionalIsoDay(data, 'featuredFrom', slug);
+  const featuredUntil = optionalIsoDay(data, 'featuredUntil', slug);
+  if (featuredFrom && featuredUntil && featuredFrom > featuredUntil) {
+    throw new Error(
+      `Guide "${slug}" has featuredFrom (${featuredFrom}) after featuredUntil (${featuredUntil}).`
+    );
+  }
+
   const tags = requireStringList('tags');
   const relatedEmojis = requireStringList('relatedEmojis');
   const relatedCombos = requireStringList('relatedCombos');
@@ -207,10 +215,31 @@ export function _buildGuideFromFrontmatter(
     relatedCombos,
     seoTitle,
     seoDescription,
+    featuredFrom,
+    featuredUntil,
     body,
     html,
     draft,
   };
+}
+
+const ISO_DAY_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+/**
+ * Read an optional `YYYY-MM-DD` frontmatter field. Throws on any other
+ * shape so a typo cannot silently feature (or un-feature) a guide.
+ */
+function optionalIsoDay(
+  data: Record<string, unknown>,
+  key: string,
+  slug: GuideSlug
+): string | undefined {
+  const value = data[key];
+  if (value === undefined || value === '') return undefined;
+  if (typeof value !== 'string' || !ISO_DAY_PATTERN.test(value)) {
+    throw new Error(`Guide "${slug}" frontmatter field "${key}" must be a YYYY-MM-DD date.`);
+  }
+  return value;
 }
 
 /** Path to the on-disk guides content directory. */
@@ -343,7 +372,49 @@ function toSummary(guide: Guide): GuideSummary {
     relatedCombos: guide.relatedCombos,
     seoTitle: guide.seoTitle,
     seoDescription: guide.seoDescription,
+    featuredFrom: guide.featuredFrom,
+    featuredUntil: guide.featuredUntil,
   };
+}
+
+/**
+ * Whether a guide's seasonal featuring window is open on `now`.
+ *
+ * The window is compared on UTC calendar days and both ends are inclusive.
+ * A guide needs at least one of `featuredFrom` / `featuredUntil` to be
+ * featured; an open end means "since forever" / "until further notice".
+ */
+export function isGuideFeaturedOn(
+  guide: Pick<GuideSummary, 'featuredFrom' | 'featuredUntil'>,
+  now: Date
+): boolean {
+  if (!guide.featuredFrom && !guide.featuredUntil) return false;
+  const today = now.toISOString().slice(0, 10);
+  if (guide.featuredFrom && today < guide.featuredFrom) return false;
+  if (guide.featuredUntil && today > guide.featuredUntil) return false;
+  return true;
+}
+
+/**
+ * Guides for the homepage strip: guides whose featuring window is open on
+ * `now` come first (the one whose window closes soonest leads, so the
+ * nearest holiday is shown first), then the newest published guides fill
+ * the remaining slots.
+ *
+ * `now` is injectable so tests can pin the date.
+ */
+export function getHomepageGuideSummaries(limit: number, now: Date = new Date()): GuideSummary[] {
+  const summaries = getPublishedGuideSummaries();
+  const featured = summaries
+    .filter((guide) => isGuideFeaturedOn(guide, now))
+    .sort((a, b) => {
+      const aEnd = a.featuredUntil ?? '9999-12-31';
+      const bEnd = b.featuredUntil ?? '9999-12-31';
+      return aEnd < bEnd ? -1 : aEnd > bEnd ? 1 : 0;
+    });
+  const featuredSlugs = new Set(featured.map((guide) => guide.slug));
+  const rest = summaries.filter((guide) => !featuredSlugs.has(guide.slug));
+  return [...featured, ...rest].slice(0, Math.max(0, limit));
 }
 
 /** Compute a fallback SEO title from the first Markdown heading. */

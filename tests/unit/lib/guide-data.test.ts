@@ -5,6 +5,8 @@ import {
   deriveSeoTitle,
   getAllGuides,
   clearGuideCache,
+  isGuideFeaturedOn,
+  getHomepageGuideSummaries,
 } from '../../../src/lib/guide-data';
 import fs from 'fs';
 
@@ -258,6 +260,166 @@ Just body, no headings here.`;
         readdirSyncSpy.mockRestore();
         clearGuideCache();
       }
+    });
+  });
+
+  describe('seasonal featuring window', () => {
+    const baseData = {
+      title: 'T',
+      description: 'D',
+      publishedAt: '2026-01-01',
+      updatedAt: '2026-01-01',
+      author: 'A',
+    };
+
+    it('reads featuredFrom and featuredUntil from frontmatter', () => {
+      const guide = _buildGuideFromFrontmatter(
+        { ...baseData, featuredFrom: '2026-11-01', featuredUntil: '2026-12-26' },
+        'Body',
+        'seasonal'
+      );
+      expect(guide.featuredFrom).toBe('2026-11-01');
+      expect(guide.featuredUntil).toBe('2026-12-26');
+    });
+
+    it('leaves the window undefined when the fields are absent or empty', () => {
+      const guide = _buildGuideFromFrontmatter(
+        { ...baseData, featuredFrom: '' },
+        'Body',
+        'evergreen'
+      );
+      expect(guide.featuredFrom).toBeUndefined();
+      expect(guide.featuredUntil).toBeUndefined();
+    });
+
+    it('rejects a date that is not YYYY-MM-DD', () => {
+      expect(() =>
+        _buildGuideFromFrontmatter({ ...baseData, featuredUntil: 'Dec 26' }, 'Body', 'bad')
+      ).toThrow('frontmatter field "featuredUntil" must be a YYYY-MM-DD date');
+      expect(() =>
+        _buildGuideFromFrontmatter({ ...baseData, featuredFrom: ['2026-11-01'] }, 'Body', 'bad')
+      ).toThrow('frontmatter field "featuredFrom" must be a YYYY-MM-DD date');
+    });
+
+    it('rejects a window that ends before it starts', () => {
+      expect(() =>
+        _buildGuideFromFrontmatter(
+          { ...baseData, featuredFrom: '2026-12-26', featuredUntil: '2026-11-01' },
+          'Body',
+          'backwards'
+        )
+      ).toThrow('featuredFrom (2026-12-26) after featuredUntil (2026-11-01)');
+    });
+
+    describe('isGuideFeaturedOn', () => {
+      const window = { featuredFrom: '2026-11-01', featuredUntil: '2026-12-26' };
+
+      it('is false for guides without a window', () => {
+        expect(isGuideFeaturedOn({}, new Date('2026-11-03T12:00:00Z'))).toBe(false);
+      });
+
+      it('includes both ends of the window', () => {
+        expect(isGuideFeaturedOn(window, new Date('2026-11-01T00:00:00Z'))).toBe(true);
+        expect(isGuideFeaturedOn(window, new Date('2026-12-26T23:59:59Z'))).toBe(true);
+      });
+
+      it('is false before the window opens and after it closes', () => {
+        expect(isGuideFeaturedOn(window, new Date('2026-10-31T23:59:59Z'))).toBe(false);
+        expect(isGuideFeaturedOn(window, new Date('2026-12-27T00:00:00Z'))).toBe(false);
+      });
+
+      it('treats a missing end as open-ended', () => {
+        expect(
+          isGuideFeaturedOn({ featuredFrom: '2026-11-01' }, new Date('2030-01-01T00:00:00Z'))
+        ).toBe(true);
+        expect(
+          isGuideFeaturedOn({ featuredUntil: '2026-12-26' }, new Date('2020-01-01T00:00:00Z'))
+        ).toBe(true);
+      });
+    });
+
+    describe('getHomepageGuideSummaries', () => {
+      const files: Record<string, string> = {
+        'newest.md': guideSource('2026-11-02'),
+        'newer.md': guideSource('2026-10-29'),
+        'new.md': guideSource('2026-10-27'),
+        'christmas.md': guideSource(
+          '2026-10-07',
+          'featuredFrom: 2026-11-01\nfeaturedUntil: 2026-12-26'
+        ),
+        'thanksgiving.md': guideSource(
+          '2026-09-01',
+          'featuredFrom: 2026-11-01\nfeaturedUntil: 2026-11-26'
+        ),
+        'always.md': guideSource('2026-01-01', 'featuredFrom: 2026-01-01'),
+      };
+
+      function guideSource(publishedAt: string, extra = ''): string {
+        return `---
+title: Guide
+description: A description.
+publishedAt: ${publishedAt}
+updatedAt: ${publishedAt}
+author: Test Author
+${extra}
+---
+
+Body.`;
+      }
+
+      function withFixtureGuides(run: () => void) {
+        clearGuideCache();
+        const existsSyncSpy = spyOn(fs, 'existsSync').mockReturnValue(true);
+        const readdirSyncSpy = spyOn(fs, 'readdirSync').mockReturnValue(
+          Object.keys(files) as never
+        );
+        const readFileSyncSpy = spyOn(fs, 'readFileSync').mockImplementation(
+          ((filePath: string) => files[filePath.split('/').pop() as string]) as never
+        );
+        try {
+          run();
+        } finally {
+          readFileSyncSpy.mockRestore();
+          readdirSyncSpy.mockRestore();
+          existsSyncSpy.mockRestore();
+          clearGuideCache();
+        }
+      }
+
+      it('puts open windows first, soonest-closing first, then the newest guides', () => {
+        withFixtureGuides(() => {
+          const slugs = getHomepageGuideSummaries(5, new Date('2026-11-03T12:00:00Z')).map(
+            (g) => g.slug
+          );
+          expect(slugs).toEqual(['thanksgiving', 'christmas', 'always', 'newest', 'newer']);
+        });
+      });
+
+      it('drops a guide once its window has closed', () => {
+        withFixtureGuides(() => {
+          const slugs = getHomepageGuideSummaries(3, new Date('2026-12-01T12:00:00Z')).map(
+            (g) => g.slug
+          );
+          expect(slugs).toEqual(['christmas', 'always', 'newest']);
+        });
+      });
+
+      it('falls back to newest-first when no window is open', () => {
+        withFixtureGuides(() => {
+          const slugs = getHomepageGuideSummaries(3, new Date('2025-06-01T12:00:00Z')).map(
+            (g) => g.slug
+          );
+          expect(slugs).toEqual(['newest', 'newer', 'new']);
+        });
+      });
+
+      it('returns nothing for a non-positive limit and defaults now to the current date', () => {
+        withFixtureGuides(() => {
+          expect(getHomepageGuideSummaries(0, new Date('2026-11-03T12:00:00Z'))).toEqual([]);
+          expect(getHomepageGuideSummaries(-1)).toEqual([]);
+          expect(getHomepageGuideSummaries(10).length).toBe(Object.keys(files).length);
+        });
+      });
     });
   });
 });

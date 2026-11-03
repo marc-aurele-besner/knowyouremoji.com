@@ -21,6 +21,7 @@ import {
   deriveSeoTitle,
   deriveSeoDescription,
   clearGuideCache,
+  getHomepageGuideSummaries,
   _buildGuideFromFrontmatter,
 } from '../../../src/lib/guide-data';
 
@@ -96,6 +97,33 @@ describe('guide-data (live loader)', () => {
         expect((s as unknown as Record<string, unknown>).body).toBeUndefined();
         expect((s as unknown as Record<string, unknown>).html).toBeUndefined();
       });
+    });
+  });
+
+  describe('seasonal homepage guides', () => {
+    const homepageSlugs = (isoDate: string) =>
+      getHomepageGuideSummaries(3, new Date(`${isoDate}T12:00:00Z`)).map((g) => g.slug);
+
+    it('features the Thanksgiving and Christmas guides in November', () => {
+      const slugs = homepageSlugs('2026-11-03');
+      expect(slugs[0]).toBe('thanksgiving-emoji-etiquette');
+      expect(slugs[1]).toBe('christmas-emoji-etiquette');
+    });
+
+    it('keeps the Christmas guide on the homepage through December 26', () => {
+      expect(homepageSlugs('2026-12-01')[0]).toBe('christmas-emoji-etiquette');
+      expect(homepageSlugs('2026-12-26')[0]).toBe('christmas-emoji-etiquette');
+    });
+
+    it('drops the Christmas guide once its window closes', () => {
+      expect(homepageSlugs('2026-12-27')).not.toContain('christmas-emoji-etiquette');
+    });
+
+    it('gives the Thanksgiving guide a title that does not duplicate an emoji page', () => {
+      const guide = getPublishedGuideBySlug('thanksgiving-emoji-etiquette');
+      expect(guide).toBeDefined();
+      expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
+      expect(guide?.heroEmoji).toBe('🦃');
     });
   });
 

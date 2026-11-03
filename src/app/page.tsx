@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import { getEmojiSummaries } from '@/lib/emoji-data';
 import { getComboSummaries } from '@/lib/combo-data';
-import { getPublishedGuideSummaries } from '@/lib/guide-data';
+import { getHomepageGuideSummaries } from '@/lib/guide-data';
 import { getHomeEmojiSelection } from '@/lib/emoji-popularity';
 import { getEnv } from '@/lib/env';
 import { HomePageContent } from '@/components/home/home-page-content';
+
+/**
+ * Re-render hourly so seasonal guide windows (see `getHomepageGuideSummaries`)
+ * open and close on their own instead of waiting for the next deploy.
+ */
+export const revalidate = 3600;
 
 const defaultDescription =
   'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.';
@@ -84,7 +90,7 @@ export default async function HomePage() {
     allSummaries
   );
   const comboSummaries = getComboSummaries().slice(0, 8);
-  const guideSummaries = getPublishedGuideSummaries().slice(0, 3);
+  const guideSummaries = getHomepageGuideSummaries(3);
 
   return (
     <HomePageContent
