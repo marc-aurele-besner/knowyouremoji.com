@@ -1,10 +1,28 @@
-import { describe, expect, test, afterEach } from 'bun:test';
-import { render, screen, cleanup, fireEvent } from '@testing-library/react';
+import { describe, expect, test, afterEach, beforeEach, mock } from 'bun:test';
+import { render, screen, cleanup, fireEvent, waitFor } from '@testing-library/react';
 import NotFound from '@/app/not-found';
 
+const originalFetch = global.fetch;
+const mockFetch = mock(() =>
+  Promise.resolve({
+    json: () =>
+      Promise.resolve({
+        emojis: [
+          { slug: 'skull', character: '💀', name: 'Skull', category: 'faces', tldr: 'I am dead' },
+        ],
+      }),
+  })
+);
+
 describe('Global NotFound (404 Page)', () => {
+  beforeEach(() => {
+    mockFetch.mockClear();
+    global.fetch = mockFetch as unknown as typeof fetch;
+  });
+
   afterEach(() => {
     cleanup();
+    global.fetch = originalFetch;
   });
 
   test('renders 404 heading', () => {
@@ -70,11 +88,34 @@ describe('Global NotFound (404 Page)', () => {
     expect(screen.queryByRole('list', { name: /emoji results/i })).toBeNull();
   });
 
-  test('displays emoji grid once the visitor searches', () => {
+  test('displays emoji grid from the search API once the visitor searches', async () => {
     render(<NotFound />);
 
     fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'skull' } });
-    expect(screen.getByRole('list', { name: /emoji results/i })).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByRole('list', { name: /emoji results/i })).toBeInTheDocument();
+    });
+    expect(mockFetch).toHaveBeenCalledTimes(1);
+  });
+
+  test('does not hand the emoji catalog to the client search component', () => {
+    type Node = { type?: unknown; props?: Record<string, unknown> } | null | undefined;
+    const findSearchProps = (node: Node): Record<string, unknown> | null => {
+      if (!node || typeof node !== 'object') return null;
+      if ((node.type as { name?: string } | undefined)?.name === 'NotFoundSearch') {
+        return node.props ?? {};
+      }
+      const children = node.props?.children;
+      for (const child of Array.isArray(children) ? children : [children]) {
+        const found = findSearchProps(child as Node);
+        if (found) return found;
+      }
+      return null;
+    };
+
+    const props = findSearchProps(NotFound() as Node);
+    expect(props).not.toBeNull();
+    expect(Object.keys(props as object)).toEqual([]);
   });
 
   test('displays popular emoji chips linking to emoji pages', () => {

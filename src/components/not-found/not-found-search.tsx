@@ -1,49 +1,99 @@
 'use client';
 
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEmojiSearch } from '@/hooks/use-emoji-search';
 import { errorEvents } from '@/lib/analytics';
 import type { EmojiSummary } from '@/types/emoji';
 
-export interface NotFoundSearchProps {
-  /** Array of emojis to search through */
-  emojis: EmojiSummary[];
-  /** Show the first results before the user types (default: true) */
-  showInitialResults?: boolean;
-}
+/** Maximum number of results shown in the grid (and requested from the API). */
+const RESULT_LIMIT = 12;
+
+/** Delay before a keystroke triggers a search request. */
+const DEBOUNCE_MS = 200;
+
+type SearchStatus = 'idle' | 'loading' | 'done';
 
 /**
- * Client-side search component for the 404 page
- * Allows users to search for emojis when they land on a non-existent page
+ * Search box for the 404 page.
+ *
+ * Queries `GET /api/emojis/search` (like the header SearchBar) instead of
+ * receiving the emoji catalog as a prop: Next.js embeds the root not-found
+ * payload in every route's HTML, so passing the catalog here shipped all
+ * emoji summaries on every page.
  */
-export function NotFoundSearch({ emojis, showInitialResults = true }: NotFoundSearchProps) {
+export function NotFoundSearch() {
   const pathname = usePathname();
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState<EmojiSummary[]>([]);
+  const [status, setStatus] = useState<SearchStatus>('idle');
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Incremented per request so a slow, outdated response never overwrites a newer one.
+  const requestIdRef = useRef(0);
 
   // Track 404 page view on mount
   useEffect(() => {
     errorEvents.pageNotFound(pathname || '/unknown');
   }, [pathname]);
 
-  const {
-    results: filteredEmojis,
-    query: searchQuery,
-    setQuery,
-    clearQuery,
-    resultCount,
-  } = useEmojiSearch({ emojis });
+  // Cleanup debounce timer on unmount
+  useEffect(() => {
+    return () => {
+      if (debounceRef.current) {
+        clearTimeout(debounceRef.current);
+      }
+    };
+  }, []);
+
+  const fetchResults = useCallback(async (searchQuery: string) => {
+    const requestId = ++requestIdRef.current;
+    let emojis: EmojiSummary[] = [];
+    try {
+      const response = await fetch(
+        `/api/emojis/search?q=${encodeURIComponent(searchQuery)}&limit=${RESULT_LIMIT}`
+      );
+      const data = await response.json();
+      emojis = data.emojis || [];
+    } catch {
+      emojis = [];
+    }
+    if (requestId !== requestIdRef.current) return;
+    setResults(emojis);
+    setStatus('done');
+  }, []);
+
+  const resetSearch = useCallback(() => {
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current);
+    }
+    requestIdRef.current++;
+    setResults([]);
+    setStatus('idle');
+  }, []);
 
   const handleSearchChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
-      setQuery(event.target.value);
+      const value = event.target.value;
+      setQuery(value);
+      resetSearch();
+
+      const trimmed = value.trim();
+      if (!trimmed) return;
+
+      setStatus('loading');
+      debounceRef.current = setTimeout(() => {
+        fetchResults(trimmed);
+      }, DEBOUNCE_MS);
     },
-    [setQuery]
+    [fetchResults, resetSearch]
   );
 
   const handleClearSearch = useCallback(() => {
-    clearQuery();
-  }, [clearQuery]);
+    setQuery('');
+    resetSearch();
+  }, [resetSearch]);
+
+  const resultCount = results.length;
 
   return (
     <div>
@@ -69,13 +119,13 @@ export function NotFoundSearch({ emojis, showInitialResults = true }: NotFoundSe
           type="search"
           role="searchbox"
           placeholder="Search emojis by name or character..."
-          value={searchQuery}
+          value={query}
           onChange={handleSearchChange}
           autoComplete="off"
           className="h-[50px] w-full rounded-full border border-card-border bg-card pl-11 pr-12 text-base text-foreground placeholder:text-muted-foreground focus-visible:border-primary-500 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-primary-500/25 [&::-webkit-search-cancel-button]:hidden"
           aria-label="Search emojis"
         />
-        {searchQuery && (
+        {query && (
           <button
             type="button"
             onClick={handleClearSearch}
@@ -87,21 +137,25 @@ export function NotFoundSearch({ emojis, showInitialResults = true }: NotFoundSe
         )}
       </div>
 
-      {/* Result Count */}
-      {searchQuery && (
+      {/* Result Count / loading state */}
+      {status !== 'idle' && (
         <p className="mb-4 text-center text-sm text-muted-foreground" role="status">
-          {resultCount} emoji{resultCount !== 1 ? 's' : ''} found
+          {status === 'loading'
+            ? 'Searching…'
+            : resultCount >= RESULT_LIMIT
+              ? `Showing the top ${RESULT_LIMIT} matches`
+              : `${resultCount} emoji${resultCount !== 1 ? 's' : ''} found`}
         </p>
       )}
 
       {/* Emoji Results Grid */}
-      {!searchQuery && !showInitialResults ? null : filteredEmojis.length > 0 ? (
+      {status !== 'done' ? null : resultCount > 0 ? (
         <ul
           role="list"
           aria-label="Emoji results"
           className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6"
         >
-          {filteredEmojis.slice(0, 12).map((emoji: EmojiSummary) => (
+          {results.slice(0, RESULT_LIMIT).map((emoji: EmojiSummary) => (
             <li key={emoji.slug}>
               <Link
                 href={`/emoji/${emoji.slug}`}
