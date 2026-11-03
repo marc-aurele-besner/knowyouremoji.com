@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, afterEach } from 'bun:test';
 import { render, screen, fireEvent, cleanup, waitFor } from '@testing-library/react';
-import { LoginForm } from '@/components/auth/login-form';
+import { LoginForm, getPostLoginRedirect } from '@/components/auth/login-form';
 
 // Mock next-auth/react
 const mockSignIn = mock((): Promise<{ error: string | null }> => Promise.resolve({ error: null }));
@@ -30,6 +30,28 @@ afterEach(() => {
   mockSignIn.mockClear();
   mockPush.mockClear();
   mockFetch.mockClear();
+});
+
+describe('getPostLoginRedirect', () => {
+  it('defaults to /dashboard when no redirect param is present', () => {
+    expect(getPostLoginRedirect('')).toBe('/dashboard');
+  });
+
+  it('returns a same-origin relative path', () => {
+    expect(getPostLoginRedirect('?redirect=%2Fdashboard%2Fsettings')).toBe('/dashboard/settings');
+  });
+
+  it('rejects absolute URLs', () => {
+    expect(getPostLoginRedirect('?redirect=https%3A%2F%2Fevil.com')).toBe('/dashboard');
+  });
+
+  it('rejects protocol-relative URLs', () => {
+    expect(getPostLoginRedirect('?redirect=%2F%2Fevil.com')).toBe('/dashboard');
+  });
+
+  it('rejects backslash-prefixed URLs', () => {
+    expect(getPostLoginRedirect('?redirect=%2F%5Cevil.com')).toBe('/dashboard');
+  });
 });
 
 describe('LoginForm', () => {
@@ -179,6 +201,27 @@ describe('LoginForm', () => {
       await waitFor(() => {
         expect(mockPush).toHaveBeenCalledWith('/dashboard');
       });
+    });
+
+    it('redirects to the page the middleware bounced from', async () => {
+      window.history.pushState({}, '', '/login?redirect=%2Fdashboard%2Fhistory');
+      try {
+        mockSignIn.mockResolvedValue({ error: null });
+        render(<LoginForm />);
+        fireEvent.change(screen.getByLabelText(/^email$/i), {
+          target: { value: 'test@example.com' },
+        });
+        fireEvent.change(screen.getByLabelText(/password/i), {
+          target: { value: 'password123' },
+        });
+        fireEvent.click(screen.getByRole('button', { name: /^sign in$/i }));
+
+        await waitFor(() => {
+          expect(mockPush).toHaveBeenCalledWith('/dashboard/history');
+        });
+      } finally {
+        window.history.pushState({}, '', '/');
+      }
     });
   });
 

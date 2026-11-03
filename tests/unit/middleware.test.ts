@@ -1,5 +1,5 @@
 import { describe, it, expect, mock, afterEach } from 'bun:test';
-import { middleware, config, matchesRoute } from '@/middleware';
+import { middleware, config, matchesRoute, hasSecureSessionCookie } from '@/middleware';
 
 // Mock next-auth/jwt
 const mockGetToken = mock((): Promise<Record<string, unknown> | null> => Promise.resolve(null));
@@ -8,10 +8,11 @@ mock.module('next-auth/jwt', () => ({
 }));
 
 // Helper to create mock NextRequest
-function createMockRequest(pathname: string) {
+function createMockRequest(pathname: string, cookieNames: string[] = []) {
   return {
     nextUrl: { pathname },
     url: `http://localhost:3000${pathname}`,
+    cookies: { getAll: () => cookieNames.map((name) => ({ name, value: 'token' })) },
   } as never;
 }
 
@@ -37,7 +38,48 @@ describe('matchesRoute', () => {
   });
 });
 
+describe('hasSecureSessionCookie', () => {
+  it('returns false when there are no cookies', () => {
+    expect(hasSecureSessionCookie(createMockRequest('/dashboard'))).toBe(false);
+  });
+
+  it('returns false for the non-secure session cookie', () => {
+    expect(hasSecureSessionCookie(createMockRequest('/dashboard', ['authjs.session-token']))).toBe(
+      false
+    );
+  });
+
+  it('returns true for the secure session cookie', () => {
+    expect(
+      hasSecureSessionCookie(createMockRequest('/dashboard', ['__Secure-authjs.session-token']))
+    ).toBe(true);
+  });
+
+  it('returns true for a chunked secure session cookie', () => {
+    expect(
+      hasSecureSessionCookie(createMockRequest('/dashboard', ['__Secure-authjs.session-token.0']))
+    ).toBe(true);
+  });
+});
+
 describe('middleware', () => {
+  describe('session cookie lookup', () => {
+    it('reads the secure cookie when the request carries one (HTTPS)', async () => {
+      mockGetToken.mockResolvedValue({ id: 'user-123' });
+      const req = createMockRequest('/dashboard/history', ['__Secure-authjs.session-token']);
+      const response = await middleware(req);
+      expect(response.headers.get('location')).toBeNull();
+      expect(mockGetToken).toHaveBeenCalledWith(expect.objectContaining({ secureCookie: true }));
+    });
+
+    it('reads the non-secure cookie otherwise (local HTTP)', async () => {
+      mockGetToken.mockResolvedValue({ id: 'user-123' });
+      const req = createMockRequest('/dashboard/settings', ['authjs.session-token']);
+      await middleware(req);
+      expect(mockGetToken).toHaveBeenCalledWith(expect.objectContaining({ secureCookie: false }));
+    });
+  });
+
   describe('config', () => {
     it('has correct matcher patterns', () => {
       expect(config.matcher).toContain('/dashboard/:path*');
