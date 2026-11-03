@@ -24,6 +24,7 @@
     "import:neon": "npx bun run scripts/import-to-neon.ts",
     "backup:neon": "npx bun run scripts/backup-neon.ts",
     "stripe:setup": "npx bun run scripts/setup-stripe.ts",
+    "stripe:webhook:setup": "npx bun run scripts/setup-stripe-webhook.ts",
     "prepare": "husky"
   },
   "dependencies": {
