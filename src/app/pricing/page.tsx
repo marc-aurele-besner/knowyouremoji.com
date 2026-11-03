@@ -82,7 +82,6 @@ const proFeatures = [
   'Priority AI processing',
   'Interpretation history',
   'Save favorite interpretations',
-  'No ads',
 ];
 
 /** Feature comparison rows: `true` = included, `false` = not included, string = value. */
@@ -94,7 +93,6 @@ const comparisonRows: { feature: string; free: boolean | string; pro: boolean | 
   { feature: 'Priority AI processing', free: false, pro: true },
   { feature: 'Interpretation history', free: false, pro: true },
   { feature: 'Save favorites', free: false, pro: true },
-  { feature: 'Ad-free experience', free: false, pro: true },
 ];
 
 const phase2Features = [
@@ -190,12 +188,7 @@ export default function PricingPage() {
         {/* Pro Tier */}
         <div className="flex flex-col gap-5 rounded-[22px] border border-foreground bg-card p-7 shadow-soft">
           <div>
-            <div className="flex items-center justify-between gap-3">
-              <h2 className="text-xl font-semibold">Pro</h2>
-              <span className="rounded-full bg-foreground px-2.5 py-1 text-[11.5px] font-semibold text-background">
-                Most Popular
-              </span>
-            </div>
+            <h2 className="text-xl font-semibold">Pro</h2>
             <p className="mt-1 text-sm text-muted-foreground">For power users and professionals</p>
           </div>
           <p className="text-5xl font-semibold tracking-tight">

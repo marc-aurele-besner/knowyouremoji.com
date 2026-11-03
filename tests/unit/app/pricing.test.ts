@@ -247,11 +247,19 @@ describe('Pricing Page', () => {
       expect(content).toContain('CheckoutButton');
     });
 
-    test('contains Most Popular badge for pro tier', () => {
+    test('does not claim an unsupported Most Popular badge (#486)', () => {
       const result = PricingPage();
 
       const content = extractContent(result).toLowerCase();
-      expect(content).toContain('most popular');
+      expect(content).not.toContain('most popular');
+    });
+
+    test('does not sell ad removal while the free tier has no ads (#486)', () => {
+      const result = PricingPage();
+
+      const content = extractContent(result).toLowerCase();
+      expect(content).not.toContain('no ads');
+      expect(content).not.toContain('ad-free');
     });
   });
 });
