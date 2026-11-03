@@ -56,6 +56,29 @@ describe('HomePageContent', () => {
     });
   });
 
+  describe('emoji grid heading', () => {
+    it('says "Start here" for the curated list by default', () => {
+      render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);
+
+      expect(screen.getByRole('heading', { name: 'Start here', level: 2 })).toBeInTheDocument();
+      expect(screen.queryByText(/trending/i)).not.toBeInTheDocument();
+    });
+
+    it('says "Most viewed" when the list comes from view counts', () => {
+      render(
+        <HomePageContent
+          emojiSummaries={[createEmojiSummary()]}
+          emojiSource="most-viewed"
+          comboSummaries={[]}
+          guideSummaries={[]}
+        />
+      );
+
+      expect(screen.getByRole('heading', { name: 'Most viewed', level: 2 })).toBeInTheDocument();
+      expect(screen.queryByRole('heading', { name: 'Start here' })).not.toBeInTheDocument();
+    });
+  });
+
   describe('sections', () => {
     it('renders the hero headline', () => {
       render(<HomePageContent emojiSummaries={[]} comboSummaries={[]} guideSummaries={[]} />);

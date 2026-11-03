@@ -108,9 +108,7 @@ describe('HomePage', () => {
       renderHome();
 
       // Use exact text match to distinguish from "Popular Emoji Combos"
-      expect(
-        screen.getByRole('heading', { name: 'Trending this week', level: 2 })
-      ).toBeInTheDocument();
+      expect(screen.getByRole('heading', { name: 'Start here', level: 2 })).toBeInTheDocument();
     });
 
     test('displays emoji cards with characters', () => {
@@ -325,8 +323,9 @@ describe('HomePage', () => {
     const { default: HomePage } = await import('@/app/page');
     const ui = await HomePage();
     render(ui);
-    expect(
-      screen.getByRole('heading', { name: 'Trending this week', level: 2 })
-    ).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Start here', level: 2 })).toBeInTheDocument();
+    const cardLinks = screen.getAllByTestId('emoji-card').map((card) => card.getAttribute('href'));
+    expect(cardLinks[0]).toBe('/emoji/skull');
+    expect(cardLinks).not.toContain('/emoji/cucumber');
   });
 });

@@ -12,6 +12,7 @@ import { Button } from '@/components/ui/button';
 import { GuideCard } from '@/components/guides/guide-card';
 import { BookBanner } from '@/components/layout/book-banner';
 import { Omnibox } from '@/components/home/omnibox';
+import type { HomeEmojiSource } from '@/lib/emoji-popularity';
 import type { ContextType, EmojiSummary } from '@/types/emoji';
 import type { EmojiComboSummary } from '@/types/combo';
 import type { GuideSummary } from '@/types/guide';
@@ -100,8 +101,13 @@ function SectionHead({
 }
 
 export interface HomePageContentProps {
-  /** Emojis shown in the Trending grid (typically top 12 by Neon view counts when configured). */
+  /** Emojis shown in the homepage emoji grid. */
   emojiSummaries: EmojiSummary[];
+  /**
+   * Where `emojiSummaries` came from: all-time Neon view counts (`most-viewed`) or the
+   * hand-picked list (`curated`). Drives the section heading. Defaults to `curated`.
+   */
+  emojiSource?: HomeEmojiSource;
   /** Combos shown in the Popular combos section. */
   comboSummaries: EmojiComboSummary[];
   /** Latest published guides shown in the Editorial section (top 3). */
@@ -109,11 +115,12 @@ export interface HomePageContentProps {
 }
 
 /**
- * Homepage layout: omnibox hero, emoji ticker, book banner, trending emojis,
+ * Homepage layout: omnibox hero, emoji ticker, book banner, most viewed or curated emojis,
  * context strip, latest guides, popular combos, categories and interpreter CTA.
  */
 export function HomePageContent({
   emojiSummaries,
+  emojiSource = 'curated',
   comboSummaries,
   guideSummaries,
 }: HomePageContentProps) {
@@ -176,12 +183,12 @@ export function HomePageContent({
           <BookBanner variant="wide" />
         </section>
 
-        <section className="mt-14" aria-labelledby="home-trending">
+        <section className="mt-14" aria-labelledby="home-emojis">
           <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
             <div>
               <span className="eyebrow mb-1 block">Explore</span>
-              <h2 id="home-trending" className={sectionTitle}>
-                Trending this week
+              <h2 id="home-emojis" className={sectionTitle}>
+                {emojiSource === 'most-viewed' ? 'Most viewed' : 'Start here'}
               </h2>
             </div>
             <Link href="/emoji" className={sectionLink}>
