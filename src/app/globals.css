@@ -230,6 +230,13 @@
     font-family: var(--font-sans);
     @apply bg-background text-foreground antialiased;
   }
+
+  /* The /guides layout sets its own (preloaded) --font-instrument-serif. */
+  .guides-fonts {
+    --font-serif:
+      var(--font-instrument-serif), 'Iowan Old Style', 'Palatino Linotype', 'Palatino', 'Georgia',
+      serif;
+  }
 }
 
 /* === Animations === */
