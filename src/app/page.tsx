@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getEmojiSummaries } from '@/lib/emoji-data';
 import { getComboSummaries } from '@/lib/combo-data';
 import { getPublishedGuideSummaries } from '@/lib/guide-data';
-import { getPopularEmojiSummariesForHome } from '@/lib/emoji-popularity';
+import { getHomeEmojiSelection } from '@/lib/emoji-popularity';
 import { getEnv } from '@/lib/env';
 import { HomePageContent } from '@/components/home/home-page-content';
 
@@ -74,17 +74,22 @@ export function generateMetadata(): Metadata {
 /**
  * Homepage for KnowYourEmoji.com
  *
- * Popular emojis are ranked by Neon-backed page view counts when `DATABASE_URL` is set.
+ * The emoji grid shows the most viewed emojis (all-time Neon page view counts) when
+ * `DATABASE_URL` is set and has enough data, and a hand-picked list otherwise.
  */
 export default async function HomePage() {
   const allSummaries = getEmojiSummaries();
-  const emojiSummaries = await getPopularEmojiSummariesForHome(12, allSummaries);
+  const { source: emojiSource, emojis: emojiSummaries } = await getHomeEmojiSelection(
+    12,
+    allSummaries
+  );
   const comboSummaries = getComboSummaries().slice(0, 8);
   const guideSummaries = getPublishedGuideSummaries().slice(0, 3);
 
   return (
     <HomePageContent
       emojiSummaries={emojiSummaries}
+      emojiSource={emojiSource}
       comboSummaries={comboSummaries}
       guideSummaries={guideSummaries}
     />
