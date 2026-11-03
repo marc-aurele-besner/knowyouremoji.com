@@ -50,6 +50,8 @@ relatedCombos:
   [birthday-cake-gift, cake-sparkles-party, party-celebrate, sparkler-firework, fireworks-sparkles]
 heroEmoji: 🎄
 readingTimeMinutes: 9
+featuredFrom: 2026-11-01
+featuredUntil: 2026-12-26
 seoTitle: Christmas emoji etiquette — what 🎄🎅🎁🎉🥂✨ actually mean in 2026
 seoDescription: A full decode of the 🎄🎅🎁🎉🥂✨ Christmas vocabulary — when to send the first tree, how to handle Merry Christmas vs Happy Holidays, what to send to an ex, what belongs in a family group, and the texts that age the sender at the moment they wanted credit for being festive.
 draft: false
