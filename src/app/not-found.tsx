@@ -15,9 +15,12 @@ const POPULAR_EMOJI_SLUGS = [
 
 /**
  * Global 404 page with search functionality
- * Displays a friendly message and allows users to search for emojis
+ * Displays a friendly message and allows users to search for emojis via the search API
  */
 export default function NotFound() {
+  // Only the popular chips are resolved here, on the server. The full catalog
+  // must not cross into the client component: Next.js embeds this page's
+  // payload in every route's HTML.
   const emojis = getEmojiSummaries();
   const popularEmojis = POPULAR_EMOJI_SLUGS.map((slug) =>
     emojis.find((emoji) => emoji.slug === slug)
@@ -50,7 +53,7 @@ export default function NotFound() {
       </div>
 
       {/* Search Section */}
-      <NotFoundSearch emojis={emojis} showInitialResults={false} />
+      <NotFoundSearch />
 
       {/* Popular emoji chips */}
       {popularEmojis.length > 0 && (

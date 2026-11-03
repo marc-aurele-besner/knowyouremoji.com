@@ -21,14 +21,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-// Editorial serif used only by the /guides section. Gives long-form
-// articles a print-publication feel that distinguishes them from the
-// otherwise sans-serif site.
+// Serif for the italic `.accent-serif` words in a few headlines outside
+// /guides (home, about, interpreter...). Not preloaded: the browser only
+// fetches it on pages that actually render one of those accents. The /guides
+// section declares its own preloaded copy in src/app/guides/layout.tsx.
 const instrumentSerif = Instrument_Serif({
   variable: '--font-instrument-serif',
   subsets: ['latin'],
   weight: '400',
   style: ['normal', 'italic'],
+  preload: false,
 });
 
 export const metadata: Metadata = siteMetadata;
