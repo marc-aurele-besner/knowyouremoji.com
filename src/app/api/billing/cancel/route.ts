@@ -57,7 +57,8 @@ export async function POST() {
       message: 'Subscription canceled',
       accessUntil: periodEnd?.toISOString() ?? null,
     });
-  } catch {
+  } catch (error) {
+    console.error('[billing/cancel] Request failed:', error);
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 });
   }
 }

@@ -34,7 +34,8 @@ export async function POST() {
     });
 
     return NextResponse.json({ url: portalSession.url });
-  } catch {
+  } catch (error) {
+    console.error('[billing/portal] Request failed:', error);
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 });
   }
 }

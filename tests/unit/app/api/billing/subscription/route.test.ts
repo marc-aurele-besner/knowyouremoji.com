@@ -1,4 +1,4 @@
-import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
+import { describe, it, expect, mock, beforeEach, afterEach, spyOn } from 'bun:test';
 
 const mockAuth = mock(() =>
   Promise.resolve({ user: { id: 'user-123', email: 'test@example.com' } })
@@ -142,13 +142,17 @@ describe('GET /api/billing/subscription', () => {
     expect(body.currentPeriodEnd).toBeNull();
   });
 
-  it('returns 500 when an unexpected error occurs', async () => {
+  it('returns 500 and logs the error when an unexpected error occurs', async () => {
+    const error = new Error('Unexpected');
     mockAuth.mockImplementation(() => {
-      throw new Error('Unexpected');
+      throw error;
     });
+    const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
     const res = await GET();
     expect(res.status).toBe(500);
     const body = await res.json();
     expect(body.error).toBe('An unexpected error occurred');
+    expect(consoleSpy).toHaveBeenCalledWith('[billing/subscription] Request failed:', error);
+    consoleSpy.mockRestore();
   });
 });

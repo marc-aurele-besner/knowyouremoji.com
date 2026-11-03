@@ -34,7 +34,8 @@ export async function GET() {
       stripeSubscriptionId: subscription.stripeSubscriptionId,
       currentPeriodEnd: subscription.currentPeriodEnd?.toISOString() ?? null,
     });
-  } catch {
+  } catch (error) {
+    console.error('[billing/subscription] Request failed:', error);
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 });
   }
 }
