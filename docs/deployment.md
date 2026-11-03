@@ -76,6 +76,9 @@ Configure these in Vercel Dashboard > Project Settings > Environment Variables:
 The Amazon variables are inlined at build time: redeploy after changing them. See
 [`amazon-affiliate.md`](./amazon-affiliate.md).
 
+Subscriptions also need `STRIPE_WEBHOOK_SECRET` from the production Stripe webhook endpoint.
+See [`stripe-webhooks.md`](./stripe-webhooks.md) to create the endpoint and get the secret.
+
 ### Local Development
 
 1. Copy `.env.example` to `.env.local`:
