@@ -702,6 +702,60 @@ export function checkComboReferences(
   return errors;
 }
 
+/** Variation selectors only pick text or emoji presentation; they do not change the emoji. */
+const VARIATION_SELECTORS = new Set([0xfe0e, 0xfe0f]);
+
+/** Code points of a glyph, without variation selectors. */
+export function characterCodepoints(character: string): number[] {
+  return [...character]
+    .map((char) => char.codePointAt(0) as number)
+    .filter((codepoint) => !VARIATION_SELECTORS.has(codepoint));
+}
+
+/**
+ * Code points named by a `unicode` field, without variation selectors.
+ * Accepts every spelling the catalog uses: `1F4AF`, `U+1F4AF`,
+ * `1F3F4-200D-2620-FE0F`, `U+1F44D-1F3FB`.
+ */
+export function unicodeFieldCodepoints(unicode: string): number[] | null {
+  const parts = unicode
+    .trim()
+    .split('-')
+    .map((part) => part.trim().replace(/^U\+/i, ''));
+  if (parts.some((part) => !/^[0-9A-Fa-f]{1,6}$/.test(part))) return null;
+  return parts
+    .map((part) => parseInt(part, 16))
+    .filter((codepoint) => !VARIATION_SELECTORS.has(codepoint));
+}
+
+function formatCodepoints(codepoints: number[]): string {
+  return codepoints.map((codepoint) => codepoint.toString(16).toUpperCase()).join('-');
+}
+
+/**
+ * Check that every emoji's `unicode` field encodes its `character`. The
+ * page header prints `unicode`, so a mismatch is a wrong codepoint shown to
+ * every reader (the bucket page used to print the axe's U+1FA93).
+ */
+export function checkUnicodeMatchesCharacter(emojis: Emoji[]): ValidationError[] {
+  const errors: ValidationError[] = [];
+
+  for (const emoji of emojis) {
+    if (typeof emoji.unicode !== 'string' || typeof emoji.character !== 'string') continue;
+    const expected = characterCodepoints(emoji.character);
+    const stored = unicodeFieldCodepoints(emoji.unicode);
+    if (stored === null || stored.join(',') !== expected.join(',')) {
+      errors.push({
+        file: emoji.slug,
+        field: 'unicode',
+        message: `"${emoji.unicode}" does not encode ${emoji.character} (expected ${formatCodepoints(expected)})`,
+      });
+    }
+  }
+
+  return errors;
+}
+
 /**
  * Validate all emojis and return the result
  */
@@ -739,12 +793,19 @@ export function validateAllEmojis(
 /**
  * Load all emoji JSON files from the data directory
  */
-export function loadEmojisFromDirectory(dir: string): Emoji[] {
+export function loadEmojisFromDirectory(
+  dir: string,
+  options: { publishedOnly?: boolean } = {}
+): Emoji[] {
   if (!fs.existsSync(dir)) {
     return [];
   }
 
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'));
+  // `*-emoji.json` files are not published (see `src/lib/emoji-data.ts`).
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .filter((f) => !options.publishedOnly || !f.endsWith('-emoji.json'));
   const emojis: Emoji[] = [];
 
   for (const file of files) {
@@ -1315,7 +1376,14 @@ export async function main(): Promise<void> {
   // Validate combo files themselves
   const comboResult = validateAllCombos(combos);
 
+  // Published pages only: the header prints `unicode` (issue #482).
+  const publishedEmojis = loadEmojisFromDirectory(emojisDir, { publishedOnly: true });
+  const publishedErrors = [...checkUnicodeMatchesCharacter(publishedEmojis)].map(
+    (e) => `[${e.file}] ${e.field}: ${e.message}`
+  );
+
   const totalErrors = [
+    ...publishedErrors.map((msg) => `[emoji] ${msg}`),
     ...emojiResult.errors.map((msg) => `[emoji] ${msg}`),
     ...comboResult.errors.map((msg) => `[combo] ${msg}`),
   ];

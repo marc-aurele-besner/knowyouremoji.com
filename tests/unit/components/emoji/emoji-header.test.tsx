@@ -226,6 +226,18 @@ describe('EmojiHeader', () => {
       expect(screen.getByText(/U\+1F468-U\+200D-U\+1F4BB/)).toBeInTheDocument();
     });
 
+    it('does not double the U+ prefix when the record already carries it', () => {
+      const prefixedEmoji = {
+        character: '🖨️',
+        name: 'Printer',
+        unicode: 'U+1F5A8-FE0F',
+        shortcodes: [':printer:'],
+      };
+      render(<EmojiHeader emoji={prefixedEmoji} />);
+      expect(screen.getByText('U+1F5A8-U+FE0F')).toBeInTheDocument();
+      expect(screen.queryByText(/U\+U\+/)).toBeNull();
+    });
+
     it('tracks copy analytics when slug is provided', async () => {
       const mockEmojiCopy = mock(() => {});
       const analyticsModule = await import('@/lib/analytics');

@@ -23,6 +23,9 @@ import {
   validateAllEmojis,
   loadEmojisFromDirectory,
   loadComboSlugs,
+  characterCodepoints,
+  unicodeFieldCodepoints,
+  checkUnicodeMatchesCharacter,
   main,
   isRunningDirectly,
   handleMainError,
@@ -485,6 +488,17 @@ describe('validate-emojis', () => {
       expect(result.length).toBe(2);
     });
 
+    it('should skip unpublished *-emoji.json files when asked', () => {
+      fs.writeFileSync(path.join(tempDir, 'skull.json'), JSON.stringify(validEmoji));
+      fs.writeFileSync(
+        path.join(tempDir, 'skull-emoji.json'),
+        JSON.stringify({ ...validEmoji, slug: 'skull-emoji' })
+      );
+      expect(loadEmojisFromDirectory(tempDir)).toHaveLength(2);
+      const published = loadEmojisFromDirectory(tempDir, { publishedOnly: true });
+      expect(published.map((e) => e.slug)).toEqual(['skull']);
+    });
+
     it('should skip invalid JSON files and log error', () => {
       const consoleSpy = spyOn(console, 'error').mockImplementation(() => {});
       fs.writeFileSync(path.join(tempDir, 'invalid.json'), 'not valid json{');
@@ -601,6 +615,16 @@ describe('validate-emojis', () => {
 
       await main();
       expect(consoleLogSpy).toHaveBeenCalledWith(expect.stringContaining('valid'));
+    });
+
+    it('should exit with code 1 when a published codepoint is wrong', async () => {
+      fs.writeFileSync(
+        path.join(emojisDir, 'skull.json'),
+        JSON.stringify({ ...validEmoji, unicode: '1F47D' })
+      );
+
+      await expect(main()).rejects.toThrow('process.exit called');
+      expect(consoleLogSpy).toHaveBeenCalledWith(expect.stringContaining('does not encode'));
     });
 
     it('should exit with code 1 when validation fails', async () => {
@@ -907,6 +931,55 @@ describe('validate-emojis', () => {
       expect(DEEP_CONVERSATION_EXAMPLES_MIN).toBe(3);
       expect(DEEP_FAQS_MIN).toBe(3);
       expect(DEEP_PLATFORM_NOTE_MIN_CHARS).toBe(40);
+    });
+  });
+
+  describe('codepoint checks', () => {
+    it('reads the code points of a glyph without variation selectors', () => {
+      expect(characterCodepoints('💯')).toEqual([0x1f4af]);
+      expect(characterCodepoints('🏴‍☠️')).toEqual([0x1f3f4, 0x200d, 0x2620]);
+    });
+
+    it('reads every unicode spelling the catalog uses', () => {
+      expect(unicodeFieldCodepoints('1F4AF')).toEqual([0x1f4af]);
+      expect(unicodeFieldCodepoints('U+1F4AF')).toEqual([0x1f4af]);
+      expect(unicodeFieldCodepoints('U+1F5A8-FE0F')).toEqual([0x1f5a8]);
+      expect(unicodeFieldCodepoints('U+1F44D-U+1F3FB')).toEqual([0x1f44d, 0x1f3fb]);
+      expect(unicodeFieldCodepoints('not hex')).toBeNull();
+    });
+
+    it('passes when unicode encodes the character', () => {
+      expect(checkUnicodeMatchesCharacter([validEmoji])).toEqual([]);
+      expect(
+        checkUnicodeMatchesCharacter([
+          { ...validEmoji, slug: 'pirate-flag', character: '🏴‍☠️', unicode: '1F3F4-200D-2620-FE0F' },
+        ])
+      ).toEqual([]);
+    });
+
+    it('fails when unicode names a different character', () => {
+      const errors = checkUnicodeMatchesCharacter([
+        { ...validEmoji, slug: 'bucket', character: '🪣', unicode: '1FA93' },
+      ]);
+      expect(errors).toHaveLength(1);
+      expect(errors[0].file).toBe('bucket');
+      expect(errors[0].field).toBe('unicode');
+      expect(errors[0].message).toContain('1FAA3');
+    });
+
+    it('fails when unicode is only part of a sequence or is not hex', () => {
+      expect(
+        checkUnicodeMatchesCharacter([
+          { ...validEmoji, slug: 'pirate-flag', character: '🏴‍☠️', unicode: '1F3F4' },
+          { ...validEmoji, slug: 'broken', unicode: 'skull' },
+        ])
+      ).toHaveLength(2);
+    });
+
+    it('skips records without string fields (reported by validateEmoji)', () => {
+      expect(
+        checkUnicodeMatchesCharacter([{ ...validEmoji, unicode: undefined as unknown as string }])
+      ).toEqual([]);
     });
   });
 });
