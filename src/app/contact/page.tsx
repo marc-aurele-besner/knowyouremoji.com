@@ -120,8 +120,8 @@ export default function ContactPage() {
       <header className="mb-8">
         <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Contact KnowYourEmoji</h1>
         <p className="mt-2 max-w-2xl text-[17px] text-muted-foreground">
-          We&apos;re a small team that reads every message. Tell us what you spotted, what we got
-          wrong, or what we should publish next.
+          KnowYourEmoji is run by one person, Marc-Aurele Besner, who reads every message. Tell us
+          what you spotted, what we got wrong, or what we should publish next.
         </p>
       </header>
 
@@ -247,7 +247,8 @@ export default function ContactPage() {
             <ul className="mt-3 flex flex-col gap-2.5 text-sm leading-relaxed text-muted-foreground">
               <li>
                 <strong className="text-foreground">3 business days</strong> is our typical response
-                window. We&apos;re a small team, so replies sometimes take longer during launches.
+                window. It&apos;s a one-person project, so replies sometimes take longer during
+                launches.
               </li>
               <li>
                 <strong className="text-foreground">Privacy:</strong> we only use what you send to
@@ -259,10 +260,10 @@ export default function ContactPage() {
               </li>
               <li>
                 <strong className="text-foreground">Editorial standards:</strong> read our{' '}
-                <Link href="/about#methodology" className={linkClass}>
-                  methodology
+                <Link href="/editorial-policy" className={linkClass}>
+                  editorial policy
                 </Link>{' '}
-                to see how we research emoji meanings before suggesting a change.
+                to see how pages are written and how corrections are handled.
               </li>
             </ul>
           </section>
