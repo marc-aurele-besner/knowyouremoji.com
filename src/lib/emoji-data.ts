@@ -162,6 +162,19 @@ export function getEmojiCount(): number {
 }
 
 /**
+ * Get the number of distinct emojis in the catalog.
+ *
+ * Several pages can show the same glyph (`100` and `hundred-points` for
+ * 💯), and skin-tone variants are separate characters. Counting characters
+ * rather than pages keeps a "N emojis" claim honest (issue #482).
+ *
+ * @returns Number of distinct emoji characters
+ */
+export function getUniqueEmojiCount(): number {
+  return new Set(loadEmojis().map((emoji) => normalizeEmojiCharacter(emoji.character))).size;
+}
+
+/**
  * Get emoji summaries for list/grid display
  * @returns Array of emoji summaries
  */
