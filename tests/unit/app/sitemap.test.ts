@@ -248,6 +248,7 @@ describe('sitemap', () => {
       for (const path of [
         '/about',
         '/contact',
+        '/editorial-policy',
         '/pricing',
         '/books',
         '/privacy',

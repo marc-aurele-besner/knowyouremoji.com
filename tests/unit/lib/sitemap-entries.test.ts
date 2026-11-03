@@ -160,6 +160,7 @@ describe('sitemap-entries', () => {
         '/interpreter',
         '/about',
         '/contact',
+        '/editorial-policy',
         '/pricing',
         '/books',
         '/privacy',

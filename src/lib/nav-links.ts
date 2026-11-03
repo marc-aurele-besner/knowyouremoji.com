@@ -65,6 +65,7 @@ export const FOOTER_LINK_GROUPS: NavLinkGroup[] = [
     title: 'Company',
     links: [
       { label: 'About', href: '/about' },
+      { label: 'Editorial policy', href: '/editorial-policy' },
       { label: 'Contact', href: '/contact' },
       ...FOOTER_LEGAL_LINKS,
     ],

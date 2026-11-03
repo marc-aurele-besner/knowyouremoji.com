@@ -201,9 +201,12 @@ export function buildLlmsTxt(): string {
   lines.push('## Editorial standards and trust');
   lines.push('');
   lines.push(
-    `- [About KnowYourEmoji](${baseUrl}/about): How interpretations are researched, and the standards each entry must meet.`
+    `- [About KnowYourEmoji](${baseUrl}/about): Who runs the site, how pages are written and checked, and how many are indexed.`
   );
-  lines.push(`- [Contact](${baseUrl}/contact): How to reach the editors.`);
+  lines.push(
+    `- [Editorial Policy](${baseUrl}/editorial-policy): Who writes the pages, how language models are used, how corrections work, and the Amazon affiliate disclosure.`
+  );
+  lines.push(`- [Contact](${baseUrl}/contact): How to reach the maintainer.`);
   lines.push(`- [Pricing](${baseUrl}/pricing): Plans for the AI interpreter.`);
   lines.push(`- [Privacy Policy](${baseUrl}/privacy): What data the interpreter processes.`);
   lines.push(`- [Terms of Service](${baseUrl}/terms): Terms governing use of the site.`);
