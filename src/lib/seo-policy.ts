@@ -11,6 +11,8 @@
  * 4. Skin-tone variations of a base emoji → noindex, follow, canonical = base emoji
  * 5. Low-content "stub" emoji JSON (no context meanings AND no long-form)
  *    → noindex, follow (canonical = self)
+ * 6. Batch-generated combo copy (same rule as the emoji side) → noindex,
+ *    follow (canonical = self, page still serves users)
  *
  * Pages remain visible to humans in every case — we only de-emphasize them
  * in Google Search so the site as a whole reads as a publisher, not a
@@ -21,15 +23,17 @@
  * the deep-tier word and FAQ thresholds. Those pages are near-duplicates of
  * each other, so the tier is checked against the copy itself: an emoji
  * whose long-form still carries the template markers is treated as `thin`
- * no matter what the file claims.
+ * no matter what the file claims. The combo catalog follows the same rule.
  *
  * See issue #344 (CONTENT-P1-006) and the sibling ticket CONTENT-P1-001 for
- * the content-tier taxonomy. See issue #479 for the template markers.
+ * the content-tier taxonomy. See issue #479 for the emoji template markers
+ * and issue #481 for the combo ones.
  */
 
 import type { Emoji, ContentTier } from '@/types/emoji';
 import type { EmojiCombo, ComboContentTier } from '@/types/combo';
 import { findEmojiTemplateMarkers, isEmojiTemplated } from '@/lib/emoji-boilerplate';
+import { findComboTemplateMarkers, isComboTemplated } from '@/lib/combo-boilerplate';
 
 export interface IndexingDecision {
   /** Whether search engines should index the page */
@@ -145,13 +149,19 @@ export function decisionToRobots(decision: IndexingDecision) {
  * Effective content tier for a combo, mirroring {@link resolveContentTier}
  * for emojis. Combos do not have skin-tone variants, so the rules are:
  *
- * 1. Explicit `contentTier: 'thin' | 'standard' | 'deep'` wins.
- * 2. Otherwise: pages with `longForm` (article-style content) or any
+ * 1. Batch-generated copy is `thin` no matter what the file claims.
+ * 2. Explicit `contentTier: 'thin' | 'standard' | 'deep'` wins.
+ * 3. Otherwise: pages with `longForm` (article-style content) or any
  *    `conversationExamples` are treated as `standard`. Bare-bones combos
  *    with only `meaning`/`description`/`examples` are treated as `thin`
  *    until someone fills them in.
  */
 export function resolveComboContentTier(combo: EmojiCombo): ComboContentTier {
+  // Batch-generated copy is thin by definition: the template satisfied the
+  // deep-tier thresholds, so the stamped tier proves nothing. Checked
+  // first so a templated page cannot buy its way into the index.
+  if (isComboTemplated(combo)) return 'thin';
+
   if (combo.contentTier) return combo.contentTier;
 
   const hasLongForm =
@@ -176,11 +186,24 @@ export function resolveComboContentTier(combo: EmojiCombo): ComboContentTier {
  * Mirrors {@link getIndexingDecision} for emojis. Combos do not have
  * skin-tone variants, so the policy is simpler:
  *
+ * - batch-generated copy → noindex, follow (page still serves users)
  * - `deep`     → index, follow
  * - `standard` → index, follow
  * - `thin`     → noindex, follow (page still serves users)
  */
 export function getComboIndexingDecision(combo: EmojiCombo, pageUrl: string): IndexingDecision {
+  // Batch-generated copy → noindex. The page keeps serving readers, but it
+  // must not be indexed as an original article.
+  const templateMarkers = findComboTemplateMarkers(combo);
+  if (templateMarkers.length > 0) {
+    return {
+      index: false,
+      follow: true,
+      canonical: pageUrl,
+      reason: `templated copy (${templateMarkers.map((marker) => marker.match).join(', ')}) → noindex, keep reachable for users`,
+    };
+  }
+
   const tier = resolveComboContentTier(combo);
 
   if (tier === 'thin') {

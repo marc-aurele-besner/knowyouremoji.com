@@ -27,6 +27,7 @@ import { getAllComparisons } from '@/lib/comparison-data';
 import { getPublishedGuideSummaries } from '@/lib/guide-data';
 import { resolveContentTier, resolveComboContentTier } from '@/lib/seo-policy';
 import { isEmojiTemplated } from '@/lib/emoji-boilerplate';
+import { isComboTemplated } from '@/lib/combo-boilerplate';
 import { getSiteUrl } from '@/lib/metadata';
 
 /**
@@ -198,7 +199,11 @@ export function buildEmojiSitemapEntries(): MetadataRoute.Sitemap {
 }
 
 /**
- * Build sitemap entries for combo pages. Excludes `thin` combos.
+ * Build sitemap entries for combo pages. Excludes:
+ * - Batch-generated ("templated") pages — they are near-duplicates of each
+ *   other, and a sitemap entry advertises them for indexing (issue #481).
+ * - `thin` content (per `resolveComboContentTier`).
+ *
  * `lastModified` prefers `contentUpdatedAt`.
  */
 export function buildComboSitemapEntries(): MetadataRoute.Sitemap {
@@ -206,6 +211,7 @@ export function buildComboSitemapEntries(): MetadataRoute.Sitemap {
   const combos = getAllCombos();
 
   return combos
+    .filter((combo: EmojiCombo) => !isComboTemplated(combo))
     .filter((combo: EmojiCombo) => resolveComboContentTier(combo) !== 'thin')
     .map((combo: EmojiCombo) => {
       const tier = resolveComboContentTier(combo);

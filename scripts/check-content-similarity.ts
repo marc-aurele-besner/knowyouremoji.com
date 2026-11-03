@@ -90,6 +90,28 @@ const BASELINE_OFFENDER_COUNT = 22;
  */
 const BASELINE_COMBO_OFFENDER_COUNT = 0;
 /**
+ * The number of words a sentence needs before two pages sharing it counts
+ * as duplicated copy.
+ *
+ * Short sentences are connective tissue — "Usually no.", "It can be." — and
+ * two pages that answer the same FAQ will share them without saying the same
+ * thing. A long sentence that appears word for word on two pages is
+ * copy-paste, which is the failure the combo catalog keeps running into:
+ * the shared paragraphs survive a whole-catalog similarity check because
+ * each page is different enough overall, while dozens of pages still say
+ * the same sentence (issue #481).
+ */
+const SHARED_SENTENCE_MIN_WORDS = 15;
+/**
+ * The number of shared sentences the combo catalog is allowed to carry.
+ *
+ * The catalog was rewritten page by page until no two pages shared a
+ * sentence, so the number is zero. The check is kept as a ratchet: it fails
+ * when the count grows, so a future generator run cannot reintroduce the
+ * shared paragraph.
+ */
+const BASELINE_SHARED_SENTENCE_COUNT = 0;
+/**
  * Terms appearing in more than this many pages are ignored when generating
  * candidate pairs. They cannot narrow anything down and the posting lists
  * get long enough to slow the scan down.
@@ -111,6 +133,8 @@ interface Page {
   /** The skin-tone family this page belongs to, if any. */
   family: string | undefined;
   text: string;
+  /** The sentences of the page, for the shared-sentence check. */
+  sentences: string[];
 }
 
 interface Offender {
@@ -174,6 +198,7 @@ function loadPages(): Page[] {
         file: path.join('src', 'data', 'emojis', name),
         family: emoji.skinToneBase as string | undefined,
         text: pageText(emoji),
+        sentences: [],
       };
     });
 }
@@ -204,6 +229,91 @@ function comboPageText(combo: Record<string, unknown>): string {
     .join(' ');
 }
 
+/**
+ * Split a piece of prose into sentences.
+ *
+ * A sentence ends at a full stop, a question mark or an exclamation mark,
+ * optionally followed by a closing quote or bracket. Splitting on the
+ * punctuation rather than on a fixed character count keeps short answers
+ * ("Usually no.") apart from real sentences.
+ */
+export function splitSentences(text: string): string[] {
+  const sentences: string[] = [];
+  let current = '';
+
+  for (const word of text.split(/\s+/)) {
+    current = current ? `${current} ${word}` : word;
+    if (/[.!?]["'\u2019\u201d)\]]?$/.test(word)) {
+      sentences.push(current);
+      current = '';
+    }
+  }
+  if (current) sentences.push(current);
+
+  return sentences;
+}
+
+/**
+ * The sentences a reader sees on a combo page.
+ *
+ * Only the long-form and the conversation examples are scanned: the short
+ * fields (`description`, `meaning`) are written by hand and are too short
+ * to hold a sentence worth duplicating.
+ */
+function comboPageSentences(combo: Record<string, unknown>): string[] {
+  const longForm = (combo.longForm ?? {}) as Record<string, unknown>;
+  const faqs = (longForm.faqs ?? []) as Array<Record<string, string>>;
+  const examples = (longForm.conversationExamples ?? []) as Array<Record<string, string>>;
+
+  const fields = [
+    longForm.overview,
+    longForm.howPeopleUseIt,
+    longForm.whenNotToUse,
+    longForm.howToReply,
+    ...faqs.map((faq) => faq.answer),
+    ...examples.map((example) => example.interpretation),
+  ];
+
+  return fields
+    .filter((value): value is string => typeof value === 'string' && value.length > 0)
+    .flatMap((field) => splitSentences(field));
+}
+
+/**
+ * A sentence that appears on more than one page.
+ */
+interface SharedSentence {
+  sentence: string;
+  /** The slugs of the pages that carry it. */
+  slugs: string[];
+}
+
+/**
+ * Find the sentences that more than one combo page repeats.
+ *
+ * The comparison ignores case and wrapping, so the same sentence written
+ * with different spacing still counts as shared. Only sentences longer than
+ * {@link SHARED_SENTENCE_MIN_WORDS} are considered: short answers are
+ * shared by every page that answers the same question, and that is not
+ * duplicated copy.
+ */
+export function findSharedSentences(pages: Page[]): SharedSentence[] {
+  const bySentence = new Map<string, Set<string>>();
+
+  for (const page of pages) {
+    for (const sentence of page.sentences) {
+      const normalized = sentence.toLowerCase().replace(/\s+/g, ' ').trim();
+      if (normalized.split(/\s+/).length <= SHARED_SENTENCE_MIN_WORDS) continue;
+      if (!bySentence.has(normalized)) bySentence.set(normalized, new Set());
+      bySentence.get(normalized)!.add(page.slug);
+    }
+  }
+
+  return [...bySentence.entries()]
+    .filter(([, slugs]) => slugs.size > 1)
+    .map(([sentence, slugs]) => ({ sentence, slugs: [...slugs] }));
+}
+
 /** Load every published combo page. */
 function loadComboPages(): Page[] {
   if (!fs.existsSync(COMBO_DIR)) return [];
@@ -221,6 +331,7 @@ function loadComboPages(): Page[] {
         file: path.join('src', 'data', 'combos', name),
         family: undefined,
         text: comboPageText(combo),
+        sentences: comboPageSentences(combo),
       };
     });
 }
@@ -411,6 +522,23 @@ function main(): void {
     }
   }
 
+  // Sentences that more than one combo page repeats word for word.
+  const sharedSentences = findSharedSentences(comboPages);
+
+  if (sharedSentences.length > 0) {
+    console.log('');
+    console.log(
+      `Found ${sharedSentences.length} sentence(s) shared by more than one combo page.`
+    );
+    for (const shared of sharedSentences.slice(0, top)) {
+      console.log(`    ${shared.slugs.length} pages: ${shared.sentence.slice(0, 100)}`);
+      console.log(`      ${shared.slugs.join(', ')}`);
+    }
+    if (sharedSentences.length > top) {
+      console.log(`  ... and ${sharedSentences.length - top} more`);
+    }
+  }
+
   if (templatedCombos.length > 0) {
     console.log('');
     console.log('  Combos carrying shared template language:');
@@ -497,6 +625,18 @@ function main(): void {
       `Near-duplicate combo pages found: ${comboDuplicateCount} pair(s) at or above ` +
         `${DUPLICATE_THRESHOLD.toFixed(2)}, ${comboDelta} more than the recorded baseline of ` +
         `${BASELINE_COMBO_OFFENDER_COUNT}. Rewrite the copy, or lower the threshold.`
+    );
+  }
+
+  const sharedSentenceDelta = sharedSentences.length - BASELINE_SHARED_SENTENCE_COUNT;
+  if (sharedSentenceDelta > 0) {
+    failed = true;
+    console.error('');
+    console.error(
+      `${sharedSentences.length} sentence(s) are shared by more than one combo page, ` +
+        `${sharedSentenceDelta} more than the recorded baseline of ` +
+        `${BASELINE_SHARED_SENTENCE_COUNT}. Rewrite the copy on each page about its own ` +
+        `emoji pair.`
     );
   }
 

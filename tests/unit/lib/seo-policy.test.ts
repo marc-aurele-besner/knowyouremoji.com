@@ -240,6 +240,16 @@ describe('seo-policy', () => {
     test('treats bare-bones combo as thin', () => {
       expect(resolveComboContentTier(createEmojiCombo())).toBe('thin');
     });
+
+    test('treats a templated combo as thin even when it is stamped deep', () => {
+      const templated = createEmojiCombo({
+        contentTier: 'deep',
+        longForm: {
+          whenNotToUse: 'The read depends on context, but the register itself does not.',
+        },
+      });
+      expect(resolveComboContentTier(templated)).toBe('thin');
+    });
   });
 
   describe('getComboIndexingDecision', () => {
@@ -282,6 +292,22 @@ describe('seo-policy', () => {
 
       expect(decision.index).toBe(false);
       expect(decision.follow).toBe(true);
+    });
+
+    test('templated combo → noindex, follow, self canonical', () => {
+      const combo = createEmojiCombo({
+        contentTier: 'deep',
+        longForm: {
+          howToReply: 'Across platforms the meaning is consistent, and the cadence stays the same.',
+        },
+      });
+      const url = 'https://knowyouremoji.com/combo/templated-combo';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(url);
+      expect(decision.reason).toContain('templated');
     });
   });
 });
