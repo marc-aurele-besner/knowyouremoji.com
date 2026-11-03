@@ -82,10 +82,11 @@ export function EmojiHeader({ emoji, compareHref, actions, className }: EmojiHea
     }
   }, [emoji.character, emoji.slug]);
 
-  // Format unicode with U+ prefix
+  // Format unicode with U+ prefix. Some records already store the prefix
+  // (`U+1F5A8`), so strip it first rather than printing `U+U+1F5A8`.
   const formattedUnicode = emoji.unicode
     .split('-')
-    .map((code) => `U+${code}`)
+    .map((code) => `U+${code.replace(/^U\+/i, '')}`)
     .join('-');
 
   return (

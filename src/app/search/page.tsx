@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getEmojiSummaries, getEmojiCount } from '@/lib/emoji-data';
+import { getEmojiSummaries, getUniqueEmojiCount } from '@/lib/emoji-data';
 import { getComboSummaries, getComboCount } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { SearchPageShell } from '@/components/search/search-page-shell';
@@ -9,7 +9,7 @@ import { SearchPageShell } from '@/components/search/search-page-shell';
  */
 export function generateMetadata(): Metadata {
   const env = getEnv();
-  const emojiCount = getEmojiCount();
+  const emojiCount = getUniqueEmojiCount();
   const comboCount = getComboCount();
   const pageUrl = `${env.appUrl}/search`;
   // The root layout applies the `%s | <siteName>` title template, so the
@@ -48,7 +48,7 @@ export function generateMetadata(): Metadata {
 export default function SearchPage() {
   const emojiSummaries = getEmojiSummaries();
   const comboSummaries = getComboSummaries();
-  const emojiCount = getEmojiCount();
+  const emojiCount = getUniqueEmojiCount();
   const comboCount = getComboCount();
 
   return (

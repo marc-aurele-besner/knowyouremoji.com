@@ -156,6 +156,21 @@ describe('seo-policy', () => {
       expect(decision.canonical).toBe(url);
     });
 
+    test('alias slug → noindex, follow, canonical to the owner page', () => {
+      const alias = createEmoji({ slug: '100', character: '💯', contentTier: 'deep' });
+      const decision = getIndexingDecision(
+        alias,
+        'https://knowyouremoji.com/emoji/100',
+        undefined,
+        'https://knowyouremoji.com/emoji/hundred-points'
+      );
+
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe('https://knowyouremoji.com/emoji/hundred-points');
+      expect(decision.reason).toContain('alias');
+    });
+
     test('templated page → noindex, follow, self canonical', () => {
       const templated = createEmoji({
         slug: 'ginger-root',

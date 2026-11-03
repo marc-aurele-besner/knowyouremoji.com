@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getEmojiSummaries,
-  getEmojiCount,
+  getUniqueEmojiCount,
   getAllCategoryInfo,
   getAllContextInfo,
   getAllGenerationInfo,
@@ -24,7 +24,7 @@ import { cn } from '@/lib/utils';
  */
 export function generateMetadata(): Metadata {
   const env = getEnv();
-  const emojiCount = getEmojiCount();
+  const emojiCount = getUniqueEmojiCount();
   const pageUrl = `${env.appUrl}/emoji`;
   // The root layout applies the `%s | <siteName>` title template, so the
   // metadata title must NOT include the site name itself — otherwise the
@@ -90,7 +90,7 @@ function HubGrid({ items }: { items: HubLink[] }) {
  */
 export default function EmojiBrowsePage() {
   const emojiSummaries = getEmojiSummaries();
-  const emojiCount = getEmojiCount();
+  const emojiCount = getUniqueEmojiCount();
   const categories = getAllCategoryInfo();
   const comparison = getAllComparisons()[0];
 

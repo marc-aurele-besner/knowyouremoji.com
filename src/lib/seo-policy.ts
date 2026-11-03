@@ -13,6 +13,9 @@
  *    → noindex, follow (canonical = self)
  * 6. Batch-generated combo copy (same rule as the emoji side) → noindex,
  *    follow (canonical = self, page still serves users)
+ * 7. Alias slugs — a second page for a glyph another page owns
+ *    (`src/lib/emoji-aliases.ts`) → noindex, follow, canonical = owner.
+ *    `next.config.ts` also redirects them, so this is the fallback.
  *
  * Pages remain visible to humans in every case — we only de-emphasize them
  * in Google Search so the site as a whole reads as a publisher, not a
@@ -79,12 +82,26 @@ export function resolveContentTier(emoji: Emoji): ContentTier {
  * @param emoji        The full emoji record.
  * @param pageUrl      Absolute URL of the page being generated (used for canonical).
  * @param basePageUrl  Absolute URL of the skin-tone base page, when applicable.
+ * @param ownerPageUrl Absolute URL of the page that owns this glyph, when the
+ *                     slug is an alias (see `src/lib/emoji-aliases.ts`).
  */
 export function getIndexingDecision(
   emoji: Emoji,
   pageUrl: string,
-  basePageUrl?: string
+  basePageUrl?: string,
+  ownerPageUrl?: string
 ): IndexingDecision {
+  // Alias of another page for the same glyph → noindex + canonical to the
+  // owner, so each emoji has one indexable URL (issue #482).
+  if (ownerPageUrl) {
+    return {
+      index: false,
+      follow: true,
+      canonical: ownerPageUrl,
+      reason: 'alias slug → canonical to the page that owns the emoji',
+    };
+  }
+
   // Skin-tone variant → noindex + canonical to base.
   if (emoji.skinToneBase && basePageUrl) {
     return {

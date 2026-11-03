@@ -12,6 +12,7 @@ import {
   isValidCategorySlug,
   resolveCategorySlug,
 } from '@/lib/emoji-taxonomy';
+import { isEmojiAlias } from '@/lib/emoji-aliases';
 
 // Read the catalog on the server in both production and tests. Next.js does
 // not implement import.meta.glob; silently falling back to an empty catalog
@@ -79,8 +80,9 @@ export function normalizeEmojiCharacter(character: string): string {
  * `red-flag` rather than `triangular-flag-emoji`).
  *
  * The character is the identifier that cannot drift — it is what the reader
- * sees. Where more than one published record shares a character, the first
- * by slug is returned so the answer is stable.
+ * sees. Where more than one published record shares a character, the page
+ * that owns the glyph wins over its aliases (`src/lib/emoji-aliases.ts`),
+ * then the first by slug, so the answer is stable.
  *
  * @param character The glyph, e.g. "🎋".
  */
@@ -89,7 +91,10 @@ export function getEmojiByCharacter(character: string): Emoji | undefined {
   const normalized = normalizeEmojiCharacter(character);
   return loadEmojis()
     .filter((emoji) => normalizeEmojiCharacter(emoji.character) === normalized)
-    .sort((a, b) => a.slug.localeCompare(b.slug))[0];
+    .sort(
+      (a, b) =>
+        Number(isEmojiAlias(a.slug)) - Number(isEmojiAlias(b.slug)) || a.slug.localeCompare(b.slug)
+    )[0];
 }
 
 /**
@@ -154,6 +159,19 @@ export function searchEmojis(query: string): Emoji[] {
  */
 export function getEmojiCount(): number {
   return loadEmojis().length;
+}
+
+/**
+ * Get the number of distinct emojis in the catalog.
+ *
+ * Several pages can show the same glyph (`100` and `hundred-points` for
+ * 💯), and skin-tone variants are separate characters. Counting characters
+ * rather than pages keeps a "N emojis" claim honest (issue #482).
+ *
+ * @returns Number of distinct emoji characters
+ */
+export function getUniqueEmojiCount(): number {
+  return new Set(loadEmojis().map((emoji) => normalizeEmojiCharacter(emoji.character))).size;
 }
 
 /**

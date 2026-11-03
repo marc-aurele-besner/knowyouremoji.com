@@ -172,6 +172,12 @@ describe('getEmojiByCharacter', () => {
     expect(withSelector?.slug).toBe(without?.slug);
   });
 
+  it('returns the page that owns the glyph, not an alias of it', async () => {
+    const { getEmojiByCharacter } = await import('../../../src/lib/emoji-data');
+    // `100` sorts before `hundred-points`, but it is an alias (issue #482).
+    expect(getEmojiByCharacter('💯')?.slug).toBe('hundred-points');
+  });
+
   it('returns undefined for a glyph with no published record', async () => {
     const { getEmojiByCharacter } = await import('../../../src/lib/emoji-data');
     expect(getEmojiByCharacter('🛂')).toBeUndefined();

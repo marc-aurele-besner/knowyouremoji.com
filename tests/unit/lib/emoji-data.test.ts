@@ -189,6 +189,19 @@ describe('emoji-data', () => {
     });
   });
 
+  describe('getUniqueEmojiCount', () => {
+    it('counts distinct characters, not pages', async () => {
+      const { getUniqueEmojiCount, getEmojiCount, getAllEmojis, normalizeEmojiCharacter } =
+        await import('../../../src/lib/emoji-data');
+      const characters = new Set(
+        getAllEmojis().map((emoji) => normalizeEmojiCharacter(emoji.character))
+      );
+      expect(getUniqueEmojiCount()).toBe(characters.size);
+      // 💯 is published as both `100` and `hundred-points`.
+      expect(getUniqueEmojiCount()).toBeLessThan(getEmojiCount());
+    });
+  });
+
   describe('getEmojiSummaries', () => {
     it('should return emoji summaries with required properties', async () => {
       const { getEmojiSummaries } = await import('../../../src/lib/emoji-data');
