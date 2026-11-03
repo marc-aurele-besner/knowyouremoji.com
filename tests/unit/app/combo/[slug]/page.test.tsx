@@ -367,6 +367,20 @@ describe('ComboPage', () => {
       expect(screen.getByText(/this thread is killing me/)).toBeInTheDocument();
     });
 
+    test('renders the book banner after the meaning and examples (#486)', async () => {
+      mockGetComboBySlug.mockImplementation(() => mockCombo);
+      mockGetRelatedCombos.mockImplementation(() => []);
+
+      const page = await ComboPage({ params: Promise.resolve({ slug: 'skull-laughing' }) });
+      render(page);
+
+      const banner = screen.getByRole('complementary', { name: 'Featured book' });
+      for (const heading of ['What it says', 'Examples']) {
+        const el = screen.getByRole('heading', { name: heading, level: 2 });
+        expect(el.compareDocumentPosition(banner) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+      }
+    });
+
     test('renders related combos section when related combos exist', async () => {
       mockGetComboBySlug.mockImplementation(() => mockCombo);
       mockGetRelatedCombos.mockImplementation(() => [mockRelatedCombo]);
