@@ -3,10 +3,13 @@ import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { Button } from '@/components/ui/button';
 import { getEnv } from '@/lib/env';
+import { getAllEmojis } from '@/lib/emoji-data';
+import { getAllCombos } from '@/lib/combo-data';
+import { buildEmojiSitemapEntries, buildComboSitemapEntries } from '@/lib/sitemap-entries';
 
 const pageTitle = 'About Us';
 const pageDescription =
-  'How KnowYourEmoji researches emoji meanings, our editorial standards, and why context matters more than the Unicode definition.';
+  'How emoji pages on KnowYourEmoji are written and checked, who runs the site, and why context matters more than the Unicode definition.';
 
 /**
  * Generate metadata for the about page including canonical URL
@@ -77,42 +80,42 @@ const methodologySteps = [
       'We anchor every emoji to the original Unicode Consortium description so we never invent a meaning that contradicts the platform standard.',
   },
   {
-    title: 'Research real-world usage',
+    title: 'Draft with a language model',
     description:
-      'We read published linguistic work, watch how creators use the emoji on TikTok and Twitter, and cross-reference community wikis and emoji dictionaries.',
+      'Pages are drafted by language models from the emoji’s own record and, for emoji pages, the passages in our guides that discuss it. They are not hand-researched one by one.',
   },
   {
     title: 'Capture platform and generational nuance',
     description:
-      'An emoji often means different things in a Slack thread vs. a Tinder DM. We surface those splits on every page instead of pretending there is one universal meaning.',
+      'An emoji often means different things in a Slack thread vs. a Tinder DM. Pages carry platform and generational notes where we have them, instead of pretending there is one universal meaning.',
   },
   {
-    title: 'Review before publishing',
+    title: 'Check before publishing',
     description:
-      'Long-form pages are reviewed for tone, accuracy, and originality. Thin pages are either enriched or marked as thin (and de-emphasized in search).',
+      'Scripts reject drafts that reuse the old batch template or read as a near-copy of another page. Every change lands as a public commit on GitHub.',
   },
 ];
 
 const editorialPillars = [
   {
-    title: 'Original writing',
+    title: 'About one emoji',
     description:
-      'Every entry on the site is written for the question a reader is actually asking — not a rewrite of the Unicode spec.',
+      'A page should answer the question a reader is actually asking about that emoji — not restate the Unicode spec.',
   },
   {
     title: 'Specific, not generic',
     description:
-      'We avoid filler like "popular in captions and stories." If a sentence could apply to any emoji, it does not belong on the page.',
+      'If a sentence could apply to any emoji, it does not belong on the page. Pages that still carry the batch template’s phrases are kept out of search until they are rewritten.',
   },
   {
-    title: 'Sourced and dated',
+    title: 'Dated honestly',
     description:
-      'Pages record when they were last reviewed so you can judge whether the meaning still matches current usage.',
+      'Pages show when their content last changed. Many of those dates come from catalog-wide rewrites, not from a review of that single page.',
   },
   {
     title: 'Honest about limits',
     description:
-      'Emoji meaning shifts. We say so when we are uncertain rather than pretending the AI interpreter is definitive.',
+      'Emoji meaning shifts, and language models make mistakes. The interpreter’s answers are suggestions, not definitive meanings.',
   },
 ];
 
@@ -125,12 +128,12 @@ const whoWeAre = [
   {
     title: 'Funding',
     description:
-      'Currently a personal, self-funded project. No paid placements or affiliate-driven emoji rankings — see our editorial policy.',
+      'A personal, self-funded project. Links to our books are Amazon affiliate links, and there is an optional Pro plan. Nobody pays to be featured.',
   },
   {
     title: 'Disclosure',
     description:
-      'The AI interpreter uses third-party language models. The site does not permanently store interpreted messages.',
+      'Most page text and the AI interpreter come from third-party language models. The site does not permanently store interpreted messages.',
   },
 ];
 
@@ -159,22 +162,23 @@ const trustSignals = [
   {
     emoji: '🎯',
     label: 'Target',
-    title: 'Accurate',
+    title: 'Context first',
     description:
-      'Our interpretations are based on real-world usage, cultural research, and AI analysis.',
+      'Pages describe how an emoji is used in conversation, not just what Unicode named it.',
   },
   {
     emoji: '🔄',
     label: 'Refresh',
-    title: 'Up-to-date',
+    title: 'Open to correction',
     description:
-      'Emoji meanings evolve. We continuously update our database to reflect current usage.',
+      'Spot a wrong meaning? Report it on GitHub or by email, and the fix lands as a public commit.',
   },
   {
     emoji: '🔒',
     label: 'Lock',
     title: 'Privacy-first',
-    description: "We don't store your interpreted messages. Your conversations stay private.",
+    description:
+      'Interpreted messages are not permanently stored. Your conversations stay private.',
   },
   {
     emoji: '🎁',
@@ -195,11 +199,16 @@ const cardClass = 'rounded-2xl border border-card-border bg-card p-5';
  * - How it works
  * - Methodology (the "not just Unicode" section)
  * - Editorial standards
- * - Trust signals section for credibility
+ * - What readers can count on (context, corrections, privacy, price)
  * - Who operates the site
  * - CTA to try the interpreter
  */
 export default function AboutPage() {
+  const emojiPageCount = getAllEmojis().length;
+  const indexedEmojiPageCount = buildEmojiSitemapEntries().length;
+  const comboPageCount = getAllCombos().length;
+  const indexedComboPageCount = buildComboSitemapEntries().length;
+
   return (
     <main className="container mx-auto max-w-5xl px-4 pb-16 pt-10">
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
@@ -261,8 +270,8 @@ export default function AboutPage() {
         <p className="eyebrow">Methodology</p>
         <h2 className={`${sectionTitle} mt-2`}>How we decide what an emoji means</h2>
         <p className="mt-2 max-w-[680px] text-muted-foreground">
-          Emoji meaning is not the same as the Unicode definition. Here is the process we use for
-          every entry on the site.
+          Emoji meaning is not the same as the Unicode definition. Here is the process new and
+          rewritten pages go through.
         </p>
         <ol className="mt-5 grid list-none gap-3 md:grid-cols-2">
           {methodologySteps.map((step, index) => (
@@ -273,10 +282,13 @@ export default function AboutPage() {
             </li>
           ))}
         </ol>
-        <p className="mt-5 max-w-[680px] text-sm text-muted-foreground">
-          Pages without original research — older entries that are still anchored to the Unicode
-          description — are clearly marked as thin content and de-emphasized in search while we
-          expand our editorial coverage.
+        <p className="mt-5 max-w-[680px] text-sm text-muted-foreground" data-testid="index-status">
+          Much of the emoji catalog was first generated from a single template. Those pages stay
+          online for readers, but they are marked <code>noindex</code> and left out of the sitemap
+          until they are rewritten. Right now {indexedEmojiPageCount.toLocaleString('en-US')} of{' '}
+          {emojiPageCount.toLocaleString('en-US')} emoji pages and{' '}
+          {indexedComboPageCount.toLocaleString('en-US')} of{' '}
+          {comboPageCount.toLocaleString('en-US')} combo pages are open to search engines.
         </p>
       </section>
 
@@ -285,8 +297,8 @@ export default function AboutPage() {
         <p className="eyebrow">Editorial Standards</p>
         <h2 className={`${sectionTitle} mt-2`}>What we publish</h2>
         <p className="mt-2 max-w-[680px] text-muted-foreground">
-          We hold every entry on the site to the same four standards. Anything that does not meet
-          them is rewritten, not quietly shipped.
+          These are the standards new and rewritten pages are checked against. Not every older page
+          meets them yet.
         </p>
         <div className="mt-5 grid gap-3 md:grid-cols-2">
           {editorialPillars.map((pillar, index) => (
@@ -301,7 +313,7 @@ export default function AboutPage() {
 
       {/* Trust Signals Section */}
       <section className="mt-14" data-testid="trust-section">
-        <h2 className={sectionTitle}>Why Trust Us</h2>
+        <h2 className={sectionTitle}>What you can count on</h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {trustSignals.map((signal) => (
             <div key={signal.title} className={cardClass}>
@@ -328,6 +340,14 @@ export default function AboutPage() {
           ))}
         </div>
         <p className="mt-5 text-muted-foreground">
+          Read the{' '}
+          <Link
+            href="/editorial-policy"
+            className="font-medium text-foreground underline decoration-card-border underline-offset-4 hover:decoration-foreground"
+          >
+            editorial policy
+          </Link>{' '}
+          for who writes the pages, how corrections work, and how affiliate links are handled.
           Questions, corrections, or partnership ideas?{' '}
           <Link
             href="/contact"

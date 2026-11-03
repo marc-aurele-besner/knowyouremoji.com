@@ -1,5 +1,11 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { generateMetadata, default as AboutPage } from '../../../src/app/about/page';
+import { getAllEmojis } from '../../../src/lib/emoji-data';
+import { getAllCombos } from '../../../src/lib/combo-data';
+import {
+  buildEmojiSitemapEntries,
+  buildComboSitemapEntries,
+} from '../../../src/lib/sitemap-entries';
 
 // Save/restore only the env vars this test file touches
 const TESTED_KEYS = ['NEXT_PUBLIC_APP_URL', 'NEXT_PUBLIC_APP_NAME'] as const;
@@ -232,6 +238,30 @@ describe('About Page', () => {
 
       const content = extractContent(result);
       expect(content).toContain('/emoji');
+    });
+
+    test('links to the editorial policy', () => {
+      const content = extractContent(AboutPage());
+      expect(content).toContain('/editorial-policy');
+    });
+
+    test('reports how many emoji and combo pages the sitemap lists', () => {
+      const content = extractContent(AboutPage()).replace(/\s+/g, ' ');
+      const indexed = buildEmojiSitemapEntries().length.toLocaleString('en-US');
+      const total = getAllEmojis().length.toLocaleString('en-US');
+      const indexedCombos = buildComboSitemapEntries().length.toLocaleString('en-US');
+      const totalCombos = getAllCombos().length.toLocaleString('en-US');
+      expect(content).toContain(`${indexed} of ${total} emoji pages`);
+      expect(content).toContain(`${indexedCombos} of ${totalCombos} combo pages`);
+      expect(content).toContain('noindex');
+    });
+
+    test('does not repeat claims the corpus contradicts', () => {
+      const content = extractContent(AboutPage());
+      expect(content).not.toContain('marked as thin content');
+      expect(content).not.toContain('We continuously update our database');
+      expect(content).not.toContain('We hold every entry on the site');
+      expect(content).not.toContain('small team');
     });
   });
 });
