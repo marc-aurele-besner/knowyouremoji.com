@@ -9,6 +9,16 @@
 import Stripe from 'stripe';
 import { getEnv } from '@/lib/env';
 
+/**
+ * Stripe API version this integration is written and tested against.
+ *
+ * Pinned explicitly so request and webhook payload shapes do not change when
+ * the account's default API version is upgraded in the Dashboard. It matches
+ * the version bundled with the installed `stripe` SDK (see
+ * node_modules/stripe/cjs/apiVersion.js); bump both together.
+ */
+export const STRIPE_API_VERSION = '2026-09-30.endive' as const;
+
 let stripeInstance: Stripe | null = null;
 
 /**
@@ -23,7 +33,12 @@ export function getStripe(): Stripe | null {
 
   if (!stripeInstance) {
     stripeInstance = new Stripe(env.stripeSecretKey, {
+      apiVersion: STRIPE_API_VERSION,
       typescript: true,
+      appInfo: {
+        name: 'KnowYourEmoji',
+        url: 'https://knowyouremoji.com',
+      },
     });
   }
 

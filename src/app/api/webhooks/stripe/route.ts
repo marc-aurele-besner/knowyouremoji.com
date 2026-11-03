@@ -1,12 +1,22 @@
 /**
  * Stripe Webhook Handler for KnowYourEmoji
  *
- * Handles Stripe webhook events to keep subscription status in sync with Neon DB.
+ * Keeps the `subscriptions` table in Neon DB in sync with Stripe.
+ *
  * Events handled:
- * - checkout.session.completed: Activates trial period and stores stripeSubscriptionId
- * - customer.subscription.updated: Updates subscription status and period end
- * - customer.subscription.deleted: Marks subscription as canceled
- * - invoice.payment_failed: Marks subscription as past_due
+ * - checkout.session.completed: links the Stripe subscription to the user
+ *   (via the `userId` checkout metadata) and stores its current state
+ * - customer.subscription.created / .updated / .deleted / .paused / .resumed:
+ *   sync status, period end, and trial end
+ * - invoice.paid: restores access after a recovered payment
+ * - invoice.payment_failed: reflects dunning (past_due / unpaid)
+ *
+ * Stripe does not guarantee delivery order and may deliver an event more than
+ * once. Instead of applying the (possibly stale) object embedded in the event,
+ * every handler re-fetches the subscription from Stripe and writes its current
+ * state. Replaying or reordering events therefore always converges on the
+ * latest Stripe state, which makes the handlers idempotent without an
+ * event-log table.
  */
 
 import { NextResponse } from 'next/server';
@@ -16,17 +26,61 @@ import { getDb } from '@/lib/db';
 import { getEnv } from '@/lib/env';
 import { subscriptions } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
+import {
+  getCurrentPeriodEnd,
+  getInvoiceSubscriptionId,
+  getTrialEndsAt,
+  mapStripeStatus,
+} from '@/lib/stripe-webhook';
 
 const TRIAL_DAYS = 7;
+
+/** ID of a Stripe customer field that may be a string or expanded object. */
+function getCustomerId(
+  customer: string | Stripe.Customer | Stripe.DeletedCustomer | null
+): string | null {
+  if (!customer) {
+    return null;
+  }
+  return typeof customer === 'string' ? customer : customer.id;
+}
+
+/** True when Stripe reports that the requested resource does not exist. */
+function isResourceMissing(error: unknown): boolean {
+  return (
+    typeof error === 'object' &&
+    error !== null &&
+    (error as { code?: unknown }).code === 'resource_missing'
+  );
+}
+
+/**
+ * Fetch the latest state of a subscription from Stripe.
+ * Returns null if the subscription no longer exists, so the event is
+ * acknowledged instead of being retried forever.
+ */
+async function retrieveSubscription(
+  stripe: Stripe,
+  subscriptionId: string
+): Promise<Stripe.Subscription | null> {
+  try {
+    return await stripe.subscriptions.retrieve(subscriptionId);
+  } catch (error) {
+    if (isResourceMissing(error)) {
+      return null;
+    }
+    throw error;
+  }
+}
 
 /**
  * Verify Stripe webhook signature and return the event.
  * Returns null if signature verification fails or Stripe is not configured.
  */
-async function verifyWebhookEvent(
+function verifyWebhookEvent(
   payload: string,
   signature: string
-): Promise<Stripe.Event | null> {
+): { event: Stripe.Event; stripe: Stripe } | null {
   const env = getEnv();
   const stripe = getStripe();
 
@@ -35,44 +89,90 @@ async function verifyWebhookEvent(
   }
 
   try {
-    return stripe.webhooks.constructEvent(payload, signature, env.stripeWebhookSecret);
+    return {
+      event: stripe.webhooks.constructEvent(payload, signature, env.stripeWebhookSecret),
+      stripe,
+    };
   } catch {
     return null;
   }
 }
 
 /**
- * Handle checkout.session.completed event.
- * Creates or updates subscription record with Stripe subscription ID and trial end date.
+ * Write the current state of a Stripe subscription to the row that already
+ * references it. If no row references it yet (e.g. customer.subscription.created
+ * arriving before checkout.session.completed), nothing is written; the checkout
+ * handler creates the link and stores the same current state.
  */
-async function handleCheckoutSessionCompleted(event: Stripe.Event, stripe: Stripe): Promise<void> {
-  const session = event.data.object as Stripe.Checkout.Session;
-
-  if (session.mode !== 'subscription' || !session.metadata?.userId) {
+async function syncSubscriptionById(stripe: Stripe, subscriptionId: string): Promise<void> {
+  const db = getDb();
+  if (!db) {
     return;
   }
 
-  const userId = session.metadata.userId;
-  const subscriptionId = session.subscription as string;
+  const stripeSubscription = await retrieveSubscription(stripe, subscriptionId);
+  if (!stripeSubscription) {
+    return;
+  }
 
-  // Fetch the subscription details from Stripe to get trial info
-  const stripeSubscription = await stripe.subscriptions.retrieve(subscriptionId);
+  const status = mapStripeStatus(stripeSubscription.status);
+
+  await db
+    .update(subscriptions)
+    .set({
+      status,
+      plan: 'pro',
+      currentPeriodEnd: getCurrentPeriodEnd(stripeSubscription),
+      trialEndsAt: getTrialEndsAt(stripeSubscription, status),
+      updatedAt: new Date(),
+    })
+    .where(eq(subscriptions.stripeSubscriptionId, stripeSubscription.id));
+}
+
+/**
+ * Handle checkout.session.completed.
+ * Links the Stripe subscription and customer to the user and stores the
+ * subscription's current state.
+ */
+async function handleCheckoutSessionCompleted(
+  session: Stripe.Checkout.Session,
+  stripe: Stripe
+): Promise<void> {
+  const userId = session.metadata?.userId;
+  if (session.mode !== 'subscription' || !userId || !session.subscription) {
+    return;
+  }
 
   const db = getDb();
   if (!db) {
     return;
   }
 
-  // Calculate trial end date
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const sub = stripeSubscription as any;
-  const trialEndsAt = sub.trial_end
-    ? new Date(sub.trial_end * 1000)
-    : new Date(Date.now() + TRIAL_DAYS * 24 * 60 * 60 * 1000);
+  const subscriptionId =
+    typeof session.subscription === 'string' ? session.subscription : session.subscription.id;
 
-  const currentPeriodEnd = sub.current_period_end ? new Date(sub.current_period_end * 1000) : null;
+  const stripeSubscription = await retrieveSubscription(stripe, subscriptionId);
+  if (!stripeSubscription) {
+    return;
+  }
 
-  // Check if subscription record exists
+  const status = mapStripeStatus(stripeSubscription.status);
+
+  // Checkout always starts a TRIAL_DAYS trial; fall back to it if Stripe did
+  // not report a trial end, but never grant a trial to a non-active subscription.
+  const trialEndsAt =
+    getTrialEndsAt(stripeSubscription, status) ??
+    (status === 'active' ? new Date(Date.now() + TRIAL_DAYS * 24 * 60 * 60 * 1000) : null);
+
+  const values = {
+    stripeSubscriptionId: stripeSubscription.id,
+    stripeCustomerId: getCustomerId(session.customer),
+    status,
+    plan: 'pro',
+    trialEndsAt,
+    currentPeriodEnd: getCurrentPeriodEnd(stripeSubscription),
+  };
+
   const existing = await db
     .select()
     .from(subscriptions)
@@ -80,134 +180,21 @@ async function handleCheckoutSessionCompleted(event: Stripe.Event, stripe: Strip
     .limit(1);
 
   if (existing.length > 0) {
-    // Update existing subscription
     await db
       .update(subscriptions)
-      .set({
-        stripeSubscriptionId: subscriptionId,
-        stripeCustomerId: session.customer as string,
-        status: 'active',
-        plan: 'pro',
-        trialEndsAt,
-        currentPeriodEnd,
-        updatedAt: new Date(),
-      })
+      .set({ ...values, updatedAt: new Date() })
       .where(eq(subscriptions.userId, userId));
   } else {
-    // Create new subscription record
-    await db.insert(subscriptions).values({
-      userId,
-      stripeSubscriptionId: subscriptionId,
-      stripeCustomerId: session.customer as string,
-      status: 'active',
-      plan: 'pro',
-      trialEndsAt,
-      currentPeriodEnd,
-    });
+    await db.insert(subscriptions).values({ userId, ...values });
   }
-}
-
-/**
- * Handle customer.subscription.updated event.
- * Updates subscription status and period end in the database.
- */
-async function handleSubscriptionUpdated(event: Stripe.Event): Promise<void> {
-  const stripeSubscription = event.data.object as Stripe.Subscription;
-
-  // Get user by stripe customer ID
-  const db = getDb();
-  if (!db) {
-    return;
-  }
-
-  const subRows = await db
-    .select()
-    .from(subscriptions)
-    .where(eq(subscriptions.stripeSubscriptionId, stripeSubscription.id))
-    .limit(1);
-
-  if (subRows.length === 0) {
-    return;
-  }
-
-  const subscription = subRows[0];
-
-  // Determine status based on Stripe subscription state
-  let status: 'active' | 'canceled' | 'past_due' = 'active';
-
-  if (stripeSubscription.status === 'canceled') {
-    status = 'canceled';
-  } else if (stripeSubscription.status === 'past_due') {
-    status = 'past_due';
-  } else if (stripeSubscription.status === 'active' || stripeSubscription.status === 'trialing') {
-    status = 'active';
-  }
-
-  // Update the subscription
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const sub = stripeSubscription as any;
-  await db
-    .update(subscriptions)
-    .set({
-      status,
-      plan: 'pro',
-      currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
-      trialEndsAt: sub.trial_end ? new Date(sub.trial_end * 1000) : null,
-      updatedAt: new Date(),
-    })
-    .where(eq(subscriptions.id, subscription.id));
-}
-
-/**
- * Handle customer.subscription.deleted event.
- * Marks subscription as canceled in the database.
- */
-async function handleSubscriptionDeleted(event: Stripe.Event): Promise<void> {
-  const stripeSubscription = event.data.object as Stripe.Subscription;
-
-  const db = getDb();
-  if (!db) {
-    return;
-  }
-
-  await db
-    .update(subscriptions)
-    .set({
-      status: 'canceled',
-      updatedAt: new Date(),
-    })
-    .where(eq(subscriptions.stripeSubscriptionId, stripeSubscription.id));
-}
-
-/**
- * Handle invoice.payment_failed event.
- * Marks subscription as past_due in the database.
- */
-async function handlePaymentFailed(event: Stripe.Event): Promise<void> {
-  const invoice = event.data.object as Stripe.Invoice;
-  const subId = (invoice as Stripe.Invoice & { subscription: string | null }).subscription;
-
-  if (!subId) {
-    return;
-  }
-
-  const db = getDb();
-  if (!db) {
-    return;
-  }
-
-  await db
-    .update(subscriptions)
-    .set({
-      status: 'past_due',
-      updatedAt: new Date(),
-    })
-    .where(eq(subscriptions.stripeSubscriptionId, subId));
 }
 
 /**
  * POST /api/webhooks/stripe
  * Main webhook endpoint that handles all Stripe events.
+ *
+ * Returns 400 for unverifiable requests, 200 for handled or ignored events,
+ * and 500 only when processing fails so Stripe retries the delivery.
  */
 export async function POST(request: Request): Promise<NextResponse> {
   try {
@@ -218,34 +205,38 @@ export async function POST(request: Request): Promise<NextResponse> {
       return NextResponse.json({ error: 'Missing signature' }, { status: 400 });
     }
 
-    const event = await verifyWebhookEvent(payload, signature);
+    const verified = verifyWebhookEvent(payload, signature);
 
-    if (!event) {
+    if (!verified) {
       return NextResponse.json({ error: 'Invalid signature' }, { status: 400 });
     }
 
-    const stripe = getStripe();
+    const { event, stripe } = verified;
 
-    // Handle events
     switch (event.type) {
       case 'checkout.session.completed':
-        await handleCheckoutSessionCompleted(event, stripe!);
+        await handleCheckoutSessionCompleted(event.data.object, stripe);
         break;
 
+      case 'customer.subscription.created':
       case 'customer.subscription.updated':
-        await handleSubscriptionUpdated(event);
-        break;
-
       case 'customer.subscription.deleted':
-        await handleSubscriptionDeleted(event);
+      case 'customer.subscription.paused':
+      case 'customer.subscription.resumed':
+        await syncSubscriptionById(stripe, event.data.object.id);
         break;
 
-      case 'invoice.payment_failed':
-        await handlePaymentFailed(event);
+      case 'invoice.paid':
+      case 'invoice.payment_failed': {
+        const subscriptionId = getInvoiceSubscriptionId(event.data.object);
+        if (subscriptionId) {
+          await syncSubscriptionById(stripe, subscriptionId);
+        }
         break;
+      }
 
       default:
-        // Ignore unhandled events
+        // Acknowledge events this endpoint does not act on
         break;
     }
 

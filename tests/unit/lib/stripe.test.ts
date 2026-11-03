@@ -1,4 +1,6 @@
 import { describe, it, expect, mock, beforeEach, afterEach } from 'bun:test';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 // Mock the Stripe constructor
 const MockStripeConstructor = mock(
@@ -12,7 +14,7 @@ mock.module('stripe', () => ({
   default: MockStripeConstructor,
 }));
 
-const { getStripe, resetStripe } = await import('@/lib/stripe');
+const { getStripe, resetStripe, STRIPE_API_VERSION } = await import('@/lib/stripe');
 
 // Save/restore STRIPE_SECRET_KEY to avoid polluting other tests
 let savedStripeKey: string | undefined;
@@ -42,7 +44,19 @@ describe('stripe client', () => {
     process.env.STRIPE_SECRET_KEY = 'sk_test_123';
     const stripe = getStripe();
     expect(stripe).not.toBeNull();
-    expect(MockStripeConstructor).toHaveBeenCalledWith('sk_test_123', { typescript: true });
+    expect(MockStripeConstructor).toHaveBeenCalledWith('sk_test_123', {
+      apiVersion: STRIPE_API_VERSION,
+      typescript: true,
+      appInfo: { name: 'KnowYourEmoji', url: 'https://knowyouremoji.com' },
+    });
+  });
+
+  it('pins the API version bundled with the installed SDK', () => {
+    const sdkVersionFile = readFileSync(
+      join(process.cwd(), 'node_modules/stripe/cjs/apiVersion.js'),
+      'utf8'
+    );
+    expect(sdkVersionFile).toContain(`ApiVersion = '${STRIPE_API_VERSION}'`);
   });
 
   it('returns the same instance on subsequent calls', () => {

@@ -3,6 +3,7 @@ import { auth } from '@/lib/auth';
 import { getDb } from '@/lib/db';
 import { getEnv } from '@/lib/env';
 import { getStripe } from '@/lib/stripe';
+import { PRO_PLAN } from '@/lib/stripe-products';
 import { getUserSubscription } from '@/lib/subscriptions';
 import { users } from '@/lib/db/schema';
 import { eq } from 'drizzle-orm';
@@ -10,7 +11,7 @@ import { eq } from 'drizzle-orm';
 /**
  * POST /api/checkout
  * Creates a Stripe checkout session for the authenticated user.
- * Uses the PRO plan price with a 7-day free trial.
+ * Uses the Pro plan price (STRIPE_PRO_PRICE_ID) with the plan's free trial.
  */
 export async function POST() {
   try {
@@ -70,13 +71,13 @@ export async function POST() {
       }
     }
 
-    // Get the Stripe price ID from environment
+    // Get the Stripe price ID from environment (created by scripts/setup-stripe.ts)
     const stripePriceId = env.stripeProPriceId;
     if (!stripePriceId) {
       return NextResponse.json({ error: 'Stripe price not configured' }, { status: 503 });
     }
 
-    // Create checkout session with 7-day trial
+    // Create checkout session with the Pro plan's free trial
     const checkoutSession = await stripe.checkout.sessions.create({
       customer: customerId,
       allowed_payment_method_types: ['card'],
@@ -88,7 +89,7 @@ export async function POST() {
       ],
       mode: 'subscription',
       subscription_data: {
-        trial_period_days: 7,
+        trial_period_days: PRO_PLAN.trialPeriodDays,
       },
       success_url: `${env.appUrl}/dashboard?checkout=success`,
       cancel_url: `${env.appUrl}/dashboard?checkout=canceled`,
