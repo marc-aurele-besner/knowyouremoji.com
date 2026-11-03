@@ -9,6 +9,7 @@ import {
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getIndexingDecision } from '@/lib/seo-policy';
+import { getCanonicalEmojiSlug, isEmojiAlias } from '@/lib/emoji-aliases';
 import { getAllComparisons } from '@/lib/comparison-data';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
@@ -68,14 +69,21 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
 
   const env = getEnv();
   const pageUrl = `${env.appUrl}/emoji/${emoji.slug}`;
-  const basePageUrl = emoji.skinToneBase ? `${env.appUrl}/emoji/${emoji.skinToneBase}` : undefined;
+  const basePageUrl = emoji.skinToneBase
+    ? `${env.appUrl}/emoji/${getCanonicalEmojiSlug(emoji.skinToneBase)}`
+    : undefined;
+  // Alias slugs point at the page that owns the glyph (issue #482).
+  const ownerPageUrl = isEmojiAlias(emoji.slug)
+    ? `${env.appUrl}/emoji/${getCanonicalEmojiSlug(emoji.slug)}`
+    : undefined;
   const ogTitle = `${emoji.character} ${emoji.name} Emoji Meaning`;
 
   // Apply the indexing policy from src/lib/seo-policy.ts — see issue #344.
   // - Deep/standard pages → index, follow
   // - Skin-tone variants → noindex, follow, canonical to base
   // - Stub thin pages → noindex, follow
-  const indexing = getIndexingDecision(emoji, pageUrl, basePageUrl);
+  // - Alias slugs → noindex, follow, canonical to the owner
+  const indexing = getIndexingDecision(emoji, pageUrl, basePageUrl, ownerPageUrl);
 
   // Generate keywords array
   const keywords = [

@@ -27,6 +27,7 @@ import { getAllComparisons } from '@/lib/comparison-data';
 import { getPublishedGuideSummaries } from '@/lib/guide-data';
 import { resolveContentTier, resolveComboContentTier } from '@/lib/seo-policy';
 import { isEmojiTemplated } from '@/lib/emoji-boilerplate';
+import { isEmojiAlias } from '@/lib/emoji-aliases';
 import { isComboTemplated } from '@/lib/combo-boilerplate';
 import { getSiteUrl } from '@/lib/metadata';
 
@@ -172,6 +173,8 @@ export function buildStaticSitemapEntries(): MetadataRoute.Sitemap {
 /**
  * Build sitemap entries for all *indexable* emoji pages. Excludes:
  * - Skin-tone variants (they canonicalize to the base).
+ * - Alias slugs — a second page for a glyph another page owns. They
+ *   canonicalize to (and redirect to) the owner (issue #482).
  * - Batch-generated ("templated") pages — they are near-duplicates of each
  *   other, and a sitemap entry advertises them for indexing (issue #479).
  * - `thin` content (per `resolveContentTier`).
@@ -185,6 +188,7 @@ export function buildEmojiSitemapEntries(): MetadataRoute.Sitemap {
 
   return emojis
     .filter((emoji: Emoji) => !emoji.skinToneBase)
+    .filter((emoji: Emoji) => !isEmojiAlias(emoji.slug))
     .filter((emoji: Emoji) => !isEmojiTemplated(emoji))
     .filter((emoji: Emoji) => resolveContentTier(emoji) !== 'thin')
     .map((emoji: Emoji) => {

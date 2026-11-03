@@ -27,6 +27,7 @@ import type {
   ConversationSetting,
 } from '../src/types/emoji';
 import { findComboBoilerplate } from './combo-content/boilerplate';
+import { MISLABELED_EMOJI_SLUGS } from '../src/lib/emoji-aliases';
 import type {
   EmojiCombo,
   ComboLongForm,
@@ -757,6 +758,81 @@ export function checkUnicodeMatchesCharacter(emojis: Emoji[]): ValidationError[]
 }
 
 /**
+ * Check the alias map against the published catalog: every glyph has one
+ * page that owns it, and every alias points at that page.
+ *
+ * @param emojis      The published emoji records.
+ * @param aliases     Alias slug → owner slug (`src/data/emoji-aliases.json`).
+ * @param mislabeled  Slugs that share a glyph but name a different emoji.
+ */
+export function checkEmojiAliases(
+  emojis: Emoji[],
+  aliases: Readonly<Record<string, string>>,
+  mislabeled: readonly string[]
+): ValidationError[] {
+  const errors: ValidationError[] = [];
+  // Records without a glyph are reported by `validateEmoji`.
+  const withGlyph = emojis.filter((emoji) => typeof emoji.character === 'string');
+  const bySlug = new Map(withGlyph.map((emoji) => [emoji.slug, emoji]));
+  const glyph = (emoji: Emoji) => characterCodepoints(emoji.character).join(',');
+
+  for (const [alias, owner] of Object.entries(aliases)) {
+    const aliasEmoji = bySlug.get(alias);
+    const ownerEmoji = bySlug.get(owner);
+    if (!aliasEmoji) {
+      errors.push({
+        file: alias,
+        field: 'alias',
+        message: `Alias "${alias}" is not a published emoji`,
+      });
+      continue;
+    }
+    if (!ownerEmoji) {
+      errors.push({
+        file: alias,
+        field: 'alias',
+        message: `Alias owner "${owner}" is not a published emoji`,
+      });
+      continue;
+    }
+    if (Object.hasOwn(aliases, owner)) {
+      errors.push({
+        file: alias,
+        field: 'alias',
+        message: `Alias owner "${owner}" is itself an alias`,
+      });
+    }
+    if (glyph(aliasEmoji) !== glyph(ownerEmoji)) {
+      errors.push({
+        file: alias,
+        field: 'alias',
+        message: `Alias shows ${aliasEmoji.character} but its owner "${owner}" shows ${ownerEmoji.character}`,
+      });
+    }
+  }
+
+  // Every glyph must have exactly one page left that is not an alias.
+  const skipped = new Set(mislabeled);
+  const owners = new Map<string, string[]>();
+  for (const emoji of withGlyph) {
+    if (emoji.skinToneBase || skipped.has(emoji.slug) || Object.hasOwn(aliases, emoji.slug))
+      continue;
+    owners.set(glyph(emoji), [...(owners.get(glyph(emoji)) ?? []), emoji.slug]);
+  }
+  for (const slugs of owners.values()) {
+    if (slugs.length > 1) {
+      errors.push({
+        file: slugs[0],
+        field: 'alias',
+        message: `${slugs.length} pages show the same emoji (${slugs.join(', ')}); add all but one to src/data/emoji-aliases.json (bun run generate:emoji-aliases)`,
+      });
+    }
+  }
+
+  return errors;
+}
+
+/**
  * Validate all emojis and return the result
  */
 export function validateAllEmojis(
@@ -820,6 +896,14 @@ export function loadEmojisFromDirectory(
   }
 
   return emojis;
+}
+
+/**
+ * Load the alias map (`src/data/emoji-aliases.json`); an absent file is an empty map.
+ */
+export function loadEmojiAliases(file: string): Record<string, string> {
+  if (!fs.existsSync(file)) return {};
+  return JSON.parse(fs.readFileSync(file, 'utf-8')) as Record<string, string>;
 }
 
 /**
@@ -1376,11 +1460,14 @@ export async function main(): Promise<void> {
   // Validate combo files themselves
   const comboResult = validateAllCombos(combos);
 
-  // Published pages only: the header prints `unicode` (issue #482).
+  // Published pages only: the header prints `unicode`, and each glyph must
+  // have one page that owns it (issue #482).
   const publishedEmojis = loadEmojisFromDirectory(emojisDir, { publishedOnly: true });
-  const publishedErrors = [...checkUnicodeMatchesCharacter(publishedEmojis)].map(
-    (e) => `[${e.file}] ${e.field}: ${e.message}`
-  );
+  const aliases = loadEmojiAliases(path.join(process.cwd(), 'src', 'data', 'emoji-aliases.json'));
+  const publishedErrors = [
+    ...checkUnicodeMatchesCharacter(publishedEmojis),
+    ...checkEmojiAliases(publishedEmojis, aliases, MISLABELED_EMOJI_SLUGS),
+  ].map((e) => `[${e.file}] ${e.field}: ${e.message}`);
 
   const totalErrors = [
     ...publishedErrors.map((msg) => `[emoji] ${msg}`),

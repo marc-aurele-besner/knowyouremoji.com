@@ -23,9 +23,11 @@ import {
   validateAllEmojis,
   loadEmojisFromDirectory,
   loadComboSlugs,
+  loadEmojiAliases,
   characterCodepoints,
   unicodeFieldCodepoints,
   checkUnicodeMatchesCharacter,
+  checkEmojiAliases,
   main,
   isRunningDirectly,
   handleMainError,
@@ -627,6 +629,17 @@ describe('validate-emojis', () => {
       expect(consoleLogSpy).toHaveBeenCalledWith(expect.stringContaining('does not encode'));
     });
 
+    it('should exit with code 1 when two published pages show the same emoji', async () => {
+      fs.writeFileSync(path.join(emojisDir, 'skull.json'), JSON.stringify(validEmoji));
+      fs.writeFileSync(
+        path.join(emojisDir, 'dead.json'),
+        JSON.stringify({ ...validEmoji, slug: 'dead' })
+      );
+
+      await expect(main()).rejects.toThrow('process.exit called');
+      expect(consoleLogSpy).toHaveBeenCalledWith(expect.stringContaining('show the same emoji'));
+    });
+
     it('should exit with code 1 when validation fails', async () => {
       const invalidEmoji = { slug: 'test' };
       fs.writeFileSync(path.join(emojisDir, 'invalid.json'), JSON.stringify(invalidEmoji));
@@ -980,6 +993,70 @@ describe('validate-emojis', () => {
       expect(
         checkUnicodeMatchesCharacter([{ ...validEmoji, unicode: undefined as unknown as string }])
       ).toEqual([]);
+    });
+  });
+
+  describe('checkEmojiAliases', () => {
+    const hundred = { ...validEmoji, slug: 'hundred-points', character: '💯', unicode: '1F4AF' };
+    const alias100 = { ...hundred, slug: '100' };
+
+    it('passes when every duplicate glyph has one owner', () => {
+      expect(
+        checkEmojiAliases([validEmoji, hundred, alias100], { 100: 'hundred-points' }, [])
+      ).toEqual([]);
+    });
+
+    it('fails when two pages own the same glyph', () => {
+      const errors = checkEmojiAliases([hundred, alias100], {}, []);
+      expect(errors).toHaveLength(1);
+      expect(errors[0].message).toContain('hundred-points, 100');
+    });
+
+    it('ignores skin-tone variants and mislabeled slugs', () => {
+      const tone = { ...hundred, slug: 'hundred-points-light', skinToneBase: 'hundred-points' };
+      expect(checkEmojiAliases([hundred, alias100, tone], {}, ['100'])).toEqual([]);
+    });
+
+    it('fails on aliases or owners that are not published', () => {
+      const errors = checkEmojiAliases([hundred], { 100: 'hundred-points', gone: 'missing' }, []);
+      expect(errors.map((e) => e.message)).toEqual([
+        'Alias "100" is not a published emoji',
+        'Alias "gone" is not a published emoji',
+      ]);
+      expect(checkEmojiAliases([alias100], { 100: 'missing' }, [])[0].message).toContain(
+        'Alias owner "missing" is not a published emoji'
+      );
+    });
+
+    it('fails when an owner is itself an alias', () => {
+      const third = { ...hundred, slug: 'one-hundred' };
+      const errors = checkEmojiAliases(
+        [hundred, alias100, third],
+        { 100: 'one-hundred', 'one-hundred': 'hundred-points' },
+        []
+      );
+      expect(errors.some((e) => e.message.includes('is itself an alias'))).toBe(true);
+    });
+
+    it('fails when an alias shows a different glyph than its owner', () => {
+      const errors = checkEmojiAliases([validEmoji, alias100], { 100: 'skull' }, []);
+      expect(
+        errors.some((e) => e.message.includes('shows 💯 but its owner "skull" shows 💀'))
+      ).toBe(true);
+    });
+  });
+
+  describe('loadEmojiAliases', () => {
+    it('returns an empty map for a missing file', () => {
+      expect(loadEmojiAliases('/non/existent/emoji-aliases.json')).toEqual({});
+    });
+
+    it('reads the map', () => {
+      const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'alias-test-'));
+      const file = path.join(dir, 'emoji-aliases.json');
+      fs.writeFileSync(file, JSON.stringify({ 100: 'hundred-points' }));
+      expect(loadEmojiAliases(file)).toEqual({ 100: 'hundred-points' });
+      fs.rmSync(dir, { recursive: true, force: true });
     });
   });
 });

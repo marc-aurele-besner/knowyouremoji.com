@@ -200,6 +200,19 @@ describe('sitemap-entries', () => {
       expect(urls.some((url) => url.includes('/emoji/wave-medium'))).toBe(false);
     });
 
+    test('excludes alias slugs of a glyph another page owns', async () => {
+      const { EMOJI_ALIASES } = await import('../../../src/lib/emoji-aliases');
+      expect(EMOJI_ALIASES['100']).toBe('hundred-points');
+      getAllEmojisSpy.mockReturnValue([
+        { ...mockEmojis[0], slug: 'hundred-points', character: '💯', unicode: '1F4AF' },
+        { ...mockEmojis[0], slug: '100', character: '💯', unicode: '1F4AF' },
+      ]);
+      const { buildEmojiSitemapEntries } = await import('../../../src/lib/sitemap-entries');
+      const urls = buildEmojiSitemapEntries().map((entry) => entry.url);
+      expect(urls.some((url) => url.endsWith('/emoji/hundred-points'))).toBe(true);
+      expect(urls.some((url) => url.endsWith('/emoji/100'))).toBe(false);
+    });
+
     test('uses contentUpdatedAt for lastModified when present', async () => {
       const { buildEmojiSitemapEntries } = await import('../../../src/lib/sitemap-entries');
       const entries = buildEmojiSitemapEntries();

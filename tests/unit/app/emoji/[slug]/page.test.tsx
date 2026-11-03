@@ -207,6 +207,19 @@ describe('EmojiPage', () => {
       expect(metadata.alternates?.canonical).toContain('/emoji/skull');
     });
 
+    test('points an alias slug at the page that owns the emoji and noindexes it', async () => {
+      mockGetEmojiBySlug.mockImplementation(() => ({
+        ...mockEmoji,
+        slug: '100',
+        character: '💯',
+        unicode: '1F4AF',
+      }));
+      const metadata = await generateMetadata({ params: Promise.resolve({ slug: '100' }) });
+
+      expect(metadata.alternates?.canonical).toBe('http://localhost:3000/emoji/hundred-points');
+      expect(metadata.robots).toMatchObject({ index: false, follow: true });
+    });
+
     test('includes keywords with emoji-related terms', async () => {
       mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
       const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
