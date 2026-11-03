@@ -61,6 +61,7 @@ export const SITEMAP_STATIC_PATHS = [
   '/interpreter',
   '/about',
   '/contact',
+  '/editorial-policy',
   '/pricing',
   '/books',
   '/privacy',
@@ -133,6 +134,10 @@ export function buildStaticSitemapEntries(): MetadataRoute.Sitemap {
       priority: SITEMAP_PRIORITIES.TRUST_PAGE,
     }),
     buildEntry(`${baseUrl}/contact`, undefined, {
+      changeFrequency: 'monthly',
+      priority: SITEMAP_PRIORITIES.TRUST_PAGE,
+    }),
+    buildEntry(`${baseUrl}/editorial-policy`, undefined, {
       changeFrequency: 'monthly',
       priority: SITEMAP_PRIORITIES.TRUST_PAGE,
     }),
