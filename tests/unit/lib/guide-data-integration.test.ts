@@ -119,6 +119,18 @@ describe('guide-data (live loader)', () => {
       expect(homepageSlugs('2026-12-27')).not.toContain('christmas-emoji-etiquette');
     });
 
+    it('leads with the Hanukkah guide during the 2026 candle week', () => {
+      expect(homepageSlugs('2026-12-03')[0]).toBe('christmas-emoji-etiquette');
+      const during = homepageSlugs('2026-12-08');
+      expect(during[0]).toBe('hanukkah-emoji-etiquette');
+      expect(during[1]).toBe('christmas-emoji-etiquette');
+      expect(homepageSlugs('2026-12-12')[0]).toBe('hanukkah-emoji-etiquette');
+      expect(homepageSlugs('2026-12-13')[0]).toBe('christmas-emoji-etiquette');
+      const guide = getPublishedGuideBySlug('hanukkah-emoji-etiquette');
+      expect(guide?.heroEmoji).toBe('🕎');
+      expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
+    });
+
     it('gives the Thanksgiving guide a title that does not duplicate an emoji page', () => {
       const guide = getPublishedGuideBySlug('thanksgiving-emoji-etiquette');
       expect(guide).toBeDefined();
