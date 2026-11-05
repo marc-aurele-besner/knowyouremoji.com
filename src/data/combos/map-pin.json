@@ -1,0 +1,68 @@
+{
+  "slug": "map-pin",
+  "combo": "🗺️📍",
+  "emojis": ["world-map", "round-pushpin"],
+  "name": "Map Pin",
+  "description": "A world map with a pushpin marks a specific place on a trip or a meetup. Someone is sharing where they are, where to meet, or a destination to add to a list.",
+  "meaning": "The map is the wider trip or area. The pin is the exact spot. 🗺️📍 is logistics: a meetup point, a saved place, or a \"we are here.\" It is not a proposal and not a vague wish to travel someday.",
+  "examples": ["meet at the pin 🗺️📍", "add this to the list 🗺️📍", "we are here 🗺️📍"],
+  "category": "travel",
+  "seoTitle": "🗺️📍 Map Pin Combo Meaning",
+  "seoDescription": "What does 🗺️📍 mean? A specific place on a trip or meetup. The map is the area and the pin is the exact spot.",
+  "relatedCombos": ["mountain-boot", "camping-fire"],
+  "tags": ["map", "location", "meetup", "travel", "plans"],
+  "popularity": 69,
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-11-05",
+  "longForm": {
+    "overview": "A world map emoji dreams a little. It suggests travel as a category: somewhere, someday, a route. A round pushpin is the opposite of a dream. It marks one coordinate. 🗺️📍 puts the dream and the coordinate together so people know a place has been chosen, not merely fantasized. Trip threads use it when a stop is locked. Friend groups use it for a meetup when the neighborhood is big and \"by the station\" is not enough. Travelers use it as a safety ping: this is the café, this is the trailhead, this is the hotel block.\n\nSend the actual location with it. A pin emoji without a link, a dropped pin, or a street name makes people hunt. The glyphs announce that a precise place exists. They do not contain the latitude. In a dating chat the pair can look more serious than \"want to go somewhere,\" because a pin is a commitment to a corner of a map. That is still logistics, not a metaphor for the relationship. Do not read a proposal into a pushpin. If they meant a jewelry store, they will say so, and they will probably use a ring.",
+    "howPeopleUseIt": "🗺️📍 arrives beside a maps link, a screenshot, or the words \"dropped a pin.\" People send it when plans have graduated from \"we should\" to \"stand on this corner.\" It is common in group travel docs, reunion planning, and \"landed, come find me\" messages.\n\nIt also saves places for later. \"Someday list 🗺️📍\" with a link is a bookmark, not a departure time. The word someday, or the lack of a date, is how you tell a bookmark from a meetup. Treat bookmarks as enthusiasm. Treat dated pins as calendar items.",
+    "whenNotToUse": "Do not send 🗺️📍 when you have not picked a place. The pin promises precision you do not have, and someone will ask for an address you cannot give.\n\nDo not use it as a cute way to say \"you are my destination\" unless you enjoy being misunderstood by everyone except the one person who knows the bit. In a group chat it will look like you forgot the link. And do not drop it on a crisis location as decoration. If people need a shelter or a hospital, send the real pin and plain words.",
+    "howToReply": "Open the link if there is one, and confirm you can find it or say you cannot. \"Got the pin\" is a complete reply when the only question was whether the location arrived.\n\nIf there is no link, ask for one. Do not guess the café. If the message is a someday bookmark, react to the place and do not clear your weekend. They were not scheduling you.",
+    "faqs": [
+      {
+        "question": "What does 🗺️📍 mean?",
+        "answer": "🗺️📍 means a specific place: a meetup, a stop on a trip, or a saved destination. The map is the area. The pin is the spot."
+      },
+      {
+        "question": "Is 🗺️📍 a marriage proposal?",
+        "answer": "No. It is logistics. A pin marks a place to stand or a place to visit. A proposal would involve a ring, or words that say so."
+      },
+      {
+        "question": "What should I send with 🗺️📍?",
+        "answer": "A map link, a dropped pin, or a street name. The emojis announce a precise place. They do not replace the address."
+      },
+      {
+        "question": "What does 🗺️📍 mean with no date attached?",
+        "answer": "Usually a bookmark for later, a place someone wants on a list. Without a time, do not treat it as a meetup you must attend."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "friends",
+      "message": "Saturday noon, I dropped 🗺️📍",
+      "interpretation": "A meetup with a pin coming or already sent. Confirm you can get there. Ask if the link did not load."
+    },
+    {
+      "setting": "friends",
+      "message": "trailhead is the second pin 🗺️📍 not the parking lot",
+      "interpretation": "Navigation detail. Follow the correction. The first pin was the easy mistake."
+    },
+    {
+      "setting": "family",
+      "message": "hotel block 🗺️📍 so nobody books across town",
+      "interpretation": "They want the family in one area. Use that pin when you reserve. It is practical, not controlling for sport."
+    },
+    {
+      "setting": "dating",
+      "message": "this bookshop then dinner nearby 🗺️📍",
+      "interpretation": "A date with a starting point. Confirm the time and say if the neighborhood works."
+    },
+    {
+      "setting": "work",
+      "message": "offsite entrance is the side door 🗺️📍",
+      "interpretation": "Arrival instructions. Save the pin. Do not reply with a vibe. People will get lost."
+    }
+  ]
+}

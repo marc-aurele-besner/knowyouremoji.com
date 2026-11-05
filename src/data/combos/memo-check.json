@@ -1,0 +1,68 @@
+{
+  "slug": "memo-check",
+  "combo": "📝✅",
+  "emojis": ["memo", "check-mark-button"],
+  "name": "Memo Checked",
+  "description": "A memo with a check mark says a note was taken and the item is done, or that a message was seen and confirmed. It is a small, literal close to a task.",
+  "meaning": "The memo is the list or the reminder. The check is completion or agreement. 📝✅ tells a team the thing got written down and finished, or at least acknowledged. People treat the check as a promise, so do not send it for work that is still open.",
+  "examples": ["agenda sent 📝✅", "got your notes 📝✅", "packing list 📝✅"],
+  "category": "work",
+  "seoTitle": "📝✅ Memo Checked Combo Meaning",
+  "seoDescription": "What does 📝✅ mean? A note was taken and the item is done or confirmed. The check reads as a promise kept.",
+  "relatedCombos": ["bug-laptop", "brain-bulb"],
+  "tags": ["done", "checklist", "notes", "confirmed", "tasks"],
+  "popularity": 66,
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-11-05",
+  "longForm": {
+    "overview": "The memo emoji is a piece of paper with writing on it. The check button is a green box people already trust to mean done, approved, or correct. Put them together and 📝✅ becomes a tiny project update: I wrote it down, and it is finished, or I wrote it down so you know I heard you. Project managers live in this pair. So do people closing the loop on a favor. It is plainer than a party popper and much more specific than a thumbs-up, because the paper says there was a list.\n\nThe check is the part that carries weight. Recipients treat ✅ as \"this happened,\" not as \"I am thinking about it.\" Sending 📝✅ on a task you have only scheduled will create a mess later, when someone audits the thread and believes the work shipped. If the item is acknowledged but open, send the memo alone, or say \"noted\" in words. Save the check for the moment a reasonable person would call the thing done. Students use the pair on assignment checklists. Households use it on packing lists and chore charts. The tone stays the same: clerical, calm, and slightly proud.",
+    "howPeopleUseIt": "📝✅ closes loops. \"Notes from the call 📝✅\" means the document exists. \"Your ask 📝✅\" means the sender did the thing or officially accepted it. People also stack it under a photo of a written list where every line is ticked, which is the literal version of the same idea.\n\nIn busy threads it replaces a paragraph. That is helpful when the culture already trusts short confirmations, and slippery when it does not. A new teammate may need the sentence \"done, doc is in the channel\" the first few times before the pair is enough on its own.",
+    "whenNotToUse": "Do not put 📝✅ on creative praise. A finished poem is not a checkbox, and the pair can sound like you graded it.\n\nDo not use the check as encouragement for work that is not finished. \"You will get there 📝✅\" tells the reader the outcome already happened. And do not send it to decline a task. A check never means no. If the answer is no, say no. The memo will not soften a false yes.",
+    "howToReply": "If you were waiting on the task, you can stop waiting. A thanks is plenty. If the check surprised you because the work is not actually done, reply immediately with the missing piece. Silence will be read as acceptance of the \"✅.\"\n\nIf someone sends 📝✅ to confirm they heard a sensitive request, do not pile on more requests in the same breath. They just closed one loop. Open the next one as its own message.",
+    "faqs": [
+      {
+        "question": "What does 📝✅ mean?",
+        "answer": "📝✅ means something was written down and marked done or confirmed. The memo is the note. The check is the close."
+      },
+      {
+        "question": "Does 📝✅ mean the work is finished?",
+        "answer": "That is how people take it. If the task is only acknowledged, the check overclaims. Use the memo without the check until the work is actually complete."
+      },
+      {
+        "question": "What does 📝✅ mean in a group chat?",
+        "answer": "It usually closes a checklist item the group can see: notes posted, supplies bought, an RSVP recorded. It is an update, not a reaction to a joke."
+      },
+      {
+        "question": "Is 📝✅ rude?",
+        "answer": "It is brisk, not rude, in a team that likes short updates. On a heartfelt message it can feel cold, because a check mark is a filing action."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "retro notes are up 📝✅",
+      "interpretation": "The document is posted. Read it if you were in the meeting. You do not need to ask whether they remembered."
+    },
+    {
+      "setting": "friends",
+      "message": "I put your recipe on the list 📝✅",
+      "interpretation": "They recorded a request and consider that part handled. Say thanks if the list was the ask."
+    },
+    {
+      "setting": "family",
+      "message": "permission slip 📝✅ in the folder",
+      "interpretation": "A school task is done. The useful reply is where to find it, which they already gave, so a thanks is enough."
+    },
+    {
+      "setting": "dating",
+      "message": "reservation under my name 📝✅",
+      "interpretation": "Logistics are settled. You can show up. This is not a vibe check on the relationship."
+    },
+    {
+      "setting": "social",
+      "message": "potluck tab is updated 📝✅",
+      "interpretation": "The shared list changed and they marked the edit complete. Check your own item before you bring a duplicate dish."
+    }
+  ]
+}
