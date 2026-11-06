@@ -131,6 +131,21 @@ describe('guide-data (live loader)', () => {
       expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
     });
 
+    it('leads with the November 11 guide from the Friday before through the day itself', () => {
+      expect(homepageSlugs('2026-11-05')[0]).toBe('diwali-emoji-etiquette');
+      expect(homepageSlugs('2026-11-05')).not.toContain('november-11-emoji-etiquette');
+      const during = homepageSlugs('2026-11-08');
+      expect(during[0]).toBe('november-11-emoji-etiquette');
+      expect(during).toContain('diwali-emoji-etiquette');
+      expect(homepageSlugs('2026-11-11')[0]).toBe('november-11-emoji-etiquette');
+      expect(homepageSlugs('2026-11-12')[0]).toBe('diwali-emoji-etiquette');
+      const guide = getPublishedGuideBySlug('november-11-emoji-etiquette');
+      expect(guide?.heroEmoji).toBe('🫡');
+      expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
+      expect(guide?.featuredFrom).toBe('2026-11-06');
+      expect(guide?.featuredUntil).toBe('2026-11-11');
+    });
+
     it('gives the Thanksgiving guide a title that does not duplicate an emoji page', () => {
       const guide = getPublishedGuideBySlug('thanksgiving-emoji-etiquette');
       expect(guide).toBeDefined();
