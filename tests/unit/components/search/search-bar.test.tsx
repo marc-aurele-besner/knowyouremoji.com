@@ -15,6 +15,7 @@ mock.module('next/navigation', () => ({
 // Mock fetch
 const mockFetch = mock(() =>
   Promise.resolve({
+    ok: true,
     json: () =>
       Promise.resolve({
         emojis: [
@@ -190,7 +191,7 @@ describe('SearchBar', () => {
   });
 
   describe('error handling', () => {
-    it('clears results and keeps the dropdown closed when the search request fails', async () => {
+    it('explains the failure instead of listing results when the request rejects', async () => {
       const failingFetch = mock(() => Promise.reject(new Error('Network error')));
       global.fetch = failingFetch as unknown as typeof fetch;
 
@@ -202,11 +203,247 @@ describe('SearchBar', () => {
       });
 
       await waitFor(() => {
-        expect(failingFetch).toHaveBeenCalled();
+        expect(screen.getByText(/search is unavailable/i)).toBeInTheDocument();
       });
 
-      // The failed search leaves the dropdown closed and no results rendered
       expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+      expect(screen.queryByRole('option')).not.toBeInTheDocument();
+      global.fetch = mockFetch as unknown as typeof fetch;
+    });
+
+    it('treats a non-OK response as a failure', async () => {
+      global.fetch = mock(() =>
+        Promise.resolve({ ok: false, status: 500, json: () => Promise.resolve({}) })
+      ) as unknown as typeof fetch;
+
+      render(<SearchBar />);
+      await act(async () => {
+        fireEvent.change(screen.getByRole('combobox'), { target: { value: 'skull' } });
+      });
+
+      await waitFor(() => {
+        expect(screen.getByText(/search is unavailable/i)).toBeInTheDocument();
+      });
+      global.fetch = mockFetch as unknown as typeof fetch;
+    });
+  });
+
+  describe('query handling', () => {
+    it('sends the trimmed query to the API', async () => {
+      render(<SearchBar />);
+      await act(async () => {
+        fireEvent.change(screen.getByRole('combobox'), { target: { value: '  fire  ' } });
+      });
+
+      await waitFor(() => {
+        expect(mockFetch).toHaveBeenCalledWith('/api/emojis/search?q=fire&limit=6');
+      });
+    });
+
+    it('ignores a slow response that arrives after a newer query', async () => {
+      const resolvers: Array<(value: unknown) => void> = [];
+      global.fetch = mock(
+        () =>
+          new Promise((resolve) => {
+            resolvers.push(resolve);
+          })
+      ) as unknown as typeof fetch;
+
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'sk' } });
+      });
+      await waitFor(() => expect(resolvers.length).toBe(1));
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'fire' } });
+      });
+      await waitFor(() => expect(resolvers.length).toBe(2));
+
+      // The newer query answers first...
+      await act(async () => {
+        resolvers[1]({
+          ok: true,
+          json: () =>
+            Promise.resolve({
+              emojis: [
+                {
+                  slug: 'fire',
+                  character: '🔥',
+                  name: 'Fire',
+                  category: 'travel',
+                  tldr: 'Something is awesome',
+                },
+              ],
+            }),
+        });
+      });
+      expect(screen.getByText('Fire')).toBeInTheDocument();
+
+      // ...then the outdated one must not replace it.
+      await act(async () => {
+        resolvers[0]({
+          ok: true,
+          json: () =>
+            Promise.resolve({
+              emojis: [
+                { slug: 'skull', character: '💀', name: 'Skull', category: 'faces', tldr: 'Dead' },
+              ],
+            }),
+        });
+      });
+      expect(screen.getByText('Fire')).toBeInTheDocument();
+      expect(screen.queryByText('Skull')).not.toBeInTheDocument();
+      global.fetch = mockFetch as unknown as typeof fetch;
+    });
+
+    it('does not search when the pending debounce is cancelled by unmounting', async () => {
+      const { unmount } = render(<SearchBar />);
+      await act(async () => {
+        fireEvent.change(screen.getByRole('combobox'), { target: { value: 'skull' } });
+      });
+      mockFetch.mockClear();
+      unmount();
+
+      await new Promise((resolve) => setTimeout(resolve, 250));
+      expect(mockFetch).not.toHaveBeenCalled();
+    });
+
+    it('shows the query in the empty state and offers the full search page', async () => {
+      global.fetch = mock(() =>
+        Promise.resolve({ ok: true, json: () => Promise.resolve({ emojis: [] }) })
+      ) as unknown as typeof fetch;
+
+      render(<SearchBar />);
+      await act(async () => {
+        fireEvent.change(screen.getByRole('combobox'), { target: { value: 'zzzz' } });
+      });
+
+      await waitFor(() => {
+        expect(screen.getByText('No emojis found for “zzzz”.')).toBeInTheDocument();
+      });
+
+      await act(async () => {
+        fireEvent.click(screen.getByRole('button', { name: 'See all results for “zzzz”' }));
+      });
+      expect(mockPush).toHaveBeenCalledWith('/search?q=zzzz');
+      global.fetch = mockFetch as unknown as typeof fetch;
+    });
+  });
+
+  describe('clear and submit', () => {
+    it('shows a clear button only when there is text', async () => {
+      render(<SearchBar />);
+      expect(screen.queryByRole('button', { name: 'Clear search' })).not.toBeInTheDocument();
+
+      await act(async () => {
+        fireEvent.change(screen.getByRole('combobox'), { target: { value: 'skull' } });
+      });
+      expect(screen.getByRole('button', { name: 'Clear search' })).toBeInTheDocument();
+    });
+
+    it('clears the input and results when the clear button is pressed', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      await act(async () => {
+        fireEvent.click(screen.getByRole('button', { name: 'Clear search' }));
+      });
+
+      expect(input).toHaveValue('');
+      expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+      expect(document.activeElement).toBe(input);
+    });
+
+    it('opens the full search page on Enter when no suggestion is highlighted', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull face' } });
+      });
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      await act(async () => {
+        fireEvent.submit(input.closest('form')!);
+      });
+
+      expect(mockPush).toHaveBeenCalledWith('/search?q=skull%20face');
+      expect(mockPush).not.toHaveBeenCalledWith(expect.stringContaining('/emoji/'));
+    });
+
+    it('does nothing when submitted with an empty query', async () => {
+      render(<SearchBar />);
+      await act(async () => {
+        fireEvent.submit(screen.getByRole('combobox').closest('form')!);
+      });
+      expect(mockPush).not.toHaveBeenCalled();
+    });
+
+    it('ignores Enter while an IME composition is in progress', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      await act(async () => {
+        fireEvent.keyDown(input, { key: 'ArrowDown' });
+      });
+      await act(async () => {
+        fireEvent.keyDown(input, { key: 'Enter', isComposing: true });
+      });
+
+      expect(mockPush).not.toHaveBeenCalled();
+    });
+
+    it('reopens the dropdown with ArrowDown after Escape closed it', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+
+      await act(async () => {
+        fireEvent.change(input, { target: { value: 'skull' } });
+      });
+      await waitFor(() => {
+        expect(screen.getByRole('listbox')).toBeInTheDocument();
+      });
+
+      await act(async () => {
+        fireEvent.keyDown(input, { key: 'Escape' });
+      });
+      expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
+
+      await act(async () => {
+        fireEvent.keyDown(input, { key: 'ArrowDown' });
+      });
+      expect(screen.getByRole('listbox')).toBeInTheDocument();
+    });
+
+    it('ignores arrow keys when there are no results', async () => {
+      render(<SearchBar />);
+      const input = screen.getByRole('combobox');
+      const event = new KeyboardEvent('keydown', {
+        key: 'ArrowDown',
+        bubbles: true,
+        cancelable: true,
+      });
+      input.dispatchEvent(event);
+      expect(event.defaultPrevented).toBe(false);
     });
   });
 
@@ -536,6 +773,7 @@ describe('SearchBar', () => {
             setTimeout(
               () =>
                 resolve({
+                  ok: true,
                   json: () => Promise.resolve({ emojis: [] }),
                 }),
               100
