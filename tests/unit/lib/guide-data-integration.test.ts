@@ -642,6 +642,52 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('handshake guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-handshake-emoji-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe('🤝 is the only emoji that makes a promise');
+      expect(guide?.tags).toContain('handshake');
+      expect(guide?.tags).toContain('business');
+      expect(guide?.tags).toContain('group-chat');
+      expect(guide?.readingTimeMinutes).toBe(8);
+      expect(guide?.heroEmoji).toBe('🤝');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-handshake-emoji-mean');
+      expect(guide?.relatedEmojis).toContain('handshake');
+      expect(guide?.relatedEmojis).toContain('handshake-medium');
+      expect(guide?.relatedEmojis).toContain('clapping-hands');
+      expect(guide?.relatedEmojis).toContain('thumbs-up');
+      expect(guide?.relatedEmojis).toContain('ok-hand');
+      expect(guide?.relatedEmojis).toContain('briefcase');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-handshake-emoji-mean');
+      expect(guide?.relatedCombos).toContain('handshake-briefcase');
+      expect(guide?.relatedCombos).toContain('handshake-sparkles-v2');
+      expect(guide?.relatedCombos).toContain('thumbs-up-ok');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-handshake-emoji-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-handshake-emoji-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-handshake-emoji-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🤝');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
