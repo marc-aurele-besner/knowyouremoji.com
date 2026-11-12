@@ -69,7 +69,7 @@ describe('Root Layout Metadata', () => {
       const siteMetadata = createSiteMetadata();
 
       expect(siteMetadata.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -160,7 +160,7 @@ describe('Root Layout Metadata', () => {
 
       const openGraph = siteMetadata.openGraph as { description?: string };
       expect(openGraph?.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -181,7 +181,7 @@ describe('Root Layout Metadata', () => {
       };
       expect(openGraph?.images).toBeDefined();
       expect(openGraph?.images?.length).toBeGreaterThan(0);
-      expect(openGraph?.images?.[0].url).toBe('/logo.png');
+      expect(openGraph?.images?.[0].url).toBe('/og/site');
     });
   });
 
@@ -215,7 +215,7 @@ describe('Root Layout Metadata', () => {
 
       const twitter = siteMetadata.twitter as { description?: string };
       expect(twitter?.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -228,7 +228,7 @@ describe('Root Layout Metadata', () => {
       };
       expect(twitter?.images).toBeDefined();
       expect(twitter?.images?.length).toBeGreaterThan(0);
-      expect(twitter?.images?.[0].url).toBe('/logo.png');
+      expect(twitter?.images?.[0].url).toBe('/og/site');
     });
   });
 

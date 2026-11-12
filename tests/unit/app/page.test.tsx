@@ -249,7 +249,7 @@ describe('HomePage', () => {
       const metadata = generateMetadata();
 
       expect(metadata.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 

@@ -4,6 +4,12 @@ import { getComboSummaries } from '@/lib/combo-data';
 import { getHomepageGuideSummaries } from '@/lib/guide-data';
 import { getHomeEmojiSelection } from '@/lib/emoji-popularity';
 import { getEnv } from '@/lib/env';
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_OG_IMAGE_PATH,
+  DEFAULT_OG_IMAGE_WIDTH,
+  DEFAULT_OG_IMAGE_HEIGHT,
+} from '@/lib/metadata';
 import { HomePageContent } from '@/components/home/home-page-content';
 
 /**
@@ -11,9 +17,6 @@ import { HomePageContent } from '@/components/home/home-page-content';
  * open and close on their own instead of waiting for the next deploy.
  */
 export const revalidate = 3600;
-
-const defaultDescription =
-  'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.';
 
 /**
  * Generate metadata for the homepage including canonical URL
@@ -25,7 +28,7 @@ export function generateMetadata(): Metadata {
 
   return {
     title: { absolute: `${env.appName} - Decode What Emojis Really Mean` },
-    description: defaultDescription,
+    description: DEFAULT_DESCRIPTION,
     keywords: [
       'emoji meaning',
       'emoji interpreter',
@@ -49,10 +52,12 @@ export function generateMetadata(): Metadata {
       url: pageUrl,
       siteName: env.appName,
       title: `${env.appName} - Decode What Emojis Really Mean`,
-      description: defaultDescription,
+      description: DEFAULT_DESCRIPTION,
       images: [
         {
-          url: `${env.appUrl}/logo.png`,
+          url: `${env.appUrl}${DEFAULT_OG_IMAGE_PATH}`,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
           alt: `${env.appName} - Decode What Emojis Really Mean`,
         },
       ],
@@ -60,8 +65,8 @@ export function generateMetadata(): Metadata {
     twitter: {
       card: 'summary_large_image',
       title: `${env.appName} - Decode What Emojis Really Mean`,
-      description: defaultDescription,
-      images: [`${env.appUrl}/logo.png`],
+      description: DEFAULT_DESCRIPTION,
+      images: [`${env.appUrl}${DEFAULT_OG_IMAGE_PATH}`],
     },
     robots: {
       index: true,

@@ -30,7 +30,15 @@ export function getSiteName(): string {
  * description in sync with the `<meta name="description">` tag.
  */
 export const DEFAULT_DESCRIPTION =
-  'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.';
+  'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.';
+
+/**
+ * Path of the default social card (og:image / twitter:image), rendered by
+ * `src/app/og/site/route.tsx` at the 1200 × 630 size share previews expect.
+ */
+export const DEFAULT_OG_IMAGE_PATH = '/og/site';
+export const DEFAULT_OG_IMAGE_WIDTH = 1200;
+export const DEFAULT_OG_IMAGE_HEIGHT = 630;
 
 /**
  * Generate the default site metadata for the root layout
@@ -85,7 +93,9 @@ export function createSiteMetadata(): Metadata {
       description: DEFAULT_DESCRIPTION,
       images: [
         {
-          url: '/logo.png',
+          url: DEFAULT_OG_IMAGE_PATH,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
           alt: defaultTitle,
         },
       ],
@@ -96,7 +106,9 @@ export function createSiteMetadata(): Metadata {
       description: DEFAULT_DESCRIPTION,
       images: [
         {
-          url: '/logo.png',
+          url: DEFAULT_OG_IMAGE_PATH,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
           alt: defaultTitle,
         },
       ],
