@@ -92,7 +92,11 @@ assert(
   'Homepage title must not repeat the site name'
 );
 assert(/href="\/emoji\/[^"/]+"/.test(home), 'Homepage must render crawlable emoji links');
-assert(!home.includes('/og-image.png'), 'Homepage must not reference the missing social image');
+assert(home.includes('/og-image.png'), 'Homepage must use the static social image');
+assert(
+  fs.existsSync(path.join(process.cwd(), 'public/og-image.png')),
+  'Static social image must exist at public/og-image.png'
+);
 assert(fs.existsSync(path.join(process.cwd(), 'public/logo.png')));
 
 const robots = fs.readFileSync(path.join(output, 'robots.txt.body'), 'utf8');
