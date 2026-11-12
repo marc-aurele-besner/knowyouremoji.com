@@ -372,6 +372,52 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('shrug guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('what-does-shrug-emoji-mean');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(`🤷 is the sentence you didn't want to type`);
+      expect(guide?.tags).toContain('shrug');
+      expect(guide?.tags).toContain('gen-z');
+      expect(guide?.readingTimeMinutes).toBe(9);
+      expect(guide?.heroEmoji).toBe('🤷');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('what-does-shrug-emoji-mean');
+      expect(guide?.relatedEmojis).toContain('person-shrugging');
+      expect(guide?.relatedEmojis).toContain('face-with-raised-eyebrow');
+      expect(guide?.relatedEmojis).toContain('person-facepalming');
+      expect(guide?.relatedEmojis).toContain('face-with-rolling-eyes');
+      expect(guide?.relatedEmojis).toContain('question-mark');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('what-does-shrug-emoji-mean');
+      expect(guide?.relatedCombos).toContain('shrug-idk');
+      expect(guide?.relatedCombos).toContain('shrug-question-mark');
+      expect(guide?.relatedCombos).toContain('shrug-tipping-hand');
+      expect(guide?.relatedCombos).toContain('shrug-upside-down');
+      expect(guide?.relatedCombos).toContain('person-shrugging-cloud-v2');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('what-does-shrug-emoji-mean');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('what-does-shrug-emoji-mean');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'what-does-shrug-emoji-mean'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🤷');
+    });
+  });
+
   describe('fire guide', () => {
     it('loads with the expected frontmatter fields', () => {
       const guide = getPublishedGuideBySlug('what-does-fire-emoji-mean');
