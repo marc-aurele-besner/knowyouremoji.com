@@ -22,6 +22,7 @@ import {
   deriveSeoDescription,
   clearGuideCache,
   getHomepageGuideSummaries,
+  isGuideFeaturedOn,
   _buildGuideFromFrontmatter,
 } from '../../../src/lib/guide-data';
 
@@ -151,6 +152,67 @@ describe('guide-data (live loader)', () => {
       expect(guide).toBeDefined();
       expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
       expect(guide?.heroEmoji).toBe('🦃');
+    });
+
+    it('leads with the New Year guide once Christmas week is over', () => {
+      expect(homepageSlugs('2026-12-19')[0]).toBe('christmas-emoji-etiquette');
+      expect(homepageSlugs('2026-12-19')).toContain('new-year-emoji-etiquette');
+      expect(homepageSlugs('2026-12-26')[0]).toBe('christmas-emoji-etiquette');
+      expect(homepageSlugs('2026-12-27')[0]).toBe('new-year-emoji-etiquette');
+      expect(homepageSlugs('2026-12-31')[0]).toBe('new-year-emoji-etiquette');
+      expect(homepageSlugs('2027-01-01')[0]).toBe('new-year-emoji-etiquette');
+
+      const guide = getPublishedGuideBySlug('new-year-emoji-etiquette');
+      expect(guide?.heroEmoji).toBe('🎆');
+      expect(guide?.title.toLowerCase()).not.toMatch(/^what does .* mean/);
+      expect(guide?.featuredFrom).toBe('2026-12-20');
+      expect(guide?.featuredUntil).toBe('2027-01-01');
+      expect(isGuideFeaturedOn(guide!, new Date('2027-01-02T12:00:00Z'))).toBe(false);
+    });
+  });
+
+  describe('new-year guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('new-year-emoji-etiquette');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(
+        'December 31 has a fireworks emoji, a champagne bottle, and a clock, and none of them knows what time it is where you are'
+      );
+      expect(guide?.tags).toContain('new-year');
+      expect(guide?.tags).toContain('holiday');
+      expect(guide?.readingTimeMinutes).toBe(10);
+      expect(guide?.heroEmoji).toBe('🎆');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('new-year-emoji-etiquette');
+      expect(guide?.relatedEmojis).toContain('fireworks');
+      expect(guide?.relatedEmojis).toContain('clock-face-twelve-oclock');
+      expect(guide?.relatedEmojis).toContain('clinking-glasses');
+      expect(guide?.relatedEmojis).toContain('keycap-two-emoji');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('new-year-emoji-etiquette');
+      expect(guide?.relatedCombos).toContain('fireworks-sparkles');
+      expect(guide?.relatedCombos).toContain('champagne-clink-bottle');
+      expect(guide?.relatedCombos).toContain('kiss-mark-heart');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('new-year-emoji-etiquette');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('new-year-emoji-etiquette');
+      const summary = getPublishedGuideSummaries().find(
+        (s) => s.slug === 'new-year-emoji-etiquette'
+      );
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('🎆');
     });
   });
 
