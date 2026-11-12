@@ -33,10 +33,10 @@ export const DEFAULT_DESCRIPTION =
   'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.';
 
 /**
- * Path of the default social card (og:image / twitter:image), rendered by
- * `src/app/og/site/route.tsx` at the 1200 × 630 size share previews expect.
+ * Path of the default social card (og:image / twitter:image): a static
+ * 1200 × 630 PNG in `public/`, served as-is with no server-side rendering.
  */
-export const DEFAULT_OG_IMAGE_PATH = '/og/site';
+export const DEFAULT_OG_IMAGE_PATH = '/og-image.png';
 export const DEFAULT_OG_IMAGE_WIDTH = 1200;
 export const DEFAULT_OG_IMAGE_HEIGHT = 630;
 

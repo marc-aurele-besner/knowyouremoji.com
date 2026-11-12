@@ -173,7 +173,7 @@ describe('Site Metadata Configuration', () => {
       };
       expect(openGraph?.images).toBeDefined();
       expect(openGraph?.images?.length).toBeGreaterThan(0);
-      expect(openGraph?.images?.[0].url).toBe('/og/site');
+      expect(openGraph?.images?.[0].url).toBe('/og-image.png');
       expect(openGraph?.images?.[0].alt).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
     });
   });
@@ -221,7 +221,7 @@ describe('Site Metadata Configuration', () => {
       };
       expect(twitter?.images).toBeDefined();
       expect(twitter?.images?.length).toBeGreaterThan(0);
-      expect(twitter?.images?.[0].url).toBe('/og/site');
+      expect(twitter?.images?.[0].url).toBe('/og-image.png');
       expect(twitter?.images?.[0].alt).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
     });
   });

@@ -181,7 +181,7 @@ describe('Root Layout Metadata', () => {
       };
       expect(openGraph?.images).toBeDefined();
       expect(openGraph?.images?.length).toBeGreaterThan(0);
-      expect(openGraph?.images?.[0].url).toBe('/og/site');
+      expect(openGraph?.images?.[0].url).toBe('/og-image.png');
     });
   });
 
@@ -228,7 +228,7 @@ describe('Root Layout Metadata', () => {
       };
       expect(twitter?.images).toBeDefined();
       expect(twitter?.images?.length).toBeGreaterThan(0);
-      expect(twitter?.images?.[0].url).toBe('/og/site');
+      expect(twitter?.images?.[0].url).toBe('/og-image.png');
     });
   });
 
