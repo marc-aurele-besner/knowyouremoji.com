@@ -61,7 +61,7 @@ describe('Site Metadata Configuration', () => {
       const metadata = createSiteMetadata();
 
       expect(metadata.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -152,7 +152,7 @@ describe('Site Metadata Configuration', () => {
 
       const openGraph = metadata.openGraph as { description?: string };
       expect(openGraph?.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -173,7 +173,7 @@ describe('Site Metadata Configuration', () => {
       };
       expect(openGraph?.images).toBeDefined();
       expect(openGraph?.images?.length).toBeGreaterThan(0);
-      expect(openGraph?.images?.[0].url).toBe('/logo.png');
+      expect(openGraph?.images?.[0].url).toBe('/og/site');
       expect(openGraph?.images?.[0].alt).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
     });
   });
@@ -208,7 +208,7 @@ describe('Site Metadata Configuration', () => {
 
       const twitter = metadata.twitter as { description?: string };
       expect(twitter?.description).toBe(
-        'Discover what emojis actually mean in real conversations. Context-aware interpretations, generational differences, platform variations, and an AI interpreter for decoding emoji messages.'
+        'Discover what emojis really mean in real conversations: context, generational and platform differences, plus an AI interpreter that decodes your messages.'
       );
     });
 
@@ -221,7 +221,7 @@ describe('Site Metadata Configuration', () => {
       };
       expect(twitter?.images).toBeDefined();
       expect(twitter?.images?.length).toBeGreaterThan(0);
-      expect(twitter?.images?.[0].url).toBe('/logo.png');
+      expect(twitter?.images?.[0].url).toBe('/og/site');
       expect(twitter?.images?.[0].alt).toBe('KnowYourEmoji - Decode What Emojis Really Mean');
     });
   });
