@@ -152,8 +152,13 @@ describe('EmojiJsonLd', () => {
 
       expect(parsed.publisher).toEqual({
         '@type': 'Organization',
+        '@id': 'https://knowyouremoji.com/#organization',
         name: 'KnowYourEmoji',
         url: 'https://knowyouremoji.com',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://knowyouremoji.com/logo.png',
+        },
       });
     });
 

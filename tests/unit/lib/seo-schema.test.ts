@@ -51,9 +51,22 @@ describe('seo-schema', () => {
     it('builds an Organization publisher', () => {
       expect(buildPublisher('KnowYourEmoji', 'https://knowyouremoji.com')).toEqual({
         '@type': 'Organization',
+        '@id': 'https://knowyouremoji.com/#organization',
         name: 'KnowYourEmoji',
         url: 'https://knowyouremoji.com',
+        logo: {
+          '@type': 'ImageObject',
+          url: 'https://knowyouremoji.com/logo.png',
+        },
       });
+    });
+
+    it('gives the publisher a stable @id even when the app URL has a trailing slash', () => {
+      const publisher = buildPublisher('KnowYourEmoji', 'https://knowyouremoji.com/');
+
+      expect(publisher['@id']).toBe('https://knowyouremoji.com/#organization');
+      expect(publisher.url).toBe('https://knowyouremoji.com');
+      expect(publisher.logo.url).toBe('https://knowyouremoji.com/logo.png');
     });
   });
 
