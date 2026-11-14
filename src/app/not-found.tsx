@@ -1,7 +1,39 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { NotFoundSearch } from '@/components/not-found/not-found-search';
 import { getEmojiSummaries } from '@/lib/emoji-data';
+
+/**
+ * Metadata for the 404 page.
+ *
+ * Without this export the 404 inherits the root layout's metadata verbatim:
+ * the homepage's `<title>`, the homepage's description, and a
+ * `<link rel="canonical">` pointing at the homepage. A canonical that
+ * points at a *different* URL tells a search engine that this URL is a
+ * duplicate of the homepage, which is the wrong signal for a page that
+ * does not exist. Dropping the canonical and asking not to be indexed
+ * keeps the 404 out of the index without spending crawl budget on it.
+ */
+export const metadata: Metadata = {
+  title: 'Page Not Found',
+  description:
+    'That page does not exist. Search KnowYourEmoji for what an emoji means in context, or browse the full emoji dictionary.',
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: null,
+  },
+};
 
 /** Emojis offered as quick links when a page can't be found. */
 const POPULAR_EMOJI_SLUGS = [
