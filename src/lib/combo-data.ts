@@ -5,6 +5,7 @@
  * Used in Phase 1 (static architecture without database).
  */
 
+import { isComboAlias } from '@/lib/combo-aliases';
 import type { EmojiCombo, EmojiComboSummary, EmojiComboCategoryName } from '@/types/combo';
 import type { EmojiSlug } from '@/types/emoji';
 import type { Emoji } from '@/types/emoji';
@@ -46,6 +47,20 @@ export function getAllCombos(): EmojiCombo[] {
 }
 
 /**
+ * Get the combo records that own their glyph.
+ *
+ * Several slugs publish the same drawing (see `src/lib/combo-aliases.ts`).
+ * The duplicates stay online for readers, but they should not appear in a
+ * browse grid, a category listing, or a count a reader can see — the
+ * dictionary used to show 🌈☁️ three times.
+ *
+ * @returns Array of non-alias combo records
+ */
+export function getCanonicalCombos(): EmojiCombo[] {
+  return loadCombos().filter((combo) => !isComboAlias(combo.slug));
+}
+
+/**
  * Get a combo by its slug
  * @param slug - URL-friendly identifier for the combo
  * @returns Combo data or undefined if not found
@@ -60,7 +75,7 @@ export function getComboBySlug(slug: string): EmojiCombo | undefined {
  * @returns Array of combos in the category
  */
 export function getCombosByCategory(category: EmojiComboCategoryName): EmojiCombo[] {
-  return loadCombos().filter((combo) => combo.category === category);
+  return getCanonicalCombos().filter((combo) => combo.category === category);
 }
 
 /**
@@ -96,7 +111,7 @@ export function searchCombos(query: string): EmojiCombo[] {
  * @returns Number of combos loaded
  */
 export function getComboCount(): number {
-  return loadCombos().length;
+  return getCanonicalCombos().length;
 }
 
 /**
@@ -104,7 +119,7 @@ export function getComboCount(): number {
  * @returns Array of combo summaries
  */
 export function getComboSummaries(): EmojiComboSummary[] {
-  return loadCombos().map((combo) => ({
+  return getCanonicalCombos().map((combo) => ({
     slug: combo.slug,
     combo: combo.combo,
     name: combo.name,
@@ -211,7 +226,7 @@ export function getComboEmojiRecords(combo: EmojiCombo): Emoji[] {
 export function getCombosByEmoji(emojiSlug: EmojiSlug): EmojiCombo[] {
   const emoji = getEmojiBySlug(emojiSlug);
 
-  return loadCombos().filter((combo) => {
+  return getCanonicalCombos().filter((combo) => {
     if (combo.emojis?.includes(emojiSlug)) return true;
     if (!emoji) return false;
     return splitGraphemes(combo.combo ?? '').includes(emoji.character);

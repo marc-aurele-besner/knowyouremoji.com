@@ -50,6 +50,38 @@ export function getAllEmojis(): Emoji[] {
 }
 
 /**
+ * Get the emoji records that own their glyph.
+ *
+ * The catalog publishes alias slugs for glyphs another page already owns
+ * (`100` and `hundred-points` for 💯). Those pages redirect and are
+ * noindexed, so they should never appear in a browse grid, a category
+ * listing, or a count a reader can see.
+ *
+ * They used to: the dictionary page showed the same 💯 twice, and its
+ * headline counted distinct glyphs while the grid below it counted raw
+ * pages, so the page disagreed with itself about how many emojis it
+ * covers. One number, one grid, one meaning.
+ *
+ * @returns Array of non-alias emoji records
+ */
+export function getCanonicalEmojis(): Emoji[] {
+  return loadEmojis().filter((emoji) => !isEmojiAlias(emoji.slug));
+}
+
+/**
+ * Get the number of emoji interpretations the site publishes.
+ *
+ * This is the number a reader sees: the size of the dictionary grid, the
+ * sum of the category counts, and the headline figure. It counts the
+ * pages that own their glyph, so it is not inflated by alias slugs.
+ *
+ * @returns Number of published emoji interpretations
+ */
+export function getCanonicalEmojiCount(): number {
+  return getCanonicalEmojis().length;
+}
+
+/**
  * Get an emoji by its slug
  * @param slug - URL-friendly identifier for the emoji
  * @returns Emoji data or undefined if not found
@@ -108,7 +140,7 @@ export function getEmojiByCharacter(character: string): Emoji | undefined {
  * @returns Array of emojis in the category
  */
 export function getEmojisByCategory(category: string): Emoji[] {
-  return loadEmojis().filter((emoji) => resolveCategorySlug(emoji.category) === category);
+  return getCanonicalEmojis().filter((emoji) => resolveCategorySlug(emoji.category) === category);
 }
 
 /**
@@ -179,7 +211,7 @@ export function getUniqueEmojiCount(): number {
  * @returns Array of emoji summaries
  */
 export function getEmojiSummaries(): EmojiSummary[] {
-  return loadEmojis().map((emoji) => ({
+  return getCanonicalEmojis().map((emoji) => ({
     slug: emoji.slug,
     character: emoji.character,
     name: emoji.name,

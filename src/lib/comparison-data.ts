@@ -5,6 +5,7 @@
  */
 
 import type { EmojiComparison, EmojiComparisonSummary } from '@/types/comparison';
+import { getEmojiBySlug } from '@/lib/emoji-data';
 
 // Import Node.js fs for SSG/SSR context
 import fs from 'fs';
@@ -56,6 +57,29 @@ function loadComparisons(): EmojiComparison[] {
  */
 export function getAllComparisons(): EmojiComparison[] {
   return loadComparisons();
+}
+
+/**
+ * Get the comparisons whose emoji pages actually exist.
+ *
+ * A comparison that names an emoji slug with no matching page can never
+ * render — the route calls `notFound()`. `/compare/fire/hundred` did
+ * exactly that: `hundred` is not a slug in the catalog (💯 lives at
+ * `hundred-points`), so the URL returned 404 while the sitemap still
+ * advertised it as an indexable page.
+ *
+ * Filtering here keeps the sitemap, the compare hub, and the generated
+ * static params in agreement with what the router can actually serve, so a
+ * stale slug in the data can never put a 404 back into the sitemap.
+ *
+ * @returns Array of comparisons with both emoji pages resolvable
+ */
+export function getResolvableComparisons(): EmojiComparison[] {
+  return loadComparisons().filter(
+    (comparison) =>
+      Boolean(getEmojiBySlug(comparison.emoji1Slug)) &&
+      Boolean(getEmojiBySlug(comparison.emoji2Slug))
+  );
 }
 
 /**
