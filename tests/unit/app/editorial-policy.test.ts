@@ -107,13 +107,28 @@ describe('Editorial Policy Page', () => {
       expect(content).toContain('h1');
       expect(content).toContain('Editorial Policy');
 
-      const breadcrumbs = result.props.children[0] as {
-        props: { items: Array<{ label: string; href?: string }> };
-      };
-      expect(breadcrumbs.props.items).toEqual([
+      // The page renders two breadcrumbs: the visible trail (`label`) and
+      // the JSON-LD trail (`name`). Find each by the shape of its items
+      // rather than by position, so adding a sibling to the page does not
+      // silently move the trail out from under the assertion.
+      const children = result.props.children as Array<{
+        props?: { items?: Array<Record<string, string>> };
+      }>;
+
+      const breadcrumbs = children.find((child) => child.props?.items?.[0]?.label !== undefined);
+      expect(breadcrumbs?.props?.items).toEqual([
         { label: 'Home', href: '/' },
         { label: 'About', href: '/about' },
         { label: 'Editorial Policy' },
+      ]);
+
+      const jsonLdBreadcrumbs = children.find(
+        (child) => child.props?.items?.[0]?.name !== undefined
+      );
+      expect(jsonLdBreadcrumbs?.props?.items).toEqual([
+        { name: 'Home', href: '/' },
+        { name: 'About', href: '/about' },
+        { name: 'Editorial Policy' },
       ]);
     });
 

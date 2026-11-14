@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { getEnv } from '@/lib/env';
 import { AMAZON_DISCLOSURE } from '@/lib/amazon-affiliate';
 
@@ -65,6 +66,11 @@ const breadcrumbItems = [
   { label: 'About', href: '/about' },
   { label: 'Editorial Policy' },
 ];
+const breadcrumbJsonLdItems = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Editorial Policy' },
+];
 
 /** Section headings, in order, for the contents aside. */
 const sections = [
@@ -92,6 +98,7 @@ const headingClass = 'mb-3 text-2xl font-semibold tracking-tight';
 export default function EditorialPolicyPage() {
   return (
     <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       <header className="mb-10">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { getEnv } from '@/lib/env';
 
 const pageTitle = 'Privacy Policy';
@@ -57,6 +58,7 @@ export function generateMetadata(): Metadata {
 }
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Privacy Policy' }];
+const breadcrumbJsonLdItems = [{ name: 'Home', href: '/' }, { name: 'Privacy Policy' }];
 
 /** Section headings, in order, for the contents aside. */
 const sections = [
@@ -74,6 +76,7 @@ const sections = [
 export default function PrivacyPage() {
   return (
     <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       <header className="mb-10">
