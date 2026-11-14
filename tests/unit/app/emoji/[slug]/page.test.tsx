@@ -149,7 +149,11 @@ describe('EmojiPage', () => {
       mockGetEmojiBySlug.mockImplementation(() => mockEmoji);
       const metadata = await generateMetadata({ params: Promise.resolve({ slug: 'skull' }) });
 
-      expect(metadata.title).toBe('💀 Skull Emoji Meaning - What Does 💀 Really Mean?');
+      // The authored title carries a second explanatory clause, but the
+      // rendered title (title + " | KnowYourEmoji") has to fit the ~60
+      // characters a search engine shows. The clause is dropped from the
+      // title; the body keeps it.
+      expect(metadata.title).toBe('💀 Skull Emoji Meaning');
       expect(metadata.description).toBe(
         'Learn what the skull emoji 💀 really means in modern texting.'
       );

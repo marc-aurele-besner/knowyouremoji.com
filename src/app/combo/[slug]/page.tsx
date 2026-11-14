@@ -8,6 +8,8 @@ import {
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getComboIndexingDecision } from '@/lib/seo-policy';
+import { getCanonicalComboSlug, isComboAlias } from '@/lib/combo-aliases';
+import { fitSeoDescription, fitSeoTitle } from '@/lib/seo-limits';
 import { ShareSection } from '@/components/share/share-section';
 import { BookBanner } from '@/components/layout/book-banner';
 import { CopySectionButton } from '@/components/ui/copy-section-button';
@@ -54,11 +56,15 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
   const env = getEnv();
   const pageUrl = `${env.appUrl}/combo/${combo.slug}`;
   const ogTitle = `${combo.combo} ${combo.name} Combo Meaning`;
+  // A duplicate of another page's glyph canonicalizes to the owner page.
+  const ownerPageUrl = isComboAlias(combo.slug)
+    ? `${env.appUrl}/combo/${getCanonicalComboSlug(combo.slug)}`
+    : undefined;
 
   // Apply the indexing policy from src/lib/seo-policy.ts — see issue #355.
   // - Deep/standard combos → index, follow
   // - Thin combos → noindex, follow (page still serves users)
-  const indexing = getComboIndexingDecision(combo, pageUrl);
+  const indexing = getComboIndexingDecision(combo, pageUrl, ownerPageUrl);
 
   // Generate keywords array
   const keywords = [
@@ -73,8 +79,8 @@ export async function generateMetadata({ params }: ComboPageProps): Promise<Meta
   ];
 
   return {
-    title: combo.seoTitle,
-    description: combo.seoDescription,
+    title: fitSeoTitle(combo.seoTitle, ` | ${env.appName}`),
+    description: fitSeoDescription(combo.seoDescription),
     keywords,
     alternates: {
       canonical: indexing.canonical || pageUrl,

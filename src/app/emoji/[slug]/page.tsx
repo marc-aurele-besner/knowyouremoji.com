@@ -9,8 +9,9 @@ import {
 import { getComboSummariesByEmoji } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
 import { decisionToRobots, getIndexingDecision } from '@/lib/seo-policy';
+import { fitSeoDescription, fitSeoTitle } from '@/lib/seo-limits';
 import { getCanonicalEmojiSlug, isEmojiAlias } from '@/lib/emoji-aliases';
-import { getAllComparisons } from '@/lib/comparison-data';
+import { getResolvableComparisons } from '@/lib/comparison-data';
 import { EmojiHeader } from '@/components/emoji/emoji-header';
 import { EmojiJsonLd } from '@/components/seo/emoji-json-ld';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
@@ -98,8 +99,8 @@ export async function generateMetadata({ params }: EmojiPageProps): Promise<Meta
   ];
 
   return {
-    title: emoji.seoTitle,
-    description: emoji.seoDescription,
+    title: fitSeoTitle(emoji.seoTitle, ` | ${env.appName}`),
+    description: fitSeoDescription(emoji.seoDescription),
     keywords,
     alternates: {
       canonical: indexing.canonical || pageUrl,
@@ -170,7 +171,7 @@ export default async function EmojiPage({ params }: EmojiPageProps) {
   ];
 
   // Curated comparison featuring this emoji (only link to pages that exist)
-  const comparison = getAllComparisons().find(
+  const comparison = getResolvableComparisons().find(
     (c) => c.emoji1Slug === emoji.slug || c.emoji2Slug === emoji.slug
   );
   const compareHref = comparison

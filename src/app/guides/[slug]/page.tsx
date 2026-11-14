@@ -9,6 +9,7 @@ import {
   deriveSeoDescription,
 } from '@/lib/guide-data';
 import { GuideJsonLd } from '@/components/seo/guide-json-ld';
+import { fitSeoDescription, fitSeoTitle } from '@/lib/seo-limits';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { GuideCard } from '@/components/guides/guide-card';
@@ -43,8 +44,8 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
 
   const env = getEnv();
   const pageUrl = `${env.appUrl}/guides/${guide.slug}`;
-  const title = deriveSeoTitle(guide);
-  const description = deriveSeoDescription(guide);
+  const title = fitSeoTitle(deriveSeoTitle(guide), ` | ${env.appName}`);
+  const description = fitSeoDescription(deriveSeoDescription(guide));
 
   return {
     title,
