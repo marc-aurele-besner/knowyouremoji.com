@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { BooksJsonLd } from '@/components/seo/books-json-ld';
 import { AmazonBookLink } from '@/components/books/amazon-book-link';
 import { Button } from '@/components/ui/button';
 import { AMAZON_DISCLOSURE, hasAmazonTag } from '@/lib/amazon-affiliate';
@@ -58,6 +60,7 @@ export function generateMetadata(): Metadata {
 }
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Books' }];
+const breadcrumbJsonLdItems = [{ name: 'Home', href: '/' }, { name: 'Books' }];
 
 /**
  * Books page listing every Know Your Emoji book with a link to buy it on Amazon.
@@ -65,6 +68,8 @@ const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Books' }];
 export default function BooksPage() {
   return (
     <main className="container mx-auto max-w-5xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
+      <BooksJsonLd appUrl={getEnv().appUrl} appName={getEnv().appName} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       <header>
