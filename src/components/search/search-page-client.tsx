@@ -315,6 +315,7 @@ function SearchPageClient({
       </div>
 
       {/* Results */}
+      <h2 className="sr-only">Results</h2>
       {activeTab === 'emojis' ? (
         emojiResults.length === 0 ? (
           <NoResults testId="no-emoji-results" kind="emojis" query={currentQuery} />
