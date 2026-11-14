@@ -1,7 +1,6 @@
 import { describe, test, expect, afterEach } from 'bun:test';
 import { render, screen, cleanup } from '@testing-library/react';
 import EmojiBrowsePage, { generateMetadata } from '@/app/emoji/page';
-import { getAllComparisons } from '@/lib/comparison-data';
 
 afterEach(() => {
   cleanup();
@@ -83,19 +82,14 @@ describe('EmojiBrowsePage', () => {
       ).toBeInTheDocument();
     });
 
-    test('links to a comparison when curated comparisons exist', () => {
+    test('links to the compare hub', () => {
       render(<EmojiBrowsePage />);
-      const comparison = getAllComparisons()[0];
+      // The button points at the compare hub rather than at one arbitrary
+      // comparison: the hub is the indexable landing surface for the
+      // "X vs Y emoji" query family, and a fixed comparison would rot
+      // whenever that pair changed.
       const link = screen.queryByRole('link', { name: /compare two emojis/i });
-      if (comparison) {
-        expect(link).toHaveAttribute(
-          'href',
-          `/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`
-        );
-      } else {
-        // The comparison cache can be emptied by other test files sharing the process
-        expect(link).toBeNull();
-      }
+      expect(link).toHaveAttribute('href', '/compare');
     });
   });
 

@@ -48,6 +48,7 @@ export const FOOTER_LINK_GROUPS: NavLinkGroup[] = [
     links: [
       { label: 'Emojis', href: '/emoji' },
       { label: 'Combos', href: '/combo' },
+      { label: 'Compare', href: '/compare' },
       { label: 'Guides', href: '/guides' },
       { label: 'Books', href: '/books' },
       { label: 'Search', href: '/search' },
