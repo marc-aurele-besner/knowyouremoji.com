@@ -10,7 +10,7 @@
  * one was the real page.
  *
  * This module maps every duplicate slug to the slug that owns the glyph.
- * The owners are noindexed with a canonical to the owner
+ * The duplicates are noindexed with a canonical to the owner
  * (`src/lib/seo-policy.ts`), left out of the sitemap
  * (`src/lib/sitemap-entries.ts`), and redirected to the owner
  * (`next.config.ts`) — the same treatment the emoji catalog already gets
