@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 import { withSentryConfig } from '@sentry/nextjs/config';
 import { EMOJI_ALIASES } from './src/lib/emoji-aliases';
+import { COMBO_ALIASES } from './src/lib/combo-aliases';
 
 /** The five Fitzpatrick tones, in swatch order. */
 const SKIN_TONES = ['light', 'medium-light', 'medium', 'medium-dark', 'dark'] as const;
@@ -47,6 +48,12 @@ const EMOJI_REDIRECTS: Array<{ source: string; destination: string }> = [
   ...Object.entries(EMOJI_ALIASES).map(([alias, owner]) => ({
     source: `/emoji/${alias}`,
     destination: `/emoji/${owner}`,
+  })),
+  // The same treatment for combo pages: 106 slugs published a drawing
+  // another combo page already owned. See `src/lib/combo-aliases.ts`.
+  ...Object.entries(COMBO_ALIASES).map(([alias, owner]) => ({
+    source: `/combo/${alias}`,
+    destination: `/combo/${owner}`,
   })),
 ];
 

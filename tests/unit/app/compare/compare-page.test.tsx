@@ -13,6 +13,15 @@ const realGetAllComparisonSlugs = realComparisonData.getAllComparisonSlugs;
 const realEmojiData = await import('@/lib/emoji-data');
 const realGetEmojiBySlug = realEmojiData.getEmojiBySlug;
 
+/**
+ * Resolve an emoji slug against the test fixtures first, then the real
+ * catalog. Declared as a hoisted function so the module mocks below can
+ * call it before the fixture table is initialized.
+ */
+function resolveEmoji(slug: string): Emoji | undefined {
+  return emojiFixtures[slug] ?? realGetEmojiBySlug(slug);
+}
+
 const comparisons: EmojiComparison[] = [
   {
     slug: 'test-skull-laughing',
@@ -49,6 +58,12 @@ mock.module('@/lib/comparison-data', () => ({
   ],
   getComparisonBySlug: (slug: string) =>
     comparisons.find((c) => c.slug === slug) ?? realGetComparisonBySlug(slug),
+  // Mirrors the real resolver: a comparison is servable only when both of
+  // its emoji pages exist.
+  getResolvableComparisons: () =>
+    [...comparisons, ...realGetAllComparisons()].filter(
+      (c) => resolveEmoji(c.emoji1Slug) && resolveEmoji(c.emoji2Slug)
+    ),
 }));
 
 function makeEmoji(slug: string, character: string, name: string, rich: boolean): Emoji {
@@ -86,6 +101,9 @@ mock.module('@/lib/emoji-data', () => ({
   getEmojiBySlug: (slug: string) => emojiFixtures[slug] ?? realGetEmojiBySlug(slug),
 }));
 
+// `resolveEmoji` mirrors the mocked lookup above, so the comparison
+// resolver and the emoji lookup agree on which pages exist.
+
 const pageModule = await import('@/app/compare/[emoji1]/[emoji2]/page');
 const ComparePage = pageModule.default;
 const { generateMetadata, generateStaticParams, revalidate } = pageModule;
@@ -109,11 +127,18 @@ describe('Compare page configuration', () => {
       expect.arrayContaining([
         { emoji1: 'test-skull', emoji2: 'test-joy' },
         { emoji1: 'test-fire', emoji2: 'test-sparkles' },
-        { emoji1: 'test-heart', emoji2: 'test-white-heart' },
       ])
     );
     // Unknown slugs are filtered out
     expect(result).not.toContain(null);
+  });
+
+  test('does not prerender a comparison whose emoji page does not exist', async () => {
+    const result = await generateStaticParams();
+    // `test-white-heart` has no emoji page, so the route would 404. The
+    // sitemap advertises only what the router can serve, and the
+    // prerendered set has to agree with it.
+    expect(result).not.toContainEqual({ emoji1: 'test-heart', emoji2: 'test-white-heart' });
   });
 });
 

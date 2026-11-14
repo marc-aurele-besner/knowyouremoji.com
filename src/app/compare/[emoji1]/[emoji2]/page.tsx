@@ -3,11 +3,13 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getAllComparisons,
-  getAllComparisonSlugs,
   getComparisonBySlug,
+  getResolvableComparisons,
 } from '@/lib/comparison-data';
 import { getEmojiBySlug } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoDescription, fitSeoTitle } from '@/lib/seo-limits';
 import { cn } from '@/lib/utils';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
@@ -58,19 +60,16 @@ function findComparison(
 
 /**
  * Generate static params for all comparison pages at build time
+ *
+ * Only comparisons whose emoji pages exist are prerendered: a comparison
+ * naming a missing emoji slug renders as a 404, and prerendering it would
+ * publish a dead URL that the sitemap then advertises.
  */
 export async function generateStaticParams() {
-  const slugs = getAllComparisonSlugs();
-  return slugs
-    .map((slug) => {
-      const comparison = getComparisonBySlug(slug);
-      if (!comparison) return null;
-      return {
-        emoji1: comparison.emoji1Slug,
-        emoji2: comparison.emoji2Slug,
-      };
-    })
-    .filter(Boolean);
+  return getResolvableComparisons().map((comparison) => ({
+    emoji1: comparison.emoji1Slug,
+    emoji2: comparison.emoji2Slug,
+  }));
 }
 
 /**
@@ -88,27 +87,26 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
 
   if (found.reversed) {
     const reversed = comparison;
+    const env = getEnv();
+    const canonicalUrl = `${env.appUrl}/compare/${reversed.emoji1Slug}/${reversed.emoji2Slug}`;
+
     return {
-      title: reversed.seoTitle,
-      description: reversed.seoDescription,
+      title: fitSeoTitle(reversed.seoTitle, ` | ${env.appName}`),
+      description: fitSeoDescription(reversed.seoDescription),
       keywords: [
         `${reversed.emoji1Slug} vs ${reversed.emoji2Slug}`,
         'emoji comparison',
         'emoji meaning',
       ],
       alternates: {
-        canonical: `${getEnv().appUrl}/compare/${reversed.emoji1Slug}/${reversed.emoji2Slug}`,
+        canonical: canonicalUrl,
       },
-      openGraph: {
+      ...buildSocialMetadata({
         title: reversed.seoTitle,
         description: reversed.seoDescription,
-        type: 'website',
-      },
-      twitter: {
-        card: 'summary',
-        title: reversed.seoTitle,
-        description: reversed.seoDescription,
-      },
+        url: canonicalUrl,
+        siteName: env.appName,
+      }),
       robots: {
         index: true,
         follow: true,
@@ -120,24 +118,18 @@ export async function generateMetadata({ params }: ComparePageProps): Promise<Me
   const pageUrl = `${env.appUrl}/compare/${emoji1Slug}/${emoji2Slug}`;
 
   return {
-    title: comparison.seoTitle,
-    description: comparison.seoDescription,
+    title: fitSeoTitle(comparison.seoTitle, ` | ${env.appName}`),
+    description: fitSeoDescription(comparison.seoDescription),
     keywords: [`${emoji1Slug} vs ${emoji2Slug}`, 'emoji comparison', 'emoji meaning'],
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: comparison.seoTitle,
       description: comparison.seoDescription,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: comparison.seoTitle,
-      description: comparison.seoDescription,
-    },
+    }),
     robots: {
       index: true,
       follow: true,

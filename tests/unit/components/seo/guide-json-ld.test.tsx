@@ -60,7 +60,16 @@ describe('GuideJsonLd', () => {
         name: mockGuide.author,
         url: mockAppUrl,
       });
-      expect(ld.publisher).toEqual({ '@type': 'Organization', name: mockAppName, url: mockAppUrl });
+      expect(ld.publisher).toEqual({
+        '@type': 'Organization',
+        '@id': `${mockAppUrl}/#organization`,
+        name: mockAppName,
+        url: mockAppUrl,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${mockAppUrl}/logo.png`,
+        },
+      });
     });
   });
 

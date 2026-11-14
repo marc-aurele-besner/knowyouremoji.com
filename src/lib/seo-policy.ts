@@ -203,12 +203,34 @@ export function resolveComboContentTier(combo: EmojiCombo): ComboContentTier {
  * Mirrors {@link getIndexingDecision} for emojis. Combos do not have
  * skin-tone variants, so the policy is simpler:
  *
+ * - a duplicate of another page's glyph → noindex, follow, canonical to
+ *   the owner (see `src/lib/combo-aliases.ts`)
  * - batch-generated copy → noindex, follow (page still serves users)
  * - `deep`     → index, follow
  * - `standard` → index, follow
  * - `thin`     → noindex, follow (page still serves users)
+ *
+ * @param combo        The full combo record.
+ * @param pageUrl      Absolute URL of the page being generated (used for canonical).
+ * @param ownerPageUrl Absolute URL of the page that owns this glyph, when the
+ *                     slug is a duplicate (see `src/lib/combo-aliases.ts`).
  */
-export function getComboIndexingDecision(combo: EmojiCombo, pageUrl: string): IndexingDecision {
+export function getComboIndexingDecision(
+  combo: EmojiCombo,
+  pageUrl: string,
+  ownerPageUrl?: string
+): IndexingDecision {
+  // A second page for a glyph another page already owns → noindex and
+  // canonical to the owner, so each combo has one indexable URL.
+  if (ownerPageUrl) {
+    return {
+      index: false,
+      follow: true,
+      canonical: ownerPageUrl,
+      reason: 'duplicate combo glyph → canonical to the page that owns it',
+    };
+  }
+
   // Batch-generated copy → noindex. The page keeps serving readers, but it
   // must not be indexed as an original article.
   const templateMarkers = findComboTemplateMarkers(combo);

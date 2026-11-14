@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Button } from '@/components/ui/button';
 import { getEnv } from '@/lib/env';
-import { getAllEmojis } from '@/lib/emoji-data';
-import { getAllCombos } from '@/lib/combo-data';
+import { getCanonicalEmojiCount } from '@/lib/emoji-data';
+import { getComboCount } from '@/lib/combo-data';
 import { buildEmojiSitemapEntries, buildComboSitemapEntries } from '@/lib/sitemap-entries';
 
-const pageTitle = 'About Us';
+const pageTitle = 'About Our Emoji Research';
 const pageDescription =
   'How emoji pages on KnowYourEmoji are written and checked, who runs the site, and why context matters more than the Unicode definition.';
 
@@ -72,6 +73,7 @@ export function generateMetadata(): Metadata {
 }
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'About' }];
+const breadcrumbJsonLdItems = [{ name: 'Home', href: '/' }, { name: 'About' }];
 
 const methodologySteps = [
   {
@@ -204,13 +206,19 @@ const cardClass = 'rounded-2xl border border-card-border bg-card p-5';
  * - CTA to try the interpreter
  */
 export default function AboutPage() {
-  const emojiPageCount = getAllEmojis().length;
+  // The canonical counts, not the raw file counts: an alias page is a
+  // second address for a drawing another page already explains, so it is
+  // not a page of its own. Using the raw count here would make this page
+  // disagree with the homepage and the dictionary, which both report the
+  // number of interpretations the site actually publishes.
+  const emojiPageCount = getCanonicalEmojiCount();
   const indexedEmojiPageCount = buildEmojiSitemapEntries().length;
-  const comboPageCount = getAllCombos().length;
+  const comboPageCount = getComboCount();
   const indexedComboPageCount = buildComboSitemapEntries().length;
 
   return (
     <main className="container mx-auto max-w-5xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       {/* Header Section */}
@@ -229,7 +237,7 @@ export default function AboutPage() {
 
       {/* Mission Section */}
       <section className="mt-14" data-testid="mission-section">
-        <p className="eyebrow">Our mission</p>
+        <h2 className={`${sectionTitle} mt-2`}>Our mission</h2>
         <div className="mt-3 max-w-[720px] space-y-4 text-[17px] leading-[1.7]">
           <p>
             Emojis have become an essential part of modern communication. But their meanings

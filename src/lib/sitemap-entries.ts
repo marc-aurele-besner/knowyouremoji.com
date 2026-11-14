@@ -23,12 +23,13 @@ import type { EmojiCombo } from '@/types/combo';
 import { getAllEmojis, getAllCategories, isValidCategory } from '@/lib/emoji-data';
 import { getAllCombos, getAllComboCategories, isValidComboCategory } from '@/lib/combo-data';
 import { getAllPlatforms, getAllGenerations, getPageableContextTypes } from '@/lib/emoji-data';
-import { getAllComparisons } from '@/lib/comparison-data';
+import { getResolvableComparisons } from '@/lib/comparison-data';
 import { getPublishedGuideSummaries } from '@/lib/guide-data';
 import { resolveContentTier, resolveComboContentTier } from '@/lib/seo-policy';
 import { isEmojiTemplated } from '@/lib/emoji-boilerplate';
 import { isEmojiAlias } from '@/lib/emoji-aliases';
 import { isComboTemplated } from '@/lib/combo-boilerplate';
+import { isComboAlias } from '@/lib/combo-aliases';
 import { getSiteUrl } from '@/lib/metadata';
 
 /**
@@ -70,6 +71,7 @@ export const SITEMAP_STATIC_PATHS = [
   '/search',
   '/emoji',
   '/combo',
+  '/compare',
 ] as const;
 
 /**
@@ -170,6 +172,11 @@ export function buildStaticSitemapEntries(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: SITEMAP_PRIORITIES.HUB_PAGE,
     }),
+    // Compare hub — the landing surface for the "X vs Y emoji" query family.
+    buildEntry(`${baseUrl}/compare`, undefined, {
+      changeFrequency: 'weekly',
+      priority: SITEMAP_PRIORITIES.HUB_PAGE,
+    }),
     // `/guides` is emitted by `buildGuideSitemapEntries` so the index
     // page and per-guide pages share a single source of truth.
   ];
@@ -209,6 +216,9 @@ export function buildEmojiSitemapEntries(): MetadataRoute.Sitemap {
 
 /**
  * Build sitemap entries for combo pages. Excludes:
+ * - Duplicate glyphs — a second page for a combo another page already owns
+ *   (see `src/lib/combo-aliases.ts`). Advertising it would put two URLs
+ *   for one drawing in the index.
  * - Batch-generated ("templated") pages — they are near-duplicates of each
  *   other, and a sitemap entry advertises them for indexing (issue #481).
  * - `thin` content (per `resolveComboContentTier`).
@@ -220,6 +230,7 @@ export function buildComboSitemapEntries(): MetadataRoute.Sitemap {
   const combos = getAllCombos();
 
   return combos
+    .filter((combo: EmojiCombo) => !isComboAlias(combo.slug))
     .filter((combo: EmojiCombo) => !isComboTemplated(combo))
     .filter((combo: EmojiCombo) => resolveComboContentTier(combo) !== 'thin')
     .map((combo: EmojiCombo) => {
@@ -304,10 +315,15 @@ export function buildFacetSitemapEntries(): MetadataRoute.Sitemap {
  * Build sitemap entries for comparison pages in canonical order only.
  * Comparison slugs are stored as `${emoji1Slug}-${emoji2Slug}`; we
  * always emit the canonical pair to avoid duplicate entries.
+ *
+ * Only comparisons whose emoji pages exist are emitted: a comparison that
+ * names a missing emoji slug renders as a 404, and advertising a 404 in
+ * the sitemap burns crawl budget and tells search engines the page is
+ * broken (issue: `/compare/fire/hundred`).
  */
 export function buildCompareSitemapEntries(): MetadataRoute.Sitemap {
   const baseUrl = getSiteUrl();
-  const comparisons = getAllComparisons();
+  const comparisons = getResolvableComparisons();
 
   return comparisons.map((comparison) =>
     buildEntry(`${baseUrl}/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`, undefined, {

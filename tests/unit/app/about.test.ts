@@ -1,7 +1,7 @@
 import { describe, expect, test, beforeEach, afterEach } from 'bun:test';
 import { generateMetadata, default as AboutPage } from '../../../src/app/about/page';
-import { getAllEmojis } from '../../../src/lib/emoji-data';
-import { getAllCombos } from '../../../src/lib/combo-data';
+import { getCanonicalEmojiCount } from '../../../src/lib/emoji-data';
+import { getComboCount } from '../../../src/lib/combo-data';
 import {
   buildEmojiSitemapEntries,
   buildComboSitemapEntries,
@@ -44,7 +44,7 @@ describe('About Page', () => {
 
       // The root layout applies the `%s | <siteName>` title template, so the
       // page metadata title must not include the site name itself.
-      expect(metadata.title).toBe('About Us');
+      expect(metadata.title).toBe('About Our Emoji Research');
     });
 
     test('generates metadata with correct description', () => {
@@ -86,7 +86,7 @@ describe('About Page', () => {
       expect(openGraph?.url).toBe('https://knowyouremoji.com/about');
       expect(openGraph?.siteName).toBe('KnowYourEmoji');
       expect(openGraph?.locale).toBe('en_US');
-      expect(openGraph?.title).toBe('About Us | KnowYourEmoji');
+      expect(openGraph?.title).toBe('About Our Emoji Research | KnowYourEmoji');
       expect(openGraph?.images).toBeDefined();
       expect(openGraph?.images?.length).toBeGreaterThan(0);
     });
@@ -135,7 +135,7 @@ describe('About Page', () => {
 
       const metadata = generateMetadata();
 
-      expect(metadata.title).toBe('About Us');
+      expect(metadata.title).toBe('About Our Emoji Research');
       const alternates = metadata.alternates as { canonical?: string };
       expect(alternates?.canonical).toBe('https://custom-url.com/about');
     });
@@ -248,9 +248,11 @@ describe('About Page', () => {
     test('reports how many emoji and combo pages the sitemap lists', () => {
       const content = extractContent(AboutPage()).replace(/\s+/g, ' ');
       const indexed = buildEmojiSitemapEntries().length.toLocaleString('en-US');
-      const total = getAllEmojis().length.toLocaleString('en-US');
+      // The canonical count, not the number of files: an alias page is a
+      // second address for a drawing another page already explains.
+      const total = getCanonicalEmojiCount().toLocaleString('en-US');
       const indexedCombos = buildComboSitemapEntries().length.toLocaleString('en-US');
-      const totalCombos = getAllCombos().length.toLocaleString('en-US');
+      const totalCombos = getComboCount().toLocaleString('en-US');
       expect(content).toContain(`${indexed} of ${total} emoji pages`);
       expect(content).toContain(`${indexedCombos} of ${totalCombos} combo pages`);
       expect(content).toContain('noindex');

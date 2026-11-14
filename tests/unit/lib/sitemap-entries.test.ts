@@ -107,7 +107,7 @@ describe('sitemap-entries', () => {
   let getAllCombosSpy: ReturnType<typeof spyOn>;
   let getAllComboCategoriesSpy: ReturnType<typeof spyOn>;
   let getPublishedGuideSummariesSpy: ReturnType<typeof spyOn>;
-  let getAllComparisonsSpy: ReturnType<typeof spyOn>;
+  let getResolvableComparisonsSpy: ReturnType<typeof spyOn>;
 
   beforeEach(() => {
     emojiData.clearEmojiCache();
@@ -132,7 +132,10 @@ describe('sitemap-entries', () => {
     getPublishedGuideSummariesSpy = spyOn(guideData, 'getPublishedGuideSummaries').mockReturnValue(
       []
     );
-    getAllComparisonsSpy = spyOn(comparisonData, 'getAllComparisons').mockReturnValue(
+    // The sitemap advertises only the comparisons the router can serve,
+    // so it consumes `getResolvableComparisons`. Mocking that seam keeps
+    // this suite about the sitemap builder; the resolver has its own tests.
+    getResolvableComparisonsSpy = spyOn(comparisonData, 'getResolvableComparisons').mockReturnValue(
       mockComparisons
     );
   });
@@ -146,7 +149,7 @@ describe('sitemap-entries', () => {
     getAllCombosSpy.mockRestore();
     getAllComboCategoriesSpy.mockRestore();
     getPublishedGuideSummariesSpy.mockRestore();
-    getAllComparisonsSpy.mockRestore();
+    getResolvableComparisonsSpy.mockRestore();
   });
 
   describe('buildStaticSitemapEntries', () => {

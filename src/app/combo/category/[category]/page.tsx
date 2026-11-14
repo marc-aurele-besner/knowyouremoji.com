@@ -7,6 +7,8 @@ import {
   getComboSummariesByCategory,
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoTitle } from '@/lib/seo-limits';
 import { ComboCard } from '@/components/combo/combo-card';
 import { ComboCategoryChips } from '@/components/combo/combo-category-chips';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
@@ -48,7 +50,10 @@ export async function generateMetadata({ params }: ComboCategoryPageProps): Prom
   const pageUrl = `${env.appUrl}/combo/category/${category}`;
 
   return {
-    title: `${categoryInfo.displayName} Emoji Combos - Best ${categoryInfo.displayName} Combos Explained`,
+    title: fitSeoTitle(
+      `${categoryInfo.displayName} Emoji Combos - Best ${categoryInfo.displayName} Combos Explained`,
+      ` | ${env.appName}`
+    ),
     description: categoryInfo.description,
     keywords: [
       `${categoryInfo.displayName.toLowerCase()} emoji combos`,
@@ -59,18 +64,12 @@ export async function generateMetadata({ params }: ComboCategoryPageProps): Prom
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: `${categoryInfo.displayName} Emoji Combos`,
       description: categoryInfo.description,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${categoryInfo.displayName} Emoji Combos`,
-      description: categoryInfo.description,
-    },
+    }),
     robots: {
       index: true,
       follow: true,
@@ -148,7 +147,7 @@ export default async function ComboCategoryPage({ params }: ComboCategoryPagePro
         {combos.length > 0 ? (
           <section aria-labelledby="combos-heading">
             <h2 id="combos-heading" className="sr-only">
-              {categoryInfo.displayName} Emoji Combos
+              All {categoryInfo.displayName} emoji combos
             </h2>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-3">
               {combos.map((combo) => (

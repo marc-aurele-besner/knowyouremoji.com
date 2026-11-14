@@ -46,12 +46,26 @@ export function resolveArticleDates(contentUpdatedAt: string | undefined): {
 
 /**
  * Build the `Organization` publisher entity.
+ *
+ * Google will not consider a page eligible for an article rich result
+ * unless `publisher.logo` is present, and a publisher entity that carries
+ * its own `@id` lets the graph stitch the per-article publisher to the
+ * site-wide `Organization` node instead of creating a second, unrelated
+ * organization. Both matter for the same reason: the answer engine and
+ * the search engine have to be able to say *who* published the page.
  */
 export function buildPublisher(appName: string, appUrl: string) {
+  const baseUrl = appUrl.endsWith('/') ? appUrl.slice(0, -1) : appUrl;
+
   return {
-    '@type': 'Organization',
+    '@type': 'Organization' as const,
+    '@id': `${baseUrl}/#organization`,
     name: appName,
-    url: appUrl,
+    url: baseUrl,
+    logo: {
+      '@type': 'ImageObject' as const,
+      url: `${baseUrl}/logo.png`,
+    },
   };
 }
 

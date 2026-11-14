@@ -41,6 +41,83 @@ export const DEFAULT_OG_IMAGE_WIDTH = 1200;
 export const DEFAULT_OG_IMAGE_HEIGHT = 630;
 
 /**
+ * Alt text for the default social card.
+ *
+ * Describes the card rather than repeating the page title, because the
+ * same image is reused across every hub page.
+ */
+export const DEFAULT_OG_IMAGE_ALT = 'KnowYourEmoji — what emojis really mean in context';
+
+/**
+ * Options for {@link buildSocialMetadata}.
+ */
+export interface SocialMetadataOptions {
+  /** Title of the social card. */
+  title: string;
+  /** Description of the social card. */
+  description: string;
+  /** Absolute URL of the page the card links to. */
+  url: string;
+  /** Site name, used as the card's `site_name`. */
+  siteName: string;
+  /** Open Graph type. Defaults to `website`. */
+  type?: 'website' | 'article';
+  /** Alt text for the social image. Defaults to the site default. */
+  imageAlt?: string;
+}
+
+/**
+ * Build the Open Graph + Twitter card payload for a page that uses the
+ * site's default social image.
+ *
+ * Why this exists: Next.js *replaces* the `openGraph` object inherited from
+ * the root layout rather than deep-merging it, so a page that declares
+ * `openGraph: { title, description }` without `images` silently drops the
+ * social card entirely — the page then shares as a text-only link. Every
+ * hub page hit that trap, and `twitter: { card: 'summary' }` made it worse
+ * by dropping the large image as well.
+ *
+ * Routing every hub page through one helper means a new page gets a
+ * complete card by default, and the default image stays in one place.
+ */
+export function buildSocialMetadata(options: SocialMetadataOptions) {
+  const { title, description, url, siteName, type = 'website' } = options;
+  const imageAlt = options.imageAlt ?? DEFAULT_OG_IMAGE_ALT;
+
+  return {
+    openGraph: {
+      type,
+      locale: 'en_US',
+      url,
+      siteName,
+      title,
+      description,
+      images: [
+        {
+          url: DEFAULT_OG_IMAGE_PATH,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
+          alt: imageAlt,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image' as const,
+      title,
+      description,
+      images: [
+        {
+          url: DEFAULT_OG_IMAGE_PATH,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
+          alt: imageAlt,
+        },
+      ],
+    },
+  };
+}
+
+/**
  * Generate the default site metadata for the root layout
  * Uses a function to ensure environment variables are read fresh
  */

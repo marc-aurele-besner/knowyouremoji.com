@@ -6,6 +6,7 @@ import {
   getComboCategoryDisplayName,
 } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
 import { BookBanner } from '@/components/layout/book-banner';
 import { ComboBrowser } from '@/components/combo/combo-browser';
 import { ComboCategoryChips } from '@/components/combo/combo-category-chips';
@@ -31,19 +32,12 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
-      type: 'website',
-      locale: 'en_US',
+    ...buildSocialMetadata({
+      title: socialTitle,
+      description,
       url: pageUrl,
       siteName: env.appName,
-      title: socialTitle,
-      description,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: socialTitle,
-      description,
-    },
+    }),
   };
 }
 

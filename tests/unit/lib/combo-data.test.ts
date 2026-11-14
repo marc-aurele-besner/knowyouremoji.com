@@ -1,5 +1,6 @@
 import { describe, it, expect, beforeEach, spyOn } from 'bun:test';
 import type { EmojiCombo, EmojiComboCategoryName } from '../../../src/types/combo';
+import { isComboAlias } from '../../../src/lib/combo-aliases';
 import fs from 'fs';
 
 // Mock combo data for testing
@@ -139,11 +140,22 @@ describe('combo-data', () => {
   });
 
   describe('getComboCount', () => {
-    it('should return the total number of combos', async () => {
-      const { getComboCount, getAllCombos } = await import('../../../src/lib/combo-data');
+    it('should return the number of combos that own their glyph', async () => {
+      const { getComboCount, getCanonicalCombos } = await import('../../../src/lib/combo-data');
       const count = getComboCount();
-      const combos = getAllCombos();
+      const combos = getCanonicalCombos();
       expect(count).toBe(combos.length);
+    });
+
+    it('does not count alias pages, which are a second address for a glyph', async () => {
+      const { getComboCount, getAllCombos } = await import('../../../src/lib/combo-data');
+      const all = getAllCombos();
+      const aliases = all.filter((combo) => isComboAlias(combo.slug));
+
+      // The catalog has duplicates, so the count a reader sees is lower
+      // than the number of files on disk.
+      expect(aliases.length).toBeGreaterThan(0);
+      expect(getComboCount()).toBe(all.length - aliases.length);
     });
   });
 

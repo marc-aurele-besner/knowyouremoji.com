@@ -2,15 +2,15 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import {
   getEmojiSummaries,
-  getUniqueEmojiCount,
+  getCanonicalEmojiCount,
   getAllCategoryInfo,
   getAllContextInfo,
   getAllGenerationInfo,
   getAllPlatformInfo,
   isValidCategory,
 } from '@/lib/emoji-data';
-import { getAllComparisons } from '@/lib/comparison-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
 import { Button } from '@/components/ui/button';
 import { BookBanner } from '@/components/layout/book-banner';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
@@ -24,7 +24,7 @@ import { cn } from '@/lib/utils';
  */
 export function generateMetadata(): Metadata {
   const env = getEnv();
-  const emojiCount = getUniqueEmojiCount();
+  const emojiCount = getCanonicalEmojiCount();
   const pageUrl = `${env.appUrl}/emoji`;
   // The root layout applies the `%s | <siteName>` title template, so the
   // metadata title must NOT include the site name itself — otherwise the
@@ -40,19 +40,12 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
-      type: 'website',
-      locale: 'en_US',
+    ...buildSocialMetadata({
+      title: socialTitle,
+      description,
       url: pageUrl,
       siteName: env.appName,
-      title: socialTitle,
-      description,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: socialTitle,
-      description,
-    },
+    }),
   };
 }
 
@@ -90,9 +83,8 @@ function HubGrid({ items }: { items: HubLink[] }) {
  */
 export default function EmojiBrowsePage() {
   const emojiSummaries = getEmojiSummaries();
-  const emojiCount = getUniqueEmojiCount();
+  const emojiCount = getCanonicalEmojiCount();
   const categories = getAllCategoryInfo();
-  const comparison = getAllComparisons()[0];
 
   const categoryHubs: HubLink[] = categories
     .filter((category) => isValidCategory(category.slug))
@@ -138,14 +130,12 @@ export default function EmojiBrowsePage() {
             interpretations — explained the way people actually use them.
           </p>
         </div>
-        {comparison && (
-          <Button asChild variant="outline">
-            <Link href={`/compare/${comparison.emoji1Slug}/${comparison.emoji2Slug}`}>
-              <SwapIcon />
-              Compare two emojis
-            </Link>
-          </Button>
-        )}
+        <Button asChild variant="outline">
+          <Link href="/compare">
+            <SwapIcon />
+            Compare two emojis
+          </Link>
+        </Button>
       </header>
 
       <EmojiBrowser emojis={emojiSummaries} categories={categories} />

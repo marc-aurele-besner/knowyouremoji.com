@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { getEnv } from '@/lib/env';
@@ -67,6 +68,7 @@ export function generateMetadata(): Metadata {
 }
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Contact' }];
+const breadcrumbJsonLdItems = [{ name: 'Home', href: '/' }, { name: 'Contact' }];
 
 const contactReasons = [
   {
@@ -115,6 +117,7 @@ const linkClass =
 export default function ContactPage() {
   return (
     <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       <header className="mb-8">

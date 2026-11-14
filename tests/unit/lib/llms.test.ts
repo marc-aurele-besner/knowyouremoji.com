@@ -5,10 +5,12 @@ import {
   LLMS_SITE_SUMMARY,
   LLMS_SITE_DESCRIPTION,
 } from '@/lib/llms';
-import { getAllEmojis } from '@/lib/emoji-data';
+import { getAllEmojis, getCanonicalEmojis } from '@/lib/emoji-data';
 import { getSiteUrl } from '@/lib/metadata';
-import { getAllCombos } from '@/lib/combo-data';
+import { getAllCombos, getCanonicalCombos } from '@/lib/combo-data';
 import { getPublishedGuides } from '@/lib/guide-data';
+import { isEmojiAlias } from '@/lib/emoji-aliases';
+import { isComboAlias } from '@/lib/combo-aliases';
 
 const baseUrl = getSiteUrl().replace(/\/$/, '');
 
@@ -74,8 +76,11 @@ describe('buildLlmsTxt', () => {
 
 describe('buildLlmsFullTxt', () => {
   const txt = buildLlmsFullTxt();
-  const emojis = getAllEmojis().filter((emoji) => !emoji.skinToneBase);
-  const combos = getAllCombos();
+  // The corpus only carries the pages that own their glyph: an alias page
+  // is a second address for a drawing another page already explains, so
+  // listing it would teach an agent to cite near-identical sources.
+  const emojis = getCanonicalEmojis().filter((emoji) => !emoji.skinToneBase);
+  const combos = getCanonicalCombos();
   const guides = getPublishedGuides();
 
   it('starts with a level-one heading naming the corpus', () => {
@@ -113,6 +118,18 @@ describe('buildLlmsFullTxt', () => {
 
     const first = skinToneBase[0];
     expect(txt).not.toContain(`URL: ${baseUrl}/emoji/${first.slug}`);
+  });
+
+  it('excludes alias pages, so one meaning has one address in the corpus', () => {
+    const emojiAlias = getAllEmojis().find((emoji) => isEmojiAlias(emoji.slug));
+    if (emojiAlias) {
+      expect(txt).not.toContain(`URL: ${baseUrl}/emoji/${emojiAlias.slug}`);
+    }
+
+    const comboAlias = getAllCombos().find((combo) => isComboAlias(combo.slug));
+    if (comboAlias) {
+      expect(txt).not.toContain(`URL: ${baseUrl}/combo/${comboAlias.slug}`);
+    }
   });
 
   it('renders the guides section with publication metadata', () => {

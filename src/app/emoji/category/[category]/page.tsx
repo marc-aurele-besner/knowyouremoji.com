@@ -7,6 +7,8 @@ import {
   isValidCategory,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoTitle } from '@/lib/seo-limits';
 import { EmojiHubPage } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
@@ -69,7 +71,10 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const pageUrl = `${env.appUrl}/emoji/category/${category}`;
 
   return {
-    title: `${categoryInfo.displayName} Emojis - What Do They Really Mean?`,
+    title: fitSeoTitle(
+      `${categoryInfo.displayName} Emojis - What Do They Really Mean?`,
+      ` | ${env.appName}`
+    ),
     description: categoryInfo.description,
     keywords: [
       `${categoryInfo.displayName.toLowerCase()} emojis`,
@@ -80,18 +85,12 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: `${categoryInfo.displayName} Emojis`,
       description: categoryInfo.description,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${categoryInfo.displayName} Emojis`,
-      description: categoryInfo.description,
-    },
+    }),
     robots: {
       index: true,
       follow: true,
@@ -158,7 +157,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         siblings={siblings}
         siblingsLabel="Other categories"
         emojis={emojis}
-        gridHeading={`${categoryInfo.displayName} Emojis`}
+        gridHeading={`All ${categoryInfo.displayName} emojis`}
         emptyTitle="No emojis found in this category yet."
       />
     </>

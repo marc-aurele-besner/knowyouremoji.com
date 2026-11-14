@@ -39,6 +39,8 @@ import {
   getAllContextInfo,
 } from '@/lib/emoji-data';
 import { getAllCombos, getAllComboCategoryInfo } from '@/lib/combo-data';
+import { isComboAlias } from '@/lib/combo-aliases';
+import { isEmojiAlias } from '@/lib/emoji-aliases';
 import { getPublishedGuides } from '@/lib/guide-data';
 import { getSiteUrl, getSiteName } from '@/lib/metadata';
 import { toIsoDay } from '@/lib/seo-schema';
@@ -357,8 +359,12 @@ export function buildLlmsFullTxt(): string {
   const baseUrl = getSiteUrl().replace(/\/$/, '');
   const siteName = getSiteName();
 
-  const emojis = getAllEmojis().filter((emoji) => !emoji.skinToneBase);
-  const combos = getAllCombos();
+  // Only the pages that own their glyph are in the corpus. Alias pages
+  // (a second URL for the same drawing) would teach an agent to cite
+  // near-identical sources and split the authority for one meaning across
+  // two URLs — the opposite of what a retrieval corpus is for.
+  const emojis = getAllEmojis().filter((emoji) => !emoji.skinToneBase && !isEmojiAlias(emoji.slug));
+  const combos = getAllCombos().filter((combo) => !isComboAlias(combo.slug));
   const guides = getPublishedGuides();
 
   const sections: string[] = [];

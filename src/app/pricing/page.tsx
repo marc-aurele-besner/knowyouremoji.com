@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Breadcrumbs } from '@/components/layout/breadcrumbs';
+import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
+import { PricingJsonLd } from '@/components/seo/pricing-json-ld';
+import { getPricingPlan } from '@/lib/pricing-plans';
 import { Button } from '@/components/ui/button';
 import { CheckoutButton } from '@/components/checkout';
 import { getEnv } from '@/lib/env';
@@ -69,20 +72,15 @@ export function generateMetadata(): Metadata {
 }
 
 const breadcrumbItems = [{ label: 'Home', href: '/' }, { label: 'Pricing' }];
+const breadcrumbJsonLdItems = [{ name: 'Home', href: '/' }, { name: 'Pricing' }];
 
-const freeFeatures = [
-  '3 interpretations per day',
-  'Browse emoji database',
-  'Context-aware meanings',
-  'Platform differences',
-];
-
-const proFeatures = [
-  'Unlimited interpretations',
-  'Priority AI processing',
-  'Interpretation history',
-  'Save favorite interpretations',
-];
+// The tier cards and the `Product`/`Offer` structured data are built from
+// the same catalog, so a price can never drift between what the reader
+// sees and what an answer engine quotes.
+const freePlan = getPricingPlan('Free')!;
+const proPlan = getPricingPlan('Pro')!;
+const freeFeatures = freePlan.features;
+const proFeatures = proPlan.features;
 
 /** Feature comparison rows: `true` = included, `false` = not included, string = value. */
 const comparisonRows: { feature: string; free: boolean | string; pro: boolean | string }[] = [
@@ -144,6 +142,8 @@ const checkIcon = (
 export default function PricingPage() {
   return (
     <main className="container mx-auto max-w-6xl px-4 pb-16 pt-10">
+      <BreadcrumbJsonLd items={breadcrumbJsonLdItems} appUrl={getEnv().appUrl} />
+      <PricingJsonLd appUrl={getEnv().appUrl} appName={getEnv().appName} />
       <Breadcrumbs items={breadcrumbItems} className="mb-5" />
 
       {/* Header Section */}
@@ -167,10 +167,11 @@ export default function PricingPage() {
         <div className="flex flex-col gap-5 rounded-[22px] border border-card-border bg-card p-7">
           <div>
             <h2 className="text-xl font-semibold">Free</h2>
-            <p className="mt-1 text-sm text-muted-foreground">Perfect for casual users</p>
+            <p className="mt-1 text-sm text-muted-foreground">{freePlan.tagline}</p>
           </div>
           <p className="text-5xl font-semibold tracking-tight">
-            $0<span className="text-[15px] font-normal text-muted-foreground">/month</span>
+            ${freePlan.price}
+            <span className="text-[15px] font-normal text-muted-foreground">/month</span>
           </p>
           <ul className="flex flex-col gap-2.5 text-[14.5px]">
             {freeFeatures.map((feature) => (
@@ -181,7 +182,7 @@ export default function PricingPage() {
             ))}
           </ul>
           <Button asChild className="mt-auto w-full" variant="secondary" size="lg">
-            <Link href="/interpreter">Get Started Free</Link>
+            <Link href={freePlan.url}>Get Started Free</Link>
           </Button>
         </div>
 
@@ -189,10 +190,11 @@ export default function PricingPage() {
         <div className="flex flex-col gap-5 rounded-[22px] border border-foreground bg-card p-7 shadow-soft">
           <div>
             <h2 className="text-xl font-semibold">Pro</h2>
-            <p className="mt-1 text-sm text-muted-foreground">For power users and professionals</p>
+            <p className="mt-1 text-sm text-muted-foreground">{proPlan.tagline}</p>
           </div>
           <p className="text-5xl font-semibold tracking-tight">
-            $9<span className="text-[15px] font-normal text-muted-foreground">/month</span>
+            ${proPlan.price}
+            <span className="text-[15px] font-normal text-muted-foreground">/month</span>
           </p>
           <ul className="flex flex-col gap-2.5 text-[14.5px]">
             {proFeatures.map((feature) => (

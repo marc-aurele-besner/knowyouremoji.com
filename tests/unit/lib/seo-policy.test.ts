@@ -300,6 +300,29 @@ describe('seo-policy', () => {
       expect(decision.reason).toContain('deep');
     });
 
+    test('a duplicate glyph → noindex and canonical to the page that owns it', () => {
+      const combo = createEmojiCombo({ contentTier: 'deep' });
+      const url = 'https://knowyouremoji.com/combo/rainbow-cloud-v2';
+      const ownerUrl = 'https://knowyouremoji.com/combo/rainbow-cloud';
+      const decision = getComboIndexingDecision(combo, url, ownerUrl);
+
+      // The page keeps serving readers, but the index has to hold one URL
+      // per drawing — otherwise two pages compete for the same meaning.
+      expect(decision.index).toBe(false);
+      expect(decision.follow).toBe(true);
+      expect(decision.canonical).toBe(ownerUrl);
+      expect(decision.reason).toContain('duplicate');
+    });
+
+    test('the owner page keeps indexing itself', () => {
+      const combo = createEmojiCombo({ contentTier: 'deep' });
+      const url = 'https://knowyouremoji.com/combo/rainbow-cloud';
+      const decision = getComboIndexingDecision(combo, url);
+
+      expect(decision.index).toBe(true);
+      expect(decision.canonical).toBe(url);
+    });
+
     test('bare-bones combo (no contentTier) → noindex by default', () => {
       const combo = createEmojiCombo();
       const url = 'https://knowyouremoji.com/combo/bare-combo';

@@ -8,6 +8,8 @@ import {
   getGenerationDisplayName,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoTitle } from '@/lib/seo-limits';
 import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
@@ -46,7 +48,10 @@ export async function generateMetadata({ params }: GenerationPageProps): Promise
   const pageUrl = `${env.appUrl}/emoji/generation/${generation}`;
 
   return {
-    title: `${generationInfo.displayName} Emoji Meanings - What Emojis Mean to ${generationInfo.displayName}`,
+    title: fitSeoTitle(
+      `${generationInfo.displayName} Emoji Meanings - What Emojis Mean to ${generationInfo.displayName}`,
+      ` | ${env.appName}`
+    ),
     description: generationInfo.description,
     keywords: [
       `${generationInfo.displayName.toLowerCase()} emoji meanings`,
@@ -57,18 +62,12 @@ export async function generateMetadata({ params }: GenerationPageProps): Promise
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: `${generationInfo.displayName} Emoji Meanings`,
       description: generationInfo.description,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${generationInfo.displayName} Emoji Meanings`,
-      description: generationInfo.description,
-    },
+    }),
     robots: {
       index: true,
       follow: true,
@@ -143,7 +142,7 @@ export default async function GenerationPage({ params }: GenerationPageProps) {
         highlights={highlights}
         highlightsTitle={`How ${generationInfo.displayName} reads them`}
         emojis={emojis}
-        gridHeading={`${generationInfo.displayName} Emoji Meanings`}
+        gridHeading={`All ${generationInfo.displayName} emoji meanings`}
         emptyTitle="No emojis with generational notes found."
       />
     </>
