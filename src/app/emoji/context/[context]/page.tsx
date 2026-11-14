@@ -7,6 +7,8 @@ import {
   getContextDisplayName,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoTitle } from '@/lib/seo-limits';
 import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
@@ -45,7 +47,10 @@ export async function generateMetadata({ params }: ContextPageProps): Promise<Me
   const pageUrl = `${env.appUrl}/emoji/context/${context}`;
 
   return {
-    title: `${contextInfo.displayName} Emoji Meanings - Emojis for ${contextInfo.displayName} Context`,
+    title: fitSeoTitle(
+      `${contextInfo.displayName} Emoji Meanings - Emojis for ${contextInfo.displayName} Context`,
+      ` | ${env.appName}`
+    ),
     description: contextInfo.description,
     keywords: [
       `${contextInfo.displayName.toLowerCase()} emoji meanings`,
@@ -56,18 +61,12 @@ export async function generateMetadata({ params }: ContextPageProps): Promise<Me
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: `${contextInfo.displayName} Emoji Meanings`,
       description: contextInfo.description,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${contextInfo.displayName} Emoji Meanings`,
-      description: contextInfo.description,
-    },
+    }),
     robots: {
       index: true,
       follow: true,
@@ -155,7 +154,7 @@ export default async function ContextPage({ params }: ContextPageProps) {
         highlights={highlights}
         highlightsTitle={`${contextInfo.displayName} in practice`}
         emojis={emojis}
-        gridHeading={`${contextInfo.displayName} Emoji Meanings`}
+        gridHeading={`All ${contextInfo.displayName} emoji meanings`}
         emptyTitle="No emojis with context meanings found."
       />
     </>

@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { getEmojiSummaries, getUniqueEmojiCount } from '@/lib/emoji-data';
+import { getEmojiSummaries, getCanonicalEmojiCount } from '@/lib/emoji-data';
 import { getComboSummaries, getComboCount } from '@/lib/combo-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
 import { SearchPageShell } from '@/components/search/search-page-shell';
 
 /**
@@ -9,7 +10,7 @@ import { SearchPageShell } from '@/components/search/search-page-shell';
  */
 export function generateMetadata(): Metadata {
   const env = getEnv();
-  const emojiCount = getUniqueEmojiCount();
+  const emojiCount = getCanonicalEmojiCount();
   const comboCount = getComboCount();
   const pageUrl = `${env.appUrl}/search`;
   // The root layout applies the `%s | <siteName>` title template, so the
@@ -26,18 +27,22 @@ export function generateMetadata(): Metadata {
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
-      type: 'website',
-      locale: 'en_US',
+    ...buildSocialMetadata({
+      title: socialTitle,
+      description,
       url: pageUrl,
       siteName: env.appName,
-      title: socialTitle,
-      description,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: socialTitle,
-      description,
+    }),
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   };
 }
@@ -48,7 +53,7 @@ export function generateMetadata(): Metadata {
 export default function SearchPage() {
   const emojiSummaries = getEmojiSummaries();
   const comboSummaries = getComboSummaries();
-  const emojiCount = getUniqueEmojiCount();
+  const emojiCount = getCanonicalEmojiCount();
   const comboCount = getComboCount();
 
   return (

@@ -8,6 +8,8 @@ import {
   getPlatformDisplayName,
 } from '@/lib/emoji-data';
 import { getEnv } from '@/lib/env';
+import { buildSocialMetadata } from '@/lib/metadata';
+import { fitSeoTitle } from '@/lib/seo-limits';
 import { EmojiHubPage, pickHubHighlights } from '@/components/emoji/emoji-hub-page';
 import { BreadcrumbJsonLd } from '@/components/seo/breadcrumb-json-ld';
 import { ItemListJsonLd } from '@/components/seo/item-list-json-ld';
@@ -46,7 +48,10 @@ export async function generateMetadata({ params }: PlatformPageProps): Promise<M
   const pageUrl = `${env.appUrl}/emoji/platform/${platform}`;
 
   return {
-    title: `${platformInfo.displayName} Emoji Meanings - What Emojis Really Mean on ${platformInfo.displayName}`,
+    title: fitSeoTitle(
+      `${platformInfo.displayName} Emoji Meanings - What Emojis Really Mean on ${platformInfo.displayName}`,
+      ` | ${env.appName}`
+    ),
     description: platformInfo.description,
     keywords: [
       `${platformInfo.displayName.toLowerCase()} emojis`,
@@ -57,18 +62,12 @@ export async function generateMetadata({ params }: PlatformPageProps): Promise<M
     alternates: {
       canonical: pageUrl,
     },
-    openGraph: {
+    ...buildSocialMetadata({
       title: `${platformInfo.displayName} Emoji Meanings`,
       description: platformInfo.description,
-      type: 'website',
       url: pageUrl,
       siteName: env.appName,
-    },
-    twitter: {
-      card: 'summary',
-      title: `${platformInfo.displayName} Emoji Meanings`,
-      description: platformInfo.description,
-    },
+    }),
     robots: {
       index: true,
       follow: true,
@@ -143,7 +142,7 @@ export default async function PlatformPage({ params }: PlatformPageProps) {
         highlights={highlights}
         highlightsTitle={`Notable on ${platformInfo.displayName}`}
         emojis={emojis}
-        gridHeading={`${platformInfo.displayName} Emoji Meanings`}
+        gridHeading={`All ${platformInfo.displayName} emoji meanings`}
         emptyTitle="No emojis with platform notes found."
       />
     </>
