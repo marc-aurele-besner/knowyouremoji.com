@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import {
-  getUniqueEmojiCount,
+  getCanonicalEmojiCount,
   getAllCategoryInfo,
   getEmojiSummaries,
   getContextDisplayName,
@@ -125,7 +125,7 @@ export function HomePageContent({
   guideSummaries,
 }: HomePageContentProps) {
   const allSummaries = getEmojiSummaries();
-  const emojiCount = getUniqueEmojiCount();
+  const emojiCount = getCanonicalEmojiCount();
   const comboCount = getComboCount();
   const guideCount = getPublishedGuideCount();
   const categories = getAllCategoryInfo();
