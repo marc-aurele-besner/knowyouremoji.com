@@ -688,6 +688,50 @@ describe('guide-data (live loader)', () => {
     });
   });
 
+  describe('emoji skin tone guide', () => {
+    it('loads with the expected frontmatter fields', () => {
+      const guide = getPublishedGuideBySlug('emoji-skin-tone-guide');
+      expect(guide).toBeDefined();
+      expect(guide?.title).toBe(
+        'Your emoji has a skin tone, and the yellow default is a job you never applied for'
+      );
+      expect(guide?.tags).toContain('skin-tone');
+      expect(guide?.tags).toContain('unicode');
+      expect(guide?.readingTimeMinutes).toBe(8);
+      expect(guide?.heroEmoji).toBe('👋🏽');
+      expect(guide?.draft).toBe(false);
+    });
+
+    it('resolves the relatedEmojis slugs to known emoji records', () => {
+      const guide = getPublishedGuideBySlug('emoji-skin-tone-guide');
+      expect(guide?.relatedEmojis).toContain('hand-wave');
+      expect(guide?.relatedEmojis).toContain('thumbs-up');
+      expect(guide?.relatedEmojis).toContain('thumbs-up-dark');
+      expect(guide?.relatedEmojis).toContain('raising-hands-medium');
+      expect(guide?.relatedEmojis).toContain('handshake');
+    });
+
+    it('resolves the relatedCombos slugs to known combo records', () => {
+      const guide = getPublishedGuideBySlug('emoji-skin-tone-guide');
+      expect(guide?.relatedCombos).toContain('celebrate-hands');
+      expect(guide?.relatedCombos).toContain('hand-heart-love');
+      expect(guide?.relatedCombos).toContain('handshake-briefcase');
+    });
+
+    it('renders Markdown body to HTML with section headings', () => {
+      const guide = getPublishedGuideBySlug('emoji-skin-tone-guide');
+      expect(guide?.html.length).toBeGreaterThan(0);
+      expect(guide?.html.toLowerCase()).toMatch(/<h[1-6]/);
+    });
+
+    it('appears in published slugs and summaries', () => {
+      expect(getPublishedGuideSlugs()).toContain('emoji-skin-tone-guide');
+      const summary = getPublishedGuideSummaries().find((s) => s.slug === 'emoji-skin-tone-guide');
+      expect(summary).toBeDefined();
+      expect(summary?.heroEmoji).toBe('👋🏽');
+    });
+  });
+
   describe('getAllGuideSummaries', () => {
     it('includes drafts and sorts newest first', () => {
       const summaries = getAllGuideSummaries();
