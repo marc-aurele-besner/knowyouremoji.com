@@ -156,7 +156,11 @@ describe('guide-data (live loader)', () => {
 
     it('leads with the New Year guide once Christmas week is over', () => {
       expect(homepageSlugs('2026-12-19')[0]).toBe('christmas-emoji-etiquette');
-      expect(homepageSlugs('2026-12-19')).toContain('new-year-emoji-etiquette');
+      // The New Year guide is guaranteed a homepage slot from the day its
+      // featuring window opens. Before that it competes with every newer
+      // guide for the three slots the homepage strip has, so its presence
+      // depends on how recent the other guides are.
+      expect(homepageSlugs('2026-12-20')).toContain('new-year-emoji-etiquette');
       expect(homepageSlugs('2026-12-26')[0]).toBe('christmas-emoji-etiquette');
       expect(homepageSlugs('2026-12-27')[0]).toBe('new-year-emoji-etiquette');
       expect(homepageSlugs('2026-12-31')[0]).toBe('new-year-emoji-etiquette');
