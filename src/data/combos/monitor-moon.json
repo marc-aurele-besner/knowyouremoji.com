@@ -1,0 +1,69 @@
+{
+  "slug": "monitor-moon",
+  "combo": "🖥️🌙",
+  "emojis": ["desktop-computer", "crescent-moon-emoji"],
+  "name": "Monitor Moon",
+  "description": "A desktop monitor under a moon is late work. The office hours ended, the screen did not, and someone is still in the chair.",
+  "meaning": "The monitor is the task and the moon is the hour. Together they mean working at night, often longer than the person wanted.",
+  "examples": [
+    "still on the deck 🖥️🌙",
+    "the moon and I are pair programming 🖥️🌙",
+    "do not slack me unless it is down 🖥️🌙",
+    "one more build 🖥️🌙",
+    "this should have been tomorrow 🖥️🌙"
+  ],
+  "category": "work",
+  "seoTitle": "🖥️🌙 Monitor Moon Combo Meaning",
+  "seoDescription": "What does 🖥️🌙 mean? Late-night computer work. The moon says the shift should have ended and the screen says it did not.",
+  "relatedCombos": ["alarm-coffee", "battery-low"],
+  "tags": ["computer", "night", "overtime", "work", "late"],
+  "popularity": 72,
+  "contentTier": "deep",
+  "contentUpdatedAt": "2026-11-21",
+  "longForm": {
+    "overview": "A monitor and a crescent moon are overtime you can see. 🖥️🌙 means the person is at a computer after the day was supposed to end: a deploy, a paper, a design that would not export, a spreadsheet that grew a new tab. The screen is the work. The moon is the indictment of the hour. Senders are often half proud and half annoyed at themselves. They want someone to know they are still on it, and they also want that someone not to add a new task.\n\nThe pair is a status, not a hero speech. In healthy teams it prompts \"log off.\" In brittle teams it prompts more work, which is the outcome a careful sender is trying to avoid by adding the moon. Read it as a boundary with a glow. They may finish the thing already open. They are not volunteering for a second project. Morning will bring alarm-and-coffee energy if this goes too long, and everyone reading the late message can do that math.",
+    "howPeopleUseIt": "Engineers and students send 🖥️🌙 when a build or a paper crosses midnight. Managers who are paying attention reply by shrinking tomorrow's morning. Partners send a photo of a dark office to explain an empty side of the bed.\n\nIt is different from a fun late-night scroll. The desktop monitor reads as work, not as a show.",
+    "whenNotToUse": "Do not send 🖥️🌙 to glorify skipping sleep if you are also asking other people to stay up. The moon should not become a contest.\n\nSkip it for gaming or a movie. A television and a couch already describe leisure. This pair claims labor.",
+    "howToReply": "Ask whether they want a check or a sign-off. \"Can this wait until morning?\" is a kindness when the answer might be yes.\n\nDo not forward a new bug to a person who just posted the moon unless the site is actually down. They named the exception already in a lot of these texts.",
+    "faqs": [
+      {
+        "question": "What does 🖥️🌙 mean?",
+        "answer": "🖥️🌙 means someone is working at a computer late at night. The day ended and the screen did not."
+      },
+      {
+        "question": "Is 🖥️🌙 a brag?",
+        "answer": "Sometimes it shows effort. More often it is a tired status that says stop adding tasks. Do not answer with more work."
+      },
+      {
+        "question": "Should I tell them to go to bed?",
+        "answer": "A gentle \"can it wait\" is welcome. A lecture about sleep is less welcome than taking something off their plate."
+      },
+      {
+        "question": "Does 🖥️🌙 mean they are gaming?",
+        "answer": "No. A desktop at night reads as work or study. Leisure on a couch uses the television, not this pair."
+      }
+    ]
+  },
+  "conversationExamples": [
+    {
+      "setting": "work",
+      "message": "shipping the fix and then I am gone. 🖥️🌙, new bugs to the morning list",
+      "interpretation": "They will finish one thing. Put fresh issues in the morning queue unless production is down. A praise emoji is plenty."
+    },
+    {
+      "setting": "dating",
+      "message": "I hate that I am still 🖥️🌙. leave the light on if you want, I will be quiet",
+      "interpretation": "They are coming home late and feel guilty. A kind \"come when you can\" beats a fight over the hour. The work discussion can happen on a weekend."
+    },
+    {
+      "setting": "friends",
+      "message": "group project goblin hours. 🖥️🌙",
+      "interpretation": "They are working and half-joking. If you are in the group, do your part without making them chase you. If you are not, wait until tomorrow to make plans."
+    },
+    {
+      "setting": "family",
+      "message": "dad is in the office with 🖥️🌙. breakfast is the next time he is a person",
+      "interpretation": "A relative is protecting someone's focus. Save non-urgent questions for breakfast. Knock only for something that cannot wait."
+    }
+  ]
+}
